@@ -203,24 +203,34 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
   var cards = document.querySelectorAll('.article-card');
   var countEl = document.getElementById('count');
 
+  function filterBy(cat){
+    tabs.forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('data-cat') === cat);
+    });
+    var visible = 0;
+    cards.forEach(function(card){
+      var cats = card.getAttribute('data-cat').split(' ');
+      if(cat === 'all' || cats.indexOf(cat) !== -1){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    countEl.textContent = visible;
+  }
+
   tabs.forEach(function(tab){
     tab.addEventListener('click', function(){
-      tabs.forEach(function(t){ t.classList.remove('active'); });
-      tab.classList.add('active');
       var cat = tab.getAttribute('data-cat');
-      var visible = 0;
-      cards.forEach(function(card){
-        var cats = card.getAttribute('data-cat').split(' ');
-        if(cat === 'all' || cats.indexOf(cat) !== -1){
-          card.classList.remove('hidden');
-          visible++;
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-      countEl.textContent = visible;
+      filterBy(cat);
+      history.replaceState(null, '', cat === 'all' ? 'archive.html' : 'archive.html?cat=' + cat);
     });
   });
+
+  var params = new URLSearchParams(window.location.search);
+  var initCat = params.get('cat') || 'all';
+  filterBy(initCat);
 })();
 </script>
 </body>
