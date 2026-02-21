@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？【2026年版】</title>
+<meta name="description" content="Amazon、楽天市場、メルカリの商品画像ルールを比較。白背景の要否、画像サイズ、テキスト占有率、枚数など各プラットフォームのガイドラインを一覧表で整理しました。EC出品・フリマ出品の画像作成時に確認できる備忘録です。">
+<meta name="keywords" content="Amazon 商品画像 ガイドライン,楽天 商品画像 ルール,メルカリ 商品写真,EC 商品画像 白背景,Amazon 白抜き,楽天 テキスト占有率 20%,商品画像 サイズ">
+<meta property="og:title" content="ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？【2026年版】">
+<meta property="og:description" content="Amazon・楽天・メルカリの商品画像ルールを比較。白背景の要否、サイズ、テキスト制限など一覧で整理しました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Amazonの商品画像のメイン画像のルールは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Amazonのメイン画像は白背景（RGB値255,255,255）が必須で、商品本体のみを写す必要があります。テキスト・ロゴ・透かしの挿入は禁止。画像サイズは長辺500px以上（ズーム機能には1,000px以上、推奨は1,600px以上）。画像の85%以上を商品が占めること。ファイル形式はJPEG推奨（PNG、GIF、TIFFも可）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "楽天市場の商品画像のルールは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "楽天市場の1枚目（サムネイル）画像には3つのルールがあります。テキスト要素の占有率は画像全体の20%以内（ロゴやイラストもテキスト扱い）、枠線の使用禁止、背景は白単色（#FFFFFF）または写真背景のみ。2枚目以降はこれらの制限がなく自由度が高いです。違反するとペナルティの対象になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "メルカリの商品画像にルールはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "メルカリにはAmazonや楽天のような厳密な画像ガイドラインはありません。出品時に1枚以上の画像が必須で、最大10枚まで登録可能。ただし他サイトからの転載画像や、実物と異なる画像の使用は規約違反です。白背景は必須ではありませんが、商品が見やすい背景で撮影することが推奨されています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden;background:var(--accent-light);display:flex;align-items:center;justify-content:center;font-size:28px}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.spec-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){
+.hero h1{font-size:20px}
+.author-box{flex-direction:column;align-items:center;text-align:center}
+.spec-table{font-size:13px}
+.spec-table th,.spec-table td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ ECサイトの商品画像ルールまとめ
+</div>
+</nav>
+
+<div class="hero">
+<div class="wrap">
+<h1>ECサイトの商品画像ルールまとめ｜<br>Amazon・楽天・メルカリで何が違う？</h1>
+<div class="update">2026年2月 更新</div>
+</div>
+</div>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>ECの仕事で商品画像を用意するとき、「Amazonは白背景が必須だけど楽天はどうだったっけ？」「メルカリは何枚まで登録できるんだっけ？」と毎回調べ直していたので、主要3プラットフォームのルールを一箇所にまとめておくことにしました。</p>
+
+<p>各プラットフォームの公式ガイドラインの情報をもとに整理しています。ルールは随時変更される可能性があるので、出品前には必ず最新のガイドラインも確認してください。</p>
+
+<h2>3社比較：商品画像ルール早見表</h2>
+
+<p>まず結論として、Amazon・楽天・メルカリのメイン画像のルールをまとめて比較します。</p>
+
+<table class="spec-table">
+<tr><th>項目</th><th>Amazon</th><th>楽天市場</th><th>メルカリ</th></tr>
+<tr><td>白背景</td><td>必須（RGB 255,255,255）</td><td>白背景 or 写真背景</td><td>指定なし</td></tr>
+<tr><td>テキスト・ロゴの挿入</td><td>メイン画像は禁止</td><td>占有率20%以内</td><td>制限なし</td></tr>
+<tr><td>枠線</td><td>禁止</td><td>禁止</td><td>制限なし</td></tr>
+<tr><td>推奨画像サイズ</td><td>長辺1,600px以上</td><td>特に明記なし（正方形推奨）</td><td>正方形（720×720px推奨）</td></tr>
+<tr><td>最小画像サイズ</td><td>長辺500px以上</td><td>特に明記なし</td><td>特に明記なし</td></tr>
+<tr><td>登録可能枚数</td><td>最大9枚（メイン1+サブ8）</td><td>最大20枚</td><td>最大10枚</td></tr>
+<tr><td>ファイル形式</td><td>JPEG推奨（PNG, GIF, TIFF可）</td><td>JPEG, GIF, PNG</td><td>JPEG, PNG</td></tr>
+<tr><td>違反時のリスク</td><td>検索結果から非表示・出品停止</td><td>違反点数加算・ペナルティ</td><td>出品削除の可能性</td></tr>
+</table>
+
+<p>一番ルールが厳しいのがAmazon、次が楽天、メルカリは自由度が高い、というのが全体の印象です。</p>
+
+<h2>Amazon：メイン画像は白背景必須</h2>
+
+<p>Amazonのメイン画像ルールはEC各社の中で最も厳格です。</p>
+
+<h3>メイン画像のルール</h3>
+
+<p>背景は純粋な白（RGB値 R255, G255, B255）が必須。これ以外の色、テクスチャ、写真背景はすべてNGです。商品本体のみを写し、付属品や小道具は含めないこと。テキスト、ロゴ、透かし、その他のグラフィックの挿入は禁止。画像の85%以上を商品が占めていること。</p>
+
+<p>画像サイズは長辺500px以上が最低条件ですが、ズーム機能を使えるようにするには1,000px以上が必要です。Amazonが推奨しているのは長辺1,600px以上で、1,600×1,600pxの正方形が実質的な標準になっています。</p>
+
+<h3>サブ画像のルール</h3>
+
+<p>サブ画像はメイン画像ほど厳しくなく、白以外の背景やテキスト・ロゴの挿入もOK。商品の使用シーンやサイズ感、比較表などを入れることができます。最大8枚登録可能です。ただし、購入者に誤解を与える表現は避ける必要があります。</p>
+
+<div class="point-box">
+<h4>Amazonのポイント</h4>
+<p>Amazonはメイン画像の白抜きが必須なので、白背景の撮影環境を用意するか、背景削除ツール（Remove.bgなど）で白抜き処理をする必要があります。違反するとメイン画像が差し替えられるまで検索結果から非表示になる場合があります。</p>
+</div>
+
+<h2>楽天市場：テキスト占有率20%以内</h2>
+
+<p>楽天のルールはAmazonとは性質が違い、1枚目のサムネイル画像に対する「見た目のルール」が中心です。</p>
+
+<h3>1枚目（サムネイル）画像の3つのルール</h3>
+
+<p><strong>ルール1：テキスト要素の占有率は20%以内。</strong>画像を10×10の100マスに分割したとき、テキスト要素がかかるマスが20マス以内であること。ここでいう「テキスト」には文字だけでなく、ロゴ、イラスト、アイコンなども含まれるので注意が必要です。カラーバリエーションを示すカラーサムネイルは例外的にテキスト扱いされません。</p>
+
+<p><strong>ルール2：枠線の使用禁止。</strong>画像の四辺を囲む枠線、L字型の線、帯状の線はすべてNG。白のベタ塗りも枠線と判断されることがあります。</p>
+
+<p><strong>ルール3：背景は白単色（#FFFFFF）か写真背景のみ。</strong>白以外の単色ベタ塗り背景はNGです。写真背景は「商品と一緒に撮影された背景」が基本ですが、2024年のガイドライン改定で「自然に見える合成背景」も認められるようになりました。</p>
+
+<h3>2枚目以降の画像</h3>
+
+<p>2枚目以降はこれらの制限がかからないため、テキストを入れた訴求画像や使用シーンのイメージ写真など、自由度の高い画像を使えます。最大20枚登録可能です。</p>
+
+<div class="point-box">
+<h4>楽天のポイント</h4>
+<p>楽天はAmazonと違って1枚目にもテキストを入れられますが、20%の上限があります。楽天RMSには「テキスト要素カウントツール」や「商品画像判定ツール」が用意されているので、登録前にチェックしておくと安心です。違反すると違反点数が加算され、累積するとペナルティの対象になります。</p>
+</div>
+
+<h2>メルカリ：ルールはゆるめだが実物写真が大前提</h2>
+
+<p>メルカリにはAmazonや楽天のような厳密な画像ガイドラインはありません。出品時に1枚以上の画像が必須で、最大10枚まで登録できます。</p>
+
+<p>白背景は必須ではなく、テキストや枠線の制限もありません。ただし、以下の点は規約で禁止されています。</p>
+
+<p>他サイトや他の出品者からの転載画像の使用は禁止。実物と著しく異なる画像（過度な加工や別商品の写真）もNG。公式サイトの商品画像をそのまま使うのも原則NGです。</p>
+
+<p>メルカリはCtoCのフリマアプリなので、「実物をそのまま撮影した写真」が信頼性につながります。白背景でなくても、床やテーブルの上で撮った写真で問題ありません。</p>
+
+<div class="point-box">
+<h4>メルカリのポイント</h4>
+<p>メルカリは1枚目の画像が検索結果のサムネイルになるので、1枚目で商品全体がわかる写真を使い、2枚目以降で傷や汚れなどの状態を伝えるのが基本的な構成です。スマホで撮影する場合は、自然光で明るい場所で撮ると見栄えが良くなります。</p>
+</div>
+
+<h2>プラットフォームをまたぐ場合のメモ</h2>
+
+<p>Amazonと楽天の両方に出品する場合、メイン画像はAmazonの基準（白背景・テキストなし）に合わせておくと、楽天にもそのまま流用できます（楽天は白背景OKなので）。逆に楽天基準でテキストを入れた画像はAmazonでは使えないので、Amazon→楽天の順で画像を作るのが効率的です。</p>
+
+<p>メルカリは他2つと違って「自分で撮影した実物写真」が前提なので、EC用の白抜き画像とは別に、手元の現物写真を撮影する必要があります。</p>
+
+<div class="faq-section">
+<h2>よくある疑問メモ</h2>
+
+<div class="faq-item">
+<div class="fq">Q. Amazonの商品画像のメイン画像のルールは？</div>
+<div class="fa">
+
+A. Amazonのメイン画像は白背景（RGB値255,255,255）が必須で、商品本体のみを写す必要があります。テキスト・ロゴ・透かしの挿入は禁止。画像サイズは長辺500px以上（ズーム機能には1,000px以上、推奨は1,600px以上）。画像の85%以上を商品が占めること。ファイル形式はJPEG推奨です。</div>
+</div>
+
+<div class="faq-item">
+<div class="fq">Q. 楽天市場の商品画像のルールは？</div>
+<div class="fa">
+
+A. 楽天市場の1枚目（サムネイル）画像には3つのルールがあります。テキスト要素の占有率は画像全体の20%以内（ロゴやイラストもテキスト扱い）、枠線の使用禁止、背景は白単色（#FFFFFF）または写真背景のみ。2枚目以降はこれらの制限がなく自由度が高いです。違反するとペナルティの対象になります。</div>
+</div>
+
+<div class="faq-item">
+<div class="fq">Q. メルカリの商品画像にルールはありますか？</div>
+<div class="fa">
+
+A. メルカリにはAmazonや楽天のような厳密な画像ガイドラインはありません。出品時に1枚以上の画像が必須で、最大10枚まで登録可能。ただし他サイトからの転載画像や、実物と異なる画像の使用は規約違反です。白背景は必須ではありませんが、商品が見やすい背景で撮影することが推奨されています。</div>
+</div>
+</div>
+
+<div class="related">
+<h3>このサイトの関連記事</h3>
+<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
+<p><a href="retouch-apps.html">スマホで写真レタッチ！初心者向け無料アプリおすすめ10選【2026年版】</a></p>
+<p><a href="retouch-services.html">個人向けレタッチ外注おすすめ7選｜写真修正サービスを比較【2026年最新版】</a></p>
+</div>
+
+<div class="author-box">
+<div class="author-icon">📷</div>
+<div class="author-text">
+<div class="author-name">ツバサ</div>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">
+<p>&copy; 2026 ツバサのメモ帳</p>
+</div>
+</footer>
+
+</body>
+</html>
