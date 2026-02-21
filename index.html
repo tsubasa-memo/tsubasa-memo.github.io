@@ -26,6 +26,10 @@ header .wrap{display:flex;align-items:center;justify-content:space-between}
 .hero h1{font-size:26px;line-height:1.5;font-weight:700;margin-bottom:12px;letter-spacing:1px}
 .hero p{font-size:14px;opacity:.85;max-width:540px;margin:0 auto;line-height:1.8}
 main{padding:48px 0 64px}
+.cat-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
+.cat-link{display:inline-block;padding:10px 20px;font-size:13px;font-weight:700;color:var(--accent);background:var(--card);border:1px solid var(--border);border-radius:24px;text-decoration:none;transition:all .2s}
+.cat-link:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.section-title{font-size:14px;font-weight:700;color:var(--text-sub);margin-bottom:16px;padding-left:4px;letter-spacing:.5px}
 .article-list{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
 .article-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;transition:box-shadow .2s}
 .article-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
@@ -70,6 +74,16 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <main>
 <div class="wrap">
+
+<div class="cat-nav">
+<a href="archive.html?cat=camera" class="cat-link">カメラ</a>
+<a href="archive.html?cat=retouch" class="cat-link">レタッチ</a>
+<a href="archive.html?cat=photo" class="cat-link">写真・撮影</a>
+<a href="archive.html?cat=ec" class="cat-link">EC・実務</a>
+<a href="archive.html?cat=career" class="cat-link">副業・キャリア</a>
+</div>
+
+<h2 class="section-title">最新の記事</h2>
 
 <div class="article-list">
 
