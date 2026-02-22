@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サムネイル比較プレビュー</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,sans-serif;background:#f0f0f0;padding:32px 20px}
+h1{text-align:center;font-size:20px;margin-bottom:8px;color:#333}
+p.sub{text-align:center;font-size:13px;color:#888;margin-bottom:32px}
+.grid{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.row{display:flex;gap:16px;align-items:center}
+.row .label{width:160px;font-size:13px;font-weight:600;color:#555;flex-shrink:0;text-align:right;padding-right:12px}
+.row .old,.row .new{flex:1}
+.row img{width:100%;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:4px;margin-bottom:6px;font-weight:600}
+.tag.old-tag{background:#e5e7eb;color:#666}
+.tag.new-tag{background:#dbeafe;color:#2563eb}
+@media(max-width:600px){
+.row{flex-direction:column}
+.row .label{width:100%;text-align:left;padding:0}
+}
+</style>
+</head>
+<body>
+<h1>サムネイル 旧 → 新 比較</h1>
+<p class="sub">左が旧デザイン、右が改善版です</p>
+<div class="grid">
+
+<div class="row">
+<div class="label">レタッチアプリ</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/retouch-apps.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/retouch-apps.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">カメラスマホ</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/camera-smartphones.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/camera-smartphones.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">レタッチとは</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/what-is-retouch.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/what-is-retouch.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">初めてのカメラ</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/first-camera.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/first-camera.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">SDカード</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/sd-card.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/sd-card.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">レタッチ外注7社</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/retouch-services.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/retouch-services.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">背景白抜き</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/background-white.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/background-white.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">EC画像ルール</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/ec-image-rules.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/ec-image-rules.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">Exif情報</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/exif-info.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/exif-info.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">証明写真</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/id-photo.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/id-photo.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">動画 vs レタッチ</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/video-vs-retouch-career.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/video-vs-retouch-career.svg"></div>
+</div>
+
+<div class="row">
+<div class="label">コワーキング</div>
+<div class="old"><span class="tag old-tag">旧</span><br><img src="thumbs/coworking-spaces-tokyo.svg"></div>
+<div class="new"><span class="tag new-tag">新</span><br><img src="thumbs-v2/coworking-spaces-tokyo.svg"></div>
+</div>
+
+</div>
+</body>
+</html>
