@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>週1リモートの僕が作業場所を探し回った記録｜都内コワーキングスペース7選 - ツバサのメモ帳</title>
+  <meta name="description" content="実家暮らし×週1リモート勤務の20代会社員が、自宅・図書館・カフェを経てコワーキングスペースにたどり着くまでの記録。都内おすすめ7選と、調べていて気づいた法人登記の意外な話。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFAF7;
+      --text: #2C2C2C;
+      --text-light: #6B6B6B;
+      --accent: #E8734A;
+      --accent-light: #FFF3EE;
+      --border: #E8E5DF;
+      --card-bg: #FFFFFF;
+      --highlight: #FFF8E1;
+      --column-bg: #F0F4F8;
+      --column-border: #4A7C9B;
+      --tag-bg: #EEEDEB;
+      --serif: 'Noto Serif JP', serif;
+      --sans: 'Zen Kaku Gothic New', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.9; font-size: 16px; -webkit-font-smoothing: antialiased; }
+    .site-header { padding: 20px 0; border-bottom: 1px solid var(--border); background: var(--card-bg); }
+    .site-header .inner { max-width: 720px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .site-name { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--text); text-decoration: none; }
+    .site-name span { color: var(--accent); }
+    .site-tagline { font-size: 12px; color: var(--text-light); }
+    .article-container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 13px; color: var(--text-light); }
+    .article-meta .tag { background: var(--tag-bg); padding: 3px 10px; border-radius: 4px; font-size: 12px; }
+    h1 { font-family: var(--serif); font-size: clamp(24px, 5vw, 32px); font-weight: 600; line-height: 1.5; margin-bottom: 32px; letter-spacing: 0.02em; }
+    .lead-text { font-size: 15px; color: var(--text-light); border-left: 3px solid var(--accent); padding-left: 16px; margin-bottom: 48px; line-height: 1.8; }
+    h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin-top: 56px; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--text); letter-spacing: 0.02em; }
+    h3 { font-size: 18px; font-weight: 700; margin-top: 40px; margin-bottom: 12px; color: var(--text); }
+    h3 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--accent); }
+    h3 a:hover { color: var(--accent); }
+    p { margin-bottom: 20px; }
+    .part-divider { text-align: center; margin: 64px 0 48px; position: relative; }
+    .part-divider::before { content: ""; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--border); }
+    .part-divider .part-label { position: relative; display: inline-block; background: var(--bg); padding: 0 24px; font-family: var(--serif); font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: 0.15em; }
+    .venue-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px 28px; margin: 24px 0; }
+    .venue-card .venue-name { font-weight: 700; font-size: 17px; margin-bottom: 6px; }
+    .venue-card .verdict { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 12px; }
+    .venue-card .verdict.ng { background: #FEE; color: #C0392B; }
+    .venue-card .verdict.ok { background: #E8F5E9; color: #2E7D32; }
+    .venue-card .verdict.meh { background: #FFF8E1; color: #F57F17; }
+    .space-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin: 28px 0; position: relative; }
+    .space-card .number { position: absolute; top: -14px; left: 24px; background: var(--accent); color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; }
+    .space-card h3 { margin-top: 4px; margin-bottom: 8px; font-size: 19px; }
+    .space-card h3 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--accent); }
+    .space-card h3 a:hover { color: var(--accent); }
+    .space-card .subtitle { font-size: 13px; color: var(--text-light); margin-bottom: 14px; }
+    .space-card .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; font-size: 14px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .space-card .info-grid dt { color: var(--text-light); font-size: 12px; }
+    .space-card .info-grid dd { font-weight: 500; margin-bottom: 8px; }
+    .space-card .point { display: inline-block; background: var(--accent-light); color: var(--accent); font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-top: 12px; }
+    .column-box { background: var(--column-bg); border-left: 4px solid var(--column-border); border-radius: 0 8px 8px 0; padding: 28px; margin: 40px 0; }
+    .column-box .column-title { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--column-border); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .column-box .column-title::before { content: "\1F4DD"; }
+    .highlight-box { background: var(--highlight); border-radius: 8px; padding: 24px; margin: 28px 0; }
+    .highlight-box .title { font-weight: 700; font-size: 15px; margin-bottom: 12px; }
+    .investigation { background: #FDFCFB; border: 2px solid var(--accent); border-radius: 12px; padding: 32px; margin: 40px 0; }
+    .investigation .inv-label { display: inline-block; background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 4px; margin-bottom: 16px; letter-spacing: 0.1em; }
+    .investigation h3 { margin-top: 0; font-family: var(--serif); font-size: 20px; }
+    .addr-compare { margin: 20px 0; }
+    .addr-compare .addr-item { padding: 16px; margin-bottom: 8px; border-radius: 8px; font-size: 14px; }
+    .addr-compare .addr-item.official { background: #FFF3EE; border: 1px solid #F5C5AE; }
+    .addr-compare .addr-item.web { background: #F0F4F8; border: 1px solid #C5D5E0; }
+    .addr-compare .addr-label { font-size: 12px; font-weight: 700; color: var(--text-light); margin-bottom: 6px; }
+    .addr-compare .addr-text { font-family: monospace; font-size: 14px; line-height: 1.6; }
+    .addr-compare .addr-text .hidden-part { background: #FFE066; padding: 1px 4px; border-radius: 3px; font-weight: 700; }
+    .simple-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+    .simple-table th { text-align: left; padding: 10px 12px; background: var(--tag-bg); border-bottom: 2px solid var(--border); font-weight: 700; font-size: 13px; }
+    .simple-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .simple-table .em { font-weight: 700; color: var(--accent); }
+    .article-footer { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .author-box { display: flex; gap: 16px; align-items: flex-start; padding: 24px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; }
+    .author-icon { width: 48px; height: 48px; background: linear-gradient(135deg, var(--accent), #F5A623); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 20px; }
+    .author-name { font-weight: 700; margin-bottom: 4px; }
+    .author-desc { font-size: 13px; color: var(--text-light); line-height: 1.7; }
+    .sources { margin-top: 40px; padding: 24px; background: var(--tag-bg); border-radius: 8px; font-size: 13px; color: var(--text-light); }
+    .sources h4 { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+    .sources a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    .sources a:hover { border-bottom-style: solid; }
+    @media (max-width: 600px) {
+      .space-card .info-grid { grid-template-columns: 1fr; }
+      .author-box { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a href="#" class="site-name"><span>ツバサ</span>のメモ帳</a>
+    <span class="site-tagline">20代会社員の副業・暮らし・考えごと</span>
+  </div>
+</header>
+
+<article class="article-container">
+
+  <div class="article-meta">
+    <span class="tag">リモートワーク</span>
+    <span class="tag">コワーキング</span>
+    <time>2026.02.22</time>
+  </div>
+
+  <h1>週1リモートの作業場所、正解が見つからない問題｜都内コワーキングスペース7選</h1>
+
+  <p class="lead-text">
+    うちの会社は週に1回だけリモート勤務ができる。ありがたい。ありがたいんだけど、問題はその1日をどこで過ごすか。実家の自室、近所の図書館、駅前のカフェ。全部試して、全部それぞれの理由でダメだった。そこからコワーキングスペースに行き着いて、都内のいろんなところを回ってみた約1年間の記録。
+  </p>
+
+
+  <div class="part-divider">
+    <span class="part-label">PART 1 ── 作業場所が決まらない</span>
+  </div>
+
+
+  <h2>実家の自室：一番ラクなはずの場所が、一番ダメだった</h2>
+
+  <p>
+    僕は実家暮らしだ。リモート勤務が始まったとき、最初に思ったのは「自分の部屋があるんだからそこでやればいい」だった。通勤時間ゼロ。昼休みに母親のごはんが出てくる。最高の環境じゃないか。
+  </p>
+
+  <p>
+    3回で限界が来た。
+  </p>
+
+  <p>
+    まず、部屋の誘惑が多すぎる。ベッドが視界に入る。漫画が手の届く場所にある。スマホを「ちょっとだけ」と手に取ったら30分消えている。一応、学生時代の勉強机はある。ただ、その机で仕事をしてみると、受験勉強してた頃のだるい記憶が蘇ってきて妙に落ち着かない。椅子も学習椅子のままだから長時間座ると腰にくる。結局ベッドに移動して、枕を背もたれにしてノートPCを膝に置くスタイルに落ち着くんだけど、そうなるともう気分は完全に休日だ。
+  </p>
+
+  <p>
+    それと、実家ならではの問題がある。母親が「お茶飲む？」とドアを開けてくる。ありがたいし、悪気はないのはわかっている。でも集中しているときにやられると一気にペースが崩れるし、電話中だったときは本当に焦った。「仕事中だから入ってこないで」と言ったら言ったで、夕飯のときに微妙な空気が流れる。リビングから聞こえてくるワイドショーの音も地味にキツかった。
+  </p>
+
+  <p>
+    何より、生活する場所と仕事する場所が同じだと、オンとオフの切り替えができない。朝起きて、同じ部屋で仕事を始めて、同じ部屋で仕事を終える。移動がゼロだから「今日は仕事をした」という実感もない。一日中同じ景色。精神的に、じわじわとしんどくなった。
+  </p>
+
+  <div class="venue-card">
+    <div class="venue-name">自室（実家）</div>
+    <span class="verdict ng">不向き</span>
+    <p style="margin-bottom:0; font-size:14px;">
+      誘惑が多すぎる。家族との距離感が難しい。オン/オフの切り替えが不可能。唯一のメリットはコスト0円だけど、生産性もほぼ0だった。
+    </p>
+  </div>
+
+
+  <h2>図書館：静かすぎるのも、それはそれで問題</h2>
+
+  <p>
+    「集中できる場所＝静かな場所」と単純に考えて、次に向かったのが近所の区立図書館。たしかに静かだし、涼しいし（夏）、暖かいし（冬）、無料。文句のつけようがないはず、だった。
+  </p>
+
+  <p>
+    ところが、静かすぎた。図書館の閲覧室は、本当に無音に近い。紙をめくる音くらいしかしない。その中でノートPCのキーボードをカタカタ打つと、自分の打鍵音がやたら響く。周りの人がチラッとこっちを見る。いや、たぶん見てないんだけど、気になって打鍵が弱くなって、タイプミスが増えて、余計にストレスがたまる。静音キーボードを買おうかと本気で悩んだ。
+  </p>
+
+  <p>
+    それ以前の問題として、席が取れない。僕の地元の区立図書館はPC作業OKだけど、朝10時の開館と同時に席が埋まる。平日でも浪人生や資格試験の勉強をしている人たちが朝イチで来て、閉館まで動かない。こっちは「今日だけ使いたい」のに、向こうは毎日通っている常連。席取り合戦で勝てるわけがない。電源もない。バッテリーが切れたら強制終了。
+  </p>
+
+  <p>
+    そして地味に不便だったのが、電話ができないこと。図書館は基本的に通話禁止。リモートの日でも、ちょっとした確認の電話をしたいときや、Slackで「電話いいですか？」と来たときに対応できない。そのたびに荷物をまとめて外に出て、終わったら戻って、というのが面倒すぎた。
+  </p>
+
+  <div class="venue-card">
+    <div class="venue-name">区立図書館</div>
+    <span class="verdict ng">不向き</span>
+    <p style="margin-bottom:0; font-size:14px;">
+      無料なのは最高。でも静かすぎてキーボード音が響く、席が取りづらい、電源がない、電話もできない。リモートワークの拠点としては厳しい。純粋に読書や勉強をする場所。
+    </p>
+  </div>
+
+
+  <h2>カフェ：ちょうどよさそうで、ちょうどよくない</h2>
+
+  <p>
+    実家がダメ、図書館もダメ。次に試したのが駅前のカフェ。最寄り駅の近くにチェーン系が2軒ある。電源席があるところを選んで、ドリンク1杯で作業を始めた。
+  </p>
+
+  <p>
+    正直、最初の1〜2時間はすごく快適だった。適度なBGMと雑音。コーヒーの匂い。人の気配はあるけど、話しかけてくる人はいない。「これだ」と思った。自宅にない「場所を変えた感」がちゃんとあって、気持ちが仕事モードに切り替わる。
+  </p>
+
+  <p>
+    問題はそこからだ。1時間半くらい経つと、「もう1杯頼んだほうがいいかな」という圧がじわじわ来る。昼時になると混雑してきて、ドリンク1杯で粘ってるのが申し訳なくなってくる。結局2杯目を頼む。それでも3時間が限界で、午後はもう1軒ハシゴすることになる。
+  </p>
+
+  <p>
+    こうなるとコストが跳ね上がる。1軒目でコーヒー500円、2軒目でまた500円。毎週やったら月4,000円以上。「それならコワーキングの月額プランのほうが安くない？」と後から気づくことになる。
+  </p>
+
+  <p>
+    あと、電話の問題はカフェでも同じ。たまに「ちょっと電話いい？」と来るんだけど、周りの会話がマイクに入るし、こっちの声も丸聞こえ。先輩との電話を隣のテーブルの人に聞かれてると思うと、なんか気になって仕方ない。
+  </p>
+
+  <p>
+    地味に一番困ったのがトイレ問題。カフェでノートPCを置いたままトイレに行く勇気が、僕にはない。毎回閉じてカバンにしまって席を離れる。戻ってきたら席が片付けられていたこともある。あれはけっこうショックだった。
+  </p>
+
+  <div class="venue-card">
+    <div class="venue-name">チェーン系カフェ</div>
+    <span class="verdict meh">短時間ならアリ</span>
+    <p style="margin-bottom:0; font-size:14px;">
+      1〜2時間の集中作業なら快適。ただ長時間は居づらい。電話しづらい。2軒ハシゴすると月4,000円超。PC放置でトイレに行けない問題は見落としがち。
+    </p>
+  </div>
+
+
+  <h2>そして、コワーキングスペースにたどり着いた</h2>
+
+  <p>
+    ここまで来て、ようやくコワーキングスペースをちゃんと調べ始めた。恥ずかしながら、それまでは「フリーランスとかスタートアップの人が使う、意識高い系の場所でしょ？普通の会社員には関係ない」くらいの認識だった。
+  </p>
+
+  <p>
+    最初に使ってみて感動したのは、「ここは仕事をしていい場所だ」という安心感。キーボード音を気にしなくていい。長時間いても罪悪感がない。電源は各席にある。Wi-Fiは速い。TELブース（防音の通話室）があるところなら、急な電話にもさっと対応できる。図書館でもカフェでも解決できなかった問題が、全部一気に解消された。
+  </p>
+
+  <p>
+    それと、荷物の管理。コワーキングは受付スタッフがいたり、入退室にカードキーが必要だったりするところが多いから、カフェほど「PCから目を離したらヤバい」という緊張感がない。貴重品はロッカーに入れておけば、ちょっとトイレに行くくらいなら席にPCを置いたまま離れられる。あのカフェでのトイレ問題から解放されたのは、思った以上にストレスが減った。
+  </p>
+
+  <p>
+    ただ、使い込んでいくうちにコワーキングのデメリットも見えてきた。正直に書いておく。
+  </p>
+
+  <h3>コワーキングにもデメリットはある</h3>
+
+  <p>
+    まず、受付スタッフがいない無人型の拠点だと、結局カフェと同じ不安が残る。オープンスペースのフリー席で、誰でも出入りできる環境。PCを置いたまま目を離すのはやっぱり怖い。受付の有無やセキュリティの仕組みは事前に確認したほうがいい。
+  </p>
+
+  <p>
+    次に、場所によっては意外とうるさい。コワーキングは「仕事する場所」だけど「静かにする場所」とは限らない。電話しながら歩き回る人、打ち合わせで盛り上がっているグループ。集中エリアとフリートークエリアが分かれているところは快適だけど、そうじゃないところは当たりハズレが大きい。
+  </p>
+
+  <p>
+    あと、意外と気になったのがPC画面の覗き見リスク。席の配置によっては背後から画面が丸見えになる。覗くつもりがなくても、通路を歩いてるだけで他人の画面がふと目に入ってしまうことはある。逆に言えば、自分の画面も見られている可能性がある。僕は壁を背にした席を選ぶようにしている。
+  </p>
+
+  <p>
+    それなのに、ノートPCを開いたまま離席する人を結構見かける。画面にはメールやらスプレッドシートやらが表示されたまま。大丈夫なのか、あれ。他人事ながら心配になる。
+  </p>
+
+  <p>
+    あと、コスト。カフェよりは高い。ドロップイン（1日利用）で1,500〜2,000円くらいが相場。月額プランなら割安になるけど、週1しか使わない僕にとっては「月額契約するほどじゃないけど、毎回ドロップインだと微妙に高い」という中途半端な立ち位置。ここは今も悩みどころ。
+  </p>
+
+  <div class="venue-card">
+    <div class="venue-name">コワーキングスペース</div>
+    <span class="verdict ok">メインの選択肢</span>
+    <p style="margin-bottom:0; font-size:14px;">
+      電源・Wi-Fi・通話ブース完備。リモートワークの環境としてはベスト。ただしセキュリティ体制、騒音レベル、料金は場所次第。下見してから決めるのが吉。
+    </p>
+  </div>
+
+
+  <div class="part-divider">
+    <span class="part-label">PART 2 ── 自分に合う場所を探して</span>
+  </div>
+
+
+  <h2>理想のコワーキングスペースを求めて</h2>
+
+  <p>
+    コワーキングスペースがいい、とわかったところで、次の問題は「どこの？」だ。都内だけで数百はある。ネットで検索すると「おすすめ20選！」みたいなまとめ記事が大量に出てくるけど、数が多すぎて逆に選べない。
+  </p>
+
+  <p>
+    まず自分なりの基準を整理した。①ドロップイン（1日利用）ができること。週1しか使わないから月額契約はまだ早い。②駅から近いこと。リモート日に遠出は本末転倒。③TELブースか個室があること。急な電話に対応できないと困る。④できれば2,000円以下。カフェ2軒ハシゴの4,000円/月を下回りたい。
+  </p>
+
+  <p>
+    この基準でネットを漁って、気になったところには実際に足を運んでみた。以下、使ったところと調べ込んだところを合わせて7つ紹介する。
+  </p>
+
+
+  <h2>都内おすすめコワーキングスペース 7選</h2>
+
+  <p>僕の場合、リモート日は朝から夕方まで、仕事が捗るとつい残業して8時間以上いることもある。時間課金だと気づいたら高くなっていた、ということが何度かあったので、1日使う前提で料金を比べてみた。</p>
+
+  <!-- 1. アントレサロン -->
+  <div class="space-card">
+    <div class="number">1</div>
+    <h3><a href="https://entre-salon.com/" rel="nofollow" target="_blank">アントレサロン</a></h3>
+    <p class="subtitle">ドロップイン440円/時間、1日最大1,100円。起業支援が手厚い</p>
+    <p>
+      銀座セカンドライフが運営する起業支援施設。東京・神奈川・埼玉に10拠点以上あって、全店舗が最寄駅から徒歩5分以内。ドロップインは1時間440円だけど、1日使っても最大1,100円で打ち止め。8時間いても1,100円。この価格でスタッフ常駐、私語OK/NGエリアの分離、法人登記無料はかなりコスパがいい。8回使うと1回無料になるクーポンもある。内装は正直おしゃれではない。普通のオフィスというか、パーテーションで区切られた自習室に近い雰囲気。でも「起業はまだ先だけど、雰囲気だけ味わいたい」みたいな自分にはちょうどいい距離感だった。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>440円/時間（1日最大1,100円）</dd>
+      <dt>月額料金</dt><dd>10,455円〜（フリーデスク）</dd>
+      <dt>法人登記</dt><dd>対応（全プラン無料）</dd>
+      <dt>主な拠点</dt><dd>銀座、東京、秋葉原、新宿、渋谷、池袋など</dd>
+    </dl>
+    <span class="point">1日最大1,100円。長居するほどお得</span>
+  </div>
+
+  <!-- 2. fabbit -->
+  <div class="space-card">
+    <div class="number">2</div>
+    <h3><a href="https://fabbit.co.jp/" rel="nofollow" target="_blank">fabbit（ファビット）</a></h3>
+    <p class="subtitle">ドロップイン1日1,980円。何時間いても定額</p>
+    <p>
+      全国に拠点があるコワーキングスペースで、僕がよく行くのは銀座一丁目ビル7階の「fabbit銀座」。ここは内装がおしゃれで、入った瞬間にちょっとテンションが上がる。ガラス張りの個室スペースがあって、中でいかにも仕事ができそうな人たちが真剣に会議をしたり画面に向かっているのが見える。それが地味に刺激になる。自分もちゃんとやらなきゃ、という気持ちになれる。フリー席45席、完全個室、TELブース、会議室。24時間使える個室プランもある。ドロップインは1日1,980円の定額制なのがありがたい。時間を気にせず仕事ができるから、その日は気分が乗って長時間働きたくなっても追加料金がかからない。バーチャルオフィスの法人登記にも対応していて、弁護士・税理士による無料相談会も開催している。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>1,980円/日（定額）</dd>
+      <dt>月額料金</dt><dd>22,000円〜（フリー席）</dd>
+      <dt>法人登記</dt><dd>対応</dd>
+      <dt>主な拠点</dt><dd>銀座、大手町、京橋、青山など全国</dd>
+    </dl>
+    <span class="point">1日定額で時間を気にしなくていい</span>
+  </div>
+
+  <!-- 3. いいオフィス -->
+  <div class="space-card">
+    <div class="number">3</div>
+    <h3><a href="https://e-office.space/" rel="nofollow" target="_blank">いいオフィス</a></h3>
+    <p class="subtitle">全国900拠点超。ドロップイン300円/時間〜</p>
+    <p>
+      提携拠点が全国900以上。アプリひとつでどこでも使える。都内なら1時間300〜500円くらいからドロップインできるところが多い。ただし時間課金なので、8時間以上いると2,400〜4,000円になることも。1日パスがある拠点もあるけど、場所による。「今日はあっちの拠点、来週はこっち」みたいな使い方ができるのは、行きつけが決まっていない探索段階の自分にはありがたかった。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>300円/時間〜（拠点による）</dd>
+      <dt>月額料金</dt><dd>拠点による</dd>
+      <dt>法人登記</dt><dd>一部拠点で対応</dd>
+      <dt>主な拠点</dt><dd>上野、渋谷、新宿、池袋など全国</dd>
+    </dl>
+    <span class="point">短時間なら最安。長居するなら要確認</span>
+  </div>
+
+  <!-- 4. THE HUB -->
+  <div class="space-card">
+    <div class="number">4</div>
+    <h3><a href="https://thehub.nex.works/" rel="nofollow" target="_blank">THE HUB（ザ・ハブ）</a></h3>
+    <p class="subtitle">ドロップイン220円/30分〜。バーチャルオフィスも月額5,280円〜</p>
+    <p>
+      全国1,000拠点超。ドロップインが30分220円からと短時間なら安い。ただし時間課金なので、8時間フルで使うと3,520円。半日くらいの利用か、バーチャルオフィスプラン（月額5,280円〜）で法人登記目的に使うのが本来の強みだと思う。僕はまだ法人登記の予定なんてないけど、「いつかやるなら」のメモとしてブックマークだけしてある。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>220円/30分〜（1日8h＝約3,520円）</dd>
+      <dt>月額料金</dt><dd>5,280円〜（バーチャルオフィス）</dd>
+      <dt>法人登記</dt><dd>対応</dd>
+      <dt>主な拠点</dt><dd>新宿、渋谷、銀座、池袋、品川など</dd>
+    </dl>
+    <span class="point">短時間利用 or 法人登記向き</span>
+  </div>
+
+  <!-- 5. WeWork -->
+  <div class="space-card">
+    <div class="number">5</div>
+    <h3><a href="https://www.wework.com/ja-JP" rel="nofollow" target="_blank">WeWork（ウィーワーク）</a></h3>
+    <p class="subtitle">デザイン性とコミュニティのグローバルブランド</p>
+    <p>
+      内装のおしゃれさは頭一つ抜けている。ビールサーバーやイベントもある。月額契約は正直僕の予算だと厳しいけど、ドロップインで1日だけ使ったときの「ここで仕事してるだけでテンション上がる」感は本物だった。副業仲間を増やしたい、スタートアップの空気を味わいたい、みたいな動機なら選択肢に入る。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>あり（アプリから予約）</dd>
+      <dt>月額料金</dt><dd>約40,000円〜</dd>
+      <dt>法人登記</dt><dd>対応</dd>
+      <dt>主な拠点</dt><dd>丸の内、渋谷、新橋、六本木など</dd>
+    </dl>
+    <span class="point">憧れ枠。たまのご褒美に</span>
+  </div>
+
+  <!-- 6. BIZcomfort -->
+  <div class="space-card">
+    <div class="number">6</div>
+    <h3><a href="https://bizcomfort.jp/" rel="nofollow" target="_blank">BIZcomfort（ビズコンフォート）</a></h3>
+    <p class="subtitle">ドロップインなし。ただし月額2,200円〜は最安</p>
+    <p>
+      全国170拠点以上。ドロップインがないので1日利用の比較はできないけど、月額プランのコスパは最強。月額2,200円のライトプランから使える。全拠点使い放題でも月額16,500円。24時間利用可能な拠点も多い。僕みたいに「まだ月額契約する踏ん切りがつかない」人でも、2,200円なら試しやすい。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>なし（月額制のみ）</dd>
+      <dt>月額料金</dt><dd>2,200円〜</dd>
+      <dt>法人登記</dt><dd>対応（オプション）</dd>
+      <dt>主な拠点</dt><dd>新宿、渋谷、池袋、銀座、品川など</dd>
+    </dl>
+    <span class="point">月額最安。ドロップインなしが惜しい</span>
+  </div>
+
+  <!-- 7. ナレッジソサエティ -->
+  <div class="space-card">
+    <div class="number">7</div>
+    <h3><a href="https://www.k-society.com/" rel="nofollow" target="_blank">ナレッジソサエティ</a></h3>
+    <p class="subtitle">千代田区九段南。起業支援と法人口座開設保証</p>
+    <p>
+      九段下駅から徒歩30秒。銀行所有ビルの住所が使えるバーチャルオフィスで、法人口座開設の保証制度があるのが独自。中小企業診断士による経営相談、起業家セミナー、交流イベントも頻繁にやっている。ドロップインは会員のみなので気軽には使えないけど、僕の「いつか会社つくりたい」が本気になったら真っ先に検討する場所。
+    </p>
+    <dl class="info-grid">
+      <dt>ドロップイン</dt><dd>会員のみ</dd>
+      <dt>月額料金</dt><dd>4,950円〜（バーチャルオフィス）</dd>
+      <dt>法人登記</dt><dd>対応（銀行口座開設保証あり）</dd>
+      <dt>アクセス</dt><dd>九段下駅 徒歩30秒</dd>
+    </dl>
+    <span class="point">「いつか起業」が本気になったら</span>
+  </div>
+
+  <h3>【番外】<a href="https://www.stationwork.jp/" rel="nofollow" target="_blank">STATION WORK（ステーションワーク）</a></h3>
+
+  <p>
+    厳密にはコワーキングスペースではないので番外扱い。JR東日本が駅構内に設置している個室ワークブースで、15分275円。防音個室だから電話も集中作業もOK。僕は出かけた帰りに「電車まであと30分あるな」というときにたまに使う程度だけど、これがなかなか快適。アプリで空き確認もできる。コワーキングの代わりにはならないけど、知っておくと便利な選択肢。
+  </p>
+
+
+  <h2>コワーキングを調べていて寄り道した「法人登記」の話</h2>
+
+  <p>
+    ここからは、7つのスペースを調べる中で副産物的に知ったことの話。コワーキングスペースのサイトを見ていると、どこにも「法人登記可能」と書いてある。副業の収入がほんのちょっとだけ出始めて（全然うまくいってないけど）、「合同会社ってどうやってつくるの」くらいのことを検索するようになった。完全に妄想の段階。でも調べ始めたら意外と面白かった。
+  </p>
+
+  <div class="column-box">
+    <div class="column-title">法人登記の住所にはルールがある</div>
+    <p>
+      会社を設立するとき、法務局に届ける「本店所在地」は、商業登記法上、最低限「丁目・番・号」まで書けばOK。ビル名、階数、テナント名は任意。
+    </p>
+    <p>
+      ただし、コワーキングやバーチャルオフィスで登記する場合、同じフロアに何十社も集まっていることがある。施設名まで含めないと郵便物の仕分けができないので、事業者側が施設名入りのフル住所での登記を指定しているケースが多い。
+    </p>
+    <p style="font-size:13px; color:var(--text-light);">
+      出典：<a href="https://shiodome.co.jp/spj/" rel="nofollow" target="_blank">RSM汐留パートナーズ司法書士法人</a>、<a href="https://karigo.net/blog/touki/" rel="nofollow" target="_blank">Karigo公式サイト</a>
+    </p>
+  </div>
+
+  <p>
+    ここまでは「なるほど」くらいだった。面白かったのは次の話。
+  </p>
+
+
+  <div class="investigation">
+    <span class="inv-label">寄り道調査</span>
+    <h3>法人番号公表サイトで遊んでいたら気づいたこと</h3>
+
+    <p>
+      法人登記の仕組みを調べている流れで、国税庁の法人番号公表サイト（houjin-bangou.nta.go.jp）を知った。法人名や住所を入れると、登記上の正式な所在地が出てくる。誰でも無料で使える。
+    </p>
+
+    <p>
+      面白くなって、上で紹介したfabbitの銀座拠点の住所で検索してみた。7階のfabbitで登記している会社がいくつもヒットする。で、そのうち何社かのウェブサイトを覗いてみたら、ちょっと引っかかるものがあった。
+    </p>
+
+    <p>
+      ある会社のサイトには、所在地が「東京都中央区銀座 1-15-4 銀座1丁目ビル 7F」と書いてあった。一方、法人番号公表サイトに記録されている同じ会社の登記住所はこう。
+    </p>
+
+    <div class="addr-compare">
+      <div class="addr-item official">
+        <div class="addr-label">法定の登記住所（国税庁法人番号公表サイト）</div>
+        <div class="addr-text">
+          東京都中央区銀座１丁目１５番４号<br>銀座一丁目ビル７階<span class="hidden-part">ｆａｂｂｉｔ銀座</span>
+        </div>
+      </div>
+      <div class="addr-item web">
+        <div class="addr-label">同じ会社のウェブサイト上の住所</div>
+        <div class="addr-text">
+          〒104-0061 東京都中央区銀座 1-15-4<br>銀座1丁目ビル 7F
+        </div>
+      </div>
+    </div>
+
+    <p>
+      末尾の「ｆａｂｂｉｔ銀座」が、ウェブサイトでは消えている。コワーキングスペースの名前だけが、きれいに省略されていた。
+    </p>
+  </div>
+
+  <h3>同じビルの他の会社と比べてみた</h3>
+
+  <p>
+    「たまたまじゃない？」と思って、同じビルの他の企業も調べてみた。
+  </p>
+
+  <table class="simple-table">
+    <thead>
+      <tr>
+        <th>入居形態</th>
+        <th>登記住所のパターン</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="em">fabbit利用企業（7階）</span></td>
+        <td>〜銀座一丁目ビル７階<span class="em">ｆａｂｂｉｔ銀座</span></td>
+      </tr>
+      <tr>
+        <td>フロア専有テナント<br><span style="font-size:12px;color:var(--text-light)">（別フロアで一般企業が入居）</span></td>
+        <td>東京都中央区銀座１丁目１５番４号<br><span style="font-size:12px">（番地のみ。ビル名も階数も書いていない）</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    fabbit利用企業は施設名まで登記に入っていて、他のフロアの一般テナントは番地だけ。ビルのテナント一覧を確認すると、fabbitが入っているのは7階のみ。他のフロアにはフロアをまるごと借りている一般企業が入居していて、そちらは自社宛の郵便物が直接届くから、番地だけでいい。
+  </p>
+
+  <p>
+    つまり、<strong>登記住所にコワーキングの施設名が入っているかどうかで、その会社のオフィスの実態がある程度わかる</strong>。そして、ウェブサイト上ではその部分だけを省略している会社が実際に存在する。
+  </p>
+
+  <div class="column-box">
+    <div class="column-title">これは違法なのか？</div>
+    <p>
+      調べた限り、違法ではないらしい。特定商取引法が求めているのは「郵便物が届く住所が正確に書いてあるか」であって、施設名まで書く義務はない。「銀座1丁目ビル 7F」で届くなら法的にはセーフ。
+    </p>
+    <p>
+      ただ、「銀座のオフィスビルの7階にオフィスを構えている会社」と「銀座のコワーキングの一角を借りている会社」では、受ける印象がだいぶ違う。その印象の差を意図的にコントロールしている、ということだと思う。
+    </p>
+    <p style="font-size:13px; color:var(--text-light);">
+      出典：<a href="https://www.houjin-bangou.nta.go.jp/" rel="nofollow" target="_blank">国税庁法人番号公表サイト</a>、<a href="https://info.gbiz.go.jp/" rel="nofollow" target="_blank">gBizINFO</a>、building-tenant.com
+    </p>
+  </div>
+
+
+  <h2>将来の自分用メモ</h2>
+
+  <p>
+    コワーキング探しの延長で、法人登記の仕組みまで調べることになった。ちょっと遠回りしたけど、いつか本当に会社をつくる日が来たとき（来るのか？）のために、覚えておきたいことを3つ。
+  </p>
+
+  <div class="highlight-box">
+    <div class="title">① 登記住所は誰でも無料で検索できる</div>
+    <p style="margin-bottom:0">
+      国税庁の法人番号公表サイトで法人名を入れれば、正式な登記住所がすぐ出てくる。バーチャルオフィス名が入っているかどうかも丸見え。つまり、自分が会社をつくったら、取引先にも同じように見られるということ。
+    </p>
+  </div>
+
+  <div class="highlight-box">
+    <div class="title">② コワーキングで登記すること自体は、まったく普通</div>
+    <p style="margin-bottom:0">
+      資本金10万円の合同会社も、コワーキングの住所で法人登記するのも、今の時代は全然珍しくない。ただ、ウェブサイトで施設名を隠して「銀座のオフィスビル」に見せるのと、正直に書いているのとでは、見た人の印象は変わる。もし自分がやるなら、正直に書きたいと思った。
+    </p>
+  </div>
+
+  <div class="highlight-box">
+    <div class="title">③ 住所の見せ方にも、その会社の姿勢が出る</div>
+    <p style="margin-bottom:0">
+      取引先やサービスの発注先を選ぶとき、ウェブサイトの印象だけじゃなくて法人番号公表サイトで登記住所を確認するクセをつけておく。これは社会人の基本リテラシーかもしれない。覚えておこう。
+    </p>
+  </div>
+
+
+  <h2>おわりに</h2>
+
+  <p>
+    実家の自室、図書館、カフェ。全部試してダメで、コワーキングスペースに行き着くまでに半年かかった。今は週1のリモート日に、スケジュールに合わせてドロップインで使い分けている。電話が入りそうな日はTELブースがあるところ、集中したい日は静かめの拠点。まだ「ここ」というホームは決まっていないけど、選択肢を知ったことでリモート日のストレスは確実に減った。
+  </p>
+
+  <p>
+    副業は全然うまくいってないし、会社設立はまだまだ夢の話。でも、コワーキングを探す過程で法人登記の仕組みや、住所の見せ方に隠された企業の戦略まで知れたのは、妄想にしてはなかなか有意義な寄り道だった。
+  </p>
+
+
+  <div class="article-footer">
+    <div class="author-box">
+      <div class="author-icon">T</div>
+      <div>
+        <div class="author-name">ツバサ</div>
+        <div class="author-desc">
+          都内IT企業勤務の20代。実家暮らし。週1リモート勤務の過ごし方を模索中。副業はぼちぼち。会社設立はいつかの夢。調べたことや考えたことをメモ代わりに書いています。
+        </div>
+      </div>
+    </div>
+
+    <div class="sources">
+      <h4>本記事で参照した情報ソース</h4>
+      <p>
+        <a href="https://www.houjin-bangou.nta.go.jp/" rel="nofollow" target="_blank">国税庁 法人番号公表サイト</a>／<a href="https://info.gbiz.go.jp/" rel="nofollow" target="_blank">gBizINFO（経済産業省）</a>／<a href="https://corp-research.jp/" rel="nofollow" target="_blank">GVA法人検索</a>／<a href="https://alarmbox.co.jp/" rel="nofollow" target="_blank">アラームボックス企業情報データベース</a>／building-tenant.com「銀座一丁目ビルの入居企業一覧」／<a href="https://fabbit.co.jp/" rel="nofollow" target="_blank">fabbit公式サイト</a>／<a href="https://entre-salon.com/" rel="nofollow" target="_blank">アントレサロン公式サイト</a>／<a href="https://karigo.net/blog/touki/" rel="nofollow" target="_blank">Karigo公式サイト</a>／<a href="https://shiodome.co.jp/spj/" rel="nofollow" target="_blank">RSM汐留パートナーズ司法書士法人</a>／<a href="https://biz.moneyforward.com/establish/" rel="nofollow" target="_blank">マネーフォワード クラウド会社設立</a>
+      </p>
+      <p>
+        ※各コワーキングスペースの料金・サービス内容は2026年2月時点の公式サイト情報に基づきます。最新情報は各社公式サイトをご確認ください。
+      </p>
+    </div>
+  </div>
+
+</article>
+
+</body>
+</html>
