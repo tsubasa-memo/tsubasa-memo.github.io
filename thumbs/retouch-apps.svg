@@ -1,12 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d9488"/><stop offset="100%" stop-color="#065f46"/></linearGradient></defs>
-<rect width="320" height="180" fill="url(#g)" rx="4"/>
-<circle cx="160" cy="70" r="36" fill="rgba(255,255,255,.15)"/>
-<rect x="146" y="50" width="28" height="46" rx="4" fill="rgba(255,255,255,.9)"/>
-<circle cx="160" cy="84" r="4" fill="#0d9488"/>
-<circle cx="110" cy="110" r="6" fill="rgba(255,255,255,.25)"/>
-<circle cx="200" cy="50" r="8" fill="rgba(255,255,255,.2)"/>
-<circle cx="230" cy="120" r="5" fill="rgba(255,255,255,.15)"/>
-<path d="M172 58l8-8M176 62l4-4" stroke="rgba(255,255,255,.6)" stroke-width="2" stroke-linecap="round"/>
-<text x="160" y="146" text-anchor="middle" fill="rgba(255,255,255,.9)" font-family="sans-serif" font-size="13" font-weight="600">レタッチアプリ5選</text>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d9488"/><stop offset="100%" stop-color="#134e4a"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,.18)"/><stop offset="100%" stop-color="rgba(255,255,255,.04)"/></linearGradient>
+</defs>
+<rect width="320" height="180" fill="url(#g)" rx="6"/>
+<circle cx="260" cy="20" r="60" fill="rgba(255,255,255,.04)"/>
+<circle cx="40" cy="160" r="40" fill="rgba(255,255,255,.04)"/>
+<!-- phone -->
+<rect x="126" y="24" width="38" height="64" rx="6" fill="url(#s)" stroke="rgba(255,255,255,.5)" stroke-width="1.2"/>
+<circle cx="145" cy="78" r="3" fill="rgba(255,255,255,.3)"/>
+<!-- screen content -->
+<rect x="132" y="32" width="26" height="18" rx="2" fill="rgba(255,255,255,.12)"/>
+<rect x="132" y="54" width="16" height="3" rx="1.5" fill="rgba(255,255,255,.2)"/>
+<rect x="132" y="60" width="22" height="3" rx="1.5" fill="rgba(255,255,255,.15)"/>
+<!-- sparkle -->
+<path d="M176 36l3-8 3 8 8 3-8 3-3 8-3-8-8-3z" fill="rgba(255,255,255,.5)"/>
+<path d="M192 56l2-5 2 5 5 2-5 2-2 5-2-5-5-2z" fill="rgba(255,255,255,.3)"/>
+<!-- app icons -->
+<rect x="80" y="50" width="22" height="22" rx="5" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
+<rect x="84" y="54" width="14" height="14" rx="3" fill="rgba(255,255,255,.1)"/>
+<rect x="218" y="38" width="22" height="22" rx="5" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
+<rect x="222" y="42" width="14" height="14" rx="3" fill="rgba(255,255,255,.1)"/>
+<!-- text -->
+<text x="160" y="122" text-anchor="middle" fill="rgba(255,255,255,.95)" font-family="'Helvetica Neue',sans-serif" font-size="15" font-weight="700" letter-spacing=".5">レタッチアプリ5選</text>
+<text x="160" y="142" text-anchor="middle" fill="rgba(255,255,255,.55)" font-family="sans-serif" font-size="11">無料で使えるおすすめ</text>
+<rect x="120" y="152" width="80" height="1" rx=".5" fill="rgba(255,255,255,.15)"/>
 </svg>

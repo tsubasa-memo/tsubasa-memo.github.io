@@ -1,13 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#dc7a28"/><stop offset="100%" stop-color="#a16207"/></linearGradient></defs>
-<rect width="320" height="180" fill="url(#g)" rx="4"/>
-<rect x="132" y="30" width="56" height="68" rx="3" fill="rgba(255,255,255,.9)"/>
-<rect x="136" y="34" width="48" height="38" rx="2" fill="#e8f0f5"/>
-<circle cx="160" cy="48" r="10" fill="rgba(46,107,138,.3)"/>
-<circle cx="160" cy="43" r="6" fill="rgba(46,107,138,.4)"/>
-<path d="M148 62c0-6 5-10 12-10s12 4 12 10" fill="rgba(46,107,138,.25)"/>
-<rect x="140" y="78" width="28" height="3" rx="1.5" fill="#cbd5e1"/>
-<rect x="144" y="84" width="20" height="3" rx="1.5" fill="#e2e8f0"/>
-<text x="160" y="126" text-anchor="middle" fill="rgba(255,255,255,.95)" font-family="sans-serif" font-size="13" font-weight="600">スマホで証明写真</text>
-<text x="160" y="146" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="sans-serif" font-size="11">30円から印刷</text>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#dc7a28"/><stop offset="100%" stop-color="#92400e"/></linearGradient>
+</defs>
+<rect width="320" height="180" fill="url(#g)" rx="6"/>
+<circle cx="270" cy="25" r="50" fill="rgba(255,255,255,.04)"/>
+<circle cx="40" cy="155" r="35" fill="rgba(255,255,255,.04)"/>
+<!-- ID photo card -->
+<rect x="116" y="16" width="56" height="70" rx="4" fill="rgba(255,255,255,.9)" stroke="rgba(255,255,255,.4)" stroke-width=".8"/>
+<!-- blue background area -->
+<rect x="120" y="20" width="48" height="38" rx="2" fill="#c8dce8"/>
+<!-- person silhouette -->
+<circle cx="144" cy="34" r="8" fill="rgba(46,107,138,.35)"/>
+<path d="M130 52c0-7 6-12 14-12s14 5 14 12" fill="rgba(46,107,138,.25)"/>
+<!-- text lines -->
+<rect x="124" y="64" width="32" height="3" rx="1.5" fill="#d0d5da"/>
+<rect x="124" y="72" width="24" height="3" rx="1.5" fill="#e0e3e6"/>
+<!-- phone to the left -->
+<rect x="60" y="30" width="32" height="54" rx="5" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
+<rect x="64" y="36" width="24" height="30" rx="2" fill="rgba(255,255,255,.08)"/>
+<circle cx="76" cy="76" r="3" fill="rgba(255,255,255,.2)"/>
+<!-- arrow phone -> card -->
+<path d="M98 56l12 0" stroke="rgba(255,255,255,.4)" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M107 52l4 4-4 4" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- price -->
+<rect x="188" y="40" width="52" height="22" rx="4" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width=".8"/>
+<text x="214" y="55" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="sans-serif" font-size="10" font-weight="700">¥30〜</text>
+<!-- text -->
+<text x="160" y="118" text-anchor="middle" fill="rgba(255,255,255,.95)" font-family="'Helvetica Neue',sans-serif" font-size="15" font-weight="700" letter-spacing=".5">スマホで証明写真</text>
+<text x="160" y="138" text-anchor="middle" fill="rgba(255,255,255,.55)" font-family="sans-serif" font-size="11">アプリ＋コンビニで30円から</text>
+<rect x="120" y="148" width="80" height="1" rx=".5" fill="rgba(255,255,255,.15)"/>
 </svg>
