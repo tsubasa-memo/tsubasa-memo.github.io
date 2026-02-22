@@ -1,0 +1,32 @@
+# ツバサのメモ帳
+
+> メーカー勤務のEC担当ツバサが、カメラ・写真撮影・画像編集・ECサイト運用で調べたことをまとめる備忘録ブログ。個人の体験と調査に基づく実用的な情報を、初心者〜中級者向けにわかりやすく発信しています。
+
+## カテゴリ
+
+このブログは以下の5カテゴリで構成されています。
+
+- カメラ：ミラーレスカメラの選び方、カメラスマホ比較、SDカードなど周辺機器
+- レタッチ：写真レタッチの基礎知識、無料アプリ比較、外注サービス比較、背景白抜き
+- 写真・撮影：Exif情報の仕組み、証明写真の撮り方
+- EC・実務：ECサイトの商品画像ルール（Amazon/楽天/メルカリ）
+- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース
+
+## 記事一覧
+
+- [コワーキングスペースおすすめ7選｜都内の料金・設備比較](https://tsubasa-memo.github.io/coworking-spaces-tokyo.html): 週1リモートの作業場所としてコワーキングスペースを比較。都内の料金・設備・法人登記の注意点をまとめた記事
+- [動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？](https://tsubasa-memo.github.io/video-vs-retouch-career.html): スクール費用・求人データ・AIの影響を比較。動画編集とレタッチャーそれぞれの副業としての特徴を調査した記事
+- [スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から](https://tsubasa-memo.github.io/id-photo.html): 証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめた記事
+- [写真のExif情報とは？位置情報のリスクと削除方法まとめ](https://tsubasa-memo.github.io/exif-info.html): Exifに含まれる情報、SNSごとの自動削除状況、iPhone/Android/PC別の削除手順をまとめた記事
+- [ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？](https://tsubasa-memo.github.io/ec-image-rules.html): Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの画像ガイドラインを比較した記事
+- [写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較](https://tsubasa-memo.github.io/background-white.html): Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較した記事
+- [レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社](https://tsubasa-memo.github.io/retouch-services.html): 個人で使える写真レタッチ・修正サービス7社の料金・納期・対応範囲を比較した記事
+- [SDカードの選び方メモ｜カメラ用に必要なスペックと失敗しない買い方](https://tsubasa-memo.github.io/sd-card.html): UHS-I/II、V30/V60/V90の違い、容量の目安、信頼できるメーカーなどSDカード選びの基本をまとめた記事
+- [初めての本格カメラ！予算10万円以下ならどこで何を買う？](https://tsubasa-memo.github.io/first-camera.html): ミラーレス一眼の基礎知識と初心者向け予算別おすすめ機種、マップカメラ・キタムラなど中古専門店の比較を含む記事
+- [写真のレタッチとは？加工との違いと基本の種類まとめ](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチの種類、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
+- [カメラ性能で選ぶスマホ｜写真がきれいに撮れる機種まとめ](https://tsubasa-memo.github.io/camera-smartphones.html): iPhone、Pixel、Galaxy、Xperia、AQUOSのカメラ性能比較と実勢価格をまとめた記事
+- [スマホでできる写真レタッチ｜おすすめ無料アプリ5選と使い分け](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed、Lightroom Mobile、PhotoDirector、SNOW、TouchRetouchなど用途別にレタッチアプリを比較した記事
+
+## 運営者
+
+ツバサ。メーカー勤務のEC担当。商品撮影はスマホで済ませがち。Photoshopは苦手でアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼している。
