@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDカードの選び方メモ｜カメラ用に必要なスペックと失敗しない買い方【2026年版】</title>
+<meta name="description" content="カメラ初心者がSDカードを買うときに最低限知っておきたい規格（UHS-I/II、V30等）の違いと、用途別のおすすめ容量をまとめた備忘録。SDXC・UHS-I・V30以上を選べばまず失敗しません。">
+<meta name="keywords" content="SDカード 選び方,SDカード カメラ,UHS-I UHS-II 違い,V30 SDカード,SDカード おすすめ カメラ初心者,SDXC SDHC 違い,SDカード 容量 おすすめ">
+<meta property="og:title" content="SDカードの選び方メモ｜カメラ用に必要なスペックと失敗しない買い方【2026年版】">
+<meta property="og:description" content="カメラ初心者がSDカードを選ぶときに知っておきたい規格の違いと、用途別おすすめ容量をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/sd-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/sd-card.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/sd-card.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "カメラ初心者はどのSDカードを買えばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SDXC規格・UHS-I・V30以上のSDカードを選べばまず失敗しません。容量は写真中心なら64〜128GB、動画も撮るなら128〜256GBが目安です。メーカーはSanDisk、Samsung、Lexarなどの大手が安心です。価格は64GBで1,500〜2,500円程度です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "UHS-IとUHS-IIの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UHS-I（最大104MB/秒）とUHS-II（最大312MB/秒）はSDカードの転送速度の上限を決めるバスインターフェイス規格です。入門機のミラーレスカメラはほとんどがUHS-I対応なので、UHS-Iで十分です。UHS-IIはRAW連写を多用する中上級機向けです。なお、UHS-IIのカードはUHS-I対応カメラでも使えますが、速度はUHS-Iの上限に制限されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SDカードの「V30」「V60」「V90」は何が違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "V30、V60、V90はビデオスピードクラスと呼ばれ、動画撮影時の最低書き込み速度を保証する規格です。V30は最低30MB/秒でフルHD〜4K撮影向け、V60は最低60MB/秒で4K撮影向け、V90は最低90MB/秒で4K60p〜8K撮影向けです。写真中心の初心者ならV30で十分です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SDHCとSDXCの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SDHCは最大32GBまで、SDXCは最大2TBまで対応する容量規格です。現在販売されているカメラはほぼすべてSDXC対応なので、64GB以上のSDXCカードを選べば問題ありません。ただし古い機種はSDHCまでしか対応していない場合があるので、カメラの仕様を確認してください。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.spec-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){
+.hero h1{font-size:20px}
+.author-box{flex-direction:column;align-items:center;text-align:center}
+.spec-table{font-size:13px}
+.spec-table th,.spec-table td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ SDカードの選び方メモ
+</div>
+</nav>
+
+<div class="hero">
+<div class="wrap">
+<h1>SDカードの選び方メモ｜<br>カメラ用に必要なスペックと失敗しない買い方</h1>
+<div class="update">2026年2月 更新</div>
+</div>
+</div>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>カメラを買うとき、本体やレンズのことは調べても、SDカードは後回しになりがちです。僕もそうでした。いざ買おうとしたら「UHS-I」「V30」「SDXC」と謎の英数字だらけで、どれを選べばいいのかまったくわからなかったんですよね。</p>
+
+<p>調べてみたら、カメラ初心者が覚えるべきポイントはそこまで多くなかったので、備忘録としてまとめておきます。</p>
+
+<h2>結論：初心者はこのスペックを選べばOK</h2>
+
+<p>先に結論を書くと、初めてカメラを買う人がSDカードで失敗しないためのスペックはこれです。</p>
+
+<div class="point-box">
+<h4>カメラ初心者向け SDカードの選び方まとめ</h4>
+<p>規格：<strong>SDXC</strong>（64GB以上はすべてSDXC）</p>
+<p>バスインターフェイス：<strong>UHS-I</strong>（入門機ならこれで十分）</p>
+<p>ビデオスピードクラス：<strong>V30以上</strong></p>
+<p>容量：写真中心なら<strong>64〜128GB</strong>、動画も撮るなら<strong>128〜256GB</strong></p>
+<p>メーカー：<strong>SanDisk、Samsung、Lexar、ProGrade Digital</strong>など大手</p>
+<p>価格の目安：64GB UHS-Iで<strong>1,500〜2,500円</strong>程度</p>
+</div>
+
+<p>入門機のミラーレスカメラ（Canon EOS R100、Nikon Z30、SONY ZV-E10など）はほとんどがUHS-I対応のSDXCスロットなので、上の条件を満たすカードを買えば問題なく使えます。</p>
+
+<h2>SDカードに書いてある英数字の意味</h2>
+
+<p>SDカードの表面にはいろいろな記号が印字されていますが、カメラ用途で見るべきポイントは大きく3つです。</p>
+
+<h3>1. 容量規格（SDHC / SDXC）</h3>
+
+<p>SDカードは容量によって規格名が変わります。SDHCは最大32GBまで、SDXCは最大2TBまで対応しています。現在の主流はSDXCで、64GB以上のカードはすべてSDXCです。今売られているミラーレスカメラはほぼSDXC対応なので、64GB以上を買えばまず大丈夫です。</p>
+
+<p>ただし、かなり古いカメラだとSDHCまでしか対応していない場合もあるので、中古カメラを買うときはカメラ側の仕様を確認してください。</p>
+
+<h3>2. バスインターフェイス（UHS-I / UHS-II）</h3>
+
+<p>バスインターフェイスは、データの転送速度の「上限」を決める規格です。</p>
+
+<table class="spec-table">
+<tr><th>規格</th><th>最大転送速度</th><th>主な対応カメラ</th></tr>
+<tr><td>UHS-I</td><td>最大104MB/秒</td><td>入門〜中級ミラーレス全般</td></tr>
+<tr><td>UHS-II</td><td>最大312MB/秒</td><td>中上級ミラーレス（連写重視モデル）</td></tr>
+</table>
+
+<p>入門機はほぼUHS-Iスロットなので、UHS-Iのカードで十分です。UHS-IIのカードをUHS-I対応カメラに入れても使えますが、速度はUHS-Iの上限（104MB/秒）に制限されるので、値段の分だけもったいないことになります。</p>
+
+<p>逆に、将来UHS-II対応のカメラに買い替える予定がある人は、最初からUHS-IIカードを買っておくのもアリです。ただし価格はUHS-Iの2〜3倍になります。</p>
+
+<h3>3. ビデオスピードクラス（V30 / V60 / V90）</h3>
+
+<p>ビデオスピードクラスは、動画撮影時に「最低限これだけの速度は出ます」と保証する規格です。数字が大きいほど高速です。</p>
+
+<table class="spec-table">
+<tr><th>クラス</th><th>最低書き込み速度</th><th>用途の目安</th></tr>
+<tr><td>V30</td><td>30MB/秒</td><td>フルHD動画、4K動画（30fps）</td></tr>
+<tr><td>V60</td><td>60MB/秒</td><td>4K動画全般</td></tr>
+<tr><td>V90</td><td>90MB/秒</td><td>4K 60fps、8K動画</td></tr>
+</table>
+
+<p>写真中心の初心者ならV30で十分です。4K動画もV30で基本的に撮影できます。V60やV90はプロや動画を本格的に撮る人向けです。</p>
+
+<p>ちなみに「U1」「U3」という表記もあります。これはUHSスピードクラスという別の規格で、U1が最低10MB/秒、U3が最低30MB/秒です。V30とU3は同じ速度なので、「U3」か「V30」のどちらかが書いてあれば問題ありません。</p>
+
+<h2>容量の選び方</h2>
+
+<p>SDカードの容量を選ぶときの目安をまとめました。撮影枚数はカメラの画素数やファイル形式（JPEG/RAW）で変わりますが、2,400万画素のミラーレスカメラでJPEG撮影した場合のざっくりした目安です。</p>
+
+<table class="spec-table">
+<tr><th>容量</th><th>JPEG写真の目安</th><th>4K動画の目安</th><th>向いている人</th></tr>
+<tr><td>64GB</td><td>約5,000〜7,000枚</td><td>約1〜1.5時間</td><td>写真中心で日帰り撮影が多い</td></tr>
+<tr><td>128GB</td><td>約10,000〜14,000枚</td><td>約2〜3時間</td><td>旅行や週末撮影に安心の容量</td></tr>
+<tr><td>256GB</td><td>約20,000枚以上</td><td>約5時間前後</td><td>動画も撮る人、長期旅行用</td></tr>
+</table>
+
+<p>個人的には、最初の1枚は128GBがコスパと安心感のバランスがいいと思います。64GBでも写真だけなら足りますが、128GBでも価格差は数百円〜千円程度なので、少し余裕を持たせておくと安心です。</p>
+
+<h2>信頼できるメーカーの話</h2>
+
+<p>SDカードは安すぎるノーブランド品を買うとデータが消える・書き込みが止まるなどのトラブルが起きることがあります。カメラ用途では信頼できるメーカーのものを選ぶのが無難です。</p>
+
+<p>よく名前が挙がるのはSanDisk（サンディスク）、Samsung（サムスン）、Lexar（レキサー）、Transcend（トランセンド）、ProGrade Digital（プログレードデジタル）あたり。特にSanDiskはプロカメラマンにも使用者が多く、定番中の定番です。</p>
+
+<p>Amazonで買う場合は、メーカー公式ストアや正規代理店の出品かどうかを確認してください。SDカードは偽造品が多いジャンルとして知られていて、極端に安い並行輸入品は注意が必要です。</p>
+
+<h2>カメラと一緒に買うと便利なもの</h2>
+
+<p>SDカード以外にもあると便利なものを簡単にメモしておきます。</p>
+
+<p><strong>カードリーダー</strong>：SDカードのデータをパソコンに取り込むためのもの。USB 3.0以上対応のものを選ぶと転送が速くて快適です。カメラとパソコンをUSBケーブルで直接つないでも取り込めますが、カードリーダーのほうが速いことが多いです。1,000〜2,000円程度。</p>
+
+<p><strong>SDカードケース</strong>：予備のカードを持ち歩くなら、裸でポケットに入れるよりケースに入れたほうが安全です。100均でも売っています。</p>
+
+<div class="point-box">
+<h4>SDカードの取り扱いメモ</h4>
+<p>撮影前にはカメラ本体でSDカードを初期化（フォーマット）してから使うのが基本です。パソコンでフォーマットするのではなく、カメラのメニューから行うのがポイント。カメラに最適化されたフォーマットがかかるので、書き込みエラーを防ぎやすくなります。</p>
+</div>
+
+<div class="faq-section">
+<h2>よくある疑問メモ</h2>
+
+<div class="faq-item">
+<div class="fq">Q. カメラ初心者はどのSDカードを買えばいいですか？</div>
+<div class="fa">
+
+A. SDXC規格・UHS-I・V30以上のSDカードを選べばまず失敗しません。容量は写真中心なら64〜128GB、動画も撮るなら128〜256GBが目安です。メーカーはSanDisk、Samsung、Lexarなどの大手が安心です。価格は64GBで1,500〜2,500円程度です。</div>
+</div>
+
+<div class="faq-item">
+<div class="fq">Q. UHS-IとUHS-IIの違いは何ですか？</div>
+<div class="fa">
+
+A. UHS-I（最大104MB/秒）とUHS-II（最大312MB/秒）はSDカードの転送速度の上限を決めるバスインターフェイス規格です。入門機のミラーレスカメラはほとんどがUHS-I対応なので、UHS-Iで十分です。UHS-IIはRAW連写を多用する中上級機向けです。なお、UHS-IIのカードはUHS-I対応カメラでも使えますが、速度はUHS-Iの上限に制限されます。</div>
+</div>
+
+<div class="faq-item">
+<div class="fq">Q. SDカードの「V30」「V60」「V90」は何が違いますか？</div>
+<div class="fa">
+
+A. V30、V60、V90はビデオスピードクラスと呼ばれ、動画撮影時の最低書き込み速度を保証する規格です。V30は最低30MB/秒でフルHD〜4K撮影向け、V60は最低60MB/秒で4K撮影向け、V90は最低90MB/秒で4K60p〜8K撮影向けです。写真中心の初心者ならV30で十分です。</div>
+</div>
+
+<div class="faq-item">
+<div class="fq">Q. SDHCとSDXCの違いは何ですか？</div>
+<div class="fa">
+
+A. SDHCは最大32GBまで、SDXCは最大2TBまで対応する容量規格です。現在販売されているカメラはほぼすべてSDXC対応なので、64GB以上のSDXCカードを選べば問題ありません。ただし古い機種はSDHCまでしか対応していない場合があるので、カメラの仕様を確認してください。</div>
+</div>
+</div>
+
+<div class="related">
+<h3>このサイトの関連記事</h3>
+<p><a href="first-camera.html">初めての本格カメラ！予算10万円以下ならどこで何を買う？【2026年版】</a></p>
+<p><a href="camera-smartphones.html">副業で稼げたら買いたい！カメラ機能充実スマホ5選【2026年版】</a></p>
+<p><a href="retouch-apps.html">スマホで写真レタッチ！初心者向け無料アプリおすすめ10選【2026年版】</a></p>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<div class="author-name">ツバサ</div>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">
+<p>&copy; 2026 ツバサのメモ帳</p>
+</div>
+</footer>
+
+</body>
+</html>

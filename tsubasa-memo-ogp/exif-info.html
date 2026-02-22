@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>写真のExif情報とは？位置情報のリスクと削除方法まとめ【2026年版】</title>
+<meta name="description" content="スマホやカメラで撮った写真に記録されるExif情報（位置情報・撮影日時・機種名など）の仕組みと、SNS投稿前に知っておきたい削除方法をiPhone・Android・PC別にまとめました。">
+<meta name="keywords" content="Exif情報 とは,写真 位置情報 削除,Exif 削除 iPhone,Exif 削除 Android,SNS 写真 位置情報,Exif 確認方法,写真 GPS 消す,EXIF 個人情報">
+<meta property="og:title" content="写真のExif情報とは？位置情報のリスクと削除方法まとめ【2026年版】">
+<meta property="og:description" content="スマホで撮った写真には位置情報や機種名が記録されています。SNSに投稿する前に知っておきたいExif情報の仕組みと削除方法をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/exif-info.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/exif-info.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/exif-info.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Exif情報とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Exif（Exchangeable Image File Format）は、デジタルカメラやスマホで撮影した写真に自動で記録されるメタデータです。撮影日時、カメラの機種名、絞り値やシャッタースピードなどの撮影設定のほか、GPS位置情報が含まれる場合があります。写真ファイル自体に埋め込まれており、特別なソフトなしでも確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SNSに写真を投稿するとExif情報はどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主要なSNS（X（旧Twitter）、Instagram、Facebook、LINE）は投稿時にExif情報を自動で削除します。そのため、これらのSNSに投稿した写真からExif情報が漏れることは基本的にありません。ただし、WordPressで作ったブログや個人サイトなどExifを自動削除しないサービスもあるため、アップロード先の仕様を事前に確認しておくのが安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhoneでExif情報（位置情報）を削除するにはどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iPhoneでは、写真アプリで画像を開き、上にスワイプして情報パネルを表示し「調整」から位置情報を削除できます（iOS 15以降）。また、写真を共有する際に共有シートの「オプション」で「位置情報」をオフにする方法もあります。さらに、カメラの位置情報記録自体をオフにするには、設定 → プライバシーとセキュリティ → 位置情報サービス → カメラ → 「なし」を選択します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AndroidでExif情報（位置情報）を削除するにはどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Android（Googleフォト）では、写真を開いて右上の三点メニューから「位置情報を調整」→「位置情報なし」を選択すると削除できます。カメラの位置情報記録をオフにするには、カメラアプリの設定から「位置情報タグ」や「GPSタグ」をオフにします。機種によって名称が異なるため、設定内を確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WindowsやMacでExif情報を削除する方法はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Windowsでは、画像ファイルを右クリック →「プロパティ」→「詳細」タブ →「プロパティや個人情報を削除」から一括削除できます。Macでは、プレビューアプリで画像を開き「ツール」→「インスペクターを表示」→「GPS」タブから「位置情報を削除」をクリックします。ただし、Macのプレビューでは位置情報のみが削除対象で、他のExif項目は残ります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.spec-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.warn-box{background:#fef3e7;border-left:4px solid #e8a735;border-radius:0 10px 10px 0;padding:20px 24px;margin:24px 0}
+.warn-box h4{font-size:15px;font-weight:700;color:#b07718;margin-bottom:10px}
+.warn-box p{font-size:14px;margin-bottom:8px}
+.warn-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){
+.hero h1{font-size:20px}
+.author-box{flex-direction:column;align-items:center;text-align:center}
+.spec-table{font-size:13px}
+.spec-table th,.spec-table td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ 写真のExif情報と削除方法
+</div>
+</nav>
+
+<div class="hero">
+<div class="wrap">
+<h1>写真のExif情報とは？<br>位置情報のリスクと削除方法まとめ</h1>
+<div class="update">2026年2月 更新</div>
+</div>
+</div>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>スマホで撮った写真をSNSにアップするとき、「位置情報がバレるから危険」って聞いたことありませんか？ 僕も最初はよく意味がわかっていなかったんですが、調べてみると写真にはExif（イグジフ）情報という見えないデータが埋め込まれていて、そこに撮影場所のGPS座標が入っていることがあるんです。</p>
+
+<p>ただ、結論から言うと、X（旧Twitter）やInstagramなどの主要SNSは投稿時にExif情報を自動で削除してくれるので、ふだんのSNS利用ではそこまで心配する必要はありません。一方で、個人ブログやクラウドストレージ経由の共有など、Exifが残るケースもあるので、仕組みだけは知っておいたほうがいいです。</p>
+
+<p>というわけで、Exif情報の基礎知識と削除方法を備忘録としてまとめておきます。</p>
+
+<h2>Exif情報とは何か</h2>
+
+<p>Exif（Exchangeable Image File Format）は、デジタルカメラやスマホで写真を撮ったときに自動で記録されるメタデータのことです。写真の「見た目」ではなく、写真の「裏側」に書き込まれる情報だと思ってください。</p>
+
+<p>具体的には以下のような情報が記録されています。</p>
+
+<table class="spec-table">
+<tr><th>項目</th><th>記録される内容の例</th></tr>
+<tr><td>撮影日時</td><td>2026年2月15日 14:30:22</td></tr>
+<tr><td>カメラ機種名</td><td>iPhone 16、Canon EOS R100 など</td></tr>
+<tr><td>撮影設定</td><td>絞り値（F2.8）、シャッタースピード（1/250秒）、ISO感度（400）</td></tr>
+<tr><td>画像サイズ</td><td>4032×3024 ピクセル</td></tr>
+<tr><td>GPS位置情報</td><td>緯度・経度（北緯35.6812°、東経139.7671° など）</td></tr>
+<tr><td>レンズ情報</td><td>焦点距離（26mm）、レンズ名称</td></tr>
+<tr><td>ソフトウェア</td><td>画像を編集したアプリ名</td></tr>
+</table>
+
+<p>Exifは富士フイルムが開発した規格で、1995年に日本電子工業振興協会（JEIDA）で規格化されました。カメラの撮影設定が自動で記録されるので、「あの写真どんな設定で撮ったっけ？」と振り返るときにはとても便利な仕組みです。</p>
+
+<p>問題になるのはGPS位置情報で、スマホのGPS機能がオンの状態で撮影すると、写真に緯度・経度がそのまま記録されます。自宅で撮った写真であれば、自宅の住所が特定できてしまう可能性があるということです。</p>
+
+<h2>Exif情報が残っていると何が危ないのか</h2>
+
+<p>Exif情報のうちカメラの機種名や撮影設定は、知られたところで直接的な被害にはつながりにくいです。注意すべきは主にGPS位置情報で、以下のようなリスクがあります。</p>
+
+<div class="warn-box">
+<h4>Exifの位置情報で起こりうるリスク</h4>
+<p><strong>自宅の住所が特定される</strong>：自宅で撮った写真をExif付きで公開すると、GPS座標から住所が割り出される可能性があります。</p>
+<p><strong>行動パターンがわかる</strong>：複数の写真の位置情報を組み合わせると、通勤経路や生活圏が推測できてしまいます。</p>
+<p><strong>子どもの安全への影響</strong>：子どもの写真に自宅や学校の位置情報が残っていると、生活範囲が第三者に知られるリスクがあります。</p>
+<p><strong>不在を推測される</strong>：旅行先の写真をリアルタイムで投稿すると「今、自宅にいない」ことがわかります。</p>
+</div>
+
+<p>ただし、繰り返しになりますが、主要SNSではExif情報が自動で削除されるため、普段のSNS利用でこれらのリスクが現実化するケースはかなり限定的です。気をつけるべきは「Exifが残る場所に写真をアップする場合」です。</p>
+
+<h2>主要SNS・サービスのExif削除対応状況</h2>
+
+<p>主要なSNSやブログサービスが、写真のアップロード時にExifを削除してくれるかどうかをまとめました。</p>
+
+<table class="spec-table">
+<tr><th>サービス</th><th>Exif自動削除</th><th>備考</th></tr>
+<tr><td>X（旧Twitter）</td><td>削除される</td><td>投稿時にすべてのExifが自動削除される</td></tr>
+<tr><td>Instagram</td><td>削除される</td><td>投稿時にすべてのExifが自動削除される</td></tr>
+<tr><td>Facebook</td><td>削除される</td><td>ダウンロードされた写真にはExifが残らない</td></tr>
+<tr><td>LINE</td><td>削除される</td><td>トークで送信した写真のExifは自動削除される</td></tr>
+<tr><td>WordPress</td><td>残る</td><td>標準ではExifが残る。プラグインで削除可能</td></tr>
+<tr><td>はてなブログ</td><td>一部削除</td><td>GPS情報は削除されるが他のExifは残る</td></tr>
+<tr><td>Googleフォト</td><td>残る（共有時注意）</td><td>リンク共有時にExifが残る場合がある</td></tr>
+</table>
+
+<div class="point-box">
+<h4>ポイント</h4>
+<p>X、Instagram、Facebook、LINEのいわゆる「4大SNS」はすべてExif自動削除に対応しています。個人ブログ（WordPress等）やクラウドストレージ経由での写真共有が要注意です。</p>
+</div>
+
+<h2>Exif情報の確認方法</h2>
+
+<p>まず、自分の写真にどんなExif情報が入っているかを確認する方法です。</p>
+
+<h3>iPhoneの場合</h3>
+
+<p>iOS 15以降のiPhoneでは、写真アプリで画像を開いて上にスワイプすると、撮影情報が表示されます。カメラの機種名、撮影設定、撮影場所の地図が表示されていれば、Exif情報（位置情報含む）が記録されているということです。</p>
+
+<h3>Androidの場合</h3>
+
+<p>Googleフォトで写真を開き、上にスワイプするか、右上の三点メニューから「詳細」を選ぶとExif情報が確認できます。位置情報が記録されていれば地図上にピンが表示されます。</p>
+
+<h3>Windows PCの場合</h3>
+
+<p>画像ファイルを右クリック →「プロパティ」→「詳細」タブを開くと、撮影日時やカメラ情報、GPS情報などが一覧で確認できます。</p>
+
+<h3>Macの場合</h3>
+
+<p>プレビューアプリで画像を開き、「ツール」→「インスペクターを表示」を選ぶとExifが確認できます。GPS情報がある場合は地図表示されます。</p>
+
+<h2>Exif情報の削除方法</h2>
+
+<p>写真をブログや個人サイトにアップする前にExif情報を削除しておきたい場合の方法です。デバイスごとにまとめました。</p>
+
+<h3>iPhoneでの削除方法</h3>
+
+<p>方法は2つあります。</p>
+
+<p><strong>方法1：写真アプリから位置情報を削除する（iOS 15以降）</strong></p>
+
+<p>写真アプリで画像を開いて上にスワイプし、情報パネルの地図の下にある「調整」をタップ。位置情報を「位置情報なし」に変更すれば削除できます。</p>
+
+<p><strong>方法2：共有時にExifを除外する</strong></p>
+
+<p>写真を共有（シェア）するとき、共有シートの上部にある「オプション」をタップすると、「位置情報」のオン・オフを切り替えられます。オフにして共有すれば、位置情報なしの画像が送られます。</p>
+
+<h3>Androidでの削除方法</h3>
+
+<p>Googleフォトで写真を開き、右上の三点メニュー →「位置情報を調整」→「位置情報なし」を選択すると位置情報が削除されます。</p>
+
+<p>Exif全体を削除したい場合は、「Exif消しゴム」や「Photo Exif Editor」などの無料アプリを使うと簡単です。</p>
+
+<h3>Windows PCでの削除方法</h3>
+
+<p>画像ファイルを右クリック →「プロパティ」→「詳細」タブ →画面下部の「プロパティや個人情報を削除」をクリック。「可能なすべてのプロパティを削除してコピーを作成」を選ぶと、Exifを削除したコピーが生成されます。複数ファイルをまとめて選択して一括削除もできます。</p>
+
+<h3>Macでの削除方法</h3>
+
+<p>プレビューアプリで画像を開き、「ツール」→「インスペクターを表示」→「GPS」タブから「位置情報を削除」をクリックします。ただし、Macのプレビューで削除できるのは位置情報のみで、カメラ機種名や撮影設定などの他のExif項目は残ります。すべてのExifを削除したい場合は、ImageOptimやExifToolなどの無料アプリが必要です。</p>
+
+<h3>オンラインツールで削除する</h3>
+
+<p>SYNCERのExif削除ツールなど、ブラウザ上でExifを削除できるオンラインツールもあります。画像をアップロードせずブラウザ内で処理するタイプのツールなら、プライバシーの面でも比較的安心です。ただし、処理方法はツールによって異なるので、利用前にプライバシーポリシーを確認しておくのが無難です。</p>
+
+<h2>そもそも位置情報を記録しない設定にする</h2>
+
+<p>削除の手間を省きたいなら、そもそもカメラで位置情報を記録しない設定にしておくのが一番確実です。</p>
+
+<h3>iPhoneの場合</h3>
+
+<p>「設定」→「プライバシーとセキュリティ」→「位置情報サービス」→「カメラ」→「なし」を選択します。これでカメラアプリが位置情報を取得しなくなり、写真にGPS座標が記録されなくなります。</p>
+
+<p>なお、位置情報をオフにしても撮影日時やカメラ設定など他のExif項目は引き続き記録されます。</p>
+
+<h3>Androidの場合</h3>
+
+<p>カメラアプリを開き、設定メニューから「位置情報タグ」（機種によっては「GPSタグ」「場所を記録」などの表記）をオフにします。Androidは機種やメーカーによってメニューの構成が異なるため、「カメラ設定 → GPS」あたりで探してみてください。</p>
+
+<div class="point-box">
+<h4>オフにするデメリットも知っておく</h4>
+<p>位置情報をオフにすると、写真アプリでの「地図から写真を探す」機能が使えなくなります。旅行の記録を残したい場合などは、撮影時はオンにしておいて、公開前に位置情報を削除するという使い分けもアリです。</p>
+</div>
+
+<h2>LINEのKeepメモで位置情報を手軽に消す裏技</h2>
+
+<p>ちなみに、iPhoneでもAndroidでも使える簡単な方法として、LINEのKeepメモを経由する方法があります。</p>
+
+<p>LINEのKeepメモに写真を送信すると、LINEが自動でExif情報を削除してくれます。その写真をKeepメモからダウンロードし直せば、Exifなしの画像が手に入ります。アプリのインストールも不要で手軽ですが、LINEを経由するため画像が圧縮されて画質が下がる点には注意してください。</p>
+
+<h2>EC業務でExifを意識すべきケース</h2>
+
+<p>僕はEC関連の仕事をしているので、業務目線でもExifについて少しメモしておきます。</p>
+
+<p>ECサイトに商品画像をアップする場合、Exif情報がそのまま残っていると、使用しているカメラ機種や撮影場所（オフィスや倉庫の住所）が第三者に見えてしまう可能性があります。会社のセキュリティポリシーによっては、商品画像のExif削除が求められるケースもあります。</p>
+
+<p>WordPressで自社ECやブログを運営している場合は、「EWWW Image Optimizer」などのプラグインを入れておくと、画像アップロード時にExifを自動で削除してくれるので便利です。</p>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Exif情報を削除すると画質は落ちますか？</strong></p>
+<p class="fa">
+A.<br>いいえ、Exif情報を削除しても写真の画質や解像度には影響しません。Exifは写真データ本体とは別の「付加情報」なので、削除しても画像そのものは変わりません。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. スクリーンショットにもExif情報は入っていますか？</strong></p>
+<p class="fa">
+A.<br>スクリーンショットにもExif情報は記録されますが、カメラで撮影した写真とは内容が異なります。GPS位置情報は通常記録されず、端末の機種名や画面解像度、撮影日時などが記録されます。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 一度削除したExif情報を復元することはできますか？</strong></p>
+<p class="fa">
+A.<br>削除したExif情報は基本的に復元できません。大切な撮影情報（撮影日や場所の記録など）を残しておきたい場合は、元ファイルのバックアップを取ってからExif削除するのがおすすめです。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. RAWファイルにもExif情報はありますか？</strong></p>
+<p class="fa">
+A.<br>はい、RAWファイルにもExif情報は記録されています。ただし、RAWファイルのExif情報は専用のソフト（Lightroom、Capture Oneなど）で確認・編集する必要があります。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. メールで写真を送るとExif情報はどうなりますか？</strong></p>
+<p class="fa">
+A.<br>メールで写真を添付して送信した場合、基本的にExif情報はそのまま残ります。メールの相手が写真のプロパティを確認すれば、位置情報を含むExif情報が閲覧できる状態です。気になる場合は送信前にExifを削除してから添付してください。
+</p>
+</div>
+</div>
+
+<h2>まとめ</h2>
+
+<p>Exif情報は写真の撮影データを自動で記録してくれる便利な仕組みですが、GPS位置情報が含まれる場合はプライバシーリスクになり得ます。</p>
+
+<p>とはいえ、X・Instagram・Facebook・LINEなどの主要SNSは投稿時にExifを自動削除してくれるので、日常のSNS利用ではそこまで神経質になる必要はありません。</p>
+
+<p>注意が必要なのは、個人ブログ（WordPress等）やメール添付、クラウドストレージでの共有など、Exifが削除されずに残るケースです。こうした場面では、デバイスの標準機能やアプリを使って事前にExifを削除しておくか、そもそもカメラの位置情報記録をオフにしておくと安心です。</p>
+
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>メーカー勤務のEC担当。商品撮影はスマホで済ませがち。Photoshopは苦手でアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。このブログはカメラ・写真・EC周りで調べたことの備忘録です。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>あわせて読みたい</h3>
+<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
+<p><a href="ec-image-rules.html">ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？</a></p>
+<p><a href="retouch-apps.html">スマホでできる写真レタッチ｜おすすめ無料アプリ5選と使い分け</a></p>
+<p><a href="sd-card.html">SDカードの選び方メモ｜カメラ用に必要なスペックと失敗しない買い方</a></p>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

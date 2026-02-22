@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4c1d95"/></linearGradient></defs>
+<rect width="320" height="180" fill="url(#g)" rx="4"/>
+<rect x="90" y="40" width="56" height="40" rx="4" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+<path d="M112 52v16l12-8z" fill="rgba(255,255,255,.6)"/>
+<text x="118" y="98" text-anchor="middle" fill="rgba(255,255,255,.5)" font-family="sans-serif" font-size="10" font-weight="600">動画編集</text>
+<text x="160" y="62" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="sans-serif" font-size="16" font-weight="700">VS</text>
+<rect x="174" y="40" width="56" height="40" rx="4" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+<circle cx="202" cy="55" r="8" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
+<path d="M198 55l8 0M202 51v8" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/>
+<text x="202" y="98" text-anchor="middle" fill="rgba(255,255,255,.5)" font-family="sans-serif" font-size="10" font-weight="600">レタッチ</text>
+<text x="160" y="130" text-anchor="middle" fill="rgba(255,255,255,.95)" font-family="sans-serif" font-size="13" font-weight="600">副業で稼ぐなら？</text>
+</svg>
