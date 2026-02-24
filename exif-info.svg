@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <defs><linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#8a5b3a"/><stop offset="100%" style="stop-color:#6b3a2a"/></linearGradient></defs>
+  <rect width="320" height="180" fill="url(#bg6)"/>
+  <rect x="80" y="25" width="160" height="130" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <rect x="120" y="38" width="80" height="50" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <text x="160" y="55" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="8">GPS  ISO</text>
+  <text x="160" y="68" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="8">f/2.8  1/60s</text>
+  <text x="160" y="108" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="15" font-weight="bold">Exif情報とは？</text>
+  <text x="160" y="130" text-anchor="middle" fill="#e0c0a0" font-family="sans-serif" font-size="10">位置情報のリスク</text>
+  <text x="160" y="148" text-anchor="middle" fill="#c0a080" font-family="sans-serif" font-size="10">と削除方法</text>
+</svg>
