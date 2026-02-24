@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>SVG Thumbnail Preview</title>
+<style>
+body { background: #f8f7f4; font-family: sans-serif; padding: 20px; }
+h2 { font-size: 14px; color: #666; margin: 20px 0 10px; }
+.grid { display: flex; flex-wrap: wrap; gap: 20px; }
+.card { background: #fff; border: 1px solid #e0ddd8; border-radius: 10px; overflow: hidden; width: 500px; display: flex; }
+.card-thumb { width: 180px; min-height: 120px; flex-shrink: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.card-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.card-body { padding: 16px; flex: 1; }
+.card-body h3 { font-size: 14px; margin: 0 0 8px; }
+.label { font-size: 11px; color: #999; }
+
+/* Mobile preview */
+.mobile-card { background: #fff; border: 1px solid #e0ddd8; border-radius: 10px; overflow: hidden; width: 320px; }
+.mobile-card .card-thumb { width: 100%; min-height: 140px; }
+.mobile-card .card-body { padding: 12px; }
+</style>
+</head>
+<body>
+<h2>Desktop Preview (180px thumb)</h2>
+<div class="grid">
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/nano-banana-acne.svg" alt=""></div>
+    <div class="card-body"><h3>Nano Banana ニキビ消し</h3><span class="label">nano-banana-acne.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/coworking-spaces-tokyo.svg" alt=""></div>
+    <div class="card-body"><h3>コワーキング7選</h3><span class="label">coworking-spaces-tokyo.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/retouch-services.svg" alt=""></div>
+    <div class="card-body"><h3>レタッチ外注7社</h3><span class="label">retouch-services.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/video-vs-retouch-career.svg" alt=""></div>
+    <div class="card-body"><h3>動画編集 vs レタッチ</h3><span class="label">video-vs-retouch-career.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/id-photo.svg" alt=""></div>
+    <div class="card-body"><h3>スマホで証明写真</h3><span class="label">id-photo.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/exif-info.svg" alt=""></div>
+    <div class="card-body"><h3>Exif情報とは</h3><span class="label">exif-info.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/ec-image-rules.svg" alt=""></div>
+    <div class="card-body"><h3>EC商品画像ルール</h3><span class="label">ec-image-rules.svg</span></div>
+  </div>
+  <div class="card">
+    <div class="card-thumb"><img src="thumbs/background-white.svg" alt=""></div>
+    <div class="card-body"><h3>背景白抜き</h3><span class="label">background-white.svg</span></div>
+  </div>
+</div>
+
+<h2>Mobile Preview (full width thumb)</h2>
+<div class="grid">
+  <div class="mobile-card">
+    <div class="card-thumb"><img src="thumbs/nano-banana-acne.svg" alt=""></div>
+    <div class="card-body"><h3>Nano Banana ニキビ消し</h3></div>
+  </div>
+  <div class="mobile-card">
+    <div class="card-thumb"><img src="thumbs/coworking-spaces-tokyo.svg" alt=""></div>
+    <div class="card-body"><h3>コワーキング7選</h3></div>
+  </div>
+  <div class="mobile-card">
+    <div class="card-thumb"><img src="thumbs/video-vs-retouch-career.svg" alt=""></div>
+    <div class="card-body"><h3>動画編集 vs レタッチ</h3></div>
+  </div>
+</div>
+</body>
+</html>
