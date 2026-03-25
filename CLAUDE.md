@@ -526,3 +526,61 @@ git add .
 git commit -m "add: [記事タイトル短縮版]"
 git push origin main
 ```
+
+---
+
+## 予約投稿（下書きストック運用）
+
+記事を書き溜めておいて、指定した日付に自動で公開する仕組み。GitHub Actionsで毎日自動実行される。
+
+### 仕組み
+
+- `drafts/` フォルダに記事一式を日付付きで保存しておく
+- GitHub Actionsが毎日午前9時（日本時間）に自動チェック
+- 当日の日付と一致する記事があれば、公開処理（ルートに移動＋index.html等を更新）を実行
+
+### 下書きフォルダの構成
+
+```
+drafts/
+├── 2026-04-01_raw-develop/
+│   ├── raw-develop.html         ← 記事本体
+│   ├── thumb.svg                ← サムネイルSVG
+│   ├── og.png                   ← OGP画像
+│   └── meta.json                ← 公開時に必要な情報
+├── 2026-04-03_photo-composition/
+│   ├── photo-composition.html
+│   ├── thumb.svg
+│   ├── og.png
+│   └── meta.json
+└── ...
+```
+
+### meta.json の形式
+
+```json
+{
+  "slug": "raw-develop",
+  "title": "RAW現像って何？JPEGとの違いと初心者向けの現像ソフトまとめ",
+  "description": "記事の概要（card-descに表示される1〜2行）",
+  "category": "camera",
+  "category_label": "カメラ"
+}
+```
+
+### 下書きの作り方（Claude Codeへの指示例）
+
+```
+記事を3本書き溜めて。公開日は4月1日、4月3日、4月5日。pushはしないで。
+
+テーマ1: RAW現像の基礎（カテゴリ: カメラ）
+テーマ2: スマホ写真の構図テクニック（カテゴリ: 写真・撮影）
+テーマ3: Lightroomの無料版でできること（カテゴリ: レタッチ）
+```
+
+Claude Codeはdrafts/フォルダに日付付きで保存し、commitまで行う。pushは最後にまとめて1回だけ行う。
+
+### 即時公開と予約投稿の使い分け
+
+- **即時公開**: 従来通り。記事をルートに直接置いてpush
+- **予約投稿**: drafts/に保存してpush。GitHub Actionsが指定日に自動公開
