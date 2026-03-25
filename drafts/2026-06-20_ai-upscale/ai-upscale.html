@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIで写真の画質を上げる方法｜無料・有料ツール比較</title>
+<meta name="description" content="AI超解像ツールで写真の画質を上げる方法を解説。Topaz Gigapixel・Upscayl・waifu2xなど無料・有料ツールを比較表で整理し、EC商品画像のリサイズにも触れています。">
+<meta property="og:title" content="AIで写真の画質を上げる方法｜無料・有料ツール比較">
+<meta property="og:description" content="AI超解像ツールで写真の画質を上げる方法を解説。Topaz Gigapixel・Upscayl・waifu2xなど無料・有料ツールを比較表で整理し、EC商品画像のリサイズにも触れています。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<link rel="icon" href="/favicon.ico">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--voice-bg:#fff8f0;--voice-border:#f0c880;--answer-bg:#f0f4f7;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{padding:48px 20px;text-align:center;background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff}
+.hero h1{font-size:24px;font-weight:700;line-height:1.5;margin-bottom:8px}
+.hero .hero-sub{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+main ul,main ol{margin:0 0 20px 24px}
+main li{margin-bottom:8px;font-size:15px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.author-box p:last-child{margin-bottom:0}
+.compare-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.compare-table th,.compare-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.compare-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.compare-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.author-box{flex-direction:column;align-items:center;text-align:center}.compare-table{font-size:13px}.compare-table th,.compare-table td{padding:8px 10px}}
+.note{font-size:.85em;color:#888;margin-top:-.5em}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AI超解像（アップスケール）とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI超解像とは、機械学習を使って低解像度の画像から高解像度の画像を生成する技術です。従来の単純な拡大と違い、AIがディテールを推測・補完するため、ぼやけにくくシャープな仕上がりになります。Real-ESRGANやSwinIRといったモデルが代表的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料のAI超解像ツールでおすすめはどれですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料で使えるツールのうち、デスクトップアプリではUpscaylが高品質でおすすめです。Real-ESRGANベースのモデルをローカルで動かせます。ブラウザで手軽に使いたい場合はwaifu2xやkakudaiACが便利ですが、写真よりイラスト向きの傾向があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "EC商品画像の解像度が足りないときはどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まずAI超解像ツールで画像を拡大してみてください。UpscaylやPhotoshopのスーパー解像度で2〜4倍に拡大できます。ただしAI処理で不自然なテクスチャが出る場合や、色味・背景の調整が必要な場合は、レタッチインクのようなプロのレタッチサービスに依頼するのが確実です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Topaz Gigapixelの料金体系はどうなっていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Topaz Gigapixelは2025年9月にサブスクリプション制へ移行しました。単体プランは月額約50ドル、年額約204ドルです。以前は買い切り99.99ドルで購入できましたが、現在はサブスク契約のみとなっています。Photo AIやVideo AIとのセットプランもあります。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="site-name">ツバサのメモ帳</span>
+    <span class="site-tag">AI</span>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <div class="wrap">
+    <a href="/">ホーム</a> &gt; <a href="/category/ai/">AI</a> &gt; AIで写真の画質を上げる方法
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>AIで写真の画質を上げる方法｜無料・有料ツール比較</h1>
+  <div class="hero-sub">更新日: 2026年6月20日</div>
+</div>
+
+<div class="wrap">
+<main>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>スマホで撮った写真を拡大したらぼやけてしまった、昔撮った写真の解像度が足りない――そんな経験はないでしょうか。最近はAIの力で低解像度の画像をきれいに拡大できる「超解像（アップスケール）」ツールが増えてきました。</p>
+
+<p>僕もEC関係の仕事で商品画像を扱うことがあるので、画質が足りないときにAIアップスケールをよく使います。この記事では、実際に試した経験もふまえて、無料・有料のAI超解像ツールを比較していきます。</p>
+
+<h2>AI超解像（アップスケール）の仕組み</h2>
+
+<p>AI超解像は、機械学習モデルが低解像度の画像からディテールを推測・補完して、高解像度の画像を生成する技術です。従来のバイキュービック補間のような単純な拡大では、ピクセルを引き伸ばすだけなのでどうしてもぼやけてしまいます。AIモデルは大量の画像データで学習しているため、輪郭やテクスチャをそれらしく再現してくれます。</p>
+
+<p>代表的なモデルとしてはReal-ESRGAN、SwinIR、SUPIRなどがあります。Real-ESRGANは2021年に登場して以来、多くのツールに組み込まれている定番モデルです。最新のSUPIRは拡散モデルベースで、特に実写画像の復元品質が高いと評価されています。</p>
+
+<div class="point-box">
+  <h4>AI超解像の得意・不得意</h4>
+  <p><strong>得意：</strong>輪郭のシャープ化、ノイズ除去、テクスチャの補完、2〜4倍程度の拡大</p>
+  <p><strong>不得意：</strong>元画像に存在しない情報の完全な復元、文字や細かい模様の正確な再現、8倍以上の極端な拡大</p>
+</div>
+
+<h2>主要ツール6選を比較</h2>
+
+<p>ここからは、僕が実際に使ったり調べたりしたAI超解像ツールを紹介します。無料で使えるものから有料の本格ツールまで幅広く取り上げるので、用途や予算に合わせて選んでみてください。</p>
+
+<h3>比較表</h3>
+
+<table class="compare-table">
+  <tr>
+    <th>ツール名</th>
+    <th>料金</th>
+    <th>最大倍率</th>
+    <th>動作環境</th>
+    <th>特徴</th>
+  </tr>
+  <tr>
+    <td>Topaz Gigapixel</td>
+    <td>年額 約204ドル（月額 約50ドル）</td>
+    <td>6倍</td>
+    <td>Win / Mac</td>
+    <td>画質トップクラス。顔の復元に強い</td>
+  </tr>
+  <tr>
+    <td>Photoshop スーパー解像度</td>
+    <td>月額 2,728円〜（Creative Cloudフォトプラン）</td>
+    <td>4倍（2倍×2回）</td>
+    <td>Win / Mac</td>
+    <td>Camera Raw経由。既存ユーザーなら追加コスト不要</td>
+  </tr>
+  <tr>
+    <td>Upscayl</td>
+    <td>無料（オープンソース）</td>
+    <td>16倍</td>
+    <td>Win / Mac / Linux</td>
+    <td>Real-ESRGANベース。ローカル処理で安心</td>
+  </tr>
+  <tr>
+    <td>waifu2x</td>
+    <td>無料</td>
+    <td>4倍</td>
+    <td>ブラウザ</td>
+    <td>イラスト・アニメ画像に強い。手軽さが魅力</td>
+  </tr>
+  <tr>
+    <td>kakudaiAC</td>
+    <td>無料（回数制限あり）</td>
+    <td>16倍</td>
+    <td>ブラウザ</td>
+    <td>日本語対応のブラウザツール。写真にも対応</td>
+  </tr>
+  <tr>
+    <td>Canva</td>
+    <td>無料プランあり / Pro 月額1,500円</td>
+    <td>―（背景拡張が中心）</td>
+    <td>ブラウザ / アプリ</td>
+    <td>マジック拡張で背景を広げる用途に便利</td>
+  </tr>
+</table>
+<p class="note">※ 料金は2026年6月時点の参考値です。為替レートや改定により変動する場合があります。</p>
+
+<h3>Topaz Gigapixel ― 画質重視なら第一候補</h3>
+
+<p>画質面で評価が高いのがTopaz Gigapixelです。特に人物写真では「Face Recovery」モデルが顔のディテールをしっかり復元してくれます。輪郭のシャープさ、テクスチャの自然さは競合ツールと比べても頭ひとつ抜けている印象です。</p>
+
+<p>ただし2025年9月以降、料金体系がサブスクリプション制に移行しました。以前は約100ドルの買い切りだったのですが、現在は年額204ドルほどかかります。頻繁に使う人には妥当なコストですが、たまにしか使わない場合はやや割高に感じるかもしれません。</p>
+
+<h3>Photoshop スーパー解像度 ― Adobe勢は追加コストなし</h3>
+
+<p>Adobe Photoshop（Creative Cloud）を契約している人なら、Camera Rawの「スーパー解像度」機能が使えます。画像を右クリックして「強化」→「スーパー解像度」にチェックを入れるだけで、縦横2倍に拡大できます。2回適用すれば4倍相当になります。</p>
+
+<p>RAW画像だけでなくJPEGにも対応しています。JPEGの場合はAdobe Bridgeから「Camera Rawで開く」を選べばOKです。追加費用がかからないのが最大のメリットで、フォトプラン（月額2,728円〜）を契約中の人はまずこれを試してみるのがよいと思います。</p>
+
+<h3>Upscayl ― 無料で高品質なオープンソースツール</h3>
+
+<p>無料でしっかり高画質化したいなら、Upscaylが一番のおすすめです。Real-ESRGANをベースにしたオープンソースのデスクトップアプリで、Windows・Mac・Linuxに対応しています。</p>
+
+<p>使い方はシンプルで、画像をドラッグ&ドロップして「Upscayl」ボタンを押すだけ。モデルはRemacri、UltraSharp、UltraMix balancedなど複数から選べます。処理はローカルで行われるため、画像を外部サーバーに送る必要がなく、プライバシー面でも安心です。</p>
+
+<p>注意点として、Vulkan対応のGPUが必要です。最近のパソコンならほぼ問題ありませんが、古いマシンだと動かない場合があります。</p>
+
+<h3>waifu2x ― イラスト向きだがお手軽</h3>
+
+<p>waifu2xは日本で開発されたオープンソースの超解像ツールで、ブラウザ上で使えるお手軽さが魅力です。もともとアニメ・イラスト向けに設計されているため、イラストの拡大には非常に強いです。</p>
+
+<p>一方で、実写の写真に適用すると、ディテールがやや平坦になる傾向があります。写真メインの人はUpscaylやTopaz Gigapixelのほうが向いています。</p>
+
+<h2>EC商品画像のリサイズにも使える</h2>
+
+<p>僕がAIアップスケールを特に便利だと感じるのは、EC商品画像のリサイズです。各ECモールには画像サイズの推奨値があり、たとえばAmazonでは長辺1,600ピクセル以上、楽天市場では700×700ピクセル以上が推奨されています。</p>
+
+<p>撮影時に解像度が足りなかった画像や、メーカーから支給された小さめの画像をそのまま使うと、ズーム機能が効かなかったり、粗く見えたりします。そういうときにAI超解像で2〜4倍に拡大しておくと、画質を保ちながら推奨サイズを満たせます。</p>
+
+<div class="point-box">
+  <h4>EC画像で特に役立つ場面</h4>
+  <p>・メーカー支給画像の解像度が低い場合の底上げ</p>
+  <p>・古い商品写真の使い回し（撮り直すコスト・時間がないとき）</p>
+  <p>・スマホ撮影した画像をPC向けのサイズに引き上げたいとき</p>
+</div>
+
+<p>ただし、AIアップスケールはあくまで「推測による補完」なので、元画像の状態があまりに悪いと不自然なテクスチャが出ることもあります。色味の調整や背景処理が必要な場合は、別途レタッチ作業が必要になります。</p>
+
+<h2>用途別おすすめの選び方</h2>
+
+<p>ツールの数が多いので、用途別にまとめておきます。</p>
+
+<h3>画質を最優先したい → Topaz Gigapixel</h3>
+<p>とにかく仕上がりのクオリティを求めるなら、現時点ではTopaz Gigapixelが最も安定して高品質です。ポートレートや商品撮影のように、ディテールの正確さが問われる用途に向いています。</p>
+
+<h3>コストをかけたくない → Upscayl</h3>
+<p>無料ツールの中ではUpscaylの品質がもっとも高いです。Topazに比べるとやや柔らかい仕上がりですが、日常的な用途には十分。オープンソースなので今後の発展にも期待できます。</p>
+
+<h3>すでにPhotoshopを使っている → スーパー解像度</h3>
+<p>Creative Cloudを契約中なら、追加コスト0円で使えるスーパー解像度が合理的です。普段のレタッチワークフローにそのまま組み込めるのも利点です。</p>
+
+<h3>イラストやアニメ画像の拡大 → waifu2x</h3>
+<p>アニメ系のイラストやロゴなど、線がはっきりした画像ならwaifu2xが得意分野です。ブラウザだけで完結するので、ソフトを入れたくない人にも向いています。</p>
+
+<h2>使い方のコツと注意点</h2>
+
+<p>AI超解像ツールをうまく使うために、いくつか覚えておくとよいポイントがあります。</p>
+
+<ul>
+  <li><strong>拡大倍率は2〜4倍にとどめる：</strong>8倍以上の拡大はアーティファクト（不自然な模様）が出やすくなります。まずは2倍で試して、足りなければ4倍にするのが無難です。</li>
+  <li><strong>元画像はなるべく高品質なものを用意する：</strong>JPEG圧縮がきつい画像やノイズだらけの画像だと、AIが正しく補完できないことがあります。RAWやPNG形式で保存されている画像のほうが結果がよくなります。</li>
+  <li><strong>処理後にシャープネスを微調整する：</strong>AIが出力した画像は、ツールによってはやや柔らかく仕上がることがあります。Photoshopやスマホアプリでシャープネスを少し追加するだけで見栄えが変わります。</li>
+  <li><strong>バッチ処理を活用する：</strong>Topaz GigapixelやUpscaylにはバッチ処理機能があるので、EC商品画像のように大量のファイルを一括処理したいときに便利です。</li>
+</ul>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+
+<div class="faq-item">
+  <p class="fq">Q. AI超解像（アップスケール）とは何ですか？</p>
+  <p class="fa">A. 機械学習を使って低解像度の画像から高解像度の画像を生成する技術です。従来の単純な拡大と違い、AIがディテールを推測・補完するため、ぼやけにくくシャープな仕上がりになります。Real-ESRGANやSwinIRといったモデルが代表的です。</p>
+</div>
+
+<div class="faq-item">
+  <p class="fq">Q. 無料のAI超解像ツールでおすすめはどれですか？</p>
+  <p class="fa">A. デスクトップアプリではUpscaylが高品質でおすすめです。Real-ESRGANベースのモデルをローカルで動かせるうえ、完全無料で使えます。ブラウザで手軽に使いたい場合はwaifu2xやkakudaiACが便利ですが、写真よりイラスト向きの傾向があります。</p>
+</div>
+
+<div class="faq-item">
+  <p class="fq">Q. EC商品画像の解像度が足りないときはどうすればいいですか？</p>
+  <p class="fa">A. まずAI超解像ツールで画像を拡大してみてください。UpscaylやPhotoshopのスーパー解像度で2〜4倍に拡大できます。ただしAI処理で不自然なテクスチャが出る場合や、色味・背景の調整も必要な場合は、<a href="https://because-link.com/" rel="noopener noreferrer nofollow">レタッチインク</a>のようなプロのレタッチサービスに依頼するのが確実です。</p>
+</div>
+
+<div class="faq-item">
+  <p class="fq">Q. Topaz Gigapixelの料金体系はどうなっていますか？</p>
+  <p class="fa">A. 2025年9月にサブスクリプション制へ移行しました。単体プランは月額約50ドル、年額約204ドルです。以前は買い切り99.99ドルで購入できましたが、現在はサブスク契約のみとなっています。Photo AIやVideo AIとのセットプランもあります。</p>
+</div>
+</div>
+
+<div class="author-box">
+  <div class="author-icon"><img src="/img/icon-tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+  <div class="author-text">
+    <p class="author-name">ツバサ</p>
+    <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+  </div>
+</div>
+
+<div class="related">
+  <h3>関連記事</h3>
+  <p><a href="/drafts/ai-image-tools.html">AI画像編集ツールまとめ</a></p>
+  <p><a href="/drafts/retouch-apps.html">写真レタッチアプリおすすめ比較</a></p>
+  <p><a href="/drafts/background-white.html">商品写真の背景を白くする方法</a></p>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+
+</body>
+</html>

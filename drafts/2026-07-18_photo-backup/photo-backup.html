@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スマホ写真のバックアップ方法｜クラウドとローカルを比較｜ツバサのメモ帳</title>
+<meta name="description" content="スマホ写真のバックアップ方法をクラウド（Google フォト・iCloud・Amazon Photos）とローカル（SSD・HDD）で比較。料金・容量・RAW対応・HEIF形式の注意点と3-2-1ルールも解説。">
+<meta name="keywords" content="スマホ 写真 バックアップ,Google フォト,iCloud,Amazon Photos,外付けSSD,写真 クラウド 比較,3-2-1 バックアップルール,HEIF HEVC バックアップ">
+<meta property="og:title" content="スマホ写真のバックアップ方法｜クラウドとローカルを比較｜ツバサのメモ帳">
+<meta property="og:description" content="スマホ写真のバックアップ方法をクラウドとローカルで徹底比較。料金・容量・使い勝手に加え、RAWやHEIF形式の注意点もまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tsubasa-memo.github.io/photo-backup.html">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/photo-backup.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/photo-backup.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/photo-backup.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "スマホ写真のバックアップはクラウドとローカルどちらがいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "どちらか一方ではなく、両方を併用するのが安全です。クラウドは自動バックアップで手軽ですが、サービス終了や料金改定のリスクがあります。ローカル（外付けSSDやHDD）は一度購入すれば月額費用がかかりませんが、故障や災害で失う可能性があります。クラウド＋ローカルの2重バックアップが理想的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhoneのHEIF（HEIC）形式の写真はバックアップ時に注意が必要？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、注意が必要です。HEIF形式はJPEGの約半分のファイルサイズで高画質を保てますが、WindowsパソコンやAndroid端末では標準で開けないことがあります。クラウドサービスにバックアップする場合はそのまま保存できますが、ローカルに保存してWindows環境で閲覧するなら、iPhoneの設定で転送時に自動変換するか、HEVC拡張機能をインストールしておくと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Amazon Photosは本当にRAWデータも無制限で保存できる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、Amazonプライム会員であれば写真データは容量無制限で保存でき、RAW形式（CR2、NEF、ARWなど）にも対応しています。ただし動画は5GBまでの制限があるため、動画のバックアップには向きません。一眼レフやミラーレスでRAW撮影する方にとっては、追加費用なしで大量のRAWデータを保管できる貴重なサービスです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3-2-1バックアップルールとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3-2-1ルールとは、大切なデータを守るためのバックアップの考え方です。データのコピーを3つ持ち、2種類以上の異なるメディア（例：クラウドと外付けSSD）に保存し、1つは物理的に離れた場所（例：クラウドや実家）に置くというものです。写真家のピーター・クローグ氏が提唱し、米国のセキュリティ機関も推奨しています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--voice-bg:#fff8f0;--voice-border:#f0c880;--answer-bg:#f0f4f7;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#dc7a28 0%,#a16207 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+main ul,main ol{margin:0 0 20px 24px}
+main li{margin-bottom:8px;font-size:15px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.author-box p:last-child{margin-bottom:0}
+.compare-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.compare-table th,.compare-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.compare-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.compare-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.author-box{flex-direction:column;align-items:center;text-align:center}.compare-table{font-size:13px}.compare-table th,.compare-table td{padding:8px 10px}}
+.note{font-size:.85em;color:#888;margin-top:-.5em}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ スマホ写真のバックアップ方法
+</div>
+</nav>
+
+<div class="hero">
+<div class="wrap">
+<h1>スマホ写真のバックアップ方法｜<br>クラウドとローカル保存を比較</h1>
+<p class="update">2026年7月 更新</p>
+</div>
+</div>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+<p>スマホで写真を撮るのが日常になると、気づけば数千枚、人によっては数万枚のデータがたまっていきます。僕もEC用の商品写真やプライベートの写真を合わせると相当な枚数になっていて、「もしスマホが壊れたら全部消える」と考えるとちょっとゾッとしました。</p>
+<p>そこで改めてバックアップ方法を調べ直してみたところ、クラウドサービスもローカル保存もそれぞれ特徴が違っていて、自分に合った方法を選ぶのが大事だとわかりました。この記事では、主要なクラウドサービス3つと外付けストレージを比較しながら、僕が調べたことをまとめておきます。</p>
+
+<h2>クラウドバックアップの主要サービス比較</h2>
+
+<p>スマホ写真のバックアップ先として代表的なクラウドサービスは「Google フォト」「iCloud」「Amazon Photos」の3つです。それぞれ無料で使える容量や料金体系が異なるので、まず一覧で整理します。</p>
+
+<table class="compare-table">
+<thead>
+<tr>
+<th>項目</th>
+<th>Google フォト</th>
+<th>iCloud</th>
+<th>Amazon Photos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無料容量</td>
+<td>15GB（Gmail・Google ドライブと共有）</td>
+<td>5GB（iCloud全体で共有）</td>
+<td>5GB（非プライム会員）<br>写真無制限（プライム会員）</td>
+</tr>
+<tr>
+<td>有料プラン（月額）</td>
+<td>100GB: 290円<br>200GB: 440円<br>2TB: 1,450円</td>
+<td>50GB: 150円<br>200GB: 450円<br>2TB: 1,500円<br>6TB: 4,500円<br>12TB: 9,000円</td>
+<td>プライム会員（月額600円/年額5,900円）で写真無制限</td>
+</tr>
+<tr>
+<td>写真の圧縮</td>
+<td>元の画質で保存（容量消費）</td>
+<td>元の画質で保存</td>
+<td>元の画質で保存（無圧縮）</td>
+</tr>
+<tr>
+<td>動画の扱い</td>
+<td>容量を消費して保存</td>
+<td>容量を消費して保存</td>
+<td>5GBまで（プライム会員でも制限あり）</td>
+</tr>
+<tr>
+<td>RAW対応</td>
+<td>対応（容量を消費）</td>
+<td>対応（容量を消費）</td>
+<td>対応（無制限・無圧縮）</td>
+</tr>
+<tr>
+<td>対応OS</td>
+<td>iOS / Android / Web</td>
+<td>iOS / macOS / Web（Windows対応あり）</td>
+<td>iOS / Android / Web</td>
+</tr>
+<tr>
+<td>自動バックアップ</td>
+<td>あり</td>
+<td>あり</td>
+<td>あり</td>
+</tr>
+<tr>
+<td>ファミリー共有</td>
+<td>Google One加入で最大6人</td>
+<td>200GB以上のプランで最大6人</td>
+<td>最大6人（Family Vault）</td>
+</tr>
+</tbody>
+</table>
+<p class="note">※ 料金は2026年7月時点の情報です。Google One は2025年に値上げが実施されています。</p>
+
+<h3>Google フォト ― Android派ならまずここ</h3>
+
+<p>Google フォトは、Androidスマホとの連携がとにかくスムーズです。初期設定で自動バックアップをオンにしておけば、撮った写真が勝手にクラウドに上がっていきます。検索機能も優秀で、「猫」「海」などキーワードを入れるとAIが自動で分類してくれるので、過去の写真を探しやすいのも助かります。</p>
+<p>注意点としては、無料の15GBはGmailやGoogle ドライブと共有している点です。仕事でGmailを多用していたり、Google ドライブにファイルを置いていたりすると、思ったより早く容量が埋まります。僕の場合、ECの取引先とのメールが多くてGmailだけで数GBを使っていたので、Google One（100GB）に加入しました。</p>
+
+<h3>iCloud ― iPhoneユーザーはシームレス</h3>
+
+<p>iPhoneユーザーなら、iCloudが一番手間がかかりません。撮影した写真は自動でiCloudに同期され、MacやiPadでもそのまま閲覧できます。Apple製品同士の連携は本当によくできていて、設定をいじる必要がほぼありません。</p>
+<p>ただし無料で使えるのは5GBだけ。iPhoneのバックアップデータやメモ、連絡先なども含めて5GBなので、写真だけで使える容量は実際にはもっと少なくなります。50GBプランが月額150円からとお手頃なので、iPhone利用者は早めに有料プランを検討したほうがストレスが減ると思います。</p>
+<p>一方で、Android端末やWindowsパソコンとの連携はやや弱いです。Webブラウザからアクセスはできますが、Google フォトほど他OSでの使い勝手は良くありません。</p>
+
+<h3>Amazon Photos ― プライム会員なら写真は無制限</h3>
+
+<p>Amazonプライム会員であれば、写真を容量無制限・無圧縮で保存できるのがAmazon Photosです。しかもRAWデータ（CR2、NEF、ARWなど）にも対応しているので、一眼レフやミラーレスカメラで撮影する人にはかなり魅力的です。</p>
+<p>プライム会費（月額600円 / 年額5,900円）には動画配信や配送特典なども含まれているので、すでにプライム会員であれば追加費用ゼロで写真バックアップが使えることになります。</p>
+<p>ただし動画は5GBまでという制限があるので、動画もたくさん撮る人はAmazon Photosだけでは足りません。写真専用のバックアップ先として割り切って使うのが現実的です。</p>
+
+<h2>ローカルバックアップ（外付けSSD・HDD）の特徴</h2>
+
+<p>クラウドサービスは便利ですが、月額費用が発生する点や、サービスの仕様変更・値上げリスクがどうしてもあります。「自分のデータは手元にも置いておきたい」という人には、外付けSSDやHDDへのバックアップが有効です。</p>
+
+<table class="compare-table">
+<thead>
+<tr>
+<th>項目</th>
+<th>外付けSSD</th>
+<th>外付けHDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>容量あたりの価格</td>
+<td>やや高い（1TBで8,000〜15,000円程度）</td>
+<td>安い（1TBで5,000〜8,000円程度）</td>
+</tr>
+<tr>
+<td>転送速度</td>
+<td>速い（500MB/s〜）</td>
+<td>遅い（100〜150MB/s程度）</td>
+</tr>
+<tr>
+<td>耐衝撃性</td>
+<td>強い（可動部品なし）</td>
+<td>弱い（ディスク回転のため振動に注意）</td>
+</tr>
+<tr>
+<td>寿命の目安</td>
+<td>5〜7年程度</td>
+<td>3〜5年程度</td>
+</tr>
+<tr>
+<td>サイズ・携帯性</td>
+<td>小型・軽量</td>
+<td>SSDより大きく重い</td>
+</tr>
+<tr>
+<td>動作音</td>
+<td>無音</td>
+<td>回転音あり</td>
+</tr>
+</tbody>
+</table>
+
+<h3>SSDかHDDか、選ぶ基準</h3>
+
+<p>写真データの量がそこまで多くないなら（数百GB程度まで）、SSDのほうが扱いやすいです。転送が速いのでバックアップの作業時間が短くて済みますし、持ち運びにも向いています。</p>
+<p>一方、RAWデータを大量に保存するなど数TB単位の容量が必要なら、コストパフォーマンスではHDDに軍配が上がります。4TBのHDDなら1万円前後で手に入るので、大量のデータを安く保管できます。</p>
+
+<div class="point-box">
+<h4>ローカル保存の注意点</h4>
+<p>外付けストレージは消耗品です。HDDは3〜5年、SSDは5〜7年が寿命の目安とされていますが、長期間電源を入れずに放置すると、SSDのデータ保持性能が落ちることがあります。定期的に通電して動作確認することと、3〜5年を目安に新しいストレージにデータを移すことをおすすめします。</p>
+</div>
+
+<h3>スマホからローカルにバックアップする方法</h3>
+
+<p>スマホと外付けストレージの接続方法はいくつかあります。</p>
+<ul>
+<li><strong>USB-C接続</strong>：最近のスマホはUSB-Cに対応しているので、USB-C対応のSSD/HDDなら直接つなげます。iPhoneもiPhone 15以降はUSB-Cです</li>
+<li><strong>Lightning - USB変換アダプタ</strong>：iPhone 14以前の場合はApple純正のカメラアダプタ経由で外付けストレージに接続できます</li>
+<li><strong>パソコン経由</strong>：スマホをパソコンにつないで写真をコピーし、そこから外付けストレージに移す方法。手間はかかりますが確実です</li>
+<li><strong>Wi-Fi対応ストレージ</strong>：NAS（ネットワーク接続ストレージ）を使えば、Wi-Fi経由で自動バックアップも可能です。ただし初期設定にはある程度の知識が必要です</li>
+</ul>
+
+<h2>HEIF/HEVC形式のバックアップ時の注意点</h2>
+
+<p>iPhoneで撮影するとデフォルトでHEIF（拡張子は.heic）という形式で保存されます。HEIFはJPEGに比べてファイルサイズが約半分で済むのに画質はほぼ同等という優れた規格なのですが、バックアップや他のデバイスで閲覧するときに互換性の問題が出ることがあります。</p>
+
+<h3>HEIF形式で起きやすいトラブル</h3>
+
+<ul>
+<li>WindowsパソコンでHEIF画像が開けない（Windows 11 22H2以降は標準対応、それ以前はHEVC拡張機能のインストールが必要）</li>
+<li>古いAndroid端末でHEIF画像が表示されない</li>
+<li>一部の画像編集ソフトがHEIFに非対応</li>
+<li>SNSやWebサービスへのアップロード時にエラーになるケースがある</li>
+</ul>
+
+<h3>対処法</h3>
+
+<p>iPhoneの「設定」→「カメラ」→「フォーマット」で「互換性優先」を選ぶと、撮影時にJPEGで保存されるようになります。ただしファイルサイズは約2倍になるので、ストレージの消費が早くなる点はトレードオフです。</p>
+<p>もう一つの方法として、iPhoneの「設定」→「写真」→「MACまたはPCに転送」で「自動」を選んでおけば、パソコンへの転送時に自動的にJPEG形式に変換されます。クラウドにはHEIF形式のままアップロードしておき、必要に応じてダウンロード時に変換する、という運用も可能です。</p>
+<p>動画についても同様で、iPhoneはデフォルトでHEVC（H.265）形式で録画します。HEVC対応ソフトが増えてきたとはいえ、古い環境では再生できないことがあるので、互換性が心配なら「互換性優先」に設定しておくと安心です。</p>
+
+<h2>RAWデータのバックアップはどうする？</h2>
+
+<p>一眼レフやミラーレスカメラ、あるいはスマホのProモード（iPhone ProのApple ProRAWなど）で撮影したRAWデータは、1枚あたり20〜60MBとファイルサイズが大きくなります。クラウドにアップロードすると容量をあっという間に消費するので、RAWデータのバックアップは少し戦略を考える必要があります。</p>
+
+<h3>RAWバックアップの選択肢</h3>
+
+<ul>
+<li><strong>Amazon Photos</strong>：プライム会員ならRAWも無制限で保存できる唯一のクラウドサービス。RAWメインの人にはこれが最適解</li>
+<li><strong>外付けHDD</strong>：大容量を安価に確保できるので、RAWデータの保管庫に向いている。4TBあればかなりの枚数を保存可能</li>
+<li><strong>NAS</strong>：自宅にRAIDを組んだNASを置けば、冗長性を確保しつつ大量のRAWデータを管理できる。写真が趣味の人は検討の価値あり</li>
+</ul>
+
+<p>僕の場合はスマホ撮影がメインなのでRAWを使う機会は少ないですが、カメラ好きの知人はAmazon PhotosにRAWを全部放り込んでいると言っていました。プライム会員なら追加費用がかからないのは確かに強いです。</p>
+
+<h2>3-2-1バックアップルールのすすめ</h2>
+
+<p>バックアップの世界には「3-2-1ルール」という考え方があります。もともとは写真家のピーター・クローグ氏が提唱したもので、その後、米国のセキュリティ機関（US-CERT）もこの考え方を推奨しています。個人の写真管理にも十分応用できる内容です。</p>
+
+<div class="point-box">
+<h4>3-2-1ルールとは</h4>
+<p><strong>3</strong>：データのコピーを合計3つ持つ（原本＋バックアップ2つ）</p>
+<p><strong>2</strong>：2種類以上の異なるメディアに保存する（例：クラウド＋外付けSSD）</p>
+<p><strong>1</strong>：1つは物理的に離れた場所に保管する（例：クラウド、または実家に置いた外付けHDD）</p>
+</div>
+
+<p>「3つもコピーを持つの？」と感じるかもしれませんが、スマホの写真であれば、実は意外と簡単に実現できます。</p>
+
+<ol>
+<li><strong>スマホ本体</strong>に写真がある（原本）</li>
+<li><strong>クラウド</strong>（Google フォトやiCloudなど）に自動バックアップされる（コピー1）</li>
+<li><strong>外付けSSDやHDD</strong>に定期的にコピーする（コピー2）</li>
+</ol>
+
+<p>これだけで3-2-1ルールの条件を満たせます。クラウドが「物理的に離れた場所にある1つ」の役割を果たしてくれるので、自宅にある外付けストレージと合わせて2種類のメディアかつ2拠点の保存が完成します。</p>
+
+<h3>スマホ写真で3-2-1を手軽に実現する例</h3>
+
+<table class="compare-table">
+<thead>
+<tr>
+<th>保存先</th>
+<th>役割</th>
+<th>コスト目安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>スマホ本体</td>
+<td>原本</td>
+<td>―</td>
+</tr>
+<tr>
+<td>Google フォト（100GB）</td>
+<td>自動バックアップ（クラウド）</td>
+<td>月額290円</td>
+</tr>
+<tr>
+<td>外付けSSD（1TB）</td>
+<td>ローカルバックアップ</td>
+<td>約10,000円（買い切り）</td>
+</tr>
+</tbody>
+</table>
+
+<p>月々のコストとしてはクラウドの数百円だけ。外付けSSDは一度買えば数年使えるので、年間のバックアップ費用はそこまで大きくなりません。大切な写真を失うリスクを考えれば、この程度の出費は保険として十分に元が取れると思います。</p>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq">Q. スマホ写真のバックアップはクラウドとローカルどちらがいい？</p>
+<p class="fa">どちらか一方ではなく、両方を併用するのが安全です。クラウドは自動バックアップで手軽ですが、サービス終了や料金改定のリスクがあります。ローカル（外付けSSDやHDD）は月額費用がかかりませんが、故障や災害で失う可能性があります。クラウド＋ローカルの2重バックアップが理想的です。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. iPhoneのHEIF（HEIC）形式の写真はバックアップ時に注意が必要？</p>
+<p class="fa">はい。HEIF形式はファイルサイズが小さく画質も良いのですが、WindowsやAndroidの古い環境では開けないことがあります。iPhoneの「設定」→「カメラ」→「フォーマット」で「互換性優先」にするとJPEGで保存されます。転送時だけJPEGに変換する設定もあるので、状況に応じて使い分けるのがおすすめです。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. Amazon Photosは本当にRAWデータも無制限で保存できる？</p>
+<p class="fa">はい。Amazonプライム会員であれば、RAW形式（CR2、NEF、ARWなど）を含む写真データを容量無制限・無圧縮で保存できます。ただし動画は5GBまでの制限があります。RAWデータを大量に扱う方にとっては、追加費用なしで使える貴重なサービスです。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 3-2-1バックアップルールとは？</p>
+<p class="fa">データのコピーを3つ持ち、2種類以上の異なるメディアに保存し、1つは物理的に離れた場所に保管するという考え方です。スマホ写真の場合、スマホ本体＋クラウド＋外付けストレージの組み合わせで手軽に実現できます。</p>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<p><a href="sd-card.html">SDカードの選び方｜容量・速度・規格の違いを解説</a></p>
+<p><a href="raw-vs-jpeg.html">RAW vs JPEG｜違いと使い分けを初心者向けに解説</a></p>
+<p><a href="camera-smartphones.html">カメラ性能で選ぶスマホ｜写真がきれいに撮れる機種まとめ</a></p>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
