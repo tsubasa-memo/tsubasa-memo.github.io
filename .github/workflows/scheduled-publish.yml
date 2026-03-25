@@ -2,8 +2,8 @@ name: 予約投稿の自動公開
 
 on:
   schedule:
-    # 毎日午前0時UTC（日本時間午前9時）に実行
-    - cron: '0 0 * * *'
+    # 毎週土曜 午前3時UTC（日本時間 土曜正午12時）に実行
+    - cron: '0 3 * * 6'
   workflow_dispatch:
     # 手動実行も可能（GitHubの画面から「Run workflow」で実行できる）
 
