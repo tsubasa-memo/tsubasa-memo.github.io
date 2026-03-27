@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>インスタのフィルターとLightroomの違い、やっと理解した｜ツバサのメモ帳</title>
+<meta name="description" content="インスタのフィルターとAdobe Lightroomの違いを調べました。仕組みの違いと、それぞれに向いている使い方をまとめた備忘録です。">
+<meta name="keywords" content="Lightroom インスタ 違い,Instagram フィルター Lightroom,Lightroom スマホ 無料,写真編集 アプリ 比較,Lightroom 使い方 初心者">
+<meta property="og:title" content="インスタのフィルターとLightroomの違い、やっと理解した｜ツバサのメモ帳">
+<meta property="og:description" content="インスタのフィルターとAdobe Lightroomの違いを調べました。仕組みの違いと、それぞれに向いている使い方をまとめた備忘録です。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tsubasa-memo.github.io/instagram-filter-vs-lightroom.html">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/instagram-filter-vs-lightroom.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/instagram-filter-vs-lightroom.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/instagram-filter-vs-lightroom.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "インスタのフィルターとLightroomの編集はどちらがおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "手軽さを重視するならインスタのフィルター、仕上がりのコントロールや一貫したトーン作りにはLightroomが向いています。スマホ版Lightroomは無料で主要機能が使えるので、こだわりが出てきたらLightroomへの移行をおすすめします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lightroomは無料で使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "スマホ版Adobe Lightroomは基本的な機能（露出・コントラスト・色調整・切り抜きなど）を無料で使えます。プリセット機能の一部やAIマスク機能の高度な使い方には有料プランが必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "インスタのフィルターで統一感を出すことはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "同じフィルターを毎回使えばある程度の統一感は出ますが、撮影環境（明るさ・色温度）によって仕上がりが変わりやすいです。統一感をしっかり出したい場合は、プリセットを自分でカスタムできるLightroomのほうが安定します。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.spec-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.warn-box{background:#fef3e7;border-left:4px solid #e8a735;border-radius:0 10px 10px 0;padding:20px 24px;margin:24px 0}
+.warn-box h4{font-size:15px;font-weight:700;color:#b07718;margin-bottom:10px}
+.warn-box p{font-size:14px;margin-bottom:8px}
+.warn-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+/* Instagram参照カード */
+.insta-ref{background:#fff;border:1px solid #dbdbdb;border-radius:12px;padding:0;margin:28px 0;overflow:hidden;max-width:480px}
+.insta-ref-header{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #f0f0f0}
+.insta-ref-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;flex-shrink:0}
+.insta-ref-name{font-weight:700;font-size:14px;color:#262626}
+.insta-ref-sub{font-size:12px;color:#8e8e8e}
+.insta-ref-body{padding:14px 16px}
+.insta-ref-body p{font-size:14px;color:#262626;margin-bottom:10px;line-height:1.7}
+.insta-ref-body .insta-ref-link{display:inline-block;font-size:13px;color:#0095f6;font-weight:700}
+.insta-ref-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#8e8e8e;background:#f5f5f5;padding:3px 8px;border-radius:4px;margin-bottom:8px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){
+.hero h1{font-size:20px}
+.author-box{flex-direction:column;align-items:center;text-align:center}
+.spec-table{font-size:13px}
+.spec-table th,.spec-table td{padding:8px 10px}
+.insta-ref{max-width:100%}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ インスタフィルターとLightroomの違い
+</div>
+</nav>
+<div class="hero">
+<div class="wrap">
+<h1>インスタのフィルターとLightroomの違い、やっと理解した</h1>
+<div class="update">2026年3月 更新</div>
+</div>
+</div>
+<main>
+<div class="wrap">
+<p>こんにちは、ツバサです。</p>
+
+<p>「Lightroomってよく聞くけど、インスタのフィルターと何が違うの？」というのが、半年ほど前の自分の疑問でした。どちらも「写真を編集するもの」だとはわかっていたんですが、何が違ってどちらを使えばいいのかがよくわからなかった。</p>
+
+<p>調べてみると、仕組みがかなり根本的に違うことがわかって、それを理解したら写真編集の楽しさが一段上がった気がしたので備忘録として残しておきます。</p>
+
+<h2>インスタのフィルターの仕組み</h2>
+
+<p>インスタのフィルター（現在は「フィルター」より「色調整」機能が主体になっていますが）は、写真全体に「決まった調整の組み合わせ」を一発でかける機能です。「Clarendon」「Juno」「Lark」といった名前がついているアレです。</p>
+
+<p>操作が極めて簡単で、タップするだけで全体の雰囲気が変わります。ただし、調整内容は固定されていて、細かい変更はできません（強度のスライダーはありますが）。</p>
+
+<p>また、インスタのフィルターは投稿時にしか使えない（カメラロールに加工済みで保存されない）ケースもあります。</p>
+
+<h2>Lightroomの何が違うのか</h2>
+
+<p><a href="https://www.adobe.com/jp/products/photoshop-lightroom.html" target="_blank" rel="noopener">Adobe Lightroom</a>は、写真の各要素（露出・コントラスト・ハイライト・シャドウ・色温度・彩度・シャープネスなど）をそれぞれ個別に調整できるソフト／アプリです。</p>
+
+<p>大きな違いは「非破壊編集」という点です。元のファイルを書き換えず、調整の設定情報だけを別に保持するので、いつでも元の写真の状態に戻せます。インスタのフィルターで加工して保存した写真は基本的に戻せません。</p>
+
+<div class="insta-ref">
+<div class="insta-ref-header">
+<div class="insta-ref-avatar">📷</div>
+<div>
+<div class="insta-ref-name">@lightroom_japan</div>
+<div class="insta-ref-sub">Instagram・フォロワー約6万人</div>
+</div>
+</div>
+<div class="insta-ref-body">
+<span class="insta-ref-badge">📌 参考にしたアカウント</span>
+<p>Adobe Lightroomの使い方を解説する公式＆ユーザーアカウント。初心者向けのプリセット活用術から、プロのレタッチワークフローまで幅広く参考になります。</p>
+<a href="https://www.instagram.com/lightroom/" target="_blank" rel="noopener noreferrer" class="insta-ref-link">Instagramで見る →</a>
+</div>
+</div>
+
+<h2>並べて比較すると違いがわかりやすい</h2>
+
+<table class="spec-table">
+<tr><th></th><th>インスタのフィルター</th><th>Adobe Lightroom</th></tr>
+<tr><td>操作の手軽さ</td><td>◎ タップ1回</td><td>△ 多少の学習が必要</td></tr>
+<tr><td>調整の細かさ</td><td>△ 限定的</td><td>◎ 全項目を個別調整できる</td></tr>
+<tr><td>元に戻せる</td><td>△ 保存後は困難</td><td>◎ 非破壊編集でいつでも戻せる</td></tr>
+<tr><td>プリセット作成</td><td>× できない</td><td>◎ 自分の設定を保存・使い回し可能</td></tr>
+<tr><td>統一感の出しやすさ</td><td>△ 撮影環境により変わる</td><td>◎ プリセットで安定して使える</td></tr>
+<tr><td>費用</td><td>無料</td><td>基本機能は無料（一部有料）</td></tr>
+<tr><td>使う場面</td><td>サクッと投稿したいとき</td><td>こだわりの一枚・フィード統一など</td></tr>
+</table>
+
+<h2>Lightroomを使い始めたきっかけ</h2>
+
+<p>自分がLightroomを試したきっかけは、「フィードの写真のトーンを揃えたい」という気持ちからでした。同じフィルターを使っていても、屋外と室内、晴れと曇りでは仕上がりが変わってしまって、並べたときにバラバラに見える。</p>
+
+<p>Lightroomでは「プリセット」という自分の調整設定を保存して使い回せる機能があって、これを活用することで撮影環境が違っても近いトーンに揃えやすくなります。</p>
+
+<h3>スマホ版Lightroomで使っている主な調整</h3>
+
+<div class="point-box">
+<h4>自分がよく触る項目（入門レベル）</h4>
+<p><strong>露光量</strong>：写真の全体的な明るさ。最初に触るべき項目。</p>
+<p><strong>コントラスト</strong>：明暗の差を強調するか柔らかくするか。上げすぎると重くなる。</p>
+<p><strong>ハイライト／シャドウ</strong>：明るい部分・暗い部分をそれぞれ独立して調整できる。これが一番便利。</p>
+<p><strong>色温度（ホワイトバランス）</strong>：写真の色味を暖かく（黄色）か寒く（青）かを決める。</p>
+<p><strong>自然な彩度</strong>：彩度より自然に色を鮮やかにする。肌色を崩しにくい。</p>
+</div>
+
+<h2>「どっちを使えばいいか」の個人的な結論</h2>
+
+<p>サクッと投稿するだけならインスタの調整機能で十分です。でも、写真をもう少しちゃんと撮りたい・フィードの統一感を出したい・撮った写真を後から見返して楽しみたい、というなら、スマホ版Lightroomを使い始めるのをおすすめします。</p>
+
+<p>無料で始められて、慣れるとインスタフィルターには戻れなくなります（個人の感想です）。</p>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. インスタのフィルターとLightroomはどちらがおすすめですか？</div>
+<div class="fa">手軽さならインスタフィルター、仕上がりへのこだわりや統一感にはLightroomが向いています。スマホ版は無料で始められます。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. Lightroomは無料で使えますか？</div>
+<div class="fa">スマホ版Lightroomは露出・コントラスト・色調整など基本機能は無料です。一部の高度な機能は有料プランが必要です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. インスタフィルターで統一感は出せますか？</div>
+<div class="fa">同じフィルターを使えばある程度は出ますが、撮影環境により変わりやすいです。しっかり統一させたい場合はLightroomのプリセットが安定します。</div>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<p><a href="snap-photo-vs-instagrammable.html">インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで</a></p>
+<p><a href="sns-photo-retouch-manners.html">盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</a></p>
+<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
+</div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="wrap">
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+</body>
+</html>

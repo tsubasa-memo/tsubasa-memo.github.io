@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a4b8a"/>
+      <stop offset="100%" stop-color="#522d6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <rect x="0" y="0" width="320" height="180" fill="rgba(0,0,0,0.15)"/>
+  <circle cx="160" cy="72" r="34" fill="rgba(255,255,255,0.18)"/>
+  <text x="160" y="82" text-anchor="middle" font-size="28">💬</text>
+  <rect x="20" y="14" width="72" height="20" rx="10" fill="rgba(255,255,255,0.22)"/>
+  <text x="56" y="26" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fff" font-weight="bold">写真・撮影</text>
+  <text x="160" y="124" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">マッチングアプリの写真、</text>
+  <text x="160" y="143" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(255,255,255,0.85)">どこで撮るのが正解か調べた</text>
+  <rect x="0" y="164" width="320" height="16" fill="rgba(0,0,0,0.25)"/>
+  <text x="160" y="175" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.7)">ツバサのメモ帳</text>
+</svg>
