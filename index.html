@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-YYBFXHXMM6');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ツバサのメモ帳｜カメラ・写真・EC周りの備忘録ブログ</title>
@@ -44,13 +36,10 @@ main{padding:48px 0 64px}
 .cat-link:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
 .section-title{font-size:14px;font-weight:700;color:var(--text-sub);margin-bottom:16px;padding-left:4px;letter-spacing:.5px}
 .article-list{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
-.article-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:box-shadow .2s}
+.article-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;transition:box-shadow .2s}
 .article-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.article-card a{display:flex;color:inherit;text-decoration:none}
+.article-card a{display:block;color:inherit;text-decoration:none}
 .article-card a:hover{text-decoration:none}
-.card-thumb{width:180px;aspect-ratio:16/9;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.card-thumb img{width:100%;height:100%;object-fit:cover}
-.card-body{padding:18px 22px;flex:1;min-width:0}
 .article-card .card-num{font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-light);display:inline-block;padding:2px 10px;border-radius:12px;margin-bottom:8px}
 .article-card .card-num.new{color:#fff;background:var(--accent)}
 .article-card h2{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.6}
@@ -67,15 +56,10 @@ main{padding:48px 0 64px}
 footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
 @media(max-width:600px){
 .hero h1{font-size:22px}
-.article-card a{flex-direction:column}
-.card-thumb{width:100%;aspect-ratio:16/9}
-.card-body{padding:16px 18px}
+.article-card{padding:16px 18px}
 .author-box{flex-direction:column;align-items:center;text-align:center}
 }
 </style>
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 </head>
 <body>
 
@@ -108,114 +92,113 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <h2 class="section-title">最新の記事</h2>
 
 <div class="article-list">
-
 <div class="article-card">
-<a href="raw-vs-jpeg.html">
-<div class="card-thumb"><img src="thumbs/raw-vs-jpeg.svg" alt="RAW現像とJPEGの違い" width="320" height="180"></div>
+<a href="photo-side-job-no-skill.html">
+<div class="card-thumb"><img src="thumbs/photo-side-job-no-skill.svg" alt="写真副業を検討してみた" width="320" height="180"></div>
 <div class="card-body">
 <span class="card-num new">NEW</span>
-<h2>RAW現像って何？JPEGとの違いと初心者向けの現像ソフトまとめ</h2>
-<p class="card-desc">RAWとJPEGの違い、RAW現像のメリット・デメリット、初心者向けの無料/有料現像ソフトを調べた備忘録。</p>
-<span class="card-tag">カメラ</span>
-</div>
-</a>
-</div>
-
-<div class="article-card">
-<a href="nano-banana-acne.html">
-<div class="card-thumb"><img src="thumbs/nano-banana-acne.svg" alt="AI × レタッチ実験" width="320" height="180"></div>
-<div class="card-body">
-<span class="card-num">2026.03</span>
-<h2>ニキビがコンプレックスの僕がNano Bananaで消してみた。これってAI？レタッチ？</h2>
-<p class="card-desc">AI画像生成ツール「Nano Banana」でニキビを消してみた実験記録。AIとレタッチの仕組みの違い、画質の限界も正直にレポート。</p>
-<span class="card-tag">AI</span>
-</div>
-</a>
-</div>
-
-<div class="article-card">
-<a href="coworking-spaces-tokyo.html">
-<div class="card-thumb"><img src="thumbs/coworking-spaces-tokyo.svg" alt="コワーキングスペース" width="320" height="180"></div>
-<div class="card-body">
-<span class="card-num">2026.02</span>
-<h2>週1リモートの作業場所、結局コワーキングスペースが正解だった｜都内おすすめ7選</h2>
-<p class="card-desc">実家暮らし×週1リモートの20代会社員が、自宅・図書館・カフェを経てコワーキングスペースにたどり着くまでの記録。料金比較と、調べていて気づいた法人登記の意外な話。</p>
+<h2>スキルなし・機材なし・時間なしの20代が"写真副業"を検討してみた</h2>
+<p class="card-desc">写真系副業の種類・単価相場・現実的なロードマップを調べた記録。クラウドソーシングの初心者向け案件から始めるまでの流れをまとめています。</p>
 <span class="card-tag">副業・キャリア</span>
 </div>
 </a>
 </div>
 
 <div class="article-card">
-<a href="retouch-services.html">
-<div class="card-thumb"><img src="thumbs/retouch-services.svg" alt="レタッチ外注7社比較" width="320" height="180"></div>
+<a href="side-job-labor-law.html">
+<div class="card-thumb"><img src="thumbs/side-job-labor-law.svg" alt="副業と就業規則" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
-<h2>レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】</h2>
-<p class="card-desc">個人で使える写真レタッチ・修正サービス7社の料金・納期・対応範囲を比較。1枚から依頼できるサービスを中心にまとめています。</p>
+<span class="card-num">2026.03</span>
+<h2>社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話</h2>
+<p class="card-desc">副業規定の3パターン・厚生労働省のガイドライン・住民税バレ対策まで。副業前に確認すべきことを実体験もまじえてまとめました。</p>
+<span class="card-tag">副業・キャリア</span>
+</div>
+</a>
+</div>
+
+<div class="article-card">
+<a href="job-hunting-photo-retouch.html">
+<div class="card-thumb"><img src="thumbs/job-hunting-photo-retouch.svg" alt="就活証明写真の加工" width="320" height="180"></div>
+<div class="card-body">
+<span class="card-num">2026.03</span>
+<h2>就活証明写真、アプリで加工していいラインはどこまで？</h2>
+<p class="card-desc">採用担当の見解・スタジオのレタッチ基準・NGな加工の種類を調べました。「軽い補正はOK、別人はNG」という基準のラインを整理しています。</p>
+<span class="card-tag">写真・撮影</span>
+</div>
+</a>
+</div>
+
+<div class="article-card">
+<a href="sns-photo-retouch-manners.html">
+<div class="card-thumb"><img src="thumbs/sns-photo-retouch-manners.svg" alt="SNS写真加工のマナー" width="320" height="180"></div>
+<div class="card-body">
+<span class="card-num">2026.03</span>
+<h2>盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</h2>
+<p class="card-desc">マッチングアプリでの写真詐欺問題・BeRealが流行した理由・加工の許容範囲についての考察。消費者庁データも参照しています。</p>
 <span class="card-tag">レタッチ</span>
 </div>
 </a>
 </div>
 
 <div class="article-card">
-<a href="video-vs-retouch-career.html">
-<div class="card-thumb"><img src="thumbs/video-vs-retouch-career.svg" alt="動画編集 vs レタッチャー" width="320" height="180"></div>
+<a href="instagram-filter-vs-lightroom.html">
+<div class="card-thumb"><img src="thumbs/instagram-filter-vs-lightroom.svg" alt="インスタフィルターとLightroom" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
-<h2>動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？</h2>
-<p class="card-desc">スクール費用・求人データ・AIの影響を比較。動画編集は案件豊富で月5〜10万円を目指しやすく、レタッチは専門性を高めてキャリアにつなげやすい。それぞれの特徴を調べました。</p>
-<span class="card-tag">副業・キャリア</span>
+<span class="card-num">2026.03</span>
+<h2>インスタのフィルターとLightroomって何が違うの？やっと理解した</h2>
+<p class="card-desc">フィルターとLightroomの仕組みの違い（非破壊編集・プリセット）を初心者目線で比較。フィード統一感を出したい人にはLightroomが向いています。</p>
+<span class="card-tag">レタッチ</span>
 </div>
 </a>
 </div>
 
 <div class="article-card">
-<a href="id-photo.html">
-<div class="card-thumb"><img src="thumbs/id-photo.svg" alt="スマホで証明写真" width="320" height="180"></div>
+<a href="matching-app-photo-tips.html">
+<div class="card-thumb"><img src="thumbs/matching-app-photo-tips.svg" alt="マッチングアプリの写真" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
-<h2>スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から</h2>
-<p class="card-desc">証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめています。</p>
+<span class="card-num">2026.03</span>
+<h2>マッチングアプリの写真、どこで撮るのが正解か調べた</h2>
+<p class="card-desc">マッチ率が上がる写真の共通点（撮影場所・構図・加工の範囲）を複数の情報源をもとにまとめました。プロ撮影という選択肢についても。</p>
 <span class="card-tag">写真・撮影</span>
 </div>
 </a>
 </div>
 
 <div class="article-card">
-<a href="exif-info.html">
-<div class="card-thumb"><img src="thumbs/exif-info.svg" alt="Exif情報とは" width="320" height="180"></div>
+<a href="portrait-mode-tips.html">
+<div class="card-thumb"><img src="thumbs/portrait-mode-tips.svg" alt="ポートレートモードの使いこなし" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
-<h2>写真のExif情報とは？位置情報のリスクと削除方法まとめ</h2>
-<p class="card-desc">Exifに含まれる情報、SNSごとの自動削除状況、iPhone/Android/PC別の削除手順をまとめました。</p>
+<span class="card-num">2026.03</span>
+<h2>スマホカメラの"ポートレートモード"が苦手だった理由と、使いこなせるようになった話</h2>
+<p class="card-desc">背景ぼかしが不自然になる原因（距離・光量・AIの認識限界）と、自然な仕上がりにするためのコツをまとめました。</p>
 <span class="card-tag">写真・撮影</span>
 </div>
 </a>
 </div>
 
 <div class="article-card">
-<a href="ec-image-rules.html">
-<div class="card-thumb"><img src="thumbs/ec-image-rules.svg" alt="EC商品画像ルール" width="320" height="180"></div>
+<a href="snap-photo-vs-instagrammable.html">
+<div class="card-thumb"><img src="thumbs/snap-photo-vs-instagrammable.svg" alt="インスタ映えとスナップ写真" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
-<h2>ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？</h2>
-<p class="card-desc">Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの画像ガイドラインを比較表で整理。</p>
-<span class="card-tag">EC・実務</span>
+<span class="card-num">2026.03</span>
+<h2>インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで</h2>
+<p class="card-desc">映え写真への疲れからスナップ写真に転向した話。@d_japaneseのようなアカウントに影響を受けつつ、日常のスナップが楽しくなったコツをまとめています。</p>
+<span class="card-tag">写真・撮影</span>
 </div>
 </a>
 </div>
 
 </div>
 
-<div style="text-align:center;margin:0 0 40px">
-<a href="archive.html" class="archive-btn">すべての記事を見る（全14件）</a>
+<div style<div style="text-align:center;margin:0 0 40px">
+<a href="archive.html" class="archive-btn">すべての記事を見る（全21件）</a>
 </div>
 
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
-<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+<p>メーカー勤務のEC担当。商品撮影はスマホで済ませがち。Photoshopは苦手でアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。このブログはカメラ・写真・EC周りで調べたことの備忘録です。</p>
 </div>
 </div>
 
