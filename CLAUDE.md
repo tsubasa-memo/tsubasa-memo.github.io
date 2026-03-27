@@ -274,6 +274,13 @@ cairosvg.svg2png(
   - `update: index.html 記事順序変更`
   - `fix: exif-info.html typo修正`
 
+### 予約投稿のpushルール
+
+記事をデプロイする際、**予約投稿**と指定された場合は
+`git push origin main` ではなく `git push origin HEAD:draft` を実行すること。
+draftブランチへのpushのみ行い、mainへのマージはしない。
+GitHub Actionsが毎日0:00 UTCに自動でdraftブランチをmainにマージ・削除する。
+
 ---
 
 ## 絶対に守ること
