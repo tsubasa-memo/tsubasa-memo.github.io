@@ -279,7 +279,15 @@ cairosvg.svg2png(
 記事をデプロイする際、**予約投稿**と指定された場合は
 `git push origin main` ではなく `git push origin HEAD:draft` を実行すること。
 draftブランチへのpushのみ行い、mainへのマージはしない。
-GitHub Actionsが毎日0:00 UTCに自動でdraftブランチをmainにマージ・削除する。
+
+## 投稿スケジュール
+- 火曜 21:00 JST
+- 水曜 19:30 JST
+- 木曜 22:45 JST
+- 土曜 12:00 JST
+- 日曜 13:30 JST
+
+週5本ペース。git push origin HEAD:draft で予約投稿。
 
 ---
 

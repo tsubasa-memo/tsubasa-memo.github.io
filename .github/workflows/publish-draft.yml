@@ -2,7 +2,11 @@ name: Publish Draft
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 12 * * 2'    # 火曜 21:00 JST
+    - cron: '30 10 * * 3'   # 水曜 19:30 JST
+    - cron: '45 13 * * 4'   # 木曜 22:45 JST
+    - cron: '0 3 * * 6'     # 土曜 12:00 JST
+    - cron: '30 4 * * 0'    # 日曜 13:30 JST
   workflow_dispatch:
 
 jobs:
