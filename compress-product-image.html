@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話</title>
+<meta name="description" content="ECサイトに商品画像をアップする前のファイルサイズ圧縮方法をまとめました。TinyPNG・Squoosh・Lightroomなどツール別の特徴と、圧縮しすぎで画質が落ちるラインの目安も解説。">
+<meta name="keywords" content="商品画像 圧縮 方法,JPEG 圧縮 画質 維持,TinyPNG 使い方,EC 画像 ファイルサイズ,画像 軽くする 方法">
+<meta property="og:title" content="商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話">
+<meta property="og:description" content="ECサイトに商品画像をアップする前のファイルサイズ圧縮方法をまとめました。TinyPNG・Squoosh・Lightroomなどツール別の特徴と、圧縮しすぎで画質が落ちるラインの目安も解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/compress-product-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/compress-product-image.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/compress-product-image.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ECサイトの商品画像はどのくらいのファイルサイズにすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Amazonは最大10MB、楽天市場は最大2MBが上限です。Webページの表示速度を考えると、一般的には1枚あたり300KB以下が望ましいとされています。高解像度で画質を維持しながら300KB以下に収めるには圧縮が必要になるケースがほとんどです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料で使える画像圧縮ツールはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TinyPNG（tinypng.com）はJPEG・PNGを無料で圧縮でき、1回20ファイルまで対応しています。Squoosh（squoosh.app）はGoogleが提供する無料の高機能圧縮ツールで、WebP変換にも対応しています。どちらもブラウザ上で使用でき、ソフトのインストールは不要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "圧縮しすぎると画質はどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPEGを圧縮しすぎると「ブロックノイズ」と呼ばれる格子状のノイズが発生し、特にエッジ（輪郭部分）が汚くなります。品質設定60〜70%以下になると視認できるレベルの劣化が生じやすいため、80%以上を目安に圧縮するのが安全です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JPEGとPNGはどちらが圧縮率が高いですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "写真（グラデーションが多い画像）はJPEGの方が小さなファイルサイズで保存できます。PNGは可逆圧縮なので写真をPNGで保存するとJPEGより大きくなります。一方、テキスト・ロゴ・単色背景の画像はPNGの方が小さくなる場合があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "複数の商品画像を一括圧縮する方法はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TinyPNGは1回20ファイルまで対応しています。より大量の一括処理には、Adobe Lightroom（書き出し設定でファイルサイズ・品質を指定）やImageOptim（Mac用無料ソフト）が便利です。Windowsの場合はXnConvert（無料）が複数ファイルの一括変換に対応しています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.spec-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.warn-box{background:#fef3e7;border-left:4px solid #e8a735;border-radius:0 10px 10px 0;padding:20px 24px;margin:24px 0}
+.warn-box h4{font-size:15px;font-weight:700;color:#b07718;margin-bottom:10px}
+.warn-box p{font-size:14px;margin-bottom:8px}
+.warn-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){
+.hero h1{font-size:20px}
+.author-box{flex-direction:column;align-items:center;text-align:center}
+.spec-table{font-size:13px}
+.spec-table th,.spec-table td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ 商品画像を圧縮する方法
+</div>
+</nav>
+<div class="hero">
+<div class="wrap">
+<h1>商品画像を圧縮する方法<br>EC掲載前に知っておきたいファイルサイズの話</h1>
+<div class="update">2026年3月 更新</div>
+</div>
+</div>
+<main>
+<div class="wrap">
+<p>こんにちは、ツバサです。</p>
+
+<p>一眼カメラで撮影した写真は1枚5〜20MBになることがあります。そのままECサイトにアップしようとすると容量オーバーで弾かれたり、ページの表示が重くなったりします。適切なサイズに圧縮する方法をまとめました。</p>
+
+<h2>ECサイトごとのファイルサイズ上限</h2>
+
+<table class="spec-table">
+<tr><th>サービス</th><th>ファイルサイズ上限</th><th>推奨解像度</th></tr>
+<tr><td>Amazon</td><td>最大10MB</td><td>1000px以上（推奨1600px以上）</td></tr>
+<tr><td>楽天市場</td><td>最大2MB</td><td>700px以上</td></tr>
+<tr><td>メルカリ</td><td>10MB未満（アプリ内で自動圧縮あり）</td><td>明確な規定なし</td></tr>
+<tr><td>自社ECサイト</td><td>サーバー設定次第（一般的に2〜5MB）</td><td>用途による</td></tr>
+</table>
+
+<p>上限内に収まっていればアップロードできますが、Webページの表示速度の観点からは1枚あたり300KB以下が望ましいとされています（Google PageSpeed Insightsなどのツールでも指摘されるラインです）。</p>
+
+<h2>画像圧縮ツール比較</h2>
+
+<table class="spec-table">
+<tr><th>ツール</th><th>形式</th><th>無料範囲</th><th>特徴</th></tr>
+<tr><td><a href="https://tinypng.com/" target="_blank" rel="noopener">TinyPNG</a></td><td>JPEG・PNG</td><td>1回20ファイルまで</td><td>ブラウザで使える。圧縮率が高い</td></tr>
+<tr><td><a href="https://squoosh.app/" target="_blank" rel="noopener">Squoosh</a>（Google）</td><td>JPEG・PNG・WebP他</td><td>無料・無制限</td><td>Google提供。WebP変換対応。品質をスライダーで調整可</td></tr>
+<tr><td>ImageOptim</td><td>JPEG・PNG・GIF</td><td>無料（Mac専用）</td><td>ドラッグ＆ドロップで一括処理。Macで使いやすい</td></tr>
+<tr><td>XnConvert</td><td>JPEG・PNG他多数</td><td>無料（Win・Mac）</td><td>一括変換・リサイズに強い</td></tr>
+<tr><td>Lightroom（書き出し）</td><td>JPEG・PNG他</td><td>有料（CC月額制）</td><td>現像と同時にサイズ・品質を指定して書き出せる</td></tr>
+</table>
+
+<h2>圧縮しすぎると起きること</h2>
+
+<p>JPEGの圧縮率を上げすぎると「ブロックノイズ」と呼ばれる格子状のノイズが発生します。特にエッジ（輪郭）部分、単色に近い背景部分で目立ちます。</p>
+
+<p>目安として、品質設定（0〜100%のスケール）で80%以上を保てば視認できる劣化は起きにくいです。70%以下になると商品写真では許容できないレベルの劣化が出始める場合があります。圧縮ツールでリアルタイムプレビューができるSquooshでは、圧縮前後を並べて確認しながら調整できるので商品画像の圧縮に向いています。</p>
+
+<h2>実務でよく使うフロー</h2>
+
+<h3>少数枚・急ぎの場合</h3>
+
+<p>TinyPNGにドラッグ＆ドロップして圧縮→ダウンロード。シンプルで手軽です。1回20枚までの無料制限がありますが、商品1点あたりの枚数であれば十分です。</p>
+
+<h3>大量枚・品質をコントロールしたい場合</h3>
+
+<p>Lightroomの「書き出し」機能を使います。品質を80〜85%・長辺を1080px・色空間をsRGBに設定してフォルダごと一括書き出しができます。Lightroomを持っていない場合はSquooshまたはXnConvertが代替になります。</p>
+
+<div class="point-box">
+<h4>商品画像圧縮の目安</h4>
+<p>ファイルサイズ：300KB以下を目標（楽天は2MB上限のため2MB未満で必須）</p>
+<p>JPEG品質：80%以上で圧縮（それ以下は劣化が目立ちやすい）</p>
+<p>解像度：長辺1080px以上を維持（Amazonは1000px以上推奨）</p>
+<p>色空間：sRGB（AdobeRGBはWebでの色再現が正確でない場合がある）</p>
+</div>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. ECサイトの商品画像はどのくらいのファイルサイズにすればいいですか？</div>
+<div class="fa">楽天市場の上限は2MB、Amazonは10MBです。Webページの表示速度を考えると1枚あたり300KB以下が望ましいです。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 無料で使える画像圧縮ツールはありますか？</div>
+<div class="fa">TinyPNG（tinypng.com）はJPEG・PNGを無料で圧縮でき1回20ファイルまで対応、Squoosh（squoosh.app）はGoogleが提供する高機能圧縮ツールでWebP変換にも対応しています。どちらもブラウザ上で使用できます。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 圧縮しすぎると画質はどうなりますか？</div>
+<div class="fa">JPEGを圧縮しすぎると格子状のブロックノイズが発生し、特に輪郭部分が汚くなります。品質設定80%以上を目安に圧縮するのが安全です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 複数の商品画像を一括圧縮する方法はありますか？</div>
+<div class="fa">TinyPNGは1回20ファイルまで対応しています。より大量の処理にはAdobe Lightroom（書き出し設定）、Mac用のImageOptim、Windows用のXnConvertが便利です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. WebPに変換すると画質は落ちますか？</div>
+<div class="fa">WebPはJPEGより同画質でファイルサイズを約25〜34%削減できます。適切な品質設定（80%以上）であれば、JPEG同等かそれ以上の画質を保ちながら小さなファイルサイズを実現できます。</div>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h3>あわせて読みたい</h3>
+<p><a href="image-file-formats.html">JPEG・PNG・WebP・GIF・RAWの違いまとめ｜用途別に使い分けるための基礎知識</a></p>
+<p><a href="ec-image-rules.html">ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？</a></p>
+<p><a href="rakuten-image-rules.html">楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項を確認した</a></p>
+<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
+</div>
+</div>
+</main>
+<footer>
+<div class="wrap">
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+</body>
+</html>

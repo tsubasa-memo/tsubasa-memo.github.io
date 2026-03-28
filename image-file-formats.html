@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JPEG・PNG・WebP・GIF・RAWの違いまとめ｜用途別に使い分けるための基礎知識</title>
+<meta name="description" content="画像ファイル形式の違いを整理しました。JPEG・PNG・WebP・GIF・RAWの特徴と向いている用途、ECサイトやSNSでの使い分けを表でまとめています。">
+<meta name="keywords" content="JPEG PNG 違い,画像ファイル形式 種類,WebP とは,RAW JPEG 違い,画像形式 用途別,PNG JPEG どっち">
+<meta property="og:title" content="JPEG・PNG・WebP・GIF・RAWの違いまとめ｜用途別の使い分け">
+<meta property="og:description" content="画像ファイル形式の違いを整理しました。JPEG・PNG・WebP・GIF・RAWの特徴と向いている用途、ECサイトやSNSでの使い分けを表でまとめています。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/image-file-formats.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/image-file-formats.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/image-file-formats.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "JPEGとPNGはどちらを使えばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "用途で使い分けます。写真（グラデーションが多い画像）はJPEG、透過が必要なロゴ・テキスト入り画像はPNGが向いています。ECサイトの白背景商品写真はJPEG、透過が必要な場合はPNGが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WebPとは何ですか？JPEGより優れていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WebPはGoogleが開発した画像形式で、JPEGより同画質でファイルサイズを約25〜34%削減できます。主要ブラウザは対応済みで、ウェブ表示速度改善に有効です。ただし一部ソフトウェアやSNSでの対応状況を確認する必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトの商品画像に最適なファイル形式は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Amazon・楽天市場ともにJPEG・PNG・GIFに対応しています。白背景の写真はJPEGが一般的でファイルサイズを抑えやすく、透過が必要な場合はPNGを使います。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RAWファイルはどんなときに使いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RAWはカメラが記録した生データで、後からホワイトバランスや露出を大幅に調整できます。商品撮影や人物撮影など、丁寧に現像したい場合に使います。ファイルサイズが大きく（1枚20〜50MB程度）、SNSやECへのアップ前にJPEGへの変換が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GIFはまだ使われていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "静止画としてのGIFはほぼ使われなくなっています。色数が256色に制限され画質が粗いためです。現在はアニメーションGIF（動く画像）として、SNSやチャットでのリアクション画像に使われています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}
+main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+main h2:first-of-type{margin-top:0}
+main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}
+main p{margin-bottom:20px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+.spec-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.warn-box{background:#fef3e7;border-left:4px solid #e8a735;border-radius:0 10px 10px 0;padding:20px 24px;margin:24px 0}
+.warn-box h4{font-size:15px;font-weight:700;color:#b07718;margin-bottom:10px}
+.warn-box p{font-size:14px;margin-bottom:8px}
+.warn-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}
+.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){
+.hero h1{font-size:20px}
+.author-box{flex-direction:column;align-items:center;text-align:center}
+.spec-table{font-size:13px}
+.spec-table th,.spec-table td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">ホーム</a> ＞ 画像ファイル形式の違いまとめ
+</div>
+</nav>
+<div class="hero">
+<div class="wrap">
+<h1>JPEG・PNG・WebP・GIF・RAWの違いまとめ<br>用途別に使い分けるための基礎知識</h1>
+<div class="update">2026年3月 更新</div>
+</div>
+</div>
+<main>
+<div class="wrap">
+<p>こんにちは、ツバサです。</p>
+
+<p>「この画像、JPEGにする？PNGにする？」という場面が仕事でよく出てきます。なんとなく選んでいた部分もあったので、改めて各形式の違いを整理しておくことにしました。ECやSNSでの実務を意識しながらまとめています。</p>
+
+<h2>主要な画像ファイル形式の比較一覧</h2>
+
+<table class="spec-table">
+<tr><th>形式</th><th>圧縮方式</th><th>透過</th><th>アニメーション</th><th>主な用途</th></tr>
+<tr><td>JPEG</td><td>非可逆圧縮</td><td>×</td><td>×</td><td>写真全般、商品画像</td></tr>
+<tr><td>PNG</td><td>可逆圧縮</td><td>○</td><td>×</td><td>ロゴ、透過が必要な画像</td></tr>
+<tr><td>WebP</td><td>非可逆・可逆両方</td><td>○</td><td>○</td><td>ウェブ最適化画像</td></tr>
+<tr><td>GIF</td><td>可逆圧縮</td><td>○（1bit）</td><td>○</td><td>アニメーション、リアクション</td></tr>
+<tr><td>RAW</td><td>非圧縮〜可逆</td><td>—</td><td>×</td><td>カメラの生データ、後処理前提</td></tr>
+<tr><td>HEIC</td><td>非可逆圧縮</td><td>×</td><td>×</td><td>iPhone撮影の標準形式</td></tr>
+</table>
+
+<h2>JPEG（ジェイペグ）</h2>
+
+<p>写真に最もよく使われる形式です。「非可逆圧縮」といって、ファイルサイズを小さくする代わりに一部の画像情報を捨てています。圧縮率を上げるほどファイルサイズは小さくなりますが、画質が落ちていきます。</p>
+
+<p>Webで写真を表示する用途では、品質設定80〜85程度（フォトショップや各ソフトの設定値）でファイルサイズと画質のバランスが取れるとされています。Amazon・楽天市場の商品写真にはJPEGが最も広く使われています。</p>
+
+<div class="point-box">
+<h4>JPEGを選ぶ場面</h4>
+<p>・商品写真（白背景）をECにアップする</p>
+<p>・人物・風景・料理などの写真をSNSやブログに載せる</p>
+<p>・ファイルサイズを小さくしたい</p>
+</div>
+
+<h2>PNG（ピング）</h2>
+
+<p>「可逆圧縮」なので、圧縮しても画像情報が失われません。そのため同じ内容ならJPEGよりファイルサイズが大きくなりがちですが、透過（背景なし）に対応しているのがPNGの最大の特徴です。</p>
+
+<p>テキストや細かい線が含まれる画像、ロゴ、UIスクリーンショットなどはPNGが向いています。JPEGで保存すると文字の周囲がにじみやすくなるため、テキスト入りの画像はPNGが原則です。</p>
+
+<div class="point-box">
+<h4>PNGを選ぶ場面</h4>
+<p>・透過背景（切り抜き画像）のまま使いたい</p>
+<p>・ロゴ・バナー・テキスト入り画像を保存する</p>
+<p>・繰り返し編集・保存する（JPEGは保存のたびに劣化する）</p>
+</div>
+
+<h2>WebP（ウェブピー）</h2>
+
+<p>Googleが2010年に開発した比較的新しい形式です。JPEGより同画質でファイルサイズを約25〜34%削減できるとされています（<a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener">Google Developers - WebP</a>）。透過もアニメーションも対応しており、「JPEGとPNGの両方を代替できる」形式として注目されています。</p>
+
+<p>2024年時点でChrome・Firefox・Safari・Edgeのすべてが対応済みで、ウェブサイトの表示速度改善（Core Web Vitals対策）を目的に採用するサイトが増えています。ただし、古いバージョンのソフトウェアで開けない場合があるため、納品ファイルや印刷データとしての利用は注意が必要です。</p>
+
+<h2>GIF（ジフ）</h2>
+
+<p>1987年に登場した古い形式で、最大256色しか使えないため写真には向きません。ただし、複数フレームを持つアニメーションに対応しており、「動くスタンプ」的な用途でSNSやSlackで今も広く使われています。</p>
+
+<p>静止画としては画質が粗く、ファイルサイズも大きくなるため、写真目的での新規採用はほぼありません。</p>
+
+<h2>RAW（ロー）</h2>
+
+<p>デジタルカメラが撮影時にセンサーで受け取った生データをそのまま記録した形式です。メーカーによってCR2（Canon）・NEF（Nikon）・ARW（Sony）などの名称があります。</p>
+
+<p>JPEGはカメラ内部で現像・圧縮されますが、RAWはその処理前のデータのため、後からLightroomやCapture Oneなどのソフトで露出・ホワイトバランス・色調を大幅に調整できます。特にホワイトバランスはRAWなら撮影後でも完全に変更可能です。</p>
+
+<div class="warn-box">
+<h4>RAWで撮影するときの注意点</h4>
+<p>・1枚あたり20〜50MB程度になるため、SDカードや保存容量が多く必要</p>
+<p>・そのままSNSやECにアップロードできない（JPEG変換が必要）</p>
+<p>・専用ソフトがないと開けない（iPhoneの場合はiOS対応のRAW形式あり）</p>
+</div>
+
+<h2>HEIC（ヒーク）</h2>
+
+<p>iPhoneのカメラが標準で使用する形式（iOS 11以降）です。JPEGより圧縮率が高く、同等の画質でファイルサイズを約半分にできます。ただし、WindowsやAndroidとの互換性に問題が生じることがあります。</p>
+
+<p>iPhoneで撮った写真をWindowsで開こうとしたら形式が合わず開けなかった、という経験がある方も多いと思います。iPhoneの設定で「互換性優先」にするとJPEGで保存されるため、複数デバイスで使う場合はこちらの設定が無難です。</p>
+
+<h2>EC担当視点での使い分けまとめ</h2>
+
+<table class="spec-table">
+<tr><th>用途</th><th>推奨形式</th><th>理由</th></tr>
+<tr><td>Amazon・楽天の商品写真</td><td>JPEG</td><td>対応必須、ファイルサイズを抑えやすい</td></tr>
+<tr><td>透過背景の商品カットアウト</td><td>PNG</td><td>透過対応、ロゴ合成用途</td></tr>
+<tr><td>Webサイト表示速度を上げたい</td><td>WebP</td><td>同画質でファイルサイズ削減</td></tr>
+<tr><td>商品撮影の元データ保存</td><td>RAW</td><td>後から現像・色調補正できる</td></tr>
+<tr><td>SNSへの投稿</td><td>JPEG</td><td>汎用性が高く、SNS側で自動変換されることが多い</td></tr>
+</table>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. JPEGとPNGはどちらを使えばいいですか？</div>
+<div class="fa">用途で使い分けます。写真（グラデーションが多い画像）はJPEG、透過が必要なロゴ・テキスト入り画像はPNGが向いています。ECサイトの白背景商品写真はJPEG、透過が必要な場合はPNGが一般的です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. WebPとは何ですか？JPEGより優れていますか？</div>
+<div class="fa">WebPはGoogleが開発した画像形式で、JPEGより同画質でファイルサイズを約25〜34%削減できます。主要ブラウザは対応済みで、ウェブ表示速度改善に有効です。ただし一部ソフトウェアや古い環境での対応状況を確認する必要があります。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. ECサイトの商品画像に最適なファイル形式は何ですか？</div>
+<div class="fa">Amazon・楽天市場ともにJPEG・PNG・GIFに対応しています。白背景の写真はJPEGが一般的でファイルサイズを抑えやすく、透過が必要な場合はPNGを使います。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. RAWファイルはどんなときに使いますか？</div>
+<div class="fa">RAWはカメラが記録した生データで、後からホワイトバランスや露出を大幅に調整できます。商品撮影や人物撮影など、丁寧に現像したい場合に使います。ファイルサイズが大きく（1枚20〜50MB程度）、SNSやECへのアップ前にJPEGへの変換が必要です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. iPhoneで撮った写真のHEICファイルをJPEGにするには？</div>
+<div class="fa">設定 → カメラ → フォーマット → 「互換性優先」を選ぶと、以降の撮影がJPEGで保存されます。既存のHEICファイルはMacの場合プレビューで書き出し可能、Windowsの場合はオンラインの変換ツールやMicrosoft Storeの「HEIF画像拡張機能」を使います。</div>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h3>あわせて読みたい</h3>
+<p><a href="raw-vs-jpeg.html">RAWとJPEGどちらで撮るべきか｜初心者が押さえておきたい違いと選び方</a></p>
+<p><a href="ec-image-rules.html">ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？</a></p>
+<p><a href="compress-product-image.html">商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話</a></p>
+<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
+</div>
+</div>
+</main>
+<footer>
+<div class="wrap">
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+</body>
+</html>
