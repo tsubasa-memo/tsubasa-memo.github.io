@@ -98,6 +98,20 @@
       .space-card .info-grid { grid-template-columns: 1fr; }
       .author-box { flex-direction: column; align-items: center; text-align: center; }
     }
+.amazon-cards{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+.amazon-card{display:flex;gap:12px;background:#fff;border:1px solid #e0ddd8;border-radius:10px;padding:16px;text-decoration:none;color:inherit;transition:box-shadow .2s}
+.amazon-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.08);text-decoration:none}
+.amazon-card-img{width:80px;height:80px;object-fit:contain;flex-shrink:0}
+.amazon-card-body{flex:1}
+.amazon-card-label{font-size:11px;font-weight:700;color:#fff;background:#2e6b8a;display:inline-block;padding:2px 8px;border-radius:4px;margin-bottom:6px}
+.amazon-card-label.recommended{background:#e07b00}
+.amazon-card-label.premium{background:#b8860b}
+.amazon-card-label.pro{background:#666}
+.amazon-card-name{font-size:14px;font-weight:700;color:#2d2d2d;margin-bottom:4px;line-height:1.5}
+.amazon-card-price{font-size:16px;font-weight:700;color:#c7511f}
+.amazon-card-price span{font-size:12px;color:#666;font-weight:400;margin-left:4px}
+.amazon-card-note{font-size:12px;color:#666;margin-top:4px}
+.amazon-btn{display:inline-block;margin-top:8px;padding:6px 16px;background:#ff9900;color:#fff;border-radius:4px;font-size:12px;font-weight:700}
   </style>
 </head>
 <body>
@@ -265,6 +279,56 @@
   <p>
     次に、場所によっては意外とうるさい。コワーキングは「仕事する場所」だけど「静かにする場所」とは限らない。電話しながら歩き回る人、打ち合わせで盛り上がっているグループ。集中エリアとフリートークエリアが分かれているところは快適だけど、そうじゃないところは当たりハズレが大きい。
   </p>
+
+<p>そういう場所ではノイズキャンセリングイヤホンが正直一番効く。TELブースに入るほどじゃないけど周りの声が気になる、という場面でさっとつけると集中できる。僕が使っているのはSonyのWF-1000XM5で、コワーキングの雑音くらいなら十分すぎる性能。予算を抑えたいならAnker Soundcoreも選択肢になる。どうしてもコストをかけたくないなら耳栓でも意外と解決する。</p>
+
+<div class="amazon-cards">
+
+<a href="https://www.amazon.co.jp/dp/B0DRVB48LJ/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="Anker Soundcore Liberty 5" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label">梅・コスパ重視</span>
+    <p class="amazon-card-name">Anker Soundcore Liberty 5</p>
+    <p class="amazon-card-price">¥14,990<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">最大48時間再生・ウルトラノイズキャンセリング。コスパ最強クラス</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0CBKQZXT7/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="Sony WF-1000XM5" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label recommended">竹・ツバサが使っている ★</span>
+    <p class="amazon-card-name">Sony WF-1000XM5</p>
+    <p class="amazon-card-price">¥26,200<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">圧倒的ノイズキャンセリング・小型軽量・高性能マイク。コワーキングの雑音に効く</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0GL7VS33K/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="Sony WF-1000XM6" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label premium">松・最上位モデル</span>
+    <p class="amazon-card-name">Sony WF-1000XM6</p>
+    <p class="amazon-card-price">¥45,000<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">世界最高クラスのノイズキャンセリング。妥協したくない人向け</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B015VY2TQW/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="MOLDEX 耳栓" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label pro">番外・最安解決策</span>
+    <p class="amazon-card-name">MOLDEX メテオ 耳栓（10ペア）</p>
+    <p class="amazon-card-price">¥660<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">音楽なしで完全に遮音したいときはこれが一番確実。10ペア入りで実質66円/個</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+</div>
 
   <p>
     あと、意外と気になったのがPC画面の覗き見リスク。席の配置によっては背後から画面が丸見えになる。覗くつもりがなくても、通路を歩いてるだけで他人の画面がふと目に入ってしまうことはある。逆に言えば、自分の画面も見られている可能性がある。僕は壁を背にした席を選ぶようにしている。
@@ -598,6 +662,100 @@
   </div>
 
 
+<h2>コワーキングに持っていくと便利なもの</h2>
+<p>場所の話ばかりしてきたけど、持ち物でもコワーキングの快適さが変わる。</p>
+
+<h3>充電ケーブル・充電器は必ず持参</h3>
+<p>コワーキングスペースには電源コンセントはあるけど、充電ケーブルの貸し出しはほぼない。これはカフェと同じで、持参が前提だ。一度、ケーブルを忘れてアントレサロンに着いてから気づいたことがある。コンセントはすぐそこにあるのに、ケーブルがない。結局その日は近くのコンビニでしのいだけど、出費と時間のロスが地味にきつかった。それ以来、カバンに巻取り式のケーブル一体型充電器を常備している。かさばらないし、ケーブルを別に持たなくていいので荷物が減る。</p>
+
+<div class="amazon-cards">
+
+<a href="https://www.amazon.co.jp/dp/B0FGQ9MTVD/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="TOPADRE 30W 巻取り式充電器" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label">梅・とにかく安く</span>
+    <p class="amazon-card-name">TOPADRE 30W 巻取り式ケーブル一体型充電器</p>
+    <p class="amazon-card-price">¥1,499<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">超小型・超軽量・折畳式プラグ。ケーブルを忘れたときの予備として常時カバンに入れておける</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0DPLT4VKR/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="Anker Nano 35W 巻取り式充電器" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label recommended">竹・ツバサが使っている ★</span>
+    <p class="amazon-card-name">Anker Nano Charger 35W 巻取り式ケーブル一体型</p>
+    <p class="amazon-card-price">¥4,990<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">Ankerの信頼性＋巻取り式ケーブル。MacBook AirやiPhone17にも対応。これ1個でカバンが軽くなる</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0DRD1Y4C6/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="Anker 140W 4ポート充電器" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label premium">松・全部まとめて充電</span>
+    <p class="amazon-card-name">Anker Charger 140W 4ポート＋USB-Cケーブル</p>
+    <p class="amazon-card-price">¥9,490<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">PC・スマホ・タブレットを1台で同時充電。コンセント1口を4口に増やせる。長時間作業派に</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+</div>
+
+<h3>データ持ち出し：USBメモリか外付けSSDか</h3>
+<p>コワーキングで使うPCがいつも同じとは限らない。会社のPCを持ち出す日と、個人のPCで作業する日が混在する場合、ファイルの受け渡し手段を持っておくと便利。軽さ重視ならUSBメモリ、速度と容量重視なら外付けSSD。</p>
+
+<div class="amazon-cards">
+
+<a href="https://www.amazon.co.jp/dp/B09MLCPPXV/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="SanDisk Ultra Shift USBメモリ 128GB" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label">梅・最軽量</span>
+    <p class="amazon-card-name">SanDisk Ultra Shift USBメモリ 128GB（USB-A）</p>
+    <p class="amazon-card-price">¥3,889<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">超小型・読取最大100MB/秒。邪魔にならないサイズで常にカバンに忍ばせておける</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0CV4SQVW5/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="SanDisk Ultra Slider USB Type-C 128GB" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label recommended">竹・Type-C対応 ★</span>
+    <p class="amazon-card-name">SanDisk Ultra Slider USBメモリ 128GB（Type-C）</p>
+    <p class="amazon-card-price">¥4,333<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">読取最大400MB/秒・収納式コネクター。新しめのPCやスマホと直結できるType-C対応</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0DM23XSH6/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="Samsung T7 外付けSSD 1TB" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label premium">松・本格派</span>
+    <p class="amazon-card-name">Samsung T7 外付けSSD 1TB</p>
+    <p class="amazon-card-price">¥29,273<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">最大1,050MB/秒・1TB。写真・動画データの持ち出しや本格バックアップ用途に</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B08P4CN4YC/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61CGHv6kmWL._SL160_.jpg" alt="SanDisk Extreme Portable SSD 1TB" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label pro">特上・防塵防滴モデル</span>
+    <p class="amazon-card-name">SanDisk Extreme Portable SSD V2 1TB</p>
+    <p class="amazon-card-price">¥40,222<span>（税込・2026年3月28日時点）</span></p>
+    <p class="amazon-card-note">読取最大1,050MB/秒・防塵防滴対応。屋外持ち出しが多い人・プロ用途に</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+</div>
+
   <h2>おわりに</h2>
 
   <p>
@@ -630,6 +788,8 @@
       </p>
     </div>
   </div>
+
+<p style="font-size:12px;color:#999;margin-top:32px;">本記事にはAmazonアソシエイトのリンクが含まれます。</p>
 
 </article>
 
