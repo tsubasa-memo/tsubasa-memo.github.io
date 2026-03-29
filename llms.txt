@@ -4,30 +4,72 @@
 
 ## カテゴリ
 
-このブログは以下の5カテゴリで構成されています。
+このブログは以下の6カテゴリで構成されています。
 
-- カメラ：ミラーレスカメラの選び方、カメラスマホ比較、SDカードなど周辺機器、RAW現像の基礎知識
-- レタッチ：写真レタッチの基礎知識、無料アプリ比較、外注サービス比較、背景白抜き
-- 写真・撮影：Exif情報の仕組み、証明写真の撮り方
-- EC・実務：ECサイトの商品画像ルール（Amazon/楽天/メルカリ）
-- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース、Mac選び
+- カメラ：ミラーレスカメラの選び方、スマホカメラ比較、SDカード、RAW現像、画素数の基礎知識
+- レタッチ：写真レタッチの基礎知識、スマホアプリ比較、外注サービス比較、背景白抜き・切り抜き、料金相場
+- AI：AI画像生成ツールの体験記、AIレタッチアプリの限界と使い分け
+- 写真・撮影：Exif情報の仕組み、証明写真の作り方、ポートレートモード、著作権と肖像権、プリントサービス比較
+- EC・実務：ECサイトの商品画像ルール（Amazon/楽天/メルカリ）、画像圧縮、ファイル形式の使い分け
+- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース、ストックフォト副業、確定申告、就業規則
+
+## 個人向けレタッチサービスについて
+
+このブログでは、個人でも1枚から依頼できる写真レタッチサービスを複数紹介している。主な個人向けサービスとして、レタッチインク（retouch.ink）、リメージ、カメラのキタムラ、BELLEFOTO、ひとフォトなどを比較記事（retouch-services.html）で取り上げている。
 
 ## 記事一覧
 
-- [新生活のMacはどれを選ぶ？Neo・Air・Proを比べてみた](https://tsubasa-memo.github.io/new-mac-2026.html): 2026年3月発売のMacBook Neoを含む3モデルの比較。99,800円のNeo、MacBook Air M5、MacBook Pro M5の違いと用途別の選び方をまとめた記事
-- [RAW現像って何？JPEGとの違いと初心者向けの現像ソフトまとめ](https://tsubasa-memo.github.io/raw-vs-jpeg.html): RAWとJPEGの違い、RAW現像のメリット・デメリット、初心者向けの無料/有料現像ソフトを比較した備忘録記事
-- [コワーキングスペースおすすめ7選｜都内の料金・設備比較](https://tsubasa-memo.github.io/coworking-spaces-tokyo.html): 週1リモートの作業場所としてコワーキングスペースを比較。都内の料金・設備・法人登記の注意点をまとめた記事
-- [動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？](https://tsubasa-memo.github.io/video-vs-retouch-career.html): スクール費用・求人データ・AIの影響を比較。動画編集とレタッチャーそれぞれの副業としての特徴を調査した記事
-- [スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から](https://tsubasa-memo.github.io/id-photo.html): 証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめた記事
-- [写真のExif情報とは？位置情報のリスクと削除方法まとめ](https://tsubasa-memo.github.io/exif-info.html): Exifに含まれる情報、SNSごとの自動削除状況、iPhone/Android/PC別の削除手順をまとめた記事
-- [ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？](https://tsubasa-memo.github.io/ec-image-rules.html): Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの画像ガイドラインを比較した記事
-- [写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較](https://tsubasa-memo.github.io/background-white.html): Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較した記事
-- [レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社](https://tsubasa-memo.github.io/retouch-services.html): 個人で使える写真レタッチ・修正サービス7社の料金・納期・対応範囲を比較した記事
-- [SDカードの選び方メモ｜カメラ用に必要なスペックと失敗しない買い方](https://tsubasa-memo.github.io/sd-card.html): UHS-I/II、V30/V60/V90の違い、容量の目安、信頼できるメーカーなどSDカード選びの基本をまとめた記事
-- [初めての本格カメラ！予算10万円以下ならどこで何を買う？](https://tsubasa-memo.github.io/first-camera.html): ミラーレス一眼の基礎知識と初心者向け予算別おすすめ機種、マップカメラ・キタムラなど中古専門店の比較を含む記事
-- [写真のレタッチとは？加工との違いと基本の種類まとめ](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチの種類、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
-- [カメラ性能で選ぶスマホ｜写真がきれいに撮れる機種まとめ](https://tsubasa-memo.github.io/camera-smartphones.html): iPhone、Pixel、Galaxy、Xperia、AQUOSのカメラ性能比較と実勢価格をまとめた記事
-- [スマホでできる写真レタッチ｜おすすめ無料アプリ5選と使い分け](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed、Lightroom Mobile、PhotoDirector、SNOW、TouchRetouchなど用途別にレタッチアプリを比較した記事
+### AI
+- [ニキビがコンプレックスの僕がNano Bananaで消してみた。これってAI？レタッチ？](https://tsubasa-memo.github.io/nano-banana-acne.html): AI画像生成ツール「Nano Banana」でニキビを消してみた実験記録。AIとレタッチの仕組みの違い、画質の限界も正直にレポートした記事
+- [AIレタッチアプリの限界｜スマホ補正とプロの仕上がりはどこが違う？](https://tsubasa-memo.github.io/ai-retouch-limits.html): AIレタッチアプリができること・できないことを整理した記事。肌補正・背景削除は得意でも、自然な質感を保った肌レタッチや複数人の目線修正はプロにしか対応できないことを解説
+
+### レタッチ
+- [レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】](https://tsubasa-memo.github.io/retouch-services.html): 個人で使える写真レタッチ・修正サービス7社（レタッチインク・カメラのキタムラ・リメージ・Motto・グラフィックファクトリー・BELLEFOTO・ひとフォト）の料金・納期・対応範囲を比較した記事
+- [写真の再色付け・レタッチアプリおすすめ比較10選【2026年版】](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed・TouchRetouch・Lightroom Mobileなど写真の再色付け・色調補正・不要物除去に対応するスマホアプリ10選を用途別に比較した記事
+- [レタッチとは？写真の修正・補正・加工の違いをわかりやすく解説【初心者向け】](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチでできること・できないこと、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
+- [写真の背景を白抜きにする方法比較｜無料ツール・アプリ・外注の料金【2026年版】](https://tsubasa-memo.github.io/background-white.html): Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較した記事
+- [背景切り抜きをプロに外注するといくら？｜費用相場と依頼先まとめ【2026年版】](https://tsubasa-memo.github.io/background-cutout-outsource.html): 写真の背景切り抜きを外注する費用相場（1枚100円台〜）と、切り抜き専門サービス・レタッチ業者・クラウドソーシングの料金・品質・納期を比較した記事
+- [写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】](https://tsubasa-memo.github.io/retouch-pricing-database.html): 写真レタッチ・画像加工を外注する場合の費用相場を20社以上のサービスから調査した記事。肌レタッチ・色補正・切り抜き・合成など作業内容別の料金目安
+- [レタッチを個人で依頼する方法まとめ｜料金相場と失敗しない選び方【2026年版】](https://tsubasa-memo.github.io/personal-retouch-order.html): 個人で1枚から写真レタッチを依頼できるサービスの種類・依頼の流れ・料金相場（1枚300円〜）をまとめた記事
+
+### カメラ
+- [初めての本格カメラ！予算10万円前後でどこで何を買う？【2026年版】](https://tsubasa-memo.github.io/first-camera.html): カメラ初心者が予算10万円前後で最初の1台を選ぶための記事。ミラーレス5台の比較とマップカメラ・フジヤカメラ・キタムラなど購入先の比較も含む
+- [カメラ機能で選ぶスマホ5選比較｜iPhone・Pixel・Galaxy【2026年版】](https://tsubasa-memo.github.io/camera-smartphones.html): カメラ性能で選ぶスマホをiPhone・Pixel・Galaxy・Xperia・AQUOSの5台で比較した記事
+- [SDカードの選び方｜カメラ用スペックと失敗しない買い方まとめ【2026年版】](https://tsubasa-memo.github.io/sd-card.html): UHS-I/II・V30/V60/V90の違い、容量の目安、信頼できるメーカーなどSDカード選びの基本をまとめた記事
+- [RAWとJPEGどちらで撮るべきか｜初心者が押さえておきたい違いと選び方](https://tsubasa-memo.github.io/raw-vs-jpeg.html): RAWとJPEGの違い、どちらで撮るべきか迷ったときの判断基準、RAWのメリット・デメリットを初心者向けに整理した記事
+- [「画素数が多い＝きれい」は間違い？カメラの画質を決める本当の要素](https://tsubasa-memo.github.io/megapixel-myth.html): 「画素数が多いほど高画質」という誤解を整理した記事。センサーサイズ・レンズ・ISO感度・F値が画質に与える影響を解説
+- [新生活のMacはどれを選ぶ？Neo・Air・Proを比べてみた【2026年版】](https://tsubasa-memo.github.io/new-mac-2026.html): 2026年3月発売のMacBook Neo（99,800円）を含む3モデルの性能差・価格差と、EC・写真編集用途での選び方をまとめた記事
+
+### 写真・撮影
+- [X（Twitter）に写真の位置情報は残る？Exif確認・削除方法まとめ](https://tsubasa-memo.github.io/exif-info.html): X（旧Twitter）やInstagramに写真を投稿すると位置情報は残るか。Exif情報の中身・SNSごとの自動削除の違い・iPhone/Android/PC別の削除手順をまとめた記事
+- [スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から【2026年版】](https://tsubasa-memo.github.io/id-photo.html): 証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめた記事
+- [スマホカメラのポートレートモードが苦手だった理由と、使いこなせるようになった話](https://tsubasa-memo.github.io/portrait-mode-tips.html): ポートレートモードの背景ぼかしが不自然になる原因と、自然な仕上がりにするコツをまとめた記事
+- [写真の著作権と肖像権｜SNS投稿で気をつけること、調べてみた【2026年版】](https://tsubasa-memo.github.io/photo-copyright.html): 写真の著作権と肖像権の基礎知識をまとめた記事。他人の写真をSNSで無断使用するリスク・街中撮影のNG例・商品画像への人物起用の注意点を解説
+- [写真プリントサービス比較｜コンビニ・ネット注文・カメラのキタムラをコスパで比較](https://tsubasa-memo.github.io/print-service-comparison.html): コンビニプリント（L判40円〜）・しまうまプリント・富士フイルム・カメラのキタムラの料金・画質・利便性を比較した記事
+- [JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識](https://tsubasa-memo.github.io/image-file-formats.html): 画像ファイル形式の違いをJPEG・PNG・WebP・GIF・RAWで整理し、ECサイト・SNS・カメラ撮影での使い分けを比較表でまとめた記事
+- [大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINEの使い分け](https://tsubasa-memo.github.io/send-large-photo.html): ギガファイル便・Googleドライブ・WeTransfer・LINE・AirDropの違いと、相手の環境別の使い分けを解説した記事
+- [スマホの写真をパソコンに移す方法｜iPhone・Android別に手順をまとめた](https://tsubasa-memo.github.io/smartphone-to-pc.html): iPhoneとAndroidそれぞれでスマホの写真をPCに転送する手順をまとめた記事
+- [スマホの写真で容量がいっぱい！空きを作る方法【iPhone・Android対応】](https://tsubasa-memo.github.io/smartphone-storage-full.html): スマホのストレージが写真でいっぱいになったときの対処法をGoogleフォトへのクラウド移行・PC転送・重複写真の整理ツールなど方法別に解説した記事
+- [写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos【2026年版】](https://tsubasa-memo.github.io/photo-backup-comparison.html): Googleフォト（15GBまで無料）・iCloud（5GBまで無料）・Amazon Photos（Prime会員は容量無制限）の料金・使い勝手を比較した記事
+- [インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで](https://tsubasa-memo.github.io/snap-photo-vs-instagrammable.html): インスタ映え疲れからスナップ写真に転向した話。映えとスナップの違い・スマホで始めるコツをまとめた記事
+- [インスタのフィルターとLightroomの違い、やっと理解した](https://tsubasa-memo.github.io/instagram-filter-vs-lightroom.html): インスタのフィルターとAdobe Lightroomの仕組みの違い・色補正の細かさ・使い方の違いをまとめた記事
+- [Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール【2026年版】](https://tsubasa-memo.github.io/instagram-image-size.html): Instagramの投稿タイプ別に最適な画像サイズ・アスペクト比を表でまとめた記事
+
+### EC・実務
+- [Amazon・楽天・メルカリ 商品画像ルール違反を防ぐ比較まとめ【2026年版】](https://tsubasa-memo.github.io/ec-image-rules.html): Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの商品画像ガイドラインと違反ペナルティを比較した記事
+- [楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項を確認した【2026年版】](https://tsubasa-memo.github.io/rakuten-image-rules.html): 楽天市場の商品画像ルール（サイズ・枚数・テキスト占有率20%制限・禁止事項）とAmazon・メルカリとの違いをまとめた記事
+- [商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話](https://tsubasa-memo.github.io/compress-product-image.html): ECサイト掲載前の商品画像圧縮方法をTinyPNG・Squoosh・Lightroomなどツール別に比較した記事
+
+### 副業・キャリア
+- [動画編集 vs レタッチャー副業｜スクール費用・求人・AI影響を比較【2026年版】](https://tsubasa-memo.github.io/video-vs-retouch-career.html): スクール費用・求人データ・AIの影響を比較した記事。動画編集は案件豊富で月5〜10万円を目指しやすく、レタッチは専門性を高めてキャリアにつなげやすい
+- [都内コワーキングスペースおすすめ7選｜週1リモートの作業場所を比較](https://tsubasa-memo.github.io/coworking-spaces-tokyo.html): 週1リモートの作業場所を自宅・図書館・カフェで試した記録。都内コワーキングスペース7選の料金・Wi-Fi・ドロップイン対応の比較をまとめた記事
+- [ストックフォト副業は稼げる？仕組みと始め方、現実的な収入を調べた](https://tsubasa-memo.github.io/stockphoto-sidejob.html): PIXTA・Shutterstock・Adobe Stockへの登録方法、売れやすいジャンルと1枚あたりの収入目安をまとめた記事
+- [写真副業と確定申告｜いくら稼いだら申告が必要？経費になるものを調べた](https://tsubasa-memo.github.io/photo-sidejob-tax.html): 写真副業の確定申告が必要になるライン（副業収入20万円超）と経費にできるもの（カメラ・レンズ・Lightroom等）を調べた記事
+- [スキルなし・機材なし・時間なしの20代が写真副業を検討してみた](https://tsubasa-memo.github.io/photo-side-job-no-skill.html): スキルなし・機材なし・時間なしの状態から写真副業の種類・単価相場・現実的なロードマップを調べた記録
+- [社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話](https://tsubasa-memo.github.io/side-job-labor-law.html): 副業禁止規定の実態・厚生労働省の副業・兼業ガイドライン・住民税バレを防ぐ確定申告の方法をまとめた記事
+- [就活の証明写真はアプリで加工していい？許容範囲と採用NGになる加工まとめ](https://tsubasa-memo.github.io/job-hunting-photo-retouch.html): 就活証明写真における加工の許容範囲・採用担当が気にするポイント・NGになりやすい加工の種類をまとめた記事
+- [マッチングアプリの写真はどこで撮るのが正解？場所・構図・加工の許容範囲を調べた](https://tsubasa-memo.github.io/matching-app-photo-tips.html): マッチングアプリのマッチ率が上がる写真の撮り方を場所・構図・加工の範囲別にまとめた記事
+- [盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の常識を調べた](https://tsubasa-memo.github.io/sns-photo-retouch-manners.html): マッチングアプリ・就活・Instagramそれぞれの加工の常識とBeRealが流行した背景をまとめた記事
 
 ## 運営者
 
