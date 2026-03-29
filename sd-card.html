@@ -122,12 +122,15 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 .spec-table th,.spec-table td{padding:8px 10px}
 }
 .note{font-size:.85em;color:#888;margin-top:-.5em}
-.amazon-card{display:flex;gap:12px;background:#fff;border:1px solid #e0ddd8;border-radius:10px;padding:16px;margin:8px 0;text-decoration:none;color:inherit;transition:box-shadow .2s}
+.amazon-cards{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+.amazon-card{display:flex;gap:12px;background:#fff;border:1px solid #e0ddd8;border-radius:10px;padding:16px;text-decoration:none;color:inherit;transition:box-shadow .2s}
 .amazon-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.08);text-decoration:none}
 .amazon-card-img{width:80px;height:80px;object-fit:contain;flex-shrink:0}
 .amazon-card-body{flex:1}
 .amazon-card-label{font-size:11px;font-weight:700;color:#fff;background:#2e6b8a;display:inline-block;padding:2px 8px;border-radius:4px;margin-bottom:6px}
+.amazon-card-label.recommended{background:#e07b00}
 .amazon-card-label.premium{background:#b8860b}
+.amazon-card-label.pro{background:#666}
 .amazon-card-name{font-size:14px;font-weight:700;color:#2d2d2d;margin-bottom:4px;line-height:1.5}
 .amazon-card-price{font-size:16px;font-weight:700;color:#c7511f}
 .amazon-card-price span{font-size:12px;color:#666;font-weight:400;margin-left:4px}
@@ -244,17 +247,17 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h3>このSDカードを買えばOK</h3>
 
-<p>迷ったらSanDiskのUltraを選べば失敗しません。初心者の最初の1枚として、コスパと信頼性のバランスが取れています。</p>
+<p>迷ったらSanDiskを選べば失敗しません。用途と予算に合わせて以下から選んでください。竹にあたるExtremeは、調べた時点（2026年3月）の価格で128GBが¥4,368とコスパが高く、個人的には一番おすすめです。ただし価格は変動するので、購入前に必ず確認してください。</p>
 
-<p>最初から良いものを買っておきたい人にはExtremeがおすすめです。調べた時点（2026年3月）の価格では、Ultra 64GBが¥3,222、Extreme 128GBが¥4,368と、容量が倍で価格差が約1,150円という状況でした。この価格差ならExtremeを選んだ方がお得という判断もできます。ただし価格は変動するので、購入前に必ず確認してください。</p>
+<div class="amazon-cards">
 
 <a href="https://www.amazon.co.jp/dp/B0BZZ7BTH2/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
   <img src="https://m.media-amazon.com/images/I/71mxEJ2N53L._AC_SX160_.jpg" alt="SanDisk Ultra 64GB" class="amazon-card-img">
   <div class="amazon-card-body">
-    <span class="amazon-card-label">入門向け</span>
+    <span class="amazon-card-label">梅・入門向け</span>
     <p class="amazon-card-name">SanDisk Ultra 64GB SDXC UHS-I</p>
     <p class="amazon-card-price">¥3,222<span>（税込・2026年3月時点）</span></p>
-    <p class="amazon-card-note">初めての1枚。Class10 / 読取最大140MB/s</p>
+    <p class="amazon-card-note">最初の1枚。写真中心ならこれで十分。読取最大140MB/s</p>
     <span class="amazon-btn">Amazonで見る</span>
   </div>
 </a>
@@ -262,17 +265,41 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="https://www.amazon.co.jp/dp/B0B21CQGYP/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
   <img src="https://m.media-amazon.com/images/I/61DmcBUbQ1L._AC_SX160_.jpg" alt="SanDisk Extreme 128GB" class="amazon-card-img">
   <div class="amazon-card-body">
-    <span class="amazon-card-label premium">上位モデル</span>
+    <span class="amazon-card-label recommended">竹・コスパおすすめ ★</span>
     <p class="amazon-card-name">SanDisk Extreme 128GB SDXC UHS-I V30</p>
     <p class="amazon-card-price">¥4,368<span>（税込・2026年3月時点）</span></p>
-    <p class="amazon-card-note">最初から良いものを。V30対応・動画撮影も安心</p>
+    <p class="amazon-card-note">梅との価格差約¥1,150で容量2倍・V30対応。これを選ぶ人が多い</p>
     <span class="amazon-btn">Amazonで見る</span>
   </div>
 </a>
 
+<a href="https://www.amazon.co.jp/dp/B0B21BB745/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://m.media-amazon.com/images/I/61bHnly3QrL._AC_SX160_.jpg" alt="SanDisk Extreme PRO 128GB UHS-I" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label premium">松・上位モデル</span>
+    <p class="amazon-card-name">SanDisk Extreme PRO 128GB SDXC UHS-I V30</p>
+    <p class="amazon-card-price">¥7,010<span>（税込・2026年3月時点）</span></p>
+    <p class="amazon-card-note">読取最大200MB/s。連写・4K動画を本格的に撮る人向け</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+<a href="https://www.amazon.co.jp/dp/B0DNLGQY3X/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
+  <img src="https://m.media-amazon.com/images/I/71S+EQsvV4L._AC_SX160_.jpg" alt="SanDisk Extreme PRO 128GB UHS-II" class="amazon-card-img">
+  <div class="amazon-card-body">
+    <span class="amazon-card-label pro">特上・プロ向け</span>
+    <p class="amazon-card-name">SanDisk Extreme PRO 128GB SDXC UHS-II V90</p>
+    <p class="amazon-card-price">¥40,000<span>（税込・2026年3月時点）</span></p>
+    <p class="amazon-card-note">読取最大300MB/s。放送・商業撮影向け。一般ユーザーには不要</p>
+    <span class="amazon-btn">Amazonで見る</span>
+  </div>
+</a>
+
+</div>
+
 <h3>Amazonで買うときの注意</h3>
 
-<p>SDカードは偽造品が多いジャンルとして知られています。Amazonで購入する場合は、<strong>販売元がメーカー公式ストアまたは信頼できる正規代理店かどうか</strong>を必ず確認してください。「販売元：Amazon.co.jp」も比較的安心ですが、第三者出品で極端に安いものは注意が必要です。</p>
+<p>SDカードは偽造品が多いジャンルとして知られています。Amazonで購入する場合は、<strong>販売元がメーカー公式ストアまたは「Amazon.co.jp」になっているかどうかを必ず確認してください。</strong>第三者出品で極端に安いものは注意が必要です。商品ページの「出荷元/販売元」欄をチェックしてから購入しましょう。</p>
 
 <h2>カメラと一緒に買うと便利なもの</h2>
 
