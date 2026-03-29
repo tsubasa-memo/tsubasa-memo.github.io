@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</title>
+<meta name="description" content="ブログをnoteではなくGitHub Pagesで作った理由をまとめました。noteはAdSense非対応・Amazon Associates制限あり、GitHub Pagesは自由にHTMLを書けてAdSense設置可能な点を比較した備忘録です。">
+<meta name="keywords" content="GitHub Pages ブログ,note AdSense,個人ブログ 収益化,GitHub Pages 始め方">
+<meta property="og:title" content="noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった">
+<meta property="og:description" content="noteではなくGitHub Pagesを選んだ理由。AdSense・Amazon Associates対応とカスタマイズ自由度で比較しました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/github-pages-vs-note.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/github-pages-vs-note.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/github-pages-vs-note.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"noteとGitHub Pagesの一番の違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"noteはAdSense（Google広告）が使えないことが最大の違いです。noteはプラットフォームが広告収益を管理しており、クリエイターが自分でAdSenseコードを埋め込むことができません。GitHub Pagesは静的HTMLファイルをホスティングするサービスなので、AdSenseのスクリプトを自由に埋め込めます。"}},
+    {"@type":"Question","name":"GitHub Pagesは無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"無料で使えます。GitHubアカウントを作成してリポジトリを公開設定にし、GitHub Pagesを有効にするだけで「ユーザー名.github.io」というURLでサイトが公開されます。独自ドメインの取得は有料（年間1,500円程度）ですが、github.ioドメインのままでも問題ありません。"}},
+    {"@type":"Question","name":"noteでAmazon アソシエイトは使えますか？","acceptedAnswer":{"@type":"Answer","text":"noteでもAmazon アソシエイトのリンクは貼れますが、テキストリンクや画像リンクのみです。GitHub Pagesなら商品カードのようなカスタムHTMLも自由に設置できるため、より柔軟なアフィリエイト設置が可能です。"}},
+    {"@type":"Question","name":"GitHub Pagesでブログを作るのに技術的な知識は必要ですか？","acceptedAnswer":{"@type":"Answer","text":"基本的なHTMLとCSSがわかれば作れます。僕自身も最初はHTMLをほとんど書いたことがなく、AIに手伝ってもらいながら記事を書いています。テンプレートをコピーして内容を書き換えていくスタイルなので、慣れれば難しくありません。"}},
+    {"@type":"Question","name":"noteからGitHub Pagesに移行するのは難しいですか？","acceptedAnswer":{"@type":"Answer","text":"noteの記事をHTMLに変換してGitHub Pagesに移す作業は、記事数が多いと手間がかかります。最初からGitHub Pagesで始める方が楽です。僕の場合はもともとnoteに記事がなかったので、最初からGitHub Pagesで始めました。"}},
+    {"@type":"Question","name":"SEOはnoteとGitHub Pages、どちらが強いですか？","acceptedAnswer":{"@type":"Answer","text":"noteはドメイン権威（DA）が高いため短期的には検索上位に出やすい傾向があります。一方GitHub Pagesは自分でsitemap.xmlや構造化データを設置することで長期的なSEO対策ができます。収益化とSEOの両立を考えると、GitHub Pagesの方が制御しやすいと感じています。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ なぜnoteじゃなくてGitHub Pa…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>なぜnoteじゃなくてGitHub Pagesにしたか｜AdSenseを使いたかった</h1>
+<p class="lead">noteではなくGitHub Pagesを選んだ理由。AdSense・Amazon Associates対応とカスタマイズ自由度で比較しました。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>noteとGitHub Pages、AdSense対応の違い</li>
+<li>Amazon アソシエイトの設置自由度の比較</li>
+<li>GitHub Pagesを選んだ具体的な理由3つ</li>
+<li>GitHub Pagesのデメリットと対策</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログを始めるとき、最初に迷ったのが「noteで書くか、自分でサイトを作るか」でした。結論を先に言うと、<strong>AdSenseを使いたかったからGitHub Pagesにした</strong>、というのが一番の理由です。</p>
+
+<h2>noteで書かなかった理由</h2>
+
+<p>noteはシンプルで書きやすいですし、SEOも最初は効きやすいと聞いていました。記事を書くこと自体に集中できる環境は魅力でした。ただ調べてみると、いくつか気になる制限があることがわかりました。</p>
+
+<p>一番大きかったのは<strong>Google AdSenseが使えない</strong>という点です。noteはプラットフォーム側が広告枠を管理しており、自分のAdSenseアカウントのコードを埋め込むことができません。note独自の収益機能（有料記事・メンバーシップ）はありますが、広告収入の仕組みは別物です。</p>
+
+<p>次に気になったのはカスタマイズの制限です。HTMLやCSSを自由に書けないため、商品比較表を作ったり、構造化データを設置したり、ページのレイアウトを変えたりといった作業ができません。SEO対策やLLMO（AIへの最適化）をやりたいなら、自分でHTMLを管理できる環境の方が都合が良いと判断しました。</p>
+
+<h2>GitHub Pagesを選んだ理由3つ</h2>
+
+<h3>1. AdSenseが自由に設置できる</h3>
+<p>GitHub Pagesは静的なHTMLファイルをそのままホスティングするサービスなので、AdSenseのスクリプトタグをHTMLに書くだけで広告が表示されます。AdSenseの審査基準はサイトの内容によるもので、GitHub PagesかどうかはGoogle側は特に気にしません。</p>
+
+<h3>2. 完全無料で使える</h3>
+<p>GitHubのアカウントさえあれば、サイトのホスティング費用はかかりません。「ユーザー名.github.io」というURLで公開されます。独自ドメインを取得すれば年間1,500円程度の費用がかかりますが、なくても問題なく運営できます。</p>
+
+<h3>3. HTMLを自由に書ける</h3>
+<p>SEO用のmeta descriptionを丁寧に書く、FAQ構造化データ（JSON-LD）を入れる、内部リンクをコントロールする、llms.txtを設置してAIに読ませるといった対策がすべて自分の手でできます。ブログを書くだけでなく「育てる」作業をやりたい場合、プラットフォームに縛られない環境の方が動きやすいです。</p>
+
+<h2>GitHub Pagesのデメリットと感じたこと</h2>
+
+<p>デメリットもあります。記事を更新するにはHTMLファイルを編集してGitHubにアップロードする手順が必要なので、noteのようにブラウザ上で書いてすぐ投稿、とはいきません。最初は手順を覚えるまで時間がかかりました。</p>
+
+<p>また、noteはドメイン権威が高いため検索上位に出やすいという特性があります。GitHub Pagesの新規サイトは最初のうちはGoogleに認識されるまで時間がかかります。実際、このブログも記事を公開してからインデックスされるまで2週間ほどかかりました（その話は<a href="google-index-not-found.html">別の記事</a>にまとめています）。</p>
+
+<div class="warn-box">
+<p><strong>注意：</strong>GitHub Pagesで運営する場合、コミット履歴に本名やメールアドレスが残ることがあります。匿名で運営したい場合はGitの設定（user.nameとuser.email）を匿名用にしておくことをおすすめします。</p>
+</div>
+
+<h2>まとめ：noteかGitHub Pagesか</h2>
+
+<table class="spec-table">
+<tr><th></th><th>note</th><th>GitHub Pages</th></tr>
+<tr><td>AdSense</td><td>×（使えない）</td><td>○（自由に設置可）</td></tr>
+<tr><td>Amazon アソシエイト</td><td>△（テキストリンクのみ）</td><td>○（HTMLカード等も可）</td></tr>
+<tr><td>書きやすさ</td><td>◎（ブラウザで完結）</td><td>△（HTML編集が必要）</td></tr>
+<tr><td>カスタマイズ</td><td>×（制限あり）</td><td>◎（自由）</td></tr>
+<tr><td>初期SEO</td><td>◎（ドメイン権威が高い）</td><td>△（時間がかかる）</td></tr>
+<tr><td>費用</td><td>無料（有料プランもあり）</td><td>無料</td></tr>
+</table>
+
+<p>「とにかく書くことに集中したい」ならnote、「広告・アフィリエイトで収益化したい」「SEO対策を自分でコントロールしたい」ならGitHub Pages、という選び方が実態に近いと思います。僕はブログそのものを育てる作業も面白いと思っているので、GitHub Pagesを選んでよかったと感じています。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. noteとGitHub Pagesの一番の違いは何ですか？</p><p class="faq-a">noteはAdSense（Google広告）が使えないことが最大の違いです。noteはプラットフォームが広告収益を管理しており、クリエイターが自分でAdSenseコードを埋め込むことができません。GitHub Pagesは静的HTMLをホスティングするサービスなので、AdSenseのスクリプトを自由に埋め込めます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub Pagesは無料で使えますか？</p><p class="faq-a">無料で使えます。GitHubアカウントを作成してリポジトリを公開設定にし、GitHub Pagesを有効にするだけで「ユーザー名.github.io」というURLでサイトが公開されます。独自ドメインの取得は有料（年間1,500円程度）ですが、github.ioドメインのままでも問題ありません。</p></div>
+<div class="faq-item"><p class="faq-q">Q. noteでAmazon アソシエイトは使えますか？</p><p class="faq-a">noteでもAmazon アソシエイトのリンクは貼れますが、テキストリンクや画像リンクのみです。GitHub Pagesならカスタムの商品カードHTMLも自由に設置できます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub Pagesでブログを作るのに技術的な知識は必要ですか？</p><p class="faq-a">基本的なHTMLとCSSがわかれば作れます。AIに手伝ってもらいながら記事を書くことも可能で、テンプレートをコピーして内容を書き換えていくスタイルなら技術的なハードルは低いです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. SEOはnoteとGitHub Pages、どちらが強いですか？</p><p class="faq-a">noteはドメイン権威が高いため短期的には検索上位に出やすい傾向があります。GitHub Pagesは自分でsitemap.xmlや構造化データを設置することで長期的なSEO対策ができます。収益化とSEOの両立を考えると、GitHub Pagesの方が制御しやすいと感じています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub PagesでAdSense審査は通りますか？</p><p class="faq-a">通ります。GitHub Pagesかどうかはほとんど関係なく、コンテンツの質と量が審査基準になります。記事数が10本以上あり、オリジナルな内容であることが重要です。プライバシーポリシーの設置も審査通過に有効です。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="adsense-application.html">個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録</a></div>
+<div class="related-item"><a href="google-index-not-found.html">Googleにインデックスされるまで｜サイトマップ送信からの記録</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>
