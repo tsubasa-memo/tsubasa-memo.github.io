@@ -10,10 +10,11 @@
 - レタッチ：写真レタッチの基礎知識、無料アプリ比較、外注サービス比較、背景白抜き
 - 写真・撮影：Exif情報の仕組み、証明写真の撮り方
 - EC・実務：ECサイトの商品画像ルール（Amazon/楽天/メルカリ）
-- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース
+- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース、Mac選び
 
 ## 記事一覧
 
+- [新生活のMacはどれを選ぶ？Neo・Air・Proを比べてみた](https://tsubasa-memo.github.io/new-mac-2026.html): 2026年3月発売のMacBook Neoを含む3モデルの比較。99,800円のNeo、MacBook Air M5、MacBook Pro M5の違いと用途別の選び方をまとめた記事
 - [RAW現像って何？JPEGとの違いと初心者向けの現像ソフトまとめ](https://tsubasa-memo.github.io/raw-vs-jpeg.html): RAWとJPEGの違い、RAW現像のメリット・デメリット、初心者向けの無料/有料現像ソフトを比較した備忘録記事
 - [コワーキングスペースおすすめ7選｜都内の料金・設備比較](https://tsubasa-memo.github.io/coworking-spaces-tokyo.html): 週1リモートの作業場所としてコワーキングスペースを比較。都内の料金・設備・法人登記の注意点をまとめた記事
 - [動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？](https://tsubasa-memo.github.io/video-vs-retouch-career.html): スクール費用・求人データ・AIの影響を比較。動画編集とレタッチャーそれぞれの副業としての特徴を調査した記事
