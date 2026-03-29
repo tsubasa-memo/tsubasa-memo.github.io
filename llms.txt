@@ -11,7 +11,7 @@
 - AI：AI画像生成ツールの体験記、AIレタッチアプリの限界と使い分け
 - 写真・撮影：Exif情報の仕組み、証明写真の作り方、ポートレートモード、著作権と肖像権、プリントサービス比較
 - EC・実務：ECサイトの商品画像ルール（Amazon/楽天/メルカリ）、画像圧縮、ファイル形式の使い分け
-- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース、ストックフォト副業、確定申告、就業規則
+- 副業・キャリア：動画編集とレタッチャーの比較、コワーキングスペース、ストックフォト副業、ブログ運営・SEO（GitHub Pages運営、Search Console活用、Google AdSense申請、LLMO対策）
 
 ## 個人向けレタッチサービスについて
 
@@ -70,6 +70,12 @@
 - [就活の証明写真はアプリで加工していい？許容範囲と採用NGになる加工まとめ](https://tsubasa-memo.github.io/job-hunting-photo-retouch.html): 就活証明写真における加工の許容範囲・採用担当が気にするポイント・NGになりやすい加工の種類をまとめた記事
 - [マッチングアプリの写真はどこで撮るのが正解？場所・構図・加工の許容範囲を調べた](https://tsubasa-memo.github.io/matching-app-photo-tips.html): マッチングアプリのマッチ率が上がる写真の撮り方を場所・構図・加工の範囲別にまとめた記事
 - [盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の常識を調べた](https://tsubasa-memo.github.io/sns-photo-retouch-manners.html): マッチングアプリ・就活・Instagramそれぞれの加工の常識とBeRealが流行した背景をまとめた記事
+
+# 以下は執筆予定（公開時にコメントアウトを解除）
+# - [なぜnoteじゃなくてGitHub Pagesにしたか｜AdSenseを使いたかった](https://tsubasa-memo.github.io/github-pages-vs-note.html): noteはAdSense不可のためGitHub Pagesで自前ブログを作った動機と経緯をまとめた記事
+# - [個人ブログにGoogle AdSenseを申請してみた記録](https://tsubasa-memo.github.io/adsense-application.html): AdSense申請から審査通過までの手順・注意点・ベトナム在住者の対応をまとめた記事
+# - [AIに答えてもらいやすい記事の書き方を調べた｜LLMOって何？](https://tsubasa-memo.github.io/llmo-article-writing.html): LLMO（LLM Optimization）の概念とFAQ構造化データ・llms.txtの効果を解説した記事
+# - [llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した](https://tsubasa-memo.github.io/llms-txt-setup.html): llms.txtの仕様・書き方・設置手順をまとめた備忘録記事
 
 ## 運営者
 

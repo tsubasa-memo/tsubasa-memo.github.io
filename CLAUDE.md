@@ -244,6 +244,10 @@ cairosvg.svg2png(
 | 写真・撮影 | photo | 写真・撮影 |
 | EC・実務 | ec | EC・実務 |
 | 副業・キャリア | career | 副業・キャリア |
+| ブログ運営・SEO | career | 副業・キャリア |
+
+> ブログ運営・SEOは「副業・キャリア」カテゴリのサブトピックとして扱う。
+> data-cat="career" を使用。カテゴリナビには独立したボタンを作らない。
 
 ---
 
@@ -552,6 +556,7 @@ draftブランチへのpushのみ行い、mainへのマージはしない。
 - 写真・撮影（スマホ撮影、構図、用途別の撮り方）
 - EC・実務（商品画像、出品ルール、ワークフロー）
 - 副業・キャリア（フリーランス、スキル比較、働き方）
+- ブログ運営・SEO（data-cat="career" で扱う。GitHub Pages運営、Search Console活用、CTR改善、AdSense/Amazon Associates申請、LLMO対策など。ツバサが備忘録ブログを運営して調べた体験記スタイルで書く）
 
 ### 読者レベル
 - **初心者〜中級者**が対象
@@ -631,6 +636,16 @@ draftブランチへのpushのみ行い、mainへのマージはしない。
 | ファイル名 | タイトル | カテゴリ | 備考 |
 |---|---|---|---|
 | why-github-pages-adsense.html | noteじゃなくてGitHub Pagesでブログを作った理由｜AdSenseを使いたかった | 副業・キャリア | noteはAmazonアソシエイトは可能だがGoogle AdSenseは不可。自前ブログを作った動機の説明記事。AdSense導入体験記と合わせて公開。 |
+| github-pages-vs-note.html | なぜnoteじゃなくてGitHub Pagesにしたか｜AdSenseを使いたかった | 副業・キャリア | noteはAdSense不可、GitHub Pagesなら自前で収益化できる。ブログを作った動機の記事 |
+| adsense-application.html | 個人ブログにGoogle AdSenseを申請してみた記録 | 副業・キャリア | 申請から審査通過までの手順と注意点 |
+| amazon-associates.html | Amazon アソシエイトに登録してみた｜審査通過までに確認したこと | 副業・キャリア | Amazon Associates申請から審査通過までの手順・注意点・ギフト券払いの設定をまとめた実録 |
+| search-console-ctr.html | 記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録 | 副業・キャリア | タイトル変更→CTR変化の実体験。Search Consoleの見方も解説 |
+| search-console-basics.html | Google Search Consoleの見方を覚えた備忘録 | 副業・キャリア | 表示回数・CTR・掲載順位の読み方。個人ブログ初心者向け |
+| blog-seo-basics.html | 個人ブログのSEO、何から始めたらいいか調べた | 副業・キャリア | タイトル・description・内部リンク・サイトマップの基本 |
+| llmo-article-writing.html | AIに答えてもらいやすい記事の書き方を調べた｜LLMOって何？ | 副業・キャリア | LLMO（LLM Optimization）の概念と、FAQ構造化データ・llms.txtの効果を解説 |
+| llms-txt-setup.html | llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した | 副業・キャリア | llms.txtの仕様・書き方・設置手順をツバサが備忘録としてまとめた記事 |
+| google-index-not-found.html | ブログのインデックスがなかなか通らなかった話 | 副業・キャリア | 新規サイトのインデックス登録手順・Search Consoleの使い方・待ち時間の実録 |
+| faq-structured-data.html | ブログにFAQ構造化データを入れたらどうなったか | 副業・キャリア | JSON-LDのFAQPage schemaの設置方法と、Search Consoleへの反映を調べた記事 |
 
 ---
 
