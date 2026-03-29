@@ -63,7 +63,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>[記事タイトル]｜ツバサのメモ帳</title>
-<meta name="description" content="[120文字程度の要約]">
+<meta name="description" content="[110〜125文字の要約。具体的な数値・サービス名・ツール名を含める]">
 <meta name="keywords" content="[カンマ区切りキーワード]">
 <meta property="og:title" content="[記事タイトル]｜ツバサのメモ帳">
 <meta property="og:description" content="[OG用の短い説明]">
@@ -427,9 +427,11 @@ draftブランチへのpushのみ行い、mainへのマージはしない。
 - h2にはなるべく検索キーワードを含める（不自然にならない範囲で）
 
 ### meta description
-- **120文字前後**で要約する
+- **110〜125文字**で書く（100文字未満は短すぎ、135文字超は検索結果で切れる）
 - 記事の結論または主要な価値を含める
 - キーワードを自然に含める
+- 具体的な数値・サービス名・ツール名を少なくとも1つ入れる
+- 書き終えたら文字数を必ずカウントして確認する
 
 ### 画像のalt属性
 - すべてのimg要素にalt属性を入れる
