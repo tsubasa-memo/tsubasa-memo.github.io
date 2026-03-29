@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】</title>
+<meta name="description" content="Search Consoleで8位表示なのにCTR 0.23%（1,318表示・3クリック）だった記事のタイトルを変えた記録です。低CTRの判断基準・変更内容・変更後の確認方法と1〜2週間の反映待ち時間の目安をまとめました。">
+<meta name="keywords" content="サーチコンソール CTR改善,タイトル変更 SEO,クリック率 上げる,Search Console 使い方">
+<meta property="og:title" content="記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】">
+<meta property="og:description" content="Search Consoleで8位表示なのにCTR 0.23%だった記事のタイトルを変えた記録。判断基準と変更後の確認方法をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/search-console-ctr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/search-console-ctr.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/search-console-ctr.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"検索順位8位のCTRの目安は何%ですか？","acceptedAnswer":{"@type":"Answer","text":"検索順位8位のCTRは一般的に2〜4%程度が目安と言われています。1%を下回る場合は、タイトルや検索意図との乖離が疑われます。ただし業種・キーワードによって大きく異なるため、自分のサイトの平均CTRと比較して判断することをおすすめします。"}},
+    {"@type":"Question","name":"タイトル変更がSEOに与える影響は？","acceptedAnswer":{"@type":"Answer","text":"タイトルを変更すると検索結果での表示が変わり、CTRに影響します。変更後1〜2週間でGoogleがクロールして新しいタイトルが検索結果に反映されます。タイトルに検索ニーズと一致するキーワードが含まれると、CTRが改善されることが多いです。ただしtitle変更が検索順位に影響する場合もあるため、大幅に変更しすぎないことがポイントです。"}},
+    {"@type":"Question","name":"Search ConsoleでCTRを確認する方法は？","acceptedAnswer":{"@type":"Answer","text":"Search Consoleの「検索パフォーマンス」→「ページ」タブで各記事のCTRを確認できます。CTRが低いページを特定したら「クエリ」タブに切り替えて、そのページに実際にどのキーワードで表示されているかを確認しましょう。"}},
+    {"@type":"Question","name":"タイトルを変更したらインデックス再登録は必要ですか？","acceptedAnswer":{"@type":"Answer","text":"タイトル変更だけであれば手動でのインデックス再登録は必ずしも必要ではありません。Googleは定期的にクロールして自動的に更新します。早く反映させたい場合はSearch ConsoleのURL検査からインデックス登録をリクエストできます。"}},
+    {"@type":"Question","name":"CTRを上げるタイトルの書き方のポイントは？","acceptedAnswer":{"@type":"Answer","text":"検索キーワードをタイトルの前半に入れること、具体的な数字を入れること（例：「7選」「2026年版」）、疑問形や比較形式を使うことが効果的です。また「まとめ」より「比較」「方法」「違い」の方がクリックされやすい傾向があります。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ 記事のタイトルを変えたらCTRが動いた話…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録</h1>
+<p class="lead">Search Consoleで8位表示なのにCTR 0.23%だった記事のタイトルを変えた記録。判断基準と変更後の確認方法をまとめました。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>Search ConsoleでCTRが低い記事を特定する方法</li>
+<li>タイトル変更の判断基準（順位とCTRの組み合わせ）</li>
+<li>実際に変更した記事と変更内容</li>
+<li>変更後の確認方法と待ち時間の目安</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログのSearch Consoleを見ていて気になることがありました。ある記事が検索結果の8位前後に表示されているのに、クリック率（CTR）が0.23%しかない、という状態が続いていたんです。</p>
+
+<h2>「順位は良いのにクリックされない」の意味</h2>
+
+<p>Search Consoleで確認したところ、Exifの記事が3ヶ月間で1,318回表示されていたにもかかわらず、クリック数はわずか3回でした。掲載順位は8.4位。8位前後なら通常2〜4%程度のCTRが期待できるはずなのに、0.23%はかなり低い数字です。</p>
+
+<p>この状況が意味するのは、<strong>Googleは記事を良いコンテンツと判断して上位に置いているが、タイトルや説明文が検索した人の期待と合っていないためクリックされていない</strong>ということです。コンテンツの問題ではなく、見せ方の問題です。</p>
+
+<h2>どのキーワードで表示されていたか</h2>
+
+<p>Search Consoleのクエリデータでこのページへのアクセスを絞り込むと、上位クエリは「x 画像 位置情報を含む」「x 写真 位置情報を含む」でした。つまりユーザーは「X（Twitter）に投稿すると位置情報が残るのか？」という疑問を持って検索していたのです。</p>
+
+<p>一方、変更前のタイトルは「写真のExif情報とは？位置情報のリスクと削除方法まとめ」でした。このタイトルは「Exif情報の解説」を求めている人向けで、「Xに投稿すると位置情報が残るか？」という疑問を持つ人には響きにくいです。</p>
+
+<h2>タイトル変更の判断基準</h2>
+
+<p>タイトル変更を検討する条件はシンプルです。</p>
+
+<table class="spec-table">
+<tr><th>状態</th><th>対応</th></tr>
+<tr><td>順位10位以内・CTR 2%以上</td><td>変更不要（順調）</td></tr>
+<tr><td>順位10位以内・CTR 1%未満</td><td>タイトル変更を検討</td></tr>
+<tr><td>順位11〜20位・CTR問わず</td><td>コンテンツ強化が先</td></tr>
+<tr><td>順位21位以下</td><td>タイトル変更より記事のリライトが先</td></tr>
+</table>
+
+<p>ポイントは「順位が良いのにCTRが低い記事」をターゲットにすることです。順位が低い場合はタイトル変更よりも記事の中身を改善する方が先です。</p>
+
+<h2>実際に変更したタイトル</h2>
+
+<p>Exif記事のタイトルを次のように変更しました。</p>
+
+<div class="point-box">
+<p><strong>変更前：</strong>写真のExif情報とは？位置情報のリスクと削除方法まとめ【2026年版】</p>
+<p><strong>変更後：</strong>X（Twitter）に写真の位置情報は残る？Exif確認・削除方法まとめ</p>
+</div>
+
+<p>変更のポイントは2つです。まず「X（Twitter）」をタイトルの先頭に持ってきました。検索ユーザーが知りたいことを最初に示すことでクリック率が上がります。次に「【2026年版】」を削除して38文字以内に収めました。検索結果で途中で切れないタイトル長の目安は40文字以内です。</p>
+
+<h2>変更後の確認と待ち時間</h2>
+
+<p>タイトルを変更してHTMLをアップロードしたあと、Search ConsoleのURL検査から「インデックス登録をリクエスト」しました。Googleが新しいタイトルを認識して検索結果に反映されるまで通常1〜2週間かかります。</p>
+
+<p>変更から2週間以上経ったら、Search Consoleで以下を確認します。</p>
+<ul style="padding-left:20px;margin-bottom:18px;line-height:2">
+<li>CTRが上昇しているか</li>
+<li>クリック数が増えているか</li>
+<li>掲載順位に大きな変化がないか（タイトル変更で順位が下がる場合がある）</li>
+</ul>
+
+<p>タイトル変更は手軽にできる施策ですが、やりすぎると逆効果になることもあります。1本変更したら様子を見てから次に進む、というペースが安全です。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. 検索順位8位のCTRの目安は何%ですか？</p><p class="faq-a">検索順位8位のCTRは一般的に2〜4%程度が目安と言われています。1%を下回る場合は、タイトルや検索意図との乖離が疑われます。ただし業種・キーワードによって大きく異なるため、自分のサイトの平均CTRと比較して判断することをおすすめします。</p></div>
+<div class="faq-item"><p class="faq-q">Q. タイトル変更がSEOに与える影響は？</p><p class="faq-a">変更後1〜2週間でGoogleがクロールして新しいタイトルが反映されます。タイトルに検索ニーズと一致するキーワードが含まれると、CTRが改善されることが多いです。ただしtitle変更が検索順位に影響する場合もあるため、大幅に変更しすぎないことがポイントです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. Search ConsoleでCTRを確認する方法は？</p><p class="faq-a">「検索パフォーマンス」→「ページ」タブで各記事のCTRを確認できます。CTRが低いページを特定したら「クエリ」タブに切り替えて、実際にどのキーワードで表示されているかを確認しましょう。</p></div>
+<div class="faq-item"><p class="faq-q">Q. CTRを上げるタイトルの書き方のポイントは？</p><p class="faq-a">検索キーワードをタイトルの前半に入れること、具体的な数字を含めること（「7選」「2026年版」等）、疑問形や比較形式を使うことが効果的です。また「まとめ」より「比較」「方法」「違い」の方がクリックされやすい傾向があります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. タイトル変更後のインデックス再登録は必要ですか？</p><p class="faq-a">タイトル変更だけであれば必須ではありません。早く反映させたい場合はSearch ConsoleのURL検査から「インデックス登録をリクエスト」できます。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="search-console-basics.html">サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+<div class="related-item"><a href="google-index-not-found.html">Googleにインデックスされるまで｜サイトマップ送信からの記録</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>

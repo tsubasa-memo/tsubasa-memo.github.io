@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</title>
+<meta name="description" content="Google Search Consoleの基本的な見方をまとめた備忘録です。表示回数・クリック数・CTR・掲載順位それぞれの意味と読み方、sitemap.xml送信、URL検査でのインデックス確認の手順を初心者向けに解説しています。">
+<meta name="keywords" content="サーチコンソール 使い方,Search Console 見方,表示回数 クリック率 違い,サイトマップ 送信">
+<meta property="og:title" content="サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位">
+<meta property="og:description" content="Google Search Consoleの表示回数・CTR・掲載順位の読み方とサイトマップ送信の手順をまとめた備忘録です。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/search-console-basics.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/search-console-basics.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/search-console-basics.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Google Search Consoleは無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"完全無料で使えます。Googleアカウントがあれば誰でも利用でき、ウェブサイトの所有権を確認するだけで使い始められます。"}},
+    {"@type":"Question","name":"Search ConsoleとGoogle Analyticsの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです。検索キーワード・表示回数・CTR・掲載順位など、検索エンジン経由の情報が主です。Google Analyticsは「サイトに来たユーザーが何をしたか」を分析するツールです。ページビュー・滞在時間・離脱率など、サイト内の行動データを計測します。両方を使うとより精度の高い分析ができます。"}},
+    {"@type":"Question","name":"Search Consoleで「URL がGoogleに登録されていません」と表示された場合は？","acceptedAnswer":{"@type":"Answer","text":"まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、1〜2週間でクロールされることが多いです。"}},
+    {"@type":"Question","name":"掲載順位の平均が10位以下でも改善できますか？","acceptedAnswer":{"@type":"Answer","text":"改善できます。掲載順位10〜20位の記事は、タイトルにキーワードを追加する、記事の情報量を増やす、内部リンクを充実させるなどの対策が有効です。ただし即効性はなく、変更後2〜4週間で効果を確認するのが現実的です。"}},
+    {"@type":"Question","name":"サイトマップとは何ですか？なぜ必要ですか？","acceptedAnswer":{"@type":"Answer","text":"サイトマップ（sitemap.xml）はサイト内のすべてのURLをまとめたXMLファイルです。GoogleのクローラーがサイトのURL構造を把握しやすくなるため、インデックスが早まる効果があります。Search Consoleからサイトマップを送信することで、Googleに「このURLもクロールしてください」と伝えられます。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ サーチコンソールの見方を覚えた備忘録｜表…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</h1>
+<p class="lead">Google Search Consoleの表示回数・CTR・掲載順位の読み方とサイトマップ送信の手順をまとめた備忘録です。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>Search Consoleの登録手順（所有権確認まで）</li>
+<li>「表示回数」「クリック数」「CTR」「掲載順位」それぞれの意味</li>
+<li>サイトマップの送信手順</li>
+<li>AnalyticsとSearch Consoleの使い分け</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。ブログを始めてからしばらくはSearch Consoleの見方がよくわかっていませんでした。どの数字が何を意味するのか、何を確認すればいいのかを調べてまとめた備忘録です。</p>
+
+<h2>Search Consoleとは何か</h2>
+
+<p>Google Search Console（サーチコンソール）は、自分のサイトがGoogle検索でどのように表示されているかを確認できる無料ツールです。「どのキーワードで表示されているか」「何位に表示されているか」「クリックされているか」をページ単位・キーワード単位で確認できます。</p>
+
+<p>Google Analyticsがサイトに来た人の行動を分析するのに対して、Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです。両方使うとより正確な分析ができますが、まずSearch Consoleから始めるのがおすすめです。</p>
+
+<h2>登録と所有権確認の手順</h2>
+
+<p><a href="https://search.google.com/search-console/" target="_blank" rel="noopener noreferrer">Google Search Console</a>にGoogleアカウントでログインし、「URLプレフィックス」にサイトのURLを入力します。所有権の確認方法はいくつかありますが、HTMLファイルをサイトに設置する方法が最も簡単です。</p>
+
+<ol style="padding-left:20px;margin-bottom:18px;line-height:2">
+<li>「HTMLファイル」を選択してファイルをダウンロード</li>
+<li>ファイルをサイトのルートディレクトリにアップロード</li>
+<li>Search Consoleに戻って「確認」ボタンをクリック</li>
+</ol>
+
+<p>確認が完了すると、Search Consoleにサイトのデータが表示されるようになります。ただしデータが集まるまで数日〜1週間かかります。</p>
+
+<h2>「検索パフォーマンス」の4つの数字</h2>
+
+<h3>表示回数（Impressions）</h3>
+<p>検索結果にページが表示された回数です。クリックされなくても、検索結果の画面に出ただけでカウントされます。表示回数が多いのにクリックが少ない場合は、タイトルや内容が検索者の期待と合っていない可能性があります。</p>
+
+<h3>クリック数（Clicks）</h3>
+<p>検索結果からサイトへのクリック数です。実際にページを訪問した人数に相当します。</p>
+
+<h3>CTR（Click Through Rate：クリック率）</h3>
+<p>「クリック数 ÷ 表示回数 × 100」で計算されます。掲載順位1位のCTRは20〜30%程度、10位は1〜2%程度が目安とされています。同じ順位でも記事によってCTRは大きく変わります。CTRが低い場合はタイトルの見直しが有効です。</p>
+
+<h3>掲載順位（Position）</h3>
+<p>検索結果での平均表示位置です。1位が最上位で、数字が大きいほど下位です。10以内に入ると検索結果の1ページ目に表示されます。</p>
+
+<h2>サイトマップの送信</h2>
+
+<p>Search Consoleの左メニュー「サイトマップ」からsitemap.xmlのURLを入力して送信します。サイトマップが正しく読み込まれると「成功しました」と表示されます。</p>
+
+<p>サイトマップを送信するとGoogleのクローラーがサイトの全URLを認識しやすくなり、インデックス登録が早まることが多いです。ブログを始めたらまず送信しておくことをおすすめします。</p>
+
+<h2>URL検査でインデックスを確認する</h2>
+
+<p>Search Consoleの上部の検索バーにURLを入力すると、そのページのインデックス状況を確認できます。「URLはGoogleに登録されています」と表示されれば検索結果に出る状態です。「URLがGoogleに登録されていません」と表示された場合は「インデックス登録をリクエスト」ボタンを押してクロールを促せます。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. Google Search Consoleは無料で使えますか？</p><p class="faq-a">完全無料で使えます。Googleアカウントがあれば誰でも利用でき、ウェブサイトの所有権を確認するだけで使い始められます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. Search ConsoleとGoogle Analyticsの違いは何ですか？</p><p class="faq-a">Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです（検索キーワード・表示回数・CTR・順位）。Google Analyticsは「サイトに来たユーザーが何をしたか」を分析するツールです（PV・滞在時間・離脱率）。両方を使うとより精度の高い分析ができます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. サイトマップとは何ですか？なぜ必要ですか？</p><p class="faq-a">サイトマップ（sitemap.xml）はサイト内の全URLをまとめたXMLファイルです。GoogleのクローラーがサイトのURL構造を把握しやすくなるため、インデックスが早まる効果があります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. CTR（クリック率）の目安は何%ですか？</p><p class="faq-a">掲載順位1位で20〜30%、5位で5〜8%、10位で1〜2%程度が一般的な目安です。同じ順位でもキーワードや記事によって大きく変わります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合は？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、1〜2週間でクロールされることが多いです。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="search-console-ctr.html">記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録</a></div>
+<div class="related-item"><a href="google-index-not-found.html">Googleにインデックスされるまで｜サイトマップ送信からの記録</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>
