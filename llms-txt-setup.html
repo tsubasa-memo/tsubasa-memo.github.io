@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</title>
+<meta name="description" content="llms.txtの仕様・書き方・設置手順をまとめた備忘録です。robots.txtとの違い・AnthropicなどAIの対応状況・GitHub Pagesへの設置方法・記事一覧の書き方・効果確認の方法について調べた内容を記録しています。">
+<meta name="keywords" content="llms.txt とは,llms.txt 書き方,llms.txt 設置,AI ブログ 最適化">
+<meta property="og:title" content="llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した">
+<meta property="og:description" content="llms.txtの仕様・書き方・設置手順をまとめた備忘録。robots.txtとの違いと個人ブログへの設置効果について調べました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/llms-txt-setup.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llms-txt-setup.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/llms-txt-setup.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"llms.txtとrobots.txtの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLM（大規模言語モデル）に対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。"}},
+    {"@type":"Question","name":"llms.txtはすべてのAIに対応していますか？","acceptedAnswer":{"@type":"Answer","text":"2026年時点では対応状況はAIによって異なります。Claude（Anthropic）はllms.txtを参照することが知られています。ChatGPT（OpenAI）やGemini（Google）の対応状況は変化しています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。"}},
+    {"@type":"Question","name":"llms.txtはどこに設置すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"サイトのルートに「llms.txt」というファイル名で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。URLは「https://サイトURL/llms.txt」になります。"}},
+    {"@type":"Question","name":"llms.txtに書くべき内容は何ですか？","acceptedAnswer":{"@type":"Answer","text":"サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本的な内容です。記事一覧では各記事の説明文を1〜2文で添えると、LLMが記事の内容を把握しやすくなります。"}},
+    {"@type":"Question","name":"llms.txtの設置効果はどうやって確認しますか？","acceptedAnswer":{"@type":"Answer","text":"直接的な効果測定は難しいです。ChatGPTやClaudeに「〔自分のブログのトピック〕について教えて」と質問したとき、自分のブログや紹介しているサービスが回答に含まれるかどうかを定期的に確認する方法が現実的です。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ llms.txtとは何か｜AIにブログを…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</h1>
+<p class="lead">llms.txtの仕様・書き方・設置手順をまとめた備忘録。robots.txtとの違いと個人ブログへの設置効果について調べました。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>llms.txtの概要とrobots.txtとの違い</li>
+<li>llms.txtの書き方（フォーマット）</li>
+<li>GitHub Pagesへの設置手順</li>
+<li>対応しているAIと効果の確認方法</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログのSEO・LLMO対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
+
+<h2>llms.txtとは何か</h2>
+
+<p>llms.txtは、サイトのルートに置くMarkdown形式のファイルです。ChatGPT・Claude・GeminiなどのLLM（大規模言語モデル）に対して、サイトにどんな情報があるかを伝えることを目的としています。</p>
+
+<p>robots.txtがGoogleのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があります」と伝えるファイルです。</p>
+
+<p>提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。AnthropicはClaudeの<a href="https://docs.anthropic.com/" target="_blank" rel="noopener noreferrer">公式ドキュメント</a>にllms.txtを設置しており、徐々に普及が進んでいます。</p>
+
+<h2>書き方の基本フォーマット</h2>
+
+<p>llms.txtはMarkdown形式で記述します。基本構造は次の通りです。</p>
+
+<div class="point-box">
+<pre style="white-space:pre-wrap;font-size:13px;line-height:1.7"># サイト名
+
+&gt; サイトの概要説明（1〜2文）
+
+## カテゴリ
+
+- カテゴリ1：説明
+- カテゴリ2：説明
+
+## 記事一覧
+
+- [記事タイトル](URL): 記事の内容を1〜2文で説明
+
+## 運営者
+
+運営者の情報</pre>
+</div>
+
+<p>記事一覧は全記事を掲載する必要はありませんが、掲載する記事が多いほどLLMが参照できる情報量が増えます。各記事の説明文には具体的なサービス名・数値・キーワードを含めると、LLMが記事の内容を正確に把握できます。</p>
+
+<h2>GitHub Pagesへの設置手順</h2>
+
+<p>GitHub Pagesの場合、リポジトリのルートに「llms.txt」という名前のファイルを作成してコミットするだけです。</p>
+
+<ol style="padding-left:20px;margin-bottom:18px;line-height:2">
+<li>テキストエディタで上記フォーマットに沿ってllms.txtを作成</li>
+<li>リポジトリのルートにファイルを追加してコミット・push</li>
+<li>「https://ユーザー名.github.io/llms.txt」にアクセスして内容が表示されることを確認</li>
+</ol>
+
+<p>このブログのllms.txtは<a href="https://tsubasa-memo.github.io/llms.txt" target="_blank" rel="noopener noreferrer">こちら</a>で確認できます。</p>
+
+<h2>運用上の注意点</h2>
+
+<p>新しい記事を公開するたびにllms.txtも更新する必要があります。記事一覧が古いままだと、最新の記事がLLMに伝わりません。記事追加のワークフローにllms.txt更新を組み込んでおくのがおすすめです。</p>
+
+<div class="warn-box">
+<p><strong>注意：</strong>llms.txtに書いた情報がLLMの回答に即座に反映されるわけではありません。LLMのトレーニングサイクルやRAG（検索拡張生成）の仕組みによって、反映されるタイミングは異なります。</p>
+</div>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. llms.txtとrobots.txtの違いは何ですか？</p><p class="faq-a">robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLMに対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtはすべてのAIに対応していますか？</p><p class="faq-a">2026年時点では対応状況はAIによって異なります。Anthropicはllms.txtを参照することが知られています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtはどこに設置すればいいですか？</p><p class="faq-a">サイトのルートに「llms.txt」という名前で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtに書くべき内容は何ですか？</p><p class="faq-a">サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本です。記事一覧では各記事の説明文を1〜2文で添えるとLLMが内容を把握しやすくなります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtの設置効果はどうやって確認しますか？</p><p class="faq-a">直接的な効果測定は難しいです。ChatGPTやClaudeに自分のブログのトピックについて質問したとき、自分のブログや紹介しているサービスが回答に含まれるかどうかを定期的に確認する方法が現実的です。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="llmo-article-writing.html">AIに答えてもらいやすい記事の書き方を調べた｜LLMOって何？</a></div>
+<div class="related-item"><a href="faq-structured-data.html">記事にFAQ構造化データを入れると検索結果がどう変わるか調べた</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>

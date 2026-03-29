@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録</title>
+<meta name="description" content="個人ブログでGoogle AdSenseを申請した記録です。申請前の記事数・プライバシーポリシー・サイト動作確認の準備、審査中にやったことと注意点、承認後のAdSenseコード設置と自動広告の設定まで手順をまとめました。">
+<meta name="keywords" content="Google AdSense 申請,AdSense 審査,個人ブログ 広告,AdSense 通過 条件">
+<meta property="og:title" content="個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録">
+<meta property="og:description" content="個人ブログでAdSenseを申請した記録。審査前の準備・審査期間・承認後の設置まで手順をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/adsense-application.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/adsense-application.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/adsense-application.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"AdSenseの審査に通るために必要な記事数は？","acceptedAnswer":{"@type":"Answer","text":"Googleは明確な基準を公開していませんが、10〜20本以上のオリジナル記事があると審査が通りやすいと言われています。記事数よりも内容の充実度（各記事1,500文字以上、コピーコンテンツなし）の方が重要です。"}},
+    {"@type":"Question","name":"AdSense審査の期間はどれくらいかかりますか？","acceptedAnswer":{"@type":"Answer","text":"申請から数日〜2週間程度が一般的です。サイトのコンテンツ量や品質によって変わります。審査中はサイトのコンテンツを変更せず、通常通り更新を続けることがすすめられています。"}},
+    {"@type":"Question","name":"AdSense審査に必要なページはありますか？","acceptedAnswer":{"@type":"Answer","text":"プライバシーポリシーの設置が強く推奨されています。問い合わせページや運営者情報も用意しておくと審査通過率が上がると言われています。"}},
+    {"@type":"Question","name":"AdSenseが不承認になった場合はどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"不承認メールに理由が記載されています。「コンテンツの価値が不十分」の場合は記事の充実が必要、「ポリシー違反」の場合は該当コンテンツの修正が必要です。修正後に再申請できます。"}},
+    {"@type":"Question","name":"個人ブログのAdSense収益はどれくらいになりますか？","acceptedAnswer":{"@type":"Answer","text":"月間PVが1,000〜10,000程度の個人ブログでは月数百〜数千円程度が目安です。ジャンルやクリック率によって大きく変わります。最初は収益よりサイトの育成に集中することをおすすめします。"}},
+    {"@type":"Question","name":"AdSenseとAmazon アソシエイトは同時に使えますか？","acceptedAnswer":{"@type":"Answer","text":"使えます。AdSenseの広告とAmazon アソシエイトのリンクを同じページに設置することはGoogleポリシー上問題ありません。記事内容に合わせて使い分けると収益効率が上がります。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ 個人ブログにGoogle AdSense…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録</h1>
+<p class="lead">個人ブログでAdSenseを申請した記録。審査前の準備・審査期間・承認後の設置まで手順をまとめました。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>AdSense申請前に準備したこと（記事数・プライバシーポリシー等）</li>
+<li>申請から審査通過までの流れ</li>
+<li>審査中にやったこと・やらなかったこと</li>
+<li>承認後の広告コードの設置方法</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログにGoogle AdSenseを設置するまでの記録をまとめておきます。申請前に色々調べてわかりにくかった部分を中心に書きました。</p>
+
+<h2>申請前に準備したこと</h2>
+
+<p>申請前に確認したのは3点です。</p>
+
+<h3>1. 記事数と内容の確認</h3>
+<p>Googleは審査通過に必要な記事数を公開していませんが、調べた限りでは「10本以上のオリジナル記事」が最低ラインとして言われていることが多いです。記事数よりもコンテンツの質の方が重要で、コピーコンテンツや内容が薄い記事は審査に不利に働くとされています。</p>
+<p>申請前に各記事が1,500文字以上あること、他サイトのコピーでないことを確認しました。</p>
+
+<h3>2. プライバシーポリシーの設置</h3>
+<p>AdSenseはユーザーのブラウザにCookieを設定するため、プライバシーポリシーの設置がAdSenseのプログラムポリシーで求められています。「このサイトはGoogle AdSenseを使用しており、Cookieを使用してユーザーへの広告配信を行います」という内容を含んだページを作成しました。</p>
+
+<h3>3. サイトが正常に動作しているか確認</h3>
+<p>404エラーのページがないか、サイトマップが正常に機能しているか、Google Search Consoleでエラーが出ていないかを確認しました。</p>
+
+<h2>申請の手順</h2>
+
+<p>AdSenseの申請手順は次の通りです。</p>
+
+<ol style="padding-left:20px;margin-bottom:18px;line-height:2">
+<li><a href="https://adsense.google.com/" target="_blank" rel="noopener noreferrer">Google AdSense</a>にアクセスしてアカウントを作成</li>
+<li>サイトのURLを入力</li>
+<li>AdSenseのコード（スクリプトタグ）を発行してもらい、サイトの全ページの &lt;head&gt; 内に貼る</li>
+<li>「サイトをAdSenseにリンク」を実行して申請完了</li>
+</ol>
+
+<p>コードを貼ってから「サイトをAdSenseにリンク」ボタンを押すと審査が始まります。コードを貼らないと先に進めないので、この段階でHTMLファイルにスクリプトを追加してGitHubにアップロードしました。</p>
+
+<h2>審査中にやったこと・やらなかったこと</h2>
+
+<p>審査中は<strong>サイトの構造を大きく変えない</strong>ことを意識しました。URLを変更したりページを大量に削除したりすると、審査中のクローラーが混乱する可能性があると読んだためです。</p>
+<p>一方で記事の追加は続けました。審査中だからといって更新を止める必要はなく、むしろコンテンツが増えている方が良い影響があると考えました。</p>
+
+<div class="warn-box">
+<p><strong>注意：</strong>審査中にAdSenseのコードをHTMLから削除すると審査が中断される場合があります。承認通知が来るまでコードはそのままにしておく方が安全です。</p>
+</div>
+
+<h2>承認後にやったこと</h2>
+
+<p>承認メールが届いたら、AdSenseの管理画面で広告ユニットを作成し、表示したい場所にコードを貼ります。「自動広告」を有効にすると、Googleがページを解析して最適な場所に広告を配置してくれるため、最初はこれを使いました。</p>
+
+<p>広告が実際に表示され始めるまで数時間〜1日程度かかることがあります。最初は自分でページを開いて広告が出ているか確認してみてください。</p>
+
+<h2>AdSenseとAmazon アソシエイトの両立</h2>
+
+<p>AdSense承認後にAmazon アソシエイトも申請しました。同じページにAdSenseの広告とAmazon アソシエイトのリンクを設置することはGoogleのポリシー上問題ありません。記事の内容によって使い分けると収益効率が上がります。Amazon アソシエイトの登録については<a href="amazon-associates.html">別の記事</a>にまとめています。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. AdSenseの審査に通るために必要な記事数は？</p><p class="faq-a">Googleは明確な基準を公開していませんが、10〜20本以上のオリジナル記事があると審査が通りやすいと言われています。記事数よりも内容の充実度（各記事1,500文字以上、コピーコンテンツなし）の方が重要です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. AdSense審査の期間はどれくらいかかりますか？</p><p class="faq-a">申請から数日〜2週間程度が一般的です。サイトのコンテンツ量や品質によって変わります。審査中はサイトのコンテンツを大きく変更せず、通常通り更新を続けることが推奨されています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. AdSense審査に必要なページはありますか？</p><p class="faq-a">プライバシーポリシーの設置が強く推奨されています。「このサイトはGoogle AdSenseを使用しており、Cookieを使用して広告配信を行います」という内容を含むページが必要です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. AdSenseが不承認になった場合はどうすればいいですか？</p><p class="faq-a">不承認メールに理由が記載されています。「コンテンツの価値が不十分」の場合は記事の充実が必要、「ポリシー違反」の場合は該当コンテンツの修正が必要です。修正後に再申請できます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. AdSenseとAmazon アソシエイトは同時に使えますか？</p><p class="faq-a">使えます。同じページにAdSenseの広告とAmazon アソシエイトのリンクを設置することはGoogleポリシー上問題ありません。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub PagesのサイトでAdSense審査は通りますか？</p><p class="faq-a">通ります。ホスティング先がGitHub PagesかどうかはAdSenseの審査に影響しません。コンテンツの質と量が審査基準です。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="amazon-associates.html">Amazon アソシエイトに登録してみた｜審査通過までに確認したこと</a></div>
+<div class="related-item"><a href="github-pages-vs-note.html">なぜnoteじゃなくてGitHub Pagesにしたか｜AdSenseを使いたかった</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>

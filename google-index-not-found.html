@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>Googleにインデックスされるまで｜サイトマップ送信からの記録</title>
+<meta name="description" content="新規ブログ記事がGoogleにインデックスされるまでにやったことをまとめました。「URLがGoogleに登録されていません」への対処・サイトマップ送信・インデックス登録リクエストの手順と1〜4週間の待ち時間の目安を記録しています。">
+<meta name="keywords" content="Google インデックス されない,インデックス 登録 リクエスト,サイトマップ 送信,URL 登録されていません">
+<meta property="og:title" content="Googleにインデックスされるまで｜サイトマップ送信からの記録">
+<meta property="og:description" content="新規ブログのインデックス登録で詰まった「URLがGoogleに登録されていません」の対処法とサイトマップ送信の手順をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/google-index-not-found.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/google-index-not-found.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/google-index-not-found.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"「URLがGoogleに登録されていません」と表示された場合はどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"まだGoogleにクロールされていない状態です。Search Consoleのデータ取得ツール（URL検査）で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。"}},
+    {"@type":"Question","name":"サイトマップを送信するとインデックスが早くなりますか？","acceptedAnswer":{"@type":"Answer","text":"サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。"}},
+    {"@type":"Question","name":"新規サイトがGoogleにインデックスされるまでどれくらいかかりますか？","acceptedAnswer":{"@type":"Answer","text":"一般的に1〜4週間程度かかります。新規ドメインはGoogleからの信頼が低いため、インデックスが遅い傾向があります。サイトマップ送信とインデックス登録リクエストを行うことで早める効果があります。"}},
+    {"@type":"Question","name":"インデックスされてもすぐに検索結果に表示されますか？","acceptedAnswer":{"@type":"Answer","text":"インデックス登録とは「Googleのデータベースに記事が登録された状態」です。その後、検索クエリとの関連性や品質評価によって順位が決まります。インデックス直後は順位が不安定で、安定するまで数週間〜数ヶ月かかることがあります。"}},
+    {"@type":"Question","name":"Search ConsoleなしでGoogleにインデックスされますか？","acceptedAnswer":{"@type":"Answer","text":"自然にクロールされればSearch Consoleを使わなくてもインデックスされます。ただしSearch Consoleなしでは状況の把握や促進ができないため、ブログ運営では必ず設置することをおすすめします。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ Googleにインデックスされるまで｜サ…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>Googleにインデックスされるまで｜サイトマップ送信からの記録</h1>
+<p class="lead">新規ブログのインデックス登録で詰まった「URLがGoogleに登録されていません」の対処法とサイトマップ送信の手順をまとめました。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>「URLがGoogleに登録されていません」への対処手順</li>
+<li>サイトマップ（sitemap.xml）の送信方法</li>
+<li>インデックス登録リクエストの手順と上限</li>
+<li>インデックスされるまでの待ち時間の目安</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログを公開してからGoogleに記事が表示されるまで、予想以上に時間がかかりました。詰まった「URLがGoogleに登録されていません」の対処法と、やったことをまとめておきます。</p>
+
+<h2>インデックスとは何か</h2>
+
+<p>Googleは世界中のウェブページを「クロール」（巡回）して内容を解析し、データベースに登録します。このデータベースへの登録のことを「インデックス」と呼びます。インデックスされていないページは検索結果に表示されません。</p>
+
+<h2>「URLがGoogleに登録されていません」への対処</h2>
+
+<p>Search ConsoleのURL検査ツールで記事のURLを入力すると、「URLがGoogleに登録されていません」と表示されることがあります。これはまだGoogleのクローラーがページを訪問・記録していない状態です。</p>
+
+<p>対処手順は次の通りです。</p>
+
+<ol style="padding-left:20px;margin-bottom:18px;line-height:2">
+<li>Search ConsoleのURL検査ツールにURLを入力してEnter</li>
+<li>「URLがGoogleに登録されていません」と表示される</li>
+<li>「インデックス登録をリクエスト」をクリック</li>
+<li>処理が完了すると「インデックス登録をリクエスト済み」に変わる</li>
+</ol>
+
+<div class="warn-box">
+<p><strong>注意：</strong>インデックス登録リクエストには1日あたりの上限があります（目安：10〜20件程度）。上限に達した場合は翌日に残りをリクエストしてください。</p>
+</div>
+
+<h2>サイトマップを送信する</h2>
+
+<p>インデックス登録リクエストの他に、サイトマップを送信することでGoogleに全URLを一度に伝えられます。</p>
+
+<ol style="padding-left:20px;margin-bottom:18px;line-height:2">
+<li>Search Consoleの左メニュー「サイトマップ」をクリック</li>
+<li>「新しいサイトマップの追加」欄に「sitemap.xml」と入力</li>
+<li>「送信」をクリック</li>
+<li>「成功しました」と表示されれば完了</li>
+</ol>
+
+<p>サイトマップが正しく送信されると、GoogleのクローラーがURLを認識しやすくなります。サイトを作ったらまず最初にやるべき作業です。</p>
+
+<h2>インデックスされるまでの目安</h2>
+
+<table class="spec-table">
+<tr><th>状況</th><th>インデックスまでの目安</th></tr>
+<tr><td>サイトマップ送信済み・リクエスト済み</td><td>数日〜1週間</td></tr>
+<tr><td>リクエストのみ（サイトマップなし）</td><td>1〜2週間</td></tr>
+<tr><td>何もしない（自然クロール待ち）</td><td>2週間〜数ヶ月</td></tr>
+</table>
+
+<p>新規ドメインはGoogleからの信頼（ドメイン権威）が低いため、既存の有名サイトよりもインデックスが遅い傾向があります。このブログも最初の記事がインデックスされるまで約2週間かかりました。</p>
+
+<h2>インデックスされても順位はすぐ安定しない</h2>
+
+<p>インデックスとは「Googleのデータベースに登録された状態」であり、即座に検索結果の上位に表示されるわけではありません。インデックス直後は順位が不安定で、数週間〜数ヶ月かけて「新規サイトブースト」が落ち着いてから本来の順位に落ち着きます。</p>
+
+<p>このブログも公開直後は表示回数が多かったものの、2〜3ヶ月後に急減した時期がありました。これは新規サイトに対するGoogleの評価が安定化した典型的な動きで、インデックスの問題ではなく順位の問題です。Search Consoleで表示回数が減った場合は、まずインデックス状況を確認してから原因を判断することをおすすめします。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合は？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. サイトマップを送信するとインデックスが早くなりますか？</p><p class="faq-a">サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 新規サイトがGoogleにインデックスされるまでどれくらいかかりますか？</p><p class="faq-a">一般的に1〜4週間程度かかります。サイトマップ送信とインデックス登録リクエストを行うことで早める効果があります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. インデックスされてもすぐに検索結果に表示されますか？</p><p class="faq-a">インデックス登録はGoogleのデータベースへの登録を意味します。その後、検索クエリとの関連性や品質評価によって順位が決まります。インデックス直後は順位が不安定で、安定するまで数週間〜数ヶ月かかることがあります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 表示回数が急に減ったのはインデックスが外れたのですか？</p><p class="faq-a">必ずしもインデックスが外れたわけではありません。URL検査ツールでインデックス状況を確認し、「URLはGoogleに登録されています」と表示されれば順位低下が原因です。インデックス脱落とタイトル・コンテンツの問題を区別して対処することが重要です。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="search-console-basics.html">サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</a></div>
+<div class="related-item"><a href="search-console-ctr.html">記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>

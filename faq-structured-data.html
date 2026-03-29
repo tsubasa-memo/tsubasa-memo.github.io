@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</title>
+<meta name="description" content="FAQ構造化データ（JSON-LD）をブログ記事に設置した記録です。FAQPage schemaの書き方・設置手順・Search Consoleでのリッチリザルト確認・ChatGPT等AIへの情報伝達効果について調べてまとめました。">
+<meta name="keywords" content="FAQ 構造化データ JSON-LD,FAQPage schema,リッチリザルト 設置,構造化データ ブログ">
+<meta property="og:title" content="記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた">
+<meta property="og:description" content="FAQ構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの影響・LLMO効果について調べた備忘録です。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/faq-structured-data.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/faq-structured-data.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/faq-structured-data.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"FAQ構造化データとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"FAQ構造化データはページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示することがあります。"}},
+    {"@type":"Question","name":"FAQのリッチリザルトは必ず表示されますか？","acceptedAnswer":{"@type":"Answer","text":"必ずしも表示されるわけではありません。Googleは構造化データの内容、ページの品質、検索クエリとの関連性を総合的に判断してリッチリザルトを表示するかどうかを決めます。設置したからといって必ず表示されるわけではないですが、表示の機会が増えることは確かです。"}},
+    {"@type":"Question","name":"JSON-LDとはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type="application/ld+json"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。"}},
+    {"@type":"Question","name":"FAQ構造化データはすべての記事に入れるべきですか？","acceptedAnswer":{"@type":"Answer","text":"FAQがある記事には入れる価値があります。特にハウツー記事・比較記事・解説記事はFAQと相性が良いです。ただし、FAQの内容が薄い（一般的な質問だけ、答えが短すぎるなど）と効果が低くなります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。"}},
+    {"@type":"Question","name":"構造化データのエラーはどこで確認できますか？","acceptedAnswer":{"@type":"Answer","text":"Google Search Consoleの「拡張」セクションまたはGoogleのリッチリザルトテストツール（search.google.com/test/rich-results）で確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<span class="site-tag">備忘録ブログ</span>
+</div>
+</header>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ 記事にFAQ構造化データを入れると検索結…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>記事にFAQ構造化データを入れると検索結果がどう変わるか調べた</h1>
+<p class="lead">FAQ構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの影響・LLMO効果について調べた備忘録です。</p>
+</div>
+</div>
+<div class="updated">2026年3月 更新</div>
+<main>
+<article>
+<div class="wrap">
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>FAQ構造化データ（JSON-LD）とは何か</li>
+<li>FAQPage schemaの書き方と設置手順</li>
+<li>リッチリザルト表示とSearch Consoleでの確認方法</li>
+<li>AIへの情報伝達（LLMO）としての効果</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。ブログのSEO対策を調べていて「構造化データ」という概念を知りました。設置すると検索結果にFAQが展開表示されることがあるというので、全記事に設置した記録をまとめておきます。</p>
+
+<h2>FAQ構造化データとは</h2>
+
+<p>FAQ構造化データはページの「よくある質問（FAQ）」と「回答」を、Googleが解析しやすい形式で記述したコードです。JSON-LD形式で書き、HTMLの&lt;head&gt;内または&lt;body&gt;末尾に埋め込みます。</p>
+
+<p>Googleがこのデータを認識すると、検索結果にFAQの「リッチリザルト」が表示されることがあります。リッチリザルトとは、通常のタイトル・URLだけでなく、Q&Aが展開表示される形式です。</p>
+
+<h2>FAQPage schemaの書き方</h2>
+
+<p>FAQPage schemaの基本的な書き方は次の通りです。</p>
+
+<div class="point-box">
+<pre style="white-space:pre-wrap;font-size:13px;line-height:1.7">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "質問文をここに書く",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "回答文をここに書く"
+      }
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+</div>
+
+<p>質問と回答のセットを複数追加する場合は、mainEntityの配列にオブジェクトを追加します。FAQの数は最低5問程度が目安です。</p>
+
+<h2>設置手順と確認方法</h2>
+
+<p>FAQPage schemaのコードをHTMLの&lt;head&gt;内か&lt;/body&gt;タグの直前に貼り付けます。GitHub Pagesでは各HTMLファイルに直接書き込む形で対応しました。</p>
+
+<p>設置後、Googleの<a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">リッチリザルトテスト</a>にURLを入力すると、構造化データが正しく認識されているかどうかを確認できます。「FAQPage」が検出された場合は設置成功です。</p>
+
+<h2>実際に検索結果に反映されるまで</h2>
+
+<p>構造化データを設置してからGoogleのリッチリザルトが表示されるまで、数週間〜1ヶ月程度かかることが一般的です。また設置しても必ずリッチリザルトが表示されるわけではなく、ページの品質や検索クエリとの関連性によってGoogleが表示の可否を判断します。</p>
+
+<p>Search Consoleの「拡張」セクションに「FAQリッチリザルト」が表示されるようになったら、Googleが構造化データを認識してリッチリザルトの対象として評価している状態です。</p>
+
+<h2>SEOだけでなくLLMOにも効果あり</h2>
+
+<p>FAQ構造化データはGoogle検索（SEO）への効果だけでなく、ChatGPTやClaudeなどのAI（LLMO）への情報伝達にも効果があると言われています。LLMはFAQ形式のQ&A構造を引用しやすいため、構造化データで明示的に質問と回答を示すことで、AIが記事を参照する際に正確な情報が伝わりやすくなります。</p>
+
+<p>特にサービス比較や「〇〇とは何か」という解説記事のFAQには、サービス名・具体的な数値・比較内容を含めると、AIが回答を生成する際に参照されやすくなります。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. FAQ構造化データとは何ですか？</p><p class="faq-a">ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルトを表示することがあります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. FAQのリッチリザルトは必ず表示されますか？</p><p class="faq-a">必ずしも表示されるわけではありません。Googleは構造化データの内容・ページの品質・検索クエリとの関連性を総合的に判断します。設置しておくことでリッチリザルト表示の機会が増えます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. FAQ構造化データはすべての記事に入れるべきですか？</p><p class="faq-a">FAQがある記事には入れる価値があります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。内容が薄いFAQは効果が低くなります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 構造化データのエラーはどこで確認できますか？</p><p class="faq-a">GoogleのリッチリザルトテストツールかSearch Consoleの「拡張」セクションで確認できます。エラーがある場合は該当箇所のJSONを修正してください。</p></div>
+<div class="faq-item"><p class="faq-q">Q. FAQ構造化データはAI（ChatGPT・Claude等）にも効果がありますか？</p><p class="faq-a">LLMはFAQ形式のQ&A構造を引用しやすいとされています。構造化データでQ&Aを明示することで、AIが記事を参照する際に正確な情報が伝わりやすくなります。SEOとLLMO両方への効果が期待できます。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
+<h2 class="related-title">関連する記事</h2>
+<div class="related-list">
+<div class="related-item"><a href="llmo-article-writing.html">AIに答えてもらいやすい記事の書き方を調べた｜LLMOって何？</a></div>
+<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
+<div class="related-item"><a href="llms-txt-setup.html">llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</a></div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">&copy; 2026 ツバサのメモ帳</div></footer>
+</body>
+</html>
