@@ -17,36 +17,100 @@
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/site.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+:root{
+  --bg:#faf8f4;
+  --text:#1c1c1c;
+  --text-sub:#7a7570;
+  --accent:#2e6b8a;
+  --border:#e5e0d8;
+  --warm:#f2ede4;
+  --card:#ffffff;
+}
 body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:780px;margin:0 auto;padding:0 20px}
 header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
 header .wrap{display:flex;align-items:center;justify-content:space-between}
-.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
-.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
-.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
-.hero h1{font-size:26px;line-height:1.5;font-weight:700;margin-bottom:12px;letter-spacing:1px}
-.hero p{font-size:14px;opacity:.85;max-width:540px;margin:0 auto;line-height:1.8}
+.site-name{font-size:17px;font-weight:700;color:var(--accent);letter-spacing:.5px;font-family:'Lora',serif;}
+.site-tag{font-size:11px;color:var(--text-sub);background:var(--warm);padding:3px 10px;border-radius:20px}
+.intro{padding:52px 0 44px}
+.intro h1{
+  font-family:'Lora',serif;
+  font-size:28px;
+  font-weight:600;
+  line-height:1.55;
+  margin-bottom:14px;
+  color:var(--text);
+}
+.intro p{
+  font-size:14px;
+  color:var(--text-sub);
+  line-height:1.9;
+  max-width:500px;
+}
 main{padding:48px 0 64px}
 .cat-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
 .cat-link{display:inline-block;padding:10px 20px;font-size:13px;font-weight:700;color:var(--accent);background:var(--card);border:1px solid var(--border);border-radius:24px;text-decoration:none;transition:all .2s}
 .cat-link:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
-.section-title{font-size:14px;font-weight:700;color:var(--text-sub);margin-bottom:16px;padding-left:4px;letter-spacing:.5px}
-.article-list{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
-.article-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;transition:box-shadow .2s}
-.article-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.article-card a{display:block;color:inherit;text-decoration:none}
+.section-title{
+  font-size:11px;
+  letter-spacing:1.8px;
+  color:var(--text-sub);
+  margin-bottom:20px;
+  padding-bottom:14px;
+  border-bottom:1px solid var(--border);
+}
+.article-list{display:flex;flex-direction:column;gap:0;margin-bottom:40px}
+.article-card{
+  border-bottom:1px solid var(--border);
+  background:transparent;
+  border-radius:0;
+}
+.article-card:hover{
+  box-shadow:none;
+  background:rgba(255,255,255,.6);
+}
+.article-card a{
+  display:flex;
+  color:inherit;
+  text-decoration:none;
+  padding:24px 0;
+}
 .article-card a:hover{text-decoration:none}
-.article-card .card-num{font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-light);display:inline-block;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.card-thumb{
+  width:140px;
+  min-height:94px;
+  flex-shrink:0;
+  overflow:hidden;
+  border-radius:6px;
+  margin-right:22px;
+  background:var(--warm);
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  margin-top:4px;
+}
+.card-thumb img{width:100%;height:auto;display:block}
+.article-card .card-num{font-size:12px;font-weight:700;color:var(--accent);background:#e8f0f5;display:inline-block;padding:2px 10px;border-radius:12px;margin-bottom:8px}
 .article-card .card-num.new{color:#fff;background:var(--accent)}
 .article-card h2{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.6}
 .article-card .card-desc{font-size:13px;color:var(--text-sub);line-height:1.7}
-.article-card .card-tag{display:inline-block;font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:2px 8px;border-radius:4px;margin-top:8px}
-.archive-btn{display:inline-block;padding:14px 36px;background:var(--accent);color:#fff;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:opacity .2s}
-.archive-btn:hover{opacity:.85;text-decoration:none}
+.article-card .card-tag{display:inline-block;font-size:11px;color:var(--text-sub);background:var(--warm);padding:2px 8px;border-radius:4px;margin-top:8px}
 .author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
 .author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
 .author-box .author-icon img{width:100%;height:100%}
@@ -55,9 +119,13 @@ main{padding:48px 0 64px}
 .author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
 footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
 @media(max-width:600px){
-.hero h1{font-size:22px}
-.article-card{padding:16px 18px}
+.article-card{padding:0}
 .author-box{flex-direction:column;align-items:center;text-align:center}
+}
+@media(max-width:580px){
+  .intro h1{font-size:22px}
+  .article-card a{flex-direction:column;gap:14px}
+  .card-thumb{width:100%;min-height:160px;margin-right:0}
 }
 </style>
 </head>
@@ -70,11 +138,11 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </div>
 </header>
 
-<div class="hero">
-<div class="wrap">
-<h1>ツバサのメモ帳</h1>
-<p>メーカー勤務のEC担当が、カメラ・写真・画像編集・ECサイト運用で調べたことをまとめています。</p>
-</div>
+<div class="intro">
+  <div class="wrap">
+    <h1>カメラ・写真・EC周りで<br>調べたことのメモ。</h1>
+    <p>メーカー勤務のEC担当が、実務で調べたことをまとめています。スマホ撮影、レタッチ、画像編集、ECサイトの運用など。</p>
+  </div>
 </div>
 
 <main>
@@ -226,15 +294,15 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 </div>
 
-<div style<div style="text-align:center;margin:0 0 40px">
-<a href="archive.html" class="archive-btn">すべての記事を見る（全30件）</a>
+<div style="text-align:center;padding:8px 0 56px">
+  <a href="archive.html" style="font-size:13px;color:var(--accent);border-bottom:1px solid currentColor;padding-bottom:1px;">すべての記事を見る（全13件）→</a>
 </div>
 
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
-<p>メーカー勤務のEC担当。商品撮影はスマホで済ませがち。Photoshopは苦手でアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。このブログはカメラ・写真・EC周りで調べたことの備忘録です。</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
