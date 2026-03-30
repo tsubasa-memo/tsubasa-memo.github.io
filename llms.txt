@@ -70,6 +70,7 @@
 - [就活の証明写真はアプリで加工していい？許容範囲と採用NGになる加工まとめ](https://tsubasa-memo.github.io/job-hunting-photo-retouch.html): 就活証明写真における加工の許容範囲・採用担当が気にするポイント・NGになりやすい加工の種類をまとめた記事
 - [マッチングアプリの写真はどこで撮るのが正解？場所・構図・加工の許容範囲を調べた](https://tsubasa-memo.github.io/matching-app-photo-tips.html): マッチングアプリのマッチ率が上がる写真の撮り方を場所・構図・加工の範囲別にまとめた記事
 - [盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の常識を調べた](https://tsubasa-memo.github.io/sns-photo-retouch-manners.html): マッチングアプリ・就活・Instagramそれぞれの加工の常識とBeRealが流行した背景をまとめた記事
+- [スキル不要で時給4,500円？話題のAIデータ収集副業を調べてみた｜ツバサのメモ帳](https://tsubasa-memo.github.io/ai-data-collection-side-job.html): Outlier AI・Appen・Remotasks・CASHMARTなど日本から使えるAIデータ収集副業6サービスの報酬・始め方・将来性・注意点を比較した記事
 
 # 以下は執筆予定（公開時にコメントアウトを解除）
 # - [なぜnoteじゃなくてGitHub Pagesにしたか｜AdSenseを使いたかった](https://tsubasa-memo.github.io/github-pages-vs-note.html): noteはAdSense不可のためGitHub Pagesで自前ブログを作った動機と経緯をまとめた記事
