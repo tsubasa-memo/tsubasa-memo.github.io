@@ -25,10 +25,10 @@
 
 ### レタッチ
 - [レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】](https://tsubasa-memo.github.io/retouch-services.html): 個人で使える写真レタッチ・修正サービス7社（レタッチインク・カメラのキタムラ・リメージ・Motto・グラフィックファクトリー・BELLEFOTO・ひとフォト）の料金・納期・対応範囲を比較した記事
-- [写真の再色付け・レタッチアプリおすすめ比較10選【2026年版】](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed・TouchRetouch・Lightroom Mobileなど写真の再色付け・色調補正・不要物除去に対応するスマホアプリ10選を用途別に比較した記事
+- [写真レタッチアプリおすすめ10選｜無料で使える比較【2026年版】](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed・TouchRetouch・Lightroom Mobileなど写真の再色付け・色調補正・不要物除去に対応するスマホアプリ10選を用途別に比較した記事
 - [レタッチとは？写真の修正・補正・加工の違いをわかりやすく解説【初心者向け】](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチでできること・できないこと、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
 - [写真の背景を白抜きにする方法比較｜無料ツール・アプリ・外注の料金【2026年版】](https://tsubasa-memo.github.io/background-white.html): Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較した記事
-- [背景切り抜きをプロに外注するといくら？｜費用相場と依頼先まとめ【2026年版】](https://tsubasa-memo.github.io/background-cutout-outsource.html): 写真の背景切り抜きを外注する費用相場（1枚100円台〜）と、切り抜き専門サービス・レタッチ業者・クラウドソーシングの料金・品質・納期を比較した記事
+- [背景切り抜きの費用相場まとめ｜1枚100円台から依頼できる外注先比較](https://tsubasa-memo.github.io/background-cutout-outsource.html): 写真の背景切り抜きを外注する費用相場（1枚100円台〜）と、切り抜き専門サービス・レタッチ業者・クラウドソーシングの料金・品質・納期を比較した記事
 - [写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】](https://tsubasa-memo.github.io/retouch-pricing-database.html): 写真レタッチ・画像加工を外注する場合の費用相場を20社以上のサービスから調査した記事。肌レタッチ・色補正・切り抜き・合成など作業内容別の料金目安
 - [レタッチを個人で依頼する方法まとめ｜料金相場と失敗しない選び方【2026年版】](https://tsubasa-memo.github.io/personal-retouch-order.html): 個人で1枚から写真レタッチを依頼できるサービスの種類・依頼の流れ・料金相場（1枚300円〜）をまとめた記事
 
