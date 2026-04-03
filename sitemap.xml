@@ -7,7 +7,7 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/archive.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -203,6 +203,11 @@
   <url>
     <loc>https://tsubasa-memo.github.io/retouch-pricing-database.html</loc>
     <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/retouch-cost-guide.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
