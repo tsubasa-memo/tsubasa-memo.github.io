@@ -86,6 +86,12 @@
 - [サーチコンソールの見方を覚えた備忘録](https://tsubasa-memo.github.io/search-console-basics.html): 表示回数・クリック数・CTR・掲載順位の意味と読み方をまとめた記事
 - [記事のタイトルを変えたらCTRが動いた話](https://tsubasa-memo.github.io/search-console-ctr.html): 8位表示でCTR 0.23%だった記事のタイトル変更と効果を記録した体験記
 
+## 用語集
+
+EC業務やカメラ・写真まわりで出てきた用語を調べたメモ。用語一覧は https://tsubasa-memo.github.io/glossary/ にまとめている。
+
+- [トリミングとは？切り抜き・クロップとの違いを調べたメモ](https://tsubasa-memo.github.io/glossary/trimming.html): 画像のトリミングの意味、切り抜き（クリッピング）やクロップとの違い、ECサイトの商品画像ガイドラインで求められるトリミングの実務的な使い方をまとめた記事
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしている。Photoshopは少し使えるが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼している。
