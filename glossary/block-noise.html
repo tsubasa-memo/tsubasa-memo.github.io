@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>ブロックノイズとは？写真がガビガビになる原因と対処法｜ツバサのメモ帳</title>
+<meta name="description" content="ブロックノイズの意味を調べたメモ。JPEG画像を拡大したらブロック状のガビガビが出た原因と、8×8ピクセルブロック単位で圧縮する仕組み、モスキートノイズとの違い、Photoshopのノイズ軽減フィルターでの対処法をまとめました。">
+<meta name="keywords" content="ブロックノイズ とは,ブロックノイズ 原因,JPEG ブロックノイズ,画像 ガビガビ,ブロックノイズ 対処">
+<meta property="og:title" content="ブロックノイズとは？写真がガビガビになる原因と対処法｜ツバサのメモ帳">
+<meta property="og:description" content="JPEG画像のブロックノイズが発生する仕組みと対処法を、EC実務の視点で整理したメモ。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/block-noise.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/block-noise.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ブロックノイズとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ブロックノイズとは、JPEG画像を高圧縮したときに現れる、四角いブロック状のノイズのことです。JPEGは画像を8×8ピクセルのブロック単位で圧縮処理するため、圧縮率が高いとブロックの境界が目に見えてしまいます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブロックノイズが出る原因は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主な原因はJPEG画像の圧縮率が高すぎることです。JPEG保存時の品質設定を低くしすぎたり、何度もJPEG保存を繰り返したりすると、8×8ピクセルのブロック境界の情報が失われてノイズが目立つようになります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブロックノイズは修正できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完全に元の画質に戻すことはできませんが、Photoshopの「フィルター」→「ノイズ」→「ノイズを軽減」機能や、「JPEGの斑点を除去」オプションで目立たなくすることは可能です。ただし、ぼかし処理が入るため細部のシャープさは多少失われます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブロックノイズを防ぐにはどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPEG保存時の品質設定を80以上にすること、JPEG形式での上書き保存を繰り返さないこと、元画像はPSDやTIFF形式で保管しておくことが有効です。また、画質劣化のないPNG形式で保存するという選択肢もあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブロックノイズとモスキートノイズの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ブロックノイズは8×8ピクセルの格子状に現れるノイズで、モスキートノイズは輪郭のまわりにチラチラと現れるノイズです。どちらもJPEG圧縮が原因ですが、発生する場所とパターンが異なります。モスキートノイズは色の境界が激しい部分で目立ちやすくなります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ブロックノイズ
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>ブロックノイズとは？<br>写真がガビガビになる原因と対処法</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品写真を拡大して確認していたら、画像の一部がブロック状にガビガビになっていることに気づいた。最初は画像が壊れたのかと思ったけど、調べてみたら「ブロックノイズ」と呼ばれるJPEG圧縮に起因する現象だった。原因と対処法をメモしておく。</p>
+
+<h2>ブロックノイズとは</h2>
+
+<p>ひとことで言うと、JPEG画像を圧縮しすぎたときに現れる四角いブロック状のノイズのことだ。</p>
+
+<p><a href="https://e-words.jp/w/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8E%E3%82%A4%E3%82%BA.html" target="_blank" rel="noopener noreferrer">IT用語辞典e-Wordsの解説</a>によると、JPEGは画像全体を8×8ピクセルのブロックに分割して、ブロック単位で圧縮処理を行う仕組みになっている。圧縮率が高いと、隣り合うブロック同士のつながりが不自然になって、格子状の模様が見えてしまうのがブロックノイズだ。</p>
+
+<p><a href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8E%E3%82%A4%E3%82%BA" target="_blank" rel="noopener noreferrer">Wikipediaのブロックノイズの項目</a>にはもう少し詳しく書いてあって、ブロックノイズにもいくつかの種類があるらしい。格子状に見える「グリッドノイズ」、斜めの線が階段状になる「ステアケースノイズ」などがあるとのこと。</p>
+
+<p>似た現象に「モスキートノイズ」というものもある。こちらはブロックの格子ではなく、被写体の輪郭まわりにチラチラと現れるノイズのことで、色の境界がはっきりしている部分で目立ちやすい。<a href="https://www.asahi-net.or.jp/~ax2s-kmtn/ref/jpeg.html" target="_blank" rel="noopener noreferrer">CyberLibrarianのJPEG画質劣化の解説ページ</a>にどちらの例も載っていた。</p>
+
+<h2>撮影で出てくる場面</h2>
+
+<p>ブロックノイズに遭遇する場面は撮影よりも、撮影後の画像処理や保存のタイミングで多い。僕が経験したケースを書いておく。</p>
+
+<h3>JPEG品質を下げすぎた場合</h3>
+
+<p>ECサイト用の画像はファイルサイズを小さくしたいので、つい品質を下げて保存してしまうことがある。Photoshopの「Web用に保存」で品質を50以下にすると、拡大しなくてもブロックノイズが目立ち始める。商品画像の圧縮については<a href="/compress-product-image.html">商品画像の圧縮方法まとめ</a>に書いたけど、品質80前後がバランスの取れるラインだと思う。</p>
+
+<h3>何度もJPEG保存を繰り返した場合</h3>
+
+<p>JPEGは保存するたびに圧縮がかかる非可逆圧縮の形式なので、編集→保存→編集→保存を繰り返すと、どんどん画質が落ちていく。<a href="https://psgips.net/photoshop-reference/jpeg-artifacts-removal" target="_blank" rel="noopener noreferrer">psgipsのPhotoshop解説記事</a>でも、JPEG圧縮の劣化をキレイに修正する方法が紹介されていたけど、そもそも劣化させないのが一番だ。作業中はPSD形式で保存しておいて、最終的な書き出しのときだけJPEGにするのがいい。</p>
+
+<h3>スマホのスクリーンショットを拡大した場合</h3>
+
+<p>スマホの画面キャプチャはPNG形式で保存されることが多いけど、メールやSNSで共有するときにJPEGに変換されてしまうことがある。その圧縮時にブロックノイズが入って、文字がつぶれて読めなくなったことがあった。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>一度発生したブロックノイズは完全には戻せない</h3>
+
+<p>ブロックノイズは圧縮時に情報が捨てられたことで起きるので、捨てた情報を元に戻すことはできない。Photoshopのノイズ軽減フィルターや、<a href="https://axa.biopapyrus.jp/ia/jpeg-bloc-noise.html" target="_blank" rel="noopener noreferrer">biopapyrusの画像処理解説</a>で紹介されているような平滑化処理で目立たなくすることはできるけど、ぼかし処理が入るので細部のシャープさは失われる。</p>
+
+<h3>圧縮と画質のバランスを意識する</h3>
+
+<p>ECの商品画像ではページの表示速度とのバランスも大事なので、画質を上げすぎてファイルが重くなるのも困る。JPEG品質80前後で保存して、ブロックノイズが出ていないか拡大して確認するのが実用的なやり方だと思う。圧縮の仕組み自体については<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>にまとめた。</p>
+
+<h3>グラデーション部分は特に注意</h3>
+
+<p>空や背景のグラデーションなど、色の変化がなだらかな部分ではブロックノイズが特に目立ちやすい。同じ圧縮率でも、色のコントラストが激しい部分より、単色に近い部分のほうが気になる。グラデーションが縞模様になる現象は<a href="tone-jump.html">トーンジャンプ</a>とも関係がある。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a></li>
+<li><a href="tone-jump.html">トーンジャンプ</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/compress-product-image.html">商品画像の圧縮方法まとめ｜画質を保ちながらファイルサイズを減らすには</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

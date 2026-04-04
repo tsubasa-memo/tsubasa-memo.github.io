@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>非可逆圧縮と可逆圧縮の違い｜JPEG保存で画質が落ちる理由｜ツバサのメモ帳</title>
+<meta name="description" content="非可逆圧縮（ロッシー）と可逆圧縮（ロスレス）の違いを調べたメモ。JPEGを保存し直すたびに画質が劣化する仕組み、PNGやWebPとの圧縮方式の違い、EC用の商品画像でJPEGとPNGを使い分ける基準やマスター画像の保存形式の選び方をまとめました。">
+<meta name="keywords" content="非可逆圧縮 可逆圧縮 違い,JPEG 画質 劣化,lossy lossless 意味,画像圧縮 種類,JPEG 再保存 画質">
+<meta property="og:title" content="非可逆圧縮と可逆圧縮の違い｜JPEG保存で画質が落ちる理由｜ツバサのメモ帳">
+<meta property="og:description" content="JPEG保存で画質が落ちる理由を、非可逆圧縮と可逆圧縮の違いからEC実務の視点で整理。画像形式の使い分けも解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/lossy-lossless.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/lossy-lossless.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "非可逆圧縮と可逆圧縮の違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可逆圧縮は圧縮しても元のデータを完全に復元できる方式で、PNGやGIFが代表的です。非可逆圧縮は元に戻せないかわりにファイルサイズを大幅に小さくできる方式で、JPEGが代表的です。可逆は画質が落ちない代わりにファイルが大きく、非可逆はファイルが小さい代わりに画質が少し落ちます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JPEGを保存し直すと画質が落ちるのはなぜ？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPEGは非可逆圧縮を使っているため、保存するたびに一部のデータが捨てられます。開いて保存し直すだけでも圧縮処理が再実行され、前回捨てたデータに加えてさらにデータが失われるため、繰り返すほど画質が劣化していきます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WebPは非可逆圧縮ですか？可逆圧縮ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WebPは非可逆圧縮と可逆圧縮の両方に対応しています。非可逆モードではJPEGと同等以上の圧縮率を実現しつつファイルサイズを小さくでき、可逆モードではPNGより小さいファイルサイズで画質を完全に維持できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "EC用の商品画像はJPEGとPNGどちらがいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "商品写真のように色数が多い画像はJPEG（非可逆圧縮）が向いています。圧縮品質80〜90%程度なら肉眼ではほとんど劣化がわからず、ファイルサイズを大幅に抑えられます。一方、ロゴや図表のようにくっきりした輪郭が必要な画像はPNG（可逆圧縮）が適しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "非可逆圧縮で劣化した画質を元に戻すことはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "非可逆圧縮で失われたデータは復元できません。そのため、加工用のマスター画像はPSDやTIFFなどの劣化しない形式で保管し、最終的な書き出し時にJPEGにするのが安全です。JPEG保存は最後の1回だけにするのがベストです。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 非可逆圧縮と可逆圧縮
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>非可逆圧縮と可逆圧縮の違い<br>JPEG保存で画質が落ちる理由</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品画像をPhotoshopで編集してJPEG保存を何度か繰り返していたら、なんだか画質がザラザラしてきた気がした。なぜ保存するだけで画質が落ちるのか気になって調べたら、「非可逆圧縮」という仕組みが原因だった。</p>
+
+<h2>非可逆圧縮と可逆圧縮とは</h2>
+
+<p>ひとことで言うと、画像データを小さくするための圧縮方式のことで、2つの種類がある。「可逆圧縮（ロスレス）」は元のデータを完全に復元できる方式、「非可逆圧縮（ロッシー）」は元に戻せないかわりにファイルサイズを大幅に小さくできる方式だ。</p>
+
+<p><a href="https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%8F%AF%E9%80%86%E5%9C%A7%E7%B8%AE" target="_blank" rel="noopener noreferrer">Wikipediaの「非可逆圧縮」のページ</a>によると、非可逆圧縮は人間の目では気づきにくいデータを優先的に捨てることでファイルサイズを減らしている。捨てたデータは元に戻せないので「非可逆（もとに戻せない）」と呼ばれる。</p>
+
+<table class="compare">
+<tr><th>圧縮方式</th><th>元データの復元</th><th>ファイルサイズ</th><th>代表的な形式</th></tr>
+<tr><td>可逆圧縮（ロスレス）</td><td>完全に復元できる</td><td>やや大きい</td><td>PNG、GIF、TIFF（LZW）</td></tr>
+<tr><td>非可逆圧縮（ロッシー）</td><td>復元できない</td><td>かなり小さくできる</td><td>JPEG、WebP（lossy）</td></tr>
+</table>
+
+<p><a href="https://breezegroup.co.jp/202005/image-compression/" target="_blank" rel="noopener noreferrer">BREEZEの画像圧縮解説</a>にも、この2つの違いがシンプルに説明されていてわかりやすかった。可逆圧縮は「zipファイルに入れて解凍するようなイメージ」と書いてあって、なるほどと思った。</p>
+
+<p>JPEGが保存するたびに劣化するのは、非可逆圧縮が毎回実行されるから。ファイルを開いてそのまま保存し直すだけでも、圧縮→展開→圧縮という処理が走って、そのたびに少しずつデータが失われていく。<a href="https://docs.krita.org/ja/general_concepts/file_formats/lossy_lossless.html" target="_blank" rel="noopener noreferrer">Kritaの公式ドキュメント</a>にも、非可逆圧縮を繰り返すと劣化が蓄積されると書いてあった。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>非可逆圧縮と可逆圧縮の違いを知っておくと、日々の画像管理で困ることが減る。僕が遭遇した場面を書いておく。</p>
+
+<h3>商品画像の加工と保存</h3>
+
+<p>商品写真の色味を調整して保存、次の日にまた修正して保存……というのを繰り返していたら、最初の写真と比べて明らかに画質が落ちていた。JPEGで作業用ファイルを管理していたのが原因だった。加工中はPSD（Photoshop形式）やTIFFなどの劣化しない形式で保存しておいて、最後にJPEGに書き出すのが正解だ。</p>
+
+<h3>背景透過が必要な画像</h3>
+
+<p>ECサイトでロゴや説明図に背景透過を使いたいとき、JPEGでは透過ができない。PNG（可逆圧縮）なら透過に対応しているので、そちらを使うことになる。ただしPNGは写真のような色数が多い画像では容量が大きくなりがちなので、用途に応じて使い分ける必要がある。画像形式ごとの特徴は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
+
+<h3>WebPへの変換</h3>
+
+<p>最近はPageSpeed Insightsで「次世代フォーマットで画像を配信してください」と指摘されることが増えた。<a href="https://developers.google.com/speed/webp/docs/compression" target="_blank" rel="noopener noreferrer">GoogleのWebP公式ドキュメント</a>によると、WebPは非可逆と可逆の両方に対応していて、JPEGやPNGよりファイルサイズを小さくできるらしい。ECサイトの表示速度改善に使われることが増えている。<a href="https://zokeifile.musabi.ac.jp/%E9%9D%9E%E5%8F%AF%E9%80%86%E5%9C%A7%E7%B8%AE/" target="_blank" rel="noopener noreferrer">武蔵野美術大学の造形ファイル</a>にも、非可逆圧縮の仕組みがコンパクトにまとまっていて参考になった。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>マスター画像はJPEGで保存しない</h3>
+
+<p>加工用のマスター画像（元データ）は、PSD・TIFF・PNGなど劣化しない形式で保管する。JPEG保存は最終的な書き出し時に1回だけにするのが鉄則。これだけで画質劣化のリスクはかなり減る。</p>
+
+<h3>JPEG圧縮率は80〜90%くらいが目安</h3>
+
+<p>EC用の商品画像なら、JPEG圧縮品質80〜90%で保存すれば、肉眼ではほとんど劣化がわからない。品質を下げすぎると画像にブロックノイズ（モザイク状の荒れ）が出てくるので、バランスを見ながら調整する。ファイルサイズの軽量化については<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>に詳しく書いた。</p>
+
+<h3>用途に応じた形式選びが大切</h3>
+
+<p>写真のように色数が多い画像はJPEG（非可逆圧縮）、ロゴや図表のようにくっきりした輪郭が必要な画像はPNG（可逆圧縮）、両方の特性が必要ならWebPと、使い分けるのがベストだ。各モールの画像ルールは<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>を参考に。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="resolution-dpi.html">解像度・dpi</a></li>
+<li><a href="png.html">PNG</a></li>
+<li><a href="webp.html">WebP</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/image-file-formats.html">画像ファイル形式まとめ</a></li>
+<li><a href="/compress-product-image.html">商品画像の圧縮テクニック</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

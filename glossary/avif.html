@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>AVIFとは？JPEGの次の標準になるかもしれない画像形式｜ツバサのメモ帳</title>
+<meta name="description" content="AVIF（エーブイアイエフ）とは何かを調べたメモ。競合サイトの商品画像が.avifで保存できず調べた。AV1ベースの圧縮技術、WebPとのファイルサイズ比較、ブラウザ対応状況、ECサイトでの導入をまずWebPからにすべき理由を整理しました。">
+<meta name="keywords" content="AVIF とは,AVIF WebP 違い,AVIF 画像形式,次世代フォーマット AVIF,AVIF 対応ブラウザ">
+<meta property="og:title" content="AVIFとは？JPEGの次の標準になるかもしれない画像形式｜ツバサのメモ帳">
+<meta property="og:description" content="競合サイトの画像が.avifで開けなかったので調べた。WebPとの違い、圧縮率、EC実務での導入判断を整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/avif.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/avif.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AVIFとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AVIF（AV1 Image File Format）は、動画コーデック「AV1」の技術を画像に応用したフォーマットです。Alliance for Open Media（AOM）が策定し、Google・Apple・Microsoftなどが参加しています。JPEGやWebPと比べてファイルサイズがさらに小さく、高画質を保てるのが特徴です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AVIFとWebPの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "どちらもJPEGより高圧縮な次世代フォーマットですが、AVIFのほうが圧縮効率が高く、同じ画質ならファイルサイズがさらに小さくなります。一方、AVIFはエンコード（変換処理）に時間がかかる点と、対応ソフトがまだWebPより少ない点がデメリットです。WebPはGoogleが開発、AVIFはAOMが策定という違いもあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AVIFはどのブラウザで表示できる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chrome（バージョン85以降）、Firefox（バージョン93以降）、Safari（バージョン16以降）、Edge（バージョン121以降）で対応しています。2024年以降は主要ブラウザでほぼ表示可能ですが、古いブラウザでは表示されません。pictureタグでJPEGをフォールバック指定するのが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AVIFに変換するにはどうすればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GoogleのSquooshやavif.ioなどの無料Webツールで変換できます。コマンドラインではlibavifやImageMagick（バージョン7以降）が利用可能です。CDN（Cloudflare、Fastlyなど）のサービスでは自動的にAVIF変換して配信してくれるものもあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトでAVIFを導入すべき？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "商品画像が多いECサイトではファイルサイズ削減の効果が大きいため、検討する価値があります。ただし、まずWebPに対応してからAVIFを追加導入するのが無難です。CDNの自動変換機能を使えば、JPEG原本をアップロードするだけでAVIF配信に対応できる場合もあります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; AVIF
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>AVIFとは？<br>JPEGの次の標準になるかもしれない画像形式を調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>競合サイトの商品画像を右クリックで保存しようとしたら、拡張子が「.avif」になっていて開けなかった。PageSpeed Insightsで自社サイトをチェックしたときに出てきた「次世代フォーマット」を調べていたらAVIFという名前が出てきたので、あわせて調べてみた。</p>
+
+<h2>AVIFとは</h2>
+
+<p>ひとことで言うと、動画の圧縮技術を画像に応用した次世代の画像フォーマットだ。正式名称は「AV1 Image File Format」で、動画コーデック「AV1」をベースにしている。</p>
+
+<p><a href="https://aomedia.org/" target="_blank" rel="noopener noreferrer">Alliance for Open Media（AOM）の公式サイト</a>によると、AVIFはGoogle・Apple・Microsoft・Netflix・Amazonなどの大手企業が参加する団体が策定したオープンな規格だ。ロイヤリティフリー（利用料なし）で誰でも使える。</p>
+
+<p>最大の特徴は圧縮効率の高さで、JPEGと比べるとファイルサイズが50%以上小さくなるケースもある。<a href="https://prebell.so-net.ne.jp/tips/pre_24030101.html" target="_blank" rel="noopener noreferrer">プレベルの解説記事</a>にも書いてあったが、WebPよりもさらに高い圧縮率を実現している。</p>
+
+<p><a href="https://wk-partners.co.jp/homepage/glossary/avif/" target="_blank" rel="noopener noreferrer">WKパートナーズの用語解説ページ</a>でも、AVIFの仕組みや圧縮率について詳しく紹介されていた。WebPとの違いを表にまとめるとこうなる。</p>
+
+<table class="compare">
+<tr><th>項目</th><th>JPEG</th><th>WebP</th><th>AVIF</th></tr>
+<tr><td>ファイルサイズ</td><td>基準</td><td>JPEGの65〜75%</td><td>JPEGの40〜60%</td></tr>
+<tr><td>透過（背景透明）</td><td>不可</td><td>対応</td><td>対応</td></tr>
+<tr><td>HDR対応</td><td>不可</td><td>不可</td><td>対応</td></tr>
+<tr><td>エンコード速度</td><td>高速</td><td>高速</td><td>遅い</td></tr>
+<tr><td>策定団体</td><td>JPEG委員会</td><td>Google</td><td>AOM</td></tr>
+</table>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC担当としてAVIFに出会う場面はまだ限られているが、じわじわ増えてきている。僕が遭遇したケースを書いておく。</p>
+
+<h3>競合サイトの画像が.avifだった</h3>
+
+<p>冒頭に書いたとおり、競合のECサイトで商品画像を保存しようとしたら.avif形式だったことがあった。これはそのサイトが使っているCDN（Cloudflareなど）が、ブラウザの対応状況に応じてJPEGを自動的にAVIFに変換して配信していたためだ。<a href="https://spoool.co.jp/blog/avif/" target="_blank" rel="noopener noreferrer">スプールの比較記事</a>にも、CDNの自動変換によるAVIF配信の実例が紹介されていた。</p>
+
+<h3>PageSpeed Insightsの「次世代フォーマット」指摘</h3>
+
+<p>PageSpeed Insightsで「次世代フォーマットで画像を配信してください」と出たとき、WebPだけでなくAVIFも選択肢として挙がる。<a href="https://blog.asobou.co.jp/web/avif" target="_blank" rel="noopener noreferrer">アーティスの実践ガイド</a>によると、Googleはこの指摘でWebPとAVIFの両方を推奨している。</p>
+
+<h3>Shopifyなどのプラットフォームでの自動対応</h3>
+
+<p>Shopifyは2024年からAVIF形式での画像配信に対応している。商品画像をJPEGでアップロードすれば、対応ブラウザにはAVIF、非対応ブラウザにはJPEGやWebPが自動配信される仕組みだ。自社でShopifyを使っている場合は、特に作業しなくてもAVIF配信ができている可能性がある。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>まずWebP、その次にAVIFという順番が現実的</h3>
+
+<p>AVIFのほうが圧縮効率は高いが、エンコードに時間がかかる点や、対応ソフトがまだ少ない点を考えると、まずWebPで対応しておいて余裕があればAVIFも追加する、という進め方が現実的だ。<a href="https://dad-union.com/webp-avif-comparison-pros-cons" target="_blank" rel="noopener noreferrer">DAD UNIONのWebP・AVIF比較記事</a>でも同様の結論が書かれていた。WebPについては<a href="webp.html">WebPの解説ページ</a>にまとめてある。</p>
+
+<h3>pictureタグでフォールバックを設定する</h3>
+
+<p>自社サイトでAVIFを使う場合、古いブラウザ向けにJPEGやWebPを用意しておく必要がある。HTMLのpictureタグを使えば、ブラウザの対応状況に応じて配信する画像を自動で切り替えられる。CDNの自動変換を使えばこの設定も不要な場合がある。画像の最適化全般については<a href="/compress-product-image.html">商品画像の圧縮・軽量化ガイド</a>にまとめた。</p>
+
+<h3>編集用データとしてはまだ不向き</h3>
+
+<p>AVIFはWeb配信に最適化されたフォーマットであって、PhotoshopやLightroomでの編集作業には向いていない。撮影した商品写真の元データはJPEGやRAW、PSDなど従来の形式で保管しておき、Web公開時にAVIFに変換するという使い分けが大事だ。非可逆圧縮と可逆圧縮の仕組みについては<a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a>のページで解説している。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="webp.html">WebP</a></li>
+<li><a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a></li>
+<li><a href="png.html">PNG</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/compress-product-image.html">商品画像の圧縮・軽量化ガイド</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
