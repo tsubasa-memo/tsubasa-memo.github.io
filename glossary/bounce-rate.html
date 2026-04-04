@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>直帰率とは？Google Analyticsで見かけた指標の意味｜ツバサのメモ帳</title>
+<meta name="description" content="直帰率の意味をGA4の定義にもとづいて整理したメモ。GA4では「エンゲージメントのなかったセッションの割合」として定義され、旧UAとは計算方法が異なる。エンゲージメント率との関係や、ECサイトで直帰率が高いときに確認すべきポイントもまとめた。">
+<meta name="keywords" content="直帰率 とは,GA4 直帰率,直帰率 高い 原因,エンゲージメント率 直帰率 違い,bounce rate 意味">
+<meta property="og:title" content="直帰率とは？Google Analyticsで見かけた指標の意味｜ツバサのメモ帳">
+<meta property="og:description" content="直帰率の意味をGA4の定義で整理。旧UAとの違いや直帰率が高いときに見直すポイントもまとめた。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/bounce-rate.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/bounce-rate.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "直帰率とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "直帰率とは、サイトに訪れたユーザーが最初のページだけ見て、他のページに移動せずにそのまま離脱した割合のことです。GA4では「エンゲージメントのなかったセッションの割合」として定義されています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GA4とUA（旧Googleアナリティクス）で直帰率の定義は違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、定義が異なります。UAでは「1ページだけ見て離脱したセッションの割合」でしたが、GA4では「エンゲージメントのなかったセッションの割合」です。GA4では10秒以上滞在すればエンゲージメントありと判定されるため、同じサイトでもGA4のほうが直帰率は低く出やすいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "直帰率の目安はどのくらいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ページの種類やサイトの目的によって異なりますが、ECサイトのトップページなら30〜50%、ブログ記事なら60〜80%が一般的な目安とされています。GA4では旧UAより低い数値が出るため、過去データとの単純比較はできません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "直帰率が高い場合、何が問題ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "直帰率が高い＝必ず問題、とは限りません。たとえばFAQページで疑問が解決して離脱するのは自然な行動です。ただし、商品一覧ページやトップページの直帰率が高い場合は、ユーザーが欲しい情報を見つけられていない可能性があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "直帰率とエンゲージメント率の関係は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GA4では直帰率＝100%−エンゲージメント率です。エンゲージメント率が高いほど直帰率は低くなります。GA4ではエンゲージメント率のほうが標準的な指標として扱われており、直帰率はレポートに手動で追加して確認します。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 直帰率
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>直帰率とは？<br>Google Analyticsで見かけた指標の意味</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>Google Analytics（GA4）のレポートを見ていたら「直帰率」という指標が出てきた。なんとなく「すぐ帰っちゃう人の割合」だろうとは推測できたけど、正確な定義がわからなかったので調べてみた。</p>
+
+<h2>直帰率とは</h2>
+
+<p>ひとことで言うと、サイトに来たユーザーが何もせずに帰ってしまったセッションの割合のこと。英語では「Bounce Rate」と呼ばれている。</p>
+
+<p>ただ、GA4になって定義が変わった点に注意が必要だ。<a href="https://support.google.com/analytics/answer/12195621?hl=ja" target="_blank" rel="noopener noreferrer">Google Analyticsの公式ヘルプ</a>によると、GA4での直帰率は「エンゲージメントのなかったセッションの割合」と定義されている。</p>
+
+<p>ここで言う「エンゲージメントのあるセッション」とは、以下のいずれかに該当するセッションだ。</p>
+
+<ul>
+<li>10秒を超えて継続したセッション</li>
+<li>コンバージョンイベントが発生したセッション</li>
+<li>2回以上のページビューが発生したセッション</li>
+</ul>
+
+<p>つまり、GA4では「ページを開いて10秒以上読んでいれば、たとえ1ページしか見ていなくてもエンゲージメントあり（＝直帰ではない）」と判定される。旧バージョンのUA（ユニバーサルアナリティクス）では「1ページだけ見て離脱＝直帰」だったので、同じサイトでもGA4のほうが直帰率は低く出る。</p>
+
+<p><a href="https://www.ebis.ne.jp/column/ga4-bounce-rate/" target="_blank" rel="noopener nofollow">アドエビスのGA4直帰率解説</a>にも、UAとGA4では数値が変わるので過去データとの単純比較はできないと書いてあった。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>直帰率はEC担当にとって身近な指標だった。僕が実際に意識した場面を書いておく。</p>
+
+<h3>GAのレポートで「直帰率」が並んでいた</h3>
+
+<p>GA4のレポートには最初から直帰率が表示されているわけではなく、「レポートをカスタマイズ」から指標を追加する必要がある。<a href="https://blog.siteanatomy.com/role/bounce-rate.html" target="_blank" rel="noopener noreferrer">やさしいGoogleアナリティクスブログ</a>に手順が載っていたので、それを見ながら設定した。エンゲージメント率のほうがGA4では標準的な指標として扱われているらしい。</p>
+
+<h3>商品ページの直帰率が高くて問題になった</h3>
+
+<p>広告から飛んできた先の商品ページで直帰率が高い場合、「広告で期待した内容とページの内容がずれている」可能性がある。写真が良くない、説明が足りない、読み込みが遅い、といった原因が考えられる。</p>
+
+<h3>トップページの直帰率を改善したい</h3>
+
+<p>トップページの直帰率が高いということは、来た人がそのまま帰っている＝他のページへの導線がうまく機能していないことを意味する。ナビゲーションの見直しや、人気商品へのリンク配置を変えるなどの改善が考えられる。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>直帰率が高い＝悪い、とは限らない</h3>
+
+<p>たとえばFAQページやお問い合わせページは、そのページだけで目的が達成されるので直帰率が高くなるのは自然だ。<a href="https://wacul-ai.com/blog/access-analysis/ga4-bounce-rate/" target="_blank" rel="noopener noreferrer">AIアナリストのブログ</a>でも、ページの役割によって直帰率の評価は変わると説明されていた。</p>
+
+<h3>GA4ではエンゲージメント率を先に見る</h3>
+
+<p>GA4では直帰率よりエンゲージメント率（＝100%−直帰率）のほうが重視されている。エンゲージメント率が高い＝ユーザーがしっかりコンテンツを見ている、という前向きな指標なので、こちらを基準に考えたほうがわかりやすい。<a href="https://www.uncovertruth.co.jp/service/ca/blog/2024/06/24/ga4-engage-bounce/" target="_blank" rel="noopener noreferrer">CONTENT ANALYTICSのブログ</a>にも両者の関係が詳しく書いてあった。</p>
+
+<h3>ページの読み込み速度も影響する</h3>
+
+<p>ページの表示が遅いと、内容を見る前にユーザーが離脱してしまう。Google の<a href="https://developers.google.com/speed/pagespeed/insights/?hl=ja" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>でページの表示速度をチェックして、遅い場合は画像の軽量化やサーバーの見直しを検討するとよい。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="session-pv-uu.html">セッション・PV・UU</a></li>
+<li><a href="cvr.html">CVR（コンバージョン率）</a></li>
+<li><a href="cart-abandonment.html">カゴ落ち</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

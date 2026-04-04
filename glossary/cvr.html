@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話｜ツバサのメモ帳</title>
+<meta name="description" content="CVR（コンバージョン率）の意味と計算方法をEC担当の視点で整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。">
+<meta name="keywords" content="CVR とは,コンバージョン率 計算,ECサイト CVR 平均,CVR 改善,コンバージョン率 目安">
+<meta property="og:title" content="CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話｜ツバサのメモ帳">
+<meta property="og:description" content="CVR（コンバージョン率）の意味と計算式をEC実務の視点で整理。平均値の目安やGA4での確認方法もまとめた。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/cvr.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/cvr.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CVR（コンバージョン率）とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CVRはConversion Rateの略で、サイトに訪れたユーザーのうち、購入や問い合わせなどの成果（コンバージョン）に至った割合を示す指標です。ECサイトでは「購入完了した人の割合」として使われることが多いです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CVRの計算方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CVR＝コンバージョン数 ÷ セッション数 × 100（%）で計算します。たとえばサイト訪問が1,000回で、そのうち購入完了が20件なら、CVRは2%です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトのCVRの平均値はどのくらいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般的なECサイトのCVR平均は1〜3%程度です。ただし、取り扱い商品のジャンルや価格帯、集客チャネルによって大きく変わります。指名検索で来るユーザーが多いサイトはCVRが高くなりやすいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CVRが低い場合、何を見直せばよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まずは商品ページの情報量（写真・説明文・レビュー）を確認しましょう。次に購入フローの複雑さ、決済手段の種類、送料の表示タイミングなどを見直します。Google Analyticsでどのページで離脱が多いか確認するのも有効です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CVRとCTRの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CVRはサイト訪問者のうち購入などの成果に至った割合、CTR（クリック率）は広告や検索結果が表示された回数に対してクリックされた割合です。CTRは「サイトに来てもらう段階」、CVRは「来た人に買ってもらう段階」の指標と考えるとわかりやすいです。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; CVR（コンバージョン率）
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>CVR（コンバージョン率）とは？<br>「CVR何%？」と聞かれた話</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>上司に「うちのサイトのCVR何%？」と聞かれて、とっさに答えられなかった。CVRという言葉自体は聞いたことがあったが、計算方法も平均値も知らなかったので調べてみた。</p>
+
+<h2>CVR（コンバージョン率）とは</h2>
+
+<p>ひとことで言うと、サイトに来た人のうち、購入や問い合わせなどの「成果」に至った人の割合のこと。CVRは「Conversion Rate」の略だ。</p>
+
+<p>計算式は「コンバージョン数 ÷ セッション数 × 100（%）」。たとえば月間のサイト訪問が10,000セッションで、そのうち購入完了が200件ならCVRは2%になる。</p>
+
+<p><a href="https://www.shopify.com/jp/blog/ecommerce-conversion-rate" target="_blank" rel="noopener nofollow">Shopifyの公式ブログ</a>によると、ECサイトの平均CVRは1〜3%程度。ジャンルや価格帯によって差があるが、ざっくり「100人来て1〜3人が買う」と考えるとイメージしやすい。</p>
+
+<p>「コンバージョン」が何を指すかはサイトによって異なる。ECサイトなら購入完了、BtoBサイトなら資料請求や問い合わせがコンバージョンになることが多い。<a href="https://support.google.com/analytics/answer/9267568?hl=ja" target="_blank" rel="noopener noreferrer">Google Analyticsのヘルプ</a>にもコンバージョンの設定方法が載っている。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>CVRはEC担当にとって避けて通れない指標だった。僕が遭遇した場面を書いておく。</p>
+
+<h3>上司に「CVR何%？」と聞かれた</h3>
+
+<p>これが僕がCVRを調べるきっかけ。Google Analytics（GA4）の「レポート」→「収益化」→「eコマース購入数」あたりを見ると、購入完了数がわかる。セッション数と割り算すればCVRが出る。<a href="https://www.bsearchtech.com/blog/e-commerce-marketing/what-conversion-rate/" target="_blank" rel="noopener nofollow">GENIEE SEARCHの解説記事</a>にGA4でのCVR確認方法が詳しく載っていたので参考にした。</p>
+
+<h3>広告の効果測定で使う</h3>
+
+<p>広告経由でサイトに来た人が、ちゃんと購入まで至っているかを測るのにCVRを使う。たとえばリスティング広告のCVRが0.5%で、SNS広告のCVRが2%なら、SNS広告のほうが「買ってくれる人を連れてきている」と判断できる。<a href="https://www.ricoh.co.jp/magazines/direct-marketing/column/g00041/" target="_blank" rel="noopener noreferrer">リコーのダイレクトマーケティングラボ</a>の記事でも、チャネル別のCVR比較の重要性が説明されていた。</p>
+
+<h3>商品ページの改善指標として</h3>
+
+<p>商品ページの写真を差し替えたり、説明文を見直したりしたあとに、CVRが上がったかどうかで効果を判断する。数字で良し悪しがわかるので、「なんとなく良くなった気がする」という曖昧な評価を避けられる。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>CVRだけ見ても意味がない</h3>
+
+<p>CVRが高くても、そもそもサイトに来る人が少なければ売上は伸びない。逆にCVRが低くても、集客数が多ければそれなりの売上になる。<a href="https://maclogi.co.jp/column/6879/?type=lecture" target="_blank" rel="noopener nofollow">マクロジのCVR解説記事</a>でも、CVRはセッション数や客単価とセットで見るべきだと書いてあった。</p>
+
+<h3>「何をコンバージョンにするか」を決めておく</h3>
+
+<p>チーム内で「CVR」と言ったとき、購入完了を指しているのか、カート追加を指しているのかで数字がまるで違ってくる。最初に定義を揃えておかないと話がかみ合わない。</p>
+
+<h3>業界平均との比較は参考程度に</h3>
+
+<p>「ECの平均CVRは2%くらい」と言われても、高単価商品と日用品では比較にならない。自社の過去データとの比較（先月より上がったか下がったか）のほうが実用的だ。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="cart-abandonment.html">カゴ落ち</a></li>
+<li><a href="cpa.html">CPA</a></li>
+<li><a href="roas.html">ROAS</a></li>
+<li><a href="session-pv-uu.html">セッション・PV・UU</a></li>
+<li><a href="ab-test.html">ABテスト</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

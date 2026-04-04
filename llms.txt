@@ -113,6 +113,64 @@ EC業務やカメラ・写真まわりで出てきた用語を調べたメモ。
 - [WebPとは？ECサイトの画像で見かける次世代フォーマットを調べた](https://tsubasa-memo.github.io/glossary/webp.html): GoogleのWebP形式の意味、JPEGとの容量比較、ECサイトでの導入判断をまとめた記事
 - [AVIFとは？JPEGの次の標準になるかもしれない画像形式を調べた](https://tsubasa-memo.github.io/glossary/avif.html): AVIF形式の意味、WebPとの比較、ブラウザ対応状況と導入タイミングをまとめた記事
 
+### 商品登録・管理
+- [SKUとは？EC担当なら知っておきたい在庫管理の最小単位](https://tsubasa-memo.github.io/glossary/sku.html): SKUの意味、色・サイズ違いの数え方、商品登録での使い方をまとめた記事
+- [JANコードとは？商品登録で求められるバーコード番号の意味](https://tsubasa-memo.github.io/glossary/jan-code.html): JANコードの仕組み、GS1事業者コードの取得方法、ECモールでの活用をまとめた記事
+- [ASINとは？Amazon出品で出てくるコードの正体を調べた](https://tsubasa-memo.github.io/glossary/asin.html): AmazonのASINコードの意味、JANコードとの関係、カタログ登録での使い方をまとめた記事
+- [CSV一括登録とは？商品データをまとめて登録する方法](https://tsubasa-memo.github.io/glossary/csv-bulk-upload.html): ECモールのCSV一括登録の仕組み、楽天・Amazon・Shopifyでのやり方をまとめた記事
+- [ロットとは？仕入れの「最小ロット」の意味を調べた](https://tsubasa-memo.github.io/glossary/lot.html): 仕入れにおけるロットの意味、最小ロットの交渉方法をまとめた記事
+- [上代・下代とは？EC担当が知っておくべき価格用語](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 上代（定価）と下代（仕入れ値）の違い、掛け率との関係をまとめた記事
+- [掛け率とは？仕入れ交渉で「6掛け」と言われた話](https://tsubasa-memo.github.io/glossary/kakerate.html): 掛け率の計算方法、業界別の相場、仕入れ交渉での使い方をまとめた記事
+- [ロングテールとは？「売れ筋以外も大事」の意味を調べた](https://tsubasa-memo.github.io/glossary/long-tail.html): ロングテール戦略の意味、ECサイトでの活用方法をまとめた記事
+
+### 商品ページ・画像・Web
+- [alt属性とは？商品画像に設定するテキストの意味と書き方](https://tsubasa-memo.github.io/glossary/alt-attribute.html): alt属性の意味、SEOやアクセシビリティへの影響、商品画像での書き方をまとめた記事
+- [OGP画像とは？SNSでシェアしたとき画像が出ない原因](https://tsubasa-memo.github.io/glossary/ogp-image.html): OGPの設定方法、SNSでサムネイルが表示されない原因と対処法をまとめた記事
+- [モックアップとは？デザイン確認で出てくる用語を調べた](https://tsubasa-memo.github.io/glossary/mockup.html): モックアップの意味、ワイヤーフレームやプロトタイプとの違いをまとめた記事
+- [ファーストビューとは？商品ページの「最初に見える範囲」の話](https://tsubasa-memo.github.io/glossary/first-view.html): ファーストビューの意味、ECサイトで何を置くべきかをまとめた記事
+- [LP（ランディングページ）とは？「LP作って」と言われて調べた](https://tsubasa-memo.github.io/glossary/landing-page.html): LPの意味、通常ページとの違い、EC向けLPの構成をまとめた記事
+- [バナーとは？ECサイトで使うバナーの種類とサイズ規定](https://tsubasa-memo.github.io/glossary/banner.html): ECバナーの種類、モール別サイズ規定、制作のコツをまとめた記事
+- [レスポンシブとは？「スマホ対応」との違いを調べた](https://tsubasa-memo.github.io/glossary/responsive.html): レスポンシブデザインの意味、スマホ対応との違い、ECサイトでの重要性をまとめた記事
+- [UI・UXとは？EC担当が知っておくべき違いをまとめた](https://tsubasa-memo.github.io/glossary/ui-ux.html): UIとUXの違い、ECサイトでの改善例をまとめた記事
+
+### EC運営・分析
+- [カゴ落ちとは？お客さんが買わずに帰る原因を調べた](https://tsubasa-memo.github.io/glossary/cart-abandonment.html): カゴ落ちの原因、平均カゴ落ち率、対策方法をまとめた記事
+- [CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話](https://tsubasa-memo.github.io/glossary/cvr.html): CVRの計算方法、ECサイトの平均CVR、改善施策をまとめた記事
+- [直帰率とは？Google Analyticsで見かけた指標の意味](https://tsubasa-memo.github.io/glossary/bounce-rate.html): 直帰率の意味、GA4での確認方法、改善のポイントをまとめた記事
+- [セッション・PV・UUの違い｜アクセス解析の基本を整理した](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): 3つの指標の違いと、ECサイト分析での読み方をまとめた記事
+- [LTVとは？「LTV上げていこう」と言われて調べたメモ](https://tsubasa-memo.github.io/glossary/ltv.html): LTVの計算方法、リピート施策との関係をまとめた記事
+- [CPAとは？広告費の話で出てくる指標の意味を整理した](https://tsubasa-memo.github.io/glossary/cpa.html): CPAの計算方法、目標CPAの決め方、ROASとの違いをまとめた記事
+- [ROASとは？広告の費用対効果を測る指標を調べた](https://tsubasa-memo.github.io/glossary/roas.html): ROASの計算方法、ROAS 400%の読み方、ROI・CPAとの違いをまとめた記事
+- [ABテストとは？商品画像の比較テストをやってみた話](https://tsubasa-memo.github.io/glossary/ab-test.html): ABテストの仕組み、ECサイトでの実施方法と注意点をまとめた記事
+
+### 物流・フルフィルメント
+- [フルフィルメントとは？EC物流で出てくる用語を調べた](https://tsubasa-memo.github.io/glossary/fulfillment.html): フルフィルメントの業務範囲、3PLやFBAとの違いをまとめた記事
+- [3PLとは？物流外注を検討したときに出てきた用語](https://tsubasa-memo.github.io/glossary/3pl.html): 3PLの意味、アセット型・ノンアセット型の違い、委託費用のポイントをまとめた記事
+- [WMSとは？倉庫管理システムの意味を調べたメモ](https://tsubasa-memo.github.io/glossary/wms.html): WMSの仕組み、在庫管理システムとの違い、導入タイミングをまとめた記事
+- [ピッキングとは？倉庫見学で知った出荷作業の流れ](https://tsubasa-memo.github.io/glossary/picking.html): ピッキング作業の流れ、シングルとトータルの違いをまとめ��記事
+- [リードタイムとは？「リードタイム3日」の意味を整理した](https://tsubasa-memo.github.io/glossary/lead-time.html): リードタイムの種類、営業日と暦日の違い、短縮方法をまとめた記事
+- [出荷指示書とは？物流会社への依頼に必要なものを調べた](https://tsubasa-memo.github.io/glossary/shipping-instruction.html): 出荷指示書の記載項目、ピッキングリストとの違いをまとめた記事
+
+### マーケティング・集客
+- [リスティング広告とは？「リスティング回しましょう」の意味](https://tsubasa-memo.github.io/glossary/listing-ads.html): リスティング広告の仕組み、Google広告での出稿方法をまとめた��事
+- [リターゲティングとは？「リタゲ広告出しますか？」と聞かれた話](https://tsubasa-memo.github.io/glossary/retargeting.html): リターゲティング広告の仕組み、Cookieとの関係をまとめた記事
+- [UGCとは？「UGC活用しましょう」の意味を調べた](https://tsubasa-memo.github.io/glossary/ugc.html): UGCの意味、ECサイトでの活用方法をまとめた記事
+- [D2C���は？「うちもD2Cやるべきでは」と言われて調べた](https://tsubasa-memo.github.io/glossary/d2c.html): D2Cの意味、モール出店との違い、メリット・デメリットをまとめた記事
+- [オムニチャネルとは？実店舗とECの連携を調べたメモ](https://tsubasa-memo.github.io/glossary/omnichannel.html): オムニチャネルの意味、マルチチャネルとの違いをまとめた記事
+- [アフィリエイトとは？EC担当が知っておくべき仕組みを整理した](https://tsubasa-memo.github.io/glossary/affiliate.html): アフィリエイトの仕組み、ASP、EC担当の視点での活用方法をまとめ��記事
+- [CRMとは？顧客管理ツール導入の話で出てきた用語](https://tsubasa-memo.github.io/glossary/crm.html): CRMの意味、MAとの違い、EC向けCRMツールをまとめた記事
+- [インプレッションとは？広告レポートの「imp」の意味](https://tsubasa-memo.github.io/glossary/impression.html): インプレッションの意味、リーチやクリックとの違いをまとめた記事
+
+### 決済・法務
+- [特商法表記とは？ECサイトに必ず載せるページの作り方](https://tsubasa-memo.github.io/glossary/tokushoho.html): 特定商取引法に基づく表記の必須項目と書き方をまとめた記事
+- [チャージバックとは？クレカ決済のトラブルで出てきた用語](https://tsubasa-memo.github.io/glossary/chargeback.html): チャージバックの仕組み、EC事業者のリスクと対策をまとめた記事
+- [後払い決済（BNPL）とは？決済手段の追加を検討したときの話](https://tsubasa-memo.github.io/glossary/bnpl.html): BNPLの仕組み、導入メリットとデメリットをまとめた記事
+
+### モール固有
+- [FBAとは？Amazon出品で「FBA使いますか？」と聞かれた話](https://tsubasa-memo.github.io/glossary/fba.html): Fulfillment by Amazonの仕組み、手数料、自社発送との比較をまとめた記事
+- [楽天RMSとは？楽天出店の管理画面でできることを整理した](https://tsubasa-memo.github.io/glossary/rakuten-rms.html): 楽天RMSの機能、商品登録・受注管理・データ分析の使い方をまとめた記事
+- [楽天スーパーSALEとは？エントリー方法と準備を調べた](https://tsubasa-memo.github.io/glossary/rakuten-super-sale.html): 楽天スーパーSALEのエントリー条件、準備事項、売上最大化のコツをまとめた記事
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしている。Photoshopは少し使えるが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼している。

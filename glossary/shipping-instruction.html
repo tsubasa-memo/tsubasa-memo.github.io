@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>出荷指示書とは？物流会社への依頼に必要なものを調べた｜ツバサのメモ帳</title>
+<meta name="description" content="出荷指示書の意味と書き方を調べたメモ。物流会社に「出荷指示書をCSVで送ってください」と言われて調べた記載項目（出荷先住所・商品コード・数量・配送方法など）の書き方、ピッキングリストとの違い、WMS連携での自動化を整理した。">
+<meta name="keywords" content="出荷指示書 とは,出荷指示書 書き方,出荷指示書 テンプレート,ピッキングリスト 出荷指示書 違い,出荷指示 物流">
+<meta property="og:title" content="出荷指示書とは？物流会社への依頼に必要なものを調べた｜ツバサのメモ帳">
+<meta property="og:description" content="出荷指示書の意味と記載項目をEC実務の視点で整理。ピッキングリストとの違いやWMS連携も解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/shipping-instruction.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/shipping-instruction.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "出荷指示書とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出荷指示書とは、倉庫に対して「いつ・どこに・何を・いくつ出荷するか」を指示するための書類です。受注内容をもとに作成し、物流倉庫のピッキング・梱包・出荷作業の起点となります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "出荷指示書とピッキングリストの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出荷指示書は出荷先や配送方法を含む指示全体を記載した書類です。ピッキングリストは出荷指示書のうち、倉庫内で商品を集める作業に特化した内容を抜き出したものです。WMSを使っている倉庫では、出荷指示データからピッキングリストが自動生成されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "出荷指示書に何を書けばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出荷先の氏名・住所・電話番号、商品名・商品コード・数量、出荷予定日、配送方法（宅配便・メール便など）、備考（ギフト包装・同梱物の有無など）が基本的な記載項目です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "出荷指示書は手書きでもいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出荷件数が少ないうちは手書きやExcelでも対応できます。ただし件数が増えてくると手作業ではミスが起きやすくなるため、販売管理システムやWMSから自動出力する仕組みに切り替えるのが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "出荷指示のミスを防ぐにはどうすればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "受注データから出荷指示書を自動生成する仕組みが最も効果的です。ECカートやモールの受注データをWMSに連携させることで、手入力による転記ミスを防げます。出荷前のバーコード検品も有効な対策です。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 出荷指示書
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>出荷指示書とは？<br>物流会社への依頼に必要なものを調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>物流会社に出荷業務を委託することになり、「出荷指示書をCSVで送ってください」と言われた。何をどう書けばいいのかわからなかったので調べてみた。</p>
+
+<h2>出荷指示書とは</h2>
+
+<p>ひとことで言うと、倉庫に対して「いつ・どこに・何を・いくつ出荷するか」を指示するための書類だ。受注内容をもとに作成し、倉庫側はこの指示書をもとにピッキング・梱包・出荷を行う。</p>
+
+<p><a href="https://s-flow.net/column/shipping-instructions/" target="_blank" rel="noopener noreferrer">s-flowの解説</a>によると、出荷指示書に記載する基本項目は以下のとおり。</p>
+
+<ul>
+<li>出荷先の氏名・住所・電話番号</li>
+<li>商品名・商品コード・数量</li>
+<li>出荷予定日</li>
+<li>配送方法（宅配便・メール便・クール便など）</li>
+<li>備考（ギフト包装の有無、同梱チラシの指定など）</li>
+</ul>
+
+<p>似た言葉に「ピッキングリスト」があるけど、<a href="https://www.aiship.jp/ec-column/picking-list" target="_blank" rel="noopener noreferrer">aishipの解説</a>を読むと、出荷指示書は出荷先情報や配送方法を含む「指示全体」を記載した書類で、ピッキングリストはそこから倉庫内での商品集め作業に必要な情報だけを抜き出したもの、という違いがある。WMSを使っている倉庫では、出荷指示データを取り込むとピッキングリストが自動生成される仕組みになっていることが多い。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<h3>3PL業者への出荷依頼</h3>
+
+<p>物流を3PL業者に委託している場合、毎日の出荷指示は出荷指示書（またはCSVデータ）で行うことになる。<a href="https://ecnomikata.com/ecnews/33115/" target="_blank" rel="noopener noreferrer">ECのミカタの記事</a>にも書いてあったけど、出荷指示のフォーマットは業者ごとに違うので、契約時にどの形式で送ればいいか確認しておく必要がある。</p>
+
+<h3>受注から出荷までの業務フロー</h3>
+
+<p>ECサイトで注文が入ってから出荷するまでの流れは、おおまかに「受注確認 → 出荷指示書の作成 → ピッキング → 梱包 → 出荷 → 追跡番号の登録」となる。出荷指示書はこの流れの起点になる書類だから、ここでミスがあると後工程すべてに影響が出る。</p>
+
+<h3>特別な梱包指示が必要なとき</h3>
+
+<p>ギフト注文で包装紙やリボンが必要だったり、キャンペーンのチラシを同梱したりする場合は、出荷指示書の備考欄にその旨を書いておく。<a href="https://www.rakurakuhanbai.jp/column/2020/0304.php" target="_blank" rel="noopener noreferrer">楽楽販売のコラム</a>でも、備考欄を活用した指示の出し方が紹介されていた。口頭やメールで別途伝えると抜け漏れが起きやすいので、出荷指示書に集約するのが鉄則だ。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>手作業の出荷指示はミスの温床</h3>
+
+<p>受注データをExcelにコピペして出荷指示書を作っていた時期があるけど、住所の転記ミスや数量の入力間違いが何度か起きた。<a href="https://www.sk-hanbai.com/ship/ship02_nouhin.html" target="_blank" rel="noopener noreferrer">販売管理の知識サイト</a>にも書いてあったけど、出荷件数が増えてきたら受注データから出荷指示を自動生成する仕組みに切り替えたほうがいい。</p>
+
+<h3>出荷指示の締め時間を確認する</h3>
+
+<p>3PL業者には「当日出荷の出荷指示は○時まで」という締め時間がある。たとえば「14時までに受けた出荷指示は当日出荷、14時以降は翌営業日出荷」というルールが多い。この締め時間を超えると出荷が1日遅れるので、リードタイムにも影響する。</p>
+
+<h3>WMS連携で出荷指示を自動化する</h3>
+
+<p>ECカートやモールの受注データをWMSにAPI連携させれば、注文が入った時点で出荷指示が自動生成される。手動でCSVを作って送る手間がなくなるし、転記ミスもゼロになる。出荷件数が1日数十件を超えてきたら、この自動化は真剣に検討したほうがいい。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="picking.html">ピッキング</a></li>
+<li><a href="wms.html">WMS</a></li>
+<li><a href="fulfillment.html">フルフィルメント</a></li>
+<li><a href="3pl.html">3PL</a></li>
+<li><a href="lead-time.html">リードタイム</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

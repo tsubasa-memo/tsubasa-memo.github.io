@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>レスポンシブデザインとは？「スマホ対応」との違いを調べた｜ツバサのメモ帳</title>
+<meta name="description" content="レスポンシブデザインの意味を調べたメモ。CSSのメディアクエリを使い、1つのHTMLでPC・スマホ・タブレットの画面幅に応じてレイアウトを自動切替する仕組みのこと。スマホ専用ページとの違いやGoogleが推奨する理由をEC実務の視点でまとめた。">
+<meta name="keywords" content="レスポンシブ とは,レスポンシブデザイン とは,スマホ対応 違い,レスポンシブ EC,モバイルフレンドリー">
+<meta property="og:title" content="レスポンシブデザインとは？「スマホ対応」との違いを調べた｜ツバサのメモ帳">
+<meta property="og:description" content="レスポンシブデザインの仕組みとスマホ対応との違いをEC実務の視点で整理。Googleが推奨する理由やメリットも解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/responsive.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/responsive.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "レスポンシブデザインとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "レスポンシブデザインとは、1つのHTMLで画面幅（PC・タブレット・スマホなど）に応じて自動的にレイアウトを切り替えるWebデザインの手法です。CSSのメディアクエリという仕組みを使って実現します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "レスポンシブとスマホ対応の違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "スマホ対応は「スマホで見られるようにする」こと全般を指す広い概念です。レスポンシブデザインはそのスマホ対応を実現する方法のひとつで、1つのHTMLとURLで全デバイスに対応します。スマホ専用ページを別に作る方法もスマホ対応ですが、レスポンシブではありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Googleはレスポンシブデザインを推奨していますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、Google検索セントラルの公式ドキュメントでレスポンシブウェブデザインを推奨しています。URLが統一されるためクロール効率がよく、モバイルファーストインデックスにも対応しやすいのが理由です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトをレスポンシブにする必要はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。ECサイトのアクセスはスマホからが大半を占めるため、スマホでの操作性は売上に直結します。ShopifyやBASEなどの主要ECプラットフォームは標準でレスポンシブ対応のテーマを提供しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "レスポンシブデザインのデメリットはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PC用の画像やコードをスマホでも読み込むため、表示速度が遅くなる場合があります。また、PCとスマホで見せたい情報の優先度が大きく異なる場合、レイアウトの調整が難しいこともあります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; レスポンシブ
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>レスポンシブデザインとは？<br>「スマホ対応」との違いを調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>ECサイトのリニューアルで制作会社に見積もりを依頼したら「レスポンシブ対応で見積もっています」と書いてあった。レスポンシブ？ スマホ対応とは違うの？ よくわからなかったので調べてみた。</p>
+
+<h2>レスポンシブとは</h2>
+
+<p>ひとことで言うと、1つのHTMLで画面幅に応じて自動的にレイアウトを切り替えるWebデザインの手法のこと。正式には「レスポンシブウェブデザイン（Responsive Web Design）」と呼ぶ。レスポンシブ（responsive）は「反応する」という意味の英語だ。</p>
+
+<p><a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer">MDN Web Docsのレスポンシブデザイン解説</a>によると、CSSのメディアクエリ（@media）という仕組みを使って、画面幅が一定以下になったら2カラムを1カラムに変更する、フォントサイズを小さくする、といった切り替えを行う。URLもHTMLも1つで、見た目だけが変わる仕組みだ。</p>
+
+<p>「スマホ対応」とはどう違うのか。<a href="https://chigai2.fromation.co.jp/archives/28052" target="_blank" rel="noopener noreferrer">fromationの比較記事</a>を読んでわかったのは、スマホ対応は「スマホで見られるようにすること」全般を指す広い概念で、レスポンシブデザインはその実現方法のひとつということだ。整理するとこうなる。</p>
+
+<table class="compare">
+<tr><th>方法</th><th>URL</th><th>HTML</th><th>特徴</th></tr>
+<tr><td>レスポンシブデザイン</td><td>同じ</td><td>同じ</td><td>CSSで表示を切り替え</td></tr>
+<tr><td>スマホ専用ページ</td><td>別（/sp/ など）</td><td>別</td><td>PC用とスマホ用を別に作る</td></tr>
+<tr><td>アダプティブデザイン</td><td>同じ</td><td>同じ</td><td>サーバー側でデバイスを判別して表示を切り替え</td></tr>
+</table>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>ECの仕事をしていると、レスポンシブ対応の話はあちこちで出てくる。</p>
+
+<h3>サイトリニューアルの見積もり</h3>
+
+<p>僕が遭遇したのがこの場面。制作会社から「レスポンシブ対応で」と言われたのは、PC・タブレット・スマホの全デバイスに1つのHTMLで対応する設計にするという意味だった。スマホ専用ページを別に作るよりもコストが抑えられるケースが多く、Googleも推奨している方法だ。</p>
+
+<p><a href="https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing?hl=ja" target="_blank" rel="noopener noreferrer">Google検索セントラルのモバイルサイトに関するドキュメント</a>では、Googleがレスポンシブウェブデザインを推奨する方法として明記されている。URLが統一されるためクロール効率がよく、モバイルファーストインデックスにも対応しやすいのが理由だ。</p>
+
+<h3>商品ページの表示確認</h3>
+
+<p>レスポンシブ対応のECサイトでも、PCで見たときとスマホで見たときのレイアウトは異なる。商品画像の並び方、テキストの折り返し、購入ボタンの位置などが変わるため、PC表示だけ確認してOKを出すと、スマホで見たときにレイアウトが崩れていたということがある。<a href="https://blog.nijibox.jp/article/responsivedesign/" target="_blank" rel="noopener noreferrer">ニジボックスのレスポンシブデザイン解説</a>でも、複数デバイスでの表示確認の重要性が触れられていた。</p>
+
+<h3>メールマガジンのデザイン</h3>
+
+<p>ECサイトだけでなく、メールマガジンもレスポンシブ対応が必要になっている。スマホでメールを開く人が増えているため、PC向けの横幅が広いレイアウトだとスマホで読みにくい。<a href="https://www.kagoya.jp/howto/it-glossary/web/responsive/" target="_blank" rel="noopener noreferrer">カゴヤのレスポンシブ解説記事</a>にも、メールのレスポンシブ対応について触れられていた。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>主要ECプラットフォームは標準対応</h3>
+
+<p>ShopifyやBASE、STORESなどの主要ECプラットフォームは、標準で提供されるテーマがレスポンシブ対応になっている。自分でゼロからレスポンシブ対応を実装する必要は基本的にない。テーマのカスタマイズ時にレスポンシブが崩れないように注意する程度だ。</p>
+
+<h3>画像サイズの最適化が大事</h3>
+
+<p>レスポンシブデザインでは、PCで表示する大きな画像をスマホでも読み込むことになる。表示サイズは小さくなっても、データ量は変わらない。そのため、srcset属性を使ってデバイスに応じた画像サイズを出し分けるか、画像の圧縮を適切に行って表示速度を保つ必要がある。</p>
+
+<h3>ブレイクポイントの確認</h3>
+
+<p>レスポンシブデザインではブレイクポイント（レイアウトが切り替わる画面幅の閾値）が設定されている。一般的にはスマホ（〜767px）、タブレット（768〜1023px）、PC（1024px〜）あたりだが、制作会社やテーマによって異なる。自サイトのブレイクポイントを把握しておくと、コンテンツ更新のときにレイアウト崩れを防ぎやすい。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="first-view.html">ファーストビュー</a></li>
+<li><a href="ui-ux.html">UI・UX</a></li>
+<li><a href="landing-page.html">LP（ランディングページ）</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

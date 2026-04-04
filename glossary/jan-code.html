@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>JANコードとは？商品登録で求められるバーコード番号の意味｜ツバサのメモ帳</title>
+<meta name="description" content="JANコード（バーコード番号）の意味をEC実務の視点で調べたメモ。楽天やAmazonの商品登録でバーコード番号を求められたときの対応方法、GS1事業者コードの取得手順と費用、13桁と8桁の違い、SKUやASINとの関係を整理しました。">
+<meta name="keywords" content="JANコード とは,JANコード 意味,バーコード 商品登録,GS1事業者コード,JANコード 取得">
+<meta property="og:title" content="JANコードとは？商品登録で求められるバーコード番号の意味｜ツバサのメモ帳">
+<meta property="og:description" content="JANコードの意味と取得方法をEC実務の視点で整理。GS1事業者コードの登録手順や、SKU・ASINとの違いも解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/jan-code.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/jan-code.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "JANコードとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JANコードは「Japanese Article Number」の略で、日本国内で使われる商品識別用のバーコード番号です。国際的にはEAN（European Article Number）と呼ばれ、世界100カ国以上で共通して使える仕組みになっています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JANコードは誰でも取得できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GS1 Japanに申請すれば、法人でも個人事業主でも取得できます。登録申請料は事業者の年商規模によって異なり、初期費用と3年ごとの更新料がかかります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JANコードの13桁と8桁の違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "13桁は標準タイプで、ほとんどの商品はこちらを使います。8桁は短縮タイプで、小さな商品などバーコードの印刷スペースが限られる場合に使用します。8桁タイプは別途申請が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JANコードとSKUの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JANコードはGS1 Japanが管理する国際標準の番号で、どの会社でも共通です。SKUは自社の在庫管理用に設定する独自のコードで、社内だけで通用します。両方を併用して管理するのが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECモールへの出品にJANコードは必須ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モールによって扱いが異なります。Amazonではカタログ登録時にJANコード（EANコード）の入力を求められる場面が多いです。楽天市場でも商品登録時にJANコード入力欄があります。自社製造品でまだ取得していない場合はGS1 Japanへの登録が必要になります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; JANコード
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>JANコードとは？<br>商品登録で求められるバーコード番号の意味</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>ECモールで商品を登録していたら、バーコード番号を入力する欄が出てきた。「JANコード」と書いてあるけど、そもそも何の番号なのかよくわかっていなかったので調べてみた。</p>
+
+<h2>JANコードとは</h2>
+
+<p>ひとことで言うと、JANコードは日本国内で使われる商品識別用のバーコード番号のこと。「Japanese Article Number」の略で、スーパーやコンビニのレジで「ピッ」と読み取っているあの縞模様の数字がJANコードだ。</p>
+
+<p><a href="https://www.gs1jp.org/code/jan/about_jan.html" target="_blank" rel="noopener noreferrer">GS1 Japanの公式サイト</a>によると、JANコードは国際的にはEAN（European Article Number）と呼ばれていて、世界100カ国以上で共通して使える仕組みになっている。アメリカ・カナダで使われているUPCコードとも互換性があるらしい。</p>
+
+<p>JANコードには13桁の標準タイプと8桁の短縮タイプの2種類がある。ほとんどの商品は13桁で、8桁は小さな商品など印刷スペースが限られる場合に使う。<a href="https://www.gs1jp.org/code/jan/hajimete_barcode_guide.html" target="_blank" rel="noopener noreferrer">GS1 Japanの「はじめてのバーコードガイド」</a>に詳しい説明が載っていた。</p>
+
+<p>13桁の構成は「国コード（45または49）＋事業者コード＋商品アイテムコード＋チェックデジット」。先頭の2桁で日本の商品だとわかる仕組みになっている。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC業務でJANコードが必要になる場面は意外と多い。僕が遭遇したケースをまとめておく。</p>
+
+<h3>ECモールへの商品登録</h3>
+
+<p>Amazonに商品を登録するとき、JANコード（Amazonの画面では「EAN」と表記されていることもある）の入力を求められることがある。すでにカタログに登録されている商品なら、JANコードを入力すると既存の商品ページに紐づく。新規商品の場合はJANコードがないと登録できないケースもある。</p>
+
+<p>楽天市場でも商品登録画面にJANコードの入力欄がある。<a href="https://next-engine.net/ec-blog/jan-code/" target="_blank" rel="noopener noreferrer">ネクストエンジンのJANコード解説記事</a>を読むと、JANコードを設定しておくことで在庫連携や商品データの一元管理がやりやすくなるとのこと。</p>
+
+<h3>仕入れ商品の管理</h3>
+
+<p>メーカーから仕入れた商品にはたいていJANコードが付いている。このコードを使えば、どの商品がどれだけ売れたかをPOSデータで追跡できる。自社で独自に作った商品（オリジナル商品・OEM商品）にはJANコードが付いていないので、必要に応じてGS1 Japanに申請して取得することになる。</p>
+
+<h3>物流・倉庫でのバーコードスキャン</h3>
+
+<p>倉庫での入出庫管理でもJANコードのバーコードスキャンが使われている。<a href="https://www.logizard-zero.com/columns/jancode1.html" target="_blank" rel="noopener noreferrer">ロジザードのJANコード解説</a>によると、JANコードをスキャンすることで入荷検品や出荷作業のミスを減らせるとのこと。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>GS1事業者コードの取得方法</h3>
+
+<p>自社商品にJANコードを付けたい場合は、まず<a href="https://www.gs1jp.org/code/jan/" target="_blank" rel="noopener noreferrer">GS1 Japanの公式サイト</a>からGS1事業者コードの登録を申請する。登録申請料は事業者の年商規模によって異なり、3年ごとに更新が必要。申請から登録完了まで2週間ほどかかるらしいので、急いでいる場合は早めに動いたほうがいい。</p>
+
+<h3>JANコードとSKUは別物</h3>
+
+<p>僕も最初は混同していたけど、JANコードとSKUはまったく役割が違う。JANコードは国際標準の共通番号で、どの会社が扱っても同じ番号。SKUは自社の在庫管理用に独自に設定するコード。両方を併用して管理するのが一般的だ。SKUについては<a href="sku.html">SKUとは</a>にまとめている。</p>
+
+<h3>JANコードがない商品の扱い</h3>
+
+<p>ハンドメイド品やノーブランドの商品など、JANコードが付いていない商品もある。ECモールによっては「JANコードなし」で登録できる場合もあるし、独自のコードを発行する場合もある。Amazonでは「製品コード免除」の申請ができるケースがあるので、<a href="asin.html">ASINとは</a>もあわせて確認しておくといい。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="sku.html">SKU</a></li>
+<li><a href="asin.html">ASIN</a></li>
+<li><a href="csv-bulk-upload.html">CSV一括登録</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

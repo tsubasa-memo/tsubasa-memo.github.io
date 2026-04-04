@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>リターゲティングとは？「リタゲ広告出しますか？」と聞かれた話｜ツバサのメモ帳</title>
+<meta name="description" content="リターゲティング広告の意味を調べたメモ。Cookieを使った追跡の仕組み、Google広告のリマーケティングとの違い、ECサイトでカゴ落ちユーザーに再アプローチする活用法、Cookie規制の影響と今後の対策をEC実務の視点で整理しました。">
+<meta name="keywords" content="リターゲティング とは,リタゲ広告,リマーケティング 違い,リターゲティング 仕組み,リターゲティング EC">
+<meta property="og:title" content="リターゲティングとは？「リタゲ広告出しますか？」と聞かれた話｜ツバサのメモ帳">
+<meta property="og:description" content="リターゲティング広告の仕組みとEC実務での活用場面を整理。カゴ落ち対策としての使い方もメモ。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/retargeting.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/retargeting.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "リターゲティング広告とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "リターゲティング広告とは、一度Webサイトを訪れたユーザーに対して、その後に閲覧する別のサイトやSNS上で広告を表示する手法です。サイト訪問時に付与されるCookieを利用して、ユーザーを追跡・識別しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リターゲティングとリマーケティングの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基本的に同じ意味です。Google広告では「リマーケティング」、Yahoo!広告やMeta広告（Facebook・Instagram）では「リターゲティング」と呼んでいます。プラットフォームごとに呼び方が違うだけで、仕組みは同じです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リターゲティング広告はなぜ効果が高いのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一度サイトを訪れたユーザーは、すでに商品やサービスに興味を持っている可能性が高いためです。まったく接点のないユーザーに広告を出すよりも、訪問済みユーザーに再アプローチするほうがコンバージョン率が高くなる傾向があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リターゲティング広告の費用感は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "リスティング広告と同様にクリック課金型が一般的で、1クリックあたり数十円から数百円程度です。ただし、すでに興味を持っているユーザーが対象のため、通常のディスプレイ広告よりもコンバージョン率が高く、CPA（顧客獲得単価）は低くなりやすいと言われています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cookie規制でリターゲティング広告はなくなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サードパーティCookieの規制が進んでいるため、従来のCookieベースの追跡は難しくなりつつあります。ただし、各広告プラットフォームはファーストパーティデータの活用や新しい計測技術への移行を進めており、リターゲティング自体がなくなるわけではありません。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; リターゲティング
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>リターゲティングとは？<br>「リタゲ広告出しますか？」と聞かれた話</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>広告担当に「リタゲ出しますか？」と聞かれた。リタゲ？　聞いたことはあるけど、どういう仕組みなのか説明できなかったので調べてみた。</p>
+
+<h2>リターゲティングとは</h2>
+
+<p>ひとことで言うと、一度自社のWebサイトを訪れたことのあるユーザーに対して、その後に閲覧する別のサイトやSNS上で広告を表示する手法のこと。「リタゲ」はリターゲティングの略称だ。</p>
+
+<p><a href="https://www.macromill.com/service/words/retargeting-ad/" target="_blank" rel="noopener noreferrer">マクロミルの用語解説</a>によると、仕組みとしてはユーザーがWebサイトを訪れた際にCookieという小さなデータが保存され、その情報をもとに他のサイトやSNSで広告を表示している。ネットで何かを見たあと、別のサイトでその商品の広告が追いかけてくるのは、これが原因だ。</p>
+
+<p>ちなみにGoogle広告では同じ仕組みを「リマーケティング」と呼んでいる。<a href="https://moltsinc.co.jp/media/process/22427/" target="_blank" rel="noopener noreferrer">MOLTSの解説記事</a>でも触れられていたが、呼び方が違うだけで仕組みは同じ。Yahoo!広告やMeta広告（Facebook・Instagram）では「リターゲティング」と呼ぶので、文脈によって使い分けられている。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>ECサイトを運営していると、リターゲティング広告は非常に身近な存在だった。僕が実際に遭遇したケースを書いておく。</p>
+
+<h3>カゴ落ちユーザーへの再アプローチ</h3>
+
+<p>ECサイトで一番多い活用場面がこれだと思う。商品をカートに入れたまま購入せずに離脱してしまったユーザーに対して、「カートに商品が残っています」という広告を表示する。<a href="https://geniee.co.jp/cx-navi/marketing/re-targeting/" target="_blank" rel="noopener noreferrer">GENIEE CX NAV1の記事</a>にも書いてあったが、カートに入れたということは購入意欲はあるわけで、あとひと押しで買ってくれる可能性が高い。</p>
+
+<h3>商品ページの閲覧者に広告を出す</h3>
+
+<p>商品ページを見たけど購入に至らなかったユーザーに、閲覧した商品やその関連商品の広告を出すパターンもある。Amazonや楽天で商品を見たあと、別のサイトでその商品の広告が出てくるのはまさにこれだ。</p>
+
+<h3>セール時期の告知</h3>
+
+<p>過去にサイトを訪れたことのあるユーザーに対して、セール開始やクーポン配布のタイミングで広告を配信することもある。まったく知らない人に広告を出すよりも、一度接点があるユーザーのほうが反応率が高いという理屈だ。<a href="https://www.medix-inc.co.jp/webbu/retargeting-ads-2083" target="_blank" rel="noopener noreferrer">メディックスの事例記事</a>でも、リターゲティングは通常のディスプレイ広告に比べてCVR（コンバージョン率）が高い傾向にあると紹介されていた。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>タグ（ピクセル）の設置が必要</h3>
+
+<p>リターゲティング広告を始めるには、自社サイトに「リターゲティングタグ」（Google広告では「リマーケティングタグ」、Meta広告では「Metaピクセル」）を設置する必要がある。このタグが訪問者のCookie情報を収集する役割を果たしている。サイトの全ページに入れるのが基本だ。</p>
+
+<h3>Cookie規制の影響</h3>
+
+<p>サードパーティCookieの規制が各ブラウザで進んでいて、従来の方法だけではユーザーを追跡しにくくなっている。<a href="https://digima.cocoo.co.jp/media/ad-retargeting" target="_blank" rel="noopener noreferrer">digimaの2026年版解説</a>でも、ファーストパーティデータ（自社サイトで直接取得した顧客データ）の活用が重要になっていると書いてあった。会員登録やメールアドレスの取得が、今後のリターゲティング運用では鍵になりそうだ。</p>
+
+<h3>しつこいと逆効果になる</h3>
+
+<p>同じ広告が何度も何度も追いかけてくると、ユーザーに嫌がられる。広告の表示回数の上限（フリークエンシーキャップ）を設定して、一人のユーザーに対して1日に何回まで表示するかを制限しておくのが大切だ。僕自身も、同じ商品の広告がずっと出てきてうんざりした経験がある。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="listing-ads.html">リスティング広告</a></li>
+<li><a href="impression.html">インプレッション</a></li>
+<li><a href="crm.html">CRM</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
