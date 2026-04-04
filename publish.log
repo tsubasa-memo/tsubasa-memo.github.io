@@ -1,0 +1,18 @@
+[2026-03-31 18:54:31] === publish-next.py 開始 ===
+[2026-03-31 18:54:31] 対象: ec-product-description（予定日: 2026-04-01）
+[2026-03-31 18:54:31] ec-product-description.html → ルートにコピー
+[2026-03-31 18:54:31] og/ec-product-description.png コピー
+[2026-03-31 18:54:31] thumbs/ec-product-description.svg コピー
+[2026-03-31 18:54:31] index.html 更新完了
+[2026-03-31 18:54:31] archive.html 更新完了
+[2026-03-31 18:54:33] === 公開完了: ec-product-description ===
+
+[2026-03-31 18:58:31] === publish-next.py 開始 ===
+[2026-03-31 18:58:31] 対象: retouch-cost-guide（予定日: 2026-04-03）
+[2026-03-31 18:58:31] retouch-cost-guide.html → ルートにコピー
+[2026-03-31 18:58:31] og/retouch-cost-guide.png コピー
+[2026-03-31 18:58:31] thumbs/retouch-cost-guide.svg コピー
+[2026-03-31 18:58:31] index.html 更新完了
+[2026-03-31 18:58:31] archive.html 更新完了
+[2026-03-31 18:58:33] === 公開完了: retouch-cost-guide ===
+
