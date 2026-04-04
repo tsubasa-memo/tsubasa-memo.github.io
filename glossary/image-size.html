@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>画像サイズとは？ファイルサイズとの違いをわかりやすく整理した｜ツバサのメモ帳</title>
+<meta name="description" content="画像サイズとファイルサイズの違いを調べたメモ。画像サイズはピクセル数で表す縦横の大きさ、ファイルサイズはKB・MBで表すデータ容量のこと。同じピクセル数でも保存形式や圧縮率で容量が変わる理由を、楽天・Amazonの規定とあわせて整理しました。">
+<meta name="keywords" content="画像サイズ とは,画像サイズ ファイルサイズ 違い,画像 大きさ 容量,ピクセル KB 違い,画像サイズ 確認方法">
+<meta property="og:title" content="画像サイズとは？ファイルサイズとの違いをわかりやすく整理した｜ツバサのメモ帳">
+<meta property="og:description" content="画像サイズとファイルサイズの違いを整理。ピクセル数とデータ容量の関係をEC実務の視点でまとめた。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/image-size.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/image-size.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "画像サイズとファイルサイズの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "画像サイズは画像の縦横の大きさをピクセル（px）で表したもので、たとえば「1600×1200px」のように示します。ファイルサイズはそのデータの容量をKB（キロバイト）やMB（メガバイト）で表したものです。同じ画像サイズでも、保存形式や圧縮率によってファイルサイズは変わります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "画像サイズが大きすぎるとどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ECモールへのアップロード時にエラーが出たり、Webページの読み込みが遅くなったりします。楽天市場では1枚あたり5MB以下、Amazonでは画像の長辺10000px以下などの制限があるため、規定内に収める必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "画像サイズを確認する方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Windowsではファイルを右クリック→プロパティ→詳細タブでピクセル数とファイルサイズの両方を確認できます。Macではファイルを選んでCommand+Iで情報ウィンドウを開くと「大きさ」欄にピクセル数、「サイズ」欄にファイルサイズが表示されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "同じ画像サイズなのにファイルサイズが違うのはなぜ？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "保存形式（JPEG・PNG・WebPなど）と圧縮率が異なるためです。JPEGは圧縮率を高くするとファイルサイズは小さくなりますが画質が下がります。PNGは可逆圧縮なので画質は落ちませんが、JPEGより容量が大きくなりがちです。また、画像の内容（色数や模様の複雑さ）によっても圧縮効率が変わります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ファイルサイズを小さくするにはどうすればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "方法は主に2つあります。1つは画像サイズ（ピクセル数）をリサイズして小さくすること。もう1つはJPEGの圧縮率を上げたりWebPに変換したりして圧縮すること。用途に応じて使い分けるのが効果的です。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 画像サイズ
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>画像サイズとは？<br>ファイルサイズとの違いを整理した</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>ECモールに商品画像をアップしようとしたら「画像サイズが大きすぎます」と表示された。でもこれって、画像の縦横が大きいのか、データ容量が重いのか、どっちのことだろう？混乱したので調べてみた。</p>
+
+<h2>画像サイズとは</h2>
+
+<p>ひとことで言うと、「画像サイズ」という言葉は文脈によって2つの意味で使われている。1つは画像の縦横の大きさ（ピクセルサイズ）、もう1つはファイルのデータ容量（ファイルサイズ）だ。</p>
+
+<p><a href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/photo-data.html" target="_blank" rel="noopener noreferrer">Adobeの画像データ基礎知識のページ</a>によると、画像データを構成する要素として「ピクセル数（解像度）」と「データ容量」は別々に説明されている。つまり、本来は別の概念なのに「画像サイズ」という言葉でまとめて呼ばれてしまっているからややこしいわけだ。</p>
+
+<table class="compare">
+<tr><th>呼び方</th><th>意味</th><th>単位</th><th>例</th></tr>
+<tr><td>画像サイズ（ピクセルサイズ）</td><td>画像の縦横の大きさ</td><td>px（ピクセル）</td><td>1600×1200px</td></tr>
+<tr><td>ファイルサイズ</td><td>データの容量</td><td>KB・MB</td><td>850KB、2.3MB</td></tr>
+</table>
+
+<p><a href="https://www.cybig.net/blog_tips/archives/2771" target="_blank" rel="noopener noreferrer">サイビッグネットの画像データ解説</a>にも、この2つの違いがわかりやすくまとめてあった。ECモールの規定で「画像サイズ」と言われたら、まずピクセル数のことなのかファイル容量のことなのか確認するのが先だ。</p>
+
+<p>2つは連動している。ピクセル数が多ければ情報量も増えるので、基本的にはファイルサイズも大きくなる。ただ、保存形式（JPEG・PNG・WebPなど）や圧縮率によってファイルサイズは大きく変わるので、「ピクセル数が同じ＝ファイルサイズも同じ」とは限らない。<a href="https://blog.ideamans.com/2018/06/imagesize-jpeg-png.html" target="_blank" rel="noopener noreferrer">ideaman'sの画像最適化検証記事</a>では、同じ画像をJPEGとPNGで保存したときのファイルサイズ比較が載っていて参考になった。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>「画像サイズが大きすぎます」というエラーに遭遇するのは、だいたい次のような場面だ。</p>
+
+<h3>モールのアップロード制限</h3>
+
+<p>楽天市場では1枚あたり5MB以下という制限がある。カメラで撮ったままの写真は5MBを超えることがあるので、そのままではアップロードできない。このとき言われている「サイズ」はファイルサイズ（MB）のほうだ。<a href="https://service.rms.rakuten.co.jp/column/detail/26" target="_blank" rel="noopener noreferrer">楽天RMSの画像ガイドライン</a>にも、ファイルサイズとピクセルサイズ両方の制限が書いてある。</p>
+
+<h3>Webページの表示速度</h3>
+
+<p>自社ECサイトに大きな画像をそのまま貼ると、ページの読み込みが遅くなる。<a href="https://developers.google.com/speed/docs/insights/OptimizeImages" target="_blank" rel="noopener noreferrer">GoogleのPageSpeed Insightsのドキュメント</a>でも、画像の最適化がページ速度改善の重要なポイントとして挙げられている。ここでの「画像サイズ」は、ピクセルサイズとファイルサイズの両方が関係してくる。</p>
+
+<h3>メールに添付する商品画像</h3>
+
+<p>取引先やカメラマンに商品画像をメールで送るとき、ファイルサイズが大きすぎると添付できない。Gmailなら1通あたり25MBが上限。複数枚送ると簡単に超えてしまう。この場合はリサイズするかJPEG圧縮率を上げてファイルサイズを軽くする必要がある。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>「サイズを小さく」と言われたら何を小さくするか確認する</h3>
+
+<p>上司や取引先から「画像サイズを小さくして」と言われたとき、ピクセル数を小さくするのか（リサイズ）、ファイル容量を軽くするのか（圧縮）で作業が変わる。確認せずに進めると二度手間になるので、最初に聞いたほうがいい。</p>
+
+<h3>ピクセルサイズを小さくすればファイルサイズも減る</h3>
+
+<p>リサイズしてピクセル数を減らせば、ファイルサイズも一緒に軽くなる。ただし、ピクセル数を減らしすぎると画像がぼやけてしまう。ECモールの推奨ピクセルサイズ（Amazonなら1600px以上）を下回らない範囲でリサイズするのがコツだ。各モールの規定は<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>にまとめた。</p>
+
+<h3>圧縮だけでファイルサイズを減らすこともできる</h3>
+
+<p>ピクセルサイズはそのままで、JPEGの圧縮率を上げたりWebPに変換したりすれば、ファイルサイズだけを軽くできる。画質とのバランスになるが、EC用途なら圧縮品質80%くらいでも十分なことが多い。圧縮方法の詳細は<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>を参考に。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="pixel-size.html">ピクセルサイズ</a></li>
+<li><a href="resize.html">リサイズ</a></li>
+<li><a href="resolution-dpi.html">解像度・dpi</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/compress-product-image.html">商品画像の圧縮テクニック</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>PNGとは？JPEGとの違いと使い分けを整理したメモ｜ツバサのメモ帳</title>
+<meta name="description" content="PNGの意味とJPEGとの違いを調べたメモ。可逆圧縮で画質劣化がなく、背景透過にも対応した画像形式。PNG-8とPNG-24の色数の違いや、EC商品画像でのJPEGとの使い分け、ファイルサイズの最適化方法を実務経験とあわせて整理しました。">
+<meta name="keywords" content="PNG とは,PNG JPEG 違い,PNG 透過,PNG-8 PNG-24 違い,画像 PNG 使い分け">
+<meta property="og:title" content="PNGとは？JPEGとの違いと使い分けを整理したメモ｜ツバサのメモ帳">
+<meta property="og:description" content="PNGの意味とJPEGとの違いを調べたメモ。背景透過の仕組みやEC商品画像での使い分けを整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/png.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/png.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PNGとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNGはPortable Network Graphics（ポータブル ネットワーク グラフィックス）の略で、可逆圧縮の画像ファイル形式です。画質を劣化させずに保存でき、背景を透明にする透過機能にも対応しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PNGとJPEGの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNGは可逆圧縮で画質が劣化しませんが、ファイルサイズが大きくなりやすいです。JPEGは非可逆圧縮でファイルサイズが小さくなりますが、保存のたびに画質が劣化します。写真はJPEG、ロゴやイラストはPNGという使い分けが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PNG画像の背景透過とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNG画像の背景透過とは、画像の背景部分を透明にする機能です。アルファチャンネルという仕組みで透明度を管理しており、ロゴやアイコンを別の背景に重ねるときに便利です。JPEGには透過機能がありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PNG-8とPNG-24の違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNG-8は最大256色で、シンプルなイラストやアイコンに向いています。PNG-24は約1677万色のフルカラーに対応しており、写真やグラデーションのある画像に適しています。PNG-8のほうがファイルサイズは小さくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトの商品画像はPNGとJPEGどちらがいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "白背景の商品写真ならJPEGで十分です。背景を透明にした切り抜き画像が必要な場合はPNGを使います。楽天やAmazonではどちらの形式も対応していますが、ファイルサイズの軽さからJPEGが多く使われています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; PNG
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>PNGとは？<br>JPEGとの違いと使い分けを整理したメモ</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品画像のデータを制作会社に依頼したとき、「背景透過のPNGで納品します」と言われた。PNGという名前は知っていたけど、JPEGとの違いや「透過」が何を意味するのかよくわかっていなかったので調べてみた。</p>
+
+<h2>PNGとは</h2>
+
+<p>ひとことで言うと、画質を劣化させずに保存できる画像ファイル形式のこと。PNGは「Portable Network Graphics（ポータブル ネットワーク グラフィックス）」の略だ。</p>
+
+<p><a href="https://e-words.jp/w/PNG.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、PNGは可逆圧縮（ロスレス圧縮）の画像形式で、何度保存し直しても画質が劣化しない。1996年にGIF形式の代替として開発され、<a href="https://www.w3.org/TR/png-3/" target="_blank" rel="noopener noreferrer">W3C（World Wide Web Consortium）の標準規格</a>として認定されている。</p>
+
+<p>PNGの大きな特徴は「透過」に対応していること。<a href="https://e-words.jp/w/%E9%80%8F%E9%81%8EPNG.html" target="_blank" rel="noopener noreferrer">IT用語辞典の透過PNGの項目</a>によると、アルファチャンネルという仕組みで画像の特定の部分を透明にできるらしい。たとえばロゴの背景を透明にしておけば、どんな色の背景に重ねてもきれいに表示される。JPEGにはこの透過機能がない。</p>
+
+<p>色数の面では、PNG-8（最大256色）とPNG-24（約1677万色のフルカラー）がある。<a href="https://www.attend.jp/desine_171028" target="_blank" rel="noopener noreferrer">アテンドの解説記事</a>に詳しくまとまっていたが、PNG-8はシンプルなイラストやアイコン向け、PNG-24は写真やグラデーションのある画像向けだ。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC業務ではPNGを使う場面がけっこう多い。僕が実際に遭遇したケースを書いておく。</p>
+
+<h3>背景透過の商品画像</h3>
+
+<p>商品の切り抜き画像（背景を取り除いた画像）を作るときは、PNG形式で保存する。JPEGだと背景が白になってしまうが、PNGの透過機能を使えば背景を透明にできる。バナーの上に商品画像を重ねたり、色付きの背景に配置したりするときに必要になる。背景の切り抜きについては<a href="/background-white.html">背景切り抜き・白抜きの方法比較</a>にもまとめた。</p>
+
+<h3>ロゴやアイコンの保存</h3>
+
+<p>ショップのロゴやカテゴリアイコンなど、色の境界がはっきりした画像はPNG形式が向いている。<a href="https://www.canvas-works.jp/journal/pngjpeg/" target="_blank" rel="noopener noreferrer">キャンバスの解説記事</a>でも、イラストやロゴのような「色の面がはっきり分かれた画像」にはPNG、写真のように色が滑らかに変化する画像にはJPEGが適していると書かれていた。</p>
+
+<h3>JPEGで画質が落ちたとき</h3>
+
+<p>商品画像をJPEGで何度も保存し直していたら、画像がぼやけてきたことがあった。JPEGは保存のたびに画質が劣化する非可逆圧縮（<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>）なので、編集途中のデータはPNGか<a href="psd.html">PSD</a>で保存しておくのが安全だ。最終的にWeb用に書き出すときだけJPEGにすればいい。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>PNGはファイルサイズが大きくなりやすい</h3>
+
+<p>PNGは画質を保つ分、同じ画像でもJPEGよりファイルサイズが大きくなる。写真のような画像だと、JPEGの3〜5倍くらいのサイズになることもある。ECサイトでは表示速度にも影響するので、写真はJPEG、ロゴや透過が必要な画像はPNGという使い分けが無難だ。整理するとこうなる。</p>
+
+<table class="compare">
+<tr><th>項目</th><th>PNG</th><th>JPEG</th></tr>
+<tr><td>圧縮方式</td><td>可逆圧縮（劣化なし）</td><td>非可逆圧縮（劣化あり）</td></tr>
+<tr><td>透過</td><td>対応</td><td>非対応</td></tr>
+<tr><td>ファイルサイズ</td><td>大きい</td><td>小さい</td></tr>
+<tr><td>向いている画像</td><td>ロゴ、イラスト、切り抜き画像</td><td>写真、商品画像</td></tr>
+</table>
+
+<h3>GIFとの違い</h3>
+
+<p>透過に対応している画像形式としては<a href="gif.html">GIF</a>もある。ただしGIFは最大256色までしか使えないので、写真には向かない。PNGはフルカラーに対応しつつ透過もできるので、GIFの上位互換といえる。ただし、GIFにはアニメーション機能があるので、動く画像を作りたい場合はGIFの出番だ。</p>
+
+<h3>Web表示の最適化</h3>
+
+<p>PNGファイルはそのままだとサイズが大きいので、Web用に最適化するツールを使うとファイルサイズを削減できる。<a href="https://www.dt-media.jp/column/image-file-difference" target="_blank" rel="noopener noreferrer">デザイントランスメディアの解説記事</a>でも、PNGの圧縮ツールを使えば見た目を変えずにファイルサイズを減らせると紹介されていた。画像ファイル形式の全体像は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いている。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="gif.html">GIF</a></li>
+<li><a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a></li>
+<li><a href="psd.html">PSD</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
+<li><a href="/background-white.html">背景切り抜き・白抜きの方法比較｜AI無料ツールからプロ外注まで</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

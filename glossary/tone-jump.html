@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>トーンジャンプとは？空の写真が縞模様になる現象を調べた｜ツバサのメモ帳</title>
+<meta name="description" content="トーンジャンプ（階調飛び・バンディング）の意味を調べたメモ。空のグラデーションが縞模様になった原因と、8bit・16bitの色深度の違い、Photoshopでノイズを加えて目立たなくする対処法、印刷時に起きやすい理由をまとめました。">
+<meta name="keywords" content="トーンジャンプ とは,トーンジャンプ 原因,階調飛び,バンディング 写真,グラデーション 縞模様">
+<meta property="og:title" content="トーンジャンプとは？空の写真が縞模様になる現象を調べた｜ツバサのメモ帳">
+<meta property="og:description" content="空の写真が縞模様になるトーンジャンプの原因と対処法を、8bit・16bitの違いとあわせて整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/tone-jump.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/tone-jump.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "トーンジャンプとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "トーンジャンプとは、本来なめらかに変化するはずのグラデーション部分に、縞模様や段差が見えてしまう現象です。「階調飛び」「バンディング」とも呼ばれます。空や人肌など、微妙な色の変化がある部分で目立ちやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "トーンジャンプが起きる原因は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主な原因は画像の色深度（ビット数）が足りないことです。8bit画像は1チャンネルあたり256階調しか表現できないため、微妙なグラデーションを滑らかに描ききれず段差が生じます。また、画像編集で明るさやコントラストを大きく調整すると、階調が引き伸ばされてトーンジャンプが発生しやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "トーンジャンプを防ぐにはどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "画像編集時に16bitモードで作業することで、表現できる階調数が256から65536に増えてトーンジャンプが起きにくくなります。また、明るさやコントラストの調整を控えめにする、調整レイヤーを使って非破壊で編集するなどの方法も有効です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "トーンジャンプが出た写真を修正できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photoshopの「フィルター」→「ノイズ」→「ノイズを加える」で微量のノイズを加えると、縞模様の境界がぼやけて目立たなくなります。ガウスぼかしを併用する方法もあります。ただし、完全になめらかな状態に戻すのは難しいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "トーンジャンプとブロックノイズの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "トーンジャンプはグラデーション部分の階調が足りずに縞模様が出る現象で、ブロックノイズはJPEG圧縮時に8×8ピクセルの格子状のノイズが出る現象です。原因が異なり、トーンジャンプはビット数不足や過度な色調整、ブロックノイズは圧縮率の高さが主な原因です。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; トーンジャンプ
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>トーンジャンプとは？<br>空の写真が縞模様になる現象を調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>撮影した空の写真を確認していたら、青から白へのグラデーションが段々模様になっているのに気づいた。なめらかなはずの色の変化がガタガタに見える。調べてみたら「トーンジャンプ」という現象だったので、原因と対処法をメモしておく。</p>
+
+<h2>トーンジャンプとは</h2>
+
+<p>ひとことで言うと、本来なめらかに変化するはずのグラデーション部分に、縞模様や段差が見えてしまう現象のことだ。「階調飛び」や「バンディング」とも呼ばれる。</p>
+
+<p><a href="https://genkosha.pictures/photo/22111045972" target="_blank" rel="noopener noreferrer">玄光社の写真解説記事</a>によると、トーンジャンプは空や人肌など、微妙な色の変化がある部分で特に目立ちやすいそうだ。僕が気づいたのもまさに空のグラデーション部分だった。</p>
+
+<p>なぜこれが起きるかというと、デジタル画像の色は有限の階調数で表現されているからだ。一般的なJPEG画像は8bitで、1色あたり256段階しかない。なだらかな色の変化を256段階で表現しようとすると、広い面積のグラデーションではどうしても段差が生じてしまう。<a href="https://www.vanfu-vts.jp/blog/2017/06/%E5%8D%B0%E5%88%B7%E6%99%82%E3%81%AE%E3%83%88%E3%83%BC%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%81%AB%E6%82%A9%E3%82%93%E3%81%A7%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%EF%BC%9F%E3%80%90%E3%82%A4/" target="_blank" rel="noopener noreferrer">バンフートレーニングスクールのブログ</a>にも、印刷時のトーンジャンプの原因と対策が詳しく解説されていた。</p>
+
+<p>さらに厄介なのが、画像編集で明るさやコントラストを大きく調整すると、もともとあった階調がさらに引き伸ばされてトーンジャンプが発生しやすくなること。<a href="https://jomai.jp/archives/4398" target="_blank" rel="noopener noreferrer">上毎印刷工業の解説ページ</a>でも、過度な色調補正がトーンジャンプの原因になると注意されていた。</p>
+
+<h2>撮影で出てくる場面</h2>
+
+<p>トーンジャンプに遭遇する場面は、撮影時と編集時の両方にある。僕が経験したケースを書いておく。</p>
+
+<h3>空や背景のグラデーション</h3>
+
+<p>夕焼けや青空のグラデーションは、トーンジャンプが一番目立ちやすい被写体だ。特にSNSやWebサイトに使う写真を画像編集で色味を調整したあとに出やすい。ECの商品写真でも、背景にグラデーションを使ったカットでは注意が必要だった。画像ファイルの形式による違いは<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
+
+<h3>明るさ・コントラストを大きく変えた場合</h3>
+
+<p>商品写真の色を鮮やかにしようとして、Photoshopでコントラストや彩度を大きく上げると、それまで見えなかったトーンジャンプが突然現れることがある。<a href="https://www.fp-t.co.jp/blog/2024/05/31/244" target="_blank" rel="noopener noreferrer">フジプラスのブログ記事</a>でも、階調飛びの原因として過度な色調整が挙げられていた。</p>
+
+<h3>印刷物で目立つケース</h3>
+
+<p>画面上ではあまり気にならなくても、印刷するとトーンジャンプが目立つことがある。<a href="https://sanko1.co.jp/cat-blog/8140/" target="_blank" rel="noopener noreferrer">サンコーの印刷解説ブログ</a>によると、これは印刷の色再現範囲がモニターより狭いことや、印刷方式によるドットの表現の違いが影響しているそうだ。商品パンフレットやポスターなど、大きく印刷するものほど注意が必要だ。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>16bitモードで編集する</h3>
+
+<p>8bitだと1色あたり256階調だけど、16bitにすると65,536階調になる。Photoshopで「イメージ」→「モード」→「16bit/チャンネル」に切り替えてから色調整を行うと、トーンジャンプが起きにくくなる。<a href="http://pm-pw.com/dougahosei/tonejump" target="_blank" rel="noopener noreferrer">PM-PWのトーンジャンプ解説</a>でもこの方法が推奨されていた。RAW形式で撮影しておけば、最初から16bitで編集を始められるので安心だ。</p>
+
+<h3>微量のノイズを加えて目立たなくする</h3>
+
+<p>すでにトーンジャンプが出てしまった場合は、Photoshopの「フィルター」→「ノイズ」→「ノイズを加える」で少量のノイズを乗せると、縞模様の境界がぼやけて目立たなくなる。量は1〜3%くらいで十分だ。やりすぎるとザラザラした質感になってしまうので注意がいる。</p>
+
+<h3>色調整は控えめに</h3>
+
+<p>トーンジャンプを防ぐ根本的な対策は、色調整を控えめにすることだ。撮影時にできるだけ完成形に近い明るさ・色味で撮っておけば、後処理で大幅な補正をする必要がなくなる。ブロックノイズと混同しやすいけど、<a href="block-noise.html">ブロックノイズ</a>はJPEG圧縮が原因で、トーンジャンプは階調不足が原因という違いがある。また、画像の圧縮方式による劣化は<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>のページにまとめている。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="block-noise.html">ブロックノイズ</a></li>
+<li><a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違い</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

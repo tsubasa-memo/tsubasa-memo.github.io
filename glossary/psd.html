@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>PSDとは？Photoshopファイルの正体を調べたメモ｜ツバサのメモ帳</title>
+<meta name="description" content="PSDファイルの意味と開き方を調べたメモ。Adobe Photoshop専用の形式で、レイヤーやテキスト情報を保持したまま保存できる。GIMPやPhotopeaで無料で開く方法、TIFF形式との使い分けをEC実務の視点で整理しました。">
+<meta name="keywords" content="PSD とは,PSDファイル 開き方,PSD 拡張子,PSD TIFF 違い,Photoshop ファイル形式">
+<meta property="og:title" content="PSDとは？開けないファイルの正体を調べたメモ｜ツバサのメモ帳">
+<meta property="og:description" content="PSDファイルの意味と開き方を調べたメモ。Photoshop専用形式の特徴やレイヤー構造、開く方法をEC実務の視点で整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/psd.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/psd.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PSDファイルとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PSDはPhotoshop Document（フォトショップ ドキュメント）の略で、Adobe Photoshopの標準ファイル形式です。レイヤーやマスク、テキスト情報などを保持したまま保存できるため、デザインの編集・修正に向いています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PSDファイルはPhotoshopがないと開けませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photoshopがなくても開く方法はあります。無料ソフトのGIMPや、ブラウザ上で動くPhotopeaを使えばPSDファイルを開いて編集できます。ただし、レイヤー構造が完全に再現されない場合もあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PSDとTIFFの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PSDはPhotoshop専用の形式でレイヤーやパスなどの編集情報を保持できます。TIFFは汎用的な画像形式で、Photoshop以外のソフトでも扱いやすく、印刷業界で広く使われています。どちらも高画質ですが、用途が異なります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PSDファイルのサイズが大きいのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PSDファイルにはレイヤー、チャンネル、パス、テキストなどの編集情報がすべて保存されるため、ファイルサイズが大きくなります。レイヤーが多いほどサイズは増え、最大2GBまで保存可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECの業務でPSDファイルを受け取ったらどうすればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まずはPSDファイルの中身を確認し、必要に応じてJPEGやPNGに書き出して使います。Photoshopがない場合はGIMPやPhotopeaで開けます。デザイナーに修正を依頼する可能性があるなら、PSDファイルは元データとして保管しておくのがおすすめです。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; PSD
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>PSDとは？<br>開けないファイルの正体を調べたメモ</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品画像の制作をデザイナーさんに依頼したとき、「PSDで送ります」と言われたことがあった。受け取ったファイルをダブルクリックしても開けなくて、そもそもPSDって何なのかわからなかった。調べてみたので、わかったことをメモしておく。</p>
+
+<h2>PSDとは</h2>
+
+<p>ひとことで言うと、Adobe Photoshop（アドビ フォトショップ）の標準ファイル形式のこと。PSDは「Photoshop Document」の略だ。</p>
+
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/psd-file.html" target="_blank" rel="noopener noreferrer">Adobeの公式ページ</a>によると、PSDファイルにはレイヤー、チャンネル、パス、テキストといったPhotoshopの編集情報がすべて保存されるらしい。だからファイルサイズが大きくなりやすく、最大で2GBまでのデータを保存できるとのこと。</p>
+
+<p>JPEGやPNGのような一般的な画像ファイルは、写真を1枚の絵として保存する。一方PSDは、文字や背景、商品画像などが<a href="layer.html">レイヤー</a>（層）として別々に保存されている。だから後から「文字だけ変更する」「背景だけ差し替える」といった修正ができる。デザイナーが編集用に使うファイル形式、という理解でいいと思う。</p>
+
+<p><a href="https://e-words.jp/w/PSD.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>にも、PSDはPhotoshop固有のファイル形式で、対応するソフトウェアがないと開けないと書いてあった。僕がダブルクリックしても開けなかったのは、PCにPhotoshopが入っていなかったからだ。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC担当としてPSDファイルに遭遇する場面を振り返ってみる。</p>
+
+<h3>デザイナーからの納品データ</h3>
+
+<p>バナーや商品画像の制作をデザイナーに依頼すると、完成データがPSD形式で送られてくることがある。これは「編集可能な状態で渡しますよ」という意味合いが強い。<a href="https://www.ddc.co.jp/words/archives/20130819121802.html" target="_blank" rel="noopener noreferrer">吉田印刷所のDTP用語集</a>でも、PSDは入稿やデータ受け渡しに使われる形式として紹介されていた。</p>
+
+<p>もし今後デザインの修正が発生しそうなら、PSDファイルは消さずに保管しておいたほうがいい。JPEGに書き出してしまうとレイヤー情報がなくなるので、後から一部だけ直すのが難しくなる。</p>
+
+<h3>印刷物の入稿</h3>
+
+<p>チラシやカタログの印刷を発注するとき、印刷会社からPSD形式での入稿を指定されることがある。<a href="https://www.vanfu.co.jp/column/data/extension.html" target="_blank" rel="noopener noreferrer">バンフーオンラインショップの解説記事</a>でも、PSDやTIFFは画質劣化のない形式として印刷入稿に適していると書かれていた。</p>
+
+<h3>Photoshopなしで開く方法</h3>
+
+<p>PhotoshopのライセンスがなくてもPSDを開く方法はある。僕が調べた範囲では、<a href="https://ferret-plus.com/7493" target="_blank" rel="noopener noreferrer">ferretの記事</a>に詳しくまとまっていた。無料ソフトの「GIMP（ギンプ）」やブラウザ上で使える「Photopea（フォトピー）」なら、PSDファイルをレイヤー付きで開ける。ただし、Photoshopの機能を完全に再現できるわけではないので、複雑なデータだと表示が崩れることもあるようだ。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>PSDはそのままWebに使えない</h3>
+
+<p>PSDファイルをECサイトに直接アップロードすることはできない。商品画像として使うには、JPEGやPNGに書き出す（変換する）必要がある。画像ファイル形式の違いは<a href="/image-file-formats.html">画像ファイル形式まとめ</a>に整理した。</p>
+
+<h3>PSDとTIFFの使い分け</h3>
+
+<p>印刷の現場では<a href="tiff.html">TIFF</a>もよく使われる。PSDはPhotoshop専用の編集データ、TIFFはどのソフトでも開ける汎用的な高画質画像、というのが基本的な違いだ。レイヤーを保持したまま渡したいならPSD、レイヤーが不要で汎用性を重視するならTIFF、という使い分けになる。</p>
+
+<h3>ファイルサイズに注意</h3>
+
+<p>PSDはレイヤーの数だけデータが増えるので、ファイルサイズが数百MBになることも珍しくない。メールで送れないサイズになることも多いので、ファイル転送サービスを使うか、クラウドストレージで共有するのが現実的だ。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="layer.html">レイヤー</a></li>
+<li><a href="tiff.html">TIFF</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

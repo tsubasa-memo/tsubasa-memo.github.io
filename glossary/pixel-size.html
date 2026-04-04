@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>ピクセルサイズとは？ECの画像規定で出てくる数字の意味｜ツバサのメモ帳</title>
+<meta name="description" content="ピクセルサイズの意味を調べたメモ。「1600px以上」などECモールの画像規定で出てくる数字の読み解き方、画素数や解像度との関係、楽天・Amazonそれぞれの推奨ピクセル数の違いを、EC実務で遭遇した場面とあわせて整理しました。">
+<meta name="keywords" content="ピクセルサイズ とは,px 意味,画像 ピクセル数,ECサイト 画像サイズ,商品画像 ピクセル">
+<meta property="og:title" content="ピクセルサイズとは？ECの画像規定で出てくる数字の意味｜ツバサのメモ帳">
+<meta property="og:description" content="ピクセルサイズの意味と、ECモールの画像規定に出てくるpxの読み解き方を整理。楽天・Amazonの推奨サイズも紹介。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/pixel-size.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/pixel-size.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ピクセルサイズとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ピクセルサイズとは、画像の縦横の大きさをピクセル（px）という単位で表したものです。たとえば「1600×1200px」なら、横に1600個・縦に1200個の点が並んでいるという意味になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ピクセルとドットの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ピクセルはデジタル画像を構成する最小単位で、ドットは印刷時のインクの点を指します。画面表示ではピクセル、印刷ではドットと使い分けるのが一般的です。どちらも「小さな点」という意味では同じですが、使われる場面が異なります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトで推奨されるピクセルサイズは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Amazonでは長辺1600px以上が推奨されています。楽天市場では横700px以上が推奨で、最大3840pxまで登録可能です。ズーム機能を活かすには1000px以上が必要になるため、1600px以上で用意しておくと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ピクセルサイズと画素数の関係は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "画素数は、ピクセルサイズの縦×横を掛け算したものです。たとえば4000×3000pxの画像なら、4000×3000＝1200万画素になります。カメラのスペック表に書いてある「約2400万画素」などの数字は、この計算で出した総ピクセル数のことです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ピクセルサイズを確認する方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Windowsならファイルを右クリック→プロパティ→詳細タブで確認できます。Macならファイルを選択してCommand＋Iで情報を表示すると「大きさ」の欄にピクセル数が表示されます。Photoshopでは「イメージ」→「画像解像度」で確認可能です。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ピクセルサイズ
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>ピクセルサイズとは？<br>ECの画像規定で出てくる数字の意味</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>ECモールに商品を出品しようとしたら、画像の規定に「1600px以上」と書いてあった。pxって何だろう、と思って調べたので、わかったことをメモしておく。</p>
+
+<h2>ピクセルサイズとは</h2>
+
+<p>ひとことで言うと、画像の縦横の大きさをピクセル（px）という単位で表したもの。デジタル画像は小さな点の集まりでできていて、その点1つ1つを「ピクセル」と呼ぶ。「1600×1200px」なら、横に1600個・縦に1200個の点が並んでいるということになる。</p>
+
+<p><a href="https://helpx.adobe.com/jp/photoshop/using/image-size-resolution.html" target="_blank" rel="noopener noreferrer">Adobeの公式ヘルプ</a>には、「ピクセル寸法はイメージの幅と高さのピクセル数」と書いてあった。つまりピクセルサイズとは、画像が何個の点で構成されているかを縦横で示した数字ということだ。</p>
+
+<p>よく似た言葉に「画素数」がある。これはピクセルサイズの縦と横を掛け算したもの。たとえば4000×3000pxの画像なら、4000×3000＝1200万画素になる。カメラのスペック表で見かける「約2400万画素」というのは、この計算の結果だ。<a href="https://www.first-sp.com/mametishiki/design/mame_kaizoudo.html" target="_blank" rel="noopener noreferrer">ファーストの画素数解説ページ</a>にもわかりやすくまとめてあった。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>ピクセルサイズを意識するのは、だいたいECモールに画像をアップロードするときだ。僕が遭遇した場面をいくつか書いておく。</p>
+
+<h3>Amazonの商品画像登録</h3>
+
+<p>Amazonでは商品画像の長辺が「1600px以上」推奨になっている。<a href="https://ecnomikata.com/ecnews/ecmall/44713/" target="_blank" rel="noopener noreferrer">ECのミカタのAmazon画像ガイドライン解説</a>を読むと、ズーム機能を使うには最低1000px以上が必要で、1600px以上あるとズームしたときに商品の細部までしっかり見えるらしい。最初は「そんなに大きくないとダメなの？」と思ったけど、お客さんが画像を拡大して確認する場面を考えると納得できる。</p>
+
+<h3>楽天市場の画像登録</h3>
+
+<p>楽天市場では横700px以上が推奨されている。<a href="https://service.rms.rakuten.co.jp/column/detail/26" target="_blank" rel="noopener noreferrer">楽天RMSサービススクエアの商品画像ガイドライン解説</a>によると、最大3840pxまで登録できるとのこと。Amazonとは推奨サイズが違うので、両方に出品するときは注意が必要だ。</p>
+
+<h3>撮影時のカメラ設定</h3>
+
+<p>商品写真を撮るとき、カメラの画質設定を「S（スモール）」にしていると、あとでトリミングしたときにピクセル数が足りなくなることがある。<a href="https://www.oleshop.net/blog/d20161114o/" target="_blank" rel="noopener noreferrer">ポスター印刷プリオの画質早見表</a>を見ると、用途ごとに必要なピクセル数がまとまっていて参考になった。商品撮影では最高画質で撮っておくのが安全だ。</p>
+
+<table class="compare">
+<tr><th>ECモール</th><th>最小</th><th>推奨</th><th>最大</th></tr>
+<tr><td>Amazon</td><td>500px</td><td>1600px以上</td><td>10000px</td></tr>
+<tr><td>楽天市場</td><td>500px</td><td>700px以上</td><td>3840px</td></tr>
+</table>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>ピクセルサイズが大きい＝高画質とは限らない</h3>
+
+<p>ピクセルサイズが大きくても、もとの撮影が暗かったりピントが合っていなかったりすれば画質はよくない。あくまで「画像の大きさ」を示す数字なので、画質とは別の話だ。逆に、小さい画像を無理に拡大しても、ぼやけるだけでピクセル数だけ増えることになる。</p>
+
+<h3>ファイルサイズとは別物</h3>
+
+<p>ピクセルサイズは「画像の縦横の大きさ」で、ファイルサイズは「データの容量（KB・MB）」。この2つは連動するけど同じものではない。同じピクセルサイズでも、JPEG圧縮率を変えればファイルサイズは変わる。詳しくは<a href="image-size.html">画像サイズとは？ファイルサイズとの違いを整理した</a>にまとめた。</p>
+
+<h3>モールごとに規定が違うので要確認</h3>
+
+<p>上の表のとおり、AmazonとYahoo!ショッピングと楽天では推奨ピクセルサイズが違う。出品先に合わせてサイズを確認してから画像を用意したほうがいい。各モールの画像ルールは<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>にまとめてある。画像のファイルサイズを軽くしたいときは<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>も参考になると思う。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="trimming.html">トリミング</a></li>
+<li><a href="resize.html">リサイズ</a></li>
+<li><a href="image-size.html">画像サイズ</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/compress-product-image.html">商品画像の圧縮テクニック</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
