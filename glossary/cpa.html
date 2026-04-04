@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>CPAとは？広告費の話で出てくる指標の意味を整理した｜ツバサのメモ帳</title>
+<meta name="description" content="CPA（顧客獲得単価・Cost Per Acquisition）の意味と計算方法をEC担当の視点で整理したメモ。広告費÷コンバージョン数の計算式、限界CPAから目標CPAを逆算する方法、ROASやLTVとの違いなど広告運用の基本をまとめた。">
+<meta name="keywords" content="CPA とは,顧客獲得単価 計算方法,CPA 目標設定,広告 CPA 平均,CPA ROAS 違い">
+<meta property="og:title" content="CPAとは？広告費の話で出てくる指標を整理した｜ツバサのメモ帳">
+<meta property="og:description" content="CPA（顧客獲得単価）の意味と計算方法をEC実務の視点で整理。目標CPAの設定やROAS・LTVとの関係もまとめた。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/cpa.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/cpa.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CPAとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CPAはCost Per Acquisition（またはCost Per Action）の略で、日本語では「顧客獲得単価」と訳されます。1件のコンバージョン（購入や問い合わせなど）を獲得するためにかかった広告費用を示す指標です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPAの計算方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CPA＝広告費用 ÷ コンバージョン数で計算します。たとえば月の広告費が50万円で、購入が100件あった場合、CPAは5,000円です。1件の購入を獲得するのに5,000円かかった、という意味になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "目標CPAはどうやって決めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "商品の販売価格から原価を引いた粗利が上限（限界CPA）になります。そこから確保したい利益を引いた金額が目標CPAです。たとえば販売価格10,000円、原価6,000円なら限界CPAは4,000円。利益を1,000円残したければ目標CPAは3,000円です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPAとROASの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CPAは「1件の成果を得るのにかかったコスト（金額）」、ROASは「広告費に対してどれだけ売上が返ってきたか（割合）」です。CPAはコスト視点、ROASは売上リターン視点という違いがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPAが高い場合、どう改善すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CPAを下げるには、広告のターゲティング精度を上げる、広告クリエイティブを改善する、ランディングページのCVRを上げる、といった方法があります。広告費を減らすだけでなく、コンバージョン数を増やすことでもCPAは下がります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; CPA
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>CPAとは？<br>広告費の話で出てくる指標を整理した</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>広告担当の人に「CPA合ってる？」と聞かれて、何のことかわからなかった。広告費まわりの指標らしいが、正確な意味も計算方法も知らなかったので調べてみた。</p>
+
+<h2>CPAとは</h2>
+
+<p>ひとことで言うと、1件の成果（コンバージョン）を獲得するためにかかった広告費用のこと。CPAは「Cost Per Acquisition」の略で、日本語では「顧客獲得単価」と訳される。</p>
+
+<p>計算式は「広告費用 ÷ コンバージョン数」。たとえば月の広告費が50万円で、購入完了が100件あったなら、CPA＝50万円 ÷ 100件 ＝ 5,000円だ。つまり「1件の購入を獲得するのに5,000円かかった」という意味になる。</p>
+
+<p><a href="https://support.google.com/google-ads/answer/6396841?hl=ja" target="_blank" rel="noopener noreferrer">Google広告のヘルプ</a>にもCPAの定義が載っていて、広告運用では基本中の基本の指標らしい。</p>
+
+<p><a href="https://www.kwm.co.jp/blog/cpa/" target="_blank" rel="noopener noreferrer">キーワードマーケティングのCPA解説記事</a>では、CPAの数値が低いほど「少ない広告費で成果を得られている＝効率が良い」と説明されていた。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>CPAは広告を出しているEC担当なら頻繁に目にする。僕が遭遇した場面を書いておく。</p>
+
+<h3>広告担当に「CPA合ってる？」と聞かれた</h3>
+
+<p>これが僕がCPAを調べるきっかけ。「CPA合ってる？」というのは「広告で1件の購入を獲得するのにかかっているコストが、利益の出る範囲に収まっているか？」という意味だった。</p>
+
+<h3>目標CPAを設定するとき</h3>
+
+<p>広告を出す前に「CPAはいくらまでOKか」を決めておく必要がある。<a href="https://www.sprocket.bz/blog/20211228.html" target="_blank" rel="noopener nofollow">SprocketのCPA解説記事</a>にも書いてあったが、目標CPAの決め方は次の通りだ。</p>
+
+<ol>
+<li>商品の販売価格から原価を引いて粗利を出す（これが「限界CPA」）</li>
+<li>限界CPAから確保したい利益を引く</li>
+<li>残った金額が「目標CPA」</li>
+</ol>
+
+<p>たとえば販売価格10,000円、原価6,000円なら粗利（限界CPA）は4,000円。利益を1,000円残したければ、目標CPAは3,000円。広告費が1件あたり3,000円以内なら、ちゃんと利益が出る計算になる。</p>
+
+<h3>広告レポートの振り返り</h3>
+
+<p>Google広告やSNS広告のレポートには、CPAが自動で算出されて表示される。<a href="https://www.ebis.ne.jp/column/roas-adspend-guidelines/" target="_blank" rel="noopener noreferrer">アドエビスの広告費用対効果の記事</a>でも、CPAは広告運用の基本指標として紹介されていた。「先月のCPAは3,500円、今月は2,800円で改善した」というように、月ごとの推移を追うことで広告運用の良し悪しが見える。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>CPAとROASは視点が違う</h3>
+
+<p>CPAは「1件の成果にかかったコスト（金額）」、ROASは「広告費に対してどれだけ売上が返ってきたか（割合）」。視点が違うだけで、どちらも広告の効率を測る指標だ。</p>
+
+<table class="compare">
+<tr><th>指標</th><th>計算式</th><th>見ているもの</th></tr>
+<tr><td>CPA</td><td>広告費 ÷ コンバージョン数</td><td>1件あたりのコスト</td></tr>
+<tr><td>ROAS</td><td>売上 ÷ 広告費 × 100%</td><td>広告費に対する売上の倍率</td></tr>
+</table>
+
+<h3>CPAが低い＝良い、とは限らない</h3>
+
+<p>CPAを下げることばかり意識すると、ターゲットを絞りすぎて獲得件数が減ってしまうことがある。<a href="https://ferret-one.com/blog/cpa" target="_blank" rel="noopener noreferrer">ferret Oneの解説記事</a>でも、CPAと獲得件数のバランスが大事だと書いてあった。「CPAは低いけど月に3件しか売れない」のでは意味がない。</p>
+
+<h3>LTVとセットで考える</h3>
+
+<p>1回の購入だけでなく、リピート購入も含めた顧客の総売上（LTV）から逆算してCPAの上限を決めるのが理想的だ。LTVが高い商材なら、初回のCPAが多少高くても長期で回収できる。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="roas.html">ROAS</a></li>
+<li><a href="ltv.html">LTV</a></li>
+<li><a href="cvr.html">CVR（コンバージョン率）</a></li>
+<li><a href="ab-test.html">ABテスト</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
