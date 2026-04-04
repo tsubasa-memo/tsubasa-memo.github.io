@@ -54,8 +54,9 @@ main{padding:0 0 64px}
 .card-thumb{width:160px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .card-thumb img{width:100%;height:auto;display:block}
 .card-body{padding:16px 20px;flex:1;min-width:0}
-.article-card .card-num{font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-light);display:inline-block;padding:2px 10px;border-radius:12px;margin-bottom:8px}
-.article-card .card-num.new{color:#fff;background:var(--accent)}
+.card-dates{display:flex;align-items:center;gap:12px;margin-bottom:8px;font-size:12px;color:var(--text-sub)}
+.card-date-updated{font-weight:700;color:#fff;background:#c0392b;padding:2px 10px;border-radius:12px}
+.card-date-pub{font-weight:500;color:var(--text-sub)}
 .article-card h2{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.6}
 .article-card .card-desc{font-size:13px;color:var(--text-sub);line-height:1.7}
 .article-card .card-tag{display:inline-block;font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:2px 8px;border-radius:4px;margin-top:8px}
@@ -110,7 +111,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="nano-banana-acne.html">
 <div class="card-thumb"><img src="thumbs/nano-banana-acne.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num new">NEW</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.03</span></div>
 <h2>ニキビがコンプレックスの僕がNano Bananaで消してみた。これってAI？レタッチ？</h2>
 <p class="card-desc">AI画像生成ツール「Nano Banana」でニキビを消してみた実験記録。AIとレタッチの仕組みの違い、画質の限界も正直にレポート。</p>
 <span class="card-tag">AI</span>
@@ -121,7 +122,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="ai-retouch-limits.html">
 <div class="card-thumb"><img src="thumbs/ai-retouch-limits.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.04</span></div>
 <h2>AIレタッチアプリの限界｜スマホ補正とプロの仕上がりはどこが違う？</h2>
 <p class="card-desc">AIレタッチアプリができること・できないことを整理。肌補正・背景削除は得意でも、自然な質感を保った肌レタッチや複数人の目線修正はプロにしか対応できない。</p>
 <span class="card-tag">AI</span>
@@ -132,7 +133,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="search-console-ctr.html">
 <div class="card-thumb"><img src="thumbs/search-console-ctr.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>記事のタイトルを変えたらCTRが動いた話</h2>
 <p class="card-desc">8位表示でCTR 0.23%だった記事のタイトル変更とその効果を記録した体験記。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -143,7 +144,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="search-console-basics.html">
 <div class="card-thumb"><img src="thumbs/search-console-basics.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>サーチコンソールの見方を覚えた備忘録</h2>
 <p class="card-desc">表示回数・クリック数・CTR・掲載順位の意味と読み方、sitemap送信、URL検査の手順をまとめた記録。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -154,7 +155,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="llms-txt-setup.html">
 <div class="card-thumb"><img src="thumbs/llms-txt-setup.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.09</span></div>
 <h2>llms.txtとは何か｜AIにブログを読ませるためのファイル設置</h2>
 <p class="card-desc">llms.txtの仕様・書き方・設置手順・robots.txtとの違い・効果確認の方法をまとめた備忘録。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -165,7 +166,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="llmo-article-writing.html">
 <div class="card-thumb"><img src="thumbs/llmo-article-writing.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.08</span></div>
 <h2>AIに引用されやすい記事の書き方｜LLMOって何？</h2>
 <p class="card-desc">LLMOとSEOの違い・AIに引用されやすい記事構造・FAQ構造化データとllms.txtの効果を調べた備忘録。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -187,7 +188,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="github-pages-vs-note.html">
 <div class="card-thumb"><img src="thumbs/github-pages-vs-note.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.07</span></div>
 <h2>noteでなくGitHub Pagesを選んだ理由</h2>
 <p class="card-desc">noteはAdSense非対応・Amazon Associates制限あり。GitHub Pagesなら自由にHTMLを書けて収益化できる。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -198,7 +199,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="faq-structured-data.html">
 <div class="card-thumb"><img src="thumbs/faq-structured-data.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>FAQ構造化データを設置したら検索結果がどう変わるか調べた</h2>
 <p class="card-desc">FAQ JSON-LDの書き方・設置手順・Search Consoleでのリッチリザルト確認方法をまとめた備忘録。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -209,7 +210,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="blog-seo-basics.html">
 <div class="card-thumb"><img src="thumbs/blog-seo-basics.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>個人ブログのSEOを勉強した記録｜最初にやった5つのこと</h2>
 <p class="card-desc">タイトル最適化・meta description・sitemap送信・FAQ構造化データ・内部リンクなど、最初にやったSEO対策5つの備忘録。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -220,7 +221,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="amazon-associates.html">
 <div class="card-thumb"><img src="thumbs/amazon-associates.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>Amazon アソシエイトに登録してみた記録</h2>
 <p class="card-desc">個人ブログでAmazon アソシエイトに登録した手順・180日ルール・リンクの貼り方をまとめた記録。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -231,7 +232,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="adsense-application.html">
 <div class="card-thumb"><img src="thumbs/adsense-application.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.07</span></div>
 <h2>個人ブログにGoogle AdSenseを申請してみた記録</h2>
 <p class="card-desc">AdSense申請から審査通過までの手順・注意点をまとめた体験記。</p>
 <span class="card-tag">ブログ運営・SEO</span>
@@ -242,7 +243,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="megapixel-myth.html">
 <div class="card-thumb"><img src="thumbs/megapixel-myth.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.03</span></div>
 <h2>「画素数が多い＝きれい」は間違い？カメラの画質を決める本当の要素</h2>
 <p class="card-desc">センサーサイズ・レンズ・ISO感度・F値が画質に与える影響を解説。</p>
 <span class="card-tag">カメラ</span>
@@ -253,7 +254,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="photo-copyright.html">
 <div class="card-thumb"><img src="thumbs/photo-copyright.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.03</span></div>
 <h2>写真の著作権と肖像権｜SNS投稿で気をつけること</h2>
 <p class="card-desc">他人の写真をSNSで無断使用するリスク、街中撮影のNG例、商品画像への人物起用の注意点を整理。</p>
 <span class="card-tag">写真・撮影</span>
@@ -264,7 +265,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="rakuten-image-rules.html">
 <div class="card-thumb"><img src="thumbs/rakuten-image-rules.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.04</span></div>
 <h2>楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項</h2>
 <p class="card-desc">楽天市場の商品画像ルール（テキスト占有率20%制限等）とAmazon・メルカリとの違いを整理。</p>
 <span class="card-tag">EC・実務</span>
@@ -275,7 +276,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="coworking-spaces-tokyo.html">
 <div class="card-thumb"><img src="thumbs/coworking-spaces-tokyo.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.04</span></div>
 <h2>週1リモートの作業場所、結局コワーキングスペースが正解だった｜都内おすすめ7選</h2>
 <p class="card-desc">実家暮らし×週1リモートの20代会社員が、自宅・図書館・カフェを経てコワーキングスペースにたどり着くまでの記録。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -286,7 +287,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="compress-product-image.html">
 <div class="card-thumb"><img src="thumbs/compress-product-image.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.05</span></div>
 <h2>商品画像を圧縮する方法｜ECサイト掲載前に知っておきたいファイルサイズの話</h2>
 <p class="card-desc">TinyPNG・Squoosh・Lightroomなどツール別の特徴、Amazon・楽天の推奨ファイルサイズ、圧縮しすぎで画質が落ちないコツを解説。</p>
 <span class="card-tag">EC・実務</span>
@@ -297,7 +298,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="image-file-formats.html">
 <div class="card-thumb"><img src="thumbs/image-file-formats.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.05</span></div>
 <h2>JPEG・PNG・WebP・RAWの違いと使い分け方</h2>
 <p class="card-desc">画像ファイル形式の違いをJPEG・PNG・WebP・GIF・RAWで整理。ECサイト・SNS・カメラ撮影での使い分けを比較表で解説。</p>
 <span class="card-tag">写真・撮影</span>
@@ -308,7 +309,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="stockphoto-sidejob.html">
 <div class="card-thumb"><img src="thumbs/stockphoto-sidejob.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.05</span></div>
 <h2>ストックフォト副業は稼げる？仕組みと始め方</h2>
 <p class="card-desc">PIXTA・Shutterstock・Adobe Stockへの登録方法、売れやすいジャンル、月5,000円を目指すロードマップ。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -319,7 +320,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="print-service-comparison.html">
 <div class="card-thumb"><img src="thumbs/print-service-comparison.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.06</span></div>
 <h2>写真プリントサービス比較｜コンビニ・ネット注文・キタムラ</h2>
 <p class="card-desc">コンビニプリント・しまうまプリント・富士フイルム・カメラのキタムラの料金・画質・利便性を比較。</p>
 <span class="card-tag">写真・撮影</span>
@@ -330,7 +331,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="photo-sidejob-tax.html">
 <div class="card-thumb"><img src="thumbs/photo-sidejob-tax.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.06</span></div>
 <h2>写真副業と確定申告｜いくら稼いだら申告が必要？</h2>
 <p class="card-desc">副業収入20万円超で確定申告が必要。経費にできるもの（カメラ・レンズ・Lightroom等）と住民税バレ防止策。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -341,7 +342,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="instagram-image-size.html">
 <div class="card-thumb"><img src="thumbs/instagram-image-size.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.06</span></div>
 <h2>Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール</h2>
 <p class="card-desc">投稿タイプ別に最適な画像サイズ・アスペクト比を表でまとめた記事。</p>
 <span class="card-tag">写真・撮影</span>
@@ -352,7 +353,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="send-large-photo.html">
 <div class="card-thumb"><img src="thumbs/send-large-photo.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.07</span></div>
 <h2>大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINE</h2>
 <p class="card-desc">ギガファイル便・Googleドライブ・WeTransfer・LINE・AirDropの違いと使い分けを解説。</p>
 <span class="card-tag">写真・撮影</span>
@@ -363,7 +364,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="smartphone-to-pc.html">
 <div class="card-thumb"><img src="thumbs/smartphone-to-pc.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.08</span></div>
 <h2>スマホの写真をパソコンに移す方法｜iPhone・Android対応</h2>
 <p class="card-desc">iPhoneはUSBケーブル・AirDrop・iCloud経由、AndroidはUSBケーブル・Googleフォト経由の手順を解説。</p>
 <span class="card-tag">写真・撮影</span>
@@ -374,7 +375,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="smartphone-storage-full.html">
 <div class="card-thumb"><img src="thumbs/smartphone-storage-full.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.08</span></div>
 <h2>スマホの写真で容量がいっぱい！空きを作る方法</h2>
 <p class="card-desc">Googleフォトへのクラウド移行・PCへの転送・重複写真の整理ツールなどをiPhone・Android別に解説。</p>
 <span class="card-tag">写真・撮影</span>
@@ -385,7 +386,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="photo-backup-comparison.html">
 <div class="card-thumb"><img src="thumbs/photo-backup-comparison.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.09</span></div>
 <h2>写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos</h2>
 <p class="card-desc">Googleフォト・iCloud・Amazon Photosの無料容量・月額料金・自動バックアップの使い勝手を比較。</p>
 <span class="card-tag">写真・撮影</span>
@@ -396,7 +397,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="ec-product-description.html">
 <div class="card-thumb"><img src="thumbs/ec-product-description.svg" alt="ECサイトの商品説明文の書き方｜売れるページに共通するポイント" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.31</span></div>
 <h2>ECサイトの商品説明文の書き方｜売れるページに共通するポイント</h2>
 <p class="card-desc">Amazon・楽天・メルカリ等での商品説明文の書き方のコツ。テンプレート例、NGパターン、文字数の目安をまとめた備忘録。</p>
 <span class="card-tag">EC・実務</span>
@@ -407,7 +408,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="ai-data-collection-side-job.html">
 <div class="card-thumb"><img src="thumbs/ai-data-collection-side-job-thumb.svg" alt="AIデータ収集副業" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.30</span></div>
 <h2>スキル不要で時給4,500円？話題のAIデータ収集副業を調べてみた</h2>
 <p class="card-desc">SNSで話題の「AIデータ収集」副業を調査。Outlier AI・Appen・Remotasksなど日本から使える6サービスの報酬・始め方・将来性を比較。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -419,7 +420,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="sasage-outsource.html">
 <div class="card-thumb"><img src="thumbs/sasage-outsource.svg" alt="ささげ業務とは？代行会社の選び方と比較メモ" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>ささげ業務とは？代行会社の選び方と比較メモ【2026年版】</h2>
 <p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社の選び方・10社比較まで。EC担当者が外注先を探すときの備忘録。</p>
 <span class="card-tag">EC・実務</span>
@@ -431,7 +432,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="personal-retouch-order.html">
 <div class="card-thumb"><img src="thumbs/personal-retouch-order.svg" alt="画像加工・レタッチを個人で依頼する方法まとめ" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
 <h2>画像加工・レタッチを個人で依頼する方法まとめ</h2>
 <p class="card-desc">個人が写真のレタッチ・画像加工を依頼できるサービスの種類、依頼の流れ、料金相場、選び方のポイントを整理。</p>
 <span class="card-tag">レタッチ</span>
@@ -444,7 +445,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="new-mac-2026.html">
 <div class="card-thumb"><img src="thumbs/new-mac-2026.svg" alt="新生活のMac選び" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>新生活のMacはどれを選ぶ？Neo・Air・Proを比べてみた【2026年版】</h2>
 <p class="card-desc">99,800円のMacBook Neo登場でMacの選び方が変わった。Neo・Air・Proの違いと用途別の選び方をまとめました。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -456,7 +457,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="photo-side-job-no-skill.html">
 <div class="card-thumb"><img src="thumbs/photo-side-job-no-skill.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>スキルなし・機材なし・時間なしの20代が"写真副業"を検討してみた</h2>
 <p class="card-desc">写真副業を始めるための条件や現実的なハードルを調べた備忘録。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -468,7 +469,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="side-job-labor-law.html">
 <div class="card-thumb"><img src="thumbs/side-job-labor-law.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話</h2>
 <p class="card-desc">就業規則と副業の関係、確認すべきポイントをまとめた備忘録。</p>
 <span class="card-tag">副業・キャリア</span>
@@ -480,7 +481,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="job-hunting-photo-retouch.html">
 <div class="card-thumb"><img src="thumbs/job-hunting-photo-retouch.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>就活証明写真、アプリで加工していいラインはどこまで？</h2>
 <p class="card-desc">就活写真のレタッチ範囲と注意点を調べた備忘録。</p>
 <span class="card-tag">写真・撮影</span>
@@ -492,7 +493,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="image-editing-outsource.html">
 <div class="card-thumb"><img src="thumbs/image-editing-outsource.svg" alt="画像加工・写真編集の外注先ガイド" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num new">NEW</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.04.03</span></div>
 <h2>画像加工・写真編集を外注するならどこ？代行サービスの種類と選び方ガイド</h2>
 <p class="card-desc">専門業者・クラウドソーシング・フリーランスの3タイプを比較。料金帯・品質・納期の違いと、依頼前に準備しておくことを整理した。</p>
 <span class="card-tag">レタッチ</span>
@@ -503,7 +504,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <div class="article-card" data-cat="retouch">
 <a href="retouch-cost-guide.html">
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.31</span></div>
 <h2>画像修正・レタッチの外注費用はいくら？加工内容別の料金相場まとめ</h2>
 <p class="card-desc">レタッチの外注費用を加工内容ごとに早見表で比較。肌補正・背景変更・不要物除去・色補正など1枚あたりの相場とボリュームディスカウントの仕組みを解説。</p>
 <span class="card-tag">レタッチ</span>
@@ -515,7 +516,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="retouch-pricing-database.html">
 <div class="card-thumb"><img src="thumbs/retouch-pricing-database.svg" alt="写真レタッチの料金相場まとめ" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
 <h2>写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】</h2>
 <p class="card-desc">色補正・肌レタッチ・切り抜き・合成など作業内容別の相場と、20社以上のサービス料金を1ページに集約。外注先を探している方の比較用に。</p>
 <span class="card-tag">レタッチ</span>
@@ -527,7 +528,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="background-cutout-outsource.html">
 <div class="card-thumb"><img src="thumbs/background-cutout-outsource.svg" alt="背景切り抜き外注費用" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
 <h2>背景切り抜きをプロに外注するといくら？｜費用相場と依頼先まとめ</h2>
 <p class="card-desc">写真の背景切り抜き・白抜きをプロに外注する場合の費用相場を調べました。1枚100円台〜の切り抜き専門サービスから、レタッチ込みの業者まで比較。</p>
 <span class="card-tag">レタッチ</span>
@@ -539,7 +540,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="sns-photo-retouch-manners.html">
 <div class="card-thumb"><img src="thumbs/sns-photo-retouch-manners.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</h2>
 <p class="card-desc">SNSの加工トラブル事例とマナーの実態をまとめた備忘録。</p>
 <span class="card-tag">レタッチ</span>
@@ -551,7 +552,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="instagram-filter-vs-lightroom.html">
 <div class="card-thumb"><img src="thumbs/instagram-filter-vs-lightroom.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>インスタのフィルターとLightroomって何が違うの？やっと理解した</h2>
 <p class="card-desc">インスタフィルターとLightroomの機能差を初心者向けに整理した備忘録。</p>
 <span class="card-tag">レタッチ</span>
@@ -563,7 +564,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="matching-app-photo-tips.html">
 <div class="card-thumb"><img src="thumbs/matching-app-photo-tips.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>マッチングアプリの写真、どこで撮るのが正解か調べた</h2>
 <p class="card-desc">マッチングアプリの写真で重要な撮影場所・構図・加工の考え方をまとめた備忘録。</p>
 <span class="card-tag">写真・撮影</span>
@@ -575,7 +576,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="portrait-mode-tips.html">
 <div class="card-thumb"><img src="thumbs/portrait-mode-tips.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>スマホカメラの"ポートレートモード"が苦手だった理由と、使いこなせるようになった話</h2>
 <p class="card-desc">ポートレートモードの仕組みと上手な使い方を調べた備忘録。</p>
 <span class="card-tag">写真・撮影</span>
@@ -587,7 +588,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="snap-photo-vs-instagrammable.html">
 <div class="card-thumb"><img src="thumbs/snap-photo-vs-instagrammable.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで</h2>
 <p class="card-desc">スナップ写真の魅力とインスタ映えとの付き合い方をまとめた備忘録。</p>
 <span class="card-tag">写真・撮影</span>
@@ -599,7 +600,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="raw-vs-jpeg.html">
 <div class="card-thumb"><img src="thumbs/raw-vs-jpeg.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.25</span></div>
 <h2>RAW現像って何？JPEGとの違いと初心者向けの現像ソフトまとめ</h2>
 <p class="card-desc">RAWとJPEGの違い、RAW現像のメリット・デメリット、初心者向けの無料/有料現像ソフトを調べた備忘録。</p>
 <span class="card-tag">カメラ</span>
@@ -611,7 +612,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="video-vs-retouch-career.html">
 <div class="card-thumb"><img src="thumbs/video-vs-retouch-career.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.03.29</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？</h2>
 <p class="card-desc">スクール費用・求人データ・AIの影響を比較。動画編集は案件豊富で月5〜10万円を目指しやすく、レタッチは専門性を高めてキャリアにつなげやすい。</p>
 <span class="card-tag">副業・キャリア</span> <span class="card-tag">レタッチ</span>
@@ -623,7 +624,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="id-photo.html">
 <div class="card-thumb"><img src="thumbs/id-photo.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.03.29</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から</h2>
 <p class="card-desc">証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめています。</p>
 <span class="card-tag">写真・撮影</span> <span class="card-tag">レタッチ</span>
@@ -635,7 +636,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="exif-info.html">
 <div class="card-thumb"><img src="thumbs/exif-info.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>写真のExif情報とは？位置情報のリスクと削除方法まとめ</h2>
 <p class="card-desc">Exifに含まれる情報、SNSごとの自動削除状況、iPhone/Android/PC別の削除手順をまとめました。</p>
 <span class="card-tag">写真・撮影</span> <span class="card-tag">EC・実務</span>
@@ -647,7 +648,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="ec-image-rules.html">
 <div class="card-thumb"><img src="thumbs/ec-image-rules.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.03.29</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>Amazon・楽天・メルカリ 商品画像ルール違反を防ぐ比較まとめ</h2>
 <p class="card-desc">Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの画像ガイドラインを比較表で整理。</p>
 <span class="card-tag">EC・実務</span>
@@ -659,7 +660,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="background-white.html">
 <div class="card-thumb"><img src="thumbs/background-white.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.02</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</h2>
 <p class="card-desc">Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較しました。</p>
 <span class="card-tag">レタッチ</span> <span class="card-tag">EC・実務</span>
@@ -671,7 +672,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="retouch-services.html">
 <div class="card-thumb"><img src="thumbs/retouch-services.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.01</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社</h2>
 <p class="card-desc">個人で使える写真レタッチ・修正サービス7社の料金・納期・対応範囲を比較。1枚から依頼できるサービスを中心にまとめています。</p>
 <span class="card-tag">レタッチ</span>
@@ -683,7 +684,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="sd-card.html">
 <div class="card-thumb"><img src="thumbs/sd-card.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.01</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.03.29</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>SDカードの選び方メモ｜カメラ用に必要なスペックと失敗しない買い方</h2>
 <p class="card-desc">UHS-I/II、V30/V60/V90の違い、容量の目安、信頼できるメーカーなどSDカード選びの基本をまとめました。</p>
 <span class="card-tag">カメラ</span>
@@ -695,7 +696,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="first-camera.html">
 <div class="card-thumb"><img src="thumbs/first-camera.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.01</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.03.29</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>初めてのカメラ選び｜予算10万円以内のミラーレス入門ガイド</h2>
 <p class="card-desc">ミラーレス一眼の基礎知識と、初心者向けの予算別おすすめ機種。センサーサイズ、レンズキット、中古の選び方も。</p>
 <span class="card-tag">カメラ</span>
@@ -707,7 +708,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="what-is-retouch.html">
 <div class="card-thumb"><img src="thumbs/what-is-retouch.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.01</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>写真のレタッチとは？加工との違いと基本の種類まとめ</h2>
 <p class="card-desc">レタッチと加工の違い、基本的なレタッチの種類（明るさ補正、色味調整、肌補正、不要物除去など）を初心者向けに解説。</p>
 <span class="card-tag">レタッチ</span>
@@ -719,7 +720,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="camera-smartphones.html">
 <div class="card-thumb"><img src="thumbs/camera-smartphones.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2025.12</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.03.29</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>カメラ性能で選ぶスマホ｜写真がきれいに撮れる機種まとめ</h2>
 <p class="card-desc">iPhone、Pixel、Galaxy、Xperiaなどカメラ性能が高いスマホを比較。EC商品撮影にも使えるか検証しています。</p>
 <span class="card-tag">カメラ</span>
@@ -731,7 +732,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="retouch-apps.html">
 <div class="card-thumb"><img src="thumbs/retouch-apps.svg" alt="" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2025.12</span>
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.02.21</span></div>
 <h2>スマホでできる写真レタッチ｜おすすめ無料アプリ5選と使い分け</h2>
 <p class="card-desc">Snapseed、Lightroom Mobile、VSCO、Canva、PhotoDirectorの5つを用途別に比較。どのアプリをどう使い分けるか整理しました。</p>
 <span class="card-tag">レタッチ</span>
