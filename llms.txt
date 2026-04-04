@@ -90,7 +90,28 @@
 
 EC業務やカメラ・写真まわりで出てきた用語を調べたメモ。用語一覧は https://tsubasa-memo.github.io/glossary/ にまとめている。
 
-- [トリミングとは？切り抜き・クロップとの違いを調べたメモ](https://tsubasa-memo.github.io/glossary/trimming.html): 画像のトリミングの意味、切り抜き（クリッピング）やクロップとの違い、ECサイトの商品画像ガイドラインで求められるトリミングの実務的な使い方をまとめた記事
+- [トリミングとは？切り抜き・クロップとの違いを調べたメモ](https://tsubasa-memo.github.io/glossary/trimming.html): トリミングの意味、切り抜きやクロップとの違い、ECサイト商品画像ガイドラインでの実務的な使い方をまとめた記事
+- [PSDとは？Photoshopファイルの正体を調べたメモ](https://tsubasa-memo.github.io/glossary/psd.html): PSD形式の意味、開き方、レイヤーやマスク情報を保持する仕組みをまとめた記事
+- [HEIF・HEICとは？iPhoneの写真形式と変換方法まとめ](https://tsubasa-memo.github.io/glossary/heif-heic.html): iPhoneの標準写真形式HEIF/HEICの意味、HEIFとHEICの違い、JPEG変換方法をまとめた記事
+- [JFIFとは？見慣れない画像形式の正体を調べたメモ](https://tsubasa-memo.github.io/glossary/jfif.html): Windowsスクリーンショットで出てくるJFIF形式の正体と、JPEGとの関係を調べた記事
+- [ピクセルサイズとは？ECの画像規定で出てくる数字の意味](https://tsubasa-memo.github.io/glossary/pixel-size.html): ECモールの画像規定に出てくるpx指定の意味、楽天・Amazonの推奨サイズをまとめた記事
+- [BMPとは？古い画像形式がまだ使われている場面を調べた](https://tsubasa-memo.github.io/glossary/bmp.html): BMP形式の意味、圧縮なしの仕組み、社内システムでまだ使われている理由をまとめた記事
+- [リサイズとは？画像の大きさを変える方法と注意点](https://tsubasa-memo.github.io/glossary/resize.html): 画像リサイズの意味、拡大と縮小の注意点、Photoshopやスマホでのやり方をまとめた記事
+- [ブロックノイズとは？写真がガビガビになる原因と対処法](https://tsubasa-memo.github.io/glossary/block-noise.html): JPEG圧縮で発生するブロックノイズの原因と、画質を保つための対処法をまとめた記事
+- [非可逆圧縮と可逆圧縮の違い｜JPEG保存で画質が落ちる理由](https://tsubasa-memo.github.io/glossary/lossy-lossless.html): 非可逆圧縮と可逆圧縮の仕組みの違い、JPEG再保存による劣化の原因をまとめた記事
+- [白飛びとは？商品写真が白く飛んでしまう原因と防ぎ方](https://tsubasa-memo.github.io/glossary/whiteout.html): 商品写真の白飛びが起きる原因と、露出補正やヒストグラムでの確認方法をまとめた記事
+- [画像サイズとは？ファイルサイズとの違いを整理した](https://tsubasa-memo.github.io/glossary/image-size.html): ピクセル数とファイル容量の違い、ECモール規定での使い分けを整理した記事
+- [ダイナミックレンジとは？カメラ選びで出てくるスペックの意味](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラのダイナミックレンジの意味、白飛び・黒つぶれとの関係をまとめた記事
+- [TIFFとは？PSDとの違いもまとめた｜印刷データの基本](https://tsubasa-memo.github.io/glossary/tiff.html): TIFF形式の意味、PSDとの違い、印刷入稿での使い方をまとめた記事
+- [GIFとは？アニメーション画像の仕組みと使いどころ](https://tsubasa-memo.github.io/glossary/gif.html): GIF形式の意味、アニメーションの仕組み、バナー広告での使い方をまとめた記事
+- [解像度・dpiとは？印刷とWebで必要な数値が違う理由](https://tsubasa-memo.github.io/glossary/resolution-dpi.html): 解像度とdpiの意味、印刷の350dpiとWebの72dpiの違いを整理した記事
+- [トーンジャンプとは？空の写真が縞模様になる現象を調べた](https://tsubasa-memo.github.io/glossary/tone-jump.html): グラデーションが段々模様になるトーンジャンプの原因と対処法をまとめた記事
+- [RGBとCMYKの違い｜Webと印刷で色が変わる理由を調べた](https://tsubasa-memo.github.io/glossary/rgb-cmyk.html): RGBとCMYKの仕組みの違い、Webと印刷で色が変わる理由をまとめた記事
+- [黒つぶれとは？暗い写真の影が潰れる原因と対処法](https://tsubasa-memo.github.io/glossary/crushed-blacks.html): 暗部が真っ黒になる黒つぶれの原因と、露出やシャドウ調整での対処法をまとめた記事
+- [PNGとは？JPEGとの使い分けを整理した](https://tsubasa-memo.github.io/glossary/png.html): PNG形式の意味、JPEGとの違い、背景透過の仕組みと使い分けをまとめた記事
+- [レイヤーとは？Photoshopの基本概念を調べたメモ](https://tsubasa-memo.github.io/glossary/layer.html): Photoshopのレイヤーの意味、透明シートを重ねる仕組み、実務での使い方をまとめた記事
+- [WebPとは？ECサイトの画像で見かける次世代フォーマットを調べた](https://tsubasa-memo.github.io/glossary/webp.html): GoogleのWebP形式の意味、JPEGとの容量比較、ECサイトでの導入判断をまとめた記事
+- [AVIFとは？JPEGの次の標準になるかもしれない画像形式を調べた](https://tsubasa-memo.github.io/glossary/avif.html): AVIF形式の意味、WebPとの比較、ブラウザ対応状況と導入タイミングをまとめた記事
 
 ## 運営者
 

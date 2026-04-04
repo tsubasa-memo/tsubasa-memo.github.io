@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>解像度・dpiとは？印刷とWebで必要な数値が違う理由｜ツバサのメモ帳</title>
+<meta name="description" content="解像度とdpiの意味を調べたメモ。印刷では350dpi以上、Webでは72dpiが目安と言われる理由や、ppiとの違い、ECモールの画像登録ではdpiよりピクセル数が重要な理由を、チラシ入稿やカタログ制作で遭遇した場面とあわせて整理しました。">
+<meta name="keywords" content="解像度 とは,dpi とは,350dpi 意味,印刷 解像度,Web 解像度 違い">
+<meta property="og:title" content="解像度・dpiとは？印刷とWebで必要な数値が違う理由｜ツバサのメモ帳">
+<meta property="og:description" content="解像度（dpi）の意味と、印刷用350dpi・Web用72dpiと言われる理由をEC実務の視点で整理。ppiとの違いも解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/resolution-dpi.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/resolution-dpi.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "解像度（dpi）とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "解像度とは、1インチ（約2.54cm）あたりに含まれるドット（点）の数を表す値です。dpi（dots per inch）という単位で表され、数値が大きいほど画像が精細になります。印刷では350dpi、Webでは72dpi程度が一般的な目安です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "dpiとppiの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dpi（dots per inch）は印刷時のインクのドット密度を指し、ppi（pixels per inch）はデジタル画像のピクセル密度を指します。厳密には別の概念ですが、実務上はほぼ同じ意味で使われることが多いです。画像編集ソフトの設定ではppi、印刷の入稿ガイドではdpiと書かれていることが多いです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "印刷で350dpiが必要な理由は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "商業印刷では一般的に175線（175lpi）の網点で印刷されます。その2倍の解像度が必要とされるため、175×2＝350dpiが推奨されています。350dpiを下回ると、印刷物が粗く見えたりぼやけたりする可能性があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Web用の画像で解像度は関係ありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Web表示では解像度（dpi）の数値自体は実質的に関係ありません。ブラウザが参照するのはピクセル数だけで、72dpiでも350dpiでも、同じピクセル数なら画面上の見え方は同じです。ECサイト用の画像では、dpiよりもピクセル数のほうが重要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "解像度を後から上げることはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "数値上は変更できますが、元のデータに含まれていない情報を追加するわけではないので、実質的な画質は向上しません。72dpiの画像を350dpiに変更しても、ぼやけた画像のままdpiの数字だけ変わるだけです。高解像度が必要な場合は、最初から高解像度で撮影・スキャンする必要があります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 解像度・dpi
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>解像度・dpiとは？<br>印刷とWebで必要な数値が違う理由</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品のチラシを印刷会社に入稿しようとしたら、ガイドに「画像は350dpi以上で」と書いてあった。dpiって何だろう、普段Web用の画像ばかり触っているので意識したことがなかった。調べてみたのでメモしておく。</p>
+
+<h2>解像度・dpiとは</h2>
+
+<p>ひとことで言うと、1インチ（約2.54cm）あたりに含まれるドット（点）の数を表す値のこと。dpiは「dots per inch」の略で、この数値が高いほど画像が細かく、きれいに見える。</p>
+
+<p><a href="https://www.graphic.jp/feature/image_resolution" target="_blank" rel="noopener noreferrer">印刷通販グラフィックの解像度解説ページ</a>にわかりやすい図が載っていた。たとえば72dpiの画像は1インチに72個のドットが並んでいて、350dpiなら350個のドットが並んでいる。当然350dpiのほうが密度が高くて精細な表示になる。</p>
+
+<p>よく似た単位に「ppi（pixels per inch）」がある。dpiが印刷のドット密度を指すのに対して、ppiはデジタル画像のピクセル密度を指す。厳密には違う概念だけど、<a href="https://www.vanfu.co.jp/column/data/resolution.html" target="_blank" rel="noopener noreferrer">バンフーオンラインショップの解像度解説</a>にも書いてあったように、実務ではほぼ同じ意味で使われていることが多い。</p>
+
+<table class="compare">
+<tr><th>用途</th><th>推奨解像度</th><th>理由</th></tr>
+<tr><td>Web・画面表示</td><td>72〜96ppi</td><td>モニターの表示密度に合わせた値。ブラウザはピクセル数で表示するため、dpi自体は影響しない</td></tr>
+<tr><td>印刷（フルカラー）</td><td>350dpi</td><td>商業印刷の網点（175lpi）の2倍が推奨</td></tr>
+<tr><td>印刷（モノクロ）</td><td>600〜1200dpi</td><td>文字や線画はより高い解像度が必要</td></tr>
+</table>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC担当として仕事をしていて、dpiを意識する場面はそこまで多くない。ただ、印刷物がからむときに急に出てくるので、知っておいたほうがいい。</p>
+
+<h3>チラシやカタログの入稿</h3>
+
+<p>商品カタログやチラシを印刷するとき、入稿ガイドには必ず「350dpi以上」と書いてある。<a href="https://www.wave-inc.co.jp/data/imagefile/image_size.html" target="_blank" rel="noopener noreferrer">ネット印刷WAVEの画像解像度ガイド</a>でも、原寸サイズで350dpiが推奨と明記されていた。EC用にWeb向けに最適化した72dpiの画像をそのまま印刷に回すと、ぼやけた仕上がりになってしまう。</p>
+
+<h3>パッケージや同梱物の制作</h3>
+
+<p>商品パッケージやサンクスカードなど、同梱物を作るときも印刷用の解像度が必要になる。商品写真を流用するなら、最初から高解像度で撮影しておかないとあとで困る。<a href="https://onlineshop.dmps.co.jp/content/tips/resolution/" target="_blank" rel="noopener noreferrer">ダイオーミウラの解像度解説</a>にも、印刷とWebの解像度の違いがまとまっていて参考になった。</p>
+
+<h3>ECモールの商品画像登録</h3>
+
+<p>一方で、楽天やAmazonに画像をアップロードするときは、dpiを気にする必要はほとんどない。モールの画像規定はピクセル数（px）で指定されているので、dpiではなくピクセルサイズのほうが重要だ。ブラウザは画像のdpi設定を無視してピクセル数だけを見て表示するので、72dpiでも350dpiでも画面上の見え方は変わらない。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>Web用と印刷用で画像を分けて管理する</h3>
+
+<p>同じ商品写真でも、Web用（72dpi・適度なピクセルサイズ）と印刷用（350dpi・大きいピクセルサイズ）は別ファイルとして保管しておくのがいい。Web用に最適化した画像を後から印刷に転用しようとすると、解像度もピクセル数も足りなくて使えないことが多い。<a href="https://kamisommelier.jp/2689/" target="_blank" rel="noopener noreferrer">紙ソムリエの印刷解像度解説</a>にも、用途別の管理が推奨されていた。</p>
+
+<h3>解像度を後から上げても画質は上がらない</h3>
+
+<p>Photoshopで72dpiの画像を350dpiに変更することはできるけど、それは数字を書き換えただけ。もとの画像にない情報が追加されるわけではないので、ぼやけた画像のままdpiの数値だけ変わることになる。高解像度が必要な場合は、最初から高画質で撮影・スキャンしておく必要がある。</p>
+
+<h3>ECサイト用はピクセル数で管理する</h3>
+
+<p>Web用の画像ではdpiよりピクセル数のほうが大事だ。Amazonなら長辺1600px以上、楽天なら横700px以上。各モールの画像規定は<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>に書いた。ファイルサイズを軽くしたいときは<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>も参考になる。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="pixel-size.html">ピクセルサイズ</a></li>
+<li><a href="image-size.html">画像サイズ</a></li>
+<li><a href="lossy-lossless.html">非可逆圧縮と可逆圧縮</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/compress-product-image.html">商品画像の圧縮テクニック</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
