@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>ロットとは？仕入れの「最小ロット」の意味を調べた｜ツバサのメモ帳</title>
+<meta name="description" content="ロット（lot）の意味をEC実務の視点で調べたメモ。仕入先に「最小ロット50個から」と言われたときの考え方、MOQ（最小発注数量）の交渉方法、ロット管理で不良品対応が楽になる仕組み、発注ロットと製造ロットの違いをわかりやすく整理しました。">
+<meta name="keywords" content="ロット とは,最小ロット 意味,ロット 仕入れ,ロット管理,ロット数 EC">
+<meta property="og:title" content="ロットとは？仕入れの「最小ロット」の意味を調べた｜ツバサのメモ帳">
+<meta property="og:description" content="ロットの意味と最小ロットの考え方をEC実務の視点で整理。ロット管理のメリットや発注時の注意点も解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/lot.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/lot.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ロットとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ロット（lot）とは、製造や物流において同じ条件で作られた・まとめられた製品の一単位のことです。仕入れや発注の文脈では「取引の最小単位」という意味で使われることが多いです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "最小ロットとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最小ロット（MOQ: Minimum Order Quantity）とは、仕入先が受け付ける注文の最小数量のことです。たとえば「最小ロット50個」なら、50個未満の注文はできないという意味になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロット管理のメリットは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ロット番号で管理することで、万が一不良品が発生したときに同じロットの製品だけを回収対象にできます。また、先入れ先出し（FIFO）の在庫管理がしやすくなり、食品や化粧品など消費期限がある商品の管理にも役立ちます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロットとSKUの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SKUは「色やサイズなどで分けた商品の管理単位」で、ロットは「同じ条件で製造・入荷したまとまり」を指します。たとえば同じSKUの商品でも、1月入荷分と3月入荷分は別ロットとして管理できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "最小ロットの交渉はできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "仕入先によっては交渉で最小ロットを下げてもらえることがあります。ただし、小ロットにすると単価が上がることが多いです。取引実績を積んでから交渉するほうが通りやすいと言われています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ロット
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>ロットとは？<br>仕入れの「最小ロット」の意味を調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>新しい商品の仕入れを検討していたとき、仕入先から「最小ロット50個からになります」と言われた。なんとなく「まとめて買ってね」ということだろうとは思ったけど、正確な意味がわからなかったので調べてみた。</p>
+
+<h2>ロットとは</h2>
+
+<p>ひとことで言うと、ロット（lot）は「同じ条件でまとめられた製品の一単位」のこと。英語で「束」や「ひとまとまり」を意味する言葉で、製造業や物流の世界でよく使われている。</p>
+
+<p><a href="https://mark.shachihata.co.jp/industrial/info/column/0001/" target="_blank" rel="noopener noreferrer">シヤチハタの用語解説</a>によると、ロットにはいくつかの種類がある。製造現場で同じ条件で作られた製品のまとまりを「製造ロット」、仕入れ・発注の最小単位を「発注ロット」、倉庫から出荷するときの単位を「出荷ロット」と呼ぶ。EC担当が遭遇するのはたいてい「発注ロット」のほうだ。</p>
+
+<p>で、よく聞く「最小ロット」（MOQ: Minimum Order Quantity）は、仕入先が受け付ける注文の最小数量のこと。<a href="https://diamond-rm.net/glossary/75106/" target="_blank" rel="noopener noreferrer">ダイヤモンド・チェーンストアオンラインの用語集</a>でも、最小ロットは製造側が利益を確保するために設定する最低注文数量だと説明されていた。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC業務をしていると、ロットに関わる場面がけっこう出てくる。僕が遭遇したケースをまとめておく。</p>
+
+<h3>新商品の仕入れ交渉</h3>
+
+<p>仕入先との最初のやりとりで「最小ロットいくつですか？」と確認するのが基本だ。最小ロットが大きいと在庫リスクが高くなる。たとえば最小ロット500個で、月に30個しか売れない商品だったら、在庫をさばくのに1年以上かかる計算になる。</p>
+
+<p><a href="https://stockcrew.co.jp/insights/lot" target="_blank" rel="noopener noreferrer">StockCrewのロット管理解説</a>を読むと、EC事業者にとっては「売れる見込み」と「最小ロット」のバランスが重要で、売上予測を立てたうえで仕入れ数を決めるべきだと書いてあった。</p>
+
+<h3>OEM商品の発注</h3>
+
+<p>自社ブランドの商品をOEM（委託製造）で作る場合、最小ロットは特に重要になる。工場側としてはまとまった数を作らないと採算が合わないので、最小ロットが100個や1,000個に設定されていることが多い。<a href="https://www.scroll360.jp/note/20230106-6591/" target="_blank" rel="noopener noreferrer">スクロール360のロット解説</a>では、OEMの最小ロットは商品のカテゴリや工場の規模によって大きく異なると紹介されていた。</p>
+
+<h3>倉庫でのロット管理</h3>
+
+<p>入荷した商品をロット番号で管理しておくと、万が一不良品が出たときに同じロットの製品だけを特定して対応できる。食品や化粧品など使用期限がある商品では、ロット管理をしていないと先入れ先出しがうまくいかず、古い在庫が倉庫に眠ったままになるリスクがある。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>最小ロットと単価の関係</h3>
+
+<p>基本的に、ロット数が多いほど1個あたりの単価は安くなる。逆に小ロットで仕入れると単価は高くなりがちだ。仕入先から「50個だと1個800円、100個だと1個600円」のように段階的な価格表を出されることもある。<a href="https://officialmag.stores.jp/entry/kaigyou/stocking-words" target="_blank" rel="noopener noreferrer nofollow">STORESの仕入れ用語解説</a>でも、ロット数と単価の関係について触れられていた。このあたりは<a href="kakerate.html">掛け率</a>や<a href="jodai-gedai.html">上代・下代</a>の知識ともつながってくる。</p>
+
+<h3>ロットとSKUは別の概念</h3>
+
+<p><a href="sku.html">SKU</a>は「色やサイズなどで分けた商品の管理単位」で、ロットは「同じ条件で製造・入荷したまとまり」を指す。同じSKUの商品でも1月入荷分と3月入荷分は別ロットとして管理できる。混同しやすいけど役割が違う。</p>
+
+<h3>小ロット仕入れができるサービスもある</h3>
+
+<p>最近は小ロットで仕入れができる卸サイトやサービスも増えている。ECを始めたばかりで大量仕入れが難しい場合は、そういったサービスを使うのも手だ。ただし小ロットだと単価が高くなるので、利益率の計算は忘れずに。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="sku.html">SKU</a></li>
+<li><a href="jodai-gedai.html">上代・下代</a></li>
+<li><a href="kakerate.html">掛け率</a></li>
+<li><a href="jan-code.html">JANコード</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>ABテストとは？商品画像の比較テストをやってみた話｜ツバサのメモ帳</title>
+<meta name="description" content="ABテスト（A/Bテスト）の意味とやり方をEC担当の視点で整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。">
+<meta name="keywords" content="ABテスト とは,A/Bテスト やり方,ECサイト ABテスト,ABテスト ツール,商品画像 ABテスト">
+<meta property="og:title" content="ABテストとは？商品画像の比較テストをやってみた話｜ツバサのメモ帳">
+<meta property="og:description" content="ABテストの意味とやり方をEC実務の視点で整理。商品画像の比較テストの進め方や注意点もまとめた。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/ab-test.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/ab-test.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ABテストとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ABテスト（A/Bテスト）とは、Webサイトや広告の要素を2パターン用意して、同じ条件で一定期間表示し、どちらがより成果（クリック率や購入率など）が高いかを比較するテスト手法です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトでABテストできる要素は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "商品画像（背景色や撮影アングル）、商品名の表記、価格の見せ方、「カートに入れる」ボタンの色や文言、商品説明文のレイアウトなど、ページ上のさまざまな要素でテストできます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ABテストの期間はどのくらい必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "統計的に有意な結果を得るには、最低でも1〜2週間、できれば1ヶ月程度のデータが必要です。サイトのアクセス数が少ない場合はさらに長い期間が必要になります。数日で判断すると偶然の差を見誤る可能性があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ABテストで変更する要素は一度に何個まで？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基本は1回のテストで1要素だけ変更します。画像とボタンの色を同時に変えてしまうと、どちらの変更が結果に影響したのか判別できなくなるからです。複数要素を同時にテストしたい場合は多変量テストという別の手法を使います。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ABテストに使えるツールは何がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Optimizeは2023年に終了しましたが、代替ツールとしてOptimizely、VWO（Visual Website Optimizer）、AB Tastyなどがあります。楽天やShopifyなど一部のECプラットフォームでは、管理画面から簡易的なABテストができる機能が用意されています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ABテスト
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>ABテストとは？<br>商品画像の比較テストをやってみた話</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>チームの打ち合わせで「商品画像でABテストしよう」と提案された。ABテストという言葉は聞いたことがあったけど、具体的にどうやるのかわからなかったので調べてみた。</p>
+
+<h2>ABテストとは</h2>
+
+<p>ひとことで言うと、WebサイトやWeb広告の要素を2パターン用意して、同じ条件で一定期間ユーザーに見せて、どちらが成果が高いかを比較する手法のこと。英語では「A/B Testing」と書く。</p>
+
+<p>たとえば商品ページのメイン画像を「白背景の物撮り（パターンA）」と「モデルが着用している写真（パターンB）」の2種類で表示して、どちらのほうが購入率（CVR）が高いかを測る、という具合だ。</p>
+
+<p><a href="https://www.shopify.com/blog/the-complete-guide-to-ab-testing" target="_blank" rel="noopener nofollow">Shopifyの公式ブログ</a>にもABテストの基本が載っていて、ECサイトの改善手法として広く使われていることがわかった。</p>
+
+<p>大事なのは「同じ期間に」「ランダムに」2パターンを表示すること。先週はAで今週はB、という切り替え方だと、時期の違い（セールの有無や曜日の差）が影響して正確な比較にならない。<a href="https://www.ebis.ne.jp/column/ab-test/" target="_blank" rel="noopener nofollow">アドエビスのABテスト解説</a>でもこの点が注意事項として書かれていた。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>ECサイトではABテストが活躍する場面がたくさんある。僕が遭遇したケースを書いておく。</p>
+
+<h3>商品画像のABテスト</h3>
+
+<p>これが僕のきっかけ。商品のメイン画像を変えるだけでCVRが変わることがある。<a href="https://corekara.co.jp/contents/sales-up/ab-explanation/" target="_blank" rel="noopener nofollow">これからのABテスト解説記事</a>でも、ECサイトでは商品画像のテストが特に効果的だと書いてあった。背景色の違い、アングルの違い、人物の有無など、テストできる要素は多い。</p>
+
+<h3>「カートに入れる」ボタンの最適化</h3>
+
+<p>ボタンの色を変える（緑→オレンジ）、文言を変える（「カートに入れる」→「今すぐ購入する」）といったテストも定番だ。<a href="https://shop-pro.jp/yomyom-colorme/99906" target="_blank" rel="noopener nofollow">カラーミーショップの記事</a>にも、ボタンまわりのABテスト事例が紹介されていた。</p>
+
+<h3>広告クリエイティブのテスト</h3>
+
+<p>Google広告やSNS広告では、広告の画像やテキストを複数パターン登録して、どれが一番クリックされるかを自動で比較してくれる機能がある。<a href="https://support.google.com/google-ads/answer/6167132?hl=ja" target="_blank" rel="noopener noreferrer">Google広告のヘルプ</a>にもテスト機能の説明が載っている。厳密にはプラットフォーム側が最適化してくれるので、自分で細かく設計する必要はない。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>1回のテストで変える要素は1つ</h3>
+
+<p>画像とボタンの色を同時に変えてしまうと、どちらの変更が結果に影響したのかわからなくなる。ABテストの基本は「1回に1要素だけ変える」こと。複数の要素を同時にテストしたいなら、多変量テスト（MVT）という別の手法を使う。</p>
+
+<h3>十分なデータ量が必要</h3>
+
+<p>数日で「Aのほうがいい」と判断すると、たまたまの差を見誤る可能性がある。<a href="https://www.gyro-n.com/column/ab-test/" target="_blank" rel="noopener noreferrer">Gyro-nのABテスト記事</a>にも書いてあったが、統計的に有意な結果を得るには、最低でも1〜2週間、アクセスが少ないサイトなら1ヶ月以上のデータが必要だ。</p>
+
+<h3>「勝ったパターン」を次の基準にする</h3>
+
+<p>ABテストは1回やって終わりではない。勝ったパターンを新しい基準にして、次のテストを繰り返す。画像でAが勝ったら、次はAの画像をベースにボタンの色を変えてテストする、という具合だ。小さな改善を積み重ねていくのがABテストの考え方になる。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="cvr.html">CVR（コンバージョン率）</a></li>
+<li><a href="cart-abandonment.html">カゴ落ち</a></li>
+<li><a href="cpa.html">CPA</a></li>
+<li><a href="roas.html">ROAS</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

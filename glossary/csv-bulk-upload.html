@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>CSV一括登録とは？商品100点の画像をまとめて登録する方法｜ツバサのメモ帳</title>
+<meta name="description" content="CSV一括登録の意味をEC実務の視点で調べたメモ。商品画像を1点ずつ手動で登録する手間を省く方法として、楽天RMSのCSVダウンロード・アップロード機能の使い方、文字コードの注意点、画像の紐づけ手順をわかりやすく整理しました。">
+<meta name="keywords" content="CSV一括登録 とは,CSV 商品登録,楽天 CSV アップロード,Amazon CSV 一括,商品画像 一括登録">
+<meta property="og:title" content="CSV一括登録とは？商品100点の画像をまとめて登録する方法｜ツバサのメモ帳">
+<meta property="og:description" content="CSV一括登録の意味と手順をEC実務の視点で整理。楽天・AmazonでのCSVアップロード方法と注意点を解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/csv-bulk-upload.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/csv-bulk-upload.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CSV一括登録とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CSV一括登録とは、商品情報をCSVファイル（カンマ区切りのテキストファイル）にまとめて記入し、ECモールの管理画面からアップロードすることで、複数の商品データを一度に登録・更新する方法です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "楽天市場でCSV一括登録を使うには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "楽天RMSの「CSVダウンロード・アップロード」機能を利用します。月額11,000円（税込）の有料オプションに申し込む必要があります。RMSからテンプレートCSVをダウンロードし、Excelなどで編集してアップロードする流れです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CSV一括登録で商品画像も登録できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CSVファイル自体に画像データを入れることはできません。画像ファイルは別途アップロードしておき、CSVには画像のファイル名やURLを記入して紐づける形になります。楽天ならR-Cabinetに画像をアップロードしてからCSVで紐づけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CSVファイルの文字化けを防ぐには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "文字コードの設定が原因で文字化けが起きることがあります。楽天RMSはShift_JIS、AmazonはUTF-8が推奨されています。Excelで編集する場合は保存時の文字コードに注意が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CSV一括登録で失敗しやすい点は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "よくある失敗は、必須項目の入力漏れ、文字コードの不一致、セル内の改行混入、半角・全角の間違いなどです。アップロード前にエラーチェック用のプレビュー機能がある場合は必ず確認しましょう。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; CSV一括登録
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>CSV一括登録とは？<br>商品100点の画像をまとめて登録する方法</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>新しい商品を100点ほどECモールに登録する作業があったんだけど、1点ずつ管理画面で手入力していたら全然終わらなかった。先輩に相談したら「CSVで一括登録すればいいよ」と教えてもらったので、やり方を調べてみた。</p>
+
+<h2>CSV一括登録とは</h2>
+
+<p>ひとことで言うと、商品情報をCSVファイルにまとめて書き、ECモールの管理画面からアップロードすることで、複数の商品データをまとめて登録・更新する方法のこと。</p>
+
+<p>CSVは「Comma Separated Values」の略で、カンマ（,）で区切られたテキストファイルのこと。Excelやスプレッドシートで開くと表形式で表示されるので、商品名・価格・在庫数・画像ファイル名などを1行1商品で書いていける。</p>
+
+<p><a href="https://captainec.jp/rakuten/spin_off/how-to-use-csv" target="_blank" rel="noopener noreferrer">キャプテンECのCSV解説記事</a>を読むと、楽天市場のCSV一括編集機能では商品情報の登録だけでなく、価格の一括変更やカテゴリの変更などもCSVで処理できるらしい。1点ずつ画面を開いてポチポチやるのに比べたら圧倒的に早い。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>CSV一括登録が活躍する場面はけっこう多い。僕が遭遇したケースをまとめておく。</p>
+
+<h3>新規商品の大量登録</h3>
+
+<p>シーズンの切り替わりで新商品を何十点もまとめて登録するとき、手作業だと丸1日かかる作業がCSVなら数時間で終わる。<a href="https://www.hideandseek.co.jp/archives/1626" target="_blank" rel="noopener noreferrer">Hide&Seekの楽天商品登録ガイド</a>では、テンプレートCSVをダウンロードして必要な項目を埋めていく手順が紹介されていた。</p>
+
+<p>楽天市場の場合、RMS（楽天の管理画面）からCSVテンプレートをダウンロードして、商品名・価格・<a href="sku.html">SKU</a>ごとの在庫数などを入力してアップロードする。ただしCSV一括登録は有料オプションで、月額11,000円（税込）かかる。<a href="https://next-engine.net/ec-blog/rakuten-rms-csv-registration/" target="_blank" rel="noopener noreferrer">ネクストエンジンの楽天RMS解説</a>に料金の詳細が載っていた。</p>
+
+<h3>商品画像の一括紐づけ</h3>
+
+<p>CSVファイル自体に画像データを入れることはできない。画像ファイルは別途アップロードしておいて、CSVには画像のファイル名やURLを記入して紐づける仕組みだ。楽天の場合はR-Cabinet（画像管理サービス）に画像をまとめてアップしてから、CSVで画像ファイル名を指定する。</p>
+
+<p>この「画像を先にアップ → CSVで紐づけ」という2段階の流れを最初知らなくて、CSVだけアップしても画像が表示されなくて焦った。商品画像のルールについては<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>も参照してほしい。</p>
+
+<h3>価格・在庫の一括変更</h3>
+
+<p>セール前に100商品のうち50商品だけ価格を変えたい、というときもCSVが便利。対象商品のデータをCSVでダウンロードして、価格の列だけ書き換えてアップロードすればいい。<a href="https://finner.co.jp/media/ec20230306a/" target="_blank" rel="noopener noreferrer">FinnerのCSV一括編集解説</a>では、楽天のSKUプロジェクト以降のCSVフォーマットの変更点が詳しく解説されていた。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>文字コードに注意</h3>
+
+<p>CSV一括登録で一番ハマりやすいのが文字コードの問題だ。楽天RMSはShift_JIS、AmazonはUTF-8が推奨されている。Excelでファイルを開いて保存すると文字コードが変わってしまうことがあるので、保存形式を確認する癖をつけたほうがいい。文字化けしてアップロードに失敗する…というのは初心者あるあるだ。</p>
+
+<h3>必須項目の入力漏れ</h3>
+
+<p>モールごとに必須項目が決まっていて、1つでも抜けているとエラーになる。<a href="https://ec-tsushin.com/r_itemcsv_update/" target="_blank" rel="noopener noreferrer">EC通販運営マニュアルの楽天CSV解説</a>によると、楽天のitem.csvで最低限必要な項目は「商品管理番号」「商品名」「販売価格」など。テンプレートの必須列を先に確認してから作業に入るのがおすすめだ。</p>
+
+<h3>一元管理ツールとの併用</h3>
+
+<p>複数のECモール（楽天・Amazon・Yahoo!ショッピングなど）に出品している場合、モールごとにCSVのフォーマットが違うので、それぞれ別のCSVを作る必要がある。これがかなり面倒で、ネクストエンジンやクロスモールなどの一元管理ツールを使っている会社も多い。ツール側で商品データを一括管理して、各モール向けに変換してアップロードしてくれる仕組みだ。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="sku.html">SKU</a></li>
+<li><a href="jan-code.html">JANコード</a></li>
+<li><a href="asin.html">ASIN</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/compress-product-image.html">商品画像の圧縮・軽量化テクニック</a></li>
+<li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

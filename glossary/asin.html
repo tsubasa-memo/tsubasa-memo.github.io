@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>ASINとは？Amazon出品で出てくるコードの正体を調べた｜ツバサのメモ帳</title>
+<meta name="description" content="ASIN（Amazon Standard Identification Number）の意味を調べたメモ。Amazon出品で見かけるASINコードの役割、親ASINと子ASINの違い、JANコードやSKUとの関係をEC実務の視点で整理しました。">
+<meta name="keywords" content="ASIN とは,ASIN 意味,Amazon ASIN,ASIN 調べ方,ASIN JANコード 違い">
+<meta property="og:title" content="ASINとは？Amazon出品で出てくるコードの正体を調べた｜ツバサのメモ帳">
+<meta property="og:description" content="ASINの意味と調べ方をEC実務の視点で整理。親ASINと子ASINの違い、JANコード・SKUとの関係も解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/asin.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/asin.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ASINとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ASINは「Amazon Standard Identification Number」の略で、Amazonが商品ごとに割り当てる10桁の識別コードです。アルファベットと数字の組み合わせで構成されており、Amazon内で商品を特定するために使われます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ASINはどうやって調べられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Amazonの商品ページを開いて、ページ下部の「登録情報」や「商品の情報」の欄に記載されています。また、商品ページのURLにも含まれており、「/dp/」のあとに続く10桁の英数字がASINです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "親ASINと子ASINの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "親ASINは商品ページ全体をまとめる識別コードで、子ASINは色やサイズなどのバリエーションごとに付与されるコードです。たとえばTシャツの商品ページが親ASINで、白のMサイズ・黒のLサイズなどがそれぞれ子ASINになります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ASINとJANコードの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JANコードはGS1 Japanが管理する国際標準のバーコード番号で、Amazon以外でも使えます。ASINはAmazon独自の識別コードで、Amazon内でのみ通用します。Amazonに出品する際はJANコードを登録すると、自動的にASINが紐づけられます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ASINは自分で作成できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "既存のカタログにない新規商品を出品する場合、Amazon側で新しいASINが自動的に発行されます。出品者が番号を自由に決めることはできません。すでにカタログにある商品はJANコードなどで検索して既存のASINに相乗りする形になります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ASIN
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>ASINとは？<br>Amazon出品で出てくるコードの正体を調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>Amazonに商品を出品しようとしたら、画面に「ASIN」という見慣れないコードが出てきた。商品ページのURLにも10桁の英数字が入っている。何の番号なのかわからなかったので調べてみた。</p>
+
+<h2>ASINとは</h2>
+
+<p>ひとことで言うと、ASINは「Amazon Standard Identification Number」の略で、Amazonが商品1つ1つに割り当てている10桁の識別コードのこと。アルファベットと数字の組み合わせで構成されている。</p>
+
+<p><a href="https://ecnomikata.com/ecnews/ecmall/44015/" target="_blank" rel="noopener noreferrer">ECのミカタの解説記事</a>によると、ASINはAmazonのカタログに登録されたすべての商品に付与される。書籍だけは例外で、ISBNコード（国際標準図書番号）がASINの代わりに使われるらしい。</p>
+
+<p>ASINの調べ方は簡単で、Amazonの商品ページを開いてページ下部の「登録情報」を見ればいい。URLにも含まれていて、「/dp/」のあとに続く10桁がそれにあたる。たとえば「amazon.co.jp/dp/B0XXXXXXXX」の「B0XXXXXXXX」の部分だ。</p>
+
+<p>ちなみにASINの読み方は「エイシン」。<a href="https://jagoo.co.jp/column/amazon-asin/" target="_blank" rel="noopener noreferrer">ジャグーのAmazon ASIN解説</a>でもそう紹介されていた。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>Amazonで出品するならASINは避けて通れない。僕が遭遇した場面をまとめておく。</p>
+
+<h3>新規商品の出品</h3>
+
+<p>Amazonのカタログにまだ存在しない商品を出品する場合、JANコード（EAN）を入力して商品情報を登録すると、Amazon側で新しいASINが自動的に発行される。自分で番号を決めることはできない。逆に、すでにカタログにある商品を出品する場合は、JANコードやキーワードで検索して既存のASINに「相乗り」する形になる。</p>
+
+<h3>親ASINと子ASIN</h3>
+
+<p>Amazonには「バリエーション」という仕組みがあって、色違い・サイズ違いを1つの商品ページにまとめられる。このとき、商品ページ全体をまとめるのが「親ASIN」、各バリエーションに付くのが「子ASIN」だ。<a href="https://proteinum.co.jp/blog/amazon-asin/" target="_blank" rel="noopener noreferrer">プロテーナムの解説記事</a>を読むと、親ASINは実際に購入できるページを持たず、あくまで子ASINをグループ化するための入れ物のような存在だと書いてあった。</p>
+
+<h3>競合調査・リサーチ</h3>
+
+<p>他社の商品をリサーチするときにもASINは使える。ASINをコピーしてAmazonの検索窓に貼り付ければ、その商品ページに直接飛べる。<a href="https://sobani.co.jp/columnlist/amazon_asin" target="_blank" rel="noopener noreferrer">そばにのASIN解説記事</a>でも、ASINを使った競合商品の調べ方が紹介されていた。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>ASINとJANコード・SKUの違い</h3>
+
+<p>最初はどれも商品のコードだし何が違うのかわからなかったけど、整理するとこうなる。</p>
+
+<table class="compare">
+<tr><th>コード</th><th>管理元</th><th>使える範囲</th><th>付け方</th></tr>
+<tr><td>ASIN</td><td>Amazon</td><td>Amazon内のみ</td><td>Amazon側で自動発行</td></tr>
+<tr><td>JANコード</td><td>GS1 Japan</td><td>世界共通</td><td>GS1に申請して取得</td></tr>
+<tr><td>SKU</td><td>各社</td><td>自社内のみ</td><td>自分で自由に設定</td></tr>
+</table>
+
+<p>JANコードについては<a href="jan-code.html">JANコードとは</a>、SKUについては<a href="sku.html">SKUとは</a>にまとめている。</p>
+
+<h3>同じ商品でもASINが違うことがある</h3>
+
+<p>Amazon.co.jp（日本）とAmazon.com（アメリカ）では、同じ商品でも別のASINが割り当てられていることがある。ASINはマーケットプレイスごとに管理されているので、海外Amazonと日本Amazonで同じ商品を扱う場合は注意が必要だ。</p>
+
+<h3>ASINが見つからないとき</h3>
+
+<p>出品しようとした商品のASINがAmazonのカタログに見つからない場合は、新規でカタログを作成する必要がある。<a href="https://allweb-consulting.co.jp/information/asin_2/" target="_blank" rel="noopener noreferrer">ALL WEB CONSULTINGの解説</a>によると、JANコードを持っていない商品は「製品コード免除申請」を行うことでASINを発行してもらえるケースがあるらしい。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="sku.html">SKU</a></li>
+<li><a href="jan-code.html">JANコード</a></li>
+<li><a href="csv-bulk-upload.html">CSV一括登録</a></li>
+<li><a href="long-tail.html">ロングテール</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+<li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

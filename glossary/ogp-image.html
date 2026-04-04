@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>OGP画像とは？SNSでシェアしたとき画像が出ない原因｜ツバサのメモ帳</title>
+<meta name="description" content="OGP画像の意味を調べたメモ。Open Graph ProtocolでSNSシェア時に表示されるサムネイル画像の仕組み、推奨サイズ1200×630px、X・Facebook・LINEで画像が出ないときの原因と確認ツールをまとめた。">
+<meta name="keywords" content="OGP画像 とは,OGP 設定,SNS シェア 画像 表示されない,og:image,OGP サイズ">
+<meta property="og:title" content="OGP画像とは？SNSでシェアしたとき画像が出ない原因｜ツバサのメモ帳">
+<meta property="og:description" content="OGP画像の仕組みとSNSシェア時に画像が表示されない原因をEC実務の視点で整理。推奨サイズや確認方法も解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/ogp-image.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/ogp-image.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "OGP画像とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OGP画像とは、WebページのURLをSNSでシェアしたときにサムネイルとして表示される画像のことです。OGP（Open Graph Protocol）というHTMLのメタタグで指定します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "OGP画像の推奨サイズは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般的に推奨されるサイズは1200×630pxです。FacebookやX（旧Twitter）など主要なSNSで大きく表示されるため、このサイズで作っておくと安心です。LINEでは正方形にクロップされるので、重要な情報は中央の630×630pxに収めておくとよいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SNSでシェアしたのに画像が表示されないのはなぜ？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主な原因はog:imageタグの未設定、画像URLの誤り（相対パスになっている）、SNS側のキャッシュが古い情報のまま、などです。Facebookならシェアデバッガー、XならCard Validatorで確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "OGP画像を設定するにはどうすればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HTMLのhead内にog:imageのメタタグを追加します。例えば<meta property=\"og:image\" content=\"https://example.com/image.png\">のように、画像の絶対URLを指定します。相対パスでは動かないので注意が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "OGP画像を変更したのに古い画像のまま表示されます。どうすれば？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SNS側にキャッシュが残っているためです。Facebookはシェアデバッガーで「もう一度スクレイピング」を実行、XはCard Validatorでプレビューを再読み込みすると更新されます。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; OGP画像
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>OGP画像とは？<br>SNSでシェアしたときに画像が出ない原因</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>自社の商品ページのURLをX（旧Twitter）でシェアしたら、画像がまったく表示されなかった。リンクだけがポツンと出ている状態で見栄えが悪い。調べてみたら「OGP画像」というものを設定する必要があるらしい。</p>
+
+<h2>OGP画像とは</h2>
+
+<p>ひとことで言うと、WebページのURLをSNSでシェアしたときに表示されるサムネイル画像のこと。OGPは「Open Graph Protocol」の略で、Facebookが提唱したWebページのメタ情報を記述する仕組みだ。</p>
+
+<p><a href="https://ogp.me/" target="_blank" rel="noopener noreferrer">OGPの公式仕様サイト（ogp.me）</a>を見ると、og:title、og:description、og:image、og:urlの4つが基本のプロパティとして定義されている。この中のog:imageが、SNSでシェアしたときに表示される画像を指定する部分だ。</p>
+
+<p>HTMLのhead内に以下のようなメタタグを書く。</p>
+
+<p><code>&lt;meta property="og:image" content="https://example.com/image.png"&gt;</code></p>
+
+<p>ここで指定した画像が、FacebookやX、LINEでURLをシェアしたときにサムネイルとして使われる。<a href="https://developers.facebook.com/docs/sharing/webmasters/?locale=ja_JP" target="_blank" rel="noopener noreferrer">Facebookの開発者向けドキュメント</a>にも、OGPタグの設定方法が詳しく載っている。</p>
+
+<p>推奨サイズは1200×630px。<a href="https://imageflux.sakura.ad.jp/column/ogp-images/" target="_blank" rel="noopener noreferrer">さくらインターネットのImageFluxコラム</a>によると、Facebook・Xの両方で大きく表示されるサイズがこの1200×630pxで、LINEでは正方形にトリミングされるため、重要な情報は画像の中央に寄せておくといいらしい。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>ECの仕事をしていると、OGP画像の設定不備に遭遇する場面が意外と多い。</p>
+
+<h3>SNSでの商品シェア</h3>
+
+<p>今回の僕のケースがこれ。商品ページのURLをXに投稿したら画像が出ず、タイトルとURLだけが表示された。ECサイトの場合、商品画像がそのままOGP画像として使われるのが理想だけど、設定がないとSNS側がページ内の適当な画像を拾ってしまったり、まったく画像が表示されなかったりする。</p>
+
+<h3>キャンペーンページのシェア</h3>
+
+<p>セールやキャンペーンの告知ページをSNSで拡散するとき、OGP画像が設定されていないとただのURLリンクになる。画像付きの投稿と比べるとクリック率が大きく変わるので、キャンペーンページには専用のOGP画像を用意するのが基本だ。<a href="https://www.plan-b.co.jp/blog/marketing/29096/" target="_blank" rel="noopener noreferrer">PLAN-BのOGP解説記事</a>でも、OGP画像の有無でSNS経由のクリック率に差が出ると紹介されていた。</p>
+
+<h3>画像を変更しても反映されない</h3>
+
+<p>OGP画像を差し替えたのに、SNSで古い画像が表示され続けることがある。これはSNS側にキャッシュが残っているのが原因。Facebookなら<a href="https://developers.facebook.com/tools/debug/" target="_blank" rel="noopener noreferrer">シェアデバッガー</a>で「もう一度スクレイピング」を実行すればキャッシュが更新される。Xにも同様の確認ツール（Card Validator）がある。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>画像URLは絶対パスで指定する</h3>
+
+<p>OGP画像のURLは <code>https://</code> から始まる絶対パスで書く必要がある。相対パス（<code>/images/ogp.png</code> など）で指定するとSNS側が画像を取得できず、表示されない原因になる。僕もこれでハマった。</p>
+
+<h3>ECモールの場合は設定不要なことが多い</h3>
+
+<p>楽天やAmazonなどのECモールでは、モール側がOGPタグを自動で設定してくれることが多い。自分でOGP画像を設定する必要があるのは、自社ECサイト（Shopifyや独自ドメインのサイト）の場合だ。Shopifyならテーマの設定画面からOGP画像を登録できる。</p>
+
+<h3>確認ツールを使って事前チェック</h3>
+
+<p>公開前にOGP画像がちゃんと表示されるか確認しておくと安心。Facebookのシェアデバッガー、XのCard Validator、LINEのPage Pokerなど、各SNSが確認ツールを提供している。URLを入れるだけでプレビューが見られるので、設定後に必ずチェックしておきたい。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="alt-attribute.html">alt属性</a></li>
+<li><a href="banner.html">バナー</a></li>
+<li><a href="first-view.html">ファーストビュー</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
