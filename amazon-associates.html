@@ -53,7 +53,7 @@ a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
 header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
 header .wrap{display:flex;align-items:center;justify-content:space-between}
 .site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
-.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
 nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
 nav.breadcrumb a{color:var(--text-sub)}
 .hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
@@ -96,7 +96,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <header>
 <div class="wrap">
 <a href="index.html" class="site-name">ツバサのメモ帳</a>
-<span class="site-tag">備忘録ブログ</span>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
 </div>
 </header>
 <nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ Amazon アソシエイトに登録してみた…</div></nav>

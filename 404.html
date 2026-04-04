@@ -19,9 +19,10 @@ gtag('config', 'G-YYBFXHXMM6');
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--text:#232a31;--text-sub:#65737e;--accent:#2e6b8a;--bg:#f8f9fa;--card:#fff;--border:#e5e7eb}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
-header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;text-align:center}
-header a{color:var(--text);text-decoration:none;font-weight:700;font-size:15px}
-header span{font-size:12px;color:var(--text-sub);margin-left:8px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0}
+.header-inner{max-width:600px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between}
+.header-inner a.site-name{color:var(--text);text-decoration:none;font-weight:700;font-size:15px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:#f2f0ec;border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
 main{max-width:600px;margin:0 auto;padding:80px 20px;text-align:center}
 .error-code{font-size:80px;font-weight:700;color:var(--accent);opacity:.3;line-height:1}
 h1{font-size:20px;font-weight:700;margin:16px 0 12px}
@@ -37,7 +38,13 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <body>
 
 <header>
-<a href="/">ツバサのメモ帳 <span>備忘録ブログ</span></a>
+<div class="header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
 </header>
 
 <main>
