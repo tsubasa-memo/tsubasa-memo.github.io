@@ -36,7 +36,7 @@ a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
 header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
 header .wrap{display:flex;align-items:center;justify-content:space-between}
 .site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
-.site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
 .hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
 .hero h1{font-size:26px;line-height:1.5;font-weight:700;margin-bottom:12px;letter-spacing:1px}
 .hero p{font-size:14px;opacity:.85;max-width:540px;margin:0 auto;line-height:1.8}
@@ -86,7 +86,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <header>
 <div class="wrap">
 <span class="site-name">ツバサのメモ帳</span>
-<span class="site-tag">備忘録ブログ</span>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
 </div>
 </header>
 
@@ -107,6 +110,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="archive.html?cat=photo" class="cat-link">写真・撮影</a>
 <a href="archive.html?cat=ec" class="cat-link">EC・実務</a>
 <a href="archive.html?cat=career" class="cat-link">副業・キャリア</a>
+<a href="glossary/" class="cat-link">用語集</a>
 </div>
 
 <h2 class="section-title">最新の記事</h2>
