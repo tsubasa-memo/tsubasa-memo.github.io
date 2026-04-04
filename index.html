@@ -50,8 +50,9 @@ main{padding:48px 0 64px}
 .article-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .article-card a{display:block;color:inherit;text-decoration:none}
 .article-card a:hover{text-decoration:none}
-.article-card .card-num{font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-light);display:inline-block;padding:2px 10px;border-radius:12px;margin-bottom:8px}
-.article-card .card-num.new{color:#fff;background:var(--accent)}
+.card-dates{display:flex;align-items:center;gap:12px;margin-bottom:8px;font-size:12px;color:var(--text-sub)}
+.card-date-updated{font-weight:700;color:#fff;background:#c0392b;padding:2px 10px;border-radius:12px}
+.card-date-pub{font-weight:500;color:var(--text-sub)}
 .article-card h2{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.6}
 .article-card .card-desc{font-size:13px;color:var(--text-sub);line-height:1.7}
 .article-card .card-tag{display:inline-block;font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:2px 8px;border-radius:4px;margin-top:8px}
@@ -112,10 +113,43 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <div class="article-list">
 <div class="article-card">
+<a href="retouch-pricing-database.html">
+<div class="card-thumb"><img src="thumbs/retouch-pricing-database.svg" alt="写真レタッチの料金相場まとめ" width="320" height="180"></div>
+<div class="card-body">
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
+<h2>写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】</h2>
+<p class="card-desc">色補正・肌レタッチ・切り抜き・合成など作業内容別の相場と、20社以上のサービス料金を1ページに集約。外注先を探している方の比較用に。</p>
+<span class="card-tag">レタッチ</span>
+</div>
+</a>
+</div>
+<div class="article-card">
+<a href="personal-retouch-order.html">
+<div class="card-thumb"><img src="thumbs/personal-retouch-order.svg" alt="画像加工・レタッチを個人で依頼する方法まとめ" width="320" height="180"></div>
+<div class="card-body">
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
+<h2>画像加工・レタッチを個人で依頼する方法まとめ</h2>
+<p class="card-desc">個人が写真のレタッチ・画像加工を依頼できるサービスの種類、依頼の流れ、料金相場、選び方のポイントを整理。</p>
+<span class="card-tag">レタッチ</span>
+</div>
+</a>
+</div>
+<div class="article-card">
+<a href="background-cutout-outsource.html">
+<div class="card-thumb"><img src="thumbs/background-cutout-outsource.svg" alt="背景切り抜き外注費用" width="320" height="180"></div>
+<div class="card-body">
+<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
+<h2>背景切り抜きをプロに外注するといくら？｜費用相場と依頼先まとめ</h2>
+<p class="card-desc">写真の背景切り抜き・白抜きをプロに外注する場合の費用相場を調べました。1枚100円台〜の切り抜き専門サービスから、レタッチ込みの業者まで比較。</p>
+<span class="card-tag">レタッチ</span>
+</div>
+</a>
+</div>
+<div class="article-card">
 <a href="retouch-cost-guide.html">
 <div class="card-thumb"><img src="thumbs/retouch-cost-guide.svg" alt="画像修正・レタッチの外注費用｜相場早見表つき" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num new">NEW</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.31</span></div>
 <h2>画像修正・レタッチの外注費用｜相場早見表つき</h2>
 <p class="card-desc">レタッチの外注費用を加工内容別に早見表で整理。1枚あたりの料金と枚数割引の仕組みもまとめた備忘録。</p>
 <span class="card-tag">レタッチ</span>
@@ -126,7 +160,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="ec-product-description.html">
 <div class="card-thumb"><img src="thumbs/ec-product-description.svg" alt="ECサイトの商品説明文の書き方｜売れるページに共通するポイント" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.31</span></div>
 <h2>ECサイトの商品説明文の書き方｜売れるページに共通するポイント</h2>
 <p class="card-desc">Amazon・楽天・メルカリ等での商品説明文の書き方のコツ。テンプレート例、NGパターン、文字数の目安をまとめた備忘録。</p>
 <span class="card-tag">EC・実務</span>
@@ -137,161 +171,115 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <a href="ai-data-collection-side-job.html">
 <div class="card-thumb"><img src="thumbs/ai-data-collection-side-job-thumb.svg" alt="AIデータ収集副業" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.04</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.30</span></div>
 <h2>スキル不要で時給4,500円？話題のAIデータ収集副業を調べてみた</h2>
 <p class="card-desc">SNSで話題の「AIデータ収集」副業を調査。Outlier AI・Appen・Remotasksなど日本から使える6サービスの報酬・始め方・将来性を比較しました。</p>
 <span class="card-tag">副業・キャリア</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="sasage-outsource.html">
 <div class="card-thumb"><img src="thumbs/sasage-outsource.svg" alt="ささげ業務 代行会社比較" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>ささげ業務とは？代行会社の選び方と比較メモ【2026年版】</h2>
 <p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社の選び方・10社比較まで。EC担当者が外注先を探すときの備忘録。</p>
 <span class="card-tag">EC・実務</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="new-mac-2026.html">
 <div class="card-thumb"><img src="thumbs/new-mac-2026.svg" alt="新生活のMac選び Neo・Air・Pro比較" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
 <h2>新生活のMacはどれを選ぶ？Neo・Air・Proを比べてみた【2026年版】</h2>
 <p class="card-desc">99,800円のMacBook Neo登場でMacの選び方が変わった。Neo・Air・Proの違いと用途別の選び方をまとめました。</p>
 <span class="card-tag">副業・キャリア</span>
 </div>
 </a>
 </div>
-
-<div class="article-card">
-<a href="retouch-pricing-database.html">
-<div class="card-thumb"><img src="thumbs/retouch-pricing-database.svg" alt="写真レタッチの料金相場まとめ" width="320" height="180"></div>
-<div class="card-body">
-<span class="card-num">2026.03</span>
-<h2>写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】</h2>
-<p class="card-desc">色補正・肌レタッチ・切り抜き・合成など作業内容別の相場と、20社以上のサービス料金を1ページに集約。外注先を探している方の比較用に。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-
-<div class="article-card">
-<a href="personal-retouch-order.html">
-<div class="card-thumb"><img src="thumbs/personal-retouch-order.svg" alt="画像加工・レタッチを個人で依頼する方法まとめ" width="320" height="180"></div>
-<div class="card-body">
-<span class="card-num">2026.03</span>
-<h2>画像加工・レタッチを個人で依頼する方法まとめ</h2>
-<p class="card-desc">個人が写真のレタッチ・画像加工を依頼できるサービスの種類、依頼の流れ、料金相場、選び方のポイントを整理。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-
-<div class="article-card">
-<a href="background-cutout-outsource.html">
-<div class="card-thumb"><img src="thumbs/background-cutout-outsource.svg" alt="背景切り抜き外注費用" width="320" height="180"></div>
-<div class="card-body">
-<span class="card-num">2026.03</span>
-<h2>背景切り抜きをプロに外注するといくら？｜費用相場と依頼先まとめ</h2>
-<p class="card-desc">写真の背景切り抜き・白抜きをプロに外注する場合の費用相場を調べました。1枚100円台〜の切り抜き専門サービスから、レタッチ込みの業者まで比較。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-
 <div class="article-card">
 <a href="photo-side-job-no-skill.html">
 <div class="card-thumb"><img src="thumbs/photo-side-job-no-skill.svg" alt="写真副業を検討してみた" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>スキルなし・機材なし・時間なしの20代が"写真副業"を検討してみた</h2>
 <p class="card-desc">写真系副業の種類・単価相場・現実的なロードマップを調べた記録。クラウドソーシングの初心者向け案件から始めるまでの流れをまとめています。</p>
 <span class="card-tag">副業・キャリア</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="side-job-labor-law.html">
 <div class="card-thumb"><img src="thumbs/side-job-labor-law.svg" alt="副業と就業規則" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話</h2>
 <p class="card-desc">副業規定の3パターン・厚生労働省のガイドライン・住民税バレ対策まで。副業前に確認すべきことを実体験もまじえてまとめました。</p>
 <span class="card-tag">副業・キャリア</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="job-hunting-photo-retouch.html">
 <div class="card-thumb"><img src="thumbs/job-hunting-photo-retouch.svg" alt="就活証明写真の加工" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>就活証明写真、アプリで加工していいラインはどこまで？</h2>
 <p class="card-desc">採用担当の見解・スタジオのレタッチ基準・NGな加工の種類を調べました。「軽い補正はOK、別人はNG」という基準のラインを整理しています。</p>
 <span class="card-tag">写真・撮影</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="sns-photo-retouch-manners.html">
 <div class="card-thumb"><img src="thumbs/sns-photo-retouch-manners.svg" alt="SNS写真加工のマナー" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</h2>
 <p class="card-desc">マッチングアプリでの写真詐欺問題・BeRealが流行した理由・加工の許容範囲についての考察。消費者庁データも参照しています。</p>
 <span class="card-tag">レタッチ</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="instagram-filter-vs-lightroom.html">
 <div class="card-thumb"><img src="thumbs/instagram-filter-vs-lightroom.svg" alt="インスタフィルターとLightroom" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>インスタのフィルターとLightroomって何が違うの？やっと理解した</h2>
 <p class="card-desc">フィルターとLightroomの仕組みの違い（非破壊編集・プリセット）を初心者目線で比較。フィード統一感を出したい人にはLightroomが向いています。</p>
 <span class="card-tag">レタッチ</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="matching-app-photo-tips.html">
 <div class="card-thumb"><img src="thumbs/matching-app-photo-tips.svg" alt="マッチングアプリの写真" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>マッチングアプリの写真、どこで撮るのが正解か調べた</h2>
 <p class="card-desc">マッチ率が上がる写真の共通点（撮影場所・構図・加工の範囲）を複数の情報源をもとにまとめました。プロ撮影という選択肢についても。</p>
 <span class="card-tag">写真・撮影</span>
 </div>
 </a>
 </div>
-
 <div class="article-card">
 <a href="portrait-mode-tips.html">
 <div class="card-thumb"><img src="thumbs/portrait-mode-tips.svg" alt="ポートレートモードの使いこなし" width="320" height="180"></div>
 <div class="card-body">
-<span class="card-num">2026.03</span>
+<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
 <h2>スマホカメラの"ポートレートモード"が苦手だった理由と、使いこなせるようになった話</h2>
 <p class="card-desc">背景ぼかしが不自然になる原因（距離・光量・AIの認識限界）と、自然な仕上がりにするためのコツをまとめました。</p>
 <span class="card-tag">写真・撮影</span>
 </div>
 </a>
 </div>
-
 </div>
 
-<div style<div style="text-align:center;margin:0 0 40px">
+<div style="text-align:center;margin:0 0 40px">
 <a href="archive.html" class="archive-btn">すべての記事を見る（全56件）</a>
 </div>
 

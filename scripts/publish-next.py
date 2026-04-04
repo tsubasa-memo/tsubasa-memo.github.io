@@ -48,14 +48,14 @@ def find_pending_articles(schedule, archive_html):
 
 def build_card_html(entry, is_newest=False):
     """記事カードHTMLを生成する。"""
-    num_class = 'card-num new' if is_newest else 'card-num'
-    num_text = 'NEW' if is_newest else entry["date_label"]
+    pub_date = entry["publish_utc"][:10].replace("-", ".")
+    date_html = f'<div class="card-dates"><span class="card-date-pub">公開 {pub_date}</span></div>'
     return (
         f'<div class="article-card" data-cat="{entry["cat"]}">\n'
         f'<a href="{entry["slug"]}.html">\n'
         f'<div class="card-thumb"><img src="thumbs/{entry["slug"]}.svg" alt="" width="320" height="180"></div>\n'
         f'<div class="card-body">\n'
-        f'<span class="{num_class}">{num_text}</span>\n'
+        f'{date_html}\n'
         f'<h2>{entry["title"]}</h2>\n'
         f'<p class="card-desc">{entry["card_desc"]}</p>\n'
         f'<span class="card-tag">{entry["tag"]}</span>\n'
@@ -68,32 +68,24 @@ def build_card_html(entry, is_newest=False):
 def update_archive(archive_html, articles):
     """
     archive.html を更新して返す。
-    1. 既存 NEW バッジを日付に置換
-    2. AI タブがなければ追加
-    3. 記事カードを article-list 先頭に挿入（最新のみ NEW）
-    4. count を更新
+    1. AI タブがなければ追加
+    2. 記事カードを article-list 先頭に挿入
+    3. count を更新
     """
     html = archive_html
 
-    # 1. 既存の NEW バッジを日付ラベルに変更
-    html = html.replace(
-        '<span class="card-num new">NEW</span>',
-        '<span class="card-num">2026.04</span>'
-    )
-
-    # 2. filter-tab に data-cat="ai" がなければ career の前に追加
+    # 1. filter-tab に data-cat="ai" がなければ career の前に追加
     if 'data-cat="ai"' not in html:
         html = html.replace(
             '<span class="filter-tab" data-cat="career">',
             '<span class="filter-tab" data-cat="ai">AI</span>\n<span class="filter-tab" data-cat="career">'
         )
 
-    # 3. 記事カードを挿入（最新=一番上、最新のみ NEW バッジ）
+    # 2. 記事カードを挿入（最新=一番上）
     # articles は order 昇順なので、最後の要素が最新
     cards_html = []
-    for i, article in enumerate(articles):
-        is_newest = (i == len(articles) - 1)
-        cards_html.append(build_card_html(article, is_newest=is_newest))
+    for article in articles:
+        cards_html.append(build_card_html(article))
 
     # 最新が一番上になるよう逆順で結合
     cards_block = "\n".join(reversed(cards_html))
@@ -104,7 +96,7 @@ def update_archive(archive_html, articles):
         '<div class="article-list">\n' + cards_block + "\n"
     )
 
-    # 4. count を更新
+    # 3. count を更新
     # 既存の記事数 + 追加記事数
     count_match = re.search(r'<span id="count">(\d+)</span>', html)
     if count_match:
@@ -162,6 +154,18 @@ def main():
     new_sitemap = update_sitemap(sitemap_xml, articles)
     write_text(SITEMAP_PATH, new_sitemap)
     print("Updated sitemap.xml")
+
+    # article-dates.json に公開日を追記
+    dates_path = REPO_ROOT / "article-dates.json"
+    with open(dates_path, encoding="utf-8") as f:
+        article_dates = json.load(f)
+    for article in articles:
+        slug = article["slug"]
+        if slug not in article_dates:
+            article_dates[slug] = {"pub_date": article["publish_utc"][:10]}
+    with open(dates_path, "w", encoding="utf-8") as f:
+        json.dump(article_dates, f, indent=2, ensure_ascii=False)
+    print("Updated article-dates.json")
 
     print("Done.")
 
