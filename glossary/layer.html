@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>レイヤーとは？Photoshopの基本概念を調べたメモ｜ツバサのメモ帳</title>
+<meta name="description" content="Photoshopのレイヤーとは何かを調べたメモ。デザイナーに「レイヤー分けて送って」と言われて意味がわからなかった。透明なシートを重ねる仕組み、PSD形式でレイヤーを保持する方法、バナー作成や白抜きなどEC実務での活用場面についてまとめました。">
+<meta name="keywords" content="レイヤー とは,Photoshop レイヤー,レイヤー 意味,レイヤー分け,画像編集 レイヤー">
+<meta property="og:title" content="レイヤーとは？Photoshopの基本概念を調べたメモ｜ツバサのメモ帳">
+<meta property="og:description" content="レイヤーの仕組みをEC実務の視点で調べた。デザイナーに「レイヤー分けて」と言われたときに知っておきたい基本を整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/layer.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/layer.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "レイヤーとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "レイヤーとは、画像編集ソフトで使われる「透明なシートを重ねる」仕組みのことです。1枚の画像に見えるものが、実は複数のレイヤー（層）に分かれていて、文字・写真・背景などをそれぞれ独立して編集できるようになっています。Photoshopをはじめ、多くの画像編集ソフトで採用されている基本概念です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「レイヤー分けて送って」とはどういう意味？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "レイヤーが統合（結合）されていない状態で保存してほしいという意味です。レイヤーが分かれていれば、受け取った側が文字の修正や背景の差し替えなどを個別に行えます。PSD形式で保存すればレイヤー情報が保持されます。JPEGやPNGで保存するとレイヤーは統合されてしまいます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "レイヤーを統合するとどうなる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "複数のレイヤーが1枚に合体し、個別の編集ができなくなります。ファイルサイズは小さくなりますが、後から「文字だけ直したい」「背景だけ変えたい」といった修正ができなくなるため、統合前のPSDファイルは別途保管しておくのが安全です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "レイヤー情報を保持できるファイル形式は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photoshopの場合はPSD形式が標準です。TIFF形式でもレイヤーを保持して保存できます。一方、JPEGやPNG、WebPなどのWeb用画像形式はレイヤーに対応しておらず、保存時に自動的に統合されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Photoshop以外でもレイヤーは使える？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。無料の画像編集ソフトであるGIMPやPhotopea、スマホアプリのibisPaintやMediBang Paintなどでもレイヤー機能が使えます。基本的な考え方はPhotoshopと同じで、透明なシートを重ねて編集する仕組みです。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; レイヤー
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>レイヤーとは？<br>Photoshopの基本概念を調べたメモ</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品画像のバナーを外注デザイナーに依頼したとき、納品時に「レイヤー分けて送って」と言われた。Photoshopは少し触れるけど、レイヤーの概念をちゃんと理解していなかったので、この機会に調べてみた。わかったことをメモしておく。</p>
+
+<h2>レイヤーとは</h2>
+
+<p>ひとことで言うと、透明なシートを何枚も重ねて1つの画像を作る仕組みのこと。Photoshopをはじめとする画像編集ソフトの基本的な概念だ。</p>
+
+<p><a href="https://helpx.adobe.com/jp/photoshop/using/layer-basics.html" target="_blank" rel="noopener noreferrer">Adobeの公式ヘルプ</a>によると、レイヤーは透明なフィルムのようなもので、それぞれのレイヤーに文字・写真・図形などを配置できる。レイヤーの透明な部分からは下のレイヤーが見える仕組みになっていて、全部重ねると1枚の画像に見えるというわけだ。</p>
+
+<p>たとえば商品バナーなら、こんな感じでレイヤーが分かれている。</p>
+
+<ul>
+<li>一番下: 背景色（白やグレーなど）</li>
+<li>真ん中: 商品写真</li>
+<li>上: キャッチコピーの文字</li>
+<li>最上部: セール用のアイコンやバッジ</li>
+</ul>
+
+<p>こうやって分かれていれば、「文字だけ修正したい」「背景色を変えたい」というときに、他の要素に影響を与えずに編集できる。<a href="https://www.adobe.com/jp/creativecloud/photography/discover/layers.html" target="_blank" rel="noopener noreferrer">Adobe Creative Cloudの解説ページ</a>でも、レイヤーを使う最大のメリットは「非破壊編集ができること」だと書いてあった。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC担当として仕事をしていると、レイヤーを意識する場面がいくつかある。僕が実際に遭遇したケースを書いておく。</p>
+
+<h3>デザイナーとのデータやり取り</h3>
+
+<p>バナーやLP用の画像をデザイナーに依頼すると、納品ファイルがPSD形式で届くことがある。PSDはPhotoshopの保存形式で、レイヤー情報をそのまま保持できる。逆に「JPEGで送ります」と言われた場合、レイヤーは統合されているので、後から個別の修正ができない。</p>
+
+<p>修正の可能性があるデータは「レイヤーを保持した状態のPSD」で受け取っておくのが大事だと、<a href="https://saruwakakun.com/design/photoshop/layer" target="_blank" rel="noopener noreferrer">サルワカの Photoshopレイヤー解説</a>にも書いてあった。</p>
+
+<h3>商品画像の文字入れ・バナー作成</h3>
+
+<p>楽天やYahoo!ショッピングの商品画像に文字やアイコンを入れるとき、レイヤーを分けておくと修正が楽だ。「セール価格を変えたい」「キャッチコピーを差し替えたい」といった修正は、文字レイヤーだけ編集すれば済む。<a href="https://shuffle.genkosha.com/software/photoshop/skill/20027.html" target="_blank" rel="noopener noreferrer">玄光社のPhotoshop解説記事</a>にも、レイヤーを活用したバナー制作の基本が紹介されていた。</p>
+
+<h3>白抜き画像の作成</h3>
+
+<p>商品写真の背景を白にする「白抜き」作業でもレイヤーが使われる。商品部分を切り抜いたレイヤーと、白い背景レイヤーを重ねるという仕組みだ。スマホアプリでも同じような操作ができるものがある。レタッチアプリについては<a href="/retouch-apps.html">スマホレタッチアプリ5選</a>にまとめている。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>レイヤーが多いほどファイルサイズが大きくなる</h3>
+
+<p>レイヤーを細かく分けるほど編集の自由度は上がるが、ファイルサイズも大きくなる。商品画像を大量に扱うEC業務では、作業用のPSD（レイヤーあり）とWeb掲載用のJPEG（レイヤー統合済み）を分けて管理するのが現実的だ。</p>
+
+<h3>JPEGやPNGにはレイヤー情報が残らない</h3>
+
+<p>Webで使うJPEGやPNGは、保存した時点でレイヤーが1枚に統合される。一度統合してしまうと元には戻せないので、修正の可能性がある画像は必ずPSD形式でも保存しておく。<a href="https://helpx.adobe.com/jp/photoshop/using/saving-files.html" target="_blank" rel="noopener noreferrer">Adobeの保存形式に関する公式ヘルプ</a>にも、作業中のデータはPSD形式で保存するよう推奨されていた。</p>
+
+<h3>レイヤーの「表示・非表示」を覚えておくと便利</h3>
+
+<p>Photoshopではレイヤーパネルの目のアイコンをクリックすると、そのレイヤーの表示・非表示を切り替えられる。「文字なしバージョンを作りたい」「背景色を比較したい」というときに、レイヤーを削除せず非表示にするだけで済むので覚えておくと便利だ。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="psd.html">PSD</a></li>
+<li><a href="tiff.html">TIFF</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/retouch-apps.html">スマホレタッチアプリ5選</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

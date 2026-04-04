@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>RGBとCMYKの違い｜Webと印刷で色が変わる理由｜ツバサのメモ帳</title>
+<meta name="description" content="RGBとCMYKの違いを調べたメモ。ECサイト用に作った商品画像を印刷に回したら色がくすんで見えた経験から、光の三原色とインクの四原色の仕組み、PhotoshopでのCMYK変換手順、印刷入稿時の注意点、EC実務で色の差を防ぐポイントを整理しました。">
+<meta name="keywords" content="RGB CMYK 違い,RGB CMYK 変換,色が変わる 印刷,色空間 とは,Web 印刷 色">
+<meta property="og:title" content="RGBとCMYKの違い｜Webと印刷で色が変わる理由｜ツバサのメモ帳">
+<meta property="og:description" content="Web用の画像を印刷に出したら色が違った。RGBとCMYKの違い、変換時の注意点をEC実務の視点で整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/rgb-cmyk.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/rgb-cmyk.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "RGBとCMYKの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RGBは光の三原色（赤・緑・青）で色を表現する方式で、パソコンやスマホの画面表示に使われます。CMYKはインクの四原色（シアン・マゼンタ・イエロー・ブラック）で色を表現する方式で、印刷物に使われます。色の作り方が根本的に異なるため、同じデータでも画面と印刷物では見え方が変わります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Web用の画像を印刷すると色が変わるのはなぜ？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Web用の画像はRGBモードで作られており、光を混ぜて色を出します。印刷ではCMYKのインクで色を再現するため、RGBで表現できる鮮やかな色（特に蛍光色に近い青や緑）がくすんで見えることがあります。これはRGBの色域（表現できる色の範囲）がCMYKより広いことが原因です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RGBからCMYKに変換するにはどうすればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photoshopなら「イメージ」→「モード」→「CMYKカラー」で変換できます。Illustratorでも同様にドキュメントのカラーモードを変更可能です。ただし変換すると色味が変わる場合があるので、変換後に画面上で色を確認し、必要に応じて調整するのが安全です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトの商品画像はRGBとCMYKどちらで作るべき？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ECサイトに掲載する画像はRGBで作ります。Webブラウザが表示できるのはRGB形式の画像（JPEG、PNG、WebPなど）だけなので、CMYKで作成すると正しく表示されない場合があります。印刷用にも使う予定がある場合は、RGB原本を保管しておき、印刷時にCMYKに変換するのがベストです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CMYKのKは何の略？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kは「Key Plate（キープレート）」の頭文字です。印刷ではシアン・マゼンタ・イエローの3色を混ぜても完全な黒にならないため、黒（ブラック）のインクを追加しています。Blackの「B」だとBlueと紛らわしいため、Kが使われています。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; RGB・CMYK
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>RGBとCMYKの違い｜<br>Webと印刷で色が変わる理由を調べた</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>ECサイト用に作った商品画像を、チラシに使うために印刷会社に渡したら「色がくすんで見える」と言われた。画面ではきれいな青だったのに、刷り上がりを見たら確かにどこか沈んだ色になっていた。原因を調べたら「RGBとCMYKの違い」に行き着いたので、わかったことをメモしておく。</p>
+
+<h2>RGBとCMYKとは</h2>
+
+<p>ひとことで言うと、色を表現するための2つの方式だ。RGBは画面表示用、CMYKは印刷用の色の作り方になる。</p>
+
+<p><a href="https://www.adobe.com/jp/creativecloud/design/discover/cmyk-and-rgb.html" target="_blank" rel="noopener noreferrer">Adobeの公式解説ページ</a>によると、RGBはRed（赤）・Green（緑）・Blue（青）の光の三原色を混ぜて色を作る方式で、パソコンやスマホの画面はこの方式で色を表示している。3色の光を全部混ぜると白になる「加法混色」と呼ばれる仕組みだ。</p>
+
+<p>一方、CMYKはCyan（シアン）・Magenta（マゼンタ）・Yellow（イエロー）・Key Plate（黒）の4色のインクで色を作る方式。印刷機はこの4色のインクを紙に重ねて色を再現している。インクを混ぜるほど暗くなる「減法混色」という仕組みになる。</p>
+
+<p><a href="https://www.graphic.jp/technical_guide/color_mode" target="_blank" rel="noopener noreferrer">グラフィックの入稿ガイド</a>にも書いてあったが、RGBで表現できる色の範囲（色域）はCMYKより広い。特に鮮やかな青や緑、蛍光色に近い色はRGBにはあるがCMYKでは再現できない。だからRGBで作ったデータをそのまま印刷すると、画面で見ていた色と違ってくるわけだ。</p>
+
+<table class="compare">
+<tr><th>項目</th><th>RGB</th><th>CMYK</th></tr>
+<tr><td>用途</td><td>画面表示（Web・スマホ・テレビ）</td><td>印刷（チラシ・パンフ・名刺）</td></tr>
+<tr><td>色の作り方</td><td>光を混ぜる（加法混色）</td><td>インクを重ねる（減法混色）</td></tr>
+<tr><td>色数</td><td>3色（赤・緑・青）</td><td>4色（シアン・マゼンタ・黄・黒）</td></tr>
+<tr><td>色域</td><td>広い</td><td>RGBより狭い</td></tr>
+<tr><td>全色混合時</td><td>白になる</td><td>暗い茶色になる（黒にはならない）</td></tr>
+</table>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC担当をしていると、RGBとCMYKの違いを意識する場面がたまにある。僕が遭遇したケースを書いておく。</p>
+
+<h3>Web用画像を印刷に流用するとき</h3>
+
+<p>冒頭に書いたとおり、ECサイト用に作った画像をそのまま印刷に使うと色味が変わる。<a href="https://natuna.jp/knowledge/column-9-7/" target="_blank" rel="noopener noreferrer">ナツナの印刷データガイド</a>でも解説されていたが、とくに鮮やかな色味の商品（アパレルの蛍光カラーなど）は差が目立ちやすい。チラシや商品カタログを作るときは、印刷会社にデータを渡す前にCMYKに変換しておくのが安全だ。</p>
+
+<h3>印刷会社から「CMYKで入稿してください」と言われたとき</h3>
+
+<p>僕は最初「カラーモード」の意味がわからなくて戸惑った。<a href="https://www.wave0.com/guide/color_mode.html" target="_blank" rel="noopener noreferrer">ウェーブの入稿ガイド</a>によると、RGBのまま入稿すると印刷所側で自動変換されるが、意図しない色味になることがある。だから事前にPhotoshopやIllustratorでCMYKに変換して、画面上で色を確認してから入稿するのが基本らしい。</p>
+
+<h3>商品の色味をWebと印刷物で揃えたいとき</h3>
+
+<p>ECサイトの商品画像と紙のカタログで、同じ商品なのに色が違って見えるとクレームの原因になる。完全に一致させるのは難しいが、印刷前に色校正（テスト印刷）を出してもらうと、ある程度の調整はできる。<a href="https://www.jfpi.or.jp/colormanagement/" target="_blank" rel="noopener noreferrer">日本印刷産業連合会のカラーマネジメントガイド</a>にも、印刷と画面の色を近づけるための基本的な考え方が紹介されていた。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>ECサイト用の画像はRGBで作る</h3>
+
+<p>WebブラウザはRGB形式の画像しか正しく表示できない。CMYK形式のJPEGをアップロードすると、ブラウザによっては色がおかしく表示されることがある。ECサイトに掲載する商品画像は、必ずRGBモードで保存する。商品画像のサイズや形式のルールは<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>にまとめてある。</p>
+
+<h3>印刷にも使うなら元データはRGBで保管</h3>
+
+<p>RGBからCMYKへの変換は可能だが、CMYKからRGBに戻しても失われた色域は復活しない。だから元の画像データはRGB形式で保管しておいて、印刷が必要になったときにCMYKに変換するのが正解だ。PhotoshopのPSD形式やTIFF形式なら、レイヤーや色情報を保ったまま保存できるので、元データの保管に向いている。</p>
+
+<h3>モニターのキャリブレーションも関係する</h3>
+
+<p>RGBとCMYKの違いだけでなく、そもそもモニターの色が正確でなければ、画面上で見ている色自体がズレている可能性がある。厳密に色を合わせたい場合は、モニターのキャリブレーション（色合わせ）をした上でCMYK変換するのが理想だと調べていてわかった。ただ、EC担当レベルでそこまでやる必要があるかというと、よほど色にシビアな商品でなければ気にしすぎなくて大丈夫だと思う。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="psd.html">PSD</a></li>
+<li><a href="tiff.html">TIFF</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

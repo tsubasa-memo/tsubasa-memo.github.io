@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>リサイズとは？画像の大きさを変える方法と注意点まとめ｜ツバサのメモ帳</title>
+<meta name="description" content="リサイズの意味を調べたメモ。画像の縦横ピクセル数を変更して大きさを変える操作のことで、トリミングとの違い、Photoshop・ペイント・スマホでのやり方、拡大リサイズで画質が落ちる理由や縦横比を固定する注意点を、EC実務の視点で整理しました。">
+<meta name="keywords" content="リサイズ とは,画像 リサイズ 方法,写真 サイズ変更,画像 縮小 やり方,リサイズ 画質">
+<meta property="og:title" content="リサイズとは？画像の大きさを変える方法と注意点まとめ｜ツバサのメモ帳">
+<meta property="og:description" content="リサイズの意味と、画像の縦横サイズを変更する方法をEC実務の視点で整理。縮小・拡大の注意点やツールも紹介。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/resize.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/resize.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "リサイズとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "リサイズとは、画像の縦横のピクセル数を変更して大きさを変える操作のことです。英語の「resize（サイズを変える）」がそのままカタカナになった言葉で、縮小も拡大もまとめてリサイズと呼びます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リサイズとトリミングの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "リサイズは画像全体の縦横サイズを拡大・縮小する操作です。トリミングは画像の一部を切り取る操作で、残った部分のピクセル数は変わりますが、画像を引き伸ばしたり縮めたりはしません。リサイズは全体を拡縮、トリミングは一部を切り取り、という違いがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "画像を拡大するリサイズで画質は落ちますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、元の画像より大きくリサイズすると画質が落ちます。存在しないピクセルを補完して作るため、ぼやけたり輪郭がギザギザになったりします。縮小の場合は情報を間引くだけなので大きな劣化は起きにくいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料でリサイズできるツールはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Windowsに標準搭載されている「ペイント」や、Macの「プレビュー」アプリでリサイズできます。複数枚を一括でリサイズしたい場合は、Photoshopのバッチ処理やIrfanViewなどのフリーソフトが便利です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイト用に画像をリサイズするときの注意点は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "各モールの推奨ピクセルサイズを確認してからリサイズすることが大切です。Amazonなら長辺1600px以上、楽天なら横700px以上が推奨されています。縮小しすぎるとズーム機能で粗く見えるので、推奨サイズは守ったほうがいいです。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; リサイズ
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>リサイズとは？<br>画像の大きさを変える方法と注意点</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>先輩から「この画像リサイズしておいて」と頼まれたのだけど、具体的に何をすればいいのかわからなかった。縮小するの？トリミングとは違うの？と混乱したので調べてみた。</p>
+
+<h2>リサイズとは</h2>
+
+<p>ひとことで言うと、画像の縦横のピクセル数を変更して大きさを変える操作のこと。英語の「resize（サイズを変える）」がそのままカタカナになった言葉で、縮小も拡大もまとめてリサイズと呼ぶ。</p>
+
+<p><a href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" target="_blank" rel="noopener noreferrer">Adobeの公式ヘルプ「画像のサイズ変更」</a>では、Photoshopで画像の幅と高さのピクセル数を変更する手順が載っている。メニューの「イメージ」→「画像解像度」でサイズを指定するだけなので、操作自体はそこまで難しくない。</p>
+
+<p>紛らわしいのが「トリミング」との違い。トリミングは画像の一部を切り取る操作で、リサイズは画像全体を拡大・縮小する操作。やっていることが違う。</p>
+
+<table class="compare">
+<tr><th>操作</th><th>やること</th><th>結果</th></tr>
+<tr><td>リサイズ</td><td>画像全体を拡大・縮小</td><td>構図は変わらず、ピクセル数が変わる</td></tr>
+<tr><td>トリミング</td><td>画像の一部を切り取る</td><td>構図が変わり、切り取った分だけ小さくなる</td></tr>
+</table>
+
+<p><a href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/photo-data.html" target="_blank" rel="noopener noreferrer">Adobeの画像データ基礎知識のページ</a>にもピクセル数と画像サイズの関係がわかりやすくまとめてあったので、あわせて読むと理解しやすいと思う。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>EC担当をしていると、リサイズが必要になる場面はしょっちゅうある。僕が遭遇したケースをいくつか紹介する。</p>
+
+<h3>モールへの画像アップロード</h3>
+
+<p>カメラで撮った商品写真はだいたい4000〜6000pxくらいある。これをそのままモールにアップロードすると、ファイルサイズが大きすぎてエラーになったり、アップロードに時間がかかったりする。<a href="https://liginc.co.jp/631411" target="_blank" rel="noopener noreferrer">LIGのPhotoshopリサイズ解説</a>でも紹介されているように、用途に合ったサイズに縮小してから使うのが基本だ。</p>
+
+<h3>メルマガやバナー用の画像作成</h3>
+
+<p>メルマガに貼る画像は横幅600〜700px程度が一般的。商品写真をそのまま貼るとメールの容量が大きくなりすぎるので、リサイズして軽くしてから使う。バナーも同様で、指定サイズにリサイズしてからデザインに組み込む。</p>
+
+<h3>SNS用の画像書き出し</h3>
+
+<p>Instagramの投稿画像は1080×1080pxが推奨されている。一眼カメラで撮った写真はそれよりずっと大きいので、リサイズして合わせる必要がある。<a href="https://photomarche.net/resize/" target="_blank" rel="noopener noreferrer">フォトマルシェのリサイズ方法解説</a>にも、用途別の推奨サイズがまとまっていて参考になった。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>拡大リサイズは画質が落ちる</h3>
+
+<p>画像を元のサイズより大きくリサイズすると、存在しないピクセルをソフトが推測して補うことになる。その結果、ぼやけたり輪郭がギザギザになったりする。縮小は情報を間引くだけなので大きな劣化は起きにくいが、拡大は要注意だ。基本的に「大きい画像を小さくする」のは大丈夫だけど、「小さい画像を大きくする」のは避けたほうがいい。</p>
+
+<h3>縦横比を固定してリサイズする</h3>
+
+<p>リサイズするときに縦横比（アスペクト比）を固定しないと、写真が横に伸びたり縦に潰れたりしてしまう。Photoshopでもペイントでも、縦横比を固定する設定があるので、必ずオンにしておくこと。<a href="https://321web.link/photoshop-resizing/" target="_blank" rel="noopener noreferrer">321webのPhotoshopリサイズ解説</a>にも、縦横比固定の手順が詳しく載っている。</p>
+
+<h3>リサイズとファイルサイズの圧縮は別の話</h3>
+
+<p>リサイズはピクセル数を変える操作。ファイルサイズ（KB・MB）を小さくしたいなら、JPEG圧縮率を上げたり画像形式を変えたりする「圧縮」が必要になる。リサイズすればファイルサイズも減ることが多いが、目的に応じて使い分けたほうがいい。画像の圧縮については<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>にまとめてある。各モールの画像ルールは<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>が参考になる。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="pixel-size.html">ピクセルサイズ</a></li>
+<li><a href="image-size.html">画像サイズ</a></li>
+<li><a href="trimming.html">トリミング</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/compress-product-image.html">商品画像の圧縮テクニック</a></li>
+<li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>

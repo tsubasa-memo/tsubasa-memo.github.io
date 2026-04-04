@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>BMPとは？古い画像形式がまだ使われている場面を調べた｜ツバサのメモ帳</title>
+<meta name="description" content="BMPファイルの意味と特徴を調べたメモ。Microsoft開発のWindowsビットマップ形式で、無圧縮のため画質劣化がない反面ファイルサイズが大きい。古い社内システムやスキャナーでまだ使われている理由、PNGやJPEGへの変換方法をまとめました。">
+<meta name="keywords" content="BMP とは,BMPファイル,ビットマップ 画像,BMP PNG 違い,BMP 変換">
+<meta property="og:title" content="BMPとは？古い画像形式をまだ使う場面があった｜ツバサのメモ帳">
+<meta property="og:description" content="BMPファイルの意味と特徴を調べたメモ。古いシステムでまだ使われている理由やPNG・JPEGとの違いを整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/bmp.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/bmp.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "BMPとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BMPはBitmap（ビットマップ）の略で、MicrosoftがWindows用に開発した画像ファイル形式です。基本的に無圧縮でデータを保存するため、画質の劣化がない一方、ファイルサイズが非常に大きくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BMPとPNGの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "どちらも画質の劣化がない形式ですが、PNGは可逆圧縮でファイルサイズを小さくできるのに対し、BMPは基本的に無圧縮なのでファイルサイズが大きくなります。Web用途やデータのやり取りではPNGのほうが扱いやすいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BMPファイルが今でも使われる場面はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "古い業務システムやWindowsの一部機能（アイコンなど）ではまだBMP形式が使われています。また、画像処理の中間データや、圧縮による劣化を完全に避けたい場合に使われることもあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BMPファイルをJPEGやPNGに変換するには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Windowsの標準アプリ「ペイント」で開いて「名前を付けて保存」からJPEGやPNGを選べば変換できます。Macの場合は「プレビュー」アプリで同様の操作が可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BMPファイルはECサイトにアップロードできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ほとんどのECサイトではBMP形式に対応していません。ファイルサイズも大きすぎるため、JPEGやPNGに変換してからアップロードする必要があります。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; BMP
+</div>
+</nav>
+
+<section class="hero">
+<div class="wrap">
+<h1>BMPとは？<br>古い画像形式をまだ使う場面があった</h1>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<p>こんにちは、ツバサです。</p>
+
+<p>社内の古い在庫管理システムから商品画像を書き出したら、ファイルの拡張子が「.bmp」になっていた。見たことはあるけど普段使わない形式だし、ECサイトにもアップできなかった。BMPって何なのか、今さらながら調べてみた。</p>
+
+<h2>BMPとは</h2>
+
+<p>ひとことで言うと、MicrosoftがWindows用に開発した画像ファイル形式のこと。BMPは「Bitmap（ビットマップ）」の略で、正式には「Windows bitmap」と呼ばれる。</p>
+
+<p><a href="https://e-words.jp/w/BMP.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、BMPはWindowsが標準で対応している画像形式の一つで、基本的に無圧縮でデータを保存する。つまり、画像の色情報をそのまま1ピクセルずつ記録しているので、画質の劣化がない代わりにファイルサイズがとても大きくなる。</p>
+
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/bmp-file.html" target="_blank" rel="noopener noreferrer">Adobeの公式ページ</a>でも、BMPは非圧縮データが入っているため高画質なデジタル画像の保管と表示に適している、と書かれていた。白黒2値画像から24ビットフルカラー（約1677万色）まで対応できるらしい。</p>
+
+<p><a href="https://ja.wikipedia.org/wiki/Windows_bitmap" target="_blank" rel="noopener noreferrer">Wikipediaの解説</a>を読むと、BMPはMicrosoftとIBMが共同でOSを開発していた時代に作られた形式とのこと。かなり歴史の古い画像形式で、Windowsの初期から使われてきたものだ。</p>
+
+<h2>EC実務で出てくる場面</h2>
+
+<p>BMPは古い形式だけど、EC業務で意外なところで出くわすことがある。</p>
+
+<h3>古い社内システムからのデータ出力</h3>
+
+<p>僕が遭遇したのがまさにこのケース。古い在庫管理システムや基幹システムでは、画像の保存形式がBMPに限定されていることがある。システムが開発された時代はBMPが標準だったので、そのまま残っているのだろう。</p>
+
+<h3>スキャナーで取り込んだデータ</h3>
+
+<p>古いスキャナーや複合機では、スキャンした画像がBMP形式で保存されることがある。<a href="https://www.wave-inc.co.jp/weblog/?p=2897" target="_blank" rel="noopener noreferrer">WAVEの解説記事</a>でも、BMPは無圧縮のため画像処理の中間データとして使われることがあると紹介されていた。最近のスキャナーはPDFやJPEGで保存できるものがほとんどだが、古い機器ではBMPしか選べないこともある。</p>
+
+<h3>Windowsのペイントで保存したとき</h3>
+
+<p>Windowsの「ペイント」で画像を編集して保存すると、デフォルトの保存形式がBMPになっていることがある。うっかりそのまま保存してしまうと、ファイルサイズが何倍にも膨れ上がることになる。</p>
+
+<h2>覚えておきたいポイント</h2>
+
+<h3>BMPはWeb用途には向かない</h3>
+
+<p>BMPは無圧縮なのでファイルサイズが非常に大きい。たとえば1000×1000pxの画像だと、JPEGなら数百KBで済むところがBMPだと数MBになる。ECサイトにアップロードする前に、必ずJPEGか<a href="png.html">PNG</a>に変換しよう。変換はWindowsの「ペイント」やMacの「プレビュー」で「名前を付けて保存」から形式を選ぶだけでできる。</p>
+
+<h3>画質は劣化しないが圧縮もされない</h3>
+
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/comparison/bmp-vs-png.html" target="_blank" rel="noopener noreferrer">AdobeのBMPとPNGの比較ページ</a>によると、BMPもPNGもどちらも画質の劣化がない形式だが、PNGは可逆圧縮でファイルサイズを抑えられる。つまり、画質を保ちつつサイズも小さくしたいなら、BMPよりPNGのほうが優秀だ。</p>
+
+<h3>印刷用途ではそのまま使えない</h3>
+
+<p>BMPはRGBカラーモードにしか対応していないので、印刷用のCMYKデータとしては使えない。印刷に回す場合は、Photoshopなどの画像編集ソフトでCMYKに変換し、<a href="tiff.html">TIFF</a>やPSD形式で保存し直す必要がある。画像ファイル形式の違いについては<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
+
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="png.html">PNG</a></li>
+<li><a href="tiff.html">TIFF</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
+</ul>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 ツバサのメモ帳</div>
+</footer>
+</body>
+</html>
