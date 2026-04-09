@@ -26,6 +26,7 @@
 - [写真のレタッチとは？加工との違いと基本の種類まとめ](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチの種類、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
 - [カメラ性能で選ぶスマホ｜写真がきれいに撮れる機種まとめ](https://tsubasa-memo.github.io/camera-smartphones.html): iPhone、Pixel、Galaxy、Xperia、AQUOSのカメラ性能比較と実勢価格をまとめた記事
 - [スマホでできる写真レタッチ｜おすすめ無料アプリ5選と使い分け](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed、Lightroom Mobile、PhotoDirector、SNOW、TouchRetouchなど用途別にレタッチアプリを比較した記事
+- [AIモデル着せ替えサービスの料金比較｜EC向け11社まとめ](https://tsubasa-memo.github.io/ai-model-tryon.html): EC商品のモデル着用画像をAIで生成できるサービス11社の料金・スペック・生身モデル撮影との比較をまとめた記事
 
 ## 運営者
 
