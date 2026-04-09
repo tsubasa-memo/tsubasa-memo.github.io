@@ -22,13 +22,14 @@
 ### AI
 - [ニキビがコンプレックスの僕がNano Bananaで消してみた。これってAI？レタッチ？](https://tsubasa-memo.github.io/nano-banana-acne.html): AI画像生成ツール「Nano Banana」でニキビを消してみた実験記録。AIとレタッチの仕組みの違い、画質の限界も正直にレポートした記事
 - [AIレタッチアプリの限界｜スマホ補正とプロの仕上がりはどこが違う？](https://tsubasa-memo.github.io/ai-retouch-limits.html): AIレタッチアプリができること・できないことを整理した記事。肌補正・背景削除は得意でも、自然な質感を保った肌レタッチや複数人の目線修正はプロにしか対応できないことを解説
+- [ささげ業務をAIで効率化｜撮影・採寸・原稿の自動化ツール比較](https://tsubasa-memo.github.io/sasage-ai.html): ささげ業務をAIツールで効率化する方法をSASAGE.AI・SAI SOON・ChatGPT・Remove.bgなど工程別にまとめた記事
 
 ### レタッチ
 - [レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】](https://tsubasa-memo.github.io/retouch-services.html): 個人で使える写真レタッチ・修正サービス7社（レタッチインク・カメラのキタムラ・リメージ・Motto・グラフィックファクトリー・BELLEFOTO・ひとフォト）の料金・納期・対応範囲を比較した記事
 - [写真レタッチアプリおすすめ10選｜無料で使える比較【2026年版】](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed・TouchRetouch・Lightroom Mobileなど写真の再色付け・色調補正・不要物除去に対応するスマホアプリ10選を用途別に比較した記事
 - [レタッチとは？写真の修正・補正・加工の違いをわかりやすく解説【初心者向け】](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチでできること・できないこと、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
 - [背景切り抜き・白抜きの方法比較｜AI無料ツールからプロ外注まで【2026年版】](https://tsubasa-memo.github.io/background-white.html): Remove.bg、Canva、PicWishなどAI切り抜きツールからプロ外注まで、背景白抜きの方法を費用別に比較した記事
-- [背景切り抜きの費用相場まとめ｜1枚100円台から依頼できる外注先比較](https://tsubasa-memo.github.io/background-cutout-outsource.html): 写真の背景切り抜きを外注する費用相場（1枚100円台〜）と、切り抜き専門サービス・レタッチ業者・クラウドソーシングの料金・品質・納期を比較した記事
+- [背景切り抜きの費用相場まとめ｜1枚39円から依頼できる外注先比較](https://tsubasa-memo.github.io/background-cutout-outsource.html): 写真の背景切り抜きを外注する費用相場（1枚39円〜）と、切り抜き専門サービス・レタッチ業者・クラウドソーシングの料金・品質・納期を比較した記事
 - [写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】](https://tsubasa-memo.github.io/retouch-pricing-database.html): 写真レタッチ・画像加工を外注する場合の費用相場を20社以上のサービスから調査した記事。肌レタッチ・色補正・切り抜き・合成など作業内容別の料金目安
 - [写真レタッチの外注費用を調べた｜個人依頼の料金相場を加工別に比較](https://tsubasa-memo.github.io/retouch-cost-guide.html): 個人で1枚から依頼した場合のレタッチ外注費用を加工内容別に早見表で比較し、ボリュームディスカウントの仕組みと見積もりチェックリストをまとめた記事
 - [画像加工・写真編集を外注するならどこ？代行サービスの種類と選び方ガイド](https://tsubasa-memo.github.io/image-editing-outsource.html): 画像加工・写真編集の外注先を専門業者・クラウドソーシング・フリーランスの3タイプに分けて比較し、選び方と依頼前の準備をまとめた記事
@@ -57,13 +58,15 @@
 - [インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで](https://tsubasa-memo.github.io/snap-photo-vs-instagrammable.html): インスタ映え疲れからスナップ写真に転向した話。映えとスナップの違い・スマホで始めるコツをまとめた記事
 - [インスタのフィルターとLightroomの違い、やっと理解した](https://tsubasa-memo.github.io/instagram-filter-vs-lightroom.html): インスタのフィルターとAdobe Lightroomの仕組みの違い・色補正の細かさ・使い方の違いをまとめた記事
 - [Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール【2026年版】](https://tsubasa-memo.github.io/instagram-image-size.html): Instagramの投稿タイプ別に最適な画像サイズ・アスペクト比を表でまとめた記事
+- [スマホでEC商品撮影を始める方法｜必要な機材と撮り方のコツ](https://tsubasa-memo.github.io/ec-product-photo-smartphone.html): スマホだけでEC商品撮影を始める方法を機材・セッティング・撮り方・アプリ加工・プロ判断ラインまでまとめた記事
 
 ### EC・実務
 - [Amazon・楽天・メルカリ 商品画像ルール違反を防ぐ比較まとめ【2026年版】](https://tsubasa-memo.github.io/ec-image-rules.html): Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの商品画像ガイドラインと違反ペナルティを比較した記事
 - [楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項を確認した【2026年版】](https://tsubasa-memo.github.io/rakuten-image-rules.html): 楽天市場の商品画像ルール（サイズ・枚数・テキスト占有率20%制限・禁止事項）とAmazon・メルカリとの違いをまとめた記事
 - [商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話](https://tsubasa-memo.github.io/compress-product-image.html): ECサイト掲載前の商品画像圧縮方法をTinyPNG・Squoosh・Lightroomなどツール別に比較した記事
-- [ECサイトの商品説明文の書き方｜売れるページに共通するポイント](https://tsubasa-memo.github.io/ec-product-description.html): Amazon・楽天・メルカリ等での商品説明文の書き方のコツ、テンプレート例、NGパターン、文字数の目安をまとめた記事
+- [商品説明文の書き方｜ECサイトで売れる原稿のテンプレートとコツ](https://tsubasa-memo.github.io/ec-product-description.html): EC商品説明文の書き方を5W2Hフレーム・商材別テンプレート・NGパターン・SEOのコツとともにまとめた記事
 - [ささげ業務とは？代行会社の選び方と比較メモ【2026年版】](https://tsubasa-memo.github.io/sasage-outsource.html): ささげ業務（撮影・採寸・原稿）の代行会社の選び方と費用感を比較した記事
+- [ささげ業務の費用相場まとめ｜外注・内製・AIの料金比較](https://tsubasa-memo.github.io/sasage-cost.html): ささげ業務の費用相場を代行会社への外注・自社内製・AIツールの3パターンで比較した記事
 
 ### 副業・キャリア
 - [動画編集 vs レタッチャー副業｜スクール費用・求人・AI影響を比較【2026年版】](https://tsubasa-memo.github.io/video-vs-retouch-career.html): スクール費用・求人データ・AIの影響を比較した記事。動画編集は案件豊富で月5〜10万円を目指しやすく、レタッチは専門性を高めてキャリアにつなげやすい
