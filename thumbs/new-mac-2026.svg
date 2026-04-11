@@ -1,23 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2e6b8a"/>
-      <stop offset="100%" style="stop-color:#1a4a62"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e6b8a"/>
+      <stop offset="100%" stop-color="#1a4a62"/>
     </linearGradient>
   </defs>
-  <rect width="320" height="180" rx="4" fill="url(#bg)"/>
-  <!-- Laptop body -->
-  <rect x="95" y="40" width="130" height="80" rx="6" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2"/>
-  <!-- Screen -->
-  <rect x="101" y="46" width="118" height="62" rx="2" fill="rgba(255,255,255,.12)"/>
-  <!-- Apple logo on screen -->
-  <circle cx="160" cy="72" r="8" fill="rgba(255,255,255,.3)"/>
-  <rect x="158" y="60" width="4" height="8" rx="2" fill="rgba(255,255,255,.3)"/>
-  <!-- Keyboard base -->
-  <path d="M80 120 L95 120 L95 122 Q95 126 99 126 L221 126 Q225 126 225 122 L225 120 L240 120 L240 128 Q240 132 236 132 L84 132 Q80 132 80 128 Z" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2"/>
-  <!-- Hinge line -->
-  <line x1="95" y1="120" x2="225" y2="120" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
-  <!-- Main text -->
-  <text x="160" y="158" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,.95)">新生活のMac選び Neo・Air・Pro</text>
-  <text x="160" y="174" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,.6)">2026年版 3モデル比較</text>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">Neo・Air・Pro</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">Macどれを選ぶ？</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">新生活向け比較</text>
 </svg>

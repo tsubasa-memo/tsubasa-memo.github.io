@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
-  <defs><linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#8a6b3a"/><stop offset="100%" style="stop-color:#6b4e2a"/></linearGradient></defs>
-  <rect width="320" height="180" fill="url(#bg5)"/>
-  <rect x="80" y="25" width="160" height="130" rx="10" fill="rgba(255,255,255,0.08)"/>
-  <rect x="135" y="40" width="50" height="60" rx="4" fill="rgba(255,255,255,0.15)"/>
-  <circle cx="160" cy="58" r="10" fill="rgba(255,255,255,0.2)"/>
-  <text x="200" y="75" text-anchor="start" fill="#e0d0b8" font-family="sans-serif" font-size="10">¥30〜</text>
-  <text x="160" y="115" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">スマホで証明写真</text>
-  <text x="160" y="138" text-anchor="middle" fill="#d0c0a0" font-family="sans-serif" font-size="10">アプリ＋コンビニ</text>
-  <text x="160" y="152" text-anchor="middle" fill="#b0a080" font-family="sans-serif" font-size="9">30円から</text>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6b3a"/>
+      <stop offset="100%" stop-color="#6b4e2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">スマホで作る</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">証明写真</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">アプリ＋コンビニで30円〜</text>
 </svg>

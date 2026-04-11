@@ -1,41 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#4c1d95"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e6b8a"/>
+      <stop offset="100%" stop-color="#1a4a62"/>
     </linearGradient>
   </defs>
-  <rect width="320" height="180" fill="url(#bg)"/>
-
-  <!-- 左：平置きTシャツ -->
-  <g transform="translate(110,50)">
-    <rect x="-22" y="-8" width="44" height="40" rx="3" fill="rgba(255,255,255,0.12)"/>
-    <!-- Tシャツ形状 -->
-    <path d="M-14,-4 L-14,-12 L-6,-12 L-3,-6 L3,-6 L6,-12 L14,-12 L14,-4 L8,-4 L8,20 L-8,20 L-8,-4 Z" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.4" stroke-linejoin="round"/>
-  </g>
-
-  <!-- 中央：矢印 -->
-  <g transform="translate(160,52)" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="-8" y1="0" x2="8" y2="0"/>
-    <polyline points="4,-4 8,0 4,4"/>
-    <!-- AI sparkle -->
-    <circle cx="0" cy="-10" r="1.5" fill="rgba(255,255,255,0.6)" stroke="none"/>
-    <line x1="0" y1="-14" x2="0" y2="-6" stroke-width="0.8" stroke="rgba(255,255,255,0.4)"/>
-    <line x1="-4" y1="-10" x2="4" y2="-10" stroke-width="0.8" stroke="rgba(255,255,255,0.4)"/>
-  </g>
-
-  <!-- 右：モデル着用イメージ -->
-  <g transform="translate(210,50)">
-    <rect x="-22" y="-8" width="44" height="40" rx="3" fill="rgba(255,255,255,0.12)"/>
-    <!-- 人物シルエット -->
-    <circle cx="0" cy="-2" r="5" fill="none" stroke="#fff" stroke-width="1.4"/>
-    <!-- 体 -->
-    <path d="M-8,20 L-6,8 L-3,4 L3,4 L6,8 L8,20" fill="none" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/>
-    <!-- Tシャツライン -->
-    <line x1="-5" y1="6" x2="5" y2="6" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
-  </g>
-
-  <!-- メインタイトル -->
-  <text x="160" y="116" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600">AIモデル着せ替え 料金比較</text>
-  <text x="160" y="137" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="11">EC向け11社まとめ</text>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">EC向け11社まとめ</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">AIモデル着せ替え</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">料金比較</text>
 </svg>

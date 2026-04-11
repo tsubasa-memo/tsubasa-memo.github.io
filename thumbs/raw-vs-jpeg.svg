@@ -1,33 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
-<defs>
-<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2e6b8a"/><stop offset="100%" stop-color="#1a4a62"/></linearGradient>
-<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,.16)"/><stop offset="100%" stop-color="rgba(255,255,255,.04)"/></linearGradient>
-</defs>
-<rect width="320" height="180" fill="url(#g)" rx="6"/>
-<circle cx="50" cy="30" r="45" fill="rgba(255,255,255,.03)"/>
-<circle cx="280" cy="150" r="40" fill="rgba(255,255,255,.03)"/>
-<!-- RAW file icon -->
-<rect x="68" y="28" width="56" height="64" rx="4" fill="url(#s)" stroke="rgba(255,255,255,.4)" stroke-width="1.2"/>
-<path d="M108 28 L124 44 L108 44 Z" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
-<text x="96" y="72" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="sans-serif" font-size="12" font-weight="700">RAW</text>
-<!-- arrow -->
-<path d="M135 60 L165 60" stroke="rgba(255,255,255,.4)" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M160 55 L168 60 L160 65" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<!-- JPEG file icon -->
-<rect x="178" y="28" width="56" height="64" rx="4" fill="url(#s)" stroke="rgba(255,255,255,.4)" stroke-width="1.2"/>
-<path d="M218 28 L234 44 L218 44 Z" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
-<text x="206" y="72" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="sans-serif" font-size="11" font-weight="700">JPEG</text>
-<!-- monitor/software icon -->
-<rect x="128" y="30" width="24" height="18" rx="2" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.25)" stroke-width=".8"/>
-<rect x="137" y="48" width="6" height="4" fill="rgba(255,255,255,.2)"/>
-<rect x="133" y="52" width="14" height="2" rx="1" fill="rgba(255,255,255,.15)"/>
-<!-- sliders icon (representing editing) -->
-<line x1="82" y1="84" x2="112" y2="84" stroke="rgba(255,255,255,.2)" stroke-width="1.5" stroke-linecap="round"/>
-<circle cx="98" cy="84" r="3" fill="rgba(255,255,255,.5)"/>
-<line x1="192" y1="84" x2="222" y2="84" stroke="rgba(255,255,255,.2)" stroke-width="1.5" stroke-linecap="round"/>
-<circle cx="202" cy="84" r="3" fill="rgba(255,255,255,.5)"/>
-<!-- text -->
-<text x="160" y="118" text-anchor="middle" fill="rgba(255,255,255,.95)" font-family="sans-serif" font-size="14" font-weight="600">RAW現像って何？</text>
-<text x="160" y="138" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="sans-serif" font-size="11">JPEGとの違いと現像ソフトまとめ</text>
-<rect x="120" y="148" width="80" height="1" rx=".5" fill="rgba(255,255,255,.15)"/>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6b3a"/>
+      <stop offset="100%" stop-color="#6b4e2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">どちらで撮る？</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">RAW vs JPEG</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">初心者向け違いと選び方</text>
 </svg>

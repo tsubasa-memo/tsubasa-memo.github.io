@@ -1,49 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#4c1d95"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e6b8a"/>
+      <stop offset="100%" stop-color="#1a4a62"/>
     </linearGradient>
   </defs>
-  <rect width="320" height="180" fill="url(#bg)"/>
-
-  <!-- ロボット／AIアイコン -->
-  <rect x="110" y="22" width="100" height="72" rx="8" fill="rgba(255,255,255,0.1)"/>
-  <g transform="translate(160,54)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <!-- ロボット頭部 -->
-    <rect x="-18" y="-16" width="36" height="28" rx="5"/>
-    <!-- 目 -->
-    <circle cx="-7" cy="-4" r="3" fill="rgba(255,255,255,0.5)" stroke="none"/>
-    <circle cx="7" cy="-4" r="3" fill="rgba(255,255,255,0.5)" stroke="none"/>
-    <!-- 口 -->
-    <line x1="-6" y1="5" x2="6" y2="5" stroke-width="1.5"/>
-    <!-- アンテナ -->
-    <line x1="0" y1="-16" x2="0" y2="-22"/>
-    <circle cx="0" cy="-24" r="2.5" fill="rgba(255,255,255,0.4)" stroke="none"/>
-  </g>
-
-  <!-- 左下：カメラ小アイコン -->
-  <g transform="translate(128,82)" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round">
-    <rect x="-8" y="-6" width="16" height="12" rx="2"/>
-    <circle cx="0" cy="0" r="3.5"/>
-  </g>
-
-  <!-- 中央下：メジャー小アイコン -->
-  <g transform="translate(160,82)" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round">
-    <rect x="-10" y="-4" width="20" height="8" rx="2"/>
-    <line x1="-6" y1="-4" x2="-6" y2="0"/>
-    <line x1="0" y1="-4" x2="0" y2="-1"/>
-    <line x1="6" y1="-4" x2="6" y2="0"/>
-  </g>
-
-  <!-- 右下：ペン小アイコン -->
-  <g transform="translate(192,82)" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round">
-    <line x1="-5" y1="6" x2="7" y2="-6"/>
-    <line x1="5" y1="-4" x2="9" y2="-8"/>
-    <path d="M-5,6 L-7,8 L-4,7 Z" fill="rgba(255,255,255,0.4)" stroke="none"/>
-  </g>
-
-  <!-- メインタイトル -->
-  <text x="160" y="120" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="15" font-weight="700">ささげ業務をAIで効率化</text>
-  <text x="160" y="141" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="10">撮影・採寸・原稿の自動化ツール比較</text>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">撮影・採寸・原稿</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">ささげ × AI</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">自動化ツール比較</text>
 </svg>

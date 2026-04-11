@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
-  <defs><linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#6b5b8a"/><stop offset="100%" style="stop-color:#4a3a6b"/></linearGradient></defs>
-  <rect width="320" height="180" fill="url(#bg4)"/>
-  <rect x="80" y="25" width="160" height="130" rx="10" fill="rgba(255,255,255,0.08)"/>
-  <text x="130" y="58" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="11">動画編集</text>
-  <text x="160" y="78" text-anchor="middle" fill="#c8b8e0" font-family="sans-serif" font-size="14" font-weight="bold">VS</text>
-  <text x="190" y="58" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="11">レタッチ</text>
-  <text x="160" y="105" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold">副業で稼ぐなら</text>
-  <text x="160" y="124" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold">どっち？</text>
-  <text x="160" y="148" text-anchor="middle" fill="#a898c0" font-family="sans-serif" font-size="9">費用・求人・AI比較</text>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b5b8a"/>
+      <stop offset="100%" stop-color="#4a3a6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">副業で稼ぐなら</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">動画 vs レタッチ</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">どっちが向いてる？</text>
 </svg>

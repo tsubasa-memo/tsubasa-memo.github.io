@@ -1,13 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
-  <defs><linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#6b8a5b"/><stop offset="100%" style="stop-color:#4a6b3a"/></linearGradient></defs>
-  <rect width="320" height="180" fill="url(#bg7)"/>
-  <rect x="80" y="25" width="160" height="130" rx="10" fill="rgba(255,255,255,0.08)"/>
-  <text x="120" y="50" text-anchor="middle" fill="#c8e0b8" font-family="sans-serif" font-size="9">Amazon</text>
-  <text x="160" y="50" text-anchor="middle" fill="#c8e0b8" font-family="sans-serif" font-size="9">楽天</text>
-  <text x="200" y="50" text-anchor="middle" fill="#c8e0b8" font-family="sans-serif" font-size="9">メルカリ</text>
-  <line x1="110" y1="58" x2="210" y2="58" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-  <text x="160" y="85" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">EC商品画像</text>
-  <text x="160" y="106" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">ルール</text>
-  <text x="160" y="132" text-anchor="middle" fill="#b8d0a0" font-family="sans-serif" font-size="10">3サイト比較</text>
-  <text x="160" y="148" text-anchor="middle" fill="#98b080" font-family="sans-serif" font-size="9">ガイドライン整理</text>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b8a5b"/>
+      <stop offset="100%" stop-color="#4a6b3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <text x="160" y="76" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="sans-serif" font-size="13" font-weight="600">Amazon・楽天・メルカリ</text>
+  <text x="160" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="700">画像ルール</text>
+  <text x="160" y="148" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="13">プラットフォーム別比較</text>
 </svg>
