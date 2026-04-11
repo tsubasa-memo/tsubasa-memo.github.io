@@ -134,6 +134,14 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 .spec-table{font-size:13px}
 .spec-table th,.spec-table td{padding:8px 10px}
 }
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 </head>
 <body>
@@ -257,10 +265,34 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <div class="related">
 <h3>関連記事</h3>
-<p><a href="matching-app-photo-tips.html">マッチングアプリの写真、どこで撮るのが正解か調べた</a></p>
-<p><a href="job-hunting-photo-retouch.html">就活証明写真、アプリで加工していいラインはどこまで？</a></p>
-<p><a href="retouch-services.html">レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社</a></p>
-<p><a href="nano-banana-acne.html">ニキビがコンプレックスの僕がNano Bananaで消してみた</a></p>
+<a class="cite-card" href="matching-app-photo-tips.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">マッチングアプリの写真、どこで撮るのが正解か調べた</span>
+<span class="cite-url">tsubasa-memo.github.io/matching-app-photo-tips.html</span>
+</span>
+</a>
+<a class="cite-card" href="job-hunting-photo-retouch.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">就活証明写真、アプリで加工していいラインはどこまで？</span>
+<span class="cite-url">tsubasa-memo.github.io/job-hunting-photo-retouch.html</span>
+</span>
+</a>
+<a class="cite-card" href="retouch-services.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-services.html</span>
+</span>
+</a>
+<a class="cite-card" href="nano-banana-acne.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ニキビがコンプレックスの僕がNano Bananaで消してみた</span>
+<span class="cite-url">tsubasa-memo.github.io/nano-banana-acne.html</span>
+</span>
+</a>
 </div>
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
