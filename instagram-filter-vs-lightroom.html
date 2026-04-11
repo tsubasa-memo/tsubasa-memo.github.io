@@ -129,6 +129,14 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 .spec-table th,.spec-table td{padding:8px 10px}
 .insta-ref{max-width:100%}
 }
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 </head>
 <body>
@@ -243,9 +251,27 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <div class="related">
 <h3>関連記事</h3>
-<p><a href="snap-photo-vs-instagrammable.html">インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで</a></p>
-<p><a href="sns-photo-retouch-manners.html">盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</a></p>
-<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
+<a class="cite-card" href="snap-photo-vs-instagrammable.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">インスタ映えを狙いすぎてた自分が、スナップ写真の楽しさを知るまで</span>
+<span class="cite-url">tsubasa-memo.github.io/snap-photo-vs-instagrammable.html</span>
+</span>
+</a>
+<a class="cite-card" href="sns-photo-retouch-manners.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</span>
+<span class="cite-url">tsubasa-memo.github.io/sns-photo-retouch-manners.html</span>
+</span>
+</a>
+<a class="cite-card" href="background-white.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</span>
+<span class="cite-url">tsubasa-memo.github.io/background-white.html</span>
+</span>
+</a>
 </div>
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
