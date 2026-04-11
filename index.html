@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
 <script>
@@ -11,10 +9,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-YYBFXHXMM6');
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
-     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ツバサのメモ帳｜カメラ・写真・EC周りの備忘録ブログ</title>
-<meta name="description" content="EC担当のツバサが、カメラ・写真撮影・画像編集・ECサイト運用で調べたことをまとめる備忘録ブログ。スマホ撮影、レタッチアプリ、証明写真、商品画像のルールなど、実務で役立つ情報を整理しています。">
+<meta name="description" content="メーカー勤務のEC担当ツバサが、カメラ・写真撮影・画像編集・ECサイト運用で調べたことをまとめる備忘録ブログ。スマホ撮影、レタッチアプリ、証明写真、商品画像のルールなど、実務で役立つ情報を整理しています。">
 <meta name="keywords" content="写真 レタッチ,EC 商品画像,カメラ 初心者,スマホ 写真,証明写真 アプリ,画像編集 アプリ,SDカード 選び方">
 <meta property="og:title" content="ツバサのメモ帳｜カメラ・写真・EC周りの備忘録ブログ">
 <meta property="og:description" content="EC担当者の写真・カメラ・画像編集の備忘録ブログ。実務で調べたことをまとめています。">
@@ -27,298 +25,308 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/site.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
-body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:780px;margin:0 auto;padding:0 20px}
-header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+:root{
+  --bg:#f7f6f2;
+  --text:#222;
+  --text-sub:#777;
+  --text-light:#aaa;
+  --accent:#2e6b8a;
+  --accent-light:#e6eff5;
+  --border:#e4e1db;
+  --card:#fff;
+  --tag-bg:#f0ede8;
+  --serif:"Noto Serif JP",serif;
+  --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 24px}
+
+/* ── Header ── */
+header{background:var(--card);border-bottom:1px solid var(--border);padding:16px 0}
 header .wrap{display:flex;align-items:center;justify-content:space-between}
-.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
-.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
-.hero{background:linear-gradient(135deg,#2e6b8a 0%,#1a4a62 100%);color:#fff;padding:56px 0 48px;text-align:center}
-.hero h1{font-size:26px;line-height:1.5;font-weight:700;margin-bottom:12px;letter-spacing:1px}
-.hero p{font-size:14px;opacity:.85;max-width:540px;margin:0 auto;line-height:1.8}
-main{padding:48px 0 64px}
-.cat-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
-.cat-link{display:inline-block;padding:10px 20px;font-size:13px;font-weight:700;color:var(--accent);background:var(--card);border:1px solid var(--border);border-radius:24px;text-decoration:none;transition:all .2s}
-.cat-link:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
-.section-title{font-size:14px;font-weight:700;color:var(--text-sub);margin-bottom:16px;padding-left:4px;letter-spacing:.5px}
-.article-list{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
-.article-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;transition:box-shadow .2s}
-.article-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.article-card a{display:block;color:inherit;text-decoration:none}
-.article-card a:hover{text-decoration:none}
-.card-dates{display:flex;align-items:center;gap:12px;margin-bottom:8px;font-size:12px;color:var(--text-sub)}
-.card-date-updated{font-weight:700;color:#fff;background:#c0392b;padding:2px 10px;border-radius:12px}
-.card-date-pub{font-weight:500;color:var(--text-sub)}
-.article-card h2{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.6}
-.article-card .card-desc{font-size:13px;color:var(--text-sub);line-height:1.7}
-.article-card .card-tag{display:inline-block;font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:2px 8px;border-radius:4px;margin-top:8px}
-.archive-btn{display:inline-block;padding:14px 36px;background:var(--accent);color:#fff;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:opacity .2s}
-.archive-btn:hover{opacity:.85;text-decoration:none}
-.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
-.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
-.author-box .author-icon img{width:100%;height:100%}
-.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
-.author-box .author-text p:last-child{margin-bottom:0}
-.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
-footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
-.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
-@media(max-width:600px){
-.hero h1{font-size:22px}
-.article-card{padding:16px 18px}
-.author-box{flex-direction:column;align-items:center;text-align:center}
+.site-name{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--text);letter-spacing:.5px}
+.header-nav{display:flex;gap:20px}
+.header-nav a{font-size:13px;color:var(--text-sub);font-weight:500}
+.header-nav a:hover{color:var(--accent);text-decoration:none}
+
+/* ── Hero ── */
+.hero{background:var(--card);border-bottom:1px solid var(--border);padding:36px 0 32px}
+.hero-inner{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
+.hero h1{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--text);line-height:1.4;letter-spacing:.5px}
+.hero-desc{font-size:13px;color:var(--text-sub);line-height:1.75;max-width:480px}
+
+/* ── Cat nav ── */
+.cat-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 40px}
+.cat-link{display:inline-block;padding:6px 16px;font-size:12px;font-weight:700;color:#fff;border-radius:20px;text-decoration:none;transition:opacity .2s;letter-spacing:.3px;border:none}
+.cat-link:hover{opacity:.8;text-decoration:none}
+.cat-link[href*="camera"]{background:#5b8fa8}
+.cat-link[href*="retouch"]{background:#7a6b8a}
+.cat-link[href*="ai"]{background:#4a8a7a}
+.cat-link[href*="photo"]{background:#a07850}
+.cat-link[href*="ec"]{background:#4a6ea8}
+.cat-link[href*="career"]{background:#8a6060}
+
+/* ── Main ── */
+main{padding:48px 0 80px}
+
+/* ── Section label ── */
+.section-label{font-size:11px;font-weight:700;color:var(--text-light);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:"";flex:1;height:1px;background:var(--border)}
+
+/* ── Featured grid ── */
+.featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:48px}
+.featured-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:box-shadow .25s}
+.featured-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.07)}
+.featured-card a{display:flex;flex-direction:column;color:inherit;text-decoration:none;height:100%}
+.featured-card a:hover{text-decoration:none}
+.featured-thumb{width:100%;height:160px;overflow:hidden;background:#eee;display:flex;align-items:center;justify-content:center}
+.featured-thumb img{width:100%;height:100%;object-fit:cover}
+.featured-body{padding:20px 22px;flex:1;display:flex;flex-direction:column;gap:8px}
+.badge-new{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1px;color:#fff;background:var(--accent);padding:3px 10px;border-radius:4px;text-transform:uppercase}
+.badge-pick{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--accent);background:var(--accent-light);padding:3px 10px;border-radius:4px}
+.featured-body h2{font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.55;color:var(--text)}
+.featured-body .card-desc{font-size:12px;color:var(--text-sub);line-height:1.75}
+.featured-body .card-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);display:inline-block;padding:2px 9px;border-radius:4px;margin-top:auto}
+
+/* ── Article list ── */
+.article-list{display:flex;flex-direction:column;gap:0;margin-bottom:40px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--card)}
+.article-card{border-bottom:1px solid var(--border)}
+.article-card:last-child{border-bottom:none}
+.article-card a{display:flex;align-items:center;gap:0;color:inherit;text-decoration:none;transition:background .2s}
+.article-card a:hover{background:#fafaf8;text-decoration:none}
+.card-thumb-sm{width:140px;min-height:96px;flex-shrink:0;overflow:hidden;background:#eee;display:flex;align-items:center;justify-content:center}
+.card-thumb-sm img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:18px 22px;flex:1;min-width:0}
+.card-meta{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.card-date{font-size:11px;color:var(--text-light);font-weight:500;letter-spacing:.5px}
+.card-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);display:inline-block;padding:2px 8px;border-radius:4px}
+.card-body h2{font-size:15px;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.55}
+.card-desc{font-size:12px;color:var(--text-sub);line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ── Archive btn ── */
+.archive-wrap{text-align:center;margin:32px 0 56px}
+.archive-btn{display:inline-block;padding:12px 40px;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;transition:all .2s;letter-spacing:.3px}
+.archive-btn:hover{background:var(--accent);color:#fff;text-decoration:none}
+
+/* ── Author box ── */
+.author-box{border-top:1px solid var(--border);padding-top:48px;display:flex;gap:20px;align-items:flex-start}
+.author-icon{width:56px;height:56px;flex-shrink:0;border-radius:50%;overflow:hidden;border:2px solid var(--border)}
+.author-icon img{width:100%;height:100%;object-fit:cover}
+.author-name{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--text);margin-bottom:6px}
+.author-text p{font-size:13px;color:var(--text-sub);line-height:1.8}
+
+/* ── Footer ── */
+footer{background:var(--card);border-top:1px solid var(--border);padding:28px 0;text-align:center;font-size:12px;color:var(--text-light);letter-spacing:.5px}
+.footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:12px}
+.footer-links a{color:var(--text-sub);font-size:12px}
+.footer-links a:hover{color:var(--accent);text-decoration:none}
+
+/* ── Responsive ── */
+@media(max-width:640px){
+  .hero h1{font-size:18px}
+  .featured-grid{grid-template-columns:1fr}
+  .hero-inner{flex-direction:column;gap:8px}
+  .featured-card a{flex-direction:column}
+  .featured-thumb{width:100%;min-height:160px}
+  .featured-body{padding:20px 20px}
+  .featured-body h2{font-size:17px}
+  .card-thumb-sm{width:100px;min-height:80px}
+  .card-body{padding:14px 16px}
+  .card-body h2{font-size:14px}
+  .card-desc{display:none}
+  .author-box{flex-direction:column;align-items:center;text-align:center}
+  .header-nav{display:none}
 }
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "ツバサのメモ帳",
-  "url": "https://tsubasa-memo.github.io/",
-  "description": "EC担当のツバサが、カメラ・写真撮影・画像編集・ECサイト運用で調べたことをまとめる備忘録ブログ。"
-}
-</script>
 </head>
 <body>
 
 <header>
 <div class="wrap">
-<span class="site-name">ツバサのメモ帳</span>
-<nav class="site-nav">
-<a href="/archive.html">記事一覧</a>
-<a href="/glossary/">用語集</a>
-</nav>
+  <span class="site-name">ツバサのメモ帳</span>
+  <nav class="header-nav">
+    <a href="archive.html?cat=retouch">レタッチ</a>
+    <a href="archive.html?cat=camera">カメラ</a>
+    <a href="archive.html?cat=ec">EC</a>
+    <a href="archive.html?cat=career">副業</a>
+    <a href="archive.html">すべて</a>
+  </nav>
 </div>
 </header>
 
 <div class="hero">
 <div class="wrap">
-<h1>ツバサのメモ帳</h1>
-<p>EC担当が、カメラ・写真・画像編集・ECサイト運用で調べたことをまとめています。</p>
+  <div class="hero-inner">
+    <h1>ツバサのメモ帳</h1>
+    <p class="hero-desc">メーカー勤務のEC担当が、カメラ・写真・画像編集・ECサイト運用で調べたことをまとめています。</p>
+  </div>
 </div>
 </div>
 
 <main>
 <div class="wrap">
 
-<div class="cat-nav">
-<a href="archive.html?cat=camera" class="cat-link">カメラ</a>
-<a href="archive.html?cat=retouch" class="cat-link">レタッチ</a>
-<a href="archive.html?cat=ai" class="cat-link">AI</a>
-<a href="archive.html?cat=photo" class="cat-link">写真・撮影</a>
-<a href="archive.html?cat=ec" class="cat-link">EC・実務</a>
-<a href="archive.html?cat=career" class="cat-link">副業・キャリア</a>
-<a href="glossary/" class="cat-link">用語集</a>
-</div>
+  <p class="section-label">おすすめ記事</p>
 
-<h2 class="section-title">最新の記事</h2>
+  <!-- Featured 2-column -->
+  <div class="featured-grid">
 
-<div class="article-list">
-<div class="article-card">
-<a href="ai-model-tryon.html">
-<div class="card-thumb"><img src="thumbs/ai-model-tryon.svg" alt="AIモデル着せ替えサービス料金比較" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-num new">NEW</span></div>
-<h2>AIモデル着せ替えサービスの料金比較｜EC向け11社まとめ</h2>
-<p class="card-desc">EC商品のモデル着用画像をAIで作れるサービスを11社調査。ツール型6社・制作代行型5社の料金構造と、生身モデル撮影との違いを比較。</p>
-<span class="card-tag">AI</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="retouch-pricing-database.html">
-<div class="card-thumb"><img src="thumbs/retouch-pricing-database.svg" alt="写真レタッチの料金相場まとめ" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
-<h2>写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約【2026年版】</h2>
-<p class="card-desc">色補正・肌レタッチ・切り抜き・合成など作業内容別の相場と、20社以上のサービス料金を1ページに集約。外注先を探している方の比較用に。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="personal-retouch-order.html">
-<div class="card-thumb"><img src="thumbs/personal-retouch-order.svg" alt="画像加工・レタッチを個人で依頼する方法まとめ" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
-<h2>画像加工・レタッチを個人で依頼する方法まとめ</h2>
-<p class="card-desc">個人が写真のレタッチ・画像加工を依頼できるサービスの種類、依頼の流れ、料金相場、選び方のポイントを整理。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="background-cutout-outsource.html">
-<div class="card-thumb"><img src="thumbs/background-cutout-outsource.svg" alt="背景切り抜き外注費用" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-updated">更新 2026.04.03</span><span class="card-date-pub">公開 2026.03.28</span></div>
-<h2>背景切り抜きをプロに外注するといくら？｜費用相場と依頼先まとめ</h2>
-<p class="card-desc">写真の背景切り抜き・白抜きをプロに外注する場合の費用相場を調べました。1枚100円台〜の切り抜き専門サービスから、レタッチ込みの業者まで比較。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="retouch-cost-guide.html">
-<div class="card-thumb"><img src="thumbs/retouch-cost-guide.svg" alt="写真レタッチの外注費用｜個人依頼の料金相場を加工別に比較" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.31</span></div>
-<h2>写真レタッチの外注費用を調べた｜個人依頼の料金相場を加工別に比較</h2>
-<p class="card-desc">レタッチの外注費用を加工内容別に早見表で整理。1枚あたりの料金と枚数割引の仕組みもまとめた備忘録。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="ec-product-description.html">
-<div class="card-thumb"><img src="thumbs/ec-product-description.svg" alt="ECサイトの商品説明文の書き方｜売れるページに共通するポイント" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.31</span></div>
-<h2>ECサイトの商品説明文の書き方｜売れるページに共通するポイント</h2>
-<p class="card-desc">Amazon・楽天・メルカリ等での商品説明文の書き方のコツ。テンプレート例、NGパターン、文字数の目安をまとめた備忘録。</p>
-<span class="card-tag">EC・実務</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="ai-data-collection-side-job.html">
-<div class="card-thumb"><img src="thumbs/ai-data-collection-side-job-thumb.svg" alt="AIデータ収集副業" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.30</span></div>
-<h2>スキル不要で時給4,500円？話題のAIデータ収集副業を調べてみた</h2>
-<p class="card-desc">SNSで話題の「AIデータ収集」副業を調査。Outlier AI・Appen・Remotasksなど日本から使える6サービスの報酬・始め方・将来性を比較しました。</p>
-<span class="card-tag">副業・キャリア</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="sasage-outsource.html">
-<div class="card-thumb"><img src="thumbs/sasage-outsource.svg" alt="ささげ業務 代行会社比較" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
-<h2>ささげ業務とは？代行会社の選び方と比較メモ【2026年版】</h2>
-<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社の選び方・10社比較まで。EC担当者が外注先を探すときの備忘録。</p>
-<span class="card-tag">EC・実務</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="new-mac-2026.html">
-<div class="card-thumb"><img src="thumbs/new-mac-2026.svg" alt="新生活のMac選び Neo・Air・Pro比較" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.29</span></div>
-<h2>新生活のMacはどれを選ぶ？Neo・Air・Proを比べてみた【2026年版】</h2>
-<p class="card-desc">99,800円のMacBook Neo登場でMacの選び方が変わった。Neo・Air・Proの違いと用途別の選び方をまとめました。</p>
-<span class="card-tag">副業・キャリア</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="photo-side-job-no-skill.html">
-<div class="card-thumb"><img src="thumbs/photo-side-job-no-skill.svg" alt="写真副業を検討してみた" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>スキルなし・機材なし・時間なしの20代が"写真副業"を検討してみた</h2>
-<p class="card-desc">写真系副業の種類・単価相場・現実的なロードマップを調べた記録。クラウドソーシングの初心者向け案件から始めるまでの流れをまとめています。</p>
-<span class="card-tag">副業・キャリア</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="side-job-labor-law.html">
-<div class="card-thumb"><img src="thumbs/side-job-labor-law.svg" alt="副業と就業規則" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話</h2>
-<p class="card-desc">副業規定の3パターン・厚生労働省のガイドライン・住民税バレ対策まで。副業前に確認すべきことを実体験もまじえてまとめました。</p>
-<span class="card-tag">副業・キャリア</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="job-hunting-photo-retouch.html">
-<div class="card-thumb"><img src="thumbs/job-hunting-photo-retouch.svg" alt="就活証明写真の加工" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>就活証明写真、アプリで加工していいラインはどこまで？</h2>
-<p class="card-desc">採用担当の見解・スタジオのレタッチ基準・NGな加工の種類を調べました。「軽い補正はOK、別人はNG」という基準のラインを整理しています。</p>
-<span class="card-tag">写真・撮影</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="sns-photo-retouch-manners.html">
-<div class="card-thumb"><img src="thumbs/sns-photo-retouch-manners.svg" alt="SNS写真加工のマナー" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>盛りすぎた加工写真でトラブルになるって本当？SNS時代の加工の"常識"を調べた</h2>
-<p class="card-desc">マッチングアプリでの写真詐欺問題・BeRealが流行した理由・加工の許容範囲についての考察。消費者庁データも参照しています。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="instagram-filter-vs-lightroom.html">
-<div class="card-thumb"><img src="thumbs/instagram-filter-vs-lightroom.svg" alt="インスタフィルターとLightroom" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>インスタのフィルターとLightroomって何が違うの？やっと理解した</h2>
-<p class="card-desc">フィルターとLightroomの仕組みの違い（非破壊編集・プリセット）を初心者目線で比較。フィード統一感を出したい人にはLightroomが向いています。</p>
-<span class="card-tag">レタッチ</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="matching-app-photo-tips.html">
-<div class="card-thumb"><img src="thumbs/matching-app-photo-tips.svg" alt="マッチングアプリの写真" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>マッチングアプリの写真、どこで撮るのが正解か調べた</h2>
-<p class="card-desc">マッチ率が上がる写真の共通点（撮影場所・構図・加工の範囲）を複数の情報源をもとにまとめました。プロ撮影という選択肢についても。</p>
-<span class="card-tag">写真・撮影</span>
-</div>
-</a>
-</div>
-<div class="article-card">
-<a href="portrait-mode-tips.html">
-<div class="card-thumb"><img src="thumbs/portrait-mode-tips.svg" alt="ポートレートモードの使いこなし" width="320" height="180"></div>
-<div class="card-body">
-<div class="card-dates"><span class="card-date-pub">公開 2026.03.27</span></div>
-<h2>スマホカメラの"ポートレートモード"が苦手だった理由と、使いこなせるようになった話</h2>
-<p class="card-desc">背景ぼかしが不自然になる原因（距離・光量・AIの認識限界）と、自然な仕上がりにするためのコツをまとめました。</p>
-<span class="card-tag">写真・撮影</span>
-</div>
-</a>
-</div>
-</div>
+    <div class="featured-card">
+      <a href="retouch-services.html">
+        <div class="featured-thumb">
+          <img src="thumbs/retouch-services.svg" alt="レタッチ外注7社比較" width="280" height="160">
+        </div>
+        <div class="featured-body">
+          <span class="badge-pick">PICK</span>
+          <h2>レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社</h2>
+          <p class="card-desc">個人で使える写真レタッチ・修正サービス7社の料金・納期・対応範囲を比較。1枚から依頼できるサービスを中心にまとめています。</p>
+          <span class="card-tag">レタッチ</span>
+        </div>
+      </a>
+    </div>
 
-<div style="text-align:center;margin:0 0 40px">
-<a href="archive.html" class="archive-btn">すべての記事を見る（全69件）</a>
-</div>
+    <div class="featured-card">
+      <a href="retouch-pricing-database.html">
+        <div class="featured-thumb">
+          <img src="thumbs/retouch-pricing-database.svg" alt="レタッチ料金相場まとめ" width="280" height="160">
+        </div>
+        <div class="featured-body">
+          <span class="badge-pick">PICK</span>
+          <h2>写真レタッチの料金相場まとめ｜20社以上の価格を1ページに集約</h2>
+          <p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+          <span class="card-tag">レタッチ</span>
+        </div>
+      </a>
+    </div>
 
-<div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
-<div class="author-text">
-<p class="author-name">ツバサ</p>
-<p>EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。このブログはカメラ・写真・EC周りで調べたことの備忘録です。</p>
-</div>
-</div>
+  </div>
+
+  <div class="cat-nav">
+    <a href="archive.html?cat=camera" class="cat-link">カメラ</a>
+    <a href="archive.html?cat=retouch" class="cat-link">レタッチ</a>
+    <a href="archive.html?cat=ai" class="cat-link">AI</a>
+    <a href="archive.html?cat=photo" class="cat-link">写真・撮影</a>
+    <a href="archive.html?cat=ec" class="cat-link">EC・実務</a>
+    <a href="archive.html?cat=career" class="cat-link">副業・キャリア</a>
+  </div>
+
+  <p class="section-label">最新記事</p>
+
+  <!-- Article list -->
+  <div class="article-list">
+
+    <div class="article-card">
+      <a href="coworking-spaces-tokyo.html">
+        <div class="card-thumb-sm"><img src="thumbs/coworking-spaces-tokyo.svg" alt="コワーキングスペース" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">副業・キャリア</span></div>
+          <h2>週1リモートの作業場所、結局コワーキングスペースが正解だった｜都内おすすめ7選</h2>
+          <p class="card-desc">実家暮らし×週1リモートの20代会社員が、自宅・図書館・カフェを経てコワーキングスペースにたどり着くまでの記録。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="article-card">
+      <a href="retouch-services.html">
+        <div class="card-thumb-sm"><img src="thumbs/retouch-services.svg" alt="レタッチ外注7社比較" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">レタッチ</span></div>
+          <h2>レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】</h2>
+          <p class="card-desc">個人で使える写真レタッチ・修正サービス7社の料金・納期・対応範囲を比較。1枚から依頼できるサービスを中心にまとめています。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="article-card">
+      <a href="video-vs-retouch-career.html">
+        <div class="card-thumb-sm"><img src="thumbs/video-vs-retouch-career.svg" alt="動画編集 vs レタッチャー" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">副業・キャリア</span></div>
+          <h2>動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？</h2>
+          <p class="card-desc">スクール費用・求人データ・AIの影響を比較。それぞれの特徴を調べました。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="article-card">
+      <a href="id-photo.html">
+        <div class="card-thumb-sm"><img src="thumbs/id-photo.svg" alt="スマホで証明写真" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">写真・撮影</span></div>
+          <h2>スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から</h2>
+          <p class="card-desc">証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめています。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="article-card">
+      <a href="exif-info.html">
+        <div class="card-thumb-sm"><img src="thumbs/exif-info.svg" alt="Exif情報とは" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">写真・撮影</span></div>
+          <h2>写真のExif情報とは？位置情報のリスクと削除方法まとめ</h2>
+          <p class="card-desc">Exifに含まれる情報、SNSごとの自動削除状況、iPhone/Android/PC別の削除手順をまとめました。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="article-card">
+      <a href="ec-image-rules.html">
+        <div class="card-thumb-sm"><img src="thumbs/ec-image-rules.svg" alt="EC商品画像ルール" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">EC・実務</span></div>
+          <h2>ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？</h2>
+          <p class="card-desc">Amazon（白背景必須）、楽天（テキスト20%ルール）、メルカリの画像ガイドラインを比較表で整理。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="article-card">
+      <a href="background-white.html">
+        <div class="card-thumb-sm"><img src="thumbs/background-white.svg" alt="背景白抜きの方法" width="140" height="96"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-date">2026.02</span><span class="card-tag">レタッチ</span></div>
+          <h2>写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</h2>
+          <p class="card-desc">Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較しました。</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="archive-wrap">
+    <a href="archive.html" class="archive-btn">すべての記事を見る（全13件）</a>
+  </div>
+
+  <div class="author-box">
+    <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="56" height="56"></div>
+    <div>
+      <p class="author-name">ツバサ</p>
+      <p class="author-text">EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+    </div>
+  </div>
 
 </div>
 </main>
 
 <footer>
 <div class="wrap">
-<div class="footer-links">
-<a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
-<a href="about.html">運営者情報</a>
-</div>
-&copy; 2026 ツバサのメモ帳
+  <div class="footer-links">
+    <a href="privacy-policy.html">プライバシーポリシー</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="about.html">運営者情報</a>
+  </div>
+  &copy; 2026 ツバサのメモ帳
 </div>
 </footer>
 
