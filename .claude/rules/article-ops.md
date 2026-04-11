@@ -90,6 +90,36 @@ grep -c "tsubasa-memo.github.io" llms.txt
 | 副業・キャリア | career |
 | ブログ運営・SEO | career（data-cat="career"で扱う） |
 
+## 引用カード（cite-card）
+
+関連記事セクションのリンクはcite-card形式で記述する。
+
+内部リンク：
+```html
+<a class="cite-card" href="xxx.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">記事タイトル</span>
+<span class="cite-url">tsubasa-memo.github.io/xxx.html</span>
+</span>
+</a>
+```
+
+外部引用（東京レタッチコラム等、本文中で他社記事を参照している箇所）：
+```html
+<a class="cite-card" href="URL" target="_blank" rel="noopener noreferrer nofollow">
+<span class="cite-ico ext">T</span>（←ドメイン頭文字）
+<span class="cite-body">
+<span class="cite-title">ページタイトル</span>
+<span class="cite-url">ドメイン/パス</span>
+</span>
+</a>
+```
+
+- CSSは各記事の`</style>`直前に配置（共通CSS未分離のため）
+- 外部引用カードは本文中の参照段落の直下に配置
+- 内部引用カードは関連記事セクション内で使用
+
 ## Git コミットルール
 
 - コミットメッセージは日本語
