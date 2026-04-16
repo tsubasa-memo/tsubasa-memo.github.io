@@ -38,6 +38,11 @@
 - [ECモールの出店先の選び方｜Amazon・楽天・Yahoo!の手数料を比較した](https://tsubasa-memo.github.io/ec-mall-comparison.html): Amazon・楽天市場・Yahoo!ショッピングの出店費用と手数料を比較表で整理した記事
 - [EC向け受注管理ツールおすすめ比較｜小規模ECでも使える7選](https://tsubasa-memo.github.io/ec-order-management.html): ネクストエンジン・GoQSystemなどEC向け受注管理ツール7選を比較した記事
 - [EC運営を外注するか内製するか｜業務別のコスト比較と判断基準](https://tsubasa-memo.github.io/ec-outsource-vs-inhouse.html): EC運営の主要業務を外注向き・内製向きに分類し、コスト目安と判断基準を整理した記事
+- [プロフィール写真の撮影サービスおすすめ7選｜ビジネス・SNS用の選び方](https://tsubasa-memo.github.io/profile-photo-service.html): プロフィール写真の撮影サービス7社をスタジオ・出張・マッチング型の3タイプで比較した記事
+- [出張撮影サービスの料金相場まとめ｜七五三・家族写真・ビジネスの費用感](https://tsubasa-memo.github.io/location-photo-cost.html): 出張撮影サービスの料金相場をfotowa・Lovegraph・Fammなど主要5社で比較した記事
+- [商品撮影を外注するか自分でやるか｜EC担当者の判断基準と費用の分かれ目](https://tsubasa-memo.github.io/product-photo-diy-vs-outsource.html): EC商品撮影の自社撮影と外注の判断基準・コスト比較をまとめた記事
+- [写真プリントサービスおすすめ7選｜ネット注文で安くきれいに現像する方法](https://tsubasa-memo.github.io/photo-print-service.html): ネット注文できる写真プリントサービス7社をL判1枚7円〜の料金・印画紙・納期で比較した記事
+- [EC商品撮影に使えるレンタルスタジオの選び方｜都内の料金相場と7選](https://tsubasa-memo.github.io/rental-studio-ec.html): EC商品撮影向けレンタルスタジオの選び方と都内おすすめ7選を料金相場とともにまとめた記事
 - [写真レタッチの外注料金まとめ｜16社の相場を1ページに集約【2026年版】](https://tsubasa-memo.github.io/retouch-pricing-database.html): 16社の写真レタッチサービスの料金を作業別・サービス別に比較。切り抜き39円〜、肌レタッチ1,000円〜など相場目安をまとめた記事
 
 - [PIXTAがAI画像の販売を停止。ストックフォト副業の前提が揺らいでいる](https://tsubasa-memo.github.io/stockphoto-ai-sidejob.html): PIXTAのAI生成コンテンツ停止を受けて、ストックフォト副業各社のAI対応状況とプラットフォーム依存リスクを整理した記事
