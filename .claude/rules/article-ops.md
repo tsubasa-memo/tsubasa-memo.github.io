@@ -136,16 +136,6 @@ grep -c "tsubasa-memo.github.io" llms.txt
 - 例: `add: ミラーレスカメラ選び方記事` / `update: index.html 記事順序変更`
 - pushの前に必ず確認を取る
 
-予約投稿の場合: `git push origin HEAD:draft`（mainへのpushは行わない）
-
-## 投稿スケジュール
-
-- 火曜 21:00 JST
-- 水曜 19:30 JST
-- 木曜 22:45 JST
-- 土曜 12:00 JST
-- 日曜 13:30 JST
-
 ## 記事ネタ出しルール
 
 「記事ネタを提案して」と言われたら5つ提案する。カテゴリが偏らないようにする（同じカテゴリは最大2つまで）。
