@@ -18,7 +18,9 @@
 
 ## 絶対に守ること（例外なし）
 - スタジオ工房には一切言及しない（本文・メタ・alt・コメントすべてNG）
-- git pushの前に必ず確認を取る（予約投稿は draft branch へ）
+- git pushの前に必ず確認を取る
+- 公開のpushは義彦さん本人が行う（Claude Codeはpushしない）
+- 予約投稿はしない（main直push運用）
 - 記事追加時は sitemap.xml と llms.txt を必ずセットで更新する
 
 ## 詳細ルール参照先
