@@ -144,6 +144,8 @@ article h2{font-size:18px}
   ]
 }
 </script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
 
@@ -156,6 +158,12 @@ article h2{font-size:18px}
 </nav>
 </div>
 </header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
 
 <div class="wrap">
 <div class="breadcrumb">

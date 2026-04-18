@@ -129,6 +129,8 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
 <header>
@@ -137,6 +139,12 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 <span class="site-tag">備忘録ブログ</span>
 </div>
 </header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
 
 <nav class="breadcrumb">
 <div class="wrap">

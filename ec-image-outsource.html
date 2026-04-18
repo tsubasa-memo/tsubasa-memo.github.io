@@ -120,6 +120,8 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
   ]
 }
 </script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
 
@@ -129,6 +131,12 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <span class="site-tag">備忘録ブログ</span>
 </div>
 </header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
 
 <article>
 <div class="wrap">
