@@ -15,6 +15,8 @@ glossary-linker.py
 - 除外ゾーン（head/script/style/見出し/既存<a>/blockquote/画像等）は
   プレースホルダー退避で保護
 - 除外用語（EXCLUDED_SLUGS）は一律スキップ
+- 記事内で既にリンク化済みのスラッグは、2箇所目以降もスキップ
+  （同一用語の過剰リンク化を防止）
 
 新しい記事を対象に追加したいとき:
     WHITELIST リストに記事ファイル名を追記
@@ -217,6 +219,15 @@ def process_article(filepath, term_map):
     html_before = path.read_text(encoding="utf-8")
     html = html_before
 
+    # ★ 先に既存リンクのあるスラッグを検出（この記事で既にリンク化済みの用語）
+    # 1箇所でも既存リンクがあれば、その用語は記事全体で処理対象外とする
+    already_linked_slugs = set()
+    for slug in term_map.keys():
+        # glossary-inline クラスで該当スラッグへのリンクが存在するか
+        marker = f'href="/glossary/{slug}.html" class="glossary-inline"'
+        if marker in html_before:
+            already_linked_slugs.add(slug)
+
     # CSS追加
     html, css_added = add_css_if_missing(html)
 
@@ -231,8 +242,6 @@ def process_article(filepath, term_map):
     no_match = []
     skipped_excluded = []
 
-    stashed_text = placeholders_content(placeholders)
-
     for slug, term in sorted_terms:
         if slug in EXCLUDED_SLUGS:
             if f'/glossary/{slug}.html' in html_before:
@@ -242,8 +251,11 @@ def process_article(filepath, term_map):
         if len(term) < MIN_TERM_LENGTH:
             continue
 
-        # 既にこのスラッグへのリンクが退避ゾーンに存在するか
-        already_linked = f'/glossary/{slug}.html' in stashed_text
+        # ★ 既にこのスラッグがこの記事でリンク化されていれば、スキップ
+        #    （同一用語の2箇所目以降を過剰リンク化しないための防衛）
+        if slug in already_linked_slugs:
+            existing_links.append((term, slug))
+            continue
 
         pattern = re.escape(term)
         replacement = f'<a href="/glossary/{slug}.html" class="glossary-inline">{term}</a>'
@@ -252,8 +264,6 @@ def process_article(filepath, term_map):
         if n > 0:
             new_links.append((term, slug))
             html = html_new
-        elif already_linked:
-            existing_links.append((term, slug))
         else:
             no_match.append((term, slug))
 
