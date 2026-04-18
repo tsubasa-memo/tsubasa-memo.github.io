@@ -136,6 +136,8 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 }
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
 </style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
 <header>
@@ -147,6 +149,12 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </nav>
 </div>
 </header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
 <nav class="breadcrumb">
 <div class="wrap">
 <a href="index.html">ホーム</a> ＞ 写真バックアップサービス3社比較
