@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""ツバサのメモ帳 検索インデックス生成スクリプト"""
+"""ツバサのメモ帳 検索インデックス生成スクリプト
+
+除外条件:
+- 明示的exclude（404ページ、AdSense申請用ページ）
+- <header>タグを持たないファイル（GSC認証、preview、サムネ比較等の内部ユーティリティ）
+"""
 import os, re, json, glob
 
 def extract_record(path):
@@ -33,15 +38,40 @@ def extract_record(path):
         'b': body,
     }
 
+def should_include(path):
+    """記事として検索対象にすべきか判定"""
+    with open(path, encoding='utf-8') as f:
+        html = f.read()
+    if not re.search(r'<header[\s>]', html, re.IGNORECASE):
+        return False
+    return True
+
 def main():
-    exclude = {'404.html', 'adsense-application.html'}
-    paths = [p for p in sorted(glob.glob('*.html')) if p not in exclude]
+    explicit_exclude = {'404.html', 'adsense-application.html'}
+
+    paths = [p for p in sorted(glob.glob('*.html')) if p not in explicit_exclude]
     paths += sorted(glob.glob('glossary/*.html'))
-    records = [extract_record(p) for p in paths]
+
+    included, excluded = [], []
+    for p in paths:
+        if should_include(p):
+            included.append(p)
+        else:
+            excluded.append(p)
+
+    records = [extract_record(p) for p in included]
     with open('search-index.json', 'w', encoding='utf-8') as f:
         json.dump(records, f, ensure_ascii=False, separators=(',', ':'))
+
     size = os.path.getsize('search-index.json')
-    print(f'対象: {len(paths)}ファイル  サイズ: {size/1024:.1f} KB  レコード: {len(records)}')
+    print(f'スキャン対象: {len(paths)}ファイル')
+    print(f'インデックス登録: {len(included)}ファイル')
+    print(f'除外: 明示{len(explicit_exclude & set(paths))}件 + <header>なし{len(excluded)}件')
+    if excluded:
+        print(f'  <header>なしで除外されたファイル:')
+        for p in excluded:
+            print(f'    - {p}')
+    print(f'サイズ: {size:,} bytes ({size/1024:.1f} KB)')
 
 if __name__ == '__main__':
     main()
