@@ -134,6 +134,8 @@ footer{background:#2d2d2d;color:#aaa;text-align:center;padding:28px;font-size:12
 .cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
 </style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
 
@@ -143,6 +145,12 @@ footer{background:#2d2d2d;color:#aaa;text-align:center;padding:28px;font-size:12
 <nav class="site-nav"><a href="archive.html">記事一覧</a></nav>
 </div>
 </header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
 
 <nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ 料理写真のレタッチ外注</div></nav>
 
