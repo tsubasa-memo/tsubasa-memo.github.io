@@ -37,11 +37,54 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"FAQ構造化データとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"FAQ構造化データはページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示することがあります。"}},
-    {"@type":"Question","name":"FAQのリッチリザルトは必ず表示されますか？","acceptedAnswer":{"@type":"Answer","text":"必ずしも表示されるわけではありません。Googleは構造化データの内容、ページの品質、検索クエリとの関連性を総合的に判断してリッチリザルトを表示するかどうかを決めます。設置したからといって必ず表示されるわけではないですが、表示の機会が増えることは確かです。"}},
-    {"@type":"Question","name":"JSON-LDとはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type="application/ld+json"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。"}},
-    {"@type":"Question","name":"FAQ構造化データはすべての記事に入れるべきですか？","acceptedAnswer":{"@type":"Answer","text":"FAQがある記事には入れる価値があります。特にハウツー記事・比較記事・解説記事はFAQと相性が良いです。ただし、FAQの内容が薄い（一般的な質問だけ、答えが短すぎるなど）と効果が低くなります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。"}},
-    {"@type":"Question","name":"構造化データのエラーはどこで確認できますか？","acceptedAnswer":{"@type":"Answer","text":"Google Search Consoleの「拡張」セクションまたはGoogleのリッチリザルトテストツール（search.google.com/test/rich-results）で確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。"}}
+    {
+      "@type": "Question",
+      "name": "FAQ構造化データとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FAQ構造化データはページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示することがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "FAQのリッチリザルトは必ず表示されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必ずしも表示されるわけではありません。Googleは構造化データの内容、ページの品質、検索クエリとの関連性を総合的に判断してリッチリザルトを表示するかどうかを決めます。設置したからといって必ず表示されるわけではないですが、表示の機会が増えることは確かです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JSON-LDとはどういう意味ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type=\"application/ld+json\"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "FAQ構造化データはすべての記事に入れるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FAQがある記事には入れる価値があります。特にハウツー記事・比較記事・解説記事はFAQと相性が良いです。ただし、FAQの内容が薄い（一般的な質問だけ、答えが短すぎるなど）と効果が低くなります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "構造化データのエラーはどこで確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Search Consoleの「拡張」セクションまたはGoogleのリッチリザルトテストツール（search.google.com/test/rich-results）で確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "FAQ構造化データはAI（ChatGPT・Claude等）にも効果がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LLMはFAQ形式のQ&A構造を引用しやすいとされています。構造化データでQ&Aを明示することで、AIが記事を参照する際に正確な情報が伝わりやすくなります。SEOとLLMO両方への効果が期待できます。"
+      }
+    }
   ]
 }
 </script>
@@ -195,6 +238,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <h2>よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データとは何ですか？</p><p class="faq-a">ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルトを表示することがあります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQのリッチリザルトは必ず表示されますか？</p><p class="faq-a">必ずしも表示されるわけではありません。Googleは構造化データの内容・ページの品質・検索クエリとの関連性を総合的に判断します。設置しておくことでリッチリザルト表示の機会が増えます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. JSON-LDとはどういう意味ですか？</p><p class="faq-a">JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type="application/ld+json"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データはすべての記事に入れるべきですか？</p><p class="faq-a">FAQがある記事には入れる価値があります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。内容が薄いFAQは効果が低くなります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 構造化データのエラーはどこで確認できますか？</p><p class="faq-a">GoogleのリッチリザルトテストツールかSearch Consoleの「拡張」セクションで確認できます。エラーがある場合は該当箇所のJSONを修正してください。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データはAI（ChatGPT・Claude等）にも効果がありますか？</p><p class="faq-a">LLMはFAQ形式のQ&A構造を引用しやすいとされています。構造化データでQ&Aを明示することで、AIが記事を参照する際に正確な情報が伝わりやすくなります。SEOとLLMO両方への効果が期待できます。</p></div>

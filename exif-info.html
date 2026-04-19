@@ -76,6 +76,46 @@ gtag('config', 'G-YYBFXHXMM6');
         "@type": "Answer",
         "text": "Windowsでは、画像ファイルを右クリック →「プロパティ」→「詳細」タブ →「プロパティや個人情報を削除」から一括削除できます。Macでは、プレビューアプリで画像を開き「ツール」→「インスペクターを表示」→「GPS」タブから「位置情報を削除」をクリックします。ただし、Macのプレビューでは位置情報のみが削除対象で、他のExif項目は残ります。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Exif情報を削除すると画質は落ちますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、Exif情報を削除しても写真の画質や解像度には影響しません。Exifは写真データ本体とは別の「付加情報」なので、削除しても画像そのものは変わりません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "スクリーンショットにもExif情報は入っていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "スクリーンショットにもExif情報は記録されますが、カメラで撮影した写真とは内容が異なります。GPS位置情報は通常記録されず、端末の機種名や画面解像度、撮影日時などが記録されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一度削除したExif情報を復元することはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "削除したExif情報は基本的に復元できません。大切な撮影情報（撮影日や場所の記録など）を残しておきたい場合は、元ファイルのバックアップを取ってからExif削除するのがおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RAWファイルにもExif情報はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、RAWファイルにもExif情報は記録されています。ただし、RAWファイルのExif情報は専用のソフト（Lightroom、Capture Oneなど）で確認・編集する必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "メールで写真を送るとExif情報はどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "メールで写真を添付して送信した場合、基本的にExif情報はそのまま残ります。メールの相手が写真のプロパティを確認すれば、位置情報を含むExif情報が閲覧できる状態です。気になる場合は送信前にExifを削除してから添付してください。"
+      }
     }
   ]
 }
@@ -333,6 +373,41 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <div class="faq-section">
 <h2>よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Exif情報とは何ですか？</strong></p>
+<p class="fa">
+A.<br>Exif（Exchangeable Image File Format）は、デジタルカメラやスマホで撮影した写真に自動で記録されるメタデータです。撮影日時、カメラの機種名、絞り値やシャッタースピードなどの撮影設定のほか、GPS位置情報が含まれる場合があります。写真ファイル自体に埋め込まれており、特別なソフトなしでも確認できます。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. SNSに写真を投稿するとExif情報はどうなりますか？</strong></p>
+<p class="fa">
+A.<br>主要なSNS（X（旧Twitter）、Instagram、Facebook、LINE）は投稿時にExif情報を自動で削除します。そのため、これらのSNSに投稿した写真からExif情報が漏れることは基本的にありません。ただし、WordPressで作ったブログや個人サイトなどExifを自動削除しないサービスもあるため、アップロード先の仕様を事前に確認しておくのが安心です。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. iPhoneでExif情報（位置情報）を削除するにはどうすればいいですか？</strong></p>
+<p class="fa">
+A.<br>iPhoneでは、写真アプリで画像を開き、上にスワイプして情報パネルを表示し「調整」から位置情報を削除できます（iOS 15以降）。また、写真を共有する際に共有シートの「オプション」で「位置情報」をオフにする方法もあります。さらに、カメラの位置情報記録自体をオフにするには、設定 → プライバシーとセキュリティ → 位置情報サービス → カメラ → 「なし」を選択します。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. AndroidでExif情報（位置情報）を削除するにはどうすればいいですか？</strong></p>
+<p class="fa">
+A.<br>Android（Googleフォト）では、写真を開いて右上の三点メニューから「位置情報を調整」→「位置情報なし」を選択すると削除できます。カメラの位置情報記録をオフにするには、カメラアプリの設定から「位置情報タグ」や「GPSタグ」をオフにします。機種によって名称が異なるため、設定内を確認してください。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. WindowsやMacでExif情報を削除する方法はありますか？</strong></p>
+<p class="fa">
+A.<br>Windowsでは、画像ファイルを右クリック →「プロパティ」→「詳細」タブ →「プロパティや個人情報を削除」から一括削除できます。Macでは、プレビューアプリで画像を開き「ツール」→「インスペクターを表示」→「GPS」タブから「位置情報を削除」をクリックします。ただし、Macのプレビューでは位置情報のみが削除対象で、他のExif項目は残ります。
+</p>
+</div>
 
 <div class="faq-item">
 <p class="fq"><strong>Q. Exif情報を削除すると画質は落ちますか？</strong></p>
