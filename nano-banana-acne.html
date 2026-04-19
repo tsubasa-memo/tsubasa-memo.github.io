@@ -115,6 +115,14 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 .author-box{flex-direction:column;align-items:center;text-align:center}
 }
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 <script type="application/ld+json">
 {
@@ -336,11 +344,21 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <p>気になることがあれば、コメントやDMで気軽に聞いてください。</p>
 
 
-<div class="related">
-<h3>このサイトの関連記事</h3>
-<p><a href="what-is-retouch.html">写真のレタッチとは？加工との違いと基本をわかりやすく解説</a></p>
-<p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
-</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="what-is-retouch.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチとは？写真の修正・補正・加工の違いをわかりやすく解説【初心者向け】</span>
+<span class="cite-url">tsubasa-memo.github.io/what-is-retouch.html</span>
+</span>
+</a>
+<a class="cite-card" href="background-white.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">背景切り抜き・白抜きの方法比較｜AI無料ツールからプロ外注まで【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/background-white.html</span>
+</span>
+</a>
 
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
