@@ -46,6 +46,7 @@
 - [写真レタッチの外注料金まとめ｜16社の相場を1ページに集約【2026年版】](https://tsubasa-memo.github.io/retouch-pricing-database.html): 16社の写真レタッチサービスの料金を作業別・サービス別に比較。切り抜き39円〜、肌レタッチ1,000円〜など相場目安をまとめた記事
 
 - [PIXTAがAI画像の販売を停止。ストックフォト副業の前提が揺らいでいる](https://tsubasa-memo.github.io/stockphoto-ai-sidejob.html): PIXTAのAI生成コンテンツ停止を受けて、ストックフォト副業各社のAI対応状況とプラットフォーム依存リスクを整理した記事
+- [写真の色変更・カラー化アプリ6選｜白黒写真も無料で着色できる](https://tsubasa-memo.github.io/photo-colorize-apps.html): 白黒写真のカラー化・部分色変更・古い写真の色復元の3用途別に、PhotoDirector・VanceAI・Fotor・Palette.fm等6ツールを無料枠込みで比較した記事
 
 ## 運営者
 
