@@ -135,6 +135,14 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 .spec-table th,.spec-table td{padding:8px 10px}
 }
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -252,13 +260,35 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<div class="related">
-<h3>あわせて読みたい</h3>
-<p><a href="smartphone-storage-full.html">スマホの写真で容量がいっぱい！空きを作る5つの方法</a></p>
-<p><a href="photo-backup-comparison.html">Googleフォト・iCloud・Amazon Photos比較｜写真バックアップサービスを調べた</a></p>
-<p><a href="send-large-photo.html">大きい写真データの送り方まとめ｜ギガファイル便・Googleドライブ・LINEの使い分け</a></p>
-<p><a href="exif-info.html">写真のExif情報とは？位置情報のリスクと削除方法まとめ</a></p>
-</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="smartphone-storage-full.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">スマホの写真で容量がいっぱい！空きを作る方法【iPhone・Android対応】</span>
+<span class="cite-url">tsubasa-memo.github.io/smartphone-storage-full.html</span>
+</span>
+</a>
+<a class="cite-card" href="photo-backup-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/photo-backup-comparison.html</span>
+</span>
+</a>
+<a class="cite-card" href="send-large-photo.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINEの使い分け</span>
+<span class="cite-url">tsubasa-memo.github.io/send-large-photo.html</span>
+</span>
+</a>
+<a class="cite-card" href="exif-info.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">X・LINEの写真に位置情報は残る？SNS別Exif削除方法と確認手順まとめ</span>
+<span class="cite-url">tsubasa-memo.github.io/exif-info.html</span>
+</span>
+</a>
 </div>
 </main>
 <footer>

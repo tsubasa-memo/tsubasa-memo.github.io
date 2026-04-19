@@ -130,6 +130,14 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 .insta-ref{max-width:100%}
 }
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -253,12 +261,28 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </div>
 </div>
 
-<div class="related">
-<h3>関連記事</h3>
-<p><a href="photo-side-job-no-skill.html">スキルなし・機材なし・時間なしの20代が"写真副業"を検討してみた</a></p>
-<p><a href="video-vs-retouch-career.html">動画編集 vs レタッチャー｜副業で始めるならどっちが稼げる？</a></p>
-<p><a href="coworking-spaces-tokyo.html">週1リモートの作業場所、結局コワーキングスペースが正解だった</a></p>
-</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="photo-side-job-no-skill.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">スキルなし・機材なし・時間なしの20代が写真副業を検討してみた</span>
+<span class="cite-url">tsubasa-memo.github.io/photo-side-job-no-skill.html</span>
+</span>
+</a>
+<a class="cite-card" href="video-vs-retouch-career.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">動画編集 vs レタッチャー副業｜費用・求人・AI影響を比較【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/video-vs-retouch-career.html</span>
+</span>
+</a>
+<a class="cite-card" href="coworking-spaces-tokyo.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">都内コワーキングスペースおすすめ7選｜週1リモートの作業場所を比較</span>
+<span class="cite-url">tsubasa-memo.github.io/coworking-spaces-tokyo.html</span>
+</span>
+</a>
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
 <div class="author-text">

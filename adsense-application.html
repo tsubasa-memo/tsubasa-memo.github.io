@@ -93,6 +93,14 @@ p{margin-bottom:18px}
 footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
 @media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -196,14 +204,28 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<div class="related">
 <h2 class="related-title">関連する記事</h2>
-<div class="related-list">
-<div class="related-item"><a href="amazon-associates.html">Amazon アソシエイトに登録してみた｜審査通過までに確認したこと</a></div>
-<div class="related-item"><a href="github-pages-vs-note.html">なぜnoteじゃなくてGitHub Pagesにしたか｜AdSenseを使いたかった</a></div>
-<div class="related-item"><a href="blog-seo-basics.html">個人ブログを始めてSEOを勉強した記録｜最初にやること5つ</a></div>
-</div>
-</div>
+<a class="cite-card" href="amazon-associates.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Amazon アソシエイトに登録してみた｜審査通過までに確認したこと</span>
+<span class="cite-url">tsubasa-memo.github.io/amazon-associates.html</span>
+</span>
+</a>
+<a class="cite-card" href="github-pages-vs-note.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</span>
+<span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span>
+</span>
+</a>
+<a class="cite-card" href="blog-seo-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
+</span>
+</a>
 </div>
 </article>
 </main>
