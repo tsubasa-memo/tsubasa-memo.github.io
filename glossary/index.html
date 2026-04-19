@@ -12,9 +12,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EC・カメラ・画像編集の用語集｜仕事で調べた用語のメモ｜ツバサのメモ帳</title>
-<meta name="description" content="EC運営・商品撮影・画像編集の仕事で出てきた用語をまとめたメモ。画像ファイル形式の違い、ECモールの商品登録や分析指標の専門用語、物流・マーケティング・決済まわりの用語まで、EC担当者が実務で調べた内容をカテゴリ別に整理しています。">
+<meta name="description" content="EC運営・商品撮影・画像編集の仕事で出てきた用語をまとめたメモ。67語をアルファベット・五十音順に並べ、カテゴリフィルタで絞り込めるようにしました。画像形式・商品登録・Web制作・EC分析・物流・マーケティング・決済・モール固有用語を網羅。">
 <meta property="og:title" content="EC・カメラ・画像編集の用語集｜仕事で調べた用語のメモ｜ツバサのメモ帳">
-<meta property="og:description" content="EC運営・商品撮影・画像編集の仕事で出てきた用語をまとめたメモ。画像ファイル形式の違い、ECモールの商品登録や分析指標の専門用語、物流・マーケティング・決済まわりの用語まで、EC担当者が実務で調べた内容をカテゴリ別に整理しています。">
+<meta property="og:description" content="EC運営・商品撮影・画像編集の仕事で出てきた用語をまとめたメモ。67語をアルファベット・五十音順に並べ、カテゴリフィルタで絞り込めるようにしました。画像形式・商品登録・Web制作・EC分析・物流・マーケティング・決済・モール固有用語を網羅。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://tsubasa-memo.github.io/og/site.png">
@@ -47,18 +47,22 @@ header .wrap{display:flex;align-items:center;justify-content:space-between}
 .breadcrumb a{color:var(--text-sub)}
 .breadcrumb span{margin:0 6px;color:#ccc}
 main{padding:40px 0 64px}
-.cat-section{margin-bottom:48px}
-.cat-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--accent)}
-.cat-lead{font-size:14px;color:var(--text-sub);line-height:1.8;margin-bottom:24px}
-.sub-title{font-size:13px;font-weight:700;color:var(--text-sub);margin:20px 0 12px;padding-left:4px;letter-spacing:.5px}
-.term-list{display:flex;flex-direction:column;gap:14px}
-.term-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:box-shadow .2s}
-.term-card:hover{box-shadow:0 2px 10px rgba(0,0,0,.05)}
-.term-name{font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px}
-.term-short{font-size:14px;color:var(--text);line-height:1.7;margin-bottom:4px}
-.term-detail{font-size:13px;color:var(--text-sub);line-height:1.7;margin-bottom:8px}
-.term-more{font-size:13px;font-weight:700;color:var(--accent)}
-.term-more:hover{text-decoration:underline}
+.filter-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding:0 0 16px;border-bottom:1px solid var(--border)}
+.filter-tab{font-size:13px;padding:6px 14px;background:var(--tag-bg);color:var(--text-sub);border-radius:20px;cursor:pointer;transition:background .2s,color .2s;user-select:none}
+.filter-tab:hover{background:var(--accent-light);color:var(--accent)}
+.filter-tab.active{background:var(--accent);color:#fff}
+.term-count{font-size:13px;color:var(--text-sub);margin-bottom:24px}
+.section-heading{font-size:15px;font-weight:700;color:var(--text-sub);border-bottom:2px solid var(--accent);padding-bottom:6px;margin:32px 0 16px}
+.section-heading:first-of-type{margin-top:0}
+.section-heading.hidden{display:none}
+.term-card{padding:16px 0;border-bottom:1px solid var(--border)}
+.term-card.hidden{display:none}
+.term-header{display:flex;align-items:center;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+.term-name{font-size:16px;font-weight:700;color:var(--text);text-decoration:none}
+.term-name:hover{color:var(--accent);text-decoration:underline}
+.term-cat{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:2px 8px;border-radius:4px;white-space:nowrap}
+.term-desc{font-size:14px;color:var(--text-sub);line-height:1.7;margin-bottom:4px}
+.term-link{font-size:13px;color:var(--accent)}
 .author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
 .author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
 .author-box .author-icon img{width:100%;height:100%}
@@ -68,27 +72,10 @@ main{padding:40px 0 64px}
 footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
 @media(max-width:600px){
 .hero h1{font-size:20px}
-.term-card{padding:14px 16px}
 .author-box{flex-direction:column;align-items:center;text-align:center}
 }
 .footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "画像・ファイル形式・カメラ",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ECの商品画像を扱っていると、「JPEGとPNGどっちで書き出す？」「WebPって何？」といった画像形式の話が日常的に出てくる。入稿ガイドに書いてある解像度やピクセルサイズの指定、画像を圧縮したときの劣化の仕組みなど、知っておくと作業がスムーズになる用語をまとめた。Photoshopのレイヤーやカメラの露出まわりの基本用語も、打ち合わせで出てくることがあるので整理している。"
-      }
-    }
-  ]
-}
-</script>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
 </head>
@@ -126,488 +113,95 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <main>
 <div class="wrap">
 
+<div class="filter-tabs">
+<span class="filter-tab active" data-cat="all">すべて</span>
+<span class="filter-tab" data-cat="image">画像</span>
+<span class="filter-tab" data-cat="product">商品登録</span>
+<span class="filter-tab" data-cat="web">Web</span>
+<span class="filter-tab" data-cat="analytics">EC分析</span>
+<span class="filter-tab" data-cat="logistics">物流</span>
+<span class="filter-tab" data-cat="marketing">集客</span>
+<span class="filter-tab" data-cat="legal">決済・法務</span>
+<span class="filter-tab" data-cat="mall">モール</span>
+</div>
 
-<section class="cat-section">
-<h2 id="cat-image" class="cat-title">画像・ファイル形式・カメラ</h2>
-<p class="cat-lead">ECの商品画像を扱っていると、「JPEGとPNGどっちで書き出す？」「WebPって何？」といった画像形式の話が日常的に出てくる。入稿ガイドに書いてある解像度やピクセルサイズの指定、画像を圧縮したときの劣化の仕組みなど、知っておくと作業がスムーズになる用語をまとめた。Photoshopのレイヤーやカメラの露出まわりの基本用語も、打ち合わせで出てくることがあるので整理している。</p>
-<h3 class="sub-title">アルファベット</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">AVIF</div>
-<div class="term-short">JPEGの次の標準になるかもしれない次世代画像フォーマット。</div>
-<div class="term-detail">動画コーデックAV1をベースにした画像形式で、JPEGより50%以上ファイルサイズが小さくなるケースもある。PageSpeed Insightsの「次世代フォーマット」指摘で名前を見かけることが増えた。</div>
-<a href="/glossary/avif.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">BMP</div>
-<div class="term-short">圧縮しない古い画像形式。</div>
-<div class="term-detail">Windows標準の無圧縮画像フォーマットで、社内の旧システムや古い機材から書き出されるデータで見かけることがある。ファイルサイズが大きいためWebには不向き。</div>
-<a href="/glossary/bmp.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">GIF</div>
-<div class="term-short">アニメーションができる画像形式。</div>
-<div class="term-detail">バナー広告や簡易的な動画表現に使われる。使える色数が256色に制限されているため、写真よりもイラストやアイコン向き。</div>
-<a href="/glossary/gif.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">HEIF・HEIC</div>
-<div class="term-short">iPhoneの標準写真形式。</div>
-<div class="term-detail">高画質で容量が小さいのが特徴だが、WindowsやECモールの入稿フォームで開けないことがある。iPhoneで撮った商品写真をそのまま使おうとしてハマるポイント。</div>
-<a href="/glossary/heif-heic.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">JFIF</div>
-<div class="term-short">Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。</div>
-<div class="term-detail">中身はJPEGとほぼ同じだが、拡張子が.jfifになっていて入稿フォームで弾かれることがある。.jpgにリネームすれば大抵は解決する。</div>
-<a href="/glossary/jfif.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">PNG</div>
-<div class="term-short">背景透過ができる画像形式。</div>
-<div class="term-detail">ロゴやアイコンなど、背景を透明にしたい場面で使う。JPEGより画質劣化は少ないがファイルサイズは大きくなるため、商品写真にはJPEGの方が向いている。</div>
-<a href="/glossary/png.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">PSD</div>
-<div class="term-short">Photoshop専用のファイル形式。</div>
-<div class="term-detail">レイヤー情報を保持したまま保存できるので、デザイナーとのデータ受け渡しで使われる。Photoshopがないと開けないため、納品時にJPEGやPNG書き出しも依頼するのが定番。</div>
-<a href="/glossary/psd.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">RGB・CMYK</div>
-<div class="term-short">色の表現方法。Webと印刷で色が変わる原因はこの違い。</div>
-<div class="term-detail">Webで使うのがRGB、印刷で使うのがCMYK。商品パッケージとECサイトの色味が合わないときは、このカラーモードの違いが原因であることが多い。</div>
-<a href="/glossary/rgb-cmyk.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">TIFF</div>
-<div class="term-short">印刷用途で使われる高品質な画像形式。</div>
-<div class="term-detail">圧縮による劣化がなく、印刷会社への入稿やスキャンデータの保存に使われる。ファイルサイズが非常に大きいため、Web掲載には向かない。</div>
-<a href="/glossary/tiff.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">WebP</div>
-<div class="term-short">Googleが開発した次世代画像フォーマット。</div>
-<div class="term-detail">JPEGと同等の画質でファイルサイズを25〜35%削減でき、ECサイトの表示速度改善に効果がある。主要ブラウザはすべて対応済みで、導入しやすい。</div>
-<a href="/glossary/webp.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-<h3 class="sub-title">五十音</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">画像サイズ</div>
-<div class="term-short">ピクセル数とファイル容量、2つの意味がある紛らわしい用語。</div>
-<div class="term-detail">「画像サイズを小さくして」と言われたとき、縦横のピクセル数を減らす話なのか、ファイル容量（MB）を減らす話なのかで対応が変わる。</div>
-<a href="/glossary/image-size.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">解像度・dpi</div>
-<div class="term-short">印刷とWebで必要な数値が違う。</div>
-<div class="term-detail">入稿ガイドに書いてある「350dpi以上」の意味や、Webでは72dpiで十分な理由など、用途ごとの使い分けを整理した。</div>
-<a href="/glossary/resolution-dpi.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">黒つぶれ</div>
-<div class="term-short">暗い部分が真っ黒になって細部が見えなくなる現象。</div>
-<div class="term-detail">商品撮影で暗めの背景や黒い商品を撮るとき起きやすい。カメラの露出設定やライティングで防げる。</div>
-<a href="/glossary/crushed-blacks.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">白飛び</div>
-<div class="term-short">明るい部分が真っ白になって階調が失われる現象。</div>
-<div class="term-detail">窓際で撮影したときや照明が強すぎるときに発生する。一度飛んだ白はレタッチでも復元が難しい。</div>
-<a href="/glossary/whiteout.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ダイナミックレンジ</div>
-<div class="term-short">カメラが記録できる明暗の幅。</div>
-<div class="term-detail">スペック表で見かける数値で、この値が大きいほど白飛び・黒つぶれしにくくなる。スマホとミラーレスで差が出るポイントのひとつ。</div>
-<a href="/glossary/dynamic-range.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">トリミング</div>
-<div class="term-short">画像の一部を切り取って必要な範囲だけにすること。</div>
-<div class="term-detail">ECモールの画像規定に合わせて余白を調整したり、商品だけを切り出したりする場面で使う。リサイズとは別の操作。</div>
-<a href="/glossary/trimming.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">トーンジャンプ</div>
-<div class="term-short">空のグラデーションが縞模様になる現象。</div>
-<div class="term-detail">階調の段差が目に見える形で現れるもので、JPEG圧縮のかけすぎや8bit画像の編集で発生しやすい。</div>
-<a href="/glossary/tone-jump.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">非可逆圧縮・可逆圧縮</div>
-<div class="term-short">JPEG保存を繰り返すと画質が落ちる理由はこの仕組みにある。</div>
-<div class="term-detail">非可逆圧縮（JPEG）はデータを間引いて戻せない。可逆圧縮（PNG）は元に戻せるが容量が大きい。画像の用途で使い分ける基本の考え方。</div>
-<a href="/glossary/lossy-lossless.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ピクセルサイズ</div>
-<div class="term-short">ECモールの画像規定で出てくる「1600px以上」の意味。</div>
-<div class="term-detail">Amazonは長辺1600px以上推奨、楽天は700px以上など、モールごとに基準が違う。ピクセルサイズと解像度（dpi）は別の概念。</div>
-<a href="/glossary/pixel-size.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ブロックノイズ</div>
-<div class="term-short">画像を拡大するとブロック状にガビガビになる現象。</div>
-<div class="term-detail">JPEG圧縮の副産物で、圧縮率を上げすぎると目立つようになる。商品画像のクオリティに直結する問題。</div>
-<a href="/glossary/block-noise.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">レイヤー</div>
-<div class="term-short">Photoshopの基本概念。</div>
-<div class="term-detail">透明なシートを重ねるように画像を編集する仕組み。デザイナーから「レイヤー分けしたPSDを送ります」と言われたとき、何を受け取るのかがわかる。</div>
-<a href="/glossary/layer.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">リサイズ</div>
-<div class="term-short">画像の縦横サイズを変更すること。</div>
-<div class="term-detail">拡大と縮小で注意点が違い、小さい画像を無理に拡大するとぼやける。ECモールの規定サイズに合わせるときの基本操作。</div>
-<a href="/glossary/resize.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
+<div class="term-count"><span id="term-count">67</span> 語</div>
 
-<section class="cat-section">
-<h2 id="cat-product" class="cat-title">商品登録・管理</h2>
-<p class="cat-lead">ECモールに商品を登録するとき、ASIN・JAN・SKUなど似たようなコードがいくつも出てくる。それぞれの意味と使い分けを知らないと、登録作業で手が止まる。仕入れや価格設定で使われる掛け率・上代・下代や、一括登録のCSVフォーマットなど、EC担当の日常業務で遭遇する用語をまとめた。</p>
-<h3 class="sub-title">アルファベット</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">ASIN</div>
-<div class="term-short">Amazon出品で出てくる商品識別コード。</div>
-<div class="term-detail">Amazon Standard Identification Numberの略で、Amazon内の商品を一意に識別する10桁の英数字。同じ商品でも国ごとにASINが異なる。</div>
-<a href="/glossary/asin.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">CSV一括登録</div>
-<div class="term-short">商品データをCSVファイルでまとめて登録する方法。</div>
-<div class="term-detail">数十〜数百点の商品を1点ずつ手入力するのは現実的ではないため、CSVでまとめて登録する。モールごとにCSVのフォーマットが違うのが厄介なポイント。</div>
-<a href="/glossary/csv-bulk-upload.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">JANコード</div>
-<div class="term-short">商品登録で求められるバーコード番号。</div>
-<div class="term-detail">日本の商品に付与される13桁（または8桁）のバーコード。Amazonや楽天で商品登録するとき、JANコードの入力を求められる場面が多い。</div>
-<a href="/glossary/jan-code.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">SKU</div>
-<div class="term-short">在庫管理の最小単位。</div>
-<div class="term-detail">Stock Keeping Unitの略で、商品の色やサイズが違えば別のSKUとして数える。「SKU数が多い」＝管理すべき商品バリエーションが多いということ。</div>
-<a href="/glossary/sku.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-<h3 class="sub-title">五十音</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">上代・下代</div>
-<div class="term-short">定価と仕入れ値を指すEC・小売の価格用語。</div>
-<div class="term-detail">上代が消費者向けの販売価格（定価）、下代がメーカーからの仕入れ価格。この2つの差が粗利になる。</div>
-<a href="/glossary/jodai-gedai.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">掛け率</div>
-<div class="term-short">仕入れ交渉の「6掛け」は定価の60%という意味。</div>
-<div class="term-detail">掛け率が低いほど仕入れ値が安く、利益が大きくなる。アパレルは5〜6掛け、食品は7〜8掛けが目安と言われている。</div>
-<a href="/glossary/kakerate.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ささげ</div>
-<div class="term-short">撮影・採寸・原稿の頭文字。</div>
-<div class="term-detail">EC運営の根幹ともいえる商品情報の作成工程。アパレルECで特によく使われる用語で、外注する場合の相場やフローを別記事にまとめている。</div>
-<a href="/sasage-outsource.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ロット</div>
-<div class="term-short">仕入れの「最小ロット50個」の意味。</div>
-<div class="term-detail">一度に発注する数量の単位。最小ロットが大きいと在庫リスクが上がるため、小ロット対応のメーカーを探すことも多い。</div>
-<a href="/glossary/lot.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ロングテール</div>
-<div class="term-short">売れ筋以外の商品群が全体の売上を支える考え方。</div>
-<div class="term-detail">Amazonのようなロングテール戦略では、売れ筋トップ20%以外の膨大な商品が売上の大部分を占める。SKU数を増やす判断の根拠になる。</div>
-<a href="/glossary/long-tail.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
-
-<section class="cat-section">
-<h2 id="cat-page" class="cat-title">商品ページ・画像・Web</h2>
-<p class="cat-lead">商品ページの制作やWeb制作会社との打ち合わせで、LP・UI・UX・OGPといったアルファベット略語が飛び交う。デザイナーから「モック確認お願いします」と言われたとき、何を見てどうフィードバックすればいいのか。alt属性やファーストビューなど、SEOや購入率にも関わるWeb制作の基本用語を整理した。</p>
-<h3 class="sub-title">アルファベット</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">alt属性</div>
-<div class="term-short">商品画像に設定するテキスト。</div>
-<div class="term-detail">画像が読み込めないときに代わりに表示される文字で、SEOやアクセシビリティに関係する。Googleの画像検索でヒットするかどうかにも影響する。</div>
-<a href="/glossary/alt-attribute.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">LP（ランディングページ）</div>
-<div class="term-short">「LP作って」と言われて調べた。</div>
-<div class="term-detail">広告をクリックした人が最初に着地するページのこと。通常のカテゴリページとは違い、1ページ完結で購入や問い合わせまで導く設計になっている。</div>
-<a href="/glossary/landing-page.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">OGP画像</div>
-<div class="term-short">SNSでシェアしたとき表示されるサムネイル画像の設定。</div>
-<div class="term-detail">Open Graph Protocolの略で、FacebookやXで商品ページのURLを貼ったときに表示される画像やタイトルを制御する仕組み。設定しないとSNSでの見栄えが悪くなる。</div>
-<a href="/glossary/ogp-image.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">UI・UX</div>
-<div class="term-short">画面デザイン（UI）とユーザー体験（UX）の違い。</div>
-<div class="term-detail">UIはボタンの配置や色などの画面設計、UXはサイトを使ったときの体験全体を指す。「UXが悪い」と言われたら、使いにくさ全般の改善を求められている。</div>
-<a href="/glossary/ui-ux.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-<h3 class="sub-title">五十音</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">バナー</div>
-<div class="term-short">ECサイトで使う広告画像。</div>
-<div class="term-detail">セール告知やキャンペーンの訴求に使う横長・正方形の画像。サイズ規定がモールやプラットフォームごとに違うため、都度確認が必要。</div>
-<a href="/glossary/banner.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ファーストビュー</div>
-<div class="term-short">商品ページを開いたとき最初に見える範囲のこと。</div>
-<div class="term-detail">スクロールせずに見える領域で、ここに何を置くかが購入率に大きく影響する。スマホとPCでファーストビューの面積が違う点も意識しておきたい。</div>
-<a href="/glossary/first-view.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">モックアップ</div>
-<div class="term-short">デザイン確認用の見本。</div>
-<div class="term-detail">「モック見せます」と言われたら、実際に動作するものではなく見た目のイメージを確認するための資料。フィードバックはこの段階で伝えるのが効率的。</div>
-<a href="/glossary/mockup.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">レスポンシブ</div>
-<div class="term-short">画面サイズに合わせてレイアウトが変わるWebデザインの手法。</div>
-<div class="term-detail">PC・タブレット・スマホで同じURLのまま最適な表示に切り替わる。ECサイトの購入はスマホ経由が7割以上と言われており、レスポンシブ対応は必須になっている。</div>
-<a href="/glossary/responsive.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
-
-<section class="cat-section">
-<h2 id="cat-analytics" class="cat-title">EC運営・分析</h2>
-<p class="cat-lead">売上報告や広告運用の会議で、CVR・ROAS・CPAといった指標が当たり前のように使われる。それぞれの計算式と「良い数値」の目安がわかっていないと、報告を聞いても判断ができない。ABテストやカゴ落ち対策など、売上改善に直結する分析用語をまとめた。</p>
-<h3 class="sub-title">アルファベット</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">ABテスト</div>
-<div class="term-short">2パターンを比較して効果の高いほうを選ぶテスト手法。</div>
-<div class="term-detail">商品画像やページのレイアウトをAパターンとBパターンで出し分けて、どちらが購入率や売上に貢献するかをデータで判断する。</div>
-<a href="/glossary/ab-test.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">CPA</div>
-<div class="term-short">1件の成果を獲得するのにかかった広告費。</div>
-<div class="term-detail">Cost Per Acquisitionの略で、「CPA 3,000円」なら1件の購入を得るのに3,000円の広告費がかかったという意味。広告運用の費用対効果を測る基本指標。</div>
-<a href="/glossary/cpa.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">CVR</div>
-<div class="term-short">コンバージョン率。</div>
-<div class="term-detail">サイト訪問者のうち何%が購入（または問い合わせ）に至ったかの指標。ECサイト全体のCVRは一般的に1〜3%程度と言われている。</div>
-<a href="/glossary/cvr.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">LTV</div>
-<div class="term-short">顧客1人が生涯でもたらす売上の合計。</div>
-<div class="term-detail">Life Time Valueの略で、リピート施策の効果を測る指標。CPAがLTVを上回ると赤字なので、広告予算の上限を決める判断材料になる。</div>
-<a href="/glossary/ltv.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ROAS</div>
-<div class="term-short">広告費に対して何倍の売上があったかを測る指標。</div>
-<div class="term-detail">Return On Advertising Spendの略で、ROAS 400%なら広告費の4倍の売上があったという意味。広告運用の報告で最もよく出てくる指標のひとつ。</div>
-<a href="/glossary/roas.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-<h3 class="sub-title">五十音</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">カゴ落ち</div>
-<div class="term-short">カートに入れたまま購入せず離脱すること。</div>
-<div class="term-detail">EC業界全体のカゴ落ち率は約70%と言われている。送料の表示タイミングや決済手段の少なさが主な原因で、改善すれば売上に直結する。</div>
-<a href="/glossary/cart-abandonment.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">セッション・PV・UU</div>
-<div class="term-short">アクセス解析の3つの基本指標。</div>
-<div class="term-detail">セッションは訪問回数、PVはページの閲覧回数、UUは訪問した人の数。似ているが意味が違うため、レポートを読むとき混同しないよう注意が必要。</div>
-<a href="/glossary/session-pv-uu.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">直帰率</div>
-<div class="term-short">1ページだけ見て離脱した割合。</div>
-<div class="term-detail">Google Analyticsで見かける指標で、直帰率が高い＝ページの内容が訪問者の期待と合っていない可能性がある。広告のランディングページでは特に重要。</div>
-<a href="/glossary/bounce-rate.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
-
-<section class="cat-section">
-<h2 id="cat-logistics" class="cat-title">物流・フルフィルメント</h2>
-<p class="cat-lead">EC運営では物流の知識も欠かせない。倉庫会社との打ち合わせで3PL・WMS・ピッキングといった用語が出てくる。受注から発送完了までの一連の流れ（フルフィルメント）を理解しておくと、配送トラブルの原因特定や倉庫選びがスムーズになる。リードタイムや出荷指示書など、実務でよく使う物流用語をまとめた。</p>
-<h3 class="sub-title">アルファベット</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">3PL</div>
-<div class="term-short">物流業務をまるごと外部に委託するサービス。</div>
-<div class="term-detail">Third Party Logisticsの略で、保管・梱包・発送を一括で外注できる。自社で倉庫を持たないD2Cブランドやスタートアップが利用するケースが多い。</div>
-<a href="/glossary/3pl.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">WMS</div>
-<div class="term-short">倉庫管理システム。</div>
-<div class="term-detail">Warehouse Management Systemの略で、在庫の入出庫をシステムで管理するツール。ECの受注データと連携させることで、手動の出荷作業を削減できる。</div>
-<a href="/glossary/wms.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-<h3 class="sub-title">五十音</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">出荷指示書</div>
-<div class="term-short">物流会社に出荷内容を伝えるための書類。</div>
-<div class="term-detail">商品名・数量・届け先・配送方法などを記載する。WMSとECモールが連携していれば自動生成されるが、手動で作成する場合はミスに注意。</div>
-<a href="/glossary/shipping-instruction.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">ピッキング</div>
-<div class="term-short">倉庫で注文商品を棚から取り出す作業。</div>
-<div class="term-detail">出荷指示書に基づいて商品を集める工程で、EC物流のボトルネックになりやすい。ピッキングミスは誤配送に直結するため、倉庫選びの判断基準のひとつ。</div>
-<a href="/glossary/picking.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">フルフィルメント</div>
-<div class="term-short">受注から配送完了までの物流業務の総称。</div>
-<div class="term-detail">注文確認→ピッキング→梱包→発送→配送→返品対応という一連の流れ全体を指す。AmazonのFBAはフルフィルメントの代行サービスにあたる。</div>
-<a href="/glossary/fulfillment.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">リードタイム</div>
-<div class="term-short">発注から納品までにかかる日数のこと。</div>
-<div class="term-detail">仕入れのリードタイムが長いと在庫切れのリスクが上がる。海外仕入れの場合は2〜4週間かかることもあり、発注タイミングの計算が重要になる。</div>
-<a href="/glossary/lead-time.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
-
-<section class="cat-section">
-<h2 id="cat-marketing" class="cat-title">マーケティング・集客</h2>
-<p class="cat-lead">広告代理店やマーケティング会議で、CRM・D2C・UGCなど横文字の略語が次々と飛んでくる。リスティング広告とリターゲティングの違い、アフィリエイトの仕組みなど、ECの集客に関わる用語を整理した。インプレッションやオムニチャネルなど、報告書に出てくる頻度が高い用語も含めている。</p>
-<h3 class="sub-title">アルファベット</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">CRM</div>
-<div class="term-short">顧客管理ツール。</div>
-<div class="term-detail">Customer Relationship Managementの略で、顧客情報を一元管理してリピート購入やLTV向上につなげる仕組み。メール配信やポイント施策の基盤になっている。</div>
-<a href="/glossary/crm.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">D2C</div>
-<div class="term-short">メーカーが自社ECで直接消費者に販売するビジネスモデル。</div>
-<div class="term-detail">Direct to Consumerの略で、モール出店と違い中間マージンがかからない反面、集客を自力で行う必要がある。最近はD2Cブランドのモール併用も増えている。</div>
-<a href="/glossary/d2c.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">UGC</div>
-<div class="term-short">ユーザーが作ったコンテンツ。</div>
-<div class="term-detail">User Generated Contentの略で、口コミやSNS投稿写真のこと。広告よりも信頼されやすいと言われており、商品ページにレビュー写真を掲載するのもUGC活用のひとつ。</div>
-<a href="/glossary/ugc.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-<h3 class="sub-title">五十音</h3>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">インプレッション</div>
-<div class="term-short">広告やコンテンツが表示された回数。</div>
-<div class="term-detail">「imp」と略されることが多い。クリックされたかどうかは関係なく、表示されただけでカウントされる。認知度の指標として使われる。</div>
-<a href="/glossary/impression.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">オムニチャネル</div>
-<div class="term-short">実店舗・EC・アプリなど複数チャネルを統合する戦略。</div>
-<div class="term-detail">実店舗で試着→ECで購入、ECで注文→店舗で受取など、チャネルをまたいだ購買体験を実現する。在庫の一元管理が前提になるため、システム連携がカギ。</div>
-<a href="/glossary/omnichannel.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">アフィリエイト</div>
-<div class="term-short">成果報酬型の広告手法。</div>
-<div class="term-detail">ブロガーやSNSインフルエンサーなど第三者が商品を紹介し、購入が発生したら報酬が支払われる仕組み。広告主にとっては成果が出た分だけ費用が発生するためリスクが低い。</div>
-<a href="/glossary/affiliate.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">リスティング広告</div>
-<div class="term-short">検索結果に表示されるテキスト広告。</div>
-<div class="term-detail">「リスティング回す」と言われたら、Google検索やYahoo!検索の検索結果ページに出す広告のこと。クリック課金型で、キーワードごとに入札単価を設定する。</div>
-<a href="/glossary/listing-ads.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">リターゲティング</div>
-<div class="term-short">一度サイトを訪問した人に再度広告を表示する手法。</div>
-<div class="term-detail">商品ページを見たけど買わなかった人に対して、別のサイトやSNSで同じ商品の広告を表示する。カゴ落ち対策としても使われることが多い。</div>
-<a href="/glossary/retargeting.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
-
-<section class="cat-section">
-<h2 id="cat-legal" class="cat-title">決済・法務</h2>
-<p class="cat-lead">ECサイトに決済手段を追加するときや、法務まわりの整備で出てくる用語。後払い決済（BNPL）の導入を検討したときに調べたことや、チャージバックのリスク、特商法表記ページに書くべき項目などをまとめている。</p>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">後払い決済（BNPL）</div>
-<div class="term-short">商品を受け取ってから支払う決済方法。</div>
-<div class="term-detail">Buy Now, Pay Laterの略。導入するとCVRが上がると言われるが、未回収リスクや決済手数料とのバランスを検討する必要がある。</div>
-<a href="/glossary/bnpl.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">チャージバック</div>
-<div class="term-short">クレジットカード決済の取消し。</div>
-<div class="term-detail">不正利用やクレーム時に発生し、売上金が強制的に返金される。EC事業者にとっては売上減と商品喪失の両方のダメージを受けるため、不正検知の仕組みが重要。</div>
-<a href="/glossary/chargeback.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">特商法表記</div>
-<div class="term-short">ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。</div>
-<div class="term-detail">販売者の氏名・住所・連絡先・返品条件などを記載する義務がある。記載不備があると行政処分の対象になることもあるため、公開前に必ず確認する。</div>
-<a href="/glossary/tokushoho.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
-
-<section class="cat-section">
-<h2 id="cat-mall" class="cat-title">モール固有</h2>
-<p class="cat-lead">Amazon・楽天など各ECモールには、そのモール独自の仕組みや用語がある。FBA（Amazonの物流代行）や楽天RMS（店舗管理画面）など、モールに出店して初めて触れる用語をまとめた。</p>
-<div class="term-list">
-<div class="term-card">
-<div class="term-name">FBA</div>
-<div class="term-short">AmazonのFulfillment by Amazon。</div>
-<div class="term-detail">商品をAmazonの倉庫に預けると、保管・梱包・発送・カスタマー対応までAmazonが代行してくれる仕組み。Prime対象にもなるため、売上アップに直結しやすい。</div>
-<a href="/glossary/fba.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">楽天RMS</div>
-<div class="term-short">楽天市場の出店者向け管理画面。</div>
-<div class="term-detail">商品登録・受注管理・売上分析・広告設定などを行う管理システム。独特のUIで、慣れるまでに時間がかかると言われることが多い。</div>
-<a href="/glossary/rakuten-rms.html" class="term-more">→ もっと詳しく</a>
-</div>
-<div class="term-card">
-<div class="term-name">楽天スーパーSALE</div>
-<div class="term-short">楽天最大のセールイベント。</div>
-<div class="term-detail">年4回（3月・6月・9月・12月）開催され、楽天全体のトラフィックが急増する。エントリー申請の締切や値引き率の条件があるため、早めの準備が必要。</div>
-<a href="/glossary/rakuten-super-sale.html" class="term-more">→ もっと詳しく</a>
-</div>
-</div>
-</section>
+<h2 class="section-heading" data-section="alpha">数字・アルファベット</h2>
+<div class="term-card" data-cat="logistics"><div class="term-header"><a href="/glossary/3pl.html" class="term-name">3PL</a><span class="term-cat">物流</span></div><p class="term-desc">物流業務をまるごと外部に委託するサービス。</p><a href="/glossary/3pl.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/ab-test.html" class="term-name">ABテスト</a><span class="term-cat">EC分析</span></div><p class="term-desc">2パターンを比較して効果の高いほうを選ぶテスト手法。</p><a href="/glossary/ab-test.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/alt-attribute.html" class="term-name">alt属性</a><span class="term-cat">Web・画像</span></div><p class="term-desc">商品画像に設定するテキスト。</p><a href="/glossary/alt-attribute.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/asin.html" class="term-name">ASIN</a><span class="term-cat">商品登録</span></div><p class="term-desc">Amazon出品で出てくる商品識別コード。</p><a href="/glossary/asin.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/avif.html" class="term-name">AVIF</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">JPEGの次の標準になるかもしれない次世代画像フォーマット。</p><a href="/glossary/avif.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/bmp.html" class="term-name">BMP</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">圧縮しない古い画像形式。</p><a href="/glossary/bmp.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="legal"><div class="term-header"><a href="/glossary/bnpl.html" class="term-name">後払い決済（BNPL）</a><span class="term-cat">決済・法務</span></div><p class="term-desc">商品を受け取ってから支払う決済方法。</p><a href="/glossary/bnpl.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/cpa.html" class="term-name">CPA</a><span class="term-cat">EC分析</span></div><p class="term-desc">1件の成果を獲得するのにかかった広告費。</p><a href="/glossary/cpa.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/crm.html" class="term-name">CRM</a><span class="term-cat">集客</span></div><p class="term-desc">顧客管理ツール。</p><a href="/glossary/crm.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/csv-bulk-upload.html" class="term-name">CSV一括登録</a><span class="term-cat">商品登録</span></div><p class="term-desc">商品データをCSVファイルでまとめて登録する方法。</p><a href="/glossary/csv-bulk-upload.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/cvr.html" class="term-name">CVR</a><span class="term-cat">EC分析</span></div><p class="term-desc">コンバージョン率。</p><a href="/glossary/cvr.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/d2c.html" class="term-name">D2C</a><span class="term-cat">集客</span></div><p class="term-desc">メーカーが自社ECで直接消費者に販売するビジネスモデル。</p><a href="/glossary/d2c.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="mall"><div class="term-header"><a href="/glossary/fba.html" class="term-name">FBA</a><span class="term-cat">モール</span></div><p class="term-desc">AmazonのFulfillment by Amazon。</p><a href="/glossary/fba.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/gif.html" class="term-name">GIF</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">アニメーションができる画像形式。</p><a href="/glossary/gif.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/heif-heic.html" class="term-name">HEIF・HEIC</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">iPhoneの標準写真形式。</p><a href="/glossary/heif-heic.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/jan-code.html" class="term-name">JANコード</a><span class="term-cat">商品登録</span></div><p class="term-desc">商品登録で求められるバーコード番号。</p><a href="/glossary/jan-code.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/jfif.html" class="term-name">JFIF</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。</p><a href="/glossary/jfif.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/landing-page.html" class="term-name">LP（ランディングページ）</a><span class="term-cat">Web・画像</span></div><p class="term-desc">「LP作って」と言われて調べた。</p><a href="/glossary/landing-page.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/ltv.html" class="term-name">LTV</a><span class="term-cat">EC分析</span></div><p class="term-desc">顧客1人が生涯でもたらす売上の合計。</p><a href="/glossary/ltv.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/ogp-image.html" class="term-name">OGP画像</a><span class="term-cat">Web・画像</span></div><p class="term-desc">SNSでシェアしたとき表示されるサムネイル画像の設定。</p><a href="/glossary/ogp-image.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/png.html" class="term-name">PNG</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">背景透過ができる画像形式。</p><a href="/glossary/png.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/psd.html" class="term-name">PSD</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">Photoshop専用のファイル形式。</p><a href="/glossary/psd.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/rgb-cmyk.html" class="term-name">RGB・CMYK</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">色の表現方法。Webと印刷で色が変わる原因はこの違い。</p><a href="/glossary/rgb-cmyk.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/roas.html" class="term-name">ROAS</a><span class="term-cat">EC分析</span></div><p class="term-desc">広告費に対して何倍の売上があったかを測る指標。</p><a href="/glossary/roas.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/sku.html" class="term-name">SKU</a><span class="term-cat">商品登録</span></div><p class="term-desc">在庫管理の最小単位。</p><a href="/glossary/sku.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/tiff.html" class="term-name">TIFF</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">印刷用途で使われる高品質な画像形式。</p><a href="/glossary/tiff.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/ugc.html" class="term-name">UGC</a><span class="term-cat">集客</span></div><p class="term-desc">ユーザーが作ったコンテンツ。</p><a href="/glossary/ugc.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/ui-ux.html" class="term-name">UI・UX</a><span class="term-cat">Web・画像</span></div><p class="term-desc">画面デザイン（UI）とユーザー体験（UX）の違い。</p><a href="/glossary/ui-ux.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/webp.html" class="term-name">WebP</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">Googleが開発した次世代画像フォーマット。</p><a href="/glossary/webp.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="logistics"><div class="term-header"><a href="/glossary/wms.html" class="term-name">WMS</a><span class="term-cat">物流</span></div><p class="term-desc">倉庫管理システム。</p><a href="/glossary/wms.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="a">あ行</h2>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/affiliate.html" class="term-name">アフィリエイト</a><span class="term-cat">集客</span></div><p class="term-desc">成果報酬型の広告手法。</p><a href="/glossary/affiliate.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/impression.html" class="term-name">インプレッション</a><span class="term-cat">集客</span></div><p class="term-desc">広告やコンテンツが表示された回数。</p><a href="/glossary/impression.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/jodai-gedai.html" class="term-name">上代・下代</a><span class="term-cat">商品登録</span></div><p class="term-desc">定価と仕入れ値を指すEC・小売の価格用語。</p><a href="/glossary/jodai-gedai.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/omnichannel.html" class="term-name">オムニチャネル</a><span class="term-cat">集客</span></div><p class="term-desc">実店舗・EC・アプリなど複数チャネルを統合する戦略。</p><a href="/glossary/omnichannel.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="ka">か行</h2>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/cart-abandonment.html" class="term-name">カゴ落ち</a><span class="term-cat">EC分析</span></div><p class="term-desc">カートに入れたまま購入せず離脱すること。</p><a href="/glossary/cart-abandonment.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/kakerate.html" class="term-name">掛け率</a><span class="term-cat">商品登録</span></div><p class="term-desc">仕入れ交渉の「6掛け」は定価の60%という意味。</p><a href="/glossary/kakerate.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/image-size.html" class="term-name">画像サイズ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">ピクセル数とファイル容量、2つの意味がある紛らわしい用語。</p><a href="/glossary/image-size.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/resolution-dpi.html" class="term-name">解像度・dpi</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">印刷とWebで必要な数値が違う。</p><a href="/glossary/resolution-dpi.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/crushed-blacks.html" class="term-name">黒つぶれ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">暗い部分が真っ黒になって細部が見えなくなる現象。</p><a href="/glossary/crushed-blacks.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="sa">さ行</h2>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/sasage-outsource.html" class="term-name">ささげ</a><span class="term-cat">商品登録</span></div><p class="term-desc">撮影・採寸・原稿の頭文字。</p><a href="/sasage-outsource.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="logistics"><div class="term-header"><a href="/glossary/shipping-instruction.html" class="term-name">出荷指示書</a><span class="term-cat">物流</span></div><p class="term-desc">物流会社に出荷内容を伝えるための書類。</p><a href="/glossary/shipping-instruction.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/whiteout.html" class="term-name">白飛び</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">明るい部分が真っ白になって階調が失われる現象。</p><a href="/glossary/whiteout.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/session-pv-uu.html" class="term-name">セッション・PV・UU</a><span class="term-cat">EC分析</span></div><p class="term-desc">アクセス解析の3つの基本指標。</p><a href="/glossary/session-pv-uu.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="ta">た行</h2>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/dynamic-range.html" class="term-name">ダイナミックレンジ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">カメラが記録できる明暗の幅。</p><a href="/glossary/dynamic-range.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="legal"><div class="term-header"><a href="/glossary/chargeback.html" class="term-name">チャージバック</a><span class="term-cat">決済・法務</span></div><p class="term-desc">クレジットカード決済の取消し。</p><a href="/glossary/chargeback.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="analytics"><div class="term-header"><a href="/glossary/bounce-rate.html" class="term-name">直帰率</a><span class="term-cat">EC分析</span></div><p class="term-desc">1ページだけ見て離脱した割合。</p><a href="/glossary/bounce-rate.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="legal"><div class="term-header"><a href="/glossary/tokushoho.html" class="term-name">特商法表記</a><span class="term-cat">決済・法務</span></div><p class="term-desc">ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。</p><a href="/glossary/tokushoho.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/tone-jump.html" class="term-name">トーンジャンプ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">空のグラデーションが縞模様になる現象。</p><a href="/glossary/tone-jump.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/trimming.html" class="term-name">トリミング</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">画像の一部を切り取って必要な範囲だけにすること。</p><a href="/glossary/trimming.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="ha">は行</h2>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/banner.html" class="term-name">バナー</a><span class="term-cat">Web・画像</span></div><p class="term-desc">ECサイトで使う広告画像。</p><a href="/glossary/banner.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/lossy-lossless.html" class="term-name">非可逆圧縮・可逆圧縮</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">JPEG保存を繰り返すと画質が落ちる理由はこの仕組みにある。</p><a href="/glossary/lossy-lossless.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/pixel-size.html" class="term-name">ピクセルサイズ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">ECモールの画像規定で出てくる「1600px以上」の意味。</p><a href="/glossary/pixel-size.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="logistics"><div class="term-header"><a href="/glossary/picking.html" class="term-name">ピッキング</a><span class="term-cat">物流</span></div><p class="term-desc">倉庫で注文商品を棚から取り出す作業。</p><a href="/glossary/picking.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/first-view.html" class="term-name">ファーストビュー</a><span class="term-cat">Web・画像</span></div><p class="term-desc">商品ページを開いたとき最初に見える範囲のこと。</p><a href="/glossary/first-view.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="logistics"><div class="term-header"><a href="/glossary/fulfillment.html" class="term-name">フルフィルメント</a><span class="term-cat">物流</span></div><p class="term-desc">受注から配送完了までの物流業務の総称。</p><a href="/glossary/fulfillment.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/block-noise.html" class="term-name">ブロックノイズ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">画像を拡大するとブロック状にガビガビになる現象。</p><a href="/glossary/block-noise.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="ma">ま行</h2>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/mockup.html" class="term-name">モックアップ</a><span class="term-cat">Web・画像</span></div><p class="term-desc">デザイン確認用の見本。</p><a href="/glossary/mockup.html" class="term-link">→ もっと詳しく</a></div>
+<h2 class="section-heading" data-section="ra">ら行</h2>
+<div class="term-card" data-cat="mall"><div class="term-header"><a href="/glossary/rakuten-rms.html" class="term-name">楽天RMS</a><span class="term-cat">モール</span></div><p class="term-desc">楽天市場の出店者向け管理画面。</p><a href="/glossary/rakuten-rms.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="mall"><div class="term-header"><a href="/glossary/rakuten-super-sale.html" class="term-name">楽天スーパーSALE</a><span class="term-cat">モール</span></div><p class="term-desc">楽天最大のセールイベント。</p><a href="/glossary/rakuten-super-sale.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="logistics"><div class="term-header"><a href="/glossary/lead-time.html" class="term-name">リードタイム</a><span class="term-cat">物流</span></div><p class="term-desc">発注から納品までにかかる日数のこと。</p><a href="/glossary/lead-time.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/resize.html" class="term-name">リサイズ</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">画像の縦横サイズを変更すること。</p><a href="/glossary/resize.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/listing-ads.html" class="term-name">リスティング広告</a><span class="term-cat">集客</span></div><p class="term-desc">検索結果に表示されるテキスト広告。</p><a href="/glossary/listing-ads.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="marketing"><div class="term-header"><a href="/glossary/retargeting.html" class="term-name">リターゲティング</a><span class="term-cat">集客</span></div><p class="term-desc">一度サイトを訪問した人に再度広告を表示する手法。</p><a href="/glossary/retargeting.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="image"><div class="term-header"><a href="/glossary/layer.html" class="term-name">レイヤー</a><span class="term-cat">画像・ファイル</span></div><p class="term-desc">Photoshopの基本概念。</p><a href="/glossary/layer.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="web"><div class="term-header"><a href="/glossary/responsive.html" class="term-name">レスポンシブ</a><span class="term-cat">Web・画像</span></div><p class="term-desc">画面サイズに合わせてレイアウトが変わるWebデザインの手法。</p><a href="/glossary/responsive.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/lot.html" class="term-name">ロット</a><span class="term-cat">商品登録</span></div><p class="term-desc">仕入れの「最小ロット50個」の意味。</p><a href="/glossary/lot.html" class="term-link">→ もっと詳しく</a></div>
+<div class="term-card" data-cat="product"><div class="term-header"><a href="/glossary/long-tail.html" class="term-name">ロングテール</a><span class="term-cat">商品登録</span></div><p class="term-desc">売れ筋以外の商品群が全体の売上を支える考え方。</p><a href="/glossary/long-tail.html" class="term-link">→ もっと詳しく</a></div>
 
 <div class="author-box">
 <div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
@@ -630,6 +224,51 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 &copy; 2026 ツバサのメモ帳
 </div>
 </footer>
+
+<script>
+(function(){
+  const tabs = document.querySelectorAll('.filter-tab');
+  const cards = document.querySelectorAll('.term-card');
+  const headings = document.querySelectorAll('.section-heading');
+  const countEl = document.getElementById('term-count');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      let visible = 0;
+      cards.forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.classList.remove('hidden');
+          visible++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      headings.forEach(h => {
+        const key = h.dataset.section;
+        const hasVisible = Array.from(cards).some(c =>
+          !c.classList.contains('hidden') &&
+          c.previousElementSibling &&
+          true
+        );
+        // Simpler: hide heading if no visible cards in that section
+        let next = h.nextElementSibling;
+        let any = false;
+        while (next && !next.classList.contains('section-heading')) {
+          if (next.classList.contains('term-card') && !next.classList.contains('hidden')) {
+            any = true;
+            break;
+          }
+          next = next.nextElementSibling;
+        }
+        if (any) h.classList.remove('hidden'); else h.classList.add('hidden');
+      });
+      countEl.textContent = visible;
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
