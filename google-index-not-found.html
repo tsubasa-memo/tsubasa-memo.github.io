@@ -37,11 +37,54 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"「URLがGoogleに登録されていません」と表示された場合はどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"まだGoogleにクロールされていない状態です。Search Consoleのデータ取得ツール（URL検査）で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。"}},
-    {"@type":"Question","name":"サイトマップを送信するとインデックスが早くなりますか？","acceptedAnswer":{"@type":"Answer","text":"サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。"}},
-    {"@type":"Question","name":"新規サイトがGoogleにインデックスされるまでどれくらいかかりますか？","acceptedAnswer":{"@type":"Answer","text":"一般的に1〜4週間程度かかります。新規ドメインはGoogleからの信頼が低いため、インデックスが遅い傾向があります。サイトマップ送信とインデックス登録リクエストを行うことで早める効果があります。"}},
-    {"@type":"Question","name":"インデックスされてもすぐに検索結果に表示されますか？","acceptedAnswer":{"@type":"Answer","text":"インデックス登録とは「Googleのデータベースに記事が登録された状態」です。その後、検索クエリとの関連性や品質評価によって順位が決まります。インデックス直後は順位が不安定で、安定するまで数週間〜数ヶ月かかることがあります。"}},
-    {"@type":"Question","name":"Search ConsoleなしでGoogleにインデックスされますか？","acceptedAnswer":{"@type":"Answer","text":"自然にクロールされればSearch Consoleを使わなくてもインデックスされます。ただしSearch Consoleなしでは状況の把握や促進ができないため、ブログ運営では必ず設置することをおすすめします。"}}
+    {
+      "@type": "Question",
+      "name": "「URLがGoogleに登録されていません」と表示された場合はどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まだGoogleにクロールされていない状態です。Search Consoleのデータ取得ツール（URL検査）で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "サイトマップを送信するとインデックスが早くなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "新規サイトがGoogleにインデックスされるまでどれくらいかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般的に1〜4週間程度かかります。新規ドメインはGoogleからの信頼が低いため、インデックスが遅い傾向があります。サイトマップ送信とインデックス登録リクエストを行うことで早める効果があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "インデックスされてもすぐに検索結果に表示されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "インデックス登録とは「Googleのデータベースに記事が登録された状態」です。その後、検索クエリとの関連性や品質評価によって順位が決まります。インデックス直後は順位が不安定で、安定するまで数週間〜数ヶ月かかることがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Search ConsoleなしでGoogleにインデックスされますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "自然にクロールされればSearch Consoleを使わなくてもインデックスされます。ただしSearch Consoleなしでは状況の把握や促進ができないため、ブログ運営では必ず設置することをおすすめします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "表示回数が急に減ったのはインデックスが外れたのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必ずしもインデックスが外れたわけではありません。URL検査ツールでインデックス状況を確認し、「URLはGoogleに登録されています」と表示されれば順位低下が原因です。インデックス脱落とタイトル・コンテンツの問題を区別して対処することが重要です。"
+      }
+    }
   ]
 }
 </script>
@@ -195,10 +238,11 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <p>このブログも公開直後は表示回数が多かったものの、2〜3ヶ月後に急減した時期がありました。これは新規サイトに対するGoogleの評価が安定化した典型的な動きで、インデックスの問題ではなく順位の問題です。Search Consoleで表示回数が減った場合は、まずインデックス状況を確認してから原因を判断することをおすすめします。</p>
 
 <h2>よくある質問</h2>
-<div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合は？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合はどうすればいいですか？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。</p></div>
 <div class="faq-item"><p class="faq-q">Q. サイトマップを送信するとインデックスが早くなりますか？</p><p class="faq-a">サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 新規サイトがGoogleにインデックスされるまでどれくらいかかりますか？</p><p class="faq-a">一般的に1〜4週間程度かかります。サイトマップ送信とインデックス登録リクエストを行うことで早める効果があります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. インデックスされてもすぐに検索結果に表示されますか？</p><p class="faq-a">インデックス登録はGoogleのデータベースへの登録を意味します。その後、検索クエリとの関連性や品質評価によって順位が決まります。インデックス直後は順位が不安定で、安定するまで数週間〜数ヶ月かかることがあります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. Search ConsoleなしでGoogleにインデックスされますか？</p><p class="faq-a">自然にクロールされればSearch Consoleを使わなくてもインデックスされます。ただしSearch Consoleなしでは状況の把握や促進ができないため、ブログ運営では必ず設置することをおすすめします。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 表示回数が急に減ったのはインデックスが外れたのですか？</p><p class="faq-a">必ずしもインデックスが外れたわけではありません。URL検査ツールでインデックス状況を確認し、「URLはGoogleに登録されています」と表示されれば順位低下が原因です。インデックス脱落とタイトル・コンテンツの問題を区別して対処することが重要です。</p></div>
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>

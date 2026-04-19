@@ -37,11 +37,54 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"Google Search Consoleは無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"完全無料で使えます。Googleアカウントがあれば誰でも利用でき、ウェブサイトの所有権を確認するだけで使い始められます。"}},
-    {"@type":"Question","name":"Search ConsoleとGoogle Analyticsの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです。検索キーワード・表示回数・CTR・掲載順位など、検索エンジン経由の情報が主です。Google Analyticsは「サイトに来たユーザーが何をしたか」を分析するツールです。ページビュー・滞在時間・離脱率など、サイト内の行動データを計測します。両方を使うとより精度の高い分析ができます。"}},
-    {"@type":"Question","name":"Search Consoleで「URL がGoogleに登録されていません」と表示された場合は？","acceptedAnswer":{"@type":"Answer","text":"まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、1〜2週間でクロールされることが多いです。"}},
-    {"@type":"Question","name":"掲載順位の平均が10位以下でも改善できますか？","acceptedAnswer":{"@type":"Answer","text":"改善できます。掲載順位10〜20位の記事は、タイトルにキーワードを追加する、記事の情報量を増やす、内部リンクを充実させるなどの対策が有効です。ただし即効性はなく、変更後2〜4週間で効果を確認するのが現実的です。"}},
-    {"@type":"Question","name":"サイトマップとは何ですか？なぜ必要ですか？","acceptedAnswer":{"@type":"Answer","text":"サイトマップ（sitemap.xml）はサイト内のすべてのURLをまとめたXMLファイルです。GoogleのクローラーがサイトのURL構造を把握しやすくなるため、インデックスが早まる効果があります。Search Consoleからサイトマップを送信することで、Googleに「このURLもクロールしてください」と伝えられます。"}}
+    {
+      "@type": "Question",
+      "name": "Google Search Consoleは無料で使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完全無料で使えます。Googleアカウントがあれば誰でも利用でき、ウェブサイトの所有権を確認するだけで使い始められます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Search ConsoleとGoogle Analyticsの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです。検索キーワード・表示回数・CTR・掲載順位など、検索エンジン経由の情報が主です。Google Analyticsは「サイトに来たユーザーが何をしたか」を分析するツールです。ページビュー・滞在時間・離脱率など、サイト内の行動データを計測します。両方を使うとより精度の高い分析ができます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Search Consoleで「URL がGoogleに登録されていません」と表示された場合は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、1〜2週間でクロールされることが多いです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "掲載順位の平均が10位以下でも改善できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "改善できます。掲載順位10〜20位の記事は、タイトルにキーワードを追加する、記事の情報量を増やす、内部リンクを充実させるなどの対策が有効です。ただし即効性はなく、変更後2〜4週間で効果を確認するのが現実的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "サイトマップとは何ですか？なぜ必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サイトマップ（sitemap.xml）はサイト内のすべてのURLをまとめたXMLファイルです。GoogleのクローラーがサイトのURL構造を把握しやすくなるため、インデックスが早まる効果があります。Search Consoleからサイトマップを送信することで、Googleに「このURLもクロールしてください」と伝えられます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CTR（クリック率）の目安は何%ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "掲載順位1位で20〜30%、5位で5〜8%、10位で1〜2%程度が一般的な目安です。同じ順位でもキーワードや記事によって大きく変わります。"
+      }
+    }
   ]
 }
 </script>
@@ -188,9 +231,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <h2>よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. Google Search Consoleは無料で使えますか？</p><p class="faq-a">完全無料で使えます。Googleアカウントがあれば誰でも利用でき、ウェブサイトの所有権を確認するだけで使い始められます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. Search ConsoleとGoogle Analyticsの違いは何ですか？</p><p class="faq-a">Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです（検索キーワード・表示回数・CTR・順位）。Google Analyticsは「サイトに来たユーザーが何をしたか」を分析するツールです（PV・滞在時間・離脱率）。両方を使うとより精度の高い分析ができます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. Search Consoleで「URL がGoogleに登録されていません」と表示された場合は？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、1〜2週間でクロールされることが多いです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 掲載順位の平均が10位以下でも改善できますか？</p><p class="faq-a">改善できます。掲載順位10〜20位の記事は、タイトルにキーワードを追加する、記事の情報量を増やす、内部リンクを充実させるなどの対策が有効です。ただし即効性はなく、変更後2〜4週間で効果を確認するのが現実的です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. サイトマップとは何ですか？なぜ必要ですか？</p><p class="faq-a">サイトマップ（sitemap.xml）はサイト内の全URLをまとめたXMLファイルです。GoogleのクローラーがサイトのURL構造を把握しやすくなるため、インデックスが早まる効果があります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. CTR（クリック率）の目安は何%ですか？</p><p class="faq-a">掲載順位1位で20〜30%、5位で5〜8%、10位で1〜2%程度が一般的な目安です。同じ順位でもキーワードや記事によって大きく変わります。</p></div>
-<div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合は？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、1〜2週間でクロールされることが多いです。</p></div>
 <div class="author-box">
 <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
 <div class="author-text">
