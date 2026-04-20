@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</title>
+<meta name="description" content="静的サイトと動的サイトの違いをメリット・デメリットで比較した備忘録です。GitHub Pagesで60本以上の記事を運営した経験をもとに、静的サイトの弱点とされる「更新の手間」をAIコーディングツールでどう解消したかを記録しています。">
+<meta name="keywords" content="静的サイト 動的サイト 違い,静的サイト メリット デメリット,GitHub Pages ブログ,静的サイト AI 更新">
+<meta property="og:title" content="静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した">
+<meta property="og:description" content="静的サイトと動的サイトの違い。GitHub Pagesで60本以上運営した経験と、AIで更新の手間を解消した方法をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/static-vs-dynamic-site.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/static-vs-dynamic-site.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"静的サイトと動的サイトの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"静的サイトはあらかじめ作られたHTMLファイルをそのまま表示するサイトで、誰がいつ見ても同じ内容が表示されます。動的サイトはアクセスのたびにサーバー側でページを生成するサイトで、ユーザーや条件によって表示内容が変わります。WordPressは動的サイト、GitHub Pagesは静的サイトの代表例です。"}},
+    {"@type":"Question","name":"静的サイトのメリットは何ですか？","acceptedAnswer":{"@type":"Answer","text":"表示速度が速い、セキュリティリスクが低い、サーバー費用が安い（GitHub Pagesなら無料）の3点が主なメリットです。データベースを使わないためサーバーダウンしにくく、WordPressのようなCMSの脆弱性を突かれる心配もありません。"}},
+    {"@type":"Question","name":"静的サイトのデメリットは何ですか？","acceptedAnswer":{"@type":"Answer","text":"更新のたびにHTMLファイルを編集する必要がある点が最大のデメリットとされています。WordPressのような管理画面がなく、HTMLの知識が求められます。ただし2025年以降はAIコーディングツール（Claude Code等）を使えば、自然言語で指示するだけでHTMLの生成・編集・デプロイが可能になっており、非エンジニアでも静的サイトを運営するハードルは大きく下がっています。"}},
+    {"@type":"Question","name":"GitHub Pagesとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"GitHubが提供する無料の静的サイトホスティングサービスです。GitHubリポジトリにHTMLファイルを置くだけでWebサイトとして公開できます。独自ドメインの設定、HTTPS対応、広告なしで利用でき、個人ブログや技術ドキュメントの公開に使われています。"}},
+    {"@type":"Question","name":"個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？","acceptedAnswer":{"@type":"Answer","text":"目的によります。記事の更新頻度が高く、管理画面から手軽に投稿したいならWordPress（動的サイト）が向いています。表示速度・セキュリティ・コストを重視し、サイトの構造まで自分でコントロールしたいならGitHub Pages（静的サイト）が選択肢になります。AIコーディングツールを使える環境であれば、静的サイトの更新コストは大幅に下がります。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+</style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 静的サイトと動的サイトの違い｜更新が…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</h1>
+<p class="lead">GitHub Pagesで60本以上の記事を運営した経験をもとに、静的サイトの弱点をAIツールでどう解消したかをまとめました。</p>
+</div>
+</div>
+<div class="updated">2026年4月 公開</div>
+
+<main><article><div class="wrap">
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>静的サイトと動的サイトの仕組みの違い</li>
+<li>それぞれのメリット・デメリット比較</li>
+<li>「静的サイトは更新が大変」をAIで解消する方法</li>
+<li>個人ブログにはどちらが向いているか</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログはGitHub Pages（静的サイト）で運営している。ブログを始めるときに「初心者はWordPress一択」という記事をたくさん見たが、いろいろ考えた結果、静的サイトを選んだ。運営して半年以上が経ったので、静的サイトと動的サイトの違いを自分の経験をまじえて整理しておきます。</p>
+
+<h2>静的サイトと動的サイトの仕組みの違い</h2>
+
+<p>静的サイトは、あらかじめ作られたHTMLファイルをそのまま表示するサイトである。ユーザーがページにアクセスすると、サーバーに保存されたHTMLがそのまま返される。誰がいつ見ても同じ内容が表示される。</p>
+
+<p>動的サイトは、アクセスのたびにサーバー側でページを生成する。データベースからコンテンツを取り出し、PHPなどのプログラムでHTMLを組み立てて返す。ログイン状態や検索条件によって表示内容が変わるのが特徴である。</p>
+
+<p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubのリポジトリに置くだけで公開される。</p>
+
+<h2>メリット・デメリット比較</h2>
+
+<table class="spec-table">
+<tr><th>比較項目</th><th>静的サイト</th><th>動的サイト（WordPress等）</th></tr>
+<tr><td>表示速度</td><td>速い（HTMLをそのまま返す）</td><td>やや遅い（サーバー処理が入る）</td></tr>
+<tr><td>セキュリティ</td><td>高い（DBがない、攻撃面が少ない）</td><td>注意が必要（プラグイン脆弱性等）</td></tr>
+<tr><td>サーバー費用</td><td>無料〜月数百円</td><td>月500〜1,500円程度</td></tr>
+<tr><td>更新のしやすさ</td><td>HTMLの編集が必要</td><td>管理画面から投稿できる</td></tr>
+<tr><td>プラグイン・機能拡張</td><td>自分で実装する</td><td>プラグインで追加できる</td></tr>
+<tr><td>SEO対策の自由度</td><td>HTML直接編集で完全にコントロール可能</td><td>テーマやプラグインに依存する</td></tr>
+</table>
+
+<p>静的サイトの強みは表示速度、セキュリティ、コストの3点である。GitHub Pagesは無料で使え、独自ドメインもHTTPSも対応している。WordPressのようにPHPのバージョンアップやプラグインの互換性を気にする必要がない。</p>
+
+<p>一方、動的サイトの強みは更新の手軽さと機能拡張のしやすさである。管理画面から記事を書いて「公開」ボタンを押すだけで完了するWordPressの手軽さは、静的サイトでは再現しにくい。お問い合わせフォーム、コメント欄、検索機能なども、WordPressならプラグインで簡単に追加できる。</p>
+
+<h2>「更新が大変」は本当か？ AIで変わった前提</h2>
+
+<p>静的サイトのデメリットとしてほぼ必ず挙がるのが「更新にHTMLの知識が必要」「記事を追加するたびにファイルを手作業で編集する」という点である。これは2024年以前なら正しかった。</p>
+
+<p>しかし2025年以降、AIコーディングツールの登場でこの前提が変わっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、サイトマップとアーカイブページも更新して、コミットして」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
+
+<p>このブログでは実際に、記事のHTML作成、SVGサムネイル生成、sitemap.xml更新、archive.html更新、llms.txt更新、検索インデックス再生成の6ファイル同時更新をAIに指示する形で運営している。1記事追加にかかる作業時間は、テーマ決めと内容の確認を除けば数分程度である。</p>
+
+<p>HTMLの書き方を知らなくても「こういう内容の記事を書いて」と指示すれば、サイトの既存デザインに合ったHTMLファイルが出てくる。FAQ構造化データ（JSON-LD）やmeta descriptionの設定も、ルールを一度伝えておけばAIが毎回自動で入れてくれる。</p>
+
+<div class="warn-box">
+<p><strong>ただし注意点もある。</strong>AIに任せきりにすると、内容の正確性やリンク先の整合性を見落とすリスクがある。最終的な確認は人間がやる必要がある。また、git操作やGitHub Pagesの初期設定には最低限のコマンドラインの知識が要る。「完全にゼロ知識でもできる」とは言えないが、「WordPressの管理画面を覚える程度の学習コスト」で済むようになっている。</p>
+</div>
+
+<h2>静的サイトがSEOに有利な場面</h2>
+
+<p>静的サイトではHTMLを直接編集するため、SEO関連のタグを完全にコントロールできる。WordPressではテーマやプラグインの仕様に制約されることがあるが、静的サイトにはそれがない。</p>
+
+<p>たとえば、このブログでは各記事に<a href="faq-structured-data.html">FAQ構造化データ（JSON-LD）</a>を設置しているが、そのフォーマットや質問の内容を1文字単位で管理できる。WordPressでJSON-LDを入れようとすると、プラグインの出力形式に合わせる必要があったり、テーマ更新で上書きされるリスクがある。</p>
+
+<p>また、<a href="llms-txt-setup.html">llms.txt</a>のようなAI向けのファイルも、リポジトリのルートに置くだけで公開できる。WordPressだとルートにファイルを置く操作がやや手間になる。</p>
+
+<h2>個人ブログにはどちらが向いているか</h2>
+
+<p>結論から言うと、「何を優先するか」で選ぶべきで、どちらが上とは言い切れない。</p>
+
+<table class="spec-table">
+<tr><th>優先すること</th><th>おすすめ</th></tr>
+<tr><td>更新の手軽さ、プラグインの豊富さ</td><td>WordPress（動的サイト）</td></tr>
+<tr><td>表示速度、セキュリティ、コスト最小化</td><td>GitHub Pages（静的サイト）</td></tr>
+<tr><td>SEO・LLMOの細かいコントロール</td><td>GitHub Pages（静的サイト）</td></tr>
+<tr><td>AIツールを使える環境がある</td><td>どちらでもいいが、静的サイトの弱点が消える</td></tr>
+</table>
+
+<p>「AIツールを使える環境がある」かどうかが、2026年時点では判断基準として重要だと思っている。AIコーディングツールが使えるなら、静的サイトの最大のデメリットである「更新の手間」は事実上なくなる。逆に言えば、AIツールを使わない前提なら、更新頻度の高い個人ブログにはWordPressの方が向いている。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. 静的サイトと動的サイトの違いは何ですか？</p><p class="faq-a">静的サイトはあらかじめ作られたHTMLをそのまま表示するサイトです。動的サイトはアクセスのたびにサーバー側でページを生成します。WordPressは動的サイト、GitHub Pagesは静的サイトの代表例です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 静的サイトのメリットは何ですか？</p><p class="faq-a">表示速度が速い、セキュリティリスクが低い、サーバー費用が安い（GitHub Pagesなら無料）の3点が主なメリットです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 静的サイトのデメリットは何ですか？</p><p class="faq-a">更新のたびにHTMLファイルを編集する必要がある点が最大のデメリットとされています。ただし2025年以降はAIコーディングツールを使えば自然言語で指示するだけでHTML生成・編集が可能になり、非エンジニアでも運営のハードルは大きく下がっています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub Pagesとは何ですか？</p><p class="faq-a">GitHubが提供する無料の静的サイトホスティングサービスです。HTMLファイルをリポジトリに置くだけでWebサイトとして公開でき、独自ドメインやHTTPSにも対応しています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？</p><p class="faq-a">目的によります。管理画面から手軽に投稿したいならWordPress、表示速度・セキュリティ・コストを重視するならGitHub Pages。AIコーディングツールが使える環境なら、静的サイトの更新コストは大幅に下がります。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="github-pages-vs-note.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">noteではなくGitHub Pagesを選んだ理由｜AdSenseを使いたかった</span>
+<span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span>
+</span>
+</a>
+<a class="cite-card" href="blog-seo-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログのSEOを勉強した記録｜最初にやること5つ</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
+</span>
+</a>
+<a class="cite-card" href="llms-txt-setup.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">llms.txtとは何か｜AIにブログを読ませるためにやったこと</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span>
+</span>
+</a>
+</div>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div></footer>
+</body>
+</html>

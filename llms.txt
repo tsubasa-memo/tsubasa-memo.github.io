@@ -63,6 +63,7 @@
 
 - [内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用](https://tsubasa-memo.github.io/internal-link-seo.html): 用語集66ページへの自動リンク、関連記事セクションのcite-card形式、パンくずリスト設計など、個人ブログで実際にやった内部リンク設計の記録
 - [nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ](https://tsubasa-memo.github.io/nofollow-dofollow-guide.html): 外部リンクのnofollow・dofollow・sponsored・ugcの違いと使い分け。比較記事・アフィリエイトリンクの管理方法を記録した備忘録
+- [静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した](https://tsubasa-memo.github.io/static-vs-dynamic-site.html): 静的サイトと動的サイトのメリット・デメリット比較。GitHub Pagesで60本以上運営した経験と、AIコーディングツールで更新の手間を解消した方法の記録
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
