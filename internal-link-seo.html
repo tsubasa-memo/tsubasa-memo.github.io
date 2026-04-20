@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用</title>
+<meta name="description" content="個人ブログで内部リンクの設計を整理した備忘録です。用語集66ページへの自動リンク化、関連記事セクションのcite-card形式、パンくずリストとカテゴリ構造の設計など、サイト全体で実際にやった方法と効果をまとめています。">
+<meta name="keywords" content="内部リンク 貼り方,内部リンク SEO 個人ブログ,関連記事 リンク 設計,用語集 内部リンク 効果">
+<meta property="og:title" content="内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用">
+<meta property="og:description" content="用語集への自動リンク、関連記事セクション、パンくずリストなど、個人ブログで試した内部リンク設計の記録です。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/internal-link-seo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/internal-link-seo.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/internal-link-seo.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/internal-link-seo.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"内部リンクはSEOにどんな効果がありますか？","acceptedAnswer":{"@type":"Answer","text":"内部リンクにはGoogleのクローラーがサイト構造を把握しやすくなる効果と、リンク先ページにページ評価（リンクジュース）を渡す効果があります。また、読者が関連記事を見つけやすくなるため、サイト内の回遊率が上がります。個人ブログでも記事数が30本を超えたあたりから、内部リンクの設計が検索順位に影響し始めると感じています。"}},
+    {"@type":"Question","name":"用語集ページを内部リンクに活用するにはどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"記事本文中に専門用語が出てきたとき、その用語の解説ページ（用語集）へリンクを貼る方法が効果的です。初出の1回だけリンク化し、見出しや既存リンクの中は避けるルールにすると、読者の邪魔にならず自然なリンクになります。このブログでは66ページの用語集を作り、記事内の該当用語から自動でリンクを生成しています。"}},
+    {"@type":"Question","name":"関連記事のリンクはどこに置くのが効果的ですか？","acceptedAnswer":{"@type":"Answer","text":"記事末尾の「関連する記事」セクションが定番ですが、本文中で話題が関連する箇所にインラインで貼るリンクも効果があります。Googleのクローラーは本文中のリンクを末尾のナビゲーションリンクより重視するとされています。両方を組み合わせるのが理想的です。"}},
+    {"@type":"Question","name":"パンくずリストは内部リンクとして有効ですか？","acceptedAnswer":{"@type":"Answer","text":"有効です。パンくずリストはサイトのカテゴリ構造をGoogleに伝える役割があり、構造化データ（BreadcrumbList JSON-LD）を合わせて設置するとリッチリザルトに表示されることもあります。このブログでは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計しています。"}},
+    {"@type":"Question","name":"内部リンクは何本くらい貼るのが適切ですか？","acceptedAnswer":{"@type":"Answer","text":"Googleは内部リンクの数に上限を設けていませんが、1記事あたり本文中3〜10本程度が自然です。読者が実際にクリックしそうな文脈でリンクを貼ることが重要で、とにかく数を増やせばいいわけではありません。リンクの質（関連性の高さ）が量より重要です。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+</style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 内部リンクの貼り方を個人ブログで試した…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用</h1>
+<p class="lead">用語集への自動リンク、関連記事カード、パンくずリスト。個人ブログで試した内部リンク設計をまとめました。</p>
+</div>
+</div>
+<div class="updated">2026年4月 公開</div>
+
+<main><article><div class="wrap">
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>内部リンクがSEOに効く仕組みと、個人ブログでの優先度</li>
+<li>用語集ページを活用した自動リンクの方法</li>
+<li>関連記事セクション（cite-card形式）の設計</li>
+<li>パンくずリストとカテゴリ構造の考え方</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログの記事が60本を超えたあたりで、記事同士のつながりが弱いことに気づいた。Search Consoleで見ると、Googleが一部のページをうまく発見できていなかったのもそのせいだったかもしれない。内部リンクの設計を見直した記録をまとめておきます。</p>
+
+<h2>内部リンクが個人ブログに必要な理由</h2>
+
+<p>内部リンクとは、同じサイト内のページ同士をつなぐリンクのこと。Googleの<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>では、クローラーがリンクをたどってページを発見すると説明されている。つまり、どこからもリンクされていない記事はGoogleに見つけてもらえない可能性がある。</p>
+
+<p>このブログでは、記事数が50本を超えた時点で10本以上が「孤立ページ」（サイト内のどこからもリンクされていない状態）になっていた。sitemap.xmlを送信していたからGoogleには認識されていたが、内部リンクが少ないページはインデックスが遅い傾向があった。</p>
+
+<p>内部リンクにはもう一つ、ページ評価（リンクジュース）を分配する効果がある。検索流入が多いページから関連ページにリンクを貼ると、リンク先の評価が上がりやすい。ただし、これは「関連性の高い」ページ間でないと効果が薄い。脈絡のないリンクを大量に貼るとかえって逆効果になる。</p>
+
+<h2>用語集66ページを活用した内部リンク</h2>
+
+<p>このブログには<a href="/glossary/">用語集</a>として66本の解説ページがある。「ささげ業務とは」「RAWとは」のような、記事内で当たり前のように使っている専門用語を1ページずつ解説したものである。</p>
+
+<p>この用語集を内部リンクに活用する方法はシンプルで、記事本文中に用語が出てきたら、その用語の解説ページへリンクを貼る。たとえば「RAW」という言葉が出てきたら、初出の1回だけ<a href="/glossary/raw.html" rel="nofollow">用語集のRAW解説ページ</a>へリンクする。</p>
+
+<p>注意点として、以下のルールを決めた。</p>
+
+<table class="spec-table">
+<tr><th>ルール</th><th>理由</th></tr>
+<tr><td>1記事内で同じ用語のリンクは初出1回だけ</td><td>何度もリンクされると読者の邪魔になる</td></tr>
+<tr><td>見出し（h2・h3）の中はリンク化しない</td><td>見出しのリンクはナビゲーションと混同しやすい</td></tr>
+<tr><td>既にaタグの中にある文字列はスキップ</td><td>リンクの入れ子になると表示が壊れる</td></tr>
+<tr><td>2〜3文字の短い用語は対象外</td><td>「AI」「EC」などは誤マッチしやすい</td></tr>
+</table>
+
+<p>66ページ分の用語を手動でリンクするのは現実的ではないので、Pythonスクリプトで自動化した。HTMLパーサーで本文を走査し、用語集のスラッグ名と照合して初出だけリンクタグに変換する方式である。</p>
+
+<h2>関連記事セクションの設計</h2>
+
+<p>各記事の末尾に「関連する記事」セクションを設けている。最初はテキストリンクだけだったが、途中からcite-card形式（サイトアイコン＋タイトル＋URL表示のカード）に変更した。</p>
+
+<p>cite-cardにした理由は2つある。1つ目は、テキストリンクより視認性が高く、クリック率が上がる。2つ目は、内部リンクと外部リンクをアイコンの色で区別できる（内部は緑、外部は青）。読者がリンク先を判断しやすくなるため、サイト内の回遊率が改善した。</p>
+
+<p>関連記事の選び方としては、同じカテゴリの記事を2〜3本選ぶのが基本だが、「この記事を読んだ人が次に知りたいこと」を考えて選ぶ方が効果的だった。たとえば<a href="retouch-services.html">「レタッチ外注サービス比較」</a>の記事には、外注の料金相場や依頼のコツの記事を関連に置く方が、同じ「レタッチ」カテゴリの無関係な記事よりもクリックされている。</p>
+
+<h2>パンくずリストとカテゴリ構造</h2>
+
+<p>パンくずリストは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計した。このブログでは現在7カテゴリ（カメラ、レタッチ・画像加工、写真・撮影、EC・実務、AI、SEO・LLMO、副業・キャリア）を使っている。</p>
+
+<p>パンくずリストの役割は読者へのナビゲーションだけではない。Googleに対してサイトのカテゴリ構造を伝える効果がある。BreadcrumbList JSON-LDを設置すると、検索結果にパンくずが表示されることがあり、クリック率にも影響する。</p>
+
+<p>1つの記事が複数カテゴリに属する場合（たとえば「AI」と「レタッチ・画像加工」の両方）、パンくずにはメインカテゴリ1つだけを表示し、archive.htmlのフィルターでは両方のカテゴリで表示されるように設計した。</p>
+
+<h2>内部リンクの管理方法</h2>
+
+<p>記事が60本を超えると「どの記事からどこにリンクを貼っているか」が把握しにくくなる。このブログではスプレッドシートでリンクマトリクスを管理している。行に記事名、列に主要なリンク先（外部サービスのドメイン）を並べ、リンクの有無と本数を記録する形式である。</p>
+
+<p>外部リンクの管理に加えて、内部リンクの相互関係も把握しておくと便利だった。たとえば「レタッチ外注サービス比較」から「レタッチ料金相場」へのリンクがあるのに、逆方向がないケースがあり、双方向にリンクを追加したら回遊率が改善した。</p>
+
+<div class="warn-box">
+<p><strong>注意：</strong>内部リンクを追加するとき、「とにかく全記事から全記事にリンクを貼る」のはやめた方がいい。Googleのクローラーは1ページあたりのリンク数が多すぎると個々のリンクの評価を下げると言われている。関連性の高い記事同士を3〜5本程度でつなぐのが現実的な運用ラインである。</p>
+</div>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. 内部リンクはSEOにどんな効果がありますか？</p><p class="faq-a">Googleのクローラーがサイト構造を把握しやすくなる効果と、リンク先ページにページ評価（リンクジュース）を渡す効果があります。また、読者が関連記事を見つけやすくなるため回遊率が上がります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 用語集ページを内部リンクに活用するにはどうすればいいですか？</p><p class="faq-a">記事本文中に専門用語が出てきたとき、その用語の解説ページへリンクを貼ります。初出の1回だけリンク化し、見出しや既存リンクの中は避けるのがポイントです。このブログでは66ページの用語集を作り、該当用語から自動でリンクを生成しています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 関連記事のリンクはどこに置くのが効果的ですか？</p><p class="faq-a">記事末尾の「関連する記事」セクションと、本文中で話題が関連する箇所にインラインで貼るリンクの両方を組み合わせるのが効果的です。本文中のリンクの方がGoogleに重視されやすいとされています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. パンくずリストは内部リンクとして有効ですか？</p><p class="faq-a">有効です。サイトのカテゴリ構造をGoogleに伝える役割があり、BreadcrumbList JSON-LDを合わせて設置するとリッチリザルトに表示されることもあります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 内部リンクは何本くらい貼るのが適切ですか？</p><p class="faq-a">1記事あたり本文中3〜10本程度が自然です。Googleはリンク数に上限を設けていませんが、数より関連性の高さが重要です。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="blog-seo-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログのSEOを勉強した記録｜最初にやること5つ</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
+</span>
+</a>
+<a class="cite-card" href="google-index-not-found.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Googleにインデックスされるまで｜サイトマップ送信からの記録</span>
+<span class="cite-url">tsubasa-memo.github.io/google-index-not-found.html</span>
+</span>
+</a>
+<a class="cite-card" href="faq-structured-data.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</span>
+<span class="cite-url">tsubasa-memo.github.io/faq-structured-data.html</span>
+</span>
+</a>
+</div>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div></footer>
+</body>
+</html>
