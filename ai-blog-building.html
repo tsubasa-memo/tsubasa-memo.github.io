@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</title>
+<meta name="description" content="GitHubもHTMLも知らなかった自分が、AIに質問しながらGitHub Pagesでブログを構築した記録。サイト設計・SEO対策・サイトマップ作成・Googleインデックス登録まで、非エンジニアがAIをどう使ったかを時系列でまとめた。">
+<meta name="keywords" content="AI ブログ構築,GitHub Pages 非エンジニア,Claude Code ブログ,AI SEO対策,GitHub Pages 始め方">
+<meta property="og:title" content="AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録">
+<meta property="og:description" content="GitHubもHTMLも知らなかった自分が、AIに聞きながらブログサイトを構築するまでの記録。SEO・LLMO対策もAIを使って設計した。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/ai-blog-building.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/ai-blog-building.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/ai-blog-building.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/ai-blog-building.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AIでブログを構築するのにいくらかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GitHub Pagesのホスティングは無料です。AIツール（Claude Pro）が月額20ドル（約3,000円）かかります。独自ドメインを取得する場合は年間1,500円程度の費用が追加されます。合計で月3,000〜4,000円程度が目安です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "プログラミングの知識がなくてもAIでブログは作れますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "作れます。HTMLやCSS、gitの操作はすべてAIに聞きながら進めました。プログラミングの知識よりも「何を作りたいか」を言葉で説明する力の方が重要です。ただし、AIの提案をそのまま使うのではなく、結果を確認して修正を依頼するやりとりは必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのAIを使えばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "このブログではAnthropicのClaude（Claude Pro、月額20ドル）を使っています。記事の構成やSEO設計の相談にはClaude（チャット版）、ファイル編集やgit操作にはClaude Codeを使い分けています。ChatGPTやGeminiでも同様のことは可能ですが、ツールの使い分けが楽なClaude環境に落ち着きました。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WordPressと比べてGitHub Pagesの方が良いですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "用途によります。WordPress（レンタルサーバー代が月1,000円前後）はプラグインが豊富で管理画面から記事を書けるので、技術に触れたくない人には向いています。GitHub Pagesは月額0円でHTMLを完全にコントロールできるため、SEOやLLMOを細かく設計したい場合に有利です。AIの力を借りれば技術的なハードルはかなり下がります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AIを使えば記事も自動で書けますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "このブログでは記事の内容は自分で考えて書いています。AIに任せているのはHTMLページの構築、サイト設計、SEO対策、サイトマップの管理といった技術的な部分です。記事のテーマ選定やリサーチにAIを活用することはありますが、文章をそのまま生成させるという使い方はしていません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Googleにインデックスされるまでどのくらいかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "新規サイトの場合、最初の記事がGoogleに認識されるまで1〜3週間かかることがあります。サイトマップをGoogle Search Consoleに送信し、URLインスペクションツールでインデックスリクエストを送ると早まることがあります。このブログでは100ページ以上ありますが、全ページがインデックスされるまで数ヶ月かかっています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GitHub PagesでAdSenseの審査は通りますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通ります。GitHub Pagesかどうかは審査に影響しません。Googleが見ているのはコンテンツの質と量、プライバシーポリシーの設置、サイトの操作性などです。このブログもGitHub PagesでAdSense審査に合格しています。"
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.related-list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.related-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
+.related-item a{color:var(--text);font-size:14px;font-weight:700}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.step-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:24px 0}
+.step-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:8px}
+.step-box p{font-size:15px;margin-bottom:0}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html">記事一覧</a> ＞ AIに聞きながらブログを構築した話</div></nav>
+<div class="hero"><div class="wrap">
+<h1>AIに聞きながらGitHub Pagesでブログを構築した話</h1>
+<p class="lead">GitHubもHTMLも知らなかった非エンジニアが、AIの力を借りてブログサイトを作るまでの記録</p>
+</div></div>
+<div class="updated">更新日：2026年4月20日</div>
+<main><article class="wrap">
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>非エンジニアがAIに聞きながらGitHub Pagesブログを構築した具体的な流れ</li>
+<li>AIにどんな質問をして、どんな作業を任せたか</li>
+<li>SEOやLLMOの設計にAIをどう活用したか</li>
+<li>実際につまずいたポイントと対処法</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログ「ツバサのメモ帳」は、GitHub Pagesという無料のホスティングサービスで運営しています。記事数は現在140本以上。Google AdSenseの広告も掲載しています。</p>
+
+<p>こう書くと技術に詳しい人のブログに見えるかもしれませんが、自分はエンジニアではありません。EC関係の仕事をしている会社員で、AIを使い始めるまでGitHubという言葉すら聞いたことがありませんでした。</p>
+
+<p>この記事では、そんな状態からAIに質問しながらブログサイトを構築していった過程を、時系列でまとめています。</p>
+
+<h2>GitHubもHTMLも知らない状態からスタートした</h2>
+
+<p>ブログを始めたいと思った理由は単純で、EC業務で調べたことの備忘録を残しておきたかったのと、せっかくなら広告収入も得られる形にしたかったからです。</p>
+
+<p>最初に検討したのはnoteとWordPressでした。noteは書くことに集中できるけれどAdSenseが使えない。WordPressは月額1,000円前後のレンタルサーバー代がかかる。そんな中で見つけたのがGitHub Pagesでした（比較の詳細は<a href="github-pages-vs-note.html">「noteでなくGitHub Pagesを選んだ理由」</a>にまとめています）。</p>
+
+<p>ただ、その時点ではGitHubが何をするためのサービスなのかも分かっていませんでした。「プログラマーが使うもの」という認識しかなく、自分には関係のない世界だと思っていました。</p>
+
+<p>転機になったのは、たまたまClaude（Anthropicが作ったAI）に「無料でブログを作る方法はありますか？」と聞いたことです。返ってきた選択肢の一つにGitHub Pagesがあり、「HTMLファイルを置くだけでサイトが公開される」「費用は0円」と書かれていました。HTMLも書けないのに大丈夫なのか不安でしたが、「分からないことはその都度AIに聞けばいい」と思って始めることにしました。</p>
+
+<h2>AIに聞きながら構築するとはどういうことか</h2>
+
+<p>「AIに聞きながら」というのは、具体的には2つのツールを使い分けています。</p>
+
+<p>1つ目はClaude（チャット版）。ブラウザで会話するAIで、「サイトの構成をどうするか」「SEO的にtitleタグは何文字が良いか」「サイトマップの書き方」のような相談をしています。戦略を考える部分はここでやります。</p>
+
+<p>2つ目はClaude Code。ターミナル（コマンドを入力する黒い画面）で動くAIツールで、「このHTMLファイルのtitleタグを変更して」「sitemap.xmlにこのURLを追加して」のような、ファイル操作を指示すると実際にファイルを書き換えてくれます。手を動かす部分はこちらに任せています。</p>
+
+<p>なお、Claude Proプラン（月額20ドル、約3,000円）に加入すると両方使えます。GitHub Pages自体は無料なので、ブログ運営にかかる費用はこのAI利用料だけです。</p>
+
+<div class="warn-box">
+<p><strong>誤解されやすい点：</strong>AIに記事の文章を書かせているわけではありません。自分がこのブログでAIに任せているのは、HTMLページの組み立て、CSS（デザイン）の調整、SEO関連の技術設定、git操作といった「技術的な作業」です。記事の中身は自分で調べて自分で書いています。</p>
+</div>
+
+<h2>実際にやったことを時系列で振り返る</h2>
+
+<h3>1. サイトの骨組みを作った</h3>
+
+<p>最初にAIに「シンプルなブログのHTMLテンプレートを作って」と頼みました。トップページ、記事ページ、プライバシーポリシーの3ファイルが出てきて、デザインの好みを伝えると修正してくれました。落ち着いた配色・余白多め・スマホ対応、くらいの指定で十分です。</p>
+
+<p>GitHubのアカウント作成やリポジトリの設定も、手順をAIに聞きながらやりました。「GitHub Pagesで公開するには何をすればいいか」と聞けば、スクリーンショット抜きでもテキストの手順だけで進められます。</p>
+
+<h3>2. 記事を増やしていった</h3>
+
+<p>テンプレートができたら、中身を入れ替えて記事を増やしていきます。「この記事のHTMLファイルを、既存のテンプレートに合わせて作って」とClaude Codeに指示すると、ファイルが生成されます。自分の作業は記事の内容を考えることと、出来上がったファイルを確認してGitHubにアップロード（push）することです。</p>
+
+<h3>3. SEO関連のファイルを設置した</h3>
+
+<p>検索エンジンに見つけてもらうために必要なファイルがいくつかあります。sitemap.xml（サイトの全ページ一覧）、robots.txt（クローラーへの指示）、構造化データ（FAQ等のJSON-LD）などです。これらの存在を知ったのもAIに教えてもらってからで、書き方もすべてAIに聞きました。</p>
+
+<h3>4. AdSenseに申請・合格した</h3>
+
+<p>記事が10本を超えた段階でGoogle AdSenseに申請しました。プライバシーポリシーの文面をAIに相談し、AdSenseのスクリプトコードをHTMLに埋め込む作業もAIに指示しました。審査は通りましたが、正直なところGitHub Pagesだから通ったというよりコンテンツの中身で判断されていると思います。</p>
+
+<h3>5. 100ページを超えて運用フェーズに入った</h3>
+
+<p>記事が100本を超えたあたりから、新規記事の追加よりも既存記事の改善やSEO分析の比重が増えました。Google Search Consoleのデータを見て、どのページが検索に表示されているか、クリック率が低いページのtitleを改善するといった作業です。この分析もAIに手伝ってもらっています。</p>
+
+<h2>SEOとLLMOもAIに聞きながらやった</h2>
+
+<p>サイトの構築だけでなく、検索エンジン対策（SEO）とLLM最適化（LLMO）の設計にもAIを活用しました。</p>
+
+<p>具体的にAIに相談・実行してもらったのは、各記事のtitleタグとmeta descriptionの最適な文字数設計、FAQ構造化データ（JSON-LD）の生成と全記事への設置、内部リンク構造の設計（どの記事からどの記事にリンクを張るか）、<a href="llmo-article-writing.html">llms.txt</a>（AIチャットボットがサイト情報を読み取るためのファイル）の作成と更新、Google Search Consoleのデータ分析と改善提案などです。</p>
+
+<p>自分一人ではJSON-LDの書き方を調べるだけで半日かかっていたと思います。AIに「この記事のFAQを構造化データにして」と頼めば数秒でコードが出てきます。非エンジニアにとって、この部分の時間短縮効果は大きいです。</p>
+
+<p>LLMOについてはまだ試行錯誤の段階ですが、llms.txtを設置したことでAIチャットボットがこのサイトの情報を参照しやすくなっているはずです。SEOだけでなくAIからの流入も意識した設計ができるのは、GitHub PagesでHTMLを自由に触れるからこそです。</p>
+
+<h2>非エンジニアが実際に詰まったポイント</h2>
+
+<p>AIがあれば何でもスムーズに進むかというと、そんなことはありません。実際に困った場面をいくつか挙げます。</p>
+
+<h3>gitの操作で事故を起こす</h3>
+
+<p>gitは変更履歴を管理するツールですが、操作を間違えると「コンフリクト」（変更の衝突）が起きてファイルがぐちゃぐちゃになります。自分は何度かこれをやりました。AIに状況を説明すれば復旧手順を教えてくれますが、最初は何が起きたのか自分でも理解できないので説明のしようがなく、かなり焦りました。</p>
+
+<h3>AIの回答が間違っていて遠回りする</h3>
+
+<p>AIは万能ではなく、たまに古い情報や不正確な手順を教えてくることがあります。たとえばサービスの料金情報をAIに聞いて記事に書いたら、実際の価格と違っていたことがありました。AIが出した情報は公式サイトで裏を取る習慣をつけないと、間違ったまま公開してしまいます。</p>
+
+<h3>Googleになかなかインデックスされない</h3>
+
+<p>GitHub Pagesの新規サイトはドメインの信頼性が低いため、Googleに記事を認識してもらうまで時間がかかります。サイトマップを送信してもすぐには反映されず、1ページずつ手動でインデックスリクエストを送る作業を地道に続けました（この話は<a href="google-index-not-found.html">「Googleにインデックスされるまで」</a>にまとめています）。</p>
+
+<h3>CSSが崩れて原因が分からない</h3>
+
+<p>AIに作ってもらったデザインが、スマホで見ると表が画面からはみ出していたり、文字が重なっていたりすることがありました。「スマホで表示が崩れている」とAIに伝えれば直してくれますが、自分で気づかないと放置してしまう。公開後にスマホで表示を確認する作業は毎回やるようにしています。</p>
+
+<h2>まとめ：AIがあれば非エンジニアでもブログは作れるか</h2>
+
+<p>結論として、作れます。ただし条件があります。</p>
+
+<p>「AIに全部お任せ」では回らなくて、自分が考える部分と、AIに任せる部分を切り分ける必要があります。このブログの場合は「何を書くか」「どう見せるか」の判断は自分でやり、「HTMLの組み立て」「SEOの技術設定」「ファイル管理」をAIに任せるという分担に落ち着きました。</p>
+
+<p>もう一つ必要なのは、AIの回答を鵜呑みにしない姿勢です。AIが出してきた情報が正しいかどうか、必ず自分で確認する。この手間を省くと、間違った情報を掲載したり、サイトの設定がおかしくなったりします。</p>
+
+<p>逆に言えば、この2つさえ意識しておけば、GitHubを聞いたこともなかった人間でも140本以上の記事を持つサイトを運営できています。技術的な壁は、AIのおかげで思っていたよりずっと低かったです。</p>
+
+<table class="spec-table">
+<tr><th>項目</th><th>内容</th></tr>
+<tr><td>使っているAI</td><td>Claude Pro（月額20ドル）</td></tr>
+<tr><td>ホスティング</td><td>GitHub Pages（無料）</td></tr>
+<tr><td>月額コスト</td><td>約3,000円（AI利用料のみ）</td></tr>
+<tr><td>記事数</td><td>140本以上</td></tr>
+<tr><td>広告</td><td>Google AdSense、Amazon アソシエイト</td></tr>
+<tr><td>AIに任せていること</td><td>HTML構築、CSS、SEO技術設定、git操作</td></tr>
+<tr><td>自分でやっていること</td><td>記事の企画・執筆、公開判断、情報の裏取り</td></tr>
+</table>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. AIでブログを構築するのにいくらかかりますか？</p><p class="faq-a">GitHub Pagesのホスティングは無料です。AIツール（Claude Pro）が月額20ドル（約3,000円）かかります。独自ドメインを取得する場合は年間1,500円程度が追加されます。合計で月3,000〜4,000円程度が目安です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. プログラミングの知識がなくても大丈夫ですか？</p><p class="faq-a">大丈夫です。HTMLやCSSの書き方、gitの操作はすべてAIに聞きながら進めました。プログラミングの知識よりも「何を作りたいか」を言葉で説明する力の方が重要です。ただし、AIの出力を確認して修正を依頼するやりとりは必要です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. どのAIを使えばいいですか？</p><p class="faq-a">このブログではAnthropicのClaude（Claude Pro、月額20ドル）を使っています。構成やSEOの相談にはClaudeのチャット版、ファイル編集にはClaude Codeを使い分けています。ChatGPTやGeminiでも同様のことは可能です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. WordPressと比べてどちらが良いですか？</p><p class="faq-a">WordPressは管理画面から記事を書けるので技術に触れたくない人には向いています（レンタルサーバー代が月1,000円前後）。GitHub Pagesは月額0円でHTMLを完全にコントロールできるため、SEOやLLMOを細かく設計したい場合に有利です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. AIを使えば記事も自動で書けますか？</p><p class="faq-a">このブログでは記事の内容は自分で書いています。AIに任せているのはHTMLの組み立て、SEOの技術設定、git操作といった技術的な部分です。記事テーマのリサーチにAIを使うことはありますが、文章をそのまま生成させてはいません。</p></div>
+<div class="faq-item"><p class="faq-q">Q. Googleにインデックスされるまでどのくらいかかりますか？</p><p class="faq-a">新規サイトの場合、最初の記事が認識されるまで1〜3週間かかることがあります。サイトマップをSearch Consoleに送信し、URLインスペクションツールでリクエストを送ると早まることがあります。全ページのインデックスには数ヶ月かかるのが実情です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub PagesでAdSenseの審査は通りますか？</p><p class="faq-a">通ります。GitHub Pagesかどうかは審査に影響しません。コンテンツの質と量、プライバシーポリシーの設置、サイトの操作性が審査基準です。このブログもGitHub PagesでAdSense審査に合格しています。</p></div>
+
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="github-pages-vs-note.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</span>
+<span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span>
+</span>
+</a>
+<a class="cite-card" href="google-index-not-found.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Googleにインデックスされるまで｜サイトマップ送信からの記録</span>
+<span class="cite-url">tsubasa-memo.github.io/google-index-not-found.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-article-writing.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-article-writing.html</span>
+</span>
+</a>
+<a class="cite-card" href="blog-seo-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
+</span>
+</a>
+<a class="cite-card" href="adsense-application.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録</span>
+<span class="cite-url">tsubasa-memo.github.io/adsense-application.html</span>
+</span>
+</a>
+</div>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div></footer>
+</body>
+</html>
