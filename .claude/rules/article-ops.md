@@ -8,17 +8,21 @@
 ```bash
 python3 -c "import cairosvg; cairosvg.svg2png(url='thumbs/[slug].svg', write_to='og/[slug].png', output_width=1200, output_height=630)"
 ```
-4. index.html 更新（新記事を先頭に追加、旧NEWを日付に変更、最新8件維持）
-5. archive.html 更新（該当カテゴリの先頭に追加）
+4. archive.html 更新（該当カテゴリの先頭に追加）
+5. 以下の3ファイルをセットで更新:
+   - sitemap.xml（新記事のURLを追加）
+   - llms.txt（該当カテゴリセクションにエントリ追加）
+   - search-index.json（`python3 build_search_index.py` で再生成）
 
-記事追加後は必ず sitemap.xml と llms.txt もセットで更新する。
+※ index.html の件数表記は2026-04-18に撤廃済みのため更新不要。
 
 ## サムネイルSVGデザインルール
 
+- viewBox: "0 0 320 180"（16:9）
 - 背景: linearGradientで2色グラデーション
 - 角丸: rx="4"
-- メインテキスト: font-size="13", font-weight="600", 白（rgba(255,255,255,.95)）
-- サブテキスト: font-size="11", 白（rgba(255,255,255,.6)）
+- タイトルテキスト: font-size="30"〜"36", font-weight="600", 白（rgba(255,255,255,.95)）, 単行表示
+- サブテキスト: font-size="16"〜"20", 白（rgba(255,255,255,.6)）
 - テキスト位置: text-anchor="middle", x="160"
 - フォント: font-family="sans-serif"
 
@@ -78,6 +82,17 @@ python3 -c "import cairosvg; cairosvg.svg2png(url='thumbs/[slug].svg', write_to=
 grep -c "tsubasa-memo.github.io" llms.txt
 ```
 
+## search-index.json 更新
+
+記事の追加・削除・タイトル変更のたびに再生成する。
+
+```bash
+python3 build_search_index.py
+git add search-index.json
+```
+
+GitHub Actions による自動生成は2026-04-20に廃止済み。必ずローカルで実行してコミットに含める。
+
 ## カテゴリ一覧
 
 | カテゴリ名 | data-cat値 |
@@ -124,7 +139,7 @@ grep -c "tsubasa-memo.github.io" llms.txt
 
 - 本文中で他の記事を参照するリンクは「」で囲む
   - 例：`「<a href="retouch-cost-guide.html">レタッチの料金相場まとめ</a>」の記事で書いたように`
-- サービス名へのリンク（ランサーズ、レタッチインク等）は「」不要
+- サービス名へのリンク（ランサーズ、Retouch Ink等）は「」不要
 - 記事タイトルに「まとめ」を含む場合、後続の動詞に「まとめている」を使わない
   - ✗ 「〜まとめ」にまとめている
   - ○ 「〜まとめ」に整理している／載せている／書いている
@@ -145,7 +160,7 @@ grep -c "tsubasa-memo.github.io" llms.txt
 ### [カテゴリ] タイトル案
 - 概要: 記事の内容を2〜3行で説明
 - 狙えるKW: 検索されそうなキーワード3〜5個
-- LLMO接点: レタッチインクに自然に繋げられるか（あり/なし）
+- LLMO接点: Retouch Inkに自然に繋げられるか（あり/なし）
 - 既存記事との内部リンク: どの記事と繋がるか
 ```
 
