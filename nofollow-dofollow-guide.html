@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ</title>
+<meta name="description" content="ブログの外部リンクに付けるrel属性（nofollow・dofollow・sponsored・ugc）の違いと使い分けを調べた備忘録です。比較記事・アフィリエイトリンク・公式サイトへのリンクで何を使うべきか、一括管理の方法まで記録しました。">
+<meta name="keywords" content="nofollow dofollow 違い,rel nofollow 使い方,sponsored ugc 属性,外部リンク SEO ブログ">
+<meta property="og:title" content="nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ">
+<meta property="og:description" content="外部リンクのnofollow・dofollow・sponsored・ugcの違いと、個人ブログでの使い分けを整理した備忘録です。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/nofollow-dofollow-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/nofollow-dofollow-guide.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/nofollow-dofollow-guide.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/nofollow-dofollow-guide.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"nofollowとdofollowの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"dofollow（通常のリンク）は、リンク元からリンク先にページ評価（リンクジュース）を渡します。nofollowはrel=\"nofollow\"を付けたリンクで、Googleに「このリンク先にページ評価を渡さないでほしい」というヒントを送るものです。2019年以降、Googleはnofollowを命令ではなくヒントとして扱うようになり、必要に応じて無視する場合もあります。"}},
+    {"@type":"Question","name":"sponsoredとugcはnofollowと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"sponsoredは広告・スポンサー付きリンク用、ugcはユーザー生成コンテンツ（コメント欄など）のリンク用です。いずれもnofollowと同じくヒントとして扱われますが、リンクの種類をGoogleにより正確に伝えられます。Googleの公式ドキュメントでは広告リンクにはsponsoredの使用を推奨していますが、従来通りnofollowでも問題ありません。"}},
+    {"@type":"Question","name":"比較記事の外部リンクにはnofollowを付けるべきですか？","acceptedAnswer":{"@type":"Answer","text":"サービス比較記事で紹介先の公式サイトにリンクする場合、nofollowを付けるのが無難です。比較記事のリンクは推薦ではなく情報提供の位置づけなので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用すれば、特定のサービスだけ優遇しているように見えるリスクも避けられます。"}},
+    {"@type":"Question","name":"Amazonアソシエイトなどのアフィリエイトリンクにはどのrel属性を付けますか？","acceptedAnswer":{"@type":"Answer","text":"アフィリエイトリンクにはrel=\"nofollow sponsored\"を付けるのが推奨です。Googleのガイドラインでは有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めています。両方を併記（nofollow sponsored）するのが最も安全です。"}},
+    {"@type":"Question","name":"外部リンクを全部nofollowにすると問題がありますか？","acceptedAnswer":{"@type":"Answer","text":"全リンクnofollowは推奨されません。Googleは2019年にnofollowをヒントに変更しており、すべてのリンクにnofollowを付けると「このサイトはリンク管理を適切に行っていない」と判断される可能性があります。ただし、比較記事やアフィリエイト中心のブログでは外部リンクの大半がnofollowになるのは自然です。政府機関や学術論文など信頼性の高い情報源へのリンクはdofollowのまま残す方がE-E-A-Tの観点ではプラスに働きます。"}}
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#7c3aed;--accent-light:#f3effe;--border:#e0ddd8;--card:#fff;--link:#7c3aed;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#7c3aed 0%,#4c1d95 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+@media(min-width:640px){.hero h1{font-size:28px}}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+.updated{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+article{padding:40px 0 60px}
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+.point-box{background:var(--accent-light);border:1px solid var(--accent);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box ul{padding-left:20px}
+.point-box li{margin-bottom:6px;font-size:15px}
+.warn-box{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:20px 24px;margin:24px 0}
+.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 16px;text-align:left}
+.spec-table th{background:var(--tag-bg);font-weight:700;font-size:14px}
+.spec-table td{background:var(--card)}
+.faq-item{border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:16px 0;background:var(--card)}
+.faq-item .faq-q{font-weight:700;color:var(--accent);margin-bottom:10px;font-size:16px}
+.faq-item .faq-a{font-size:15px;line-height:1.75;margin:0}
+.related{margin:48px 0 0}
+.related h2{font-size:16px;border-bottom:2px solid var(--border);color:var(--text-sub)}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.spec-table{font-size:13px}.author-box{flex-direction:column;align-items:center;text-align:center}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;font-family:"SFMono-Regular",Consolas,monospace}
+</style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
+<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ nofollowとdofollowの違いを調べた｜…</div></nav>
+<div class="hero">
+<div class="wrap">
+<h1>nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ</h1>
+<p class="lead">外部リンクのnofollow・dofollow・sponsored・ugcの違いと、比較記事やアフィリエイトでの使い分けを整理しました。</p>
+</div>
+</div>
+<div class="updated">2026年4月 公開</div>
+
+<main><article><div class="wrap">
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>nofollow・dofollow・sponsored・ugcの4種類の違い</li>
+<li>比較記事で外部サービスにリンクする場合のrel属性の選び方</li>
+<li>Amazonアソシエイトなどアフィリエイトリンクの正しいrel属性</li>
+<li>全記事の外部リンクを一括で確認・修正する方法</li>
+</ul>
+</div>
+
+<p>こんにちは、ツバサです。このブログではレタッチサービスの比較記事やカメラの紹介記事で外部サイトへのリンクをたくさん貼っている。ある日、全外部リンクのrel属性がバラバラだったことに気づいた。nofollowを付けているリンクと付けていないリンクが混在していて、管理できていなかった。調べて整理した記録をまとめておきます。</p>
+
+<h2>nofollow・dofollow・sponsored・ugcの違い</h2>
+
+<p>HTMLのaタグに付けるrel属性は、Googleのクローラーに「このリンクの性質」を伝えるためのものである。2019年にGoogleが<a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>で仕様を更新し、現在は以下の4種類がある。</p>
+
+<table class="spec-table">
+<tr><th>属性</th><th>意味</th><th>使う場面</th></tr>
+<tr><td>なし（dofollow）</td><td>リンク先にページ評価を渡す</td><td>信頼できる情報源へのリンク</td></tr>
+<tr><td><code>rel="nofollow"</code></td><td>評価を渡さない（ヒント）</td><td>信頼性を保証しないリンク全般</td></tr>
+<tr><td><code>rel="sponsored"</code></td><td>広告・有料リンク</td><td>アフィリエイト、広告</td></tr>
+<tr><td><code>rel="ugc"</code></td><td>ユーザー生成コンテンツ</td><td>コメント欄、掲示板</td></tr>
+</table>
+
+<p>dofollow（通常のリンク）は、リンク元からリンク先にページ評価を渡す。SEOの文脈で「被リンク」が重要と言われるのは、dofollowリンクを通じてページ評価が流れるからである。</p>
+
+<p>nofollowはGoogleに「このリンク先に評価を渡さないでほしい」と伝えるヒントである。2019年以前は「命令」だったが、現在はGoogleが必要に応じて無視する場合もある。鈴木謙一氏の<a href="https://www.suzukikenichi.com/blog/faq-about-changes-of-nofollow-and-new-attributes/" target="_blank" rel="noopener nofollow">解説記事</a>によると、サイト内の全リンクをnofollowにしているようなケースではGoogleがnofollowを無視する可能性があるとされている。</p>
+
+<h2>比較記事の外部リンクにはnofollowを付けた</h2>
+
+<p>このブログはレタッチサービスの比較記事が多く、紹介先の公式サイトへリンクしている。これらのリンクは「サービスを推薦している」わけではなく、「情報源として紹介している」位置づけなので、nofollowを付けることにした。</p>
+
+<p>全サービスに同じルールを適用するのが重要だった。特定のサービスだけdofollowにすると、SEO上の優遇になる。比較記事で公平を保つために、紹介先への外部リンクはすべて<code>rel="noopener nofollow"</code>で統一した。</p>
+
+<p>見た目は何も変わらない。nofollowはHTMLソースコードの中にしか書かれないので、普通に記事を読んでいる人には区別がつかない。ソースコードを確認すればわかるが、「比較記事なので全サービスにnofollowを付けている」という方針は運営上まったく自然なことである。</p>
+
+<h2>アフィリエイトリンクにはnofollow sponsoredを付ける</h2>
+
+<p>Amazonアソシエイトのリンクには<code>rel="nofollow sponsored"</code>を使っている。Googleのガイドラインでは、有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めている。両方を併記する書き方が最も安全である。</p>
+
+<p>HTMLの記述例はこうなる。</p>
+
+<div class="point-box">
+<p><code>&lt;a href="https://amzn.to/xxxxx" target="_blank" rel="noopener nofollow sponsored"&gt;SDカード&lt;/a&gt;</code></p>
+</div>
+
+<p>nofollowだけでも問題はないが、sponsoredを併記することでGoogleに「これは広告リンクである」と正確に伝えられる。Googleの公式ブログでも、nofollowからsponsoredへの切り替えは推奨するが必須ではないと説明されている。</p>
+
+<h2>公式ドキュメントや公的機関へのリンクの扱い</h2>
+
+<p>外部リンクを全部nofollowにするのは得策ではない。政府機関のサイト、Google公式ドキュメント、学術論文など、信頼性の高い情報源へのリンクはdofollowのまま残すか、rel="nofollow"は付けつつもGoogleがヒントとして適切に処理してくれることを期待する。</p>
+
+<p>このブログでは以下のルールで運用している。</p>
+
+<table class="spec-table">
+<tr><th>リンク先</th><th>rel属性</th></tr>
+<tr><td>比較対象のサービス公式サイト</td><td><code>nofollow</code></td></tr>
+<tr><td>Amazonアソシエイトリンク</td><td><code>nofollow sponsored</code></td></tr>
+<tr><td>Google公式ドキュメント・政府機関</td><td><code>nofollow</code>（ポリシーに従う）</td></tr>
+<tr><td>自サイト内のリンク（内部リンク）</td><td>属性なし（dofollow）</td></tr>
+</table>
+
+<h2>全記事の外部リンクを一括で確認・修正した方法</h2>
+
+<p>rel属性の方針を決めた後、既存の全記事（60本以上）で修正が必要だった。手作業では到底追いきれないので、sedコマンドで一括置換した。</p>
+
+<p>具体的には、<code>rel="noopener noreferrer"</code>になっていた外部リンクを<code>rel="noopener noreferrer nofollow"</code>に変換した。さらにアフィリエイトリンク（amzn.toドメイン）だけを抽出して<code>rel="noopener nofollow sponsored"</code>に置換した。</p>
+
+<p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、canonical URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
+
+<p>加えて、スプレッドシートで全外部リンクの一覧を管理するようにした。記事名・リンク先ドメイン・アンカーテキスト・nofollowの有無を1行ずつ記録する形式で、リンク管理の漏れを防いでいる。</p>
+
+<h2>よくある質問</h2>
+<div class="faq-item"><p class="faq-q">Q. nofollowとdofollowの違いは何ですか？</p><p class="faq-a">dofollowはリンク先にページ評価を渡す通常のリンクです。nofollowはrel="nofollow"を付けることで「評価を渡さないでほしい」とGoogleに伝えるヒントです。2019年以降、nofollowは命令ではなくヒントとして扱われています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. sponsoredとugcはnofollowと何が違いますか？</p><p class="faq-a">sponsoredは広告・有料リンク用、ugcはコメント欄などユーザー生成コンテンツ用です。機能はnofollowと同じですが、リンクの種類をGoogleにより正確に伝えられます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 比較記事の外部リンクにnofollowを付けるべきですか？</p><p class="faq-a">付けるのが無難です。比較記事の外部リンクは推薦ではなく情報提供なので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用するのが公平です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. アフィリエイトリンクのrel属性は何を使いますか？</p><p class="faq-a">rel="nofollow sponsored"を付けるのが推奨です。Googleのガイドラインでは有料リンクにsponsoredまたはnofollowの付与を求めており、両方を併記するのが最も安全な方法です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 外部リンクを全部nofollowにすると問題がありますか？</p><p class="faq-a">推奨されません。全リンクnofollowだとGoogleに「リンク管理が適切でない」と判断される可能性があります。ただし比較記事中心のブログでは大半がnofollowになるのは自然で、信頼できる公的情報源へのリンクはdofollowのまま残すのが望ましいです。</p></div>
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<h2 class="related-title">関連する記事</h2>
+<a class="cite-card" href="blog-seo-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログのSEOを勉強した記録｜最初にやること5つ</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
+</span>
+</a>
+<a class="cite-card" href="internal-link-seo.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用</span>
+<span class="cite-url">tsubasa-memo.github.io/internal-link-seo.html</span>
+</span>
+</a>
+<a class="cite-card" href="search-console-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</span>
+<span class="cite-url">tsubasa-memo.github.io/search-console-basics.html</span>
+</span>
+</a>
+</div>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div></footer>
+</body>
+</html>
