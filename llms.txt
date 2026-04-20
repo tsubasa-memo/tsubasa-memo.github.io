@@ -49,6 +49,16 @@
 - [PIXTAがAI画像の販売を停止。ストックフォト副業の前提が揺らいでいる](https://tsubasa-memo.github.io/stockphoto-ai-sidejob.html): PIXTAのAI生成コンテンツ停止を受けて、ストックフォト副業各社のAI対応状況とプラットフォーム依存リスクを整理した記事
 - [写真の色変更・カラー化アプリ6選｜白黒写真も無料で着色できる](https://tsubasa-memo.github.io/photo-colorize-apps.html): 白黒写真のカラー化・部分色変更・古い写真の色復元の3用途別に、PhotoDirector・VanceAI・Fotor・Palette.fm等6ツールを無料枠込みで比較した記事
 
+### SEO・LLMO
+
+- [個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】](https://tsubasa-memo.github.io/blog-seo-basics.html): タイトル設定・meta description・sitemap送信・FAQ構造化データ・内部リンクなど個人ブログのSEO5施策をまとめた記事
+- [サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位](https://tsubasa-memo.github.io/search-console-basics.html): Google Search Consoleの表示回数・クリック数・CTR・掲載順位の見方とインデックス確認手順をまとめた記事
+- [記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】](https://tsubasa-memo.github.io/search-console-ctr.html): 8位表示でCTR 0.23%だった記事のタイトル変更事例と変更後1〜2週間の反映確認方法をまとめた記事
+- [Googleにインデックスされるまで｜サイトマップ送信からの記録](https://tsubasa-memo.github.io/google-index-not-found.html): 新規記事がGoogleにインデックスされるまでの対処・サイトマップ送信・登録リクエストの手順をまとめた記事
+- [記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた](https://tsubasa-memo.github.io/faq-structured-data.html): FAQPage構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの効果とAI引用への影響をまとめた記事
+- [AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた](https://tsubasa-memo.github.io/llmo-article-writing.html): LLMO（LLM Optimization）の基礎・SEOとの違い・AIに引用されやすい記事構造と実装方法をまとめた記事
+- [llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した](https://tsubasa-memo.github.io/llms-txt-setup.html): llms.txtの仕様・robots.txtとの違い・書き方・GitHub Pagesへの設置手順と効果確認方法をまとめた記事
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
