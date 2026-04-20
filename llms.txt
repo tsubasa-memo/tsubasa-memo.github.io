@@ -60,7 +60,6 @@
 - [記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた](https://tsubasa-memo.github.io/faq-structured-data.html): FAQPage構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの効果とAI引用への影響をまとめた記事
 - [AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた](https://tsubasa-memo.github.io/llmo-article-writing.html): LLMO（LLM Optimization）の基礎・SEOとの違い・AIに引用されやすい記事構造と実装方法をまとめた記事
 - [llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した](https://tsubasa-memo.github.io/llms-txt-setup.html): llms.txtの仕様・robots.txtとの違い・書き方・GitHub Pagesへの設置手順と効果確認方法をまとめた記事
-
 - [内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用](https://tsubasa-memo.github.io/internal-link-seo.html): 用語集66ページへの自動リンク、関連記事セクションのcite-card形式、パンくずリスト設計など、個人ブログで実際にやった内部リンク設計の記録
 - [nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ](https://tsubasa-memo.github.io/nofollow-dofollow-guide.html): 外部リンクのnofollow・dofollow・sponsored・ugcの違いと使い分け。比較記事・アフィリエイトリンクの管理方法を記録した備忘録
 - [静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した](https://tsubasa-memo.github.io/static-vs-dynamic-site.html): 静的サイトと動的サイトのメリット・デメリット比較。GitHub Pagesで60本以上運営した経験と、AIコーディングツールで更新の手間を解消した方法の記録
