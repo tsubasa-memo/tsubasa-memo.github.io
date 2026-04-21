@@ -66,6 +66,9 @@
 - [静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した](https://tsubasa-memo.github.io/static-vs-dynamic-site.html): 静的サイトと動的サイトのメリット・デメリット比較。GitHub Pagesで60本以上運営した経験と、AIコーディングツールで更新の手間を解消した方法の記録
 - [AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録](https://tsubasa-memo.github.io/ai-blog-building.html): GitHubもHTMLも知らなかった非エンジニアがAIに聞きながらGitHub Pagesでブログを構築した記録。Claude・Claude Codeの使い分け、SEO/LLMO設計、つまずきポイントをまとめた記事
 
+- [写真加工屋さん vs 切り抜きjp｜EC用の画像加工を外注するなら？【2026年版】](https://tsubasa-memo.github.io/shashinkakouyasan-vs-kirinukijp.html): 写真加工屋さんと切り抜きjpを料金・オプション・最低発注枚数・切り抜き方式で比較したEC担当者向けの備忘録
+- [ミラーレスカメラ vs スマホ｜EC商品を撮影するなら？【2026年版】](https://tsubasa-memo.github.io/mirrorless-vs-smartphone.html): EC商品撮影にミラーレスとスマホのどちらを使うべきかを画質・コスト・撮影後の加工ワークフローまで含めて比較した記事
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
