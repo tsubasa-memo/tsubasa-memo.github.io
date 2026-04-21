@@ -69,6 +69,8 @@
 - [写真加工屋さん vs 切り抜きjp｜EC用の画像加工を外注するなら？【2026年版】](https://tsubasa-memo.github.io/shashinkakouyasan-vs-kirinukijp.html): 写真加工屋さんと切り抜きjpを料金・オプション・最低発注枚数・切り抜き方式で比較したEC担当者向けの備忘録
 - [ミラーレスカメラ vs スマホ｜EC商品を撮影するなら？【2026年版】](https://tsubasa-memo.github.io/mirrorless-vs-smartphone.html): EC商品撮影にミラーレスとスマホのどちらを使うべきかを画質・コスト・撮影後の加工ワークフローまで含めて比較した記事
 
+- [Retouch Ink vs ひとフォト｜こだわりの1枚をレタッチするなら？](https://tsubasa-memo.github.io/retouch-ink-vs-hitophoto.html): こだわりの1枚を人物レタッチしてもらうならRetouch Inkとひとフォトのどちらがいいか。料金・仕上がり品質で比較した備忘録
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
