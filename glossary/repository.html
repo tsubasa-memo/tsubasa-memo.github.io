@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>リポジトリとは？ファイルと変更履歴を保管する場所の話｜ツバサのメモ帳</title>
+<meta name="description" content="リポジトリ（repository）はgitでファイルと変更履歴を保管する場所。ローカルリポジトリとリモートリポジトリの違い、GitHub上での作成方法をまとめた。">
+<meta name="keywords" content="リポジトリ とは,repository git,リモートリポジトリ,ローカルリポジトリ">
+<meta property="og:title" content="リポジトリとは？ファイルと変更履歴を保管する場所の話｜ツバサのメモ帳">
+<meta property="og:description" content="gitのリポジトリの概念と種類をまとめた備忘録。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/repository.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/repository.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"リポジトリとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"gitでファイルと変更履歴をまとめて保管する場所です。ブログの全ファイルとその編集記録が入った箱のようなものです。"}},{"@type":"Question","name":"ローカルリポジトリとリモートリポジトリの違いは？","acceptedAnswer":{"@type":"Answer","text":"ローカルは自分のPC上、リモートはGitHubなどインターネット上にあるリポジトリです。ローカルで編集してプッシュでリモートに同期します。"}},{"@type":"Question","name":"リポジトリの作り方は？","acceptedAnswer":{"@type":"Answer","text":"GitHubのWebサイトで「New repository」ボタンから作成できます。リポジトリ名、公開設定などを選ぶだけです。"}},{"@type":"Question","name":"リポジトリは無料で作れますか？","acceptedAnswer":{"@type":"Answer","text":"はい。GitHubの無料プランで公開リポジトリを無制限に作成できます。"}},{"@type":"Question","name":"リポジトリのサイズに制限はありますか？","acceptedAnswer":{"@type":"Answer","text":"GitHubでは1リポジトリあたり推奨5GB以内、1ファイル100MB以内の制限があります。テキストベースのブログなら問題になることはほぼありません。"}}]}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+</style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+<header><div class="wrap"><a href="/" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
+<div class="site-search-wrap"><div class="wrap"><input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div></div>
+<nav class="breadcrumb"><div class="wrap"><a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; リポジトリ</div></nav>
+<section class="hero"><div class="wrap"><h1>リポジトリとは？<br>ファイルと変更履歴を保管する場所の話</h1></div></section>
+<main><div class="wrap">
+<p>こんにちは、ツバサです。</p>
+<p>GitHubに登録した直後に「リポジトリを作成してください」と表示されて、何を作ればいいのか戸惑った。リポジトリは「ファイルを入れておく箱」のようなものだ。</p>
+<h2>リポジトリとは</h2>
+<p>リポジトリ（repository、略してrepo）は、ファイルとその変更履歴をまとめて保管する場所だ。ブログで言えば「記事HTML、CSS、画像、サイトマップなどの全ファイル＋いつ何を変えたかの記録」が入った箱にあたる。</p>
+<h2>ローカルとリモートの2種類</h2>
+<h3>ローカルリポジトリ</h3>
+<p>自分のPC上にあるリポジトリ。ファイルの編集やコミットはここで行う。</p>
+<h3>リモートリポジトリ</h3>
+<p>GitHub上にあるリポジトリ。ローカルの変更をプッシュして同期する。他の人やツールとファイルを共有するための場所。GitHub Pagesの場合、リモートリポジトリの内容がそのままWebサイトとして公開される。</p>
+<h2>覚えておきたいポイント</h2>
+<h3>リポジトリ名がURLの一部になる</h3>
+<p>GitHub Pagesの場合、「ユーザー名.github.io」というリポジトリ名にすると、そのままURLになる。リポジトリ名は後から変更できるが、URLも変わるので注意。</p>
+<div class="related-terms"><h3>関連する用語</h3><ul><li><a href="git.html">git</a></li><li><a href="github.html">GitHub</a></li><li><a href="commit.html">コミット</a></li><li><a href="push.html">プッシュ</a></li></ul></div>
+<div class="related"><h3>関連する記事</h3><ul><li><a href="/ai-blog-building.html">AIに聞きながらGitHub Pagesでブログを構築した話</a></li></ul></div>
+<div class="author-box"><div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div><div class="author-text"><p class="author-name">ツバサ</p><p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p></div></div>
+</div></main>
+<footer><div class="wrap"><div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a><a href="about.html">運営者情報</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
+</body></html>

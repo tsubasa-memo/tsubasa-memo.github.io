@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>CSSとは？Webページの見た目を整えるスタイルシートの話｜ツバサのメモ帳</title>
+<meta name="description" content="CSS（Cascading Style Sheets）はWebページの色・フォント・レイアウトなど見た目を定義するスタイルシート言語。HTMLと組み合わせてデザインを作る仕組みをまとめた。">
+<meta name="keywords" content="CSS とは,スタイルシート 基本,CSS HTML 違い,CSS デザイン">
+<meta property="og:title" content="CSSとは？Webページの見た目を整えるスタイルシートの話｜ツバサのメモ帳">
+<meta property="og:description" content="CSSの基本概念とHTMLとの役割分担をまとめた備忘録。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/css.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/css.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"CSSとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Webページの色・フォント・レイアウトなどの見た目を定義するスタイルシート言語です。HTMLが構造を作り、CSSがデザインを付けます。"}},{"@type":"Question","name":"CSSとHTMLの違いは？","acceptedAnswer":{"@type":"Answer","text":"HTMLはページの構造（見出し・段落など）を定義し、CSSは見た目（色・フォント・余白など）を定義します。両方を組み合わせてWebページが完成します。"}},{"@type":"Question","name":"CSSを知らなくてもブログは作れますか？","acceptedAnswer":{"@type":"Answer","text":"AIに要望を伝えてCSSを生成してもらうことができるため、文法を完璧に覚える必要はありません。"}},{"@type":"Question","name":"レスポンシブデザインとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"PC・スマホ・タブレットなど画面サイズに応じてレイアウトを切り替えるデザイン手法です。CSSの@mediaクエリで実装します。"}},{"@type":"Question","name":"CSSはどこに書きますか？","acceptedAnswer":{"@type":"Answer","text":"HTMLファイル内のstyleタグに書く方法と、別ファイル（.css）に書いてHTMLから読み込む方法があります。このブログではstyleタグ内に記述しています。"}}]}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+</style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+<header><div class="wrap"><a href="/" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
+<div class="site-search-wrap"><div class="wrap"><input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div></div>
+<nav class="breadcrumb"><div class="wrap"><a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; CSS</div></nav>
+<section class="hero"><div class="wrap"><h1>CSSとは？<br>Webページの見た目を整えるスタイルシートの話</h1></div></section>
+<main><div class="wrap">
+<p>こんにちは、ツバサです。</p>
+<p>HTMLでブログの骨組みができたあと、「デザインはCSSで調整します」と言われた。CSSはHTMLが作った構造に「色」や「形」を付ける役割を担っている。</p>
+<h2>CSSとは</h2>
+<p>CSS（Cascading Style Sheets）は、Webページの見た目を定義するスタイルシート言語だ。文字の色、フォント、余白、背景色、レイアウトなど、ページのデザインに関わる部分を指定する。</p>
+<p>HTMLが「ここは見出し、ここは段落」と構造を定義し、CSSが「見出しは青色で太字、段落は16pxでグレー」と見た目を定義する。この2つを組み合わせてWebページが完成する。</p>
+<h2>ブログ運営での使い方</h2>
+<h3>テンプレートのstyleタグで一括管理</h3>
+<p>このブログではHTMLファイル内の&lt;style&gt;タグにCSSを書いている。一度デザインを決めてしまえば、全ページで同じ見た目を維持できる。</p>
+<h3>レスポンシブデザイン</h3>
+<p>CSSの@mediaクエリを使うと、PC・スマホ・タブレットそれぞれに最適なレイアウトを指定できる。このブログも画面幅600px以下でフォントサイズやレイアウトを切り替えている。</p>
+<h2>覚えておきたいポイント</h2>
+<h3>CSSもAIに書いてもらえる</h3>
+<p>「落ち着いた配色にしてほしい」「スマホでも読みやすいデザインにして」のような指示でAIがCSSを生成してくれる。CSSの文法を覚えるより、デザインの要望を言語化する方が重要だ。</p>
+<div class="related-terms"><h3>関連する用語</h3><ul><li><a href="html.html">HTML</a></li><li><a href="responsive.html">レスポンシブ</a></li><li><a href="first-view.html">ファーストビュー</a></li></ul></div>
+<div class="related"><h3>関連する記事</h3><ul><li><a href="/ai-blog-building.html">AIに聞きながらGitHub Pagesでブログを構築した話</a></li></ul></div>
+<div class="author-box"><div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div><div class="author-text"><p class="author-name">ツバサ</p><p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p></div></div>
+</div></main>
+<footer><div class="wrap"><div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a><a href="about.html">運営者情報</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
+</body></html>
