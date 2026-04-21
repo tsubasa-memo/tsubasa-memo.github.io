@@ -35,7 +35,8 @@
 - [商品写真・ジュエリーのレタッチ外注どこに頼む？EC向けサービス7社比較｜ツバサのメモ帳](https://tsubasa-memo.github.io/product-photo-retouch.html): EC商品画像の白抜き・カラバリ作成・ジュエリー質感表現など対応可能な7社を比較した記事
 - [建築・不動産写真のレタッチ外注｜電線消し・空の入替えができるサービス比較｜ツバサのメモ帳](https://tsubasa-memo.github.io/architecture-photo-retouch.html): 電線除去・青空合成・歪み補正など建築・不動産写真のレタッチに対応する6社を比較した記事
 - [EC向け画像加工の外注サービス5選｜1枚から依頼できる会社を比較](https://tsubasa-memo.github.io/ec-image-outsource.html): EC商品画像の切り抜き・白抜き・色補正を1枚から依頼できる外注サービス5社を比較した記事
-- [ささげ業務の代行会社おすすめ12選｜選び方と費用相場【2026年版】](https://tsubasa-memo.github.io/sasage-outsource.html): ささげ業務（撮影・採寸・原稿作成）の代行会社12社をダイヤモンドヘッド・スクロール360・マキトルくん等タイプ別に比較した記事
+- [ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】](https://tsubasa-memo.github.io/sasage-outsource.html): ささげ業務（撮影・採寸・原稿作成）の代行会社16社をダイヤモンドヘッド・スクロール360・fleston・PhotonX等タイプ別に比較した記事
+- [fleston vs PhotonX｜ささげ代行は人力とシステム、どっちがいい？【2026年版】](https://tsubasa-memo.github.io/fleston-vs-photonx.html): ささげ代行のflestonとPhotonXを人力型とシステム型の事業の立て付けで比較、PANAMAの移管経緯と老舗フォートン（foton inc.）との区別を整理した記事
 - [EC向け商品撮影の代行サービス比較｜1点から頼める7社の料金・特徴まとめ](https://tsubasa-memo.github.io/ec-product-photo-service.html): EC向け商品撮影の代行サービス7社を料金・納期・対応ジャンルで比較した記事
 - [ささげ代行の費用相場まとめ｜撮影・採寸・原稿の工程別に料金を整理した](https://tsubasa-memo.github.io/sasage-outsource-cost.html): ささげ代行の費用相場を撮影・採寸・原稿の工程別に整理し、依頼先タイプ別の特徴をまとめた記事
 - [ECモールの出店先の選び方｜Amazon・楽天・Yahoo!の手数料を比較した](https://tsubasa-memo.github.io/ec-mall-comparison.html): Amazon・楽天市場・Yahoo!ショッピングの出店費用と手数料を比較表で整理した記事
