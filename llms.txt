@@ -71,6 +71,8 @@
 
 - [Retouch Ink vs ひとフォト｜こだわりの1枚をレタッチするなら？](https://tsubasa-memo.github.io/retouch-ink-vs-hitophoto.html): こだわりの1枚を人物レタッチしてもらうならRetouch Inkとひとフォトのどちらがいいか。料金・仕上がり品質で比較した備忘録
 
+- [外注先は専門会社かフリーランスか｜EC担当者が実務目線で比較した](https://tsubasa-memo.github.io/outsource-company-vs-freelancer.html): EC業務の外注先を専門会社とフリーランスで比較。品質・コスト・税務・ディレクション工数の4軸で整理
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
