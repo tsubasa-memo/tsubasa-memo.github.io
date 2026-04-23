@@ -128,6 +128,54 @@ a.glossary-inline:hover{border-bottom:1px solid var(--green);text-decoration:non
   .related,.pillar-links{padding:20px}
   .spec-table th,.spec-table td{padding:10px 12px}
 }
+
+/* Custom component classes support */
+h4{font-family:var(--font-heading);font-size:15px;font-weight:700;margin:24px 0 10px;color:var(--text);line-height:1.6}
+.point-box{background:var(--accent-light);border:none;border-radius:var(--radius);padding:22px 26px;margin:28px 0;box-shadow:var(--shadow-sm)}
+.point-box h4{margin-top:0;margin-bottom:12px;color:var(--accent);font-size:15px;display:flex;align-items:center;gap:8px}
+.point-box h4::before{content:'';display:inline-block;width:4px;height:16px;background:var(--accent);border-radius:2px}
+.point-box p{margin-bottom:8px;font-size:14.5px;line-height:1.85}
+.point-box p:last-child{margin-bottom:0}
+.point-box ul,.point-box ol{margin:0 0 8px 20px;font-size:14.5px}
+.point-box li{margin-bottom:4px}
+.warn-box{background:#fef8ec;border-left:4px solid #d9a447;border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0}
+.warn-box h4{margin-top:0;margin-bottom:10px;color:#a77516;font-size:15px}
+.warn-box p{margin-bottom:8px;font-size:14.5px;line-height:1.85}
+.warn-box p:last-child{margin-bottom:0}
+.warn-box ul{margin:0 0 8px 20px;font-size:14.5px}
+.summary-box{background:var(--green-light);border:none;border-radius:var(--radius);padding:22px 26px;margin:28px 0;box-shadow:var(--shadow-sm)}
+.summary-box h4{margin-top:0;margin-bottom:12px;color:var(--green);font-size:15px}
+.summary-box p{margin-bottom:8px;font-size:14.5px;line-height:1.85}
+.summary-box p:last-child{margin-bottom:0}
+.price-box{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-sm)}
+.price-box h4{margin-top:0;margin-bottom:10px;font-size:15px}
+.step-box{background:#fff;border:none;border-radius:var(--radius);padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-sm)}
+.step-box h4{margin-top:0;margin-bottom:10px;font-size:15px}
+.quick-table,.shop-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin:24px 0 32px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);background:#fff}
+.quick-table th,.shop-table th{background:#1a1a1a;color:#fff;padding:14px 18px;text-align:left;font-weight:500;font-size:12px;letter-spacing:.06em}
+.quick-table td,.shop-table td{padding:14px 18px;border-bottom:1px solid #f0ede7;vertical-align:top}
+.quick-table tr:last-child td,.shop-table tr:last-child td{border-bottom:none}
+.quick-table tr:hover td{background:#faf8f4}
+.amazon-card,.app-card,.camera-card,.phone-card,.tool-card,.service-card,.space-card,.venue-card,.merit-card,.mobile-card,.scene-item{background:#fff;border:none;border-radius:var(--radius);padding:22px 26px;margin:20px 0;box-shadow:var(--shadow-sm);transition:box-shadow .25s,transform .2s}
+.amazon-card:hover,.app-card:hover,.camera-card:hover,.phone-card:hover,.tool-card:hover,.service-card:hover,.space-card:hover,.venue-card:hover,.merit-card:hover,.mobile-card:hover,.scene-item:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.amazon-card h3,.app-card h3,.camera-card h3,.phone-card h3,.tool-card h3,.service-card h3,.space-card h3,.venue-card h3,.merit-card h3,.mobile-card h3,.scene-item h3{font-family:var(--font-heading);margin:0 0 10px;font-size:17px}
+.amazon-card h4,.app-card h4,.camera-card h4,.phone-card h4,.tool-card h4,.service-card h4,.space-card h4,.venue-card h4{margin:0 0 8px;font-size:16px}
+.amazon-card p,.app-card p,.camera-card p,.phone-card p,.tool-card p,.service-card p,.space-card p,.venue-card p,.merit-card p,.mobile-card p,.scene-item p{margin-bottom:10px;font-size:14.5px;line-height:1.85}
+.amazon-card ul,.app-card ul,.camera-card ul,.phone-card ul,.tool-card ul,.service-card ul,.space-card ul,.venue-card ul,.merit-card ul{margin:0 0 10px 20px;font-size:14.5px}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:24px 0}
+.cat-section{margin:48px 0}
+.cat-section h2{margin-top:0}
+ul,ol{margin:0 0 20px 24px;font-size:15.5px;line-height:1.9}
+li{margin-bottom:6px}
+strong{font-weight:700;color:var(--text)}
+.updated{text-align:center;padding:10px;font-size:12px;color:var(--text-sub)}
+.lead{font-size:15px;line-height:1.8;margin-bottom:24px}
+@media(max-width:600px){
+  .point-box,.warn-box,.summary-box,.price-box,.step-box{padding:18px 20px}
+  .amazon-card,.app-card,.camera-card,.phone-card,.tool-card,.service-card,.space-card,.venue-card,.merit-card,.mobile-card,.scene-item{padding:18px 20px}
+  .quick-table,.shop-table{font-size:13px}
+  .quick-table th,.quick-table td,.shop-table th,.shop-table td{padding:10px 12px}
+}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
