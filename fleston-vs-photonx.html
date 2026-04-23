@@ -215,6 +215,52 @@ a.glossary-inline:hover{border-bottom:1px solid var(--green);text-decoration:non
   .related,.pillar-links{padding:20px}
   .spec-table th,.spec-table td{padding:10px 12px}
 }
+
+/* Legacy template support */
+.header-inner{max-width:740px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:52px}
+.site-search-wrap{max-width:740px;margin:0 auto;padding:12px 20px 0}
+.article-wrap{max-width:740px;margin:0 auto;padding:40px 20px 24px}
+.article-tag{display:inline-block;background:var(--accent-light);color:var(--accent);font-size:11px;padding:3px 12px;border-radius:20px;margin-bottom:14px;font-weight:700;letter-spacing:.04em}
+.article-wrap h1{font-family:var(--font-heading);font-size:28px;font-weight:700;line-height:1.5;margin-bottom:12px;letter-spacing:.02em}
+.article-meta{font-size:13px;color:var(--text-sub);margin-bottom:32px}
+.article-body h2{font-family:var(--font-heading);font-size:22px;font-weight:700;margin:60px 0 20px;padding:0;border:none;position:relative;letter-spacing:.02em;line-height:1.5}
+.article-body h2::before{content:'';display:block;width:28px;height:3px;background:var(--accent);margin-bottom:12px;border-radius:2px}
+.article-body h3{font-family:var(--font-heading);font-size:17px;font-weight:700;margin:40px 0 14px;color:var(--text)}
+.article-body p{margin-bottom:20px;font-size:15.5px;line-height:1.9}
+.article-body ul,.article-body ol{margin:0 0 20px 24px;font-size:15.5px;line-height:1.9}
+.article-body li{margin-bottom:6px}
+.toc{background:#fff;border:none;border-radius:var(--radius);padding:24px 28px;margin:28px 0;box-shadow:var(--shadow-sm)}
+.toc-title{font-family:var(--font-heading);font-size:15px;font-weight:700;margin-bottom:12px}
+.toc ol{margin:0 0 0 20px}
+.toc li{font-size:14px;margin-bottom:6px}
+.info-box{background:var(--green-light);border-left:4px solid var(--green);padding:16px 20px;margin:24px 0;border-radius:0 var(--radius) var(--radius) 0}
+.info-box p{margin:0;font-size:14.5px}
+.compare-table,.hybrid-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin:24px 0 32px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);background:#fff}
+.compare-table th{background:#1a1a1a;color:#fff;padding:14px 18px;text-align:left;font-weight:500;font-size:12px;letter-spacing:.06em}
+.hybrid-table th{background:var(--accent);color:#fff;padding:14px 18px;text-align:left;font-weight:500;font-size:12px;letter-spacing:.06em}
+.compare-table td,.hybrid-table td{padding:14px 18px;border-bottom:1px solid #f0ede7;vertical-align:top}
+.compare-table tr:last-child td,.hybrid-table tr:last-child td{border-bottom:none}
+.compare-table tr:hover td{background:#faf8f4}
+.compare-table .tag{display:inline-block;background:var(--accent-light);color:var(--accent);font-size:11px;padding:2px 8px;border-radius:20px;white-space:nowrap;font-weight:700}
+.company-card{border:none;border-radius:var(--radius);padding:26px 28px;margin:20px 0;background:#fff;box-shadow:var(--shadow-sm);transition:box-shadow .25s,transform .2s}
+.company-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.company-card h3{font-family:var(--font-heading);margin:0 0 10px;font-size:17px}
+.company-card p{margin-bottom:10px;font-size:15px;line-height:1.8}
+.company-card ul{margin:0 0 10px 20px;font-size:14.5px}
+.company-card li{margin-bottom:5px}
+.faq-q{font-family:var(--font-heading);font-weight:700;font-size:16px;margin-bottom:12px;padding-left:36px;position:relative;color:var(--text);line-height:1.6}
+.faq-q::before{content:'Q';position:absolute;left:0;top:1px;font-family:var(--font-body);font-size:12px;font-weight:700;color:#fff;background:var(--accent);width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center}
+.faq-a{font-size:14px;color:var(--text-sub);line-height:1.9;padding-left:36px}
+.author-bio{font-size:13.5px;line-height:1.8;color:var(--text-sub);margin-bottom:0}
+.related-title{font-family:var(--font-heading);font-size:16px;font-weight:700;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+@media(max-width:600px){
+  .article-wrap h1{font-size:22px}
+  .article-body h2{font-size:19px}
+  .compare-table,.hybrid-table{font-size:13px}
+  .compare-table th,.compare-table td,.hybrid-table th,.hybrid-table td{padding:10px 12px}
+  .company-card{padding:20px}
+  .header-inner{height:auto;padding:10px 20px}
+}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
