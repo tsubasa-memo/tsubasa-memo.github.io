@@ -151,6 +151,36 @@ strong{font-weight:700;color:var(--text)}
   .quick-table,.shop-table{font-size:13px}
   .quick-table th,.quick-table td,.shop-table th,.shop-table td{padding:10px 12px}
 }
+
+/* Amazon card + camera-card sub-elements fix */
+a.amazon-card{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin:16px 0;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm);transition:box-shadow .2s,transform .2s}
+a.amazon-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);text-decoration:none}
+a.amazon-card::after{content:none}
+.amazon-cards{display:flex;flex-direction:column;gap:10px;margin:16px 0}
+.amazon-card-img{width:90px;height:90px;object-fit:contain;flex-shrink:0;border-radius:6px;background:#fafaf8}
+.amazon-card-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.amazon-card-label{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:2px 10px;border-radius:4px;align-self:flex-start;letter-spacing:.04em}
+.amazon-card-label.recommended{background:#c0392b}
+.amazon-card-name{font-size:14px;font-weight:700;color:var(--text);line-height:1.5;margin:2px 0}
+.amazon-card-price{font-size:16px;font-weight:700;color:#c7511f;margin:0}
+.amazon-card-price span{font-size:11px;font-weight:400;color:var(--text-sub);margin-left:6px}
+.amazon-card-note{font-size:12px;color:var(--text-sub);margin:2px 0 0}
+.amazon-btn{display:inline-block;margin-top:6px;padding:6px 18px;background:#ff9900;color:#fff;border-radius:6px;font-size:12px;font-weight:700;align-self:flex-start;letter-spacing:.04em}
+.camera-card .price{font-size:15px;font-weight:700;color:#c05040;margin-bottom:10px}
+.camera-card .specs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.camera-card .specs span{font-size:11px;background:var(--accent-light);color:var(--accent);padding:3px 10px;border-radius:20px;font-weight:700}
+.camera-card h4{margin:0 0 10px;font-size:17px}
+.camera-card h4 a{color:var(--text)}
+.camera-card h4 a:hover{color:var(--accent)}
+.camera-card p{font-size:14.5px;line-height:1.85;margin-bottom:10px}
+.camera-card p:last-child{margin-bottom:0}
+.checklist{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:18px 22px;margin:20px 0}
+.checklist li{list-style:none;padding-left:24px;position:relative;margin-bottom:6px;font-size:14.5px}
+.checklist li::before{content:'\2713';position:absolute;left:0;top:0;color:var(--green);font-weight:700}
+@media(max-width:600px){
+  a.amazon-card{flex-direction:column;gap:10px}
+  .amazon-card-img{width:100%;height:auto;max-height:160px}
+}
 </style>
 <script type="application/ld+json">
 {
