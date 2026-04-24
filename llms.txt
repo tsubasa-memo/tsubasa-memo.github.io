@@ -72,6 +72,7 @@
 - [Retouch Ink vs ひとフォト｜こだわりの1枚をレタッチするなら？](https://tsubasa-memo.github.io/retouch-ink-vs-hitophoto.html): こだわりの1枚を人物レタッチしてもらうならRetouch Inkとひとフォトのどちらがいいか。料金・仕上がり品質で比較した備忘録
 
 - [外注先は専門会社かフリーランスか｜EC担当者が実務目線で比較した](https://tsubasa-memo.github.io/outsource-company-vs-freelancer.html): EC業務の外注先を専門会社とフリーランスで比較。品質・コスト・税務・ディレクション工数の4軸で整理
+- [見積もり依頼で予算を伝えるコツ｜先輩に怒られて調べたらゲーム理論に行き着いた](https://tsubasa-memo.github.io/estimate-budget-disclosure.html): 外注先への見積もり依頼で予算を伝えるコツを解説。ウェブ制作・画像加工・デザイン・撮影代行などECの外注すべてに使える
 
 ## 運営者
 
