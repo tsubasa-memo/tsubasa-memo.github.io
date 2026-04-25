@@ -125,7 +125,6 @@
 - [アフィリエイト](https://tsubasa-memo.github.io/glossary/affiliate.html): 成果報酬型の広告手法。
 - [インデックス登録](https://tsubasa-memo.github.io/glossary/index-registration.html): Googleがページをデータベースに記録すること。
 - [インプレッション](https://tsubasa-memo.github.io/glossary/impression.html): 広告やコンテンツが表示された回数。
-- [上代・下代](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 定価と仕入れ値を指すEC・小売の価格用語。
 - [オムニチャネル](https://tsubasa-memo.github.io/glossary/omnichannel.html): 実店舗・EC・アプリなど複数チャネルを統合する戦略。
 - [カゴ落ち](https://tsubasa-memo.github.io/glossary/cart-abandonment.html): カートに入れたまま購入せず離脱すること。
 - [掛け率](https://tsubasa-memo.github.io/glossary/kakerate.html): 仕入れ交渉の「6掛け」は定価の60%という意味。
@@ -137,6 +136,7 @@
 - [ささげ](https://tsubasa-memo.github.io/sasage-outsource.html): 撮影・採寸・原稿の頭文字。
 - [出荷指示書](https://tsubasa-memo.github.io/glossary/shipping-instruction.html): 物流会社に出荷内容を伝えるための書類。
 - [白飛び](https://tsubasa-memo.github.io/glossary/whiteout.html): 明るい部分が真っ白になって階調が失われる現象。
+- [上代・下代](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 定価と仕入れ値を指すEC・小売の価格用語。
 - [セッション・PV・UU](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): アクセス解析の3つの基本指標。
 - [ダイナミックレンジ](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラが記録できる明暗の幅。
 - [チャージバック](https://tsubasa-memo.github.io/glossary/chargeback.html): クレジットカード決済の取消し。
