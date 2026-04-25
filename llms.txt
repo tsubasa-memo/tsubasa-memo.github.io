@@ -75,6 +75,98 @@
 - [見積もり依頼で予算を伝えるコツ｜先輩に怒られて調べたらゲーム理論に行き着いた](https://tsubasa-memo.github.io/estimate-budget-disclosure.html): 外注先への見積もり依頼で予算を伝えるコツを解説。ウェブ制作・画像加工・デザイン・撮影代行などECの外注すべてに使える
 - [外注やバイトに頼んだ仕事が進まない？原因が自分だったと気づいた話](https://tsubasa-memo.github.io/outsource-task-bottleneck.html): 外注やバイトに仕事を頼んだのに進まない原因が自分のボール持ちすぎだったと気づいた体験談。50点で返す習慣と見えない待ち時間のコストについてまとめた記事
 
+## 用語集
+
+仕事とブログ運営で出てきた用語のメモ集。87語を50音/アルファベット順に整理。
+
+- [3PL](https://tsubasa-memo.github.io/glossary/3pl.html): 物流業務をまるごと外部に委託するサービス。
+- [ABテスト](https://tsubasa-memo.github.io/glossary/ab-test.html): 2パターンを比較して効果の高いほうを選ぶテスト手法。
+- [alt属性](https://tsubasa-memo.github.io/glossary/alt-attribute.html): 商品画像に設定するテキスト。
+- [ASIN](https://tsubasa-memo.github.io/glossary/asin.html): Amazon出品で出てくる商品識別コード。
+- [AVIF](https://tsubasa-memo.github.io/glossary/avif.html): JPEGの次の標準になるかもしれない次世代画像フォーマット。
+- [BMP](https://tsubasa-memo.github.io/glossary/bmp.html): 圧縮しない古い画像形式。
+- [canonical](https://tsubasa-memo.github.io/glossary/canonical.html): URLの正規化。重複ページの評価を1つに集約する。
+- [CPA](https://tsubasa-memo.github.io/glossary/cpa.html): 1件の成果を獲得するのにかかった広告費。
+- [CRM](https://tsubasa-memo.github.io/glossary/crm.html): 顧客管理ツール。
+- [CSS](https://tsubasa-memo.github.io/glossary/css.html): Webページの見た目を定義するスタイルシート。
+- [CSV一括登録](https://tsubasa-memo.github.io/glossary/csv-bulk-upload.html): 商品データをCSVファイルでまとめて登録する方法。
+- [CTR](https://tsubasa-memo.github.io/glossary/ctr.html): 表示回数に対するクリック数の割合。
+- [CVR](https://tsubasa-memo.github.io/glossary/cvr.html): コンバージョン率。
+- [D2C](https://tsubasa-memo.github.io/glossary/d2c.html): メーカーが自社ECで直接消費者に販売するビジネスモデル。
+- [Exif](https://tsubasa-memo.github.io/glossary/exif.html): 写真に自動記録される撮影日時・位置情報などのメタデータ。
+- [FBA](https://tsubasa-memo.github.io/glossary/fba.html): AmazonのFulfillment by Amazon。
+- [GIF](https://tsubasa-memo.github.io/glossary/gif.html): アニメーションができる画像形式。
+- [git](https://tsubasa-memo.github.io/glossary/git.html): ファイルの変更履歴を記録するバージョン管理ツール。
+- [GitHub](https://tsubasa-memo.github.io/glossary/github.html): gitリポジトリを管理するWebサービス。
+- [GitHub Pages](https://tsubasa-memo.github.io/glossary/github-pages.html): GitHubリポジトリからサイトを無料公開できるサービス。
+- [HEIF・HEIC](https://tsubasa-memo.github.io/glossary/heif-heic.html): iPhoneの標準写真形式。
+- [HTML](https://tsubasa-memo.github.io/glossary/html.html): Webページの構造を定義するマークアップ言語。
+- [JANコード](https://tsubasa-memo.github.io/glossary/jan-code.html): 商品登録で求められるバーコード番号。
+- [JFIF](https://tsubasa-memo.github.io/glossary/jfif.html): Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。
+- [JSON-LD](https://tsubasa-memo.github.io/glossary/json-ld.html): 検索結果にFAQなどを表示させる構造化データ形式。
+- [LLMO](https://tsubasa-memo.github.io/glossary/llmo.html): AIチャットボットに情報を引用してもらうための最適化。
+- [LP（ランディングページ）](https://tsubasa-memo.github.io/glossary/landing-page.html): 「LP作って」と言われて調べた。
+- [LTV](https://tsubasa-memo.github.io/glossary/ltv.html): 顧客1人が生涯でもたらす売上の合計。
+- [meta description](https://tsubasa-memo.github.io/glossary/meta-description.html): 検索結果に表示されるページ説明文のHTMLタグ。
+- [nofollow](https://tsubasa-memo.github.io/glossary/nofollow.html): リンク先にページ評価を渡さないrel属性。
+- [OGP画像](https://tsubasa-memo.github.io/glossary/ogp-image.html): SNSでシェアしたとき表示されるサムネイル画像の設定。
+- [PNG](https://tsubasa-memo.github.io/glossary/png.html): 背景透過ができる画像形式。
+- [PSD](https://tsubasa-memo.github.io/glossary/psd.html): Photoshop専用のファイル形式。
+- [RGB・CMYK](https://tsubasa-memo.github.io/glossary/rgb-cmyk.html): 色の表現方法。Webと印刷で色が変わる原因はこの違い。
+- [ROAS](https://tsubasa-memo.github.io/glossary/roas.html): 広告費に対して何倍の売上があったかを測る指標。
+- [robots.txt](https://tsubasa-memo.github.io/glossary/robots-txt.html): クローラーに巡回範囲を指示するテキストファイル。
+- [SKU](https://tsubasa-memo.github.io/glossary/sku.html): 在庫管理の最小単位。
+- [TIFF](https://tsubasa-memo.github.io/glossary/tiff.html): 印刷用途で使われる高品質な画像形式。
+- [UGC](https://tsubasa-memo.github.io/glossary/ugc.html): ユーザーが作ったコンテンツ。
+- [UI・UX](https://tsubasa-memo.github.io/glossary/ui-ux.html): 画面デザイン（UI）とユーザー体験（UX）の違い。
+- [WebP](https://tsubasa-memo.github.io/glossary/webp.html): Googleが開発した次世代画像フォーマット。
+- [WMS](https://tsubasa-memo.github.io/glossary/wms.html): 倉庫管理システム。
+- [後払い決済（BNPL）](https://tsubasa-memo.github.io/glossary/bnpl.html): 商品を受け取ってから支払う決済方法。
+- [アフィリエイト](https://tsubasa-memo.github.io/glossary/affiliate.html): 成果報酬型の広告手法。
+- [インデックス登録](https://tsubasa-memo.github.io/glossary/index-registration.html): Googleがページをデータベースに記録すること。
+- [インプレッション](https://tsubasa-memo.github.io/glossary/impression.html): 広告やコンテンツが表示された回数。
+- [上代・下代](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 定価と仕入れ値を指すEC・小売の価格用語。
+- [オムニチャネル](https://tsubasa-memo.github.io/glossary/omnichannel.html): 実店舗・EC・アプリなど複数チャネルを統合する戦略。
+- [カゴ落ち](https://tsubasa-memo.github.io/glossary/cart-abandonment.html): カートに入れたまま購入せず離脱すること。
+- [掛け率](https://tsubasa-memo.github.io/glossary/kakerate.html): 仕入れ交渉の「6掛け」は定価の60%という意味。
+- [画像サイズ](https://tsubasa-memo.github.io/glossary/image-size.html): ピクセル数とファイル容量、2つの意味がある紛らわしい用語。
+- [解像度・dpi](https://tsubasa-memo.github.io/glossary/resolution-dpi.html): 印刷とWebで必要な数値が違う。
+- [黒つぶれ](https://tsubasa-memo.github.io/glossary/crushed-blacks.html): 暗い部分が真っ黒になって細部が見えなくなる現象。
+- [コミット](https://tsubasa-memo.github.io/glossary/commit.html): gitで変更を履歴に記録する操作。
+- [サイトマップ](https://tsubasa-memo.github.io/glossary/sitemap.html): サイト内の全ページ一覧をXMLで記述したファイル。
+- [ささげ](https://tsubasa-memo.github.io/sasage-outsource.html): 撮影・採寸・原稿の頭文字。
+- [出荷指示書](https://tsubasa-memo.github.io/glossary/shipping-instruction.html): 物流会社に出荷内容を伝えるための書類。
+- [白飛び](https://tsubasa-memo.github.io/glossary/whiteout.html): 明るい部分が真っ白になって階調が失われる現象。
+- [セッション・PV・UU](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): アクセス解析の3つの基本指標。
+- [ダイナミックレンジ](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラが記録できる明暗の幅。
+- [チャージバック](https://tsubasa-memo.github.io/glossary/chargeback.html): クレジットカード決済の取消し。
+- [直帰率](https://tsubasa-memo.github.io/glossary/bounce-rate.html): 1ページだけ見て離脱した割合。
+- [特商法表記](https://tsubasa-memo.github.io/glossary/tokushoho.html): ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。
+- [トーンジャンプ](https://tsubasa-memo.github.io/glossary/tone-jump.html): 空のグラデーションが縞模様になる現象。
+- [トリミング](https://tsubasa-memo.github.io/glossary/trimming.html): 画像の一部を切り取って必要な範囲だけにすること。
+- [バナー](https://tsubasa-memo.github.io/glossary/banner.html): ECサイトで使う広告画像。
+- [パンくずリスト](https://tsubasa-memo.github.io/glossary/breadcrumb.html): サイト内の階層構造を示すナビゲーション。
+- [非可逆圧縮・可逆圧縮](https://tsubasa-memo.github.io/glossary/lossy-lossless.html): JPEG保存を繰り返すと画質が落ちる理由はこの仕組みにある。
+- [ピクセルサイズ](https://tsubasa-memo.github.io/glossary/pixel-size.html): ECモールの画像規定で出てくる「1600px以上」の意味。
+- [ピッキング](https://tsubasa-memo.github.io/glossary/picking.html): 倉庫で注文商品を棚から取り出す作業。
+- [ファーストビュー](https://tsubasa-memo.github.io/glossary/first-view.html): 商品ページを開いたとき最初に見える範囲のこと。
+- [フルフィルメント](https://tsubasa-memo.github.io/glossary/fulfillment.html): 受注から配送完了までの物流業務の総称。
+- [ブロックノイズ](https://tsubasa-memo.github.io/glossary/block-noise.html): 画像を拡大するとブロック状にガビガビになる現象。
+- [プッシュ](https://tsubasa-memo.github.io/glossary/push.html): ローカルの変更をリモートリポジトリに送信する操作。
+- [モックアップ](https://tsubasa-memo.github.io/glossary/mockup.html): デザイン確認用の見本。
+- [楽天RMS](https://tsubasa-memo.github.io/glossary/rakuten-rms.html): 楽天市場の出店者向け管理画面。
+- [楽天スーパーSALE](https://tsubasa-memo.github.io/glossary/rakuten-super-sale.html): 楽天最大のセールイベント。
+- [リードタイム](https://tsubasa-memo.github.io/glossary/lead-time.html): 発注から納品までにかかる日数のこと。
+- [リサイズ](https://tsubasa-memo.github.io/glossary/resize.html): 画像の縦横サイズを変更すること。
+- [リスティング広告](https://tsubasa-memo.github.io/glossary/listing-ads.html): 検索結果に表示されるテキスト広告。
+- [リターゲティング](https://tsubasa-memo.github.io/glossary/retargeting.html): 一度サイトを訪問した人に再度広告を表示する手法。
+- [リダイレクト](https://tsubasa-memo.github.io/glossary/redirect.html): URLを別のURLに自動転送する仕組み。
+- [リポジトリ](https://tsubasa-memo.github.io/glossary/repository.html): ファイルと変更履歴を保管する場所。
+- [レイヤー](https://tsubasa-memo.github.io/glossary/layer.html): Photoshopの基本概念。
+- [レスポンシブ](https://tsubasa-memo.github.io/glossary/responsive.html): 画面サイズに合わせてレイアウトが変わるWebデザインの手法。
+- [ロット](https://tsubasa-memo.github.io/glossary/lot.html): 仕入れの「最小ロット50個」の意味。
+- [ロングテール](https://tsubasa-memo.github.io/glossary/long-tail.html): 売れ筋以外の商品群が全体の売上を支える考え方。
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
