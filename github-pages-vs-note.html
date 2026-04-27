@@ -154,6 +154,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 .pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
 .pillar-links>p{margin:0 0 10px;font-size:14px}
+
+/* ── Glossary inline link ── */
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -203,7 +207,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>一番大きかったのは<strong>Google AdSenseが使えない</strong>という点です。noteはプラットフォーム側が広告枠を管理しており、自分のAdSenseアカウントのコードを埋め込むことができません。note独自の収益機能（有料記事・メンバーシップ）はありますが、広告収入の仕組みは別物です。</p>
 
-<p>次に気になったのはカスタマイズの制限です。HTMLやCSSを自由に書けないため、商品比較表を作ったり、構造化データを設置したり、ページのレイアウトを変えたりといった作業ができません。SEO対策やLLMO（AIへの最適化）をやりたいなら、自分でHTMLを管理できる環境の方が都合が良いと判断しました。</p>
+<p>次に気になったのはカスタマイズの制限です。HTMLや<a href="/glossary/css.html" class="glossary-inline">CSS</a>を自由に書けないため、商品比較表を作ったり、構造化データを設置したり、ページのレイアウトを変えたりといった作業ができません。SEO対策や<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>（AIへの最適化）をやりたいなら、自分でHTMLを管理できる環境の方が都合が良いと判断しました。</p>
 
 <h2>GitHub Pagesを選んだ理由3つ</h2>
 
@@ -214,7 +218,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <p>GitHubのアカウントさえあれば、サイトのホスティング費用はかかりません。「ユーザー名.github.io」というURLで公開されます。独自ドメインを取得すれば年間1,500円程度の費用がかかりますが、なくても問題なく運営できます。</p>
 
 <h3>3. HTMLを自由に書ける</h3>
-<p>SEO用のmeta descriptionを丁寧に書く、FAQ構造化データ（JSON-LD）を入れる、内部リンクをコントロールする、llms.txtを設置してAIに読ませるといった対策がすべて自分の手でできます。ブログを書くだけでなく「育てる」作業をやりたい場合、プラットフォームに縛られない環境の方が動きやすいです。</p>
+<p>SEO用の<a href="/glossary/meta-description.html" class="glossary-inline">meta description</a>を丁寧に書く、FAQ構造化データ（<a href="/glossary/json-ld.html" class="glossary-inline">JSON-LD</a>）を入れる、内部リンクをコントロールする、llms.txtを設置してAIに読ませるといった対策がすべて自分の手でできます。ブログを書くだけでなく「育てる」作業をやりたい場合、プラットフォームに縛られない環境の方が動きやすいです。</p>
 
 <h2>GitHub Pagesのデメリットと感じたこと</h2>
 
@@ -238,11 +242,11 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <tr><td>費用</td><td>無料（有料プランもあり）</td><td>無料</td></tr>
 </table>
 
-<p>「とにかく書くことに集中したい」ならnote、「広告・アフィリエイトで収益化したい」「SEO対策を自分でコントロールしたい」ならGitHub Pages、という選び方が実態に近いと思います。僕はブログそのものを育てる作業も面白いと思っているので、GitHub Pagesを選んでよかったと感じています。</p>
+<p>「とにかく書くことに集中したい」ならnote、「広告・<a href="/glossary/affiliate.html" class="glossary-inline">アフィリエイト</a>で収益化したい」「SEO対策を自分でコントロールしたい」ならGitHub Pages、という選び方が実態に近いと思います。僕はブログそのものを育てる作業も面白いと思っているので、GitHub Pagesを選んでよかったと感じています。</p>
 
 <h2>よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. noteとGitHub Pagesの一番の違いは何ですか？</p><p class="faq-a">noteはAdSense（Google広告）が使えないことが最大の違いです。noteはプラットフォームが広告収益を管理しており、クリエイターが自分でAdSenseコードを埋め込むことができません。GitHub Pagesは静的HTMLをホスティングするサービスなので、AdSenseのスクリプトを自由に埋め込めます。</p></div>
-<div class="faq-item"><p class="faq-q">Q. GitHub Pagesは無料で使えますか？</p><p class="faq-a">無料で使えます。GitHubアカウントを作成してリポジトリを公開設定にし、GitHub Pagesを有効にするだけで「ユーザー名.github.io」というURLでサイトが公開されます。独自ドメインの取得は有料（年間1,500円程度）ですが、github.ioドメインのままでも問題ありません。</p></div>
+<div class="faq-item"><p class="faq-q">Q. GitHub Pagesは無料で使えますか？</p><p class="faq-a">無料で使えます。GitHubアカウントを作成して<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>を公開設定にし、GitHub Pagesを有効にするだけで「ユーザー名.github.io」というURLでサイトが公開されます。独自ドメインの取得は有料（年間1,500円程度）ですが、github.ioドメインのままでも問題ありません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. noteでAmazon アソシエイトは使えますか？</p><p class="faq-a">noteでもAmazon アソシエイトのリンクは貼れますが、テキストリンクや画像リンクのみです。GitHub Pagesならカスタムの商品カードHTMLも自由に設置できます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. GitHub Pagesでブログを作るのに技術的な知識は必要ですか？</p><p class="faq-a">基本的なHTMLとCSSがわかれば作れます。AIに手伝ってもらいながら記事を書くことも可能で、テンプレートをコピーして内容を書き換えていくスタイルなら技術的なハードルは低いです。</p></div>
 <div class="faq-item"><p class="faq-q">Q. noteからGitHub Pagesに移行するのは難しいですか？</p><p class="faq-a">noteの記事をHTMLに変換してGitHub Pagesに移す作業は、記事数が多いと手間がかかります。最初からGitHub Pagesで始める方が楽です。僕の場合はもともとnoteに記事がなかったので、最初からGitHub Pagesで始めました。</p></div>

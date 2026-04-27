@@ -103,6 +103,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 .pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
 .pillar-links>p{margin:0 0 10px;font-size:14px}
+
+/* ── Glossary inline link ── */
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -137,14 +141,14 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
-<li>llms.txtの概要とrobots.txtとの違い</li>
+<li>llms.txtの概要と<a href="/glossary/robots-txt.html" class="glossary-inline">robots.txt</a>との違い</li>
 <li>llms.txtの書き方（フォーマット）</li>
 <li>GitHub Pagesへの設置手順</li>
 <li>対応しているAIと効果の確認方法</li>
 </ul>
 </div>
 
-<p>こんにちは、ツバサです。このブログのSEO・LLMO対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
+<p>こんにちは、ツバサです。このブログのSEO・<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
 
 <h2>llms.txtとは何か</h2>
 
@@ -181,7 +185,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h2>GitHub Pagesへの設置手順</h2>
 
-<p>GitHub Pagesの場合、リポジトリのルートに「llms.txt」という名前のファイルを作成してコミットするだけです。</p>
+<p>GitHub Pagesの場合、<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>のルートに「llms.txt」という名前のファイルを作成してコミットするだけです。</p>
 
 <ol style="padding-left:20px;margin-bottom:18px;line-height:2">
 <li>テキストエディタで上記フォーマットに沿ってllms.txtを作成</li>
