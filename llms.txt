@@ -141,6 +141,7 @@
 - [HTML](https://tsubasa-memo.github.io/glossary/html.html): Webページの構造を定義するマークアップ言語。
 - [JANコード](https://tsubasa-memo.github.io/glossary/jan-code.html): 商品登録で求められるバーコード番号。
 - [JFIF](https://tsubasa-memo.github.io/glossary/jfif.html): Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。
+- [JPEG](https://tsubasa-memo.github.io/glossary/jpeg.html): 写真に最も使われる非可逆圧縮の画像形式。
 - [JSON-LD](https://tsubasa-memo.github.io/glossary/json-ld.html): 検索結果にFAQなどを表示させる構造化データ形式。
 - [LLMO](https://tsubasa-memo.github.io/glossary/llmo.html): AIチャットボットに情報を引用してもらうための最適化。
 - [LP（ランディングページ）](https://tsubasa-memo.github.io/glossary/landing-page.html): 「LP作って」と言われて調べた。
@@ -150,6 +151,7 @@
 - [OGP画像](https://tsubasa-memo.github.io/glossary/ogp-image.html): SNSでシェアしたとき表示されるサムネイル画像の設定。
 - [PNG](https://tsubasa-memo.github.io/glossary/png.html): 背景透過ができる画像形式。
 - [PSD](https://tsubasa-memo.github.io/glossary/psd.html): Photoshop専用のファイル形式。
+- [RAW](https://tsubasa-memo.github.io/glossary/raw.html): カメラが記録する未加工の生データ。
 - [RGB・CMYK](https://tsubasa-memo.github.io/glossary/rgb-cmyk.html): 色の表現方法。Webと印刷で色が変わる原因はこの違い。
 - [ROAS](https://tsubasa-memo.github.io/glossary/roas.html): 広告費に対して何倍の売上があったかを測る指標。
 - [robots.txt](https://tsubasa-memo.github.io/glossary/robots-txt.html): クローラーに巡回範囲を指示するテキストファイル。
@@ -163,15 +165,23 @@
 - [アフィリエイト](https://tsubasa-memo.github.io/glossary/affiliate.html): 成果報酬型の広告手法。
 - [インデックス登録](https://tsubasa-memo.github.io/glossary/index-registration.html): Googleがページをデータベースに記録すること。
 - [インプレッション](https://tsubasa-memo.github.io/glossary/impression.html): 広告やコンテンツが表示された回数。
+- [色温度](https://tsubasa-memo.github.io/glossary/color-temperature.html): 光源の色味をケルビン（K）で表した数値。
+- [色補正](https://tsubasa-memo.github.io/glossary/color-correction.html): 写真の色味やホワイトバランスを整えるレタッチ工程。
 - [オムニチャネル](https://tsubasa-memo.github.io/glossary/omnichannel.html): 実店舗・EC・アプリなど複数チャネルを統合する戦略。
+- [確定申告](https://tsubasa-memo.github.io/glossary/tax-return.html): 1年間の所得を税務署に申告する手続き。副業所得20万超で必要。
 - [カゴ落ち](https://tsubasa-memo.github.io/glossary/cart-abandonment.html): カートに入れたまま購入せず離脱すること。
 - [掛け率](https://tsubasa-memo.github.io/glossary/kakerate.html): 仕入れ交渉の「6掛け」は定価の60%という意味。
 - [画像サイズ](https://tsubasa-memo.github.io/glossary/image-size.html): ピクセル数とファイル容量、2つの意味がある紛らわしい用語。
 - [解像度・dpi](https://tsubasa-memo.github.io/glossary/resolution-dpi.html): 印刷とWebで必要な数値が違う。
+- [クラウドソーシング](https://tsubasa-memo.github.io/glossary/crowdsourcing.html): ネット経由で不特定多数に業務を外部委託する仕組み。
+- [クローラー](https://tsubasa-memo.github.io/glossary/crawler.html): 検索エンジンがWebページを自動巡回するプログラム。
 - [黒つぶれ](https://tsubasa-memo.github.io/glossary/crushed-blacks.html): 暗い部分が真っ黒になって細部が見えなくなる現象。
 - [コミット](https://tsubasa-memo.github.io/glossary/commit.html): gitで変更を履歴に記録する操作。
+- [コントラスト](https://tsubasa-memo.github.io/glossary/contrast.html): 写真の明るい部分と暗い部分の差。
+- [合成](https://tsubasa-memo.github.io/glossary/compositing.html): 複数の画像を組み合わせて1枚にするレタッチ処理。
 - [サイトマップ](https://tsubasa-memo.github.io/glossary/sitemap.html): サイト内の全ページ一覧をXMLで記述したファイル。
 - [ささげ](https://tsubasa-memo.github.io/sasage-outsource.html): 撮影・採寸・原稿の頭文字。
+- [ささげ業務](https://tsubasa-memo.github.io/glossary/sasage.html): 撮影・採寸・原稿。EC商品登録に必要な3工程。
 - [出荷指示書](https://tsubasa-memo.github.io/glossary/shipping-instruction.html): 物流会社に出荷内容を伝えるための書類。
 - [白飛び](https://tsubasa-memo.github.io/glossary/whiteout.html): 明るい部分が真っ白になって階調が失われる現象。
 - [上代・下代](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 定価と仕入れ値を指すEC・小売の価格用語。
@@ -182,6 +192,8 @@
 - [特商法表記](https://tsubasa-memo.github.io/glossary/tokushoho.html): ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。
 - [トーンジャンプ](https://tsubasa-memo.github.io/glossary/tone-jump.html): 空のグラデーションが縞模様になる現象。
 - [トリミング](https://tsubasa-memo.github.io/glossary/trimming.html): 画像の一部を切り取って必要な範囲だけにすること。
+- [内部リンク](https://tsubasa-memo.github.io/glossary/internal-link.html): 同じサイト内のページ同士をつなぐリンク。
+- [肌補正](https://tsubasa-memo.github.io/glossary/skin-retouch.html): 人物写真の肌の状態を整えるレタッチ作業。
 - [バナー](https://tsubasa-memo.github.io/glossary/banner.html): ECサイトで使う広告画像。
 - [パンくずリスト](https://tsubasa-memo.github.io/glossary/breadcrumb.html): サイト内の階層構造を示すナビゲーション。
 - [非可逆圧縮・可逆圧縮](https://tsubasa-memo.github.io/glossary/lossy-lossless.html): JPEG保存を繰り返すと画質が落ちる理由はこの仕組みにある。
@@ -191,7 +203,10 @@
 - [フルフィルメント](https://tsubasa-memo.github.io/glossary/fulfillment.html): 受注から配送完了までの物流業務の総称。
 - [ブロックノイズ](https://tsubasa-memo.github.io/glossary/block-noise.html): 画像を拡大するとブロック状にガビガビになる現象。
 - [プッシュ](https://tsubasa-memo.github.io/glossary/push.html): ローカルの変更をリモートリポジトリに送信する操作。
+- [ホワイトバランス](https://tsubasa-memo.github.io/glossary/white-balance.html): 白い物を白く写すためのカメラ設定。
+- [ポートフォリオ](https://tsubasa-memo.github.io/glossary/portfolio.html): スキルや実績を示す作品集。副業の案件獲得に使う。
 - [モックアップ](https://tsubasa-memo.github.io/glossary/mockup.html): デザイン確認用の見本。
+- [ライティング](https://tsubasa-memo.github.io/glossary/lighting.html): 撮影で被写体に当てる光の配置と質の設計。
 - [楽天RMS](https://tsubasa-memo.github.io/glossary/rakuten-rms.html): 楽天市場の出店者向け管理画面。
 - [楽天スーパーSALE](https://tsubasa-memo.github.io/glossary/rakuten-super-sale.html): 楽天最大のセールイベント。
 - [リードタイム](https://tsubasa-memo.github.io/glossary/lead-time.html): 発注から納品までにかかる日数のこと。
@@ -202,6 +217,7 @@
 - [リポジトリ](https://tsubasa-memo.github.io/glossary/repository.html): ファイルと変更履歴を保管する場所。
 - [レイヤー](https://tsubasa-memo.github.io/glossary/layer.html): Photoshopの基本概念。
 - [レスポンシブ](https://tsubasa-memo.github.io/glossary/responsive.html): 画面サイズに合わせてレイアウトが変わるWebデザインの手法。
+- [露出](https://tsubasa-memo.github.io/glossary/exposure.html): カメラのセンサーに届く光の量。写真の明るさを決める。
 - [ロット](https://tsubasa-memo.github.io/glossary/lot.html): 仕入れの「最小ロット50個」の意味。
 - [ロングテール](https://tsubasa-memo.github.io/glossary/long-tail.html): 売れ筋以外の商品群が全体の売上を支える考え方。
 
