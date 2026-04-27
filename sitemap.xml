@@ -395,16 +395,40 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/glossary/color-temperature.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/color-correction.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/glossary/cpa.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/glossary/crawler.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/glossary/crm.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/crowdsourcing.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/crushed-blacks.html</loc>
@@ -497,6 +521,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/glossary/jpeg.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/glossary/kakerate.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -519,6 +549,12 @@
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/lighting.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/listing-ads.html</loc>
@@ -587,6 +623,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/glossary/portfolio.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/glossary/psd.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -603,6 +645,12 @@
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/raw.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/resize.html</loc>
@@ -659,6 +707,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/glossary/tax-return.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/glossary/tiff.html</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -699,6 +753,12 @@
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/white-balance.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/whiteout.html</loc>
@@ -862,8 +922,20 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/glossary/skin-retouch.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/glossary/robots-txt.html</loc>
     <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/sasage.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -876,6 +948,12 @@
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/exif.html</loc>
     <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/exposure.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -894,6 +972,12 @@
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/index-registration.html</loc>
     <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/internal-link.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -924,6 +1008,18 @@
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/commit.html</loc>
     <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/contrast.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/compositing.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
