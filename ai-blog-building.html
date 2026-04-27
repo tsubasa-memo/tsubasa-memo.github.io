@@ -159,6 +159,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 .pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
 .pillar-links>p{margin:0 0 10px;font-size:14px}
+
+/* ── Glossary inline link ── */
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
 </style>
 </head>
 <body>
@@ -190,7 +194,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <ul>
 <li>非エンジニアがAIに聞きながらGitHub Pagesブログを構築した具体的な流れ</li>
 <li>AIにどんな質問をして、どんな作業を任せたか</li>
-<li>SEOやLLMOの設計にAIをどう活用したか</li>
+<li>SEOや<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>の設計にAIをどう活用したか</li>
 <li>実際につまずいたポイントと対処法</li>
 </ul>
 </div>
@@ -222,7 +226,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <p>なお、Claude Proプラン（月額20ドル、約3,000円）に加入すると両方使えます。GitHub Pages自体は無料なので、ブログ運営にかかる費用はこのAI利用料だけです。</p>
 
 <div class="warn-box">
-<p><strong>誤解されやすい点：</strong>AIに記事の文章を書かせているわけではありません。自分がこのブログでAIに任せているのは、HTMLページの組み立て、CSS（デザイン）の調整、SEO関連の技術設定、git操作といった「技術的な作業」です。記事の中身は自分で調べて自分で書いています。</p>
+<p><strong>誤解されやすい点：</strong>AIに記事の文章を書かせているわけではありません。自分がこのブログでAIに任せているのは、HTMLページの組み立て、<a href="/glossary/css.html" class="glossary-inline">CSS</a>（デザイン）の調整、SEO関連の技術設定、git操作といった「技術的な作業」です。記事の中身は自分で調べて自分で書いています。</p>
 </div>
 
 <h2>実際にやったことを時系列で振り返る</h2>
@@ -231,7 +235,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>最初にAIに「シンプルなブログのHTMLテンプレートを作って」と頼みました。トップページ、記事ページ、プライバシーポリシーの3ファイルが出てきて、デザインの好みを伝えると修正してくれました。落ち着いた配色・余白多め・スマホ対応、くらいの指定で十分です。</p>
 
-<p>GitHubのアカウント作成やリポジトリの設定も、手順をAIに聞きながらやりました。「GitHub Pagesで公開するには何をすればいいか」と聞けば、スクリーンショット抜きでもテキストの手順だけで進められます。</p>
+<p>GitHubのアカウント作成や<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>の設定も、手順をAIに聞きながらやりました。「GitHub Pagesで公開するには何をすればいいか」と聞けば、スクリーンショット抜きでもテキストの手順だけで進められます。</p>
 
 <h3>2. 記事を増やしていった</h3>
 
@@ -239,7 +243,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h3>3. SEO関連のファイルを設置した</h3>
 
-<p>検索エンジンに見つけてもらうために必要なファイルがいくつかあります。sitemap.xml（サイトの全ページ一覧）、robots.txt（クローラーへの指示）、構造化データ（FAQ等のJSON-LD）などです。これらの存在を知ったのもAIに教えてもらってからで、書き方もすべてAIに聞きました。</p>
+<p>検索エンジンに見つけてもらうために必要なファイルがいくつかあります。sitemap.xml（サイトの全ページ一覧）、<a href="/glossary/robots-txt.html" class="glossary-inline">robots.txt</a>（クローラーへの指示）、構造化データ（FAQ等の<a href="/glossary/json-ld.html" class="glossary-inline">JSON-LD</a>）などです。これらの存在を知ったのもAIに教えてもらってからで、書き方もすべてAIに聞きました。</p>
 
 <h3>4. AdSenseに申請・合格した</h3>
 
@@ -253,7 +257,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>サイトの構築だけでなく、検索エンジン対策（SEO）とLLM最適化（LLMO）の設計にもAIを活用しました。</p>
 
-<p>具体的にAIに相談・実行してもらったのは、各記事のtitleタグとmeta descriptionの最適な文字数設計、FAQ構造化データ（JSON-LD）の生成と全記事への設置、内部リンク構造の設計（どの記事からどの記事にリンクを張るか）、<a href="llmo-article-writing.html">llms.txt</a>（AIチャットボットがサイト情報を読み取るためのファイル）の作成と更新、Google Search Consoleのデータ分析と改善提案などです。</p>
+<p>具体的にAIに相談・実行してもらったのは、各記事のtitleタグと<a href="/glossary/meta-description.html" class="glossary-inline">meta description</a>の最適な文字数設計、FAQ構造化データ（JSON-LD）の生成と全記事への設置、内部リンク構造の設計（どの記事からどの記事にリンクを張るか）、<a href="llmo-article-writing.html">llms.txt</a>（AIチャットボットがサイト情報を読み取るためのファイル）の作成と更新、Google Search Consoleのデータ分析と改善提案などです。</p>
 
 <p>自分一人ではJSON-LDの書き方を調べるだけで半日かかっていたと思います。AIに「この記事のFAQを構造化データにして」と頼めば数秒でコードが出てきます。非エンジニアにとって、この部分の時間短縮効果は大きいです。</p>
 

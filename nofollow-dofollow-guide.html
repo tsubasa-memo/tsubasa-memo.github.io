@@ -101,6 +101,10 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 .pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
 .pillar-links>p{margin:0 0 10px;font-size:14px}
+
+/* ── Glossary inline link ── */
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -135,9 +139,9 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
-<li>nofollow・dofollow・sponsored・ugcの4種類の違い</li>
+<li><a href="/glossary/nofollow.html" class="glossary-inline">nofollow</a>・dofollow・sponsored・ugcの4種類の違い</li>
 <li>比較記事で外部サービスにリンクする場合のrel属性の選び方</li>
-<li>Amazonアソシエイトなどアフィリエイトリンクの正しいrel属性</li>
+<li>Amazonアソシエイトなど<a href="/glossary/affiliate.html" class="glossary-inline">アフィリエイト</a>リンクの正しいrel属性</li>
 <li>全記事の外部リンクを一括で確認・修正する方法</li>
 </ul>
 </div>
@@ -200,7 +204,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 <p>具体的には、<code>rel="noopener noreferrer"</code>になっていた外部リンクを<code>rel="noopener noreferrer nofollow"</code>に変換した。さらにアフィリエイトリンク（amzn.toドメイン）だけを抽出して<code>rel="noopener nofollow sponsored"</code>に置換した。</p>
 
-<p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、canonical URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
+<p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、<a href="/glossary/canonical.html" class="glossary-inline">canonical</a> URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
 
 <p>加えて、スプレッドシートで全外部リンクの一覧を管理するようにした。記事名・リンク先ドメイン・アンカーテキスト・nofollowの有無を1行ずつ記録する形式で、リンク管理の漏れを防いでいる。</p>
 

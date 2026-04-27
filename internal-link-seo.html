@@ -100,6 +100,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 .pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
 .pillar-links>p{margin:0 0 10px;font-size:14px}
+
+/* ── Glossary inline link ── */
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
@@ -137,7 +141,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <li>内部リンクがSEOに効く仕組みと、個人ブログでの優先度</li>
 <li>用語集ページを活用した自動リンクの方法</li>
 <li>関連記事セクション（cite-card形式）の設計</li>
-<li>パンくずリストとカテゴリ構造の考え方</li>
+<li><a href="/glossary/breadcrumb.html" class="glossary-inline">パンくず</a>リストとカテゴリ構造の考え方</li>
 </ul>
 </div>
 
@@ -173,15 +177,15 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>各記事の末尾に「関連する記事」セクションを設けている。最初はテキストリンクだけだったが、途中からcite-card形式（サイトアイコン＋タイトル＋URL表示のカード）に変更した。</p>
 
-<p>cite-cardにした理由は2つある。1つ目は、テキストリンクより視認性が高く、クリック率が上がる。2つ目は、内部リンクと外部リンクをアイコンの色で区別できる（内部は緑、外部は青）。読者がリンク先を判断しやすくなるため、サイト内の回遊率が改善した。</p>
+<p>cite-cardにした理由は2つある。1つ目は、テキストリンクより視認性が高く、<a href="/glossary/ctr.html" class="glossary-inline">クリック率</a>が上がる。2つ目は、内部リンクと外部リンクをアイコンの色で区別できる（内部は緑、外部は青）。読者がリンク先を判断しやすくなるため、サイト内の回遊率が改善した。</p>
 
 <p>関連記事の選び方としては、同じカテゴリの記事を2〜3本選ぶのが基本だが、「この記事を読んだ人が次に知りたいこと」を考えて選ぶ方が効果的だった。たとえば<a href="retouch-services.html">「レタッチ外注サービス比較」</a>の記事には、外注の料金相場や依頼のコツの記事を関連に置く方が、同じ「レタッチ」カテゴリの無関係な記事よりもクリックされている。</p>
 
 <h2>パンくずリストとカテゴリ構造</h2>
 
-<p>パンくずリストは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計した。このブログでは現在7カテゴリ（カメラ、レタッチ・画像加工、写真・撮影、EC・実務、AI、SEO・LLMO、副業・キャリア）を使っている。</p>
+<p>パンくずリストは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計した。このブログでは現在7カテゴリ（カメラ、レタッチ・画像加工、写真・撮影、EC・実務、AI、SEO・<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>、副業・キャリア）を使っている。</p>
 
-<p>パンくずリストの役割は読者へのナビゲーションだけではない。Googleに対してサイトのカテゴリ構造を伝える効果がある。BreadcrumbList JSON-LDを設置すると、検索結果にパンくずが表示されることがあり、クリック率にも影響する。</p>
+<p>パンくずリストの役割は読者へのナビゲーションだけではない。Googleに対してサイトのカテゴリ構造を伝える効果がある。BreadcrumbList <a href="/glossary/json-ld.html" class="glossary-inline">JSON-LD</a>を設置すると、検索結果にパンくずが表示されることがあり、クリック率にも影響する。</p>
 
 <p>1つの記事が複数カテゴリに属する場合（たとえば「AI」と「レタッチ・画像加工」の両方）、パンくずにはメインカテゴリ1つだけを表示し、archive.htmlのフィルターでは両方のカテゴリで表示されるように設計した。</p>
 
