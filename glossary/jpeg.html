@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>JPEGとは？非可逆圧縮の仕組みとPNG・WebPとの違いを整理｜ツバサのメモ帳</title>
+<meta name="description" content="JPEGの意味と仕組みを調べたメモ。非可逆圧縮でファイルサイズを小さくできる画像形式で、EC商品画像やWebの写真表示で最も広く使われている。PNGやWebPとの違い、画質設定の目安、保存による劣化を防ぐ方法を整理した。">
+<meta name="keywords" content="JPEG とは,JPEG PNG 違い,JPEG 画質,EC 商品画像 JPEG">
+<meta property="og:title" content="JPEGとは？非可逆圧縮の仕組みとPNG・WebPとの違いを整理｜ツバサのメモ帳">
+<meta property="og:description" content="JPEGの仕組みとPNG・WebPとの使い分けを調べたメモ。EC商品画像での活用方法も整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/jpeg.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/jpeg.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "JPEGとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPEGはJoint Photographic Experts Groupの略で、写真に適した画像ファイル形式です。非可逆圧縮を使い、ファイルサイズを小さく保てるのが特徴で、Webサイトの写真表示やEC商品画像で最も広く使われています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JPEGとPNGの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPEGは非可逆圧縮でファイルサイズが小さい反面、保存するたびに画質が劣化します。PNGは可逆圧縮で画質が劣化せず背景透過にも対応しますが、ファイルサイズが大きくなります。写真はJPEG、ロゴや切り抜き画像はPNGが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JPEGの画質はどの程度に設定すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EC商品画像の場合、画質80〜90%程度が目安です。80%以下ではノイズが目立ち始め、90%以上ではファイルサイズが急増します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JPEGを何度も保存すると画質が落ちるのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPEGは非可逆圧縮のため、保存のたびにデータの一部が切り捨てられます。編集途中のデータはPNGやPSD形式で保存し、最終書き出し時にだけJPEGに変換すると劣化を防げます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECサイトの商品画像にJPEGは適していますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "白背景の商品写真にはJPEGが適しています。ファイルサイズが小さくページの表示速度に有利で、楽天やAmazonでも標準的に使われています。背景透過が必要な場合はPNGを使います。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}table.compare th,table.compare td{border:1px solid var(--border);padding:12px 14px;text-align:left}table.compare th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}table.compare td{background:#fff}
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}.related-terms li{margin:0}.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.related{margin:40px 0}.related h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}.related ul{list-style:none;padding:0;margin:0}.related li{margin-bottom:8px}.related a{font-size:14px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}main h2{font-size:18px}table.compare{font-size:13px}table.compare th,table.compare td{padding:8px 10px}}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+</style>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; JPEG
+</div>
+</nav>
+<section class="hero">
+<div class="wrap">
+<h1>JPEGとは？<br>仕組みと他フォーマットとの違いを整理したメモ</h1>
+</div>
+</section>
+<main>
+<div class="wrap">
+<p>こんにちは、ツバサです。</p>
+
+<p>EC業務で商品画像を扱っていると、ほぼ毎日JPEGファイルに触れる。ただ「JPEGで保存して」と言われるまま使っていて、仕組みをちゃんと理解していなかったので調べてみた。</p>
+
+<h2>JPEGとは</h2>
+
+<p>JPEGは「Joint Photographic Experts Group」の略で、写真のような色数の多い画像に適したファイル形式だ。<a href="https://e-words.jp/w/JPEG.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、人間の目が感じにくい色の情報を間引くことでファイルサイズを小さくする「非可逆圧縮」を使っている。</p>
+
+<p>非可逆圧縮（<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>）なので、一度圧縮して捨てたデータは元に戻せない。保存を繰り返すと少しずつ画質が劣化する。編集中のデータは<a href="psd.html">PSD</a>や<a href="png.html">PNG</a>で保存しておき、最後にJPEGへ書き出すのが安全だ。</p>
+
+<h2>EC実務での使いどころ</h2>
+
+<h3>商品写真の標準フォーマット</h3>
+
+<p>楽天市場やAmazonの商品画像はJPEGが主流だ。ファイルサイズが小さいのでページの表示速度に影響しにくく、画質80%前後に設定すれば見た目の劣化をほぼ感じさせずにサイズを抑えられる。</p>
+
+<h3>画質設定の目安</h3>
+
+<p>JPEG保存時の画質パラメータは0〜100%で設定できる。実務的には、メイン商品画像は85〜90%、サムネイル用は75〜80%が使いやすい。画質を100%にしてもファイルサイズだけが膨らんで、肉眼ではほぼ区別がつかない。</p>
+
+<h2>他の形式との比較</h2>
+
+<table class="compare">
+<tr><th>項目</th><th>JPEG</th><th>PNG</th><th>WebP</th></tr>
+<tr><td>圧縮方式</td><td>非可逆</td><td>可逆</td><td>両方対応</td></tr>
+<tr><td>透過</td><td>非対応</td><td>対応</td><td>対応</td></tr>
+<tr><td>ファイルサイズ</td><td>小さい</td><td>大きい</td><td>最も小さい</td></tr>
+<tr><td>向いている用途</td><td>写真全般</td><td>ロゴ・切り抜き</td><td>Web全般</td></tr>
+</table>
+
+<p>最近は<a href="webp.html">WebP</a>や<a href="avif.html">AVIF</a>のような次世代フォーマットも普及してきている。ただ、モール側の対応状況やクライアントとのやり取りを考えると、当面はJPEGが標準のままだろう。画像フォーマット全体の整理は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="png.html">PNG</a></li>
+<li><a href="webp.html">WebP</a></li>
+<li><a href="avif.html">AVIF</a></li>
+<li><a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a></li>
+</ul>
+</div>
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
+<li><a href="/compress-product-image.html">EC商品画像を軽量化する方法｜JPEG圧縮とWebP変換</a></li>
+</ul>
+</div>
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+</body>
+</html>
