@@ -28,6 +28,7 @@
 - [初めての本格カメラ！予算10万円以下ならどこで何を買う？](https://tsubasa-memo.github.io/first-camera.html): ミラーレス一眼の基礎知識と初心者向け予算別おすすめ機種、マップカメラ・キタムラなど中古専門店の比較を含む記事
 - [写真のレタッチとは？加工との違いと基本の種類まとめ](https://tsubasa-memo.github.io/what-is-retouch.html): レタッチと加工の違い、レタッチの種類、自分でやる方法とプロに依頼する方法を初心者向けに解説した記事
 - [カメラ性能で選ぶスマホ｜写真がきれいに撮れる機種まとめ](https://tsubasa-memo.github.io/camera-smartphones.html): iPhone、Pixel、Galaxy、Xperia、AQUOSのカメラ性能比較と実勢価格をまとめた記事
+- [EC担当者向けカメラの選び方｜社内稟議を通す基準と業務用ミラーレスの価格帯](https://tsubasa-memo.github.io/ec-business-camera.html): EC担当・広報担当が業務用カメラを社内稟議で通すための基準と機種選定。EOS R50・α6400・Z50IIなどAPS-Cエントリー機12〜18万円の比較と、減価償却・属人化回避など法人購入の6つのチェックポイントをまとめた記事
 - [スマホでできる写真レタッチ｜おすすめ無料アプリ5選と使い分け](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed、Lightroom Mobile、PhotoDirector、SNOW、TouchRetouchなど用途別にレタッチアプリを比較した記事
 - [AIモデル着せ替えサービスの料金比較｜EC向け11社まとめ](https://tsubasa-memo.github.io/ai-model-tryon.html): EC商品のモデル着用画像をAIで生成できるサービス11社の料金・スペック・生身モデル撮影との比較をまとめた記事
 - [遺影写真のレタッチはどこに頼む？急ぎ・事前準備の依頼先10社比較｜ツバサのメモ帳](https://tsubasa-memo.github.io/memorial-photo-retouch.html): 遺影写真のレタッチを依頼できるサービス10社を、急ぎ対応と生前準備の2パターンで比較した記事
