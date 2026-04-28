@@ -56,6 +56,13 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 
 .pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
 .pillar-links>p{margin:0 0 10px;font-size:14px}
+
+.price-bar-chart{margin:28px 0;font-size:14px}
+.price-bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.price-bar-label{min-width:140px;font-size:13px;text-align:right;flex-shrink:0}
+.price-bar{height:22px;border-radius:4px;background:linear-gradient(90deg, var(--accent-light), var(--accent));position:relative;min-width:4px}
+.price-bar-val{font-size:12px;color:var(--text-sub);white-space:nowrap;padding-left:6px}
+@media(max-width:600px){.price-bar-label{min-width:100px;font-size:12px}.price-bar-val{font-size:11px}}
 </style>
 <script type="application/ld+json">
 {
@@ -216,7 +223,57 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
     </table>
     <p class="note">※ 2026年4月時点の調査に基づく目安です。サービスや画像の状態により変動します。</p>
 
-    <p>人物レタッチの外注費用は1枚1,000〜8,000円が中心です。ただし、ほくろ消し・シミ消しなどパーツ単位で依頼できる低価格サービスもあります。</p>
+    
+<div class="price-bar-chart">
+<p style="font-weight:700;font-size:15px;margin-bottom:16px;color:var(--accent)">加工内容別の価格レンジ</p>
+<div class="price-bar-row">
+<span class="price-bar-label">トリミング・リサイズ</span>
+<div class="price-bar" style="width:5%"></div>
+<span class="price-bar-val">100〜500円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">色補正・明るさ調整</span>
+<div class="price-bar" style="width:10%"></div>
+<span class="price-bar-val">200〜1,000円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">不要物の除去</span>
+<div class="price-bar" style="width:20%"></div>
+<span class="price-bar-val">300〜2,000円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">背景の切り抜き</span>
+<div class="price-bar" style="width:5%"></div>
+<span class="price-bar-val">50〜500円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">影つけ・反射加工</span>
+<div class="price-bar" style="width:10%"></div>
+<span class="price-bar-val">300〜1,000円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">背景の差し替え・合成</span>
+<div class="price-bar" style="width:50%"></div>
+<span class="price-bar-val">1,000〜5,000円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">肌補正</span>
+<div class="price-bar" style="width:80%"></div>
+<span class="price-bar-val">1,000〜8,000円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">人物フルレタッチ</span>
+<div class="price-bar" style="width:80%"></div>
+<span class="price-bar-val">3,000〜8,000円</span>
+</div>
+<div class="price-bar-row">
+<span class="price-bar-label">複数画像の合成</span>
+<div class="price-bar" style="width:100%"></div>
+<span class="price-bar-val">2,000〜10,000円</span>
+</div>
+</div>
+
+<p>人物レタッチの外注費用は1枚1,000〜8,000円が中心です。ただし、ほくろ消し・シミ消しなどパーツ単位で依頼できる低価格サービスもあります。</p>
 
     <a class="cite-card" href="retouch-pricing-database.html">
     <span class="cite-ico int">ツ</span>
