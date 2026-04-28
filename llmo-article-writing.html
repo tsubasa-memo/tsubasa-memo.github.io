@@ -152,6 +152,18 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>SEOがGoogleやBingの検索エンジンを対象にしているのに対し、LLMOはAIチャットボットを対象にしています。「レタッチサービスのおすすめを教えて」とChatGPTに質問したとき、自分のブログで紹介したサービスが回答に含まれるかどうか、という文脈です。</p>
 
+
+<h3>SEOとLLMOの違い</h3>
+<table class="spec-table">
+<tr><th>項目</th><th>SEO</th><th>LLMO</th></tr>
+<tr><td>対象</td><td>Google・Bingなどの検索エンジン</td><td>ChatGPT・Claude・Geminiなど生成AI</td></tr>
+<tr><td>最適化の対象</td><td>検索順位（SERPs）</td><td>AIの回答に引用されること</td></tr>
+<tr><td>有効な構造</td><td>見出し階層・内部リンク・メタタグ</td><td>FAQ形式・要約セクション・JSON-LD</td></tr>
+<tr><td>有効なコンテンツ</td><td>網羅性の高い長文記事</td><td>具体的な数値・固有名詞を含む端的な回答</td></tr>
+<tr><td>効果測定</td><td>Search Console（表示回数・CTR）</td><td>AIに質問して引用の有無を確認</td></tr>
+<tr><td>補助ファイル</td><td>robots.txt・sitemap.xml</td><td>llms.txt</td></tr>
+</table>
+
 <h2>LLMに引用されやすい記事の構造</h2>
 
 <h3>FAQ形式＋JSON-LD構造化データ</h3>
@@ -162,6 +174,22 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h3>具体的な数値・サービス名・固有名詞を含める</h3>
 <p>「安い」ではなく「1枚300円〜」、「アプリ」ではなく「Snapseed・TouchRetouch」のように、具体的な情報を含めることでLLMが回答に使いやすい情報になります。</p>
+
+
+<div class="flow-chart" style="margin:32px 0;padding:20px;background:var(--card);border:1px solid var(--border);border-radius:10px">
+<p style="font-weight:700;font-size:15px;margin-bottom:16px;color:var(--accent)">LLMOの実装ステップ</p>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:14px">
+<div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">① 記事冒頭に「この記事でわかること」を箇条書きで設置</div>
+<div style="text-align:center;color:var(--text-sub)">↓</div>
+<div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">② FAQ形式（Q&amp;A）で情報を整理</div>
+<div style="text-align:center;color:var(--text-sub)">↓</div>
+<div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">③ JSON-LD（FAQPage schema）を設置</div>
+<div style="text-align:center;color:var(--text-sub)">↓</div>
+<div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">④ llms.txtをサイトルートに配置</div>
+<div style="text-align:center;color:var(--text-sub)">↓</div>
+<div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">⑤ AIに質問して引用されるか確認・改善</div>
+</div>
+</div>
 
 <h2>llms.txtとは何か</h2>
 
