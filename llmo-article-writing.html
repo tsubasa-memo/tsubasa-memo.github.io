@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llmo-article-writing.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/llmo-article-writing.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/llmo-article-writing.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/llmo-article-writing.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,24 @@ gtag('config', 'G-YYBFXHXMM6');
     {"@type":"Question","name":"個人ブログでもLLMOに取り組む意味はありますか？","acceptedAnswer":{"@type":"Answer","text":"あります。ChatGPTやClaudeに「〜のおすすめサービスを教えて」と質問するユーザーが増えており、AIの回答に自分のサイトや紹介しているサービスが含まれる可能性があります。特にニッチなトピックや比較記事は、LLMが引用しやすいコンテンツです。"}},
     {"@type":"Question","name":"LLMO対策として今すぐできることは何ですか？","acceptedAnswer":{"@type":"Answer","text":"今すぐできる対策は3つです。①全記事にFAQ構造化データ（JSON-LD）を設置する。②記事の冒頭に「この記事でわかること」として要点を箇条書きで書く。③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する。これらはいずれもHTMLの修正だけで対応できます。"}}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた",
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-04-02",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "LLMO（LLM Optimization）とは何か・SEOとの違い・AIに引用されやすい記事構造について調べた備忘録です。FAQ構造化データ・llms.txt・記事冒頭の要約セクションの効果と、個人ブログで取り組む意味をまとめています。"
 }
 </script>
 <style>
@@ -158,10 +176,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <tr><th>項目</th><th>SEO</th><th>LLMO</th></tr>
 <tr><td>対象</td><td>Google・Bingなどの検索エンジン</td><td>ChatGPT・Claude・Geminiなど生成AI</td></tr>
 <tr><td>最適化の対象</td><td>検索順位（SERPs）</td><td>AIの回答に引用されること</td></tr>
-<tr><td>有効な構造</td><td>見出し階層・内部リンク・メタタグ</td><td>FAQ形式・要約セクション・JSON-LD</td></tr>
+<tr><td>有効な構造</td><td>見出し階層・<a class="glossary-inline" href="/glossary/internal-link.html">内部リンク</a>・メタタグ</td><td>FAQ形式・要約セクション・<a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a></td></tr>
 <tr><td>有効なコンテンツ</td><td>網羅性の高い長文記事</td><td>具体的な数値・固有名詞を含む端的な回答</td></tr>
-<tr><td>効果測定</td><td>Search Console（表示回数・CTR）</td><td>AIに質問して引用の有無を確認</td></tr>
-<tr><td>補助ファイル</td><td>robots.txt・sitemap.xml</td><td>llms.txt</td></tr>
+<tr><td>効果測定</td><td>Search Console（表示回数・<a class="glossary-inline" href="/glossary/ctr.html">CTR</a>）</td><td>AIに質問して引用の有無を確認</td></tr>
+<tr><td>補助ファイル</td><td><a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>・<a class="glossary-inline" href="/glossary/sitemap.html">sitemap.xml</a></td><td>llms.txt</td></tr>
 </table>
 
 <h2>LLMに引用されやすい記事の構造</h2>
