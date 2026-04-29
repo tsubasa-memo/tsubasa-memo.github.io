@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llms-txt-setup.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/llms-txt-setup.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/llms-txt-setup.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/llms-txt-setup.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,24 @@ gtag('config', 'G-YYBFXHXMM6');
     {"@type":"Question","name":"llms.txtに書くべき内容は何ですか？","acceptedAnswer":{"@type":"Answer","text":"サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本的な内容です。記事一覧では各記事の説明文を1〜2文で添えると、LLMが記事の内容を把握しやすくなります。"}},
     {"@type":"Question","name":"llms.txtの設置効果はどうやって確認しますか？","acceptedAnswer":{"@type":"Answer","text":"直接的な効果測定は難しいです。ChatGPTやClaudeに「〔自分のブログのトピック〕について教えて」と質問したとき、自分のブログや紹介しているサービスが回答に含まれるかどうかを定期的に確認する方法が現実的です。"}}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した",
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-04-02",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "llms.txtの仕様・書き方・設置手順をまとめた備忘録です。robots.txtとの違い・AnthropicなどAIの対応状況・GitHub Pagesへの設置方法・記事一覧の書き方・効果確認の方法について調べた内容を記録しています。"
 }
 </script>
 <style>
@@ -143,7 +161,7 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 <ul>
 <li>llms.txtの概要と<a href="/glossary/robots-txt.html" class="glossary-inline">robots.txt</a>との違い</li>
 <li>llms.txtの書き方（フォーマット）</li>
-<li>GitHub Pagesへの設置手順</li>
+<li><a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>への設置手順</li>
 <li>対応しているAIと効果の確認方法</li>
 </ul>
 </div>
@@ -154,7 +172,7 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 
 <p>llms.txtは、サイトのルートに置くMarkdown形式のファイルです。ChatGPT・Claude・GeminiなどのLLM（大規模言語モデル）に対して、サイトにどんな情報があるかを伝えることを目的としています。</p>
 
-<p>robots.txtがGoogleのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があります」と伝えるファイルです。</p>
+<p><a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>がGoogleのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があります」と伝えるファイルです。</p>
 
 <p>提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。AnthropicはClaudeの<a href="https://docs.anthropic.com/" target="_blank" rel="noopener noreferrer">公式ドキュメント</a>にllms.txtを設置しており、徐々に普及が進んでいます。</p>
 

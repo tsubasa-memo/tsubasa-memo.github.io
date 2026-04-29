@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/search-console-ctr.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/search-console-ctr.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/search-console-ctr.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/search-console-ctr.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,24 @@ gtag('config', 'G-YYBFXHXMM6');
     {"@type":"Question","name":"タイトルを変更したらインデックス再登録は必要ですか？","acceptedAnswer":{"@type":"Answer","text":"タイトル変更だけであれば手動でのインデックス再登録は必ずしも必要ではありません。Googleは定期的にクロールして自動的に更新します。早く反映させたい場合はSearch ConsoleのURL検査からインデックス登録をリクエストできます。"}},
     {"@type":"Question","name":"CTRを上げるタイトルの書き方のポイントは？","acceptedAnswer":{"@type":"Answer","text":"検索キーワードをタイトルの前半に入れること、具体的な数字を入れること（例：「7選」「2026年版」）、疑問形や比較形式を使うことが効果的です。また「まとめ」より「比較」「方法」「違い」の方がクリックされやすい傾向があります。"}}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】",
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-04-02",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "Search Consoleで8位表示なのにCTR 0.23%（1,318表示・3クリック）だった記事のタイトルを変えた記録です。低CTRの判断基準・変更内容・変更後の確認方法と1〜2週間の反映待ち時間の目安をまとめました。"
 }
 </script>
 <style>
@@ -144,11 +162,11 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </ul>
 </div>
 
-<p>こんにちは、ツバサです。このブログのSearch Consoleを見ていて気になることがありました。ある記事が検索結果の8位前後に表示されているのに、クリック率（CTR）が0.23%しかない、という状態が続いていたんです。</p>
+<p>こんにちは、ツバサです。このブログのSearch Consoleを見ていて気になることがありました。ある記事が検索結果の8位前後に表示されているのに、<a class="glossary-inline" href="/glossary/ctr.html">クリック率</a>（CTR）が0.23%しかない、という状態が続いていたんです。</p>
 
 <h2>「順位は良いのにクリックされない」の意味</h2>
 
-<p>Search Consoleで確認したところ、Exifの記事が3ヶ月間で1,318回表示されていたにもかかわらず、クリック数はわずか3回でした。掲載順位は8.4位。8位前後なら通常2〜4%程度のCTRが期待できるはずなのに、0.23%はかなり低い数字です。</p>
+<p>Search Consoleで確認したところ、<a class="glossary-inline" href="/glossary/exif.html">Exif</a>の記事が3ヶ月間で1,318回表示されていたにもかかわらず、クリック数はわずか3回でした。掲載順位は8.4位。8位前後なら通常2〜4%程度のCTRが期待できるはずなのに、0.23%はかなり低い数字です。</p>
 
 <p>この状況が意味するのは、<strong>Googleは記事を良いコンテンツと判断して上位に置いているが、タイトルや説明文が検索した人の期待と合っていないためクリックされていない</strong>ということです。コンテンツの問題ではなく、見せ方の問題です。</p>
 
@@ -185,7 +203,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h2>変更後の確認と待ち時間</h2>
 
-<p>タイトルを変更してHTMLをアップロードしたあと、Search ConsoleのURL検査から「インデックス登録をリクエスト」しました。Googleが新しいタイトルを認識して検索結果に反映されるまで通常1〜2週間かかります。</p>
+<p>タイトルを変更して<a class="glossary-inline" href="/glossary/html.html">HTML</a>をアップロードしたあと、Search ConsoleのURL検査から「<a class="glossary-inline" href="/glossary/index-registration.html">インデックス登録</a>をリクエスト」しました。Googleが新しいタイトルを認識して検索結果に反映されるまで通常1〜2週間かかります。</p>
 
 <p>変更から2週間以上経ったら、Search Consoleで以下を確認します。</p>
 <ul style="padding-left:20px;margin-bottom:18px;line-height:2">
