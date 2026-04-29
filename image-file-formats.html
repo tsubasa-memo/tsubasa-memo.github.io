@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/image-file-formats.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/image-file-formats.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/image-file-formats.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/image-file-formats.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -86,6 +86,24 @@ gtag('config', 'G-YYBFXHXMM6');
       }
     }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識",
+  "datePublished": "2026-03-28",
+  "dateModified": "2026-04-02",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "画像ファイル形式の違いを整理しました。JPEG・PNG・WebP・GIF・RAWの特徴と向いている用途、ECサイト・SNS・カメラ撮影での使い分けを比較表でまとめています。"
 }
 </script>
 <style>
@@ -198,9 +216,9 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <tr><td>JPEG</td><td>非可逆圧縮</td><td>×</td><td>×</td><td>写真全般、商品画像</td></tr>
 <tr><td>PNG</td><td>可逆圧縮</td><td>○</td><td>×</td><td>ロゴ、透過が必要な画像</td></tr>
 <tr><td>WebP</td><td>非可逆・可逆両方</td><td>○</td><td>○</td><td>ウェブ最適化画像</td></tr>
-<tr><td>GIF</td><td>可逆圧縮</td><td>○（1bit）</td><td>○</td><td>アニメーション、リアクション</td></tr>
+<tr><td><a class="glossary-inline" href="/glossary/gif.html">GIF</a></td><td>可逆圧縮</td><td>○（1bit）</td><td>○</td><td>アニメーション、リアクション</td></tr>
 <tr><td>RAW</td><td>非圧縮〜可逆</td><td>—</td><td>×</td><td>カメラの生データ、後処理前提</td></tr>
-<tr><td>HEIC</td><td>非可逆圧縮</td><td>×</td><td>×</td><td>iPhone撮影の標準形式</td></tr>
+<tr><td><a class="glossary-inline" href="/glossary/heif-heic.html">HEIC</a></td><td>非可逆圧縮</td><td>×</td><td>×</td><td>iPhone撮影の標準形式</td></tr>
 </table>
 
 <h2>JPEG（ジェイペグ）</h2>
@@ -220,12 +238,12 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>「可逆圧縮」なので、圧縮しても画像情報が失われません。そのため同じ内容ならJPEGよりファイルサイズが大きくなりがちですが、透過（背景なし）に対応しているのがPNGの最大の特徴です。</p>
 
-<p>テキストや細かい線が含まれる画像、ロゴ、UIスクリーンショットなどはPNGが向いています。JPEGで保存すると文字の周囲がにじみやすくなるため、テキスト入りの画像はPNGが原則です。</p>
+<p>テキストや細かい線が含まれる画像、ロゴ、<a class="glossary-inline" href="/glossary/ui-ux.html">UI</a>スクリーンショットなどはPNGが向いています。JPEGで保存すると文字の周囲がにじみやすくなるため、テキスト入りの画像はPNGが原則です。</p>
 
 <div class="point-box">
 <h4>PNGを選ぶ場面</h4>
 <p>・透過背景（切り抜き画像）のまま使いたい</p>
-<p>・ロゴ・バナー・テキスト入り画像を保存する</p>
+<p>・ロゴ・<a class="glossary-inline" href="/glossary/banner.html">バナー</a>・テキスト入り画像を保存する</p>
 <p>・繰り返し編集・保存する（JPEGは保存のたびに劣化する）</p>
 </div>
 
@@ -245,7 +263,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>デジタルカメラが撮影時にセンサーで受け取った生データをそのまま記録した形式です。メーカーによってCR2（Canon）・NEF（Nikon）・ARW（Sony）などの名称があります。</p>
 
-<p>JPEGはカメラ内部で現像・圧縮されますが、RAWはその処理前のデータのため、後からLightroomやCapture Oneなどのソフトで露出・ホワイトバランス・色調を大幅に調整できます。特にホワイトバランスはRAWなら撮影後でも完全に変更可能です。</p>
+<p>JPEGはカメラ内部で現像・圧縮されますが、RAWはその処理前のデータのため、後からLightroomやCapture Oneなどのソフトで<a class="glossary-inline" href="/glossary/exposure.html">露出</a>・ホワイトバランス・色調を大幅に調整できます。特にホワイトバランスはRAWなら撮影後でも完全に変更可能です。</p>
 
 <div class="warn-box">
 <h4>RAWで撮影するときの注意点</h4>

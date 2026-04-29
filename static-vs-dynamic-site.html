@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/static-vs-dynamic-site.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,24 @@ gtag('config', 'G-YYBFXHXMM6');
     {"@type":"Question","name":"GitHub Pagesとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"GitHubが提供する無料の静的サイトホスティングサービスです。GitHubリポジトリにHTMLファイルを置くだけでWebサイトとして公開できます。独自ドメインの設定、HTTPS対応、広告なしで利用でき、個人ブログや技術ドキュメントの公開に使われています。"}},
     {"@type":"Question","name":"個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？","acceptedAnswer":{"@type":"Answer","text":"目的によります。記事の更新頻度が高く、管理画面から手軽に投稿したいならWordPress（動的サイト）が向いています。表示速度・セキュリティ・コストを重視し、サイトの構造まで自分でコントロールしたいならGitHub Pages（静的サイト）が選択肢になります。AIコーディングツールを使える環境であれば、静的サイトの更新コストは大幅に下がります。"}}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した",
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "静的サイトと動的サイトの違いをメリット・デメリットで比較した備忘録です。GitHub Pagesで60本以上の記事を運営した経験をもとに、静的サイトの弱点とされる「更新の手間」をAIコーディングツールでどう解消したかを記録しています。"
 }
 </script>
 <style>
@@ -138,15 +156,15 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </ul>
 </div>
 
-<p>こんにちは、ツバサです。このブログはGitHub Pages（静的サイト）で運営している。ブログを始めるときに「初心者はWordPress一択」という記事をたくさん見たが、いろいろ考えた結果、静的サイトを選んだ。運営して半年以上が経ったので、静的サイトと動的サイトの違いを自分の経験をまじえて整理しておきます。</p>
+<p>こんにちは、ツバサです。このブログは<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>（静的サイト）で運営している。ブログを始めるときに「初心者はWordPress一択」という記事をたくさん見たが、いろいろ考えた結果、静的サイトを選んだ。運営して半年以上が経ったので、静的サイトと動的サイトの違いを自分の経験をまじえて整理しておきます。</p>
 
 <h2>静的サイトと動的サイトの仕組みの違い</h2>
 
-<p>静的サイトは、あらかじめ作られたHTMLファイルをそのまま表示するサイトである。ユーザーがページにアクセスすると、サーバーに保存されたHTMLがそのまま返される。誰がいつ見ても同じ内容が表示される。</p>
+<p>静的サイトは、あらかじめ作られた<a class="glossary-inline" href="/glossary/html.html">HTML</a>ファイルをそのまま表示するサイトである。ユーザーがページにアクセスすると、サーバーに保存されたHTMLがそのまま返される。誰がいつ見ても同じ内容が表示される。</p>
 
 <p>動的サイトは、アクセスのたびにサーバー側でページを生成する。データベースからコンテンツを取り出し、PHPなどのプログラムでHTMLを組み立てて返す。ログイン状態や検索条件によって表示内容が変わるのが特徴である。</p>
 
-<p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubのリポジトリに置くだけで公開される。</p>
+<p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubの<a class="glossary-inline" href="/glossary/repository.html">リポジトリ</a>に置くだけで公開される。</p>
 
 <h2>メリット・デメリット比較</h2>
 
@@ -168,7 +186,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <p>静的サイトのデメリットとしてほぼ必ず挙がるのが「更新にHTMLの知識が必要」「記事を追加するたびにファイルを手作業で編集する」という点である。これは2024年以前なら正しかった。</p>
 
-<p>しかし2025年以降、AIコーディングツールの登場でこの前提が変わっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、サイトマップとアーカイブページも更新して、コミットして」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
+<p>しかし2025年以降、AIコーディングツールの登場でこの前提が変わっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、<a class="glossary-inline" href="/glossary/sitemap.html">サイトマップ</a>とアーカイブページも更新して、<a class="glossary-inline" href="/glossary/commit.html">コミット</a>して」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
 
 <p>このブログでは実際に、記事のHTML作成、SVGサムネイル生成、sitemap.xml更新、archive.html更新、llms.txt更新、検索インデックス再生成の6ファイル同時更新をAIに指示する形で運営している。1記事追加にかかる作業時間は、テーマ決めと内容の確認を除けば数分程度である。</p>
 

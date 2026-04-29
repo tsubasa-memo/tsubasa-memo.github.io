@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/faq-structured-data.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/faq-structured-data.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/faq-structured-data.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/faq-structured-data.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -86,6 +86,24 @@ gtag('config', 'G-YYBFXHXMM6');
       }
     }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた",
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-04-02",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "FAQ構造化データ（JSON-LD）をブログ記事に設置した記録です。FAQPage schemaの書き方・設置手順・Search Consoleでのリッチリザルト確認・ChatGPT等AIへの情報伝達効果について調べてまとめました。"
 }
 </script>
 <style>
@@ -180,10 +198,10 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
-<li>FAQ構造化データ（JSON-LD）とは何か</li>
+<li>FAQ構造化データ（<a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a>）とは何か</li>
 <li>FAQPage schemaの書き方と設置手順</li>
 <li>リッチリザルト表示とSearch Consoleでの確認方法</li>
-<li>AIへの情報伝達（LLMO）としての効果</li>
+<li>AIへの情報伝達（<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>）としての効果</li>
 </ul>
 </div>
 
@@ -191,7 +209,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h2>FAQ構造化データとは</h2>
 
-<p>FAQ構造化データはページの「よくある質問（FAQ）」と「回答」を、Googleが解析しやすい形式で記述したコードです。JSON-LD形式で書き、HTMLの&lt;head&gt;内または&lt;body&gt;末尾に埋め込みます。</p>
+<p>FAQ構造化データはページの「よくある質問（FAQ）」と「回答」を、Googleが解析しやすい形式で記述したコードです。JSON-LD形式で書き、<a class="glossary-inline" href="/glossary/html.html">HTML</a>の&lt;head&gt;内または&lt;body&gt;末尾に埋め込みます。</p>
 
 <p>Googleがこのデータを認識すると、検索結果にFAQの「リッチリザルト」が表示されることがあります。リッチリザルトとは、通常のタイトル・URLだけでなく、Q&Aが展開表示される形式です。</p>
 
@@ -222,7 +240,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <h2>設置手順と確認方法</h2>
 
-<p>FAQPage schemaのコードをHTMLの&lt;head&gt;内か&lt;/body&gt;タグの直前に貼り付けます。GitHub Pagesでは各HTMLファイルに直接書き込む形で対応しました。</p>
+<p>FAQPage schemaのコードをHTMLの&lt;head&gt;内か&lt;/body&gt;タグの直前に貼り付けます。<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>では各HTMLファイルに直接書き込む形で対応しました。</p>
 
 <p>設置後、Googleの<a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">リッチリザルトテスト</a>にURLを入力すると、構造化データが正しく認識されているかどうかを確認できます。「FAQPage」が検出された場合は設置成功です。</p>
 
