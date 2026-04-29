@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/internal-link-seo.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/internal-link-seo.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/internal-link-seo.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/internal-link-seo.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,24 @@ gtag('config', 'G-YYBFXHXMM6');
     {"@type":"Question","name":"パンくずリストは内部リンクとして有効ですか？","acceptedAnswer":{"@type":"Answer","text":"有効です。パンくずリストはサイトのカテゴリ構造をGoogleに伝える役割があり、構造化データ（BreadcrumbList JSON-LD）を合わせて設置するとリッチリザルトに表示されることもあります。このブログでは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計しています。"}},
     {"@type":"Question","name":"内部リンクは何本くらい貼るのが適切ですか？","acceptedAnswer":{"@type":"Answer","text":"Googleは内部リンクの数に上限を設けていませんが、1記事あたり本文中3〜10本程度が自然です。読者が実際にクリックしそうな文脈でリンクを貼ることが重要で、とにかく数を増やせばいいわけではありません。リンクの質（関連性の高さ）が量より重要です。"}}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用",
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "個人ブログで内部リンクの設計を整理した備忘録です。用語集66ページへの自動リンク化、関連記事セクションのcite-card形式、パンくずリストとカテゴリ構造の設計など、サイト全体で実際にやった方法と効果をまとめています。"
 }
 </script>
 <style>
@@ -149,7 +167,7 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 
 <h2>内部リンクが個人ブログに必要な理由</h2>
 
-<p>内部リンクとは、同じサイト内のページ同士をつなぐリンクのこと。Googleの<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>では、クローラーがリンクをたどってページを発見すると説明されている。つまり、どこからもリンクされていない記事はGoogleに見つけてもらえない可能性がある。</p>
+<p>内部リンクとは、同じサイト内のページ同士をつなぐリンクのこと。Googleの<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>では、<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>がリンクをたどってページを発見すると説明されている。つまり、どこからもリンクされていない記事はGoogleに見つけてもらえない可能性がある。</p>
 
 <p>このブログでは、記事数が50本を超えた時点で10本以上が「孤立ページ」（サイト内のどこからもリンクされていない状態）になっていた。sitemap.xmlを送信していたからGoogleには認識されていたが、内部リンクが少ないページはインデックスが遅い傾向があった。</p>
 

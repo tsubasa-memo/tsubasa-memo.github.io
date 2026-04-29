@@ -31,7 +31,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/nofollow-dofollow-guide.png">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/nofollow-dofollow-guide.html">
-<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/nofollow-dofollow-guide.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/nofollow-dofollow-guide.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,24 @@ gtag('config', 'G-YYBFXHXMM6');
     {"@type":"Question","name":"Amazonアソシエイトなどのアフィリエイトリンクにはどのrel属性を付けますか？","acceptedAnswer":{"@type":"Answer","text":"アフィリエイトリンクにはrel=\"nofollow sponsored\"を付けるのが推奨です。Googleのガイドラインでは有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めています。両方を併記（nofollow sponsored）するのが最も安全です。"}},
     {"@type":"Question","name":"外部リンクを全部nofollowにすると問題がありますか？","acceptedAnswer":{"@type":"Answer","text":"全リンクnofollowは推奨されません。Googleは2019年にnofollowをヒントに変更しており、すべてのリンクにnofollowを付けると「このサイトはリンク管理を適切に行っていない」と判断される可能性があります。ただし、比較記事やアフィリエイト中心のブログでは外部リンクの大半がnofollowになるのは自然です。政府機関や学術論文など信頼性の高い情報源へのリンクはdofollowのまま残す方がE-E-A-Tの観点ではプラスに働きます。"}}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ",
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳"
+  },
+  "description": "ブログの外部リンクに付けるrel属性（nofollow・dofollow・sponsored・ugc）の違いと使い分けを調べた備忘録です。比較記事・アフィリエイトリンク・公式サイトへのリンクで何を使うべきか、一括管理の方法まで記録しました。"
 }
 </script>
 <style>
@@ -150,7 +168,7 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 
 <h2>nofollow・dofollow・sponsored・ugcの違い</h2>
 
-<p>HTMLのaタグに付けるrel属性は、Googleのクローラーに「このリンクの性質」を伝えるためのものである。2019年にGoogleが<a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>で仕様を更新し、現在は以下の4種類がある。</p>
+<p><a class="glossary-inline" href="/glossary/html.html">HTML</a>のaタグに付けるrel属性は、Googleの<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>に「このリンクの性質」を伝えるためのものである。2019年にGoogleが<a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>で仕様を更新し、現在は以下の4種類がある。</p>
 
 <table class="spec-table">
 <tr><th>属性</th><th>意味</th><th>使う場面</th></tr>
