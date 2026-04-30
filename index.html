@@ -144,6 +144,9 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:28px 0;
 .footer-links a:hover{color:var(--accent);text-decoration:none}
 
 /* ── Responsive ── */
+@media(max-width:768px){
+  .featured-grid{grid-template-columns:1fr}
+}
 @media(max-width:640px){
   .hero h1{font-size:18px}
   .featured-grid{grid-template-columns:1fr}
@@ -199,19 +202,33 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:28px 0;
 
   <p class="section-label">おすすめ記事</p>
 
-  <!-- Featured 2-column -->
+  <!-- Featured 2x2 grid -->
   <div class="featured-grid">
 
     <div class="featured-card">
-      <a href="sasage-outsource.html">
+      <a href="background-white.html">
         <div class="featured-thumb">
-          <img src="thumbs/sasage-outsource.png" alt="ささげ業務の代行会社おすすめ16選" width="280" height="160">
+          <img src="thumbs/background-white.png" alt="背景切り抜き・白抜きの方法比較" width="280" height="160">
         </div>
         <div class="featured-body">
           <span class="badge-pick">PICK</span>
-          <h2>ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</h2>
-          <p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社16社の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
-          <span class="card-tag">EC・実務</span>
+          <h2>背景切り抜き・白抜きの方法比較｜AI無料ツールからプロ外注まで【2026年版】</h2>
+          <p class="card-desc">AI切り抜きツール・スマホアプリ・Photoshop・プロ外注の4パターンで比較。Remove.bg・Canva・PicWishなど無料ツールの精度と料金差を整理した。</p>
+          <span class="card-tag">レタッチ・画像加工</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="featured-card">
+      <a href="image-editing-outsource.html">
+        <div class="featured-thumb">
+          <img src="thumbs/image-editing-outsource.png" alt="画像加工・写真編集の外注先" width="280" height="160">
+        </div>
+        <div class="featured-body">
+          <span class="badge-pick">PICK</span>
+          <h2>画像加工・写真編集の外注先はどこがいい？代行サービスの選び方</h2>
+          <p class="card-desc">画像加工・写真編集の外注で専門業者・クラウドソーシング・フリーランスのどれを選ぶか。料金帯・品質・納期の違いと依頼前の準備を整理した。</p>
+          <span class="card-tag">レタッチ・画像加工</span>
         </div>
       </a>
     </div>
@@ -226,6 +243,20 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:28px 0;
           <h2>写真レタッチの外注料金まとめ｜15社の相場を1ページに集約</h2>
           <p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
           <span class="card-tag">レタッチ・画像加工</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="featured-card">
+      <a href="sasage-outsource.html">
+        <div class="featured-thumb">
+          <img src="thumbs/sasage-outsource.png" alt="ささげ業務の代行会社おすすめ16選" width="280" height="160">
+        </div>
+        <div class="featured-body">
+          <span class="badge-pick">PICK</span>
+          <h2>ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</h2>
+          <p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社16社の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+          <span class="card-tag">EC・実務</span>
         </div>
       </a>
     </div>
