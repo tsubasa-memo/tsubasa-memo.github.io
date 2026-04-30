@@ -24,6 +24,52 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"sitemap.xmlとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"サイト内の全ページURLをXML形式で記述したファイルです。Google Search Consoleに送信すると、クローラーがページを発見しやすくなります。"}},{"@type":"Question","name":"サイトマップがないとGoogleに表示されませんか？","acceptedAnswer":{"@type":"Answer","text":"表示されないわけではありませんが、新規サイトやページ数が多いサイトでは発見が遅れることがあります。送信しておくことを推奨します。"}},{"@type":"Question","name":"サイトマップはどうやって作りますか？","acceptedAnswer":{"@type":"Answer","text":"XMLの仕様に従って手動で書くか、静的サイトジェネレーターやプラグインで自動生成できます。このブログではPythonスクリプトで生成しています。"}},{"@type":"Question","name":"サイトマップはどこに置きますか？","acceptedAnswer":{"@type":"Answer","text":"サイトのルートディレクトリ（https://example.com/sitemap.xml）に配置するのが一般的です。robots.txtにサイトマップのURLを記述しておくと、クローラーが自動的に見つけます。"}},{"@type":"Question","name":"サイトマップの更新頻度は？","acceptedAnswer":{"@type":"Answer","text":"ページを追加・更新したタイミングで更新するのが理想的です。変更がないのに頻繁に更新してもメリットはありません。"}}]}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "サイトマップ（sitemap.xml）とは？Googleに全ページを教える話",
+  "description": "sitemap.xmlはサイト内の全ページ一覧をXML形式で記述し、検索エンジンに送信するファイル。Google Search Consoleへの送信方法とサイトマップの書き方をまとめた。",
+  "url": "https://tsubasa-memo.github.io/glossary/sitemap.html",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-04-21",
+  "dateModified": "2026-04-29",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "サイトマップ"
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
@@ -45,6 +91,9 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:title" content="サイトマップ（sitemap.xml）とは？Googleに全ページを教える話｜ツバサのメモ帳">
+<meta name="twitter:description" content="sitemap.xmlはサイト内の全ページ一覧をXML形式で記述し、検索エンジンに送信するファイル。Google Search Consoleへの送信方法とサイトマップの書き方をまとめた。">
 </head>
 <body>
 <header><div class="wrap"><a href="/" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
@@ -71,5 +120,5 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <div class="related"><h3>関連する記事</h3><ul><li><a href="/google-index-not-found.html">Googleにインデックスされるまで</a></li><li><a href="/blog-seo-basics.html">個人ブログのSEOを勉強した記録</a></li></ul></div>
 <div class="author-box"><div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div><div class="author-text"><p class="author-name">ツバサ</p><p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p></div></div>
 </div></main>
-<footer><div class="wrap"><div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a><a href="about.html">運営者情報</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
+<footer><div class="wrap"><div class="footer-links"><a href="/privacy-policy.html">プライバシーポリシー</a><a href="/contact.html">お問い合わせ</a><a href="/about.html">運営者情報</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
 </body></html>
