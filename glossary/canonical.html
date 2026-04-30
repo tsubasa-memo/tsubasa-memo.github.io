@@ -24,6 +24,52 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"canonicalタグとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"HTMLのheadタグに記述するlink要素で、ページの正規URLを検索エンジンに伝えるためのタグです。重複コンテンツの問題を防ぐために使われます。"}},{"@type":"Question","name":"canonicalタグを設置しないとどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"同じ内容のページが複数URLに存在すると、Googleが評価を分散させてしまう可能性があります。検索順位に悪影響が出ることがあります。"}},{"@type":"Question","name":"canonicalと301リダイレクトの違いは？","acceptedAnswer":{"@type":"Answer","text":"301リダイレクトはユーザーを別URLに転送します。canonicalはユーザーはそのまま閲覧でき、検索エンジンにだけ正規URLを伝えます。ページが完全に移転した場合は301、両方のURLを残したい場合はcanonicalが適しています。"}},{"@type":"Question","name":"自分自身を指すcanonicalに意味はありますか？","acceptedAnswer":{"@type":"Answer","text":"あります。URLパラメータが付いたアクセスやwww有無の違いを正規化できるため、自己参照canonicalでも設置しておくことが推奨されています。"}},{"@type":"Question","name":"canonicalタグはGoogleに必ず従ってもらえますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Googleはcanonicalをヒントとして扱い、最終的な判断はGoogle側が行います。ページ内容と矛盾する指定は無視されることがあります。"}}]}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "canonical（カノニカル）とは？URLの正規化で重複を防ぐ話",
+  "description": "canonical（カノニカル）はHTMLで正規URLを指定するタグ。同じ内容のページが複数のURLでアクセスできるとき、検索エンジンにどのURLを評価してほしいかを伝える仕組みをまとめた。",
+  "url": "https://tsubasa-memo.github.io/glossary/canonical.html",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-04-21",
+  "dateModified": "2026-04-29",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "canonical"
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
@@ -45,6 +91,9 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 </style>
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:title" content="canonical（カノニカル）とは？URLの正規化で重複を防ぐ話｜ツバサのメモ帳">
+<meta name="twitter:description" content="canonical（カノニカル）はHTMLで正規URLを指定するタグ。同じ内容のページが複数のURLでアクセスできるとき、検索エンジンにどのURLを評価してほしいかを伝える仕組みをまとめた。">
 </head>
 <body>
 <header><div class="wrap"><a href="/" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
@@ -74,5 +123,5 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <div class="related"><h3>関連する記事</h3><ul><li><a href="/blog-seo-basics.html">個人ブログのSEOを勉強した記録</a></li><li><a href="/google-index-not-found.html">Googleにインデックスされるまで</a></li></ul></div>
 <div class="author-box"><div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div><div class="author-text"><p class="author-name">ツバサ</p><p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p></div></div>
 </div></main>
-<footer><div class="wrap"><div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a><a href="about.html">運営者情報</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
+<footer><div class="wrap"><div class="footer-links"><a href="/privacy-policy.html">プライバシーポリシー</a><a href="/contact.html">お問い合わせ</a><a href="/about.html">運営者情報</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
 </body></html>
