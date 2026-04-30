@@ -24,6 +24,52 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"JSON-LDとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"JSON-LDはJSON for Linking Dataの略で、Webページの情報を検索エンジンに構造的に伝えるためのデータ形式です。HTMLのscriptタグ内に記述します。"}},{"@type":"Question","name":"JSON-LDを書くと何が変わりますか？","acceptedAnswer":{"@type":"Answer","text":"Google検索結果にFAQやパンくずリストなどのリッチリザルトが表示される可能性があります。また、AIがページ内容を理解しやすくなります。"}},{"@type":"Question","name":"JSON-LDはどこに書きますか？","acceptedAnswer":{"@type":"Answer","text":"HTMLのhead内に&lt;script type=&quot;application/ld+json&quot;&gt;タグで記述します。本文のHTMLとは独立しているため、既存ページに後から追加できます。"}},{"@type":"Question","name":"JSON-LDとMicrodataの違いは？","acceptedAnswer":{"@type":"Answer","text":"JSON-LDはscriptタグ内に独立して記述します。MicrodataはHTML要素に属性を追加する形式です。Googleは公式にJSON-LDを推奨しています。"}},{"@type":"Question","name":"構造化データが正しいか確認する方法は？","acceptedAnswer":{"@type":"Answer","text":"GoogleのリッチリザルトテストツールにページのURLを入力すると、構造化データの検証ができます。エラーがあれば具体的に指摘してくれます。"}}]}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "JSON-LDとは？構造化データで検索結果を変える話",
+  "description": "JSON-LDはGoogleの検索結果にFAQやパンくずリストなどのリッチリザルトを表示させるための構造化データ形式。HTMLのscriptタグに記述する書き方と、ブログでの活用方法をまとめた。",
+  "url": "https://tsubasa-memo.github.io/glossary/json-ld.html",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-04-21",
+  "dateModified": "2026-04-29",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "JSON-LD"
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
