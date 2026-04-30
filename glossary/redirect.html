@@ -24,6 +24,52 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"リダイレクトとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"あるURLにアクセスしたとき、自動的に別のURLに転送する仕組みです。ページのURL変更やサイト移転時に、訪問者とGoogleの評価を新URLに引き継ぐために使います。"}},{"@type":"Question","name":"301と302リダイレクトの違いは？","acceptedAnswer":{"@type":"Answer","text":"301は恒久的な移転で検索エンジンの評価が新URLに引き継がれます。302は一時的な転送で評価の引き継ぎは行われません。ページを完全に移動した場合は301を使います。"}},{"@type":"Question","name":"静的サイトでリダイレクトするには？","acceptedAnswer":{"@type":"Answer","text":"HTMLのmeta refreshタグを使います。サーバー設定が不要なため、GitHub Pagesなどの静的ホスティングでも実装できます。"}},{"@type":"Question","name":"リダイレクトは何秒で転送すべきですか？","acceptedAnswer":{"@type":"Answer","text":"meta refreshのcontent属性を0にすると即座に転送されます。ユーザーに旧ページを見せる必要がなければ0秒が推奨です。"}},{"@type":"Question","name":"リダイレクトチェーンとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"A→B→Cのようにリダイレクトが連鎖することです。読み込み速度の低下やSEO評価の分散を招くため、転送は1回で完結させるのが望ましいです。"}}]}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "リダイレクトとは？ページ移転でURLを転送する仕組み",
+  "description": "リダイレクトはURLを別のURLに自動転送する仕組み。301（恒久的転送）と302（一時的転送）の違い、HTMLのmeta refreshでの実装方法をまとめた。",
+  "url": "https://tsubasa-memo.github.io/glossary/redirect.html",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-04-21",
+  "dateModified": "2026-04-29",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "リダイレクト"
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
