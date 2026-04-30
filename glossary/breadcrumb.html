@@ -24,6 +24,52 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"パンくずリストとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Webページの上部に表示される「トップ > カテゴリ > 記事名」のような階層ナビゲーションです。ユーザーが現在地を把握し、上位ページに戻りやすくなります。"}},{"@type":"Question","name":"パンくずリストはSEOに効果がありますか？","acceptedAnswer":{"@type":"Answer","text":"あります。サイトの階層構造をGoogleに伝える役割があり、構造化データとして記述すると検索結果にパンくずが表示されることもあります。"}},{"@type":"Question","name":"パンくずリストはどこに設置しますか？","acceptedAnswer":{"@type":"Answer","text":"一般的にはページの上部、ヘッダーの直下に設置します。ユーザーが最初に目にする位置に置くことで、サイト内のナビゲーションに役立ちます。"}},{"@type":"Question","name":"パンくずリストの構造化データは必要ですか？","acceptedAnswer":{"@type":"Answer","text":"必須ではありませんが、JSON-LDでBreadcrumbList構造化データを記述すると、検索結果にパンくずが表示されやすくなります。"}},{"@type":"Question","name":"パンくずリストがないとSEOに不利ですか？","acceptedAnswer":{"@type":"Answer","text":"パンくずリストがないこと自体はペナルティにはなりませんが、内部リンク構造とユーザビリティの面でメリットがあるため、設置が推奨されます。"}}]}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "パンくずリストとは？サイト内の現在地を示すナビゲーション",
+  "description": "パンくずリスト（breadcrumb）はWebページの階層構造を示すナビゲーション。ユーザーが今サイトのどこにいるかを視覚的に伝え、SEOにも効果がある仕組みをまとめた。",
+  "url": "https://tsubasa-memo.github.io/glossary/breadcrumb.html",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-04-21",
+  "dateModified": "2026-04-29",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "パンくずリスト"
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
