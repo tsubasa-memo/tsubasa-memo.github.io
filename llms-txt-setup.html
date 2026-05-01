@@ -150,7 +150,19 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>こんにちは、ツバサです。このブログのSEO・<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
 
-<h2>llms.txtとは何か</h2>
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">llms.txtとは何か</a></li>
+<li><a href="#sec2">書き方の基本フォーマット</a></li>
+<li><a href="#sec3">GitHub Pagesへの設置手順</a></li>
+<li><a href="#sec4">運用上の注意点</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">llms.txtとは何か</h2>
 
 <p>llms.txtは、サイトのルートに置くMarkdown形式のファイルです。ChatGPT・Claude・GeminiなどのLLM（大規模言語モデル）に対して、サイトにどんな情報があるかを伝えることを目的としています。</p>
 
@@ -158,7 +170,7 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。AnthropicはClaudeの<a href="https://docs.anthropic.com/" target="_blank" rel="noopener noreferrer">公式ドキュメント</a>にllms.txtを設置しており、徐々に普及が進んでいます。</p>
 
-<h2>書き方の基本フォーマット</h2>
+<h2 id="sec2">書き方の基本フォーマット</h2>
 
 <p>llms.txtはMarkdown形式で記述します。基本構造は次の通りです。</p>
 
@@ -183,7 +195,7 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>記事一覧は全記事を掲載する必要はありませんが、掲載する記事が多いほどLLMが参照できる情報量が増えます。各記事の説明文には具体的なサービス名・数値・キーワードを含めると、LLMが記事の内容を正確に把握できます。</p>
 
-<h2>GitHub Pagesへの設置手順</h2>
+<h2 id="sec3">GitHub Pagesへの設置手順</h2>
 
 <p>GitHub Pagesの場合、<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>のルートに「llms.txt」という名前のファイルを作成してコミットするだけです。</p>
 
@@ -195,7 +207,7 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>このブログのllms.txtは<a href="https://tsubasa-memo.github.io/llms.txt" target="_blank" rel="noopener noreferrer">こちら</a>で確認できます。</p>
 
-<h2>運用上の注意点</h2>
+<h2 id="sec4">運用上の注意点</h2>
 
 <p>新しい記事を公開するたびにllms.txtも更新する必要があります。記事一覧が古いままだと、最新の記事がLLMに伝わりません。記事追加のワークフローにllms.txt更新を組み込んでおくのがおすすめです。</p>
 
@@ -203,7 +215,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><strong>注意：</strong>llms.txtに書いた情報がLLMの回答に即座に反映されるわけではありません。LLMのトレーニングサイクルやRAG（検索拡張生成）の仕組みによって、反映されるタイミングは異なります。</p>
 </div>
 
-<h2>よくある質問</h2>
+<h2 id="sec5">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. llms.txtとrobots.txtの違いは何ですか？</p><p class="faq-a">robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLMに対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtはすべてのAIに対応していますか？</p><p class="faq-a">2026年時点では対応状況はAIによって異なります。Anthropicはllms.txtを参照することが知られています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtはどこに設置すればいいですか？</p><p class="faq-a">サイトのルートに「llms.txt」という名前で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。</p></div>
@@ -216,7 +228,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<h2 class="related-title">関連する記事</h2>
+<h2 class="related-title" id="sec6">関連する記事</h2>
 <a class="cite-card" href="llmo-article-writing.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
