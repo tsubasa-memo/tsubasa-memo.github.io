@@ -175,7 +175,23 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>「この画像、JPEGにする？PNGにする？」という場面が仕事でよく出てきます。なんとなく選んでいた部分もあったので、改めて各形式の違いを整理しておくことにしました。ECやSNSでの実務を意識しながらまとめています。</p>
 
-<h2>主要な画像ファイル形式の比較一覧</h2>
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">主要な画像ファイル形式の比較一覧</a></li>
+<li><a href="#sec2">JPEG（ジェイペグ）</a></li>
+<li><a href="#sec3">PNG（ピング）</a></li>
+<li><a href="#sec4">WebP（ウェブピー）</a></li>
+<li><a href="#sec5">GIF（ジフ）</a></li>
+<li><a href="#sec6">RAW（ロー）</a></li>
+<li><a href="#sec7">HEIC（ヒーク）</a></li>
+<li><a href="#sec8">EC担当視点での使い分けまとめ</a></li>
+<li><a href="#sec9">よくある質問</a></li>
+<li><a href="#sec10">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">主要な画像ファイル形式の比較一覧</h2>
 
 <table class="spec-table">
 <tr><th>形式</th><th>圧縮方式</th><th>透過</th><th>アニメーション</th><th>主な用途</th></tr>
@@ -187,7 +203,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td><a class="glossary-inline" href="/glossary/heif-heic.html">HEIC</a></td><td>非可逆圧縮</td><td>×</td><td>×</td><td>iPhone撮影の標準形式</td></tr>
 </table>
 
-<h2>JPEG（ジェイペグ）</h2>
+<h2 id="sec2">JPEG（ジェイペグ）</h2>
 
 <p>写真に最もよく使われる形式です。「非可逆圧縮」といって、ファイルサイズを小さくする代わりに一部の画像情報を捨てています。圧縮率を上げるほどファイルサイズは小さくなりますが、画質が落ちていきます。</p>
 
@@ -200,7 +216,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>・ファイルサイズを小さくしたい</p>
 </div>
 
-<h2>PNG（ピング）</h2>
+<h2 id="sec3">PNG（ピング）</h2>
 
 <p>「可逆圧縮」なので、圧縮しても画像情報が失われません。そのため同じ内容ならJPEGよりファイルサイズが大きくなりがちですが、透過（背景なし）に対応しているのがPNGの最大の特徴です。</p>
 
@@ -213,19 +229,19 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>・繰り返し編集・保存する（JPEGは保存のたびに劣化する）</p>
 </div>
 
-<h2>WebP（ウェブピー）</h2>
+<h2 id="sec4">WebP（ウェブピー）</h2>
 
 <p>Googleが2010年に開発した比較的新しい形式です。JPEGより同画質でファイルサイズを約25〜34%削減できるとされています（<a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener">Google Developers - WebP</a>）。透過もアニメーションも対応しており、「JPEGとPNGの両方を代替できる」形式として注目されています。</p>
 
 <p>2024年時点でChrome・Firefox・Safari・Edgeのすべてが対応済みで、ウェブサイトの表示速度改善（Core Web Vitals対策）を目的に採用するサイトが増えています。ただし、古いバージョンのソフトウェアで開けない場合があるため、納品ファイルや印刷データとしての利用は注意が必要です。</p>
 
-<h2>GIF（ジフ）</h2>
+<h2 id="sec5">GIF（ジフ）</h2>
 
 <p>1987年に登場した古い形式で、最大256色しか使えないため写真には向きません。ただし、複数フレームを持つアニメーションに対応しており、「動くスタンプ」的な用途でSNSやSlackで今も広く使われています。</p>
 
 <p>静止画としては画質が粗く、ファイルサイズも大きくなるため、写真目的での新規採用はほぼありません。</p>
 
-<h2>RAW（ロー）</h2>
+<h2 id="sec6">RAW（ロー）</h2>
 
 <p>デジタルカメラが撮影時にセンサーで受け取った生データをそのまま記録した形式です。メーカーによってCR2（Canon）・NEF（Nikon）・ARW（Sony）などの名称があります。</p>
 
@@ -238,13 +254,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>・専用ソフトがないと開けない（iPhoneの場合はiOS対応のRAW形式あり）</p>
 </div>
 
-<h2>HEIC（ヒーク）</h2>
+<h2 id="sec7">HEIC（ヒーク）</h2>
 
 <p>iPhoneのカメラが標準で使用する形式（iOS 11以降）です。JPEGより圧縮率が高く、同等の画質でファイルサイズを約半分にできます。ただし、WindowsやAndroidとの互換性に問題が生じることがあります。</p>
 
 <p>iPhoneで撮った写真をWindowsで開こうとしたら形式が合わず開けなかった、という経験がある方も多いと思います。iPhoneの設定で「互換性優先」にするとJPEGで保存されるため、複数デバイスで使う場合はこちらの設定が無難です。</p>
 
-<h2>EC担当視点での使い分けまとめ</h2>
+<h2 id="sec8">EC担当視点での使い分けまとめ</h2>
 
 <table class="spec-table">
 <tr><th>用途</th><th>推奨形式</th><th>理由</th></tr>
@@ -266,7 +282,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </a>
 
 <div class="faq-section">
-<h2>よくある質問</h2>
+<h2 id="sec9">よくある質問</h2>
 <div class="faq-item">
 <div class="fq">Q. JPEGとPNGはどちらを使えばいいですか？</div>
 <div class="fa">用途で使い分けます。写真（グラデーションが多い画像）はJPEG、透過が必要なロゴ・テキスト入り画像はPNGが向いています。ECサイトの白背景商品写真はJPEG、透過が必要な場合はPNGが一般的です。</div>
@@ -300,7 +316,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<h2 class="related-title">関連する記事</h2>
+<h2 class="related-title" id="sec10">関連する記事</h2>
 <a class="cite-card" href="raw-vs-jpeg.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">

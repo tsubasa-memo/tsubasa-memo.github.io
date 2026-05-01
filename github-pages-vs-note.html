@@ -201,7 +201,19 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>こんにちは、ツバサです。このブログを始めるとき、最初に迷ったのが「noteで書くか、自分でサイトを作るか」でした。結論を先に言うと、<strong>AdSenseを使いたかったからGitHub Pagesにした</strong>、というのが一番の理由です。</p>
 
-<h2>noteで書かなかった理由</h2>
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">noteで書かなかった理由</a></li>
+<li><a href="#sec2">GitHub Pagesを選んだ理由3つ</a></li>
+<li><a href="#sec3">GitHub Pagesのデメリットと感じたこと</a></li>
+<li><a href="#sec4">まとめ：noteかGitHub Pagesか</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">noteで書かなかった理由</h2>
 
 <p>noteはシンプルで書きやすいですし、SEOも最初は効きやすいと聞いていました。記事を書くこと自体に集中できる環境は魅力でした。ただ調べてみると、いくつか気になる制限があることがわかりました。</p>
 
@@ -209,7 +221,7 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>次に気になったのはカスタマイズの制限です。HTMLや<a href="/glossary/css.html" class="glossary-inline">CSS</a>を自由に書けないため、商品比較表を作ったり、構造化データを設置したり、ページのレイアウトを変えたりといった作業ができません。SEO対策や<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>（AIへの最適化）をやりたいなら、自分でHTMLを管理できる環境の方が都合が良いと判断しました。</p>
 
-<h2>GitHub Pagesを選んだ理由3つ</h2>
+<h2 id="sec2">GitHub Pagesを選んだ理由3つ</h2>
 
 <h3>1. AdSenseが自由に設置できる</h3>
 <p>GitHub Pagesは静的なHTMLファイルをそのままホスティングするサービスなので、AdSenseのスクリプトタグをHTMLに書くだけで広告が表示されます。AdSenseの審査基準はサイトの内容によるもので、GitHub PagesかどうかはGoogle側は特に気にしません。</p>
@@ -220,7 +232,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <h3>3. HTMLを自由に書ける</h3>
 <p>SEO用の<a href="/glossary/meta-description.html" class="glossary-inline">meta description</a>を丁寧に書く、FAQ構造化データ（<a href="/glossary/json-ld.html" class="glossary-inline">JSON-LD</a>）を入れる、内部リンクをコントロールする、llms.txtを設置してAIに読ませるといった対策がすべて自分の手でできます。ブログを書くだけでなく「育てる」作業をやりたい場合、プラットフォームに縛られない環境の方が動きやすいです。</p>
 
-<h2>GitHub Pagesのデメリットと感じたこと</h2>
+<h2 id="sec3">GitHub Pagesのデメリットと感じたこと</h2>
 
 <p>デメリットもあります。記事を更新するにはHTMLファイルを編集してGitHubにアップロードする手順が必要なので、noteのようにブラウザ上で書いてすぐ投稿、とはいきません。最初は手順を覚えるまで時間がかかりました。</p>
 
@@ -230,7 +242,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><strong>注意：</strong>GitHub Pagesで運営する場合、コミット履歴に本名やメールアドレスが残ることがあります。匿名で運営したい場合はGitの設定（user.nameとuser.email）を匿名用にしておくことをおすすめします。</p>
 </div>
 
-<h2>まとめ：noteかGitHub Pagesか</h2>
+<h2 id="sec4">まとめ：noteかGitHub Pagesか</h2>
 
 <table class="spec-table">
 <tr><th></th><th>note</th><th>GitHub Pages</th></tr>
@@ -244,7 +256,7 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>「とにかく書くことに集中したい」ならnote、「広告・<a href="/glossary/affiliate.html" class="glossary-inline">アフィリエイト</a>で収益化したい」「SEO対策を自分でコントロールしたい」ならGitHub Pages、という選び方が実態に近いと思います。僕はブログそのものを育てる作業も面白いと思っているので、GitHub Pagesを選んでよかったと感じています。</p>
 
-<h2>よくある質問</h2>
+<h2 id="sec5">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. noteとGitHub Pagesの一番の違いは何ですか？</p><p class="faq-a">noteはAdSense（Google広告）が使えないことが最大の違いです。noteはプラットフォームが広告収益を管理しており、クリエイターが自分でAdSenseコードを埋め込むことができません。GitHub Pagesは静的HTMLをホスティングするサービスなので、AdSenseのスクリプトを自由に埋め込めます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. GitHub Pagesは無料で使えますか？</p><p class="faq-a">無料で使えます。GitHubアカウントを作成して<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>を公開設定にし、GitHub Pagesを有効にするだけで「ユーザー名.github.io」というURLでサイトが公開されます。独自ドメインの取得は有料（年間1,500円程度）ですが、github.ioドメインのままでも問題ありません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. noteでAmazon アソシエイトは使えますか？</p><p class="faq-a">noteでもAmazon アソシエイトのリンクは貼れますが、テキストリンクや画像リンクのみです。GitHub Pagesならカスタムの商品カードHTMLも自由に設置できます。</p></div>
@@ -259,7 +271,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<h2 class="related-title">関連する記事</h2>
+<h2 class="related-title" id="sec6">関連する記事</h2>
 <a class="cite-card" href="adsense-application.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
