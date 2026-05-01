@@ -210,6 +210,17 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
   opacity: .85;
 }
 
+/* hero内のリンク色（緑グラデ背景上で読めるように白系に） */
+.hero a,
+.hero .glossary-inline {
+  color: #fff;
+  border-bottom-color: rgba(255,255,255,0.5);
+}
+.hero a:hover,
+.hero .glossary-inline:hover {
+  border-bottom-color: #fff;
+}
+
 /* FAQ（C型互換・親セレクタなし） */
 .faq-q {
   font-weight: 700;
