@@ -264,3 +264,25 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+/* =============================================
+   glossary用 共通class（用語集114件で共通）
+   ============================================= */
+
+/* 関連用語ボックス */
+.related-terms{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin:40px 0}
+.related-terms h3{font-size:16px;font-weight:700;color:var(--accent);margin:0 0 12px;padding:0;border:none}
+.related-terms ul{margin:0;list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.related-terms li{margin:0}
+.related-terms a{display:inline-block;padding:6px 14px;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--accent);text-decoration:none}
+.related-terms a:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+
+/* .related の追加バリエーション */
+.related ul{list-style:none;padding:0;margin:0}
+.related li{margin-bottom:8px}
+.related a{font-size:14px}
+
+/* レスポンシブ追加 */
+@media(max-width:600px){
+  table.compare th,table.compare td{padding:8px 10px}
+}
