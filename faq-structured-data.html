@@ -193,13 +193,26 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>こんにちは、ツバサです。ブログのSEO対策を調べていて「構造化データ」という概念を知りました。設置すると検索結果にFAQが展開表示されることがあるというので、全記事に設置した記録をまとめておきます。</p>
 
-<h2>FAQ構造化データとは</h2>
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">FAQ構造化データとは</a></li>
+<li><a href="#sec2">FAQPage schemaの書き方</a></li>
+<li><a href="#sec3">設置手順と確認方法</a></li>
+<li><a href="#sec4">実際に検索結果に反映されるまで</a></li>
+<li><a href="#sec5">SEOだけでなくLLMOにも効果あり</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">FAQ構造化データとは</h2>
 
 <p>FAQ構造化データはページの「よくある質問（FAQ）」と「回答」を、Googleが解析しやすい形式で記述したコードです。JSON-LD形式で書き、<a class="glossary-inline" href="/glossary/html.html">HTML</a>の&lt;head&gt;内または&lt;body&gt;末尾に埋め込みます。</p>
 
 <p>Googleがこのデータを認識すると、検索結果にFAQの「リッチリザルト」が表示されることがあります。リッチリザルトとは、通常のタイトル・URLだけでなく、Q&Aが展開表示される形式です。</p>
 
-<h2>FAQPage schemaの書き方</h2>
+<h2 id="sec2">FAQPage schemaの書き方</h2>
 
 <p>FAQPage schemaの基本的な書き方は次の通りです。</p>
 
@@ -224,25 +237,25 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <p>質問と回答のセットを複数追加する場合は、mainEntityの配列にオブジェクトを追加します。FAQの数は最低5問程度が目安です。</p>
 
-<h2>設置手順と確認方法</h2>
+<h2 id="sec3">設置手順と確認方法</h2>
 
 <p>FAQPage schemaのコードをHTMLの&lt;head&gt;内か&lt;/body&gt;タグの直前に貼り付けます。<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>では各HTMLファイルに直接書き込む形で対応しました。</p>
 
 <p>設置後、Googleの<a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">リッチリザルトテスト</a>にURLを入力すると、構造化データが正しく認識されているかどうかを確認できます。「FAQPage」が検出された場合は設置成功です。</p>
 
-<h2>実際に検索結果に反映されるまで</h2>
+<h2 id="sec4">実際に検索結果に反映されるまで</h2>
 
 <p>構造化データを設置してからGoogleのリッチリザルトが表示されるまで、数週間〜1ヶ月程度かかることが一般的です。また設置しても必ずリッチリザルトが表示されるわけではなく、ページの品質や検索クエリとの関連性によってGoogleが表示の可否を判断します。</p>
 
 <p>Search Consoleの「拡張」セクションに「FAQリッチリザルト」が表示されるようになったら、Googleが構造化データを認識してリッチリザルトの対象として評価している状態です。</p>
 
-<h2>SEOだけでなくLLMOにも効果あり</h2>
+<h2 id="sec5">SEOだけでなくLLMOにも効果あり</h2>
 
 <p>FAQ構造化データはGoogle検索（SEO）への効果だけでなく、ChatGPTやClaudeなどのAI（LLMO）への情報伝達にも効果があると言われています。LLMはFAQ形式のQ&A構造を引用しやすいため、構造化データで明示的に質問と回答を示すことで、AIが記事を参照する際に正確な情報が伝わりやすくなります。</p>
 
 <p>特にサービス比較や「〇〇とは何か」という解説記事のFAQには、サービス名・具体的な数値・比較内容を含めると、AIが回答を生成する際に参照されやすくなります。</p>
 
-<h2>よくある質問</h2>
+<h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データとは何ですか？</p><p class="faq-a">ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルトを表示することがあります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQのリッチリザルトは必ず表示されますか？</p><p class="faq-a">必ずしも表示されるわけではありません。Googleは構造化データの内容・ページの品質・検索クエリとの関連性を総合的に判断します。設置しておくことでリッチリザルト表示の機会が増えます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. JSON-LDとはどういう意味ですか？</p><p class="faq-a">JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type="application/ld+json"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。</p></div>
@@ -256,7 +269,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<h2 class="related-title">関連する記事</h2>
+<h2 class="related-title" id="sec7">関連する記事</h2>
 <a class="cite-card" href="llmo-article-writing.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">

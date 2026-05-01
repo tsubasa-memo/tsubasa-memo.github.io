@@ -148,7 +148,20 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 <p>こんにちは、ツバサです。このブログではレタッチサービスの比較記事やカメラの紹介記事で外部サイトへのリンクをたくさん貼っている。ある日、全外部リンクのrel属性がバラバラだったことに気づいた。nofollowを付けているリンクと付けていないリンクが混在していて、管理できていなかった。調べて整理した記録をまとめておきます。</p>
 
-<h2>nofollow・dofollow・sponsored・ugcの違い</h2>
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">nofollow・dofollow・sponsored・ugcの違い</a></li>
+<li><a href="#sec2">比較記事の外部リンクにはnofollowを付けた</a></li>
+<li><a href="#sec3">アフィリエイトリンクにはnofollow sponsoredを付ける</a></li>
+<li><a href="#sec4">公式ドキュメントや公的機関へのリンクの扱い</a></li>
+<li><a href="#sec5">全記事の外部リンクを一括で確認・修正した方法</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">nofollow・dofollow・sponsored・ugcの違い</h2>
 
 <p><a class="glossary-inline" href="/glossary/html.html">HTML</a>のaタグに付けるrel属性は、Googleの<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>に「このリンクの性質」を伝えるためのものである。2019年にGoogleが<a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>で仕様を更新し、現在は以下の4種類がある。</p>
 
@@ -164,7 +177,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 <p>nofollowはGoogleに「このリンク先に評価を渡さないでほしい」と伝えるヒントである。2019年以前は「命令」だったが、現在はGoogleが必要に応じて無視する場合もある。鈴木謙一氏の<a href="https://www.suzukikenichi.com/blog/faq-about-changes-of-nofollow-and-new-attributes/" target="_blank" rel="noopener nofollow">解説記事</a>によると、サイト内の全リンクをnofollowにしているようなケースではGoogleがnofollowを無視する可能性があるとされている。</p>
 
-<h2>比較記事の外部リンクにはnofollowを付けた</h2>
+<h2 id="sec2">比較記事の外部リンクにはnofollowを付けた</h2>
 
 <p>このブログはレタッチサービスの比較記事が多く、紹介先の公式サイトへリンクしている。これらのリンクは「サービスを推薦している」わけではなく、「情報源として紹介している」位置づけなので、nofollowを付けることにした。</p>
 
@@ -172,7 +185,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 <p>見た目は何も変わらない。nofollowはHTMLソースコードの中にしか書かれないので、普通に記事を読んでいる人には区別がつかない。ソースコードを確認すればわかるが、「比較記事なので全サービスにnofollowを付けている」という方針は運営上まったく自然なことである。</p>
 
-<h2>アフィリエイトリンクにはnofollow sponsoredを付ける</h2>
+<h2 id="sec3">アフィリエイトリンクにはnofollow sponsoredを付ける</h2>
 
 <p>Amazonアソシエイトのリンクには<code>rel="nofollow sponsored"</code>を使っている。Googleのガイドラインでは、有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めている。両方を併記する書き方が最も安全である。</p>
 
@@ -184,7 +197,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 <p>nofollowだけでも問題はないが、sponsoredを併記することでGoogleに「これは広告リンクである」と正確に伝えられる。Googleの公式ブログでも、nofollowからsponsoredへの切り替えは推奨するが必須ではないと説明されている。</p>
 
-<h2>公式ドキュメントや公的機関へのリンクの扱い</h2>
+<h2 id="sec4">公式ドキュメントや公的機関へのリンクの扱い</h2>
 
 <p>外部リンクを全部nofollowにするのは得策ではない。政府機関のサイト、Google公式ドキュメント、学術論文など、信頼性の高い情報源へのリンクはdofollowのまま残すか、rel="nofollow"は付けつつもGoogleがヒントとして適切に処理してくれることを期待する。</p>
 
@@ -198,7 +211,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <tr><td>自サイト内のリンク（内部リンク）</td><td>属性なし（dofollow）</td></tr>
 </table>
 
-<h2>全記事の外部リンクを一括で確認・修正した方法</h2>
+<h2 id="sec5">全記事の外部リンクを一括で確認・修正した方法</h2>
 
 <p>rel属性の方針を決めた後、既存の全記事（60本以上）で修正が必要だった。手作業では到底追いきれないので、sedコマンドで一括置換した。</p>
 
@@ -208,7 +221,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 
 <p>加えて、スプレッドシートで全外部リンクの一覧を管理するようにした。記事名・リンク先ドメイン・アンカーテキスト・nofollowの有無を1行ずつ記録する形式で、リンク管理の漏れを防いでいる。</p>
 
-<h2>よくある質問</h2>
+<h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. nofollowとdofollowの違いは何ですか？</p><p class="faq-a">dofollowはリンク先にページ評価を渡す通常のリンクです。nofollowはrel="nofollow"を付けることで「評価を渡さないでほしい」とGoogleに伝えるヒントです。2019年以降、nofollowは命令ではなくヒントとして扱われています。</p></div>
 <div class="faq-item"><p class="faq-q">Q. sponsoredとugcはnofollowと何が違いますか？</p><p class="faq-a">sponsoredは広告・有料リンク用、ugcはコメント欄などユーザー生成コンテンツ用です。機能はnofollowと同じですが、リンクの種類をGoogleにより正確に伝えられます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 比較記事の外部リンクにnofollowを付けるべきですか？</p><p class="faq-a">付けるのが無難です。比較記事の外部リンクは推薦ではなく情報提供なので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用するのが公平です。</p></div>
@@ -221,7 +234,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-<h2 class="related-title">関連する記事</h2>
+<h2 class="related-title" id="sec7">関連する記事</h2>
 <a class="cite-card" href="blog-seo-basics.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
