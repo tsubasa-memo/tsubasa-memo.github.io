@@ -29,24 +29,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
-body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:780px;margin:0 auto;padding:0 20px}
-header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
-header .wrap{display:flex;align-items:center;justify-content:space-between}
-.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px;text-decoration:none}
 .site-name:hover{text-decoration:none}
-.site-nav{display:flex;gap:12px}
-.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}
-.site-nav a:hover{color:var(--accent);text-decoration:none}
-.hero{background:linear-gradient(135deg,#3a7a5c 0%,#2a5a42 100%);color:#fff;padding:48px 0 40px;text-align:center}
-.hero h1{font-size:24px;line-height:1.5;font-weight:700;letter-spacing:1px}
-.breadcrumb{font-size:12px;color:var(--text-sub);padding:14px 0;border-bottom:1px solid var(--border);background:#fff}
-.breadcrumb a{color:var(--text-sub)}
-.breadcrumb span{margin:0 6px;color:#ccc}
-main{padding:40px 0 64px}
 .filter-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding:0 0 16px;border-bottom:1px solid var(--border)}
 .filter-tab{font-size:13px;padding:6px 14px;background:var(--tag-bg);color:var(--text-sub);border-radius:20px;transition:background .2s,color .2s;text-decoration:none;display:inline-block}
 a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decoration:none}
@@ -54,26 +37,20 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 .term-count{font-size:13px;color:var(--text-sub);margin-bottom:24px}
 .section-heading{font-size:15px;font-weight:700;color:var(--text-sub);border-bottom:2px solid var(--accent);padding-bottom:6px;margin:32px 0 16px}
 .section-heading:first-of-type{margin-top:0}
-.term-card{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--border)}.term-card-thumb{flex-shrink:0;width:120px;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:var(--tag-bg);display:block}.term-card-thumb img{width:100%;height:100%;object-fit:cover;display:block}.term-card-body{flex:1;min-width:0}
+.term-card{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--border)}
+.term-card-thumb{flex-shrink:0;width:120px;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:var(--tag-bg);display:block}
+.term-card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.term-card-body{flex:1;min-width:0}
 .term-header{display:flex;align-items:center;gap:10px;margin-bottom:4px;flex-wrap:wrap}
 .term-name{font-size:16px;font-weight:700;color:var(--text);text-decoration:none}
 .term-name:hover{color:var(--accent);text-decoration:underline}
 .term-desc{font-size:14px;color:var(--text-sub);line-height:1.7;margin-bottom:4px}
 .term-link{font-size:13px;color:var(--accent)}
-.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
-.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
-.author-box .author-icon img{width:100%;height:100%}
-.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
-.author-box .author-text p:last-child{margin-bottom:0}
-.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
-footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
-@media(max-width:600px){
-.hero h1{font-size:20px}
-.term-card-thumb{width:88px}
-.author-box{flex-direction:column;align-items:center;text-align:center}
+@media (max-width:600px){
+  .term-card-thumb{width:88px}
 }
-.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
 </style>
+<link rel="stylesheet" href="../css/common.css">
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
 </head>
