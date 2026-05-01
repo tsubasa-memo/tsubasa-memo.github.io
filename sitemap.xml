@@ -312,9 +312,33 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/0-z.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/a-ka.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/sa-ta.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/glossary/ha-wa.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/3pl.html</loc>

@@ -558,7 +558,7 @@
 
 ## 用語集
 
-仕事とブログ運営で出てきた用語のメモ集。94語を50音/アルファベット順に整理。
+仕事とブログ運営で出てきた用語のメモ集。109語を五十音別に4ページ（0-z.html / a-ka.html / sa-ta.html / ha-wa.html）に整理。
 
 - [3PL](https://tsubasa-memo.github.io/glossary/3pl.html): 物流業務をまるごと外部に委託するサービス。
 - [ABテスト](https://tsubasa-memo.github.io/glossary/ab-test.html): 2パターンを比較して効果の高いほうを選ぶテスト手法。
@@ -587,7 +587,7 @@
 - [JPEG](https://tsubasa-memo.github.io/glossary/jpeg.html): 写真に最も使われる非可逆圧縮の画像形式。
 - [JSON-LD](https://tsubasa-memo.github.io/glossary/json-ld.html): 検索結果にFAQなどを表示させる構造化データ形式。
 - [LLMO](https://tsubasa-memo.github.io/glossary/llmo.html): AIチャットボットに情報を引用してもらうための最適化。
-- [LP（ランディングページ）](https://tsubasa-memo.github.io/glossary/landing-page.html): 「LP作って」と言われて調べた。
+- [ランディングページ](https://tsubasa-memo.github.io/glossary/landing-page.html): 「LP作って」と言われて調べた。
 - [LTV](https://tsubasa-memo.github.io/glossary/ltv.html): 顧客1人が生涯でもたらす売上の合計。
 - [meta description](https://tsubasa-memo.github.io/glossary/meta-description.html): 検索結果に表示されるページ説明文のHTMLタグ。
 - [nofollow](https://tsubasa-memo.github.io/glossary/nofollow.html): リンク先にページ評価を渡さないrel属性。
