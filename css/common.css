@@ -1,0 +1,240 @@
+/* ツバサのメモ帳 共通スタイル
+ * 基準: retouch-services.html (B型)
+ * 緑hero #1a6b4f→#2a8f6a / 黒footer #2d2d2d
+ * 最終更新: 2026-05-01
+ */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --accent:#1a6b4f;
+  --accent-light:#e8f5ee;
+  --accent-deep:#2a8f6a;
+  --bg:#f8f7f4;
+  --text:#2d2d2d;
+  --text-sub:#666666;
+  --border:#e0ddd8;
+  --card:#ffffff;
+  --voice-bg:#fff8f0;
+  --voice-border:#f0c880;
+  --answer-bg:#f0f7f4;
+  --link:#1a6b4f;
+  --tag-bg:#f2f0ec;
+  --footer-bg:#2d2d2d;
+  --footer-text:#ffffff;
+}
+
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+
+/* ==== ヘッダー ==== */
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
+.site-nav{display:flex;gap:16px}
+.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}
+.site-nav a:hover{color:var(--accent);text-decoration:none}
+
+/* ==== パンくず ==== */
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}
+nav.breadcrumb a{color:var(--text-sub)}
+.breadcrumb a{color:var(--text-sub)}
+
+/* ==== ヒーロー ==== */
+.hero{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-deep) 100%);color:#fff;padding:56px 0 48px;text-align:center}
+.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px;word-break:auto-phrase;overflow-wrap:anywhere}
+.hero .lead{font-size:15px;opacity:.9;line-height:1.7;max-width:600px;margin:0 auto}
+
+/* ==== ヒーロー画像 ==== */
+.hero-image{background:#fff;padding:0 0 24px}
+.hero-image .wrap{max-width:780px;margin:0 auto;padding:0 20px}
+.hero-image img{display:block;width:100%;height:auto;border-radius:8px}
+
+/* ==== 更新日表示 ==== */
+.update{text-align:center;padding:12px;font-size:12px;color:var(--text-sub);background:#fff;border-bottom:1px solid var(--border)}
+
+/* ==== 本文ラッパー ==== */
+article{padding:40px 0 60px}
+main{padding:40px 0 60px}
+
+/* ==== 本文タイポ ==== */
+h2{font-size:22px;font-weight:700;margin:52px 0 20px;padding-bottom:10px;border-bottom:3px solid var(--accent);color:var(--text);line-height:1.4}
+h2:first-of-type{margin-top:0}
+h3{font-size:18px;font-weight:700;margin:36px 0 14px;color:var(--accent)}
+p{margin-bottom:18px}
+ul,ol{margin:0 0 20px 24px}
+li{margin-bottom:8px;font-size:15px}
+
+/* ==== ハイライトボックス ==== */
+.box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:24px 0}
+.box-accent{background:var(--accent-light);border-color:var(--accent)}
+.summary-box{background:var(--accent-light);border:2px solid var(--accent);border-radius:10px;padding:28px;margin:24px 0}
+.summary-box p{font-size:15px;line-height:1.8}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}
+.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.point-box p{font-size:14px;margin-bottom:8px}
+.point-box p:last-child{margin-bottom:0}
+.warn-box{background:#fef3e7;border-left:4px solid #e8a735;border-radius:0 10px 10px 0;padding:20px 24px;margin:24px 0}
+.warn-box h4{font-size:15px;font-weight:700;color:#b07718;margin-bottom:10px}
+.warn-box p{font-size:14px;margin-bottom:8px}
+.warn-box p:last-child{margin-bottom:0}
+.info-box{background:#f0fdf4;border-left:4px solid var(--accent-deep);padding:14px 18px;margin:20px 0;border-radius:0 6px 6px 0}
+.info-box p{margin:0;font-size:15px}
+
+/* ==== Pain List / Voice section ==== */
+.pain-list{list-style:none;padding:0;margin:24px 0}
+.pain-list li{background:var(--voice-bg);border-left:4px solid var(--voice-border);padding:14px 18px;margin-bottom:12px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.6}
+.voice-section .item{margin-bottom:28px}
+.voice-section .scene{font-weight:700;font-size:15px;margin-bottom:6px;color:var(--accent)}
+.voice-section .quote{background:var(--voice-bg);border-radius:10px;padding:18px 22px;font-size:15px;line-height:1.75;position:relative}
+.voice-section .quote::before{content:"❝";position:absolute;top:8px;left:10px;font-size:24px;color:var(--voice-border);opacity:.6}
+
+/* ==== 会話形式（Q/A） ==== */
+.conv{margin:20px 0}
+.conv .q{background:var(--voice-bg);border-left:4px solid var(--voice-border);padding:14px 18px;border-radius:0 8px 8px 0;margin-bottom:0;font-size:15px;line-height:1.6;font-weight:600}
+.conv .a{background:var(--answer-bg);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 8px 8px 0;margin-bottom:24px;font-size:15px;line-height:1.75}
+
+/* ==== Quick table ==== */
+.quick-table{margin:24px 0}
+.quick-table .row{display:flex;gap:8px;padding:12px 0;border-bottom:1px solid var(--border);align-items:baseline}
+.quick-table .row:last-child{border-bottom:none}
+.quick-table .label{font-weight:700;min-width:180px;flex-shrink:0;font-size:14px;color:var(--accent)}
+.quick-table .val{font-size:15px;line-height:1.6}
+
+/* ==== 比較・スペックテーブル ==== */
+table.compare,.compare-table,.spec-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+table.compare th,table.compare td,
+.compare-table th,.compare-table td,
+.spec-table th,.spec-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}
+table.compare th,.compare-table th,.spec-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}
+table.compare td,.compare-table td,.spec-table td{background:#fff}
+
+/* ==== 会社カード / メリットカード ==== */
+.company{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:28px;margin:28px 0}
+.company h4{font-size:17px;font-weight:700;margin-bottom:6px}
+.company .url{font-size:13px;color:var(--text-sub);word-break:break-all;margin-bottom:12px;display:block}
+.company p{margin-bottom:12px;font-size:15px}
+.company .method{font-size:13px;color:var(--text-sub);border-top:1px solid var(--border);padding-top:10px;margin-top:14px;margin-bottom:0}
+.merit-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:20px 0}
+.merit-card .num{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:4px}
+.merit-card h4,.merit-card h3{font-size:16px;font-weight:700;margin:0 0 8px 0;padding-left:0;border-left:none;color:var(--text)}
+.merit-card p{font-size:15px;margin-bottom:0}
+
+/* ==== FAQ（B型: marginのみ） ==== */
+.faq-section{margin:48px 0 0}
+.faq-section h2{margin-bottom:20px}
+.faq-item{margin:28px 0}
+.faq-item .fq{font-weight:700;font-size:16px;margin-bottom:8px;line-height:1.5}
+.faq-item .fa{font-size:15px;line-height:1.8;color:#444}
+
+/* ==== 関連記事 ==== */
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}
+.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none;color:var(--accent)}
+.related p{font-size:14px;margin-bottom:8px}
+.related p:last-child{margin-bottom:0}
+
+/* ==== Cite card ==== */
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{display:block;font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{display:block;font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ==== Pillar links ==== */
+.pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
+.pillar-links>p{margin:0 0 10px;font-size:14px}
+
+/* ==== 用語集インラインリンク ==== */
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
+
+/* ==== 著者ボックス ==== */
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}
+.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
+.author-box .author-icon img{width:100%;height:100%}
+.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
+.author-box .author-text p:last-child{margin-bottom:0}
+.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
+.author-box p:last-child{margin-bottom:0}
+
+/* ==== 注意書き ==== */
+.disclaimer{font-size:13px;color:var(--text-sub);text-align:center;padding:20px;border-top:1px solid var(--border);margin-top:40px}
+
+/* ==== C型構造（article-wrap）統合用 ==== */
+.article-wrap{max-width:780px;margin:0 auto;padding:0 20px 60px}
+.article-tag{display:inline-block;background:var(--tag-bg);color:var(--text-sub);font-size:12px;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.article-meta{font-size:13px;color:var(--text-sub);margin-bottom:28px}
+
+/* ==== フッター ==== */
+footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;font-size:12px}
+.footer-links{margin-bottom:12px}
+.footer-links a{margin:0 12px;color:#aaa;font-size:13px}
+.footer-links a:hover{color:var(--footer-text)}
+
+/* ==== レスポンシブ ==== */
+@media(min-width:640px){
+  .hero h1{font-size:28px}
+}
+@media(max-width:639px){
+  .quick-table .row{flex-direction:column;gap:2px}
+  .quick-table .label{min-width:0}
+}
+@media(max-width:600px){
+  .hero h1{font-size:20px}
+  .author-box{flex-direction:column;align-items:center;text-align:center}
+  table.compare,.compare-table,.spec-table{font-size:13px}
+}
+
+/* =============================================
+   優先class追加（フェーズ2補強）
+   ============================================= */
+
+/* 関連記事見出し */
+.related-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* hero内 更新日 */
+.hero .update {
+  font-size: 13px;
+  opacity: .85;
+}
+
+/* FAQ（C型互換・親セレクタなし） */
+.faq-q {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.faq-a {
+  font-size: 14px;
+  color: var(--text-sub);
+  line-height: 1.8;
+}
+
+/* C型ヘッダー */
+.header-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 文字注釈（ボックス型4件はインラインCSS維持） */
+.note {
+  font-size: .85em;
+  color: #888;
+  margin-top: -.5em;
+}
