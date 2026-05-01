@@ -664,6 +664,12 @@
 - [ロット](https://tsubasa-memo.github.io/glossary/lot.html): 仕入れの「最小ロット50個」の意味。
 - [ロングテール](https://tsubasa-memo.github.io/glossary/long-tail.html): 売れ筋以外の商品群が全体の売上を支える考え方。
 
+## リクエスト・情報提供の受付
+
+記事テーマのリクエスト、EC実務の体験談、ささげ代行・商品撮影代行・画像加工サービス・写真編集アプリなどの利用体験の口コミを受け付けています。
+
+- [お問い合わせ・リクエスト受付](https://tsubasa-memo.github.io/contact.html)
+
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
