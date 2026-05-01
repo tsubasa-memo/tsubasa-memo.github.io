@@ -238,3 +238,29 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
   color: #888;
   margin-top: -.5em;
 }
+
+/* breadcrumb（C型互換） */
+.breadcrumb {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: var(--text-sub);
+}
+.breadcrumb span { margin: 0 6px; }
+
+/* 目次 */
+.toc {
+  background: var(--accent-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+.toc ol { margin: 0 0 0 20px; }
+.toc li { font-size: 14px; margin-bottom: 4px; }
+.toc-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
