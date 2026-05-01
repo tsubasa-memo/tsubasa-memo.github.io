@@ -558,7 +558,7 @@
 
 ## 用語集
 
-仕事とブログ運営で出てきた用語のメモ集。87語を50音/アルファベット順に整理。
+仕事とブログ運営で出てきた用語のメモ集。94語を50音/アルファベット順に整理。
 
 - [3PL](https://tsubasa-memo.github.io/glossary/3pl.html): 物流業務をまるごと外部に委託するサービス。
 - [ABテスト](https://tsubasa-memo.github.io/glossary/ab-test.html): 2パターンを比較して効果の高いほうを選ぶテスト手法。
@@ -614,11 +614,13 @@
 - [確定申告](https://tsubasa-memo.github.io/glossary/tax-return.html): 1年間の所得を税務署に申告する手続き。副業所得20万超で必要。
 - [カゴ落ち](https://tsubasa-memo.github.io/glossary/cart-abandonment.html): カートに入れたまま購入せず離脱すること。
 - [掛け率](https://tsubasa-memo.github.io/glossary/kakerate.html): 仕入れ交渉の「6掛け」は定価の60%という意味。
+- [画素数](https://tsubasa-memo.github.io/glossary/gasosuu.html): 画像を構成するピクセルの総数。多い＝高画質ではない理由を整理。
 - [画像サイズ](https://tsubasa-memo.github.io/glossary/image-size.html): ピクセル数とファイル容量、2つの意味がある紛らわしい用語。
 - [解像度・dpi](https://tsubasa-memo.github.io/glossary/resolution-dpi.html): 印刷とWebで必要な数値が違う。
 - [クラウドソーシング](https://tsubasa-memo.github.io/glossary/crowdsourcing.html): ネット経由で不特定多数に業務を外部委託する仕組み。
 - [クローラー](https://tsubasa-memo.github.io/glossary/crawler.html): 検索エンジンがWebページを自動巡回するプログラム。
 - [黒つぶれ](https://tsubasa-memo.github.io/glossary/crushed-blacks.html): 暗い部分が真っ黒になって細部が見えなくなる現象。
+- [景品表示法](https://tsubasa-memo.github.io/glossary/keihyouhou.html): EC商品ページの不当表示を禁止する法律。二重価格・ステマ規制を整理。
 - [コミット](https://tsubasa-memo.github.io/glossary/commit.html): gitで変更を履歴に記録する操作。
 - [コントラスト](https://tsubasa-memo.github.io/glossary/contrast.html): 写真の明るい部分と暗い部分の差。
 - [合成](https://tsubasa-memo.github.io/glossary/compositing.html): 複数の画像を組み合わせて1枚にするレタッチ処理。
@@ -626,8 +628,10 @@
 - [ささげ](https://tsubasa-memo.github.io/sasage-outsource.html): 撮影・採寸・原稿の頭文字。
 - [ささげ業務](https://tsubasa-memo.github.io/glossary/sasage.html): 撮影・採寸・原稿。EC商品登録に必要な3工程。
 - [出荷指示書](https://tsubasa-memo.github.io/glossary/shipping-instruction.html): 物流会社に出荷内容を伝えるための書類。
+- [白抜き](https://tsubasa-memo.github.io/glossary/background-removal.html): EC商品画像の背景を白にする処理。無料ツールと外注の比較。
 - [白飛び](https://tsubasa-memo.github.io/glossary/whiteout.html): 明るい部分が真っ白になって階調が失われる現象。
 - [上代・下代](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 定価と仕入れ値を指すEC・小売の価格用語。
+- [センサーサイズ](https://tsubasa-memo.github.io/glossary/sensor-size.html): カメラのイメージセンサーの大きさ。フルサイズとAPS-Cの違い。
 - [セッション・PV・UU](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): アクセス解析の3つの基本指標。
 - [ダイナミックレンジ](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラが記録できる明暗の幅。
 - [チャージバック](https://tsubasa-memo.github.io/glossary/chargeback.html): クレジットカード決済の取消し。
@@ -644,10 +648,12 @@
 - [ピッキング](https://tsubasa-memo.github.io/glossary/picking.html): 倉庫で注文商品を棚から取り出す作業。
 - [ファーストビュー](https://tsubasa-memo.github.io/glossary/first-view.html): 商品ページを開いたとき最初に見える範囲のこと。
 - [フルフィルメント](https://tsubasa-memo.github.io/glossary/fulfillment.html): 受注から配送完了までの物流業務の総称。
+- [物撮り](https://tsubasa-memo.github.io/glossary/butsudori.html): モノを被写体にした撮影。EC商品撮影に必要な機材と手順。
 - [ブロックノイズ](https://tsubasa-memo.github.io/glossary/block-noise.html): 画像を拡大するとブロック状にガビガビになる現象。
 - [プッシュ](https://tsubasa-memo.github.io/glossary/push.html): ローカルの変更をリモートリポジトリに送信する操作。
 - [ホワイトバランス](https://tsubasa-memo.github.io/glossary/white-balance.html): 白い物を白く写すためのカメラ設定。
 - [ポートフォリオ](https://tsubasa-memo.github.io/glossary/portfolio.html): スキルや実績を示す作品集。副業の案件獲得に使う。
+- [ミラーレス](https://tsubasa-memo.github.io/glossary/mirrorless.html): 反射鏡を省いたレンズ交換式カメラ。一眼レフとの違いを整理。
 - [モックアップ](https://tsubasa-memo.github.io/glossary/mockup.html): デザイン確認用の見本。
 - [ライティング](https://tsubasa-memo.github.io/glossary/lighting.html): 撮影で被写体に当てる光の配置と質の設計。
 - [楽天RMS](https://tsubasa-memo.github.io/glossary/rakuten-rms.html): 楽天市場の出店者向け管理画面。
@@ -659,6 +665,7 @@
 - [リダイレクト](https://tsubasa-memo.github.io/glossary/redirect.html): URLを別のURLに自動転送する仕組み。
 - [リポジトリ](https://tsubasa-memo.github.io/glossary/repository.html): ファイルと変更履歴を保管する場所。
 - [レイヤー](https://tsubasa-memo.github.io/glossary/layer.html): Photoshopの基本概念。
+- [レタッチ](https://tsubasa-memo.github.io/glossary/retouch.html): 写真の色・明るさ・肌などを自然に整える修正作業。加工との違い。
 - [レスポンシブ](https://tsubasa-memo.github.io/glossary/responsive.html): 画面サイズに合わせてレイアウトが変わるWebデザインの手法。
 - [露出](https://tsubasa-memo.github.io/glossary/exposure.html): カメラのセンサーに届く光の量。写真の明るさを決める。
 - [ロット](https://tsubasa-memo.github.io/glossary/lot.html): 仕入れの「最小ロット50個」の意味。
