@@ -32,62 +32,24 @@ gtag('config', 'G-YYBFXHXMM6');
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--link:#2e6b8a;--tag-bg:#f2f0ec}
-body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:780px;margin:0 auto;padding:0 20px}
-header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}
-header .wrap{display:flex;align-items:center;justify-content:space-between}
-.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}
 .site-tag{font-size:11px;color:var(--text-sub);background:var(--tag-bg);padding:3px 10px;border-radius:20px}
-article{padding:48px 0 64px}
 .article-header{margin-bottom:40px}
 .article-cat{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--accent);padding:4px 14px;border-radius:20px;margin-bottom:12px}
 .article-header h1{font-size:24px;font-weight:700;line-height:1.6;margin-bottom:12px}
-.article-meta{font-size:13px;color:var(--text-sub)}
-.article-body h2{font-size:20px;font-weight:700;color:var(--text);margin:48px 0 20px;padding:12px 0;border-bottom:2px solid var(--accent)}
-.article-body h3{font-size:17px;font-weight:700;color:var(--text);margin:32px 0 14px;padding-left:12px;border-left:3px solid var(--accent)}
-.article-body p{margin-bottom:20px}
-.article-body ul,.article-body ol{margin:0 0 20px 24px}
-.article-body li{margin-bottom:8px}
 .article-body table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:14px}
 .article-body th,.article-body td{border:1px solid var(--border);padding:10px 14px;text-align:left}
 .article-body th{background:var(--accent-light);font-weight:700;white-space:nowrap}
 .article-body td{background:#fff}
-.info-box{background:var(--accent-light);border-left:4px solid var(--accent);padding:16px 20px;margin:0 0 24px;border-radius:0 8px 8px 0;font-size:14px;line-height:1.8}
-.warn-box{background:#fef9e7;border-left:4px solid #d4a017;padding:16px 20px;margin:0 0 24px;border-radius:0 8px 8px 0;font-size:14px;line-height:1.8}
 .service-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin:0 0 20px}
 .service-card h4{font-size:16px;font-weight:700;margin-bottom:8px;color:var(--accent)}
 .service-card p{font-size:14px;margin-bottom:8px}
 .service-card .price{font-weight:700;color:var(--accent)}
-.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:48px 0 0;display:flex;gap:20px;align-items:flex-start}
-.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}
-.author-box .author-icon img{width:100%;height:100%}
-.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}
-.author-box .author-text p:last-child{margin-bottom:0}
-.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}
 .back-link{display:inline-block;margin-top:32px;font-size:14px;color:var(--link)}
-footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
-@media(max-width:600px){
-.article-header h1{font-size:20px}
-.article-body h2{font-size:18px}
-.article-body table{font-size:13px}
-.article-body th,.article-body td{padding:8px 10px}
-.author-box{flex-direction:column;align-items:center;text-align:center}
+@media (max-width:600px){
+  .article-header h1{font-size:20px}
+  .article-body table{font-size:13px}
+  .article-body th,.article-body td{padding:8px 10px}
 }
-.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
-.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
-.cite-card:hover{border-color:#aaa;text-decoration:none}
-.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
-.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
-.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
-.cite-card .cite-body{min-width:0;flex:1}
-.cite-card .cite-title{display:block;font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cite-card .cite-url{display:block;font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-
-.pillar-links{margin:32px 0 24px;padding:20px 16px 12px;background:#f4f7f5;border:1px solid var(--border);border-radius:10px}
-.pillar-links>p{margin:0 0 10px;font-size:14px}
 </style>
 <script type="application/ld+json">
 {
@@ -154,6 +116,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
   "inLanguage": "ja"
 }
 </script>
+<link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
 <meta name="twitter:title" content="EC向け画像加工の外注サービス5選｜1枚から依頼できる会社を比較｜ツバサのメモ帳">
@@ -167,6 +130,13 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 <span class="site-tag">備忘録ブログ</span>
 </div>
 </header>
+<section class="hero">
+  <div class="wrap">
+    <h1>EC向け画像加工の外注サービス5選｜1枚から依頼できる会社を比較</h1>
+    <div class="update">2026年4月11日</div>
+  </div>
+</section>
+
 <div class="site-search-wrap">
 <div class="wrap">
 <input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
@@ -179,7 +149,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-al
 
 <div class="article-header">
 <span class="article-cat">EC・実務</span>
-<h1>EC向け画像加工の外注サービス5選｜1枚から依頼できる会社を比較</h1>
+
 <p class="article-meta">公開日：2026年4月11日</p>
 </div>
 
