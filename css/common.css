@@ -220,6 +220,9 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 .hero .glossary-inline:hover {
   border-bottom-color: #fff;
 }
+.hero-desc {
+  color: rgba(255,255,255,0.85);
+}
 
 /* FAQ（C型互換・親セレクタなし） */
 .faq-q {
