@@ -89,9 +89,6 @@
 <section class="hero"><div class="wrap"><h1>canonical（カノニカル）とは？<br>URLの正規化で重複を防ぐ話</h1></div></section>
 <div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/canonical.png" alt="canonical（カノニカル）とは？URLの正規化で重複を防ぐ話" width="640" height="360" loading="eager"></div></div>
 <main><div class="wrap">
-<p>こんにちは、ツバサです。</p>
-<p>ブログのHTMLテンプレートを作ってもらったとき、headタグの中に<code>&lt;link rel="canonical"&gt;</code>という見慣れない記述があった。何のためのタグか調べたのでメモしておく。</p>
-
 <h2>canonicalとは</h2>
 <p>canonicalタグは、「このページの正規URLはこれです」と検索エンジンに伝えるためのHTMLタグだ。書き方は<code>&lt;link rel="canonical" href="https://example.com/page.html"&gt;</code>。</p>
 <p>同じ内容のページが複数のURLでアクセスできてしまうケースがある。たとえばURLにパラメータがついた場合（?ref=twitterなど）、httpとhttpsの両方でアクセスできる場合、www有無の違いなどだ。こういうとき、Googleがどちらを「本物」として評価すべきか迷わないよう、正規のURLを教えてあげるのがcanonicalタグの役割になる。</p>
