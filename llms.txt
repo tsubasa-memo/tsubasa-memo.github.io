@@ -595,6 +595,7 @@
 - [PNG](https://tsubasa-memo.github.io/glossary/png.html): 背景透過ができる画像形式。
 - [PSD](https://tsubasa-memo.github.io/glossary/psd.html): Photoshop専用のファイル形式。
 - [RAW](https://tsubasa-memo.github.io/glossary/raw.html): カメラが記録する未加工の生データ。
+- [RAW現像](https://tsubasa-memo.github.io/glossary/raw-processing.html): RAWファイルの明るさ・色味・コントラストをLightroom等のPCソフトで調整する作業。JPEG撮って出しとの違い。
 - [RGB・CMYK](https://tsubasa-memo.github.io/glossary/rgb-cmyk.html): 色の表現方法。Webと印刷で色が変わる原因はこの違い。
 - [ROAS](https://tsubasa-memo.github.io/glossary/roas.html): 広告費に対して何倍の売上があったかを測る指標。
 - [robots.txt](https://tsubasa-memo.github.io/glossary/robots-txt.html): クローラーに巡回範囲を指示するテキストファイル。
@@ -604,6 +605,7 @@
 - [UI・UX](https://tsubasa-memo.github.io/glossary/ui-ux.html): 画面デザイン（UI）とユーザー体験（UX）の違い。
 - [WebP](https://tsubasa-memo.github.io/glossary/webp.html): Googleが開発した次世代画像フォーマット。
 - [WMS](https://tsubasa-memo.github.io/glossary/wms.html): 倉庫管理システム。
+- [アスペクト比](https://tsubasa-memo.github.io/glossary/aspect-ratio.html): 画像の縦横比。Instagram・楽天・Amazonなど16:9・4:3・1:1・9:16のSNS別推奨サイズを整理。
 - [後払い決済（BNPL）](https://tsubasa-memo.github.io/glossary/bnpl.html): 商品を受け取ってから支払う決済方法。
 - [アフィリエイト](https://tsubasa-memo.github.io/glossary/affiliate.html): 成果報酬型の広告手法。
 - [インデックス登録](https://tsubasa-memo.github.io/glossary/index-registration.html): Googleがページをデータベースに記録すること。
@@ -618,6 +620,7 @@
 - [画像サイズ](https://tsubasa-memo.github.io/glossary/image-size.html): ピクセル数とファイル容量、2つの意味がある紛らわしい用語。
 - [解像度・dpi](https://tsubasa-memo.github.io/glossary/resolution-dpi.html): 印刷とWebで必要な数値が違う。
 - [クラウドソーシング](https://tsubasa-memo.github.io/glossary/crowdsourcing.html): ネット経由で不特定多数に業務を外部委託する仕組み。
+- [クリッピングパス](https://tsubasa-memo.github.io/glossary/clipping-path.html): Photoshopのペンツールで対象物の輪郭に沿ってパスを描き、背景を透過させる切り抜き技法。EC商品画像の外注で「パス付き納品」の指定が出る。
 - [クローラー](https://tsubasa-memo.github.io/glossary/crawler.html): 検索エンジンがWebページを自動巡回するプログラム。
 - [黒つぶれ](https://tsubasa-memo.github.io/glossary/crushed-blacks.html): 暗い部分が真っ黒になって細部が見えなくなる現象。
 - [景品表示法](https://tsubasa-memo.github.io/glossary/keihyouhou.html): EC商品ページの不当表示を禁止する法律。二重価格・ステマ規制を整理。
@@ -631,6 +634,7 @@
 - [白抜き](https://tsubasa-memo.github.io/glossary/background-removal.html): EC商品画像の背景を白にする処理。無料ツールと外注の比較。
 - [白飛び](https://tsubasa-memo.github.io/glossary/whiteout.html): 明るい部分が真っ白になって階調が失われる現象。
 - [上代・下代](https://tsubasa-memo.github.io/glossary/jodai-gedai.html): 定価と仕入れ値を指すEC・小売の価格用語。
+- [静的サイト](https://tsubasa-memo.github.io/glossary/static-site.html): あらかじめ用意したHTMLファイルをそのまま表示するWebサイト。WordPressなど動的サイトとの違い、GitHub Pagesでの運営メリットを整理。
 - [センサーサイズ](https://tsubasa-memo.github.io/glossary/sensor-size.html): カメラのイメージセンサーの大きさ。フルサイズとAPS-Cの違い。
 - [セッション・PV・UU](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): アクセス解析の3つの基本指標。
 - [ダイナミックレンジ](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラが記録できる明暗の幅。
@@ -656,6 +660,7 @@
 - [ミラーレス](https://tsubasa-memo.github.io/glossary/mirrorless.html): 反射鏡を省いたレンズ交換式カメラ。一眼レフとの違いを整理。
 - [モックアップ](https://tsubasa-memo.github.io/glossary/mockup.html): デザイン確認用の見本。
 - [ライティング](https://tsubasa-memo.github.io/glossary/lighting.html): 撮影で被写体に当てる光の配置と質の設計。
+- [横持ちコスト](https://tsubasa-memo.github.io/glossary/cross-docking-cost.html): 商品を倉庫から撮影スタジオなど別拠点へ移動させる際の物流費。ささげ外注の損益分岐点で見落としやすい費目。
 - [楽天RMS](https://tsubasa-memo.github.io/glossary/rakuten-rms.html): 楽天市場の出店者向け管理画面。
 - [楽天スーパーSALE](https://tsubasa-memo.github.io/glossary/rakuten-super-sale.html): 楽天最大のセールイベント。
 - [リードタイム](https://tsubasa-memo.github.io/glossary/lead-time.html): 発注から納品までにかかる日数のこと。
