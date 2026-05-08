@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>クラウドソーシングの不満を調べた｜発注側も受注側も地雷が多い理由｜ツバサのメモ帳</title>
+<meta name="description" content="クラウドワークスやランサーズの不満を発注側・受注側の両方から調べた。低単価と手数料20%に苦しむワーカー、品質のバラつきや音信不通に悩むクライアント。2026年はAI生成の丸投げ納品も問題になっている。使う前に知りたかったことの備忘録。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/crowdsourcing-complaints.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/crowdsourcing-complaints.html">
+<meta property="og:title" content="クラウドソーシングの不満を調べた｜発注側も受注側も地雷が多い理由">
+<meta property="og:description" content="クラウドワークスやランサーズの不満を発注側・受注側の両方から調べた。低単価と手数料20%に苦しむワーカー、品質のバラつきや音信不通に悩むクライアント。2026年はAI生成の丸投げ納品も問題になっている。使う前に知りたかったことの備忘録。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/crowdsourcing-complaints.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/crowdsourcing-complaints.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/crowdsourcing-complaints.png">
+<link rel="icon" href="/favicon.ico">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f4;--text:#2d2d2d;--text-sub:#666;--accent:#2e6b8a;--accent-light:#e8f0f5;--border:#e0ddd8;--card:#fff;--voice-bg:#fff8f0;--voice-border:#f0c880;--answer-bg:#f0f4f7;--link:#2e6b8a;--tag-bg:#f2f0ec}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--border);padding:18px 0}header .wrap{display:flex;align-items:center;justify-content:space-between}.site-name{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.5px}.site-nav{display:flex;gap:16px}.site-nav a{font-size:12px;color:var(--text-sub);text-decoration:none;padding:3px 10px;background:var(--tag-bg);border-radius:20px}.site-nav a:hover{color:var(--accent);text-decoration:none}
+nav.breadcrumb{font-size:13px;color:var(--text-sub);padding:12px 0;border-bottom:1px solid var(--border);background:#fff}nav.breadcrumb a{color:var(--text-sub)}
+.hero{background:linear-gradient(135deg,#1a8a7a 0%,#0f5e52 100%);color:#fff;padding:56px 0 48px;text-align:center}.hero h1{font-size:24px;line-height:1.5;font-weight:700;margin-bottom:16px;letter-spacing:.5px}.hero .update{font-size:13px;opacity:.85}
+main{padding:48px 0 64px}main h2{font-size:20px;font-weight:700;color:var(--accent);margin:48px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--accent)}main h2:first-of-type{margin-top:0}main h3{font-size:17px;font-weight:700;margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--accent)}main p{margin-bottom:20px}main ul,main ol{margin:0 0 20px 24px}main li{margin-bottom:8px;font-size:15px}
+.author-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin:40px 0;display:flex;gap:20px;align-items:flex-start}.author-box .author-icon{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden}.author-box .author-icon img{width:100%;height:100%}.author-box .author-text p{font-size:14px;color:var(--text-sub);margin-bottom:8px;line-height:1.7}.author-box .author-text p:last-child{margin-bottom:0}.author-box .author-name{font-weight:700;font-size:15px;color:var(--text);margin-bottom:4px}.author-box p:last-child{margin-bottom:0}
+.compare-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}.compare-table th,.compare-table td{border:1px solid var(--border);padding:12px 14px;text-align:left;vertical-align:top}.compare-table th{background:var(--accent-light);color:var(--accent);font-weight:700;white-space:nowrap}.compare-table td{background:#fff}
+.point-box{background:var(--accent-light);border-radius:10px;padding:20px 24px;margin:24px 0}.point-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:10px}.point-box p{font-size:14px;margin-bottom:8px}.point-box p:last-child{margin-bottom:0}
+.faq-section{margin:48px 0 0}.faq-section h2{margin-bottom:20px}.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px}.faq-item .fq{font-weight:700;font-size:15px;margin-bottom:12px}.faq-item .fa{font-size:14px;color:var(--text-sub);line-height:1.8}
+.related{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;margin:48px 0}.related h3{font-size:15px;font-weight:700;margin-bottom:12px;padding-left:0;border-left:none}.related p{font-size:14px;margin-bottom:8px}.related p:last-child{margin-bottom:0}
+footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:13px;color:var(--text-sub)}
+@media(max-width:600px){.hero h1{font-size:20px}.author-box{flex-direction:column;align-items:center;text-align:center}.compare-table{font-size:13px}.compare-table th,.compare-table td{padding:8px 10px}}
+.note{font-size:.85em;color:#888;margin-top:-.5em}
+.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
+.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
+.cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
+.cite-card .cite-body{min-width:0;flex:1}
+.cite-card .cite-title{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cite-card .cite-url{font-size:11px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.footer-links{margin-bottom:12px}.footer-links a{margin:0 12px;color:var(--text-sub);font-size:13px}.footer-links a:hover{color:var(--accent)}
+a.glossary-inline{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px}
+a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:none}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "クラウドソーシングの不満を調べた｜発注側も受注側も地雷が多い理由",
+  "description": "クラウドワークスやランサーズの不満を発注側・受注側の両方から調べた。低単価と手数料20%に苦しむワーカー、品質のバラつきや音信不通に悩むクライアント。2026年はAI生成の丸投げ納品も問題になっている。使う前に知りたかったことの備忘録。",
+  "url": "https://tsubasa-memo.github.io/crowdsourcing-complaints.html",
+  "image": "https://tsubasa-memo.github.io/og/crowdsourcing-complaints.png",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-08",
+  "dateModified": "2026-05-08",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "クラウドワークスとランサーズはどちらがいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "案件数はクラウドワークスが約300万件、ランサーズが約210万件でクラウドワークスが多い。手数料はクラウドワークスが最大20%（税込22%）、ランサーズが16.5%でランサーズの方がやや安い。どちらも登録は無料なので、両方に登録して案件を見比べてから決めるのが現実的。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "クラウドソーシングの手数料は高すぎる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "クラウドワークスの場合、10万円以下の案件は20%（税込22%）が引かれる。1万円の案件なら手取りは8,580円。ランサーズは16.5%、ココナラは22%。仮払い管理やトラブル仲介の対価ではあるが、低単価案件では手数料が利益を圧迫するのは事実。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AI生成の納品物が届いたらどうする？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026年5月時点で、クラウドワークスにはAI生成物を明確に禁止するルールがない。ランサーズは使用を控えるよう案内している。発注側から見ると、コンペ形式なら集まった中からまともな成果物を選べばいい。プロジェクト形式で1人に発注してAIスロップを納品されると全部やり直しになる。一方、受注側から見ると、コンペはAIを使わず時間をかけても選ばれないリスクがある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "EC商品画像のレタッチをクラウドソーシングで頼むのはあり？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可能だが品質のバラつきが大きい。切り抜き・白抜きなどの定型作業は切り抜きjpや写真加工屋さんなどの専門サービスの方が品質が安定する。クラウドワークスやランサーズは継続して頼める個人を見つけられれば強みになるが、そこに至るまでの試行錯誤がある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "写真系の副業でクラウドソーシングは稼げる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "簡単ではない。画像加工やバナー制作は1件500〜2,000円が相場で、手数料を引くと時給換算で最低賃金を下回ることも多い。ストックフォトやSNS経由の直接営業の方が手数料がかからない分、手取りは良くなる。クラウドワークス・ランサーズは実績ゼロの段階で最初の案件を獲得する場としては使える。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "副業", "item": "https://tsubasa-memo.github.io/archive.html?cat=sidejob"},
+    {"@type": "ListItem", "position": 3, "name": "クラウドソーシングの不満を調べた"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="site-name">ツバサのメモ帳</a>
+    <nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+  </div>
+</header>
+<div class="site-search-wrap">
+<div class="wrap">
+<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</div>
+
+<nav class="breadcrumb">
+  <div class="wrap">
+    <a href="/">ホーム</a> &gt; <a href="/archive.html?cat=sidejob">副業</a> &gt; クラウドソーシングの不満を調べた
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>クラウドソーシングの不満を調べた<br>発注側も受注側も地雷が多い理由</h1>
+    <div class="update">最終更新：2026年5月</div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <p>こんにちは、ツバサです。</p>
+
+    <p>EC商品画像のレタッチを外注しようとしたとき、クラウドワークスやランサーズが候補に挙がった。僕はPhotoshopが苦手なので、画像加工は誰かに頼みたい側の人間だ。画像以外にも、商品登録や商品撮影を手伝ってくれる人を探す場面はありそうだし、逆にこのブログを書いている経験を活かしてライティング案件を受ける側にもなれるかもしれないと思ったことがある。</p>
+
+    <p>ところが調べるほど「低単価で消耗した」「納品されなかった」「AIで作っただけの成果物が届いた」という声が目に入って、発注側としても受注側としても踏み出せないまま今日に至っている。</p>
+
+    <p>この記事では、両方の立場の不満をXの投稿や掲示板の声から整理した。僕自身はどちらの立場でも使ったことがないので、あくまで「調べた側」の視点になる。同じように迷っている人の判断材料になれば。</p>
+
+    <h2>受注側（ワーカー）に多い不満</h2>
+
+    <h3>低単価案件と手数料の二重苦</h3>
+
+    <p>クラウドワークスのシステム利用料は、契約金額10万円以下の部分に20%（税込22%）がかかる。1万円の案件を受けた場合、消費税の計算を含めると手取りは8,580円になる。ランサーズは16.5%、ココナラは22%で、どのプラットフォームでも安くはない。</p>
+
+    <a class="cite-card" href="https://crowdworks.jp/pages/guides/employee/fee" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">ワーカーシステム利用料 - クラウドワークス</span>
+<span class="cite-url">crowdworks.jp</span>
+</span>
+</a>
+
+    <p>これに加えて、文字単価0.5円以下のライティングやイラスト1枚500円といった低単価案件がプラットフォーム上に大量にある。Xでは「低単価すぎる、コンペは消耗する」とクラウドソーシングを離れたデザイナーの投稿を見かけた。振込手数料も楽天銀行なら100円だがその他は500円。少額案件だと手数料だけで利益が吹き飛ぶ。</p>
+
+    <table class="compare-table">
+      <tr>
+        <th>プラットフォーム</th>
+        <th>手数料率</th>
+        <th>振込手数料</th>
+      </tr>
+      <tr>
+        <td>クラウドワークス</td>
+        <td>20%（10万円以下）/ 10% / 5%</td>
+        <td>楽天銀行100円、他500円</td>
+      </tr>
+      <tr>
+        <td>ランサーズ</td>
+        <td>16.5%</td>
+        <td>楽天銀行100円、他500円</td>
+      </tr>
+      <tr>
+        <td>ココナラ</td>
+        <td>22%</td>
+        <td>160円（3,000円以上は無料）</td>
+      </tr>
+    </table>
+    <p class="note">※ 各サービス公式ページの情報をもとに作成（2026年5月時点）</p>
+
+    <h3>クライアントの質に当たり外れがある</h3>
+
+    <p>仮払い前に作業を強要して、納品後に連絡が途絶えるケース。テストライティングと称して無報酬で記事を書かせるケース。これらはクラウドワークスの規約違反にあたるが、初心者ワーカーは知らずに応じてしまうことがある。</p>
+
+    <p>イケハヤ氏はXで、クラウドソーシングを入り口にして高額商材を売りつける手口が一般的に行われていると注意喚起している。クラウドワークス公式アカウントも2025年3月に詐欺行為への注意喚起を出しており、プラットフォーム側も問題を認識はしている。ただ、掲示板を見る限り悪質な案件が減っている様子はない。</p>
+
+    <a class="cite-card" href="https://x.com/IHayato/status/2026946127061532862" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">イケハヤ氏のX投稿 - クラウドソーシング経由の高額商材勧誘への注意喚起</span>
+<span class="cite-url">x.com/IHayato</span>
+</span>
+</a>
+
+    <h3>どの職種でも稼ぎにくい構造がある</h3>
+
+    <p>ライティングの場合、文字単価0.5円以下の案件は珍しくない。5,000文字書いて2,500円、そこから手数料を引かれて手取り2,000円を切る。2026年に入ってからは、AIで記事を生成するクライアントが増えたことでライティング案件自体が減少しているとの声もある。</p>
+
+    <p>Web制作はもう少し単価が高いが、クラウドワークスの掲示板では「プラットフォーム内に仲介業者が入っていて中抜きされている」という指摘がある。本来の発注元が払った金額とワーカーが受け取る金額の間に、見えない中間マージンが乗っている構造だ。</p>
+
+    <p>写真・レタッチ系も同様で、切り抜き1枚数十円、バナー制作1枚500〜2,000円あたりが相場感。手数料を引いた時給換算で最低賃金を下回ることも珍しくない。コンペ形式なら採用されなければ丸ごとタダ働きになる。写真系スキルで副業を考えるなら、<a href="/stockphoto-sidejob.html">ストックフォト</a>やSNS経由の直接営業も並行して検討した方がよさそうだ。</p>
+
+    <h2>発注側（クライアント）に多い不満</h2>
+
+    <h3>ワーカーの品質が読めない</h3>
+
+    <p>発注経験者の声で目立つのは、プロフィールと実力のギャップだ。応募時のポートフォリオは立派なのに、実際の成果物がまるで違うという指摘は多い。</p>
+
+    <p>あるクライアントはXで、ワーカーから「評価★5でお願いします、みんなそうしてます」と打診されたと投稿していた。★5の相互慣れ合いが常態化すると、評価システム自体が機能しなくなる。</p>
+
+    <p>途中放棄もよく目にする。クラウドワークスの掲示板では「頼んでいた人が初稿提出日の当日に飛んだ」という声があり、ランサーズでも「キャンセルを申し出たら拒否された上、何も納品せずに完了報告ボタンを押された」というトラブル事例が報告されている。</p>
+
+    <a class="cite-card" href="https://goworkship.com/magazine/crowdworks/" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">クラウドワークスの評判は？利用歴5年のユーザーが口コミを分析 - Workship MAGAZINE</span>
+<span class="cite-url">goworkship.com</span>
+</span>
+</a>
+
+    <h3>EC業務の外注で起きやすいリスク</h3>
+
+    <p>EC運営で外注する可能性がある作業は、商品画像の加工だけではない。商品説明文のライティング、バナー制作、商品情報のデータ入力、商品登録、商品撮影なども候補に入る。どの作業でも共通するのは、「業務の前提知識がないワーカーに当たるリスク」だ。</p>
+
+    <p>商品説明文を頼んだのに、検索で拾ったカタログ情報をつなげただけの文章が来る。商品登録を任せたのに、モール独自のルールを知らずに差し戻しになる。EC商品画像の「<a href="/glossary/background-removal.html" class="glossary-inline">白抜き</a>」を指示したのに純白（RGB 255,255,255）にならない。こうしたケースは伝え方の問題ではなく、そもそもの前提知識がない相手に当たっている。</p>
+
+    <p>画像加工に関しては、<a href="/background-cutout-outsource.html">切り抜きjpや写真加工屋さん</a>のような専門サービスなら「白抜き」「影イキ」「パス付き」など業界用語が通じるし品質も安定する。クラウドワークスで個人ワーカーを探すメリットは「この人に継続で頼める関係を作れること」だが、そこに至るまでの試行錯誤は避けられない。</p>
+
+    <h2>2026年に表面化したAIスロップ問題</h2>
+
+    <h3>コンペにAI生成物が大量に届く</h3>
+
+    <p>2026年5月、LP専門のWebデザイナーであるかたおか氏（LP制作450件超・著書2冊）がXに投稿した内容が目に留まった。クラウドワークスのLP制作コンペに65件の応募があり、そのほとんどがAI生成デザインをそのまま貼り付けたものだったという。採用されたのは人間のデザイナーが作ったLPだったが、リプライ欄では深刻な問題提起が続いていた。</p>
+
+    <a class="cite-card" href="https://x.com/kataokadesign/status/2052613466717065529" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">かたおか氏のX投稿 - クラウドワークスコンペのAI生成物問題</span>
+<span class="cite-url">x.com/kataokadesign</span>
+</span>
+</a>
+
+    <p>海外のデザイン特化型クラウドソーシングである99designsはAI生成物に対して厳しい姿勢を取っており、デザイナー登録は審査制で通過率は約10%とのこと。一方、クラウドワークスはAI生成物を明確に禁止しておらず、ランサーズは「控えてほしい」という案内に留まっている。この温度差が、AI丸投げ応募の温床になっている。</p>
+
+    <p>こうした低品質なAI生成コンテンツは「<a href="https://ja.wikipedia.org/wiki/AI%E3%82%B9%E3%83%AD%E3%83%83%E3%83%97" target="_blank" rel="noopener">AIスロップ</a>」と呼ばれ、クラウドソーシングに限らずインターネット全体で問題視されている。発注者がAI生成物を見分けて弾く手間が増えるということは、「人を探す場所」としてのプラットフォームの信頼が揺らいでいるということだ。</p>
+
+    <h3>プラットフォームの構造が変わりつつある</h3>
+
+    <p>クラウドワークスは2026年Q1決算で営業利益が前年同期比84.4%減、純利益95.6%減という数字を出した。ただ、この減益の主因はDXコンサル事業への先行投資で、売上高自体はほぼ横ばい。「AIに仕事を奪われたからプラットフォームが崩壊した」という解釈はX上で広まったが、決算書を読むと単純な話ではない。</p>
+
+    <a class="cite-card" href="https://coki.jp/stakeholder/supplier/69003/" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">クラウドワークス95%減益はAIのせい？決算の真相と「仕事が消えた」ライターの悲鳴 - coki</span>
+<span class="cite-url">coki.jp</span>
+</span>
+</a>
+
+    <p>ランサーズの2025年発注トレンドでは、2年連続1位だった「AI・機械学習・ChatGPT」関連案件が10位に転落し、代わりに「デザインデータ修正・変換」が1位になった。AIが素材を作り、人間がその仕上げや品質管理を担う分業が定着しつつある。</p>
+
+    <p>ワーカー側もAIで案件応募を自動化している印象があると、先述のかたおか氏は指摘している。クラウドソーシングという仕組み自体が「人間同士のマッチングの場」から「AIの成果物を人間が選別する場」へ変わりつつあるのかもしれない。</p>
+
+    <h2>使う前に知っておきたい判断基準</h2>
+
+    <p>調べた結果を踏まえて、自分なりの判断基準を整理しておく。</p>
+
+    <h3>発注側として使うなら</h3>
+
+    <p>ワーカーの過去評価・完了率・ポートフォリオは必ず確認する。仮払い制度（エスクロー）は絶対に使う。AIスロップ対策としては、コンペ形式なら大量の応募の中からまともな成果物を選べばいい。プロジェクト形式で1人に発注してAI丸投げの納品物に当たった場合、最初から全部やり直しになるのでダメージが大きい。画像系の定型作業（切り抜き・白抜き）は、クラウドワークスで個人を探すより<a href="/retouch-services.html">専門サービス</a>の方が結果的に早くて安いケースもある。まずはテスト発注を1〜2件試してから継続を判断するのが安全だ。</p>
+
+    <h3>受注側として使うなら</h3>
+
+    <p>手数料込みの時給換算を先に計算する。仮払い前に作業を始めないのは鉄則で、クラウドワークスの規約でも禁止されている。クライアントの評価が極端に低い案件、本人確認なしの案件、LINEなど外部ツールに誘導する案件は避けた方がいい。</p>
+
+    <p>コンペ形式は発注側だけでなく受注側にもリスクがある。AIを使わずに時間をかけて作っても、選ばれなければその時間は丸ごと消える。AI丸投げの応募が増えている現状では、まともに作った人が報われにくい構造になっている。</p>
+
+    <div class="point-box">
+      <h4>ツバサの現時点の判断</h4>
+      <p>調べた結果、自分はまだクラウドソーシングを使わないことにした。EC画像の外注は<a href="/retouch-cost-guide.html">専門サービスの方が自分には合いそう</a>だと感じている。副業で使うなら、手数料と時給計算を冷静にやってから登録する。どちらにしても、「とりあえず登録してみよう」の前にこの記事で整理した程度のリスクは把握しておいた方がいい。</p>
+    </div>
+
+    <div class="faq-section">
+      <h2>よくある質問</h2>
+
+      <div class="faq-item">
+        <div class="fq">Q. クラウドワークスとランサーズはどちらがいい？</div>
+        <div class="fa">案件数はクラウドワークスが約300万件、ランサーズが約210万件でクラウドワークスが多い。手数料はクラウドワークスが最大20%（税込22%）、ランサーズが16.5%でランサーズの方がやや安い。どちらも登録は無料なので、両方に登録して案件を見比べてから決めるのが現実的。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="fq">Q. クラウドソーシングの手数料は高すぎる？</div>
+        <div class="fa">クラウドワークスの場合、10万円以下の案件は20%（税込22%）が引かれる。1万円の案件なら手取りは8,580円。ランサーズは16.5%、ココナラは22%。仮払い管理やトラブル仲介の対価ではあるが、低単価案件では手数料が利益を圧迫するのは事実。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="fq">Q. AI生成の納品物が届いたらどうする？</div>
+        <div class="fa">2026年5月時点で、クラウドワークスにはAI生成物を明確に禁止するルールがない。ランサーズは使用を控えるよう案内している。発注側から見ると、コンペ形式なら集まった中からまともな成果物を選べばいい。プロジェクト形式で1人に発注してAIスロップを納品されると全部やり直しになる。一方、受注側から見ると、コンペはAIを使わず時間をかけても選ばれないリスクがある。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="fq">Q. EC商品画像のレタッチをクラウドソーシングで頼むのはあり？</div>
+        <div class="fa">可能だが品質のバラつきが大きい。切り抜き・白抜きなどの定型作業は切り抜きjpや写真加工屋さんなどの専門サービスの方が品質が安定する。クラウドワークスやランサーズは継続して頼める個人を見つけられれば強みになるが、そこに至るまでの試行錯誤がある。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="fq">Q. 写真系の副業でクラウドソーシングは稼げる？</div>
+        <div class="fa">簡単ではない。画像加工やバナー制作は1件500〜2,000円が相場で、手数料を引くと時給換算で最低賃金を下回ることも多い。ストックフォトやSNS経由の直接営業の方が手数料がかからない分、手取りは良くなる。クラウドワークス・ランサーズは実績ゼロの段階で最初の案件を獲得する場としては使える。</div>
+      </div>
+    </div>
+
+    <div class="author-box">
+      <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+      <div class="author-text">
+        <p class="author-name">ツバサ</p>
+        <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+      </div>
+    </div>
+
+    <div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="/background-cutout-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">背景切り抜きの費用相場まとめ｜1枚39円から依頼できる外注先比較</span>
+<span class="cite-url">tsubasa-memo.github.io/background-cutout-outsource.html</span>
+</span>
+</a>
+<a class="cite-card" href="/retouch-services.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチ外注先の比較｜個人向けサービスの選び方</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-services.html</span>
+</span>
+</a>
+<a class="cite-card" href="/retouch-cost-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチ料金の相場まとめ｜種類別の費用感メモ</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-cost-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="/personal-retouch-order.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人でレタッチを外注する方法｜どこに頼めばいくらかかるか</span>
+<span class="cite-url">tsubasa-memo.github.io/personal-retouch-order.html</span>
+</span>
+</a>
+<a class="cite-card" href="/stockphoto-sidejob.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ストックフォト副業の始め方｜写真を売って稼ぐリアルな収入</span>
+<span class="cite-url">tsubasa-memo.github.io/stockphoto-sidejob.html</span>
+</span>
+</a>
+</div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
