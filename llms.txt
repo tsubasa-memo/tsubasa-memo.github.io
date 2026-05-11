@@ -506,6 +506,12 @@
 
 ### SEO・LLMO
 
+- [note・WordPress・GitHub Pages比較｜費用からAI検索まで](https://tsubasa-memo.github.io/blog-platform-comparison.html): note・WordPress・GitHub Pagesの3つを費用・収益化・カスタマイズ性・AI検索（LLMO）対応の4軸で比較した記事。GitHub Pagesで90本以上運営し、Perplexityに引用された実体験からAI検索への対応差も整理している
+  - Q: ブログ初心者にはnote・WordPress・GitHub Pagesのどれがおすすめですか？
+  - Q: noteからWordPressやGitHub Pagesに引っ越せますか？
+  - Q: WordPressの維持費は月にいくらかかりますか？
+  - Q: AI検索に引用されるにはllms.txtが必須ですか？
+  - Q: GitHub Pagesは完全無料で使えますか？
 - [AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録](https://tsubasa-memo.github.io/ai-blog-building.html): GitHubもHTMLも知らなかった非エンジニアがAIに聞きながらGitHub Pagesでブログを構築した記録。Claude・Claude Codeの使い分け、SEO/LLMO設計、つまずきポイントをまとめた記事
   - Q: AIでブログを構築するのにいくらかかりますか？
   - Q: プログラミングの知識がなくてもAIでブログは作れますか？
