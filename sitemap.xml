@@ -1206,4 +1206,10 @@
     <changefreq>monthly</changefreq>
   </url>
   <url><loc>https://tsubasa-memo.github.io/ec-sidejob-pricing.html</loc></url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/ec-ai-image-rules.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
