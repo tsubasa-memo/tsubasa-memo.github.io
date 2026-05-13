@@ -137,8 +137,11 @@ table.compare td,.compare-table td,.spec-table td{background:#fff}
 .related p:last-child{margin-bottom:0}
 
 /* ==== Cite card ==== */
-.cite-card{display:flex;align-items:center;gap:12px;background:#f9f8f5;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s;color:inherit}
-.cite-card:hover{border-color:#aaa;text-decoration:none}
+.cite-card{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0;padding:10px 14px;margin:10px 0 16px;text-decoration:none;transition:border-color .15s,background .15s;color:inherit}
+.cite-card:hover{border-left-color:#148a62;background:#f4faf7;text-decoration:none}
+.cite-card[target="_blank"]::after{content:'\2197';font-size:16px;color:var(--accent);opacity:.45;flex-shrink:0;transition:opacity .15s}
+.cite-card:not([target="_blank"])::after{content:'\203A';font-size:20px;color:var(--accent);opacity:.45;flex-shrink:0;line-height:1;transition:opacity .15s}
+.cite-card:hover::after{opacity:.8}
 .cite-card .cite-ico{width:22px;height:22px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
 .cite-card .cite-ico.ext{background:#e8f0f5;color:#2e6b8a}
 .cite-card .cite-ico.int{background:#e5f2e9;color:#2e7d4f}
