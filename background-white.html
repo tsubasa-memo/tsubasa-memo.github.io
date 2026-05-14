@@ -86,6 +86,14 @@ gtag('config', 'G-YYBFXHXMM6');
         "@type": "Answer",
         "text": "Remove.bgは無料プランでも切り抜き精度自体は高いですが、ダウンロード画像の解像度が低くなります（最大約625×400px）。EC用途で高解像度が必要なら有料プラン（1枚あたり約20〜40円）か、Canva Proの背景除去（月額1,180円で削除し放題）を使う方がコスパが良いです。精度より解像度が差の出るポイントです。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "白抜きと切り抜き（背景透過）は何が違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "白抜きは背景をRGB(255,255,255)の純白にする処理で、ECモールのメイン画像で求められるのはこちらです。切り抜き（透過）は背景を完全に透明にする処理で、PNGの透過画像として使います。AIツールの多くは背景削除＝透過なので、白抜きにするには透過後に白い背景を敷く操作が必要です。"
+      }
     }
   ]
 }
@@ -120,7 +128,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-02-21T00:00:00+09:00",
-  "dateModified": "2026-04-03T00:00:00+09:00",
+  "dateModified": "2026-05-14T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -155,7 +163,7 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <nav class="breadcrumb">
 <div class="wrap">
-<a href="index.html">ホーム</a> ＞ 写真の背景を<a href="/glossary/whiteout.html" class="glossary-inline">白抜き</a>にする方法まとめ
+<a href="index.html">ホーム</a> ＞ 写真の背景を<a href="/glossary/background-removal.html" class="glossary-inline">白抜き</a>にする方法まとめ
 </div>
 </nav>
 
@@ -198,6 +206,8 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <h2 id="sec1">背景を白抜きにする方法は大きく4パターン</h2>
 
+<p>なお、「白抜き」と「切り抜き（背景透過）」は別の概念です。白抜きは背景をRGB(255,255,255)の純白にする処理で、Amazonや楽天の商品画像ルールで求められるのはこちら。切り抜き（透過）は背景を透明にする処理で、合成素材として使う場合に必要です。この記事では主に「白抜き」の方法を扱いますが、工程としてはまず背景を透過で切り抜き、その後に白背景を敷くという流れになります。</p>
+
 <p>写真の背景を白くする方法は、ざっくり4つに分けられます。</p>
 
 <table class="spec-table">
@@ -219,12 +229,28 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>背景削除ツールの定番です。<a href="https://www.remove.bg/ja" target="_blank" rel="noopener noreferrer nofollow">Remove.bgの公式サイト</a>では「AIが自動的に背景を数秒で削除する」と説明されており、画像をアップロードすると5秒ほどで背景が消え、透過<a href="/glossary/png.html" class="glossary-inline">PNG</a>画像をダウンロードできます。人物の髪の毛のような複雑な輪郭もかなり正確に処理してくれます。</p>
 
 <p>無料版はプレビュー用の低<a href="/glossary/resolution-dpi.html" class="glossary-inline">解像度</a>画像（最大約625×400px）のダウンロードが月50枚まで。SNSアイコンやブログのアイキャッチ程度なら十分ですが、EC商品写真のように高<a class="glossary-inline" href="/glossary/resolution-dpi.html">解像度</a>が必要な場合は有料プランが必要です。<a href="https://www.remove.bg/ja/pricing" target="_blank" rel="noopener noreferrer nofollow">公式料金ページ</a>によると、サブスクリプション（月額990円〜/40クレジット）と買い切りクレジット（1枚あたり約20〜70円）の2種類があります。</p>
+<a class="cite-card" href="https://www.remove.bg/ja" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">Remove.bg｜画像の背景を自動で削除 - AI背景除去ツール</span>
+<span class="cite-url">remove.bg</span>
+</span>
+</a>
+
 
 <h3>PicWish</h3>
 
 <p>中国のAI企業が提供する背景削除ツール。<a href="https://picwish.com/ja/" target="_blank" rel="noopener noreferrer nofollow">PicWishの公式サイト</a>では「AIが自動的に複雑な背景も高精度で除去」と説明されており、Remove.bgと同等かそれ以上の精度との評価もあります。無料でもそこそこの解像度で使えるのが特徴で、背景削除のほかに画像の高画質化（アップスケール）機能もあります。</p>
 
 <p>noteでWebエンジニアのkomzさんが<a href="https://note.com/komzweb/n/n3324586bca65" target="_blank" rel="noopener noreferrer">AI背景除去ツールを性能比較した記事</a>を公開しており、複数のツールを同じ写真で比較した検証が参考になります。また、<a href="https://retouch.tokyo/column/ai-kirinuki-tools-comparison/" target="_blank" rel="noopener noreferrer nofollow">東京レタッチのコラム</a>でもAI切り抜きツールの比較がまとめられています。</p>
+<a class="cite-card" href="https://picwish.com/ja/" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">PicWish｜AI画像背景除去・高画質化ツール</span>
+<span class="cite-url">picwish.com</span>
+</span>
+</a>
+
 
 <h3>iLoveIMG</h3>
 
@@ -260,6 +286,14 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><a href="https://www.adobe.com/jp/products/photoshop/remove-background.html" target="_blank" rel="noopener noreferrer nofollow">Adobeの公式ページ</a>では「Photoshopの背景削除はAIが被写体を認識し、数クリックで自然な切り抜きが可能」と説明されています。「被写体を選択」機能でAI自動選択した後、「選択とマスク」で髪の毛などの細部を手動で微調整できます。Adobe フォトプラン（Photoshop + Lightroom）で月額2,380円です。</p>
 
 <p>僕はPhotoshopが苦手なので使いこなせていませんが、仕上がりの自由度は間違いなく最高です。</p>
+<a class="cite-card" href="https://www.adobe.com/jp/products/photoshop/remove-background.html" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">Photoshopの背景削除｜AIで自然な切り抜きが可能 - Adobe</span>
+<span class="cite-url">adobe.com</span>
+</span>
+</a>
+
 
 <h3>Canva Pro</h3>
 
@@ -328,6 +362,14 @@ A. iPhoneの「写真の切り抜き」機能や、PhotoRoomなどのアプリ�
 
 A. Remove.bgは無料プランでも切り抜き精度自体は高いですが、ダウンロード画像の解像度が低くなります（最大約625×400px）。EC用途で高解像度が必要なら有料プラン（1枚あたり約20〜40円）か、Canva Proの背景除去（月額1,180円で削除し放題）を使う方がコスパが良いです。精度より解像度が差の出るポイントです。</div>
 </div>
+
+<div class="faq-item">
+<div class="fq">Q. 「白抜き」と「切り抜き（背景透過）」は何が違いますか？</div>
+<div class="fa">
+
+A. 白抜きは背景をRGB(255,255,255)の純白にする処理で、ECモールのメイン画像で求められるのはこちらです。切り抜き（透過）は背景を完全に透明にする処理で、PNGの透過画像として合成やデザインに使う場合に必要です。AIツールの多くは「背景削除＝透過」なので、白抜きにするには透過後に白い背景を敷く操作が必要になります。</div>
+</div>
+
 </div>
 
 <div class="related">
