@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,35 +139,62 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 出荷指示書
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>出荷指示書とは？<br>物流会社への依頼に必要なものを調べた</h1>
+<div class="article-hero">
+<img alt="出荷指示書とは？物流会社への依頼に必要なものを調べた" height="360" loading="eager" src="/thumbs/glossary/shipping-instruction.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/shipping-instruction.png" alt="出荷指示書とは？物流会社への依頼に必要なものを調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">出荷指示書とは？<br/>物流会社への依頼に必要なものを調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>出荷指示書とは</h2>
-
 <p>ひとことで言うと、倉庫に対して「いつ・どこに・何を・いくつ出荷するか」を指示するための書類だ。受注内容をもとに作成し、倉庫側はこの指示書をもとにピッキング・梱包・出荷を行う。</p>
-
-<p><a href="https://s-flow.net/column/shipping-instructions/" target="_blank" rel="noopener noreferrer">s-flowの解説</a>によると、出荷指示書に記載する基本項目は以下のとおり。</p>
-
+<p><a href="https://s-flow.net/column/shipping-instructions/" rel="noopener noreferrer" target="_blank">s-flowの解説</a>によると、出荷指示書に記載する基本項目は以下のとおり。</p>
 <ul>
 <li>出荷先の氏名・住所・電話番号</li>
 <li>商品名・商品コード・数量</li>
@@ -175,37 +202,21 @@
 <li>配送方法（宅配便・メール便・クール便など）</li>
 <li>備考（ギフト包装の有無、同梱チラシの指定など）</li>
 </ul>
-
-<p>似た言葉に「ピッキングリスト」があるけど、<a href="https://www.aiship.jp/ec-column/picking-list" target="_blank" rel="noopener noreferrer">aishipの解説</a>を読むと、出荷指示書は出荷先情報や配送方法を含む「指示全体」を記載した書類で、ピッキングリストはそこから倉庫内での商品集め作業に必要な情報だけを抜き出したもの、という違いがある。WMSを使っている倉庫では、出荷指示データを取り込むとピッキングリストが自動生成される仕組みになっていることが多い。</p>
-
+<p>似た言葉に「ピッキングリスト」があるけど、<a href="https://www.aiship.jp/ec-column/picking-list" rel="noopener noreferrer" target="_blank">aishipの解説</a>を読むと、出荷指示書は出荷先情報や配送方法を含む「指示全体」を記載した書類で、ピッキングリストはそこから倉庫内での商品集め作業に必要な情報だけを抜き出したもの、という違いがある。WMSを使っている倉庫では、出荷指示データを取り込むとピッキングリストが自動生成される仕組みになっていることが多い。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <h3>3PL業者への出荷依頼</h3>
-
-<p>物流を3PL業者に委託している場合、毎日の出荷指示は出荷指示書（またはCSVデータ）で行うことになる。<a href="https://ecnomikata.com/ecnews/33115/" target="_blank" rel="noopener noreferrer">ECのミカタの記事</a>にも書いてあったけど、出荷指示のフォーマットは業者ごとに違うので、契約時にどの形式で送ればいいか確認しておく必要がある。</p>
-
+<p>物流を3PL業者に委託している場合、毎日の出荷指示は出荷指示書（またはCSVデータ）で行うことになる。<a href="https://ecnomikata.com/ecnews/33115/" rel="noopener noreferrer" target="_blank">ECのミカタの記事</a>にも書いてあったけど、出荷指示のフォーマットは業者ごとに違うので、契約時にどの形式で送ればいいか確認しておく必要がある。</p>
 <h3>受注から出荷までの業務フロー</h3>
-
 <p>ECサイトで注文が入ってから出荷するまでの流れは、おおまかに「受注確認 → 出荷指示書の作成 → ピッキング → 梱包 → 出荷 → 追跡番号の登録」となる。出荷指示書はこの流れの起点になる書類だから、ここでミスがあると後工程すべてに影響が出る。</p>
-
 <h3>特別な梱包指示が必要なとき</h3>
-
-<p>ギフト注文で包装紙やリボンが必要だったり、キャンペーンのチラシを同梱したりする場合は、出荷指示書の備考欄にその旨を書いておく。<a href="https://www.rakurakuhanbai.jp/column/2020/0304.php" target="_blank" rel="noopener noreferrer">楽楽販売のコラム</a>でも、備考欄を活用した指示の出し方が紹介されていた。口頭やメールで別途伝えると抜け漏れが起きやすいので、出荷指示書に集約するのが鉄則だ。</p>
-
+<p>ギフト注文で包装紙やリボンが必要だったり、キャンペーンのチラシを同梱したりする場合は、出荷指示書の備考欄にその旨を書いておく。<a href="https://www.rakurakuhanbai.jp/column/2020/0304.php" rel="noopener noreferrer" target="_blank">楽楽販売のコラム</a>でも、備考欄を活用した指示の出し方が紹介されていた。口頭やメールで別途伝えると抜け漏れが起きやすいので、出荷指示書に集約するのが鉄則だ。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>手作業の出荷指示はミスの温床</h3>
-
-<p>受注データをExcelにコピペして出荷指示書を作っていた時期があるけど、住所の転記ミスや数量の入力間違いが何度か起きた。<a href="https://www.sk-hanbai.com/ship/ship02_nouhin.html" target="_blank" rel="noopener noreferrer">販売管理の知識サイト</a>にも書いてあったけど、出荷件数が増えてきたら受注データから出荷指示を自動生成する仕組みに切り替えたほうがいい。</p>
-
+<p>受注データをExcelにコピペして出荷指示書を作っていた時期があるけど、住所の転記ミスや数量の入力間違いが何度か起きた。<a href="https://www.sk-hanbai.com/ship/ship02_nouhin.html" rel="noopener noreferrer" target="_blank">販売管理の知識サイト</a>にも書いてあったけど、出荷件数が増えてきたら受注データから出荷指示を自動生成する仕組みに切り替えたほうがいい。</p>
 <h3>出荷指示の締め時間を確認する</h3>
-
 <p>3PL業者には「当日出荷の出荷指示は○時まで」という締め時間がある。たとえば「14時までに受けた出荷指示は当日出荷、14時以降は翌営業日出荷」というルールが多い。この締め時間を超えると出荷が1日遅れるので、リードタイムにも影響する。</p>
-
 <h3>WMS連携で出荷指示を自動化する</h3>
-
 <p>ECカートやモールの受注データをWMSにAPI連携させれば、注文が入った時点で出荷指示が自動生成される。手動でCSVを作って送る手間がなくなるし、転記ミスもゼロになる。出荷件数が1日数十件を超えてきたら、この自動化は真剣に検討したほうがいい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -216,35 +227,35 @@
 <li><a href="lead-time.html">リードタイム</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

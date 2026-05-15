@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,69 +139,79 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; SKU
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>SKUとは？<br>EC担当なら知っておきたい在庫管理の最小単位</h1>
+<div class="article-hero">
+<img alt="SKUとは？EC担当なら知っておきたい在庫管理の最小単位" height="360" loading="eager" src="/thumbs/glossary/sku.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/sku.png" alt="SKUとは？EC担当なら知っておきたい在庫管理の最小単位" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">SKUとは？<br/>EC担当なら知っておきたい在庫管理の最小単位</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>SKUとは</h2>
-
 <p>ひとことで言うと、SKUは「Stock Keeping Unit（ストック・キーピング・ユニット）」の略で、在庫管理における最小の単位のこと。商品をこれ以上分けられないレベルまで細かく分類したときの1つ1つを指す。</p>
-
-<p><a href="https://www.macromill.com/service/words/sku/" target="_blank" rel="noopener noreferrer">マクロミルの用語解説</a>によると、同じ商品名でも色やサイズが違えば別のSKUとして扱うらしい。たとえばTシャツ1型を白・黒の2色、S・M・Lの3サイズで売っている場合、2色×3サイズ＝6SKUになる。</p>
-
-<p>似た言葉に「アイテム」があるけど、アイテムは色やサイズを問わず1つの商品をまとめて数える単位。SKUはそこからさらに細かく分けたものだ。<a href="https://diamond-rm.net/glossary/75106/" target="_blank" rel="noopener noreferrer">ダイヤモンド・チェーンストアオンラインの用語集</a>でも、SKUは「アイテムよりさらに細分化した管理単位」と説明されていた。</p>
-
+<p><a href="https://www.macromill.com/service/words/sku/" rel="noopener noreferrer" target="_blank">マクロミルの用語解説</a>によると、同じ商品名でも色やサイズが違えば別のSKUとして扱うらしい。たとえばTシャツ1型を白・黒の2色、S・M・Lの3サイズで売っている場合、2色×3サイズ＝6SKUになる。</p>
+<p>似た言葉に「アイテム」があるけど、アイテムは色やサイズを問わず1つの商品をまとめて数える単位。SKUはそこからさらに細かく分けたものだ。<a href="https://diamond-rm.net/glossary/75106/" rel="noopener noreferrer" target="_blank">ダイヤモンド・チェーンストアオンラインの用語集</a>でも、SKUは「アイテムよりさらに細分化した管理単位」と説明されていた。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC業務をやっていると、SKUという言葉はいろんな場面で出てくる。僕が遭遇したケースをまとめておく。</p>
-
 <h3>商品登録時のSKU設定</h3>
-
-<p>楽天市場は2023年に「SKUプロジェクト」という大きなリニューアルがあって、商品ページの構造がSKU単位に変わった。<a href="https://next-engine.net/ec-blog/rakuten-rms-csv-registration/" target="_blank" rel="noopener noreferrer">ネクストエンジンの楽天RMS解説記事</a>を読むと、商品登録時にSKUごとの価格や在庫数を設定する仕組みになっている。それまでの「項目選択肢」方式から大きく変わったので、楽天出店者は対応が必要だった。</p>
-
+<p>楽天市場は2023年に「SKUプロジェクト」という大きなリニューアルがあって、商品ページの構造がSKU単位に変わった。<a href="https://next-engine.net/ec-blog/rakuten-rms-csv-registration/" rel="noopener noreferrer" target="_blank">ネクストエンジンの楽天RMS解説記事</a>を読むと、商品登録時にSKUごとの価格や在庫数を設定する仕組みになっている。それまでの「項目選択肢」方式から大きく変わったので、楽天出店者は対応が必要だった。</p>
 <p>Amazonの場合は、出品時に「出品者SKU」という項目がある。これは自社の管理番号を登録する欄で、自分で自由に決められる。入力しなければAmazon側で自動的に割り振られるけど、自社の在庫管理と紐づけるなら独自のコードを設定しておいたほうがあとあと楽だ。</p>
-
 <h3>在庫管理・棚卸し</h3>
-
-<p>倉庫で在庫を管理するときもSKU単位で数える。<a href="https://www.scroll360.jp/note/20230106-6591/" target="_blank" rel="noopener noreferrer">スクロール360のコラム</a>によると、SKU数が多くなるほど在庫管理は複雑になる。色違い・サイズ違いがたくさんあるアパレル系はSKU数が膨れ上がりやすいので、最初のSKU設計が大事だという話が書いてあった。</p>
-
+<p>倉庫で在庫を管理するときもSKU単位で数える。<a href="https://www.scroll360.jp/note/20230106-6591/" rel="noopener noreferrer" target="_blank">スクロール360のコラム</a>によると、SKU数が多くなるほど在庫管理は複雑になる。色違い・サイズ違いがたくさんあるアパレル系はSKU数が膨れ上がりやすいので、最初のSKU設計が大事だという話が書いてあった。</p>
 <h3>仕入れ・発注</h3>
-
 <p>仕入先との会話でも「何SKUありますか？」と聞かれることがある。取り扱いたい商品のバリエーション数を確認する意味で使われる。SKU数が多すぎると在庫リスクが上がるし、少なすぎるとお客さんの選択肢が減る。そのバランスを考えるのがEC担当の仕事でもある。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>SKUとJANコードは別物</h3>
-
-<p>最初ごっちゃにしていたけど、SKUとJANコードはまったく別のものだった。JANコードは<a href="https://www.gs1jp.org/code/jan/about_jan.html" target="_blank" rel="noopener noreferrer">GS1 Japanが管理する国際標準のバーコード番号</a>で、どの会社でも同じ番号が使われる。一方、SKUは自社の管理用コードだから、会社ごとに番号が違う。詳しくは<a href="jan-code.html">JANコードとは</a>にまとめている。</p>
-
+<p>最初ごっちゃにしていたけど、SKUとJANコードはまったく別のものだった。JANコードは<a href="https://www.gs1jp.org/code/jan/about_jan.html" rel="noopener noreferrer" target="_blank">GS1 Japanが管理する国際標準のバーコード番号</a>で、どの会社でも同じ番号が使われる。一方、SKUは自社の管理用コードだから、会社ごとに番号が違う。詳しくは<a href="jan-code.html">JANコードとは</a>にまとめている。</p>
 <h3>SKUコードの付け方は自由</h3>
-
-<p>SKUコードの命名に国際的なルールはない。自分の会社で管理しやすい形式を決めればOKだ。よく見るのは「カテゴリ-色-サイズ」を組み合わせたパターンで、たとえば「TS-WH-M」（Tシャツ・白・M）のような付け方。<a href="https://bindec.jp/media/555953139885/" target="_blank" rel="noopener noreferrer">BiNDecのSKU解説記事</a>でも、あとから検索しやすい命名ルールを最初に決めておくことが推奨されていた。</p>
-
+<p>SKUコードの命名に国際的なルールはない。自分の会社で管理しやすい形式を決めればOKだ。よく見るのは「カテゴリ-色-サイズ」を組み合わせたパターンで、たとえば「TS-WH-M」（Tシャツ・白・M）のような付け方。<a href="https://bindec.jp/media/555953139885/" rel="noopener noreferrer" target="_blank">BiNDecのSKU解説記事</a>でも、あとから検索しやすい命名ルールを最初に決めておくことが推奨されていた。</p>
 <h3>SKU数と商品画像の関係</h3>
-
 <p>SKU数が多いとその分だけ商品画像も必要になる。色違いごとにメイン画像を用意するのが基本だし、ECモールによってはSKUごとにサムネイル画像の登録を求められる。商品画像のルールについては<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>に書いた。画像が大量になる場合は<a href="csv-bulk-upload.html">CSV一括登録</a>を使うと効率がいい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -211,7 +221,6 @@
 <li><a href="lot.html">ロット</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -219,28 +228,29 @@
 <li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

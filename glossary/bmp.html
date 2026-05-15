@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,69 +139,79 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; BMP
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>BMPとは？<br>古い画像形式をまだ使う場面があった</h1>
+<div class="article-hero">
+<img alt="BMPとは？古い画像形式をまだ使う場面があった" height="360" loading="eager" src="/thumbs/glossary/bmp.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/bmp.png" alt="BMPとは？古い画像形式をまだ使う場面があった" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">BMPとは？<br/>古い画像形式をまだ使う場面があった</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>BMPとは</h2>
-
 <p>ひとことで言うと、MicrosoftがWindows用に開発した画像ファイル形式のこと。BMPは「Bitmap（ビットマップ）」の略で、正式には「Windows bitmap」と呼ばれる。</p>
-
-<p><a href="https://e-words.jp/w/BMP.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、BMPはWindowsが標準で対応している画像形式の一つで、基本的に無圧縮でデータを保存する。つまり、画像の色情報をそのまま1ピクセルずつ記録しているので、画質の劣化がない代わりにファイルサイズがとても大きくなる。</p>
-
-<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/bmp-file.html" target="_blank" rel="noopener noreferrer">Adobeの公式ページ</a>でも、BMPは非圧縮データが入っているため高画質なデジタル画像の保管と表示に適している、と書かれていた。白黒2値画像から24ビットフルカラー（約1677万色）まで対応できるらしい。</p>
-
-<p><a href="https://ja.wikipedia.org/wiki/Windows_bitmap" target="_blank" rel="noopener noreferrer">Wikipediaの解説</a>を読むと、BMPはMicrosoftとIBMが共同でOSを開発していた時代に作られた形式とのこと。かなり歴史の古い画像形式で、Windowsの初期から使われてきたものだ。</p>
-
+<p><a href="https://e-words.jp/w/BMP.html" rel="noopener noreferrer" target="_blank">IT用語辞典 e-Words</a>によると、BMPはWindowsが標準で対応している画像形式の一つで、基本的に無圧縮でデータを保存する。つまり、画像の色情報をそのまま1ピクセルずつ記録しているので、画質の劣化がない代わりにファイルサイズがとても大きくなる。</p>
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/bmp-file.html" rel="noopener noreferrer" target="_blank">Adobeの公式ページ</a>でも、BMPは非圧縮データが入っているため高画質なデジタル画像の保管と表示に適している、と書かれていた。白黒2値画像から24ビットフルカラー（約1677万色）まで対応できるらしい。</p>
+<p><a href="https://ja.wikipedia.org/wiki/Windows_bitmap" rel="noopener noreferrer" target="_blank">Wikipediaの解説</a>を読むと、BMPはMicrosoftとIBMが共同でOSを開発していた時代に作られた形式とのこと。かなり歴史の古い画像形式で、Windowsの初期から使われてきたものだ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>BMPは古い形式だけど、EC業務で意外なところで出くわすことがある。</p>
-
 <h3>古い社内システムからのデータ出力</h3>
-
 <p>僕が遭遇したのがまさにこのケース。古い在庫管理システムや基幹システムでは、画像の保存形式がBMPに限定されていることがある。システムが開発された時代はBMPが標準だったので、そのまま残っているのだろう。</p>
-
 <h3>スキャナーで取り込んだデータ</h3>
-
-<p>古いスキャナーや複合機では、スキャンした画像がBMP形式で保存されることがある。<a href="https://www.wave-inc.co.jp/weblog/?p=2897" target="_blank" rel="noopener noreferrer">WAVEの解説記事</a>でも、BMPは無圧縮のため画像処理の中間データとして使われることがあると紹介されていた。最近のスキャナーはPDFやJPEGで保存できるものがほとんどだが、古い機器ではBMPしか選べないこともある。</p>
-
+<p>古いスキャナーや複合機では、スキャンした画像がBMP形式で保存されることがある。<a href="https://www.wave-inc.co.jp/weblog/?p=2897" rel="noopener noreferrer" target="_blank">WAVEの解説記事</a>でも、BMPは無圧縮のため画像処理の中間データとして使われることがあると紹介されていた。最近のスキャナーはPDFやJPEGで保存できるものがほとんどだが、古い機器ではBMPしか選べないこともある。</p>
 <h3>Windowsのペイントで保存したとき</h3>
-
 <p>Windowsの「ペイント」で画像を編集して保存すると、デフォルトの保存形式がBMPになっていることがある。うっかりそのまま保存してしまうと、ファイルサイズが何倍にも膨れ上がることになる。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>BMPはWeb用途には向かない</h3>
-
 <p>BMPは無圧縮なのでファイルサイズが非常に大きい。たとえば1000×1000pxの画像だと、JPEGなら数百KBで済むところがBMPだと数MBになる。ECサイトにアップロードする前に、必ずJPEGか<a href="png.html">PNG</a>に変換しよう。変換はWindowsの「ペイント」やMacの「プレビュー」で「名前を付けて保存」から形式を選ぶだけでできる。</p>
-
 <h3>画質は劣化しないが圧縮もされない</h3>
-
-<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/comparison/bmp-vs-png.html" target="_blank" rel="noopener noreferrer">AdobeのBMPとPNGの比較ページ</a>によると、BMPもPNGもどちらも画質の劣化がない形式だが、PNGは可逆圧縮でファイルサイズを抑えられる。つまり、画質を保ちつつサイズも小さくしたいなら、BMPよりPNGのほうが優秀だ。</p>
-
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/comparison/bmp-vs-png.html" rel="noopener noreferrer" target="_blank">AdobeのBMPとPNGの比較ページ</a>によると、BMPもPNGもどちらも画質の劣化がない形式だが、PNGは可逆圧縮でファイルサイズを抑えられる。つまり、画質を保ちつつサイズも小さくしたいなら、BMPよりPNGのほうが優秀だ。</p>
 <h3>印刷用途ではそのまま使えない</h3>
-
 <p>BMPはRGBカラーモードにしか対応していないので、印刷用のCMYKデータとしては使えない。印刷に回す場合は、Photoshopなどの画像編集ソフトでCMYKに変換し、<a href="tiff.html">TIFF</a>やPSD形式で保存し直す必要がある。画像ファイル形式の違いについては<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -209,35 +219,35 @@
 <li><a href="tiff.html">TIFF</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

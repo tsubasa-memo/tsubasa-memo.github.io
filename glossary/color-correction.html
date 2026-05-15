@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="色補正の意味と基本的なやり方を調べたメモ。写真のホワイトバランスや色かぶりを整えるレタッチ工程のことで、EC商品画像では実物との色差を減らすために欠かせない作業だ。カラーチャートの使い方や外注時の指示の出し方もまとめた。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,39 +139,66 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 色補正
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>色補正とは？<br>写真の色味を整えるレタッチの基本メモ</h1>
+
+<div class="article-hero">
+<img alt="色補正とは？写真の色味を整えるレタッチの基本メモ" height="360" loading="eager" src="/thumbs/glossary/color-correction.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/color-correction.png" alt="色補正とは？写真の色味を整えるレタッチの基本メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">色補正とは？<br/>写真の色味を整えるレタッチの基本メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>色補正とは</h2>
-
 <p>写真の色味を調整するレタッチ作業の総称だ。具体的には、<a href="white-balance.html">ホワイトバランス</a>の修正、色かぶり（写真全体が特定の色に偏る現象）の除去、彩度の調整などが含まれる。</p>
-
-<p><a href="https://helpx.adobe.com/jp/lightroom-classic/help/color-adjustments.html" target="_blank" rel="noopener noreferrer">AdobeのLightroom公式ガイド</a>では、まず<a href="color-temperature.html">色温度</a>と色被り補正のスライダーで全体のニュートラルを取り、次にHSL（色相・彩度・輝度）パネルで個別の色を調整する手順が紹介されている。</p>
-
+<p><a href="https://helpx.adobe.com/jp/lightroom-classic/help/color-adjustments.html" rel="noopener noreferrer" target="_blank">AdobeのLightroom公式ガイド</a>では、まず<a href="color-temperature.html">色温度</a>と色被り補正のスライダーで全体のニュートラルを取り、次にHSL（色相・彩度・輝度）パネルで個別の色を調整する手順が紹介されている。</p>
 <h2>EC商品画像で色補正が必要な理由</h2>
-
 <p>商品画像と実物の色が大きく異なると、購入後のクレームや返品に直結する。特にアパレル商品では「画面で見た色と届いた商品の色が違う」というレビューがつきやすい。</p>
-
 <p>撮影時にX-Rite ColorCheckerのようなカラーチャートを一緒に写しておくと、現像時にグレーポイントを基準にして正確な色に合わせられる。モニターの色も定期的にキャリブレーションしないと、自分の画面では合っているのに顧客の画面では違って見えるということが起きる。</p>
-
 <h2>自分でやる場合と外注する場合</h2>
-
 <p>簡単な色かぶり除去ならLightroomの自動補正機能で十分対応できる。アパレルのように色の正確さが特に重要な商品や、数百枚単位の色味統一が必要な案件はプロに外注したほうが品質が安定する。費用感は1枚100〜500円程度。レタッチ外注全般の情報は<a href="/retouch-outsource-tips.html">レタッチ外注のコツ</a>にも書いた。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -191,24 +219,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="露出の意味と三要素（絞り・シャッタースピード・ISO感度）を調べたメモ。写真の明るさを決めるカメラの基本設定で、白い商品がグレーに写ってしまう原因と露出補正のやり方を整理した。EC商品撮影での適正露出の考え方もまとめた。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,39 +139,66 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 露出
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>露出とは？<br>写真の明るさをコントロールする三要素メモ</h1>
+
+<div class="article-hero">
+<img alt="露出とは？写真の明るさをコントロールする三要素メモ" height="360" loading="eager" src="/thumbs/glossary/exposure.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/exposure.png" alt="露出とは？写真の明るさをコントロールする三要素メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">露出とは？<br/>写真の明るさをコントロールする三要素メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>露出とは</h2>
-
 <p>カメラのセンサーに届く光の量のことで、写真の明るさを決定する。露出は「絞り（F値）」「シャッタースピード」「ISO感度」の三要素で制御されていて、これらのバランスで写真の明るさが決まる。</p>
-
 <h2>露出補正の考え方</h2>
-
 <p>カメラの自動露出（AE）は画面全体を平均的な明るさにしようとする。そのため白い商品が画面の大部分を占めると、カメラが「明るすぎる」と判断して暗く補正してしまう。この場合は露出補正を+1〜+1.5段ほど入れると、白が白として写る。</p>
-
 <p>逆に黒い商品は明るく撮られがちなので、-0.5〜-1段程度の補正をかけると見た目に近くなる。</p>
-
 <h2>EC商品撮影での注意点</h2>
-
 <p>商品のディテールが<a href="whiteout.html">白飛び</a>や<a href="crushed-blacks.html">黒つぶれ</a>で失われないことが最優先だ。<a href="raw.html">RAW</a>で撮影しておけば、現像時に±2段程度の露出補正は画質を保ったまま行える。ただし極端なアンダーからの引き上げはノイズが増えるので、撮影時にできるだけ適正露出を狙うのが基本だ。</p>
-
 <p>商品撮影の<a href="lighting.html">ライティング</a>が安定していれば、マニュアル露出で固定してしまうのも手だ。カットごとに明るさがばらつかないので、後の<a href="color-correction.html">色補正</a>作業が楽になる。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -190,24 +218,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

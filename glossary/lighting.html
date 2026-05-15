@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="ライティングの意味と基本パターンを調べたメモ。被写体に当てる照明の配置と質の設計で写真の印象が大きく変わる。自然光とストロボ・LEDなど人工光の違いや、EC商品撮影で使う定番のライティング配置と最低限必要な機材もまとめた。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,39 +139,66 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ライティング
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>ライティングとは？<br>撮影照明の基本と商品撮影の定番配置メモ</h1>
+
+<div class="article-hero">
+<img alt="ライティングとは？撮影照明の基本と商品撮影の定番配置メモ" height="360" loading="eager" src="/thumbs/glossary/lighting.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/lighting.png" alt="ライティングとは？撮影照明の基本と商品撮影の定番配置メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">ライティングとは？<br/>撮影照明の基本と商品撮影の定番配置メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>ライティングとは</h2>
-
 <p>撮影で被写体に当てる光の配置や質を設計することだ。光の方向、強さ、硬軟によって写真の印象は大きく変わる。プロが撮った写真と素人の写真の違いは、カメラの性能よりもライティングの違いによるところが大きい。</p>
-
 <h2>自然光と人工光</h2>
-
 <p>窓から入る太陽光（自然光）は機材不要で柔らかい光が得られるが、天候や時間帯で色味と光量が変わる。<a href="color-temperature.html">色温度</a>は朝夕でオレンジ寄り、昼は青白め、曇りの日はフラットになる。</p>
-
 <p>ストロボやLEDライト（人工光）は色温度と光量が安定しているので、同じ条件で大量の商品を撮影するEC実務向きだ。</p>
-
 <h2>EC商品撮影の定番配置</h2>
-
 <p>メインライト（ソフトボックス付き）を商品の斜め上45度に配置し、反対側に白レフ板を置いて影を起こすのが基本構成だ。これだけで商品の立体感が出て、<a href="contrast.html">コントラスト</a>が適度な写真になる。<a href="/rental-studio-ec.html">レンタルスタジオ</a>を使えば、機材を揃えなくても試せる。</p>
-
 <p>さらに上からのトップライトを追加すると、ジュエリーや化粧品のような光沢のある商品の質感がより際立つ。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -190,24 +218,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

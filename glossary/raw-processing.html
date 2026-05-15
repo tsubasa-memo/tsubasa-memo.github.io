@@ -69,8 +69,9 @@
 <script src="/search.js" defer></script>
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -78,27 +79,60 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
-<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; RAW現像
-</div>
-</nav>
-<section class="hero">
-<div class="wrap">
-<h1>RAW現像とは？<br>撮影後に明るさや色を調整する作業メモ</h1>
-</div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/raw-processing.png" alt="RAW現像とは？撮影後に明るさや色を調整する作業メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
-<h2>RAW現像とは</h2>
+</aside>
 
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; RAW現像
+
+</nav>
+
+<div class="article-hero">
+<img alt="RAW現像とは？撮影後に明るさや色を調整する作業メモ" height="360" loading="eager" src="/thumbs/glossary/raw-processing.png" width="640"/>
+</div>
+
+<h1 class="article-title">RAW現像とは？<br/>撮影後に明るさや色を調整する作業メモ</h1>
+<div class="article-meta-line">
+<span>2026年5月2日</span>
+</div>
+
+<h2>RAW現像とは</h2>
 <p>RAW現像は、カメラの<a href="raw.html">RAW形式</a>で記録した撮影データをPCソフトで開き、明るさ・色味・コントラスト・ホワイトバランスなどを調整してJPEGやTIFFとして書き出す作業のこと。フィルムカメラの「現像」にたとえてこう呼ばれる。</p>
 <a class="cite-card" href="raw.html">
 <span class="cite-ico int">ツ</span>
@@ -107,31 +141,25 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/raw.html</span>
 </span>
 </a>
-
 <p>カメラでJPEG撮影する場合、カメラ内部で自動的に色補正・ノイズ除去・圧縮が行われる。RAW撮影ではこれらの処理をスキップし、センサーが受け取った光のデータをそのまま保存する。そのため後からPCで自由に調整できる幅が広い。</p>
-
-<p><a href="https://helpx.adobe.com/jp/lightroom-cc/using/edit-photos.html" target="_blank" rel="noopener nofollow">Adobe公式のLightroom入門ガイド</a>では、RAW現像の基本操作として露光量・コントラスト・ハイライト・シャドウ・ホワイトバランスの調整方法が解説されている。<a href="https://cweb.canon.jp/eos/special/dpp/" target="_blank" rel="noopener nofollow">キヤノンのDigital Photo Professional</a>はCanon製カメラ向けの無料現像ソフトだ。</p>
-<a class="cite-card" href="https://helpx.adobe.com/jp/lightroom-cc/using/edit-photos.html" target="_blank" rel="noopener noreferrer">
+<p><a href="https://helpx.adobe.com/jp/lightroom-cc/using/edit-photos.html" rel="noopener nofollow" target="_blank">Adobe公式のLightroom入門ガイド</a>では、RAW現像の基本操作として露光量・コントラスト・ハイライト・シャドウ・ホワイトバランスの調整方法が解説されている。<a href="https://cweb.canon.jp/eos/special/dpp/" rel="noopener nofollow" target="_blank">キヤノンのDigital Photo Professional</a>はCanon製カメラ向けの無料現像ソフトだ。</p>
+<a class="cite-card" href="https://helpx.adobe.com/jp/lightroom-cc/using/edit-photos.html" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">Adobe公式のLightroom入門ガイド</span>
 <span class="cite-url">helpx.adobe.com</span>
 </span>
 </a>
-<a class="cite-card" href="https://cweb.canon.jp/eos/special/dpp/" target="_blank" rel="noopener noreferrer">
+<a class="cite-card" href="https://cweb.canon.jp/eos/special/dpp/" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">キヤノンのDigital Photo Professional</span>
 <span class="cite-url">cweb.canon.jp</span>
 </span>
 </a>
-
 <h2>カメラ・撮影で出てくる場面</h2>
-
 <p>「RAWで撮った方がいい」と言われるのは、撮影時のミスを後から修正しやすいからだ。ホワイトバランスの設定を間違えて全体が黄色っぽくなった写真も、RAWなら現像時に正確な色に戻せる。JPEGだと色情報が圧縮されているため、修正すると画質が劣化しやすい。</p>
-
 <p>EC商品撮影ではどうか。白背景の物撮りでライティングが安定しているなら、JPEG撮って出しで十分回ることが多い。1日に数十〜数百商品を撮影する現場では、RAWの1枚あたりのファイルサイズ（20〜50MB）がストレージを圧迫するし、1枚ずつ現像する時間もない。</p>
-
 <p>ただしジュエリーやアパレルなど色の正確性が売上を左右する商材では、RAW撮影しておくと安心だ。<a href="/raw-vs-jpeg.html">RAWとJPEGの比較記事</a>では、どちらを選ぶべきか商材別に整理している。</p>
 <a class="cite-card" href="/raw-vs-jpeg.html">
 <span class="cite-ico int">ツ</span>
@@ -140,11 +168,8 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/raw-vs-jpeg.html</span>
 </span>
 </a>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>RAW現像ソフトの選択肢は大きく3つ。Adobe Lightroomが業界標準で、月額1,180円〜のフォトプランで使える。無料ではdarktable（オープンソース）やRawTherapeeがある。カメラメーカー純正ソフト（Canon DPP、Nikon NX Studio、Sony Imaging Edge）も無料で、自社カメラのRAWファイルに最適化されている。</p>
-
 <p>RAW現像と<a href="retouch.html">レタッチ</a>は別の工程だ。現像は写真全体の明るさ・色・コントラストを整える「下ごしらえ」、レタッチは肌の修正・不要物除去・背景の差し替えなど「部分的な加工」にあたる。現像が終わった画像をPhotoshopに持ち込んでレタッチする、という流れが一般的だ。</p>
 <a class="cite-card" href="retouch.html">
 <span class="cite-ico int">ツ</span>
@@ -153,38 +178,30 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/retouch.html</span>
 </span>
 </a>
-
 <p>スマホでもRAW撮影・現像ができるようになった。iPhone 12 Pro以降のProRAW、Google PixelのRAW対応により、Lightroom MobileやSnapseedでスマホ上で完結させる人も増えている。</p>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. RAW現像とは何ですか？</div>
 <div class="fa">RAW形式で撮影したデータの明るさ・色味・コントラストをPCソフトで調整し、JPEGやTIFFとして書き出す作業です。フィルムの現像にたとえてRAW現像と呼ばれます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. RAW現像にはどんなソフトが必要ですか？</div>
 <div class="fa">Adobe Lightroom（月額1,180円〜）が最も普及しています。無料ではdarktableやRawTherapee、カメラメーカー純正ソフト（Canon DPP、Nikon NX Studio等）があります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. EC商品撮影でRAW現像は必要ですか？</div>
 <div class="fa">白背景の物撮りでライティングが安定していればJPEG撮って出しで十分です。色の正確性が重要な商材（ジュエリー、アパレル等）はRAW撮影しておくと後から調整できて安心です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. RAW現像とレタッチの違いは？</div>
 <div class="fa">RAW現像は写真全体の明るさ・色味を調整する作業、レタッチは肌修正や不要物除去など部分的な加工です。現像が「下ごしらえ」、レタッチが「仕上げ」と考えるとわかりやすいです。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. スマホでRAW現像はできますか？</div>
 <div class="fa">Lightroom MobileやSnapseedでスマホ上でもRAW現像ができます。iPhone ProRAWやPixelなどRAW撮影対応のスマホで撮ったデータをそのまま現像できます。</div>
 </div>
 </div>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -203,24 +220,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

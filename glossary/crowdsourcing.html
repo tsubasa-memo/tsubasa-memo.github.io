@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="クラウドソーシングの意味と仕組みを調べたメモ。インターネットを通じて不特定多数に業務を委託する仕組みで、日本ではランサーズとクラウドワークスが代表的。EC業務での発注の使い方や副業としての始め方、手数料の目安も整理した。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,37 +139,65 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; クラウドソーシング
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>クラウドソーシングとは？<br>仕組みと主要サービスの比較メモ</h1>
+
+<div class="article-hero">
+<img alt="クラウドソーシングとは？仕組みと主要サービスの比較メモ" height="360" loading="eager" src="/thumbs/glossary/crowdsourcing.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/crowdsourcing.png" alt="クラウドソーシングとは？仕組みと主要サービスの比較メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">クラウドソーシングとは？<br/>仕組みと主要サービスの比較メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>クラウドソーシングとは</h2>
-
 <p>インターネットを通じて不特定多数の人（主にフリーランスや副業ワーカー）に業務を委託する仕組みだ。「crowd（群衆）」と「outsourcing（外部委託）」を組み合わせた造語で、日本ではランサーズとクラウドワークスが大手2社として知られている。</p>
-
 <h2>EC実務での使いどころ</h2>
-
 <p>EC業務では、<a href="/background-cutout-outsource.html">商品画像の切り抜き</a>、バナー制作、商品説明文の作成、データ入力などの定型作業を発注するケースが多い。制作会社に比べて単価が抑えられる反面、品質のばらつきが出やすいので、テスト発注で実力を確認してから本発注に移るのが安全だ。</p>
-
 <p>個人への発注と法人への発注の使い分けについては<a href="/outsource-company-vs-freelancer.html">外注先の選び方</a>にもまとめた。</p>
-
 <h2>副業としての始め方</h2>
-
 <p>受注側として使う場合は、プラットフォームに無料登録してプロフィールとポートフォリオを充実させるところから始まる。画像加工やライティングは比較的案件数が多く、実績を積みやすい。ただし報酬から手数料（5〜20%程度）が引かれるので、手取り額の計算には注意が必要だ。副業での税金については<a href="/photo-sidejob-tax.html">副業の税金まとめ</a>にも書いた。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -187,24 +216,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

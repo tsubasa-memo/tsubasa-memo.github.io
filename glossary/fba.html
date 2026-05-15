@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,46 +139,70 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; FBA
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>FBAとは？<br>Amazon出品で「FBA使いますか？」と聞かれた話</h1>
+<div class="article-hero">
+<img alt="FBAとは？Amazon出品で「FBA使いますか？」と聞かれた話" height="360" loading="eager" src="/thumbs/glossary/fba.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/fba.png" alt="FBAとは？Amazon出品で「FBA使いますか？」と聞かれた話" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">FBAとは？<br/>Amazon出品で「FBA使いますか？」と聞かれた話</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>FBAとは</h2>
-
 <p>ひとことで言うと、出品者の商品をAmazonの倉庫に預けて、注文が入ったあとの出荷作業をAmazonに丸ごと代行してもらうサービスのことだ。FBAは「Fulfillment by Amazon（フルフィルメント バイ アマゾン）」の略。</p>
-
-<p><a href="https://sell.amazon.co.jp/fulfill/fulfillment-by-amazon" target="_blank" rel="noopener nofollow">Amazon公式のFBA紹介ページ</a>によると、FBAの流れはこうなっている。</p>
-
+<p><a href="https://sell.amazon.co.jp/fulfill/fulfillment-by-amazon" rel="noopener nofollow" target="_blank">Amazon公式のFBA紹介ページ</a>によると、FBAの流れはこうなっている。</p>
 <ol>
 <li>出品者が商品をAmazonのフルフィルメントセンター（倉庫）に納品する</li>
 <li>Amazonが商品を保管・在庫管理する</li>
 <li>注文が入ったらAmazonがピッキング・梱包・出荷する</li>
 <li>カスタマーサービスや返品対応もAmazonが行う</li>
 </ol>
-
 <p>つまり、出品者がやることは「商品をAmazonの倉庫に送る」ことと「商品ページを作る」ことだけ。出荷にまつわる実務はすべてAmazon側が対応してくれる。</p>
-
-<p>もう一つの選択肢が「自己発送（出品者出荷）」で、こちらは自分で在庫を管理して、注文ごとに梱包・発送を行う方式だ。<a href="https://next-engine.net/ec-blog/fba/" target="_blank" rel="noopener noreferrer">ネクストエンジンの解説</a>にFBAと自己発送の比較がわかりやすくまとめてあった。</p>
-
+<p>もう一つの選択肢が「自己発送（出品者出荷）」で、こちらは自分で在庫を管理して、注文ごとに梱包・発送を行う方式だ。<a href="https://next-engine.net/ec-blog/fba/" rel="noopener noreferrer" target="_blank">ネクストエンジンの解説</a>にFBAと自己発送の比較がわかりやすくまとめてあった。</p>
 <table class="compare">
 <tr><th>項目</th><th>FBA</th><th>自己発送</th></tr>
 <tr><td>在庫保管</td><td>Amazonの倉庫</td><td>自社倉庫・自宅など</td></tr>
@@ -187,35 +211,20 @@
 <tr><td>カスタマー対応</td><td>Amazonが代行</td><td>自分で対応</td></tr>
 <tr><td>手数料</td><td>配送代行手数料＋保管手数料</td><td>自分で配送費を負担</td></tr>
 </table>
-
 <h2>EC実務で出てくる場面</h2>
-
 <h3>Amazon出品を始めるとき</h3>
-
-<p>Amazonに出品する際、最初に「FBAにするか自己発送にするか」を決めることになる。<a href="https://www.logimopro.jp/lmp_academy/what-is-a-amazonfba" target="_blank" rel="noopener noreferrer">ロジモプロの解説</a>によると、副業レベルの少量出品なら自己発送でも回せるけど、本格的に売上を伸ばしたいならFBAのほうが有利だという。</p>
-
+<p>Amazonに出品する際、最初に「FBAにするか自己発送にするか」を決めることになる。<a href="https://www.logimopro.jp/lmp_academy/what-is-a-amazonfba" rel="noopener noreferrer" target="_blank">ロジモプロの解説</a>によると、副業レベルの少量出品なら自己発送でも回せるけど、本格的に売上を伸ばしたいならFBAのほうが有利だという。</p>
 <h3>Primeマークの取得</h3>
-
-<p>FBAを使うとPrimeマークが自動で付く。Amazonプライム会員はお急ぎ便やお届け日時指定便を無料で使えるので、Primeマークがある商品のほうがクリックされやすいし、購入率も高い傾向がある。<a href="https://itsumo365.co.jp/blog/post-21768/" target="_blank" rel="noopener noreferrer">いつも.のブログ</a>でもPrimeマークの効果について触れられていた。</p>
-
+<p>FBAを使うとPrimeマークが自動で付く。Amazonプライム会員はお急ぎ便やお届け日時指定便を無料で使えるので、Primeマークがある商品のほうがクリックされやすいし、購入率も高い傾向がある。<a href="https://itsumo365.co.jp/blog/post-21768/" rel="noopener noreferrer" target="_blank">いつも.のブログ</a>でもPrimeマークの効果について触れられていた。</p>
 <h3>繁忙期の出荷対応</h3>
-
 <p>年末商戦やプライムデーのように注文が殺到する時期、自己発送だと出荷が追いつかなくなることがある。FBAならAmazonの物流網が対応してくれるので、注文が急増しても出荷遅延が起きにくい。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>手数料の計算は事前にやっておく</h3>
-
-<p>FBAの手数料は「配送代行手数料」と「在庫保管手数料」の2種類がメインだ。配送代行手数料は商品のサイズと重量で決まり、在庫保管手数料は商品の体積と保管期間で月額課金される。<a href="https://www.scroll360.jp/note/20230926-10274/" target="_blank" rel="noopener noreferrer">スクロール360の解説</a>にも手数料体系の詳細が載っていた。利益率が低い商品だとFBA手数料で赤字になることもあるので、事前にシミュレーションしておくべきだ。</p>
-
+<p>FBAの手数料は「配送代行手数料」と「在庫保管手数料」の2種類がメインだ。配送代行手数料は商品のサイズと重量で決まり、在庫保管手数料は商品の体積と保管期間で月額課金される。<a href="https://www.scroll360.jp/note/20230926-10274/" rel="noopener noreferrer" target="_blank">スクロール360の解説</a>にも手数料体系の詳細が載っていた。利益率が低い商品だとFBA手数料で赤字になることもあるので、事前にシミュレーションしておくべきだ。</p>
 <h3>長期保管手数料に注意</h3>
-
 <p>Amazonの倉庫に商品を長期間置きっぱなしにすると、通常の保管料に加えて長期保管手数料がかかる。売れ残りの在庫がたまると手数料がどんどん膨らむので、回転の遅い商品は定期的に見直して、必要なら返送や廃棄の手続きをしたほうがいい。</p>
-
 <h3>FBAと自己発送の併用もできる</h3>
-
 <p>すべての商品をFBAにする必要はない。売れ筋商品はFBAで出荷スピードを上げつつ、大型商品や利益率の低い商品は自己発送にする、という使い分けも可能だ。商品ごとにどちらが有利か検討するのがいい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -225,35 +234,35 @@
 <li><a href="lead-time.html">リードタイム</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

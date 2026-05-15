@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,74 +139,84 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; リードタイム
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>リードタイムとは？<br>「リードタイム3日」の意味を整理した</h1>
+<div class="article-hero">
+<img alt="リードタイムとは？「リードタイム3日」の意味を整理した" height="360" loading="eager" src="/thumbs/glossary/lead-time.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/lead-time.png" alt="リードタイムとは？「リードタイム3日」の意味を整理した" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">リードタイムとは？<br/>「リードタイム3日」の意味を整理した</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>リードタイムとは</h2>
-
 <p>ひとことで言うと、ある工程の開始から完了までにかかる時間のことだ。英語の「lead time」がそのままカタカナになった用語で、物流やEC業界では「発注してから届くまでの日数」という意味で使われることが多い。</p>
-
-<p><a href="https://www.suzuyo.co.jp/3pl/column/what-is-lead-time.html" target="_blank" rel="noopener noreferrer">鈴与の3PLコラム</a>によると、リードタイムは使われる場面によっていくつかの種類に分かれる。</p>
-
+<p><a href="https://www.suzuyo.co.jp/3pl/column/what-is-lead-time.html" rel="noopener noreferrer" target="_blank">鈴与の3PLコラム</a>によると、リードタイムは使われる場面によっていくつかの種類に分かれる。</p>
 <table class="compare">
 <tr><th>種類</th><th>意味</th><th>例</th></tr>
 <tr><td>調達リードタイム</td><td>部品・原材料を発注してから届くまで</td><td>仕入先への発注から入荷まで</td></tr>
 <tr><td>製造リードタイム</td><td>生産指示から完成まで</td><td>工場でのOEM生産期間</td></tr>
 <tr><td>配送リードタイム</td><td>出荷してから届くまで</td><td>倉庫から顧客の手元まで</td></tr>
 </table>
-
-<p>EC運営で意識するのは主に「調達リードタイム」と「配送リードタイム」だ。<a href="https://www.kantsu.com/terms/2865/" target="_blank" rel="noopener noreferrer">関通の物流用語辞典</a>にもEC向けの解説があった。</p>
-
-<p>似た言葉に「納期」があるけど、<a href="https://logikura.jp/columns/shortening-lead-time/" target="_blank" rel="noopener noreferrer">ロジクラのコラム</a>に違いがわかりやすく書いてあった。納期は「届く期日（何月何日まで）」、リードタイムは「届くまでにかかる日数（何日間）」。つまり「リードタイム3日」は所要日数の話で、「納期は4月10日」は期限の話になる。</p>
-
+<p>EC運営で意識するのは主に「調達リードタイム」と「配送リードタイム」だ。<a href="https://www.kantsu.com/terms/2865/" rel="noopener noreferrer" target="_blank">関通の物流用語辞典</a>にもEC向けの解説があった。</p>
+<p>似た言葉に「納期」があるけど、<a href="https://logikura.jp/columns/shortening-lead-time/" rel="noopener noreferrer" target="_blank">ロジクラのコラム</a>に違いがわかりやすく書いてあった。納期は「届く期日（何月何日まで）」、リードタイムは「届くまでにかかる日数（何日間）」。つまり「リードタイム3日」は所要日数の話で、「納期は4月10日」は期限の話になる。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <h3>仕入れの発注タイミング</h3>
-
 <p>在庫が切れる前に発注しないと欠品が起きる。調達リードタイムが3日なら、在庫がゼロになる3日前には発注を出しておく必要がある。実際には安全在庫（バッファ）を考慮して、もう少し余裕を持って発注するのが一般的だ。</p>
-
 <h3>商品ページの「お届け日」表示</h3>
-
 <p>ECサイトの商品ページには「ご注文から○日以内にお届け」と書くことが多い。この日数は出荷リードタイム＋配送リードタイムで決まる。楽天やAmazonではお届け日の目安表示が購入率に影響するので、リードタイムの管理は売上にも関わる話だ。</p>
-
 <h3>セール前の在庫積み増し</h3>
-
-<p>楽天スーパーSALEなどの大型セール前には、通常の何倍もの注文が来ることがある。仕入先の調達リードタイムを逆算して、セール開始日に間に合うように早めに発注しておかないと、セール期間中に在庫切れを起こす。<a href="https://www.plc.co.jp/blog/leadtime/" target="_blank" rel="noopener noreferrer">ロジ・ジャーナルの記事</a>にもリードタイム管理の重要性が書いてあった。</p>
-
+<p>楽天スーパーSALEなどの大型セール前には、通常の何倍もの注文が来ることがある。仕入先の調達リードタイムを逆算して、セール開始日に間に合うように早めに発注しておかないと、セール期間中に在庫切れを起こす。<a href="https://www.plc.co.jp/blog/leadtime/" rel="noopener noreferrer" target="_blank">ロジ・ジャーナルの記事</a>にもリードタイム管理の重要性が書いてあった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>営業日か暦日かを確認する</h3>
-
-<p>「リードタイム3日」と言われたとき、営業日で数えるか暦日で数えるかで到着日が変わる。金曜に発注して営業日3日なら水曜着だけど、暦日3日なら月曜着だ。仕入先や物流会社と最初にすり合わせておかないとトラブルの元になる。<a href="https://www.jitbox.co.jp/column/id-028/" target="_blank" rel="noopener noreferrer">JITBOXのコラム</a>でもこの点が注意事項として挙げられていた。</p>
-
+<p>「リードタイム3日」と言われたとき、営業日で数えるか暦日で数えるかで到着日が変わる。金曜に発注して営業日3日なら水曜着だけど、暦日3日なら月曜着だ。仕入先や物流会社と最初にすり合わせておかないとトラブルの元になる。<a href="https://www.jitbox.co.jp/column/id-028/" rel="noopener noreferrer" target="_blank">JITBOXのコラム</a>でもこの点が注意事項として挙げられていた。</p>
 <h3>リードタイムは短ければいいわけではない</h3>
-
 <p>配送リードタイムを短くしようとすると、翌日配送や当日配送の対応が必要になり、コストが上がる。顧客の期待値と物流コストのバランスを見て、適切なリードタイムを設定するのが現実的だ。</p>
-
 <h3>在庫管理とセットで考える</h3>
-
 <p>リードタイムが長い商品ほど、多めに在庫を持っておく必要がある。逆にリードタイムが短ければ少ない在庫で回せる。リードタイムと安全在庫の関係は、在庫管理の基本としてEC担当なら押さえておきたい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -216,35 +226,35 @@
 <li><a href="shipping-instruction.html">出荷指示書</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

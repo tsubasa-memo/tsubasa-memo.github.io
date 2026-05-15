@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,76 +139,85 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; レスポンシブ
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>レスポンシブデザインとは？<br>「スマホ対応」との違いを調べた</h1>
+<div class="article-hero">
+<img alt="レスポンシブデザインとは？「スマホ対応」との違いを調べた" height="360" loading="eager" src="/thumbs/glossary/responsive.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/responsive.png" alt="レスポンシブデザインとは？「スマホ対応」との違いを調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">レスポンシブデザインとは？<br/>「スマホ対応」との違いを調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>レスポンシブとは</h2>
-
 <p>ひとことで言うと、1つのHTMLで画面幅に応じて自動的にレイアウトを切り替えるWebデザインの手法のこと。正式には「レスポンシブウェブデザイン（Responsive Web Design）」と呼ぶ。レスポンシブ（responsive）は「反応する」という意味の英語だ。</p>
-
-<p><a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer">MDN Web Docsのレスポンシブデザイン解説</a>によると、CSSのメディアクエリ（@media）という仕組みを使って、画面幅が一定以下になったら2カラムを1カラムに変更する、フォントサイズを小さくする、といった切り替えを行う。URLもHTMLも1つで、見た目だけが変わる仕組みだ。</p>
-
-<p>「スマホ対応」とはどう違うのか。<a href="https://chigai2.fromation.co.jp/archives/28052" target="_blank" rel="noopener noreferrer">fromationの比較記事</a>を読んでわかったのは、スマホ対応は「スマホで見られるようにすること」全般を指す広い概念で、レスポンシブデザインはその実現方法のひとつということだ。整理するとこうなる。</p>
-
+<p><a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" rel="noopener noreferrer" target="_blank">MDN Web Docsのレスポンシブデザイン解説</a>によると、CSSのメディアクエリ（@media）という仕組みを使って、画面幅が一定以下になったら2カラムを1カラムに変更する、フォントサイズを小さくする、といった切り替えを行う。URLもHTMLも1つで、見た目だけが変わる仕組みだ。</p>
+<p>「スマホ対応」とはどう違うのか。<a href="https://chigai2.fromation.co.jp/archives/28052" rel="noopener noreferrer" target="_blank">fromationの比較記事</a>を読んでわかったのは、スマホ対応は「スマホで見られるようにすること」全般を指す広い概念で、レスポンシブデザインはその実現方法のひとつということだ。整理するとこうなる。</p>
 <table class="compare">
 <tr><th>方法</th><th>URL</th><th>HTML</th><th>特徴</th></tr>
 <tr><td>レスポンシブデザイン</td><td>同じ</td><td>同じ</td><td>CSSで表示を切り替え</td></tr>
 <tr><td>スマホ専用ページ</td><td>別（/sp/ など）</td><td>別</td><td>PC用とスマホ用を別に作る</td></tr>
 <tr><td>アダプティブデザイン</td><td>同じ</td><td>同じ</td><td>サーバー側でデバイスを判別して表示を切り替え</td></tr>
 </table>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>ECの仕事をしていると、レスポンシブ対応の話はあちこちで出てくる。</p>
-
 <h3>サイトリニューアルの見積もり</h3>
-
 <p>僕が遭遇したのがこの場面。制作会社から「レスポンシブ対応で」と言われたのは、PC・タブレット・スマホの全デバイスに1つのHTMLで対応する設計にするという意味だった。スマホ専用ページを別に作るよりもコストが抑えられるケースが多く、Googleも推奨している方法だ。</p>
-
-<p><a href="https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing?hl=ja" target="_blank" rel="noopener noreferrer">Google検索セントラルのモバイルサイトに関するドキュメント</a>では、Googleがレスポンシブウェブデザインを推奨する方法として明記されている。URLが統一されるためクロール効率がよく、モバイルファーストインデックスにも対応しやすいのが理由だ。</p>
-
+<p><a href="https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing?hl=ja" rel="noopener noreferrer" target="_blank">Google検索セントラルのモバイルサイトに関するドキュメント</a>では、Googleがレスポンシブウェブデザインを推奨する方法として明記されている。URLが統一されるためクロール効率がよく、モバイルファーストインデックスにも対応しやすいのが理由だ。</p>
 <h3>商品ページの表示確認</h3>
-
-<p>レスポンシブ対応のECサイトでも、PCで見たときとスマホで見たときのレイアウトは異なる。商品画像の並び方、テキストの折り返し、購入ボタンの位置などが変わるため、PC表示だけ確認してOKを出すと、スマホで見たときにレイアウトが崩れていたということがある。<a href="https://blog.nijibox.jp/article/responsivedesign/" target="_blank" rel="noopener noreferrer">ニジボックスのレスポンシブデザイン解説</a>でも、複数デバイスでの表示確認の重要性が触れられていた。</p>
-
+<p>レスポンシブ対応のECサイトでも、PCで見たときとスマホで見たときのレイアウトは異なる。商品画像の並び方、テキストの折り返し、購入ボタンの位置などが変わるため、PC表示だけ確認してOKを出すと、スマホで見たときにレイアウトが崩れていたということがある。<a href="https://blog.nijibox.jp/article/responsivedesign/" rel="noopener noreferrer" target="_blank">ニジボックスのレスポンシブデザイン解説</a>でも、複数デバイスでの表示確認の重要性が触れられていた。</p>
 <h3>メールマガジンのデザイン</h3>
-
-<p>ECサイトだけでなく、メールマガジンもレスポンシブ対応が必要になっている。スマホでメールを開く人が増えているため、PC向けの横幅が広いレイアウトだとスマホで読みにくい。<a href="https://www.kagoya.jp/howto/it-glossary/web/responsive/" target="_blank" rel="noopener noreferrer">カゴヤのレスポンシブ解説記事</a>にも、メールのレスポンシブ対応について触れられていた。</p>
-
+<p>ECサイトだけでなく、メールマガジンもレスポンシブ対応が必要になっている。スマホでメールを開く人が増えているため、PC向けの横幅が広いレイアウトだとスマホで読みにくい。<a href="https://www.kagoya.jp/howto/it-glossary/web/responsive/" rel="noopener noreferrer" target="_blank">カゴヤのレスポンシブ解説記事</a>にも、メールのレスポンシブ対応について触れられていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>主要ECプラットフォームは標準対応</h3>
-
 <p>ShopifyやBASE、STORESなどの主要ECプラットフォームは、標準で提供されるテーマがレスポンシブ対応になっている。自分でゼロからレスポンシブ対応を実装する必要は基本的にない。テーマのカスタマイズ時にレスポンシブが崩れないように注意する程度だ。</p>
-
 <h3>画像サイズの最適化が大事</h3>
-
 <p>レスポンシブデザインでは、PCで表示する大きな画像をスマホでも読み込むことになる。表示サイズは小さくなっても、データ量は変わらない。そのため、srcset属性を使ってデバイスに応じた画像サイズを出し分けるか、画像の圧縮を適切に行って表示速度を保つ必要がある。</p>
-
 <h3>ブレイクポイントの確認</h3>
-
 <p>レスポンシブデザインではブレイクポイント（レイアウトが切り替わる画面幅の閾値）が設定されている。一般的にはスマホ（〜767px）、タブレット（768〜1023px）、PC（1024px〜）あたりだが、制作会社やテーマによって異なる。自サイトのブレイクポイントを把握しておくと、コンテンツ更新のときにレイアウト崩れを防ぎやすい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -217,35 +226,35 @@
 <li><a href="landing-page.html">LP（ランディングページ）</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

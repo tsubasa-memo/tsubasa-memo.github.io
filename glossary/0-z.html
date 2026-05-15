@@ -56,8 +56,8 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -65,103 +65,131 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
 
-<div class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<div class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a><span>&gt;</span><a href="/glossary/">用語集</a><span>&gt;</span>数字・A〜Z
-</div>
+
 </div>
 
-<div class="hero">
-<div class="wrap">
-<h1>用語集｜数字・A〜Z</h1>
-</div>
-</div>
 
-<main>
-<div class="wrap">
+
+<h1 class="article-title">用語集｜数字・A〜Z</h1>
+
 
 <div class="filter-tabs">
-<a href="/glossary/" class="filter-tab">用語集トップ</a>
-<a href="/glossary/0-z.html" class="filter-tab active">数字・A〜Z</a>
-<a href="/glossary/a-ka.html" class="filter-tab">あ〜か</a>
-<a href="/glossary/sa-ta.html" class="filter-tab">さ〜た</a>
-<a href="/glossary/ha-wa.html" class="filter-tab">は〜わ</a>
+<a class="filter-tab" href="/glossary/">用語集トップ</a>
+<a class="filter-tab active" href="/glossary/0-z.html">数字・A〜Z</a>
+<a class="filter-tab" href="/glossary/a-ka.html">あ〜か</a>
+<a class="filter-tab" href="/glossary/sa-ta.html">さ〜た</a>
+<a class="filter-tab" href="/glossary/ha-wa.html">は〜わ</a>
 </div>
-
 <div class="term-count">43 語</div>
-
 <h2 class="section-heading">数字・アルファベット</h2>
-<div class="term-card"><a href="/glossary/3pl.html" class="term-card-thumb"><img src="/thumbs/glossary/3pl.png" alt="3PL" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/3pl.html" class="term-name">3PL</a></div><p class="term-desc">物流業務をまるごと外部に委託するサービス。</p><a href="/glossary/3pl.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/ab-test.html" class="term-card-thumb"><img src="/thumbs/glossary/ab-test.png" alt="ABテスト" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/ab-test.html" class="term-name">ABテスト</a></div><p class="term-desc">2パターンを比較して効果の高いほうを選ぶテスト手法。</p><a href="/glossary/ab-test.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/alt-attribute.html" class="term-card-thumb"><img src="/thumbs/glossary/alt-attribute.png" alt="alt属性" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/alt-attribute.html" class="term-name">alt属性</a></div><p class="term-desc">商品画像に設定するテキスト。</p><a href="/glossary/alt-attribute.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/asin.html" class="term-card-thumb"><img src="/thumbs/glossary/asin.png" alt="ASIN" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/asin.html" class="term-name">ASIN</a></div><p class="term-desc">Amazon出品で出てくる商品識別コード。</p><a href="/glossary/asin.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/avif.html" class="term-card-thumb"><img src="/thumbs/glossary/avif.png" alt="AVIF" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/avif.html" class="term-name">AVIF</a></div><p class="term-desc">JPEGの次の標準になるかもしれない次世代画像フォーマット。</p><a href="/glossary/avif.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/bmp.html" class="term-card-thumb"><img src="/thumbs/glossary/bmp.png" alt="BMP" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/bmp.html" class="term-name">BMP</a></div><p class="term-desc">圧縮しない古い画像形式。</p><a href="/glossary/bmp.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/canonical.html" class="term-card-thumb"><img src="/thumbs/glossary/canonical.png" alt="canonical" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/canonical.html" class="term-name">canonical</a></div><p class="term-desc">URLの正規化。重複ページの評価を1つに集約する。</p><a href="/glossary/canonical.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/cpa.html" class="term-card-thumb"><img src="/thumbs/glossary/cpa.png" alt="CPA" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/cpa.html" class="term-name">CPA</a></div><p class="term-desc">1件の成果を獲得するのにかかった広告費。</p><a href="/glossary/cpa.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/crm.html" class="term-card-thumb"><img src="/thumbs/glossary/crm.png" alt="CRM" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/crm.html" class="term-name">CRM</a></div><p class="term-desc">顧客管理ツール。</p><a href="/glossary/crm.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/css.html" class="term-card-thumb"><img src="/thumbs/glossary/css.png" alt="CSS" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/css.html" class="term-name">CSS</a></div><p class="term-desc">Webページの見た目を定義するスタイルシート。</p><a href="/glossary/css.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/csv-bulk-upload.html" class="term-card-thumb"><img src="/thumbs/glossary/csv-bulk-upload.png" alt="CSV一括登録" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/csv-bulk-upload.html" class="term-name">CSV一括登録</a></div><p class="term-desc">商品データをCSVファイルでまとめて登録する方法。</p><a href="/glossary/csv-bulk-upload.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/ctr.html" class="term-card-thumb"><img src="/thumbs/glossary/ctr.png" alt="CTR" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/ctr.html" class="term-name">CTR</a></div><p class="term-desc">表示回数に対するクリック数の割合。</p><a href="/glossary/ctr.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/cvr.html" class="term-card-thumb"><img src="/thumbs/glossary/cvr.png" alt="CVR" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/cvr.html" class="term-name">CVR</a></div><p class="term-desc">コンバージョン率。</p><a href="/glossary/cvr.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/d2c.html" class="term-card-thumb"><img src="/thumbs/glossary/d2c.png" alt="D2C" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/d2c.html" class="term-name">D2C</a></div><p class="term-desc">メーカーが自社ECで直接消費者に販売するビジネスモデル。</p><a href="/glossary/d2c.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/exif.html" class="term-card-thumb"><img src="/thumbs/glossary/exif.png" alt="Exif" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/exif.html" class="term-name">Exif</a></div><p class="term-desc">写真に自動記録される撮影日時・位置情報などのメタデータ。</p><a href="/glossary/exif.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/fba.html" class="term-card-thumb"><img src="/thumbs/glossary/fba.png" alt="FBA" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/fba.html" class="term-name">FBA</a></div><p class="term-desc">AmazonのFulfillment by Amazon。</p><a href="/glossary/fba.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/gif.html" class="term-card-thumb"><img src="/thumbs/glossary/gif.png" alt="GIF" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/gif.html" class="term-name">GIF</a></div><p class="term-desc">アニメーションができる画像形式。</p><a href="/glossary/gif.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/git.html" class="term-card-thumb"><img src="/thumbs/glossary/git.png" alt="git" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/git.html" class="term-name">git</a></div><p class="term-desc">ファイルの変更履歴を記録するバージョン管理ツール。</p><a href="/glossary/git.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/github.html" class="term-card-thumb"><img src="/thumbs/glossary/github.png" alt="GitHub" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/github.html" class="term-name">GitHub</a></div><p class="term-desc">gitリポジトリを管理するWebサービス。</p><a href="/glossary/github.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/github-pages.html" class="term-card-thumb"><img src="/thumbs/glossary/github-pages.png" alt="GitHub Pages" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/github-pages.html" class="term-name">GitHub Pages</a></div><p class="term-desc">GitHubリポジトリからサイトを無料公開できるサービス。</p><a href="/glossary/github-pages.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/heif-heic.html" class="term-card-thumb"><img src="/thumbs/glossary/heif-heic.png" alt="HEIF・HEIC" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/heif-heic.html" class="term-name">HEIF・HEIC</a></div><p class="term-desc">iPhoneの標準写真形式。</p><a href="/glossary/heif-heic.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/html.html" class="term-card-thumb"><img src="/thumbs/glossary/html.png" alt="HTML" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/html.html" class="term-name">HTML</a></div><p class="term-desc">Webページの構造を定義するマークアップ言語。</p><a href="/glossary/html.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/jan-code.html" class="term-card-thumb"><img src="/thumbs/glossary/jan-code.png" alt="JANコード" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/jan-code.html" class="term-name">JANコード</a></div><p class="term-desc">商品登録で求められるバーコード番号。</p><a href="/glossary/jan-code.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/jfif.html" class="term-card-thumb"><img src="/thumbs/glossary/jfif.png" alt="JFIF" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/jfif.html" class="term-name">JFIF</a></div><p class="term-desc">Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。</p><a href="/glossary/jfif.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/jpeg.html" class="term-card-thumb"><img src="/thumbs/glossary/jpeg.png" alt="JPEG" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/jpeg.html" class="term-name">JPEG</a></div><p class="term-desc">写真に最も使われる非可逆圧縮の画像形式。</p><a href="/glossary/jpeg.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/json-ld.html" class="term-card-thumb"><img src="/thumbs/glossary/json-ld.png" alt="JSON-LD" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/json-ld.html" class="term-name">JSON-LD</a></div><p class="term-desc">検索結果にFAQなどを表示させる構造化データ形式。</p><a href="/glossary/json-ld.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/llmo.html" class="term-card-thumb"><img src="/thumbs/glossary/llmo.png" alt="LLMO" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/llmo.html" class="term-name">LLMO</a></div><p class="term-desc">AIチャットボットに情報を引用してもらうための最適化。</p><a href="/glossary/llmo.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/ltv.html" class="term-card-thumb"><img src="/thumbs/glossary/ltv.png" alt="LTV" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/ltv.html" class="term-name">LTV</a></div><p class="term-desc">顧客1人が生涯でもたらす売上の合計。</p><a href="/glossary/ltv.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/meta-description.html" class="term-card-thumb"><img src="/thumbs/glossary/meta-description.png" alt="meta description" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/meta-description.html" class="term-name">meta description</a></div><p class="term-desc">検索結果に表示されるページ説明文のHTMLタグ。</p><a href="/glossary/meta-description.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/nofollow.html" class="term-card-thumb"><img src="/thumbs/glossary/nofollow.png" alt="nofollow" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/nofollow.html" class="term-name">nofollow</a></div><p class="term-desc">リンク先にページ評価を渡さないrel属性。</p><a href="/glossary/nofollow.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/ogp-image.html" class="term-card-thumb"><img src="/thumbs/glossary/ogp-image.png" alt="OGP画像" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/ogp-image.html" class="term-name">OGP画像</a></div><p class="term-desc">SNSでシェアしたとき表示されるサムネイル画像の設定。</p><a href="/glossary/ogp-image.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/png.html" class="term-card-thumb"><img src="/thumbs/glossary/png.png" alt="PNG" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/png.html" class="term-name">PNG</a></div><p class="term-desc">背景透過ができる画像形式。</p><a href="/glossary/png.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/psd.html" class="term-card-thumb"><img src="/thumbs/glossary/psd.png" alt="PSD" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/psd.html" class="term-name">PSD</a></div><p class="term-desc">Photoshop専用のファイル形式。</p><a href="/glossary/psd.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/raw.html" class="term-card-thumb"><img src="/thumbs/glossary/raw.png" alt="RAW" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/raw.html" class="term-name">RAW</a></div><p class="term-desc">カメラが記録する未加工の生データ。</p><a href="/glossary/raw.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/raw-processing.html" class="term-card-thumb"><img src="/thumbs/glossary/raw-processing.png" alt="RAW現像" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/raw-processing.html" class="term-name">RAW現像</a></div><p class="term-desc">RAWファイルの明るさ・色味をPCソフトで調整する作業。</p><a href="/glossary/raw-processing.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/rgb-cmyk.html" class="term-card-thumb"><img src="/thumbs/glossary/rgb-cmyk.png" alt="RGB・CMYK" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/rgb-cmyk.html" class="term-name">RGB・CMYK</a></div><p class="term-desc">色の表現方法。Webと印刷で色が変わる原因はこの違い。</p><a href="/glossary/rgb-cmyk.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/roas.html" class="term-card-thumb"><img src="/thumbs/glossary/roas.png" alt="ROAS" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/roas.html" class="term-name">ROAS</a></div><p class="term-desc">広告費に対して何倍の売上があったかを測る指標。</p><a href="/glossary/roas.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/robots-txt.html" class="term-card-thumb"><img src="/thumbs/glossary/robots-txt.png" alt="robots.txt" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/robots-txt.html" class="term-name">robots.txt</a></div><p class="term-desc">クローラーに巡回範囲を指示するテキストファイル。</p><a href="/glossary/robots-txt.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/sku.html" class="term-card-thumb"><img src="/thumbs/glossary/sku.png" alt="SKU" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/sku.html" class="term-name">SKU</a></div><p class="term-desc">在庫管理の最小単位。</p><a href="/glossary/sku.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/tiff.html" class="term-card-thumb"><img src="/thumbs/glossary/tiff.png" alt="TIFF" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/tiff.html" class="term-name">TIFF</a></div><p class="term-desc">印刷用途で使われる高品質な画像形式。</p><a href="/glossary/tiff.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/ugc.html" class="term-card-thumb"><img src="/thumbs/glossary/ugc.png" alt="UGC" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/ugc.html" class="term-name">UGC</a></div><p class="term-desc">ユーザーが作ったコンテンツ。</p><a href="/glossary/ugc.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/ui-ux.html" class="term-card-thumb"><img src="/thumbs/glossary/ui-ux.png" alt="UI・UX" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/ui-ux.html" class="term-name">UI・UX</a></div><p class="term-desc">画面デザイン（UI）とユーザー体験（UX）の違い。</p><a href="/glossary/ui-ux.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/webp.html" class="term-card-thumb"><img src="/thumbs/glossary/webp.png" alt="WebP" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/webp.html" class="term-name">WebP</a></div><p class="term-desc">Googleが開発した次世代画像フォーマット。</p><a href="/glossary/webp.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/wms.html" class="term-card-thumb"><img src="/thumbs/glossary/wms.png" alt="WMS" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/wms.html" class="term-name">WMS</a></div><p class="term-desc">倉庫管理システム。</p><a href="/glossary/wms.html" class="term-link">→ もっと詳しく</a></div></div>
-
+<div class="term-card"><a class="term-card-thumb" href="/glossary/3pl.html"><img alt="3PL" loading="lazy" src="/thumbs/glossary/3pl.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/3pl.html">3PL</a></div><p class="term-desc">物流業務をまるごと外部に委託するサービス。</p><a class="term-link" href="/glossary/3pl.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/ab-test.html"><img alt="ABテスト" loading="lazy" src="/thumbs/glossary/ab-test.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/ab-test.html">ABテスト</a></div><p class="term-desc">2パターンを比較して効果の高いほうを選ぶテスト手法。</p><a class="term-link" href="/glossary/ab-test.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/alt-attribute.html"><img alt="alt属性" loading="lazy" src="/thumbs/glossary/alt-attribute.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/alt-attribute.html">alt属性</a></div><p class="term-desc">商品画像に設定するテキスト。</p><a class="term-link" href="/glossary/alt-attribute.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/asin.html"><img alt="ASIN" loading="lazy" src="/thumbs/glossary/asin.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/asin.html">ASIN</a></div><p class="term-desc">Amazon出品で出てくる商品識別コード。</p><a class="term-link" href="/glossary/asin.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/avif.html"><img alt="AVIF" loading="lazy" src="/thumbs/glossary/avif.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/avif.html">AVIF</a></div><p class="term-desc">JPEGの次の標準になるかもしれない次世代画像フォーマット。</p><a class="term-link" href="/glossary/avif.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/bmp.html"><img alt="BMP" loading="lazy" src="/thumbs/glossary/bmp.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/bmp.html">BMP</a></div><p class="term-desc">圧縮しない古い画像形式。</p><a class="term-link" href="/glossary/bmp.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/canonical.html"><img alt="canonical" loading="lazy" src="/thumbs/glossary/canonical.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/canonical.html">canonical</a></div><p class="term-desc">URLの正規化。重複ページの評価を1つに集約する。</p><a class="term-link" href="/glossary/canonical.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/cpa.html"><img alt="CPA" loading="lazy" src="/thumbs/glossary/cpa.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/cpa.html">CPA</a></div><p class="term-desc">1件の成果を獲得するのにかかった広告費。</p><a class="term-link" href="/glossary/cpa.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/crm.html"><img alt="CRM" loading="lazy" src="/thumbs/glossary/crm.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/crm.html">CRM</a></div><p class="term-desc">顧客管理ツール。</p><a class="term-link" href="/glossary/crm.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/css.html"><img alt="CSS" loading="lazy" src="/thumbs/glossary/css.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/css.html">CSS</a></div><p class="term-desc">Webページの見た目を定義するスタイルシート。</p><a class="term-link" href="/glossary/css.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/csv-bulk-upload.html"><img alt="CSV一括登録" loading="lazy" src="/thumbs/glossary/csv-bulk-upload.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/csv-bulk-upload.html">CSV一括登録</a></div><p class="term-desc">商品データをCSVファイルでまとめて登録する方法。</p><a class="term-link" href="/glossary/csv-bulk-upload.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/ctr.html"><img alt="CTR" loading="lazy" src="/thumbs/glossary/ctr.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/ctr.html">CTR</a></div><p class="term-desc">表示回数に対するクリック数の割合。</p><a class="term-link" href="/glossary/ctr.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/cvr.html"><img alt="CVR" loading="lazy" src="/thumbs/glossary/cvr.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/cvr.html">CVR</a></div><p class="term-desc">コンバージョン率。</p><a class="term-link" href="/glossary/cvr.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/d2c.html"><img alt="D2C" loading="lazy" src="/thumbs/glossary/d2c.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/d2c.html">D2C</a></div><p class="term-desc">メーカーが自社ECで直接消費者に販売するビジネスモデル。</p><a class="term-link" href="/glossary/d2c.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/exif.html"><img alt="Exif" loading="lazy" src="/thumbs/glossary/exif.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/exif.html">Exif</a></div><p class="term-desc">写真に自動記録される撮影日時・位置情報などのメタデータ。</p><a class="term-link" href="/glossary/exif.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/fba.html"><img alt="FBA" loading="lazy" src="/thumbs/glossary/fba.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/fba.html">FBA</a></div><p class="term-desc">AmazonのFulfillment by Amazon。</p><a class="term-link" href="/glossary/fba.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/gif.html"><img alt="GIF" loading="lazy" src="/thumbs/glossary/gif.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/gif.html">GIF</a></div><p class="term-desc">アニメーションができる画像形式。</p><a class="term-link" href="/glossary/gif.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/git.html"><img alt="git" loading="lazy" src="/thumbs/glossary/git.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/git.html">git</a></div><p class="term-desc">ファイルの変更履歴を記録するバージョン管理ツール。</p><a class="term-link" href="/glossary/git.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/github.html"><img alt="GitHub" loading="lazy" src="/thumbs/glossary/github.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/github.html">GitHub</a></div><p class="term-desc">gitリポジトリを管理するWebサービス。</p><a class="term-link" href="/glossary/github.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/github-pages.html"><img alt="GitHub Pages" loading="lazy" src="/thumbs/glossary/github-pages.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/github-pages.html">GitHub Pages</a></div><p class="term-desc">GitHubリポジトリからサイトを無料公開できるサービス。</p><a class="term-link" href="/glossary/github-pages.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/heif-heic.html"><img alt="HEIF・HEIC" loading="lazy" src="/thumbs/glossary/heif-heic.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/heif-heic.html">HEIF・HEIC</a></div><p class="term-desc">iPhoneの標準写真形式。</p><a class="term-link" href="/glossary/heif-heic.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/html.html"><img alt="HTML" loading="lazy" src="/thumbs/glossary/html.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/html.html">HTML</a></div><p class="term-desc">Webページの構造を定義するマークアップ言語。</p><a class="term-link" href="/glossary/html.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/jan-code.html"><img alt="JANコード" loading="lazy" src="/thumbs/glossary/jan-code.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/jan-code.html">JANコード</a></div><p class="term-desc">商品登録で求められるバーコード番号。</p><a class="term-link" href="/glossary/jan-code.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/jfif.html"><img alt="JFIF" loading="lazy" src="/thumbs/glossary/jfif.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/jfif.html">JFIF</a></div><p class="term-desc">Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。</p><a class="term-link" href="/glossary/jfif.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/jpeg.html"><img alt="JPEG" loading="lazy" src="/thumbs/glossary/jpeg.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/jpeg.html">JPEG</a></div><p class="term-desc">写真に最も使われる非可逆圧縮の画像形式。</p><a class="term-link" href="/glossary/jpeg.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/json-ld.html"><img alt="JSON-LD" loading="lazy" src="/thumbs/glossary/json-ld.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/json-ld.html">JSON-LD</a></div><p class="term-desc">検索結果にFAQなどを表示させる構造化データ形式。</p><a class="term-link" href="/glossary/json-ld.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/llmo.html"><img alt="LLMO" loading="lazy" src="/thumbs/glossary/llmo.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/llmo.html">LLMO</a></div><p class="term-desc">AIチャットボットに情報を引用してもらうための最適化。</p><a class="term-link" href="/glossary/llmo.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/ltv.html"><img alt="LTV" loading="lazy" src="/thumbs/glossary/ltv.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/ltv.html">LTV</a></div><p class="term-desc">顧客1人が生涯でもたらす売上の合計。</p><a class="term-link" href="/glossary/ltv.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/meta-description.html"><img alt="meta description" loading="lazy" src="/thumbs/glossary/meta-description.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/meta-description.html">meta description</a></div><p class="term-desc">検索結果に表示されるページ説明文のHTMLタグ。</p><a class="term-link" href="/glossary/meta-description.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/nofollow.html"><img alt="nofollow" loading="lazy" src="/thumbs/glossary/nofollow.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/nofollow.html">nofollow</a></div><p class="term-desc">リンク先にページ評価を渡さないrel属性。</p><a class="term-link" href="/glossary/nofollow.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/ogp-image.html"><img alt="OGP画像" loading="lazy" src="/thumbs/glossary/ogp-image.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/ogp-image.html">OGP画像</a></div><p class="term-desc">SNSでシェアしたとき表示されるサムネイル画像の設定。</p><a class="term-link" href="/glossary/ogp-image.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/png.html"><img alt="PNG" loading="lazy" src="/thumbs/glossary/png.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/png.html">PNG</a></div><p class="term-desc">背景透過ができる画像形式。</p><a class="term-link" href="/glossary/png.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/psd.html"><img alt="PSD" loading="lazy" src="/thumbs/glossary/psd.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/psd.html">PSD</a></div><p class="term-desc">Photoshop専用のファイル形式。</p><a class="term-link" href="/glossary/psd.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/raw.html"><img alt="RAW" loading="lazy" src="/thumbs/glossary/raw.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/raw.html">RAW</a></div><p class="term-desc">カメラが記録する未加工の生データ。</p><a class="term-link" href="/glossary/raw.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/raw-processing.html"><img alt="RAW現像" loading="lazy" src="/thumbs/glossary/raw-processing.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/raw-processing.html">RAW現像</a></div><p class="term-desc">RAWファイルの明るさ・色味をPCソフトで調整する作業。</p><a class="term-link" href="/glossary/raw-processing.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/rgb-cmyk.html"><img alt="RGB・CMYK" loading="lazy" src="/thumbs/glossary/rgb-cmyk.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/rgb-cmyk.html">RGB・CMYK</a></div><p class="term-desc">色の表現方法。Webと印刷で色が変わる原因はこの違い。</p><a class="term-link" href="/glossary/rgb-cmyk.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/roas.html"><img alt="ROAS" loading="lazy" src="/thumbs/glossary/roas.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/roas.html">ROAS</a></div><p class="term-desc">広告費に対して何倍の売上があったかを測る指標。</p><a class="term-link" href="/glossary/roas.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/robots-txt.html"><img alt="robots.txt" loading="lazy" src="/thumbs/glossary/robots-txt.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/robots-txt.html">robots.txt</a></div><p class="term-desc">クローラーに巡回範囲を指示するテキストファイル。</p><a class="term-link" href="/glossary/robots-txt.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/sku.html"><img alt="SKU" loading="lazy" src="/thumbs/glossary/sku.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/sku.html">SKU</a></div><p class="term-desc">在庫管理の最小単位。</p><a class="term-link" href="/glossary/sku.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/tiff.html"><img alt="TIFF" loading="lazy" src="/thumbs/glossary/tiff.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/tiff.html">TIFF</a></div><p class="term-desc">印刷用途で使われる高品質な画像形式。</p><a class="term-link" href="/glossary/tiff.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/ugc.html"><img alt="UGC" loading="lazy" src="/thumbs/glossary/ugc.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/ugc.html">UGC</a></div><p class="term-desc">ユーザーが作ったコンテンツ。</p><a class="term-link" href="/glossary/ugc.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/ui-ux.html"><img alt="UI・UX" loading="lazy" src="/thumbs/glossary/ui-ux.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/ui-ux.html">UI・UX</a></div><p class="term-desc">画面デザイン（UI）とユーザー体験（UX）の違い。</p><a class="term-link" href="/glossary/ui-ux.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/webp.html"><img alt="WebP" loading="lazy" src="/thumbs/glossary/webp.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/webp.html">WebP</a></div><p class="term-desc">Googleが開発した次世代画像フォーマット。</p><a class="term-link" href="/glossary/webp.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/wms.html"><img alt="WMS" loading="lazy" src="/thumbs/glossary/wms.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/wms.html">WMS</a></div><p class="term-desc">倉庫管理システム。</p><a class="term-link" href="/glossary/wms.html">→ もっと詳しく</a></div></div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

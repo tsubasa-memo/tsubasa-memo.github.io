@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,71 +139,80 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; PSD
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>PSDとは？<br>開けないファイルの正体を調べたメモ</h1>
+<div class="article-hero">
+<img alt="PSDとは？開けないファイルの正体を調べたメモ" height="360" loading="eager" src="/thumbs/glossary/psd.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/psd.png" alt="PSDとは？開けないファイルの正体を調べたメモ" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">PSDとは？<br/>開けないファイルの正体を調べたメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>PSDとは</h2>
-
 <p>ひとことで言うと、Adobe Photoshop（アドビ フォトショップ）の標準ファイル形式のこと。PSDは「Photoshop Document」の略だ。</p>
-
-<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/psd-file.html" target="_blank" rel="noopener noreferrer">Adobeの公式ページ</a>によると、PSDファイルにはレイヤー、チャンネル、パス、テキストといったPhotoshopの編集情報がすべて保存されるらしい。だからファイルサイズが大きくなりやすく、最大で2GBまでのデータを保存できるとのこと。</p>
-
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/psd-file.html" rel="noopener noreferrer" target="_blank">Adobeの公式ページ</a>によると、PSDファイルにはレイヤー、チャンネル、パス、テキストといったPhotoshopの編集情報がすべて保存されるらしい。だからファイルサイズが大きくなりやすく、最大で2GBまでのデータを保存できるとのこと。</p>
 <p>JPEGやPNGのような一般的な画像ファイルは、写真を1枚の絵として保存する。一方PSDは、文字や背景、商品画像などが<a href="layer.html">レイヤー</a>（層）として別々に保存されている。だから後から「文字だけ変更する」「背景だけ差し替える」といった修正ができる。デザイナーが編集用に使うファイル形式、という理解でいいと思う。</p>
-
-<p><a href="https://e-words.jp/w/PSD.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>にも、PSDはPhotoshop固有のファイル形式で、対応するソフトウェアがないと開けないと書いてあった。僕がダブルクリックしても開けなかったのは、PCにPhotoshopが入っていなかったからだ。</p>
-
+<p><a href="https://e-words.jp/w/PSD.html" rel="noopener noreferrer" target="_blank">IT用語辞典 e-Words</a>にも、PSDはPhotoshop固有のファイル形式で、対応するソフトウェアがないと開けないと書いてあった。僕がダブルクリックしても開けなかったのは、PCにPhotoshopが入っていなかったからだ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当としてPSDファイルに遭遇する場面を振り返ってみる。</p>
-
 <h3>デザイナーからの納品データ</h3>
-
-<p>バナーや商品画像の制作をデザイナーに依頼すると、完成データがPSD形式で送られてくることがある。これは「編集可能な状態で渡しますよ」という意味合いが強い。<a href="https://www.ddc.co.jp/words/archives/20130819121802.html" target="_blank" rel="noopener noreferrer">吉田印刷所のDTP用語集</a>でも、PSDは入稿やデータ受け渡しに使われる形式として紹介されていた。</p>
-
+<p>バナーや商品画像の制作をデザイナーに依頼すると、完成データがPSD形式で送られてくることがある。これは「編集可能な状態で渡しますよ」という意味合いが強い。<a href="https://www.ddc.co.jp/words/archives/20130819121802.html" rel="noopener noreferrer" target="_blank">吉田印刷所のDTP用語集</a>でも、PSDは入稿やデータ受け渡しに使われる形式として紹介されていた。</p>
 <p>もし今後デザインの修正が発生しそうなら、PSDファイルは消さずに保管しておいたほうがいい。JPEGに書き出してしまうとレイヤー情報がなくなるので、後から一部だけ直すのが難しくなる。</p>
-
 <h3>印刷物の入稿</h3>
-
-<p>チラシやカタログの印刷を発注するとき、印刷会社からPSD形式での入稿を指定されることがある。<a href="https://www.vanfu.co.jp/column/data/extension.html" target="_blank" rel="noopener noreferrer">バンフーオンラインショップの解説記事</a>でも、PSDやTIFFは画質劣化のない形式として印刷入稿に適していると書かれていた。</p>
-
+<p>チラシやカタログの印刷を発注するとき、印刷会社からPSD形式での入稿を指定されることがある。<a href="https://www.vanfu.co.jp/column/data/extension.html" rel="noopener noreferrer" target="_blank">バンフーオンラインショップの解説記事</a>でも、PSDやTIFFは画質劣化のない形式として印刷入稿に適していると書かれていた。</p>
 <h3>Photoshopなしで開く方法</h3>
-
-<p>PhotoshopのライセンスがなくてもPSDを開く方法はある。僕が調べた範囲では、<a href="https://ferret-plus.com/7493" target="_blank" rel="noopener noreferrer">ferretの記事</a>に詳しくまとまっていた。無料ソフトの「GIMP（ギンプ）」やブラウザ上で使える「Photopea（フォトピー）」なら、PSDファイルをレイヤー付きで開ける。ただし、Photoshopの機能を完全に再現できるわけではないので、複雑なデータだと表示が崩れることもあるようだ。</p>
-
+<p>PhotoshopのライセンスがなくてもPSDを開く方法はある。僕が調べた範囲では、<a href="https://ferret-plus.com/7493" rel="noopener noreferrer" target="_blank">ferretの記事</a>に詳しくまとまっていた。無料ソフトの「GIMP（ギンプ）」やブラウザ上で使える「Photopea（フォトピー）」なら、PSDファイルをレイヤー付きで開ける。ただし、Photoshopの機能を完全に再現できるわけではないので、複雑なデータだと表示が崩れることもあるようだ。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>PSDはそのままWebに使えない</h3>
-
 <p>PSDファイルをECサイトに直接アップロードすることはできない。商品画像として使うには、JPEGやPNGに書き出す（変換する）必要がある。画像ファイル形式の違いは<a href="/image-file-formats.html">画像ファイル形式まとめ</a>に整理した。</p>
-
 <h3>PSDとTIFFの使い分け</h3>
-
 <p>印刷の現場では<a href="tiff.html">TIFF</a>もよく使われる。PSDはPhotoshop専用の編集データ、TIFFはどのソフトでも開ける汎用的な高画質画像、というのが基本的な違いだ。レイヤーを保持したまま渡したいならPSD、レイヤーが不要で汎用性を重視するならTIFF、という使い分けになる。</p>
-
 <h3>ファイルサイズに注意</h3>
-
 <p>PSDはレイヤーの数だけデータが増えるので、ファイルサイズが数百MBになることも珍しくない。メールで送れないサイズになることも多いので、ファイル転送サービスを使うか、クラウドストレージで共有するのが現実的だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -212,35 +221,35 @@
 <li><a href="clipping-path.html">クリッピングパス</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

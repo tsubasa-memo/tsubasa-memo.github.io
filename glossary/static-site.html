@@ -104,8 +104,9 @@
 <script src="/search.js" defer></script>
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -113,29 +114,61 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 静的サイト
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>静的サイトとは？<br>WordPressとの違いとメリット・デメリット</h1>
+
+<div class="article-hero">
+<img alt="静的サイトとは？WordPressとの違いとメリット・デメリット" height="360" loading="eager" src="/thumbs/glossary/static-site.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/static-site.png" alt="静的サイトとは？WordPressとの違いとメリット・デメリット" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">静的サイトとは？<br/>WordPressとの違いとメリット・デメリット</h1>
+<div class="article-meta-line">
+<span>2026年5月2日</span>
+</div>
+
 <h2>静的サイトとは</h2>
-
 <p>静的サイト（Static Site）は、あらかじめ作成されたHTMLファイルをそのまま表示するWebサイトのこと。アクセスがあったとき、サーバーはファイルをそのまま返すだけで、プログラムの実行やデータベースへの問い合わせは行わない。</p>
-
 <p>このメモ帳（ツバサのメモ帳）も<a href="/glossary/github-pages.html">GitHub Pages</a>で運営している静的サイトだ。HTMLファイルを<a href="/glossary/github.html">GitHub</a>のリポジトリにpushするだけで公開される。サーバー代は無料で、WordPressのようなデータベースやPHPの管理が不要なのが助かっている。</p>
 <a class="cite-card" href="/glossary/github-pages.html">
 <span class="cite-ico int">ツ</span>
@@ -151,29 +184,24 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/github.html</span>
 </span>
 </a>
-
-<p><a href="https://developer.mozilla.org/ja/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener nofollow">MDN Web Docs</a>では、Webページの種類として静的ページと動的ページの違いが解説されている。<a href="https://www.cloudflare.com/ja-jp/learning/performance/static-site-generator/" target="_blank" rel="noopener nofollow">Cloudflare</a>の解説でも、静的サイトは事前に生成されたファイルを配信する形式として説明されている。</p>
-<a class="cite-card" href="https://developer.mozilla.org/ja/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">
+<p><a href="https://developer.mozilla.org/ja/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines" rel="noopener nofollow" target="_blank">MDN Web Docs</a>では、Webページの種類として静的ページと動的ページの違いが解説されている。<a href="https://www.cloudflare.com/ja-jp/learning/performance/static-site-generator/" rel="noopener nofollow" target="_blank">Cloudflare</a>の解説でも、静的サイトは事前に生成されたファイルを配信する形式として説明されている。</p>
+<a class="cite-card" href="https://developer.mozilla.org/ja/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">MDN Web Docs</span>
 <span class="cite-url">developer.mozilla.org</span>
 </span>
 </a>
-<a class="cite-card" href="https://www.cloudflare.com/ja-jp/learning/performance/static-site-generator/" target="_blank" rel="noopener noreferrer">
+<a class="cite-card" href="https://www.cloudflare.com/ja-jp/learning/performance/static-site-generator/" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">Cloudflare</span>
 <span class="cite-url">cloudflare.com</span>
 </span>
 </a>
-
 <h2>ブログ運営・Web制作で出てくる場面</h2>
-
 <p>「ブログを始めたい」と思ったとき、最初に候補に上がるのはWordPressやnoteだろう。WordPressは動的サイトで、サーバー契約・ドメイン取得・PHPとデータベースの管理が必要になる。noteは手軽だがデザインの自由度が低い。</p>
-
 <p>静的サイトは第三の選択肢だ。GitHub Pagesを使えば無料でホスティングでき、HTMLとCSSの知識があれば自由にデザインできる。最近はClaude CodeのようなAIツールを使えばHTMLの記述を自動化できるため、コーディングが苦手でも運用のハードルは下がっている。</p>
-
 <p>このメモ帳でも、<a href="/ai-blog-building.html">AIでブログを構築した記録</a>をまとめている。記事の追加・更新はGitHub経由のpush操作で行い、下書き→本番公開のブランチ運用も可能だ。</p>
 <a class="cite-card" href="/ai-blog-building.html">
 <span class="cite-ico int">ツ</span>
@@ -182,21 +210,13 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/ai-blog-building.html</span>
 </span>
 </a>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>静的サイトのメリットは表示速度・コスト・セキュリティの3つに集約される。サーバー側の処理がないため表示が速く、GitHub Pagesなら月額0円で運営でき、データベースがないためSQLインジェクションなどの攻撃対象にならない。</p>
-
 <p>デメリットはHTMLの知識が必要なことと、記事更新のたびにファイルを編集してpushする手間がかかること。コメント欄・お問い合わせフォーム・サイト内検索といった動的な機能は外部サービスやJavaScriptで補う必要がある。</p>
-
 <p>ECサイトそのものを静的サイトで運営するのは難しい（カートや決済が動的処理を必要とする）が、ECの補助的なコンテンツ——たとえば商品撮影のノウハウブログ、用語集、料金比較ページ——を静的サイトとして独立運用するケースは増えている。</p>
-
 <h2>静的サイトと動的サイトの違い</h2>
-
 <p>静的サイトはサーバーに置いたHTMLファイルをそのまま表示する。動的サイトはアクセスのたびにサーバー上のプログラム（PHPやRubyなど）がデータベースからデータを取得し、HTMLを生成して返す。</p>
-
 <p>WordPressが動的サイトの代表格で、管理画面から記事を書くとデータベースに保存され、閲覧者がアクセスするたびにPHPがHTMLを組み立てる。プラグインで機能を追加しやすい反面、PHPやデータベースの脆弱性を突かれるリスクがある。</p>
-
 <p>静的サイトはファイルを直接配信するだけなのでプログラムの実行がなく、高速かつ安全だ。ただし記事が数百ページを超えると管理の手間が増える。その場合は静的サイトジェネレーター（Hugo、Jekyllなど）を使ってMarkdownからHTMLを自動生成する方法もある。<a href="/static-vs-dynamic-site.html">静的サイトと動的サイトの比較記事</a>で詳しくまとめている。</p>
 <a class="cite-card" href="/static-vs-dynamic-site.html">
 <span class="cite-ico int">ツ</span>
@@ -205,36 +225,29 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/static-vs-dynamic-site.html</span>
 </span>
 </a>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. 静的サイトとは何ですか？</div>
 <div class="fa">あらかじめ作成されたHTMLファイルをそのまま表示するWebサイトです。サーバー側でプログラムを動かす必要がなく、表示が速くセキュリティリスクが低いのが特長です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 静的サイトと動的サイトの違いは？</div>
 <div class="fa">静的サイトは固定のHTMLをそのまま返します。動的サイトはアクセスのたびにPHPなどのプログラムでHTMLを生成します。WordPressは動的サイトの代表例です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 静的サイトのメリットは？</div>
 <div class="fa">表示速度が速い、サーバー費用が安い（GitHub Pagesなら無料）、セキュリティリスクが低い、バージョン管理がしやすいという点です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 静的サイトのデメリットは？</div>
 <div class="fa">HTMLの知識が必要で、記事更新にファイル編集とアップロードの手間がかかります。コメント欄や検索機能などの動的機能を自前で実装しにくい点もデメリットです。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. GitHub Pagesは静的サイトですか？</div>
 <div class="fa">はい。GitHubのリポジトリにHTMLファイルを置くだけで無料で公開できるホスティングサービスで、静的サイト専用です。</div>
 </div>
 </div>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -253,24 +266,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

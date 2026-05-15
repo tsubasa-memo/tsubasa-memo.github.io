@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,69 +139,79 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ロット
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>ロットとは？<br>仕入れの「最小ロット」の意味を調べた</h1>
+<div class="article-hero">
+<img alt="ロットとは？仕入れの「最小ロット」の意味を調べた" height="360" loading="eager" src="/thumbs/glossary/lot.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/lot.png" alt="ロットとは？仕入れの「最小ロット」の意味を調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">ロットとは？<br/>仕入れの「最小ロット」の意味を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>ロットとは</h2>
-
 <p>ひとことで言うと、ロット（lot）は「同じ条件でまとめられた製品の一単位」のこと。英語で「束」や「ひとまとまり」を意味する言葉で、製造業や物流の世界でよく使われている。</p>
-
-<p><a href="https://mark.shachihata.co.jp/industrial/info/column/0001/" target="_blank" rel="noopener noreferrer">シヤチハタの用語解説</a>によると、ロットにはいくつかの種類がある。製造現場で同じ条件で作られた製品のまとまりを「製造ロット」、仕入れ・発注の最小単位を「発注ロット」、倉庫から出荷するときの単位を「出荷ロット」と呼ぶ。EC担当が遭遇するのはたいてい「発注ロット」のほうだ。</p>
-
-<p>で、よく聞く「最小ロット」（MOQ: Minimum Order Quantity）は、仕入先が受け付ける注文の最小数量のこと。<a href="https://diamond-rm.net/glossary/75106/" target="_blank" rel="noopener noreferrer">ダイヤモンド・チェーンストアオンラインの用語集</a>でも、最小ロットは製造側が利益を確保するために設定する最低注文数量だと説明されていた。</p>
-
+<p><a href="https://mark.shachihata.co.jp/industrial/info/column/0001/" rel="noopener noreferrer" target="_blank">シヤチハタの用語解説</a>によると、ロットにはいくつかの種類がある。製造現場で同じ条件で作られた製品のまとまりを「製造ロット」、仕入れ・発注の最小単位を「発注ロット」、倉庫から出荷するときの単位を「出荷ロット」と呼ぶ。EC担当が遭遇するのはたいてい「発注ロット」のほうだ。</p>
+<p>で、よく聞く「最小ロット」（MOQ: Minimum Order Quantity）は、仕入先が受け付ける注文の最小数量のこと。<a href="https://diamond-rm.net/glossary/75106/" rel="noopener noreferrer" target="_blank">ダイヤモンド・チェーンストアオンラインの用語集</a>でも、最小ロットは製造側が利益を確保するために設定する最低注文数量だと説明されていた。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC業務をしていると、ロットに関わる場面がけっこう出てくる。僕が遭遇したケースをまとめておく。</p>
-
 <h3>新商品の仕入れ交渉</h3>
-
 <p>仕入先との最初のやりとりで「最小ロットいくつですか？」と確認するのが基本だ。最小ロットが大きいと在庫リスクが高くなる。たとえば最小ロット500個で、月に30個しか売れない商品だったら、在庫をさばくのに1年以上かかる計算になる。</p>
-
-<p><a href="https://stockcrew.co.jp/insights/lot" target="_blank" rel="noopener noreferrer">StockCrewのロット管理解説</a>を読むと、EC事業者にとっては「売れる見込み」と「最小ロット」のバランスが重要で、売上予測を立てたうえで仕入れ数を決めるべきだと書いてあった。</p>
-
+<p><a href="https://stockcrew.co.jp/insights/lot" rel="noopener noreferrer" target="_blank">StockCrewのロット管理解説</a>を読むと、EC事業者にとっては「売れる見込み」と「最小ロット」のバランスが重要で、売上予測を立てたうえで仕入れ数を決めるべきだと書いてあった。</p>
 <h3>OEM商品の発注</h3>
-
-<p>自社ブランドの商品をOEM（委託製造）で作る場合、最小ロットは特に重要になる。工場側としてはまとまった数を作らないと採算が合わないので、最小ロットが100個や1,000個に設定されていることが多い。<a href="https://www.scroll360.jp/note/20230106-6591/" target="_blank" rel="noopener noreferrer">スクロール360のロット解説</a>では、OEMの最小ロットは商品のカテゴリや工場の規模によって大きく異なると紹介されていた。</p>
-
+<p>自社ブランドの商品をOEM（委託製造）で作る場合、最小ロットは特に重要になる。工場側としてはまとまった数を作らないと採算が合わないので、最小ロットが100個や1,000個に設定されていることが多い。<a href="https://www.scroll360.jp/note/20230106-6591/" rel="noopener noreferrer" target="_blank">スクロール360のロット解説</a>では、OEMの最小ロットは商品のカテゴリや工場の規模によって大きく異なると紹介されていた。</p>
 <h3>倉庫でのロット管理</h3>
-
 <p>入荷した商品をロット番号で管理しておくと、万が一不良品が出たときに同じロットの製品だけを特定して対応できる。食品や化粧品など使用期限がある商品では、ロット管理をしていないと先入れ先出しがうまくいかず、古い在庫が倉庫に眠ったままになるリスクがある。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>最小ロットと単価の関係</h3>
-
-<p>基本的に、ロット数が多いほど1個あたりの単価は安くなる。逆に小ロットで仕入れると単価は高くなりがちだ。仕入先から「50個だと1個800円、100個だと1個600円」のように段階的な価格表を出されることもある。<a href="https://officialmag.stores.jp/entry/kaigyou/stocking-words" target="_blank" rel="noopener noreferrer nofollow">STORESの仕入れ用語解説</a>でも、ロット数と単価の関係について触れられていた。このあたりは<a href="kakerate.html">掛け率</a>や<a href="jodai-gedai.html">上代・下代</a>の知識ともつながってくる。</p>
-
+<p>基本的に、ロット数が多いほど1個あたりの単価は安くなる。逆に小ロットで仕入れると単価は高くなりがちだ。仕入先から「50個だと1個800円、100個だと1個600円」のように段階的な価格表を出されることもある。<a href="https://officialmag.stores.jp/entry/kaigyou/stocking-words" rel="noopener noreferrer nofollow" target="_blank">STORESの仕入れ用語解説</a>でも、ロット数と単価の関係について触れられていた。このあたりは<a href="kakerate.html">掛け率</a>や<a href="jodai-gedai.html">上代・下代</a>の知識ともつながってくる。</p>
 <h3>ロットとSKUは別の概念</h3>
-
 <p><a href="sku.html">SKU</a>は「色やサイズなどで分けた商品の管理単位」で、ロットは「同じ条件で製造・入荷したまとまり」を指す。同じSKUの商品でも1月入荷分と3月入荷分は別ロットとして管理できる。混同しやすいけど役割が違う。</p>
-
 <h3>小ロット仕入れができるサービスもある</h3>
-
 <p>最近は小ロットで仕入れができる卸サイトやサービスも増えている。ECを始めたばかりで大量仕入れが難しい場合は、そういったサービスを使うのも手だ。ただし小ロットだと単価が高くなるので、利益率の計算は忘れずに。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -211,7 +221,6 @@
 <li><a href="jan-code.html">JANコード</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -219,28 +228,29 @@
 <li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

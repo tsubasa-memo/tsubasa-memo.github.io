@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,39 +139,64 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; チャージバック
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>チャージバックとは？<br>クレカ決済のトラブルで出てきた用語</h1>
+<div class="article-hero">
+<img alt="チャージバックとは？クレカ決済のトラブルで出てきた用語" height="360" loading="eager" src="/thumbs/glossary/chargeback.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/chargeback.png" alt="チャージバックとは？クレカ決済のトラブルで出てきた用語" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">チャージバックとは？<br/>クレカ決済のトラブルで出てきた用語</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>チャージバックとは</h2>
-
 <p>ひとことで言うと、クレジットカードの持ち主が「この決済に覚えがない」と異議を申し立てたときに、カード会社が売上を取り消してEC事業者に返金を求める仕組みのことだ。</p>
-
-<p><a href="https://knowledge.gmo-pg.com/ja/column/security/other/chargeback_20230804" target="_blank" rel="noopener noreferrer">GMOペイメントゲートウェイの解説</a>によると、チャージバックはカード保有者を不正利用から守るための制度で、国際ブランド（Visa、Mastercardなど）のルールに基づいて運用されている。</p>
-
-<p>問題はEC事業者側の負担だ。チャージバックが成立すると、売上金がカード会社に返金される。すでに商品を発送していた場合、商品が戻ってくることはほとんどない。つまり代金と商品の両方を失う二重の損失になる。<a href="https://shop-pro.jp/yomyom-colorme/66227" target="_blank" rel="noopener noreferrer">カラーミーショップの解説</a>にもこの点がはっきり書いてあった。</p>
-
+<p><a href="https://knowledge.gmo-pg.com/ja/column/security/other/chargeback_20230804" rel="noopener noreferrer" target="_blank">GMOペイメントゲートウェイの解説</a>によると、チャージバックはカード保有者を不正利用から守るための制度で、国際ブランド（Visa、Mastercardなど）のルールに基づいて運用されている。</p>
+<p>問題はEC事業者側の負担だ。チャージバックが成立すると、売上金がカード会社に返金される。すでに商品を発送していた場合、商品が戻ってくることはほとんどない。つまり代金と商品の両方を失う二重の損失になる。<a href="https://shop-pro.jp/yomyom-colorme/66227" rel="noopener noreferrer" target="_blank">カラーミーショップの解説</a>にもこの点がはっきり書いてあった。</p>
 <p>チャージバックが発生する主な原因を整理するとこうなる。</p>
-
 <table class="compare">
 <tr><th>原因</th><th>内容</th></tr>
 <tr><td>不正利用</td><td>盗まれたカード番号で第三者が勝手に購入</td></tr>
@@ -179,35 +204,20 @@
 <tr><td>商品不良</td><td>届いた商品が説明と違う、破損していた</td></tr>
 <tr><td>身に覚えがない</td><td>購入者が注文したこと自体を忘れている</td></tr>
 </table>
-
 <h2>EC実務で出てくる場面</h2>
-
 <h3>高額商品の注文時</h3>
-
-<p>不正利用は高額な商品で起きやすい。家電やブランド品など転売しやすい商品は特に狙われる。<a href="https://akuru-inc.com/knowledge/chargeback/" target="_blank" rel="noopener noreferrer">アクルの解説</a>でも、不正利用のターゲットになりやすい商材について触れられていた。初めての顧客から突然高額注文が入ったときは要注意だ。</p>
-
+<p>不正利用は高額な商品で起きやすい。家電やブランド品など転売しやすい商品は特に狙われる。<a href="https://akuru-inc.com/knowledge/chargeback/" rel="noopener noreferrer" target="_blank">アクルの解説</a>でも、不正利用のターゲットになりやすい商材について触れられていた。初めての顧客から突然高額注文が入ったときは要注意だ。</p>
 <h3>海外からの注文</h3>
-
 <p>海外のIPアドレスからの注文や、配送先が海外住所の場合も不正利用のリスクが高い。決済代行会社の不正検知機能で弾かれることもあるけど、すり抜けてくるケースもある。</p>
-
 <h3>決済代行会社からの通知</h3>
-
-<p>チャージバックが発生すると、決済代行会社から通知が届く。事業者側は取引の正当性を示す証拠（注文データ、発送伝票、配達完了記録など）を提出して反論することもできるが、不正利用の場合は覆すのが難しい。<a href="https://www.epsilon.jp/uriagekoujoiinkai/customer/option_chargeback.html" target="_blank" rel="noopener noreferrer">イプシロンの解説</a>にも異議申し立ての流れが書いてあった。</p>
-
+<p>チャージバックが発生すると、決済代行会社から通知が届く。事業者側は取引の正当性を示す証拠（注文データ、発送伝票、配達完了記録など）を提出して反論することもできるが、不正利用の場合は覆すのが難しい。<a href="https://www.epsilon.jp/uriagekoujoiinkai/customer/option_chargeback.html" rel="noopener noreferrer" target="_blank">イプシロンの解説</a>にも異議申し立ての流れが書いてあった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>3Dセキュア2.0の導入は必須</h3>
-
-<p>3Dセキュアとは、クレジットカード決済時にカード保有者本人であることを追加認証する仕組みだ。パスワードやワンタイムパスコードで確認する。<a href="https://www.sbpayment.jp/support/ec/about-chargeback/" target="_blank" rel="noopener noreferrer">SBペイメントサービスの解説</a>によると、2025年3月末を目処にECサイトへの導入が原則義務化された。3Dセキュアを通った取引でチャージバックが発生した場合、カード会社側が損失を負担するケースが多いので、事業者にとってもメリットが大きい。</p>
-
+<p>3Dセキュアとは、クレジットカード決済時にカード保有者本人であることを追加認証する仕組みだ。パスワードやワンタイムパスコードで確認する。<a href="https://www.sbpayment.jp/support/ec/about-chargeback/" rel="noopener noreferrer" target="_blank">SBペイメントサービスの解説</a>によると、2025年3月末を目処にECサイトへの導入が原則義務化された。3Dセキュアを通った取引でチャージバックが発生した場合、カード会社側が損失を負担するケースが多いので、事業者にとってもメリットが大きい。</p>
 <h3>不正検知サービスの併用</h3>
-
 <p>3Dセキュアだけでは防ぎきれない不正もある。不正検知サービスを併用すると、注文時のIPアドレス、デバイス情報、過去の注文パターンなどから不正の疑いがある取引を自動で検出してくれる。決済代行会社がオプションで提供していることが多い。</p>
-
 <h3>チャージバック保険という選択肢</h3>
-
 <p>チャージバックによる損失を保険でカバーするサービスもある。月額料金はかかるけど、万が一のときの損失を抑えられるので、高額商品を扱うECサイトは検討する価値がある。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -216,35 +226,35 @@
 <li><a href="fba.html">FBA</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

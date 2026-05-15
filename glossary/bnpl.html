@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,37 +139,63 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 後払い決済（BNPL）
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>後払い決済（BNPL）とは？<br>決済手段の追加を検討したときの話</h1>
+<div class="article-hero">
+<img alt="後払い決済（BNPL）とは？決済手段の追加を検討したときの話" height="360" loading="eager" src="/thumbs/glossary/bnpl.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/bnpl.png" alt="後払い決済（BNPL）とは？決済手段の追加を検討したときの話" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">後払い決済（BNPL）とは？<br/>決済手段の追加を検討したときの話</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>後払い決済（BNPL）とは</h2>
-
 <p>ひとことで言うと、商品を受け取ったあとにコンビニや銀行で代金を支払う決済方法のことだ。BNPLは「Buy Now, Pay Later（今買って、後で払う）」の略で、海外ではこの呼び方が一般的になっている。</p>
-
-<p><a href="https://www.sbpayment.jp/support/ec/bnpl/" target="_blank" rel="noopener noreferrer">SBペイメントサービスの解説</a>によると、BNPLの特徴はクレジットカードがなくても使えること。購入者はメールアドレスと電話番号を登録するだけで利用でき、購入時に簡易的な与信審査が行われる。商品到着後に請求書が届き、コンビニ・銀行・口座振替などで支払う仕組みだ。</p>
-
+<p><a href="https://www.sbpayment.jp/support/ec/bnpl/" rel="noopener noreferrer" target="_blank">SBペイメントサービスの解説</a>によると、BNPLの特徴はクレジットカードがなくても使えること。購入者はメールアドレスと電話番号を登録するだけで利用でき、購入時に簡易的な与信審査が行われる。商品到着後に請求書が届き、コンビニ・銀行・口座振替などで支払う仕組みだ。</p>
 <p>クレジットカード決済との違いを整理するとこうなる。</p>
-
 <table class="compare">
 <tr><th>項目</th><th>クレジットカード</th><th>後払い決済（BNPL）</th></tr>
 <tr><td>カードの要否</td><td>必要</td><td>不要</td></tr>
@@ -177,37 +203,21 @@
 <tr><td>支払いタイミング</td><td>翌月以降の引き落とし</td><td>請求書到着後14日以内が多い</td></tr>
 <tr><td>分割払い</td><td>可能</td><td>サービスにより可能</td></tr>
 </table>
-
-<p><a href="https://ja.komoju.com/blog/deferred-payment/bnpl/" target="_blank" rel="noopener noreferrer">KOMOJUの解説</a>にも、BNPLの市場規模は年々拡大しており、2026年度には国内で約2兆円規模になると予測されていると書いてあった。</p>
-
+<p><a href="https://ja.komoju.com/blog/deferred-payment/bnpl/" rel="noopener noreferrer" target="_blank">KOMOJUの解説</a>にも、BNPLの市場規模は年々拡大しており、2026年度には国内で約2兆円規模になると予測されていると書いてあった。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <h3>カゴ落ち対策として</h3>
-
-<p>ECサイトで購入手続きまで進んだのに、決済画面で離脱してしまう「カゴ落ち」の原因の一つが、希望する決済手段がないことだ。<a href="https://shop-pro.jp/yomyom-colorme/80518" target="_blank" rel="noopener noreferrer">カラーミーショップの記事</a>によると、後払い決済を追加することでカゴ落ち率が下がるケースがあるという。クレジットカードを持っていない層や、カード情報を入力したくない層を取り込める。</p>
-
+<p>ECサイトで購入手続きまで進んだのに、決済画面で離脱してしまう「カゴ落ち」の原因の一つが、希望する決済手段がないことだ。<a href="https://shop-pro.jp/yomyom-colorme/80518" rel="noopener noreferrer" target="_blank">カラーミーショップの記事</a>によると、後払い決済を追加することでカゴ落ち率が下がるケースがあるという。クレジットカードを持っていない層や、カード情報を入力したくない層を取り込める。</p>
 <h3>若年層・主婦層への対応</h3>
-
 <p>クレジットカードを持っていない10代〜20代前半の若年層や、家族カードを使いたくない主婦層にとって、後払い決済は唯一のオンライン決済手段になることがある。ターゲット層にこうした顧客が多いなら、導入を検討する価値がある。</p>
-
 <h3>代金引換からの切り替え</h3>
-
-<p>代金引換は受取拒否のリスクがある。商品を届けたのに受け取ってもらえず、往復の送料だけかかるという最悪のケースもある。後払い決済なら商品は先に届けつつ、回収リスクは決済サービス会社が負担してくれる（保証付きプランの場合）ので、代引きの代替手段として使われることが増えている。<a href="https://service.smt.docomo.ne.jp/keitai_payment/corporation/shop/tips/ID39.html" target="_blank" rel="noopener noreferrer">ドコモのキャリア決済ガイド</a>にも代引き代替としてのBNPL活用が紹介されていた。</p>
-
+<p>代金引換は受取拒否のリスクがある。商品を届けたのに受け取ってもらえず、往復の送料だけかかるという最悪のケースもある。後払い決済なら商品は先に届けつつ、回収リスクは決済サービス会社が負担してくれる（保証付きプランの場合）ので、代引きの代替手段として使われることが増えている。<a href="https://service.smt.docomo.ne.jp/keitai_payment/corporation/shop/tips/ID39.html" rel="noopener noreferrer" target="_blank">ドコモのキャリア決済ガイド</a>にも代引き代替としてのBNPL活用が紹介されていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>手数料率はクレカより高い</h3>
-
-<p>後払い決済の手数料率は一般的にクレジットカード決済より高い。請求書の発行・送付コストや未回収リスクの保証が含まれているからだ。<a href="https://www.robotpayment.co.jp/blog/payment/15114/" target="_blank" rel="noopener noreferrer">ROBOT PAYMENTの解説</a>にも手数料の目安が書いてあった。導入前に手数料率と想定利用率を計算して、採算が合うか確認しておく必要がある。</p>
-
+<p>後払い決済の手数料率は一般的にクレジットカード決済より高い。請求書の発行・送付コストや未回収リスクの保証が含まれているからだ。<a href="https://www.robotpayment.co.jp/blog/payment/15114/" rel="noopener noreferrer" target="_blank">ROBOT PAYMENTの解説</a>にも手数料の目安が書いてあった。導入前に手数料率と想定利用率を計算して、採算が合うか確認しておく必要がある。</p>
 <h3>未回収リスク保証の有無を確認する</h3>
-
 <p>後払い決済サービスには、購入者が支払わなかった場合でも事業者への入金を保証する「未回収リスク保証」がついているプランが多い。ただし、保証なしの安いプランもあるので、契約時に必ず確認すること。保証がないと未払い発生時に自社で回収対応をしなければならない。</p>
-
 <h3>与信NGで注文キャンセルになることがある</h3>
-
 <p>後払い決済は購入ごとに与信審査が入る。過去に支払い遅延がある購入者や、不正利用の疑いがある注文は与信NGとなり、その決済方法では購入できなくなる。一定割合で与信NGが出ることは想定しておいたほうがいい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -216,35 +226,35 @@
 <li><a href="fba.html">FBA</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

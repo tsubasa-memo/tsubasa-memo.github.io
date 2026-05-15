@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,35 +139,62 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; CRM
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>CRMとは？<br>顧客管��ツール導入の話で出てきた用語</h1>
+<div class="article-hero">
+<img alt="CRMとは？顧客管��ツール導入の話で出てきた用語" height="360" loading="eager" src="/thumbs/glossary/crm.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/crm.png" alt="CRMとは？顧客管��ツール導入の話で出てきた用語" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">CRMとは？<br/>顧客管��ツール導入の話で出てきた用語</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>CRMとは</h2>
-
 <p>ひとことで言うと、顧客の情報を一元管理して、顧客との関係を良好に保つための手法やツールのこと。CRMは「Customer Relationship Management（顧客関係管理）」の略だ。</p>
-
-<p><a href="https://www.w2solution.co.jp/useful_info_ec/6697/" target="_blank" rel="noopener noreferrer">w2ソリューションの解説記事</a>によると、CRMツールでは以下のような情報を一元管理できる。</p>
-
+<p><a href="https://www.w2solution.co.jp/useful_info_ec/6697/" rel="noopener noreferrer" target="_blank">w2ソリューションの解説記事</a>によると、CRMツールでは以下のような情報を一元管理できる。</p>
 <ul>
 <li>顧客の基本情報（名前、メールアドレス、住所など）</li>
 <li>購入履歴（何をいつ買ったか、購入金額）</li>
@@ -175,48 +202,29 @@
 <li>メール配信の開封・クリック状況</li>
 <li>サイト内の行動履歴</li>
 </ul>
-
 <p>これらのデータを分析して、「この顧客にはこのタイミングでこんなメールを送ろう」「このセグメントの顧客にはクーポンを出そう」といった施策を打つのがCRMの基本的な使い方だ。</p>
-
-<p>似た用語にMA（マーケティングオートメーション）とSFA（営業支援システム）がある。<a href="https://it-trend.jp/crm/article/21-0056" target="_blank" rel="noopener noreferrer">ITトレンドの解説</a>で違いが整理されていたので、表にまとめておく。</p>
-
+<p>似た用語にMA（マーケティングオートメーション）とSFA（営業支援システム）がある。<a href="https://it-trend.jp/crm/article/21-0056" rel="noopener noreferrer" target="_blank">ITトレンドの解説</a>で違いが整理されていたので、表にまとめておく。</p>
 <table class="compare">
 <tr><th>用語</th><th>主な目的</th><th>EC向けの用途</th></tr>
 <tr><td>CRM</td><td>顧客情報の管理・関係構築</td><td>リピーター育成、顧客分析</td></tr>
 <tr><td>MA</td><td>マーケティング活動の自動化</td><td>メール配信、スコアリング</td></tr>
 <tr><td>SFA</td><td>営業活動の管理・効率化</td><td>BtoB ECでの商談管理</td></tr>
 </table>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>ECサイトを運営していると、CRMの話題が出てくる場面はけっこう多い。僕が遭遇したケースを書いておく。</p>
-
 <h3>リピーター向けのメール配信</h3>
-
-<p>一度購入してくれたお客さんに対して、関連商品の案内やセール情報をメールで送る。CRMツールを使えば「過去3ヶ月以内に購入した人」「購入金額が1万円以上の人」のようにセグメントを切って、それぞれに合った内容のメールを送れる。<a href="https://ebisumart.com/blog/crm/" target="_blank" rel="noopener noreferrer">ebisumartの記事</a>でも、ECサイトのCRM施策としてセグメント別メール配信が筆頭に挙げられていた。</p>
-
+<p>一度購入してくれたお客さんに対して、関連商品の案内やセール情報をメールで送る。CRMツールを使えば「過去3ヶ月以内に購入した人」「購入金額が1万円以上の人」のようにセグメントを切って、それぞれに合った内容のメールを送れる。<a href="https://ebisumart.com/blog/crm/" rel="noopener noreferrer" target="_blank">ebisumartの記事</a>でも、ECサイトのCRM施策としてセグメント別メール配信が筆頭に挙げられていた。</p>
 <h3>休眠顧客の掘り起こし</h3>
-
-<p>最後の購入から半年以上経っている「休眠顧客」に対して、クーポンを配って再購入を促す施策もCRMの定番だ。新規顧客を獲得するよりも、既存顧客に再購入してもらうほうがコストが低いという考え方がベースにある。<a href="https://marketing.f-i-d.jp/blogs/successful-crm-implementation-in-ec/" target="_blank" rel="noopener noreferrer">FIDの事例記事</a>でも、休眠顧客向け施策でリピート率が改善した事例が紹介されていた。</p>
-
+<p>最後の購入から半年以上経っている「休眠顧客」に対して、クーポンを配って再購入を促す施策もCRMの定番だ。新規顧客を獲得するよりも、既存顧客に再購入してもらうほうがコストが低いという考え方がベースにある。<a href="https://marketing.f-i-d.jp/blogs/successful-crm-implementation-in-ec/" rel="noopener noreferrer" target="_blank">FIDの事例記事</a>でも、休眠顧客向け施策でリピート率が改善した事例が紹介されていた。</p>
 <h3>LTV（顧客生涯価値）の分析</h3>
-
 <p>CRMツールを使うと、顧客一人あたりの累計購入金額や購入頻度を分析できる。これが<a href="ltv.html">LTV（顧客生涯価値）</a>の把握につながる。どのチャネルから来た顧客のLTVが高いのかがわかれば、広告費の配分を最適化できる。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>まずはデータの整理から</h3>
-
-<p>CRMツールを導入しても、データがバラバラだと活用できない。ECサイトの会員情報、購入履歴、メルマガの配信リスト、実店舗の顧客データなど、散らばっているデータを一つにまとめるところから始める必要がある。<a href="https://www.makeshop.jp/main/knowhow/term/crm.html" target="_blank" rel="noopener noreferrer">makeshopの解説</a>でも、データの名寄せ（同一人物のデータを統合する作業）が最初の壁になると書いてあった。</p>
-
+<p>CRMツールを導入しても、データがバラバラだと活用できない。ECサイトの会員情報、購入履歴、メルマガの配信リスト、実店舗の顧客データなど、散らばっているデータを一つにまとめるところから始める必要がある。<a href="https://www.makeshop.jp/main/knowhow/term/crm.html" rel="noopener noreferrer" target="_blank">makeshopの解説</a>でも、データの名寄せ（同一人物のデータを統合する作業）が最初の壁になると書いてあった。</p>
 <h3>ECカートにCRM機能が付いていることもある</h3>
-
 <p>Shopifyやfutureshop、makeshopなどのECカートシステムには、顧客管理やメール配信の機能が標準で付いていたり、プラグインで追加できたりする。本格的なCRM専用ツールを導入する前に、今使っているカートシステムの機能で足りないか確認したほうがいい。</p>
-
 <h3>ツール選びより「何をしたいか」が先</h3>
-
 <p>CRMツールはたくさんあるけど、「とりあえず導入しよう」で始めると使いこなせないまま終わる。「リピート購入率を上げたい」「休眠顧客を掘り起こしたい」など、やりたいことを明確にしてからツールを選んだほうが失敗しにくい。僕のところでも、最初にやりたい施策を3つに絞ってからツール選定を始めた。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -225,35 +233,35 @@
 <li><a href="omnichannel.html">オムニチャネル</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

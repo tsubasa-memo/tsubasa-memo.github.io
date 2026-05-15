@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,35 +139,62 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; フルフィルメント
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>フルフィルメントとは？<br>EC物流で出てくる用語を調べた</h1>
+<div class="article-hero">
+<img alt="フルフィルメントとは？EC物流で出てくる用語を調べた" height="360" loading="eager" src="/thumbs/glossary/fulfillment.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/fulfillment.png" alt="フルフィルメントとは？EC物流で出てくる用語を調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">フルフィルメントとは？<br/>EC物流で出てくる用語を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>フルフィルメントとは</h2>
-
 <p>ひとことで言うと、ECサイトで注文が入ってから商品が購入者の手元に届くまでの一連の業務全体を指す言葉だ。英語の「fulfillment」には「遂行・履行」という意味がある。</p>
-
-<p><a href="https://www.makeshop.jp/main/knowhow/term/fulfillment.html" target="_blank" rel="noopener noreferrer">makeshopのEC用語解説</a>によると、フルフィルメントに含まれる業務はざっくり以下のとおり。</p>
-
+<p><a href="https://www.makeshop.jp/main/knowhow/term/fulfillment.html" rel="noopener noreferrer" target="_blank">makeshopのEC用語解説</a>によると、フルフィルメントに含まれる業務はざっくり以下のとおり。</p>
 <ul>
 <li>入荷・検品</li>
 <li>保管・在庫管理</li>
@@ -177,39 +204,22 @@
 <li>返品・交換対応</li>
 <li>カスタマーサポート</li>
 </ul>
-
-<p>つまり、商品企画やマーケティング以外の「裏側の実務」をまるっとまとめた概念だと理解した。<a href="https://www.logiless.com/blog/ec-biz-efficiency/fulfillment/" target="_blank" rel="noopener noreferrer">LOGILESSのブログ</a>でも同じような説明がされていて、フルフィルメントは物流だけでなく受注処理やCS対応まで含む点が特徴だと書いてあった。</p>
-
-<p>似た言葉に「3PL」があるけど、3PLは物流業務の外部委託を指すのに対し、フルフィルメントはもっと広い業務範囲を含む。<a href="https://ec-bpo.e-logit.com/column/15/" target="_blank" rel="noopener noreferrer">イー・ロジットのコラム</a>に両者の違いがわかりやすく整理されていた。3PLはフルフィルメントの中の物流部分を担う、という関係になる。</p>
-
+<p>つまり、商品企画やマーケティング以外の「裏側の実務」をまるっとまとめた概念だと理解した。<a href="https://www.logiless.com/blog/ec-biz-efficiency/fulfillment/" rel="noopener noreferrer" target="_blank">LOGILESSのブログ</a>でも同じような説明がされていて、フルフィルメントは物流だけでなく受注処理やCS対応まで含む点が特徴だと書いてあった。</p>
+<p>似た言葉に「3PL」があるけど、3PLは物流業務の外部委託を指すのに対し、フルフィルメントはもっと広い業務範囲を含む。<a href="https://ec-bpo.e-logit.com/column/15/" rel="noopener noreferrer" target="_blank">イー・ロジットのコラム</a>に両者の違いがわかりやすく整理されていた。3PLはフルフィルメントの中の物流部分を担う、という関係になる。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <h3>物流外注の検討時</h3>
-
 <p>自社で倉庫を持たずにEC事業を始める場合、物流をどこかに委託する必要がある。そのときに「フルフィルメントサービス」という形で提案されることが多い。保管から出荷まで一括でお願いできるので、自分たちは商品の仕入れや販売に集中できる。</p>
-
 <h3>Amazon出品でのFBA</h3>
-
-<p>Amazonで出品するときに必ず出てくるのが<a href="https://sell.amazon.co.jp/fulfill/fulfillment-by-amazon" target="_blank" rel="noopener nofollow">FBA（Fulfillment by Amazon）</a>だ。これはAmazonが提供するフルフィルメントサービスそのもので、商品をAmazonの倉庫に送っておけば、注文が入ったあとの出荷・配送・返品対応まで全部やってくれる。</p>
-
+<p>Amazonで出品するときに必ず出てくるのが<a href="https://sell.amazon.co.jp/fulfill/fulfillment-by-amazon" rel="noopener nofollow" target="_blank">FBA（Fulfillment by Amazon）</a>だ。これはAmazonが提供するフルフィルメントサービスそのもので、商品をAmazonの倉庫に送っておけば、注文が入ったあとの出荷・配送・返品対応まで全部やってくれる。</p>
 <h3>注文数が増えてきたとき</h3>
-
-<p>立ち上げ初期は自分たちで梱包・発送していても、注文が1日数十件を超えてくると回らなくなる。そのタイミングでフルフィルメントサービスの導入を検討するケースが多いらしい。<a href="https://www.kk-sankyo.com/case/column_20211122/" target="_blank" rel="noopener noreferrer">三協のコラム</a>にもそういった導入タイミングの話が書いてあった。</p>
-
+<p>立ち上げ初期は自分たちで梱包・発送していても、注文が1日数十件を超えてくると回らなくなる。そのタイミングでフルフィルメントサービスの導入を検討するケースが多いらしい。<a href="https://www.kk-sankyo.com/case/column_20211122/" rel="noopener noreferrer" target="_blank">三協のコラム</a>にもそういった導入タイミングの話が書いてあった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>「フルフィルメント費用」の内訳を確認する</h3>
-
 <p>フルフィルメントサービスの見積もりを取ると、保管料・出荷手数料・梱包資材費・配送料など複数の項目が並ぶ。「フルフィルメント費用」と一括で提示されることもあるが、何が含まれていて何が別料金なのかを確認しないと、あとで想定外の請求が来ることがある。</p>
-
 <h3>フルフィルメントの品質が顧客満足度に直結する</h3>
-
-<p>梱包の丁寧さ、配送スピード、返品時の対応スムーズさ。これらは全部フルフィルメントの範囲だ。<a href="https://fujilogi.net/blogs/column/butsuryu-12" target="_blank" rel="noopener noreferrer">富士ロジテックのコラム</a>にも書いてあったけど、商品そのものがよくても、届くまでの体験が悪ければレビューは下がる。EC事業ではフルフィルメントの品質がリピート率に影響するという点は覚えておきたい。</p>
-
+<p>梱包の丁寧さ、配送スピード、返品時の対応スムーズさ。これらは全部フルフィルメントの範囲だ。<a href="https://fujilogi.net/blogs/column/butsuryu-12" rel="noopener noreferrer" target="_blank">富士ロジテックのコラム</a>にも書いてあったけど、商品そのものがよくても、届くまでの体験が悪ければレビューは下がる。EC事業ではフルフィルメントの品質がリピート率に影響するという点は覚えておきたい。</p>
 <h3>自社運営か外注かは規模で判断</h3>
-
 <p>月間出荷数が少ないうちは自社で対応したほうがコストは安い。ただ、注文数が増えてくると人件費や倉庫の固定費がかさんでくる。どこから外注に切り替えるかは、出荷件数と費用のバランスで判断することになる。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -221,35 +231,35 @@
 <li><a href="cross-docking-cost.html">横持ちコスト</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

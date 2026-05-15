@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,73 +139,81 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; TIFF
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>TIFFとは？<br>PSDとの違いもまとめた｜印刷データの基本</h1>
+<div class="article-hero">
+<img alt="TIFFとは？PSDとの違いもまとめた｜印刷データの基本" height="360" loading="eager" src="/thumbs/glossary/tiff.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/tiff.png" alt="TIFFとは？PSDとの違いもまとめた｜印刷データの基本" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">TIFFとは？<br/>PSDとの違いもまとめた｜印刷データの基本</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>TIFFとは</h2>
-
 <p>ひとことで言うと、画質を劣化させずに保存できる汎用的な画像ファイル形式のこと。TIFFは「Tagged Image File Format（タグ付き画像ファイル形式）」の略だ。拡張子は「.tiff」または「.tif」。</p>
-
-<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/tiff-file.html" target="_blank" rel="noopener noreferrer">Adobeの公式ページ</a>によると、TIFFはほぼすべてのペイント、画像編集、ページレイアウトアプリケーションでサポートされている柔軟なラスター画像形式とのこと。1986年にAldus社（現Adobe）が開発した形式で、印刷・出版業界では長い間使われてきた。</p>
-
-<p>TIFFの特徴は、無圧縮またはLZW（可逆圧縮）で保存できること。JPEGのように保存のたびに画質が落ちることがないので、高品質な画像データの保管に向いている。<a href="https://www.kinkos.co.jp/column/save-format-tiff-jpeg-pdf/" target="_blank" rel="noopener noreferrer">キンコーズの解説記事</a>でも、TIFFは画質劣化のない形式として印刷データの保存に適していると紹介されていた。</p>
-
+<p><a href="https://www.adobe.com/jp/creativecloud/file-types/image/raster/tiff-file.html" rel="noopener noreferrer" target="_blank">Adobeの公式ページ</a>によると、TIFFはほぼすべてのペイント、画像編集、ページレイアウトアプリケーションでサポートされている柔軟なラスター画像形式とのこと。1986年にAldus社（現Adobe）が開発した形式で、印刷・出版業界では長い間使われてきた。</p>
+<p>TIFFの特徴は、無圧縮またはLZW（可逆圧縮）で保存できること。JPEGのように保存のたびに画質が落ちることがないので、高品質な画像データの保管に向いている。<a href="https://www.kinkos.co.jp/column/save-format-tiff-jpeg-pdf/" rel="noopener noreferrer" target="_blank">キンコーズの解説記事</a>でも、TIFFは画質劣化のない形式として印刷データの保存に適していると紹介されていた。</p>
 <p>ただし、無圧縮で保存するとファイルサイズがかなり大きくなる。同じ画像でもJPEGの10倍以上のサイズになることもある。そのため、Webでの使用にはまったく向いていない。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当としてTIFFに遭遇する場面は、印刷がらみの仕事が中心だ。</p>
-
 <h3>印刷会社とのデータのやり取り</h3>
-
-<p>チラシやカタログ、パッケージの印刷を発注するとき、印刷会社からTIFF形式で画像データを受け取ることがある。<a href="https://www.vanfu.co.jp/column/data/extension.html" target="_blank" rel="noopener noreferrer">バンフーオンラインショップの解説</a>でも、TIFFは印刷に適した保存形式として紹介されていた。CMYKカラーモード（<a href="rgb-cmyk.html">RGBとCMYKの違い</a>）にも対応しているので、印刷の色を正確に再現できる。</p>
-
+<p>チラシやカタログ、パッケージの印刷を発注するとき、印刷会社からTIFF形式で画像データを受け取ることがある。<a href="https://www.vanfu.co.jp/column/data/extension.html" rel="noopener noreferrer" target="_blank">バンフーオンラインショップの解説</a>でも、TIFFは印刷に適した保存形式として紹介されていた。CMYKカラーモード（<a href="rgb-cmyk.html">RGBとCMYKの違い</a>）にも対応しているので、印刷の色を正確に再現できる。</p>
 <h3>入稿データの形式指定</h3>
-
-<p>印刷会社の入稿ガイドラインを読むと、対応形式に「PSD、TIFF、EPS」と書かれていることが多い。<a href="https://www.tcpc.co.jp/columns/index015" target="_blank" rel="noopener noreferrer">東京カラー印刷のコラム</a>でも、TIFFやPSDは画質劣化のない形式として入稿に推奨されていた。JPEGでの入稿は「画質が落ちるので非推奨」とされているケースもある。</p>
-
+<p>印刷会社の入稿ガイドラインを読むと、対応形式に「PSD、TIFF、EPS」と書かれていることが多い。<a href="https://www.tcpc.co.jp/columns/index015" rel="noopener noreferrer" target="_blank">東京カラー印刷のコラム</a>でも、TIFFやPSDは画質劣化のない形式として入稿に推奨されていた。JPEGでの入稿は「画質が落ちるので非推奨」とされているケースもある。</p>
 <h3>写真スタジオからの納品データ</h3>
-
 <p>商品写真の撮影をプロのスタジオに依頼すると、高品質な画像データがTIFF形式で納品されることがある。Web用にはJPEGに変換して使い、TIFFの元データは保管しておくのが一般的な運用だ。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>TIFFはWebブラウザで表示できない</h3>
-
 <p>TIFFファイルはChrome、Safari、Firefoxなどの主要ブラウザで直接表示できない。ECサイトに商品画像としてアップロードすることもできないので、Web用にはJPEGやPNGに変換する必要がある。画像ファイル形式の使い分けは<a href="/image-file-formats.html">画像ファイル形式まとめ</a>に整理した。</p>
-
 <h3>レイヤー付きTIFFもある</h3>
-
 <p>TIFFはPhotoshopで保存するとき、<a href="layer.html">レイヤー</a>情報を保持したまま保存することもできる。ただし、Photoshop以外のソフトでレイヤー付きTIFFを開くと、レイヤーが統合された状態で表示されることが多い。レイヤーを活かした編集を続けるなら、<a href="psd.html">PSD</a>形式で保存するほうが確実だ。</p>
-
 <h3>元データとしての保管に向いている</h3>
-
-<p><a href="https://zokeifile.musabi.ac.jp/tiff/" target="_blank" rel="noopener noreferrer">武蔵野美術大学の造形ファイル</a>でも、TIFFは印刷・出版用途の標準的な画像形式として紹介されていた。画質劣化がなく、ほとんどのソフトで開けるので、写真や印刷データのアーカイブ（長期保管）にも適している。</p>
-
+<p><a href="https://zokeifile.musabi.ac.jp/tiff/" rel="noopener noreferrer" target="_blank">武蔵野美術大学の造形ファイル</a>でも、TIFFは印刷・出版用途の標準的な画像形式として紹介されていた。画質劣化がなく、ほとんどのソフトで開けるので、写真や印刷データのアーカイブ（長期保管）にも適している。</p>
 <h2>TIFFとPSDの違い</h2>
-
 <p>印刷の現場ではTIFFとPSDのどちらも使われるので、違いを整理しておく。</p>
-
 <table class="compare">
 <tr><th>項目</th><th>TIFF</th><th>PSD</th></tr>
 <tr><td>開発元</td><td>Aldus社（現Adobe）</td><td>Adobe</td></tr>
@@ -215,13 +223,9 @@
 <tr><td>主な用途</td><td>印刷入稿、データ納品</td><td>デザイン編集作業</td></tr>
 <tr><td>Webでの使用</td><td>不可</td><td>不可</td></tr>
 </table>
-
 <p>ざっくり言うと、PSDは「Photoshopでの編集作業用」、TIFFは「完成データの受け渡し用」という位置づけだ。デザイナーがPSDで作業して、納品時にTIFFに書き出す、という流れが多い。</p>
-
 <p>PSDはPhotoshopの編集機能（スマートオブジェクト、調整レイヤー、テキストレイヤーなど）をすべて保持できるので、後から修正が必要な場面に強い。一方TIFFは、Photoshop以外のソフト（InDesignやQuarkXPressなど）でも問題なく読み込めるので、印刷ワークフローに組み込みやすい。</p>
-
 <p>僕のようなEC担当の立場だと、TIFFを受け取ったらJPEGに変換してWebに使い、元のTIFFは保管しておく。もしデザインの修正が必要になったら、デザイナーにPSDファイルを修正してもらう。そういう使い分けになると思う。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -230,7 +234,6 @@
 <li><a href="layer.html">レイヤー</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -238,28 +241,29 @@
 <li><a href="/glossary/psd.html">PSDとは？開けないファイルの正体を調べたメモ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

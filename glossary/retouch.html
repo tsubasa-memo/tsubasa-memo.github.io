@@ -129,8 +129,9 @@
 <script src="/search.js" defer></script>
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,85 +139,104 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
-<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; レタッチ
-</div>
-</nav>
-<section class="hero">
-<div class="wrap">
-<h1>レタッチとは？<br>写真の修正・補正の意味と加工との違いを調べた</h1>
-</div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/retouch.png" alt="レタッチとは？写真の修正・補正の意味と加工との違いを調べた" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
-<h2>レタッチとは</h2>
+</aside>
 
-<p>レタッチ（retouch）は「re（再び）＋ touch（触れる）」が語源で、写真に手を加えて修正・補正する作業の総称だ。<a href="https://personal.canon.jp/articles/beginner/glossary/retouch" target="_blank" rel="noopener">キヤノンの用語集</a>では「画像編集ソフトを使って画像の濃度やコントラストを調整する作業」と説明されている。</p>
-<a class="cite-card" href="https://personal.canon.jp/articles/beginner/glossary/retouch" target="_blank" rel="noopener">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; レタッチ
+
+</nav>
+
+<div class="article-hero">
+<img alt="レタッチとは？写真の修正・補正の意味と加工との違いを調べた" height="360" loading="eager" src="/thumbs/glossary/retouch.png" width="640"/>
+</div>
+
+<h1 class="article-title">レタッチとは？<br/>写真の修正・補正の意味と加工との違いを調べた</h1>
+<div class="article-meta-line">
+<span>2026年5月1日</span>
+</div>
+
+<h2>レタッチとは</h2>
+<p>レタッチ（retouch）は「re（再び）＋ touch（触れる）」が語源で、写真に手を加えて修正・補正する作業の総称だ。<a href="https://personal.canon.jp/articles/beginner/glossary/retouch" rel="noopener" target="_blank">キヤノンの用語集</a>では「画像編集ソフトを使って画像の濃度やコントラストを調整する作業」と説明されている。</p>
+<a class="cite-card" href="https://personal.canon.jp/articles/beginner/glossary/retouch" rel="noopener" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">レタッチ - キヤノンの用語集</span>
 <span class="cite-url">personal.canon.jp</span>
 </span>
 </a>
-
-<p>具体的にやることは幅広い。<a href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/retouching.html" target="_blank" rel="noopener">Adobeの解説記事</a>では、明るさや色味の調整から不要物の除去、背景の切り抜き、肌の質感調整まで、撮影後に写真の見た目を整える作業の全般をレタッチとして紹介している。<a href="https://e-words.jp/w/%E3%83%AC%E3%82%BF%E3%83%83%E3%83%81.html" target="_blank" rel="noopener">IT用語辞典e-Words</a>は「ビットマップ画像を対象とする加工処理」と定義しており、JPEG・PNG・TIFF・RAWデータなどが対象になる。</p>
-<a class="cite-card" href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/retouching.html" target="_blank" rel="noopener">
+<p>具体的にやることは幅広い。<a href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/retouching.html" rel="noopener" target="_blank">Adobeの解説記事</a>では、明るさや色味の調整から不要物の除去、背景の切り抜き、肌の質感調整まで、撮影後に写真の見た目を整える作業の全般をレタッチとして紹介している。<a href="https://e-words.jp/w/%E3%83%AC%E3%82%BF%E3%83%83%E3%83%81.html" rel="noopener" target="_blank">IT用語辞典e-Words</a>は「ビットマップ画像を対象とする加工処理」と定義しており、JPEG・PNG・TIFF・RAWデータなどが対象になる。</p>
+<a class="cite-card" href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/retouching.html" rel="noopener" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">写真のレタッチとは？基本と手順 - Adobe</span>
 <span class="cite-url">adobe.com</span>
 </span>
 </a>
-<a class="cite-card" href="https://e-words.jp/w/%E3%83%AC%E3%82%BF%E3%83%83%E3%83%81.html" target="_blank" rel="noopener">
+<a class="cite-card" href="https://e-words.jp/w/%E3%83%AC%E3%82%BF%E3%83%83%E3%83%81.html" rel="noopener" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">レタッチ - IT用語辞典e-Words</span>
 <span class="cite-url">e-words.jp</span>
 </span>
 </a>
-
 <p>なお、英語では retouch は「リタッチ」に近い発音だが、日本の写真業界では「レタッチ」が一般的。美容業界では「リタッチ」（髪の根元染め直し）と使い分けることが多い。</p>
-
 <h2>EC実務・撮影で出てくる場面</h2>
-
 <h3>撮影代行の見積もりで「レタッチ込み」と書いてある</h3>
-
 <p>商品撮影を外注すると、見積もりに「撮影＋レタッチ」「レタッチ別途」などの記載がある。この場合のレタッチは通常、<a href="color-correction.html">色補正</a>・<a href="/background-white.html">白抜き</a>・<a href="resize.html">リサイズ</a>のセットを指している。外注先によって「レタッチ」に含まれる作業範囲が異なるため、見積もり段階で確認しておかないと追加費用が発生することがある。</p>
-
 <h3>ECモールの画像規定を満たすために使う</h3>
-
 <p>Amazonはメイン画像を「純粋な白背景」にするルールがあり、楽天市場はテキスト占有率20%以下の規定がある。撮影したままの写真ではこれらの規定を満たせないことが多く、背景の白抜きやトリミングといったレタッチ作業が必要になる。</p>
-
 <h3>人物写真の肌修正で依頼する</h3>
-
-<p>プロフィール写真や就活証明写真では、ニキビ・肌荒れ・目の下のクマなどを自然に整える<a href="skin-retouch.html">肌補正</a>が求められることがある。やりすぎると「加工感」が出るため、質感を残しつつ整えるバランスが難しい。<a href="https://irodori-x.com/tips/23111/" target="_blank" rel="noopener">富士フイルムのIRODORI</a>では、レタッチの基本から応用テクニックまで体系的に解説されている。</p>
-<a class="cite-card" href="https://irodori-x.com/tips/23111/" target="_blank" rel="noopener">
+<p>プロフィール写真や就活証明写真では、ニキビ・肌荒れ・目の下のクマなどを自然に整える<a href="skin-retouch.html">肌補正</a>が求められることがある。やりすぎると「加工感」が出るため、質感を残しつつ整えるバランスが難しい。<a href="https://irodori-x.com/tips/23111/" rel="noopener" target="_blank">富士フイルムのIRODORI</a>では、レタッチの基本から応用テクニックまで体系的に解説されている。</p>
+<a class="cite-card" href="https://irodori-x.com/tips/23111/" rel="noopener" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">レタッチの基本と応用テクニック - 富士フイルム IRODORI</span>
 <span class="cite-url">irodori-x.com</span>
 </span>
 </a>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>レタッチの外注費用は作業内容で大きく変わる。目安として、背景の<a href="/background-cutout-outsource.html">切り抜きなら1枚39〜1,000円</a>、色補正は1枚500〜1,000円、人物の肌レタッチは<a href="/retouch-cost-guide.html">1枚1,000〜8,000円が中心</a>だ。ほくろ消し・シミ消しなどパーツ単位で依頼できる低価格サービスもある。「レタッチ」と一口に言っても、切り抜きだけなのか肌修正まで含むのかで金額が大きく変わる。</p>
-
 <p>自分でやるなら、簡単な色補正やトリミングはスマホアプリ（<a href="/retouch-apps.html">Snapseed、Lightroom Mobile等</a>）で十分。背景の白抜きもRemove.bgで自動処理できる。ただし人物の肌修正や複雑な<a href="compositing.html">合成</a>はPhotoshopのスキルが必要で、本業の片手間でやると時間を溶かしやすい。どこまで自分でやり、どこからプロに外注するかの線引きを決めておくと効率が良い。</p>
-
 <h2>レタッチと加工の違い</h2>
-
-<p>レタッチと加工は、現場では混同されることが多い。<a href="https://retouch.tokyo/column/whats-retouching/" target="_blank" rel="noopener">東京レタッチのコラム</a>では「レタッチは現実をより良く見せる作業、コンポジット（合成・加工）は新たな表現を生み出す作業」と整理されている。</p>
-<a class="cite-card" href="https://retouch.tokyo/column/whats-retouching/" target="_blank" rel="noopener">
+<p>レタッチと加工は、現場では混同されることが多い。<a href="https://retouch.tokyo/column/whats-retouching/" rel="noopener" target="_blank">東京レタッチのコラム</a>では「レタッチは現実をより良く見せる作業、コンポジット（合成・加工）は新たな表現を生み出す作業」と整理されている。</p>
+<a class="cite-card" href="https://retouch.tokyo/column/whats-retouching/" rel="noopener" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">レタッチとは何か - 東京レタッチ</span>
@@ -230,7 +250,6 @@
 <span class="cite-url">tsubasa-memo.github.io/retouch-services.html</span>
 </span>
 </a>
-
 <table class="compare">
 <tr>
 <th>区分</th>
@@ -253,9 +272,7 @@
 <td>遠い（元と大きく異なることもある）</td>
 </tr>
 </table>
-
 <p>ただし実務では「レタッチ＝加工＝画像修正＝画像編集」と同義で扱われるケースがほとんどで、外注先に依頼するときは「レタッチ」という言葉よりも具体的な作業内容（白抜き、肌修正、色補正など）を伝えた方が確実だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -277,24 +294,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

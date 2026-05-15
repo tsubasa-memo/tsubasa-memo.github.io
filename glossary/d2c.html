@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,75 +139,84 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; D2C
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>D2Cとは？<br>「うちもD2Cやるべきでは」と言われて調べた</h1>
+<div class="article-hero">
+<img alt="D2Cとは？「うちもD2Cやるべきでは」と言われて調べた" height="360" loading="eager" src="/thumbs/glossary/d2c.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/d2c.png" alt="D2Cとは？「うちもD2Cやるべきでは」と言われて調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">D2Cとは？<br/>「うちもD2Cやるべきでは」と言われて調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>D2Cとは</h2>
-
 <p>ひとことで言うと、メーカーが卸売業者や小売店を通さず、自社のECサイトなどで消費者に直接商品を販売するビジネスモデルのこと。D2Cは「Direct to Consumer」の略だ。</p>
-
-<p><a href="https://www.smbc.co.jp/hojin/magazine/sales/about-d2c.html" target="_blank" rel="noopener noreferrer">三井住友銀行のビジネスコラム</a>で解説されていたが、従来のメーカーは「メーカー → 卸 → 小売店 → 消費者」という流通経路で商品を売っていた。D2Cはこの中間を飛ばして「メーカー → 消費者」にする。自社ECサイトやSNSを通じて直接販売するのが基本形だ。</p>
-
-<p><a href="https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf" target="_blank" rel="noopener noreferrer">経済産業省の電子商取引に関する市場調査（令和6年度）</a>でも触れられているが、日本のBtoC-EC市場は年々拡大しており、その中でもD2Cモデルを採用するブランドが増えてきている。</p>
-
+<p><a href="https://www.smbc.co.jp/hojin/magazine/sales/about-d2c.html" rel="noopener noreferrer" target="_blank">三井住友銀行のビジネスコラム</a>で解説されていたが、従来のメーカーは「メーカー → 卸 → 小売店 → 消費者」という流通経路で商品を売っていた。D2Cはこの中間を飛ばして「メーカー → 消費者」にする。自社ECサイトやSNSを通じて直接販売するのが基本形だ。</p>
+<p><a href="https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf" rel="noopener noreferrer" target="_blank">経済産業省の電子商取引に関する市場調査（令和6年度）</a>でも触れられているが、日本のBtoC-EC市場は年々拡大しており、その中でもD2Cモデルを採用するブランドが増えてきている。</p>
 <p>BtoCとの違いが最初はよくわからなかったけど、整理するとこうなる。</p>
-
 <table class="compare">
 <tr><th>モデル</th><th>流通経路</th><th>顧客データ</th></tr>
 <tr><td>従来のBtoC</td><td>卸・小売・モール経由</td><td>中間業者が持つ</td></tr>
 <tr><td>D2C</td><td>自社ECで直接販売</td><td>自社で取得・活用</td></tr>
 </table>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当として仕事をしていると、D2Cという言葉が出てくる場面が増えてきた。僕が実際に遭遇したケースを書いておく。</p>
-
 <h3>モール依存からの脱却の議論</h3>
-
-<p>楽天やAmazonに出店していると、売上手数料やポイント原資の負担がけっこう大きい。「自社ECで直接売れば中間コストが減るのでは」という話がD2Cの文脈で出てきた。<a href="https://www.ec-cube.net/know-how/ec-d2c/" target="_blank" rel="noopener noreferrer">EC-CUBEの解説</a>にも書いてあったが、D2Cなら販売手数料がかからない分、利益率が高くなる。ただし、モールの集客力が使えなくなるので、自力で集客する仕組みを作らないといけない。</p>
-
+<p>楽天やAmazonに出店していると、売上手数料やポイント原資の負担がけっこう大きい。「自社ECで直接売れば中間コストが減るのでは」という話がD2Cの文脈で出てきた。<a href="https://www.ec-cube.net/know-how/ec-d2c/" rel="noopener noreferrer" target="_blank">EC-CUBEの解説</a>にも書いてあったが、D2Cなら販売手数料がかからない分、利益率が高くなる。ただし、モールの集客力が使えなくなるので、自力で集客する仕組みを作らないといけない。</p>
 <h3>顧客データの活用</h3>
-
-<p>ECモールに出店していると、購入者の詳しいデータは基本的にモール側が持っている。自社ECサイトで販売すれば、誰がいつ何を買ったか、サイト内でどんなページを見たかなどのデータを自社で取得・分析できる。<a href="https://www.w2solution.co.jp/useful_info_ec/d2c/" target="_blank" rel="noopener noreferrer">w2ソリューションの記事</a>でも、D2Cの最大の強みは顧客データを自社で持てることだと説明されていた。</p>
-
+<p>ECモールに出店していると、購入者の詳しいデータは基本的にモール側が持っている。自社ECサイトで販売すれば、誰がいつ何を買ったか、サイト内でどんなページを見たかなどのデータを自社で取得・分析できる。<a href="https://www.w2solution.co.jp/useful_info_ec/d2c/" rel="noopener noreferrer" target="_blank">w2ソリューションの記事</a>でも、D2Cの最大の強みは顧客データを自社で持てることだと説明されていた。</p>
 <h3>ブランドの世界観を自由に作れる</h3>
-
 <p>ECモールだと商品ページのデザインに制約がある。D2Cなら自社サイトのデザインを自由にコントロールできるので、ブランドの世界観を表現しやすい。写真の見せ方、文章のトーン、パッケージのこだわりまで、一貫したブランド体験を作れるのがD2Cの魅力だと感じた。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>集客は自分でやらないといけない</h3>
-
-<p>D2Cの一番のハードルは集客だ。モールに出店していれば、モール自体に来るお客さんが自然に商品を見つけてくれる。自社ECサイトの場合はそうはいかない。<a href="https://cocamp.daiko.co.jp/blog/d2c-02" target="_blank" rel="noopener noreferrer">DAIKOのCOCAMP記事</a>でも指摘されていたが、SNS運用、<a href="listing-ads.html">リスティング広告</a>、SEO、コンテンツマーケティングなど、集客の手段を自分で組み立てる必要がある。</p>
-
+<p>D2Cの一番のハードルは集客だ。モールに出店していれば、モール自体に来るお客さんが自然に商品を見つけてくれる。自社ECサイトの場合はそうはいかない。<a href="https://cocamp.daiko.co.jp/blog/d2c-02" rel="noopener noreferrer" target="_blank">DAIKOのCOCAMP記事</a>でも指摘されていたが、SNS運用、<a href="listing-ads.html">リスティング広告</a>、SEO、コンテンツマーケティングなど、集客の手段を自分で組み立てる必要がある。</p>
 <h3>D2Cとモール出店は両方やるのもあり</h3>
-
 <p>D2Cだからモールをやめるという二択ではなく、モールで認知を広げつつ自社ECサイトでリピーターを囲い込むという両立パターンも多い。実際、有名なD2Cブランドでも楽天やAmazonに出店しているケースはある。</p>
-
 <h3>ECプラットフォームの選択肢が増えている</h3>
-
 <p>自社ECサイトを作るにしても、ゼロから開発する必要はない。Shopify、BASE、STORESなどのプラットフォームを使えば、初期費用を抑えて自社ECを立ち上げられる。どのプラットフォームを選ぶかは、商品点数や必要な機能によって変わってくるので、比較検討が必要だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -216,35 +225,35 @@
 <li><a href="crm.html">CRM</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

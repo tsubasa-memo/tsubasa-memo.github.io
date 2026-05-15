@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="RAWデータの意味とJPEGとの違いを調べたメモ。カメラのイメージセンサーが記録した未加工の生データのことで、後から明るさや色温度を劣化なしで自由に調整できる。RAW現像ソフトの使い方やEC商品撮影での判断基準も整理した。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,43 +139,68 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; RAW
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>RAWとは？<br>JPEGとの違いとカメラ設定の基本メモ</h1>
+
+<div class="article-hero">
+<img alt="RAWとは？JPEGとの違いとカメラ設定の基本メモ" height="360" loading="eager" src="/thumbs/glossary/raw.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/raw.png" alt="RAWとは？JPEGとの違いとカメラ設定の基本メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">RAWとは？<br/>JPEGとの違いとカメラ設定の基本メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>RAWとは</h2>
-
-<p>RAWは英語で「生の」「未加工の」という意味で、カメラのセンサーが光を受け取った状態のまま記録したデータのことだ。<a href="https://www.nikon-image.com/enjoy/phototech/manual/04/03.html" target="_blank" rel="noopener noreferrer">ニコンの公式解説</a>によると、JPEGがカメラ内部で色調整やノイズ除去を行った「完成品」であるのに対し、RAWはそれらの処理が適用されていない素材データにあたる。</p>
-
+<p>RAWは英語で「生の」「未加工の」という意味で、カメラのセンサーが光を受け取った状態のまま記録したデータのことだ。<a href="https://www.nikon-image.com/enjoy/phototech/manual/04/03.html" rel="noopener noreferrer" target="_blank">ニコンの公式解説</a>によると、JPEGがカメラ内部で色調整やノイズ除去を行った「完成品」であるのに対し、RAWはそれらの処理が適用されていない素材データにあたる。</p>
 <p>RAWのまま画像として表示するには「RAW現像」という処理が必要だ。Adobe LightroomやCapture Oneなどのソフトで開き、明るさ、<a href="color-temperature.html">色温度</a>、<a href="contrast.html">コントラスト</a>を調整してから<a href="jpeg.html">JPEG</a>や<a href="tiff.html">TIFF</a>に書き出す。</p>
-
 <h2>EC商品撮影での使い分け</h2>
-
 <h3>RAWが役に立つ場面</h3>
-
 <p>商品撮影では照明条件が途中で変わることがある。RAWで撮っておけば、<a href="white-balance.html">ホワイトバランス</a>が合っていなかったカットも後から正確に修正できる。<a href="exposure.html">露出</a>を±2段程度なら画質の破綻なく補正できるので、多少の露出ミスも救済しやすい。</p>
-
 <h3>JPEGで十分な場面</h3>
-
 <p>撮影環境が安定していて色味の調整がほぼ不要な場合は、JPEGで撮っても問題ない。ファイルサイズがRAWの5分の1から10分の1で済むため、大量撮影のときはストレージの節約になる。</p>
-
 <h2>保管時の注意点</h2>
-
 <p>RAWファイルはカメラメーカーごとに独自の形式（ニコンは.NEF、キヤノンは.CR3、ソニーは.ARW）を使っている。古い機種のRAWが将来のソフトで開けなくなるリスクもゼロではないので、長期保存する場合は現像済みのTIFFやJPEGも一緒に保管しておくと安心だ。写真データの保管全般については<a href="/photo-backup-comparison.html">写真バックアップ方法の比較</a>にもまとめている。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -194,24 +220,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>
