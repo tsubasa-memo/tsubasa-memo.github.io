@@ -135,9 +135,9 @@ gtag('config', 'G-YYBFXHXMM6');
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
@@ -145,32 +145,65 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </header>
 
-<nav class="breadcrumb">
-<div class="wrap">
-<a href="index.html">ホーム</a> &gt; <a href="archive.html?cat=ec">EC実務</a> &gt; 見積もり依頼で予算を伝えるコツ
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
 </div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="index.html">ホーム</a> &gt; <a href="archive.html?cat=ec">EC実務</a> &gt; 見積もり依頼で予算を伝えるコツ
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>見積もり依頼で予算を伝えるコツ｜先輩に怒られて調べたらゲーム理論に行き着いた</h1>
-<p class="update">2026年4月 更新</p>
+<div class="article-hero">
+<img src="/thumbs/estimate-budget-disclosure.png" alt="見積もり依頼で予算を伝えるコツ｜先輩に怒られて調べたらゲーム理論に行き着いた" width="640" height="360" loading="eager">
 </div>
-</section>
 
-<article>
-<div class="wrap">
+<span class="article-tag">EC実務</span>
+<h1 class="article-title">見積もり依頼で予算を伝えるコツ｜先輩に怒られて調べたらゲーム理論に行き着いた</h1>
+<div class="article-meta-line">
+<span>2026年4月24日</span>
+<span>2026年4月 更新</span>
+</div>
+
 <p>ウェブ制作、画像加工、デザイン、撮影代行――ECの外注で使える見積もりの話</p>
-
-
 <p>こんにちは、ツバサです。</p>
-
 <p>先日、ECサイトの一部リニューアルを外注することになって、何社かの制作会社に見積もり依頼を出した。予算は上から降りてきていたんだけど、あえて伝えなかった。「先に金額を言ったら、そこまで吊り上げられるでしょ」と思っていたからだ。</p>
-
 <p>結果、返ってきた見積もりは各社バラバラ。50万円のところもあれば、300万円のところもある。前提条件が違いすぎて比較にならない。先輩に報告したら「なんで予算伝えてないの？」と怒られた。「予算を伝えたら高くなるじゃないですか」と言い返したら、「それ、逆だよ」と。</p>
-
 <p>正直、ピンとこなかった。でも先輩の言葉が気になって調べてみたら、「ゲーム理論」という経済学の考え方にたどり着いた。見積もり交渉の構造がそのまま「囚人のジレンマ」というモデルに当てはまっていて、予算を伝えたほうが合理的だという話だった。今回はその内容をまとめてみる。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -180,95 +213,62 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec4">よくある質問</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">予算を隠すと何が起きるのか？</h2>
-
 <p>まず、予算を伝えないまま見積もりを依頼すると、ベンダー側はこちらがいくら使えるのか分からない。この状態を経済学では「情報の非対称性」と呼ぶ。発注者だけが予算の情報を持っていて、ベンダーにはそれが見えない。</p>
-
 <p>「情報を持っている側が有利なんじゃないの？」と思うかもしれない。僕もそう思っていた。でも実際に起きることはこうだ。</p>
-
 <p>ベンダーはこちらの財務状況が読めないので、2つの方向に分かれる。1つは「とりあえず全部盛り」の高額提案。最新機能も追加オプションもてんこ盛りにして出してくる。もう1つは「安く出して受注してから後で追加費用」パターン。どちらにしても、こちらが本当に必要な内容に対する適正価格の見積もりは返ってこない。</p>
-
-<p>実際、RFP（提案依頼書）のマッチングプラットフォームであるProsalが関わった<a href="https://www.nten.org/blog/why-including-a-budget-in-your-rfp-matters" target="_blank" rel="noopener noreferrer">NTENの記事（2023年）</a>によれば、コンサルタントやエージェンシーの約50%は、予算が明記されていないRFPへの回答を断っているという。彼らが断る理由は交渉を嫌がっているのではなく、予算がわからないまま提案書を作ると的外れになるリスクが高く、時間の無駄になるからだ。</p>
-
+<p>実際、RFP（提案依頼書）のマッチングプラットフォームであるProsalが関わった<a href="https://www.nten.org/blog/why-including-a-budget-in-your-rfp-matters" rel="noopener noreferrer" target="_blank">NTENの記事（2023年）</a>によれば、コンサルタントやエージェンシーの約50%は、予算が明記されていないRFPへの回答を断っているという。彼らが断る理由は交渉を嫌がっているのではなく、予算がわからないまま提案書を作ると的外れになるリスクが高く、時間の無駄になるからだ。</p>
 <p>つまり、予算を隠すことで「良い業者ほど応募しなくなる」という事態が起きる。残るのは、安値で受注してから追加費用を請求するタイプか、相場を無視した見積もりを出してくるところだ。これは発注者にとって、まったく有利な状態ではない。</p>
-
 <h2 id="sec2">ゲーム理論の「囚人のジレンマ」で考えてみる</h2>
-
 <p>ここで「ゲーム理論」が出てくる。ゲーム理論は、複数のプレイヤーがそれぞれの利益を追求するとき、どんな行動が合理的かを分析する経済学のフレームワークだ。ノーベル経済学賞の対象にもなっている。</p>
-
-<p>見積もり交渉をゲーム理論の「<a href="https://ja.wikipedia.org/wiki/%E5%9B%9A%E4%BA%BA%E3%81%AE%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E" target="_blank" rel="noopener noreferrer">囚人のジレンマ</a>」に当てはめると、こうなる。</p>
-
+<p>見積もり交渉をゲーム理論の「<a href="https://ja.wikipedia.org/wiki/%E5%9B%9A%E4%BA%BA%E3%81%AE%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E" rel="noopener noreferrer" target="_blank">囚人のジレンマ</a>」に当てはめると、こうなる。</p>
 <div class="box">
-<p><strong>発注者とベンダーがお互い協力した場合</strong><br>
+<p><strong>発注者とベンダーがお互い協力した場合</strong><br/>
 発注者は予算を正直に伝え、ベンダーは適正な利益率で最善の提案を出す。プロジェクト全体の価値が最大になり、両者が得をする。</p>
-
-<p><strong>お互いが非協力を選んだ場合</strong><br>
+<p><strong>お互いが非協力を選んだ場合</strong><br/>
 発注者は予算を隠して安く買い叩こうとし、ベンダーは情報不足から高めの価格を吹っかけるか、安値で入札してスコープを削る。結果、発注者は望んだ品質を得られず、ベンダーも利益が出ない。双方が損をする。</p>
 </div>
-
 <p>ゲーム理論では、双方が協力したときに到達する安定した状態を「ナッシュ均衡」と呼ぶ。相手の行動が読めない状況では、つい非協力（＝予算を隠す）を選びたくなるが、それは結局、自分も損をする選択だということだ。</p>
-
 <p>先輩が言っていた「逆だよ」の意味がようやくわかった。予算を伝えるのは手の内をさらすことではなく、「協力する意思」を示すことだった。その信号をベンダーが受け取ることで、適正な提案が返ってくる確率が上がる。</p>
-
 <p>「でも、ベンダーが予算ギリギリまで上乗せしてくるんじゃ？」と思うかもしれない。それを防ぐためのテクニックがある。</p>
-
 <h2 id="sec3">予算を伝えるときに損しないためのコツ</h2>
-
 <h3>コツ1：固定額ではなく「レンジ」で伝える</h3>
-
 <p>予算を伝えるときに「50万円です」と固定額を言う必要はない。「40万〜60万円の間で考えています」のようにレンジ（幅）で伝える。こうすることで、ベンダーは上限に張り付いた見積もりを出すのではなく、その範囲内で自社の強みを活かしたバランスの良い提案を模索するようになる。</p>
-
 <p>また、RFPの中で「最も安い見積もりを選ぶわけではない」と伝えておくと、ベンダーは安値競争ではなく提案内容の充実に注力する。競争の軸を「いかに安くするか」から「同じ予算でいかに多くの価値を出すか」にシフトさせるのがポイントだ。</p>
-
 <h3>コツ2：実予算の85%を提示してバッファを持つ</h3>
-
 <p>社内で承認された予算が100万円だとしたら、ベンダーには「85万円」と伝える。これは調達の現場でよく使われるテクニックだ。見積もりが提示額どおりに出てきた場合は15%のコスト削減が達成できる。仮にプロジェクト途中で追加の作業が発生しても、あらかじめ確保しておいたバッファ（コンティンジェンシー予備）で吸収できる。</p>
-
 <p>プロジェクトマネジメントの国際標準であるPMBOK（プロジェクトマネジメント知識体系ガイド）でも、全体予算の5〜15%をコンティンジェンシーとして確保することが推奨されている。予算を丸ごと伝える必要はないが、「ゼロ回答」はやめたほうがいい、という話だ。</p>
-
 <h3>コツ3：コスト内訳の提出を求める</h3>
-
 <p>見積もりを受け取るときは、総額だけでなく各工程・各作業ごとの内訳を求める。内訳が明確になれば、予算オーバーしたときに「この部分は次のフェーズに回す」「ここは社内で対応する」という判断がしやすくなる。</p>
-
 <p>コスト内訳の提示を求めること自体はビジネスとして当然のプロセスであって、ベンダーに対して失礼でもなんでもない。むしろ内訳を出し渋る業者のほうが、後々トラブルになりやすい。</p>
-
 <h2 id="sec4">よくある質問</h2>
-
 <div class="faq-item">
 <p class="fq">Q. 予算を伝えたら、その金額いっぱいまで上乗せされませんか？</p>
 <p class="fa">固定額ではなくレンジで伝えることで防げます。優良なベンダーほど、予算を使い切るより節約して次の仕事につなげようとするものです。NTENの記事でも、長期的な関係構築を重視するベンダーは予算より安い見積もりを出す傾向があると紹介されています。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 予算が少ない場合でも正直に伝えるべきですか？</p>
 <p class="fa">伝えたほうが良い結果になります。予算が限られていることがわかれば、ベンダーは優先度の高い部分に絞った提案を出してくれます。予算を隠して高額な見積もりが返ってきてから値下げ交渉を繰り返すより、お互いの時間を節約できます。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 予算レンジはどのくらいの幅で伝えればいいですか？</p>
 <p class="fa">実際の予算の前後20〜30%が目安です。たとえば予算100万円なら「80万〜120万円」。幅が狭すぎると固定額と変わらなくなり、広すぎるとベンダーが提案の方向性を絞れなくなります。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 相見積もりを取るとき、全社に同じ予算を伝えるべきですか？</p>
 <p class="fa">同じ予算レンジを全社に伝えるのが公平です。予算が共通の前提になることで、各社の提案を「同じ予算内でどれだけの価値を出せるか」という軸で比較できます。他社の見積もり金額をそのまま見せて値引きを迫るのは信頼関係を壊すのでやめましょう。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 予算が見当もつかないときはどうすればいいですか？</p>
 <p class="fa">まず1〜2社に概算の見積もりを依頼して相場感をつかむところから始めます。概算をもとに社内で予算を確保してから、正式に見積もりを依頼する流れが効率的です。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. ゲーム理論の「囚人のジレンマ」は見積もり交渉にどう当てはまりますか？</p>
 <p class="fa">囚人のジレンマでは、お互いが協力すれば最良の結果になるのに、相手を信用できないから非協力を選んで双方が損をします。見積もりでも同じで、発注者が予算を隠しベンダーが防衛的に高値を出すと両者が損をします。先に予算を開示するのは「協力する」という意思表示であり、適正な提案が返ってきやすくなります。</p>
 </div>
-
 <div class="summary-box">
 <p><strong>まとめ：</strong>見積もり依頼で予算を伝えるのは、交渉力を弱めることではない。むしろ、ベンダーから的確な提案を引き出すための合理的な選択だ。レンジで伝えること、バッファを確保すること、内訳を求めること。この3つを押さえておけば、「予算を言ったから損した」という事態はまず起きない。僕も次からは先輩に怒られる前に予算を伝えるようにする。</p>
 </div>
-
 <a class="cite-card" href="image-editing-outsource.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
@@ -290,28 +290,39 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/ec-outsource-vs-inhouse.html</span>
 </span>
 </a>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <div class="author-name">ツバサ</div>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-
 <div class="disclaimer">※この記事は2026年4月時点の情報をもとに作成しています。</div>
 
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">予算を隠すと何が起きるのか？</a></li>
+<li><a href="#sec2">ゲーム理論の「囚人のジレンマ」で考えてみる</a></li>
+<li><a href="#sec3">予算を伝えるときに損しないためのコツ</a></li>
+<li><a href="#sec4">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+
 </div>
-</article>
 
 <footer>
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-<p>&copy; 2026 ツバサのメモ帳</p>
+<p>© 2026 ツバサのメモ帳</p>
 </footer>
 
 </body>

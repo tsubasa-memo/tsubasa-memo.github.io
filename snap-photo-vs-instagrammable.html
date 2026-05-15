@@ -130,40 +130,74 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="インスタの映え写真に疲れてスナップ写真を始めた記録。スナップ写真と映え写真の違い、スマホで自然に撮るための構図や光の使い方、フィルターに頼らない撮り方を実体験ベースでまとめた。日常を気負わずに撮る楽しさに気づけるヒント集。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ インスタのスナップ写真とは？映えとの違いと自然な撮り方のコツ
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>インスタの映え疲れからスナップ写真を始めた話｜日常を楽しく撮るコツ</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/snap-photo-vs-instagrammable.png" alt="インスタの映え疲れからスナップ写真を始めた話｜日常を楽しく撮るコツ" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">インスタの映え疲れからスナップ写真を始めた話｜日常を楽しく撮るコツ</h1>
+<div class="article-meta-line">
+<span>2026年3月27日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>正直に言うと、インスタを始めた頃の自分はかなりひどかったと思います。おしゃれなカフェを探して遠回りして、ラテアートのアングルを10回以上撮り直して、フィルターをかけて「それっぽく」仕上げる——というのを毎週末やっていた。でも、ある日それが急につまらくなった。</p>
-
 <p>きっかけは、何気なく撮った帰り道の写真でした。夕方の電車の窓、斜めに差し込む光、向かいに座っていたおじさんが文庫本を読んでいる。狙っていないのに「いい感じ」に見える一枚が撮れて、なんか悔しかったんです。作り込んだ写真よりずっと好きだと思ってしまった。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -176,13 +210,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">「インスタ映え疲れ」は自分だけじゃなかった</h2>
-
-<p>調べてみると、「インスタ映え疲れ」や「盛り疲れ」というワードはここ数年で急速に広まっていて、BeRealや無加工投稿が若い世代に受け入れられているのも、その反動だという見方があるようです。マーケティング調査会社の<a href="https://www.cyberagent.co.jp/" target="_blank" rel="noopener">サイバーエージェント</a>の調査（2023年）では、20代の約4割が「盛りすぎた投稿に違和感を覚える」と回答したというデータも出ています。</p>
-
+<p>調べてみると、「インスタ映え疲れ」や「盛り疲れ」というワードはここ数年で急速に広まっていて、BeRealや無加工投稿が若い世代に受け入れられているのも、その反動だという見方があるようです。マーケティング調査会社の<a href="https://www.cyberagent.co.jp/" rel="noopener" target="_blank">サイバーエージェント</a>の調査（2023年）では、20代の約4割が「盛りすぎた投稿に違和感を覚える」と回答したというデータも出ています。</p>
 <p>作り込んだ映えを追いかけるのが当たり前だと思っていたけど、どうやらそれはずっと続くスタイルじゃなかった。</p>
-
 <div class="insta-ref">
 <div class="insta-ref-header">
 <div class="insta-ref-avatar">📷</div>
@@ -194,16 +224,12 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="insta-ref-body">
 <span class="insta-ref-badge">📌 参考にしたアカウント</span>
 <p>ストリートスナップをベースに、日常の一瞬を切り取る独特の視点で知られる国内トップクラスのインスタグラマー。構図や光の使い方が参考になります。</p>
-<a href="https://www.instagram.com/d_japanese/" target="_blank" rel="noopener noreferrer" class="insta-ref-link">Instagramで見る →</a>
+<a class="insta-ref-link" href="https://www.instagram.com/d_japanese/" rel="noopener noreferrer" target="_blank">Instagramで見る →</a>
 </div>
 </div>
-
 <h2 id="sec2">「スナップ写真」って何が違うのか</h2>
-
 <p>スナップ写真は、事前に場所や被写体を用意するんじゃなくて、歩きながら目に入ったものをとっさに撮る写真スタイルのことです。英語でいう「street photography」に近い。</p>
-
 <p>インスタ映えとの一番の違いは「作るか、見つけるか」だと思います。</p>
-
 <table class="spec-table">
 <tr><th></th><th>インスタ映え</th><th>スナップ写真</th></tr>
 <tr><td>被写体</td><td>事前に探す・選ぶ</td><td>偶然の出会い</td></tr>
@@ -212,25 +238,15 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>楽しみ方</td><td>「完成形」を作る喜び</td><td>「偶然の一瞬」を残す喜び</td></tr>
 <tr><td>SNS向き</td><td>エンゲージメント取りやすい</td><td>世界観を作りやすい</td></tr>
 </table>
-
 <h2 id="sec3">スナップを始めてよかったこと3つ</h2>
-
 <h3>①「いい写真」の定義が広がった</h3>
-
 <p>映えの写真って、ある程度「正解」が決まっているんですよね。被写体の中心に主役、余白を意識した構図、柔らかいトーン。でもスナップをやり始めると、ぶれていても、ピントが外れていても、「あの日あの瞬間の空気感」が写っていれば自分的にはOKになった。評価軸が他人じゃなくて自分になった感覚です。</p>
-
 <h3>②カメラを持ち歩くのが楽しくなった</h3>
-
 <p>映えを撮りに行くときは「それっぽい場所」に行かないといけないけど、スナップは通勤中でも、コンビニの帰りでも、どこでも撮れる。日常が全部被写体になる感じで、カメラを持ち歩く頻度が格段に増えました。</p>
-
 <h3>③加工に頼らなくてよくなった</h3>
-
 <p>映え写真は撮影の時点で「後でフィルターかけるから大丈夫」という考え方になりがちで、それが逆にフィルター依存を生んでいた気がします。スナップは光と構図で勝負するので、Lightroomで少し明るさを調整する程度になって、加工時間が激減しました。</p>
-
 <h2 id="sec4">スマホのスナップでよく使うコツ</h2>
-
 <p>難しいことは何もないんですが、自分が最近やっていることをメモしておきます。</p>
-
 <div class="point-box">
 <h4>スマホスナップのコツ（個人的備忘録）</h4>
 <p><strong>①グリッド線をオンにする</strong>：水平・垂直を意識するだけで、ぶれた感じが減ります。あえて傾けるときもそこが出発点になる。</p>
@@ -238,13 +254,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><strong>③「動いているもの」を入れる</strong>：歩いている人、電車、飛んでいる鳥など。静止した風景に動きが加わるだけで緊張感が出ます。</p>
 <p><strong>④撮った直後に加工しない</strong>：その日に撮った写真は翌日見返してからセレクトする。時間を置くと客観的に見られます。</p>
 </div>
-
 <h2 id="sec5">「映え」と「スナップ」は別物じゃない</h2>
-
 <p>最終的に思ったのは、どっちが「正しい」というわけじゃないということです。映えを狙った写真にはそれなりの準備と技術があるし、見る人を楽しませる力がある。スナップは偶然性と観察力が鍛えられる。</p>
-
 <p>自分の場合は「映え疲れした→スナップに逃げた→写真が楽しくなった」という流れだったけど、撮り続けることで「いい光が来たときに作り込んだ構図も撮れる」ようになってきた。結局、両方やれるのが一番いいんだと思います。</p>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item">
@@ -260,7 +272,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="fa">インスタ映えと比べてエンゲージメントは取りにくいですが、独自の世界観を構築しやすく、長期的なファンが付きやすいです。@d_japaneseのようにスナップアプローチで300万フォロワーを超えている国内インスタグラマーもいます。</div>
 </div>
 </div>
-
 <h2 class="related-title" id="sec7">関連する記事</h2>
 <a class="cite-card" href="portrait-mode-tips.html">
 <span class="cite-ico int">ツ</span>
@@ -284,11 +295,10 @@ gtag('config', 'G-YYBFXHXMM6');
 </span>
 </a>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
-</div>
 </div>
 </div>
 
@@ -325,16 +335,35 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">「インスタ映え疲れ」は自分だけじゃなかった</a></li>
+<li><a href="#sec2">「スナップ写真」って何が違うのか</a></li>
+<li><a href="#sec3">スナップを始めてよかったこと3つ</a></li>
+<li><a href="#sec4">スマホのスナップでよく使うコツ</a></li>
+<li><a href="#sec5">「映え」と「スナップ」は別物じゃない</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

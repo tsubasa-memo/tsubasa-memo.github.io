@@ -144,38 +144,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="写真副業の確定申告が必要になるライン（副業収入20万円超）と経費にできるもの（カメラ・レンズ・Lightroom等）を調べました。住民税バレ防止の対応方法もまとめています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 写真副業と確定申告
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>写真副業と確定申告｜いくら稼いだら申告が必要？経費になるものを調べた</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/photo-sidejob-tax.png" alt="写真副業と確定申告｜いくら稼いだら申告が必要？経費になるものを調べた" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">写真副業と確定申告｜いくら稼いだら申告が必要？経費になるものを調べた</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>副業で写真を販売したり撮影案件を受けたりした場合、確定申告がどうなるのかが気になります。「20万円以下なら申告不要」という話は聞いたことがありますが、正確なところを整理してみました。なお、税務判断は個人の状況によって異なるため、詳細は税理士や税務署に確認することをおすすめします。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -187,41 +222,29 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">副業収入と確定申告の基本ルール</h2>
-
 <p>会社員（給与所得者）が副業で収入を得た場合の確定申告のルールを整理します。</p>
-
 <table class="spec-table">
 <tr><th>副業所得の額（年間）</th><th>確定申告の要否</th></tr>
 <tr><td>20万円以下</td><td>所得税の確定申告は不要（住民税の申告は別途必要なケースあり）</td></tr>
 <tr><td>20万円超</td><td>確定申告が必要</td></tr>
 </table>
-
 <p>ここで注意が必要なのは「20万円」は「収入」ではなく「所得（収入 − 経費）」です。ストックフォトで年間30万円の収入があっても、機材費などの経費が15万円あれば所得は15万円になり、確定申告は不要になります。</p>
-
 <div class="warn-box">
 <h4>住民税申告について</h4>
 <p>所得税の確定申告が不要な場合でも、住民税については市区町村への申告が必要なケースがあります。副業収入がある場合は、お住まいの市区町村の窓口や国税庁のサイトで確認してください。</p>
 </div>
-
 <h2 id="sec2">写真副業の収入はどの所得区分になるか</h2>
-
 <p>所得の分類によって税率・控除が異なります。写真副業の収入の所得区分は以下のように判断されます。</p>
-
 <table class="spec-table">
 <tr><th>副業の形態</th><th>所得区分</th></tr>
 <tr><td>ストックフォト（素材販売）</td><td>雑所得</td></tr>
 <tr><td>個人からの撮影依頼（スポット）</td><td>雑所得</td></tr>
 <tr><td>継続的・大規模な撮影業務</td><td>事業所得（条件による）</td></tr>
 </table>
-
 <p>副業レベルであれば通常は「雑所得」に分類されます。雑所得は給与所得と合算して総合課税されます。</p>
-
 <h2 id="sec3">写真副業で経費にできるもの</h2>
-
 <p>副業に直接関連する費用は経費として収入から差し引けます。経費にできるものの例を整理します。</p>
-
 <table class="spec-table">
 <tr><th>費用の種類</th><th>経費計上の目安</th></tr>
 <tr><td>カメラ本体・レンズ</td><td>副業割合で按分。10万円以上は減価償却（通常4〜5年）</td></tr>
@@ -233,15 +256,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>写真・カメラ関連の書籍・学習費</td><td>副業に関連するものは経費計上可</td></tr>
 <tr><td>モデル謝礼</td><td>撮影に使用した場合は経費計上可</td></tr>
 </table>
-
 <h3>按分（あんぶん）について</h3>
-
 <p>プライベートと副業の両方で使う機材（カメラ・PC・スマホなど）は、使用割合に応じて按分する必要があります。たとえばカメラを副業目的で50%使っているなら、購入費の50%が経費になります。按分割合は合理的な根拠があれば問題ありませんが、あまりにも副業割合を高くすると税務調査の際に問われることがあります。</p>
-
 <h2 id="sec4">青色申告と白色申告の違い</h2>
-
 <p>副業の確定申告では青色申告または白色申告を選びます。青色申告は事前に「青色申告承認申請書」の提出が必要ですが、65万円の特別控除（電子申告の場合）や赤字の繰り越し（3年間）といった特典があります。雑所得の場合は青色申告の特典が限定されるため、まず「副業が雑所得か事業所得か」の判断が重要です。</p>
-
 <div class="point-box">
 <h4>確定申告の流れ（会社員の副業の場合）</h4>
 <p>1. 副業の収入・経費を記録しておく（年間を通じて）</p>
@@ -249,7 +267,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>3. 国税庁の「確定申告書等作成コーナー」（e-Tax）でオンライン申告可能</p>
 <p>4. 副業所得が20万円以下の場合は所得税申告不要だが、住民税申告を忘れずに</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item">
@@ -272,14 +289,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="fq">Q. 写真副業で経費にできるものには何がありますか？</div>
 <div class="fa">副業に直接関連する費用として、カメラ・レンズ・三脚などの機材費、Lightroom・Photoshopなどのサブスクリプション料金、クラウドストレージの費用、撮影のための交通費・ロケ地費用、書籍・学習費用などが経費として計上できます。プライベートと共用する場合は使用割合で按分します。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. AdobeのサブスクやLightroomは経費にできますか？</div>
 <div class="fa">副業に直接使用するソフトウェアのサブスク料金は経費計上できます。プライベートでも兼用する場合は使用割合で按分します。</div>
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -321,7 +337,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/side-job-matching-comparison.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -356,16 +371,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">副業収入と確定申告の基本ルール</a></li>
+<li><a href="#sec2">写真副業の収入はどの所得区分になるか</a></li>
+<li><a href="#sec3">写真副業で経費にできるもの</a></li>
+<li><a href="#sec4">青色申告と白色申告の違い</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -111,44 +111,78 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <meta name="twitter:description" content="ブログの外部リンクに付けるrel属性（nofollow・dofollow・sponsored・ugc）の違いと使い分けを調べた備忘録です。比較記事・アフィリエイトリンク・公式サイトへのリンクで何を使うべきか、一括管理の方法まで記録しました。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ nofollowとdofollowの違いを調べた｜…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ</h1>
-<p class="update">2026年4月 公開</p>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ nofollowとdofollowの違いを調べた｜…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/nofollow-dofollow-guide.png" alt="nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ" width="640" height="360" loading="eager">
 </div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">nofollowとdofollowの違いを調べた｜ブログの外部リンク管理メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月20日</span>
+<span>2026年4月 公開</span>
 </div>
-<main><article><div class="wrap">
+
 <p>外部リンクのnofollow・dofollow・sponsored・ugcの違いと、比較記事やアフィリエイトでの使い分けを整理しました。</p>
-
-
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
-<li><a href="/glossary/nofollow.html" class="glossary-inline">nofollow</a>・dofollow・sponsored・ugcの4種類の違い</li>
+<li><a class="glossary-inline" href="/glossary/nofollow.html">nofollow</a>・dofollow・sponsored・ugcの4種類の違い</li>
 <li>比較記事で外部サービスにリンクする場合のrel属性の選び方</li>
-<li>Amazonアソシエイトなど<a href="/glossary/affiliate.html" class="glossary-inline">アフィリエイト</a>リンクの正しいrel属性</li>
+<li>Amazonアソシエイトなど<a class="glossary-inline" href="/glossary/affiliate.html">アフィリエイト</a>リンクの正しいrel属性</li>
 <li>全記事の外部リンクを一括で確認・修正する方法</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。このブログではレタッチサービスの比較記事やカメラの紹介記事で外部サイトへのリンクをたくさん貼っている。ある日、全外部リンクのrel属性がバラバラだったことに気づいた。nofollowを付けているリンクと付けていないリンクが混在していて、管理できていなかった。調べて整理した記録をまとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -161,11 +195,8 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">nofollow・dofollow・sponsored・ugcの違い</h2>
-
-<p><a class="glossary-inline" href="/glossary/html.html">HTML</a>のaタグに付けるrel属性は、Googleの<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>に「このリンクの性質」を伝えるためのものである。2019年にGoogleが<a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>で仕様を更新し、現在は以下の4種類がある。</p>
-
+<p><a class="glossary-inline" href="/glossary/html.html">HTML</a>のaタグに付けるrel属性は、Googleの<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>に「このリンクの性質」を伝えるためのものである。2019年にGoogleが<a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ja" rel="noopener nofollow" target="_blank">公式ドキュメント</a>で仕様を更新し、現在は以下の4種類がある。</p>
 <table class="spec-table">
 <tr><th>属性</th><th>意味</th><th>使う場面</th></tr>
 <tr><td>なし（dofollow）</td><td>リンク先にページ評価を渡す</td><td>信頼できる情報源へのリンク</td></tr>
@@ -173,37 +204,22 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <tr><td><code>rel="sponsored"</code></td><td>広告・有料リンク</td><td>アフィリエイト、広告</td></tr>
 <tr><td><code>rel="ugc"</code></td><td>ユーザー生成コンテンツ</td><td>コメント欄、掲示板</td></tr>
 </table>
-
 <p>dofollow（通常のリンク）は、リンク元からリンク先にページ評価を渡す。SEOの文脈で「被リンク」が重要と言われるのは、dofollowリンクを通じてページ評価が流れるからである。</p>
-
-<p>nofollowはGoogleに「このリンク先に評価を渡さないでほしい」と伝えるヒントである。2019年以前は「命令」だったが、現在はGoogleが必要に応じて無視する場合もある。鈴木謙一氏の<a href="https://www.suzukikenichi.com/blog/faq-about-changes-of-nofollow-and-new-attributes/" target="_blank" rel="noopener nofollow">解説記事</a>によると、サイト内の全リンクをnofollowにしているようなケースではGoogleがnofollowを無視する可能性があるとされている。</p>
-
+<p>nofollowはGoogleに「このリンク先に評価を渡さないでほしい」と伝えるヒントである。2019年以前は「命令」だったが、現在はGoogleが必要に応じて無視する場合もある。鈴木謙一氏の<a href="https://www.suzukikenichi.com/blog/faq-about-changes-of-nofollow-and-new-attributes/" rel="noopener nofollow" target="_blank">解説記事</a>によると、サイト内の全リンクをnofollowにしているようなケースではGoogleがnofollowを無視する可能性があるとされている。</p>
 <h2 id="sec2">比較記事の外部リンクにはnofollowを付けた</h2>
-
 <p>このブログはレタッチサービスの比較記事が多く、紹介先の公式サイトへリンクしている。これらのリンクは「サービスを推薦している」わけではなく、「情報源として紹介している」位置づけなので、nofollowを付けることにした。</p>
-
 <p>全サービスに同じルールを適用するのが重要だった。特定のサービスだけdofollowにすると、SEO上の優遇になる。比較記事で公平を保つために、紹介先への外部リンクはすべて<code>rel="noopener nofollow"</code>で統一した。</p>
-
 <p>見た目は何も変わらない。nofollowはHTMLソースコードの中にしか書かれないので、普通に記事を読んでいる人には区別がつかない。ソースコードを確認すればわかるが、「比較記事なので全サービスにnofollowを付けている」という方針は運営上まったく自然なことである。</p>
-
 <h2 id="sec3">アフィリエイトリンクにはnofollow sponsoredを付ける</h2>
-
 <p>Amazonアソシエイトのリンクには<code>rel="nofollow sponsored"</code>を使っている。Googleのガイドラインでは、有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めている。両方を併記する書き方が最も安全である。</p>
-
 <p>HTMLの記述例はこうなる。</p>
-
 <div class="point-box">
 <p><code>&lt;a href="https://amzn.to/xxxxx" target="_blank" rel="noopener nofollow sponsored"&gt;SDカード&lt;/a&gt;</code></p>
 </div>
-
 <p>nofollowだけでも問題はないが、sponsoredを併記することでGoogleに「これは広告リンクである」と正確に伝えられる。Googleの公式ブログでも、nofollowからsponsoredへの切り替えは推奨するが必須ではないと説明されている。</p>
-
 <h2 id="sec4">公式ドキュメントや公的機関へのリンクの扱い</h2>
-
 <p>外部リンクを全部nofollowにするのは得策ではない。政府機関のサイト、Google公式ドキュメント、学術論文など、信頼性の高い情報源へのリンクはdofollowのまま残すか、rel="nofollow"は付けつつもGoogleがヒントとして適切に処理してくれることを期待する。</p>
-
 <p>このブログでは以下のルールで運用している。</p>
-
 <table class="spec-table">
 <tr><th>リンク先</th><th>rel属性</th></tr>
 <tr><td>比較対象のサービス公式サイト</td><td><code>nofollow</code></td></tr>
@@ -211,17 +227,11 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <tr><td>Google公式ドキュメント・政府機関</td><td><code>nofollow</code>（ポリシーに従う）</td></tr>
 <tr><td>自サイト内のリンク（内部リンク）</td><td>属性なし（dofollow）</td></tr>
 </table>
-
 <h2 id="sec5">全記事の外部リンクを一括で確認・修正した方法</h2>
-
 <p>rel属性の方針を決めた後、既存の全記事（60本以上）で修正が必要だった。手作業では到底追いきれないので、sedコマンドで一括置換した。</p>
-
 <p>具体的には、<code>rel="noopener noreferrer"</code>になっていた外部リンクを<code>rel="noopener noreferrer nofollow"</code>に変換した。さらにアフィリエイトリンク（amzn.toドメイン）だけを抽出して<code>rel="noopener nofollow sponsored"</code>に置換した。</p>
-
-<p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、<a href="/glossary/canonical.html" class="glossary-inline">canonical</a> URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
-
+<p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、<a class="glossary-inline" href="/glossary/canonical.html">canonical</a> URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
 <p>加えて、スプレッドシートで全外部リンクの一覧を管理するようにした。記事名・リンク先ドメイン・アンカーテキスト・nofollowの有無を1行ずつ記録する形式で、リンク管理の漏れを防いでいる。</p>
-
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. nofollowとdofollowの違いは何ですか？</p><p class="faq-a">dofollowはリンク先にページ評価を渡す通常のリンクです。nofollowはrel="nofollow"を付けることで「評価を渡さないでほしい」とGoogleに伝えるヒントです。2019年以降、nofollowは命令ではなくヒントとして扱われています。</p></div>
 <div class="faq-item"><p class="faq-q">Q. sponsoredとugcはnofollowと何が違いますか？</p><p class="faq-a">sponsoredは広告・有料リンク用、ugcはコメント欄などユーザー生成コンテンツ用です。機能はnofollowと同じですが、リンクの種類をGoogleにより正確に伝えられます。</p></div>
@@ -229,7 +239,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <div class="faq-item"><p class="faq-q">Q. アフィリエイトリンクのrel属性は何を使いますか？</p><p class="faq-a">rel="nofollow sponsored"を付けるのが推奨です。Googleのガイドラインでは有料リンクにsponsoredまたはnofollowの付与を求めており、両方を併記するのが最も安全な方法です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 外部リンクを全部nofollowにすると問題がありますか？</p><p class="faq-a">推奨されません。全リンクnofollowだとGoogleに「リンク管理が適切でない」と判断される可能性があります。ただし比較記事中心のブログでは大半がnofollowになるのは自然で、信頼できる公的情報源へのリンクはdofollowのまま残すのが望ましいです。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -257,8 +267,7 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 <span class="cite-url">tsubasa-memo.github.io/search-console-basics.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -293,14 +302,33 @@ code{background:var(--tag-bg);padding:2px 6px;border-radius:4px;font-size:14px;f
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">nofollow・dofollow・sponsored・ugcの違い</a></li>
+<li><a href="#sec2">比較記事の外部リンクにはnofollowを付けた</a></li>
+<li><a href="#sec3">アフィリエイトリンクにはnofollow sponsoredを付ける</a></li>
+<li><a href="#sec4">公式ドキュメントや公的機関へのリンクの扱い</a></li>
+<li><a href="#sec5">全記事の外部リンクを一括で確認・修正した方法</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

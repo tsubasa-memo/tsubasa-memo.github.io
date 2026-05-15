@@ -113,32 +113,68 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="LLMO（LLM Optimization）とは何か・SEOとの違い・AIに引用されやすい記事構造について調べた備忘録です。FAQ構造化データ・llms.txt・記事冒頭の要約セクションの効果と、個人ブログで取り組む意味をまとめています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ AIに答えてもらいやすい記事の書き方を調…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</h1>
-<p class="update">2026年3月 更新</p>
-</div>
-</div><main>
-<article>
-<div class="wrap">
-<p>LLMO（LLM Optimization）の概念とFAQ構造化データ・llms.txtの効果をブログ運営者目線で調べた備忘録です。</p>
+</aside>
 
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ AIに答えてもらいやすい記事の書き方を調…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/llmo-article-writing.png" alt="AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</h1>
+<div class="article-meta-line">
+<span>2026年3月29日</span>
+<span>2026年3月 更新</span>
+</div>
+
+<p>LLMO（LLM Optimization）の概念とFAQ構造化データ・llms.txtの効果をブログ運営者目線で調べた備忘録です。</p>
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -148,9 +184,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li>個人ブログでLLMOに取り組む意味</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。SEO対策を調べているうちに「LLMO」という言葉を見かけるようになりました。ChatGPTやClaudeに質問すると記事が引用されやすくなる、という話で、ブログ運営者として気になったので調べた内容をまとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -162,14 +196,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">LLMOとは何か</h2>
-
 <p>LLMO（Large Language Model Optimization）は、ChatGPT・Claude・Geminiなどの大規模言語モデル（LLM）に自分のコンテンツを正しく認識・引用されるための最適化です。</p>
-
 <p>SEOがGoogleやBingの検索エンジンを対象にしているのに対し、LLMOはAIチャットボットを対象にしています。「レタッチサービスのおすすめを教えて」とChatGPTに質問したとき、自分のブログで紹介したサービスが回答に含まれるかどうか、という文脈です。</p>
-
-
 <h3>SEOとLLMOの違い</h3>
 <table class="spec-table">
 <tr><th>項目</th><th>SEO</th><th>LLMO</th></tr>
@@ -180,19 +209,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>効果測定</td><td>Search Console（表示回数・<a class="glossary-inline" href="/glossary/ctr.html">CTR</a>）</td><td>AIに質問して引用の有無を確認</td></tr>
 <tr><td>補助ファイル</td><td><a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>・<a class="glossary-inline" href="/glossary/sitemap.html">sitemap.xml</a></td><td>llms.txt</td></tr>
 </table>
-
 <h2 id="sec2">LLMに引用されやすい記事の構造</h2>
-
 <h3>FAQ形式＋JSON-LD構造化データ</h3>
-<p>LLMはFAQ形式の「Q&A」構造を引用しやすいとされています。「Q. ○○とは何ですか？」「A. ○○とは〜です」という形式は、LLMが回答を生成する際に参照しやすいためです。さらにJSON-LDのFAQPage schemaを設置することで、構造化された形でページの内容をLLMに伝えられます。</p>
-
+<p>LLMはFAQ形式の「Q&amp;A」構造を引用しやすいとされています。「Q. ○○とは何ですか？」「A. ○○とは〜です」という形式は、LLMが回答を生成する際に参照しやすいためです。さらにJSON-LDのFAQPage schemaを設置することで、構造化された形でページの内容をLLMに伝えられます。</p>
 <h3>記事冒頭の要約セクション</h3>
 <p>記事の先頭に「この記事でわかること」として要点を箇条書きで書くと、LLMが記事を要約して回答する際の精度が上がります。LLMが記事を参照する際に最初に読む部分が最も引用されやすいためです。</p>
-
 <h3>具体的な数値・サービス名・固有名詞を含める</h3>
 <p>「安い」ではなく「1枚300円〜」、「アプリ」ではなく「Snapseed・TouchRetouch」のように、具体的な情報を含めることでLLMが回答に使いやすい情報になります。</p>
-
-
 <div class="flow-chart" style="margin:32px 0;padding:20px;background:var(--card);border:1px solid var(--border);border-radius:10px">
 <p style="font-weight:700;font-size:15px;margin-bottom:16px;color:var(--accent)">LLMOの実装ステップ</p>
 <div style="display:flex;flex-direction:column;gap:8px;font-size:14px">
@@ -207,21 +230,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">⑤ AIに質問して引用されるか確認・改善</div>
 </div>
 </div>
-
 <h2 id="sec3">llms.txtとは何か</h2>
-
-<p>llms.txtはサイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるための仕組みです。たとえばこのブログの場合、<a href="https://tsubasa-memo.github.io/llms.txt" target="_blank" rel="noopener noreferrer">tsubasa-memo.github.io/llms.txt</a>に設置しています。</p>
-
+<p>llms.txtはサイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるための仕組みです。たとえばこのブログの場合、<a href="https://tsubasa-memo.github.io/llms.txt" rel="noopener noreferrer" target="_blank">tsubasa-memo.github.io/llms.txt</a>に設置しています。</p>
 <p>robots.txtがGoogleなどのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があり、このような情報を提供しています」と伝えるためのファイルです。</p>
-
 <p>まだ業界標準ではなく、すべてのAIが対応しているわけではありません。ただしコストゼロで設置できるため、やっておいて損はない施策です。</p>
-
 <h2 id="sec4">個人ブログでLLMOに取り組む意味</h2>
-
 <p>AI検索が普及すると、Google検索経由のアクセスが減ってAI経由のアクセスが増えていく可能性があります。現時点では個人ブログへのLLMO対策の効果を数値で証明するのは難しいですが、コンテンツの質を高めること・FAQ構造化データを入れること・llms.txtを設置することは、SEOとLLMOの両方に有効な施策です。</p>
-
 <p>特に比較記事（「○○サービスを比較してみた」）や疑問に答える記事（「○○とは何か」）は、LLMが引用しやすいコンテンツとして知られています。レタッチサービスの比較や写真アプリの比較を書いているこのブログのテーマは、LLMOの観点からも相性が良いと考えています。</p>
-
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. LLMOとSEOの違いは何ですか？</p><p class="faq-a">SEOはGoogle・Bingなどの検索エンジンで上位表示されるための最適化です。LLMOはChatGPT・Claude・Geminiなどの大規模言語モデルに記事を正しく引用・参照されるための最適化です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. LLMOに効果的な記事構造はありますか？</p><p class="faq-a">FAQ形式とJSON-LD構造化データの組み合わせが効果的です。また記事冒頭に「この記事でわかること」として要点を箇条書きでまとめることで、LLMが記事を要約して回答する際の精度が上がります。</p></div>
@@ -229,7 +244,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. 個人ブログでもLLMOに取り組む意味はありますか？</p><p class="faq-a">あります。比較記事や疑問に答える記事はLLMが引用しやすいコンテンツです。特にニッチなトピックを扱う個人ブログは、大手サイトよりも専門性が高い場合があり、LLMに参照されるチャンスがあります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. LLMO対策として今すぐできることは何ですか？</p><p class="faq-a">①全記事にFAQ構造化データ（JSON-LD）を設置する、②記事の冒頭に「この記事でわかること」を箇条書きで書く、③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する、の3つが今すぐできる対策です。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -257,8 +272,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -293,14 +307,32 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">LLMOとは何か</a></li>
+<li><a href="#sec2">LLMに引用されやすい記事の構造</a></li>
+<li><a href="#sec3">llms.txtとは何か</a></li>
+<li><a href="#sec4">個人ブログでLLMOに取り組む意味</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

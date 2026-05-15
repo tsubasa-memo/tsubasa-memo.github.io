@@ -110,44 +110,78 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="個人ブログで内部リンクの設計を整理した備忘録です。用語集66ページへの自動リンク化、関連記事セクションのcite-card形式、パンくずリストとカテゴリ構造の設計など、サイト全体で実際にやった方法と効果をまとめています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 内部リンクの貼り方を個人ブログで試した…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用</h1>
-<p class="update">2026年4月 公開</p>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 内部リンクの貼り方を個人ブログで試した…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/internal-link-seo.png" alt="内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用" width="640" height="360" loading="eager">
 </div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用</h1>
+<div class="article-meta-line">
+<span>2026年4月20日</span>
+<span>2026年4月 公開</span>
 </div>
-<main><article><div class="wrap">
+
 <p>用語集への自動リンク、関連記事カード、パンくずリスト。個人ブログで試した内部リンク設計をまとめました。</p>
-
-
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
 <li>内部リンクがSEOに効く仕組みと、個人ブログでの優先度</li>
 <li>用語集ページを活用した自動リンクの方法</li>
 <li>関連記事セクション（cite-card形式）の設計</li>
-<li><a href="/glossary/breadcrumb.html" class="glossary-inline">パンくず</a>リストとカテゴリ構造の考え方</li>
+<li><a class="glossary-inline" href="/glossary/breadcrumb.html">パンくず</a>リストとカテゴリ構造の考え方</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。このブログの記事が60本を超えたあたりで、記事同士のつながりが弱いことに気づいた。Search Consoleで見ると、Googleが一部のページをうまく発見できていなかったのもそのせいだったかもしれない。内部リンクの設計を見直した記録をまとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -160,23 +194,14 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">内部リンクが個人ブログに必要な理由</h2>
-
-<p>内部リンクとは、同じサイト内のページ同士をつなぐリンクのこと。Googleの<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=ja" target="_blank" rel="noopener nofollow">公式ドキュメント</a>では、<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>がリンクをたどってページを発見すると説明されている。つまり、どこからもリンクされていない記事はGoogleに見つけてもらえない可能性がある。</p>
-
+<p>内部リンクとは、同じサイト内のページ同士をつなぐリンクのこと。Googleの<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=ja" rel="noopener nofollow" target="_blank">公式ドキュメント</a>では、<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>がリンクをたどってページを発見すると説明されている。つまり、どこからもリンクされていない記事はGoogleに見つけてもらえない可能性がある。</p>
 <p>このブログでは、記事数が50本を超えた時点で10本以上が「孤立ページ」（サイト内のどこからもリンクされていない状態）になっていた。sitemap.xmlを送信していたからGoogleには認識されていたが、内部リンクが少ないページはインデックスが遅い傾向があった。</p>
-
 <p>内部リンクにはもう一つ、ページ評価（リンクジュース）を分配する効果がある。検索流入が多いページから関連ページにリンクを貼ると、リンク先の評価が上がりやすい。ただし、これは「関連性の高い」ページ間でないと効果が薄い。脈絡のないリンクを大量に貼るとかえって逆効果になる。</p>
-
 <h2 id="sec2">用語集66ページを活用した内部リンク</h2>
-
 <p>このブログには<a href="/glossary/">用語集</a>として66本の解説ページがある。「ささげ業務とは」「RAWとは」のような、記事内で当たり前のように使っている専門用語を1ページずつ解説したものである。</p>
-
 <p>この用語集を内部リンクに活用する方法はシンプルで、記事本文中に用語が出てきたら、その用語の解説ページへリンクを貼る。たとえば「RAW」という言葉が出てきたら、初出の1回だけ<a href="/glossary/raw.html" rel="nofollow">用語集のRAW解説ページ</a>へリンクする。</p>
-
 <p>注意点として、以下のルールを決めた。</p>
-
 <table class="spec-table">
 <tr><th>ルール</th><th>理由</th></tr>
 <tr><td>1記事内で同じ用語のリンクは初出1回だけ</td><td>何度もリンクされると読者の邪魔になる</td></tr>
@@ -184,35 +209,21 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>既にaタグの中にある文字列はスキップ</td><td>リンクの入れ子になると表示が壊れる</td></tr>
 <tr><td>2〜3文字の短い用語は対象外</td><td>「AI」「EC」などは誤マッチしやすい</td></tr>
 </table>
-
 <p>66ページ分の用語を手動でリンクするのは現実的ではないので、Pythonスクリプトで自動化した。HTMLパーサーで本文を走査し、用語集のスラッグ名と照合して初出だけリンクタグに変換する方式である。</p>
-
 <h2 id="sec3">関連記事セクションの設計</h2>
-
 <p>各記事の末尾に「関連する記事」セクションを設けている。最初はテキストリンクだけだったが、途中からcite-card形式（サイトアイコン＋タイトル＋URL表示のカード）に変更した。</p>
-
-<p>cite-cardにした理由は2つある。1つ目は、テキストリンクより視認性が高く、<a href="/glossary/ctr.html" class="glossary-inline">クリック率</a>が上がる。2つ目は、内部リンクと外部リンクをアイコンの色で区別できる（内部は緑、外部は青）。読者がリンク先を判断しやすくなるため、サイト内の回遊率が改善した。</p>
-
+<p>cite-cardにした理由は2つある。1つ目は、テキストリンクより視認性が高く、<a class="glossary-inline" href="/glossary/ctr.html">クリック率</a>が上がる。2つ目は、内部リンクと外部リンクをアイコンの色で区別できる（内部は緑、外部は青）。読者がリンク先を判断しやすくなるため、サイト内の回遊率が改善した。</p>
 <p>関連記事の選び方としては、同じカテゴリの記事を2〜3本選ぶのが基本だが、「この記事を読んだ人が次に知りたいこと」を考えて選ぶ方が効果的だった。たとえば<a href="retouch-services.html">「レタッチ外注サービス比較」</a>の記事には、外注の料金相場や依頼のコツの記事を関連に置く方が、同じ「レタッチ」カテゴリの無関係な記事よりもクリックされている。</p>
-
 <h2 id="sec4">パンくずリストとカテゴリ構造</h2>
-
-<p>パンくずリストは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計した。このブログでは現在7カテゴリ（カメラ、レタッチ・画像加工、写真・撮影、EC・実務、AI、SEO・<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>、副業・キャリア）を使っている。</p>
-
-<p>パンくずリストの役割は読者へのナビゲーションだけではない。Googleに対してサイトのカテゴリ構造を伝える効果がある。BreadcrumbList <a href="/glossary/json-ld.html" class="glossary-inline">JSON-LD</a>を設置すると、検索結果にパンくずが表示されることがあり、クリック率にも影響する。</p>
-
+<p>パンくずリストは「ホーム ＞ カテゴリ名 ＞ 記事タイトル」の3階層で設計した。このブログでは現在7カテゴリ（カメラ、レタッチ・画像加工、写真・撮影、EC・実務、AI、SEO・<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>、副業・キャリア）を使っている。</p>
+<p>パンくずリストの役割は読者へのナビゲーションだけではない。Googleに対してサイトのカテゴリ構造を伝える効果がある。BreadcrumbList <a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a>を設置すると、検索結果にパンくずが表示されることがあり、クリック率にも影響する。</p>
 <p>1つの記事が複数カテゴリに属する場合（たとえば「AI」と「レタッチ・画像加工」の両方）、パンくずにはメインカテゴリ1つだけを表示し、archive.htmlのフィルターでは両方のカテゴリで表示されるように設計した。</p>
-
 <h2 id="sec5">内部リンクの管理方法</h2>
-
 <p>記事が60本を超えると「どの記事からどこにリンクを貼っているか」が把握しにくくなる。このブログではスプレッドシートでリンクマトリクスを管理している。行に記事名、列に主要なリンク先（外部サービスのドメイン）を並べ、リンクの有無と本数を記録する形式である。</p>
-
 <p>外部リンクの管理に加えて、内部リンクの相互関係も把握しておくと便利だった。たとえば「レタッチ外注サービス比較」から「レタッチ料金相場」へのリンクがあるのに、逆方向がないケースがあり、双方向にリンクを追加したら回遊率が改善した。</p>
-
 <div class="warn-box">
 <p><strong>注意：</strong>内部リンクを追加するとき、「とにかく全記事から全記事にリンクを貼る」のはやめた方がいい。Googleのクローラーは1ページあたりのリンク数が多すぎると個々のリンクの評価を下げると言われている。関連性の高い記事同士を3〜5本程度でつなぐのが現実的な運用ラインである。</p>
 </div>
-
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. 内部リンクはSEOにどんな効果がありますか？</p><p class="faq-a">Googleのクローラーがサイト構造を把握しやすくなる効果と、リンク先ページにページ評価（リンクジュース）を渡す効果があります。また、読者が関連記事を見つけやすくなるため回遊率が上がります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 用語集ページを内部リンクに活用するにはどうすればいいですか？</p><p class="faq-a">記事本文中に専門用語が出てきたとき、その用語の解説ページへリンクを貼ります。初出の1回だけリンク化し、見出しや既存リンクの中は避けるのがポイントです。このブログでは66ページの用語集を作り、該当用語から自動でリンクを生成しています。</p></div>
@@ -220,7 +231,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. パンくずリストは内部リンクとして有効ですか？</p><p class="faq-a">有効です。サイトのカテゴリ構造をGoogleに伝える役割があり、BreadcrumbList JSON-LDを合わせて設置するとリッチリザルトに表示されることもあります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 内部リンクは何本くらい貼るのが適切ですか？</p><p class="faq-a">1記事あたり本文中3〜10本程度が自然です。Googleはリンク数に上限を設けていませんが、数より関連性の高さが重要です。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -248,8 +259,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/faq-structured-data.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -284,14 +294,33 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">内部リンクが個人ブログに必要な理由</a></li>
+<li><a href="#sec2">用語集66ページを活用した内部リンク</a></li>
+<li><a href="#sec3">関連記事セクションの設計</a></li>
+<li><a href="#sec4">パンくずリストとカテゴリ構造</a></li>
+<li><a href="#sec5">内部リンクの管理方法</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

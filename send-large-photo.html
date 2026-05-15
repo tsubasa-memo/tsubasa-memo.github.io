@@ -136,38 +136,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="大容量の写真・動画データを送る方法をまとめました。ギガファイル便（無料・最大200GB）・Googleドライブ・WeTransfer・LINE・AirDropの違いと、相手の環境別の使い分けを解説しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 大きい写真データの送り方
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINEの使い分け</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/send-large-photo.png" alt="大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINEの使い分け" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINEの使い分け</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>仕事でレタッチ依頼をするとき、高<a class="glossary-inline" href="/glossary/resolution-dpi.html">解像度</a>の写真データを送る必要があります。「メールに添付したら送れなかった」「LINEで送ったら画質が落ちた」というのは割と頻繁に起きる問題で、送り方をちゃんと把握しておくと助かります。整理してみました。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -180,9 +215,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">主なファイル送信方法の比較</h2>
-
 <table class="spec-table">
 <tr><th>方法</th><th>容量上限</th><th>画質の劣化</th><th>会員登録</th><th>費用</th></tr>
 <tr><td>メール（Gmail等）</td><td>25MB</td><td>なし</td><td>必要（送信者）</td><td>無料</td></tr>
@@ -193,33 +226,19 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>AirDrop（Apple）</td><td>実質制限なし</td><td>なし</td><td>不要</td><td>無料</td></tr>
 <tr><td>iCloud共有アルバム</td><td>50GB / アルバム</td><td>わずかに圧縮あり</td><td>両者Appleアカウント</td><td>無料</td></tr>
 </table>
-
 <h2 id="sec2">ギガファイル便（無料・登録不要・大容量）</h2>
-
-<p><a href="https://gigafile.nu/" target="_blank" rel="noopener">ギガファイル便</a>は、1ファイル最大300GBまで無料で送れる日本のサービスです。会員登録不要で、URLを相手に送るだけでダウンロードしてもらえます。</p>
-
+<p><a href="https://gigafile.nu/" rel="noopener" target="_blank">ギガファイル便</a>は、1ファイル最大300GBまで無料で送れる日本のサービスです。会員登録不要で、URLを相手に送るだけでダウンロードしてもらえます。</p>
 <p>相手がGoogleアカウントもDropboxも持っていない場合でも使えるため、初対面の取引先への写真データ送付に向いています。保管期間は3日・7日・14日・30日・60日・100日から選択でき、パスワードの設定も可能です。</p>
-
 <p>デメリットとしては、広告が多い点と、一定期間後にURLが無効になる点があります。</p>
-
 <h2 id="sec3">Googleドライブ（継続管理に向いている）</h2>
-
 <p>送るだけでなく「フォルダごとに管理して、必要なときに相手がダウンロードできる状態にしておきたい」という場合はGoogleドライブが向いています。フォルダのURLを発行して共有権限を「リンクを知っている全員」に設定すると、相手がGoogleアカウントなしでもアクセスできます。</p>
-
 <p>無料容量は15GB（GmailやGoogleフォトと共有）。大量の写真を継続的に置いておくなら有料プランが必要になります。</p>
-
 <h2 id="sec4">WeTransfer（シンプルに送りたいとき）</h2>
-
-<p><a href="https://wetransfer.com/" target="_blank" rel="noopener">WeTransfer</a>は無料版で2GBまで送れるファイル転送サービスです。<a class="glossary-inline" href="/glossary/ui-ux.html">UI</a>が非常にシンプルで、ファイルをドラッグ＆ドロップしてメールアドレスを入力するだけで送れます。国際的に知名度が高く、海外のクリエイターとのやり取りでよく使われます。</p>
-
+<p><a href="https://wetransfer.com/" rel="noopener" target="_blank">WeTransfer</a>は無料版で2GBまで送れるファイル転送サービスです。<a class="glossary-inline" href="/glossary/ui-ux.html">UI</a>が非常にシンプルで、ファイルをドラッグ＆ドロップしてメールアドレスを入力するだけで送れます。国際的に知名度が高く、海外のクリエイターとのやり取りでよく使われます。</p>
 <h2 id="sec5">LINEで写真を高画質のまま送るには</h2>
-
 <p>LINEのトークで「写真」として送ると圧縮されます。元画質で送りたい場合は以下の2つの方法があります。</p>
-
 <p>方法A：「ファイル」として送信する。LINEのトークの「＋」ボタン→「ファイル」から写真を選択すると、画像ではなくファイルとして送信されるため圧縮されません。</p>
-
 <p>方法B：AirDropを使う。iPhoneからiPhoneへの送受信であれば、AirDropが最も手軽で画質の劣化もありません。近距離であることが条件です。</p>
-
 <div class="point-box">
 <h4>用途別おすすめ</h4>
 <p>取引先・初対面への写真データ送付 → ギガファイル便（登録不要で相手も楽）</p>
@@ -227,7 +246,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>iPhone同士・近距離 → AirDrop（最速・最高画質）</p>
 <p>海外の相手に送る → WeTransfer（国際的に認知度が高い）</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item">
@@ -252,7 +270,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -287,7 +305,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/exif-info.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -322,16 +339,35 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">主なファイル送信方法の比較</a></li>
+<li><a href="#sec2">ギガファイル便（無料・登録不要・大容量）</a></li>
+<li><a href="#sec3">Googleドライブ（継続管理に向いている）</a></li>
+<li><a href="#sec4">WeTransfer（シンプルに送りたいとき）</a></li>
+<li><a href="#sec5">LINEで写真を高画質のまま送るには</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>
