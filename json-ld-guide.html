@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順｜ツバサのメモ帳</title>
+<meta name="description" content="構造化データ（JSON-LD）の書き方をFAQPage・Article・BreadcrumbListのコード例付きで解説。Schema.orgに基づくマークアップの基本から、実装後のGoogleリッチリザルトテストでの確認方法まで。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/json-ld-guide.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/json-ld-guide.html">
+<meta property="og:title" content="構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順">
+<meta property="og:description" content="JSON-LDの書き方をFAQPage・Article・BreadcrumbListのコード例付きで解説。実装後の確認方法まで。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/json-ld-guide.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/json-ld-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/json-ld-guide.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<style>.code-block{background:#1e1e1e;color:#d4d4d4;border-radius:8px;padding:16px 20px;margin:16px 0 24px;overflow-x:auto;font-family:"Source Code Pro",monospace;font-size:13px;line-height:1.6}.code-block .key{color:#9cdcfe}.code-block .str{color:#ce9178}.code-block .comment{color:#6a9955}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順",
+  "description": "構造化データ（JSON-LD）の書き方をFAQPage・Article・BreadcrumbListのコード例付きで解説。Schema.orgに基づくマークアップの基本から実装後の確認方法まで。",
+  "url": "https://tsubasa-memo.github.io/json-ld-guide.html",
+  "image": "https://tsubasa-memo.github.io/thumbs/json-ld-guide.png",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "構造化データ（JSON-LD）とは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Webページの内容を検索エンジンやAIに伝えるためのデータ形式。Schema.orgの語彙に基づいて「このページは何について書かれているか」「著者は誰か」「FAQの内容は何か」を機械が読める形で記述する。HTMLのhead内にscriptタグで埋め込む。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JSON-LDの書き方がわからない場合は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ChatGPTやClaudeに「このページのFAQPage JSON-LDを作って」と依頼すれば、ページの内容に基づいたコードを出力してくれる。出力されたコードをGoogleのリッチリザルトテスト（search.google.com/test/rich-results）に貼り付けてエラーがないか確認してから実装する。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "構造化データはSEOに効果がある？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "構造化データ自体はGoogleのランキング要因ではないとされているが、検索結果にリッチリザルト（星評価、FAQ、パンくずリストなど）が表示されることでクリック率が向上する。またAIが情報を正確に理解する手助けになるため、LLMO対策としても有効。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WordPressで構造化データを実装するには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoast SEOまたはRank Mathプラグインの無料版で基本的な構造化データ（Article、BreadcrumbList）が自動生成される。FAQPageは記事編集画面のFAQブロックから追加可能。プラグインを使わない場合はテーマのheader.phpに直接JSON-LDを記述する。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "構造化データのエラーを確認する方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleのリッチリザルトテスト（search.google.com/test/rich-results）にURLまたはコードを入力すれば、エラーの有無と詳細がわかる。公開済みのページはGoogle Search ConsoleのURL検査でも確認できる。エラーがある場合は赤で表示されるので、該当箇所を修正する。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "SEO・Web", "item": "https://tsubasa-memo.github.io/archive.html?cat=seo"},
+    {"@type": "ListItem", "position": 3, "name": "構造化データ（JSON-LD）の書き方"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block"><div class="sb-profile"><div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div><div class="sb-site-name">ツバサのメモ帳</div></div></div>
+<div class="sidebar-block"><ul class="sb-nav"><li><a href="/">ホーム</a></li><li><a href="/archive.html">記事一覧</a></li><li><a href="/glossary/">用語集</a></li><li><a href="/about.html">運営者情報</a></li><li><a href="/privacy-policy.html">プライバシーポリシー</a></li></ul></div>
+<div class="sidebar-block"><p class="sb-label">検索</p><input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div>
+<div class="sidebar-block"><p class="sb-label">カテゴリ</p><ul class="sb-categories"><li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li><li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li><li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li><li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li><li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li></ul></div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="/">ホーム</a> &gt; <a href="/archive.html?cat=seo">SEO・Web</a> &gt; 構造化データ（JSON-LD）の書き方
+</nav>
+<div class="article-hero">
+<img alt="構造化データ（JSON-LD）の書き方" height="360" loading="eager" src="/thumbs/json-ld-guide.png" width="640"/>
+</div>
+<span class="article-tag">SEO・Web</span>
+<h1 class="article-title">構造化データ（JSON-LD）の書き方<br/>FAQPage・Articleの実装手順</h1>
+<div class="article-meta-line">
+<span>2026年5月15日</span>
+<span>最終更新：2026年5月</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>SEOやLLMO対策の記事を読むと「構造化データを実装しましょう」とよく書いてある。でも具体的なコードがない記事が多くて、初めての人は何をどう書けばいいかわからない。この記事では、実際にコピーして使えるJSON-LDのコード例を載せた。FAQPage、Article、BreadcrumbListの3つに絞って、書き方と確認方法を説明する。</p>
+
+<h2 id="sec1">構造化データ（JSON-LD）とは</h2>
+
+<p>Webページの内容を検索エンジンやAIに伝えるためのデータ形式だ。HTMLは人間が読むためのもの、JSON-LDは機械が読むためのもの。<a href="https://schema.org/" target="_blank" rel="noopener nofollow">Schema.org</a>という国際的な語彙に基づいて、「このページは何について書かれているか」「著者は誰か」「FAQの内容は何か」を定義する。</p>
+
+<p>HTMLの&lt;head&gt;内に&lt;script type="application/ld+json"&gt;タグで埋め込む。ページの見た目には一切影響しないので、既存のデザインを崩す心配はない。</p>
+
+<p>構造化データ自体はGoogleのランキング要因ではないとされている。ただし、検索結果にリッチリザルト（FAQ、パンくずリスト、著者情報など）が表示されることでクリック率が上がる。またAIが情報を正確に理解する手助けになるため、LLMO対策としても有効だ。</p>
+
+<h2 id="sec2">FAQPage JSON-LDの書き方</h2>
+
+<p>最も実装効果が高い構造化データ。ページ内の「よくある質問」をJSON-LDで記述すると、Google検索のリッチリザルトに表示される可能性がある。さらにAIが回答を生成するときのソースとしても使われやすい。</p>
+
+<pre class="code-block"><span class="comment">// FAQPage JSON-LD の例</span>
+&lt;script type="application/ld+json"&gt;
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"FAQPage"</span>,
+  <span class="key">"mainEntity"</span>: [
+    {
+      <span class="key">"@type"</span>: <span class="str">"Question"</span>,
+      <span class="key">"name"</span>: <span class="str">"質問文をここに書く"</span>,
+      <span class="key">"acceptedAnswer"</span>: {
+        <span class="key">"@type"</span>: <span class="str">"Answer"</span>,
+        <span class="key">"text"</span>: <span class="str">"回答文をここに書く"</span>
+      }
+    },
+    {
+      <span class="key">"@type"</span>: <span class="str">"Question"</span>,
+      <span class="key">"name"</span>: <span class="str">"2つ目の質問文"</span>,
+      <span class="key">"acceptedAnswer"</span>: {
+        <span class="key">"@type"</span>: <span class="str">"Answer"</span>,
+        <span class="key">"text"</span>: <span class="str">"2つ目の回答文"</span>
+      }
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+
+<p>注意点は以下の通り。</p>
+
+<ul>
+<li>本文中のFAQセクションと内容を一致させる（JSON-LDだけに書いてページ本文にない質問はガイドライン違反になる）</li>
+<li>回答文にHTMLタグは使えるが、シンプルなテキストのほうが安全</li>
+<li>質問数に上限はないが、5〜10問程度が現実的</li>
+</ul>
+
+<h2 id="sec3">Article JSON-LDの書き方</h2>
+
+<p>記事ページに必須の構造化データ。記事のタイトル、著者、公開日、更新日をGoogleとAIに伝える。E-E-A-T（経験・専門性・権威性・信頼性）の評価にも関わる。</p>
+
+<pre class="code-block"><span class="comment">// Article JSON-LD の例</span>
+&lt;script type="application/ld+json"&gt;
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"Article"</span>,
+  <span class="key">"headline"</span>: <span class="str">"記事のタイトル"</span>,
+  <span class="key">"description"</span>: <span class="str">"記事の概要文"</span>,
+  <span class="key">"url"</span>: <span class="str">"https://example.com/article.html"</span>,
+  <span class="key">"image"</span>: <span class="str">"https://example.com/image.png"</span>,
+  <span class="key">"author"</span>: {
+    <span class="key">"@type"</span>: <span class="str">"Person"</span>,
+    <span class="key">"name"</span>: <span class="str">"著者名"</span>
+  },
+  <span class="key">"publisher"</span>: {
+    <span class="key">"@type"</span>: <span class="str">"Organization"</span>,
+    <span class="key">"name"</span>: <span class="str">"サイト名"</span>,
+    <span class="key">"url"</span>: <span class="str">"https://example.com/"</span>
+  },
+  <span class="key">"datePublished"</span>: <span class="str">"2026-05-15"</span>,
+  <span class="key">"dateModified"</span>: <span class="str">"2026-05-15"</span>,
+  <span class="key">"inLanguage"</span>: <span class="str">"ja"</span>
+}
+&lt;/script&gt;</pre>
+
+<p>authorのPersonに、sameAs（SNSプロフィールのURL）やjobTitle（肩書き）を追加すると、AIが著者の信頼性を評価する材料が増える。ただし最低限はnameだけで機能する。</p>
+
+<h2 id="sec4">BreadcrumbList JSON-LDの書き方</h2>
+
+<p>パンくずリスト（ホーム &gt; カテゴリ &gt; 記事タイトル）を構造化データで表現する。検索結果にパンくずが表示され、サイト構造がGoogleに正しく伝わる。</p>
+
+<pre class="code-block"><span class="comment">// BreadcrumbList JSON-LD の例</span>
+&lt;script type="application/ld+json"&gt;
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"BreadcrumbList"</span>,
+  <span class="key">"itemListElement"</span>: [
+    {
+      <span class="key">"@type"</span>: <span class="str">"ListItem"</span>,
+      <span class="key">"position"</span>: 1,
+      <span class="key">"name"</span>: <span class="str">"ホーム"</span>,
+      <span class="key">"item"</span>: <span class="str">"https://example.com/"</span>
+    },
+    {
+      <span class="key">"@type"</span>: <span class="str">"ListItem"</span>,
+      <span class="key">"position"</span>: 2,
+      <span class="key">"name"</span>: <span class="str">"カテゴリ名"</span>,
+      <span class="key">"item"</span>: <span class="str">"https://example.com/category/"</span>
+    },
+    {
+      <span class="key">"@type"</span>: <span class="str">"ListItem"</span>,
+      <span class="key">"position"</span>: 3,
+      <span class="key">"name"</span>: <span class="str">"記事タイトル"</span>
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+
+<p>最後の階層（現在のページ）にはitemプロパティを付けない。これはSchema.orgの推奨仕様だ。</p>
+
+<h2 id="sec5">実装後の確認方法</h2>
+
+<p>JSON-LDを書いたら、必ず以下の2つで確認する。</p>
+
+<h3>Googleリッチリザルトテスト</h3>
+
+<p>URLを入力するか、コードを直接貼り付けてテストできる。エラーがあれば赤で表示され、どの行に問題があるかもわかる。公開前のコードもテストできるので、実装時には必ず使う。</p>
+
+<a class="cite-card" href="https://search.google.com/test/rich-results?hl=ja" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">リッチリザルト テスト｜Google</span>
+<span class="cite-url">search.google.com/test/rich-results</span>
+</span>
+</a>
+
+<h3>Google Search ConsoleのURL検査</h3>
+
+<p>公開済みのページの構造化データがGoogleに正しく認識されているかを確認する。URL検査で対象ページを検索し、結果の「拡張」セクションを見る。FAQPage、Article、BreadcrumbListがそれぞれ検出されていればOK。</p>
+
+<h3>コードがわからないときは</h3>
+
+<p>ChatGPTやClaudeに「以下のFAQをFAQPage JSON-LDにしてください」と頼めば、数秒でコードが生成される。生成されたコードをリッチリザルトテストに貼り付けてエラーチェックし、問題なければそのまま使える。ゼロからコードを書く必要はない。</p>
+
+<div class="faq-section">
+<h2 id="sec6">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq">Q. 構造化データ（JSON-LD）とは？</p>
+<p class="fa">Webページの内容を検索エンジンやAIに伝えるためのデータ形式。Schema.orgの語彙に基づいて、ページの内容、著者、FAQなどを機械が読める形で記述する。HTMLのhead内にscriptタグで埋め込む。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. JSON-LDの書き方がわからない場合は？</p>
+<p class="fa">ChatGPTやClaudeに「このページのFAQPage JSON-LDを作って」と依頼すればコードを出力してくれる。出力されたコードをGoogleのリッチリザルトテストでエラーチェックしてから実装する。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 構造化データはSEOに効果がある？</p>
+<p class="fa">構造化データ自体はランキング要因ではないが、検索結果にリッチリザルトが表示されることでクリック率が向上する。またAIが情報を正確に理解する手助けになるため、LLMO対策としても有効。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. WordPressで構造化データを実装するには？</p>
+<p class="fa">Yoast SEOまたはRank Mathプラグインの無料版で基本的な構造化データが自動生成される。FAQPageは記事編集画面のFAQブロックから追加できる。プラグインを使わない場合はテーマのheader.phpに直接JSON-LDを記述する。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 構造化データのエラーを確認する方法は？</p>
+<p class="fa">Googleのリッチリザルトテスト（search.google.com/test/rich-results）にURLまたはコードを入力すればエラーの有無がわかる。公開済みのページはSearch ConsoleのURL検査でも確認できる。</p>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを初心者向けに整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
+<a class="cite-card" href="/llms-txt-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">llms.txtとは？書き方・設置方法・効果をわかりやすく解説</span><span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span></span></a>
+<a class="cite-card" href="/search-console-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">Google Search Consoleの使い方｜小規模サイトがやるべきことだけ</span><span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span></span></a>
+<a class="cite-card" href="/seo-llmo-cost-small-business.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span><span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span></span></a>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">構造化データ（JSON-LD）とは</a></li>
+<li><a href="#sec2">FAQPage JSON-LDの書き方</a></li>
+<li><a href="#sec3">Article JSON-LDの書き方</a></li>
+<li><a href="#sec4">BreadcrumbList JSON-LDの書き方</a></li>
+<li><a href="#sec5">実装後の確認方法</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="about.html">運営者情報</a></div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
