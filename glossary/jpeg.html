@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="JPEGの意味と仕組みを調べたメモ。非可逆圧縮でファイルサイズを小さくできる画像形式で、EC商品画像やWebの写真表示で最も広く使われている。PNGやWebPとの違い、画質設定の目安、保存による劣化を防ぐ方法を整理した。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,43 +139,68 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; JPEG
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>JPEGとは？<br>仕組みと他フォーマットとの違いを整理したメモ</h1>
+
+<div class="article-hero">
+<img alt="JPEGとは？仕組みと他フォーマットとの違いを整理したメモ" height="360" loading="eager" src="/thumbs/glossary/jpeg.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/jpeg.png" alt="JPEGとは？仕組みと他フォーマットとの違いを整理したメモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">JPEGとは？<br/>仕組みと他フォーマットとの違いを整理したメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>JPEGとは</h2>
-
-<p>JPEGは「Joint Photographic Experts Group」の略で、写真のような色数の多い画像に適したファイル形式だ。<a href="https://e-words.jp/w/JPEG.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、人間の目が感じにくい色の情報を間引くことでファイルサイズを小さくする「非可逆圧縮」を使っている。</p>
-
+<p>JPEGは「Joint Photographic Experts Group」の略で、写真のような色数の多い画像に適したファイル形式だ。<a href="https://e-words.jp/w/JPEG.html" rel="noopener noreferrer" target="_blank">IT用語辞典 e-Words</a>によると、人間の目が感じにくい色の情報を間引くことでファイルサイズを小さくする「非可逆圧縮」を使っている。</p>
 <p>非可逆圧縮（<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>）なので、一度圧縮して捨てたデータは元に戻せない。保存を繰り返すと少しずつ画質が劣化する。編集中のデータは<a href="psd.html">PSD</a>や<a href="png.html">PNG</a>で保存しておき、最後にJPEGへ書き出すのが安全だ。</p>
-
 <h2>EC実務での使いどころ</h2>
-
 <h3>商品写真の標準フォーマット</h3>
-
 <p>楽天市場やAmazonの商品画像はJPEGが主流だ。ファイルサイズが小さいのでページの表示速度に影響しにくく、画質80%前後に設定すれば見た目の劣化をほぼ感じさせずにサイズを抑えられる。</p>
-
 <h3>画質設定の目安</h3>
-
 <p>JPEG保存時の画質パラメータは0〜100%で設定できる。実務的には、メイン商品画像は85〜90%、サムネイル用は75〜80%が使いやすい。画質を100%にしてもファイルサイズだけが膨らんで、肉眼ではほぼ区別がつかない。</p>
-
 <h2>他の形式との比較</h2>
-
 <table class="compare">
 <tr><th>項目</th><th>JPEG</th><th>PNG</th><th>WebP</th></tr>
 <tr><td>圧縮方式</td><td>非可逆</td><td>可逆</td><td>両方対応</td></tr>
@@ -182,7 +208,6 @@
 <tr><td>ファイルサイズ</td><td>小さい</td><td>大きい</td><td>最も小さい</td></tr>
 <tr><td>向いている用途</td><td>写真全般</td><td>ロゴ・切り抜き</td><td>Web全般</td></tr>
 </table>
-
 <p>最近は<a href="webp.html">WebP</a>や<a href="avif.html">AVIF</a>のような次世代フォーマットも普及してきている。ただ、モール側の対応状況やクライアントとのやり取りを考えると、当面はJPEGが標準のままだろう。画像フォーマット全体の整理は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -201,24 +226,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

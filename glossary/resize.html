@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,75 +139,84 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; リサイズ
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>リサイズとは？<br>画像の大きさを変える方法と注意点</h1>
+<div class="article-hero">
+<img alt="リサイズとは？画像の大きさを変える方法と注意点" height="360" loading="eager" src="/thumbs/glossary/resize.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/resize.png" alt="リサイズとは？画像の大きさを変える方法と注意点" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">リサイズとは？<br/>画像の大きさを変える方法と注意点</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>リサイズとは</h2>
-
 <p>ひとことで言うと、画像の縦横のピクセル数を変更して大きさを変える操作のこと。英語の「resize（サイズを変える）」がそのままカタカナになった言葉で、縮小も拡大もまとめてリサイズと呼ぶ。</p>
-
-<p><a href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" target="_blank" rel="noopener noreferrer">Adobeの公式ヘルプ「画像のサイズ変更」</a>では、Photoshopで画像の幅と高さのピクセル数を変更する手順が載っている。メニューの「イメージ」→「画像解像度」でサイズを指定するだけなので、操作自体はそこまで難しくない。</p>
-
+<p><a href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" rel="noopener noreferrer" target="_blank">Adobeの公式ヘルプ「画像のサイズ変更」</a>では、Photoshopで画像の幅と高さのピクセル数を変更する手順が載っている。メニューの「イメージ」→「画像解像度」でサイズを指定するだけなので、操作自体はそこまで難しくない。</p>
 <p>紛らわしいのが「トリミング」との違い。トリミングは画像の一部を切り取る操作で、リサイズは画像全体を拡大・縮小する操作。やっていることが違う。</p>
-
 <table class="compare">
 <tr><th>操作</th><th>やること</th><th>結果</th></tr>
 <tr><td>リサイズ</td><td>画像全体を拡大・縮小</td><td>構図は変わらず、ピクセル数が変わる</td></tr>
 <tr><td>トリミング</td><td>画像の一部を切り取る</td><td>構図が変わり、切り取った分だけ小さくなる</td></tr>
 </table>
-
-<p><a href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/photo-data.html" target="_blank" rel="noopener noreferrer">Adobeの画像データ基礎知識のページ</a>にもピクセル数と画像サイズの関係がわかりやすくまとめてあったので、あわせて読むと理解しやすいと思う。</p>
-
+<p><a href="https://www.adobe.com/jp/creativecloud/roc/blog/photography/photo-data.html" rel="noopener noreferrer" target="_blank">Adobeの画像データ基礎知識のページ</a>にもピクセル数と画像サイズの関係がわかりやすくまとめてあったので、あわせて読むと理解しやすいと思う。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当をしていると、リサイズが必要になる場面はしょっちゅうある。僕が遭遇したケースをいくつか紹介する。</p>
-
 <h3>モールへの画像アップロード</h3>
-
-<p>カメラで撮った商品写真はだいたい4000〜6000pxくらいある。これをそのままモールにアップロードすると、ファイルサイズが大きすぎてエラーになったり、アップロードに時間がかかったりする。<a href="https://liginc.co.jp/631411" target="_blank" rel="noopener noreferrer">LIGのPhotoshopリサイズ解説</a>でも紹介されているように、用途に合ったサイズに縮小してから使うのが基本だ。</p>
-
+<p>カメラで撮った商品写真はだいたい4000〜6000pxくらいある。これをそのままモールにアップロードすると、ファイルサイズが大きすぎてエラーになったり、アップロードに時間がかかったりする。<a href="https://liginc.co.jp/631411" rel="noopener noreferrer" target="_blank">LIGのPhotoshopリサイズ解説</a>でも紹介されているように、用途に合ったサイズに縮小してから使うのが基本だ。</p>
 <h3>メルマガやバナー用の画像作成</h3>
-
 <p>メルマガに貼る画像は横幅600〜700px程度が一般的。商品写真をそのまま貼るとメールの容量が大きくなりすぎるので、リサイズして軽くしてから使う。バナーも同様で、指定サイズにリサイズしてからデザインに組み込む。</p>
-
 <h3>SNS用の画像書き出し</h3>
-
-<p>Instagramの投稿画像は1080×1080pxが推奨されている。一眼カメラで撮った写真はそれよりずっと大きいので、リサイズして合わせる必要がある。<a href="https://photomarche.net/resize/" target="_blank" rel="noopener noreferrer">フォトマルシェのリサイズ方法解説</a>にも、用途別の推奨サイズがまとまっていて参考になった。</p>
-
+<p>Instagramの投稿画像は1080×1080pxが推奨されている。一眼カメラで撮った写真はそれよりずっと大きいので、リサイズして合わせる必要がある。<a href="https://photomarche.net/resize/" rel="noopener noreferrer" target="_blank">フォトマルシェのリサイズ方法解説</a>にも、用途別の推奨サイズがまとまっていて参考になった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>拡大リサイズは画質が落ちる</h3>
-
 <p>画像を元のサイズより大きくリサイズすると、存在しないピクセルをソフトが推測して補うことになる。その結果、ぼやけたり輪郭がギザギザになったりする。縮小は情報を間引くだけなので大きな劣化は起きにくいが、拡大は要注意だ。基本的に「大きい画像を小さくする」のは大丈夫だけど、「小さい画像を大きくする」のは避けたほうがいい。</p>
-
 <h3>縦横比を固定してリサイズする</h3>
-
-<p>リサイズするときに縦横比（アスペクト比）を固定しないと、写真が横に伸びたり縦に潰れたりしてしまう。Photoshopでもペイントでも、縦横比を固定する設定があるので、必ずオンにしておくこと。<a href="https://321web.link/photoshop-resizing/" target="_blank" rel="noopener noreferrer">321webのPhotoshopリサイズ解説</a>にも、縦横比固定の手順が詳しく載っている。</p>
-
+<p>リサイズするときに縦横比（アスペクト比）を固定しないと、写真が横に伸びたり縦に潰れたりしてしまう。Photoshopでもペイントでも、縦横比を固定する設定があるので、必ずオンにしておくこと。<a href="https://321web.link/photoshop-resizing/" rel="noopener noreferrer" target="_blank">321webのPhotoshopリサイズ解説</a>にも、縦横比固定の手順が詳しく載っている。</p>
 <h3>リサイズとファイルサイズの圧縮は別の話</h3>
-
 <p>リサイズはピクセル数を変える操作。ファイルサイズ（KB・MB）を小さくしたいなら、JPEG圧縮率を上げたり画像形式を変えたりする「圧縮」が必要になる。リサイズすればファイルサイズも減ることが多いが、目的に応じて使い分けたほうがいい。画像の圧縮については<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>にまとめてある。各モールの画像ルールは<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>が参考になる。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -218,7 +227,6 @@
 <li><a href="aspect-ratio.html">アスペクト比</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -226,28 +234,29 @@
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

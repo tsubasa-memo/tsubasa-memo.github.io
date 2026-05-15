@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,78 +139,86 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ファーストビュー
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>ファーストビューとは？<br>商品ページの「最初に見える範囲」の話</h1>
+<div class="article-hero">
+<img alt="ファーストビューとは？商品ページの「最初に見える範囲」の話" height="360" loading="eager" src="/thumbs/glossary/first-view.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/first-view.png" alt="ファーストビューとは？商品ページの「最初に見える範囲」の話" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">ファーストビューとは？<br/>商品ページの「最初に見える範囲」の話</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>ファーストビューとは</h2>
-
 <p>ひとことで言うと、Webページを開いたときにスクロールせずに表示される画面範囲のこと。ユーザーが最初に目にするエリアで、ページの第一印象を決める部分だ。</p>
-
-<p>実はファーストビューは和製英語で、英語では「Above the Fold（アバブ・ザ・フォールド）」と呼ぶ。<a href="https://kaizenplatform.com/contents/first-view" target="_blank" rel="noopener noreferrer">Kaizen Platformのファーストビュー解説記事</a>によると、もともとは新聞を半分に折ったときに上半分に見える部分を指す言葉で、それがWebの世界に転用されたものらしい。</p>
-
-<p>ファーストビューのサイズはデバイスによって変わる。<a href="https://mieru-ca.com/heatmap/blog/what-is-fv/" target="_blank" rel="noopener noreferrer">ミエルカヒートマップのファーストビュー解説</a>にまとめられていたデータを参考にすると、目安はこんな感じだ。</p>
-
+<p>実はファーストビューは和製英語で、英語では「Above the Fold（アバブ・ザ・フォールド）」と呼ぶ。<a href="https://kaizenplatform.com/contents/first-view" rel="noopener noreferrer" target="_blank">Kaizen Platformのファーストビュー解説記事</a>によると、もともとは新聞を半分に折ったときに上半分に見える部分を指す言葉で、それがWebの世界に転用されたものらしい。</p>
+<p>ファーストビューのサイズはデバイスによって変わる。<a href="https://mieru-ca.com/heatmap/blog/what-is-fv/" rel="noopener noreferrer" target="_blank">ミエルカヒートマップのファーストビュー解説</a>にまとめられていたデータを参考にすると、目安はこんな感じだ。</p>
 <table class="compare">
 <tr><th>デバイス</th><th>横幅</th><th>高さ</th></tr>
 <tr><td>PC</td><td>1000〜1400px</td><td>550〜700px</td></tr>
 <tr><td>スマホ</td><td>320〜430px</td><td>500〜700px</td></tr>
 <tr><td>タブレット</td><td>768〜1024px</td><td>600〜900px</td></tr>
 </table>
-
 <p>ブラウザのツールバーやアドレスバーの高さによっても変わるので、あくまで目安。実際にはGoogle Analyticsなどでユーザーの画面解像度を確認して、自サイトの実情に合わせて考えるのがいい。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>ECサイトの運営でファーストビューが話題になる場面はかなり多い。</p>
-
 <h3>商品ページの改善</h3>
-
-<p>僕が遭遇したのがまさにこの場面。商品ページを開いたとき、ファーストビューに商品画像・商品名・価格・カートボタンが全部見えているかどうかが重要だと言われた。<a href="https://www.xserver.ne.jp/bizhp/first-view/" target="_blank" rel="noopener noreferrer">エックスサーバーのファーストビュー解説記事</a>にも、ユーザーはページを開いて3秒で読み進めるかどうかを判断すると書いてあった。</p>
-
+<p>僕が遭遇したのがまさにこの場面。商品ページを開いたとき、ファーストビューに商品画像・商品名・価格・カートボタンが全部見えているかどうかが重要だと言われた。<a href="https://www.xserver.ne.jp/bizhp/first-view/" rel="noopener noreferrer" target="_blank">エックスサーバーのファーストビュー解説記事</a>にも、ユーザーはページを開いて3秒で読み進めるかどうかを判断すると書いてあった。</p>
 <p>スマホの場合、画面が小さいので商品画像だけでファーストビューが埋まってしまうことがある。価格やカートボタンが見えない状態だと、スクロールしないと買えないページになり、離脱の原因になりうる。</p>
-
 <h3>トップページのヒーローバナー</h3>
-
-<p>ECサイトのトップページでは、ファーストビューの大部分をヒーローバナー（大きなメインビジュアル）が占めることが多い。セール告知や新商品の訴求をここに置くか、それとも商品一覧を見せるか、という判断が求められる。<a href="https://wca.co.jp/ec-column/ec-marketing/firstview-design/" target="_blank" rel="noopener noreferrer">WCAのファーストビューデザイン記事</a>でも、ECサイトのファーストビュー設計には商品への導線確保が重要だと触れられていた。</p>
-
+<p>ECサイトのトップページでは、ファーストビューの大部分をヒーローバナー（大きなメインビジュアル）が占めることが多い。セール告知や新商品の訴求をここに置くか、それとも商品一覧を見せるか、という判断が求められる。<a href="https://wca.co.jp/ec-column/ec-marketing/firstview-design/" rel="noopener noreferrer" target="_blank">WCAのファーストビューデザイン記事</a>でも、ECサイトのファーストビュー設計には商品への導線確保が重要だと触れられていた。</p>
 <h3>LP（ランディングページ）の設計</h3>
-
 <p>広告から流入するLPでは、ファーストビューで「何のページか」「自分に関係があるか」が伝わらないと即離脱される。キャッチコピー、商品画像、CTAボタン（購入ボタンなど）をファーストビュー内に収めるのが基本とされている。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>スマホファーストで考える</h3>
-
-<p>今はECサイトのアクセスの7〜8割がスマホからと言われている。PCで見たときの見た目だけでなく、スマホで開いたときにファーストビューに何が見えるかを優先して確認したほうがいい。<a href="https://sitest.jp/blog/?p=29055" target="_blank" rel="noopener noreferrer">SiTestのファーストビュー解説記事</a>でも、モバイルファーストの視点でファーストビューを設計することの重要性が説明されていた。</p>
-
+<p>今はECサイトのアクセスの7〜8割がスマホからと言われている。PCで見たときの見た目だけでなく、スマホで開いたときにファーストビューに何が見えるかを優先して確認したほうがいい。<a href="https://sitest.jp/blog/?p=29055" rel="noopener noreferrer" target="_blank">SiTestのファーストビュー解説記事</a>でも、モバイルファーストの視点でファーストビューを設計することの重要性が説明されていた。</p>
 <h3>表示速度もファーストビューの一部</h3>
-
 <p>いくら良いデザインでも、ページの読み込みが遅ければユーザーはファーストビューを見る前に離脱してしまう。画像の最適化やサーバーの応答速度など、表示パフォーマンスもファーストビュー体験の一部だ。</p>
-
 <h3>ヒートマップで実際の行動を確認</h3>
-
 <p>ファーストビューにどんな要素を置くか迷ったら、ヒートマップツールを使ってユーザーの行動を確認するのも手だ。どこまでスクロールされているか、どこがクリックされているかを可視化できるので、改善の根拠になる。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -220,35 +228,35 @@
 <li><a href="responsive.html">レスポンシブ</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

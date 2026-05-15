@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,71 +139,80 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 黒つぶれ
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>黒つぶれとは？<br>暗い写真の影が潰れる原因と対処法</h1>
+<div class="article-hero">
+<img alt="黒つぶれとは？暗い写真の影が潰れる原因と対処法" height="360" loading="eager" src="/thumbs/glossary/crushed-blacks.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/crushed-blacks.png" alt="黒つぶれとは？暗い写真の影が潰れる原因と対処法" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">黒つぶれとは？<br/>暗い写真の影が潰れる原因と対処法</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>黒つぶれとは</h2>
-
 <p>ひとことで言うと、写真の暗い部分が真っ黒になって、色や質感の情報が失われてしまう現象のことだ。</p>
-
-<p><a href="https://logcamera.com/kurotubure/" target="_blank" rel="noopener noreferrer">ログカメラの黒つぶれ解説記事</a>によると、カメラのイメージセンサーには記録できる暗さにも限界があって、その限界より暗い部分はすべて「真っ黒」として記録されてしまうらしい。白飛びが明るさの上限を超えた現象なら、黒つぶれは暗さの下限を下回った現象ということになる。</p>
-
-<p><a href="https://deji1nyumon.com/archives/641" target="_blank" rel="noopener noreferrer">デジタル一眼レフ初心者入門講座の解説</a>にも、カメラは人間の目よりも明暗差の表現が苦手だと書いてあった。人間の目は暗い部分にもある程度順応して見えるけど、カメラはそこまで器用ではないということだ。</p>
-
-<p>黒つぶれした部分は白飛びと同じように情報がゼロの状態なので、後から画像編集で明るくしてもグレーのノイズっぽい画像になるだけで、元の色や質感は戻ってこない。<a href="https://www.camerife.com/2020/07/kurotubure.html" target="_blank" rel="noopener noreferrer">CameRifeの黒つぶれ解説</a>でもこの点が強調されていた。</p>
-
+<p><a href="https://logcamera.com/kurotubure/" rel="noopener noreferrer" target="_blank">ログカメラの黒つぶれ解説記事</a>によると、カメラのイメージセンサーには記録できる暗さにも限界があって、その限界より暗い部分はすべて「真っ黒」として記録されてしまうらしい。白飛びが明るさの上限を超えた現象なら、黒つぶれは暗さの下限を下回った現象ということになる。</p>
+<p><a href="https://deji1nyumon.com/archives/641" rel="noopener noreferrer" target="_blank">デジタル一眼レフ初心者入門講座の解説</a>にも、カメラは人間の目よりも明暗差の表現が苦手だと書いてあった。人間の目は暗い部分にもある程度順応して見えるけど、カメラはそこまで器用ではないということだ。</p>
+<p>黒つぶれした部分は白飛びと同じように情報がゼロの状態なので、後から画像編集で明るくしてもグレーのノイズっぽい画像になるだけで、元の色や質感は戻ってこない。<a href="https://www.camerife.com/2020/07/kurotubure.html" rel="noopener noreferrer" target="_blank">CameRifeの黒つぶれ解説</a>でもこの点が強調されていた。</p>
 <h2>撮影で出てくる場面</h2>
-
 <p>商品撮影やスナップ撮影で、黒つぶれが起きやすい場面をまとめておく。</p>
-
 <h3>明暗差の大きい場面での撮影</h3>
-
 <p>窓際で商品を撮影するとき、明るい窓側に露出を合わせると、反対側の影が黒つぶれしやすい。スマホのポートレートモードで撮影するコツは<a href="/portrait-mode-tips.html">スマホポートレートモードの使い方</a>にまとめたけど、光の方向を意識するのは黒つぶれ対策としても大事だ。</p>
-
 <h3>暗い背景の商品撮影</h3>
-
 <p>高級感を出すために黒い背景で撮影すると、商品の暗い部分まで一緒に黒つぶれしてしまうことがある。特に革製品やダークカラーの衣類など、被写体自体が暗い色の場合は要注意だ。</p>
-
 <h3>夕方や室内の暗い場所での撮影</h3>
-
-<p>光量が不足している環境では全体的に暗くなりやすく、影の部分が黒つぶれしやすい。<a href="https://start-camera.com/kuraitoki" target="_blank" rel="noopener noreferrer">カメラ初心者のための使い方解説書の記事</a>でも、写真が暗くなるときの原因として露出不足が挙げられていた。</p>
-
+<p>光量が不足している環境では全体的に暗くなりやすく、影の部分が黒つぶれしやすい。<a href="https://start-camera.com/kuraitoki" rel="noopener noreferrer" target="_blank">カメラ初心者のための使い方解説書の記事</a>でも、写真が暗くなるときの原因として露出不足が挙げられていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>ISO感度を上げてみる</h3>
-
-<p>暗い部分が潰れてしまうときは、ISO感度を上げることでセンサーの感度が高まり、暗い部分の情報も拾えるようになる。ただし、ISO感度を上げすぎるとノイズが増えるので、画質とのバランスを見ながら調整する必要がある。<a href="https://teilab.net/camera-sirotobi/" target="_blank" rel="noopener noreferrer">テイラボの白飛び・黒つぶれ対策記事</a>にも、ISO感度・絞り・シャッタースピードのバランスが大事だと書いてあった。</p>
-
+<p>暗い部分が潰れてしまうときは、ISO感度を上げることでセンサーの感度が高まり、暗い部分の情報も拾えるようになる。ただし、ISO感度を上げすぎるとノイズが増えるので、画質とのバランスを見ながら調整する必要がある。<a href="https://teilab.net/camera-sirotobi/" rel="noopener noreferrer" target="_blank">テイラボの白飛び・黒つぶれ対策記事</a>にも、ISO感度・絞り・シャッタースピードのバランスが大事だと書いてあった。</p>
 <h3>ヒストグラムで確認する</h3>
-
-<p>ヒストグラムの左端にグラフが張り付いていたら、黒つぶれしている可能性が高い。<a href="https://for-camera-beginner.com/cglight/" target="_blank" rel="noopener noreferrer">カメラの大学のヒストグラム解説</a>によると、撮影時にヒストグラムを表示させておけば、その場で黒つぶれを発見して露出を調整できるとのこと。僕はこれを知ってからヒストグラムを表示させるようにした。</p>
-
+<p>ヒストグラムの左端にグラフが張り付いていたら、黒つぶれしている可能性が高い。<a href="https://for-camera-beginner.com/cglight/" rel="noopener noreferrer" target="_blank">カメラの大学のヒストグラム解説</a>によると、撮影時にヒストグラムを表示させておけば、その場で黒つぶれを発見して露出を調整できるとのこと。僕はこれを知ってからヒストグラムを表示させるようにした。</p>
 <h3>HDRやアクティブD-ライティングを活用する</h3>
-
-<p>多くのカメラやスマホにはHDR（ハイダイナミックレンジ）機能がある。<a href="https://onlinemanual.nikonimglib.com/d6/ja/06_shooting_settings_09.html" target="_blank" rel="noopener noreferrer">ニコンの公式マニュアル</a>では「アクティブD-ライティング」という名前で、白飛びや黒つぶれを自動的に抑える機能が紹介されていた。明暗差が激しいシーンでは、こうした機能をオンにしておくと安心だ。</p>
-
+<p>多くのカメラやスマホにはHDR（ハイダイナミックレンジ）機能がある。<a href="https://onlinemanual.nikonimglib.com/d6/ja/06_shooting_settings_09.html" rel="noopener noreferrer" target="_blank">ニコンの公式マニュアル</a>では「アクティブD-ライティング」という名前で、白飛びや黒つぶれを自動的に抑える機能が紹介されていた。明暗差が激しいシーンでは、こうした機能をオンにしておくと安心だ。</p>
 <p>黒つぶれと対になる現象が<a href="whiteout.html">白飛び</a>で、どちらもカメラの<a href="dynamic-range.html">ダイナミックレンジ</a>の限界が原因になっている。この3つの用語はセットで理解しておくとわかりやすい。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -211,35 +220,35 @@
 <li><a href="dynamic-range.html">ダイナミックレンジ</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/portrait-mode-tips.html">スマホポートレートモードの使い方｜背景ぼかしで商品写真を撮るコツ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

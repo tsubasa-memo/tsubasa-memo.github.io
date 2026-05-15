@@ -56,8 +56,8 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -65,82 +65,110 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
 
-<div class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<div class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a><span>&gt;</span><a href="/glossary/">用語集</a><span>&gt;</span>あ〜か行
-</div>
+
 </div>
 
-<div class="hero">
-<div class="wrap">
-<h1>用語集｜あ〜か行</h1>
-</div>
-</div>
 
-<main>
-<div class="wrap">
+
+<h1 class="article-title">用語集｜あ〜か行</h1>
+
 
 <div class="filter-tabs">
-<a href="/glossary/" class="filter-tab">用語集トップ</a>
-<a href="/glossary/0-z.html" class="filter-tab">数字・A〜Z</a>
-<a href="/glossary/a-ka.html" class="filter-tab active">あ〜か</a>
-<a href="/glossary/sa-ta.html" class="filter-tab">さ〜た</a>
-<a href="/glossary/ha-wa.html" class="filter-tab">は〜わ</a>
+<a class="filter-tab" href="/glossary/">用語集トップ</a>
+<a class="filter-tab" href="/glossary/0-z.html">数字・A〜Z</a>
+<a class="filter-tab active" href="/glossary/a-ka.html">あ〜か</a>
+<a class="filter-tab" href="/glossary/sa-ta.html">さ〜た</a>
+<a class="filter-tab" href="/glossary/ha-wa.html">は〜わ</a>
 </div>
-
 <div class="term-count">20 語</div>
-
 <h2 class="section-heading">あ行</h2>
-<div class="term-card"><a href="/glossary/aspect-ratio.html" class="term-card-thumb"><img src="/thumbs/glossary/aspect-ratio.png" alt="アスペクト比" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/aspect-ratio.html" class="term-name">アスペクト比</a></div><p class="term-desc">画像の縦横比。SNSやモールで推奨サイズが異なる。</p><a href="/glossary/aspect-ratio.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/bnpl.html" class="term-card-thumb"><img src="/thumbs/glossary/bnpl.png" alt="後払い決済（BNPL）" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/bnpl.html" class="term-name">後払い決済（BNPL）</a></div><p class="term-desc">商品を受け取ってから支払う決済方法。</p><a href="/glossary/bnpl.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/affiliate.html" class="term-card-thumb"><img src="/thumbs/glossary/affiliate.png" alt="アフィリエイト" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/affiliate.html" class="term-name">アフィリエイト</a></div><p class="term-desc">成果報酬型の広告手法。</p><a href="/glossary/affiliate.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/index-registration.html" class="term-card-thumb"><img src="/thumbs/glossary/index-registration.png" alt="インデックス登録" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/index-registration.html" class="term-name">インデックス登録</a></div><p class="term-desc">Googleがページをデータベースに記録すること。</p><a href="/glossary/index-registration.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/impression.html" class="term-card-thumb"><img src="/thumbs/glossary/impression.png" alt="インプレッション" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/impression.html" class="term-name">インプレッション</a></div><p class="term-desc">広告やコンテンツが表示された回数。</p><a href="/glossary/impression.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/color-temperature.html" class="term-card-thumb"><img src="/thumbs/glossary/color-temperature.png" alt="色温度" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/color-temperature.html" class="term-name">色温度</a></div><p class="term-desc">光源の色味をケルビン（K）で表した数値。</p><a href="/glossary/color-temperature.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/color-correction.html" class="term-card-thumb"><img src="/thumbs/glossary/color-correction.png" alt="色補正" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/color-correction.html" class="term-name">色補正</a></div><p class="term-desc">写真の色味やホワイトバランスを整えるレタッチ工程。</p><a href="/glossary/color-correction.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/omnichannel.html" class="term-card-thumb"><img src="/thumbs/glossary/omnichannel.png" alt="オムニチャネル" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/omnichannel.html" class="term-name">オムニチャネル</a></div><p class="term-desc">実店舗・EC・アプリなど複数チャネルを統合する戦略。</p><a href="/glossary/omnichannel.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/tax-return.html" class="term-card-thumb"><img src="/thumbs/glossary/tax-return.png" alt="確定申告" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/tax-return.html" class="term-name">確定申告</a></div><p class="term-desc">1年間の所得を税務署に申告する手続き。副業所得20万超で必要。</p><a href="/glossary/tax-return.html" class="term-link">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/aspect-ratio.html"><img alt="アスペクト比" loading="lazy" src="/thumbs/glossary/aspect-ratio.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/aspect-ratio.html">アスペクト比</a></div><p class="term-desc">画像の縦横比。SNSやモールで推奨サイズが異なる。</p><a class="term-link" href="/glossary/aspect-ratio.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/bnpl.html"><img alt="後払い決済（BNPL）" loading="lazy" src="/thumbs/glossary/bnpl.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/bnpl.html">後払い決済（BNPL）</a></div><p class="term-desc">商品を受け取ってから支払う決済方法。</p><a class="term-link" href="/glossary/bnpl.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/affiliate.html"><img alt="アフィリエイト" loading="lazy" src="/thumbs/glossary/affiliate.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/affiliate.html">アフィリエイト</a></div><p class="term-desc">成果報酬型の広告手法。</p><a class="term-link" href="/glossary/affiliate.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/index-registration.html"><img alt="インデックス登録" loading="lazy" src="/thumbs/glossary/index-registration.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/index-registration.html">インデックス登録</a></div><p class="term-desc">Googleがページをデータベースに記録すること。</p><a class="term-link" href="/glossary/index-registration.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/impression.html"><img alt="インプレッション" loading="lazy" src="/thumbs/glossary/impression.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/impression.html">インプレッション</a></div><p class="term-desc">広告やコンテンツが表示された回数。</p><a class="term-link" href="/glossary/impression.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/color-temperature.html"><img alt="色温度" loading="lazy" src="/thumbs/glossary/color-temperature.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/color-temperature.html">色温度</a></div><p class="term-desc">光源の色味をケルビン（K）で表した数値。</p><a class="term-link" href="/glossary/color-temperature.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/color-correction.html"><img alt="色補正" loading="lazy" src="/thumbs/glossary/color-correction.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/color-correction.html">色補正</a></div><p class="term-desc">写真の色味やホワイトバランスを整えるレタッチ工程。</p><a class="term-link" href="/glossary/color-correction.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/omnichannel.html"><img alt="オムニチャネル" loading="lazy" src="/thumbs/glossary/omnichannel.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/omnichannel.html">オムニチャネル</a></div><p class="term-desc">実店舗・EC・アプリなど複数チャネルを統合する戦略。</p><a class="term-link" href="/glossary/omnichannel.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/tax-return.html"><img alt="確定申告" loading="lazy" src="/thumbs/glossary/tax-return.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/tax-return.html">確定申告</a></div><p class="term-desc">1年間の所得を税務署に申告する手続き。副業所得20万超で必要。</p><a class="term-link" href="/glossary/tax-return.html">→ もっと詳しく</a></div></div>
 <h2 class="section-heading">か行</h2>
-<div class="term-card"><a href="/glossary/cart-abandonment.html" class="term-card-thumb"><img src="/thumbs/glossary/cart-abandonment.png" alt="カゴ落ち" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/cart-abandonment.html" class="term-name">カゴ落ち</a></div><p class="term-desc">カートに入れたまま購入せず離脱すること。</p><a href="/glossary/cart-abandonment.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/kakerate.html" class="term-card-thumb"><img src="/thumbs/glossary/kakerate.png" alt="掛け率" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/kakerate.html" class="term-name">掛け率</a></div><p class="term-desc">仕入れ交渉の「6掛け」は定価の60%という意味。</p><a href="/glossary/kakerate.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/gasosuu.html" class="term-card-thumb"><img src="/thumbs/glossary/gasosuu.png" alt="画素数" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/gasosuu.html" class="term-name">画素数</a></div><p class="term-desc">画像を構成するピクセルの総数。多い＝高画質ではない。</p><a href="/glossary/gasosuu.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/image-size.html" class="term-card-thumb"><img src="/thumbs/glossary/image-size.png" alt="画像サイズ" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/image-size.html" class="term-name">画像サイズ</a></div><p class="term-desc">ピクセル数とファイル容量、2つの意味がある紛らわしい用語。</p><a href="/glossary/image-size.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/resolution-dpi.html" class="term-card-thumb"><img src="/thumbs/glossary/resolution-dpi.png" alt="解像度・dpi" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/resolution-dpi.html" class="term-name">解像度・dpi</a></div><p class="term-desc">印刷とWebで必要な数値が違う。</p><a href="/glossary/resolution-dpi.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/crowdsourcing.html" class="term-card-thumb"><img src="/thumbs/glossary/crowdsourcing.png" alt="クラウドソーシング" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/crowdsourcing.html" class="term-name">クラウドソーシング</a></div><p class="term-desc">ネット経由で不特定多数に業務を外部委託する仕組み。</p><a href="/glossary/crowdsourcing.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/clipping-path.html" class="term-card-thumb"><img src="/thumbs/glossary/clipping-path.png" alt="クリッピングパス" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/clipping-path.html" class="term-name">クリッピングパス</a></div><p class="term-desc">Photoshopのペンツールで描く切り抜き用のパス。</p><a href="/glossary/clipping-path.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/crawler.html" class="term-card-thumb"><img src="/thumbs/glossary/crawler.png" alt="クローラー" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/crawler.html" class="term-name">クローラー</a></div><p class="term-desc">検索エンジンがWebページを自動巡回するプログラム。</p><a href="/glossary/crawler.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/crushed-blacks.html" class="term-card-thumb"><img src="/thumbs/glossary/crushed-blacks.png" alt="黒つぶれ" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/crushed-blacks.html" class="term-name">黒つぶれ</a></div><p class="term-desc">暗い部分が真っ黒になって細部が見えなくなる現象。</p><a href="/glossary/crushed-blacks.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/keihyouhou.html" class="term-card-thumb"><img src="/thumbs/glossary/keihyouhou.png" alt="景品表示法" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/keihyouhou.html" class="term-name">景品表示法</a></div><p class="term-desc">不当な広告表示を禁止する法律。EC運営に直結。</p><a href="/glossary/keihyouhou.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/commit.html" class="term-card-thumb"><img src="/thumbs/glossary/commit.png" alt="コミット" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/commit.html" class="term-name">コミット</a></div><p class="term-desc">gitで変更を履歴に記録する操作。</p><a href="/glossary/commit.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/contrast.html" class="term-card-thumb"><img src="/thumbs/glossary/contrast.png" alt="コントラスト" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/contrast.html" class="term-name">コントラスト</a></div><p class="term-desc">写真の明るい部分と暗い部分の差。</p><a href="/glossary/contrast.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/compositing.html" class="term-card-thumb"><img src="/thumbs/glossary/compositing.png" alt="合成" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/compositing.html" class="term-name">合成</a></div><p class="term-desc">複数の画像を組み合わせて1枚にするレタッチ処理。</p><a href="/glossary/compositing.html" class="term-link">→ もっと詳しく</a></div></div>
-
+<div class="term-card"><a class="term-card-thumb" href="/glossary/cart-abandonment.html"><img alt="カゴ落ち" loading="lazy" src="/thumbs/glossary/cart-abandonment.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/cart-abandonment.html">カゴ落ち</a></div><p class="term-desc">カートに入れたまま購入せず離脱すること。</p><a class="term-link" href="/glossary/cart-abandonment.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/kakerate.html"><img alt="掛け率" loading="lazy" src="/thumbs/glossary/kakerate.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/kakerate.html">掛け率</a></div><p class="term-desc">仕入れ交渉の「6掛け」は定価の60%という意味。</p><a class="term-link" href="/glossary/kakerate.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/gasosuu.html"><img alt="画素数" loading="lazy" src="/thumbs/glossary/gasosuu.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/gasosuu.html">画素数</a></div><p class="term-desc">画像を構成するピクセルの総数。多い＝高画質ではない。</p><a class="term-link" href="/glossary/gasosuu.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/image-size.html"><img alt="画像サイズ" loading="lazy" src="/thumbs/glossary/image-size.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/image-size.html">画像サイズ</a></div><p class="term-desc">ピクセル数とファイル容量、2つの意味がある紛らわしい用語。</p><a class="term-link" href="/glossary/image-size.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/resolution-dpi.html"><img alt="解像度・dpi" loading="lazy" src="/thumbs/glossary/resolution-dpi.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/resolution-dpi.html">解像度・dpi</a></div><p class="term-desc">印刷とWebで必要な数値が違う。</p><a class="term-link" href="/glossary/resolution-dpi.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/crowdsourcing.html"><img alt="クラウドソーシング" loading="lazy" src="/thumbs/glossary/crowdsourcing.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/crowdsourcing.html">クラウドソーシング</a></div><p class="term-desc">ネット経由で不特定多数に業務を外部委託する仕組み。</p><a class="term-link" href="/glossary/crowdsourcing.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/clipping-path.html"><img alt="クリッピングパス" loading="lazy" src="/thumbs/glossary/clipping-path.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/clipping-path.html">クリッピングパス</a></div><p class="term-desc">Photoshopのペンツールで描く切り抜き用のパス。</p><a class="term-link" href="/glossary/clipping-path.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/crawler.html"><img alt="クローラー" loading="lazy" src="/thumbs/glossary/crawler.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/crawler.html">クローラー</a></div><p class="term-desc">検索エンジンがWebページを自動巡回するプログラム。</p><a class="term-link" href="/glossary/crawler.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/crushed-blacks.html"><img alt="黒つぶれ" loading="lazy" src="/thumbs/glossary/crushed-blacks.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/crushed-blacks.html">黒つぶれ</a></div><p class="term-desc">暗い部分が真っ黒になって細部が見えなくなる現象。</p><a class="term-link" href="/glossary/crushed-blacks.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/keihyouhou.html"><img alt="景品表示法" loading="lazy" src="/thumbs/glossary/keihyouhou.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/keihyouhou.html">景品表示法</a></div><p class="term-desc">不当な広告表示を禁止する法律。EC運営に直結。</p><a class="term-link" href="/glossary/keihyouhou.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/commit.html"><img alt="コミット" loading="lazy" src="/thumbs/glossary/commit.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/commit.html">コミット</a></div><p class="term-desc">gitで変更を履歴に記録する操作。</p><a class="term-link" href="/glossary/commit.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/contrast.html"><img alt="コントラスト" loading="lazy" src="/thumbs/glossary/contrast.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/contrast.html">コントラスト</a></div><p class="term-desc">写真の明るい部分と暗い部分の差。</p><a class="term-link" href="/glossary/contrast.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/compositing.html"><img alt="合成" loading="lazy" src="/thumbs/glossary/compositing.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/compositing.html">合成</a></div><p class="term-desc">複数の画像を組み合わせて1枚にするレタッチ処理。</p><a class="term-link" href="/glossary/compositing.html">→ もっと詳しく</a></div></div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

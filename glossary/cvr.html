@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,69 +139,79 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; CVR（コンバージョン率）
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>CVR（コンバージョン率）とは？<br>「CVR何%？」と聞かれた話</h1>
+<div class="article-hero">
+<img alt="CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話" height="360" loading="eager" src="/thumbs/glossary/cvr.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/cvr.png" alt="CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">CVR（コンバージョン率）とは？<br/>「CVR何%？」と聞かれた話</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>CVR（コンバージョン率）とは</h2>
-
 <p>ひとことで言うと、サイトに来た人のうち、購入や問い合わせなどの「成果」に至った人の割合のこと。CVRは「Conversion Rate」の略だ。</p>
-
 <p>計算式は「コンバージョン数 ÷ セッション数 × 100（%）」。たとえば月間のサイト訪問が10,000セッションで、そのうち購入完了が200件ならCVRは2%になる。</p>
-
-<p><a href="https://www.shopify.com/jp/blog/ecommerce-conversion-rate" target="_blank" rel="noopener nofollow">Shopifyの公式ブログ</a>によると、ECサイトの平均CVRは1〜3%程度。ジャンルや価格帯によって差があるが、ざっくり「100人来て1〜3人が買う」と考えるとイメージしやすい。</p>
-
-<p>「コンバージョン」が何を指すかはサイトによって異なる。ECサイトなら購入完了、BtoBサイトなら資料請求や問い合わせがコンバージョンになることが多い。<a href="https://support.google.com/analytics/answer/9267568?hl=ja" target="_blank" rel="noopener noreferrer">Google Analyticsのヘルプ</a>にもコンバージョンの設定方法が載っている。</p>
-
+<p><a href="https://www.shopify.com/jp/blog/ecommerce-conversion-rate" rel="noopener nofollow" target="_blank">Shopifyの公式ブログ</a>によると、ECサイトの平均CVRは1〜3%程度。ジャンルや価格帯によって差があるが、ざっくり「100人来て1〜3人が買う」と考えるとイメージしやすい。</p>
+<p>「コンバージョン」が何を指すかはサイトによって異なる。ECサイトなら購入完了、BtoBサイトなら資料請求や問い合わせがコンバージョンになることが多い。<a href="https://support.google.com/analytics/answer/9267568?hl=ja" rel="noopener noreferrer" target="_blank">Google Analyticsのヘルプ</a>にもコンバージョンの設定方法が載っている。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>CVRはEC担当にとって避けて通れない指標だった。僕が遭遇した場面を書いておく。</p>
-
 <h3>上司に「CVR何%？」と聞かれた</h3>
-
-<p>これが僕がCVRを調べるきっかけ。Google Analytics（GA4）の「レポート」→「収益化」→「eコマース購入数」あたりを見ると、購入完了数がわかる。セッション数と割り算すればCVRが出る。<a href="https://www.bsearchtech.com/blog/e-commerce-marketing/what-conversion-rate/" target="_blank" rel="noopener nofollow">GENIEE SEARCHの解説記事</a>にGA4でのCVR確認方法が詳しく載っていたので参考にした。</p>
-
+<p>これが僕がCVRを調べるきっかけ。Google Analytics（GA4）の「レポート」→「収益化」→「eコマース購入数」あたりを見ると、購入完了数がわかる。セッション数と割り算すればCVRが出る。<a href="https://www.bsearchtech.com/blog/e-commerce-marketing/what-conversion-rate/" rel="noopener nofollow" target="_blank">GENIEE SEARCHの解説記事</a>にGA4でのCVR確認方法が詳しく載っていたので参考にした。</p>
 <h3>広告の効果測定で使う</h3>
-
-<p>広告経由でサイトに来た人が、ちゃんと購入まで至っているかを測るのにCVRを使う。たとえばリスティング広告のCVRが0.5%で、SNS広告のCVRが2%なら、SNS広告のほうが「買ってくれる人を連れてきている」と判断できる。<a href="https://www.ricoh.co.jp/magazines/direct-marketing/column/g00041/" target="_blank" rel="noopener noreferrer">リコーのダイレクトマーケティングラボ</a>の記事でも、チャネル別のCVR比較の重要性が説明されていた。</p>
-
+<p>広告経由でサイトに来た人が、ちゃんと購入まで至っているかを測るのにCVRを使う。たとえばリスティング広告のCVRが0.5%で、SNS広告のCVRが2%なら、SNS広告のほうが「買ってくれる人を連れてきている」と判断できる。<a href="https://www.ricoh.co.jp/magazines/direct-marketing/column/g00041/" rel="noopener noreferrer" target="_blank">リコーのダイレクトマーケティングラボ</a>の記事でも、チャネル別のCVR比較の重要性が説明されていた。</p>
 <h3>商品ページの改善指標として</h3>
-
 <p>商品ページの写真を差し替えたり、説明文を見直したりしたあとに、CVRが上がったかどうかで効果を判断する。数字で良し悪しがわかるので、「なんとなく良くなった気がする」という曖昧な評価を避けられる。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>CVRだけ見ても意味がない</h3>
-
-<p>CVRが高くても、そもそもサイトに来る人が少なければ売上は伸びない。逆にCVRが低くても、集客数が多ければそれなりの売上になる。<a href="https://maclogi.co.jp/column/6879/?type=lecture" target="_blank" rel="noopener nofollow">マクロジのCVR解説記事</a>でも、CVRはセッション数や客単価とセットで見るべきだと書いてあった。</p>
-
+<p>CVRが高くても、そもそもサイトに来る人が少なければ売上は伸びない。逆にCVRが低くても、集客数が多ければそれなりの売上になる。<a href="https://maclogi.co.jp/column/6879/?type=lecture" rel="noopener nofollow" target="_blank">マクロジのCVR解説記事</a>でも、CVRはセッション数や客単価とセットで見るべきだと書いてあった。</p>
 <h3>「何をコンバージョンにするか」を決めておく</h3>
-
 <p>チーム内で「CVR」と言ったとき、購入完了を指しているのか、カート追加を指しているのかで数字がまるで違ってくる。最初に定義を揃えておかないと話がかみ合わない。</p>
-
 <h3>業界平均との比較は参考程度に</h3>
-
 <p>「ECの平均CVRは2%くらい」と言われても、高単価商品と日用品では比較にならない。自社の過去データとの比較（先月より上がったか下がったか）のほうが実用的だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -212,35 +222,35 @@
 <li><a href="ab-test.html">ABテスト</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

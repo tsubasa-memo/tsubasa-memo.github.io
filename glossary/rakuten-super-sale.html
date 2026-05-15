@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,67 +139,78 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 楽天スーパーSALE
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>楽天スーパーSALEとは？<br>エントリー方法と準備を調べた</h1>
+<div class="article-hero">
+<img alt="楽天スーパーSALEとは？エントリー方法と準備を調べた" height="360" loading="eager" src="/thumbs/glossary/rakuten-super-sale.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/rakuten-super-sale.png" alt="楽天スーパーSALEとは？エントリー方法と準備を調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">楽天スーパーSALEとは？<br/>エントリー方法と準備を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>楽天スーパーSALEとは</h2>
-
 <p>ひとことで言うと、楽天市場が年4回開催する最大級のセールイベントだ。開催月は例年3月・6月・9月・12月で、各回約1週間の期間で実施される。</p>
-
-<p><a href="https://event.rakuten.co.jp/campaign/supersale/mobile/presale/" target="_blank" rel="noopener nofollow">楽天スーパーSALEの特設ページ</a>を見ると、セール期間中は半額以下の目玉商品が大量に出品され、ポイント倍率アップの仕組みもあるため、楽天市場全体のアクセスと売上が通常期の何倍にもなる。</p>
-
-<p>購入者にとっての目玉は「ショップ買いまわり」だ。<a href="https://event.rakuten.co.jp/family/story/article/2021/rakuten-supersale-strategy/" target="_blank" rel="noopener nofollow">楽天ママズライフの攻略記事</a>にも説明があったけど、期間中に複数の店舗で買い物をするとポイント倍率が上がる仕組みで、2店舗で2倍、3店舗で3倍、最大10店舗で10倍になる。購入者はポイントを最大化するためにいろんな店舗を回るので、店舗側にとっては新規顧客を獲得するチャンスになる。</p>
-
+<p><a href="https://event.rakuten.co.jp/campaign/supersale/mobile/presale/" rel="noopener nofollow" target="_blank">楽天スーパーSALEの特設ページ</a>を見ると、セール期間中は半額以下の目玉商品が大量に出品され、ポイント倍率アップの仕組みもあるため、楽天市場全体のアクセスと売上が通常期の何倍にもなる。</p>
+<p>購入者にとっての目玉は「ショップ買いまわり」だ。<a href="https://event.rakuten.co.jp/family/story/article/2021/rakuten-supersale-strategy/" rel="noopener nofollow" target="_blank">楽天ママズライフの攻略記事</a>にも説明があったけど、期間中に複数の店舗で買い物をするとポイント倍率が上がる仕組みで、2店舗で2倍、3店舗で3倍、最大10店舗で10倍になる。購入者はポイントを最大化するためにいろんな店舗を回るので、店舗側にとっては新規顧客を獲得するチャンスになる。</p>
 <p>お買い物マラソンとの違いもよく聞かれるけど、スーパーSALEのほうが規模が大きい。半額以下商品のサーチ枠や楽天側の広告宣伝が手厚く、期間中の楽天全体のアクセス数もスーパーSALEのほうが多い。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <h3>エントリーと半額サーチ申請</h3>
-
-<p>店舗としてスーパーSALEに参加するには、RMS（楽天の管理画面）からエントリーする。セール開始の数週間前にRMS上でエントリー受付が始まるので、期限内に申請を済ませる。半額以下の目玉商品を出す場合は「サーチ申請」という別の手続きが必要で、商品や割引率に対する審査がある。<a href="https://maclogi.co.jp/column/940/?type=lecture" target="_blank" rel="noopener noreferrer">マクロジのスーパーSALE解説</a>にエントリーからサーチ申請までの流れが詳しく書いてあった。</p>
-
+<p>店舗としてスーパーSALEに参加するには、RMS（楽天の管理画面）からエントリーする。セール開始の数週間前にRMS上でエントリー受付が始まるので、期限内に申請を済ませる。半額以下の目玉商品を出す場合は「サーチ申請」という別の手続きが必要で、商品や割引率に対する審査がある。<a href="https://maclogi.co.jp/column/940/?type=lecture" rel="noopener noreferrer" target="_blank">マクロジのスーパーSALE解説</a>にエントリーからサーチ申請までの流れが詳しく書いてあった。</p>
 <h3>セール前の在庫確保</h3>
-
 <p>スーパーSALE期間中は通常の何倍もの注文が来ることがある。在庫が切れるとせっかくのアクセスが無駄になるので、仕入先に早めに発注して在庫を積み増しておく必要がある。調達リードタイムを逆算して、セール開始日に間に合うように手配するのが基本だ。</p>
-
 <h3>バナーやクーポンの準備</h3>
-
-<p>セール期間中に目を引くためには、店舗トップや商品ページにスーパーSALE用のバナーを掲出する。クーポンの設定もRMSから行う。<a href="https://finner.co.jp/media/ec20230818a/" target="_blank" rel="noopener noreferrer">FinnerのRMS解説</a>にもクーポン施策の設定方法が載っていた。セール直前になると準備が間に合わなくなるので、2週間前くらいから動き始めるのがいい。</p>
-
+<p>セール期間中に目を引くためには、店舗トップや商品ページにスーパーSALE用のバナーを掲出する。クーポンの設定もRMSから行う。<a href="https://finner.co.jp/media/ec20230818a/" rel="noopener noreferrer" target="_blank">FinnerのRMS解説</a>にもクーポン施策の設定方法が載っていた。セール直前になると準備が間に合わなくなるので、2週間前くらいから動き始めるのがいい。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>出荷体制の確認は必須</h3>
-
-<p>セール期間中に注文が急増すると、出荷が追いつかなくなることがある。3PL業者に委託している場合は、事前に「スーパーSALE期間中は出荷件数が増える」と連絡しておいたほうがいい。出荷遅延が起きるとレビュー評価に直結するし、楽天の出店基準にも影響する。<a href="https://itsumo365.co.jp/blog/post-8855/" target="_blank" rel="noopener nofollow">いつも.のRMS解説</a>にも繁忙期の物流対策について触れられていた。</p>
-
+<p>セール期間中に注文が急増すると、出荷が追いつかなくなることがある。3PL業者に委託している場合は、事前に「スーパーSALE期間中は出荷件数が増える」と連絡しておいたほうがいい。出荷遅延が起きるとレビュー評価に直結するし、楽天の出店基準にも影響する。<a href="https://itsumo365.co.jp/blog/post-8855/" rel="noopener nofollow" target="_blank">いつも.のRMS解説</a>にも繁忙期の物流対策について触れられていた。</p>
 <h3>赤字覚悟の目玉商品は「集客装置」と割り切る</h3>
-
 <p>半額以下で出す目玉商品は利益が出ないことが多い。ただ、目的は集客だ。目玉商品で店舗に来てもらい、ついでに利益率の高い通常商品も買ってもらう、という戦略になる。目玉商品だけで採算を合わせようとすると消耗するので、店舗全体の売上で回収する考え方が大事だ。</p>
-
 <h3>セール後のフォローも重要</h3>
-
 <p>スーパーSALEで新規顧客を獲得しても、リピートにつながらなければ効果は一過性で終わる。セール後にサンクスメールやクーポンを配布して、次回の購入につなげる施策も忘れずに。RMSのR-Mail機能で購入者にフォローメールを送ることができる。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -209,35 +220,35 @@
 <li><a href="fulfillment.html">フルフィルメント</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,67 +139,78 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; リターゲティング
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>リターゲティングとは？<br>「リタゲ広告出しますか？」と聞かれた話</h1>
+<div class="article-hero">
+<img alt="リターゲティングとは？「リタゲ広告出しますか？」と聞かれた話" height="360" loading="eager" src="/thumbs/glossary/retargeting.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/retargeting.png" alt="リターゲティングとは？「リタゲ広告出しますか？」と聞かれた話" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">リターゲティングとは？<br/>「リタゲ広告出しますか？」と聞かれた話</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>リターゲティングとは</h2>
-
 <p>ひとことで言うと、一度自社のWebサイトを訪れたことのあるユーザーに対して、その後に閲覧する別のサイトやSNS上で広告を表示する手法のこと。「リタゲ」はリターゲティングの略称だ。</p>
-
-<p><a href="https://www.macromill.com/service/words/retargeting-ad/" target="_blank" rel="noopener noreferrer">マクロミルの用語解説</a>によると、仕組みとしてはユーザーがWebサイトを訪れた際にCookieという小さなデータが保存され、その情報をもとに他のサイトやSNSで広告を表示している。ネットで何かを見たあと、別のサイトでその商品の広告が追いかけてくるのは、これが原因だ。</p>
-
-<p>ちなみにGoogle広告では同じ仕組みを「リマーケティング」と呼んでいる。<a href="https://moltsinc.co.jp/media/process/22427/" target="_blank" rel="noopener noreferrer">MOLTSの解説記事</a>でも触れられていたが、呼び方が違うだけで仕組みは同じ。Yahoo!広告やMeta広告（Facebook・Instagram）では「リターゲティング」と呼ぶので、文脈によって使い分けられている。</p>
-
+<p><a href="https://www.macromill.com/service/words/retargeting-ad/" rel="noopener noreferrer" target="_blank">マクロミルの用語解説</a>によると、仕組みとしてはユーザーがWebサイトを訪れた際にCookieという小さなデータが保存され、その情報をもとに他のサイトやSNSで広告を表示している。ネットで何かを見たあと、別のサイトでその商品の広告が追いかけてくるのは、これが原因だ。</p>
+<p>ちなみにGoogle広告では同じ仕組みを「リマーケティング」と呼んでいる。<a href="https://moltsinc.co.jp/media/process/22427/" rel="noopener noreferrer" target="_blank">MOLTSの解説記事</a>でも触れられていたが、呼び方が違うだけで仕組みは同じ。Yahoo!広告やMeta広告（Facebook・Instagram）では「リターゲティング」と呼ぶので、文脈によって使い分けられている。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>ECサイトを運営していると、リターゲティング広告は非常に身近な存在だった。僕が実際に遭遇したケースを書いておく。</p>
-
 <h3>カゴ落ちユーザーへの再アプローチ</h3>
-
-<p>ECサイトで一番多い活用場面がこれだと思う。商品をカートに入れたまま購入せずに離脱してしまったユーザーに対して、「カートに商品が残っています」という広告を表示する。<a href="https://geniee.co.jp/cx-navi/marketing/re-targeting/" target="_blank" rel="noopener noreferrer">GENIEE CX NAV1の記事</a>にも書いてあったが、カートに入れたということは購入意欲はあるわけで、あとひと押しで買ってくれる可能性が高い。</p>
-
+<p>ECサイトで一番多い活用場面がこれだと思う。商品をカートに入れたまま購入せずに離脱してしまったユーザーに対して、「カートに商品が残っています」という広告を表示する。<a href="https://geniee.co.jp/cx-navi/marketing/re-targeting/" rel="noopener noreferrer" target="_blank">GENIEE CX NAV1の記事</a>にも書いてあったが、カートに入れたということは購入意欲はあるわけで、あとひと押しで買ってくれる可能性が高い。</p>
 <h3>商品ページの閲覧者に広告を出す</h3>
-
 <p>商品ページを見たけど購入に至らなかったユーザーに、閲覧した商品やその関連商品の広告を出すパターンもある。Amazonや楽天で商品を見たあと、別のサイトでその商品の広告が出てくるのはまさにこれだ。</p>
-
 <h3>セール時期の告知</h3>
-
-<p>過去にサイトを訪れたことのあるユーザーに対して、セール開始やクーポン配布のタイミングで広告を配信することもある。まったく知らない人に広告を出すよりも、一度接点があるユーザーのほうが反応率が高いという理屈だ。<a href="https://www.medix-inc.co.jp/webbu/retargeting-ads-2083" target="_blank" rel="noopener noreferrer">メディックスの事例記事</a>でも、リターゲティングは通常のディスプレイ広告に比べてCVR（コンバージョン率）が高い傾向にあると紹介されていた。</p>
-
+<p>過去にサイトを訪れたことのあるユーザーに対して、セール開始やクーポン配布のタイミングで広告を配信することもある。まったく知らない人に広告を出すよりも、一度接点があるユーザーのほうが反応率が高いという理屈だ。<a href="https://www.medix-inc.co.jp/webbu/retargeting-ads-2083" rel="noopener noreferrer" target="_blank">メディックスの事例記事</a>でも、リターゲティングは通常のディスプレイ広告に比べてCVR（コンバージョン率）が高い傾向にあると紹介されていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>タグ（ピクセル）の設置が必要</h3>
-
 <p>リターゲティング広告を始めるには、自社サイトに「リターゲティングタグ」（Google広告では「リマーケティングタグ」、Meta広告では「Metaピクセル」）を設置する必要がある。このタグが訪問者のCookie情報を収集する役割を果たしている。サイトの全ページに入れるのが基本だ。</p>
-
 <h3>Cookie規制の影響</h3>
-
-<p>サードパーティCookieの規制が各ブラウザで進んでいて、従来の方法だけではユーザーを追跡しにくくなっている。<a href="https://digima.cocoo.co.jp/media/ad-retargeting" target="_blank" rel="noopener noreferrer">digimaの2026年版解説</a>でも、ファーストパーティデータ（自社サイトで直接取得した顧客データ）の活用が重要になっていると書いてあった。会員登録やメールアドレスの取得が、今後のリターゲティング運用では鍵になりそうだ。</p>
-
+<p>サードパーティCookieの規制が各ブラウザで進んでいて、従来の方法だけではユーザーを追跡しにくくなっている。<a href="https://digima.cocoo.co.jp/media/ad-retargeting" rel="noopener noreferrer" target="_blank">digimaの2026年版解説</a>でも、ファーストパーティデータ（自社サイトで直接取得した顧客データ）の活用が重要になっていると書いてあった。会員登録やメールアドレスの取得が、今後のリターゲティング運用では鍵になりそうだ。</p>
 <h3>しつこいと逆効果になる</h3>
-
 <p>同じ広告が何度も何度も追いかけてくると、ユーザーに嫌がられる。広告の表示回数の上限（フリークエンシーキャップ）を設定して、一人のユーザーに対して1日に何回まで表示するかを制限しておくのが大切だ。僕自身も、同じ商品の広告がずっと出てきてうんざりした経験がある。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -208,35 +219,35 @@
 <li><a href="crm.html">CRM</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

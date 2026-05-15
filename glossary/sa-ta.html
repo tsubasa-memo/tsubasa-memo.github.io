@@ -56,8 +56,8 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -65,77 +65,105 @@ a.filter-tab:hover{background:var(--accent-light);color:var(--accent);text-decor
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
 
-<div class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<div class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a><span>&gt;</span><a href="/glossary/">用語集</a><span>&gt;</span>さ〜た行
-</div>
+
 </div>
 
-<div class="hero">
-<div class="wrap">
-<h1>用語集｜さ〜た行</h1>
-</div>
-</div>
 
-<main>
-<div class="wrap">
+
+<h1 class="article-title">用語集｜さ〜た行</h1>
+
 
 <div class="filter-tabs">
-<a href="/glossary/" class="filter-tab">用語集トップ</a>
-<a href="/glossary/0-z.html" class="filter-tab">数字・A〜Z</a>
-<a href="/glossary/a-ka.html" class="filter-tab">あ〜か</a>
-<a href="/glossary/sa-ta.html" class="filter-tab active">さ〜た</a>
-<a href="/glossary/ha-wa.html" class="filter-tab">は〜わ</a>
+<a class="filter-tab" href="/glossary/">用語集トップ</a>
+<a class="filter-tab" href="/glossary/0-z.html">数字・A〜Z</a>
+<a class="filter-tab" href="/glossary/a-ka.html">あ〜か</a>
+<a class="filter-tab active" href="/glossary/sa-ta.html">さ〜た</a>
+<a class="filter-tab" href="/glossary/ha-wa.html">は〜わ</a>
 </div>
-
 <div class="term-count">16 語</div>
-
 <h2 class="section-heading">さ行</h2>
-<div class="term-card"><a href="/glossary/sitemap.html" class="term-card-thumb"><img src="/thumbs/glossary/sitemap.png" alt="サイトマップ" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/sitemap.html" class="term-name">サイトマップ</a></div><p class="term-desc">サイト内の全ページ一覧をXMLで記述したファイル。</p><a href="/glossary/sitemap.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/sasage.html" class="term-card-thumb"><img src="/thumbs/glossary/sasage.png" alt="ささげ業務" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/sasage.html" class="term-name">ささげ業務</a></div><p class="term-desc">撮影・採寸・原稿。EC商品登録に必要な3工程。</p><a href="/glossary/sasage.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/shipping-instruction.html" class="term-card-thumb"><img src="/thumbs/glossary/shipping-instruction.png" alt="出荷指示書" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/shipping-instruction.html" class="term-name">出荷指示書</a></div><p class="term-desc">物流会社に出荷内容を伝えるための書類。</p><a href="/glossary/shipping-instruction.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/background-removal.html" class="term-card-thumb"><img src="/thumbs/glossary/background-removal.png" alt="白抜き" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/background-removal.html" class="term-name">白抜き</a></div><p class="term-desc">商品画像の背景を白にする処理。ECモールの画像規定で必須。</p><a href="/glossary/background-removal.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/whiteout.html" class="term-card-thumb"><img src="/thumbs/glossary/whiteout.png" alt="白飛び" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/whiteout.html" class="term-name">白飛び</a></div><p class="term-desc">明るい部分が真っ白になって階調が失われる現象。</p><a href="/glossary/whiteout.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/jodai-gedai.html" class="term-card-thumb"><img src="/thumbs/glossary/jodai-gedai.png" alt="上代・下代" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/jodai-gedai.html" class="term-name">上代・下代</a></div><p class="term-desc">定価と仕入れ値を指すEC・小売の価格用語。</p><a href="/glossary/jodai-gedai.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/static-site.html" class="term-card-thumb"><img src="/thumbs/glossary/static-site.png" alt="静的サイト" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/static-site.html" class="term-name">静的サイト</a></div><p class="term-desc">あらかじめ用意したHTMLをそのまま表示するWebサイト。</p><a href="/glossary/static-site.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/sensor-size.html" class="term-card-thumb"><img src="/thumbs/glossary/sensor-size.png" alt="センサーサイズ" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/sensor-size.html" class="term-name">センサーサイズ</a></div><p class="term-desc">カメラのイメージセンサーの物理的な大きさ。</p><a href="/glossary/sensor-size.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/session-pv-uu.html" class="term-card-thumb"><img src="/thumbs/glossary/session-pv-uu.png" alt="セッション・PV・UU" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/session-pv-uu.html" class="term-name">セッション・PV・UU</a></div><p class="term-desc">アクセス解析の3つの基本指標。</p><a href="/glossary/session-pv-uu.html" class="term-link">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/sitemap.html"><img alt="サイトマップ" loading="lazy" src="/thumbs/glossary/sitemap.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/sitemap.html">サイトマップ</a></div><p class="term-desc">サイト内の全ページ一覧をXMLで記述したファイル。</p><a class="term-link" href="/glossary/sitemap.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/sasage.html"><img alt="ささげ業務" loading="lazy" src="/thumbs/glossary/sasage.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/sasage.html">ささげ業務</a></div><p class="term-desc">撮影・採寸・原稿。EC商品登録に必要な3工程。</p><a class="term-link" href="/glossary/sasage.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/shipping-instruction.html"><img alt="出荷指示書" loading="lazy" src="/thumbs/glossary/shipping-instruction.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/shipping-instruction.html">出荷指示書</a></div><p class="term-desc">物流会社に出荷内容を伝えるための書類。</p><a class="term-link" href="/glossary/shipping-instruction.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/background-removal.html"><img alt="白抜き" loading="lazy" src="/thumbs/glossary/background-removal.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/background-removal.html">白抜き</a></div><p class="term-desc">商品画像の背景を白にする処理。ECモールの画像規定で必須。</p><a class="term-link" href="/glossary/background-removal.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/whiteout.html"><img alt="白飛び" loading="lazy" src="/thumbs/glossary/whiteout.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/whiteout.html">白飛び</a></div><p class="term-desc">明るい部分が真っ白になって階調が失われる現象。</p><a class="term-link" href="/glossary/whiteout.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/jodai-gedai.html"><img alt="上代・下代" loading="lazy" src="/thumbs/glossary/jodai-gedai.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/jodai-gedai.html">上代・下代</a></div><p class="term-desc">定価と仕入れ値を指すEC・小売の価格用語。</p><a class="term-link" href="/glossary/jodai-gedai.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/static-site.html"><img alt="静的サイト" loading="lazy" src="/thumbs/glossary/static-site.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/static-site.html">静的サイト</a></div><p class="term-desc">あらかじめ用意したHTMLをそのまま表示するWebサイト。</p><a class="term-link" href="/glossary/static-site.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/sensor-size.html"><img alt="センサーサイズ" loading="lazy" src="/thumbs/glossary/sensor-size.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/sensor-size.html">センサーサイズ</a></div><p class="term-desc">カメラのイメージセンサーの物理的な大きさ。</p><a class="term-link" href="/glossary/sensor-size.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/session-pv-uu.html"><img alt="セッション・PV・UU" loading="lazy" src="/thumbs/glossary/session-pv-uu.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/session-pv-uu.html">セッション・PV・UU</a></div><p class="term-desc">アクセス解析の3つの基本指標。</p><a class="term-link" href="/glossary/session-pv-uu.html">→ もっと詳しく</a></div></div>
 <h2 class="section-heading">た行</h2>
-<div class="term-card"><a href="/glossary/dynamic-range.html" class="term-card-thumb"><img src="/thumbs/glossary/dynamic-range.png" alt="ダイナミックレンジ" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/dynamic-range.html" class="term-name">ダイナミックレンジ</a></div><p class="term-desc">カメラが記録できる明暗の幅。</p><a href="/glossary/dynamic-range.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/chargeback.html" class="term-card-thumb"><img src="/thumbs/glossary/chargeback.png" alt="チャージバック" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/chargeback.html" class="term-name">チャージバック</a></div><p class="term-desc">クレジットカード決済の取消し。</p><a href="/glossary/chargeback.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/bounce-rate.html" class="term-card-thumb"><img src="/thumbs/glossary/bounce-rate.png" alt="直帰率" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/bounce-rate.html" class="term-name">直帰率</a></div><p class="term-desc">1ページだけ見て離脱した割合。</p><a href="/glossary/bounce-rate.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/tokushoho.html" class="term-card-thumb"><img src="/thumbs/glossary/tokushoho.png" alt="特商法表記" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/tokushoho.html" class="term-name">特商法表記</a></div><p class="term-desc">ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。</p><a href="/glossary/tokushoho.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/tone-jump.html" class="term-card-thumb"><img src="/thumbs/glossary/tone-jump.png" alt="トーンジャンプ" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/tone-jump.html" class="term-name">トーンジャンプ</a></div><p class="term-desc">空のグラデーションが縞模様になる現象。</p><a href="/glossary/tone-jump.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/trimming.html" class="term-card-thumb"><img src="/thumbs/glossary/trimming.png" alt="トリミング" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/trimming.html" class="term-name">トリミング</a></div><p class="term-desc">画像の一部を切り取って必要な範囲だけにすること。</p><a href="/glossary/trimming.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/internal-link.html" class="term-card-thumb"><img src="/thumbs/glossary/internal-link.png" alt="内部リンク" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/internal-link.html" class="term-name">内部リンク</a></div><p class="term-desc">同じサイト内のページ同士をつなぐリンク。</p><a href="/glossary/internal-link.html" class="term-link">→ もっと詳しく</a></div></div>
-<div class="term-card"><a href="/glossary/skin-retouch.html" class="term-card-thumb"><img src="/thumbs/glossary/skin-retouch.png" alt="肌補正" loading="lazy"></a><div class="term-card-body"><div class="term-header"><a href="/glossary/skin-retouch.html" class="term-name">肌補正</a></div><p class="term-desc">人物写真の肌の状態を整えるレタッチ作業。</p><a href="/glossary/skin-retouch.html" class="term-link">→ もっと詳しく</a></div></div>
-
+<div class="term-card"><a class="term-card-thumb" href="/glossary/dynamic-range.html"><img alt="ダイナミックレンジ" loading="lazy" src="/thumbs/glossary/dynamic-range.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/dynamic-range.html">ダイナミックレンジ</a></div><p class="term-desc">カメラが記録できる明暗の幅。</p><a class="term-link" href="/glossary/dynamic-range.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/chargeback.html"><img alt="チャージバック" loading="lazy" src="/thumbs/glossary/chargeback.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/chargeback.html">チャージバック</a></div><p class="term-desc">クレジットカード決済の取消し。</p><a class="term-link" href="/glossary/chargeback.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/bounce-rate.html"><img alt="直帰率" loading="lazy" src="/thumbs/glossary/bounce-rate.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/bounce-rate.html">直帰率</a></div><p class="term-desc">1ページだけ見て離脱した割合。</p><a class="term-link" href="/glossary/bounce-rate.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/tokushoho.html"><img alt="特商法表記" loading="lazy" src="/thumbs/glossary/tokushoho.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/tokushoho.html">特商法表記</a></div><p class="term-desc">ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。</p><a class="term-link" href="/glossary/tokushoho.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/tone-jump.html"><img alt="トーンジャンプ" loading="lazy" src="/thumbs/glossary/tone-jump.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/tone-jump.html">トーンジャンプ</a></div><p class="term-desc">空のグラデーションが縞模様になる現象。</p><a class="term-link" href="/glossary/tone-jump.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/trimming.html"><img alt="トリミング" loading="lazy" src="/thumbs/glossary/trimming.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/trimming.html">トリミング</a></div><p class="term-desc">画像の一部を切り取って必要な範囲だけにすること。</p><a class="term-link" href="/glossary/trimming.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/internal-link.html"><img alt="内部リンク" loading="lazy" src="/thumbs/glossary/internal-link.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/internal-link.html">内部リンク</a></div><p class="term-desc">同じサイト内のページ同士をつなぐリンク。</p><a class="term-link" href="/glossary/internal-link.html">→ もっと詳しく</a></div></div>
+<div class="term-card"><a class="term-card-thumb" href="/glossary/skin-retouch.html"><img alt="肌補正" loading="lazy" src="/thumbs/glossary/skin-retouch.png"/></a><div class="term-card-body"><div class="term-header"><a class="term-name" href="/glossary/skin-retouch.html">肌補正</a></div><p class="term-desc">人物写真の肌の状態を整えるレタッチ作業。</p><a class="term-link" href="/glossary/skin-retouch.html">→ もっと詳しく</a></div></div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

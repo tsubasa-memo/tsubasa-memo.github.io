@@ -107,8 +107,9 @@
 <script src="/search.js" defer></script>
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -116,66 +117,85 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ミラーレス
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>ミラーレスとは？<br>一眼レフとの違いとEC撮影での選び方</h1>
+
+<div class="article-hero">
+<img alt="ミラーレスとは？一眼レフとの違いとEC撮影での選び方" height="360" loading="eager" src="/thumbs/glossary/mirrorless.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/mirrorless.png" alt="ミラーレスとは？一眼レフとの違いとEC撮影での選び方" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">ミラーレスとは？<br/>一眼レフとの違いとEC撮影での選び方</h1>
+<div class="article-meta-line">
+<span>2026年5月1日</span>
+</div>
 
 <h2>ミラーレスカメラとは</h2>
-
 <p>ミラーレスカメラとは、一眼レフカメラに搭載されていた反射鏡（ミラー）とペンタプリズムを省いた構造のレンズ交換式カメラだ。正式には「ミラーレス一眼」「ノンレフレックス」とも呼ばれる。</p>
-
 <p>一眼レフカメラではレンズから入った光をミラーで反射させて光学ファインダーに映すが、ミラーレスではこの機構を持たず、イメージセンサーが直接光を受けて電子ファインダー（EVF）や背面モニターに表示する。ミラーの分だけボディが薄く軽くなるのが最大の特徴だ。</p>
-
 <p>2020年代に入って各メーカーがミラーレスに注力しており、キヤノンはEOS Rシリーズ、ソニーはαシリーズ、ニコンはZシリーズをそれぞれ展開している。一眼レフの新機種開発は事実上止まっており、今後のカメラはミラーレスが主流になる流れだ。</p>
-
-<a class="cite-card" href="https://personal.canon.jp/product/camera/eos" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://personal.canon.jp/product/camera/eos" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">レンズ交換式カメラ EOS Rシリーズ - キヤノン</span>
 <span class="cite-url">personal.canon.jp</span>
 </span>
 </a>
-
 <h2>EC実務・カメラ選びで出てくる場面</h2>
-
 <h3>「一眼レフとミラーレスどっちがいい？」と聞かれる場面</h3>
-
 <p>EC業務用にカメラを買う際、上司や同僚から「一眼レフとミラーレスどっちがいい？」と聞かれることがある。2026年現在、新品で買えるレンズ交換式カメラはほぼミラーレスに移行しており、わざわざ一眼レフを選ぶ理由は少ない。中古で安い一眼レフを入手する選択肢もあるが、レンズ資産の将来性を考えるとミラーレスの方が合理的だ。</p>
-
 <h3>EC商品撮影で使う場面</h3>
-
 <p>ミラーレスカメラはモニター表示で撮影するため、ファインダーを覗かなくても撮影できる。三脚にセットして背面モニターを見ながら商品を入れ替えるスタイルが主流のEC撮影では、ミラーレスの方が作業効率が良い。電子シャッターを使えばシャッター音も出ないため、オフィスでの撮影にも向いている。</p>
-
-<a class="cite-card" href="https://www.sony.jp/msc/owner/recommend/alens/sensor_apsc_ff/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.sony.jp/msc/owner/recommend/alens/sensor_apsc_ff/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">フルサイズとAPS-Cの違い 6つのポイント - ソニー</span>
 <span class="cite-url">sony.jp</span>
 </span>
 </a>
-
 <h3>入門機の価格帯</h3>
-
 <p>APS-Cのエントリー機であれば、ボディとキットレンズのセットで8〜13万円程度で手に入る。具体的にはCanon EOS R50（約12万円）、Sony α6400（約11万円）、Nikon Z 50II（約13万円）あたりが2026年時点の定番だ。EC商品撮影であればこのクラスで性能は十分足りる。</p>
-
 <h2>ミラーレスと一眼レフの違い</h2>
-
 <table class="compare">
 <tr>
 <th>比較項目</th>
@@ -218,31 +238,24 @@
 <td>ほぼ停止（2024年以降新機種なし）</td>
 </tr>
 </table>
-
 <p>かつてはAF速度やバッテリー持ちで一眼レフが有利とされていたが、近年のミラーレス機ではこれらの差はほぼ解消されている。特にAFの被写体認識（瞳AF、動物AFなど）はミラーレスの方が進化が著しい。</p>
-
-<a class="cite-card" href="https://www.tamron.com/jp/consumer/sp/impression/detail/article_what_is_apsc.html" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.tamron.com/jp/consumer/sp/impression/detail/article_what_is_apsc.html" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">APS-Cサイズとは？フルサイズとの違いやメリットを解説 - タムロン</span>
 <span class="cite-url">tamron.com</span>
 </span>
 </a>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>これからカメラを買うなら、特別な理由がない限りミラーレスを選ぶのが無難だ。一眼レフの新規開発は各社とも実質的に終了しており、レンズのラインナップもミラーレス用（キヤノンならRFマウント、ソニーならEマウント、ニコンならZマウント）に集中している。</p>
-
 <p>EC商品撮影が主な用途であれば、APS-Cのエントリー機で十分だ。フルサイズが必要になるのは暗い会場でのイベント撮影や、背景ボケを活かしたイメージカット撮影に取り組む場合くらいだ。まずは<a href="sensor-size.html">APS-Cのセンサーサイズ</a>で始めて、不足を感じたらフルサイズに移行するステップが合理的だ。</p>
-
-<a class="cite-card" href="https://personal.canon.jp/product/camera/eos/r50/feature/highquality" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://personal.canon.jp/product/camera/eos/r50/feature/highquality" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">EOS R50 高画質 約2420万画素APS-Cセンサー搭載 - キヤノン</span>
 <span class="cite-url">personal.canon.jp</span>
 </span>
 </a>
-
 <a class="cite-card" href="/first-camera.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
@@ -250,36 +263,29 @@
 <span class="cite-url">tsubasa-memo.github.io/first-camera.html</span>
 </span>
 </a>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. ミラーレスカメラとは何ですか？</div>
 <div class="fa">一眼レフに搭載されていた反射鏡（ミラー）を省いた構造のレンズ交換式カメラです。ミラーがない分だけボディが薄く軽量で、電子ファインダーやモニターで撮影します。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. ミラーレスと一眼レフの違いは？</div>
 <div class="fa">最大の違いはミラーの有無です。ミラーレスは小型・軽量・静音、一眼レフはバッテリー持ちで有利ですが、近年はミラーレスの改善が進み差は縮まっています。2024年以降、一眼レフの新機種はほぼ出ていません。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. EC商品撮影にミラーレスは必要ですか？</div>
 <div class="fa">スマホでも白背景撮影は可能ですが、細部の質感を出したい場合はミラーレスが有利です。APS-Cのエントリー機（8〜12万円程度）で十分対応できます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. ミラーレスの初心者向けおすすめ機種は？</div>
 <div class="fa">Canon EOS R50（約12万円）、Sony α6400（約11万円）、Nikon Z 50II（約13万円）あたりが入門機として定評があります。いずれもAPS-Cセンサーで、EC商品撮影に十分な性能です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. ミラーレスのデメリットはありますか？</div>
 <div class="fa">バッテリー消費が一眼レフより多い点が挙げられます。EVFやモニターを常時表示するためです。ただし予備バッテリーを1本用意すれば実務上は問題になりません。</div>
 </div>
 </div>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -288,7 +294,6 @@
 <li><a href="exposure.html">露出</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -298,27 +303,29 @@
 <li><a href="/camera-smartphones.html">スマホカメラと一眼カメラの違い｜どこまでスマホで撮れるか検証</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,76 +139,85 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; モックアップ
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>モックアップとは？<br>デザイン確認で出てくる用語を調べた</h1>
+<div class="article-hero">
+<img alt="モックアップとは？デザイン確認で出てくる用語を調べた" height="360" loading="eager" src="/thumbs/glossary/mockup.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/mockup.png" alt="モックアップとは？デザイン確認で出てくる用語を調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">モックアップとは？<br/>デザイン確認で出てくる用語を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>モックアップとは</h2>
-
 <p>ひとことで言うと、Webサイトやアプリの「見た目の完成イメージ」を再現したもの。色、フォント、画像、レイアウトなど、実際の画面に近いビジュアルで作られるが、ボタンを押しても動かない。あくまで見た目の確認用だ。</p>
-
-<p><a href="https://miro.com/mockup/what-is-a-mockup/" target="_blank" rel="noopener noreferrer nofollow">Miroのモックアップ解説ページ</a>によると、モックアップ（mock-up）は英語で「模型」を意味する単語で、工業製品の世界では外見だけ完成品に近い試作品を指す。Web制作でもこの考え方は同じで、見た目は本番に近いが実際には動かない静的なデザインデータのことをモックアップと呼ぶ。</p>
-
-<p>紛らわしいのがワイヤーフレームとプロトタイプとの違い。<a href="https://blog.nijibox.jp/article/mockup/" target="_blank" rel="noopener noreferrer">ニジボックスのモックアップ解説記事</a>にわかりやすい整理があったので、それをもとにまとめるとこうなる。</p>
-
+<p><a href="https://miro.com/mockup/what-is-a-mockup/" rel="noopener noreferrer nofollow" target="_blank">Miroのモックアップ解説ページ</a>によると、モックアップ（mock-up）は英語で「模型」を意味する単語で、工業製品の世界では外見だけ完成品に近い試作品を指す。Web制作でもこの考え方は同じで、見た目は本番に近いが実際には動かない静的なデザインデータのことをモックアップと呼ぶ。</p>
+<p>紛らわしいのがワイヤーフレームとプロトタイプとの違い。<a href="https://blog.nijibox.jp/article/mockup/" rel="noopener noreferrer" target="_blank">ニジボックスのモックアップ解説記事</a>にわかりやすい整理があったので、それをもとにまとめるとこうなる。</p>
 <table class="compare">
 <tr><th>用語</th><th>内容</th><th>動作</th></tr>
 <tr><td>ワイヤーフレーム</td><td>要素の配置を線と四角で示した設計図</td><td>なし</td></tr>
 <tr><td>モックアップ</td><td>色・画像・フォントを含む完成イメージ</td><td>なし</td></tr>
 <tr><td>プロトタイプ</td><td>モックアップに操作感を加えたもの</td><td>あり（クリックで遷移など）</td></tr>
 </table>
-
 <p>つまり、ワイヤーフレーム → モックアップ → プロトタイプの順にデザインが具体化していくイメージだ。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>ECの仕事をしていると、モックアップを見る機会はけっこう多い。僕が遭遇した場面を書いておく。</p>
-
 <h3>サイトリニューアルのデザイン確認</h3>
-
-<p>制作会社にサイトリニューアルを依頼すると、まずワイヤーフレームで構成を確認し、次にモックアップで見た目を確認するという流れが一般的。<a href="https://mieru-ca.com/heatmap/blog/what-is-mockup/" target="_blank" rel="noopener noreferrer">ミエルカヒートマップのモックアップ解説</a>でも、モックアップの段階で色やレイアウトの認識合わせをしておかないと、あとで「思っていたのと違う」という手戻りが起きると書いてあった。</p>
-
+<p>制作会社にサイトリニューアルを依頼すると、まずワイヤーフレームで構成を確認し、次にモックアップで見た目を確認するという流れが一般的。<a href="https://mieru-ca.com/heatmap/blog/what-is-mockup/" rel="noopener noreferrer" target="_blank">ミエルカヒートマップのモックアップ解説</a>でも、モックアップの段階で色やレイアウトの認識合わせをしておかないと、あとで「思っていたのと違う」という手戻りが起きると書いてあった。</p>
 <h3>商品ページのレイアウト検討</h3>
-
 <p>商品ページのデザインを変更するとき、「商品画像を左に大きく配置して、右に購入ボタンを置く」みたいなレイアウト案をモックアップで見せてもらう。テキストベースの説明だけだと社内で意見がまとまらないことが多いけど、モックアップがあると関係者の認識が揃いやすい。</p>
-
 <h3>バナーやLPのデザイン確認</h3>
-
-<p>セール用のバナーやLP（ランディングページ）のデザイン案も、モックアップの形で共有されることが多い。<a href="https://www.profuture.co.jp/mk/column/55735" target="_blank" rel="noopener noreferrer">マーケトランクのモックアップ解説</a>によると、モックアップで確認すべきポイントとしては、ブランドの世界観との一致、情報の優先順位が正しいか、CTAボタンの位置がわかりやすいか、などがある。</p>
-
+<p>セール用のバナーやLP（ランディングページ）のデザイン案も、モックアップの形で共有されることが多い。<a href="https://www.profuture.co.jp/mk/column/55735" rel="noopener noreferrer" target="_blank">マーケトランクのモックアップ解説</a>によると、モックアップで確認すべきポイントとしては、ブランドの世界観との一致、情報の優先順位が正しいか、CTAボタンの位置がわかりやすいか、などがある。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>モックアップの段階で細かく確認する</h3>
-
 <p>モックアップの段階で色や配置に違和感があれば、遠慮せずに言ったほうがいい。コーディング（実装）が始まってからデザインを変更すると、追加費用やスケジュールの遅延につながる。僕も最初は「プロに任せておけばいいだろう」と思っていたけど、ECサイトの使い勝手は担当者が一番わかっているので、気になる点はこの段階で伝えるのが大事だ。</p>
-
 <h3>「モック」は略称</h3>
-
 <p>打ち合わせで「モック」と言われたらモックアップのこと。「モック見せます」「モック確認お願いします」のように使われる。最初に聞いたときは何のことかわからなかったけど、Web制作の現場ではごく普通に使われている略称だった。</p>
-
 <h3>作成ツールはFigmaが主流</h3>
-
-<p>最近のモックアップ作成には<a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer nofollow">Figma</a>が広く使われている。ブラウザ上で動くのでインストール不要、共有もURLを送るだけ。制作会社からFigmaのリンクが送られてきて「ここにコメント入れてください」と言われることもある。</p>
-
+<p>最近のモックアップ作成には<a href="https://www.figma.com/" rel="noopener noreferrer nofollow" target="_blank">Figma</a>が広く使われている。ブラウザ上で動くのでインストール不要、共有もURLを送るだけ。制作会社からFigmaのリンクが送られてきて「ここにコメント入れてください」と言われることもある。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -217,35 +226,35 @@
 <li><a href="landing-page.html">LP（ランディングページ）</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

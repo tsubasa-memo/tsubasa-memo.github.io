@@ -34,72 +34,86 @@ main h1{font-size:22px;font-weight:700;color:var(--accent);margin-bottom:32px;pa
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<main>
-<div class="wrap">
+<main class="center-content">
+
+
 
 <h1>プライバシーポリシー</h1>
-
 <p>ツバサのメモ帳（以下「当サイト」）では、以下のとおり個人情報の取り扱いについて定めます。</p>
-
 <h2>個人情報の取得について</h2>
-
 <p>当サイトでは、お問い合わせフォームを通じてお名前・メールアドレスを取得することがあります。取得した個人情報は、お問い合わせへの回答にのみ使用し、それ以外の目的では使用しません。</p>
-
 <h2>Cookieについて</h2>
-
 <p>当サイトでは、Google AdSense、Google Analytics、Amazonアソシエイトが提供するサービスにおいてCookieを使用しています。</p>
-
 <p>Cookieは、広告の配信やアクセス解析のために使用されます。ユーザーはブラウザの設定からCookieを無効にすることができますが、その場合、一部のサービスが正常に動作しないことがあります。</p>
-
 <h2>アクセス解析について</h2>
-
 <p>当サイトでは、Googleが提供するアクセス解析ツール「Google Analytics」を使用しています。Google Analyticsはトラフィックデータの収集のためにCookieを使用しますが、個人を特定する情報は含まれません。</p>
-
-<p>この機能はCookieを無効にすることで収集を拒否できます。詳しくは<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>をご確認ください。</p>
-
+<p>この機能はCookieを無効にすることで収集を拒否できます。詳しくは<a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>をご確認ください。</p>
 <h2>広告について</h2>
-
 <p>当サイトでは、Google AdSenseによる自動広告を配信しています。Google AdSenseではCookieを使用し、ユーザーの過去のアクセス情報に基づいて広告を表示することがあります。</p>
-
 <p>また、当サイトはAmazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。Amazonのアソシエイトとして、当サイトは適格販売により収入を得ています。</p>
-
 <h2>免責事項</h2>
-
 <p>当サイトに掲載されている情報は、できる限り正確な情報を提供するよう努めていますが、正確性や安全性を保証するものではありません。当サイトの情報を利用することで生じた損害について、一切の責任を負いません。</p>
-
 <h2>お問い合わせ</h2>
+<p style="margin-top:36px;font-size:14px;color:var(--text-sub)">制定日：2026年4月8日<br/>運営者：ツバサ</p>
 
-
-<p style="margin-top:36px;font-size:14px;color:var(--text-sub)">制定日：2026年4月8日<br>運営者：ツバサ</p>
+</main>
 
 </div>
-</main>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
 

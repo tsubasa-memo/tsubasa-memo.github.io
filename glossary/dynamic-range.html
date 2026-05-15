@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,69 +139,79 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ダイナミックレンジ
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>ダイナミックレンジとは？<br>カメラ選びで出てくるスペックの意味</h1>
+<div class="article-hero">
+<img alt="ダイナミックレンジとは？カメラ選びで出てくるスペックの意味" height="360" loading="eager" src="/thumbs/glossary/dynamic-range.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/dynamic-range.png" alt="ダイナミックレンジとは？カメラ選びで出てくるスペックの意味" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">ダイナミックレンジとは？<br/>カメラ選びで出てくるスペックの意味</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>ダイナミックレンジとは</h2>
-
 <p>ひとことで言うと、カメラが一度の撮影で記録できる「明るさの幅」のことだ。最も暗い部分から最も明るい部分まで、どのくらいの明暗差を捉えられるかを表している。</p>
-
-<p><a href="https://personal.canon.jp/articles/beginner/glossary/dynamic-range" target="_blank" rel="noopener noreferrer">キヤノンの用語解説ページ</a>によると、ダイナミックレンジが広いカメラほど、明暗差の激しいシーンでも白飛びや黒つぶれを抑えて撮影できるとのこと。人間の目はかなり広いダイナミックレンジを持っているけど、カメラのセンサーはそこまで広くないので、目で見えている明暗差をそのまま写真に記録できないことがある。</p>
-
-<p><a href="https://kakakumag.com/camera/?id=19519" target="_blank" rel="noopener noreferrer">価格.comマガジンの解説記事</a>には、デジタルカメラのダイナミックレンジは年々進化してきていると書いてあった。最近のミラーレスカメラだと14EV前後のダイナミックレンジを持つ機種もあるそうだ。</p>
-
-<p>単位はカメラの世界ではEV（Exposure Value）や「段」で表されることが多い。たとえば「14EV」なら、最も暗い部分と最も明るい部分の差が14段分あるという意味になる。<a href="https://www.klv.co.jp/corner/what-is-dynamic-range.html" target="_blank" rel="noopener noreferrer">ケイエルブイのダイナミックレンジ解説</a>では、産業用カメラの世界ではdB（デシベル）で表記されることもあると紹介されていた。</p>
-
+<p><a href="https://personal.canon.jp/articles/beginner/glossary/dynamic-range" rel="noopener noreferrer" target="_blank">キヤノンの用語解説ページ</a>によると、ダイナミックレンジが広いカメラほど、明暗差の激しいシーンでも白飛びや黒つぶれを抑えて撮影できるとのこと。人間の目はかなり広いダイナミックレンジを持っているけど、カメラのセンサーはそこまで広くないので、目で見えている明暗差をそのまま写真に記録できないことがある。</p>
+<p><a href="https://kakakumag.com/camera/?id=19519" rel="noopener noreferrer" target="_blank">価格.comマガジンの解説記事</a>には、デジタルカメラのダイナミックレンジは年々進化してきていると書いてあった。最近のミラーレスカメラだと14EV前後のダイナミックレンジを持つ機種もあるそうだ。</p>
+<p>単位はカメラの世界ではEV（Exposure Value）や「段」で表されることが多い。たとえば「14EV」なら、最も暗い部分と最も明るい部分の差が14段分あるという意味になる。<a href="https://www.klv.co.jp/corner/what-is-dynamic-range.html" rel="noopener noreferrer" target="_blank">ケイエルブイのダイナミックレンジ解説</a>では、産業用カメラの世界ではdB（デシベル）で表記されることもあると紹介されていた。</p>
 <h2>撮影で出てくる場面</h2>
-
 <p>ダイナミックレンジは普段の撮影ではあまり意識しないけど、特定の場面で結果に大きく影響する。僕が経験したケースを書いておく。</p>
-
 <h3>明暗差の激しい室内撮影</h3>
-
 <p>窓のある部屋で商品を撮影するとき、窓の外は明るくて室内は暗い。この明暗差がカメラのダイナミックレンジを超えてしまうと、窓の外が白飛びするか、室内の商品が黒つぶれするかのどちらかになる。カメラ選びの基本は<a href="/first-camera.html">初めてのカメラ選び</a>にまとめたけど、ダイナミックレンジの広さもチェックしておくといいポイントだと思う。</p>
-
 <h3>逆光での商品撮影</h3>
-
 <p>背景が明るい状態で商品を撮ると、背景が白飛びするか商品が暗くなるかの二択になりがちだ。ダイナミックレンジが広いカメラなら、どちらもそこそこ写してくれるので、後からの補正がしやすい。</p>
-
 <h3>スマホのHDR撮影</h3>
-
-<p>最近のスマホには「HDR（ハイダイナミックレンジ）」という機能がついている。<a href="https://www.tamron.com/jp/consumer/sp/impression/detail/article-what-is-dynamic-range.html" target="_blank" rel="noopener noreferrer">タムロンの用語解説ページ</a>によると、HDR撮影は露出の異なる複数枚の写真を合成して、見た目上のダイナミックレンジを広げる技術だそうだ。センサー自体のダイナミックレンジが狭いスマホでも、HDR合成のおかげで明暗差の激しいシーンをそれなりに写せるようになっている。</p>
-
+<p>最近のスマホには「HDR（ハイダイナミックレンジ）」という機能がついている。<a href="https://www.tamron.com/jp/consumer/sp/impression/detail/article-what-is-dynamic-range.html" rel="noopener noreferrer" target="_blank">タムロンの用語解説ページ</a>によると、HDR撮影は露出の異なる複数枚の写真を合成して、見た目上のダイナミックレンジを広げる技術だそうだ。センサー自体のダイナミックレンジが狭いスマホでも、HDR合成のおかげで明暗差の激しいシーンをそれなりに写せるようになっている。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>センサーサイズが大きいほど有利</h3>
-
-<p>一般的に、フルサイズセンサーのカメラはAPS-Cやマイクロフォーサーズよりもダイナミックレンジが広い。センサーが大きいほど1ピクセルあたりの受光量が多くなるためだ。<a href="https://deji1nyumon.com/archives/490" target="_blank" rel="noopener noreferrer">デジタル一眼レフ初心者入門講座の解説</a>にも、センサーサイズとダイナミックレンジの関係が説明されていた。ただし、最近はAPS-Cでも十分なダイナミックレンジを持つ機種が増えている。</p>
-
+<p>一般的に、フルサイズセンサーのカメラはAPS-Cやマイクロフォーサーズよりもダイナミックレンジが広い。センサーが大きいほど1ピクセルあたりの受光量が多くなるためだ。<a href="https://deji1nyumon.com/archives/490" rel="noopener noreferrer" target="_blank">デジタル一眼レフ初心者入門講座の解説</a>にも、センサーサイズとダイナミックレンジの関係が説明されていた。ただし、最近はAPS-Cでも十分なダイナミックレンジを持つ機種が増えている。</p>
 <h3>RAW撮影で活かせる幅が広がる</h3>
-
 <p>カメラのダイナミックレンジをフルに活かすなら、JPEG撮影よりもRAW撮影のほうがいい。JPEGは8bit（256階調）に圧縮されるけど、RAWは12〜14bit（4096〜16384階調）のデータを持っているので、後からの明るさ調整でも階調が保たれやすい。</p>
-
 <h3>白飛び・黒つぶれとセットで理解する</h3>
-
 <p>ダイナミックレンジを理解しておくと、<a href="whiteout.html">白飛び</a>や<a href="crushed-blacks.html">黒つぶれ</a>がなぜ起きるのかもわかるようになる。白飛びはダイナミックレンジの上限を超えた部分、黒つぶれは下限を下回った部分で起きる。カメラのダイナミックレンジという「器」に収まりきらなかった明暗の情報が失われている、ということだ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -210,35 +220,35 @@
 <li><a href="sensor-size.html">センサーサイズ</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/first-camera.html">初めてのカメラ選び｜ミラーレスと一眼レフどっちがいい？</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

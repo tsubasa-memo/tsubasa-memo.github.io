@@ -49,92 +49,95 @@ main h1{font-size:22px;font-weight:700;color:var(--accent);margin-bottom:32px;pa
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-  <div class="wrap">
-    <a href="/">ホーム</a> &gt; お問い合わせ・リクエスト受付
-  </div>
-</nav>
+<main class="center-content">
 
-<main>
-<div class="wrap">
+
 
 <h1>お問い合わせ・リクエスト受付</h1>
-
 <p>このサイトは自分が仕事中に調べたことのメモですが、同じようにECの仕事をしている方から「こういうこと調べてほしい」「うちではこうだった」という話をもらえると記事の幅が広がるので、窓口を作りました。以下の内容をメールで受け付けています。</p>
-
 <h2>調べてほしいことのリクエスト</h2>
-
 <div class="section-box">
 <p>画像加工・レタッチ・写真編集・商品撮影・EC実務・ブログ運営など、当サイトのテーマに近い領域で「これを調べて記事にしてほしい」というテーマがあれば教えてください。</p>
 <p>テーマに合えば記事にします。記事にする場合でも、リクエスト元の名前は掲載しません。</p>
 </div>
-
 <h2>体験談・情報提供</h2>
-
 <div class="section-box">
 <p>EC運営、商品撮影、画像加工、レタッチ、外注まわりの体験談があれば教えてください。「うちではこうやっている」「こういう失敗をした」など、実務寄りの話を歓迎します。</p>
 <p>いただいた情報は記事の参考にします。内容をそのまま掲載する場合は事前に確認を取ります。</p>
 </div>
-
 <h2>サービスの口コミ</h2>
-
 <div class="section-box">
 <p>ささげ代行、商品撮影代行、画像加工・レタッチサービス、写真編集アプリなどを実際に使った感想を教えてください。</p>
 <p>「料金はいくらだった」「納期は何日かかった」「仕上がりはどうだった」など、具体的な話ほどありがたいです。</p>
 <p>いただいた口コミは記事の参考にします。サービス名を記載する場合がありますが、投稿者の名前は掲載しません。</p>
 </div>
-
 <h2>連絡先</h2>
-
 <div id="mail-area">
-  <noscript><p>メールアドレスを表示するにはJavaScriptを有効にしてください。</p></noscript>
+<noscript><p>メールアドレスを表示するにはJavaScriptを有効にしてください。</p></noscript>
 </div>
-
-<p class="note">※すべてのメールに返信できるわけではありません。ご了承ください。<br>
+<p class="note">※すべてのメールに返信できるわけではありません。ご了承ください。<br/>
 ※広告掲載・営業目的のメールにはお返事しておりません。</p>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
 
-<script>
-(function(){
-  var u = 'tsubasa233';
-  var d = 'proton.me';
-  var e = u + '@' + d;
-  var a = document.createElement('a');
-  a.href = 'mail' + 'to:' + e;
-  a.textContent = e;
-  a.className = 'mail-link';
-  document.getElementById('mail-area').appendChild(a);
-})();
-</script>
 </body>
 </html>
