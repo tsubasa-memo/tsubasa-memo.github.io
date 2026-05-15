@@ -93,50 +93,75 @@ gtag('config', 'G-YYBFXHXMM6');
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> &gt; <a href="archive.html?cat=ec">EC・実務</a> &gt; EC向け商品撮影の代行サービス比較
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>EC向け商品撮影の代行サービス比較｜1点から頼める7社の料金・特徴まとめ</h1>
-<p class="update">2026年4月 更新</p>
+<div class="article-hero">
+<img src="/thumbs/ec-product-photo-service.png" alt="EC向け商品撮影の代行サービス比較｜1点から頼める7社の料金・特徴まとめ" width="640" height="360" loading="eager">
 </div>
-</section>
 
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">EC向け商品撮影の代行サービス比較｜1点から頼める7社の料金・特徴まとめ</h1>
+<div class="article-meta-line">
+<span>2026年4月16日</span>
+<span>2026年4月 更新</span>
+</div>
 
-<main>
-<article>
-<div class="wrap">
 <p>郵送撮影なら1カット400円台から。商品を送るだけで完結する撮影代行サービスの選び方と、個人・小規模ECでも使いやすい7社を比較した。</p>
-
-
 <p>こんにちは、ツバサです。</p>
-
 <p>EC担当をやっていると、商品写真は避けて通れない。Amazonは白背景が必須だし、楽天にはテキスト占有率のルールがある。モール別の画像ルールについては<a href="ec-image-rules.html">「ECサイトの商品画像ルールまとめ」</a>で整理したが、そもそも「ルールに沿った写真をどう用意するか」が毎回悩みどころだ。</p>
-
 <p>自分で撮る選択肢もあるけれど、商品点数が増えてくると現実的じゃなくなる。そこで調べたのが商品撮影の代行サービスで、最近は商品を郵送するだけで完結するサービスが増えている。1カット400円台から頼めるところもあり、想像していたより敷居が低かった。</p>
-
 <p>この記事では、個人や小規模ECでも使いやすい商品撮影代行サービスを7社調べた結果をまとめる。</p>
-
 <div class="box box-accent">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -156,28 +181,19 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">よくある質問</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">商品撮影代行とは？何を頼めるのか</h2>
-
 <p>商品撮影代行とは、ECサイトやカタログに掲載する商品写真の撮影をプロに委託するサービスのことである。ECのミカタは商品撮影代行について「ECサイトの商品写真の撮影を自社で担当するのではなく、設備が整った環境でプロのカメラマンに撮影してもらう代行サービス」と説明している（<a href="https://ecnomikata.com/ecnews/33490/" rel="dofollow" target="_blank">ECのミカタ</a>）。</p>
-
 <p>依頼の流れは比較的シンプルで、多くのサービスでは「申し込み → 商品を郵送 → スタジオで撮影 → データ納品 → 商品返送」という手順をとる。撮影に立ち会う必要はなく、商品を段ボールに入れて送るだけで完結するケースがほとんどだ。</p>
-
 <p>対応範囲はサービスによって異なるが、一般的には以下のような内容を頼める。</p>
-
 <div class="box">
 <p><strong>白背景の物撮り（プロダクトカット）</strong>：Amazonの白背景ルールに対応した定番の撮影。正面・背面・側面・寄りなど複数アングルで撮影し、簡易的な色調補正まで含まれることが多い。</p>
 <p><strong>イメージカット</strong>：小物や背景を使って商品の世界観やライフスタイルを表現する写真。単価は物撮りより高くなる。</p>
 <p><strong>モデル撮影・トルソー撮影</strong>：アパレル商品を人が着用した状態で撮影する。マネキン（ゴーストマネキン加工含む）やハンドモデルにも対応するサービスがある。</p>
-<p style="margin-bottom:0"><strong>画像加工・レタッチ</strong>：背景の切り抜き（<a href="/glossary/background-removal.html" class="glossary-inline">白抜き</a>加工）、色味補正、不要物の除去など。撮影とセットで提供されるケースと、別料金になるケースがある。背景白抜きの方法は<a href="background-white.html">「写真の背景を白抜きにする方法まとめ」</a>にも整理してある。</p>
+<p style="margin-bottom:0"><strong>画像加工・レタッチ</strong>：背景の切り抜き（<a class="glossary-inline" href="/glossary/background-removal.html">白抜き</a>加工）、色味補正、不要物の除去など。撮影とセットで提供されるケースと、別料金になるケースがある。背景白抜きの方法は<a href="background-white.html">「写真の背景を白抜きにする方法まとめ」</a>にも整理してある。</p>
 </div>
-
 <h2 id="sec2">商品撮影代行の料金相場</h2>
-
 <p>料金体系は「1カットあたり○円」のカット単価制と「1時間○円」の時間制に大きく分かれる。小規模ECでよく使われるのはカット単価制の郵送撮影で、1カットあたり300〜1,000円が中心価格帯だ。</p>
-
 <p>Order Photo Studio（OPS）の調査によると、撮影タイプ別の料金相場はおおよそ以下の通りである（<a href="https://order-photo.com/blog/productphotography-price" rel="nofollow" target="_blank">OPS 商品撮影料金の1カット相場</a>）。</p>
-
 <table class="spec-table">
 <thead>
 <tr><th>撮影タイプ</th><th>1カットあたりの相場</th></tr>
@@ -189,139 +205,101 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>モデル着用カット</td><td>2,000〜20,000円</td></tr>
 </tbody>
 </table>
-
 <p>ただし、これは代行会社やプロカメラマンの一般的な相場であり、オンライン特化型の格安サービスでは1カット数百円から対応しているところもある。後述する7社のように「1カット400円〜」「5カットセット1,800円」という価格設定のサービスも存在する。</p>
-
 <p>ミツモアの調査では、物撮りの料金計算式を「商品数 × カット数 × 300円〜1,000円」としており、30点ほどの撮影で30,000円前後が一般的としている（<a href="https://meetsmore.com/services/product-photographers" rel="nofollow" target="_blank">ミツモア 商品撮影・物撮り</a>）。</p>
-
 <p>なお、上記の撮影料金とは別に発生する可能性がある費用もある。送料（商品の往復配送）、スタジオ使用料（持ち込みの場合）、画像加工料（背景切り抜き・レタッチ）、モデル手配料、小物・スタイリング費用などだ。見積もり時に「撮影料金に何が含まれるか」を確認しておくのが重要である。</p>
-
 <h2 id="sec3">EC向け商品撮影の代行サービス7社比較</h2>
-
 <p>ここからは、個人や小規模ECでも使いやすい商品撮影代行サービスを7社紹介する。いずれも郵送対応（商品を送るだけで完結）が可能で、1商品から依頼できるサービスを中心に選んだ。</p>
-
 <div class="company">
 <h4>① バーチャルフォト</h4>
 <a class="url" href="https://photo-o.com/photo/" rel="nofollow" target="_blank">https://photo-o.com/photo/</a>
 <p>EC販売に特化した物撮り専門サービス。1カット400円（税別）という業界最安クラスの価格設定が特徴で、5カットセット1,800円のプランも用意されている。初めての利用者向けに無料お試し撮影があり、品質を確認してから本発注できる。楽天市場・Amazon・Yahoo!ショッピングなど各モールの規格に最適化した画像制作にも対応する。レタッチや<a class="glossary-inline" href="/glossary/landing-page.html">LP</a>制作のオプションも提供しており、撮影から画像制作までワンストップで依頼可能。</p>
 <p class="method">依頼方法：商品郵送 ／ 対応エリア：全国</p>
 </div>
-
 <div class="company">
 <h4>② 物撮り.jp</h4>
 <a class="url" href="https://butsu.jp/" rel="nofollow" target="_blank">https://butsu.jp/</a>
 <p>1カット550円（税込）からの物撮り専門サービス。立ち会い不要の「おまかせプラン」が基本で、オンラインまたは電話で撮影指示を伝えるだけで完結する。リピート率が70%超という実績があり、大阪拠点で運営されている。1カットのみの依頼は1,100円（税込）となるが、4カット以上なら1カット550円の単価が適用される。追加カットや画像<a class="glossary-inline" href="/glossary/compositing.html">合成</a>などのオプションも用意されている。</p>
 <p class="method">依頼方法：商品郵送 ／ 対応エリア：全国</p>
 </div>
-
 <div class="company">
 <h4>③ TORUN</h4>
 <a class="url" href="https://torun.studio/" rel="nofollow" target="_blank">https://torun.studio/</a>
-<p>EC・<a href="/glossary/d2c.html" class="glossary-inline">D2C</a>事業者向けのオンライン特化型商品撮影サービス。発注から納品まですべてオンラインで完結する。1枚980円からの料金設定で、ヒアリングに基づいたスタイリング提案も含まれる。TORUNのメディアでは商品撮影のコツやEC運営ノウハウの記事も発信しており、初めて外注する人にとって参考になる情報が多い。利用者数No.1を謳うオンライン特化型サービスとして知名度が高い。</p>
+<p>EC・<a class="glossary-inline" href="/glossary/d2c.html">D2C</a>事業者向けのオンライン特化型商品撮影サービス。発注から納品まですべてオンラインで完結する。1枚980円からの料金設定で、ヒアリングに基づいたスタイリング提案も含まれる。TORUNのメディアでは商品撮影のコツやEC運営ノウハウの記事も発信しており、初めて外注する人にとって参考になる情報が多い。利用者数No.1を謳うオンライン特化型サービスとして知名度が高い。</p>
 <p class="method">依頼方法：商品郵送 ／ 対応エリア：全国</p>
 </div>
-
 <div class="company">
 <h4>④ 商品写真どっとコム</h4>
 <a class="url" href="https://www.shouhin-shashin.com/" rel="nofollow" target="_blank">https://www.shouhin-shashin.com/</a>
 <p>群馬県に拠点を持つ物撮りサービスで、日本広告写真家協会（APA）会員のプロカメラマンが撮影を担当する。基本料は無料で1カット980円からという明朗な料金体系。EC幹事はこのサービスについて「実績ギャラリーには2,500点超の写真が公開されている」と紹介している（<a href="https://ec-kanji.com/posts/ec-site-photography-agency" rel="dofollow" target="_blank">EC幹事</a>）。郵送撮影がメインだが、出張撮影にも対応する。</p>
 <p class="method">依頼方法：商品郵送・出張撮影 ／ 対応エリア：全国（郵送）</p>
 </div>
-
 <div class="company">
 <h4>⑤ AirPhoto</h4>
 <a class="url" href="https://airphoto.jp/" rel="nofollow" target="_blank">https://airphoto.jp/</a>
 <p>スタイリング（小物や背景を使った演出）に強みを持つ商品撮影サービス。独自の「スタイリング診断」で、商品に合った撮影イメージを提案してくれる。物撮りだけでなくイメージカットやモデル撮影にも対応しており、世界観を重視したブランドに向いている。ECサイトのコンサルティングサービスも提供しており、撮影以外のEC運営の相談もできる。</p>
 <p class="method">依頼方法：商品郵送 ／ 対応エリア：全国</p>
 </div>
-
 <div class="company">
 <h4>⑥ おまかせWEB商品撮影</h4>
 <a class="url" href="https://omakaseweb.com/" rel="nofollow" target="_blank">https://omakaseweb.com/</a>
 <p>2009年から運営されている商品撮影サービスで、累計取引先は7,000社超。アパレルを中心に雑貨や部品まで幅広いカテゴリに対応している。運営元の株式会社flestonは<a class="glossary-inline" href="/glossary/sasage.html">ささげ業務</a>から商品登録、サイト管理までEC運営のサポート業務を一括で提供しており、撮影以外のEC業務もまとめて外注したい場合に便利。出張撮影にも対応しているため、商品数が多い場合や自社にモデルがいる場合にも利用しやすい。</p>
 <p class="method">依頼方法：商品郵送・出張撮影 ／ 対応エリア：全国</p>
 </div>
-
 <div class="company">
 <h4>⑦ ミツモア</h4>
 <a class="url" href="https://meetsmore.com/services/product-photographers" rel="nofollow" target="_blank">https://meetsmore.com/services/product-photographers</a>
 <p>プロカメラマンのマッチングプラットフォーム。商品撮影に対応するカメラマンに一括で見積もり依頼ができ、料金や口コミを比較した上で選べる。代行サービスと異なり「個人カメラマンに直接依頼する」形式なので、スタジオ手配やレタッチの有無は各カメラマンによって異なる。価格交渉の余地があるほか、出張撮影に対応するカメラマンも多く、自社倉庫や店舗での撮影を希望する場合に便利。</p>
 <p class="method">依頼方法：カメラマンにより異なる ／ 対応エリア：全国</p>
 </div>
-
 <h2 id="sec4">撮影代行を選ぶときのチェックポイント</h2>
-
 <p>7社を比較してみると、サービスごとに強みがかなり違う。料金だけで選ぶと「思っていた仕上がりと違う」ということが起きやすいので、以下の点を事前に確認しておくのがおすすめだ。</p>
-
 <h3>自社の商品ジャンルに実績があるか</h3>
-
 <p>アパレル、食品、雑貨、ジュエリーなど、商品のジャンルによって撮影の難易度やノウハウが異なる。たとえばジュエリーは光の反射を制御する技術が必要で、食品はシズル感を出すためのスタイリングが重要になる。各社のポートフォリオやサンプル写真を見て、自社の商品に近い撮影実績があるかを確認するのが第一歩だ。</p>
-
 <h3>料金に何が含まれているか</h3>
-
 <p>「1カット○円」の表示価格だけでは全体の費用はわからない。背景の切り抜き加工は含まれるか、色調補正はどこまでやってもらえるか、返送料は誰が負担するか。この辺りは事前にヒアリングシートや見積もりで確認すべきポイントである。</p>
-
 <h3>モール別の画像ルールを理解しているか</h3>
-
 <p>Amazonの白背景必須ルールや、楽天のテキスト占有率20%ルールなど、モールごとに画像のレギュレーションが異なる。自社が出店しているモールの規格を理解しているサービスを選ぶと、納品後の修正が減り効率的だ。</p>
-
 <h3>無料お試し・サンプル撮影があるか</h3>
-
 <p>バーチャルフォトや物撮り.jpのように、初回無料のお試し撮影を提供しているサービスもある。初めて利用するなら、いきなり大量発注するよりも、まず1〜2商品でテスト撮影をしてクオリティを確認するのが安全だ。</p>
-
 <h2 id="sec5">自分で撮るか、外注するかの判断基準</h2>
-
 <p>商品撮影を外注すべきかどうかは、商品点数とコストのバランスで決まる。</p>
-
 <p>月に5〜10商品以内で、白背景のシンプルなカットが中心であれば、撮影ボックス（3,000〜5,000円で購入可能）とスマホで自撮りするのが最もコストを抑えられる。商品撮影のコツ自体は無料の情報で十分学べる。</p>
-
 <p>一方で、以下のようなケースでは外注を検討する価値がある。</p>
-
 <div class="box">
-<p>・月に20商品以上の新規撮影が発生する<br>
-・自社の撮影では画質やクオリティに限界を感じている<br>
-・イメージカットやモデル着用カットが必要<br>
-・撮影にかかる時間を商品企画や販促など他の業務に充てたい<br>
+<p>・月に20商品以上の新規撮影が発生する<br/>
+・自社の撮影では画質やクオリティに限界を感じている<br/>
+・イメージカットやモデル着用カットが必要<br/>
+・撮影にかかる時間を商品企画や販促など他の業務に充てたい<br/>
 ・アパレルでゴーストマネキン加工やモデル手配が必要</p>
 </div>
-
 <p>EC運営では写真のクオリティが売上に直結する。ECのミカタの記事でも「ECサイトで商品の魅力を最大限に引き出すには、プロの技術と経験が不可欠」と述べられている。自撮りの延長で対応できる範囲と、プロに任せるべき範囲を切り分けるのが、コストと品質のバランスをとるコツだ。</p>
-
 <h2 id="sec6">よくある質問</h2>
-
 <div class="faq-item">
 <p class="fq">Q. 商品撮影代行は個人やひとりEC担当でも利用できますか？</p>
 <p class="fa">はい、1商品・1カットから依頼できるサービスが多数あります。バーチャルフォトは1カット400円から、物撮り.jpは1カット550円から受け付けており、個人事業主や小規模ECでも使いやすい価格帯です。商品を郵送するだけで完結するため、スタジオや機材を持っていなくても問題ありません。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 商品撮影代行の料金相場はどのくらいですか？</p>
 <p class="fa">撮影方法によって大きく異なります。郵送撮影（商品を送って撮ってもらう）なら1カット300円〜1,000円程度、スタジオ持ち込み撮影は1商品あたり5,000〜10,000円＋スタジオ代が目安です。出張撮影の場合は1時間あたり10,000〜30,000円ほどかかります。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 商品を撮影代行に送るとき、何を伝えればいいですか？</p>
 <p class="fa">商品のジャンル、希望するカット数、背景の色（白背景など）、用途（Amazon用・楽天用・自社EC用など）を伝えるのが基本です。参考にしたい他社の商品画像があれば添付するとイメージが伝わりやすくなります。モール別の画像ルールについては当ブログの「ECサイトの商品画像ルールまとめ」も参考にしてみてください。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 撮影代行とフリーランスカメラマンへの直接依頼はどう違いますか？</p>
 <p class="fa">撮影代行はスタジオ・機材・レタッチまでワンストップで対応するため、発注の手間が少ないのが特徴です。一方、フリーランスカメラマンに直接依頼すると費用を抑えやすいものの、スタジオ手配や画像加工の手配は自分で行う必要がある場合もあります。初めて外注するならワンストップ型の代行サービスから試すのが安心です。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 納期はどのくらいかかりますか？</p>
 <p class="fa">商品到着後3〜7営業日が一般的な納期です。商品の数やカット数が多い場合は1〜2週間かかることもあります。急ぎの場合は特急対応のオプションを用意しているサービスもあるため、依頼前に確認してみてください。</p>
 </div>
-
 <div class="faq-item">
 <p class="fq">Q. 自分で撮影するのと外注するのはどちらがいいですか？</p>
 <p class="fa">月に5〜10商品以内で、白背景のシンプルなカットが中心であれば、スマホ＋撮影ボックスで自撮りするほうがコスト面で有利です。一方、商品点数が多い場合やイメージカット（世界観を伝える写真）が必要な場合、撮影にかかる時間を他の業務に充てたい場合は外注が合理的です。</p>
 </div>
-
-
 <h3>関連記事</h3>
-
 <div style="display:flex;flex-direction:column;gap:10px;margin:16px 0 0">
 <a class="cite-card" href="ec-image-rules.html">
 <span class="cite-ico int">ツ</span>
@@ -359,19 +337,15 @@ gtag('config', 'G-YYBFXHXMM6');
 </span>
 </a>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <div class="author-name">ツバサ</div>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-
 <div class="disclaimer">※この記事は2026年4月時点の公開情報をもとに作成しています。各社のサービス内容や料金は変更される場合があります。最新情報は各社の公式サイトでご確認ください。</div>
 
-</div>
-</article>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -407,18 +381,33 @@ gtag('config', 'G-YYBFXHXMM6');
 
 </main>
 
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">商品撮影代行とは？何を頼めるのか</a></li>
+<li><a href="#sec2">商品撮影代行の料金相場</a></li>
+<li><a href="#sec3">EC向け商品撮影の代行サービス7社比較</a></li>
+<li><a href="#sec4">撮影代行を選ぶときのチェックポイント</a></li>
+<li><a href="#sec5">自分で撮るか、外注するかの判断基準</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
-
 
 </body>
 </html>

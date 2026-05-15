@@ -130,40 +130,74 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="インスタのフィルターとAdobe Lightroomの違いを調べました。仕組みの違い・色補正の細かさ・スマホで使う手軽さを比較し、スナップ写真とこだわり編集それぞれに向いている使い方をまとめました。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ インスタフィルターとLightroomの違い
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>インスタのフィルターとLightroomの違い、やっと理解した</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/instagram-filter-vs-lightroom.png" alt="インスタのフィルターとLightroomの違い、やっと理解した" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">インスタのフィルターとLightroomの違い、やっと理解した</h1>
+<div class="article-meta-line">
+<span>2026年3月27日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>「Lightroomってよく聞くけど、インスタのフィルターと何が違うの？」というのが、半年ほど前の自分の疑問でした。どちらも「写真を編集するもの」だとはわかっていたんですが、何が違ってどちらを使えばいいのかがよくわからなかった。ほかの候補と合わせて選びたい方は「<a href="retouch-apps.html">写真レタッチ・編集アプリおすすめ10選</a>」もどうぞ。</p>
-
 <p>調べてみると、仕組みがかなり根本的に違うことがわかって、それを理解したら写真編集の楽しさが一段上がった気がしたので備忘録として残しておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -175,21 +209,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">よくある質問</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">インスタのフィルターの仕組み</h2>
-
 <p>インスタのフィルター（現在は「フィルター」より「色調整」機能が主体になっていますが）は、写真全体に「決まった調整の組み合わせ」を一発でかける機能です。「Clarendon」「Juno」「Lark」といった名前がついているアレです。</p>
-
 <p>操作が極めて簡単で、タップするだけで全体の雰囲気が変わります。ただし、調整内容は固定されていて、細かい変更はできません（強度のスライダーはありますが）。</p>
-
 <p>また、インスタのフィルターは投稿時にしか使えない（カメラロールに加工済みで保存されない）ケースもあります。</p>
-
 <h2 id="sec2">Lightroomの何が違うのか</h2>
-
-<p><a href="https://www.adobe.com/jp/products/photoshop-lightroom.html" target="_blank" rel="noopener">Adobe Lightroom</a>は、写真の各要素（<a class="glossary-inline" href="/glossary/exposure.html">露出</a>・<a class="glossary-inline" href="/glossary/contrast.html">コントラスト</a>・ハイライト・シャドウ・<a class="glossary-inline" href="/glossary/color-temperature.html">色温度</a>・彩度・シャープネスなど）をそれぞれ個別に調整できるソフト／アプリです。</p>
-
+<p><a href="https://www.adobe.com/jp/products/photoshop-lightroom.html" rel="noopener" target="_blank">Adobe Lightroom</a>は、写真の各要素（<a class="glossary-inline" href="/glossary/exposure.html">露出</a>・<a class="glossary-inline" href="/glossary/contrast.html">コントラスト</a>・ハイライト・シャドウ・<a class="glossary-inline" href="/glossary/color-temperature.html">色温度</a>・彩度・シャープネスなど）をそれぞれ個別に調整できるソフト／アプリです。</p>
 <p>大きな違いは「非破壊編集」という点です。元のファイルを書き換えず、調整の設定情報だけを別に保持するので、いつでも元の写真の状態に戻せます。インスタのフィルターで加工して保存した写真は基本的に戻せません。</p>
-
 <div class="insta-ref">
 <div class="insta-ref-header">
 <div class="insta-ref-avatar">📷</div>
@@ -201,12 +227,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="insta-ref-body">
 <span class="insta-ref-badge">📌 参考にしたアカウント</span>
 <p>Adobe Lightroomの使い方を解説する公式＆ユーザーアカウント。初心者向けのプリセット活用術から、プロのレタッチワークフローまで幅広く参考になります。</p>
-<a href="https://www.instagram.com/lightroom/" target="_blank" rel="noopener noreferrer" class="insta-ref-link">Instagramで見る →</a>
+<a class="insta-ref-link" href="https://www.instagram.com/lightroom/" rel="noopener noreferrer" target="_blank">Instagramで見る →</a>
 </div>
 </div>
-
 <h2 id="sec3">並べて比較すると違いがわかりやすい</h2>
-
 <table class="spec-table">
 <tr><th></th><th>インスタのフィルター</th><th>Adobe Lightroom</th></tr>
 <tr><td>操作の手軽さ</td><td>◎ タップ1回</td><td>△ 多少の学習が必要</td></tr>
@@ -217,15 +241,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>費用</td><td>無料</td><td>基本機能は無料（一部有料）</td></tr>
 <tr><td>使う場面</td><td>サクッと投稿したいとき</td><td>こだわりの一枚・フィード統一など</td></tr>
 </table>
-
 <h2 id="sec4">Lightroomを使い始めたきっかけ</h2>
-
 <p>自分がLightroomを試したきっかけは、「フィードの写真のトーンを揃えたい」という気持ちからでした。同じフィルターを使っていても、屋外と室内、晴れと曇りでは仕上がりが変わってしまって、並べたときにバラバラに見える。</p>
-
 <p>Lightroomでは「プリセット」という自分の調整設定を保存して使い回せる機能があって、これを活用することで撮影環境が違っても近いトーンに揃えやすくなります。</p>
-
 <h3>スマホ版Lightroomで使っている主な調整</h3>
-
 <div class="point-box">
 <h4>自分がよく触る項目（入門レベル）</h4>
 <p><strong>露光量</strong>：写真の全体的な明るさ。最初に触るべき項目。</p>
@@ -234,13 +253,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><strong>色温度（<a class="glossary-inline" href="/glossary/white-balance.html">ホワイトバランス</a>）</strong>：写真の色味を暖かく（黄色）か寒く（青）かを決める。</p>
 <p><strong>自然な彩度</strong>：彩度より自然に色を鮮やかにする。肌色を崩しにくい。</p>
 </div>
-
 <h2 id="sec5">「どっちを使えばいいか」の個人的な結論</h2>
-
 <p>サクッと投稿するだけならインスタの調整機能で十分です。でも、写真をもう少しちゃんと撮りたい・フィードの統一感を出したい・撮った写真を後から見返して楽しみたい、というなら、スマホ版Lightroomを使い始めるのをおすすめします。</p>
-
 <p>無料で始められて、慣れるとインスタフィルターには戻れなくなります（個人の感想です）。</p>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item">
@@ -256,7 +271,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="fa">同じフィルターを使えばある程度は出ますが、撮影環境により変わりやすいです。しっかり統一させたい場合はLightroomのプリセットが安定します。</div>
 </div>
 </div>
-
 <div class="related">
 <h3>関連記事</h3>
 <a class="cite-card" href="snap-photo-vs-instagrammable.html">
@@ -282,11 +296,10 @@ gtag('config', 'G-YYBFXHXMM6');
 </a>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
-</div>
 </div>
 </div>
 
@@ -323,16 +336,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">インスタのフィルターの仕組み</a></li>
+<li><a href="#sec2">Lightroomの何が違うのか</a></li>
+<li><a href="#sec3">並べて比較すると違いがわかりやすい</a></li>
+<li><a href="#sec4">Lightroomを使い始めたきっかけ</a></li>
+<li><a href="#sec5">「どっちを使えばいいか」の個人的な結論</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -156,32 +156,68 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="Google Search Consoleの基本的な見方をまとめた備忘録です。表示回数・クリック数・CTR・掲載順位それぞれの意味と読み方、sitemap.xml送信、URL検査でのインデックス確認の手順を初心者向けに解説しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ サーチコンソールの見方を覚えた備忘録｜表…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</h1>
-<p class="update">2026年3月 更新</p>
-</div>
-</div><main>
-<article>
-<div class="wrap">
-<p>Google Search Consoleの表示回数・CTR・掲載順位の読み方とサイトマップ送信の手順をまとめた備忘録です。</p>
+</aside>
 
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ サーチコンソールの見方を覚えた備忘録｜表…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/search-console-basics.png" alt="サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位</h1>
+<div class="article-meta-line">
+<span>2026年3月29日</span>
+<span>2026年3月 更新</span>
+</div>
+
+<p>Google Search Consoleの表示回数・CTR・掲載順位の読み方とサイトマップ送信の手順をまとめた備忘録です。</p>
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -191,9 +227,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li>AnalyticsとSearch Consoleの使い分け</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。ブログを始めてからしばらくはSearch Consoleの見方がよくわかっていませんでした。どの数字が何を意味するのか、何を確認すればいいのかを調べてまとめた備忘録です。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -206,28 +240,18 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">Search Consoleとは何か</h2>
-
 <p>Google Search Console（サーチコンソール）は、自分のサイトがGoogle検索でどのように表示されているかを確認できる無料ツールです。「どのキーワードで表示されているか」「何位に表示されているか」「クリックされているか」をページ単位・キーワード単位で確認できます。</p>
-
 <p>Google Analyticsがサイトに来た人の行動を分析するのに対して、Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです。両方使うとより正確な分析ができますが、まずSearch Consoleから始めるのがおすすめです。</p>
-
 <h2 id="sec2">登録と所有権確認の手順</h2>
-
-<p><a href="https://search.google.com/search-console/" target="_blank" rel="noopener noreferrer">Google Search Console</a>にGoogleアカウントでログインし、「URLプレフィックス」にサイトのURLを入力します。所有権の確認方法はいくつかありますが、<a class="glossary-inline" href="/glossary/html.html">HTML</a>ファイルをサイトに設置する方法が最も簡単です。</p>
-
+<p><a href="https://search.google.com/search-console/" rel="noopener noreferrer" target="_blank">Google Search Console</a>にGoogleアカウントでログインし、「URLプレフィックス」にサイトのURLを入力します。所有権の確認方法はいくつかありますが、<a class="glossary-inline" href="/glossary/html.html">HTML</a>ファイルをサイトに設置する方法が最も簡単です。</p>
 <ol style="padding-left:20px;margin-bottom:18px;line-height:2">
 <li>「HTMLファイル」を選択してファイルをダウンロード</li>
 <li>ファイルをサイトのルートディレクトリにアップロード</li>
 <li>Search Consoleに戻って「確認」ボタンをクリック</li>
 </ol>
-
 <p>確認が完了すると、Search Consoleにサイトのデータが表示されるようになります。ただしデータが集まるまで数日〜1週間かかります。</p>
-
 <h2 id="sec3">「検索パフォーマンス」の4つの数字</h2>
-
-
 <p>4つの数字の概要をまとめます。</p>
 <table class="spec-table">
 <tr><th>指標</th><th>意味</th><th>目安</th></tr>
@@ -236,36 +260,24 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>CTR</td><td>クリック数÷表示回数×100</td><td>1位:20〜30%、10位:1〜2%</td></tr>
 <tr><td>掲載順位</td><td>検索結果での平均表示位置</td><td>10以内で1ページ目</td></tr>
 </table>
-
 <h3>表示回数（Impressions）</h3>
 <p>検索結果にページが表示された回数です。クリックされなくても、検索結果の画面に出ただけでカウントされます。表示回数が多いのにクリックが少ない場合は、タイトルや内容が検索者の期待と合っていない可能性があります。</p>
-
 <h3>クリック数（Clicks）</h3>
 <p>検索結果からサイトへのクリック数です。実際にページを訪問した人数に相当します。</p>
-
 <h3>CTR（Click Through Rate：クリック率）</h3>
 <p>「クリック数 ÷ 表示回数 × 100」で計算されます。掲載順位1位のCTRは20〜30%程度、10位は1〜2%程度が目安とされています。同じ順位でも記事によってCTRは大きく変わります。CTRが低い場合はタイトルの見直しが有効です。</p>
-
 <h3>掲載順位（Position）</h3>
 <p>検索結果での平均表示位置です。1位が最上位で、数字が大きいほど下位です。10以内に入ると検索結果の1ページ目に表示されます。</p>
-
-
 <div class="box" style="margin:24px 0;padding:20px;text-align:center">
 <p style="font-weight:700;font-size:15px;margin-bottom:12px;color:var(--accent)">4つの指標の関係</p>
 <p style="font-size:18px;font-weight:700;letter-spacing:1px;margin-bottom:12px">クリック数 ＝ 表示回数 × CTR</p>
 <p style="font-size:14px;color:var(--text-sub);margin-bottom:0">掲載順位が上がる → 表示回数が増える → CTRが同じならクリック数も増える</p>
 </div>
-
 <h2 id="sec4">サイトマップの送信</h2>
-
 <p>Search Consoleの左メニュー「サイトマップ」から<a class="glossary-inline" href="/glossary/sitemap.html">sitemap.xml</a>のURLを入力して送信します。サイトマップが正しく読み込まれると「成功しました」と表示されます。</p>
-
 <p>サイトマップを送信するとGoogleの<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>がサイトの全URLを認識しやすくなり、<a class="glossary-inline" href="/glossary/index-registration.html">インデックス登録</a>が早まることが多いです。ブログを始めたらまず送信しておくことをおすすめします。</p>
-
 <h2 id="sec5">URL検査でインデックスを確認する</h2>
-
 <p>Search Consoleの上部の検索バーにURLを入力すると、そのページのインデックス状況を確認できます。「URLはGoogleに登録されています」と表示されれば検索結果に出る状態です。「URLがGoogleに登録されていません」と表示された場合は「インデックス登録をリクエスト」ボタンを押してクロールを促せます。</p>
-
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. Google Search Consoleは無料で使えますか？</p><p class="faq-a">完全無料で使えます。Googleアカウントがあれば誰でも利用でき、ウェブサイトの所有権を確認するだけで使い始められます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. Search ConsoleとGoogle Analyticsの違いは何ですか？</p><p class="faq-a">Search Consoleは「Googleからサイトがどう見られているか」を確認するツールです（検索キーワード・表示回数・CTR・順位）。Google Analyticsは「サイトに来たユーザーが何をしたか」を分析するツールです（PV・滞在時間・離脱率）。両方を使うとより精度の高い分析ができます。</p></div>
@@ -274,7 +286,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. サイトマップとは何ですか？なぜ必要ですか？</p><p class="faq-a">サイトマップ（sitemap.xml）はサイト内の全URLをまとめたXMLファイルです。GoogleのクローラーがサイトのURL構造を把握しやすくなるため、インデックスが早まる効果があります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. CTR（クリック率）の目安は何%ですか？</p><p class="faq-a">掲載順位1位で20〜30%、5位で5〜8%、10位で1〜2%程度が一般的な目安です。同じ順位でもキーワードや記事によって大きく変わります。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -309,8 +321,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/internal-link-seo.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -345,14 +356,33 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">Search Consoleとは何か</a></li>
+<li><a href="#sec2">登録と所有権確認の手順</a></li>
+<li><a href="#sec3">「検索パフォーマンス」の4つの数字</a></li>
+<li><a href="#sec4">サイトマップの送信</a></li>
+<li><a href="#sec5">URL検査でインデックスを確認する</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

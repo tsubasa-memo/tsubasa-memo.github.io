@@ -109,32 +109,68 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="静的サイトと動的サイトの違いをメリット・デメリットで比較した備忘録です。GitHub Pagesで60本以上の記事を運営した経験をもとに、静的サイトの弱点とされる「更新の手間」をAIコーディングツールでどう解消したかを記録しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 静的サイトと動的サイトの違い｜更新が…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</h1>
-<p class="update">2026年4月 公開</p>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 静的サイトと動的サイトの違い｜更新が…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/static-vs-dynamic-site.png" alt="静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した" width="640" height="360" loading="eager">
 </div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</h1>
+<div class="article-meta-line">
+<span>2026年4月20日</span>
+<span>2026年4月 公開</span>
 </div>
-<main><article><div class="wrap">
+
 <p>GitHub Pagesで60本以上の記事を運営した経験をもとに、静的サイトの弱点をAIツールでどう解消したかをまとめました。</p>
-
-
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -144,9 +180,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li>個人ブログにはどちらが向いているか</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。このブログは<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>（静的サイト）で運営している。ブログを始めるときに「初心者はWordPress一択」という記事をたくさん見たが、いろいろ考えた結果、静的サイトを選んだ。運営して半年以上が経ったので、静的サイトと動的サイトの違いを自分の経験をまじえて整理しておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -159,17 +193,11 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">静的サイトと動的サイトの仕組みの違い</h2>
-
 <p>静的サイトは、あらかじめ作られた<a class="glossary-inline" href="/glossary/html.html">HTML</a>ファイルをそのまま表示するサイトである。ユーザーがページにアクセスすると、サーバーに保存されたHTMLがそのまま返される。誰がいつ見ても同じ内容が表示される。</p>
-
 <p>動的サイトは、アクセスのたびにサーバー側でページを生成する。データベースからコンテンツを取り出し、PHPなどのプログラムでHTMLを組み立てて返す。ログイン状態や検索条件によって表示内容が変わるのが特徴である。</p>
-
 <p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubの<a class="glossary-inline" href="/glossary/repository.html">リポジトリ</a>に置くだけで公開される。</p>
-
 <h2 id="sec2">メリット・デメリット比較</h2>
-
 <table class="spec-table">
 <tr><th>比較項目</th><th>静的サイト</th><th>動的サイト（WordPress等）</th></tr>
 <tr><td>表示速度</td><td>速い（HTMLをそのまま返す）</td><td>やや遅い（サーバー処理が入る）</td></tr>
@@ -179,37 +207,22 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>プラグイン・機能拡張</td><td>自分で実装する</td><td>プラグインで追加できる</td></tr>
 <tr><td>SEO対策の自由度</td><td>HTML直接編集で完全にコントロール可能</td><td>テーマやプラグインに依存する</td></tr>
 </table>
-
 <p>静的サイトの強みは表示速度、セキュリティ、コストの3点である。GitHub Pagesは無料で使え、独自ドメインもHTTPSも対応している。WordPressのようにPHPのバージョンアップやプラグインの互換性を気にする必要がない。</p>
-
 <p>一方、動的サイトの強みは更新の手軽さと機能拡張のしやすさである。管理画面から記事を書いて「公開」ボタンを押すだけで完了するWordPressの手軽さは、静的サイトでは再現しにくい。お問い合わせフォーム、コメント欄、検索機能なども、WordPressならプラグインで簡単に追加できる。</p>
-
 <h2 id="sec3">「更新が大変」は本当か？ AIで変わった前提</h2>
-
 <p>静的サイトのデメリットとしてほぼ必ず挙がるのが「更新にHTMLの知識が必要」「記事を追加するたびにファイルを手作業で編集する」という点である。これは2024年以前なら正しかった。</p>
-
 <p>しかし2025年以降、AIコーディングツールの登場でこの前提が変わっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、<a class="glossary-inline" href="/glossary/sitemap.html">サイトマップ</a>とアーカイブページも更新して、<a class="glossary-inline" href="/glossary/commit.html">コミット</a>して」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
-
 <p>このブログでは実際に、記事のHTML作成、SVGサムネイル生成、sitemap.xml更新、archive.html更新、llms.txt更新、検索インデックス再生成の6ファイル同時更新をAIに指示する形で運営している。1記事追加にかかる作業時間は、テーマ決めと内容の確認を除けば数分程度である。</p>
-
 <p>HTMLの書き方を知らなくても「こういう内容の記事を書いて」と指示すれば、サイトの既存デザインに合ったHTMLファイルが出てくる。FAQ構造化データ（JSON-LD）やmeta descriptionの設定も、ルールを一度伝えておけばAIが毎回自動で入れてくれる。</p>
-
 <div class="warn-box">
 <p><strong>ただし注意点もある。</strong>AIに任せきりにすると、内容の正確性やリンク先の整合性を見落とすリスクがある。最終的な確認は人間がやる必要がある。また、git操作やGitHub Pagesの初期設定には最低限のコマンドラインの知識が要る。「完全にゼロ知識でもできる」とは言えないが、「WordPressの管理画面を覚える程度の学習コスト」で済むようになっている。</p>
 </div>
-
 <h2 id="sec4">静的サイトがSEOに有利な場面</h2>
-
 <p>静的サイトではHTMLを直接編集するため、SEO関連のタグを完全にコントロールできる。WordPressではテーマやプラグインの仕様に制約されることがあるが、静的サイトにはそれがない。</p>
-
 <p>たとえば、このブログでは各記事に<a href="faq-structured-data.html">FAQ構造化データ（JSON-LD）</a>を設置しているが、そのフォーマットや質問の内容を1文字単位で管理できる。WordPressでJSON-LDを入れようとすると、プラグインの出力形式に合わせる必要があったり、テーマ更新で上書きされるリスクがある。</p>
-
 <p>また、<a href="llms-txt-setup.html">llms.txt</a>のようなAI向けのファイルも、リポジトリのルートに置くだけで公開できる。WordPressだとルートにファイルを置く操作がやや手間になる。</p>
-
 <h2 id="sec5">個人ブログにはどちらが向いているか</h2>
-
 <p>結論から言うと、「何を優先するか」で選ぶべきで、どちらが上とは言い切れない。</p>
-
 <table class="spec-table">
 <tr><th>優先すること</th><th>おすすめ</th></tr>
 <tr><td>更新の手軽さ、プラグインの豊富さ</td><td>WordPress（動的サイト）</td></tr>
@@ -217,9 +230,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>SEO・LLMOの細かいコントロール</td><td>GitHub Pages（静的サイト）</td></tr>
 <tr><td>AIツールを使える環境がある</td><td>どちらでもいいが、静的サイトの弱点が消える</td></tr>
 </table>
-
 <p>「AIツールを使える環境がある」かどうかが、2026年時点では判断基準として重要だと思っている。AIコーディングツールが使えるなら、静的サイトの最大のデメリットである「更新の手間」は事実上なくなる。逆に言えば、AIツールを使わない前提なら、更新頻度の高い個人ブログにはWordPressの方が向いている。</p>
-
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. 静的サイトと動的サイトの違いは何ですか？</p><p class="faq-a">静的サイトはあらかじめ作られたHTMLをそのまま表示するサイトです。動的サイトはアクセスのたびにサーバー側でページを生成します。WordPressは動的サイト、GitHub Pagesは静的サイトの代表例です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 静的サイトのメリットは何ですか？</p><p class="faq-a">表示速度が速い、セキュリティリスクが低い、サーバー費用が安い（GitHub Pagesなら無料）の3点が主なメリットです。</p></div>
@@ -227,7 +238,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. GitHub Pagesとは何ですか？</p><p class="faq-a">GitHubが提供する無料の静的サイトホスティングサービスです。HTMLファイルをリポジトリに置くだけでWebサイトとして公開でき、独自ドメインやHTTPSにも対応しています。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？</p><p class="faq-a">目的によります。管理画面から手軽に投稿したいならWordPress、表示速度・セキュリティ・コストを重視するならGitHub Pages。AIコーディングツールが使える環境なら、静的サイトの更新コストは大幅に下がります。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -255,8 +266,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -291,14 +301,33 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">静的サイトと動的サイトの仕組みの違い</a></li>
+<li><a href="#sec2">メリット・デメリット比較</a></li>
+<li><a href="#sec3">「更新が大変」は本当か？ AIで変わった前提</a></li>
+<li><a href="#sec4">静的サイトがSEOに有利な場面</a></li>
+<li><a href="#sec5">個人ブログにはどちらが向いているか</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

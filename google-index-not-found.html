@@ -156,32 +156,68 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="新規ブログ記事がGoogleにインデックスされるまでにやったことをまとめました。「URLがGoogleに登録されていません」への対処・サイトマップ送信・インデックス登録リクエストの手順と1〜4週間の待ち時間の目安を記録しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ Googleにインデックスされるまで｜サ…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>Googleにインデックスされるまで｜サイトマップ送信からの記録</h1>
-<p class="update">2026年3月 更新</p>
-</div>
-</div><main>
-<article>
-<div class="wrap">
-<p>新規ブログのインデックス登録で詰まった「URLがGoogleに登録されていません」の対処法とサイトマップ送信の手順をまとめました。</p>
+</aside>
 
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ Googleにインデックスされるまで｜サ…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/google-index-not-found.png" alt="Googleにインデックスされるまで｜サイトマップ送信からの記録" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">Googleにインデックスされるまで｜サイトマップ送信からの記録</h1>
+<div class="article-meta-line">
+<span>2026年3月29日</span>
+<span>2026年3月 更新</span>
+</div>
+
+<p>新規ブログのインデックス登録で詰まった「URLがGoogleに登録されていません」の対処法とサイトマップ送信の手順をまとめました。</p>
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -191,9 +227,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li>インデックスされるまでの待ち時間の目安</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。このブログを公開してからGoogleに記事が表示されるまで、予想以上に時間がかかりました。詰まった「URLがGoogleに登録されていません」の対処法と、やったことをまとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -206,58 +240,40 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">インデックスとは何か</h2>
-
 <p>Googleは世界中のウェブページを「クロール」（巡回）して内容を解析し、データベースに登録します。このデータベースへの登録のことを「インデックス」と呼びます。インデックスされていないページは検索結果に表示されません。</p>
-
 <h2 id="sec2">「URLがGoogleに登録されていません」への対処</h2>
-
 <p>Search ConsoleのURL検査ツールで記事のURLを入力すると、「URLがGoogleに登録されていません」と表示されることがあります。これはまだGoogleの<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>がページを訪問・記録していない状態です。</p>
-
 <p>対処手順は次の通りです。</p>
-
 <ol style="padding-left:20px;margin-bottom:18px;line-height:2">
 <li>Search ConsoleのURL検査ツールにURLを入力してEnter</li>
 <li>「URLがGoogleに登録されていません」と表示される</li>
 <li>「インデックス登録をリクエスト」をクリック</li>
 <li>処理が完了すると「インデックス登録をリクエスト済み」に変わる</li>
 </ol>
-
 <div class="warn-box">
 <p><strong>注意：</strong>インデックス登録リクエストには1日あたりの上限があります（目安：10〜20件程度）。上限に達した場合は翌日に残りをリクエストしてください。</p>
 </div>
-
 <h2 id="sec3">サイトマップを送信する</h2>
-
 <p>インデックス登録リクエストの他に、サイトマップを送信することでGoogleに全URLを一度に伝えられます。</p>
-
 <ol style="padding-left:20px;margin-bottom:18px;line-height:2">
 <li>Search Consoleの左メニュー「サイトマップ」をクリック</li>
 <li>「新しいサイトマップの追加」欄に「sitemap.xml」と入力</li>
 <li>「送信」をクリック</li>
 <li>「成功しました」と表示されれば完了</li>
 </ol>
-
 <p>サイトマップが正しく送信されると、GoogleのクローラーがURLを認識しやすくなります。サイトを作ったらまず最初にやるべき作業です。</p>
-
 <h2 id="sec4">インデックスされるまでの目安</h2>
-
 <table class="spec-table">
 <tr><th>状況</th><th>インデックスまでの目安</th></tr>
 <tr><td>サイトマップ送信済み・リクエスト済み</td><td>数日〜1週間</td></tr>
 <tr><td>リクエストのみ（サイトマップなし）</td><td>1〜2週間</td></tr>
 <tr><td>何もしない（自然クロール待ち）</td><td>2週間〜数ヶ月</td></tr>
 </table>
-
 <p>新規ドメインはGoogleからの信頼（ドメイン権威）が低いため、既存の有名サイトよりもインデックスが遅い傾向があります。このブログも最初の記事がインデックスされるまで約2週間かかりました。</p>
-
 <h2 id="sec5">インデックスされても順位はすぐ安定しない</h2>
-
 <p>インデックスとは「Googleのデータベースに登録された状態」であり、即座に検索結果の上位に表示されるわけではありません。インデックス直後は順位が不安定で、数週間〜数ヶ月かけて「新規サイトブースト」が落ち着いてから本来の順位に落ち着きます。</p>
-
 <p>このブログも公開直後は表示回数が多かったものの、2〜3ヶ月後に急減した時期がありました。これは新規サイトに対するGoogleの評価が安定化した典型的な動きで、インデックスの問題ではなく順位の問題です。Search Consoleで表示回数が減った場合は、まずインデックス状況を確認してから原因を判断することをおすすめします。</p>
-
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合はどうすればいいですか？</p><p class="faq-a">まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。</p></div>
 <div class="faq-item"><p class="faq-q">Q. サイトマップを送信するとインデックスが早くなりますか？</p><p class="faq-a">サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。</p></div>
@@ -266,7 +282,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. Search ConsoleなしでGoogleにインデックスされますか？</p><p class="faq-a">自然にクロールされればSearch Consoleを使わなくてもインデックスされます。ただしSearch Consoleなしでは状況の把握や促進ができないため、ブログ運営では必ず設置することをおすすめします。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 表示回数が急に減ったのはインデックスが外れたのですか？</p><p class="faq-a">必ずしもインデックスが外れたわけではありません。URL検査ツールでインデックス状況を確認し、「URLはGoogleに登録されています」と表示されれば順位低下が原因です。インデックス脱落とタイトル・コンテンツの問題を区別して対処することが重要です。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -294,8 +310,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -330,14 +345,33 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">インデックスとは何か</a></li>
+<li><a href="#sec2">「URLがGoogleに登録されていません」への対処</a></li>
+<li><a href="#sec3">サイトマップを送信する</a></li>
+<li><a href="#sec4">インデックスされるまでの目安</a></li>
+<li><a href="#sec5">インデックスされても順位はすぐ安定しない</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

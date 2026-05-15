@@ -139,44 +139,73 @@ gtag('config', 'G-YYBFXHXMM6');
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 楽天市場の商品画像規定
-</div>
+
 </nav>
 
-<div class="hero">
-<div class="wrap">
-<h1>楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項を確認した【2026年版】</h1>
-<p class="update">2026年3月 更新</p>
-</div>
+<div class="article-hero">
+<img src="/thumbs/rakuten-image-rules.png" alt="楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項を確認した【2026年版】" width="640" height="360" loading="eager">
 </div>
 
-<main>
-<div class="wrap">
+
+<h1 class="article-title">楽天市場の商品画像規定まとめ｜サイズ・枚数・禁止事項を確認した【2026年版】</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
+</div>
 
 <p>こんにちは、ツバサです。</p>
-
 <p>仕事でECサイトの商品画像を扱っていると、プラットフォームごとにルールが微妙に異なるのが地味に頭を使います。Amazonは白背景必須という有名なルールがありますが、楽天市場も独自の画像規定があって、知らないと後から修正が必要になるケースがあります。</p>
-
 <p>今回は楽天市場の商品画像に関するルールをまとめておきます。公式ガイドラインを参照しながら整理したので、出品作業の前に一度確認しておくと無難です。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -189,11 +218,8 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">楽天市場の商品画像の基本仕様</h2>
-
-<p>まずスペックから。楽天市場の商品画像に関する基本的な仕様は以下の通りです（2026年3月時点、<a href="https://www.rakuten.co.jp/" target="_blank" rel="noopener nofollow">楽天市場</a>公式の出店規約・出店マニュアルに基づいて整理）。</p>
-
+<p>まずスペックから。楽天市場の商品画像に関する基本的な仕様は以下の通りです（2026年3月時点、<a href="https://www.rakuten.co.jp/" rel="noopener nofollow" target="_blank">楽天市場</a>公式の出店規約・出店マニュアルに基づいて整理）。</p>
 <table class="spec-table">
 <tr>
 <th>項目</th>
@@ -228,27 +254,16 @@ gtag('config', 'G-YYBFXHXMM6');
 <td>画像全体の20%以下が目安</td>
 </tr>
 </table>
-
 <p>Amazonと大きく異なるのが背景色の扱いです。Amazonのメイン画像は白（#FFFFFF）の純白背景が必須ですが、楽天市場は背景色に制限がなく、使用シーンのイメージ画像や背景あり商品写真を使うことができます。</p>
-
 <h2 id="sec2">テキスト（文字入れ）に関するルール</h2>
-
 <p>楽天市場の画像でよく引っかかるのが、テキストに関するルールです。</p>
-
 <h3>メイン画像（1枚目）のテキスト</h3>
-
 <p>検索結果に表示されるサムネイルになるメイン画像については、テキストや帯・ロゴなどが画像面積の20%以下であることが求められています。楽天市場のガイドラインでは「商品がメインで見える状態にすること」が明記されており、テキストが前面に出すぎている画像は修正対象になります。</p>
-
 <p>特に「最安値」「業界No.1」「送料無料」などの訴求テキストをメイン画像に大きく入れるケースは違反になりやすいため注意が必要です。景品表示法に抵触する表現（根拠のない最安値表示など）は、楽天市場の規約だけでなく法律上の問題にもなりえます。</p>
-
 <h3>サブ画像（2枚目以降）のテキスト</h3>
-
 <p>サブ画像については、商品の説明テキストやサイズ表、使い方の解説などを挿入することが認められています。商品詳細ページの説明の一部として機能させる使い方です。ただし、こちらも誇大広告・虚偽表示にあたる内容は禁止されています。</p>
-
 <h2 id="sec3">禁止されている画像の内容</h2>
-
 <p>楽天市場の出店規約では、以下の内容を含む画像の使用が禁止されています。</p>
-
 <div class="warn-box">
 <h3>主な禁止事項</h3>
 <p><strong>競合他社の商品・ロゴが写っている</strong>：比較のために他社商品を並べた画像や、他社ロゴが写り込んでいる画像は使用不可です。</p>
@@ -258,11 +273,8 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><strong>URLやQRコードの記載</strong>：画像内に外部サイトへ誘導するURLやQRコードを記載することは禁止されています。楽天市場外への誘導とみなされます。</p>
 <p><strong>実物と著しく異なる画像</strong>：色や形状が実物と大きく異なる画像、加工しすぎて商品の実態を誤解させる画像も禁止されています。</p>
 </div>
-
 <h2 id="sec4">Amazon・メルカリとのルール比較</h2>
-
 <p>主要ECプラットフォームの画像ルールを並べると、楽天の特徴がわかりやすくなります。</p>
-
 <table class="spec-table">
 <tr>
 <th>項目</th>
@@ -301,33 +313,20 @@ gtag('config', 'G-YYBFXHXMM6');
 <td>禁止</td>
 </tr>
 </table>
-
 <p>Amazonは白背景が絶対条件で、メイン画像への文字入れ自体が基本的に禁止されています。楽天は背景の縛りがなく、テキスト挿入も「20%以下」という割合での管理なので、商品アピールをある程度画像に組み込める設計になっています。</p>
-
 <p>この3プラットフォームの違いについては以前まとめた記事もあります。</p>
 <p><a href="ec-image-rules.html">ECサイトの商品画像ルールまとめ｜Amazon・楽天・メルカリで何が違う？</a></p>
-
 <h2 id="sec5">商品画像を楽天規定に合わせるときの実務メモ</h2>
-
 <p>楽天市場に出品する場合、画像準備の段階でよく発生するのが以下のパターンです。</p>
-
 <h3>テキスト20%のラインをどう判断するか</h3>
-
 <p>「20%以下」という基準は視覚的な判断になるため、明確な計算式があるわけではありません。目安としては、メイン画像を4分割したとき、テキストが1区画以内に収まっている状態であれば問題になりにくいです。キャッチコピーや帯デザインを入れたいなら、画面下部に小さく入れる程度が無難です。</p>
-
 <h3>白抜き画像と生活シーン画像の使い分け</h3>
-
 <p>楽天では白抜きのメイン画像と、生活シーンのサブ画像を組み合わせるパターンが多く見られます。メイン画像を見ただけで商品のシルエットが分かり、サブ画像でサイズ感や使用シーンを補う構成です。</p>
-
 <p>背景白抜きが必要な場合のツールや方法については別記事でまとめています。</p>
 <p><a href="background-white.html">写真の背景を白抜きにする方法まとめ｜無料ツール・アプリ・プロ依頼の料金比較</a></p>
-
 <h3>大量出品の場合の画像整備</h3>
-
 <p>1商品の画像準備であればアプリや無料ツールで対応できることも多いですが、数十〜数百商品の画像を一定のクオリティで揃えるとなると話が変わります。背景の色トーン、テキストの位置・大きさ、切り抜き精度などを均一に保つのは、手動での処理では時間がかかります。</p>
-
 <p>まとまった枚数の商品画像整備が発生した場合は、レタッチ外注サービスへの依頼も選択肢に入ります。1枚単位での依頼が可能なサービスもあります。</p>
-
 <div class="point-box">
 <h4>楽天市場の画像準備チェックリスト</h4>
 <p>□ メイン画像のサイズが700×700px以上になっているか</p>
@@ -337,45 +336,36 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>□ URLやQRコードが含まれていないか</p>
 <p>□ 実物の色・形状と著しく異なる加工をしていないか</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. 楽天市場の商品画像は何枚まで登録できますか？</div>
 <div class="fa">楽天市場では、1商品につき最大20枚の画像を登録できます（ヘッダー画像・フッター画像含む）。サムネイル画像として検索結果に表示されるのはメイン画像（1枚目）のみです。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 楽天市場の画像に文字を入れてもいいですか？</div>
 <div class="fa">文字入れは可能ですが、テキスト（文字・ロゴ・帯・価格表記など）が画像全体の20%以下であることが求められています。特にメイン画像（1枚目）への過剰なテキスト入れはガイドライン違反になります。サブ画像（2枚目以降）は説明テキストの挿入が認められています。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 楽天市場の商品画像の推奨サイズはどのくらいですか？</div>
 <div class="fa">楽天市場の商品画像の推奨サイズは700×700ピクセル以上（最低でも500×500ピクセル以上）で、最大は3840×3840ピクセルです。ファイルサイズの上限は1ファイルあたり2MB。ファイル形式はJPEG・PNG・GIFが使用できます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 楽天市場の商品画像でNGとなる内容は何ですか？</div>
 <div class="fa">主なNGとして、競合他社の商品・ロゴが写っている画像、著作権侵害の恐れがある画像、根拠のない最安値・No.1表現、公序良俗に反する画像が挙げられます。また、画像内のURL・QRコード記載も禁止されています。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 楽天市場とAmazonの画像ルールはどう違いますか？</div>
 <div class="fa">最大の違いは背景の扱いです。AmazonはメインASIN画像を純白背景に限定していますが、楽天市場は背景色に制限がありません。テキスト挿入については、楽天が「20%以下」という割合で管理しているのに対し、Amazonはメイン画像への文字・ロゴ入れ自体を基本的に禁止しています。</div>
 </div>
-
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-
 <h2 class="related-title" id="sec7">関連する記事</h2>
 <a class="cite-card" href="ec-image-rules.html">
 <span class="cite-ico int">ツ</span>
@@ -405,8 +395,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/ai-retouch-limits.html</span>
 </span>
 </a>
-
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -442,15 +430,32 @@ gtag('config', 'G-YYBFXHXMM6');
 
 </main>
 
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">楽天市場の商品画像の基本仕様</a></li>
+<li><a href="#sec2">テキスト（文字入れ）に関するルール</a></li>
+<li><a href="#sec3">禁止されている画像の内容</a></li>
+<li><a href="#sec4">Amazon・メルカリとのルール比較</a></li>
+<li><a href="#sec5">商品画像を楽天規定に合わせるときの実務メモ</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
 

@@ -113,44 +113,78 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="llms.txtの仕様・書き方・設置手順をまとめた備忘録です。robots.txtとの違い・AnthropicなどAIの対応状況・GitHub Pagesへの設置方法・記事一覧の書き方・効果確認の方法について調べた内容を記録しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ llms.txtとは何か｜AIにブログを…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</h1>
-<p class="update">2026年3月 更新</p>
-</div>
-</div><main>
-<article>
-<div class="wrap">
-<p>llms.txtの仕様・書き方・設置手順をまとめた備忘録。robots.txtとの違いと個人ブログへの設置効果について調べました。</p>
+</aside>
 
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ llms.txtとは何か｜AIにブログを…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/llms-txt-setup.png" alt="llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</h1>
+<div class="article-meta-line">
+<span>2026年3月29日</span>
+<span>2026年3月 更新</span>
+</div>
+
+<p>llms.txtの仕様・書き方・設置手順をまとめた備忘録。robots.txtとの違いと個人ブログへの設置効果について調べました。</p>
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
-<li>llms.txtの概要と<a href="/glossary/robots-txt.html" class="glossary-inline">robots.txt</a>との違い</li>
+<li>llms.txtの概要と<a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>との違い</li>
 <li>llms.txtの書き方（フォーマット）</li>
 <li><a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>への設置手順</li>
 <li>対応しているAIと効果の確認方法</li>
 </ul>
 </div>
-
-<p>こんにちは、ツバサです。このブログのSEO・<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
-
+<p>こんにちは、ツバサです。このブログのSEO・<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -162,19 +196,12 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">llms.txtとは何か</h2>
-
 <p>llms.txtは、サイトのルートに置くMarkdown形式のファイルです。ChatGPT・Claude・GeminiなどのLLM（大規模言語モデル）に対して、サイトにどんな情報があるかを伝えることを目的としています。</p>
-
 <p><a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>がGoogleのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があります」と伝えるファイルです。</p>
-
-<p>提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。AnthropicはClaudeの<a href="https://docs.anthropic.com/" target="_blank" rel="noopener noreferrer">公式ドキュメント</a>にllms.txtを設置しており、徐々に普及が進んでいます。</p>
-
+<p>提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。AnthropicはClaudeの<a href="https://docs.anthropic.com/" rel="noopener noreferrer" target="_blank">公式ドキュメント</a>にllms.txtを設置しており、徐々に普及が進んでいます。</p>
 <h2 id="sec2">書き方の基本フォーマット</h2>
-
 <p>llms.txtはMarkdown形式で記述します。基本構造は次の通りです。</p>
-
 <div class="point-box">
 <pre style="white-space:pre-wrap;font-size:13px;line-height:1.7"># サイト名
 
@@ -193,29 +220,20 @@ gtag('config', 'G-YYBFXHXMM6');
 
 運営者の情報</pre>
 </div>
-
 <p>記事一覧は全記事を掲載する必要はありませんが、掲載する記事が多いほどLLMが参照できる情報量が増えます。各記事の説明文には具体的なサービス名・数値・キーワードを含めると、LLMが記事の内容を正確に把握できます。</p>
-
 <h2 id="sec3">GitHub Pagesへの設置手順</h2>
-
-<p>GitHub Pagesの場合、<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>のルートに「llms.txt」という名前のファイルを作成してコミットするだけです。</p>
-
+<p>GitHub Pagesの場合、<a class="glossary-inline" href="/glossary/repository.html">リポジトリ</a>のルートに「llms.txt」という名前のファイルを作成してコミットするだけです。</p>
 <ol style="padding-left:20px;margin-bottom:18px;line-height:2">
 <li>テキストエディタで上記フォーマットに沿ってllms.txtを作成</li>
 <li>リポジトリのルートにファイルを追加してコミット・push</li>
 <li>「https://ユーザー名.github.io/llms.txt」にアクセスして内容が表示されることを確認</li>
 </ol>
-
-<p>このブログのllms.txtは<a href="https://tsubasa-memo.github.io/llms.txt" target="_blank" rel="noopener noreferrer">こちら</a>で確認できます。</p>
-
+<p>このブログのllms.txtは<a href="https://tsubasa-memo.github.io/llms.txt" rel="noopener noreferrer" target="_blank">こちら</a>で確認できます。</p>
 <h2 id="sec4">運用上の注意点</h2>
-
 <p>新しい記事を公開するたびにllms.txtも更新する必要があります。記事一覧が古いままだと、最新の記事がLLMに伝わりません。記事追加のワークフローにllms.txt更新を組み込んでおくのがおすすめです。</p>
-
 <div class="warn-box">
 <p><strong>注意：</strong>llms.txtに書いた情報がLLMの回答に即座に反映されるわけではありません。LLMのトレーニングサイクルやRAG（検索拡張生成）の仕組みによって、反映されるタイミングは異なります。</p>
 </div>
-
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. llms.txtとrobots.txtの違いは何ですか？</p><p class="faq-a">robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLMに対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtはすべてのAIに対応していますか？</p><p class="faq-a">2026年時点では対応状況はAIによって異なります。Anthropicはllms.txtを参照することが知られています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。</p></div>
@@ -223,7 +241,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. llms.txtに書くべき内容は何ですか？</p><p class="faq-a">サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本です。記事一覧では各記事の説明文を1〜2文で添えるとLLMが内容を把握しやすくなります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtの設置効果はどうやって確認しますか？</p><p class="faq-a">直接的な効果測定は難しいです。ChatGPTやClaudeに自分のブログのトピックについて質問したとき、自分のブログや紹介しているサービスが回答に含まれるかどうかを定期的に確認する方法が現実的です。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -251,8 +269,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -287,14 +304,32 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">llms.txtとは何か</a></li>
+<li><a href="#sec2">書き方の基本フォーマット</a></li>
+<li><a href="#sec3">GitHub Pagesへの設置手順</a></li>
+<li><a href="#sec4">運用上の注意点</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

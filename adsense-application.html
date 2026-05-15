@@ -164,32 +164,66 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="個人ブログでGoogle AdSenseを申請した記録です。申請前の記事数・プライバシーポリシー・サイト動作確認の準備、審査中にやったことと注意点、承認後のAdSenseコード設置と自動広告の設定まで手順をまとめました。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ 個人ブログにGoogle AdSense…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録</h1>
-<p class="lead">個人ブログでAdSenseを申請した記録。審査前の準備・審査期間・承認後の設置まで手順をまとめました。</p>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=career">副業・キャリア</a> ＞ 個人ブログにGoogle AdSense…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/adsense-application.png" alt="個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録" width="640" height="360" loading="eager">
 </div>
+
+<span class="article-tag">副業・キャリア</span>
+<h1 class="article-title">個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録</h1>
+<div class="article-meta-line">
+<span>2026年3月29日</span>
 </div>
-<div class="updated"><time datetime="2026-04-02">2026年3月 更新</time></div>
-<main>
-<article>
-<div class="wrap">
+
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -199,9 +233,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li>承認後の広告コードの設置方法</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。このブログにGoogle AdSenseを設置するまでの記録をまとめておきます。申請前に色々調べてわかりにくかった部分を中心に書きました。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -214,63 +246,45 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">申請前に準備したこと</h2>
-
 <p>申請前に確認したのは3点です。</p>
-
 <h3>1. 記事数と内容の確認</h3>
 <p>Googleは審査通過に必要な記事数を公開していませんが、調べた限りでは「10本以上のオリジナル記事」が最低ラインとして言われていることが多いです。記事数よりもコンテンツの質の方が重要で、コピーコンテンツや内容が薄い記事は審査に不利に働くとされています。</p>
 <p>申請前に各記事が1,500文字以上あること、他サイトのコピーでないことを確認しました。</p>
-
 <h3>2. プライバシーポリシーの設置</h3>
 <p>AdSenseはユーザーのブラウザにCookieを設定するため、プライバシーポリシーの設置がAdSenseのプログラムポリシーで求められています。「このサイトはGoogle AdSenseを使用しており、Cookieを使用してユーザーへの広告配信を行います」という内容を含んだページを作成しました。</p>
-
 <h3>3. サイトが正常に動作しているか確認</h3>
-<p>404エラーのページがないか、<a href="/glossary/sitemap.html" class="glossary-inline">サイトマップ</a>が正常に機能しているか、Google Search Consoleでエラーが出ていないかを確認しました。</p>
-
+<p>404エラーのページがないか、<a class="glossary-inline" href="/glossary/sitemap.html">サイトマップ</a>が正常に機能しているか、Google Search Consoleでエラーが出ていないかを確認しました。</p>
 <h2 id="sec2">申請の手順</h2>
-
 <p>AdSenseの申請手順は次の通りです。</p>
-
 <ol style="padding-left:20px;margin-bottom:18px;line-height:2">
-<li><a href="https://adsense.google.com/" target="_blank" rel="noopener noreferrer">Google AdSense</a>にアクセスしてアカウントを作成</li>
+<li><a href="https://adsense.google.com/" rel="noopener noreferrer" target="_blank">Google AdSense</a>にアクセスしてアカウントを作成</li>
 <li>サイトのURLを入力</li>
 <li>AdSenseのコード（スクリプトタグ）を発行してもらい、サイトの全ページの &lt;head&gt; 内に貼る</li>
 <li>「サイトをAdSenseにリンク」を実行して申請完了</li>
 </ol>
-
 <p>コードを貼ってから「サイトをAdSenseにリンク」ボタンを押すと審査が始まります。コードを貼らないと先に進めないので、この段階で<a class="glossary-inline" href="/glossary/html.html">HTML</a>ファイルにスクリプトを追加して<a class="glossary-inline" href="/glossary/github.html">GitHub</a>にアップロードしました。</p>
-
 <h2 id="sec3">審査中にやったこと・やらなかったこと</h2>
-
 <p>審査中は<strong>サイトの構造を大きく変えない</strong>ことを意識しました。URLを変更したりページを大量に削除したりすると、審査中の<a class="glossary-inline" href="/glossary/crawler.html">クローラー</a>が混乱する可能性があると読んだためです。</p>
 <p>一方で記事の追加は続けました。審査中だからといって更新を止める必要はなく、むしろコンテンツが増えている方が良い影響があると考えました。</p>
-
 <div class="warn-box">
 <p><strong>注意：</strong>審査中にAdSenseのコードをHTMLから削除すると審査が中断される場合があります。承認通知が来るまでコードはそのままにしておく方が安全です。</p>
 </div>
-
 <h2 id="sec4">承認後にやったこと</h2>
-
 <p>承認メールが届いたら、AdSenseの管理画面で広告ユニットを作成し、表示したい場所にコードを貼ります。「自動広告」を有効にすると、Googleがページを解析して最適な場所に広告を配置してくれるため、最初はこれを使いました。</p>
-
 <p>広告が実際に表示され始めるまで数時間〜1日程度かかることがあります。最初は自分でページを開いて広告が出ているか確認してみてください。</p>
-
 <h2 id="sec5">AdSenseとAmazon アソシエイトの両立</h2>
-
 <p>AdSense承認後にAmazon アソシエイトも申請しました。同じページにAdSenseの広告とAmazon アソシエイトのリンクを設置することはGoogleのポリシー上問題ありません。記事の内容によって使い分けると収益効率が上がります。Amazon アソシエイトの登録については<a href="amazon-associates.html">別の記事</a>にまとめています。</p>
-
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. AdSenseの審査に通るために必要な記事数は？</p><p class="faq-a">Googleは明確な基準を公開していませんが、10〜20本以上のオリジナル記事があると審査が通りやすいと言われています。記事数よりも内容の充実度（各記事1,500文字以上、コピーコンテンツなし）の方が重要です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. AdSense審査の期間はどれくらいかかりますか？</p><p class="faq-a">申請から数日〜2週間程度が一般的です。サイトのコンテンツ量や品質によって変わります。審査中はサイトのコンテンツを大きく変更せず、通常通り更新を続けることが推奨されています。</p></div>
 <div class="faq-item"><p class="faq-q">Q. AdSense審査に必要なページはありますか？</p><p class="faq-a">プライバシーポリシーの設置が強く推奨されています。「このサイトはGoogle AdSenseを使用しており、Cookieを使用して広告配信を行います」という内容を含むページが必要です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. AdSenseが不承認になった場合はどうすればいいですか？</p><p class="faq-a">不承認メールに理由が記載されています。「コンテンツの価値が不十分」の場合は記事の充実が必要、「ポリシー違反」の場合は該当コンテンツの修正が必要です。修正後に再申請できます。</p></div>
-<div class="faq-item"><p class="faq-q">Q. 個人ブログのAdSense収益はどれくらいになりますか？</p><p class="faq-a">月間PVが1,000〜10,000程度の個人ブログでは月数百〜数千円程度が目安です。ジャンルや<a href="/glossary/ctr.html" class="glossary-inline">クリック率</a>によって大きく変わります。最初は収益よりサイトの育成に集中することをおすすめします。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 個人ブログのAdSense収益はどれくらいになりますか？</p><p class="faq-a">月間PVが1,000〜10,000程度の個人ブログでは月数百〜数千円程度が目安です。ジャンルや<a class="glossary-inline" href="/glossary/ctr.html">クリック率</a>によって大きく変わります。最初は収益よりサイトの育成に集中することをおすすめします。</p></div>
 <div class="faq-item"><p class="faq-q">Q. AdSenseとAmazon アソシエイトは同時に使えますか？</p><p class="faq-a">使えます。同じページにAdSenseの広告とAmazon アソシエイトのリンクを設置することはGoogleポリシー上問題ありません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. GitHub PagesのサイトでAdSense審査は通りますか？</p><p class="faq-a">通ります。ホスティング先がGitHub PagesかどうかはAdSenseの審査に影響しません。コンテンツの質と量が審査基準です。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -298,8 +312,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -334,14 +347,33 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">申請前に準備したこと</a></li>
+<li><a href="#sec2">申請の手順</a></li>
+<li><a href="#sec3">審査中にやったこと・やらなかったこと</a></li>
+<li><a href="#sec4">承認後にやったこと</a></li>
+<li><a href="#sec5">AdSenseとAmazon アソシエイトの両立</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

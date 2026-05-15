@@ -167,45 +167,80 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="GitHubもHTMLも知らなかった自分が、AIに質問しながらGitHub Pagesでブログを構築した記録。サイト設計・SEO対策・サイトマップ作成・Googleインデックス登録まで、非エンジニアがAIをどう使ったかを時系列でまとめた。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html">記事一覧</a> ＞ AIに聞きながらブログを構築した話</div></nav>
-<div class="hero"><div class="wrap">
-<h1>AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</h1>
-<p class="update">2026年4月 更新</p>
-</div></div><main><article class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html">記事一覧</a> ＞ AIに聞きながらブログを構築した話</nav>
+
+<div class="article-hero">
+<img src="/thumbs/ai-blog-building.png" alt="AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録" width="640" height="360" loading="eager">
+</div>
+
+
+<h1 class="article-title">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</h1>
+<div class="article-meta-line">
+<span>2026年4月20日</span>
+<span>2026年4月 更新</span>
+</div>
+
 <p>GitHubもHTMLも知らなかった非エンジニアが、AIの力を借りてブログサイトを作るまでの記録</p>
-
-
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
 <li>非エンジニアがAIに聞きながらGitHub Pagesブログを構築した具体的な流れ</li>
 <li>AIにどんな質問をして、どんな作業を任せたか</li>
-<li>SEOや<a href="/glossary/llmo.html" class="glossary-inline">LLMO</a>の設計にAIをどう活用したか</li>
+<li>SEOや<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>の設計にAIをどう活用したか</li>
 <li>実際につまずいたポイントと対処法</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。このブログ「ツバサのメモ帳」は、GitHub Pagesという無料のホスティングサービスで運営しています。記事数は現在140本以上。Google AdSenseの広告も掲載しています。</p>
-
 <p>こう書くと技術に詳しい人のブログに見えるかもしれませんが、自分はエンジニアではありません。EC関係の仕事をしている会社員で、AIを使い始めるまでGitHubという言葉すら聞いたことがありませんでした。</p>
-
 <p>この記事では、そんな状態からAIに質問しながらブログサイトを構築していった過程を、時系列でまとめています。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -219,95 +254,51 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec8">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">GitHubもHTMLも知らない状態からスタートした</h2>
-
 <p>ブログを始めたいと思った理由は単純で、EC業務で調べたことの備忘録を残しておきたかったのと、せっかくなら広告収入も得られる形にしたかったからです。</p>
-
 <p>最初に検討したのはnoteとWordPressでした。noteは書くことに集中できるけれどAdSenseが使えない。WordPressは月額1,000円前後のレンタルサーバー代がかかる。そんな中で見つけたのがGitHub Pagesでした（比較の詳細は<a href="github-pages-vs-note.html">「noteでなくGitHub Pagesを選んだ理由」</a>にまとめています）。</p>
-
 <p>ただ、その時点ではGitHubが何をするためのサービスなのかも分かっていませんでした。「プログラマーが使うもの」という認識しかなく、自分には関係のない世界だと思っていました。</p>
-
 <p>転機になったのは、たまたまClaude（Anthropicが作ったAI）に「無料でブログを作る方法はありますか？」と聞いたことです。返ってきた選択肢の一つにGitHub Pagesがあり、「HTMLファイルを置くだけでサイトが公開される」「費用は0円」と書かれていました。HTMLも書けないのに大丈夫なのか不安でしたが、「分からないことはその都度AIに聞けばいい」と思って始めることにしました。</p>
-
 <h2 id="sec2">AIに聞きながら構築するとはどういうことか</h2>
-
 <p>「AIに聞きながら」というのは、具体的には2つのツールを使い分けています。</p>
-
 <p>1つ目はClaude（チャット版）。ブラウザで会話するAIで、「サイトの構成をどうするか」「SEO的にtitleタグは何文字が良いか」「サイトマップの書き方」のような相談をしています。戦略を考える部分はここでやります。</p>
-
 <p>2つ目はClaude Code。ターミナル（コマンドを入力する黒い画面）で動くAIツールで、「このHTMLファイルのtitleタグを変更して」「sitemap.xmlにこのURLを追加して」のような、ファイル操作を指示すると実際にファイルを書き換えてくれます。手を動かす部分はこちらに任せています。</p>
-
 <p>なお、Claude Proプラン（月額20ドル、約3,000円）に加入すると両方使えます。GitHub Pages自体は無料なので、ブログ運営にかかる費用はこのAI利用料だけです。</p>
-
 <div class="warn-box">
-<p><strong>誤解されやすい点：</strong>AIに記事の文章を書かせているわけではありません。自分がこのブログでAIに任せているのは、HTMLページの組み立て、<a href="/glossary/css.html" class="glossary-inline">CSS</a>（デザイン）の調整、SEO関連の技術設定、git操作といった「技術的な作業」です。記事の中身は自分で調べて自分で書いています。</p>
+<p><strong>誤解されやすい点：</strong>AIに記事の文章を書かせているわけではありません。自分がこのブログでAIに任せているのは、HTMLページの組み立て、<a class="glossary-inline" href="/glossary/css.html">CSS</a>（デザイン）の調整、SEO関連の技術設定、git操作といった「技術的な作業」です。記事の中身は自分で調べて自分で書いています。</p>
 </div>
-
 <h2 id="sec3">実際にやったことを時系列で振り返る</h2>
-
 <h3>1. サイトの骨組みを作った</h3>
-
 <p>最初にAIに「シンプルなブログのHTMLテンプレートを作って」と頼みました。トップページ、記事ページ、プライバシーポリシーの3ファイルが出てきて、デザインの好みを伝えると修正してくれました。落ち着いた配色・余白多め・スマホ対応、くらいの指定で十分です。</p>
-
-<p>GitHubのアカウント作成や<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>の設定も、手順をAIに聞きながらやりました。「GitHub Pagesで公開するには何をすればいいか」と聞けば、スクリーンショット抜きでもテキストの手順だけで進められます。</p>
-
+<p>GitHubのアカウント作成や<a class="glossary-inline" href="/glossary/repository.html">リポジトリ</a>の設定も、手順をAIに聞きながらやりました。「GitHub Pagesで公開するには何をすればいいか」と聞けば、スクリーンショット抜きでもテキストの手順だけで進められます。</p>
 <h3>2. 記事を増やしていった</h3>
-
 <p>テンプレートができたら、中身を入れ替えて記事を増やしていきます。「この記事のHTMLファイルを、既存のテンプレートに合わせて作って」とClaude Codeに指示すると、ファイルが生成されます。自分の作業は記事の内容を考えることと、出来上がったファイルを確認してGitHubにアップロード（push）することです。</p>
-
 <h3>3. SEO関連のファイルを設置した</h3>
-
-<p>検索エンジンに見つけてもらうために必要なファイルがいくつかあります。sitemap.xml（サイトの全ページ一覧）、<a href="/glossary/robots-txt.html" class="glossary-inline">robots.txt</a>（クローラーへの指示）、構造化データ（FAQ等の<a href="/glossary/json-ld.html" class="glossary-inline">JSON-LD</a>）などです。これらの存在を知ったのもAIに教えてもらってからで、書き方もすべてAIに聞きました。</p>
-
+<p>検索エンジンに見つけてもらうために必要なファイルがいくつかあります。sitemap.xml（サイトの全ページ一覧）、<a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>（クローラーへの指示）、構造化データ（FAQ等の<a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a>）などです。これらの存在を知ったのもAIに教えてもらってからで、書き方もすべてAIに聞きました。</p>
 <h3>4. AdSenseに申請・合格した</h3>
-
 <p>記事が10本を超えた段階でGoogle AdSenseに申請しました。プライバシーポリシーの文面をAIに相談し、AdSenseのスクリプトコードをHTMLに埋め込む作業もAIに指示しました。審査は通りましたが、正直なところGitHub Pagesだから通ったというよりコンテンツの中身で判断されていると思います。</p>
-
 <h3>5. 100ページを超えて運用フェーズに入った</h3>
-
 <p>記事が100本を超えたあたりから、新規記事の追加よりも既存記事の改善やSEO分析の比重が増えました。Google Search Consoleのデータを見て、どのページが検索に表示されているか、クリック率が低いページのtitleを改善するといった作業です。この分析もAIに手伝ってもらっています。</p>
-
 <h2 id="sec4">SEOとLLMOもAIに聞きながらやった</h2>
-
 <p>サイトの構築だけでなく、検索エンジン対策（SEO）とLLM最適化（LLMO）の設計にもAIを活用しました。</p>
-
-<p>具体的にAIに相談・実行してもらったのは、各記事のtitleタグと<a href="/glossary/meta-description.html" class="glossary-inline">meta description</a>の最適な文字数設計、FAQ構造化データ（JSON-LD）の生成と全記事への設置、内部リンク構造の設計（どの記事からどの記事にリンクを張るか）、<a href="llmo-article-writing.html">llms.txt</a>（AIチャットボットがサイト情報を読み取るためのファイル）の作成と更新、Google Search Consoleのデータ分析と改善提案などです。</p>
-
+<p>具体的にAIに相談・実行してもらったのは、各記事のtitleタグと<a class="glossary-inline" href="/glossary/meta-description.html">meta description</a>の最適な文字数設計、FAQ構造化データ（JSON-LD）の生成と全記事への設置、内部リンク構造の設計（どの記事からどの記事にリンクを張るか）、<a href="llmo-article-writing.html">llms.txt</a>（AIチャットボットがサイト情報を読み取るためのファイル）の作成と更新、Google Search Consoleのデータ分析と改善提案などです。</p>
 <p>自分一人ではJSON-LDの書き方を調べるだけで半日かかっていたと思います。AIに「この記事のFAQを構造化データにして」と頼めば数秒でコードが出てきます。非エンジニアにとって、この部分の時間短縮効果は大きいです。</p>
-
 <p>LLMOについてはまだ試行錯誤の段階ですが、llms.txtを設置したことでAIチャットボットがこのサイトの情報を参照しやすくなっているはずです。SEOだけでなくAIからの流入も意識した設計ができるのは、GitHub PagesでHTMLを自由に触れるからこそです。</p>
-
 <h2 id="sec5">非エンジニアが実際に詰まったポイント</h2>
-
 <p>AIがあれば何でもスムーズに進むかというと、そんなことはありません。実際に困った場面をいくつか挙げます。</p>
-
 <h3>gitの操作で事故を起こす</h3>
-
 <p>gitは変更履歴を管理するツールですが、操作を間違えると「コンフリクト」（変更の衝突）が起きてファイルがぐちゃぐちゃになります。自分は何度かこれをやりました。AIに状況を説明すれば復旧手順を教えてくれますが、最初は何が起きたのか自分でも理解できないので説明のしようがなく、かなり焦りました。</p>
-
 <h3>AIの回答が間違っていて遠回りする</h3>
-
 <p>AIは万能ではなく、たまに古い情報や不正確な手順を教えてくることがあります。たとえばサービスの料金情報をAIに聞いて記事に書いたら、実際の価格と違っていたことがありました。AIが出した情報は公式サイトで裏を取る習慣をつけないと、間違ったまま公開してしまいます。</p>
-
 <h3>Googleになかなかインデックスされない</h3>
-
 <p>GitHub Pagesの新規サイトはドメインの信頼性が低いため、Googleに記事を認識してもらうまで時間がかかります。サイトマップを送信してもすぐには反映されず、1ページずつ手動でインデックスリクエストを送る作業を地道に続けました（この話は<a href="google-index-not-found.html">「Googleにインデックスされるまで」</a>にまとめています）。</p>
-
 <h3>CSSが崩れて原因が分からない</h3>
-
 <p>AIに作ってもらったデザインが、スマホで見ると表が画面からはみ出していたり、文字が重なっていたりすることがありました。「スマホで表示が崩れている」とAIに伝えれば直してくれますが、自分で気づかないと放置してしまう。公開後にスマホで表示を確認する作業は毎回やるようにしています。</p>
-
 <h2 id="sec6">まとめ：AIがあれば非エンジニアでもブログは作れるか</h2>
-
 <p>結論として、作れます。ただし条件があります。</p>
-
 <p>「AIに全部お任せ」では回らなくて、自分が考える部分と、AIに任せる部分を切り分ける必要があります。このブログの場合は「何を書くか」「どう見せるか」の判断は自分でやり、「HTMLの組み立て」「SEOの技術設定」「ファイル管理」をAIに任せるという分担に落ち着きました。</p>
-
 <p>もう一つ必要なのは、AIの回答を鵜呑みにしない姿勢です。AIが出してきた情報が正しいかどうか、必ず自分で確認する。この手間を省くと、間違った情報を掲載したり、サイトの設定がおかしくなったりします。</p>
-
 <p>逆に言えば、この2つさえ意識しておけば、GitHubを聞いたこともなかった人間でも140本以上の記事を持つサイトを運営できています。技術的な壁は、AIのおかげで思っていたよりずっと低かったです。</p>
-
 <table class="spec-table">
 <tr><th>項目</th><th>内容</th></tr>
 <tr><td>使っているAI</td><td>Claude Pro（月額20ドル）</td></tr>
@@ -318,7 +309,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>AIに任せていること</td><td>HTML構築、CSS、SEO技術設定、git操作</td></tr>
 <tr><td>自分でやっていること</td><td>記事の企画・執筆、公開判断、情報の裏取り</td></tr>
 </table>
-
 <h2 id="sec7">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. AIでブログを構築するのにいくらかかりますか？</p><p class="faq-a">GitHub Pagesのホスティングは無料です。AIツール（Claude Pro）が月額20ドル（約3,000円）かかります。独自ドメインを取得する場合は年間1,500円程度が追加されます。合計で月3,000〜4,000円程度が目安です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. プログラミングの知識がなくても大丈夫ですか？</p><p class="faq-a">大丈夫です。HTMLやCSSの書き方、gitの操作はすべてAIに聞きながら進めました。プログラミングの知識よりも「何を作りたいか」を言葉で説明する力の方が重要です。ただし、AIの出力を確認して修正を依頼するやりとりは必要です。</p></div>
@@ -327,9 +317,8 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. AIを使えば記事も自動で書けますか？</p><p class="faq-a">このブログでは記事の内容は自分で書いています。AIに任せているのはHTMLの組み立て、SEOの技術設定、git操作といった技術的な部分です。記事テーマのリサーチにAIを使うことはありますが、文章をそのまま生成させてはいません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. Googleにインデックスされるまでどのくらいかかりますか？</p><p class="faq-a">新規サイトの場合、最初の記事が認識されるまで1〜3週間かかることがあります。サイトマップをSearch Consoleに送信し、URLインスペクションツールでリクエストを送ると早まることがあります。全ページのインデックスには数ヶ月かかるのが実情です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. GitHub PagesでAdSenseの審査は通りますか？</p><p class="faq-a">通ります。GitHub Pagesかどうかは審査に影響しません。コンテンツの質と量、プライバシーポリシーの設置、サイトの操作性が審査基準です。このブログもGitHub PagesでAdSense審査に合格しています。</p></div>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -371,7 +360,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/adsense-application.html</span>
 </span>
 </a>
-</article>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -406,14 +394,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">GitHubもHTMLも知らない状態からスタートした</a></li>
+<li><a href="#sec2">AIに聞きながら構築するとはどういうことか</a></li>
+<li><a href="#sec3">実際にやったことを時系列で振り返る</a></li>
+<li><a href="#sec4">SEOとLLMOもAIに聞きながらやった</a></li>
+<li><a href="#sec5">非エンジニアが実際に詰まったポイント</a></li>
+<li><a href="#sec6">まとめ：AIがあれば非エンジニアでもブログは作れるか</a></li>
+<li><a href="#sec7">よくある質問</a></li>
+<li><a href="#sec8">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

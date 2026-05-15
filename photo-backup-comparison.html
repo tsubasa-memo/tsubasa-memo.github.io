@@ -136,38 +136,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="Googleフォト（15GBまで無料）・iCloud（5GBまで無料）・Amazon Photos（容量無制限・Prime会員限定）を比較。無料容量・月額料金・自動バックアップの使い勝手と、スマホの写真整理に向いているサービスをまとめました。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 写真バックアップサービス3社比較
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos【2026年版】</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/photo-backup-comparison.png" alt="写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos【2026年版】" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos【2026年版】</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>写真のバックアップは「やらなきゃ」と思いつつ、どのサービスを使えばいいか決めきれないでいた時期がありました。Googleフォトが無料で使えなくなってから選択肢を改めて比較したので、まとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -179,9 +214,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">3サービスの基本スペック比較</h2>
-
 <table class="spec-table">
 <tr><th>項目</th><th>Googleフォト</th><th>iCloud</th><th>Amazon Photos</th></tr>
 <tr><td>無料容量</td><td>15GB（Gmail・Driveと共有）</td><td>5GB</td><td>写真無制限・動画5GB（プライム会員）</td></tr>
@@ -191,29 +224,17 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>動画保存</td><td>○（容量消費あり）</td><td>○（容量消費あり）</td><td>△（5GBまで）</td></tr>
 <tr><td>他サービス連携</td><td>Googleサービスと高い親和性</td><td>Apple製品との連携が最高</td><td>Amazonエコシステム内</td></tr>
 </table>
-
 <h2 id="sec2">Googleフォト</h2>
-
 <p>かつては「高画質」設定で写真を無制限に保存できましたが、2021年6月以降は廃止されました。現在はGmailやGoogleドライブと共有の15GB枠内での保存となり、写真が多い人は早い段階で有料移行が必要になります。</p>
-
 <p>最大の強みは検索機能です。「海」「犬」「誕生日」などのキーワードで関連写真を自動抽出する精度が高く、顔認識によるアルバム自動生成も便利です。Android端末との相性が最良で、Googleアカウントを日常的に使っている人には自然な選択です。</p>
-
-<p>有料プランは<a href="https://one.google.com/about" target="_blank" rel="noopener">Google One</a>で管理し、100GBが月額250円、200GBが月額380円、2TBが月額1,300円です。</p>
-
+<p>有料プランは<a href="https://one.google.com/about" rel="noopener" target="_blank">Google One</a>で管理し、100GBが月額250円、200GBが月額380円、2TBが月額1,300円です。</p>
 <h2 id="sec3">iCloud</h2>
-
 <p>iPhoneユーザーにとって最もシームレスなサービスです。「iPhoneのストレージを最適化」をオンにすると、iCloudにアップ済みの写真がスマホ上でサムネイルに圧縮され、本体の空き容量が自動で確保されます。このiOSとの深い連携がiCloudの最大の差別化です。</p>
-
-<p>無料容量は5GBと少なく、iPhoneを使っているとあっという間に埋まります。有料プラン（<a href="https://www.apple.com/jp/icloud/" target="_blank" rel="noopener">iCloud＋</a>）は50GBが月額130円、200GBが月額400円、2TBが月額1,300円。ファミリー共有（6人まで）に対応しているのも特徴です。</p>
-
+<p>無料容量は5GBと少なく、iPhoneを使っているとあっという間に埋まります。有料プラン（<a href="https://www.apple.com/jp/icloud/" rel="noopener" target="_blank">iCloud＋</a>）は50GBが月額130円、200GBが月額400円、2TBが月額1,300円。ファミリー共有（6人まで）に対応しているのも特徴です。</p>
 <p>Androidとの互換性には難があり、iPhoneだけを使っている場合に真価を発揮するサービスです。</p>
-
 <h2 id="sec4">Amazon Photos</h2>
-
 <p>Amazonプライム会員であれば写真を無制限で保存できます（動画は5GBまで）。写真を大量に保存したい人にとって、現状最もコスパが高い選択肢です。プライム会員費（年額6,000円 / 月額600円）に他の特典（配送特典・Prime Video等）が含まれるため、写真バックアップだけを目的としても十分元が取れると感じる人は多いです。</p>
-
 <p>検索・AIアルバム機能はGoogleフォトより見劣りしますが、写真の保存・閲覧・共有という基本機能は問題なく使えます。</p>
-
 <div class="point-box">
 <h4>こんな人にはこれがおすすめ</h4>
 <p>iPhone中心で使う → iCloud（端末との連携が最もスムーズ）</p>
@@ -221,7 +242,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>写真が大量・コストを抑えたい → Amazon Photos（プライム会員なら写真無制限）</p>
 <p>最も安全にしたい → 複数サービスを併用する</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item">
@@ -246,7 +266,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -281,7 +301,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/exif-info.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -316,16 +335,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">3サービスの基本スペック比較</a></li>
+<li><a href="#sec2">Googleフォト</a></li>
+<li><a href="#sec3">iCloud</a></li>
+<li><a href="#sec4">Amazon Photos</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>
