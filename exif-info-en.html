@@ -126,12 +126,14 @@ gtag('config', 'G-YYBFXHXMM6');
 }
 </script>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
@@ -139,21 +141,53 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </header>
 
-<nav class="breadcrumb">
-<div class="wrap">
-<a href="index.html">Home</a> ＞ How to Check & Remove EXIF Location Data
-</div>
-</nav>
+<div class="page-layout">
 
-<div class="hero">
-<div class="wrap">
-<h1>How to Check & Remove EXIF Location Data from Photos</h1>
-<p class="update">May 2026</p>
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
 </div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">Home</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="Search" autocomplete="off" aria-label="Site search">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">Home</a> ＞ How to Check & Remove EXIF Location Data</nav>
+
+<div class="article-hero">
+<img src="/thumbs/exif-info.png" alt="How to Check & Remove EXIF Location Data from Photos" width="640" height="360" loading="eager">
 </div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">How to Check & Remove EXIF Location Data from Photos</h1>
+<div class="article-meta-line">
+<span>May 2026</span>
+</div>
 
 <p>Every photo you take with a smartphone carries invisible data — your GPS coordinates, device model, and the exact time the shutter fired. This metadata, called EXIF, rides along silently inside the image file. Most people never see it, but anyone who receives the original file can extract it in seconds.</p>
 
@@ -353,20 +387,35 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </div>
 
-</div>
 </main>
 
-<footer>
-<div class="wrap">
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">Contents</div>
+<ol>
+<li><a href="#sec1">What Is EXIF Data?</a></li>
+<li><a href="#sec2">Why EXIF Data Is a Privacy Risk</a></li>
+<li><a href="#sec3">Which Platforms Strip EXIF Data</a></li>
+<li><a href="#sec4">How to Check EXIF Data on Your Photos</a></li>
+<li><a href="#sec5">How to Remove EXIF Data</a></li>
+<li><a href="#sec6">How to Stop Recording Location Data</a></li>
+<li><a href="#sec7">The WhatsApp Trap Most People Miss</a></li>
+<li><a href="#sec8">FAQ</a></li>
+<li><a href="#sec9">Summary</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
+<footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
 &copy; 2026 ツバサのメモ帳
-</div>
-</footer>
+</div></footer>
 
 </body>
 </html>
