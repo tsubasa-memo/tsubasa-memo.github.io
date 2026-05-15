@@ -393,7 +393,7 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 
 /* --- 記事ヘッダー要素 --- */
 .article-hero{margin-bottom:28px;border-radius:10px;overflow:hidden}
-.article-hero img{display:block;width:100%;height:auto}
+.article-hero img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
 .article-title{
   font-size:26px;font-weight:700;line-height:1.45;
   margin-bottom:10px;color:var(--text);letter-spacing:.3px;
