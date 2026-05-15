@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLMO（AI検索最適化）とは？SEO・GEO・AIOとの違いを整理｜ツバサのメモ帳</title>
+<meta name="description" content="LLMO（大規模言語モデル最適化）とはChatGPTやGeminiなどの生成AIの回答に自社情報を引用させる施策。GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本を整理した。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/llmo-guide.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/llmo-guide.html">
+<meta property="og:title" content="LLMO（AI検索最適化）とは？SEO・GEO・AIOとの違いを整理">
+<meta property="og:description" content="LLMO（大規模言語モデル最適化）とはChatGPTやGeminiの回答に自社情報を引用させる施策。GEO・AIO・AEOとの違い、SEOとの関係、無料で始められる対策の基本を整理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/llmo-guide.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/llmo-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llmo-guide.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "LLMO（AI検索最適化）とは？SEO・GEO・AIOとの違いを整理",
+  "description": "LLMO（大規模言語モデル最適化）とはChatGPTやGeminiの回答に自社情報を引用させるための施策。GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本を整理した。",
+  "url": "https://tsubasa-memo.github.io/llmo-guide.html",
+  "image": "https://tsubasa-memo.github.io/thumbs/llmo-guide.png",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "LLMOとは何の略？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Large Language Model Optimizationの略で、日本語では「大規模言語モデル最適化」。ChatGPT・Gemini・Perplexityなどの生成AIが回答を生成する際に、自社の情報を引用・推薦させるための最適化施策を指す。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMOとSEOの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEOはGoogleなどの検索エンジンで上位表示を目指す施策。LLMOは生成AIの回答文の中で自社が引用・推薦されることを目指す施策。ただし業界の実務者の間では「本質的にやることは同じ」という見解が多く、良質なコンテンツと構造化データの整備が両方の基盤になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMOとGEOとAIOの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LLMOはChatGPTやGeminiなどLLM全般への最適化。GEO（Generative Engine Optimization）はLLMOとほぼ同義の総称。AIOはGoogleのAI Overviewsに特化した最適化。各社が異なる名称でサービスを出しているだけで、やっていることの本質は同じ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMOは小規模事業者にも必要？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必要かどうかは業種とターゲットによる。自社の見込み客がChatGPTやPerplexityで情報収集している可能性があるなら取り組む価値がある。ただし月額数十万円のコンサルは不要で、構造化データの整備、FAQ設計、llms.txtの設置など無料でできることから始めるのが現実的。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMO対策を自分でやるには何から始めればいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まずChatGPTやPerplexityに自社に関するキーワードを入力して、AIが自社をどう認識しているか確認する。次にFAQPage JSON-LDの実装、llms.txtの設置、著者情報の構造化データ整備を行う。これらはすべて無料で実施でき、LLMO対策の基盤になる。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "SEO・Web", "item": "https://tsubasa-memo.github.io/archive.html?cat=seo"},
+    {"@type": "ListItem", "position": 3, "name": "LLMO（AI検索最適化）とは？SEO・GEO・AIOの違い"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="/">ホーム</a> &gt; <a href="/archive.html?cat=seo">SEO・Web</a> &gt; LLMOとは
+</nav>
+<div class="article-hero">
+<img alt="LLMOとは？SEO・GEO・AIOとの違いを初心者向けに整理" height="360" loading="eager" src="/thumbs/llmo-guide.png" width="640"/>
+</div>
+<span class="article-tag">SEO・Web</span>
+<h1 class="article-title">LLMOとは？<br/>SEO・GEO・AIOとの違いを初心者向けに整理</h1>
+<div class="article-meta-line">
+<span>2026年5月15日</span>
+<span>最終更新：2026年5月</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>SEO関連の記事を読んでいると、最近「LLMO」「GEO」「AIO」という見慣れない言葉が頻繁に出てきます。どれもAI検索に対応するための施策らしいけど、何がどう違うのかがわかりにくい。この記事では、LLMO・GEO・AIO・AEO・AI SEOといった用語を整理して、SEOとの関係や小規模事業者が最低限知っておくべきことをまとめました。</p>
+
+<h2 id="sec1">LLMOとは</h2>
+
+<p>LLMOはLarge Language Model Optimizationの略で、日本語では「大規模言語モデル最適化」と訳される。ChatGPT、Gemini、Claude、Perplexityなどの生成AIが回答を生成するとき、自社の情報やブランド名が「引用」「推薦」される状態を作るための施策だ。</p>
+
+<p>従来のSEOが「Googleの検索結果で上位表示を狙う」のに対し、LLMOは「AIの回答文の中で名前が挙がる」ことを目指す。たとえばPerplexityに「レタッチの外注先でおすすめは？」と聞いたとき、自社の名前が回答に含まれていればLLMOが機能していると言える。</p>
+
+<p>AIは回答を生成するとき、RAG（Retrieval-Augmented Generation）という仕組みでWeb上の情報を取得し、そこから要約や推薦文を組み立てる。このとき参照されるのは、検索結果の上位ページであることが多い。Google検索セントラルの公式ドキュメントでも「SEOのベストプラクティスはAI検索機能にも引き続き有効」と明記されている。</p>
+
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/how-search-works?hl=ja" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google検索セントラル｜Google検索の仕組み</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<h2 id="sec2">LLMO・GEO・AIO・AEOの違い</h2>
+
+<p>AI検索への最適化を指す用語は複数あるが、やっていることの本質は同じだ。各社が自社サービスに合わせて異なる名称を使っているだけで、検索する側が混乱する原因になっている。</p>
+
+<table class="compare-table">
+<tr><th>用語</th><th>正式名称</th><th>対象</th><th>使っている会社の例</th></tr>
+<tr><td>LLMO</td><td>Large Language Model Optimization</td><td>ChatGPT・Gemini・Perplexity等のLLM全般</td><td>PLAN-B、メディアリーチ、アドカル</td></tr>
+<tr><td>GEO</td><td>Generative Engine Optimization</td><td>LLMOとほぼ同義。生成AI検索の総称</td><td>Faber Company（ミエルカGEO）、CINC</td></tr>
+<tr><td>AIO</td><td>AI Overview Optimization</td><td>GoogleのAI Overviewsに特化</td><td>ジオコード、東京SEOメーカー</td></tr>
+<tr><td>AEO</td><td>Answer Engine Optimization</td><td>音声検索・AI検索を含む「回答エンジン」全般</td><td>一部の海外SEO企業</td></tr>
+<tr><td>AI SEO</td><td>（造語）</td><td>SEOのうちAI検索対応を含む拡張概念</td><td>Faber Company、ニュートラルワークス</td></tr>
+</table>
+
+<p>「LLMO対策」で検索しても「GEO対策」で検索しても、出てくるのは同じ種類のサービスだ。どの名称で調べても問題ない。</p>
+
+<h2 id="sec3">SEOとLLMOの関係</h2>
+
+<p>SEOとLLMOは対立する概念ではなく、LLMOはSEOの延長線上にある。ミエルカのYouTubeチャンネルやXでの発信を見ても、SEOの実務者の多くは「本質的にやることは同じ」という立場だ。</p>
+
+<p>具体的に共通している部分は以下の通り。</p>
+
+<ul>
+<li>高品質なコンテンツを作る（一次情報、専門性のある記述）</li>
+<li>構造化データ（JSON-LD）でページの内容を機械に伝える</li>
+<li>E-E-A-T（経験・専門性・権威性・信頼性）を高める</li>
+<li>サイト構造を整理して、クローラーが情報を取得しやすくする</li>
+</ul>
+
+<p>LLMOで追加されるのは、llms.txtの設置（AIクローラー向けのサイト案内）、FAQの充実（AIが回答を組み立てるときの素材になる）、エンティティの明確化（著者や組織の情報を構造化データで定義する）といった要素だ。どれもSEOの基盤が整っていれば上乗せするだけで済む。</p>
+
+<p>逆に言えば、SEOの基本ができていないサイトにLLMO対策だけ施しても効果は薄い。まずSEOの土台を固めてから、LLMO固有の施策を追加するのが正しい順序になる。</p>
+
+<h2 id="sec4">LLMOで重要な施策</h2>
+
+<h3>構造化データ（JSON-LD）の実装</h3>
+
+<p>AIがサイトの内容を理解するための「データ構造」を整える作業。特にFAQPage（よくある質問）、Article（記事情報）、Person（著者情報）のJSON-LDは、AIが回答を生成するときの直接的なソースになる。</p>
+
+<a class="cite-card" href="/json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+
+<h3>llms.txtの設置</h3>
+
+<p>2025年に提唱された新しい仕様。サイトのルートディレクトリにテキストファイルを置き、AIクローラーに「このサイトには何があるか」を伝える。robots.txtが検索エンジンのクローラー向けであるのに対し、llms.txtはChatGPTのGPTBotやClaudeのClaude-botに向けた案内板のようなものだ。</p>
+
+<a class="cite-card" href="/llms-txt-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">llms.txtとは？書き方・設置方法・効果をわかりやすく解説</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span>
+</span>
+</a>
+
+<h3>FAQの充実</h3>
+
+<p>AIは「質問に対する回答」を生成する仕組みなので、FAQ形式のコンテンツは引用されやすい。ページ内にFAQセクションを設け、さらにFAQPage JSON-LDでマークアップすれば、Google検索のリッチリザルトとAI引用の両方を狙える。</p>
+
+<h3>一次情報の発信</h3>
+
+<p>AIはWeb上の情報を要約するが、新しい体験や独自のデータを生み出すことはできない。事業主自身の「専門家としての知見」「顧客の成功体験」「自社独自の調査データ」は、AIが引用したくなる素材になる。金をかけなくても、自分の経験を記事にするだけで競合との差別化になる。</p>
+
+<h2 id="sec5">小規模事業者がまずやるべきこと</h2>
+
+<p>LLMO対策のコンサル会社に月額20万〜50万円を払う必要はない。以下のステップは無料で実施でき、LLMOの基盤になる。</p>
+
+<ol>
+<li><strong>現状確認</strong>：ChatGPTやPerplexityに自社に関するキーワードを入力して、AIが自社をどう認識しているか（あるいは認識していないか）を確認する</li>
+<li><strong>構造化データの実装</strong>：FAQPage、Article、BreadcrumbListのJSON-LDをサイトに追加する。WordPressならYoast SEOやRank Mathの無料版で対応できる</li>
+<li><strong>llms.txtの設置</strong>：テキストファイルを1つ作ってルートディレクトリにアップロードする</li>
+<li><strong>FAQセクションの追加</strong>：各記事や商品ページに、読者が疑問に思いそうなQ&Aを追加する</li>
+<li><strong>Google Search Consoleで確認</strong>：構造化データが正しく認識されているか、URL検査ツールでチェックする</li>
+</ol>
+
+<a class="cite-card" href="/seo-llmo-cost-small-business.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span>
+<span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span>
+</span>
+</a>
+
+<div class="faq-section">
+<h2 id="sec6">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq">Q. LLMOとは何の略？</p>
+<p class="fa">Large Language Model Optimizationの略で、日本語では「大規模言語モデル最適化」。ChatGPT・Gemini・Perplexityなどの生成AIが回答を生成する際に、自社の情報を引用・推薦させるための最適化施策を指す。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. LLMOとSEOの違いは？</p>
+<p class="fa">SEOはGoogleなどの検索エンジンで上位表示を目指す施策。LLMOは生成AIの回答文の中で自社が引用・推薦されることを目指す施策。ただし業界の実務者の間では「本質的にやることは同じ」という見解が多く、良質なコンテンツと構造化データの整備が両方の基盤になる。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. LLMOとGEOとAIOの違いは？</p>
+<p class="fa">LLMOはChatGPTやGeminiなどLLM全般への最適化。GEO（Generative Engine Optimization）はLLMOとほぼ同義の総称。AIOはGoogleのAI Overviewsに特化した最適化。各社が異なる名称でサービスを出しているだけで、やっていることの本質は同じ。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. LLMOは小規模事業者にも必要？</p>
+<p class="fa">業種とターゲットによる。自社の見込み客がChatGPTやPerplexityで情報収集している可能性があるなら取り組む価値がある。ただし月額数十万円のコンサルは不要で、構造化データの整備、FAQ設計、llms.txtの設置など無料でできることから始めるのが現実的。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. LLMO対策を自分でやるには何から始めればいい？</p>
+<p class="fa">まずChatGPTやPerplexityに自社に関するキーワードを入力して、AIが自社をどう認識しているか確認する。次にFAQPage JSON-LDの実装、llms.txtの設置、著者情報の構造化データ整備を行う。これらはすべて無料で実施でき、LLMO対策の基盤になる。</p>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="/seo-llmo-cost-small-business.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span>
+<span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span>
+</span>
+</a>
+<a class="cite-card" href="/json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="/llms-txt-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">llms.txtとは？書き方・設置方法・効果をわかりやすく解説</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="/search-console-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Google Search Consoleの使い方｜小規模サイトがやるべきことだけ</span>
+<span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span>
+</span>
+</a>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">LLMOとは</a></li>
+<li><a href="#sec2">LLMO・GEO・AIO・AEOの違い</a></li>
+<li><a href="#sec3">SEOとLLMOの関係</a></li>
+<li><a href="#sec4">LLMOで重要な施策</a></li>
+<li><a href="#sec5">小規模事業者がまずやるべきこと</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
