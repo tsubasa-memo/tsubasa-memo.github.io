@@ -45,14 +45,66 @@
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tsubasa-memo.github.io/"},{"@type":"ListItem","position":2,"name":"Portrait Mode Tips","item":"https://tsubasa-memo.github.io/portrait-mode-tips-en.html"}]}
 </script>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
-<header><div class="wrap"><a href="index.html" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">Home</a> ＞ Portrait Mode Tips</div></nav>
-<div class="hero"><div class="wrap"><h1>Why Your Phone's Portrait Mode Looks Bad (and How to Fix It)</h1><p class="update">May 2026</p></div></div>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="page-layout">
 
-<main>
-<div class="wrap">
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">Home</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="Search" autocomplete="off" aria-label="Site search">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">Home</a> ＞ Portrait Mode Tips</nav>
+
+<div class="article-hero">
+<img src="/thumbs/portrait-mode-tips.png" alt="Why Your Phone's Portrait Mode Looks Bad (and How to Fix It)" width="640" height="360" loading="eager">
+</div>
+
+<h1 class="article-title">Why Your Phone's Portrait Mode Looks Bad (and How to Fix It)</h1>
+<div class="article-meta-line">
+<span>May 2026</span>
+</div>
 
 <p>The first time I tried portrait mode on my phone, the result looked obviously fake — the background blur was patchy, the edges around my hair looked like they had been cut with dull scissors, and parts of the foreground were blurred when they should not have been. I turned it off and forgot about it for months.</p>
 
@@ -134,8 +186,23 @@
 
 <div class="author-box"><div class="author-icon"><img src="icons/tsubasa.png" alt="Tsubasa" width="64" height="64"></div><div class="author-text"><p class="author-name">Tsubasa</p><p>I work in e-commerce in Japan. This site is a collection of notes on things I've researched. I can use Photoshop a little but prefer smartphone apps for quick edits. For anything beyond basic adjustments, I outsource to professional retouchers.</p></div></div>
 
-</div>
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">Contents</div>
+<ol>
+<li><a href="#sec1">Why Portrait Mode Blur Looks Unnatural</a></li>
+<li><a href="#sec2">The One Fix That Changes Everything: Distance</a></li>
+<li><a href="#sec3">Useful Things to Know About Portrait Mode</a></li>
+<li><a href="#sec4">The Biggest Improvement: Shoot Outdoors</a></li>
+<li><a href="#sec5">FAQ</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap"><div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a><a href="about.html">運営者情報</a><a href="/sitemap-links.html">全ページ一覧</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
 </body>
 </html>

@@ -45,14 +45,66 @@
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tsubasa-memo.github.io/"},{"@type":"ListItem","position":2,"name":"Photo Backup Comparison","item":"https://tsubasa-memo.github.io/photo-backup-comparison-en.html"}]}
 </script>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
 </head>
 <body>
-<header><div class="wrap"><a href="index.html" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">Home</a> ＞ Photo Backup Comparison</div></nav>
-<div class="hero"><div class="wrap"><h1>Google Photos vs iCloud vs Amazon Photos: Which Backup Service to Use in 2026</h1><p class="update">May 2026</p></div></div>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+<div class="page-layout">
 
-<main>
-<div class="wrap">
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">Home</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="Search" autocomplete="off" aria-label="Site search">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">Home</a> ＞ Photo Backup Comparison</nav>
+
+<div class="article-hero">
+<img src="/thumbs/photo-backup-comparison.png" alt="Google Photos vs iCloud vs Amazon Photos: Which Backup Service to Use in 2026" width="640" height="360" loading="eager">
+</div>
+
+<h1 class="article-title">Google Photos vs iCloud vs Amazon Photos: Which Backup Service to Use in 2026</h1>
+<div class="article-meta-line">
+<span>May 2026</span>
+</div>
 
 <p>Your phone's photos are probably the most irreplaceable data you own. A broken phone, a theft, or an accidental factory reset can wipe years of memories in seconds. Cloud backup solves this, but choosing between Google Photos, iCloud, and Amazon Photos is not straightforward — each has different strengths, pricing structures, and platform biases.</p>
 
@@ -131,8 +183,24 @@
 
 <div class="author-box"><div class="author-icon"><img src="icons/tsubasa.png" alt="Tsubasa" width="64" height="64"></div><div class="author-text"><p class="author-name">Tsubasa</p><p>I work in e-commerce in Japan. This site is a collection of notes on things I've researched. I can use Photoshop a little but prefer smartphone apps for quick edits. For anything beyond basic adjustments, I outsource to professional retouchers.</p></div></div>
 
-</div>
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">Contents</div>
+<ol>
+<li><a href="#sec1">Quick Comparison</a></li>
+<li><a href="#sec2">Google Photos</a></li>
+<li><a href="#sec3">iCloud</a></li>
+<li><a href="#sec4">Amazon Photos</a></li>
+<li><a href="#sec5">FAQ</a></li>
+<li><a href="#sec6">Summary</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap"><div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a><a href="about.html">運営者情報</a><a href="/sitemap-links.html">全ページ一覧</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
 </body>
 </html>
