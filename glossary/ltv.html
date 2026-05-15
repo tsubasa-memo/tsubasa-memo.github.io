@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,79 +139,86 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; LTV
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>LTVとは？<br>「LTV上げていこう」と言われて調べたメモ</h1>
+<div class="article-hero">
+<img alt="LTVとは？「LTV上げていこう」と言われて調べたメモ" height="360" loading="eager" src="/thumbs/glossary/ltv.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/ltv.png" alt="LTVとは？「LTV上げていこう」と言われて調べたメモ" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">LTVとは？<br/>「LTV上げていこう」と言われて調べたメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>LTVとは</h2>
-
 <p>ひとことで言うと、1人のお客さんが自社と取引を始めてから終わるまでに、合計でいくらの利益をもたらしてくれるかを示す指標のこと。LTVは「Life Time Value（ライフタイムバリュー）」の略で、日本語では「顧客生涯価値」と訳される。</p>
-
-<p><a href="https://www.makeshop.jp/main/knowhow/term/ltv.html" target="_blank" rel="noopener nofollow">makeshopのLTV解説記事</a>によると、ECサイトでよく使われる計算式は次の通りだ。</p>
-
+<p><a href="https://www.makeshop.jp/main/knowhow/term/ltv.html" rel="noopener nofollow" target="_blank">makeshopのLTV解説記事</a>によると、ECサイトでよく使われる計算式は次の通りだ。</p>
 <p><strong>LTV ＝ 平均購入単価 × 平均購入頻度 × 平均継続期間</strong></p>
-
 <p>たとえば、平均購入単価が5,000円、年に2回購入、3年間リピートしてくれるお客さんなら、LTVは5,000円 × 2回 × 3年 ＝ 30,000円になる。</p>
-
-<p>もう少し厳密にやるなら、ここから原価や販管費を引いて利益ベースで計算する方法もある。<a href="https://repro.io/contents/ltv/" target="_blank" rel="noopener nofollow">ReproのLTV解説記事</a>には複数の計算式が紹介されていて、自社の状況に合ったものを選ぶとよさそうだ。</p>
-
+<p>もう少し厳密にやるなら、ここから原価や販管費を引いて利益ベースで計算する方法もある。<a href="https://repro.io/contents/ltv/" rel="noopener nofollow" target="_blank">ReproのLTV解説記事</a>には複数の計算式が紹介されていて、自社の状況に合ったものを選ぶとよさそうだ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>LTVはEC運営のいろいろな場面で登場する。僕が遭遇したケースを書いておく。</p>
-
 <h3>経営会議で「LTV上げていこう」と言われた</h3>
-
 <p>これが僕がLTVを調べるきっかけ。会社として「新規のお客さんを増やすだけじゃなく、リピーターを増やして1人あたりの売上を伸ばしたい」という話だった。LTVという言葉を使うことで、単発の売上ではなく中長期の視点で考えようという意味が込められていたらしい。</p>
-
 <h3>広告費の上限を決めるとき</h3>
-
-<p>LTVがわかると「1人のお客さんを獲得するためにいくらまで広告費をかけていいか」が判断できる。LTVが30,000円なら、顧客獲得コスト（CPA）が30,000円を超えなければ赤字にはならない。<a href="https://mieru-ca.com/blog/what-is-ltv/" target="_blank" rel="noopener noreferrer">ミエルカのLTV解説</a>でも、LTVからCPAの上限を逆算する考え方が説明されていた。</p>
-
+<p>LTVがわかると「1人のお客さんを獲得するためにいくらまで広告費をかけていいか」が判断できる。LTVが30,000円なら、顧客獲得コスト（CPA）が30,000円を超えなければ赤字にはならない。<a href="https://mieru-ca.com/blog/what-is-ltv/" rel="noopener noreferrer" target="_blank">ミエルカのLTV解説</a>でも、LTVからCPAの上限を逆算する考え方が説明されていた。</p>
 <h3>リピート施策の効果測定</h3>
-
-<p>メルマガやクーポン、ポイント制度などのリピート施策を導入した前後でLTVがどう変わったかを見ることで、施策の効果を判断できる。<a href="https://www.cloudec.jp/ecnews/ltv/" target="_blank" rel="noopener noreferrer">GMOクラウドECの記事</a>にも、CRMツールを使ったLTV計測の方法が書いてあった。</p>
-
+<p>メルマガやクーポン、ポイント制度などのリピート施策を導入した前後でLTVがどう変わったかを見ることで、施策の効果を判断できる。<a href="https://www.cloudec.jp/ecnews/ltv/" rel="noopener noreferrer" target="_blank">GMOクラウドECの記事</a>にも、CRMツールを使ったLTV計測の方法が書いてあった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>LTVを上げる3つのアプローチ</h3>
-
 <p>計算式を見ればわかるが、LTVを上げるには3つの方向がある。</p>
-
 <ul>
 <li><strong>購入単価を上げる</strong>：まとめ買い割引、関連商品のおすすめ（クロスセル）</li>
 <li><strong>購入頻度を上げる</strong>：メルマガ、定期購入、ポイント制度</li>
 <li><strong>継続期間を延ばす</strong>：顧客満足度の向上、アフターフォロー</li>
 </ul>
-
-<p><a href="https://kuroco.team/blog-ec-ltv/" target="_blank" rel="noopener noreferrer">KUROCOのEC向けLTV記事</a>でも、この3つの軸での改善が基本だと書いてあった。</p>
-
+<p><a href="https://kuroco.team/blog-ec-ltv/" rel="noopener noreferrer" target="_blank">KUROCOのEC向けLTV記事</a>でも、この3つの軸での改善が基本だと書いてあった。</p>
 <h3>新規獲得より既存維持のほうがコスパがいい</h3>
-
 <p>マーケティングの世界では「新規顧客の獲得コストは、既存顧客の維持コストの5倍かかる」と言われることがある（1:5の法則）。LTVを意識するということは、既存のお客さんを大事にして長く付き合ってもらおう、という考え方でもある。</p>
-
 <h3>LTVだけでなくCPAとセットで見る</h3>
-
-<p>LTVが高くても、顧客獲得に莫大な広告費をかけていたら意味がない。LTVとCPAの差が利益になるので、常にセットで確認するのが基本だ。<a href="https://bdash-marketing.com/marketics/marketing/5577/" target="_blank" rel="noopener nofollow">b→dashのLTV解説記事</a>にも、LTVとCPAのバランスの重要性が書かれていた。</p>
-
+<p>LTVが高くても、顧客獲得に莫大な広告費をかけていたら意味がない。LTVとCPAの差が利益になるので、常にセットで確認するのが基本だ。<a href="https://bdash-marketing.com/marketics/marketing/5577/" rel="noopener nofollow" target="_blank">b→dashのLTV解説記事</a>にも、LTVとCPAのバランスの重要性が書かれていた。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -221,35 +228,35 @@
 <li><a href="cart-abandonment.html">カゴ落ち</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

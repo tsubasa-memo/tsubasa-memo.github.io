@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,39 +139,64 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; WebP
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>WebPとは？<br>ECサイトの画像で見かける次世代フォーマットを調べた</h1>
+<div class="article-hero">
+<img alt="WebPとは？ECサイトの画像で見かける次世代フォーマットを調べた" height="360" loading="eager" src="/thumbs/glossary/webp.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/webp.png" alt="WebPとは？ECサイトの画像で見かける次世代フォーマットを調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">WebPとは？<br/>ECサイトの画像で見かける次世代フォーマットを調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>WebPとは</h2>
-
 <p>ひとことで言うと、Googleが開発したWeb向けの画像フォーマットだ。読み方は「ウェッピー」。JPEGやPNGの代わりに使うことで、ページの表示速度を改善できる。</p>
-
-<p><a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener noreferrer">Google Developersの公式ページ</a>によると、WebPは2010年にリリースされた。JPEGと同等の画質でファイルサイズが25〜35%小さくなるのが最大の特徴だ。</p>
-
+<p><a href="https://developers.google.com/speed/webp" rel="noopener noreferrer" target="_blank">Google Developersの公式ページ</a>によると、WebPは2010年にリリースされた。JPEGと同等の画質でファイルサイズが25〜35%小さくなるのが最大の特徴だ。</p>
 <p>JPEGにはできない「透過」（背景を透明にする）にも対応しているので、PNGの代わりとしても使える。さらにGIFのようなアニメーションにも対応していて、要はJPEG・PNG・GIFの機能を1つにまとめたような形式だと理解した。</p>
-
-<p><a href="https://www.landinghub.net/columns/image-webp" target="_blank" rel="noopener noreferrer">LandingHubの比較記事</a>でも他のフォーマットとの違いがわかりやすく整理されていた。整理するとこうなる。</p>
-
+<p><a href="https://www.landinghub.net/columns/image-webp" rel="noopener noreferrer" target="_blank">LandingHubの比較記事</a>でも他のフォーマットとの違いがわかりやすく整理されていた。整理するとこうなる。</p>
 <table class="compare">
 <tr><th>項目</th><th>JPEG</th><th>PNG</th><th>WebP</th></tr>
 <tr><td>ファイルサイズ</td><td>基準</td><td>JPEGより大きい</td><td>JPEGより25〜35%小さい</td></tr>
@@ -180,41 +205,23 @@
 <tr><td>圧縮方式</td><td>非可逆のみ</td><td>可逆のみ</td><td>非可逆・可逆どちらも</td></tr>
 <tr><td>ブラウザ対応</td><td>全対応</td><td>全対応</td><td>主要ブラウザ全対応</td></tr>
 </table>
-
 <p>非可逆圧縮と可逆圧縮の違いについては<a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a>のページにまとめてある。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当をしていると、WebPに触れる機会が増えてきた。僕が実際に遭遇した場面を書いておく。</p>
-
 <h3>PageSpeed Insightsの指摘</h3>
-
-<p>Googleの<a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>でサイトの表示速度をチェックすると、JPEG画像を使っているページで「次世代フォーマットで画像を配信してください」という指摘が出ることがある。ここで言う「次世代フォーマット」がWebPやAVIFのことだ。</p>
-
-<p><a href="https://ds-b.jp/dsmagazine/what-is-webp/" target="_blank" rel="noopener noreferrer">DSマガジンのWebP解説記事</a>にも書いてあったが、Googleは表示速度をSEOの評価指標に含めているので、ECサイトにとっては無視できない指摘になる。</p>
-
+<p>Googleの<a href="https://pagespeed.web.dev/" rel="noopener noreferrer" target="_blank">PageSpeed Insights</a>でサイトの表示速度をチェックすると、JPEG画像を使っているページで「次世代フォーマットで画像を配信してください」という指摘が出ることがある。ここで言う「次世代フォーマット」がWebPやAVIFのことだ。</p>
+<p><a href="https://ds-b.jp/dsmagazine/what-is-webp/" rel="noopener noreferrer" target="_blank">DSマガジンのWebP解説記事</a>にも書いてあったが、Googleは表示速度をSEOの評価指標に含めているので、ECサイトにとっては無視できない指摘になる。</p>
 <h3>CDNやプラットフォームの自動変換</h3>
-
 <p>ShopifyやCloudflareなどのサービスを使っている場合、JPEG画像をアップロードすると自動的にWebPに変換して配信してくれることがある。この場合、サイト運営者が意識しなくてもWebP配信が行われている。競合サイトの商品画像を右クリックで保存しようとしたら.webp形式だった、ということが最近増えたのはこれが理由だ。</p>
-
 <h3>Web制作会社からの提案</h3>
-
-<p>自社ECサイトのリニューアル時に、制作会社から「商品画像はWebPで配信しましょう」と提案されるケースも多い。<a href="https://www.plan-b.co.jp/blog/seo/38398/" target="_blank" rel="noopener noreferrer">PLAN-BのSEO記事</a>にもWebPの対応状況が詳しく書かれていたが、2024年以降は主要ブラウザがすべて対応済みなので、導入のハードルはかなり下がっている。</p>
-
+<p>自社ECサイトのリニューアル時に、制作会社から「商品画像はWebPで配信しましょう」と提案されるケースも多い。<a href="https://www.plan-b.co.jp/blog/seo/38398/" rel="noopener noreferrer" target="_blank">PLAN-BのSEO記事</a>にもWebPの対応状況が詳しく書かれていたが、2024年以降は主要ブラウザがすべて対応済みなので、導入のハードルはかなり下がっている。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>元画像はJPEGやPNGで保管しておく</h3>
-
 <p>WebPはあくまでWeb配信用のフォーマットだ。撮影した元データや編集用のデータは、JPEGやPNG、PSDなど従来の形式で保管しておくのが安全。WebPから他の形式に再変換すると画質が劣化する可能性がある。画像の圧縮や最適化については<a href="/compress-product-image.html">商品画像の圧縮・軽量化ガイド</a>にまとめた。</p>
-
 <h3>変換は意外と簡単</h3>
-
-<p>Googleが無料で提供している<a href="https://squoosh.app/" target="_blank" rel="noopener noreferrer">Squoosh</a>というツールを使えば、ブラウザ上でJPEGをWebPに変換できる。画質とファイルサイズをスライダーで比較しながら調整できるので、初心者でも使いやすい。大量に変換したい場合はコマンドラインのcwebpツール（Google公式）を使うこともできる。</p>
-
+<p>Googleが無料で提供している<a href="https://squoosh.app/" rel="noopener noreferrer" target="_blank">Squoosh</a>というツールを使えば、ブラウザ上でJPEGをWebPに変換できる。画質とファイルサイズをスライダーで比較しながら調整できるので、初心者でも使いやすい。大量に変換したい場合はコマンドラインのcwebpツール（Google公式）を使うこともできる。</p>
 <h3>AVIFという選択肢も出てきている</h3>
-
-<p>WebPよりさらにファイルサイズが小さい<a href="avif.html">AVIF</a>という次世代フォーマットも登場している。<a href="https://dad-union.com/webp-avif-comparison-pros-cons" target="_blank" rel="noopener noreferrer">DAD UNIONの比較記事</a>によると、同じ画質ならAVIFのほうがWebPよりファイルが小さくなるケースが多い。ただしAVIFはエンコード（変換処理）に時間がかかるという弱点がある。現時点ではWebPが無難な選択で、余裕があればAVIFも検討する、という順番でよさそうだ。</p>
-
+<p>WebPよりさらにファイルサイズが小さい<a href="avif.html">AVIF</a>という次世代フォーマットも登場している。<a href="https://dad-union.com/webp-avif-comparison-pros-cons" rel="noopener noreferrer" target="_blank">DAD UNIONの比較記事</a>によると、同じ画質ならAVIFのほうがWebPよりファイルが小さくなるケースが多い。ただしAVIFはエンコード（変換処理）に時間がかかるという弱点がある。現時点ではWebPが無難な選択で、余裕があればAVIFも検討する、という順番でよさそうだ。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -223,35 +230,35 @@
 <li><a href="png.html">PNG</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/compress-product-image.html">商品画像の圧縮・軽量化ガイド</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

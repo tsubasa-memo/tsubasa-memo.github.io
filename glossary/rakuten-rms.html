@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,35 +139,62 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 楽天RMS
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>楽天RMSとは？<br>楽天出店の管理画面でできることを整理した</h1>
+<div class="article-hero">
+<img alt="楽天RMSとは？楽天出店の管理画面でできることを整理した" height="360" loading="eager" src="/thumbs/glossary/rakuten-rms.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/rakuten-rms.png" alt="楽天RMSとは？楽天出店の管理画面でできることを整理した" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">楽天RMSとは？<br/>楽天出店の管理画面でできることを整理した</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>楽天RMSとは</h2>
-
 <p>ひとことで言うと、楽天市場に出店している店舗が日常の運営業務に使う管理画面のことだ。RMSは「Rakuten Merchant Server（楽天マーチャントサーバー）」の略で、Webブラウザからアクセスするので専用ソフトのインストールは不要。</p>
-
-<p><a href="https://www.rakuten.co.jp/ec/environment/service/" target="_blank" rel="noopener nofollow">楽天の公式サービス紹介ページ</a>によると、RMSには大きく4つの機能がある。</p>
-
+<p><a href="https://www.rakuten.co.jp/ec/environment/service/" rel="noopener nofollow" target="_blank">楽天の公式サービス紹介ページ</a>によると、RMSには大きく4つの機能がある。</p>
 <table class="compare">
 <tr><th>機能名</th><th>できること</th></tr>
 <tr><td>店舗構築（R-Storefront）</td><td>商品ページの作成・編集、店舗レイアウトの設定、画像の登録</td></tr>
@@ -175,37 +202,21 @@
 <tr><td>データ分析</td><td>売上データ、アクセス数、検索キーワードの分析</td></tr>
 <tr><td>メール配信（R-Mail）</td><td>購入者へのフォローメール、メルマガの配信</td></tr>
 </table>
-
-<p><a href="https://next-engine.net/ec-blog/rms/" target="_blank" rel="noopener noreferrer">ネクストエンジンのRMS解説</a>にも、RMSは楽天出店の「すべての起点になるツール」と書いてあった。商品を登録するのも、注文を処理するのも、売上を分析するのも、全部RMSからやることになる。</p>
-
+<p><a href="https://next-engine.net/ec-blog/rms/" rel="noopener noreferrer" target="_blank">ネクストエンジンのRMS解説</a>にも、RMSは楽天出店の「すべての起点になるツール」と書いてあった。商品を登録するのも、注文を処理するのも、売上を分析するのも、全部RMSからやることになる。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <h3>商品登録</h3>
-
-<p>楽天に商品を出品するには、RMSの店舗構築メニューから商品情報を登録する。商品名、価格、説明文、画像、在庫数などを入力する。商品数が多い場合はCSVファイルで一括登録もできる。<a href="https://pureflat.co.jp/column/rakuten/rakuten-rms/" target="_blank" rel="noopener noreferrer">ピュアフラットのRMS解説</a>にも商品登録の流れが紹介されていた。</p>
-
+<p>楽天に商品を出品するには、RMSの店舗構築メニューから商品情報を登録する。商品名、価格、説明文、画像、在庫数などを入力する。商品数が多い場合はCSVファイルで一括登録もできる。<a href="https://pureflat.co.jp/column/rakuten/rakuten-rms/" rel="noopener noreferrer" target="_blank">ピュアフラットのRMS解説</a>にも商品登録の流れが紹介されていた。</p>
 <h3>受注処理と出荷</h3>
-
-<p>注文が入ると、RMSの受注管理画面に反映される。注文のステータスを「注文確認」→「発送待ち」→「発送済み」と更新しながら処理していく。発送が完了したら追跡番号を入力すると、購入者に自動で発送通知メールが送られる。<a href="https://bxo.co.jp/magazine/3802" target="_blank" rel="noopener noreferrer">ECの相談室の記事</a>にも受注管理のフローが詳しく書いてあった。</p>
-
+<p>注文が入ると、RMSの受注管理画面に反映される。注文のステータスを「注文確認」→「発送待ち」→「発送済み」と更新しながら処理していく。発送が完了したら追跡番号を入力すると、購入者に自動で発送通知メールが送られる。<a href="https://bxo.co.jp/magazine/3802" rel="noopener noreferrer" target="_blank">ECの相談室の記事</a>にも受注管理のフローが詳しく書いてあった。</p>
 <h3>売上分析とアクセス解析</h3>
-
-<p>RMSにはデータ分析機能があり、日別・月別の売上推移、商品ごとのアクセス数、検索キーワードの流入データなどを見ることができる。<a href="https://www.logiless.com/blog/column/rms_introduction/" target="_blank" rel="noopener noreferrer">LOGILESSの解説</a>でも、RMSのデータ分析機能を活用して売れ筋商品を把握することの重要性が書いてあった。</p>
-
+<p>RMSにはデータ分析機能があり、日別・月別の売上推移、商品ごとのアクセス数、検索キーワードの流入データなどを見ることができる。<a href="https://www.logiless.com/blog/column/rms_introduction/" rel="noopener noreferrer" target="_blank">LOGILESSの解説</a>でも、RMSのデータ分析機能を活用して売れ筋商品を把握することの重要性が書いてあった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>RMSの操作に慣れるまで時間がかかる</h3>
-
-<p>正直、最初はメニューの階層が深くて迷子になる。商品情報の編集一つとっても、どのメニューからたどればいいかがわかりにくい。<a href="https://wac-works-ec.jp/rakuten/rms-how-to-use/" target="_blank" rel="noopener noreferrer">WacworksのRMS使い方ガイド</a>を見ながら操作して、少しずつ慣れていった。</p>
-
+<p>正直、最初はメニューの階層が深くて迷子になる。商品情報の編集一つとっても、どのメニューからたどればいいかがわかりにくい。<a href="https://wac-works-ec.jp/rakuten/rms-how-to-use/" rel="noopener noreferrer" target="_blank">WacworksのRMS使い方ガイド</a>を見ながら操作して、少しずつ慣れていった。</p>
 <h3>一元管理ツールとの併用</h3>
-
 <p>楽天だけでなくAmazonやYahoo!ショッピングにも出店している場合、各モールの管理画面を個別に操作するのは大変だ。ネクストエンジンやクロスモールなどの一元管理ツールを使えば、複数モールの受注・在庫を一つの画面で管理できる。RMSとAPI連携しているツールを選ぶと効率がいい。</p>
-
 <h3>R-Mailの配信上限に注意</h3>
-
 <p>RMSのメール配信機能（R-Mail）には月間の配信上限がある。メルマガを大量に配信したい場合は、上限を超えないように配信スケジュールを計画する必要がある。セール告知のメルマガはスーパーSALEの前に集中しがちなので、配信枠の管理が大事だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -214,35 +225,35 @@
 <li><a href="tokushoho.html">特商法表記</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

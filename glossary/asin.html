@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,78 +139,86 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ASIN
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>ASINとは？<br>Amazon出品で出てくるコードの正体を調べた</h1>
+<div class="article-hero">
+<img alt="ASINとは？Amazon出品で出てくるコードの正体を調べた" height="360" loading="eager" src="/thumbs/glossary/asin.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/asin.png" alt="ASINとは？Amazon出品で出てくるコードの正体を調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">ASINとは？<br/>Amazon出品で出てくるコードの正体を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>ASINとは</h2>
-
 <p>ひとことで言うと、ASINは「Amazon Standard Identification Number」の略で、Amazonが商品1つ1つに割り当てている10桁の識別コードのこと。アルファベットと数字の組み合わせで構成されている。</p>
-
-<p><a href="https://ecnomikata.com/ecnews/ecmall/44015/" target="_blank" rel="noopener noreferrer">ECのミカタの解説記事</a>によると、ASINはAmazonのカタログに登録されたすべての商品に付与される。書籍だけは例外で、ISBNコード（国際標準図書番号）がASINの代わりに使われるらしい。</p>
-
+<p><a href="https://ecnomikata.com/ecnews/ecmall/44015/" rel="noopener noreferrer" target="_blank">ECのミカタの解説記事</a>によると、ASINはAmazonのカタログに登録されたすべての商品に付与される。書籍だけは例外で、ISBNコード（国際標準図書番号）がASINの代わりに使われるらしい。</p>
 <p>ASINの調べ方は簡単で、Amazonの商品ページを開いてページ下部の「登録情報」を見ればいい。URLにも含まれていて、「/dp/」のあとに続く10桁がそれにあたる。たとえば「amazon.co.jp/dp/B0XXXXXXXX」の「B0XXXXXXXX」の部分だ。</p>
-
-<p>ちなみにASINの読み方は「エイシン」。<a href="https://jagoo.co.jp/column/amazon-asin/" target="_blank" rel="noopener noreferrer">ジャグーのAmazon ASIN解説</a>でもそう紹介されていた。</p>
-
+<p>ちなみにASINの読み方は「エイシン」。<a href="https://jagoo.co.jp/column/amazon-asin/" rel="noopener noreferrer" target="_blank">ジャグーのAmazon ASIN解説</a>でもそう紹介されていた。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>Amazonで出品するならASINは避けて通れない。僕が遭遇した場面をまとめておく。</p>
-
 <h3>新規商品の出品</h3>
-
 <p>Amazonのカタログにまだ存在しない商品を出品する場合、JANコード（EAN）を入力して商品情報を登録すると、Amazon側で新しいASINが自動的に発行される。自分で番号を決めることはできない。逆に、すでにカタログにある商品を出品する場合は、JANコードやキーワードで検索して既存のASINに「相乗り」する形になる。</p>
-
 <h3>親ASINと子ASIN</h3>
-
-<p>Amazonには「バリエーション」という仕組みがあって、色違い・サイズ違いを1つの商品ページにまとめられる。このとき、商品ページ全体をまとめるのが「親ASIN」、各バリエーションに付くのが「子ASIN」だ。<a href="https://proteinum.co.jp/blog/amazon-asin/" target="_blank" rel="noopener noreferrer">プロテーナムの解説記事</a>を読むと、親ASINは実際に購入できるページを持たず、あくまで子ASINをグループ化するための入れ物のような存在だと書いてあった。</p>
-
+<p>Amazonには「バリエーション」という仕組みがあって、色違い・サイズ違いを1つの商品ページにまとめられる。このとき、商品ページ全体をまとめるのが「親ASIN」、各バリエーションに付くのが「子ASIN」だ。<a href="https://proteinum.co.jp/blog/amazon-asin/" rel="noopener noreferrer" target="_blank">プロテーナムの解説記事</a>を読むと、親ASINは実際に購入できるページを持たず、あくまで子ASINをグループ化するための入れ物のような存在だと書いてあった。</p>
 <h3>競合調査・リサーチ</h3>
-
-<p>他社の商品をリサーチするときにもASINは使える。ASINをコピーしてAmazonの検索窓に貼り付ければ、その商品ページに直接飛べる。<a href="https://sobani.co.jp/columnlist/amazon_asin" target="_blank" rel="noopener noreferrer">そばにのASIN解説記事</a>でも、ASINを使った競合商品の調べ方が紹介されていた。</p>
-
+<p>他社の商品をリサーチするときにもASINは使える。ASINをコピーしてAmazonの検索窓に貼り付ければ、その商品ページに直接飛べる。<a href="https://sobani.co.jp/columnlist/amazon_asin" rel="noopener noreferrer" target="_blank">そばにのASIN解説記事</a>でも、ASINを使った競合商品の調べ方が紹介されていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>ASINとJANコード・SKUの違い</h3>
-
 <p>最初はどれも商品のコードだし何が違うのかわからなかったけど、整理するとこうなる。</p>
-
 <table class="compare">
 <tr><th>コード</th><th>管理元</th><th>使える範囲</th><th>付け方</th></tr>
 <tr><td>ASIN</td><td>Amazon</td><td>Amazon内のみ</td><td>Amazon側で自動発行</td></tr>
 <tr><td>JANコード</td><td>GS1 Japan</td><td>世界共通</td><td>GS1に申請して取得</td></tr>
 <tr><td>SKU</td><td>各社</td><td>自社内のみ</td><td>自分で自由に設定</td></tr>
 </table>
-
 <p>JANコードについては<a href="jan-code.html">JANコードとは</a>、SKUについては<a href="sku.html">SKUとは</a>にまとめている。</p>
-
 <h3>同じ商品でもASINが違うことがある</h3>
-
 <p>Amazon.co.jp（日本）とAmazon.com（アメリカ）では、同じ商品でも別のASINが割り当てられていることがある。ASINはマーケットプレイスごとに管理されているので、海外Amazonと日本Amazonで同じ商品を扱う場合は注意が必要だ。</p>
-
 <h3>ASINが見つからないとき</h3>
-
-<p>出品しようとした商品のASINがAmazonのカタログに見つからない場合は、新規でカタログを作成する必要がある。<a href="https://allweb-consulting.co.jp/information/asin_2/" target="_blank" rel="noopener noreferrer">ALL WEB CONSULTINGの解説</a>によると、JANコードを持っていない商品は「製品コード免除申請」を行うことでASINを発行してもらえるケースがあるらしい。</p>
-
+<p>出品しようとした商品のASINがAmazonのカタログに見つからない場合は、新規でカタログを作成する必要がある。<a href="https://allweb-consulting.co.jp/information/asin_2/" rel="noopener noreferrer" target="_blank">ALL WEB CONSULTINGの解説</a>によると、JANコードを持っていない商品は「製品コード免除申請」を行うことでASINを発行してもらえるケースがあるらしい。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -220,7 +228,6 @@
 <li><a href="long-tail.html">ロングテール</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -228,28 +235,29 @@
 <li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

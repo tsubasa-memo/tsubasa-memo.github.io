@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,85 +139,91 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 上代・下代
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>上代・下代とは？<br>EC担当が知っておくべき価格用語</h1>
+<div class="article-hero">
+<img alt="上代・下代とは？EC担当が知っておくべき価格用語" height="360" loading="eager" src="/thumbs/glossary/jodai-gedai.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/jodai-gedai.png" alt="上代・下代とは？EC担当が知っておくべき価格用語" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">上代・下代とは？<br/>EC担当が知っておくべき価格用語</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>上代・下代とは</h2>
-
 <p>ひとことで言うと、上代（じょうだい）は「消費者に売る価格」、下代（げだい）は「仕入れる価格」のこと。</p>
-
-<p><a href="https://shop-pro.jp/yomyom-colorme/72005" target="_blank" rel="noopener noreferrer">カラーミーショップの用語解説</a>によると、上代はメーカーや卸が設定する小売価格のことで、「メーカー希望小売価格」や「参考上代」とも呼ばれる。消費者が店頭やECサイトで目にする価格にあたる。</p>
-
+<p><a href="https://shop-pro.jp/yomyom-colorme/72005" rel="noopener noreferrer" target="_blank">カラーミーショップの用語解説</a>によると、上代はメーカーや卸が設定する小売価格のことで、「メーカー希望小売価格」や「参考上代」とも呼ばれる。消費者が店頭やECサイトで目にする価格にあたる。</p>
 <p>一方、下代は小売店がメーカーや卸から商品を仕入れるときの価格のこと。「卸価格」「仕入れ値」とも言う。下代は取引先との間の価格なので、一般消費者には公開されないのが普通だ。</p>
-
 <p>整理するとこうなる。</p>
-
 <table class="compare">
 <tr><th>用語</th><th>読み方</th><th>意味</th><th>別名</th></tr>
 <tr><td>上代</td><td>じょうだい</td><td>消費者に販売する価格</td><td>メーカー希望小売価格、参考上代</td></tr>
 <tr><td>下代</td><td>げだい</td><td>小売店が仕入れる価格</td><td>卸価格、仕入れ値</td></tr>
 </table>
-
-<p><a href="https://retailguide.tokubai.co.jp/knowledge/32876/" target="_blank" rel="noopener noreferrer">リテール・リーダーズの解説</a>には、上代と下代の差額が小売店の「粗利」になると書いてあった。たとえば上代1,000円の商品を下代600円で仕入れたら、1個売るごとに400円の粗利が出る計算だ。</p>
-
+<p><a href="https://retailguide.tokubai.co.jp/knowledge/32876/" rel="noopener noreferrer" target="_blank">リテール・リーダーズの解説</a>には、上代と下代の差額が小売店の「粗利」になると書いてあった。たとえば上代1,000円の商品を下代600円で仕入れたら、1個売るごとに400円の粗利が出る計算だ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC業務をやっていると、上代・下代という言葉は避けて通れない。僕が遭遇した場面をまとめておく。</p>
-
 <h3>仕入先との商談</h3>
-
-<p>新しい商品を仕入れるときの会話で一番よく出てくる。「上代1,500円で、掛け率は6掛けです」と言われたら、下代は1,500円×0.6＝900円という意味。<a href="https://ecnomikata.com/ecnews/35771/" target="_blank" rel="noopener noreferrer">ECのミカタの掛け率解説</a>にも、上代と掛け率から下代を計算する方法が載っていた。掛け率については<a href="kakerate.html">掛け率とは</a>に詳しくまとめている。</p>
-
+<p>新しい商品を仕入れるときの会話で一番よく出てくる。「上代1,500円で、掛け率は6掛けです」と言われたら、下代は1,500円×0.6＝900円という意味。<a href="https://ecnomikata.com/ecnews/35771/" rel="noopener noreferrer" target="_blank">ECのミカタの掛け率解説</a>にも、上代と掛け率から下代を計算する方法が載っていた。掛け率については<a href="kakerate.html">掛け率とは</a>に詳しくまとめている。</p>
 <h3>ECサイトの販売価格設定</h3>
-
 <p>上代はあくまで「参考価格」なので、実際のECサイトでの販売価格は自分で決められる。ただし、メーカーが最低販売価格を指定している場合もあるので注意が必要だ。他の出品者と価格競争になりやすいAmazonやモール系では、上代より安く売ることも多いけど、下代を下回ったら赤字になるので利益計算は慎重にやらないといけない。</p>
-
 <h3>商品リストや見積書の読み方</h3>
-
-<p>仕入先から送られてくる商品リストや見積書には「上代」「下代」の列がある。<a href="https://savari.jp/columns/netshop/category/20230317/" target="_blank" rel="noopener noreferrer">サヴァリの解説記事</a>でも触れられているように、EC業界では上代・下代は日常的に使われる言葉なので、最初に覚えておくと取引先とのやりとりがスムーズになる。</p>
-
+<p>仕入先から送られてくる商品リストや見積書には「上代」「下代」の列がある。<a href="https://savari.jp/columns/netshop/category/20230317/" rel="noopener noreferrer" target="_blank">サヴァリの解説記事</a>でも触れられているように、EC業界では上代・下代は日常的に使われる言葉なので、最初に覚えておくと取引先とのやりとりがスムーズになる。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>上代と定価は違う</h3>
-
-<p>上代と定価は似ているけど厳密には違う。定価は「この価格で売ってください」とメーカーが決める価格で、書籍やタバコなどごく一部の商品に適用される。上代は「この価格を参考にしてください」という目安の価格で、小売店側で値引きなどの価格設定ができる。<a href="https://dime.jp/genre/1221009/" target="_blank" rel="noopener noreferrer">@DIMEの上代解説記事</a>にもこの違いが説明されていた。</p>
-
+<p>上代と定価は似ているけど厳密には違う。定価は「この価格で売ってください」とメーカーが決める価格で、書籍やタバコなどごく一部の商品に適用される。上代は「この価格を参考にしてください」という目安の価格で、小売店側で値引きなどの価格設定ができる。<a href="https://dime.jp/genre/1221009/" rel="noopener noreferrer" target="_blank">@DIMEの上代解説記事</a>にもこの違いが説明されていた。</p>
 <h3>オープン価格の商品</h3>
-
 <p>最近は上代を設定せず「オープン価格」とする商品も増えている。オープン価格の場合、メーカーは市場での販売価格に関与しない。小売店が自由に価格を決められるが、逆に言うと価格の目安がないので、利益率を自分で計算して設定する必要がある。</p>
-
 <h3>上代・下代・掛け率の関係</h3>
-
 <p>この3つはセットで覚えておくといい。計算式は以下の通り。</p>
-
 <ul>
 <li>下代 ＝ 上代 × 掛け率</li>
 <li>掛け率 ＝ 下代 ÷ 上代 × 100</li>
 <li>粗利 ＝ 上代（販売価格）− 下代</li>
 </ul>
-
 <p>たとえば上代2,000円で掛け率50%（5掛け）なら、下代は1,000円、粗利は1,000円。掛け率の詳細は<a href="kakerate.html">掛け率とは</a>にまとめている。<a href="lot.html">ロット</a>の条件次第で掛け率が変わることもあるので、仕入れ交渉では数量と価格をセットで確認するのが大事だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -227,7 +233,6 @@
 <li><a href="long-tail.html">ロングテール</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -235,28 +240,29 @@
 <li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

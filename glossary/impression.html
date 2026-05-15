@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,37 +139,63 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; インプレッション
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>インプレッションとは？<br>広告レポートの「imp」の意味</h1>
+<div class="article-hero">
+<img alt="インプレッションとは？広告レポートの「imp」の意味" height="360" loading="eager" src="/thumbs/glossary/impression.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/impression.png" alt="インプレッションとは？広告レポートの「imp」の意味" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">インプレッションとは？<br/>広告レポートの「imp」の意味</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>インプレッションとは</h2>
-
 <p>ひとことで言うと、広告がユーザーの画面上に表示された回数のこと。「imp」や「imps」と略されることが多い。広告が1回表示されるたびに1インプレッションとカウントされる。</p>
-
-<p><a href="https://www.plan-b.co.jp/blog/ad/41028/" target="_blank" rel="noopener noreferrer">PLAN-Bの解説記事</a>によると、インプレッションはあくまで「表示された回数」であって、「クリックされた回数」でも「購入につながった回数」でもない。広告がどれだけ多くの人の目に触れたかを測る指標だ。</p>
-
+<p><a href="https://www.plan-b.co.jp/blog/ad/41028/" rel="noopener noreferrer" target="_blank">PLAN-Bの解説記事</a>によると、インプレッションはあくまで「表示された回数」であって、「クリックされた回数」でも「購入につながった回数」でもない。広告がどれだけ多くの人の目に触れたかを測る指標だ。</p>
 <p>似た言葉がいくつかあって混乱したので、違いを整理しておく。</p>
-
 <table class="compare">
 <tr><th>指標</th><th>意味</th><th>数え方</th></tr>
 <tr><td>インプレッション（imp）</td><td>広告が表示された回数</td><td>同じ人に3回表示 → 3imp</td></tr>
@@ -177,39 +203,22 @@
 <tr><td>PV（ページビュー）</td><td>ページが表示された回数</td><td>1ページに広告3つ → PV1</td></tr>
 <tr><td>クリック数</td><td>広告がクリックされた回数</td><td>表示100回でクリック5回 → 5</td></tr>
 </table>
-
-<p><a href="https://digimarl.com/syllabus/listing-ads-impression/" target="_blank" rel="noopener noreferrer">デジマールの用語解説</a>にも書いてあったが、特にインプレッションとPVの違いは注意が必要だ。1ページに広告が3つ掲載されていれば、PVは1だがインプレッションは3になる。</p>
-
+<p><a href="https://digimarl.com/syllabus/listing-ads-impression/" rel="noopener noreferrer" target="_blank">デジマールの用語解説</a>にも書いてあったが、特にインプレッションとPVの違いは注意が必要だ。1ページに広告が3つ掲載されていれば、PVは1だがインプレッションは3になる。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当として広告を扱っていると、インプレッションという指標にはよく出くわす。僕が遭遇したケースを書いておく。</p>
-
 <h3>広告レポートの基本指標</h3>
-
-<p>Google広告やMeta広告（Facebook・Instagram広告）のレポートには、必ずインプレッション数が記載されている。<a href="https://www.ad-flex.com/column/adflex-column/2022071157295/" target="_blank" rel="noopener noreferrer">アドフレックスの記事</a>でも触れられていたが、インプレッション数はCTR（クリック率）を計算するための分母になる。CTR = クリック数 / インプレッション数 × 100なので、インプレッション数がわからないとクリック率も計算できない。</p>
-
+<p>Google広告やMeta広告（Facebook・Instagram広告）のレポートには、必ずインプレッション数が記載されている。<a href="https://www.ad-flex.com/column/adflex-column/2022071157295/" rel="noopener noreferrer" target="_blank">アドフレックスの記事</a>でも触れられていたが、インプレッション数はCTR（クリック率）を計算するための分母になる。CTR = クリック数 / インプレッション数 × 100なので、インプレッション数がわからないとクリック率も計算できない。</p>
 <h3>SNSの投稿分析</h3>
-
 <p>X（旧Twitter）やInstagramの分析画面でもインプレッション数は表示される。投稿がどれだけ表示されたかを測る指標として使われていて、広告だけでなく通常のオーガニック投稿でもインプレッション数は確認できる。SNS運用の成果報告で「先月のインプレッション数は○万」といった報告が出てくる。</p>
-
 <h3>ECモールの広告管理画面</h3>
-
 <p>楽天やAmazonのモール内広告でもインプレッション数は表示される。商品を検索したときに上部に出てくるスポンサー枠の広告が何回表示されたかがインプレッションだ。モール内広告の場合、インプレッション数が低ければ入札額が足りない可能性がある。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>インプレッション数だけでは広告の良し悪しは判断できない</h3>
-
-<p>インプレッション数が多くても、クリックされていなければ意味がない。インプレッション数と一緒に、CTR（クリック率）やCVR（コンバージョン率）も見ないと、広告の効果は正しく評価できない。<a href="https://www.profuture.co.jp/mk/column/what-is-impression" target="_blank" rel="noopener noreferrer">マーケトランクの記事</a>でも、インプレッション数は「広告のリーチ力」を測る指標であって、「広告の成果」を測る指標ではないと説明されていた。</p>
-
+<p>インプレッション数が多くても、クリックされていなければ意味がない。インプレッション数と一緒に、CTR（クリック率）やCVR（コンバージョン率）も見ないと、広告の効果は正しく評価できない。<a href="https://www.profuture.co.jp/mk/column/what-is-impression" rel="noopener noreferrer" target="_blank">マーケトランクの記事</a>でも、インプレッション数は「広告のリーチ力」を測る指標であって、「広告の成果」を測る指標ではないと説明されていた。</p>
 <h3>ビューアブルインプレッションという考え方</h3>
-
-<p>通常のインプレッションは、ページが読み込まれた時点でカウントされることがある。つまり、ユーザーがスクロールせずにページを閉じても、画面外に表示された広告がカウントされてしまう場合がある。これに対して「ビューアブルインプレッション」は、ユーザーが実際に見ることができた表示だけをカウントする。<a href="https://geniee.co.jp/cx-navi/marketing/impression/" target="_blank" rel="noopener noreferrer">GENIEE CX NAV1の解説</a>によると、広告の50%以上が1秒以上画面に表示された場合にビューアブルとみなすのが一般的な基準だ。</p>
-
+<p>通常のインプレッションは、ページが読み込まれた時点でカウントされることがある。つまり、ユーザーがスクロールせずにページを閉じても、画面外に表示された広告がカウントされてしまう場合がある。これに対して「ビューアブルインプレッション」は、ユーザーが実際に見ることができた表示だけをカウントする。<a href="https://geniee.co.jp/cx-navi/marketing/impression/" rel="noopener noreferrer" target="_blank">GENIEE CX NAV1の解説</a>によると、広告の50%以上が1秒以上画面に表示された場合にビューアブルとみなすのが一般的な基準だ。</p>
 <h3>CPM課金はインプレッション単位の費用</h3>
-
 <p><a href="listing-ads.html">リスティング広告</a>のクリック課金（CPC）とは別に、インプレッション数に応じて費用がかかる「CPM課金」（Cost Per Mille：1,000インプレッションあたりの費用）という課金方式もある。ディスプレイ広告やSNS広告で使われることが多い。認知拡大が目的のキャンペーンではCPM課金が選ばれることがある。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -218,35 +227,35 @@
 <li><a href="affiliate.html">アフィリエイト</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

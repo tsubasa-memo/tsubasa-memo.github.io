@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,69 +139,79 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ブロックノイズ
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>ブロックノイズとは？<br>写真がガビガビになる原因と対処法</h1>
+<div class="article-hero">
+<img alt="ブロックノイズとは？写真がガビガビになる原因と対処法" height="360" loading="eager" src="/thumbs/glossary/block-noise.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/block-noise.png" alt="ブロックノイズとは？写真がガビガビになる原因と対処法" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">ブロックノイズとは？<br/>写真がガビガビになる原因と対処法</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>ブロックノイズとは</h2>
-
 <p>ひとことで言うと、JPEG画像を圧縮しすぎたときに現れる四角いブロック状のノイズのことだ。</p>
-
-<p><a href="https://e-words.jp/w/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8E%E3%82%A4%E3%82%BA.html" target="_blank" rel="noopener noreferrer">IT用語辞典e-Wordsの解説</a>によると、JPEGは画像全体を8×8ピクセルのブロックに分割して、ブロック単位で圧縮処理を行う仕組みになっている。圧縮率が高いと、隣り合うブロック同士のつながりが不自然になって、格子状の模様が見えてしまうのがブロックノイズだ。</p>
-
-<p><a href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8E%E3%82%A4%E3%82%BA" target="_blank" rel="noopener noreferrer">Wikipediaのブロックノイズの項目</a>にはもう少し詳しく書いてあって、ブロックノイズにもいくつかの種類があるらしい。格子状に見える「グリッドノイズ」、斜めの線が階段状になる「ステアケースノイズ」などがあるとのこと。</p>
-
-<p>似た現象に「モスキートノイズ」というものもある。こちらはブロックの格子ではなく、被写体の輪郭まわりにチラチラと現れるノイズのことで、色の境界がはっきりしている部分で目立ちやすい。<a href="https://www.asahi-net.or.jp/~ax2s-kmtn/ref/jpeg.html" target="_blank" rel="noopener noreferrer">CyberLibrarianのJPEG画質劣化の解説ページ</a>にどちらの例も載っていた。</p>
-
+<p><a href="https://e-words.jp/w/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8E%E3%82%A4%E3%82%BA.html" rel="noopener noreferrer" target="_blank">IT用語辞典e-Wordsの解説</a>によると、JPEGは画像全体を8×8ピクセルのブロックに分割して、ブロック単位で圧縮処理を行う仕組みになっている。圧縮率が高いと、隣り合うブロック同士のつながりが不自然になって、格子状の模様が見えてしまうのがブロックノイズだ。</p>
+<p><a href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8E%E3%82%A4%E3%82%BA" rel="noopener noreferrer" target="_blank">Wikipediaのブロックノイズの項目</a>にはもう少し詳しく書いてあって、ブロックノイズにもいくつかの種類があるらしい。格子状に見える「グリッドノイズ」、斜めの線が階段状になる「ステアケースノイズ」などがあるとのこと。</p>
+<p>似た現象に「モスキートノイズ」というものもある。こちらはブロックの格子ではなく、被写体の輪郭まわりにチラチラと現れるノイズのことで、色の境界がはっきりしている部分で目立ちやすい。<a href="https://www.asahi-net.or.jp/~ax2s-kmtn/ref/jpeg.html" rel="noopener noreferrer" target="_blank">CyberLibrarianのJPEG画質劣化の解説ページ</a>にどちらの例も載っていた。</p>
 <h2>撮影で出てくる場面</h2>
-
 <p>ブロックノイズに遭遇する場面は撮影よりも、撮影後の画像処理や保存のタイミングで多い。僕が経験したケースを書いておく。</p>
-
 <h3>JPEG品質を下げすぎた場合</h3>
-
 <p>ECサイト用の画像はファイルサイズを小さくしたいので、つい品質を下げて保存してしまうことがある。Photoshopの「Web用に保存」で品質を50以下にすると、拡大しなくてもブロックノイズが目立ち始める。商品画像の圧縮については<a href="/compress-product-image.html">商品画像の圧縮方法まとめ</a>に書いたけど、品質80前後がバランスの取れるラインだと思う。</p>
-
 <h3>何度もJPEG保存を繰り返した場合</h3>
-
-<p>JPEGは保存するたびに圧縮がかかる非可逆圧縮の形式なので、編集→保存→編集→保存を繰り返すと、どんどん画質が落ちていく。<a href="https://psgips.net/photoshop-reference/jpeg-artifacts-removal" target="_blank" rel="noopener noreferrer">psgipsのPhotoshop解説記事</a>でも、JPEG圧縮の劣化をキレイに修正する方法が紹介されていたけど、そもそも劣化させないのが一番だ。作業中はPSD形式で保存しておいて、最終的な書き出しのときだけJPEGにするのがいい。</p>
-
+<p>JPEGは保存するたびに圧縮がかかる非可逆圧縮の形式なので、編集→保存→編集→保存を繰り返すと、どんどん画質が落ちていく。<a href="https://psgips.net/photoshop-reference/jpeg-artifacts-removal" rel="noopener noreferrer" target="_blank">psgipsのPhotoshop解説記事</a>でも、JPEG圧縮の劣化をキレイに修正する方法が紹介されていたけど、そもそも劣化させないのが一番だ。作業中はPSD形式で保存しておいて、最終的な書き出しのときだけJPEGにするのがいい。</p>
 <h3>スマホのスクリーンショットを拡大した場合</h3>
-
 <p>スマホの画面キャプチャはPNG形式で保存されることが多いけど、メールやSNSで共有するときにJPEGに変換されてしまうことがある。その圧縮時にブロックノイズが入って、文字がつぶれて読めなくなったことがあった。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>一度発生したブロックノイズは完全には戻せない</h3>
-
-<p>ブロックノイズは圧縮時に情報が捨てられたことで起きるので、捨てた情報を元に戻すことはできない。Photoshopのノイズ軽減フィルターや、<a href="https://axa.biopapyrus.jp/ia/jpeg-bloc-noise.html" target="_blank" rel="noopener noreferrer">biopapyrusの画像処理解説</a>で紹介されているような平滑化処理で目立たなくすることはできるけど、ぼかし処理が入るので細部のシャープさは失われる。</p>
-
+<p>ブロックノイズは圧縮時に情報が捨てられたことで起きるので、捨てた情報を元に戻すことはできない。Photoshopのノイズ軽減フィルターや、<a href="https://axa.biopapyrus.jp/ia/jpeg-bloc-noise.html" rel="noopener noreferrer" target="_blank">biopapyrusの画像処理解説</a>で紹介されているような平滑化処理で目立たなくすることはできるけど、ぼかし処理が入るので細部のシャープさは失われる。</p>
 <h3>圧縮と画質のバランスを意識する</h3>
-
 <p>ECの商品画像ではページの表示速度とのバランスも大事なので、画質を上げすぎてファイルが重くなるのも困る。JPEG品質80前後で保存して、ブロックノイズが出ていないか拡大して確認するのが実用的なやり方だと思う。圧縮の仕組み自体については<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>にまとめた。</p>
-
 <h3>グラデーション部分は特に注意</h3>
-
 <p>空や背景のグラデーションなど、色の変化がなだらかな部分ではブロックノイズが特に目立ちやすい。同じ圧縮率でも、色のコントラストが激しい部分より、単色に近い部分のほうが気になる。グラデーションが縞模様になる現象は<a href="tone-jump.html">トーンジャンプ</a>とも関係がある。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -209,35 +219,35 @@
 <li><a href="tone-jump.html">トーンジャンプ</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/compress-product-image.html">商品画像の圧縮方法まとめ｜画質を保ちながらファイルサイズを減らすには</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

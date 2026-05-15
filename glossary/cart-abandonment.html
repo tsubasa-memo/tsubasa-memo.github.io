@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,73 +139,81 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; カゴ落ち
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>カゴ落ちとは？<br>お客さんが買わずに帰る原因を調べた</h1>
+<div class="article-hero">
+<img alt="カゴ落ちとは？お客さんが買わずに帰る原因を調べた" height="360" loading="eager" src="/thumbs/glossary/cart-abandonment.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/cart-abandonment.png" alt="カゴ落ちとは？お客さんが買わずに帰る原因を調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">カゴ落ちとは？<br/>お客さんが買わずに帰る原因を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>カゴ落ちとは</h2>
-
 <p>ひとことで言うと、ECサイトでお客さんが商品をカートに入れたのに、購入を完了せずにそのまま離脱してしまう現象のこと。英語では「Cart Abandonment」と呼ばれている。</p>
-
-<p><a href="https://www.shopify.com/jp/blog/ecommerce-conversion-rate" target="_blank" rel="noopener nofollow">Shopifyの公式ブログ</a>でも触れられているが、カートに入れる＝購入意思がある、とは限らない。「とりあえず入れておこう」「あとで考えよう」というユーザーも多く、カゴ落ちはECサイトでは避けられない現象だ。</p>
-
+<p><a href="https://www.shopify.com/jp/blog/ecommerce-conversion-rate" rel="noopener nofollow" target="_blank">Shopifyの公式ブログ</a>でも触れられているが、カートに入れる＝購入意思がある、とは限らない。「とりあえず入れておこう」「あとで考えよう」というユーザーも多く、カゴ落ちはECサイトでは避けられない現象だ。</p>
 <p>カゴ落ち率の計算式は「1 −（購入完了数 ÷ カートに商品を入れた数）× 100」で求められる。たとえばカートに入れた人が200人、購入完了が60人なら、カゴ落ち率は70%になる。</p>
-
-<p>UXリサーチの専門機関である<a href="https://baymard.com/lists/cart-abandonment-rate" target="_blank" rel="noopener noreferrer">Baymard Institute</a>の調査によると、世界平均のカゴ落ち率は約70%。つまり、カートに入れた人の約7割が買わずに帰っている。最初にこの数字を見たとき、正直「そんなに高いの？」と驚いた。</p>
-
+<p>UXリサーチの専門機関である<a href="https://baymard.com/lists/cart-abandonment-rate" rel="noopener noreferrer" target="_blank">Baymard Institute</a>の調査によると、世界平均のカゴ落ち率は約70%。つまり、カートに入れた人の約7割が買わずに帰っている。最初にこの数字を見たとき、正直「そんなに高いの？」と驚いた。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>僕がEC担当をしていて、カゴ落ちを意識する場面は思ったより多かった。</p>
-
 <h3>会議で「カゴ落ち率」を聞かれた</h3>
-
-<p>冒頭にも書いたが、僕がカゴ落ちを調べるきっかけになったのがこれ。Google Analyticsの「カートに追加」イベントと「購入完了」イベントの数字を比べれば、自社サイトのカゴ落ち率はだいたい把握できる。<a href="https://support.google.com/analytics/answer/9267735?hl=ja" target="_blank" rel="noopener noreferrer">Google Analyticsのヘルプ</a>にeコマースレポートの見方が載っているので、ここを参考にした。</p>
-
+<p>冒頭にも書いたが、僕がカゴ落ちを調べるきっかけになったのがこれ。Google Analyticsの「カートに追加」イベントと「購入完了」イベントの数字を比べれば、自社サイトのカゴ落ち率はだいたい把握できる。<a href="https://support.google.com/analytics/answer/9267735?hl=ja" rel="noopener noreferrer" target="_blank">Google Analyticsのヘルプ</a>にeコマースレポートの見方が載っているので、ここを参考にした。</p>
 <h3>送料が原因で離脱されていた</h3>
-
-<p>カゴ落ちの原因として一番多いのが「想定外の追加コスト」だ。<a href="https://www.future-shop.jp/magazine/cart-dropped" target="_blank" rel="noopener noreferrer">futureshopのカゴ落ち解説記事</a>にも書いてあったが、商品ページでは送料が見えず、購入手続きの最後で合計金額がポンと上がると、「思ったより高い」と感じて離脱してしまう。僕のサイトでも送料の表示位置を見直す話になった。</p>
-
+<p>カゴ落ちの原因として一番多いのが「想定外の追加コスト」だ。<a href="https://www.future-shop.jp/magazine/cart-dropped" rel="noopener noreferrer" target="_blank">futureshopのカゴ落ち解説記事</a>にも書いてあったが、商品ページでは送料が見えず、購入手続きの最後で合計金額がポンと上がると、「思ったより高い」と感じて離脱してしまう。僕のサイトでも送料の表示位置を見直す話になった。</p>
 <h3>決済手段が少なくて離脱されていた</h3>
-
-<p>クレジットカードしか使えないサイトだと、「Amazon Pay使いたかったのに」「後払いないの？」という理由で離脱されることがある。<a href="https://ja.komoju.com/blog/ec/cart-abandonment/" target="_blank" rel="noopener noreferrer">KOMOJUのカゴ落ち対策記事</a>でも、決済手段の不足がカゴ落ちの主要因として挙げられていた。</p>
-
+<p>クレジットカードしか使えないサイトだと、「Amazon Pay使いたかったのに」「後払いないの？」という理由で離脱されることがある。<a href="https://ja.komoju.com/blog/ec/cart-abandonment/" rel="noopener noreferrer" target="_blank">KOMOJUのカゴ落ち対策記事</a>でも、決済手段の不足がカゴ落ちの主要因として挙げられていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>カゴ落ち率70%は「普通」</h3>
-
 <p>最初は70%という数字にびびったが、業界全体の平均がそのくらいなので、カゴ落ち率が70%だからといって即問題というわけではない。大事なのは自社の数字を定期的にチェックして、改善できる部分を探すことだ。</p>
-
 <h3>対策は「コストの見える化」から</h3>
-
-<p>送料・手数料・税込み価格を商品ページの時点で表示するだけでも、カゴ落ちはかなり減る。購入手続きの最後にサプライズで金額が増えるのが一番嫌われる。<a href="https://frauddetection.cacco.co.jp/media/ec/3860/" target="_blank" rel="noopener noreferrer">かっこ株式会社のメディア記事</a>でも、コスト明示の重要性が強調されていた。</p>
-
+<p>送料・手数料・税込み価格を商品ページの時点で表示するだけでも、カゴ落ちはかなり減る。購入手続きの最後にサプライズで金額が増えるのが一番嫌われる。<a href="https://frauddetection.cacco.co.jp/media/ec/3860/" rel="noopener noreferrer" target="_blank">かっこ株式会社のメディア記事</a>でも、コスト明示の重要性が強調されていた。</p>
 <h3>カゴ落ちメールという手もある</h3>
-
-<p>カートに商品を入れたまま離脱したユーザーに「カートに商品が残っています」というリマインドメールを送る施策。これは「カゴ落ちメール」と呼ばれている。<a href="https://www.braze.com/ja/resources/articles/What-does-cart-abandonment-mean" target="_blank" rel="noopener noreferrer">Brazeの解説記事</a>によると、カゴ落ちメールの開封率は他のメールより高い傾向があるらしい。導入にはメール配信ツールやMAツールが必要になるが、効果は期待できそうだ。</p>
-
+<p>カートに商品を入れたまま離脱したユーザーに「カートに商品が残っています」というリマインドメールを送る施策。これは「カゴ落ちメール」と呼ばれている。<a href="https://www.braze.com/ja/resources/articles/What-does-cart-abandonment-mean" rel="noopener noreferrer" target="_blank">Brazeの解説記事</a>によると、カゴ落ちメールの開封率は他のメールより高い傾向があるらしい。導入にはメール配信ツールやMAツールが必要になるが、効果は期待できそうだ。</p>
 <h3>会員登録を強制しない</h3>
-
 <p>「購入するのに会員登録が必要」というのも離脱の原因になる。ゲスト購入（会員登録なしで買える仕組み）を用意するだけで、購入完了率が上がるケースは多い。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -214,35 +222,35 @@
 <li><a href="ab-test.html">ABテスト</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

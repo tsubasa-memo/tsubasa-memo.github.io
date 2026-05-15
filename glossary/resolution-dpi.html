@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,74 +139,84 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 解像度・dpi
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>解像度・dpiとは？<br>印刷とWebで必要な数値が違う理由</h1>
+<div class="article-hero">
+<img alt="解像度・dpiとは？印刷とWebで必要な数値が違う理由" height="360" loading="eager" src="/thumbs/glossary/resolution-dpi.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/resolution-dpi.png" alt="解像度・dpiとは？印刷とWebで必要な数値が違う理由" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">解像度・dpiとは？<br/>印刷とWebで必要な数値が違う理由</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>解像度・dpiとは</h2>
-
 <p>ひとことで言うと、1インチ（約2.54cm）あたりに含まれるドット（点）の数を表す値のこと。dpiは「dots per inch」の略で、この数値が高いほど画像が細かく、きれいに見える。</p>
-
-<p><a href="https://www.graphic.jp/feature/image_resolution" target="_blank" rel="noopener noreferrer">印刷通販グラフィックの解像度解説ページ</a>にわかりやすい図が載っていた。たとえば72dpiの画像は1インチに72個のドットが並んでいて、350dpiなら350個のドットが並んでいる。当然350dpiのほうが密度が高くて精細な表示になる。</p>
-
-<p>よく似た単位に「ppi（pixels per inch）」がある。dpiが印刷のドット密度を指すのに対して、ppiはデジタル画像のピクセル密度を指す。厳密には違う概念だけど、<a href="https://www.vanfu.co.jp/column/data/resolution.html" target="_blank" rel="noopener noreferrer">バンフーオンラインショップの解像度解説</a>にも書いてあったように、実務ではほぼ同じ意味で使われていることが多い。</p>
-
+<p><a href="https://www.graphic.jp/feature/image_resolution" rel="noopener noreferrer" target="_blank">印刷通販グラフィックの解像度解説ページ</a>にわかりやすい図が載っていた。たとえば72dpiの画像は1インチに72個のドットが並んでいて、350dpiなら350個のドットが並んでいる。当然350dpiのほうが密度が高くて精細な表示になる。</p>
+<p>よく似た単位に「ppi（pixels per inch）」がある。dpiが印刷のドット密度を指すのに対して、ppiはデジタル画像のピクセル密度を指す。厳密には違う概念だけど、<a href="https://www.vanfu.co.jp/column/data/resolution.html" rel="noopener noreferrer" target="_blank">バンフーオンラインショップの解像度解説</a>にも書いてあったように、実務ではほぼ同じ意味で使われていることが多い。</p>
 <table class="compare">
 <tr><th>用途</th><th>推奨解像度</th><th>理由</th></tr>
 <tr><td>Web・画面表示</td><td>72〜96ppi</td><td>モニターの表示密度に合わせた値。ブラウザはピクセル数で表示するため、dpi自体は影響しない</td></tr>
 <tr><td>印刷（フルカラー）</td><td>350dpi</td><td>商業印刷の網点（175lpi）の2倍が推奨</td></tr>
 <tr><td>印刷（モノクロ）</td><td>600〜1200dpi</td><td>文字や線画はより高い解像度が必要</td></tr>
 </table>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当として仕事をしていて、dpiを意識する場面はそこまで多くない。ただ、印刷物がからむときに急に出てくるので、知っておいたほうがいい。</p>
-
 <h3>チラシやカタログの入稿</h3>
-
-<p>商品カタログやチラシを印刷するとき、入稿ガイドには必ず「350dpi以上」と書いてある。<a href="https://www.wave-inc.co.jp/data/imagefile/image_size.html" target="_blank" rel="noopener noreferrer">ネット印刷WAVEの画像解像度ガイド</a>でも、原寸サイズで350dpiが推奨と明記されていた。EC用にWeb向けに最適化した72dpiの画像をそのまま印刷に回すと、ぼやけた仕上がりになってしまう。</p>
-
+<p>商品カタログやチラシを印刷するとき、入稿ガイドには必ず「350dpi以上」と書いてある。<a href="https://www.wave-inc.co.jp/data/imagefile/image_size.html" rel="noopener noreferrer" target="_blank">ネット印刷WAVEの画像解像度ガイド</a>でも、原寸サイズで350dpiが推奨と明記されていた。EC用にWeb向けに最適化した72dpiの画像をそのまま印刷に回すと、ぼやけた仕上がりになってしまう。</p>
 <h3>パッケージや同梱物の制作</h3>
-
-<p>商品パッケージやサンクスカードなど、同梱物を作るときも印刷用の解像度が必要になる。商品写真を流用するなら、最初から高解像度で撮影しておかないとあとで困る。<a href="https://onlineshop.dmps.co.jp/content/tips/resolution/" target="_blank" rel="noopener noreferrer">ダイオーミウラの解像度解説</a>にも、印刷とWebの解像度の違いがまとまっていて参考になった。</p>
-
+<p>商品パッケージやサンクスカードなど、同梱物を作るときも印刷用の解像度が必要になる。商品写真を流用するなら、最初から高解像度で撮影しておかないとあとで困る。<a href="https://onlineshop.dmps.co.jp/content/tips/resolution/" rel="noopener noreferrer" target="_blank">ダイオーミウラの解像度解説</a>にも、印刷とWebの解像度の違いがまとまっていて参考になった。</p>
 <h3>ECモールの商品画像登録</h3>
-
 <p>一方で、楽天やAmazonに画像をアップロードするときは、dpiを気にする必要はほとんどない。モールの画像規定はピクセル数（px）で指定されているので、dpiではなくピクセルサイズのほうが重要だ。ブラウザは画像のdpi設定を無視してピクセル数だけを見て表示するので、72dpiでも350dpiでも画面上の見え方は変わらない。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>Web用と印刷用で画像を分けて管理する</h3>
-
-<p>同じ商品写真でも、Web用（72dpi・適度なピクセルサイズ）と印刷用（350dpi・大きいピクセルサイズ）は別ファイルとして保管しておくのがいい。Web用に最適化した画像を後から印刷に転用しようとすると、解像度もピクセル数も足りなくて使えないことが多い。<a href="https://kamisommelier.jp/2689/" target="_blank" rel="noopener noreferrer">紙ソムリエの印刷解像度解説</a>にも、用途別の管理が推奨されていた。</p>
-
+<p>同じ商品写真でも、Web用（72dpi・適度なピクセルサイズ）と印刷用（350dpi・大きいピクセルサイズ）は別ファイルとして保管しておくのがいい。Web用に最適化した画像を後から印刷に転用しようとすると、解像度もピクセル数も足りなくて使えないことが多い。<a href="https://kamisommelier.jp/2689/" rel="noopener noreferrer" target="_blank">紙ソムリエの印刷解像度解説</a>にも、用途別の管理が推奨されていた。</p>
 <h3>解像度を後から上げても画質は上がらない</h3>
-
 <p>Photoshopで72dpiの画像を350dpiに変更することはできるけど、それは数字を書き換えただけ。もとの画像にない情報が追加されるわけではないので、ぼやけた画像のままdpiの数値だけ変わることになる。高解像度が必要な場合は、最初から高画質で撮影・スキャンしておく必要がある。</p>
-
 <h3>ECサイト用はピクセル数で管理する</h3>
-
 <p>Web用の画像ではdpiよりピクセル数のほうが大事だ。Amazonなら長辺1600px以上、楽天なら横700px以上。各モールの画像規定は<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>に書いた。ファイルサイズを軽くしたいときは<a href="/compress-product-image.html">商品画像の圧縮テクニック</a>も参考になる。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -216,7 +226,6 @@
 <li><a href="gasosuu.html">画素数</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -224,28 +233,29 @@
 <li><a href="/compress-product-image.html">商品画像の圧縮テクニック</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,78 +139,86 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; レイヤー
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>レイヤーとは？<br>Photoshopの基本概念を調べたメモ</h1>
+<div class="article-hero">
+<img alt="レイヤーとは？Photoshopの基本概念を調べたメモ" height="360" loading="eager" src="/thumbs/glossary/layer.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/layer.png" alt="レイヤーとは？Photoshopの基本概念を調べたメモ" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">レイヤーとは？<br/>Photoshopの基本概念を調べたメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>レイヤーとは</h2>
-
 <p>ひとことで言うと、透明なシートを何枚も重ねて1つの画像を作る仕組みのこと。Photoshopをはじめとする画像編集ソフトの基本的な概念だ。</p>
-
-<p><a href="https://helpx.adobe.com/jp/photoshop/using/layer-basics.html" target="_blank" rel="noopener noreferrer">Adobeの公式ヘルプ</a>によると、レイヤーは透明なフィルムのようなもので、それぞれのレイヤーに文字・写真・図形などを配置できる。レイヤーの透明な部分からは下のレイヤーが見える仕組みになっていて、全部重ねると1枚の画像に見えるというわけだ。</p>
-
+<p><a href="https://helpx.adobe.com/jp/photoshop/using/layer-basics.html" rel="noopener noreferrer" target="_blank">Adobeの公式ヘルプ</a>によると、レイヤーは透明なフィルムのようなもので、それぞれのレイヤーに文字・写真・図形などを配置できる。レイヤーの透明な部分からは下のレイヤーが見える仕組みになっていて、全部重ねると1枚の画像に見えるというわけだ。</p>
 <p>たとえば商品バナーなら、こんな感じでレイヤーが分かれている。</p>
-
 <ul>
 <li>一番下: 背景色（白やグレーなど）</li>
 <li>真ん中: 商品写真</li>
 <li>上: キャッチコピーの文字</li>
 <li>最上部: セール用のアイコンやバッジ</li>
 </ul>
-
-<p>こうやって分かれていれば、「文字だけ修正したい」「背景色を変えたい」というときに、他の要素に影響を与えずに編集できる。<a href="https://www.adobe.com/jp/creativecloud/photography/discover/layers.html" target="_blank" rel="noopener noreferrer">Adobe Creative Cloudの解説ページ</a>でも、レイヤーを使う最大のメリットは「非破壊編集ができること」だと書いてあった。</p>
-
+<p>こうやって分かれていれば、「文字だけ修正したい」「背景色を変えたい」というときに、他の要素に影響を与えずに編集できる。<a href="https://www.adobe.com/jp/creativecloud/photography/discover/layers.html" rel="noopener noreferrer" target="_blank">Adobe Creative Cloudの解説ページ</a>でも、レイヤーを使う最大のメリットは「非破壊編集ができること」だと書いてあった。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当として仕事をしていると、レイヤーを意識する場面がいくつかある。僕が実際に遭遇したケースを書いておく。</p>
-
 <h3>デザイナーとのデータやり取り</h3>
-
 <p>バナーやLP用の画像をデザイナーに依頼すると、納品ファイルがPSD形式で届くことがある。PSDはPhotoshopの保存形式で、レイヤー情報をそのまま保持できる。逆に「JPEGで送ります」と言われた場合、レイヤーは統合されているので、後から個別の修正ができない。</p>
-
-<p>修正の可能性があるデータは「レイヤーを保持した状態のPSD」で受け取っておくのが大事だと、<a href="https://saruwakakun.com/design/photoshop/layer" target="_blank" rel="noopener noreferrer">サルワカの Photoshopレイヤー解説</a>にも書いてあった。</p>
-
+<p>修正の可能性があるデータは「レイヤーを保持した状態のPSD」で受け取っておくのが大事だと、<a href="https://saruwakakun.com/design/photoshop/layer" rel="noopener noreferrer" target="_blank">サルワカの Photoshopレイヤー解説</a>にも書いてあった。</p>
 <h3>商品画像の文字入れ・バナー作成</h3>
-
-<p>楽天やYahoo!ショッピングの商品画像に文字やアイコンを入れるとき、レイヤーを分けておくと修正が楽だ。「セール価格を変えたい」「キャッチコピーを差し替えたい」といった修正は、文字レイヤーだけ編集すれば済む。<a href="https://shuffle.genkosha.com/software/photoshop/skill/20027.html" target="_blank" rel="noopener noreferrer">玄光社のPhotoshop解説記事</a>にも、レイヤーを活用したバナー制作の基本が紹介されていた。</p>
-
+<p>楽天やYahoo!ショッピングの商品画像に文字やアイコンを入れるとき、レイヤーを分けておくと修正が楽だ。「セール価格を変えたい」「キャッチコピーを差し替えたい」といった修正は、文字レイヤーだけ編集すれば済む。<a href="https://shuffle.genkosha.com/software/photoshop/skill/20027.html" rel="noopener noreferrer" target="_blank">玄光社のPhotoshop解説記事</a>にも、レイヤーを活用したバナー制作の基本が紹介されていた。</p>
 <h3>白抜き画像の作成</h3>
-
 <p>商品写真の背景を白にする「白抜き」作業でもレイヤーが使われる。商品部分を切り抜いたレイヤーと、白い背景レイヤーを重ねるという仕組みだ。スマホアプリでも同じような操作ができるものがある。レタッチアプリについては<a href="/retouch-apps.html">スマホレタッチアプリ5選</a>にまとめている。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>レイヤーが多いほどファイルサイズが大きくなる</h3>
-
 <p>レイヤーを細かく分けるほど編集の自由度は上がるが、ファイルサイズも大きくなる。商品画像を大量に扱うEC業務では、作業用のPSD（レイヤーあり）とWeb掲載用のJPEG（レイヤー統合済み）を分けて管理するのが現実的だ。</p>
-
 <h3>JPEGやPNGにはレイヤー情報が残らない</h3>
-
-<p>Webで使うJPEGやPNGは、保存した時点でレイヤーが1枚に統合される。一度統合してしまうと元には戻せないので、修正の可能性がある画像は必ずPSD形式でも保存しておく。<a href="https://helpx.adobe.com/jp/photoshop/using/saving-files.html" target="_blank" rel="noopener noreferrer">Adobeの保存形式に関する公式ヘルプ</a>にも、作業中のデータはPSD形式で保存するよう推奨されていた。</p>
-
+<p>Webで使うJPEGやPNGは、保存した時点でレイヤーが1枚に統合される。一度統合してしまうと元には戻せないので、修正の可能性がある画像は必ずPSD形式でも保存しておく。<a href="https://helpx.adobe.com/jp/photoshop/using/saving-files.html" rel="noopener noreferrer" target="_blank">Adobeの保存形式に関する公式ヘルプ</a>にも、作業中のデータはPSD形式で保存するよう推奨されていた。</p>
 <h3>レイヤーの「表示・非表示」を覚えておくと便利</h3>
-
 <p>Photoshopではレイヤーパネルの目のアイコンをクリックすると、そのレイヤーの表示・非表示を切り替えられる。「文字なしバージョンを作りたい」「背景色を比較したい」というときに、レイヤーを削除せず非表示にするだけで済むので覚えておくと便利だ。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -220,35 +228,35 @@
 <li><a href="clipping-path.html">クリッピングパス</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/retouch-apps.html">スマホレタッチアプリ5選</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,65 +139,77 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; WMS
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>WMSとは？<br>倉庫管理システムの意味を調べたメモ</h1>
+<div class="article-hero">
+<img alt="WMSとは？倉庫管理システムの意味を調べたメモ" height="360" loading="eager" src="/thumbs/glossary/wms.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/wms.png" alt="WMSとは？倉庫管理システムの意味を調べたメモ" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">WMSとは？<br/>倉庫管理システムの意味を調べたメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>WMSとは</h2>
-
 <p>ひとことで言うと、倉庫の中で行われる入荷・保管・ピッキング・出荷・棚卸といった一連の業務をデジタルで管理するシステムのことだ。WMSは「Warehouse Management System」の略で、日本語では「倉庫管理システム」と訳される。</p>
-
-<p><a href="https://www.logizard-zero.com/columns/logizardwms.html" target="_blank" rel="noopener noreferrer">ロジザードのWMS解説</a>によると、WMSが管理するのは基幹システムやERPで扱う「理論在庫」ではなく、倉庫にある「実在庫」だ。入出荷の動きに合わせてリアルタイムに数量を更新していくので、今この瞬間に倉庫に何がいくつあるかを正確に把握できる。</p>
-
-<p>似た言葉に「在庫管理システム」があるけど、<a href="https://it-trend.jp/warehouse_management_system/article/system" target="_blank" rel="noopener noreferrer">ITトレンドの解説</a>を読むと違いが整理されていた。在庫管理システムは商品の数量や入出庫履歴の管理が中心。WMSはそれに加えて、倉庫内のどの棚にどの商品を置くかというロケーション管理や、ピッキング指示の発行、作業員への作業割り当てまでカバーする。倉庫の「オペレーション全体」を管理するのがWMSだ。</p>
-
+<p><a href="https://www.logizard-zero.com/columns/logizardwms.html" rel="noopener noreferrer" target="_blank">ロジザードのWMS解説</a>によると、WMSが管理するのは基幹システムやERPで扱う「理論在庫」ではなく、倉庫にある「実在庫」だ。入出荷の動きに合わせてリアルタイムに数量を更新していくので、今この瞬間に倉庫に何がいくつあるかを正確に把握できる。</p>
+<p>似た言葉に「在庫管理システム」があるけど、<a href="https://it-trend.jp/warehouse_management_system/article/system" rel="noopener noreferrer" target="_blank">ITトレンドの解説</a>を読むと違いが整理されていた。在庫管理システムは商品の数量や入出庫履歴の管理が中心。WMSはそれに加えて、倉庫内のどの棚にどの商品を置くかというロケーション管理や、ピッキング指示の発行、作業員への作業割り当てまでカバーする。倉庫の「オペレーション全体」を管理するのがWMSだ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <h3>3PL業者との連携</h3>
-
-<p>物流を3PL業者に委託すると、その業者が使っているWMSにアクセスして在庫状況を確認することになる。<a href="https://www.kantsu.com/case/wms%E3%81%A8%E3%81%AF/" target="_blank" rel="noopener noreferrer">関通のWMS解説</a>にも書いてあったけど、WMSの管理画面からリアルタイムの在庫数や出荷状況を見られるかどうかは、3PL業者を選ぶときのチェックポイントになる。</p>
-
+<p>物流を3PL業者に委託すると、その業者が使っているWMSにアクセスして在庫状況を確認することになる。<a href="https://www.kantsu.com/case/wms%E3%81%A8%E3%81%AF/" rel="noopener noreferrer" target="_blank">関通のWMS解説</a>にも書いてあったけど、WMSの管理画面からリアルタイムの在庫数や出荷状況を見られるかどうかは、3PL業者を選ぶときのチェックポイントになる。</p>
 <h3>ECモールとのデータ連携</h3>
-
 <p>楽天やAmazonなど複数モールに出店していると、それぞれの注文データをWMSに取り込んで出荷指示を出す必要がある。WMSが各モールのAPIに対応していれば、注文が入ったら自動で出荷指示が生成されるので、手作業でCSVをダウンロードしてアップロードする手間が省ける。</p>
-
 <h3>棚卸の効率化</h3>
-
-<p>WMSを使っていない場合、棚卸は手書きの棚卸表とExcelで管理することになる。WMSならバーコードリーダーやハンディターミナルでスキャンするだけで棚卸データが記録されるので、作業時間が大幅に短くなる。<a href="https://sol.logisteed.com/useful/wms/" target="_blank" rel="noopener noreferrer">ロジスティードのWMS解説</a>でもこの点が紹介されていた。</p>
-
+<p>WMSを使っていない場合、棚卸は手書きの棚卸表とExcelで管理することになる。WMSならバーコードリーダーやハンディターミナルでスキャンするだけで棚卸データが記録されるので、作業時間が大幅に短くなる。<a href="https://sol.logisteed.com/useful/wms/" rel="noopener noreferrer" target="_blank">ロジスティードのWMS解説</a>でもこの点が紹介されていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>クラウド型が主流になりつつある</h3>
-
-<p>以前はサーバーを自社に置くオンプレミス型が多かったけど、最近はクラウド型のWMSが増えている。クラウド型なら初期費用が抑えられるし、月額課金で始められる。EC事業者の規模なら、まずはクラウド型で十分だと思う。<a href="https://www.zenrin-datacom.net/solution/blog/wms-commentary" target="_blank" rel="noopener noreferrer">ゼンリンデータコムの解説</a>にも導入形態の比較が載っていた。</p>
-
+<p>以前はサーバーを自社に置くオンプレミス型が多かったけど、最近はクラウド型のWMSが増えている。クラウド型なら初期費用が抑えられるし、月額課金で始められる。EC事業者の規模なら、まずはクラウド型で十分だと思う。<a href="https://www.zenrin-datacom.net/solution/blog/wms-commentary" rel="noopener noreferrer" target="_blank">ゼンリンデータコムの解説</a>にも導入形態の比較が載っていた。</p>
 <h3>小規模なうちはExcelでも回せる</h3>
-
 <p>SKU数が数十点で日に数件の出荷しかないなら、正直Excelの在庫表で事足りる。WMSの導入にはそれなりのコストがかかるので、出荷件数やSKU数が増えてきて管理が追いつかなくなったタイミングで検討するのが現実的だ。</p>
-
 <h3>ECカートやモールとの連携可否を確認する</h3>
-
 <p>WMSを選ぶときに見落としがちなのが、自分たちが使っているECカートやモールとの連携対応。Shopify、楽天、Amazonなど、どのプラットフォームとAPI連携できるかは必ず確認したほうがいい。連携できないと結局手動でデータをやりとりすることになり、WMSを入れた意味が半減する。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -207,35 +219,35 @@
 <li><a href="shipping-instruction.html">出荷指示書</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

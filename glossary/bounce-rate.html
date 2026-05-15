@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,77 +139,85 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 直帰率
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>直帰率とは？<br>Google Analyticsで見かけた指標の意味</h1>
+<div class="article-hero">
+<img alt="直帰率とは？Google Analyticsで見かけた指標の意味" height="360" loading="eager" src="/thumbs/glossary/bounce-rate.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/bounce-rate.png" alt="直帰率とは？Google Analyticsで見かけた指標の意味" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">直帰率とは？<br/>Google Analyticsで見かけた指標の意味</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>直帰率とは</h2>
-
 <p>ひとことで言うと、サイトに来たユーザーが何もせずに帰ってしまったセッションの割合のこと。英語では「Bounce Rate」と呼ばれている。</p>
-
-<p>ただ、GA4になって定義が変わった点に注意が必要だ。<a href="https://support.google.com/analytics/answer/12195621?hl=ja" target="_blank" rel="noopener noreferrer">Google Analyticsの公式ヘルプ</a>によると、GA4での直帰率は「エンゲージメントのなかったセッションの割合」と定義されている。</p>
-
+<p>ただ、GA4になって定義が変わった点に注意が必要だ。<a href="https://support.google.com/analytics/answer/12195621?hl=ja" rel="noopener noreferrer" target="_blank">Google Analyticsの公式ヘルプ</a>によると、GA4での直帰率は「エンゲージメントのなかったセッションの割合」と定義されている。</p>
 <p>ここで言う「エンゲージメントのあるセッション」とは、以下のいずれかに該当するセッションだ。</p>
-
 <ul>
 <li>10秒を超えて継続したセッション</li>
 <li>コンバージョンイベントが発生したセッション</li>
 <li>2回以上のページビューが発生したセッション</li>
 </ul>
-
 <p>つまり、GA4では「ページを開いて10秒以上読んでいれば、たとえ1ページしか見ていなくてもエンゲージメントあり（＝直帰ではない）」と判定される。旧バージョンのUA（ユニバーサルアナリティクス）では「1ページだけ見て離脱＝直帰」だったので、同じサイトでもGA4のほうが直帰率は低く出る。</p>
-
-<p><a href="https://www.ebis.ne.jp/column/ga4-bounce-rate/" target="_blank" rel="noopener nofollow">アドエビスのGA4直帰率解説</a>にも、UAとGA4では数値が変わるので過去データとの単純比較はできないと書いてあった。</p>
-
+<p><a href="https://www.ebis.ne.jp/column/ga4-bounce-rate/" rel="noopener nofollow" target="_blank">アドエビスのGA4直帰率解説</a>にも、UAとGA4では数値が変わるので過去データとの単純比較はできないと書いてあった。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>直帰率はEC担当にとって身近な指標だった。僕が実際に意識した場面を書いておく。</p>
-
 <h3>GAのレポートで「直帰率」が並んでいた</h3>
-
-<p>GA4のレポートには最初から直帰率が表示されているわけではなく、「レポートをカスタマイズ」から指標を追加する必要がある。<a href="https://blog.siteanatomy.com/role/bounce-rate.html" target="_blank" rel="noopener noreferrer">やさしいGoogleアナリティクスブログ</a>に手順が載っていたので、それを見ながら設定した。エンゲージメント率のほうがGA4では標準的な指標として扱われているらしい。</p>
-
+<p>GA4のレポートには最初から直帰率が表示されているわけではなく、「レポートをカスタマイズ」から指標を追加する必要がある。<a href="https://blog.siteanatomy.com/role/bounce-rate.html" rel="noopener noreferrer" target="_blank">やさしいGoogleアナリティクスブログ</a>に手順が載っていたので、それを見ながら設定した。エンゲージメント率のほうがGA4では標準的な指標として扱われているらしい。</p>
 <h3>商品ページの直帰率が高くて問題になった</h3>
-
 <p>広告から飛んできた先の商品ページで直帰率が高い場合、「広告で期待した内容とページの内容がずれている」可能性がある。写真が良くない、説明が足りない、読み込みが遅い、といった原因が考えられる。</p>
-
 <h3>トップページの直帰率を改善したい</h3>
-
 <p>トップページの直帰率が高いということは、来た人がそのまま帰っている＝他のページへの導線がうまく機能していないことを意味する。ナビゲーションの見直しや、人気商品へのリンク配置を変えるなどの改善が考えられる。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>直帰率が高い＝悪い、とは限らない</h3>
-
-<p>たとえばFAQページやお問い合わせページは、そのページだけで目的が達成されるので直帰率が高くなるのは自然だ。<a href="https://wacul-ai.com/blog/access-analysis/ga4-bounce-rate/" target="_blank" rel="noopener noreferrer">AIアナリストのブログ</a>でも、ページの役割によって直帰率の評価は変わると説明されていた。</p>
-
+<p>たとえばFAQページやお問い合わせページは、そのページだけで目的が達成されるので直帰率が高くなるのは自然だ。<a href="https://wacul-ai.com/blog/access-analysis/ga4-bounce-rate/" rel="noopener noreferrer" target="_blank">AIアナリストのブログ</a>でも、ページの役割によって直帰率の評価は変わると説明されていた。</p>
 <h3>GA4ではエンゲージメント率を先に見る</h3>
-
-<p>GA4では直帰率よりエンゲージメント率（＝100%−直帰率）のほうが重視されている。エンゲージメント率が高い＝ユーザーがしっかりコンテンツを見ている、という前向きな指標なので、こちらを基準に考えたほうがわかりやすい。<a href="https://www.uncovertruth.co.jp/service/ca/blog/2024/06/24/ga4-engage-bounce/" target="_blank" rel="noopener noreferrer">CONTENT ANALYTICSのブログ</a>にも両者の関係が詳しく書いてあった。</p>
-
+<p>GA4では直帰率よりエンゲージメント率（＝100%−直帰率）のほうが重視されている。エンゲージメント率が高い＝ユーザーがしっかりコンテンツを見ている、という前向きな指標なので、こちらを基準に考えたほうがわかりやすい。<a href="https://www.uncovertruth.co.jp/service/ca/blog/2024/06/24/ga4-engage-bounce/" rel="noopener noreferrer" target="_blank">CONTENT ANALYTICSのブログ</a>にも両者の関係が詳しく書いてあった。</p>
 <h3>ページの読み込み速度も影響する</h3>
-
-<p>ページの表示が遅いと、内容を見る前にユーザーが離脱してしまう。Google の<a href="https://developers.google.com/speed/pagespeed/insights/?hl=ja" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>でページの表示速度をチェックして、遅い場合は画像の軽量化やサーバーの見直しを検討するとよい。</p>
-
+<p>ページの表示が遅いと、内容を見る前にユーザーが離脱してしまう。Google の<a href="https://developers.google.com/speed/pagespeed/insights/?hl=ja" rel="noopener noreferrer" target="_blank">PageSpeed Insights</a>でページの表示速度をチェックして、遅い場合は画像の軽量化やサーバーの見直しを検討するとよい。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -218,35 +226,35 @@
 <li><a href="cart-abandonment.html">カゴ落ち</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

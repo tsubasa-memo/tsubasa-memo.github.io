@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="確定申告の意味と副業者に必要な条件を調べたメモ。1月から12月の1年間の所得を税務署に申告して所得税額を確定する手続きで、副業所得が年間20万円を超えると必要になる。青色と白色の違いや経費にできるものの具体例も整理した。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,39 +139,66 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 確定申告
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>確定申告とは？<br>副業で必要になる条件と基本の流れメモ</h1>
+
+<div class="article-hero">
+<img alt="確定申告とは？副業で必要になる条件と基本の流れメモ" height="360" loading="eager" src="/thumbs/glossary/tax-return.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/tax-return.png" alt="確定申告とは？副業で必要になる条件と基本の流れメモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">確定申告とは？<br/>副業で必要になる条件と基本の流れメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>確定申告とは</h2>
-
 <p>1年間の所得を税務署に申告して所得税額を確定させる手続きだ。会社員は年末調整で済むことが多いが、副業所得が年間20万円を超えると自分で確定申告を行う必要がある。</p>
-
 <p>注意点として、20万円以下でも住民税の申告は必要だ。所得税の確定申告をすれば住民税も自動的に処理されるが、確定申告をしない場合は市区町村に別途申告する必要がある。</p>
-
 <h2>青色申告と白色申告</h2>
-
 <p>副業を事業として行う場合、開業届を出して青色申告を選ぶと最大65万円の特別控除が受けられる。帳簿付けの手間は増えるが、freeeやマネーフォワードクラウドなどの会計ソフトを使えば負担は軽い。白色申告は届出不要で簡単だが、特別控除がない。</p>
-
 <p>副業の規模が小さいうちは白色申告で十分だが、年間所得が安定して数十万円を超えるようなら青色申告への切り替えを検討する価値がある。</p>
-
 <h2>副業で経費になるもの</h2>
-
 <p>カメラ機材、レタッチソフトのサブスク費用、撮影場所への交通費、参考書籍、クラウドソーシングの手数料などが経費にあたる。プライベートと兼用のもの（PCやスマホ回線）は使用割合で按分する。副業の税金全般は<a href="/photo-sidejob-tax.html">副業の税金まとめ</a>にも書いた。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -187,24 +215,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -84,12 +84,66 @@
 <meta name="twitter:description" content="HTMLはWebページの構造を定義するマークアップ言語。見出し・段落・リンク・画像などのタグでページの骨組みを作る。ブログ運営で最低限知っておくべき基本をまとめた。">
 </head>
 <body>
-<header><div class="wrap"><a href="/" class="site-name">ツバサのメモ帳</a><nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav></div></header>
-<div class="site-search-wrap"><div class="wrap"><input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div></div>
-<nav class="breadcrumb"><div class="wrap"><a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; HTML</div></nav>
-<section class="hero"><div class="wrap"><h1>HTMLとは？<br>Webページの構造を作るマークアップ言語の話</h1></div></section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/html.png" alt="HTMLとは？Webページの構造を作るマークアップ言語の話" width="640" height="360" loading="eager"></div></div>
-<main><div class="wrap"><h2>HTMLとは</h2>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; HTML</nav>
+
+<div class="article-hero">
+<img alt="HTMLとは？Webページの構造を作るマークアップ言語の話" height="360" loading="eager" src="/thumbs/glossary/html.png" width="640"/>
+</div>
+
+<h1 class="article-title">HTMLとは？<br/>Webページの構造を作るマークアップ言語の話</h1>
+<div class="article-meta-line">
+<span>2026年4月21日</span>
+</div>
+
+<h2>HTMLとは</h2>
 <p>HTML（HyperText Markup Language）は、Webページの構造を定義するマークアップ言語だ。&lt;h1&gt;で見出し、&lt;p&gt;で段落、&lt;a&gt;でリンク、&lt;img&gt;で画像というように、タグと呼ばれる印で内容を囲んで構造を伝える。</p>
 <p>HTMLはプログラミング言語ではない。条件分岐やループといった処理は書けず、あくまでも「ページの構造」を定義するものだ。見た目のデザインはCSSが担当する。</p>
 <h2>ブログ運営で最低限知っておくこと</h2>
@@ -101,7 +155,13 @@
 <div class="related-terms"><h3>関連する用語</h3><ul><li><a href="css.html">CSS</a></li><li><a href="json-ld.html">JSON-LD</a></li><li><a href="meta-description.html">meta description</a></li><li><a href="alt-attribute.html">alt属性</a></li>
 <li><a href="static-site.html">静的サイト</a></li></ul></div>
 <div class="related"><h3>関連する記事</h3><ul><li><a href="/ai-blog-building.html">AIに聞きながらGitHub Pagesでブログを構築した話</a></li></ul></div>
-<div class="author-box"><div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div><div class="author-text"><p class="author-name">ツバサ</p><p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p></div></div>
-</div></main>
-<footer><div class="wrap"><div class="footer-links"><a href="/privacy-policy.html">プライバシーポリシー</a><a href="/contact.html">お問い合わせ</a><a href="/about.html">運営者情報</a><a href="/sitemap-links.html">全ページ一覧</a></div>&copy; 2026 ツバサのメモ帳</div></footer>
-</body></html>
+<div class="author-box"><div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div><div class="author-text"><p class="author-name">ツバサ</p><p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p></div></div>
+
+</main>
+
+</div>
+
+<footer><div class="wrap"><div class="footer-links"><a href="/privacy-policy.html">プライバシーポリシー</a><a href="/about.html">運営者情報</a><a href="/sitemap-links.html">全ページ一覧</a></div>© 2026 ツバサのメモ帳</div></footer>
+
+</body>
+</html>

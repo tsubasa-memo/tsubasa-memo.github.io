@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,68 +139,80 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 掛け率
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>掛け率とは？<br>仕入れ交渉で「6掛け」と言われたので調べた</h1>
+<div class="article-hero">
+<img alt="掛け率とは？仕入れ交渉で「6掛け」と言われたので調べた" height="360" loading="eager" src="/thumbs/glossary/kakerate.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/kakerate.png" alt="掛け率とは？仕入れ交渉で「6掛け」と言われたので調べた" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">掛け率とは？<br/>仕入れ交渉で「6掛け」と言われたので調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>掛け率とは</h2>
-
 <p>ひとことで言うと、掛け率は商品の上代（販売価格）に対する下代（仕入れ価格）の割合のこと。パーセンテージで表すのが基本だ。</p>
-
-<p><a href="https://ecnomikata.com/ecnews/35771/" target="_blank" rel="noopener noreferrer">ECのミカタの掛け率解説</a>によると、計算式はこうなる。</p>
-
+<p><a href="https://ecnomikata.com/ecnews/35771/" rel="noopener noreferrer" target="_blank">ECのミカタの掛け率解説</a>によると、計算式はこうなる。</p>
 <ul>
 <li>掛け率（%）＝ 下代 ÷ 上代 × 100</li>
 <li>下代 ＝ 上代 × 掛け率（%）÷ 100</li>
 </ul>
-
 <p>たとえば上代1,000円の商品を600円で仕入れるなら、掛け率は60%。これを業界用語で「6掛け（ろくがけ）」と言う。同じように5掛けなら50%、7掛けなら70%だ。</p>
-
-<p><a href="https://retailguide.tokubai.co.jp/store/42954/" target="_blank" rel="noopener noreferrer">リテール・リーダーズの掛け率解説</a>でも、掛け率は仕入れの現場で頻繁に使われる指標だと書いてあった。掛け率が低いほど小売店にとっては有利で、利益が大きくなる。</p>
-
+<p><a href="https://retailguide.tokubai.co.jp/store/42954/" rel="noopener noreferrer" target="_blank">リテール・リーダーズの掛け率解説</a>でも、掛け率は仕入れの現場で頻繁に使われる指標だと書いてあった。掛け率が低いほど小売店にとっては有利で、利益が大きくなる。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC業務をしていると、掛け率が関わる場面は多い。僕が遭遇したケースをまとめておく。</p>
-
 <h3>仕入先との価格交渉</h3>
-
 <p>新しい商品を仕入れるとき、仕入先から「上代3,000円、掛け率は6掛けです」と提示される。これは下代が3,000円×0.6＝1,800円ということ。1個売るごとに1,200円の粗利が出る計算だ。</p>
-
-<p>交渉次第で掛け率が変わることもある。<a href="https://dime.jp/genre/1227606/" target="_blank" rel="noopener noreferrer">@DIMEの掛け率解説</a>を読むと、発注数量を増やす代わりに掛け率を下げてもらう、というのはよくある交渉パターンらしい。「100個なら6掛け、500個なら5.5掛け」のような感じだ。<a href="lot.html">ロット</a>の数量が掛け率に影響するというわけだ。</p>
-
+<p>交渉次第で掛け率が変わることもある。<a href="https://dime.jp/genre/1227606/" rel="noopener noreferrer" target="_blank">@DIMEの掛け率解説</a>を読むと、発注数量を増やす代わりに掛け率を下げてもらう、というのはよくある交渉パターンらしい。「100個なら6掛け、500個なら5.5掛け」のような感じだ。<a href="lot.html">ロット</a>の数量が掛け率に影響するというわけだ。</p>
 <h3>利益率の計算</h3>
-
-<p>掛け率がわかれば利益率もすぐ出せる。掛け率60%なら、粗利率は40%（100% − 60%）。ただし実際にはECモールの手数料・送料・広告費などが引かれるので、粗利率＝最終利益ではない。<a href="https://www.ecnopro.jp/times/knowledge-r55-240409-kakeritunokihonn" target="_blank" rel="noopener noreferrer">ECのプロの掛け率解説記事</a>でも、EC事業では送料やモール手数料を差し引いた「営業利益率」で考える必要があると指摘されていた。</p>
-
+<p>掛け率がわかれば利益率もすぐ出せる。掛け率60%なら、粗利率は40%（100% − 60%）。ただし実際にはECモールの手数料・送料・広告費などが引かれるので、粗利率＝最終利益ではない。<a href="https://www.ecnopro.jp/times/knowledge-r55-240409-kakeritunokihonn" rel="noopener noreferrer" target="_blank">ECのプロの掛け率解説記事</a>でも、EC事業では送料やモール手数料を差し引いた「営業利益率」で考える必要があると指摘されていた。</p>
 <h3>複数仕入先の比較</h3>
-
 <p>同じ商品を複数の卸から仕入れられる場合、掛け率を比較して有利なほうを選ぶことになる。ただし掛け率だけで決めるのは危険で、<a href="lot.html">最小ロット</a>や支払条件、納期なども含めて総合的に判断する必要がある。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>業界別の掛け率相場</h3>
-
-<p><a href="https://shiseihanbai.biz/contents/learning-ratio-of-wholesale-price-to-retail-price/" target="_blank" rel="noopener noreferrer">至誠販売の掛け率解説</a>によると、業界別の大まかな相場はこんな感じだった。</p>
-
+<p><a href="https://shiseihanbai.biz/contents/learning-ratio-of-wholesale-price-to-retail-price/" rel="noopener noreferrer" target="_blank">至誠販売の掛け率解説</a>によると、業界別の大まかな相場はこんな感じだった。</p>
 <table class="compare">
 <tr><th>業界</th><th>掛け率の目安</th></tr>
 <tr><td>アパレル・ファッション</td><td>50〜60%</td></tr>
@@ -208,17 +220,11 @@
 <tr><td>雑貨・日用品</td><td>50〜65%</td></tr>
 <tr><td>家電</td><td>65〜75%</td></tr>
 </table>
-
 <p>あくまで目安なので、ブランドや取引条件によって変わる。食品は利幅が薄い代わりに回転率が高い、アパレルは利幅が大きい代わりに在庫リスクがある、というような業界特性がある。</p>
-
 <h3>掛け率と利益率の違い</h3>
-
 <p>掛け率と利益率は裏表の関係にある。掛け率60%なら利益率は40%。ただしこれは「上代で売った場合」の計算なので、実際の販売価格が上代と違う場合は利益率も変わってくる。上代・下代の詳しい説明は<a href="jodai-gedai.html">上代・下代とは</a>にまとめている。</p>
-
 <h3>掛け率の交渉は取引実績がものを言う</h3>
-
 <p>初回取引でいきなり掛け率を下げてもらうのは難しいことが多い。継続的に一定量を仕入れて実績を作ってから交渉するほうが通りやすい。仕入先にとっても安定した取引相手は大事なので、長い目で関係を作るのがコツだと感じた。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -228,7 +234,6 @@
 <li><a href="long-tail.html">ロングテール</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -236,28 +241,29 @@
 <li><a href="/sasage-outsource.html">ささげ業務の外注先まとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

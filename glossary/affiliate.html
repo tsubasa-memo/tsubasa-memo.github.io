@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,76 +139,85 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; アフィリエイト
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>アフィリエイトとは？<br>EC担当が知っておくべき仕組みを整理した</h1>
+<div class="article-hero">
+<img alt="アフィリエイトとは？EC担当が知っておくべき仕組みを整理した" height="360" loading="eager" src="/thumbs/glossary/affiliate.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/affiliate.png" alt="アフィリエイトとは？EC担当が知っておくべき仕組みを整理した" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">アフィリエイトとは？<br/>EC担当が知っておくべき仕組みを整理した</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>アフィリエイトとは</h2>
-
 <p>ひとことで言うと、ブログやSNSなどのメディア運営者（アフィリエイター）に自社の商品を紹介してもらい、その紹介経由で商品が購入されたときに報酬を支払う広告手法のこと。「成果報酬型広告」とも呼ばれる。</p>
-
-<p><a href="https://www.valuecommerce.ne.jp/ecsite/aboutaff.html" target="_blank" rel="noopener noreferrer">バリューコマースの公式解説</a>に詳しい説明があったが、登場人物は主に4者だ。</p>
-
+<p><a href="https://www.valuecommerce.ne.jp/ecsite/aboutaff.html" rel="noopener noreferrer" target="_blank">バリューコマースの公式解説</a>に詳しい説明があったが、登場人物は主に4者だ。</p>
 <ul>
 <li><strong>広告主</strong>：商品を売りたいEC事業者（自分たちのこと）</li>
 <li><strong>アフィリエイター</strong>：ブログやSNSで商品を紹介する人</li>
 <li><strong>ASP</strong>：広告主とアフィリエイターをつなぐ仲介サービス</li>
 <li><strong>ユーザー</strong>：商品を買う消費者</li>
 </ul>
-
 <p>流れとしては、広告主がASPに広告を登録 → アフィリエイターが自分のメディアに広告リンクを掲載 → ユーザーがそのリンクから購入 → 成果が計測されてアフィリエイターに報酬が支払われる、という仕組みになっている。</p>
-
-<p>ASP（Affiliate Service Provider）は広告主とアフィリエイターの間に入る仲介業者で、<a href="https://www.seedinc.jp/column/affiliate/what-is-affiliate/" target="_blank" rel="noopener noreferrer">SEEDの解説記事</a>によると、A8.net、バリューコマース、もしもアフィリエイト、アクセストレードなどが代表的なサービスだ。</p>
-
+<p>ASP（Affiliate Service Provider）は広告主とアフィリエイターの間に入る仲介業者で、<a href="https://www.seedinc.jp/column/affiliate/what-is-affiliate/" rel="noopener noreferrer" target="_blank">SEEDの解説記事</a>によると、A8.net、バリューコマース、もしもアフィリエイト、アクセストレードなどが代表的なサービスだ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当としてアフィリエイトの話題が出てくる場面を書いておく。</p>
-
 <h3>自社ECサイトの集客手段として</h3>
-
-<p>自社ECサイトへの集客方法は<a href="listing-ads.html">リスティング広告</a>やSEOなどいろいろあるが、アフィリエイトもその一つ。<a href="https://ec-force.com/blog/d2c_no295" target="_blank" rel="noopener noreferrer">ec-forceの記事</a>でも紹介されていたが、アフィリエイトの良いところは成果報酬型なので、売れなければ費用が発生しない点だ。広告予算が限られている場合でもリスクが低い。</p>
-
+<p>自社ECサイトへの集客方法は<a href="listing-ads.html">リスティング広告</a>やSEOなどいろいろあるが、アフィリエイトもその一つ。<a href="https://ec-force.com/blog/d2c_no295" rel="noopener noreferrer" target="_blank">ec-forceの記事</a>でも紹介されていたが、アフィリエイトの良いところは成果報酬型なので、売れなければ費用が発生しない点だ。広告予算が限られている場合でもリスクが低い。</p>
 <h3>比較サイトやレビューサイトへの掲載</h3>
-
 <p>「○○ おすすめ 比較」で検索すると出てくる比較サイトやランキングサイトの多くは、アフィリエイトで収益を得ている。自社商品をこうしたサイトに掲載してもらうことで、検索経由の新規顧客を獲得できる。ただし、掲載内容はサイト運営者に委ねることになるので、紹介のされ方をコントロールしにくいという面もある。</p>
-
 <h3>新商品のプロモーション</h3>
-
-<p>新商品を発売するタイミングで、アフィリエイターにサンプルを送ってレビュー記事を書いてもらうケースもある。<a href="https://ebisumart.com/blog/affiliate/" target="_blank" rel="noopener noreferrer">ebisumartの記事</a>でも、アフィリエイト経由のレビュー記事はSEO効果もあり、長期的に集客に貢献すると書いてあった。</p>
-
+<p>新商品を発売するタイミングで、アフィリエイターにサンプルを送ってレビュー記事を書いてもらうケースもある。<a href="https://ebisumart.com/blog/affiliate/" rel="noopener noreferrer" target="_blank">ebisumartの記事</a>でも、アフィリエイト経由のレビュー記事はSEO効果もあり、長期的に集客に貢献すると書いてあった。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>費用はASP利用料 + 成果報酬 + 手数料</h3>
-
-<p>広告主としてアフィリエイトを始める場合、ASPの月額利用料（数万円程度）、成果が発生したときの報酬（販売価格の5〜20%が目安）、ASPの手数料（成果報酬の30%前後）がかかる。<a href="https://webbu.jp/affiliate-advertising-355" target="_blank" rel="noopener noreferrer">WebBuの解説</a>にも費用構成の説明があった。成果報酬の金額は自分で設定できるが、安すぎるとアフィリエイターに紹介してもらえない。</p>
-
+<p>広告主としてアフィリエイトを始める場合、ASPの月額利用料（数万円程度）、成果が発生したときの報酬（販売価格の5〜20%が目安）、ASPの手数料（成果報酬の30%前後）がかかる。<a href="https://webbu.jp/affiliate-advertising-355" rel="noopener noreferrer" target="_blank">WebBuの解説</a>にも費用構成の説明があった。成果報酬の金額は自分で設定できるが、安すぎるとアフィリエイターに紹介してもらえない。</p>
 <h3>不正や誇大表現の監視が必要</h3>
-
 <p>アフィリエイターが勝手に誇大な表現で商品を紹介したり、薬機法や景品表示法に違反する表現を使ったりすると、広告主にも責任が及ぶ可能性がある。2023年10月のステマ規制強化以降、広告主側の監視責任はより重くなっている。提携しているメディアの記事内容は定期的にチェックしたほうがいい。</p>
-
 <h3>成果が出るまでに時間がかかる</h3>
-
 <p>ASPに広告を登録しても、すぐにアフィリエイターが紹介してくれるわけではない。アフィリエイターが記事を書いて、その記事が検索エンジンに評価されて、ユーザーが記事を読んで購入する......という流れなので、成果が出始めるまでに数ヶ月かかることもある。即効性を求めるならリスティング広告のほうが向いている。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -217,35 +226,35 @@
 <li><a href="ugc.html">UGC</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

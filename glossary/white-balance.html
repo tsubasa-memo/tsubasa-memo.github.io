@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="ホワイトバランスの意味と設定方法を調べたメモ。光源の色温度に合わせて白い物を正確に白く再現するためのカメラ機能で、色かぶりの防止に欠かせない。オート・プリセット・マニュアルの使い分けやグレーカードでの合わせ方も整理した。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,43 +139,68 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ホワイトバランス
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>ホワイトバランスとは？<br>色かぶりを防ぐカメラ設定の基本メモ</h1>
+
+<div class="article-hero">
+<img alt="ホワイトバランスとは？色かぶりを防ぐカメラ設定の基本メモ" height="360" loading="eager" src="/thumbs/glossary/white-balance.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/white-balance.png" alt="ホワイトバランスとは？色かぶりを防ぐカメラ設定の基本メモ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">ホワイトバランスとは？<br/>色かぶりを防ぐカメラ設定の基本メモ</h1>
+<div class="article-meta-line">
+<span>2026年4月27日</span>
+</div>
+
 <h2>ホワイトバランスとは</h2>
-
 <p>光源の<a href="color-temperature.html">色温度</a>に合わせて、白い物を白く写すためのカメラ設定だ。人間の目は光源が変わっても白い紙は白に見えるよう自動的に補正しているが、カメラは光の色をそのまま記録するので、意識的に設定する必要がある。</p>
-
-<p><a href="https://www.canon-image.com/glossary/glossary-ra/white-balance/" target="_blank" rel="noopener noreferrer">キヤノンの用語解説</a>によると、カメラのホワイトバランス設定には「オート」「太陽光」「日陰」「曇天」「電球」「蛍光灯」などのプリセットと、ケルビン値を直接入力するマニュアル設定がある。</p>
-
+<p><a href="https://www.canon-image.com/glossary/glossary-ra/white-balance/" rel="noopener noreferrer" target="_blank">キヤノンの用語解説</a>によると、カメラのホワイトバランス設定には「オート」「太陽光」「日陰」「曇天」「電球」「蛍光灯」などのプリセットと、ケルビン値を直接入力するマニュアル設定がある。</p>
 <h2>設定の使い分け</h2>
-
 <h3>日常の撮影</h3>
-
 <p>スナップ写真や記録用途ならオートホワイトバランス（AWB）で十分だ。最近のカメラは精度が上がっていて、混合光源でもかなり正確に補正してくれる。</p>
-
 <h3>EC商品撮影</h3>
-
 <p>商品の色を正確に再現する必要があるので、オートに任せきりにしないほうが安全だ。ストロボ撮影なら5500K前後にマニュアル設定するか、グレーカードを使ってカスタムホワイトバランスを取る。<a href="raw.html">RAW</a>で撮っておけば後からLightroomで自由に修正できるので、多少のズレは救済可能だ。</p>
-
 <h2>色かぶりの修正方法</h2>
-
 <p>撮影済みの写真に色かぶりがある場合は、<a href="color-correction.html">色補正</a>の工程で修正する。Lightroomなら「ホワイトバランス」セクションのスポイトツールで、写真内のグレーの部分をクリックするだけで自動補正される。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
@@ -194,24 +220,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

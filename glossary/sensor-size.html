@@ -107,8 +107,9 @@
 <script src="/search.js" defer></script>
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -116,32 +117,62 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; センサーサイズ
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>センサーサイズとは？<br>フルサイズとAPS-Cの違いを調べた</h1>
+
+<div class="article-hero">
+<img alt="センサーサイズとは？フルサイズとAPS-Cの違いを調べた" height="360" loading="eager" src="/thumbs/glossary/sensor-size.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/sensor-size.png" alt="センサーサイズとは？フルサイズとAPS-Cの違いを調べた" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">センサーサイズとは？<br/>フルサイズとAPS-Cの違いを調べた</h1>
+<div class="article-meta-line">
+<span>2026年5月1日</span>
+</div>
 
 <h2>センサーサイズとは</h2>
-
 <p>センサーサイズとは、デジタルカメラに搭載されているイメージセンサー（撮像素子）の物理的な大きさのことだ。レンズから入った光を電気信号に変換するこの部品がカメラの「目」にあたる。フィルムカメラでいうフィルムの役割を果たしている。</p>
-
 <p>センサーサイズにはいくつかの規格がある。代表的なものを大きい順に並べると次のようになる。</p>
-
 <table class="compare">
 <tr>
 <th>規格</th>
@@ -174,63 +205,46 @@
 <td>1倍</td>
 </tr>
 </table>
-
 <p>ソニーの公式サイトによれば、APS-Cセンサーの面積は一般的なスマートフォンの約13倍、フルサイズなら約30倍にもなる。この面積差が暗所性能やボケ量、階調表現の差として現れる。</p>
-
-<a class="cite-card" href="https://www.sony.jp/msc/owner/recommend/alens/sensor_apsc_ff/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.sony.jp/msc/owner/recommend/alens/sensor_apsc_ff/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">フルサイズとAPS-Cの違い 6つのポイント - ソニー</span>
 <span class="cite-url">sony.jp</span>
 </span>
 </a>
-
 <h2>カメラ選び・撮影で出てくる場面</h2>
-
 <h3>フルサイズかAPS-Cかで悩む場面</h3>
-
 <p>カメラを選ぶとき、最初にぶつかる分岐点がセンサーサイズだ。フルサイズ機は暗い場所に強くボケが美しいが、本体は大きくレンズも高価になりやすい。APS-C機は本体・レンズともにコンパクトで、エントリー機なら8〜12万円程度で手に入る。</p>
-
 <p>タムロンの解説記事では、APS-CのカメラではAPS-Cセンサーの画角がフルサイズの約1.5倍（キヤノンは1.6倍）に換算されると説明されている。望遠で有利になる反面、広角は苦手になる。風景を広く撮りたいならフルサイズ、野鳥やスポーツなど遠くの被写体を大きく撮りたいならAPS-Cが向いている場面もある。</p>
-
-<a class="cite-card" href="https://www.tamron.com/jp/consumer/sp/impression/detail/article_what_is_apsc.html" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.tamron.com/jp/consumer/sp/impression/detail/article_what_is_apsc.html" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">APS-Cサイズとは？フルサイズとの違いやメリットを解説 - タムロン</span>
 <span class="cite-url">tamron.com</span>
 </span>
 </a>
-
 <h3>EC商品撮影でセンサーサイズを気にする必要はあるか</h3>
-
 <p>EC商品撮影では照明を整えた環境で撮るのが基本なので、暗所性能が問われることはほぼない。白背景のプロダクトカットが主体であれば背景ボケも不要だ。キヤノンのEOS R50（APS-C、約2420万画素）は入門機ながら十分な画質を持っており、EC用途ではオーバースペックに近い。</p>
-
-<a class="cite-card" href="https://personal.canon.jp/product/camera/eos/r50/feature/highquality" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://personal.canon.jp/product/camera/eos/r50/feature/highquality" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">EOS R50 高画質 約2420万画素APS-Cセンサー搭載 - キヤノン</span>
 <span class="cite-url">personal.canon.jp</span>
 </span>
 </a>
-
 <h3>スマホのセンサーサイズを確認する場面</h3>
-
 <p>「スマホで撮った写真が暗い場所だとザラつく」のはセンサーサイズが小さいことが主因だ。近年は1型センサーを搭載したスマートフォンも出ているが、一眼カメラのAPS-Cと比べると面積は約3分の1にとどまる。スマホで撮影ボックスを使って物撮りする分には問題ないが、暗い場所や動く被写体ではセンサーサイズの差が出やすい。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>センサーサイズは画質を左右する最も大きな要素のひとつだ。<a href="gasosuu.html">画素数</a>よりもセンサーサイズの方が写真の仕上がりに与える影響が大きい。カメラ選びでは「何万画素か」の数字よりも「センサーサイズが何か」を先に確認した方がいい。</p>
-
 <p>EC商品撮影の用途であればAPS-Cのエントリー機で十分だ。フルサイズが必要になるのは、暗い会場でのイベント撮影や背景ボケを活かしたイメージカット撮影など、EC実務から一歩踏み込んだ場面に限られる。まずはAPS-C機を使い、不足を感じてからステップアップするのが合理的な選び方だ。</p>
-
-<a class="cite-card" href="https://www.sony.jp/camera-biz/knowledge/basic_knowledge02/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.sony.jp/camera-biz/knowledge/basic_knowledge02/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">カメラの基礎知識 イメージセンサーサイズの違いとは - ソニー法人</span>
 <span class="cite-url">sony.jp</span>
 </span>
 </a>
-
 <a class="cite-card" href="/megapixel-myth.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
@@ -238,36 +252,29 @@
 <span class="cite-url">tsubasa-memo.github.io/megapixel-myth.html</span>
 </span>
 </a>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. センサーサイズとは何ですか？</div>
 <div class="fa">デジタルカメラに搭載されたイメージセンサーの物理的な大きさのことです。フルサイズ（約36×24mm）、APS-C（約23.6×15.8mm）、マイクロフォーサーズ（約17.3×13mm）などの規格があります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. フルサイズとAPS-Cの違いは？</div>
 <div class="fa">センサー面積が約2.3倍異なります。フルサイズは暗所に強くボケが大きく出ますが、本体・レンズが大型化し価格も上がります。APS-Cはコンパクトで安価なため、EC商品撮影やカメラ入門に適しています。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. EC商品撮影にフルサイズは必要ですか？</div>
 <div class="fa">ほとんどの場合、不要です。照明を整えた環境で白背景撮影をするなら暗所性能もボケ量も求められないため、APS-Cのエントリー機（8〜12万円程度）で十分です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. スマホのセンサーサイズはどのくらいですか？</div>
 <div class="fa">一般的なスマホは1/2.3型〜1/1.3型で、面積ではAPS-Cの約13分の1、フルサイズの約30分の1です。近年は1型センサー搭載モデルも出ていますが、一眼カメラとは依然として差があります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. センサーサイズが大きいと何が良いのですか？</div>
 <div class="fa">暗所でのノイズが少ないこと、背景ボケが大きく出ること、明暗差が大きいシーンで白飛び・黒潰れしにくいことの3つが主なメリットです。ただし本体とレンズが大型化し、価格も上がります。</div>
 </div>
 </div>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -277,7 +284,6 @@
 <li><a href="mirrorless.html">ミラーレス</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -287,27 +293,29 @@
 <li><a href="/ec-business-camera.html">EC業務用カメラの選び方｜稟議を通すためのスペック整理</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,61 +139,75 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; PNG
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>PNGとは？<br>JPEGとの違いと使い分けを整理したメモ</h1>
+<div class="article-hero">
+<img alt="PNGとは？JPEGとの違いと使い分けを整理したメモ" height="360" loading="eager" src="/thumbs/glossary/png.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/png.png" alt="PNGとは？JPEGとの違いと使い分けを整理したメモ" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">PNGとは？<br/>JPEGとの違いと使い分けを整理したメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>PNGとは</h2>
-
 <p>ひとことで言うと、画質を劣化させずに保存できる画像ファイル形式のこと。PNGは「Portable Network Graphics（ポータブル ネットワーク グラフィックス）」の略だ。</p>
-
-<p><a href="https://e-words.jp/w/PNG.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、PNGは可逆圧縮（ロスレス圧縮）の画像形式で、何度保存し直しても画質が劣化しない。1996年にGIF形式の代替として開発され、<a href="https://www.w3.org/TR/png-3/" target="_blank" rel="noopener noreferrer">W3C（World Wide Web Consortium）の標準規格</a>として認定されている。</p>
-
-<p>PNGの大きな特徴は「透過」に対応していること。<a href="https://e-words.jp/w/%E9%80%8F%E9%81%8EPNG.html" target="_blank" rel="noopener noreferrer">IT用語辞典の透過PNGの項目</a>によると、アルファチャンネルという仕組みで画像の特定の部分を透明にできるらしい。たとえばロゴの背景を透明にしておけば、どんな色の背景に重ねてもきれいに表示される。JPEGにはこの透過機能がない。</p>
-
-<p>色数の面では、PNG-8（最大256色）とPNG-24（約1677万色のフルカラー）がある。<a href="https://www.attend.jp/desine_171028" target="_blank" rel="noopener noreferrer">アテンドの解説記事</a>に詳しくまとまっていたが、PNG-8はシンプルなイラストやアイコン向け、PNG-24は写真やグラデーションのある画像向けだ。</p>
-
+<p><a href="https://e-words.jp/w/PNG.html" rel="noopener noreferrer" target="_blank">IT用語辞典 e-Words</a>によると、PNGは可逆圧縮（ロスレス圧縮）の画像形式で、何度保存し直しても画質が劣化しない。1996年にGIF形式の代替として開発され、<a href="https://www.w3.org/TR/png-3/" rel="noopener noreferrer" target="_blank">W3C（World Wide Web Consortium）の標準規格</a>として認定されている。</p>
+<p>PNGの大きな特徴は「透過」に対応していること。<a href="https://e-words.jp/w/%E9%80%8F%E9%81%8EPNG.html" rel="noopener noreferrer" target="_blank">IT用語辞典の透過PNGの項目</a>によると、アルファチャンネルという仕組みで画像の特定の部分を透明にできるらしい。たとえばロゴの背景を透明にしておけば、どんな色の背景に重ねてもきれいに表示される。JPEGにはこの透過機能がない。</p>
+<p>色数の面では、PNG-8（最大256色）とPNG-24（約1677万色のフルカラー）がある。<a href="https://www.attend.jp/desine_171028" rel="noopener noreferrer" target="_blank">アテンドの解説記事</a>に詳しくまとまっていたが、PNG-8はシンプルなイラストやアイコン向け、PNG-24は写真やグラデーションのある画像向けだ。</p>
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC業務ではPNGを使う場面がけっこう多い。僕が実際に遭遇したケースを書いておく。</p>
-
 <h3>背景透過の商品画像</h3>
-
 <p>商品の切り抜き画像（背景を取り除いた画像）を作るときは、PNG形式で保存する。JPEGだと背景が白になってしまうが、PNGの透過機能を使えば背景を透明にできる。バナーの上に商品画像を重ねたり、色付きの背景に配置したりするときに必要になる。背景の切り抜きについては<a href="/background-white.html">背景切り抜き・白抜きの方法比較</a>にもまとめた。</p>
-
 <h3>ロゴやアイコンの保存</h3>
-
-<p>ショップのロゴやカテゴリアイコンなど、色の境界がはっきりした画像はPNG形式が向いている。<a href="https://www.canvas-works.jp/journal/pngjpeg/" target="_blank" rel="noopener noreferrer">キャンバスの解説記事</a>でも、イラストやロゴのような「色の面がはっきり分かれた画像」にはPNG、写真のように色が滑らかに変化する画像にはJPEGが適していると書かれていた。</p>
-
+<p>ショップのロゴやカテゴリアイコンなど、色の境界がはっきりした画像はPNG形式が向いている。<a href="https://www.canvas-works.jp/journal/pngjpeg/" rel="noopener noreferrer" target="_blank">キャンバスの解説記事</a>でも、イラストやロゴのような「色の面がはっきり分かれた画像」にはPNG、写真のように色が滑らかに変化する画像にはJPEGが適していると書かれていた。</p>
 <h3>JPEGで画質が落ちたとき</h3>
-
 <p>商品画像をJPEGで何度も保存し直していたら、画像がぼやけてきたことがあった。JPEGは保存のたびに画質が劣化する非可逆圧縮（<a href="lossy-lossless.html">非可逆圧縮と可逆圧縮の違い</a>）なので、編集途中のデータはPNGか<a href="psd.html">PSD</a>で保存しておくのが安全だ。最終的にWeb用に書き出すときだけJPEGにすればいい。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>PNGはファイルサイズが大きくなりやすい</h3>
-
 <p>PNGは画質を保つ分、同じ画像でもJPEGよりファイルサイズが大きくなる。写真のような画像だと、JPEGの3〜5倍くらいのサイズになることもある。ECサイトでは表示速度にも影響するので、写真はJPEG、ロゴや透過が必要な画像はPNGという使い分けが無難だ。整理するとこうなる。</p>
-
 <table class="compare">
 <tr><th>項目</th><th>PNG</th><th>JPEG</th></tr>
 <tr><td>圧縮方式</td><td>可逆圧縮（劣化なし）</td><td>非可逆圧縮（劣化あり）</td></tr>
@@ -201,15 +215,10 @@
 <tr><td>ファイルサイズ</td><td>大きい</td><td>小さい</td></tr>
 <tr><td>向いている画像</td><td>ロゴ、イラスト、切り抜き画像</td><td>写真、商品画像</td></tr>
 </table>
-
 <h3>GIFとの違い</h3>
-
 <p>透過に対応している画像形式としては<a href="gif.html">GIF</a>もある。ただしGIFは最大256色までしか使えないので、写真には向かない。PNGはフルカラーに対応しつつ透過もできるので、GIFの上位互換といえる。ただし、GIFにはアニメーション機能があるので、動く画像を作りたい場合はGIFの出番だ。</p>
-
 <h3>Web表示の最適化</h3>
-
-<p>PNGファイルはそのままだとサイズが大きいので、Web用に最適化するツールを使うとファイルサイズを削減できる。<a href="https://www.dt-media.jp/column/image-file-difference" target="_blank" rel="noopener noreferrer">デザイントランスメディアの解説記事</a>でも、PNGの圧縮ツールを使えば見た目を変えずにファイルサイズを減らせると紹介されていた。画像ファイル形式の全体像は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いている。</p>
-
+<p>PNGファイルはそのままだとサイズが大きいので、Web用に最適化するツールを使うとファイルサイズを削減できる。<a href="https://www.dt-media.jp/column/image-file-difference" rel="noopener noreferrer" target="_blank">デザイントランスメディアの解説記事</a>でも、PNGの圧縮ツールを使えば見た目を変えずにファイルサイズを減らせると紹介されていた。画像ファイル形式の全体像は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いている。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -218,7 +227,6 @@
 <li><a href="psd.html">PSD</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
@@ -226,28 +234,29 @@
 <li><a href="/background-white.html">背景切り抜き・白抜きの方法比較｜AI無料ツールからプロ外注まで</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

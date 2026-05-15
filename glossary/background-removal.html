@@ -129,8 +129,9 @@
 <meta name="twitter:description" content="白抜きとは写真の背景を純白にする処理のこと。背景透過の切り抜きとは別概念で、Amazon・楽天のメイン画像で求められる。Remove.bgなどAI無料ツールの精度とプロ外注の費用相場1枚39円〜をEC担当の視点で調べた備忘録。">
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -138,88 +139,101 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 白抜き
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>白抜きとは？<br>EC商品画像の背景を白にする方法と外注先</h1>
+
+
+
+<h1 class="article-title">白抜きとは？<br/>EC商品画像の背景を白にする方法と外注先</h1>
+<div class="article-meta-line">
+<span>2026年5月14日</span>
 </div>
-</section>
-<main>
-<div class="wrap">
+
 <h2>白抜きとは</h2>
-
 <p>白抜きとは、写真の背景を完全な白にする画像処理のことだ。被写体（商品）だけを残して周囲を純白にする作業で、EC商品画像のメイン画像で広く使われている。</p>
-
 <p>パソコンの画面上で色はRGB（Red＝赤、Green＝緑、Blue＝青）の3色の組み合わせで表現されていて、それぞれ0〜255の256段階で明るさを指定する。0が「その色がまったくない状態」、255が「その色が最大に明るい状態」だ。3色すべてを最大値の255にした RGB(255, 255, 255) が「混じりけのない純白」になる。ECモールの画像規定で「白背景」と言われたら、この RGB(255, 255, 255) の純白を指していると考えてよい。薄いグレーや生成りではなく、数値上の完全な白だ。</p>
-
 <p>似た言葉に「切り抜き」があるが、これは背景を透明にする処理（PNG透過）であり、白抜きとは別の概念だ。白抜きは背景を「白」に、切り抜きは背景を「透明」にする。実際の工程としては、まず背景を透過で切り抜いてから白い背景を敷くという流れになることが多い。</p>
-
-<a class="cite-card" href="https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=GH4GF3DM8BGTM9RA" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=GH4GF3DM8BGTM9RA" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">商品画像の要件 - Amazonセラーセントラル</span>
 <span class="cite-url">amazon.co.jp</span>
 </span>
 </a>
-
 <p>Amazonのメイン画像はRGB(255, 255, 255)の純白背景が必須で、商品が画像全体の85%以上を占めることも求められている。楽天市場も2019年以降のガイドライン改定でメイン画像の白背景化を推奨しており、EC運営では白抜きを避けて通れない。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>白抜きが必要になる典型的な場面は3つある。</p>
-
 <p>1つ目は<strong>ECモールへの出品</strong>。Amazon・楽天・Yahoo!ショッピングのいずれも、メイン画像に白背景を求めている。白抜き処理をしていない画像は商品検索の表示で不利になったり、最悪の場合は画像ルール違反で非表示になることもある。モール別の細かいルールは「<a href="/ec-image-rules.html">ECサイトの商品画像ルールまとめ</a>」に整理した。</p>
-
 <p>2つ目は<strong>カタログやチラシの制作</strong>。紙媒体やPDFカタログでは、商品写真を背景なしで配置するケースが多い。この場合は白抜きではなく切り抜き（透過PNG）が求められることもある。</p>
-
 <p>3つ目は<strong>フリマアプリの出品</strong>。メルカリやラクマでは白背景のルールはないが、白背景で統一した方が清潔感が出て売れやすいという声もある。スマホのAI切り抜き機能で手軽に処理できる。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>白抜きの方法は大きく3つに分かれる。</p>
-
 <p><strong>AI無料ツール</strong>（Remove.bg・PicWish・iLoveIMGなど）は、画像をアップロードするだけで数秒で背景を除去してくれる。シンプルな形状の商品なら精度は十分だが、髪の毛、レース、透明素材など複雑な被写体はAIの苦手領域で、手動修正が必要になることがある。無料版は解像度に制限がある点も注意が必要だ。</p>
-
-<a class="cite-card" href="https://www.remove.bg/ja" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.remove.bg/ja" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">Remove.bg｜画像の背景を自動で削除 - AI背景除去ツール</span>
 <span class="cite-url">remove.bg</span>
 </span>
 </a>
-
 <p><strong>Photoshopの手動処理</strong>は、精度と自由度では最強だがスキルと時間が必要だ。「被写体を選択」でAI自動選択した後に「選択とマスク」で細部を修正するのが定番の手順。月額2,380円（Adobe フォトプラン）のコストもかかる。</p>
-
-<a class="cite-card" href="https://www.adobe.com/jp/products/photoshop/remove-background.html" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.adobe.com/jp/products/photoshop/remove-background.html" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">Photoshopで写真の背景を削除する方法 - Adobe</span>
 <span class="cite-url">adobe.com</span>
 </span>
 </a>
-
 <p><strong>プロのレタッチサービスに外注</strong>する方法もある。切り抜き専門サービスなら1枚39円〜、総合レタッチサービスなら1枚300〜800円が相場だ。月に数十枚以上処理する場合は、自分で1枚ずつ対応するより外注した方が時間効率が良い。各社の料金比較は「<a href="/background-cutout-outsource.html">背景切り抜きの費用相場まとめ</a>」にまとめている。</p>
-
-<a class="cite-card" href="https://picwish.com/ja/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://picwish.com/ja/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">PicWish｜AI画像背景除去・高画質化ツール</span>
 <span class="cite-url">picwish.com</span>
 </span>
 </a>
-
 <p>白抜きの4つの方法（AI無料ツール・スマホアプリ・Photoshop・プロ外注）を精度と料金で比較した詳細は「<a href="/background-white.html">背景切り抜き・白抜きの方法比較</a>」にまとめた。</p>
-
 <a class="cite-card" href="/background-white.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
@@ -227,36 +241,29 @@
 <span class="cite-url">tsubasa-memo.github.io/background-white.html</span>
 </span>
 </a>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. 白抜きとは何ですか？</div>
 <div class="fa">A. 写真の背景を完全な白にする画像処理です。色の数値でいうとRGB(255, 255, 255)で、赤・緑・青の3色すべてが最大値の状態が純白にあたります。Amazon・楽天などECモールのメイン画像で必須とされています。背景を透明にする切り抜き（透過）とは別の処理です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 白抜きを無料でやる方法はありますか？</div>
 <div class="fa">A. Remove.bgやPicWishなどのAI背景除去ツールを使えば無料で処理できます。無料版は解像度に制限があり、EC出品用の高解像度画像には有料プランが必要な場合があります。iPhoneのiOS 16以降の標準切り抜き機能でも簡易的な白抜きが可能です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 白抜きの外注費用はいくらですか？</div>
 <div class="fa">A. 切り抜き専門サービスなら1枚39円〜、総合レタッチサービスなら1枚300〜800円程度が相場です。画像の複雑さや納期によって変動します。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. Amazonの白背景ルールとは何ですか？</div>
 <div class="fa">A. Amazonのメイン画像は純白（赤・緑・青すべて最大値のRGB 255,255,255）の背景が必須で、商品が画像全体の85%以上を占めることも求められます。楽天市場にも類似のガイドラインがあります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 自動ツールとプロの手作業で仕上がりは違いますか？</div>
 <div class="fa">A. シンプルな形状の商品ならAIツールで十分ですが、髪の毛・レース・透明素材など複雑な被写体は手作業の方が仕上がりが自然です。大量処理はAI、仕上がり重視はプロ外注と使い分けるのが実務的です。</div>
 </div>
 </div>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -277,24 +284,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

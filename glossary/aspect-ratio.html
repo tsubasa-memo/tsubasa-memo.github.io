@@ -69,8 +69,9 @@
 <script src="/search.js" defer></script>
 </head>
 <body>
-<header>
-<div class="wrap">
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -78,53 +79,80 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; アスペクト比
-</div>
+
 </nav>
-<section class="hero">
-<div class="wrap">
-<h1>アスペクト比とは？<br>16:9と4:3の違いとSNS別の推奨サイズ</h1>
+
+<div class="article-hero">
+<img alt="アスペクト比とは？16:9と4:3の違いとSNS別の推奨サイズ" height="360" loading="eager" src="/thumbs/glossary/aspect-ratio.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/aspect-ratio.png" alt="アスペクト比とは？16:9と4:3の違いとSNS別の推奨サイズ" width="640" height="360" loading="eager"></div></div>
-<main>
-<div class="wrap">
+
+<h1 class="article-title">アスペクト比とは？<br/>16:9と4:3の違いとSNS別の推奨サイズ</h1>
+<div class="article-meta-line">
+<span>2026年5月2日</span>
+</div>
+
 <h2>アスペクト比とは</h2>
-
 <p>アスペクト比は、画像や映像の縦と横の長さの比率のこと。英語ではAspect Ratio。「16:9」「4:3」「1:1」のように表記する。</p>
-
 <p>16:9はYouTubeやテレビのワイドスクリーンの比率で、横長の映像に使われる。4:3はかつてのブラウン管テレビやiPadの画面に近い比率。1:1は正方形で、Instagramのフィード投稿で標準的に使われてきた。9:16は16:9を縦にした比率で、スマホの縦画面やInstagramストーリーズの形だ。</p>
-
-<p><a href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" target="_blank" rel="noopener nofollow">Adobe公式のPhotoshopヘルプ</a>では、画像のリサイズとトリミング時にアスペクト比を指定する方法が解説されている。</p>
-<a class="cite-card" href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" target="_blank" rel="noopener noreferrer">
+<p><a href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" rel="noopener nofollow" target="_blank">Adobe公式のPhotoshopヘルプ</a>では、画像のリサイズとトリミング時にアスペクト比を指定する方法が解説されている。</p>
+<a class="cite-card" href="https://helpx.adobe.com/jp/photoshop/using/resizing-image.html" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">Adobe公式のPhotoshopヘルプ</span>
 <span class="cite-url">helpx.adobe.com</span>
 </span>
 </a>
-
 <h2>EC実務・SNSで出てくる場面</h2>
-
-<p>ECモールの商品画像にはアスペクト比の指定がある。Amazonは1:1（正方形）を推奨しており、<a href="https://sellercentral.amazon.co.jp/help/hub/reference/G1881" target="_blank" rel="noopener nofollow">Amazon出品ガイド</a>には「最小1,000×1,000ピクセルの正方形画像」と明記されている。楽天市場も商品画像は正方形が標準だ。</p>
-<a class="cite-card" href="https://sellercentral.amazon.co.jp/help/hub/reference/G1881" target="_blank" rel="noopener noreferrer">
+<p>ECモールの商品画像にはアスペクト比の指定がある。Amazonは1:1（正方形）を推奨しており、<a href="https://sellercentral.amazon.co.jp/help/hub/reference/G1881" rel="noopener nofollow" target="_blank">Amazon出品ガイド</a>には「最小1,000×1,000ピクセルの正方形画像」と明記されている。楽天市場も商品画像は正方形が標準だ。</p>
+<a class="cite-card" href="https://sellercentral.amazon.co.jp/help/hub/reference/G1881" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">Amazon出品ガイド</span>
 <span class="cite-url">sellercentral.amazon.co.jp</span>
 </span>
 </a>
-
 <p>SNS投稿でもプラットフォームごとに推奨比率が異なる。Instagramのフィードは1:1または4:5、ストーリーズは9:16。X（旧Twitter）のタイムラインでは16:9が見切れにくい。OGP画像（リンクを共有したときに表示される画像）は1.91:1が標準で、1200×630ピクセルが推奨される。</p>
-
 <p>撮影時にアスペクト比を意識しておくと、後からトリミングで被写体が見切れるリスクを減らせる。EC商品画像をAmazon・楽天・自社ECサイト・Instagramに流用するなら、正方形（1:1）で撮影しておくのが最も汎用性が高い。<a href="/ec-image-rules.html">EC商品画像のルールまとめ</a>でモール別の画像要件を整理している。</p>
 <a class="cite-card" href="/ec-image-rules.html">
 <span class="cite-ico int">ツ</span>
@@ -133,9 +161,7 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/ec-image-rules.html</span>
 </span>
 </a>
-
 <h2>覚えておきたいポイント</h2>
-
 <p>アスペクト比と<a href="pixel-size.html">ピクセルサイズ</a>は別の概念だ。アスペクト比は縦横の「比率」であり、1:1なら500×500でも2000×2000でも同じ比率。ピクセルサイズは画像の「実寸」で、ECモールには最低ピクセル数の規定がある。</p>
 <a class="cite-card" href="pixel-size.html">
 <span class="cite-ico int">ツ</span>
@@ -144,9 +170,7 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/pixel-size.html</span>
 </span>
 </a>
-
 <p>元画像と異なるアスペクト比にトリミングすると、画像の上下または左右が削られる。たとえば3:2で撮影した写真を1:1にトリミングすると左右が切り取られる。被写体の位置によっては商品が見切れるので、トリミング後の構図を確認してから確定すること。</p>
-
 <p><a href="resize.html">リサイズ</a>はピクセル数を変えるだけでアスペクト比は維持される場合が多い。アスペクト比を変える操作はリサイズではなくトリミングになる。この違いを混同すると、画像が引き伸ばされて歪む原因になる。</p>
 <a class="cite-card" href="resize.html">
 <span class="cite-ico int">ツ</span>
@@ -155,36 +179,29 @@
 <span class="cite-url">tsubasa-memo.github.io/glossary/resize.html</span>
 </span>
 </a>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. アスペクト比とは何ですか？</div>
 <div class="fa">画像や映像の縦と横の長さの比率です。16:9は横長のワイド画面、4:3は従来のテレビ、1:1は正方形です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. Instagramの推奨アスペクト比は？</div>
 <div class="fa">フィード投稿は1:1（正方形）と4:5（縦長）、ストーリーズとリールは9:16（縦長フル画面）です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. EC商品画像のアスペクト比はいくつが標準ですか？</div>
 <div class="fa">Amazonも楽天も1:1（正方形）が標準です。複数モールに出品するなら正方形で撮影・トリミングしておくと汎用性が高いです。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. アスペクト比を変更するとどうなりますか？</div>
 <div class="fa">元画像と異なるアスペクト比にトリミングすると、画像の上下または左右が切り取られます。被写体が見切れないよう構図を確認してから確定してください。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 16:9と4:3の違いは何ですか？</div>
 <div class="fa">16:9はYouTubeやテレビのワイド画面。4:3は従来のテレビやiPadの画面。16:9は風景に向き、4:3は被写体に寄った構図で安定します。</div>
 </div>
 </div>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -202,24 +219,28 @@
 </ul>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-</div>
+
 </main>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

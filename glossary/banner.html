@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,80 +139,89 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; バナー
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>バナーとは？<br>ECサイトで使うバナーの種類とサイズ規定</h1>
+<div class="article-hero">
+<img alt="バナーとは？ECサイトで使うバナーの種類とサイズ規定" height="360" loading="eager" src="/thumbs/glossary/banner.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/banner.png" alt="バナーとは？ECサイトで使うバナーの種類とサイズ規定" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">バナーとは？<br/>ECサイトで使うバナーの種類とサイズ規定</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>バナーとは</h2>
-
 <p>ひとことで言うと、Webサイト上に設置する画像形式の広告・告知用パーツのこと。バナー（Banner）は英語で「旗」「のぼり」を意味する単語で、クリックすると特定のページに遷移するリンク付きの画像として使われる。</p>
-
-<p><a href="https://online.dhw.co.jp/kuritama/about-banner/" target="_blank" rel="noopener noreferrer">デジタルハリウッドのバナー解説記事</a>によると、バナーには大きく2種類ある。</p>
-
+<p><a href="https://online.dhw.co.jp/kuritama/about-banner/" rel="noopener noreferrer" target="_blank">デジタルハリウッドのバナー解説記事</a>によると、バナーには大きく2種類ある。</p>
 <table class="compare">
 <tr><th>種類</th><th>説明</th><th>サイズ</th></tr>
 <tr><td>サイトバナー</td><td>自社サイト内に設置する告知・誘導用の画像</td><td>自由（設置場所に合わせる）</td></tr>
 <tr><td>広告バナー</td><td>Google広告やSNS広告で使うディスプレイ広告</td><td>媒体ごとに規定あり</td></tr>
 </table>
-
 <p>ECサイトの運営では両方に関わることが多い。サイト内のセール告知バナーを作ることもあれば、Google広告用のバナーを用意することもある。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>EC担当をしていると、バナーを作る・設置する場面がかなり頻繁にある。</p>
-
 <h3>セール・キャンペーンの告知</h3>
-
-<p>今回の僕のケースがこれ。サイトのトップページやカテゴリページにセール告知のバナーを設置して、セール会場（特設ページ）に誘導する。楽天市場ではスーパーSALEやお買い物マラソンのたびにバナーの差し替えが必要になる。<a href="https://www.lancers.jp/c/ec/ec-knowhow/683/" target="_blank" rel="noopener noreferrer nofollow">ランサーズのECバナー解説記事</a>でも、ECサイトのバナーはデザインと設置場所の両方が重要だと書いてあった。</p>
-
+<p>今回の僕のケースがこれ。サイトのトップページやカテゴリページにセール告知のバナーを設置して、セール会場（特設ページ）に誘導する。楽天市場ではスーパーSALEやお買い物マラソンのたびにバナーの差し替えが必要になる。<a href="https://www.lancers.jp/c/ec/ec-knowhow/683/" rel="noopener noreferrer nofollow" target="_blank">ランサーズのECバナー解説記事</a>でも、ECサイトのバナーはデザインと設置場所の両方が重要だと書いてあった。</p>
 <h3>広告用バナーの入稿</h3>
-
-<p>Google広告のディスプレイ広告を出す場合、規定サイズのバナー画像を複数パターン用意する必要がある。<a href="https://support.google.com/google-ads/answer/7031480?hl=ja" target="_blank" rel="noopener noreferrer">Google広告のヘルプページ</a>に対応サイズの一覧が載っていて、代表的なものはこのあたりだ。</p>
-
+<p>Google広告のディスプレイ広告を出す場合、規定サイズのバナー画像を複数パターン用意する必要がある。<a href="https://support.google.com/google-ads/answer/7031480?hl=ja" rel="noopener noreferrer" target="_blank">Google広告のヘルプページ</a>に対応サイズの一覧が載っていて、代表的なものはこのあたりだ。</p>
 <ul>
 <li>300×250px（レクタングル）：最も汎用的なサイズ</li>
 <li>728×90px（リーダーボード）：ページ上部の横長バナー</li>
 <li>160×600px（ワイドスカイスクレイパー）：サイドバー用の縦長バナー</li>
 <li>320×50px（モバイルバナー）：スマホ画面下部のバナー</li>
 </ul>
-
 <h3>楽天・Amazonのモール内バナー</h3>
-
-<p>楽天市場ではRMSの中でバナーを設定する場面がある。トップページのスライドバナーや、商品ページ内のおすすめ商品バナーなど。<a href="https://ebisumart.com/blog/ec-banner/" target="_blank" rel="noopener noreferrer">ebisumartのECバナー作成記事</a>でも、モールごとにバナーの推奨サイズや仕様が異なるので、出店先のガイドラインを確認するのが大事だと紹介されていた。</p>
-
+<p>楽天市場ではRMSの中でバナーを設定する場面がある。トップページのスライドバナーや、商品ページ内のおすすめ商品バナーなど。<a href="https://ebisumart.com/blog/ec-banner/" rel="noopener noreferrer" target="_blank">ebisumartのECバナー作成記事</a>でも、モールごとにバナーの推奨サイズや仕様が異なるので、出店先のガイドラインを確認するのが大事だと紹介されていた。</p>
 <h2>覚えておきたいポイント</h2>
-
 <h3>情報を詰め込みすぎない</h3>
-
-<p>バナーはスペースが限られている。あれもこれも載せたくなるけど、伝えたいメッセージは1つに絞るのが鉄則。「最大50%OFF」「送料無料」「期間限定」のうち、一番強い訴求ポイントを大きく見せて、残りは補足程度にとどめる。<a href="https://satori.marketing/marketing-blog/banner/" target="_blank" rel="noopener noreferrer nofollow">SATORIのバナーサイズ解説記事</a>でも、ワンメッセージ・ワンビジュアルが基本と書いてあった。</p>
-
+<p>バナーはスペースが限られている。あれもこれも載せたくなるけど、伝えたいメッセージは1つに絞るのが鉄則。「最大50%OFF」「送料無料」「期間限定」のうち、一番強い訴求ポイントを大きく見せて、残りは補足程度にとどめる。<a href="https://satori.marketing/marketing-blog/banner/" rel="noopener noreferrer nofollow" target="_blank">SATORIのバナーサイズ解説記事</a>でも、ワンメッセージ・ワンビジュアルが基本と書いてあった。</p>
 <h3>画像のalt属性を忘れずに</h3>
-
 <p>バナー画像にも<a href="alt-attribute.html">alt属性</a>は必要だ。バナーがリンク付き画像の場合、alt属性にはリンク先の内容を書く。「夏のセール会場はこちら」のように、バナーの役割がテキストで伝わるようにしておく。</p>
-
 <h3>ファイルサイズに注意</h3>
-
 <p>バナー画像が重すぎるとページの読み込み速度が落ちる。とくにトップページに複数のバナーを並べる場合は、1枚あたりのファイルサイズを100〜200KB以下に抑えたい。JPEGの圧縮率を調整するか、WebP形式で軽量化する方法がある。</p>
-
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -222,35 +231,35 @@
 <li><a href="trimming.html">トリミング</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -130,8 +130,8 @@
 </head>
 <body>
 
-<header>
-<div class="wrap">
+<header class="mobile-header">
+<div class="mobile-header-inner">
 <a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
@@ -139,71 +139,80 @@
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; JFIF
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>JFIFとは？<br>見慣れない画像形式の正体を調べたメモ</h1>
+<div class="article-hero">
+<img alt="JFIFとは？見慣れない画像形式の正体を調べたメモ" height="360" loading="eager" src="/thumbs/glossary/jfif.png" width="640"/>
 </div>
-</section>
-<div class="hero-image"><div class="wrap"><img src="/thumbs/glossary/jfif.png" alt="JFIFとは？見慣れない画像形式の正体を調べたメモ" width="640" height="360" loading="eager"></div></div>
 
-<main>
-<div class="wrap">
+<h1 class="article-title">JFIFとは？<br/>見慣れない画像形式の正体を調べたメモ</h1>
+<div class="article-meta-line">
+<span>2026年4月4日</span>
+</div>
 
 <h2>JFIFとは</h2>
-
 <p>ひとことで言うと、JPEG画像をファイルとして保存するための規格のこと。JFIFは「JPEG File Interchange Format（ジェイペグ ファイル インターチェンジ フォーマット）」の略だ。</p>
-
-<p><a href="https://e-words.jp/w/JFIF.html" target="_blank" rel="noopener noreferrer">IT用語辞典 e-Words</a>によると、JFIFはJPEG方式で圧縮された画像データをファイルに記録する方式を定めた標準規格で、1991年に提唱されて以来、事実上の標準として普及してきたらしい。2013年にはISO/IECがJPEG標準の一部に正式に取り込んだとのこと。</p>
-
-<p>つまり、.jfifと.jpgは中身としてはほぼ同じもの。画質もファイルサイズも変わらない。<a href="https://aprico-media.com/posts/6221" target="_blank" rel="noopener noreferrer">Apricoの解説記事</a>でも、JFIFとJPEGは圧縮アルゴリズムが同じで、技術的には同一のものだと書かれていた。違うのは拡張子の名前だけだ。</p>
-
+<p><a href="https://e-words.jp/w/JFIF.html" rel="noopener noreferrer" target="_blank">IT用語辞典 e-Words</a>によると、JFIFはJPEG方式で圧縮された画像データをファイルに記録する方式を定めた標準規格で、1991年に提唱されて以来、事実上の標準として普及してきたらしい。2013年にはISO/IECがJPEG標準の一部に正式に取り込んだとのこと。</p>
+<p>つまり、.jfifと.jpgは中身としてはほぼ同じもの。画質もファイルサイズも変わらない。<a href="https://aprico-media.com/posts/6221" rel="noopener noreferrer" target="_blank">Apricoの解説記事</a>でも、JFIFとJPEGは圧縮アルゴリズムが同じで、技術的には同一のものだと書かれていた。違うのは拡張子の名前だけだ。</p>
 <p>ただ、.jfifという拡張子は.jpgに比べて知名度が低い。そのため、一部のソフトやWebサービスで「対応していない形式です」とエラーが出ることがある。僕がECサイトにアップロードできなかったのもこれが原因だった。</p>
-
 <h2>EC実務で出てくる場面</h2>
-
 <p>jfif自体はマイナーな拡張子だけど、EC業務で思わぬタイミングで遭遇することがある。</p>
-
 <h3>Windowsで画像を保存したとき</h3>
-
-<p>Windows 10の一部の環境では、ブラウザから画像を右クリック保存したりスクリーンショットを撮ったりすると、拡張子が.jpgではなく.jfifになることがある。<a href="https://win10labo.info/jfif-to-jpg/" target="_blank" rel="noopener noreferrer">Win10ラボの記事</a>によると、これはWindowsのレジストリ設定が原因で、レジストリを修正すれば.jpgで保存されるようになるとのこと。</p>
-
+<p>Windows 10の一部の環境では、ブラウザから画像を右クリック保存したりスクリーンショットを撮ったりすると、拡張子が.jpgではなく.jfifになることがある。<a href="https://win10labo.info/jfif-to-jpg/" rel="noopener noreferrer" target="_blank">Win10ラボの記事</a>によると、これはWindowsのレジストリ設定が原因で、レジストリを修正すれば.jpgで保存されるようになるとのこと。</p>
 <p>ただしレジストリの編集は操作を間違えるとWindowsの動作に影響が出るので、自信がない場合はファイル名を手動で変えるほうが安全だと思う。</p>
-
 <h3>ECサイトへのアップロード時</h3>
-
 <p>楽天やAmazonなどのECモールでは、商品画像の形式としてJPEGやPNGが指定されている。.jfifのままアップロードしようとすると「対応していないファイル形式です」と弾かれることがある。中身はJPEGなのに拡張子だけで判定されてしまうのがやっかいだ。</p>
-
 <h3>取引先とのデータのやり取り</h3>
-
 <p>Windowsを使っている取引先から送られてきた画像がjfif形式だったこともある。相手も意図してjfifにしたわけではなく、Windowsの設定で自動的にそうなっていただけだった。受け取った側で拡張子を変更すれば問題なく使える。</p>
-
 <h2>覚えておきたいポイント</h2>
-
 <h3>拡張子を.jpgに変えるだけで使える</h3>
-
-<p>jfifファイルの中身はJPEGと同じなので、拡張子を「.jfif」から「.jpg」に変更するだけでそのまま使える。<a href="https://wnkhs.net/2020/02/extension-jfif-jpg/" target="_blank" rel="noopener noreferrer">wnkhs.netの記事</a>でも、ファイル名の末尾を書き換えるだけで対処できると書かれていた。画質が落ちることもない。</p>
-
+<p>jfifファイルの中身はJPEGと同じなので、拡張子を「.jfif」から「.jpg」に変更するだけでそのまま使える。<a href="https://wnkhs.net/2020/02/extension-jfif-jpg/" rel="noopener noreferrer" target="_blank">wnkhs.netの記事</a>でも、ファイル名の末尾を書き換えるだけで対処できると書かれていた。画質が落ちることもない。</p>
 <h3>JPEGと同じく非可逆圧縮</h3>
-
 <p>jfifはJPEGと同じ圧縮方式なので、保存のたびに画質が少しずつ劣化する（<a href="lossy-lossless.html">非可逆圧縮</a>）。何度も開いて保存し直すのは避けたほうがいい。画質を落としたくない場合は<a href="png.html">PNG</a>形式で保存するのも手だ。</p>
-
 <h3>大量のjfifファイルがある場合</h3>
-
-<p>ファイルが数十枚、数百枚ある場合は、手動で拡張子を変えるのは大変だ。<a href="https://www.winxdvd.com/enhance-video-image/convert-jfif-to-jpg.htm" target="_blank" rel="noopener nofollow noreferrer">WinXの変換方法まとめ記事</a>では、コマンドプロンプトで一括変換する方法や、フリーの変換ツールを使う方法が紹介されていた。</p>
-
+<p>ファイルが数十枚、数百枚ある場合は、手動で拡張子を変えるのは大変だ。<a href="https://www.winxdvd.com/enhance-video-image/convert-jfif-to-jpg.htm" rel="noopener nofollow noreferrer" target="_blank">WinXの変換方法まとめ記事</a>では、コマンドプロンプトで一括変換する方法や、フリーの変換ツールを使う方法が紹介されていた。</p>
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
@@ -211,35 +220,35 @@
 <li><a href="lossy-lossless.html">非可逆圧縮・可逆圧縮</a></li>
 </ul>
 </div>
-
 <div class="related">
 <h3>関連する記事</h3>
 <ul>
 <li><a href="/image-file-formats.html">画像ファイル形式まとめ｜JPEG・PNG・WebPなどの違いと使い分け</a></li>
 </ul>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
 
-</div>
 </main>
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="/privacy-policy.html">プライバシーポリシー</a>
-<a href="/contact.html">お問い合わせ</a>
+
 <a href="/about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>
