@@ -145,31 +145,26 @@ gtag('config', 'G-YYBFXHXMM6');
 </aside>
 
 <main class="center-content">
-
 <nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
-
 <a href="index.html">ホーム</a> &gt; <a href="archive.html?cat=ec">EC・実務</a> &gt; EC商品画像にAIを使うときの注意点
 
 </nav>
-
 <div class="article-hero">
-<img src="/thumbs/ec-ai-image-rules.png" alt="EC商品画像にAIを使うときの注意点3モールの規約と景表法を整理" width="640" height="360" loading="eager">
+<img alt="EC商品画像にAIを使うときの注意点3モールの規約と景表法を整理" height="360" loading="eager" src="/thumbs/ec-ai-image-rules.png" width="640"/>
 </div>
-
 <span class="article-tag">EC・実務</span>
 <h1 class="article-title">EC商品画像にAIを使うときの注意点<br/>3モールの規約と景表法を整理</h1>
 <div class="article-meta-line">
 <span>2026年5月 更新</span>
 </div>
-
 <p>こんにちは、ツバサです。</p>
 <p>最近、背景をAIで<a class="glossary-inline" href="/glossary/compositing.html">合成</a>した商品画像を見かける機会が増えました。自分のところでも「撮影コストを減らせるなら試したい」という話が出ていて、でもモールの規約に引っかからないか、<a class="glossary-inline" href="/glossary/keihyouhou.html">景品表示法</a>で問題にならないか、正直よくわかっていませんでした。</p>
 <p>そこで、Amazon・楽天市場・Yahoo!ショッピングの公式規約と、景品表示法の関連資料を調べて整理しました。結論から言うと、3モールとも「AI画像だから禁止」とは書いていません。ただし、モールごとにAI画像の受け入れ度合いが明確に違います。</p>
-<h2>EC商品画像にAI画像を使っていいのか</h2>
+<h2 id="sec1">EC商品画像にAI画像を使っていいのか</h2>
 <p>「AI画像はOKか？　NGか？」という問い方だと答えが出ません。各モールの画像規約は、画像の制作手段（AIかカメラか）ではなく、画像の内容（背景色、テキスト占有率、商品の正確な表現）で判定されるからです。</p>
 <p>判断の軸は2つあります。1つ目は「モールの画像ガイドラインに適合しているか」、2つ目は「実物の商品と乖離していないか（景品表示法）」です。この2つをクリアしていれば、AI生成画像でも掲載自体は問題ありません。逆に、一眼レフで撮影した写真でも、実物と違う色味に加工していれば景表法違反です。</p>
 <p>ただ、モールごとにAI画像への寛容さに差があります。以下、1社ずつ見ていきます。</p>
-<h2>Amazon：メイン画像は実写が前提</h2>
+<h2 id="sec2">Amazon：メイン画像は実写が前提</h2>
 <p>Amazonのメイン画像のルールは3モールの中で最も厳格です。セラーセントラルの「商品画像の要件」（ヘルプページG1881）には、メイン画像の要件として以下の記述があります。</p>
 <a class="cite-card" href="https://sellercentral.amazon.com/help/hub/reference/external/G1881?mons_sel_locale=ja_JP" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
@@ -210,7 +205,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </tr>
 </table>
 <p>Amazonで安全にAIを使うなら、メイン画像は実写を維持し、サブ画像やA+コンテンツのライフスタイル画像にだけAI背景合成を使う、という運用が現実的です。</p>
-<h2>楽天市場：2024年6月にAI合成背景を公認</h2>
+<h2 id="sec3">楽天市場：2024年6月にAI合成背景を公認</h2>
 <p>楽天市場は3モールの中で最もAI画像に積極的な姿勢をとっています。2024年6月に商品画像登録ガイドラインを改定し、「自然に見える合成背景」を第1商品画像（サムネイル）にも使えるようにしました。</p>
 <a class="cite-card" href="https://www.commerce-design.net/blog-staff/181217-productimage-qanda/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
@@ -243,7 +238,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>影の付き方が不自然な場合、AIが生成した背景でもベタ塗り扱いされてNG判定が出ます。RMSの画像判定ツールで毎回チェックするのが鉄則です。</p>
 <h3>RMS「商品画像加工支援AI」の注意点</h3>
 <p>楽天公式のAIツールで作った画像であっても、ガイドライン適合が自動的に保証されるわけではありません。テキスト要素20%以内・枠線なし・背景要件の3項目を店舗側が画像判定ツールで確認する必要があります。また、出力サイズは1024×1024ピクセル固定で、楽天の推奨サイズ（700×700以上）は満たしますが、より高解像度が必要なら外部ツールの併用が必要です。</p>
-<h2>Yahoo!ショッピング：合成背景の公式容認は未確認</h2>
+<h2 id="sec4">Yahoo!ショッピング：合成背景の公式容認は未確認</h2>
 <p>Yahoo!ショッピングの商品画像登録ガイドラインは、楽天と似た3ルール（テキスト20%以下・枠線禁止・白 or 写真背景）を採用しています。ただし、楽天が2024年6月に踏み切った「合成背景の公認」について、Yahoo!が同様の改定を行ったという公式アナウンスは2026年5月時点で確認できませんでした。</p>
 <a class="cite-card" href="https://www.5springs.co.jp/blog/yahoo-image-guideline/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
@@ -254,7 +249,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </a>
 <p>Yahoo!のガイドラインでは「写真背景」は「商品と一緒に撮影された背景」を指しており、EC系コンサル会社の解説記事でも「商品画像と写真背景の合成」はNG例として挙げられています。Yahoo!がAI画像生成の公式ツールを提供している形跡もありません。</p>
 <p>Yahoo!ショッピングに出品する場合は、楽天と同じ感覚でAI合成背景を使うとリスクがあります。合成だとわかりにくい自然な仕上がりであれば実務上は通るケースもあるようですが、規約上のお墨付きはないので、公式の緩和が出るまでは実写ベースの微修整に留めておくのが安全です。</p>
-<h2>景品表示法：AI画像でも「正確な表現」が原則</h2>
+<h2 id="sec5">景品表示法：AI画像でも「正確な表現」が原則</h2>
 <p>モールの規約をクリアしても、景品表示法（景表法）のハードルは別にあります。商品画像がAI生成であろうと一眼レフ撮影であろうと、実物と異なる表示は「優良誤認表示」として規制の対象になります。</p>
 <a class="cite-card" href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
@@ -293,7 +288,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <h4>景表法を踏まえたAI画像の使い方</h4>
 <p>商品そのものは高解像度の実写を使い、背景やモデルのみAIで補助する。これが現時点で最も安全な運用方針です。AIモデルの着用画像を使う場合は、「※画像はイメージです。実際の着用感は商品スペックをご確認ください」の注釈を入れておくと、クレーム予防になります。景表法の二重価格やステマ規制も含めた全体像は<a href="/keihyouhou-ec-memo.html">景品表示法の社内研修メモ</a>で整理しています。</p>
 </div>
-<h2>セーフなケースとNGなケースの整理</h2>
+<h2 id="sec6">セーフなケースとNGなケースの整理</h2>
 <p>ここまでの調査をもとに、AI画像の使い方をセーフ・グレー・NGに分類しました。</p>
 <table class="compare-table">
 <tr>
@@ -416,11 +411,24 @@ gtag('config', 'G-YYBFXHXMM6');
 </span>
 </a>
 </div>
-
 </main>
 
 
 
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">EC商品画像にAI画像を使っていいのか</a></li>
+<li><a href="#sec2">Amazon：メイン画像は実写が前提</a></li>
+<li><a href="#sec3">楽天市場：2024年6月にAI合成背景を公認</a></li>
+<li><a href="#sec4">Yahoo!ショッピング：合成背景の公式容認は未確認</a></li>
+<li><a href="#sec5">景品表示法：AI画像でも「正確な表現」が原則</a></li>
+<li><a href="#sec6">セーフなケースとNGなケースの整理</a></li>
+</ol>
+</nav>
+</aside>
 </div>
 
 <footer>
