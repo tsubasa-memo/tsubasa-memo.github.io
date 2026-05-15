@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>How to Check & Remove EXIF Location Data from Photos | Tsubasa's Notebook</title>
+<meta name="description" content="Photos contain hidden GPS coordinates and device info as EXIF data. Learn how to check and remove it on iPhone, Android, Windows, and Mac before sharing.">
+<meta name="keywords" content="EXIF data,remove EXIF,photo location data,GPS metadata,remove photo metadata,EXIF privacy,check EXIF data,strip EXIF iPhone,remove GPS from photo">
+<meta property="og:title" content="How to Check & Remove EXIF Location Data from Photos | Tsubasa's Notebook">
+<meta property="og:description" content="Photos contain hidden GPS coordinates and device info as EXIF data. Learn how to check and remove it on iPhone, Android, Windows, and Mac before sharing.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/exif-info.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/exif-info.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/exif-info-en.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/exif-info-en.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/exif-info.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is EXIF data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EXIF (Exchangeable Image File Format) is metadata automatically embedded in digital photos by cameras and smartphones. It can include the date and time of capture, camera model, lens and exposure settings, image dimensions, and GPS coordinates of the shooting location. This data is invisible when viewing the photo normally but can be extracted by anyone with the right tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do social media platforms remove EXIF data from uploaded photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most major social media platforms — including X (formerly Twitter), Instagram, and Facebook — strip EXIF data from the publicly viewable copy of your photos. However, the platforms themselves may retain the original metadata on their servers. Email attachments, cloud storage links, and some messaging apps like Telegram do not strip EXIF data, meaning the recipient can see your GPS coordinates and device information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove EXIF data on iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On iPhone (iOS 15 or later), open the Photos app, select an image, swipe up to see the info panel, tap 'Adjust' next to the map, and remove the location. When sharing, you can also tap 'Options' in the share sheet and toggle off 'Location.' To prevent GPS recording entirely, go to Settings > Privacy & Security > Location Services > Camera > Never."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove EXIF data on Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On Android using Google Photos, open a photo, tap the three-dot menu, select 'Edit location' and then 'No location.' To stop recording GPS in new photos, open Camera settings and turn off 'Location tag' or 'GPS tag.' The exact menu name varies by manufacturer. For bulk removal, free apps like Scrambled Exif or browser-based tools work without uploading your files to any server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does WhatsApp remove EXIF data from photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on how you send the photo. When you use the regular photo mode (camera icon), WhatsApp strips most EXIF data including GPS. However, if you send a photo as a 'Document,' all metadata is preserved — GPS coordinates, device model, timestamps, everything. Always use the regular photo mode if privacy matters."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Check & Remove EXIF Location Data from Photos",
+  "description": "Your photos contain hidden GPS coordinates and device info as EXIF metadata. Learn how to check and remove EXIF data on iPhone, Android, Windows, and Mac.",
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "author": {
+    "@type": "Person",
+    "name": "Tsubasa"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tsubasa's Notebook",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tsubasa-memo.github.io/exif-info-en.html"
+  },
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "How to Check & Remove EXIF Location Data from Photos",
+      "item": "https://tsubasa-memo.github.io/exif-info-en.html"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<nav class="breadcrumb">
+<div class="wrap">
+<a href="index.html">Home</a> ＞ How to Check & Remove EXIF Location Data
+</div>
+</nav>
+
+<div class="hero">
+<div class="wrap">
+<h1>How to Check & Remove EXIF Location Data from Photos</h1>
+<p class="update">May 2026</p>
+</div>
+</div>
+
+<main>
+<div class="wrap">
+
+<p>Every photo you take with a smartphone carries invisible data — your GPS coordinates, device model, and the exact time the shutter fired. This metadata, called EXIF, rides along silently inside the image file. Most people never see it, but anyone who receives the original file can extract it in seconds.</p>
+
+<p>The good news: major social media platforms like X and Instagram strip this data when you upload. The bad news: email, cloud sharing links, and some messaging apps do not. If you have ever emailed a photo taken at home, the recipient could have pinpointed your street address from the embedded GPS coordinates.</p>
+
+<p>This guide covers what EXIF data contains, which services strip it automatically, and how to check and remove it yourself on every major platform.</p>
+
+<div class="toc">
+<p>Contents</p>
+<ol>
+<li><a href="#sec1">What Is EXIF Data?</a></li>
+<li><a href="#sec2">Why EXIF Data Is a Privacy Risk</a></li>
+<li><a href="#sec3">Which Platforms Strip EXIF Data</a></li>
+<li><a href="#sec4">How to Check EXIF Data on Your Photos</a></li>
+<li><a href="#sec5">How to Remove EXIF Data</a></li>
+<li><a href="#sec6">How to Stop Recording Location Data</a></li>
+<li><a href="#sec7">The WhatsApp Trap Most People Miss</a></li>
+<li><a href="#sec8">FAQ</a></li>
+<li><a href="#sec9">Summary</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">What Is EXIF Data?</h2>
+
+<p>EXIF stands for Exchangeable Image File Format. It is a standard originally developed by JEIDA (Japan Electronic Industries Development Association) in 1995 that defines how metadata is embedded inside digital image files. Every time you take a photo with a smartphone or digital camera, the device automatically writes dozens of data fields into the file itself.</p>
+
+<p>Here is what a typical EXIF record contains:</p>
+
+<table class="spec-table">
+<tr><th>Field</th><th>Example Data</th></tr>
+<tr><td>Date & Time</td><td>2026-05-10 14:30:22</td></tr>
+<tr><td>Camera Model</td><td>iPhone 16, Samsung Galaxy S25, Canon EOS R100</td></tr>
+<tr><td>Exposure Settings</td><td>Aperture f/2.8, Shutter Speed 1/250s, ISO 400</td></tr>
+<tr><td>Image Dimensions</td><td>4032 × 3024 pixels</td></tr>
+<tr><td>GPS Coordinates</td><td>Latitude 40.7128°, Longitude -74.0060°</td></tr>
+<tr><td>Lens Info</td><td>Focal length 26mm, lens model name</td></tr>
+<tr><td>Software</td><td>Name of the editing app used, if any</td></tr>
+</table>
+
+<p>For photographers, EXIF is genuinely useful — it lets you look back at exposure settings and figure out what worked. The problem is GPS coordinates. When your phone's location services are on, every photo records the exact latitude and longitude of where it was taken. A photo taken at home contains your home address. A photo taken at your child's school contains the school's address.</p>
+
+<h2 id="sec2">Why EXIF Data Is a Privacy Risk</h2>
+
+<p>Camera model and exposure settings are relatively harmless. GPS coordinates are not. Here is what can go wrong:</p>
+
+<div class="warn-box">
+<h4>Real-World Risks of EXIF Location Data</h4>
+<p><strong>Home address exposure</strong> — A photo taken at home and shared with EXIF intact reveals your residential address via GPS coordinates. Anyone can paste those coordinates into Google Maps.</p>
+<p><strong>Routine mapping</strong> — Multiple geotagged photos over time let someone reconstruct your daily routine: where you work, where you shop, which gym you go to.</p>
+<p><strong>Child safety</strong> — Photos of children taken at home or school embed those locations. This data is accessible to anyone who receives the original file.</p>
+<p><strong>Absence signaling</strong> — Posting vacation photos in real time tells anyone watching that your home is empty.</p>
+</div>
+
+<p>In 2012, Vice magazine accidentally revealed the location of John McAfee (the antivirus founder, who was on the run in Guatemala) because a reporter's iPhone embedded GPS coordinates in a published photo. This is not a theoretical risk — it has caused real consequences for journalists, activists, and ordinary people.</p>
+
+<h2 id="sec3">Which Platforms Strip EXIF Data</h2>
+
+<p>Not all services handle EXIF the same way. Some strip it automatically; others pass it through untouched. Here is the current status of major platforms:</p>
+
+<table class="spec-table">
+<tr><th>Platform / Service</th><th>Strips EXIF for Viewers?</th><th>Notes</th></tr>
+<tr><td>X (Twitter)</td><td>Yes</td><td>Stripped on upload. Platform may retain data internally during processing.</td></tr>
+<tr><td>Instagram</td><td>Yes</td><td>Stripped on upload. Photos are also recompressed.</td></tr>
+<tr><td>Facebook</td><td>Yes</td><td>Stripped from the public copy. Facebook retains the original metadata.</td></tr>
+<tr><td>Reddit</td><td>Yes</td><td>Stripped on upload when using Reddit's image hosting.</td></tr>
+<tr><td>Discord</td><td>Yes</td><td>Stripped on upload.</td></tr>
+<tr><td>Signal</td><td>Yes</td><td>Strips all metadata. Does not retain it on servers. The gold standard for privacy.</td></tr>
+<tr><td>WhatsApp (photo mode)</td><td>Yes</td><td>Regular photo sharing strips GPS. But see the "Document mode" warning below.</td></tr>
+<tr><td>WhatsApp (document mode)</td><td><strong>No</strong></td><td>Sending a photo as a document preserves 100% of metadata. Major privacy trap.</td></tr>
+<tr><td>Telegram</td><td><strong>No</strong></td><td>Does not strip metadata by default. Recipients see your GPS coordinates.</td></tr>
+<tr><td>iMessage</td><td><strong>No</strong></td><td>Does not strip EXIF. Recipients get the original file with all metadata.</td></tr>
+<tr><td>Email attachments</td><td><strong>No</strong></td><td>Email does not modify attachments. All EXIF data is preserved.</td></tr>
+<tr><td>Cloud storage links</td><td><strong>No</strong></td><td>Google Drive, Dropbox, OneDrive — shared links serve the original file.</td></tr>
+</table>
+
+<p>The pattern is clear: social media platforms strip EXIF from the public-facing copy (though they may retain it internally). Private messaging and file sharing generally do not strip anything. If you are sending photos through email, Telegram, iMessage, or cloud storage, you need to remove EXIF yourself before sharing.</p>
+
+<h2 id="sec4">How to Check EXIF Data on Your Photos</h2>
+
+<h3>iPhone</h3>
+<p>Open the Photos app, select an image, and swipe up. The info panel shows the date, time, camera model, and — if present — a small map showing the GPS location. If there is no map, the photo does not contain location data.</p>
+
+<h3>Android (Google Photos)</h3>
+<p>Open the photo in Google Photos, tap the three-dot menu (⋮) at the top right, and select "Details" or swipe up. The details panel shows camera info, and if GPS data is present, a map with the shooting location.</p>
+
+<h3>Windows</h3>
+<p>Right-click the image file, select "Properties," then click the "Details" tab. Scroll down to the GPS section. If latitude and longitude fields are populated, the photo contains location data.</p>
+
+<h3>Mac</h3>
+<p>Open the image in Preview, then go to Tools → Show Inspector (or press ⌘+I). Click the "GPS" tab in the inspector panel. If the tab does not appear, the photo has no GPS data. If it does, you will see the exact coordinates and a map.</p>
+
+<h3>Browser-Based Tools</h3>
+<p>If you want a quick check without installing anything, browser-based EXIF viewers process the file locally in your browser — the photo never leaves your device. Search for "EXIF viewer online" and use one that explicitly states client-side processing.</p>
+
+<h2 id="sec5">How to Remove EXIF Data</h2>
+
+<h3>iPhone (iOS 15 or later)</h3>
+<p>There are two approaches. For individual photos: open the image in Photos, swipe up to the info panel, tap "Adjust" next to the map, and remove the location. For sharing: when you tap the share button, tap "Options" at the top of the share sheet and toggle off "Location." This strips location data from the shared copy without modifying the original.</p>
+
+<h3>Android</h3>
+<p>In Google Photos, open the image, tap the three-dot menu, and select "Edit location" → "No location." For bulk removal, free apps like Scrambled Exif (open source) let you share photos through the app, which strips all metadata before passing the file along. No data is uploaded to any server.</p>
+
+<h3>Windows</h3>
+<p>Right-click the image, go to Properties → Details, and click "Remove Properties and Personal Information" at the bottom. You can choose to create a copy with all metadata removed or selectively remove specific fields from the original. This works natively without any additional software.</p>
+
+<h3>Mac</h3>
+<p>Preview can remove GPS data only: open the image, go to Tools → Show Inspector → GPS tab → "Remove Location Info." To strip all EXIF data (not just GPS), use ImageOptim (free, open source). Drag photos into ImageOptim and it removes all metadata while optimizing file size. For command-line users, ExifTool offers the most control:</p>
+
+<div class="code-block">
+<code>exiftool -all= photo.jpg</code>
+</div>
+
+<p>This removes every EXIF field from the file. To remove only GPS data while keeping other metadata (like camera settings), use:</p>
+
+<div class="code-block">
+<code>exiftool -gps:all= photo.jpg</code>
+</div>
+
+<h2 id="sec6">How to Stop Recording Location Data</h2>
+
+<p>Rather than removing GPS data after the fact, you can prevent your camera from recording it in the first place.</p>
+
+<h3>iPhone</h3>
+<p>Go to Settings → Privacy & Security → Location Services → Camera → select "Never." New photos will no longer contain GPS coordinates. Photos you have already taken are not affected — those still have whatever location data was embedded at capture time.</p>
+
+<h3>Android</h3>
+<p>Open the Camera app, go to Settings, and turn off "Location tag" (or "GPS tag" — the exact name varies by manufacturer). On Samsung devices, it is under Camera Settings → Location tags. On Pixel phones, it is Camera → Settings → Save location.</p>
+
+<p>Keep in mind that disabling location recording also means you lose the ability to search photos by location in your gallery. If you find location-based search useful, a better approach is to leave GPS recording on but strip the data before sharing.</p>
+
+<h2 id="sec7">The WhatsApp Trap Most People Miss</h2>
+
+<p>WhatsApp has three ways to send a photo, and each handles metadata differently. This is one of the least understood privacy pitfalls in everyday messaging.</p>
+
+<p><strong>Photo mode</strong> (tap the camera icon, pick a photo, send): WhatsApp strips most EXIF data including GPS. This is safe.</p>
+
+<p><strong>Document mode</strong> (tap the attachment icon, select "Document," choose a photo): WhatsApp sends the file completely untouched. All metadata is preserved — GPS coordinates, camera model, timestamps, software version, everything. People use document mode to avoid compression and send higher-quality images, not realizing they are also sending their exact location.</p>
+
+<p><strong>Best quality mode</strong> (available in some versions): Testing shows GPS data is preserved in a significant portion of cases. It is not reliable for privacy.</p>
+
+<p>If you care about privacy, always send photos as regular photos in WhatsApp, never as documents. Or better yet, strip the metadata before sending through any channel.</p>
+
+<h2 id="sec8">FAQ</h2>
+
+<div class="faq-section">
+
+<div class="faq-item">
+<h3>What is EXIF data?</h3>
+<p>EXIF (Exchangeable Image File Format) is metadata automatically embedded in digital photos by cameras and smartphones. It can include the date and time of capture, camera model, lens and exposure settings, image dimensions, and GPS coordinates of the shooting location. This data is invisible when viewing the photo normally but can be extracted by anyone with the right tools.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do social media platforms remove EXIF data from uploaded photos?</h3>
+<p>Most major social media platforms — including X (formerly Twitter), Instagram, and Facebook — strip EXIF data from the publicly viewable copy of your photos. However, the platforms themselves may retain the original metadata on their servers. Email attachments, cloud storage links, and messaging apps like Telegram do not strip EXIF data, meaning the recipient can see your GPS coordinates and device information.</p>
+</div>
+
+<div class="faq-item">
+<h3>How do I remove EXIF data on iPhone?</h3>
+<p>On iPhone (iOS 15 or later), open the Photos app, select an image, swipe up to see the info panel, tap "Adjust" next to the map, and remove the location. When sharing, you can also tap "Options" in the share sheet and toggle off "Location." To prevent GPS recording entirely, go to Settings → Privacy & Security → Location Services → Camera → Never.</p>
+</div>
+
+<div class="faq-item">
+<h3>How do I remove EXIF data on Android?</h3>
+<p>On Android using Google Photos, open a photo, tap the three-dot menu, select "Edit location" and then "No location." To stop recording GPS in new photos, open Camera settings and turn off "Location tag" or "GPS tag." The exact menu name varies by manufacturer. For bulk removal, free apps like Scrambled Exif or browser-based tools work without uploading your files to any server.</p>
+</div>
+
+<div class="faq-item">
+<h3>Does WhatsApp remove EXIF data from photos?</h3>
+<p>It depends on how you send the photo. When you use the regular photo mode (camera icon), WhatsApp strips most EXIF data including GPS. However, if you send a photo as a "Document," all metadata is preserved — GPS coordinates, device model, timestamps, everything. Always use the regular photo mode if privacy matters.</p>
+</div>
+
+<div class="faq-item">
+<h3>Does taking a screenshot remove EXIF data?</h3>
+<p>Screenshots contain minimal metadata compared to camera photos. A screenshot typically records only the device model, date, and screen dimensions — no GPS coordinates from the original image. Taking a screenshot of a photo is a quick-and-dirty way to strip its metadata, though it also reduces image quality significantly.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can AI determine a photo's location even without EXIF data?</h3>
+<p>Yes. AI models can identify locations from visual clues — street signs, architecture styles, vegetation, weather patterns, and distinctive landmarks — even when all metadata has been stripped. EXIF removal is necessary but not sufficient for complete location privacy. If you need maximum protection, consider blurring or cropping backgrounds in addition to stripping metadata.</p>
+</div>
+
+</div>
+
+<h2 id="sec9">Summary</h2>
+
+<p>EXIF data is useful for organizing your own photos but becomes a privacy risk the moment you share them. The key points to remember: social media platforms strip EXIF for public viewers (but keep it internally); email, cloud sharing, Telegram, and iMessage do not strip anything; and WhatsApp's document mode is a hidden privacy trap that preserves all metadata.</p>
+
+<p>The simplest habit that covers most cases: before sharing a photo outside of social media, open the share options on your phone and make sure location data is toggled off. For anything more sensitive, use a dedicated EXIF removal tool or command-line ExifTool to strip everything.</p>
+
+<p class="lang-switch">🇯🇵 <a href="exif-info.html">この記事の日本語版はこちら（Japanese version）</a></p>
+
+<div class="author-box">
+<div class="author-icon"><img src="icons/tsubasa.png" alt="Tsubasa" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>I work in e-commerce in Japan. This site is a collection of notes on things I've researched. I can use Photoshop a little but prefer smartphone apps for quick edits. For anything beyond basic adjustments, I outsource to professional retouchers.</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
