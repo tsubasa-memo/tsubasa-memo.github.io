@@ -717,3 +717,41 @@
 ## 運営者
 
 ツバサ。EC関係の仕事をしています。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。
+
+### English Articles
+
+- [RAW vs JPEG: Which Should You Shoot? A Beginner's Guide (English)](https://tsubasa-memo.github.io/raw-vs-jpeg-en.html): English guide comparing RAW and JPEG formats. Covers editing flexibility, file sizes, storage, and when to use each format.
+  - Q: What is the main difference between RAW and JPEG?
+  - Q: Should a beginner shoot RAW or JPEG?
+  - Q: How much storage does RAW use compared to JPEG?
+  - Q: What software do I need to edit RAW files?
+  - Q: Is RAW better for product photography?
+
+- [JPEG vs PNG vs WebP vs RAW: Image File Formats Explained (English)](https://tsubasa-memo.github.io/image-file-formats-en.html): English comparison of image formats. When to use JPEG, PNG, WebP, GIF, RAW, and HEIC for web, social media, and photography.
+  - Q: When should I use JPEG vs PNG?
+  - Q: What is WebP and is it better than JPEG?
+  - Q: What is the best image format for e-commerce product photos?
+  - Q: When should I use RAW?
+  - Q: Is GIF still used in 2026?
+  - Q: How do I convert HEIC photos from iPhone to JPEG?
+
+- [Best Photo Colorization Apps in 2026 (English)](https://tsubasa-memo.github.io/photo-colorize-apps-en.html): English review of 6 AI tools for colorizing black-and-white photos, changing specific colors, and restoring faded images.
+  - Q: Can I colorize black-and-white photos for free?
+  - Q: Can I colorize photos on my phone?
+  - Q: How accurate are AI-colorized photos?
+  - Q: Can I change just one color in a photo without affecting the rest?
+  - Q: Can faded old photos be restored to their original colors?
+
+- [Google Photos vs iCloud vs Amazon Photos: Backup Comparison 2026 (English)](https://tsubasa-memo.github.io/photo-backup-comparison-en.html): English comparison of cloud photo backup services. Free tiers, paid plans, AI search, and cross-platform support.
+  - Q: Is Google Photos still free?
+  - Q: Is Amazon Photos free without Prime?
+  - Q: Should iPhone users pick iCloud or Google Photos?
+  - Q: Which service offers the best value for paid storage?
+  - Q: Can I use multiple cloud services at the same time?
+
+- [Why Your Phone's Portrait Mode Looks Bad and How to Fix It (English)](https://tsubasa-memo.github.io/portrait-mode-tips-en.html): English guide to getting natural-looking portrait mode photos on smartphones. Distance, lighting, and background tips.
+  - Q: When does portrait mode work best?
+  - Q: Why does portrait mode background blur look unnatural?
+  - Q: Can I adjust portrait mode blur after taking the photo?
+  - Q: Does portrait mode work with pets or objects?
+  - Q: Is portrait mode the same as real camera bokeh?
