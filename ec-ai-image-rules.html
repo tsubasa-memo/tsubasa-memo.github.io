@@ -99,9 +99,9 @@ gtag('config', 'G-YYBFXHXMM6');
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
@@ -109,63 +109,79 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </header>
 
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> &gt; <a href="archive.html?cat=ec">EC・実務</a> &gt; EC商品画像にAIを使うときの注意点
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>EC商品画像にAIを使うときの注意点<br>3モールの規約と景表法を整理</h1>
-<p class="update">2026年5月 更新</p>
+<div class="article-hero">
+<img src="/thumbs/ec-ai-image-rules.png" alt="EC商品画像にAIを使うときの注意点3モールの規約と景表法を整理" width="640" height="360" loading="eager">
 </div>
-</section>
 
-<main>
-<div class="wrap">
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">EC商品画像にAIを使うときの注意点<br/>3モールの規約と景表法を整理</h1>
+<div class="article-meta-line">
+<span>2026年5月 更新</span>
+</div>
 
 <p>こんにちは、ツバサです。</p>
-
 <p>最近、背景をAIで<a class="glossary-inline" href="/glossary/compositing.html">合成</a>した商品画像を見かける機会が増えました。自分のところでも「撮影コストを減らせるなら試したい」という話が出ていて、でもモールの規約に引っかからないか、<a class="glossary-inline" href="/glossary/keihyouhou.html">景品表示法</a>で問題にならないか、正直よくわかっていませんでした。</p>
-
 <p>そこで、Amazon・楽天市場・Yahoo!ショッピングの公式規約と、景品表示法の関連資料を調べて整理しました。結論から言うと、3モールとも「AI画像だから禁止」とは書いていません。ただし、モールごとにAI画像の受け入れ度合いが明確に違います。</p>
-
 <h2>EC商品画像にAI画像を使っていいのか</h2>
-
 <p>「AI画像はOKか？　NGか？」という問い方だと答えが出ません。各モールの画像規約は、画像の制作手段（AIかカメラか）ではなく、画像の内容（背景色、テキスト占有率、商品の正確な表現）で判定されるからです。</p>
-
 <p>判断の軸は2つあります。1つ目は「モールの画像ガイドラインに適合しているか」、2つ目は「実物の商品と乖離していないか（景品表示法）」です。この2つをクリアしていれば、AI生成画像でも掲載自体は問題ありません。逆に、一眼レフで撮影した写真でも、実物と違う色味に加工していれば景表法違反です。</p>
-
 <p>ただ、モールごとにAI画像への寛容さに差があります。以下、1社ずつ見ていきます。</p>
-
 <h2>Amazon：メイン画像は実写が前提</h2>
-
 <p>Amazonのメイン画像のルールは3モールの中で最も厳格です。セラーセントラルの「商品画像の要件」（ヘルプページG1881）には、メイン画像の要件として以下の記述があります。</p>
-
-<a class="cite-card" href="https://sellercentral.amazon.com/help/hub/reference/external/G1881?mons_sel_locale=ja_JP" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://sellercentral.amazon.com/help/hub/reference/external/G1881?mons_sel_locale=ja_JP" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">商品画像のガイド - Amazon Seller Central</span>
 <span class="cite-url">sellercentral.amazon.com</span>
 </span>
 </a>
-
 <p>まず、メイン画像は「出品する商品を正確に表すこと」が大前提です。そのうえで、背景はRGB（255, 255, 255）の純白に限定され、「グラフィック、図、イラストは使用できない」という禁止事項があります。</p>
-
 <p>「AI生成画像」という言葉で明示的に禁止しているわけではありません。しかし、AI生成の商品画像がイラストや不自然なCGと判定されれば「グラフィック禁止」ルールに抵触します。また、商品の質感・色・形状が実物と少しでも異なれば「正確に表す」に違反します。メイン画像に関しては、AI生成画像を使うメリットがほぼありません。</p>
-
 <h3>サブ画像・広告ではAIが使える</h3>
-
 <p>一方、Amazon Adsの広告クリエイティブ向けには、Amazon自身がAI画像生成機能（Background Generation）を提供しています。これは、実物の商品画像をベースにして、周囲にライフスタイルの使用シーン背景を生成する機能です。</p>
-
 <table class="compare-table">
 <tr>
 <th>用途</th>
@@ -193,27 +209,19 @@ gtag('config', 'G-YYBFXHXMM6');
 <td>Amazon Adsの機能</td>
 </tr>
 </table>
-
 <p>Amazonで安全にAIを使うなら、メイン画像は実写を維持し、サブ画像やA+コンテンツのライフスタイル画像にだけAI背景合成を使う、という運用が現実的です。</p>
-
 <h2>楽天市場：2024年6月にAI合成背景を公認</h2>
-
 <p>楽天市場は3モールの中で最もAI画像に積極的な姿勢をとっています。2024年6月に商品画像登録ガイドラインを改定し、「自然に見える合成背景」を第1商品画像（サムネイル）にも使えるようにしました。</p>
-
-<a class="cite-card" href="https://www.commerce-design.net/blog-staff/181217-productimage-qanda/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.commerce-design.net/blog-staff/181217-productimage-qanda/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">【保存版】楽天「商品画像登録ガイドライン」対応！実例付き24の対策まとめ - コマースデザイン</span>
 <span class="cite-url">commerce-design.net</span>
 </span>
 </a>
-
 <p>この改定の背景には、楽天が<a class="glossary-inline" href="/glossary/rakuten-rms.html">RMS</a>上で提供を始めた「商品画像加工支援AI」の存在があります。白背景の商品写真をアップロードし、テーマ（室内・屋外・木目など）を選ぶと、AIが商品に合った背景を生成・合成してくれるツールです。楽天はこのツールのリリースに合わせて、従来は「商品と一緒に撮影した写真背景」に限定していたルールを「自然に見える合成背景もOK」に変えました。</p>
-
 <h3>「自然に見える」の判定基準</h3>
-
 <p>合成背景が認められたとはいえ、何でも許されるわけではありません。楽天のAI画像判定ツールでNG判定を受ける典型的なパターンがあります。</p>
-
 <table class="compare-table">
 <tr>
 <th>判定</th>
@@ -232,47 +240,32 @@ gtag('config', 'G-YYBFXHXMM6');
 <td>商品と無関係な背景（靴の背景にジャガイモ畑、など）</td>
 </tr>
 </table>
-
 <p>影の付き方が不自然な場合、AIが生成した背景でもベタ塗り扱いされてNG判定が出ます。RMSの画像判定ツールで毎回チェックするのが鉄則です。</p>
-
 <h3>RMS「商品画像加工支援AI」の注意点</h3>
-
 <p>楽天公式のAIツールで作った画像であっても、ガイドライン適合が自動的に保証されるわけではありません。テキスト要素20%以内・枠線なし・背景要件の3項目を店舗側が画像判定ツールで確認する必要があります。また、出力サイズは1024×1024ピクセル固定で、楽天の推奨サイズ（700×700以上）は満たしますが、より高解像度が必要なら外部ツールの併用が必要です。</p>
-
 <h2>Yahoo!ショッピング：合成背景の公式容認は未確認</h2>
-
 <p>Yahoo!ショッピングの商品画像登録ガイドラインは、楽天と似た3ルール（テキスト20%以下・枠線禁止・白 or 写真背景）を採用しています。ただし、楽天が2024年6月に踏み切った「合成背景の公認」について、Yahoo!が同様の改定を行ったという公式アナウンスは2026年5月時点で確認できませんでした。</p>
-
-<a class="cite-card" href="https://www.5springs.co.jp/blog/yahoo-image-guideline/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.5springs.co.jp/blog/yahoo-image-guideline/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">【2024年最新】Yahoo!ショッピングの商品画像登録ガイドラインをわかりやすく解説！ - 5springs</span>
 <span class="cite-url">5springs.co.jp</span>
 </span>
 </a>
-
 <p>Yahoo!のガイドラインでは「写真背景」は「商品と一緒に撮影された背景」を指しており、EC系コンサル会社の解説記事でも「商品画像と写真背景の合成」はNG例として挙げられています。Yahoo!がAI画像生成の公式ツールを提供している形跡もありません。</p>
-
 <p>Yahoo!ショッピングに出品する場合は、楽天と同じ感覚でAI合成背景を使うとリスクがあります。合成だとわかりにくい自然な仕上がりであれば実務上は通るケースもあるようですが、規約上のお墨付きはないので、公式の緩和が出るまでは実写ベースの微修整に留めておくのが安全です。</p>
-
 <h2>景品表示法：AI画像でも「正確な表現」が原則</h2>
-
 <p>モールの規約をクリアしても、景品表示法（景表法）のハードルは別にあります。商品画像がAI生成であろうと一眼レフ撮影であろうと、実物と異なる表示は「優良誤認表示」として規制の対象になります。</p>
-
-<a class="cite-card" href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/" target="_blank" rel="noopener nofollow">
+<a class="cite-card" href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">景品表示法 - 消費者庁</span>
 <span class="cite-url">caa.go.jp</span>
 </span>
 </a>
-
 <p>2026年5月時点で、「AI生成画像そのもの」を理由とした措置命令（行政処分）の事例は確認されていません。しかし、Photoshopでの過度な加工による優良誤認の措置命令は過去に複数出ており、そのロジックはAI画像にもそのまま適用されます。</p>
-
 <h3>AI画像で問題になりやすいパターン</h3>
-
 <p>特にリスクが高いのは以下の3パターンです。</p>
-
 <table class="compare-table">
 <tr>
 <th>パターン</th>
@@ -295,18 +288,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <td>商品の形状を歪めていれば不当表示</td>
 </tr>
 </table>
-
 <p>消費者庁は、広告の責任はAIではなく広告主（EC事業者）にあることを明確にしています。「AIが勝手にやった」は通用しません。</p>
-
 <div class="point-box">
 <h4>景表法を踏まえたAI画像の使い方</h4>
 <p>商品そのものは高解像度の実写を使い、背景やモデルのみAIで補助する。これが現時点で最も安全な運用方針です。AIモデルの着用画像を使う場合は、「※画像はイメージです。実際の着用感は商品スペックをご確認ください」の注釈を入れておくと、クレーム予防になります。景表法の二重価格やステマ規制も含めた全体像は<a href="/keihyouhou-ec-memo.html">景品表示法の社内研修メモ</a>で整理しています。</p>
 </div>
-
 <h2>セーフなケースとNGなケースの整理</h2>
-
 <p>ここまでの調査をもとに、AI画像の使い方をセーフ・グレー・NGに分類しました。</p>
-
 <table class="compare-table">
 <tr>
 <th>判定</th>
@@ -359,46 +347,37 @@ gtag('config', 'G-YYBFXHXMM6');
 <td>白背景・実写・正確性の要件に抵触</td>
 </tr>
 </table>
-
 <div class="faq-section">
 <h2>よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. EC商品画像にAI生成画像を使っていいですか？</div>
 <div class="fa">モールごとにルールが異なります。Amazonのメイン画像は実写商品の白背景が原則で、AI生成画像はリスクが高い。楽天は2024年6月に「自然に見える合成背景」を公認しました。Yahoo!ショッピングは合成背景の公式容認が未確認です。いずれのモールでも、商品そのものをAIで生成して実物と違う見た目にすることは景品表示法の優良誤認に該当する可能性があります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. Amazonのメイン画像にAIで背景を合成できますか？</div>
 <div class="fa">Amazonのメイン画像は背景が純白（RGB 255,255,255）と規定されているため、背景合成の出番がありません。サブ画像やA+コンテンツであれば、Amazon Ads公式のAI画像生成ツールでライフスタイル背景を合成できます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 楽天のRMS AIで作った画像はガイドライン適合が保証されますか？</div>
 <div class="fa">保証されません。楽天が提供する「商品画像加工支援AI」で生成した画像であっても、テキスト要素20%以内・枠線なし・背景要件の3項目を満たしているか、店舗側がRMSの画像判定ツールで毎回確認する必要があります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. AIで作ったモデル着用画像は景品表示法に違反しますか？</div>
 <div class="fa">AIモデルの着用画像そのものが直ちに違法になるわけではありません。ただし、AIモデルの体型が実際の商品のシルエットと大きく異なる場合や、素材の質感が実物と違って見える場合は、景品表示法の優良誤認に該当する可能性があります。「実物の商品を正確に表しているか」が判断基準です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. AI画像を使うときに注釈は必要ですか？</div>
-<div class="fa">2026年5月時点で、ECモールの規約や日本の法律でAI画像の注釈を義務付ける規定はありません。ただし、<a href="https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf" target="_blank" rel="noopener">文化庁</a>や経済産業省はAI生成コンテンツの透明性を議論しており、将来的に義務化される可能性があります。AIモデル着用画像には「画像はイメージです」の注釈を入れておくとクレーム予防になります。</div>
+<div class="fa">2026年5月時点で、ECモールの規約や日本の法律でAI画像の注釈を義務付ける規定はありません。ただし、<a href="https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf" rel="noopener" target="_blank">文化庁</a>や経済産業省はAI生成コンテンツの透明性を議論しており、将来的に義務化される可能性があります。AIモデル着用画像には「画像はイメージです」の注釈を入れておくとクレーム予防になります。</div>
 </div>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <div class="author-name">ツバサ</div>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-
 <div class="disclaimer">※この記事は2026年5月時点の各社公式ヘルプページおよび公表資料をもとに整理したものです。規約は頻繁に更新されるため、実運用にあたっては最新のセラーセントラル、RMS、ストアクリエイターProの管理画面を確認してください。</div>
-
 <div class="related">
 <h3>関連記事</h3>
 <a class="cite-card" href="/keihyouhou-ec-memo.html">
@@ -438,17 +417,20 @@ gtag('config', 'G-YYBFXHXMM6');
 </a>
 </div>
 
-</div>
 </main>
+
+
+
+</div>
 
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
 

@@ -118,44 +118,73 @@
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <a href="/" class="site-name">ツバサのメモ帳</a>
-    <nav class="site-nav">
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
-  </div>
+</div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-  <div class="wrap">
-    <a href="/">ホーム</a> &gt; <a href="/archive.html?cat=ec">EC・実務</a> &gt; ささげ担当の仕事内容と現場のリアル
-  </div>
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">ホーム</a> &gt; <a href="/archive.html?cat=ec">EC・実務</a> &gt; ささげ担当の仕事内容と現場のリアル
+  
 </nav>
 
-<section class="hero">
-  <div class="wrap">
-    <h1>ささげ担当の仕事内容と現場のリアル｜必要スキルと離職率が高い理由</h1>
-    <p class="update">2026年4月 更新</p>
-  </div>
-</section>
+<div class="article-hero">
+<img src="/thumbs/sasage-job-realistic.png" alt="ささげ担当の仕事内容と現場のリアル｜必要スキルと離職率が高い理由" width="640" height="360" loading="eager">
+</div>
 
-<main>
-  <div class="wrap">
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">ささげ担当の仕事内容と現場のリアル｜必要スキルと離職率が高い理由</h1>
+<div class="article-meta-line">
+<span>2026年4月28日</span>
+<span>2026年4月 更新</span>
+</div>
 
-    <p>こんにちは、ツバサです。</p>
-
-    <p>EC業界の求人を見ていると「ささげ担当」というポジションを目にする機会が増えています。撮影・採寸・原稿作成をまとめて担う職種ですが、求人は多いのに離職率も高い。その背景を調べてみると、業務の実態と評価制度のギャップが見えてきました。</p>
-
-    <p>この記事では、ささげ担当の具体的な仕事内容、必要スキル、そして離職率が高い構造的な理由をまとめました。これから応募を考えている人にも、採用側の事業者にも参考になる内容です。</p>
-
+<p>こんにちは、ツバサです。</p>
+<p>EC業界の求人を見ていると「ささげ担当」というポジションを目にする機会が増えています。撮影・採寸・原稿作成をまとめて担う職種ですが、求人は多いのに離職率も高い。その背景を調べてみると、業務の実態と評価制度のギャップが見えてきました。</p>
+<p>この記事では、ささげ担当の具体的な仕事内容、必要スキル、そして離職率が高い構造的な理由をまとめました。これから応募を考えている人にも、採用側の事業者にも参考になる内容です。</p>
 <div class="box box-accent">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -175,131 +204,92 @@
 <li><a href="#sec6">よくある質問</a></li>
 </ol>
 </div>
-
-    <h2 id="sec1">ささげ担当の1日の流れ</h2>
-
-    <p>ささげ担当の1日は、商品の受け入れから始まります。一般的な流れは以下の通りです。</p>
-
-    <p>出社後、まず入荷商品の検品と展開作業を行います。箱から商品を取り出し、タグや付属品を確認し、撮影できる状態に準備します。リユース品の場合はここにクリーニング工程が入ります。午前中に撮影を集中的に行い、午後は採寸と原稿作成、画像のレタッチとアップロードに充てる。この流れが1サイクルです。</p>
-
-    <p>Indeedに掲載されているアパレル商社（豊田貿易）のEC運営スタッフ求人を見ると、業務内容に「<a class="glossary-inline" href="/glossary/sasage.html">ささげ業務</a>（商品撮影・レタッチ・採寸・商品コメント作成）」が明記されています。月給は30万〜40万円で、ささげ以外にもECサイト運営や受注管理を兼務するポジションです。</p>
-
-    <p>ファッション業界特化型の求人サイトREADY TO FASHIONにもささげ業務の求人特集があり、複数社の業務内容を比較できます。</p>
-
-    <a class="cite-card" href="https://www.readytofashion.jp/specials/39" target="_blank" rel="noopener nofollow">
+<h2 id="sec1">ささげ担当の1日の流れ</h2>
+<p>ささげ担当の1日は、商品の受け入れから始まります。一般的な流れは以下の通りです。</p>
+<p>出社後、まず入荷商品の検品と展開作業を行います。箱から商品を取り出し、タグや付属品を確認し、撮影できる状態に準備します。リユース品の場合はここにクリーニング工程が入ります。午前中に撮影を集中的に行い、午後は採寸と原稿作成、画像のレタッチとアップロードに充てる。この流れが1サイクルです。</p>
+<p>Indeedに掲載されているアパレル商社（豊田貿易）のEC運営スタッフ求人を見ると、業務内容に「<a class="glossary-inline" href="/glossary/sasage.html">ささげ業務</a>（商品撮影・レタッチ・採寸・商品コメント作成）」が明記されています。月給は30万〜40万円で、ささげ以外にもECサイト運営や受注管理を兼務するポジションです。</p>
+<p>ファッション業界特化型の求人サイトREADY TO FASHIONにもささげ業務の求人特集があり、複数社の業務内容を比較できます。</p>
+<a class="cite-card" href="https://www.readytofashion.jp/specials/39" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">ささげ業務の求人特集 - READY TO FASHION</span>
 <span class="cite-url">www.readytofashion.jp</span>
 </span>
 </a>
-
-    <h2 id="sec2">必要なスキルは何か</h2>
-
-    <p>「写真が撮れればOK」と思われがちですが、ささげ担当に求められるスキルは意外と幅広いです。</p>
-
-    <p>撮影面では、一眼レフまたはスマホのマニュアル撮影ができること、照明の基本（順光・逆光・ディフューズ）を理解していることが求められます。最近はiPhone撮影を指定する求人も増えていますが、撮影ボックスの使い方やアングルの決め方は共通の知識です。</p>
-
-    <p>画像編集では、Photoshopの基本操作（背景切り抜き、<a class="glossary-inline" href="/glossary/color-correction.html">色補正</a>、<a class="glossary-inline" href="/glossary/resize.html">リサイズ</a>）が標準的に求められます。CanvaやRemove.bgのような簡易ツールで代替できる現場もありますが、Photoshopが使えると選べる求人の幅が広がります。</p>
-
-    <p>採寸は「メジャーの使い方」だけではなく、どの箇所を測るべきかというカテゴリごとの計測ルールの知識が必要です。アパレルなら着丈・身幅・肩幅・袖丈が基本ですが、バッグなら縦×横×マチ、時計ならケース径やベルト幅と、商材によって計測項目が変わります。</p>
-
-    <p>原稿作成では、500字程度の商品説明文を書く力が必要です。商品の特徴を端的に伝える文章力に加えて、SEOを意識したキーワードの挿入も求められることがあります。</p>
-
-    <h2 id="sec3">離職率が高いのはなぜか</h2>
-
-    <p>厚生労働省の「令和6年雇用動向調査」によると、卸売業・小売業の離職率は15.1%で、全産業平均の14.2%を上回っています。パートタイム労働者に限ると21.3%まで跳ね上がります。離職者数は年間142.7万人で、全産業中最多です。</p>
-
-    <a class="cite-card" href="https://www.mhlw.go.jp/toukei/itiran/roudou/koyou/doukou/25-2/dl/kekka_gaiyo-02.pdf" target="_blank" rel="noopener nofollow">
+<h2 id="sec2">必要なスキルは何か</h2>
+<p>「写真が撮れればOK」と思われがちですが、ささげ担当に求められるスキルは意外と幅広いです。</p>
+<p>撮影面では、一眼レフまたはスマホのマニュアル撮影ができること、照明の基本（順光・逆光・ディフューズ）を理解していることが求められます。最近はiPhone撮影を指定する求人も増えていますが、撮影ボックスの使い方やアングルの決め方は共通の知識です。</p>
+<p>画像編集では、Photoshopの基本操作（背景切り抜き、<a class="glossary-inline" href="/glossary/color-correction.html">色補正</a>、<a class="glossary-inline" href="/glossary/resize.html">リサイズ</a>）が標準的に求められます。CanvaやRemove.bgのような簡易ツールで代替できる現場もありますが、Photoshopが使えると選べる求人の幅が広がります。</p>
+<p>採寸は「メジャーの使い方」だけではなく、どの箇所を測るべきかというカテゴリごとの計測ルールの知識が必要です。アパレルなら着丈・身幅・肩幅・袖丈が基本ですが、バッグなら縦×横×マチ、時計ならケース径やベルト幅と、商材によって計測項目が変わります。</p>
+<p>原稿作成では、500字程度の商品説明文を書く力が必要です。商品の特徴を端的に伝える文章力に加えて、SEOを意識したキーワードの挿入も求められることがあります。</p>
+<h2 id="sec3">離職率が高いのはなぜか</h2>
+<p>厚生労働省の「令和6年雇用動向調査」によると、卸売業・小売業の離職率は15.1%で、全産業平均の14.2%を上回っています。パートタイム労働者に限ると21.3%まで跳ね上がります。離職者数は年間142.7万人で、全産業中最多です。</p>
+<a class="cite-card" href="https://www.mhlw.go.jp/toukei/itiran/roudou/koyou/doukou/25-2/dl/kekka_gaiyo-02.pdf" rel="noopener nofollow" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">令和6年雇用動向調査結果の概要 - 厚生労働省</span>
 <span class="cite-url">www.mhlw.go.jp</span>
 </span>
 </a>
-
-    <p>「ささげ担当」に限った統計は存在しませんが、EC現場で離職率が高くなる構造的な理由は3つあります。</p>
-
-    <p>1つ目は、業務の単調さです。商品が変わっても作業の流れは同じで、毎日「撮って測って書く」の繰り返しになります。リユースEC支援のオートリージャパンも「テクノロジーでは代替できない部分も多く、離職率が高くなる傾向がある」と指摘しています。</p>
-
-    <a class="cite-card" href="https://www.ortery.jp/ec-blog/ec-sasage/" target="_blank" rel="noopener noreferrer">
+<p>「ささげ担当」に限った統計は存在しませんが、EC現場で離職率が高くなる構造的な理由は3つあります。</p>
+<p>1つ目は、業務の単調さです。商品が変わっても作業の流れは同じで、毎日「撮って測って書く」の繰り返しになります。リユースEC支援のオートリージャパンも「テクノロジーでは代替できない部分も多く、離職率が高くなる傾向がある」と指摘しています。</p>
+<a class="cite-card" href="https://www.ortery.jp/ec-blog/ec-sasage/" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
 <span class="cite-title">EC運営における「ささげ」業務とは？ - オートリージャパン</span>
 <span class="cite-url">www.ortery.jp</span>
 </span>
 </a>
-
-    <p>2つ目は、経営層からの過小評価です。ささげを「写真を撮るだけの簡単な仕事」と認識している経営者は少なくありません。Xでは「EC1人でやるの無理なんだが？」という声も上がっており、1人に複数業務を押し付ける体制が疲弊の原因になっています。</p>
-
-    <a class="cite-card" href="https://x.com/koyukkiinu/status/2048937752247558464" target="_blank" rel="noopener noreferrer">
+<p>2つ目は、経営層からの過小評価です。ささげを「写真を撮るだけの簡単な仕事」と認識している経営者は少なくありません。Xでは「EC1人でやるの無理なんだが？」という声も上がっており、1人に複数業務を押し付ける体制が疲弊の原因になっています。</p>
+<a class="cite-card" href="https://x.com/koyukkiinu/status/2048937752247558464" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">X</span>
 <span class="cite-body">
 <span class="cite-title">EC1人で全業務を回す限界を訴える投稿 - @koyukkiinu</span>
 <span class="cite-url">x.com/koyukkiinu</span>
 </span>
 </a>
-
-    <p>3つ目は、キャリアパスの不透明さです。ささげ担当として入社しても、その先にどんなポジションがあるのかが見えない。EC責任者、MD、バイヤーへのステップアップが描けるのか、撮影スキルを活かした別の職種へ移れるのか。この将来像がない状態では、モチベーションの維持が難しくなります。</p>
-
-    <h2 id="sec4">「また人が辞める」を防ぐために</h2>
-
-    <p>採用する側にとっても、ささげ担当の離職は大きなコストです。人が辞めるたびに採用費と教育コストがかかり、その間は出品が滞って売上に影響します。</p>
-
-    <p>対策として考えられるのは、まず商品カテゴリの難易度に応じた評価指標の設計です。<a href="/sasage-workload.html">ささげ業務の工数を調べた記事</a>で触れたチェリー<a class="glossary-inline" href="/glossary/picking.html">ピッキング</a>の問題を防ぐために、「バッグ1点＝指輪3点相当」のような難易度換算を導入する必要があります。</p>
-
-    <p>次に、撮影スキルを「資産」として認め、キャリアパスを見せること。商品撮影のスキルはECに限らず広告制作やメーカーのマーケティング部門でも活かせます。社内でのステップアップだけでなく、市場価値としてのスキル成長を示すことがモチベーションにつながります。</p>
-
-    <p>そして、兼務の削減。ささげに集中できる時間を確保するだけで、処理量も品質も上がります。接客やCS対応との兼務は、中断によるロスが大きすぎるのが実態です。</p>
-
-    <h2 id="sec5">これからささげ担当に応募する人へ</h2>
-
-    <p>ささげ担当に向いているのは、黙々と同じ作業を繰り返すことが苦にならない人です。写真が好き、モノを丁寧に扱える、ECの裏側に興味がある。こういった素養があれば、未経験からでも十分にスタートできます。</p>
-
-    <p>一方で、覚悟すべきこともあります。毎日の作業は基本的に同じ流れの繰り返しで、「今日はこれを撮って、測って、書く」の日々が続きます。変化を求めるタイプの人には辛い面があるのは事実です。</p>
-
-    <p>未経験で入るなら、まずは撮影から手をつけるのがおすすめです。スマホでの物撮り、白背景の作り方、自然光の使い方を独学で覚えておけば、面接でもアピールしやすいポイントになります。</p>
-
-    <p>給与面では、Indeed掲載の求人データを見る限り、ささげ業務を含むEC運営スタッフの月給は21.6万〜40万円のレンジです。EC運営全般を兼務するポジションほど給与は高くなりますが、ささげ専任のみの場合は20万円台前半が多い印象です。</p>
-
-    <div class="faq-section">
-      <h2 id="sec6">よくある質問</h2>
-
-      <div class="faq-item">
-        <div class="fq">Q. ささげ担当は未経験でもなれる？</div>
-        <div class="fa">未経験OKの求人は多く存在します。READY TO FASHIONなどのファッション業界特化型求人サイトには未経験歓迎のささげ求人が定期的に掲載されています。Photoshopの初歩や撮影の基本を独学で学んでおくと選考で有利です。</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="fq">Q. ささげ担当の給与相場は？</div>
-        <div class="fa">Indeed掲載データでは月給21.6万〜40万円のレンジです。ささげ専任よりEC運営全般を兼務するポジションの方が給与水準は高い傾向があります。</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="fq">Q. ささげ業務の離職率が高い理由は？</div>
-        <div class="fa">厚労省の令和6年雇用動向調査では卸売業・小売業の離職率は15.1%（全産業平均14.2%）です。ささげ担当に限った統計はありませんが、ルーティンの繰り返し、経営層の過小評価、兼務による疲弊が主な原因です。</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="fq">Q. ささげ担当に必要な資格はある？</div>
-        <div class="fa">必須資格はありません。Photoshop操作やカメラの基本知識があれば採用で有利です。フォトマスター検定や色彩検定は必須ではありませんが、スキル証明として履歴書に書けるメリットがあります。</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="fq">Q. ささげ業務はAIに置き換えられる？</div>
-        <div class="fa">背景除去や色補正はAIツールで自動化が進んでいます。しかし採寸は実物を手に取る触覚判断が必要で、リユース品の状態説明は目視による主観判断が不可欠です。大和物流も「アパレルはSKU数が多く季節商品の入れ替えも激しいため、他商材よりささげの負担が大きい」と指摘しています。全工程のAI置き換えは当面難しい状況です。</div>
-      </div>
-    </div>
-
-    <div class="author-box">
-      <div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
-      <div class="author-text">
-        <p class="author-name">ツバサ</p>
-        <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
-      </div>
-    </div>
-
-    <div class="related">
+<p>3つ目は、キャリアパスの不透明さです。ささげ担当として入社しても、その先にどんなポジションがあるのかが見えない。EC責任者、MD、バイヤーへのステップアップが描けるのか、撮影スキルを活かした別の職種へ移れるのか。この将来像がない状態では、モチベーションの維持が難しくなります。</p>
+<h2 id="sec4">「また人が辞める」を防ぐために</h2>
+<p>採用する側にとっても、ささげ担当の離職は大きなコストです。人が辞めるたびに採用費と教育コストがかかり、その間は出品が滞って売上に影響します。</p>
+<p>対策として考えられるのは、まず商品カテゴリの難易度に応じた評価指標の設計です。<a href="/sasage-workload.html">ささげ業務の工数を調べた記事</a>で触れたチェリー<a class="glossary-inline" href="/glossary/picking.html">ピッキング</a>の問題を防ぐために、「バッグ1点＝指輪3点相当」のような難易度換算を導入する必要があります。</p>
+<p>次に、撮影スキルを「資産」として認め、キャリアパスを見せること。商品撮影のスキルはECに限らず広告制作やメーカーのマーケティング部門でも活かせます。社内でのステップアップだけでなく、市場価値としてのスキル成長を示すことがモチベーションにつながります。</p>
+<p>そして、兼務の削減。ささげに集中できる時間を確保するだけで、処理量も品質も上がります。接客やCS対応との兼務は、中断によるロスが大きすぎるのが実態です。</p>
+<h2 id="sec5">これからささげ担当に応募する人へ</h2>
+<p>ささげ担当に向いているのは、黙々と同じ作業を繰り返すことが苦にならない人です。写真が好き、モノを丁寧に扱える、ECの裏側に興味がある。こういった素養があれば、未経験からでも十分にスタートできます。</p>
+<p>一方で、覚悟すべきこともあります。毎日の作業は基本的に同じ流れの繰り返しで、「今日はこれを撮って、測って、書く」の日々が続きます。変化を求めるタイプの人には辛い面があるのは事実です。</p>
+<p>未経験で入るなら、まずは撮影から手をつけるのがおすすめです。スマホでの物撮り、白背景の作り方、自然光の使い方を独学で覚えておけば、面接でもアピールしやすいポイントになります。</p>
+<p>給与面では、Indeed掲載の求人データを見る限り、ささげ業務を含むEC運営スタッフの月給は21.6万〜40万円のレンジです。EC運営全般を兼務するポジションほど給与は高くなりますが、ささげ専任のみの場合は20万円台前半が多い印象です。</p>
+<div class="faq-section">
+<h2 id="sec6">よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. ささげ担当は未経験でもなれる？</div>
+<div class="fa">未経験OKの求人は多く存在します。READY TO FASHIONなどのファッション業界特化型求人サイトには未経験歓迎のささげ求人が定期的に掲載されています。Photoshopの初歩や撮影の基本を独学で学んでおくと選考で有利です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. ささげ担当の給与相場は？</div>
+<div class="fa">Indeed掲載データでは月給21.6万〜40万円のレンジです。ささげ専任よりEC運営全般を兼務するポジションの方が給与水準は高い傾向があります。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. ささげ業務の離職率が高い理由は？</div>
+<div class="fa">厚労省の令和6年雇用動向調査では卸売業・小売業の離職率は15.1%（全産業平均14.2%）です。ささげ担当に限った統計はありませんが、ルーティンの繰り返し、経営層の過小評価、兼務による疲弊が主な原因です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. ささげ担当に必要な資格はある？</div>
+<div class="fa">必須資格はありません。Photoshop操作やカメラの基本知識があれば採用で有利です。フォトマスター検定や色彩検定は必須ではありませんが、スキル証明として履歴書に書けるメリットがあります。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. ささげ業務はAIに置き換えられる？</div>
+<div class="fa">背景除去や色補正はAIツールで自動化が進んでいます。しかし採寸は実物を手に取る触覚判断が必要で、リユース品の状態説明は目視による主観判断が不可欠です。大和物流も「アパレルはSKU数が多く季節商品の入れ替えも激しいため、他商材よりささげの負担が大きい」と指摘しています。全工程のAI置き換えは当面難しい状況です。</div>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+<div class="related">
 <h3>関連記事</h3>
 <a class="cite-card" href="/sasage-workload.html">
 <span class="cite-ico int">ツ</span>
@@ -324,18 +314,33 @@
 </a>
 </div>
 
-</div>
 </main>
 
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">ささげ担当の1日の流れ</a></li>
+<li><a href="#sec2">必要なスキルは何か</a></li>
+<li><a href="#sec3">離職率が高いのはなぜか</a></li>
+<li><a href="#sec4">「また人が辞める」を防ぐために</a></li>
+<li><a href="#sec5">これからささげ担当に応募する人へ</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
-  <div class="wrap">
+<div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
 

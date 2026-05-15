@@ -113,32 +113,68 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="個人ブログのSEO対策として最初にやった5つのことをまとめました。タイトル32〜40文字・meta description 110〜125文字・sitemap.xml送信・FAQ構造化データ・内部リンクの設置方法を記録しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb"><div class="wrap"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 個人ブログを始めてSEOを勉強した記録｜…</div></nav>
-<div class="hero">
-<div class="wrap">
-<h1>個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】</h1>
-<p class="update">2026年3月 更新</p>
-</div>
-</div><main>
-<article>
-<div class="wrap">
-<p>個人ブログのSEO対策として最初にやった5つのこと。タイトル・description・サイトマップ・構造化データ・内部リンクの基本をまとめました。</p>
+</aside>
 
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> ＞ <a href="archive.html?cat=seo">SEO・LLMO</a> ＞ 個人ブログを始めてSEOを勉強した記録｜…</nav>
+
+<div class="article-hero">
+<img src="/thumbs/blog-seo-basics.png" alt="個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】</h1>
+<div class="article-meta-line">
+<span>2026年3月29日</span>
+<span>2026年3月 更新</span>
+</div>
+
+<p>個人ブログのSEO対策として最初にやった5つのこと。タイトル・description・サイトマップ・構造化データ・内部リンクの基本をまとめました。</p>
 <div class="point-box">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -149,9 +185,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li>SEO施策の優先順位のつけ方</li>
 </ul>
 </div>
-
 <p>こんにちは、ツバサです。ブログを始めたとき「SEO対策をやらないといけない」とは聞いていたけど、何から手をつければいいかわかりませんでした。調べながら実際にやってみたことを順番に書いておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -165,45 +199,26 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec8">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">1. タイトルタグを32〜40文字に収める</h2>
-
 <p>タイトルタグ（&lt;title&gt;タグ）は検索結果の見出しとして表示される最も重要な要素です。長すぎると検索結果で途中で切れてしまいます。</p>
-
 <p>Googleの検索結果でタイトルが切れないのは全角32〜40文字程度が目安です（スマホだと少し短め）。最初は記事のタイトルをそのまま使っていたら40字を超えることが多く、後から短くし直す作業が発生しました。最初からこの制限を意識して書く習慣をつけた方が楽です。</p>
-
 <p>また、検索されたいキーワードをタイトルの<strong>前半</strong>に入れることが重要です。「SDカードの選び方メモ｜カメラ用に必要な〜」より「SDカードの選び方｜カメラ用スペックと〜」の方がキーワードが先に来て効果的です。</p>
-
 <h2 id="sec2">2. meta descriptionを110〜125文字で書く</h2>
-
 <p>meta descriptionは検索結果のタイトル下に表示される説明文です。Googleが検索結果に表示するスニペットに使われることが多いです（必ずしも使われるわけではありませんが）。</p>
-
 <p>最初は80〜90文字で書いていることが多く、後から確認したら全記事の8割以上が100文字未満でした。110〜125文字を目標に、記事内の具体的な数値やサービス名を含めて書くようにしています。</p>
-
 <div class="warn-box">
 <p><strong>注意：</strong>135文字を超えると検索結果で途中で切れます。長すぎず短すぎず、110〜125文字が安全な範囲です。</p>
 </div>
-
 <h2 id="sec3">3. sitemap.xmlとrobots.txtを設置する</h2>
-
 <p>sitemap.xmlはサイト内の全URLをまとめたXMLファイルです。GoogleのクローラーにサイトのURL構造を伝えるために設置します。Search Consoleからsitemap.xmlのURLを送信すると、クロールが早くなる効果があります。</p>
-
 <p>robots.txtはクローラーに「このページはクロールしないで」と指示するためのファイルです。サイトマップのURLを記述しておくと、クローラーがサイトマップを見つけやすくなります。</p>
-
 <h2 id="sec4">4. FAQ構造化データ（JSON-LD）を全記事に入れる</h2>
-
 <p>構造化データはページの内容を機械が読みやすい形式で表現したコードです。FAQページのJSON-LDを設置すると、Googleの検索結果に「よくある質問」のボックスが表示されることがあります。</p>
-
 <p>構造化データを入れた後からの変化として、検索結果の表示が変わった記事があります（全部ではない）。またFAQ形式の構造化データは、ChatGPTやClaudeなどのAIが記事を引用する際に参照されやすいという効果もあると言われています。</p>
-
 <h2 id="sec5">5. 内部リンクを記事間に入れる</h2>
-
 <p>同じサイト内の関連記事へのリンク（内部リンク）を記事の本文や末尾に入れることで、GoogleのクローラーがサイトのURL構造を把握しやすくなります。また読者が関連記事を読み続けてくれる効果もあります。</p>
-
 <p>内部リンクのアンカーテキスト（リンクになっている文字）は「こちら」ではなく、リンク先の内容を具体的に示すテキストにすることがポイントです。「SDカードの選び方記事はこちら」より「<a href="sd-card.html">SDカードの選び方まとめ</a>」の方が効果的です。</p>
-
 <h2 id="sec6">施策の優先順位</h2>
-
 <table class="spec-table">
 <tr><th>施策</th><th>効果</th><th>工数</th><th>優先度</th></tr>
 <tr><td>タイトル最適化</td><td>高</td><td>低</td><td>★★★</td></tr>
@@ -213,7 +228,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>内部リンク整備</td><td>中</td><td>中</td><td>★★</td></tr>
 <tr><td>記事のリライト</td><td>高</td><td>高</td><td>★（後回し）</td></tr>
 </table>
-
 <h2 id="sec7">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. 個人ブログのSEOで一番効果的な対策は何ですか？</p><p class="faq-a">タイトルタグの最適化が最も効果的です。検索キーワードをタイトルの前半に含め、32〜40文字に収めることでクリック率が上がります。次にmeta descriptionを110〜125文字で丁寧に書くことが重要です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 個人ブログがGoogleに評価されるまでどれくらいかかりますか？</p><p class="faq-a">一般的に3〜6ヶ月は必要です。新規ドメイン・サイトはGoogleからの信頼を得るまで時間がかかります。継続的に記事を追加し、各記事の質を高めることで少しずつ評価が上がっていきます。</p></div>
@@ -221,7 +235,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="faq-item"><p class="faq-q">Q. 内部リンクとは何ですか？なぜ重要なのですか？</p><p class="faq-a">内部リンクは同じサイト内のページへのリンクです。GoogleのクローラーがサイトのURL構造を把握しやすくなり、関連記事への誘導で読者の回遊率も上がります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 構造化データ（JSON-LD）とは何ですか？</p><p class="faq-a">ページの内容を機械が読みやすい形式で表現したコードです。FAQページのJSON-LDを設置すると、検索結果に「よくある質問」の展開ボックスが表示されることがあります。SEOとLLMO（AIへの最適化）の両方に効果があります。</p></div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -263,8 +277,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/internal-link-seo.html</span>
 </span>
 </a>
-</div>
-</article>
+
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -299,14 +312,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">1. タイトルタグを32〜40文字に収める</a></li>
+<li><a href="#sec2">2. meta descriptionを110〜125文字で書く</a></li>
+<li><a href="#sec3">3. sitemap.xmlとrobots.txtを設置する</a></li>
+<li><a href="#sec4">4. FAQ構造化データ（JSON-LD）を全記事に入れる</a></li>
+<li><a href="#sec5">5. 内部リンクを記事間に入れる</a></li>
+<li><a href="#sec6">施策の優先順位</a></li>
+<li><a href="#sec7">よくある質問</a></li>
+<li><a href="#sec8">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer><div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div></footer>
+
 </body>
 </html>

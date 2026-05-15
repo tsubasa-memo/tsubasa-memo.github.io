@@ -122,49 +122,75 @@ gtag('config', 'G-YYBFXHXMM6');
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ Nano Bananaでニキビを消してみた
-</div>
+
 </nav>
 
-<div class="hero">
-<div class="wrap">
-<h1>ニキビがコンプレックスの僕が<br>Nano Bananaで消してみた。<br>これってAI？レタッチ？</h1>
-<p class="update">2026年2月 公開</p>
-</div>
+<div class="article-hero">
+<img src="/thumbs/nano-banana-acne.png" alt="ニキビがコンプレックスの僕がNano Bananaで消してみた。これってAI？レタッチ？" width="640" height="360" loading="eager">
 </div>
 
-<main>
-<div class="wrap">
+
+<h1 class="article-title">ニキビがコンプレックスの僕が<br/>Nano Bananaで消してみた。<br/>これってAI？レタッチ？</h1>
+<div class="article-meta-line">
+<span>2026年2月22日</span>
+<span>2026年2月 公開</span>
+</div>
 
 <p>こんにちは、ツバサです。</p>
-
 <p>突然ですが、僕はニキビがコンプレックスです。</p>
-
 <p>中学くらいからずっと付き合ってきて、大人になった今も完全には治ってくれない。スキンケアも一通り試したし、皮膚科にも通ったけど、まあゼロにはならないんですよね。</p>
-
 <p>写真を撮られるのも正直あんまり好きじゃない。このブログのプロフィールも、自分の写真を元にAIに作ってもらったイラストにしてました。写真を使いたい気持ちはあるんですけど、ニキビが写るのがどうしても嫌で。</p>
-
 <p>そんなとき、会社の先輩がある提案をしてくれたんです。</p>
-
-
 <div class="box box-accent">
 <p><strong>この記事でわかること</strong></p>
 <ul>
@@ -187,155 +213,92 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec9">よくある質問</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">きっかけは先輩の一言</h2>
-
 <p>うちの会社に5つ上の女性の先輩がいるんですけど、仕事がめちゃくちゃできる人で、マーケの知識も広い。たぶんモテる。いや関係ないけど。</p>
-
 <p>ある日、僕がプロフィール写真をイラストから写真に変えたいけどニキビがなーって悩んでたら、先輩がさらっと言ったんです。</p>
-
 <div class="dialogue">
 <div class="speaker">先輩</div>
 <p>「Nano Bananaで消せば？ ニキビだけ消すのもできるよ」</p>
 </div>
-
 <p>Nano Banana。プロフィールのイラストを作ったのもNano Bananaだったけど、「写真からニキビだけを消す」という使い方は考えたことがなかった。</p>
-
 <p>先輩いわく、「最近のAI画像生成は、既存の写真をベースにして部分的に変えることもできる。ニキビ消すくらいなら余裕だと思う」とのこと。</p>
-
 <p>…やってみるか。</p>
-
 <p>ということで、さっそく自撮りを撮ってNano Bananaに投げてみました。結果はこの記事の最後でお見せしますね。</p>
-
 <p>先に、どれくらいの効果があるのかをストックフォトで見てもらいたいと思います。</p>
-
-
 <h2 id="sec2">まずはストックフォトでビフォーアフター</h2>
-
 <p>僕の元の顔を載せるのはさすがに勘弁してほしいので、効果を伝えるためにストックフォトのニキビ肌の写真で同じことをやってみました。</p>
-
 <p>プロンプトは「ニキビだけを消す。それ以外の要素は変更しない」。</p>
-
 <div class="note">※以下の画像はすべてNano Bananaで生成・加工したものです。画像をクリックすると拡大表示できます。</div>
-
 <h3>Before（ストックフォト）</h3>
-
 <div class="article-img">
-<img loading="lazy" src="images/nano-banana-acne/before.jpg" alt="ストックフォト：ニキビのある男性の顔（加工前）" onclick="openLightbox(this)" width="2000" height="1333">
+<img alt="ストックフォト：ニキビのある男性の顔（加工前）" height="1333" loading="lazy" onclick="openLightbox(this)" src="images/nano-banana-acne/before.jpg" width="2000"/>
 <div class="caption">ストックフォトのニキビ肌画像</div>
 </div>
-
 <h3>After（Nano Bananaで加工）</h3>
-
 <div class="article-img">
-<img loading="lazy" src="images/nano-banana-acne/after.png" alt="Nano Bananaでニキビを除去した画像（加工後）" onclick="openLightbox(this)" width="2000" height="1333">
+<img alt="Nano Bananaでニキビを除去した画像（加工後）" height="1333" loading="lazy" onclick="openLightbox(this)" src="images/nano-banana-acne/after.png" width="2000"/>
 <div class="caption">Nano Bananaでニキビを除去した画像</div>
 <div class="ai-note">※この画像はNano Bananaで生成したものです</div>
 </div>
-
 <p>どうでしょう。ニキビがきれいに消えて、肌のテクスチャも自然。そして顔の造形はほぼそのまま。</p>
-
 <p>パッと見、Photoshopで丁寧にレタッチしたのと見分けがつかないレベルだと思います。</p>
-
 <p>…でもこれ、AIで生成した画像なんですよね。</p>
-
-
 <h2 id="sec3">これってAI？レタッチ？ ー 先輩に聞いてみた</h2>
-
 <p>仕上がりがあまりにも自然で、「これってAI画像生成なの？ レタッチなの？」と本気でわからなくなったので先輩に聞いてみました。</p>
-
 <div class="dialogue">
 <div class="speaker">先輩</div>
 <p>「見た目は同じに見えるかもしれないけど、やってることは全然違うよ。Photoshopのレタッチは、写真の上からニキビ部分を消してるの。でもNano Bananaは写真を直接いじってるわけじゃなくて、<strong>ニキビがないそっくりさんを生成してる</strong>の」</p>
 </div>
-
 <p>…なるほど？</p>
-
 <p>つまりこういうことらしいです。</p>
-
 <p>従来のレタッチは、写真という「原本」の上から修正を加える作業。消しゴムで消したり、きれいな肌をコピーして貼り付けたりする。元の写真はあくまで同じもの。</p>
-
 <p>一方、AI画像生成は、元の写真を「参考資料」として使って、新しい画像をゼロから生成している。つまり、仕上がりの画像は元の写真とは別物なんです。</p>
-
 <p>先輩の「そっくりさん」という表現がすごくしっくりきました。ストックフォトのBefore/Afterを見ても、確かに「ニキビがないそっくりさん」と言われれば納得できる。そっくりさんだから、厳密には同じ人ですらない。でも見分けがつかないくらい似ている。</p>
-
 <p>仕上がりが自然だったのは、それだけNano Bananaの再現精度が高いということなんだと思います。</p>
-
 <p>…と、ここまで褒めてきたんですが、先輩から一つ指摘がありました。</p>
-
 <div class="dialogue">
 <div class="speaker">先輩</div>
 <p>「ニキビ消しの精度はすごいけど、よく見てみ。画質、落ちてない？」</p>
 </div>
-
 <p>言われて改めて見比べてみると、確かに。</p>
-
 <p>髪の毛の質感がちょっとのっぺりしてる。まつ毛のあたりのピントがぼんやりしてる。写真全体も、元の画像と比べると若干シャープさが落ちてるような。</p>
-
 <div class="dialogue">
 <div class="speaker">先輩</div>
 <p>「これがNano Bananaの限界かな。私たちの仕事には使えないけど、プライベートのSNSとかマッチングアプリのプロフィールに使う分には十分だよね〜」</p>
 </div>
-
 <p>たしかに、スマホの画面でパッと見る分には気にならないレベル。でも拡大したり、印刷したり、仕事で使うには厳しいかもしれない。このあたりは正直に書いておきます。</p>
-
-
 <h2 id="sec4">で、ツバサはどうなったの？</h2>
-
 <p>お待たせしました。僕のAfter画像です。</p>
-
 <p>最初は自撮りで試してみたんですが、思った以上にうまくいったので、ちゃんと外で撮った写真でもう一度やってみました。ニキビを消した上で、ちょっとだけイケメンに補正してもらっています。ちょっとだけですよ。</p>
-
 <div class="article-img">
-<img loading="lazy" src="images/nano-banana-acne/tsubasa_after.jpg" alt="Nano Bananaで加工したツバサの写真" onclick="openLightbox(this)" width="1600" height="1279">
+<img alt="Nano Bananaで加工したツバサの写真" height="1279" loading="lazy" onclick="openLightbox(this)" src="images/nano-banana-acne/tsubasa_after.jpg" width="1600"/>
 <div class="caption">Nano Bananaで加工したツバサ</div>
 <div class="ai-note">※この画像はNano Bananaで生成したものです</div>
 </div>
-
 <p>…どうですかね。</p>
-
 <p>ニキビはきれいに消えてるし、ちょっとだけシュッとしてる気がする。でも「誰？」ってなるほどの別人ではない。…はず。</p>
-
-
 <h2 id="sec5">先輩の反応</h2>
-
 <div class="dialogue">
 <div class="speaker">先輩</div>
 <p>「まあまあいいじゃん。詐欺ではないと思うよ」</p>
 </div>
-
 <p>…褒めてるのか微妙なラインだけど、先輩に「詐欺ではない」と言ってもらえたので、このままこのブログに載せちゃおうと思います。</p>
-
-
 <h2 id="sec6">使ってみて思ったこと</h2>
-
 <p>正直な感想をまとめます。</p>
-
-<p><strong>驚いた点：</strong><br>
+<p><strong>驚いた点：</strong><br/>
 仕上がりの自然さ。「AI画像生成」と聞くと、どこか作り物っぽいイメージがあったんですけど、Nano Bananaはかなり自然でした。ストックフォトで試したときは顔の造形もしっかり維持されていて、パッと見ではAIなのかPhotoshopレタッチなのかわからないレベルです。</p>
-
-<p><strong>見た目は同じでも中身は違う：</strong><br>
+<p><strong>見た目は同じでも中身は違う：</strong><br/>
 仕上がりが似ていても、「写真を修正した」のと「新しい画像を生成した」のでは、やっていることが根本的に違う。この違いは使う側としても知っておいたほうがいいなと思いました。たとえば証明写真や本人確認に使う写真を「AI生成でニキビだけ消す」のは、仕上がりが自然でもやめたほうがいいと思います。あくまでSNSのプロフィール写真とか、そういう用途ですね。</p>
-
 <div class="point-box">
 <h4>大事なこと</h4>
 <p>この記事で使っている画像はすべてNano Bananaで生成・加工したものです。僕はAI画像加工を隠すつもりはなくて、むしろ「AIでここまでできるんだ」という実験記録として発信しています。</p>
 </div>
-
 <div class="note">※この記事はニキビの治療法についての記事ではありません。ニキビの悩みには、皮膚科への相談をおすすめします。</div>
-
-
 <h2 id="sec7">まとめ</h2>
-
 <p>AI画像生成ツールでニキビを消すのは、技術的には十分可能でした。しかも仕上がりは思ったよりずっと自然。</p>
-
 <p>ただ、見た目はレタッチとほぼ同じでも、「写真を修正している」のではなく「新しい画像を生成している」という仕組みの違いは理解しておいたほうがいい。そして元の写真より画質が落ちる点も忘れずに。スマホでSNSを見る分には気にならないレベルですが、拡大すると髪の毛や細部の質感が甘くなっています。使う場面を選ぶ判断基準になると思います。</p>
-
 <p>僕はこれからもNano Bananaをいろいろ試してみるつもりです。マーケ素材としての可能性、他のツールとの比較…。このブログで実験の記録を残していきます。</p>
-
 <p>気になることがあれば、コメントやDMで気軽に聞いてください。</p>
-
-
 <h2 class="related-title" id="sec8">関連する記事</h2>
 <a class="cite-card" href="what-is-retouch.html">
 <span class="cite-ico int">ツ</span>
@@ -351,27 +314,21 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/background-white.html</span>
 </span>
 </a>
-
 <h2 id="sec9">よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. Nano Bananaでニキビは消せる？</div>
 <div class="fa">A. Nano BananaのAI画像生成機能を使えば、ニキビを目立たなくすることは可能です。ただし元の写真をそのまま修正するレタッチとは仕組みが異なり、AIが画像を再生成するため、肌質や細部が変わることがあります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. AI加工とレタッチの違いは？</div>
 <div class="fa">A. レタッチは元の写真のピクセルを直接編集する作業で、写真そのものは変わりません。一方、AI加工（画像生成）はプロンプトや参照画像をもとにAIが新しい画像を生成するため、厳密には『修正』ではなく『再生成』です。</div>
 </div>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <div class="author-name">ツバサ</div>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
-</div>
-
 </div>
 
 <div class="pillar-links">
@@ -408,42 +365,36 @@ gtag('config', 'G-YYBFXHXMM6');
 
 </main>
 
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">きっかけは先輩の一言</a></li>
+<li><a href="#sec2">まずはストックフォトでビフォーアフター</a></li>
+<li><a href="#sec3">これってAI？レタッチ？ ー 先輩に聞いてみた</a></li>
+<li><a href="#sec4">で、ツバサはどうなったの？</a></li>
+<li><a href="#sec5">先輩の反応</a></li>
+<li><a href="#sec6">使ってみて思ったこと</a></li>
+<li><a href="#sec7">まとめ</a></li>
+<li><a href="#sec8">関連する記事</a></li>
+<li><a href="#sec9">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-<p>&copy; 2026 ツバサのメモ帳</p>
+<p>© 2026 ツバサのメモ帳</p>
 </div>
 </footer>
-
-<!-- ライトボックス -->
-<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
-<img src="" alt="" id="lightbox-img">
-<div class="lightbox-hint">クリックで閉じる</div>
-</div>
-
-<script>
-function openLightbox(img) {
-  var overlay = document.getElementById('lightbox');
-  var lightboxImg = document.getElementById('lightbox-img');
-  lightboxImg.src = img.src;
-  lightboxImg.alt = img.alt;
-  overlay.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closeLightbox() {
-  var overlay = document.getElementById('lightbox');
-  overlay.classList.remove('active');
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeLightbox();
-});
-</script>
 
 </body>
 </html>

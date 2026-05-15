@@ -136,38 +136,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="Instagramの投稿タイプ別に最適な画像サイズ・アスペクト比を表でまとめました。フィード（1:1・4:5）・ストーリー（9:16）・リール・プロフィールアイコンの推奨解像度と画質が落ちにくい書き出し設定も解説。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ Instagramの画像サイズまとめ
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール【2026年版】</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/instagram-image-size.png" alt="Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール【2026年版】" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール【2026年版】</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>Instagramに投稿しようとしたら「画像が切れた」「なんかぼやけた」という経験、あると思います。仕事でInstagram用の画像を作るときに毎回確認するのが面倒なので、まとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -180,9 +215,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">投稿タイプ別サイズ一覧</h2>
-
 <table class="spec-table">
 <tr><th>投稿タイプ</th><th>推奨サイズ（px）</th><th>アスペクト比</th><th>備考</th></tr>
 <tr><td>フィード（正方形）</td><td>1080×1080</td><td>1:1</td><td>最も汎用的。サムネイルがきれいに表示される</td></tr>
@@ -193,28 +226,18 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>プロフィールアイコン</td><td>320×320</td><td>1:1</td><td>円形<a class="glossary-inline" href="/glossary/trimming.html">トリミング</a>。中央に被写体を配置</td></tr>
 <tr><td>ハイライトカバー</td><td>1080×1920</td><td>9:16</td><td>表示は円形になるため中央を意識</td></tr>
 </table>
-
 <h2 id="sec2">フィード投稿のサイズ詳細</h2>
-
 <p>フィード（通常投稿）には正方形・横長・縦長の3種類があります。推奨は幅1080pxで、それより小さいとInstagram側で<a class="glossary-inline" href="/glossary/resize.html">リサイズ</a>され画質が下がります。</p>
-
 <p>Instagramのフィードのサムネイルは、投稿のアスペクト比が何であっても正方形（1:1）でトリミングされて表示されます。縦長（4:5）で投稿した場合、サムネイルでは上下がカットされて見えます。プロフィールページ全体のバランスを考えるなら正方形か縦長で統一するのが見栄えが良いです。</p>
-
 <h2 id="sec3">ストーリー・リールのセーフゾーン</h2>
-
 <p>ストーリーとリールは1080×1920px（9:16）の縦型フォーマットですが、実際の表示領域には注意が必要です。</p>
-
 <p>画面上部250px付近にはプロフィールアイコン・ユーザー名・閉じるボタンが表示され、画面下部400px付近には「返信」ボタンや「いいね」ボタンが重なります。テキストや重要な被写体をこの<a class="glossary-inline" href="/glossary/ui-ux.html">UI</a>領域にかかる位置に置くと、視聴者に見えなくなります。</p>
-
 <div class="warn-box">
 <h4>ストーリー・リールのセーフゾーン目安</h4>
 <p>上部250px・下部400px程度はUI（ボタン類）が重なる可能性があります。重要な要素はそれを除いた中央部分に配置してください。</p>
 </div>
-
 <h2 id="sec4">投稿時の画質を落とさないコツ</h2>
-
 <p>Instagramは投稿時に画像を自動圧縮します。圧縮を最小限に抑えるポイントは以下の通りです。</p>
-
 <table class="spec-table">
 <tr><th>ポイント</th><th>推奨設定</th></tr>
 <tr><td>ファイル形式</td><td><a class="glossary-inline" href="/glossary/jpeg.html">JPEG</a>（<a class="glossary-inline" href="/glossary/png.html">PNG</a>・HEICより圧縮が安定しやすい）</td></tr>
@@ -222,13 +245,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>解像度</td><td>幅1080px以上（それ以上でも可。InstagramがトリミングするがJPEGのままは保たれる）</td></tr>
 <tr><td>品質（JPEG保存時）</td><td>80%以上</td></tr>
 </table>
-
 <h2 id="sec5">EC・商品アカウントでの実務メモ</h2>
-
 <p>商品紹介アカウントを運用する場合、フィードのプロフィールページ全体の統一感を意識することが多いです。縦長（4:5）で統一すると個別投稿の存在感が増しますが、サムネイルの上下がカットされるため、どの部分が見えるかを意識してデザインする必要があります。</p>
-
 <p>複数の商品写真を統一した背景・サイズで整える作業は、撮影・レタッチ・リサイズの手間がかかります。量が多い場合はレタッチの外注や、専門のバッチ処理ツールとの組み合わせも選択肢です。</p>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item">
@@ -253,7 +272,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -288,7 +307,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/retouch-services.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -323,16 +341,35 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">投稿タイプ別サイズ一覧</a></li>
+<li><a href="#sec2">フィード投稿のサイズ詳細</a></li>
+<li><a href="#sec3">ストーリー・リールのセーフゾーン</a></li>
+<li><a href="#sec4">投稿時の画質を落とさないコツ</a></li>
+<li><a href="#sec5">EC・商品アカウントでの実務メモ</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

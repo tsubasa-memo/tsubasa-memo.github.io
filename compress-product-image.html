@@ -145,38 +145,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta property="og:site_name" content="ツバサのメモ帳">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 商品画像を圧縮する方法
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/compress-product-image.png" alt="商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>一眼カメラで撮影した写真は1枚5〜20MBになることがあります。そのままECサイトにアップしようとすると容量オーバーで弾かれたり、ページの表示が重くなったりします。適切なサイズに圧縮する方法をまとめました。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -188,9 +223,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">ECサイトごとのファイルサイズ上限</h2>
-
 <table class="spec-table">
 <tr><th>サービス</th><th>ファイルサイズ上限</th><th>推奨<a class="glossary-inline" href="/glossary/resolution-dpi.html">解像度</a></th></tr>
 <tr><td>Amazon</td><td>最大10MB</td><td>1000px以上（推奨1600px以上）</td></tr>
@@ -198,36 +231,24 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>メルカリ</td><td>10MB未満（アプリ内で自動圧縮あり）</td><td>明確な規定なし</td></tr>
 <tr><td>自社ECサイト</td><td>サーバー設定次第（一般的に2〜5MB）</td><td>用途による</td></tr>
 </table>
-
 <p>上限内に収まっていればアップロードできますが、Webページの表示速度の観点からは1枚あたり300KB以下が望ましいとされています（Google PageSpeed Insightsなどのツールでも指摘されるラインです）。</p>
-
 <h2 id="sec2">画像圧縮ツール比較</h2>
-
 <table class="spec-table">
 <tr><th>ツール</th><th>形式</th><th>無料範囲</th><th>特徴</th></tr>
-<tr><td><a href="https://tinypng.com/" target="_blank" rel="noopener">TinyPNG</a></td><td><a class="glossary-inline" href="/glossary/jpeg.html">JPEG</a>・<a class="glossary-inline" href="/glossary/png.html">PNG</a></td><td>1回20ファイルまで</td><td>ブラウザで使える。圧縮率が高い</td></tr>
-<tr><td><a href="https://squoosh.app/" target="_blank" rel="noopener">Squoosh</a>（Google）</td><td>JPEG・PNG・<a class="glossary-inline" href="/glossary/webp.html">WebP</a>他</td><td>無料・無制限</td><td>Google提供。WebP変換対応。品質をスライダーで調整可</td></tr>
+<tr><td><a href="https://tinypng.com/" rel="noopener" target="_blank">TinyPNG</a></td><td><a class="glossary-inline" href="/glossary/jpeg.html">JPEG</a>・<a class="glossary-inline" href="/glossary/png.html">PNG</a></td><td>1回20ファイルまで</td><td>ブラウザで使える。圧縮率が高い</td></tr>
+<tr><td><a href="https://squoosh.app/" rel="noopener" target="_blank">Squoosh</a>（Google）</td><td>JPEG・PNG・<a class="glossary-inline" href="/glossary/webp.html">WebP</a>他</td><td>無料・無制限</td><td>Google提供。WebP変換対応。品質をスライダーで調整可</td></tr>
 <tr><td>ImageOptim</td><td>JPEG・PNG・<a class="glossary-inline" href="/glossary/gif.html">GIF</a></td><td>無料（Mac専用）</td><td>ドラッグ＆ドロップで一括処理。Macで使いやすい</td></tr>
 <tr><td>XnConvert</td><td>JPEG・PNG他多数</td><td>無料（Win・Mac）</td><td>一括変換・リサイズに強い</td></tr>
 <tr><td>Lightroom（書き出し）</td><td>JPEG・PNG他</td><td>有料（CC月額制）</td><td>現像と同時にサイズ・品質を指定して書き出せる</td></tr>
 </table>
-
 <h2 id="sec3">圧縮しすぎると起きること</h2>
-
 <p>JPEGの圧縮率を上げすぎると「ブロックノイズ」と呼ばれる格子状のノイズが発生します。特にエッジ（輪郭）部分、単色に近い背景部分で目立ちます。</p>
-
 <p>目安として、品質設定（0〜100%のスケール）で80%以上を保てば視認できる劣化は起きにくいです。70%以下になると商品写真では許容できないレベルの劣化が出始める場合があります。圧縮ツールでリアルタイムプレビューができるSquooshでは、圧縮前後を並べて確認しながら調整できるので商品画像の圧縮に向いています。</p>
-
 <h2 id="sec4">実務でよく使うフロー</h2>
-
 <h3>少数枚・急ぎの場合</h3>
-
 <p>TinyPNGにドラッグ＆ドロップして圧縮→ダウンロード。シンプルで手軽です。1回20枚までの無料制限がありますが、商品1点あたりの枚数であれば十分です。</p>
-
 <h3>大量枚・品質をコントロールしたい場合</h3>
-
 <p>Lightroomの「書き出し」機能を使います。品質を80〜85%・長辺を1080px・色空間をsRGBに設定してフォルダごと一括書き出しができます。Lightroomを持っていない場合はSquooshまたはXnConvertが代替になります。</p>
-
 <div class="point-box">
 <h4>商品画像圧縮の目安</h4>
 <p>ファイルサイズ：300KB以下を目標（楽天は2MB上限のため2MB未満で必須）</p>
@@ -235,7 +256,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>解像度：長辺1080px以上を維持（Amazonは1000px以上推奨）</p>
 <p>色空間：sRGB（AdobeRGBはWebでの色再現が正確でない場合がある）</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item">
@@ -254,7 +274,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="fq">Q. JPEGとPNGはどちらが圧縮率が高いですか？</div>
 <div class="fa">写真（グラデーションが多い画像）はJPEGの方が小さなファイルサイズで保存できます。PNGは可逆圧縮なので写真をPNGで保存するとJPEGより大きくなります。一方、テキスト・ロゴ・単色背景の画像はPNGの方が小さくなる場合があります。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 複数の商品画像を一括圧縮する方法はありますか？</div>
 <div class="fa">TinyPNGは1回20ファイルまで対応しています。より大量の処理にはAdobe Lightroom（書き出し設定）、Mac用のImageOptim、Windows用のXnConvertが便利です。</div>
@@ -265,7 +284,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -307,7 +326,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/instagram-image-size.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -342,16 +360,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">ECサイトごとのファイルサイズ上限</a></li>
+<li><a href="#sec2">画像圧縮ツール比較</a></li>
+<li><a href="#sec3">圧縮しすぎると起きること</a></li>
+<li><a href="#sec4">実務でよく使うフロー</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

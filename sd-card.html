@@ -143,49 +143,77 @@ gtag('config', 'G-YYBFXHXMM6');
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ SDカードの選び方メモ
-</div>
+
 </nav>
 
-<div class="hero">
-<div class="wrap">
-<h1>SDカードの選び方｜カメラ用スペックと失敗しない買い方まとめ【2026年版】</h1>
-<p class="update">2026年3月 更新</p>
-</div>
+<div class="article-hero">
+<img src="/thumbs/sd-card.png" alt="SDカードの選び方｜カメラ用スペックと失敗しない買い方まとめ【2026年版】" width="640" height="360" loading="eager">
 </div>
 
-<main>
-<div class="wrap">
+
+<h1 class="article-title">SDカードの選び方｜カメラ用スペックと失敗しない買い方まとめ【2026年版】</h1>
+<div class="article-meta-line">
+<span>2026年2月21日</span>
+<span>2026年3月 更新</span>
+</div>
 
 <p>こんにちは、ツバサです。</p>
-
 <p>カメラを買うとき、本体やレンズのことは調べても、SDカードは後回しになりがちです。僕もそうでした。いざ買おうとしたら「UHS-I」「V30」「SDXC」と謎の英数字だらけで、どれを選べばいいのかまったくわからなかったんですよね。</p>
-
 <p>調べてみたら、カメラ初心者が覚えるべきポイントはそこまで多くなかったので、備忘録としてまとめておきます。</p>
-
 <div class="point-box" style="background:#fff8e8;border-color:#f0a500;">
-<strong>📦 Amazon新生活セールFinal開催中（3/31〜4/6）</strong><br>
+<strong>📦 Amazon新生活セールFinal開催中（3/31〜4/6）</strong><br/>
 SDカードを含むカメラ周辺機器がセール対象になることがあります。下記の商品リンクから現在の価格を確認してみてください。
 </div>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -198,11 +226,8 @@ SDカードを含むカメラ周辺機器がセール対象になることがあ
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">結論：初心者はこのスペックを選べばOK</h2>
-
 <p>先に結論を書くと、初めてカメラを買う人がSDカードで失敗しないためのスペックはこれです。</p>
-
 <div class="point-box">
 <h4>カメラ初心者向け SDカードの選び方まとめ</h4>
 <p>規格：<strong>SDXC</strong>（64GB以上はすべてSDXC）</p>
@@ -212,164 +237,119 @@ SDカードを含むカメラ周辺機器がセール対象になることがあ
 <p>メーカー：<strong>SanDisk、Samsung、Lexar、ProGrade Di<a class="glossary-inline" href="/glossary/git.html">git</a>al</strong>など大手</p>
 <p>価格の目安：64GB UHS-Iで<strong>1,500〜2,500円</strong>程度</p>
 </div>
-
 <p>入門機のミラーレスカメラ（Canon EOS R100、Nikon Z30、SONY ZV-E10など）はほとんどがUHS-I対応のSDXCス<a class="glossary-inline" href="/glossary/lot.html">ロット</a>なので、上の条件を満たすカードを買えば問題なく使えます。</p>
-
 <h2 id="sec2">SDカードに書いてある英数字の意味</h2>
-
 <p>SDカードの表面にはいろいろな記号が印字されていますが、カメラ用途で見るべきポイントは大きく3つです。</p>
-
 <h3>1. 容量規格（SDHC / SDXC）</h3>
-
 <p>SDカードは容量によって規格名が変わります。SDHCは最大32GBまで、SDXCは最大2TBまで対応しています。現在の主流はSDXCで、64GB以上のカードはすべてSDXCです。今売られているミラーレスカメラはほぼSDXC対応なので、64GB以上を買えばまず大丈夫です。</p>
-
 <p>ただし、かなり古いカメラだとSDHCまでしか対応していない場合もあるので、中古カメラを買うときはカメラ側の仕様を確認してください。</p>
-
 <h3>2. バスインターフェイス（UHS-I / UHS-II）</h3>
-
 <p>バスインターフェイスは、データの転送速度の「上限」を決める規格です。</p>
-
 <table class="spec-table">
 <tr><th>規格</th><th>最大転送速度</th><th>主な対応カメラ</th></tr>
 <tr><td>UHS-I</td><td>最大104MB/秒</td><td>入門〜中級ミラーレス全般</td></tr>
 <tr><td>UHS-II</td><td>最大312MB/秒</td><td>中上級ミラーレス（連写重視モデル）</td></tr>
 </table>
-
 <p>入門機はほぼUHS-Iスロットなので、UHS-Iのカードで十分です。UHS-IIのカードをUHS-I対応カメラに入れても使えますが、速度はUHS-Iの上限（104MB/秒）に制限されるので、値段の分だけもったいないことになります。</p>
-
 <p>逆に、将来UHS-II対応のカメラに買い替える予定がある人は、最初からUHS-IIカードを買っておくのもアリです。ただし価格はUHS-Iの2〜3倍になります。</p>
-
 <h3>3. ビデオスピードクラス（V30 / V60 / V90）</h3>
-
 <p>ビデオスピードクラスは、動画撮影時に「最低限これだけの速度は出ます」と保証する規格です。数字が大きいほど高速です。</p>
-
 <table class="spec-table">
 <tr><th>クラス</th><th>最低書き込み速度</th><th>用途の目安</th></tr>
 <tr><td>V30</td><td>30MB/秒</td><td>フルHD動画、4K動画（30fps）</td></tr>
 <tr><td>V60</td><td>60MB/秒</td><td>4K動画全般</td></tr>
 <tr><td>V90</td><td>90MB/秒</td><td>4K 60fps、8K動画</td></tr>
 </table>
-
 <p>写真中心の初心者ならV30で十分です。4K動画もV30で基本的に撮影できます。V60やV90はプロや動画を本格的に撮る人向けです。</p>
-
 <p>ちなみに「U1」「U3」という表記もあります。これはUHSスピードクラスという別の規格で、U1が最低10MB/秒、U3が最低30MB/秒です。V30とU3は同じ速度なので、「U3」か「V30」のどちらかが書いてあれば問題ありません。</p>
-
 <h2 id="sec3">容量の選び方</h2>
-
 <p>SDカードの容量を選ぶときの目安をまとめました。撮影枚数はカメラの画素数やファイル形式（<a class="glossary-inline" href="/glossary/jpeg.html">JPEG</a>/<a class="glossary-inline" href="/glossary/raw.html">RAW</a>）で変わりますが、2,400万画素のミラーレスカメラでJPEG撮影した場合のざっくりした目安です。</p>
-
 <table class="spec-table">
 <tr><th>容量</th><th>JPEG写真の目安</th><th>4K動画の目安</th><th>向いている人</th></tr>
 <tr><td>64GB</td><td>約5,000〜7,000枚</td><td>約1〜1.5時間</td><td>写真中心で日帰り撮影が多い</td></tr>
 <tr><td>128GB</td><td>約10,000〜14,000枚</td><td>約2〜3時間</td><td>旅行や週末撮影に安心の容量</td></tr>
 <tr><td>256GB</td><td>約20,000枚以上</td><td>約5時間前後</td><td>動画も撮る人、長期旅行用</td></tr>
 </table>
-
 <p>個人的には、最初の1枚は128GBがコスパと安心感のバランスがいいと思います。64GBでも写真だけなら足りますが、128GBでも価格差は数百円〜千円程度なので、少し余裕を持たせておくと安心です。</p>
-
 <h2 id="sec4">信頼できるメーカーの話</h2>
-
-<p>よく名前が挙がるのは<a href="https://www.sandisk.com/ja-jp/product-portfolio/memory-cards/sd-cards" target="_blank" rel="noopener">SanDisk（サンディスク）</a>、<a href="https://semiconductor.samsung.com/jp/consumer-storage/memory-card/" target="_blank" rel="noopener">Samsung（サムスン）</a>、<a href="https://www.lexar.com/jp/" target="_blank" rel="noopener">Lexar（レキサー）</a>、Transcend（トランセンド）あたりです。特にSanDiskはプロカメラマンにも使用者が多く、定番中の定番。Amazonでの販売数も多いため、偽造品をつかみにくいという実用的なメリットもあります。</p>
-
+<p>よく名前が挙がるのは<a href="https://www.sandisk.com/ja-jp/product-portfolio/memory-cards/sd-cards" rel="noopener" target="_blank">SanDisk（サンディスク）</a>、<a href="https://semiconductor.samsung.com/jp/consumer-storage/memory-card/" rel="noopener" target="_blank">Samsung（サムスン）</a>、<a href="https://www.lexar.com/jp/" rel="noopener" target="_blank">Lexar（レキサー）</a>、Transcend（トランセンド）あたりです。特にSanDiskはプロカメラマンにも使用者が多く、定番中の定番。Amazonでの販売数も多いため、偽造品をつかみにくいという実用的なメリットもあります。</p>
 <p>LexarとTranscendも信頼できるメーカーですが、Amazonでは公式ストアの在庫が安定しないことがあります。公式ストア以外の出品で極端に安いものは避けた方が無難です。</p>
-
-<p>SDカードの規格については<a href="https://www.sd-3c.com/consumers/technology/index.html" target="_blank" rel="noopener">SD Association（SDアソシエーション）公式サイト</a>でも確認できます。</p>
-
+<p>SDカードの規格については<a href="https://www.sd-3c.com/consumers/technology/index.html" rel="noopener" target="_blank">SD Association（SDアソシエーション）公式サイト</a>でも確認できます。</p>
 <p style="font-size:13px;color:#c7511f;font-weight:700;">⚠️ 新生活セールFinal期間中（3月31日〜4月6日）は価格が変動している可能性があります。リンク先で最新価格を確認してから購入してください。</p>
-
 <h3>このSDカードを買えばOK</h3>
-
 <p>迷ったらSanDiskを選べば失敗しません。用途と予算に合わせて以下から選んでください。竹にあたるExtremeは、2026年3月28日時点の価格で128GBが¥4,368とコスパが高く、個人的には一番おすすめです。ただし価格は変動するので、購入前に必ず確認してください。</p>
-
 <div class="amazon-cards">
-
-<a href="https://www.amazon.co.jp/dp/B0BZZ7BTH2/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
-  <img src="https://m.media-amazon.com/images/I/71mxEJ2N53L._AC_SX160_.jpg" alt="SanDisk Ultra 64GB - エントリー向けSDカード" class="amazon-card-img" width="160" height="160">
-  <div class="amazon-card-body">
-    <span class="amazon-card-label">梅・入門向け</span>
-    <p class="amazon-card-name">SanDisk Ultra 64GB SDXC UHS-I</p>
-    <p class="amazon-card-price">¥3,222<span>（税込・2026年3月28日時点）</span></p>
-    <p class="amazon-card-note">最初の1枚。写真中心ならこれで十分。読取最大140MB/s</p>
-    <span class="amazon-btn">Amazonで見る</span>
-  </div>
-</a>
-
-<a href="https://www.amazon.co.jp/dp/B0B21CQGYP/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
-  <img src="https://m.media-amazon.com/images/I/61DmcBUbQ1L._AC_SX160_.jpg" alt="SanDisk Extreme 128GB - V30対応の高速SDカード" class="amazon-card-img" width="160" height="160">
-  <div class="amazon-card-body">
-    <span class="amazon-card-label recommended">竹・コスパおすすめ ★</span>
-    <p class="amazon-card-name">SanDisk Extreme 128GB SDXC UHS-I V30</p>
-    <p class="amazon-card-price">¥4,368<span>（税込・2026年3月28日時点）</span></p>
-    <p class="amazon-card-note">梅との価格差約¥1,150で容量2倍・V30対応。これを選ぶ人が多い</p>
-    <span class="amazon-btn">Amazonで見る</span>
-  </div>
-</a>
-
-<a href="https://www.amazon.co.jp/dp/B0B21BB745/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
-  <img src="https://m.media-amazon.com/images/I/61bHnly3QrL._AC_SX160_.jpg" alt="SanDisk Extreme PRO 128GB UHS-I - プロ向け高速SDカード" class="amazon-card-img" width="160" height="160">
-  <div class="amazon-card-body">
-    <span class="amazon-card-label premium">松・上位モデル</span>
-    <p class="amazon-card-name">SanDisk Extreme PRO 128GB SDXC UHS-I V30</p>
-    <p class="amazon-card-price">¥7,010<span>（税込・2026年3月28日時点）</span></p>
-    <p class="amazon-card-note">読取最大200MB/s。連写・4K動画を本格的に撮る人向け</p>
-    <span class="amazon-btn">Amazonで見る</span>
-  </div>
-</a>
-
-<a href="https://www.amazon.co.jp/dp/B0DNLGQY3X/?tag=tsubasa233-22" target="_blank" rel="noopener nofollow" class="amazon-card">
-  <img src="https://m.media-amazon.com/images/I/71S+EQsvV4L._AC_SX160_.jpg" alt="SanDisk Extreme PRO 128GB UHS-II - 4K動画向けUHS-II" class="amazon-card-img" width="160" height="160">
-  <div class="amazon-card-body">
-    <span class="amazon-card-label pro">特上・プロ向け</span>
-    <p class="amazon-card-name">SanDisk Extreme PRO 128GB SDXC UHS-II V90</p>
-    <p class="amazon-card-price">¥40,000<span>（税込・2026年3月28日時点）</span></p>
-    <p class="amazon-card-note">読取最大300MB/s。放送・商業撮影向け。一般ユーザーには不要</p>
-    <span class="amazon-btn">Amazonで見る</span>
-  </div>
-</a>
-
+<a class="amazon-card" href="https://www.amazon.co.jp/dp/B0BZZ7BTH2/?tag=tsubasa233-22" rel="noopener nofollow" target="_blank">
+<img alt="SanDisk Ultra 64GB - エントリー向けSDカード" class="amazon-card-img" height="160" src="https://m.media-amazon.com/images/I/71mxEJ2N53L._AC_SX160_.jpg" width="160"/>
+<div class="amazon-card-body">
+<span class="amazon-card-label">梅・入門向け</span>
+<p class="amazon-card-name">SanDisk Ultra 64GB SDXC UHS-I</p>
+<p class="amazon-card-price">¥3,222<span>（税込・2026年3月28日時点）</span></p>
+<p class="amazon-card-note">最初の1枚。写真中心ならこれで十分。読取最大140MB/s</p>
+<span class="amazon-btn">Amazonで見る</span>
 </div>
-
+</a>
+<a class="amazon-card" href="https://www.amazon.co.jp/dp/B0B21CQGYP/?tag=tsubasa233-22" rel="noopener nofollow" target="_blank">
+<img alt="SanDisk Extreme 128GB - V30対応の高速SDカード" class="amazon-card-img" height="160" src="https://m.media-amazon.com/images/I/61DmcBUbQ1L._AC_SX160_.jpg" width="160"/>
+<div class="amazon-card-body">
+<span class="amazon-card-label recommended">竹・コスパおすすめ ★</span>
+<p class="amazon-card-name">SanDisk Extreme 128GB SDXC UHS-I V30</p>
+<p class="amazon-card-price">¥4,368<span>（税込・2026年3月28日時点）</span></p>
+<p class="amazon-card-note">梅との価格差約¥1,150で容量2倍・V30対応。これを選ぶ人が多い</p>
+<span class="amazon-btn">Amazonで見る</span>
+</div>
+</a>
+<a class="amazon-card" href="https://www.amazon.co.jp/dp/B0B21BB745/?tag=tsubasa233-22" rel="noopener nofollow" target="_blank">
+<img alt="SanDisk Extreme PRO 128GB UHS-I - プロ向け高速SDカード" class="amazon-card-img" height="160" src="https://m.media-amazon.com/images/I/61bHnly3QrL._AC_SX160_.jpg" width="160"/>
+<div class="amazon-card-body">
+<span class="amazon-card-label premium">松・上位モデル</span>
+<p class="amazon-card-name">SanDisk Extreme PRO 128GB SDXC UHS-I V30</p>
+<p class="amazon-card-price">¥7,010<span>（税込・2026年3月28日時点）</span></p>
+<p class="amazon-card-note">読取最大200MB/s。連写・4K動画を本格的に撮る人向け</p>
+<span class="amazon-btn">Amazonで見る</span>
+</div>
+</a>
+<a class="amazon-card" href="https://www.amazon.co.jp/dp/B0DNLGQY3X/?tag=tsubasa233-22" rel="noopener nofollow" target="_blank">
+<img alt="SanDisk Extreme PRO 128GB UHS-II - 4K動画向けUHS-II" class="amazon-card-img" height="160" src="https://m.media-amazon.com/images/I/71S+EQsvV4L._AC_SX160_.jpg" width="160"/>
+<div class="amazon-card-body">
+<span class="amazon-card-label pro">特上・プロ向け</span>
+<p class="amazon-card-name">SanDisk Extreme PRO 128GB SDXC UHS-II V90</p>
+<p class="amazon-card-price">¥40,000<span>（税込・2026年3月28日時点）</span></p>
+<p class="amazon-card-note">読取最大300MB/s。放送・商業撮影向け。一般ユーザーには不要</p>
+<span class="amazon-btn">Amazonで見る</span>
+</div>
+</a>
+</div>
 <h3>Amazonで買うときの注意</h3>
-
 <p>SDカードは偽造品が多いジャンルとして知られています。Amazonで購入する場合は、<strong>販売元がメーカー公式ストアまたは「Amazon.co.jp」になっているかどうかを必ず確認してください。</strong>第三者出品で極端に安いものは注意が必要です。商品ページの「出荷元/販売元」欄をチェックしてから購入しましょう。</p>
-
 <h2 id="sec5">カメラと一緒に買うと便利なもの</h2>
-
 <p>SDカード以外にもあると便利なものを簡単にメモしておきます。</p>
-
 <p><strong>カードリーダー</strong>：SDカードのデータをパソコンに取り込むためのもの。USB 3.0以上対応のものを選ぶと転送が速くて快適です。カメラとパソコンをUSBケーブルで直接つないでも取り込めますが、カードリーダーのほうが速いことが多いです。1,000〜2,000円程度。</p>
-
 <p><strong>SDカードケース</strong>：予備のカードを持ち歩くなら、裸でポケットに入れるよりケースに入れたほうが安全です。100均でも売っています。</p>
-
 <div class="point-box">
 <h4>SDカードの取り扱いメモ</h4>
 <p>撮影前にはカメラ本体でSDカードを初期化（フォーマット）してから使うのが基本です。パソコンでフォーマットするのではなく、カメラのメニューから行うのがポイント。カメラに最適化されたフォーマットがかかるので、書き込みエラーを防ぎやすくなります。</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. カメラ初心者はどのSDカードを買えばいいですか？</div>
 <div class="fa">
 
 A. SDXC規格・UHS-I・V30以上のSDカードを選べばまず失敗しません。容量は写真中心なら64〜128GB、動画も撮るなら128〜256GBが目安です。メーカーはSanDisk、Samsung、Lexarなどの大手が安心です。価格は64GBで1,500〜2,500円程度です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. UHS-IとUHS-IIの違いは何ですか？</div>
 <div class="fa">
 
 A. UHS-I（最大104MB/秒）とUHS-II（最大312MB/秒）はSDカードの転送速度の上限を決めるバスインターフェイス規格です。入門機のミラーレスカメラはほとんどがUHS-I対応なので、UHS-Iで十分です。UHS-IIはRAW連写を多用する中上級機向けです。なお、UHS-IIのカードはUHS-I対応カメラでも使えますが、速度はUHS-Iの上限に制限されます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. SDカードの「V30」「V60」「V90」は何が違いますか？</div>
 <div class="fa">
 
 A. V30、V60、V90はビデオスピードクラスと呼ばれ、動画撮影時の最低書き込み速度を保証する規格です。V30は最低30MB/秒でフルHD〜4K撮影向け、V60は最低60MB/秒で4K撮影向け、V90は最低90MB/秒で4K60p〜8K撮影向けです。写真中心の初心者ならV30で十分です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. SDHCとSDXCの違いは何ですか？</div>
 <div class="fa">
@@ -377,7 +357,6 @@ A. V30、V60、V90はビデオスピードクラスと呼ばれ、動画撮影�
 A. SDHCは最大32GBまで、SDXCは最大2TBまで対応する容量規格です。現在販売されているカメラはほぼすべてSDXC対応なので、64GB以上のSDXCカードを選べば問題ありません。ただし古い機種はSDHCまでしか対応していない場合があるので、カメラの仕様を確認してください。</div>
 </div>
 </div>
-
 <h2 class="related-title" id="sec7">関連する記事</h2>
 <a class="cite-card" href="first-camera.html">
 <span class="cite-ico int">ツ</span>
@@ -400,18 +379,14 @@ A. SDHCは最大32GBまで、SDXCは最大2TBまで対応する容量規格で�
 <span class="cite-url">tsubasa-memo.github.io/retouch-apps.html</span>
 </span>
 </a>
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <div class="author-name">ツバサ</div>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-
 <p style="font-size:12px;color:#999;margin-top:32px;">本記事にはAmazonアソシエイトのリンクが含まれます。</p>
-
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -447,15 +422,32 @@ A. SDHCは最大32GBまで、SDXCは最大2TBまで対応する容量規格で�
 
 </main>
 
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">結論：初心者はこのスペックを選べばOK</a></li>
+<li><a href="#sec2">SDカードに書いてある英数字の意味</a></li>
+<li><a href="#sec3">容量の選び方</a></li>
+<li><a href="#sec4">信頼できるメーカーの話</a></li>
+<li><a href="#sec5">カメラと一緒に買うと便利なもの</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-<p>&copy; 2026 ツバサのメモ帳</p>
+<p>© 2026 ツバサのメモ帳</p>
 </div>
 </footer>
 

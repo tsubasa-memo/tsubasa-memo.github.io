@@ -136,38 +136,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="RAWとJPEGの違いを初心者向けに整理しました。どちらで撮るべきか迷ったときの判断基準、RAWのメリット・デメリット・現像ソフトの必要性、SDカードの消費量の違いも解説しています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ RAWとJPEGの違い・選び方
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>RAWとJPEGどちらで撮るべきか｜初心者が押さえておきたい違いと選び方</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/raw-vs-jpeg.png" alt="RAWとJPEGどちらで撮るべきか｜初心者が押さえておきたい違いと選び方" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">RAWとJPEGどちらで撮るべきか｜初心者が押さえておきたい違いと選び方</h1>
+<div class="article-meta-line">
+<span>2026年3月25日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>カメラを買ってしばらくすると、「RAWで撮った方がいい」という話を目にします。でも実際にやってみようとすると、ソフトが必要だったりSDカードがすぐいっぱいになったりして、「結局どうすればいいの」となりがちです。仕事で商品撮影をするようになってから改めて整理したので、まとめておきます。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -180,13 +215,9 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">RAWとJPEGの根本的な違い</h2>
-
 <p>カメラのセンサーは光を受け取ると、まず「RAWデータ」を生成します。その後、カメラ内部のプロセッサが<a class="glossary-inline" href="/glossary/white-balance.html">ホワイトバランス</a>・明るさ・色調・シャープネスなどを自動補正し、圧縮してJPEGとして保存します。</p>
-
 <p>JPEGで撮影する場合、この補正処理はカメラ任せになります。RAWで撮影する場合は、この補正処理を「後でPCで自分でやる」という選択です。</p>
-
 <table class="spec-table">
 <tr><th>項目</th><th>RAW</th><th>JPEG</th></tr>
 <tr><td>ファイルサイズ（目安）</td><td>20〜50MB / 枚</td><td>5〜15MB / 枚</td></tr>
@@ -196,37 +227,21 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>画質の劣化</td><td>保存を繰り返しても劣化なし</td><td>編集・保存を繰り返すと劣化する</td></tr>
 <tr><td>SDカード消費量</td><td>多い（JPEGの3〜5倍）</td><td>少ない</td></tr>
 </table>
-
 <h2 id="sec2">RAWで撮影するメリット</h2>
-
 <h3>ホワイトバランスを後から完全に変更できる</h3>
-
 <p>JPEGでは、撮影時のホワイトバランス設定が焼き付いてしまいます。RAWなら撮影後でも「太陽光」「蛍光灯」「曇り」などを自由に変更でき、色かぶり（全体的に黄色い・青いなど）を完全に修正できます。これがRAW撮影の最大のメリットです。</p>
-
 <h3>露出の失敗をある程度救える</h3>
-
 <p>RAWファイルには明部・暗部の情報が多く保持されています。少し暗すぎた写真や明るすぎた写真も、Lightroomなどで「ハイライト」「シャドウ」スライダーを動かすと大幅に修正できます。JPEGでは取り返せない失敗がRAWなら救えることがあります。</p>
-
 <h3>何度編集しても画質が劣化しない</h3>
-
 <p>JPEGは保存のたびに圧縮による劣化が起きます。RAWから現像する場合は元データに手を加えないため、何度編集し直しても画質の劣化がありません。</p>
-
 <h2 id="sec3">RAWで撮影するデメリット</h2>
-
 <h3>ファイルサイズが大きく、SDカードとストレージを消費する</h3>
-
 <p>1枚20〜50MB程度のため、1日の撮影で数GB〜数十GBになることもあります。RAW撮影を継続するなら64GB以上のSDカードと、外付けHDDなどの保存先を用意しておく必要があります。</p>
-
 <h3>現像ソフトが必要で、すぐに使えない</h3>
-
 <p>Adobe Lightroom Classic / Lightroom CCが最も普及していますが、月額2,728円（フォトプランの場合）かかります。無料の選択肢としては、CanonやNikonなどのカメラメーカーが提供する純正現像ソフト、またはオープンソースのDarktableがあります。</p>
-
 <h3>RAWファイル形式がメーカーによって異なる</h3>
-
 <p>CanonはCR3/CR2、NikonはNEF、SonyはARW、FujifilmはRAFなど、メーカーごとに形式が違います。古いソフトウェアでは新しいカメラのRAW形式に対応していない場合があります。</p>
-
 <h2 id="sec4">どちらで撮るべきか：場面別の判断</h2>
-
 <table class="spec-table">
 <tr><th>撮影場面</th><th>推奨</th><th>理由</th></tr>
 <tr><td>カメラを買ったばかり・撮影に慣れていない</td><td>JPEG</td><td>現像の学習コストをかけず撮影に集中できる</td></tr>
@@ -235,15 +250,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>重要なシーン（結婚式・一度きりの撮影）</td><td>RAW+JPEG同時保存</td><td>保険として両方記録しておける（多くのカメラが対応）</td></tr>
 <tr><td>大量の商品写真を効率よく処理したい</td><td>JPEG</td><td>現像工程がなく即使える</td></tr>
 </table>
-
 <p>RAW+JPEG同時保存はSDカードの消費が激しくなりますが、重要な撮影では安心感があります。「JPEGで失敗したときの保険」として持っておく使い方です。</p>
-
 <h2 id="sec5">初心者がRAWに移行するタイミング</h2>
-
 <p>「JPEG撮影で露出やホワイトバランスをある程度コントロールできるようになってきた」「もっと色を細かく調整したい」と感じ始めたら、RAWを試してみるのがいいと思います。</p>
-
 <p>最初からRAWで撮影しようとすると、現像ソフトの使い方・RAWファイルの管理・保存ストレージの準備など、撮影以外の学習コストがかかります。まずはJPEGで撮影を楽しみ、必要を感じてからRAWに切り替えるのが現実的なルートです。</p>
-
 <div class="faq-section">
 <h2 id="sec6">よくある質問</h2>
 <div class="faq-item">
@@ -268,7 +278,7 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -303,7 +313,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/first-camera.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -338,16 +347,35 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">RAWとJPEGの根本的な違い</a></li>
+<li><a href="#sec2">RAWで撮影するメリット</a></li>
+<li><a href="#sec3">RAWで撮影するデメリット</a></li>
+<li><a href="#sec4">どちらで撮るべきか：場面別の判断</a></li>
+<li><a href="#sec5">初心者がRAWに移行するタイミング</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

@@ -144,38 +144,73 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="画像ファイル形式の違いを整理しました。JPEG・PNG・WebP・GIF・RAWの特徴と向いている用途、ECサイト・SNS・カメラ撮影での使い分けを比較表でまとめています。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 画像ファイル形式の違いまとめ
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/image-file-formats.png" alt="JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識</h1>
+<div class="article-meta-line">
+<span>2026年3月28日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>「この画像、JPEGにする？PNGにする？」という場面が仕事でよく出てきます。なんとなく選んでいた部分もあったので、改めて各形式の違いを整理しておくことにしました。ECやSNSでの実務を意識しながらまとめています。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -191,9 +226,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec10">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">主要な画像ファイル形式の比較一覧</h2>
-
 <table class="spec-table">
 <tr><th>形式</th><th>圧縮方式</th><th>透過</th><th>アニメーション</th><th>主な用途</th></tr>
 <tr><td>JPEG</td><td>非可逆圧縮</td><td>×</td><td>×</td><td>写真全般、商品画像</td></tr>
@@ -203,66 +236,43 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>RAW</td><td>非圧縮〜可逆</td><td>—</td><td>×</td><td>カメラの生データ、後処理前提</td></tr>
 <tr><td><a class="glossary-inline" href="/glossary/heif-heic.html">HEIC</a></td><td>非可逆圧縮</td><td>×</td><td>×</td><td>iPhone撮影の標準形式</td></tr>
 </table>
-
 <h2 id="sec2">JPEG（ジェイペグ）</h2>
-
 <p>写真に最もよく使われる形式です。「非可逆圧縮」といって、ファイルサイズを小さくする代わりに一部の画像情報を捨てています。圧縮率を上げるほどファイルサイズは小さくなりますが、画質が落ちていきます。</p>
-
 <p>Webで写真を表示する用途では、品質設定80〜85程度（フォトショップや各ソフトの設定値）でファイルサイズと画質のバランスが取れるとされています。Amazon・楽天市場の商品写真にはJPEGが最も広く使われています。</p>
-
 <div class="point-box">
 <h4>JPEGを選ぶ場面</h4>
 <p>・商品写真（白背景）をECにアップする</p>
 <p>・人物・風景・料理などの写真をSNSやブログに載せる</p>
 <p>・ファイルサイズを小さくしたい</p>
 </div>
-
 <h2 id="sec3">PNG（ピング）</h2>
-
 <p>「可逆圧縮」なので、圧縮しても画像情報が失われません。そのため同じ内容ならJPEGよりファイルサイズが大きくなりがちですが、透過（背景なし）に対応しているのがPNGの最大の特徴です。</p>
-
 <p>テキストや細かい線が含まれる画像、ロゴ、<a class="glossary-inline" href="/glossary/ui-ux.html">UI</a>スクリーンショットなどはPNGが向いています。JPEGで保存すると文字の周囲がにじみやすくなるため、テキスト入りの画像はPNGが原則です。</p>
-
 <div class="point-box">
 <h4>PNGを選ぶ場面</h4>
 <p>・透過背景（切り抜き画像）のまま使いたい</p>
 <p>・ロゴ・<a class="glossary-inline" href="/glossary/banner.html">バナー</a>・テキスト入り画像を保存する</p>
 <p>・繰り返し編集・保存する（JPEGは保存のたびに劣化する）</p>
 </div>
-
 <h2 id="sec4">WebP（ウェブピー）</h2>
-
-<p>Googleが2010年に開発した比較的新しい形式です。JPEGより同画質でファイルサイズを約25〜34%削減できるとされています（<a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener">Google Developers - WebP</a>）。透過もアニメーションも対応しており、「JPEGとPNGの両方を代替できる」形式として注目されています。</p>
-
+<p>Googleが2010年に開発した比較的新しい形式です。JPEGより同画質でファイルサイズを約25〜34%削減できるとされています（<a href="https://developers.google.com/speed/webp" rel="noopener" target="_blank">Google Developers - WebP</a>）。透過もアニメーションも対応しており、「JPEGとPNGの両方を代替できる」形式として注目されています。</p>
 <p>2024年時点でChrome・Firefox・Safari・Edgeのすべてが対応済みで、ウェブサイトの表示速度改善（Core Web Vitals対策）を目的に採用するサイトが増えています。ただし、古いバージョンのソフトウェアで開けない場合があるため、納品ファイルや印刷データとしての利用は注意が必要です。</p>
-
 <h2 id="sec5">GIF（ジフ）</h2>
-
 <p>1987年に登場した古い形式で、最大256色しか使えないため写真には向きません。ただし、複数フレームを持つアニメーションに対応しており、「動くスタンプ」的な用途でSNSやSlackで今も広く使われています。</p>
-
 <p>静止画としては画質が粗く、ファイルサイズも大きくなるため、写真目的での新規採用はほぼありません。</p>
-
 <h2 id="sec6">RAW（ロー）</h2>
-
 <p>デジタルカメラが撮影時にセンサーで受け取った生データをそのまま記録した形式です。メーカーによってCR2（Canon）・NEF（Nikon）・ARW（Sony）などの名称があります。</p>
-
 <p>JPEGはカメラ内部で現像・圧縮されますが、RAWはその処理前のデータのため、後からLightroomやCapture Oneなどのソフトで<a class="glossary-inline" href="/glossary/exposure.html">露出</a>・ホワイトバランス・色調を大幅に調整できます。特にホワイトバランスはRAWなら撮影後でも完全に変更可能です。</p>
-
 <div class="warn-box">
 <h4>RAWで撮影するときの注意点</h4>
 <p>・1枚あたり20〜50MB程度になるため、SDカードや保存容量が多く必要</p>
 <p>・そのままSNSやECにアップロードできない（JPEG変換が必要）</p>
 <p>・専用ソフトがないと開けない（iPhoneの場合はiOS対応のRAW形式あり）</p>
 </div>
-
 <h2 id="sec7">HEIC（ヒーク）</h2>
-
 <p>iPhoneのカメラが標準で使用する形式（iOS 11以降）です。JPEGより圧縮率が高く、同等の画質でファイルサイズを約半分にできます。ただし、WindowsやAndroidとの互換性に問題が生じることがあります。</p>
-
 <p>iPhoneで撮った写真をWindowsで開こうとしたら形式が合わず開けなかった、という経験がある方も多いと思います。iPhoneの設定で「互換性優先」にするとJPEGで保存されるため、複数デバイスで使う場合はこちらの設定が無難です。</p>
-
 <h2 id="sec8">EC担当視点での使い分けまとめ</h2>
-
 <table class="spec-table">
 <tr><th>用途</th><th>推奨形式</th><th>理由</th></tr>
 <tr><td>Amazon・楽天の商品写真</td><td>JPEG</td><td>対応必須、ファイルサイズを抑えやすい</td></tr>
@@ -271,17 +281,14 @@ gtag('config', 'G-YYBFXHXMM6');
 <tr><td>商品撮影の元データ保存</td><td>RAW</td><td>後から現像・色調補正できる</td></tr>
 <tr><td>SNSへの投稿</td><td>JPEG</td><td>汎用性が高く、SNS側で自動変換されることが多い</td></tr>
 </table>
-
 <p>この記事ではEC業務でよく使う形式を中心にまとめたが、プロのレタッチ現場ではTIFF・PSD・HEICなども用途に応じて使い分けられている。東京レタッチのnoteでは印刷入稿やグッズ制作を含めた8形式の比較が解説されている。</p>
-
-<a class="cite-card" href="https://note.com/tokyo_retouch/n/n2bb1d01e0599" target="_blank" rel="noopener noreferrer">
+<a class="cite-card" href="https://note.com/tokyo_retouch/n/n2bb1d01e0599" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">T</span>
 <span class="cite-body">
 <span class="cite-title">いまさら聞けない…？ 画像ファイル形式8種類の違い｜東京レタッチ公式ノート</span>
 <span class="cite-url">note.com/tokyo_retouch/n/n2bb1d01e0599</span>
 </span>
 </a>
-
 <div class="faq-section">
 <h2 id="sec9">よくある質問</h2>
 <div class="faq-item">
@@ -304,14 +311,13 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="fq">Q. GIFはまだ使われていますか？</div>
 <div class="fa">静止画としてのGIFはほぼ使われなくなっています。色数が256色に制限され画質が粗いためです。現在はアニメーションGIF（動く画像）として、SNSやチャットでのリアクション画像に使われています。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. iPhoneで撮った写真のHEICファイルをJPEGにするには？</div>
 <div class="fa">設定 → カメラ → フォーマット → 「互換性優先」を選ぶと、以降の撮影がJPEGで保存されます。既存のHEICファイルはMacの場合プレビューで書き出し可能、Windowsの場合はオンラインの変換ツールやMicrosoft Storeの「HEIF画像拡張機能」を使います。</div>
 </div>
 </div>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
@@ -346,7 +352,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/background-white.html</span>
 </span>
 </a>
-</div>
 
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
@@ -381,16 +386,38 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">主要な画像ファイル形式の比較一覧</a></li>
+<li><a href="#sec2">JPEG（ジェイペグ）</a></li>
+<li><a href="#sec3">PNG（ピング）</a></li>
+<li><a href="#sec4">WebP（ウェブピー）</a></li>
+<li><a href="#sec5">GIF（ジフ）</a></li>
+<li><a href="#sec6">RAW（ロー）</a></li>
+<li><a href="#sec7">HEIC（ヒーク）</a></li>
+<li><a href="#sec8">EC担当視点での使い分けまとめ</a></li>
+<li><a href="#sec9">よくある質問</a></li>
+<li><a href="#sec10">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>

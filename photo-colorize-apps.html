@@ -135,52 +135,78 @@ blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;co
 </head>
 <body>
 
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
+</aside>
 
-<nav class="breadcrumb">
-<div class="wrap">
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> &gt; 写真カラー化アプリ6選
-</div>
+
 </nav>
 
-<section class="hero">
-<div class="wrap">
-<h1>写真のカラー化・色変更ができるアプリ6選｜評判と無料枠を調べた</h1>
-<p class="update">2026年4月 更新</p>
+<div class="article-hero">
+<img src="/thumbs/photo-colorize-apps.png" alt="写真のカラー化・色変更ができるアプリ6選｜評判と無料枠を調べた" width="640" height="360" loading="eager">
 </div>
-</section>
 
-<article>
-<div class="wrap">
+
+<h1 class="article-title">写真のカラー化・色変更ができるアプリ6選｜評判と無料枠を調べた</h1>
+<div class="article-meta-line">
+<span>2026年4月19日</span>
+<span>2026年4月 更新</span>
+</div>
+
 <p>白黒写真のAIカラー化、写真の一部の色を変える加工、色褪せた写真の色の復元。用途別に使える6つのアプリ・Webサービスを、公式情報とユーザーの評判から比較しました</p>
-
-
 <p>こんにちは、ツバサです。</p>
-
 <p>「白黒写真をカラーに戻せるツールはある？」「写真の一部だけ色を変えたい」という検索が最近増えているようで、どのツールを使えばいいのか気になっている人が多いみたいです。ただ、カラー化と部分色変更と古い写真の復元はぜんぶ別物で、使うべきツールもそれぞれ違います。</p>
-
 <p>この記事では、App Storeのユーザー評価、公式サイトの機能説明、各種レビュー記事の傾向を調べてまとめました。僕自身が全アプリで全機能を検証したわけではないので、ここで紹介するのは「公開情報をもとに整理した比較」です。実際に導入するときは、公式サイトと最新のレビューで仕様を確認してから選んでください。</p>
-
 <div class="box box-accent">
 <p><strong>この記事でわかること</strong></p>
 <p>白黒写真のカラー化、写真の部分色変更、古い写真の色復元という3つの用途別に、アプリ・Webサービス6つの特徴・無料枠・App Storeでの評判を整理しています。各ツールの公式情報とユーザーレビューの傾向から、向き・不向きをまとめました。</p>
 </div>
-
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -192,27 +218,17 @@ blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;co
 <li><a href="#sec6">よくある質問</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">「写真の色を変えたい」は3つの用途に分かれる</h2>
-
 <p>検索エンジンで「再色付け」「カラー化」「色変更」「着色」といった言葉で調べる人が多いようですが、実際に求めている加工は次の3パターンのどれかです。用途によって適したツールが異なるため、まず自分の目的を整理するところから始めます。</p>
-
 <h3>用途①：白黒写真のカラー化（AIで自動着色）</h3>
 <p>古い白黒写真やセピア色の写真にAIが自動で色をつけるケース。写真をアップロードするだけで、被写体ごとに自然な色が推定されて塗られます。昔のアルバムを整理するとき、祖父母の若い頃の写真をカラーで見たいときに使います。</p>
-
 <h3>用途②：写真の一部だけ色を変える（髪色・服の色・背景色）</h3>
 <p>すでにあるカラー写真の中で、特定の部分の色だけを変えたいケース。髪色のシミュレーション、服のカラーバリエーション、壁の塗り替えプレビューなどに使えます。AIが対象領域を自動で認識して色を置き換えるタイプと、手動のブラシで塗るタイプがあります。</p>
-
 <h3>用途③：色褪せた古い写真の色を復元する</h3>
 <p>もともとカラー写真だったけれど、年月で色が褪せてしまった写真を補正するケース。赤みが強くなったプリントや黄ばんだ写真が対象です。AIによる「写真復元」機能で、色とコントラストを同時に補正できるツールもあります。</p>
-
 <p>この3つのうちどれに近いかで、選ぶべきツールが変わります。以下の早見表で、各ツールの対応用途と無料枠を先に確認してください。</p>
-
-
 <h2 id="sec2">用途別おすすめアプリ・サービス早見表</h2>
-
 <p>調査時点の情報をもとに6つのツールを比較しました。無料枠やレビュー件数は更新が早いので、実際の導入前には公式サイトで最新情報を確認してください。</p>
-
 <table class="spec-table">
 <tr><th>ツール名</th><th>用途①カラー化</th><th>用途②部分色変更</th><th>用途③色復元</th><th>無料枠</th><th>対応端末</th></tr>
 <tr><td>PhotoDirector</td><td>○</td><td>○</td><td>○</td><td>無料版あり（機能制限）</td><td>iOS/Android/PC</td></tr>
@@ -222,46 +238,38 @@ blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;co
 <tr><td>Snapseed</td><td>—</td><td>○（手動）</td><td>—</td><td>完全無料・広告なし</td><td>iOS/Android</td></tr>
 <tr><td>Photomyne Colorize</td><td>◎</td><td>—</td><td>○</td><td>最初の数枚無料</td><td>iOS/Android</td></tr>
 </table>
-
 <p style="font-size:13px;color:var(--text-sub)">◎は特に得意な用途、○は対応している用途、—は未対応またはメイン機能外。</p>
-
-
 <h2 id="sec3">各アプリの特徴と評判</h2>
-
 <div class="tool-card">
 <p><strong>PhotoDirector（CyberLink）</strong></p>
 <p class="meta">iOS / Android / Windows / Mac｜無料版あり・有料プランあり</p>
 <p>台湾のCyberLinkが提供する総合写真編集アプリ。AIカラー化、部分色変更、色補正の3機能すべてを1つのアプリでカバーできます。公式サイトでは「AI 画像高画質化機能により古い写真や小さいサイズの写真を高画質化でき、顔のディテールの復元、ノイズ除去、手ブレ補正、高解像度化をまとめて処理できる」と説明されています。</p>
 <blockquote>モノクロ写真をワンタップで自然なフルカラー写真に変換します。<cite>— PhotoDirector 公式サイトの機能説明より</cite></blockquote>
 <p>App Storeでの評価は高く、ユーザーレビューでは「色々なアプリの中でも扱いやすい」「画質調整が細かく編集できて優秀」といった声が多く見られます。一方で「無料で使えるはずだった機能が有料化された」「課金前提の設計が気になる」という不満を指摘するレビューもあり、無料版の範囲で何ができるかは導入前に確認しておきたいポイントです。</p>
-<p>公式サイト：<a href="https://jp.cyberlink.com/products/photodirector-app/features_ja_JP.html" target="_blank" rel="noopener nofollow">PhotoDirector（CyberLink公式）</a></p>
+<p>公式サイト：<a href="https://jp.cyberlink.com/products/photodirector-app/features_ja_JP.html" rel="noopener nofollow" target="_blank">PhotoDirector（CyberLink公式）</a></p>
 </div>
-
 <div class="tool-card">
 <p><strong>VanceAI</strong></p>
 <p class="meta">Web（ブラウザ利用）｜アカウント登録で3クレジット付与、以降はポイント購入制</p>
 <p>AI画像処理に特化したWebサービスで、白黒写真のカラー化や古い写真の復元が主要機能です。複数のレビュー記事を見ると「細部を強調して高品質な仕上がりを提供する」「初心者でも直感的に使えるインターフェース」と評価される一方、「無料枠がすぐに切れる」「バッチ処理が有料プラン限定」「無料版ではウォーターマークが入る場合がある」という指摘もあります。</p>
 <p>料金体系はポイント購入制で、記事執筆時点では100ポイント650円〜の設定があります（公式サイトで最新価格を確認してください）。プロ仕様の精度を1枚だけ確認したい、古い写真を限定的に復元したいといった用途で候補に入ります。</p>
-<p>公式サイト：<a href="https://vanceai.com/ja/" target="_blank" rel="noopener nofollow">VanceAI 日本語版</a></p>
+<p>公式サイト：<a href="https://vanceai.com/ja/" rel="noopener nofollow" target="_blank">VanceAI 日本語版</a></p>
 </div>
-
 <div class="tool-card">
 <p><strong>Fotor</strong></p>
 <p class="meta">Web / iOS / Android｜無料版あり（広告表示・機能制限あり）</p>
 <p>Chengdu Everimaging社が提供する万能型の写真編集ツール。公式サイトによると「AIエージェントに写真をアップロードして編集したい内容を伝えると、自動で複数の編集を同時に実行できる」と説明されています。部分色変更に使える「AI色置き換え」や、ワンクリック補正、背景削除などをまとめて試せるのが強みです。</p>
 <p>App Storeのレビューでは「写真編集に詳しくない人でも簡単に美しい仕上がりになる」という好評の声がある一方、「広告が多い」「画面が情報過多で使い方がわかりにくい」という批判も見られます。機能を絞って使うなら手軽ですが、凝った編集をしたい場合はチュートリアルやヘルプを参照しながら慣れていく必要がありそうです。</p>
-<p>公式サイト：<a href="https://www.fotor.com/jp/" target="_blank" rel="noopener nofollow">Fotor（日本語版）</a></p>
+<p>公式サイト：<a href="https://www.fotor.com/jp/" rel="noopener nofollow" target="_blank">Fotor（日本語版）</a></p>
 </div>
-
 <div class="tool-card">
 <p><strong>Palette.fm</strong></p>
 <p class="meta">Web（ブラウザ利用）｜無料枠あり（月1枚程度との情報・要最新確認）</p>
 <p>スウェーデンの機械学習研究者Emil Wallner氏が公開した、白黒写真カラー化専門のWebサービス。登録不要でファイルをアップロードするだけで使え、AIが処理した結果を複数のカラーフィルターで切り替えて比較できる点がほかのツールと異なります。</p>
 <blockquote>Palette は AI モデルを使って、あなたの白黒写真を自動的に着色するツールです。<cite>— Palette.fm 公式サイトより</cite></blockquote>
 <p>レビュー記事では「スピードと軽度なカスタマイズ性を求めるなら一番」「SNS投稿やアート表現向きの雰囲気調整ができる」と評価されています。一方、無料枠は「月1枚まで」とする情報源もあり、過去には無制限に近い利用ができた時期との仕様差がある可能性があります。最新の無料枠は公式サイトで確認してください。アップロード画像は処理後に自動削除されるとアナウンスされており、プライバシー面での不安が少ないのもメリットです。</p>
-<p>公式サイト：<a href="https://palette.fm/" target="_blank" rel="noopener nofollow">Palette.fm</a></p>
+<p>公式サイト：<a href="https://palette.fm/" rel="noopener nofollow" target="_blank">Palette.fm</a></p>
 </div>
-
 <div class="tool-card">
 <p><strong>Snapseed（Google製）</strong></p>
 <p class="meta">iOS / Android｜完全無料・広告なし・課金要素なし</p>
@@ -269,68 +277,45 @@ blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;co
 <p>ただしAIによる白黒写真の自動カラー化機能は搭載されていません。対応している部分色変更は「部分調整ブラシ」を使った手動操作で、唇の色を強めたり、服の色味を微調整したりといったピンポイントの用途に向いています。白黒写真を一気にカラー化したい場合は他のツールと併用する前提になります。</p>
 <p>Snapseedを含むレタッチアプリ全般の比較は「<a href="retouch-apps.html">写真レタッチ・編集アプリおすすめ10選</a>」にまとめています。</p>
 </div>
-
 <div class="tool-card">
 <p><strong>Photomyne Colorize</strong></p>
 <p class="meta">iOS / Android｜最初の数枚は無料・以降はサブスクリプション</p>
 <p>古い写真のデジタル化とカラー化に特化したアプリ。紙焼き写真をスマホで撮影すると、自動で傾き補正・トリミング・色復元・カラー化までまとめて処理する設計です。App Storeのレビューでは「80年前の親の写真が綺麗に蘇った」「自動でここまでできるのは驚き」と、家族写真の復元目的でのポジティブな評価が目立ちます。</p>
 <p>技術的な評価としては「完璧ではなく細部で色が漏れることはあるが、自動処理としては優秀」との指摘もあります。無料で試せる枚数は限定的で、継続利用にはサブスクリプション購入が必要です。家族のアルバムをまとめてカラー化したい時期に限定して使うと、費用対効果を出しやすいタイプのアプリです。</p>
-<p>公式サイト：<a href="https://photomyne.com/colorize-it" target="_blank" rel="noopener nofollow">Photomyne Colorize</a></p>
+<p>公式サイト：<a href="https://photomyne.com/colorize-it" rel="noopener nofollow" target="_blank">Photomyne Colorize</a></p>
 </div>
-
-
 <h2 id="sec4">AIカラー化の仕組みと精度の限界</h2>
-
 <p>AIが白黒写真を着色する仕組みは、大量のカラー写真を学習させて「この被写体にはこの色がつく確率が高い」とディープラーニングで推定するものです。空・肌・植物など統計的に色が決まりやすいものは比較的正確に色がつきますが、服の柄、室内の壁紙、工業製品の特定色など「固有の色」は元の色を当てられません。</p>
-
 <p>たとえば祖母の着物の柄や色を忠実に再現したい、という用途では、AI任せでは限界があります。VanceAIの比較記事でも「AI着色アルゴリズムは短時間で鮮やかな結果を出せる一方、細部の色は複数ツールで結果を比較するのが現実的」と紹介されています。完全に元の色に戻すのではなく「自然に見える色を推定する」という技術特性を理解したうえで使うのが前提です。</p>
-
 <p>より正確な色を求める場合は、モノクロ写真だけでなく「当時のカラー写真」「同時期の背景写真」などを参考情報として用意し、AIの出力と見比べて手動で微調整する運用になります。</p>
-
-
 <h2 id="sec5">アプリで対応しきれないケース</h2>
-
 <p>今回調べた6つのアプリで多くの用途をカバーできますが、以下のケースではアプリだけで完結させるのは難しそうです。</p>
-
 <p><strong>大量の写真を統一品質でカラー化したい場合</strong>。数十枚〜数百枚のアルバム全体を同じトーンで仕上げたいケースでは、AIが1枚ごとに色を推定するため仕上がりにばらつきが出ます。一貫した品質が必要なら、写真復元を専門にする外注サービスへの相談も選択肢になります。料金感は「<a href="retouch-pricing-database.html">写真レタッチの外注料金まとめ</a>」で比較しています。</p>
-
 <p><strong>印刷用の高解像度が必要な場合</strong>。無料版のAIカラー化ツールは出力解像度に制限があることが多く、A4印刷以上で使うと画質が足りなくなります。有料プランで高解像度出力に対応しているか、元画像を高精細スキャンしてから処理するのが無難です。</p>
-
 <p><strong>遺影写真のカラー化など大切な1枚の場合</strong>。写真のレタッチは一度きりの仕上がりが重要になる場面があります。特に遺影写真は家族が繰り返し見るものなので、AI任せではなくプロの手作業で仕上げる選択肢を検討する価値があります。遺影写真のレタッチについては「<a href="memorial-photo-retouch.html">遺影写真のレタッチはどこに頼む？</a>」にまとめています。</p>
-
 <p><strong>レタッチアプリ全般から選びたい場合</strong>。カラー化以外の加工（美肌・不要物除去・フィルターなど）もまとめて比較したい場合は「<a href="retouch-apps.html">写真レタッチ・編集アプリおすすめ10選</a>」を参照してください。</p>
-
-
 <h2 id="sec6">よくある質問</h2>
-
 <div class="faq-item">
 <div class="fq">Q. 白黒写真のカラー化は無料でできますか？</div>
 <div class="fa">A. はい、無料でできます。VanceAIはアカウント登録で3クレジット分が無料、PhotoDirectorは無料版でAIカラー化機能が使えます。Palette.fmはWebブラウザから利用できますが、現在の無料枠は月1枚程度とする情報源もあるため最新の仕様は公式サイトで確認してください。大量に処理したい場合は有料プランの検討が必要です。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. スマホだけで写真のカラー化はできますか？</div>
 <div class="fa">A. できます。PhotoDirector（iOS/Android）やPhotomyne Colorize（iOS/Android）はスマホアプリとして提供されており、スマホだけで白黒写真のカラー化が完結します。VanceAIやPalette.fmはWebサービスなのでスマホのブラウザからもアクセスできます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. AIでカラー化した写真の色は正確ですか？</div>
 <div class="fa">A. AIは学習データをもとに「最も自然に見える色」を推定するため、実際の色と完全に一致するとは限りません。空や肌色、植物の緑など一般的な色は比較的正確ですが、服の色や室内の壁の色など固有の色は異なる場合があります。複数のツールで結果を比較するのがおすすめです。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 写真の一部だけ色を変えることはできますか？</div>
 <div class="fa">A. FotorのAI色置き換え機能やSnapseedの部分調整ブラシを使えば、写真の特定の部分だけ色を変更できます。たとえば髪色だけを変える、服の色だけを変える、背景色だけを変えるといった加工が可能です。EC商品写真のカラーバリエーション画像の作成にも活用できます。</div>
 </div>
-
 <div class="faq-item">
 <div class="fq">Q. 色褪せた古い写真を元の色に戻すことはできますか？</div>
 <div class="fa">A. AIツールを使えば、色褪せた写真の色彩をある程度復元できます。PhotoDirectorの「AIカラー補正」やVanceAIの写真復元機能が対応しています。ただし完全に元の色に戻すことは難しく、AIが推定した色になります。大切な写真の場合は、写真復元の専門業者に依頼する方法もあります。</div>
 </div>
-
-
 <!-- 関連記事 -->
-
 <div class="pillar-links">
 <p><strong>よく読まれている記事</strong></p>
 <a class="cite-card" href="retouch-pricing-database.html">
@@ -362,7 +347,6 @@ blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;co
 </span>
 </a>
 </div>
-
 <div class="related">
 <h3>関連記事</h3>
 <a class="cite-card" href="retouch-apps.html">
@@ -387,29 +371,41 @@ blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;co
 </span>
 </a>
 </div>
-
-
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <div class="author-name">ツバサ</div>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
 </div>
 </div>
-
 <div class="disclaimer">※この記事は2026年4月時点の公開情報・App Storeのユーザーレビュー・公式サイトの機能説明をもとに整理したものです。各ツールの機能・料金・無料枠は変更される場合があります。最新情報は各公式サイトでご確認ください。</div>
 
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">「写真の色を変えたい」は3つの用途に分かれる</a></li>
+<li><a href="#sec2">用途別おすすめアプリ・サービス早見表</a></li>
+<li><a href="#sec3">各アプリの特徴と評判</a></li>
+<li><a href="#sec4">AIカラー化の仕組みと精度の限界</a></li>
+<li><a href="#sec5">アプリで対応しきれないケース</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+
 </div>
-</article>
 
 <footer>
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-<p>&copy; 2026 ツバサのメモ帳</p>
+<p>© 2026 ツバサのメモ帳</p>
 </footer>
 
 </body>

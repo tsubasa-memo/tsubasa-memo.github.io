@@ -130,40 +130,74 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="twitter:description" content="社会人1年目で副業を始めようとしたら就業規則が壁になった経験から、副業禁止規定の実態・厚生労働省の副業・兼業ガイドライン・労働時間通算ルール・住民税バレを防ぐ確定申告の方法、上司への伝え方までを実体験ベースでまとめた備忘録。">
 </head>
 <body>
-<header>
-<div class="wrap">
-<a href="index.html" class="site-name">ツバサのメモ帳</a>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
 <nav class="site-nav">
 <a href="/archive.html">記事一覧</a>
 <a href="/glossary/">用語集</a>
 </nav>
 </div>
 </header>
-<div class="site-search-wrap">
-<div class="wrap">
-<input type="search" id="site-search-input" placeholder="サービス名・キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
 <div id="site-search-results" hidden></div>
 </div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
 </div>
-<nav class="breadcrumb">
-<div class="wrap">
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
 <a href="index.html">ホーム</a> ＞ 副業と就業規則の壁
-</div>
+
 </nav>
-<div class="hero">
-<div class="wrap">
-<h1>社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話</h1>
-<p class="update">2026年3月 更新</p>
+
+<div class="article-hero">
+<img src="/thumbs/side-job-labor-law.png" alt="社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話" width="640" height="360" loading="eager">
 </div>
+
+
+<h1 class="article-title">社会人1年目で副業を始めようとしたら、会社の就業規則が壁になった話</h1>
+<div class="article-meta-line">
+<span>2026年3月27日</span>
+<span>2026年3月 更新</span>
 </div>
-<main>
-<div class="wrap">
+
 <p>こんにちは、ツバサです。</p>
-
 <p>社会人1年目の終わりごろ、副業を始めてみようと思って動き出したら、思ったより早い段階で壁にぶつかりました。就業規則です。</p>
-
 <p>うちの会社の就業規則を読んでいたら「会社の許可を得た場合を除き、他の業務に従事してはならない」という一文がありまして。「え、許可がいるの？」という感じで調べ始めたのがこの記事のきっかけです。</p>
-
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -175,22 +209,16 @@ gtag('config', 'G-YYBFXHXMM6');
 <li><a href="#sec6">関連する記事</a></li>
 </ol>
 </div>
-
 <h2 id="sec1">まず就業規則を読んだ</h2>
-
 <p>副業について調べると「とにかくまず就業規則を確認」という話が出てきます。当然なんですが、入社してから一度も読んだことがなかったです。</p>
-
 <p>就業規則の副業関連規定は、おおむね3パターンに分かれます。</p>
-
 <table class="spec-table">
 <tr><th>パターン</th><th>内容</th><th>対応</th></tr>
 <tr><td>原則禁止型</td><td>「副業・兼業を禁止する」と明記されている</td><td>申請・相談しないと進められない</td></tr>
 <tr><td>申請・届出型</td><td>「事前に届け出ること」「許可を得ること」が必要</td><td>申請して許可を取れば可能</td></tr>
 <tr><td>自由型（条件付き）</td><td>本業に支障がない範囲・競業しないことを条件に自由</td><td>条件さえ守れば申請不要</td></tr>
 </table>
-
 <p>自分の会社は「申請・届出型」でした。「なんだ、申請すればいいのか」と思ったのですが、申請するとなると「何をするか」を伝える必要があって、それが心理的ハードルになりました。</p>
-
 <div class="insta-ref">
 <div class="insta-ref-header">
 <div class="insta-ref-avatar">📷</div>
@@ -202,39 +230,26 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="insta-ref-body">
 <span class="insta-ref-badge">📌 参考にしたアカウント</span>
 <p>会社員の副業ノウハウを発信するアカウント。就業規則の確認方法・税務処理・バレないための対策まで、実務的な情報が豊富です。</p>
-<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-ref-link">Instagramで見る →</a>
+<a class="insta-ref-link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagramで見る →</a>
 </div>
 </div>
-
 <h2 id="sec2">厚生労働省の「副業・兼業ガイドライン」を読んだ</h2>
-
-<p><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000192188.html" target="_blank" rel="noopener">厚生労働省が発表している「副業・兼業の促進に関するガイドライン」</a>（2018年策定、2022年改定）を読んでみました。</p>
-
+<p><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000192188.html" rel="noopener" target="_blank">厚生労働省が発表している「副業・兼業の促進に関するガイドライン」</a>（2018年策定、2022年改定）を読んでみました。</p>
 <p>要点をまとめると：</p>
-
 <div class="point-box">
 <h4>厚生労働省ガイドラインの要点</h4>
 <p>・副業・兼業は「原則として認める方向が望ましい」という立場を国が示している</p>
 <p>・企業が副業を制限できるのは「労務提供上の支障がある」「企業秘密が漏洩する」「競業他社にあたる」「名誉・信用を傷つける」などの合理的な理由がある場合に限られる</p>
 <p>・会社は労働者の副業について、必要以上に制限することは望ましくない</p>
 </div>
-
 <p>つまり、就業規則で「禁止」と書いてあっても、法律上は全面禁止が正当化されるケースは限られます。ただし就業規則に違反したこと自体が懲戒処分の対象になるリスクはあるので、規則に従った手続きをとるのが現実的です。</p>
-
 <h2 id="sec3">「バレる」問題</h2>
-
 <p>副業を調べていると必ず出てくる「バレる」問題も整理しておきます。</p>
-
 <p>主に住民税の金額で気づかれるケースが多いです。副業収入が増えると、会社から天引きされる住民税（特別徴収）の金額が、本業の給与水準と比べて不自然に高くなることがあります。</p>
-
 <p>対策としては、<a class="glossary-inline" href="/glossary/tax-return.html">確定申告</a>の際に「住民税の納付方法を普通徴収（自分で納付）に変更する」という選択ができます。ただし、これで完全に防げるわけではなく、副業の規模が大きくなると把握されるリスクも上がります。</p>
-
 <h2 id="sec4">結局、自分がとった行動</h2>
-
 <p>会社の申請フローを確認して、直属の上司に「個人でちょっとした作業をやってみたい」というレベルで相談しました。上司も副業に否定的ではなかったので、所定の届出を出して始めました。</p>
-
 <p>副業を始める前に就業規則を確認するのは面倒に思えますが、後でトラブルになるより全然マシです。申請フローがある会社の場合、上司に相談するのが一番スムーズでした。</p>
-
 <div class="warn-box">
 <h4>副業を始める前のチェックリスト</h4>
 <p>・会社の就業規則で副業規定を確認する</p>
@@ -243,7 +258,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>・住民税の納付方法を普通徴収にするか検討する</p>
 <p>・本業と競合するジャンルは避ける</p>
 </div>
-
 <div class="faq-section">
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item">
@@ -259,7 +273,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="fa">住民税の金額から気づかれるケースがあります。確定申告時に「住民税を自分で納付」を選択することでリスクを減らせますが、完全に防ぐのは難しい場合もあります。</div>
 </div>
 </div>
-
 <h2 class="related-title" id="sec6">関連する記事</h2>
 <a class="cite-card" href="photo-side-job-no-skill.html">
 <span class="cite-ico int">ツ</span>
@@ -283,11 +296,10 @@ gtag('config', 'G-YYBFXHXMM6');
 </span>
 </a>
 <div class="author-box">
-<div class="author-icon"><img src="icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
 <div class="author-text">
 <p class="author-name">ツバサ</p>
 <p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
-</div>
 </div>
 </div>
 
@@ -324,16 +336,34 @@ gtag('config', 'G-YYBFXHXMM6');
 </div>
 
 </main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">まず就業規則を読んだ</a></li>
+<li><a href="#sec2">厚生労働省の「副業・兼業ガイドライン」を読んだ</a></li>
+<li><a href="#sec3">「バレる」問題</a></li>
+<li><a href="#sec4">結局、自分がとった行動</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
 <footer>
 <div class="wrap">
 <div class="footer-links">
 <a href="privacy-policy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
+
 <a href="about.html">運営者情報</a>
 <a href="/sitemap-links.html">全ページ一覧</a>
 </div>
-&copy; 2026 ツバサのメモ帳
+© 2026 ツバサのメモ帳
 </div>
 </footer>
+
 </body>
 </html>
