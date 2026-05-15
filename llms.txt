@@ -254,6 +254,14 @@
   - Q: iPhoneでExif情報（位置情報）を削除するにはどうすればいいですか？
   - Q: AndroidでExif情報（位置情報）を削除するにはどうすればいいですか？
   - Q: WindowsやMacでExif情報を削除する方法はありますか？
+- [How to Check & Remove EXIF Location Data from Photos (English)](https://tsubasa-memo.github.io/exif-info-en.html): English version of the EXIF guide. Covers what EXIF data is, which platforms strip it, and how to remove GPS metadata on iPhone, Android, Windows, and Mac.
+  - Q: What is EXIF data?
+  - Q: Do social media platforms remove EXIF data from uploaded photos?
+  - Q: How do I remove EXIF data on iPhone?
+  - Q: How do I remove EXIF data on Android?
+  - Q: Does WhatsApp remove EXIF data from photos?
+  - Q: Does taking a screenshot remove EXIF data?
+  - Q: Can AI determine a photo's location even without EXIF data?
 - [スマホで証明写真を作る方法｜アプリ＋コンビニ印刷で30円から](https://tsubasa-memo.github.io/id-photo.html): 証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめた記事
   - Q: スマホアプリで作った証明写真は履歴書やパスポートに使えますか？
   - Q: コンビニで証明写真を印刷するにはどうすればいいですか？
