@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Search Consoleの使い方｜初心者が最低限やることだけ｜ツバサのメモ帳</title>
+<meta name="description" content="Google Search Console（サーチコンソール）の使い方を初心者向けに解説。インデックス登録、検索パフォーマンス確認、構造化データ検証など最低限やるべきことだけに絞った。操作に迷ったらClaudeに聞けば手順もわかる。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/search-console-guide.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/search-console-guide.html">
+<meta property="og:title" content="Google Search Consoleの使い方｜初心者が最低限やることだけ">
+<meta property="og:description" content="サーチコンソールの使い方を初心者向けに解説。インデックス登録、検索パフォーマンス確認、構造化データ検証など最低限やることだけ。Claudeに聞けば設定も簡単。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/search-console-guide.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/search-console-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/search-console-guide.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Google Search Consoleの使い方｜初心者が最低限やることだけ",
+  "description": "Google Search Console（サーチコンソール）の使い方を初心者向けに解説。インデックス登録、検索パフォーマンス確認、構造化データの検証など最低限やるべきことだけに絞った。",
+  "url": "https://tsubasa-memo.github.io/search-console-guide.html",
+  "image": "https://tsubasa-memo.github.io/thumbs/search-console-guide.png",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Google Search Consoleは無料？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完全無料。Googleアカウントがあれば誰でも利用できる。SEO対策の基盤となるツールで、検索パフォーマンスの確認、インデックス状況の管理、サイトの技術的な問題の検出などができる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Search Consoleの登録方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "search.google.com/search-consoleにアクセスし、Googleアカウントでログイン。プロパティタイプは「URLプレフィックス」を選び、サイトのURLを入力する。所有権の確認はHTMLファイルのアップロード、HTMLタグの追加、Google Analyticsとの連携など複数の方法がある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "インデックス登録をリクエストする方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search Consoleの上部にある検索バーにページのURLを入力し、URL検査を実行。結果画面で「インデックス登録をリクエスト」をクリックする。新しい記事を公開したときや、既存記事を大幅に更新したときに使う。ただし1日のリクエスト数には上限がある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Search Consoleで構造化データのエラーを確認するには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "URL検査ツールでページのURLを入力し、結果の「拡張」セクションで構造化データの検出状況を確認できる。エラーがある場合は赤く表示される。また、Googleのリッチリザルトテスト（search.google.com/test/rich-results）を使えば、公開前のコードもテストできる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "小規模サイトでSearch Consoleを見る頻度はどのくらい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "週に1回で十分。検索パフォーマンスの推移、インデックスの状態、エラーの有無を確認する。新しい記事を公開したときはその都度インデックス登録をリクエストする。毎日見ても数字はすぐには変わらないので、週1のルーティンに組み込むのが現実的。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "SEO・Web", "item": "https://tsubasa-memo.github.io/archive.html?cat=seo"},
+    {"@type": "ListItem", "position": 3, "name": "Search Consoleの使い方"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block"><div class="sb-profile"><div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div><div class="sb-site-name">ツバサのメモ帳</div></div></div>
+<div class="sidebar-block"><ul class="sb-nav"><li><a href="/">ホーム</a></li><li><a href="/archive.html">記事一覧</a></li><li><a href="/glossary/">用語集</a></li><li><a href="/about.html">運営者情報</a></li><li><a href="/privacy-policy.html">プライバシーポリシー</a></li></ul></div>
+<div class="sidebar-block"><p class="sb-label">検索</p><input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div>
+<div class="sidebar-block"><p class="sb-label">カテゴリ</p><ul class="sb-categories"><li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li><li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li><li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li><li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li><li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li></ul></div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="/">ホーム</a> &gt; <a href="/archive.html?cat=seo">SEO・Web</a> &gt; Search Consoleの使い方
+</nav>
+<div class="article-hero">
+<img alt="Google Search Consoleの使い方｜初心者向け" height="360" loading="eager" src="/thumbs/search-console-guide.png" width="640"/>
+</div>
+<span class="article-tag">SEO・Web</span>
+<h1 class="article-title">Google Search Consoleの使い方<br/>初心者が最低限やることだけ</h1>
+<div class="article-meta-line">
+<span>2026年5月15日</span>
+<span>最終更新：2026年5月</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>Google Search Console（サーチコンソール、通称サチコ）はSEOの基盤となる無料ツールだ。ただ、機能が多すぎて初心者はどこから手をつけていいかわからないと思う。解説記事を読んでも大規模サイト向けの話が多くて、自分の小さなサイトに当てはまらなかったりする。</p>
+
+<p>僕のやっていることはシンプルだ。新しい記事を公開したらインデックス登録をリクエストする。週に1回、検索パフォーマンスを開いてどんなキーワードで流入があるか眺める。構造化データにエラーが出ていないか確認する。基本はこの3つだけで、1回あたり10分もかからない。「このページのインデックス状況を調べて」「構造化データのエラーを直して」とClaudeに聞けば、操作手順もコードの修正案も出してくれるので、自分で全部覚える必要もない。</p>
+
+<p>この記事では、初心者が最低限やるべきことだけに絞ってSearch Consoleの使い方をまとめた。</p>
+
+<h2 id="sec1">Search Consoleとは</h2>
+
+<p>Googleが無料で提供しているWebサイトの管理ツール。自分のサイトがGoogleにどう認識されているか、どんなキーワードで検索されているか、技術的な問題がないかを確認できる。SEO対策会社に依頼する・しないにかかわらず、サイトを運営しているなら必ず導入しておくべきツールだ。</p>
+
+<a class="cite-card" href="https://search.google.com/search-console/about?hl=ja" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google Search Console</span>
+<span class="cite-url">search.google.com/search-console</span>
+</span>
+</a>
+
+<h2 id="sec2">登録と初期設定</h2>
+
+<p>search.google.com/search-consoleにGoogleアカウントでログインし、プロパティ（管理するサイト）を追加する。プロパティタイプは「URLプレフィックス」を選び、サイトのURL（例：https://example.com/）を入力する。</p>
+
+<p>所有権の確認方法は複数あるが、小規模サイトなら以下のどれかが手軽だ。</p>
+
+<ul>
+<li><strong>HTMLファイルのアップロード</strong>：Googleが指定するHTMLファイルをサイトのルートに置く。静的サイトやレンタルサーバーで運営している場合に向いている</li>
+<li><strong>HTMLメタタグ</strong>：&lt;head&gt;内に指定のメタタグを追加する。HTMLを編集できる環境ならこれが一番簡単</li>
+<li><strong>Google Analytics連携</strong>：すでにGA4を導入しているなら、自動で所有権が確認される場合がある</li>
+</ul>
+
+<p>登録後、データが反映されるまで数日かかることがある。焦らず待つ。</p>
+
+<h2 id="sec3">小規模サイトが使うべき機能</h2>
+
+<h3>① インデックス登録のリクエスト（URL検査）</h3>
+
+<p>Search Consoleで最も使う機能。画面上部の検索バーにページのURLを入力すると、そのページがGoogleにインデックスされているかどうかがわかる。</p>
+
+<p>新しい記事を公開したとき、既存記事を大幅にリライトしたときは、ここから「インデックス登録をリクエスト」を送る。リクエストしなくてもGoogleは巡回してくれるが、小規模サイトはクロール頻度が低いため、手動でリクエストしたほうが反映が早い。</p>
+
+<p>1日のリクエスト数には上限があるので、大量の記事を一度に申請するときは1日10件程度に分けるのがいい。</p>
+
+<h3>② 検索パフォーマンス</h3>
+
+<p>自分のサイトがGoogleでどう表示されているかを確認する画面。見るべき指標は4つ。</p>
+
+<ul>
+<li><strong>クリック数</strong>：検索結果から実際にクリックされた回数</li>
+<li><strong>表示回数</strong>：検索結果に表示された回数（クリックされなかった場合も含む）</li>
+<li><strong>CTR（クリック率）</strong>：表示回数に対するクリック数の割合</li>
+<li><strong>平均掲載順位</strong>：検索結果での平均的な位置</li>
+</ul>
+
+<p>小規模サイトにとって最も重要なのは「クエリ」タブだ。ここで「自分のサイトがどんなキーワードで検索されているか」がわかる。想定していなかったキーワードで流入があることに気づけば、そのキーワードに特化した記事を新たに書くことで流入を増やせる。</p>
+
+<h3>③ ページのインデックス状況</h3>
+
+<p>左メニューの「ページ」から確認できる。サイト内のどのページがインデックスされていて、どのページがインデックスされていないかが一覧で表示される。</p>
+
+<p>小規模サイトで注意すべきは「インデックス未登録」のステータス。記事を書いたのにGoogleに認識されていない場合、そのページからの検索流入はゼロになる。原因としてよくあるのは、noindexタグの設定ミス、canonicalタグの誤指定、内部リンクがどこからも張られていない孤立ページなど。</p>
+
+<h3>④ 構造化データの確認</h3>
+
+<p>LLMO対策にも直結する機能。URL検査でページを調べると、結果の「拡張」セクションにそのページで検出された構造化データ（FAQPage、Article、BreadcrumbListなど）が表示される。エラーがある場合は赤で表示されるので、JSON-LDのコードを修正する手がかりになる。</p>
+
+<p>Search Console以外に、Googleの<a href="https://search.google.com/test/rich-results?hl=ja" target="_blank" rel="noopener nofollow">リッチリザルトテスト</a>を使えば、公開前のコードもテストできる。構造化データを実装したら必ずこのツールで確認する習慣をつけるといい。</p>
+
+<h3>⑤ サイトマップの送信</h3>
+
+<p>左メニューの「サイトマップ」から、sitemap.xmlのURLを送信する。サイトマップはサイト内の全ページをGoogleに伝えるためのファイルで、特に小規模サイトではクロール漏れを防ぐ効果がある。WordPressならYoast SEOやRank Mathが自動生成してくれる。静的サイトの場合は手動で作成するか、オンラインのサイトマップ生成ツールを使う。</p>
+
+<h2 id="sec4">小規模サイトの運用ルーティン</h2>
+
+<p>Search Consoleは毎日見る必要はない。以下のルーティンを週1回やれば十分だ。</p>
+
+<ol>
+<li>検索パフォーマンスで過去7日間のクリック数と表示回数を確認する</li>
+<li>クエリタブで新しいキーワードが出ていないかチェックする</li>
+<li>ページのインデックス状況で「インデックス未登録」が増えていないか確認する</li>
+<li>新しい記事を公開していたらURL検査からインデックス登録をリクエストする</li>
+</ol>
+
+<p>構造化データのチェックは、記事を新規公開したときやテンプレートを変更したときだけでいい。毎週やる必要はない。</p>
+
+<p>大事なのは「見るだけで終わらない」こと。CTRが低いページがあれば、タイトルやmeta descriptionを書き直す。表示回数は多いのにクリックされていないページは、検索結果でのタイトルが魅力的でない可能性がある。データを見て、1つでも改善アクションを取る。それを週1回繰り返すだけで、半年後にはサイトの状態が大きく変わっている。</p>
+
+<div class="faq-section">
+<h2 id="sec5">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq">Q. Google Search Consoleは無料？</p>
+<p class="fa">完全無料。Googleアカウントがあれば誰でも利用できる。SEO対策の基盤となるツールで、検索パフォーマンスの確認、インデックス状況の管理、サイトの技術的な問題の検出などができる。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. Search Consoleの登録方法は？</p>
+<p class="fa">search.google.com/search-consoleにアクセスし、Googleアカウントでログイン。プロパティタイプは「URLプレフィックス」を選び、サイトのURLを入力する。所有権の確認はHTMLファイルのアップロード、HTMLタグの追加、Google Analyticsとの連携など複数の方法がある。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. インデックス登録をリクエストする方法は？</p>
+<p class="fa">Search Consoleの上部にある検索バーにページのURLを入力し、URL検査を実行。結果画面で「インデックス登録をリクエスト」をクリックする。新しい記事を公開したときや、既存記事を大幅に更新したときに使う。1日のリクエスト数には上限がある。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 構造化データのエラーを確認するには？</p>
+<p class="fa">URL検査ツールでページのURLを入力し、結果の「拡張」セクションで構造化データの検出状況を確認できる。エラーがある場合は赤く表示される。Googleのリッチリザルトテスト（search.google.com/test/rich-results）を使えば、公開前のコードもテストできる。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 小規模サイトでSearch Consoleを見る頻度は？</p>
+<p class="fa">週に1回で十分。検索パフォーマンスの推移、インデックスの状態、エラーの有無を確認する。新しい記事を公開したときはその都度インデックス登録をリクエストする。毎日見ても数字はすぐには変わらないので、週1のルーティンに組み込むのが現実的。</p>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="/seo-llmo-cost-small-business.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span><span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span></span></a>
+<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを初心者向けに整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
+<a class="cite-card" href="/json-ld-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span><span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span></span></a>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">Search Consoleとは</a></li>
+<li><a href="#sec2">登録と初期設定</a></li>
+<li><a href="#sec3">小規模サイトが使うべき機能</a></li>
+<li><a href="#sec4">小規模サイトの運用ルーティン</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

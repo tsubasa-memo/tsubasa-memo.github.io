@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>llms.txtとは？書き方・設置方法とLLMO対策での効果を解説｜ツバサのメモ帳</title>
+<meta name="description" content="llms.txtはChatGPTやClaudeのAIクローラー向けサイト案内ファイル。robots.txtとの違い、Markdown形式での書き方、サーバーへの設置手順、LLMO対策としての効果を解説。テキストファイル1つで完了する無料施策。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
+<meta property="og:title" content="llms.txtとは？書き方・設置方法とLLMO対策での効果を解説">
+<meta property="og:description" content="llms.txtはAIクローラー向けのサイト案内ファイル。書き方、設置手順、LLMO対策としての効果を解説。テキストファイル1つで完了する無料施策。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/llms-txt-guide.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/llms-txt-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llms-txt-guide.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<style>.code-block{background:#1e1e1e;color:#d4d4d4;border-radius:8px;padding:16px 20px;margin:16px 0 24px;overflow-x:auto;font-family:"Source Code Pro",monospace;font-size:13px;line-height:1.6}.code-block .comment{color:#6a9955}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "llms.txtとは？書き方・設置方法とLLMO対策での効果を解説",
+  "description": "llms.txtはAIクローラー向けのサイト案内ファイル。robots.txtとの違い、書き方のフォーマット、設置手順、LLMO対策としての効果を解説。",
+  "url": "https://tsubasa-memo.github.io/llms-txt-guide.html",
+  "image": "https://tsubasa-memo.github.io/thumbs/llms-txt-guide.png",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "llms.txtとは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリ（example.com/llms.txt）に設置する。2025年に提唱された新しい仕様で、LLMO対策の基盤施策のひとつ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtとrobots.txtの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "robots.txtはGooglebotなどの検索エンジンクローラーにクロール許可・拒否を伝えるファイル。llms.txtはChatGPTのGPTBotやClaudeのClaude-botなどのAIクローラーにサイトの概要・主要コンテンツ・構造を伝えるファイル。目的が異なるので両方設置するのが理想的。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtの設置は無料でできる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料で設置できる。テキストエディタでファイルを作成し、サーバーのルートディレクトリにアップロードするだけ。特別なツールやプラグインは不要。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtを設置するとどんな効果がある？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AIクローラーがサイトの全体像を効率的に把握できるようになり、AIが回答を生成する際に自社の情報を正確に引用する確率が高まる可能性がある。ただし効果は現時点で公式には保証されておらず、あくまでLLMO対策の基盤施策として位置づけられている。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtに何を書けばいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サイト名、サイトの概要説明、主要なページへのURLとその簡潔な説明をMarkdown形式で記述する。サイトのすべてのページを列挙する必要はなく、AIに特に読んでほしい重要なコンテンツに絞るのがポイント。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "SEO・Web", "item": "https://tsubasa-memo.github.io/archive.html?cat=seo"},
+    {"@type": "ListItem", "position": 3, "name": "llms.txtとは？書き方と設置方法"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav"><a href="/archive.html">記事一覧</a><a href="/glossary/">用語集</a></nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block"><div class="sb-profile"><div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div><div class="sb-site-name">ツバサのメモ帳</div></div></div>
+<div class="sidebar-block"><ul class="sb-nav"><li><a href="/">ホーム</a></li><li><a href="/archive.html">記事一覧</a></li><li><a href="/glossary/">用語集</a></li><li><a href="/about.html">運営者情報</a></li><li><a href="/privacy-policy.html">プライバシーポリシー</a></li></ul></div>
+<div class="sidebar-block"><p class="sb-label">検索</p><input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div>
+<div class="sidebar-block"><p class="sb-label">カテゴリ</p><ul class="sb-categories"><li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li><li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li><li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li><li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li><li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li></ul></div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="/">ホーム</a> &gt; <a href="/archive.html?cat=seo">SEO・Web</a> &gt; llms.txtとは
+</nav>
+<div class="article-hero">
+<img alt="llms.txtとは？書き方・設置方法・効果" height="360" loading="eager" src="/thumbs/llms-txt-guide.png" width="640"/>
+</div>
+<span class="article-tag">SEO・Web</span>
+<h1 class="article-title">llms.txtとは？<br/>書き方・設置方法・効果をわかりやすく解説</h1>
+<div class="article-meta-line">
+<span>2026年5月15日</span>
+<span>最終更新：2026年5月</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>LLMO対策の記事を読んでいると「llms.txtを設置しましょう」と書いてある。でもllms.txtって何なのか、何を書けばいいのか、robots.txtと何が違うのか。このサイト（ツバサのメモ帳）でも実際にllms.txtを設置しているので、その経験も踏まえて書き方と設置方法をまとめた。</p>
+
+<h2 id="sec1">llms.txtとは</h2>
+
+<p>llms.txtは、AIクローラーにサイトの概要と構造を伝えるためのテキストファイルだ。2025年に提唱された比較的新しい仕様で、サイトのルートディレクトリ（example.com/llms.txt）に設置する。</p>
+
+<p>ChatGPTのGPTBot、ClaudeのClaude-bot、PerplexityのPerplexityBotなどのAIクローラーがサイトを訪問した際に、このファイルを読むことで「このサイトには何があるか」「どのページが重要か」を効率的に把握できるようになる。</p>
+
+<p>イメージとしては、初めて訪れた建物の入り口にある案内板のようなものだ。</p>
+
+<h2 id="sec2">robots.txtとの違い</h2>
+
+<table class="compare-table">
+<tr><th>項目</th><th>robots.txt</th><th>llms.txt</th></tr>
+<tr><td>対象</td><td>Googlebotなどの検索エンジンクローラー</td><td>GPTBot、Claude-botなどのAIクローラー</td></tr>
+<tr><td>目的</td><td>クロールの許可・拒否を指定</td><td>サイトの概要・構造・重要ページを伝える</td></tr>
+<tr><td>書式</td><td>独自フォーマット（User-agent、Disallowなど）</td><td>Markdown形式</td></tr>
+<tr><td>歴史</td><td>1994年〜、検索エンジンの標準仕様</td><td>2025年提唱、まだ普及途上</td></tr>
+</table>
+
+<p>robots.txtが「どこを見ていい/ダメ」を伝えるのに対し、llms.txtは「このサイトにはこういう情報がある」と案内する役割だ。目的が違うので、両方設置するのが理想的。robots.txtでAIクローラーを遮断しながらllms.txtで案内する、という矛盾した設定にならないよう注意する。</p>
+
+<h2 id="sec3">llms.txtの書き方</h2>
+
+<p>フォーマットはMarkdown形式で、以下の構成で書く。</p>
+
+<pre class="code-block"><span class="comment"># サイト名</span>
+
+&gt; サイトの概要説明（1〜2文で簡潔に）
+
+<span class="comment">## 主要コンテンツ</span>
+
+- [ページタイトル](URL): そのページの簡潔な説明
+- [ページタイトル](URL): そのページの簡潔な説明
+- [ページタイトル](URL): そのページの簡潔な説明
+
+<span class="comment">## カテゴリ別コンテンツ</span>
+
+<span class="comment">### カテゴリ名</span>
+
+- [記事タイトル](URL): 記事の説明
+- [記事タイトル](URL): 記事の説明</pre>
+
+<p>書くときのポイントは以下の通り。</p>
+
+<ul>
+<li><strong>全ページを列挙する必要はない</strong>：AIに特に読んでほしい重要なコンテンツに絞る。サイトマップのように全URLを並べるとかえって読みにくくなる</li>
+<li><strong>説明文は簡潔に</strong>：各ページの説明は1文で収める。AIが瞬時にサイトの全体像を把握できるようにする</li>
+<li><strong>カテゴリで整理する</strong>：サイト内のコンテンツをカテゴリごとにまとめると、AIがサイトの専門分野を理解しやすい</li>
+<li><strong>日本語で書いてよい</strong>：日本語サイトなら日本語で記述する。AIは多言語を理解できる</li>
+</ul>
+
+<h3>実際の例（このサイトの場合）</h3>
+
+<p>ツバサのメモ帳では、llms.txtにカテゴリ別の記事一覧と各記事の概要を記載している。以下は構成のイメージだ。</p>
+
+<pre class="code-block"><span class="comment"># ツバサのメモ帳</span>
+
+&gt; EC運営・商品撮影・画像加工・レタッチ外注・副業をテーマにした備忘録ブログ。
+
+<span class="comment">## EC・実務</span>
+
+- [ささげ業務とは](https://example.com/sasage.html): EC商品登録に必要な撮影・採寸・原稿の業務内容と外注先
+- [背景切り抜きの費用相場](https://example.com/cutout.html): 1枚39円〜の切り抜き外注先比較
+
+<span class="comment">## SEO・Web</span>
+
+- [SEO・LLMO対策の費用相場](https://example.com/seo-cost.html): 小規模事業者向けの予算別選択肢
+- [LLMOとは](https://example.com/llmo.html): SEO・GEO・AIOとの違いを整理</pre>
+
+<h2 id="sec4">設置方法</h2>
+
+<p>設置は3ステップで完了する。特別なツールは不要だ。</p>
+
+<ol>
+<li><strong>テキストファイルを作成</strong>：テキストエディタ（メモ帳、VS Code、何でもいい）でllms.txtという名前のファイルを作り、上記のフォーマットで内容を書く</li>
+<li><strong>サーバーにアップロード</strong>：サイトのルートディレクトリ（index.htmlと同じ階層）にアップロードする。FTPクライアントやサーバーの管理画面からアップロードする</li>
+<li><strong>アクセス確認</strong>：ブラウザで https://自分のドメイン/llms.txt にアクセスし、内容が表示されれば完了</li>
+</ol>
+
+<p>WordPressの場合は、プラグイン（LLMs.txt Generatorなど）を使うか、FTPでWordPressのルートディレクトリにファイルを直接置く。GitHub Pagesならリポジトリのルートにファイルを追加してpushするだけだ。</p>
+
+<h2 id="sec5">効果と注意点</h2>
+
+<h3>期待できる効果</h3>
+
+<p>AIクローラーがサイトの全体像を効率的に把握できるようになり、回答生成時に自社の情報が正確に引用される確率が高まる可能性がある。特に小規模サイトでは、AIがサイトの専門性や扱っているテーマを把握しきれないことがあるため、llms.txtで明示的に伝えることに意味がある。</p>
+
+<h3>注意点</h3>
+
+<ul>
+<li>llms.txtは2025年に提唱された仕様であり、主要なAI各社がどの程度このファイルを参照しているかは公式には明らかにされていない</li>
+<li>llms.txtを設置したからといって必ずAIに引用されるわけではない。あくまで基盤施策のひとつであり、コンテンツの質やサイト全体の信頼性が前提</li>
+<li>設置のコストはゼロ（テキストファイル1つ）なので、デメリットはほぼない。やっておいて損はない施策</li>
+</ul>
+
+<a class="cite-card" href="https://llmstxt.org/" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">L</span>
+<span class="cite-body">
+<span class="cite-title">llms.txt 公式サイト</span>
+<span class="cite-url">llmstxt.org</span>
+</span>
+</a>
+
+<div class="faq-section">
+<h2 id="sec6">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq">Q. llms.txtとは？</p>
+<p class="fa">AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリに設置する。2025年に提唱された新しい仕様で、LLMO対策の基盤施策のひとつ。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. llms.txtとrobots.txtの違いは？</p>
+<p class="fa">robots.txtは検索エンジンクローラーにクロールの許可・拒否を伝えるファイル。llms.txtはAIクローラーにサイトの概要・主要コンテンツ・構造を伝えるファイル。目的が異なるので両方設置するのが理想的。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. llms.txtの設置は無料？</p>
+<p class="fa">無料。テキストエディタでファイルを作成し、サーバーのルートディレクトリにアップロードするだけ。特別なツールやプラグインは不要。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. llms.txtを設置するとどんな効果がある？</p>
+<p class="fa">AIクローラーがサイトの全体像を効率的に把握でき、回答生成時に自社情報が正確に引用される確率が高まる可能性がある。ただし効果は公式に保証されておらず、LLMO対策の基盤施策として位置づけられている。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. llms.txtに何を書けばいい？</p>
+<p class="fa">サイト名、概要説明、主要ページへのURLとその簡潔な説明をMarkdown形式で記述する。全ページを列挙する必要はなく、AIに特に読んでほしい重要コンテンツに絞るのがポイント。</p>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを初心者向けに整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
+<a class="cite-card" href="/json-ld-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span><span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span></span></a>
+<a class="cite-card" href="/seo-llmo-cost-small-business.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span><span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span></span></a>
+<a class="cite-card" href="/search-console-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">Google Search Consoleの使い方｜小規模サイトがやるべきことだけ</span><span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span></span></a>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">llms.txtとは</a></li>
+<li><a href="#sec2">robots.txtとの違い</a></li>
+<li><a href="#sec3">llms.txtの書き方</a></li>
+<li><a href="#sec4">設置方法</a></li>
+<li><a href="#sec5">効果と注意点</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links"><a href="privacy-policy.html">プライバシーポリシー</a><a href="about.html">運営者情報</a></div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
