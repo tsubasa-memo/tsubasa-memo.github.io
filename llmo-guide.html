@@ -84,6 +84,14 @@
         "@type": "Answer",
         "text": "まずChatGPTやPerplexityに自社に関するキーワードを入力して、AIが自社をどう認識しているか確認する。次にFAQPage JSON-LDの実装、著者情報の構造化データ整備、各ページのFAQ充実を行う。llms.txtの設置はGoogleが「不要」と表明しているため必須ではないが、ChatGPTやClaude、Perplexity向けには有効でコストもゼロなので、余裕があれば追加する。これらはすべて無料で実施でき、LLMO対策の基盤になる。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Google以外のAI検索（ChatGPT・Perplexity）にも最適化は必要？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必要になるケースはある。ただし2026年5月時点で、AI検索向けのコンテンツ最適化ガイドラインを公式に公開しているのはGoogleだけ。OpenAI（ChatGPT Search）とPerplexityはクローラー制御の仕組みは公開しているが、こうすれば引用されやすいという公式ガイドは出していない。技術的にはどのサービスもクエリ分解とRAGの仕組みを使っており、良質なコンテンツと構造化データの整備はどのサービスでも共通して有効と考えられる。まずはGoogleの公式ガイドに沿った対策を優先し、余裕があれば各社のクローラー許可設定を確認する順序が現実的。"
+      }
     }
   ]
 }
@@ -217,6 +225,46 @@
 
 <p>逆に言えば、SEOの基本ができていないサイトにLLMO対策だけ施しても効果は薄い。まずSEOの土台を固めてから、LLMO固有の施策を追加するのが正しい順序になる。</p>
 
+<h2 id="sec3b">Google・ChatGPT・Perplexityの公式ガイドライン</h2>
+
+<p>2026年5月時点で、AI検索向けのコンテンツ最適化ガイドラインを公式に公開しているのはGoogleだけだ。他社は、クローラーの制御方法（robots.txtでのブロック/許可）は公開しているが、「どうすれば引用されやすくなるか」を体系的にまとめた公式ドキュメントは出していない。</p>
+
+<table class="compare-table">
+<tr><th>サービス</th><th>公式最適化ガイド</th><th>重複コンテンツへの言及</th><th>クローラー制御</th></tr>
+<tr><td>Google（AI Overviews / AI Mode）</td><td>あり（2026年5月15日公開）</td><td>あり（「Reduce duplicate content」を技術要件に記載）</td><td>Googlebot（従来通り）</td></tr>
+<tr><td>OpenAI（ChatGPT Search）</td><td>なし（ヘルプに「ランキング要因は複数あるが保証はない」とのみ記載）</td><td>なし</td><td>OAI-SearchBot / GPTBot / ChatGPT-User（独立制御可）</td></tr>
+<tr><td>Perplexity</td><td>なし（Publisher Programの参加条件のみ公開）</td><td>なし</td><td>PerplexityBot</td></tr>
+<tr><td>Microsoft（Copilot / Bing）</td><td>なし（従来のBing Webmaster Guidelinesのみ）</td><td>なし（Bingの既存canonical処理は適用される）</td><td>Bingbot</td></tr>
+</table>
+
+<p>各社の公式ドキュメントや公式ブログに書かれている情報と、AI自身の回答を混同しないよう注意が必要だ。たとえばPerplexityに最適化の方針を質問すると回答は返ってくるが、それはPerplexity社の公式見解ではなく、LLMが生成した文章にすぎない。</p>
+
+<p>ただし技術的な仕組みは各社で共通している部分がある。GoogleはQuery fan-out（ユーザーのクエリを複数のサブクエリに分解して並行検索する仕組み）を公式に説明しているが、Perplexityも同様のQuery decompositionを採用しており、ChatGPT Searchも内部でクエリを書き換えて複数回検索していることがヘルプページに記載されている。サイト内に似たページが複数あると、分解された各サブクエリに対して別々のページが引っかかり、どれを引用すべきかAIが判断しにくくなるリスクは、どのAI検索でも構造的に存在する。</p>
+
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google検索セントラル｜生成AI機能向けの最適化ガイド（2026年5月15日更新）</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://help.openai.com/en/articles/9237897-chatgpt-search" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">O</span>
+<span class="cite-body">
+<span class="cite-title">OpenAI Help Center｜ChatGPT search</span>
+<span class="cite-url">help.openai.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://www.perplexity.ai/hub/blog/introducing-the-perplexity-publishers-program" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">Perplexity公式ブログ｜Introducing the Perplexity Publishers' Program</span>
+<span class="cite-url">perplexity.ai</span>
+</span>
+</a>
+
 <h2 id="sec4">LLMOで重要な施策</h2>
 
 <h3>構造化データ（JSON-LD）の実装</h3>
@@ -252,6 +300,16 @@
 <h3>一次情報の発信</h3>
 
 <p>AIはWeb上の情報を要約するが、新しい体験や独自のデータを生み出すことはできない。事業主自身の「専門家としての知見」「顧客の成功体験」「自社独自の調査データ」は、AIが引用したくなる素材になる。金をかけなくても、自分の経験を記事にするだけで競合との差別化になる。</p>
+
+<h3>サイト内の重複コンテンツの整理</h3>
+
+<p>従来のSEOでは、カニバリゼーション（同テーマの記事がサイト内で競合する状態）はペナルティの対象ではなかった。Googleも「重複コンテンツがあっても自動的に減点にはならない」というスタンスで、あくまでページ間で評価が分散する効率性の問題として扱われていた。</p>
+
+<p>ところが2026年5月15日のAI最適化ガイドで、Googleは「Reduce duplicate content」を生成AI検索向けの技術要件として明記した。AI検索ではQuery fan-out（ユーザーのクエリを複数のサブクエリに分解して並行検索する仕組み）が使われるため、サイト内に似たページがあるとサブクエリごとに別のページが引っかかり、AIがどれを引用すべきか絞り込めなくなる。結果として、どのページもAI回答に採用されないリスクがある。従来の「ペナルティではないから気にしなくていい」という整理は、AI検索の時代には通用しなくなった。</p>
+
+<p>対策は3つある。まず、同テーマの記事群で1ページをハブ（親記事）に指定し、内部リンクで階層構造を明確にすること。次に、同じ検索意図に対して複数ページが応答している場合は、コンテンツを統合するかcanonicalタグで正規URLを指定すること。最後に、用語集やFAQページが通常記事と同じ内容を重複している場合は、用語集側からcanonicalで通常記事に寄せること。</p>
+
+<p>ここで注意したいのは、「同じテーマの記事が複数あること」自体が問題なのではなく、「同じ検索意図に対して複数ページが競合している状態」が問題だという点。たとえば「レタッチ 外注 相場」というクエリに対して料金一覧・料金ガイド・個人向け相場の3ページが全部ヒットする状態はリスクだが、料金一覧（相場を知りたい人向け）・外注のコツ（依頼の仕方を知りたい人向け）・比較記事（2社を比べたい人向け）はそれぞれ別の意図に応えているので競合しにくいはずだ。</p>
 
 <h2 id="sec5">小規模事業者がまずやるべきこと</h2>
 
@@ -299,6 +357,11 @@
 <div class="faq-item">
 <p class="fq">Q. LLMO対策を自分でやるには何から始めればいい？</p>
 <p class="fa">まずChatGPTやPerplexityに自社に関するキーワードを入力して、AIが自社をどう認識しているか確認する。次にFAQPage JSON-LDの実装、著者情報の構造化データ整備、各ページのFAQ充実を行う。llms.txtの設置はGoogleが「不要」と表明しているため必須ではないが、ChatGPTやClaude、Perplexity向けには有効でコストもゼロなので、余裕があれば追加する。これらはすべて無料で実施でき、LLMO対策の基盤になる。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. Google以外のAI検索（ChatGPT・Perplexity）にも最適化は必要？</p>
+<p class="fa">必要になるケースはある。ただし2026年5月時点で、AI検索向けのコンテンツ最適化ガイドラインを公式に公開しているのはGoogleだけ。OpenAI（ChatGPT Search）とPerplexityはクローラー制御の仕組みは公開しているが、「こうすれば引用されやすい」という公式ガイドは出していない。技術的にはどのサービスもクエリ分解＋RAGの仕組みを使っており、良質なコンテンツと構造化データの整備はどのサービスでも共通して有効と考えられる。まずはGoogleの公式ガイドに沿った対策を優先し、余裕があれば各社のクローラー許可設定を確認する順序が現実的。</p>
 </div>
 </div>
 
@@ -351,6 +414,7 @@
 <li><a href="#sec1">LLMOとは</a></li>
 <li><a href="#sec2">LLMO・GEO・AIO・AEOの違い</a></li>
 <li><a href="#sec3">SEOとLLMOの関係</a></li>
+<li><a href="#sec3b">各社の公式ガイドライン</a></li>
 <li><a href="#sec4">LLMOで重要な施策</a></li>
 <li><a href="#sec5">小規模事業者がまずやるべきこと</a></li>
 <li><a href="#sec6">よくある質問</a></li>
