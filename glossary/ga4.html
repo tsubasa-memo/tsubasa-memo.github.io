@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>GA4とは？ブログのアクセス解析で最初に見る画面メモ｜ツバサのメモ帳</title>
+<meta name="description" content="GA4（Google Analytics 4）はGoogleが無料で提供するアクセス解析ツールで、サイトの訪問者数や流入経路を記録・分析できる。サーチコンソールとの役割の違いと、個人ブログで最初に見るべき画面を整理した。">
+<meta name="keywords" content="GA4 とは,Google Analytics 4,GA4 使い方,アクセス解析 初心者,GA4 GSC 違い">
+<meta property="og:title" content="GA4とは？ブログのアクセス解析で最初に見る画面メモ｜ツバサのメモ帳">
+<meta property="og:description" content="GA4はGoogleの無料アクセス解析ツール。サーチコンソールとの違いと最初に見る画面を整理した備忘録。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tsubasa-memo.github.io/thumbs/glossary/ga4.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="360">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/ga4.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/thumbs/glossary/ga4.png">
+<meta name="twitter:title" content="GA4とは？ブログのアクセス解析で最初に見る画面メモ｜ツバサのメモ帳">
+<meta name="twitter:description" content="GA4はGoogleの無料アクセス解析ツール。サーチコンソールとの違いと最初に見る画面を整理した備忘録。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/ga4.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/glossary/ga4.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "GA4とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Analytics 4（GA4）はGoogleが無料で提供するアクセス解析ツールです。サイト訪問者数、流入経路、閲覧ページなどを確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GA4とサーチコンソールの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GA4はサイト訪問後のユーザー行動を分析し、サーチコンソールは訪問前の検索データ（表示回数・CTR・掲載順位）を分析します。対象範囲も異なり、GA4は全流入経路、サーチコンソールはGoogle検索のみです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GA4の導入に費用はかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料です。Googleアカウントがあれば利用でき、計測タグをサイトに埋め込むだけで設定できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ユニバーサルアナリティクスとGA4の違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ユニバーサルアナリティクスは2023年7月にサービスを終了した旧バージョンです。GA4はイベントベースの計測方式を採用しており、ページビューだけでなくスクロールやクリックなどの行動も自動で計測します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "個人ブログでGA4を使う意味はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "あります。どのページが人気か、訪問者がどこから来ているかを把握でき、記事の改善方針を立てるのに役立ちます。ただしサーチコンソールの方が優先度は高いです。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GA4とは？ブログのアクセス解析で最初に見る画面メモ",
+  "description": "GA4はGoogleの無料アクセス解析ツール。サーチコンソールとの違いと最初に見る画面を整理した備忘録。",
+  "url": "https://tsubasa-memo.github.io/glossary/ga4.html",
+  "image": "https://tsubasa-memo.github.io/thumbs/glossary/ga4.png",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-05-16T00:00:00+09:00",
+  "dateModified": "2026-05-16T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "GA4"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; GA4
+
+</nav>
+
+<div class="article-hero">
+<img alt="GA4とは？ブログのアクセス解析で最初に見る画面メモ" height="360" loading="eager" src="/thumbs/glossary/ga4.png" width="640"/>
+</div>
+
+<h1 class="article-title">GA4（Google Analytics）とは？<br/>ブログのアクセス解析で最初に見る画面</h1>
+<div class="article-meta-line">
+<span>2026年05月16日</span>
+</div>
+
+<h2>GA4とは</h2>
+<p>GA4（Google Analytics 4）は、Googleが無料で提供しているアクセス解析ツールだ。サイトに訪問した人の数、どこから来たか（検索・SNS・直接アクセス等）、どのページを見たか、などを記録・分析できる。</p>
+<p><a href="https://support.google.com/analytics/answer/9306384" rel="noopener nofollow" target="_blank">Google公式ヘルプ</a>では「ウェブサイトやアプリのデータを収集し、ビジネスに関する有益な分析情報を把握できる」ツールと紹介されている。以前のバージョン（ユニバーサルアナリティクス）は2023年7月にサービスを終了し、現在はGA4が標準になっている。</p>
+<a class="cite-card" href="https://support.google.com/analytics/answer/9306384" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">GA4のセットアップ - Google アナリティクス ヘルプ</span>
+<span class="cite-url">support.google.com</span>
+</span>
+</a>
+<p>導入方法は、GA4の管理画面で取得した計測タグ（gtag.js）をサイトの全ページに埋め込むだけだ。このブログではHTMLの&lt;head&gt;内にGA4のタグ（G-YYBFXHXMM6）を設置している。</p>
+
+<h2>サーチコンソールとの違い</h2>
+<table class="compare">
+<tr><th>項目</th><th>GA4</th><th><a href="search-console.html">サーチコンソール</a></th></tr>
+<tr><td>見れるもの</td><td>訪問後のユーザー行動</td><td>訪問前の検索データ</td></tr>
+<tr><td>主な指標</td><td><a href="session-pv-uu.html">セッション・PV・UU</a>、滞在時間</td><td>表示回数・クリック数・<a href="ctr.html">CTR</a>・掲載順位</td></tr>
+<tr><td>データ対象</td><td>全流入経路（検索・SNS・広告・直接）</td><td>Google検索のみ</td></tr>
+<tr><td>料金</td><td>無料</td><td>無料</td></tr>
+</table>
+<p>簡単にまとめると、サーチコンソールは「検索結果でどう見えているか」を確認するツールで、GA4は「サイトに来た後に何をしているか」を確認するツール。両方使うのが基本だが、個人ブログでまず優先すべきはサーチコンソールだ。検索流入がメインの流入経路であり、クエリデータがないと改善の方針が立てられないからだ。</p>
+<p><a href="https://support.google.com/analytics/answer/10089681" rel="noopener nofollow" target="_blank">GA4とSearch Consoleの連携方法</a>はGoogle公式ヘルプに手順がある。連携すると、GA4の画面内でサーチコンソールのデータ（検索クエリや掲載順位）も確認できるようになる。</p>
+<a class="cite-card" href="https://support.google.com/analytics/answer/10089681" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">Search Consoleとの連携 - Google アナリティクス</span>
+<span class="cite-url">support.google.com</span>
+</span>
+</a>
+
+<h2>最初に見るべき画面</h2>
+<p>GA4は機能が多くて画面に圧倒されるが、個人ブログで最初に見るべきは以下の3つだけだ。</p>
+<p>1つ目は「レポート」→「エンゲージメント」→「ページとスクリーン」。どのページがどのくらい見られているかがわかる。人気記事とそうでない記事の差を把握できる。</p>
+<p>2つ目は「レポート」→「集客」→「トラフィック獲得」。訪問者がどこから来ているか（Organic Search、Direct、Social等）の内訳が見える。検索流入の割合が低ければ、SEO施策の強化が必要だとわかる。</p>
+<p>3つ目は「レポート」→「リアルタイム」。今この瞬間にサイトを見ている人数がわかる。記事を公開した直後やSNSにシェアした直後の反応を即座に確認できる。</p>
+<p><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" rel="noopener nofollow" target="_blank">SEOスターターガイド</a>でも、アクセス解析ツールの活用が推奨されている。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">SEOスターターガイド - Google</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+<a class="cite-card" href="/search-console-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">サーチコンソールの見方を覚えた備忘録</span>
+<span class="cite-url">tsubasa-memo.github.io/search-console-basics.html</span>
+</span>
+</a>
+<a class="cite-card" href="/blog-seo-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">個人ブログのSEOを勉強した記録</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
+</span>
+</a>
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="search-console.html">サーチコンソール</a></li>
+<li><a href="session-pv-uu.html">セッション・PV・UU</a></li>
+<li><a href="ctr.html">CTR</a></li>
+<li><a href="bounce-rate.html">直帰率</a></li>
+<li><a href="index-registration.html">インデックス登録</a></li>
+</ul>
+</div>
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/search-console-basics.html">サーチコンソールの見方を覚えた備忘録</a></li>
+<li><a href="/blog-seo-basics.html">個人ブログのSEOを勉強した記録</a></li>
+<li><a href="/search-console-ctr.html">記事のタイトルを変えたらCTRが動いた話</a></li>
+</ul>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="/privacy-policy.html">プライバシーポリシー</a>
+
+<a href="/about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

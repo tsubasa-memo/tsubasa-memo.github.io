@@ -599,6 +599,7 @@
 
 - [3PL](https://tsubasa-memo.github.io/glossary/3pl.html): 物流業務をまるごと外部に委託するサービス。
 - [ABテスト](https://tsubasa-memo.github.io/glossary/ab-test.html): 2パターンを比較して効果の高いほうを選ぶテスト手法。
+- [AI Overviews](https://tsubasa-memo.github.io/glossary/ai-overviews.html): Google検索結果の上部にAIが生成する要約表示機能。旧称SGE。
 - [alt属性](https://tsubasa-memo.github.io/glossary/alt-attribute.html): 商品画像に設定するテキスト。
 - [ASIN](https://tsubasa-memo.github.io/glossary/asin.html): Amazon出品で出てくる商品識別コード。
 - [AVIF](https://tsubasa-memo.github.io/glossary/avif.html): JPEGの次の標準になるかもしれない次世代画像フォーマット。
@@ -611,8 +612,11 @@
 - [CTR](https://tsubasa-memo.github.io/glossary/ctr.html): 表示回数に対するクリック数の割合。
 - [CVR](https://tsubasa-memo.github.io/glossary/cvr.html): コンバージョン率。
 - [D2C](https://tsubasa-memo.github.io/glossary/d2c.html): メーカーが自社ECで直接消費者に販売するビジネスモデル。
+- [E-E-A-T](https://tsubasa-memo.github.io/glossary/eeat.html): Googleの品質評価4要素。経験・専門性・権威性・信頼性。
 - [Exif](https://tsubasa-memo.github.io/glossary/exif.html): 写真に自動記録される撮影日時・位置情報などのメタデータ。
 - [FBA](https://tsubasa-memo.github.io/glossary/fba.html): AmazonのFulfillment by Amazon。
+- [GA4](https://tsubasa-memo.github.io/glossary/ga4.html): Googleの無料アクセス解析ツール。訪問者数や流入経路を分析。
+- [GEO](https://tsubasa-memo.github.io/glossary/geo.html): 生成AI検索への最適化の総称。LLMOとほぼ同義。
 - [GIF](https://tsubasa-memo.github.io/glossary/gif.html): アニメーションができる画像形式。
 - [git](https://tsubasa-memo.github.io/glossary/git.html): ファイルの変更履歴を記録するバージョン管理ツール。
 - [GitHub](https://tsubasa-memo.github.io/glossary/github.html): gitリポジトリを管理するWebサービス。
@@ -651,6 +655,7 @@
 - [色補正](https://tsubasa-memo.github.io/glossary/color-correction.html): 写真の色味やホワイトバランスを整えるレタッチ工程。
 - [オムニチャネル](https://tsubasa-memo.github.io/glossary/omnichannel.html): 実店舗・EC・アプリなど複数チャネルを統合する戦略。
 - [確定申告](https://tsubasa-memo.github.io/glossary/tax-return.html): 1年間の所得を税務署に申告する手続き。副業所得20万超で必要。
+- [影イキ](https://tsubasa-memo.github.io/glossary/kageiki.html): 切り抜き時に撮影の自然な影を残す加工。ドロップシャドウとの違い。
 - [カゴ落ち](https://tsubasa-memo.github.io/glossary/cart-abandonment.html): カートに入れたまま購入せず離脱すること。
 - [掛け率](https://tsubasa-memo.github.io/glossary/kakerate.html): 仕入れ交渉の「6掛け」は定価の60%という意味。
 - [画素数](https://tsubasa-memo.github.io/glossary/gasosuu.html): 画像を構成するピクセルの総数。多い＝高画質ではない理由を整理。
@@ -661,9 +666,11 @@
 - [クローラー](https://tsubasa-memo.github.io/glossary/crawler.html): 検索エンジンがWebページを自動巡回するプログラム。
 - [黒つぶれ](https://tsubasa-memo.github.io/glossary/crushed-blacks.html): 暗い部分が真っ黒になって細部が見えなくなる現象。
 - [景品表示法](https://tsubasa-memo.github.io/glossary/keihyouhou.html): EC商品ページの不当表示を禁止する法律。二重価格・ステマ規制を整理。
+- [検索クエリ](https://tsubasa-memo.github.io/glossary/search-query.html): ユーザーがGoogle検索に入力した語句。
 - [コミット](https://tsubasa-memo.github.io/glossary/commit.html): gitで変更を履歴に記録する操作。
 - [コントラスト](https://tsubasa-memo.github.io/glossary/contrast.html): 写真の明るい部分と暗い部分の差。
 - [合成](https://tsubasa-memo.github.io/glossary/compositing.html): 複数の画像を組み合わせて1枚にするレタッチ処理。
+- [サーチコンソール](https://tsubasa-memo.github.io/glossary/search-console.html): Googleの無料SEOツール。検索パフォーマンスを確認できる。
 - [サイトマップ](https://tsubasa-memo.github.io/glossary/sitemap.html): サイト内の全ページ一覧をXMLで記述したファイル。
 - [ささげ](https://tsubasa-memo.github.io/sasage-outsource.html): 撮影・採寸・原稿の頭文字。
 - [ささげ業務](https://tsubasa-memo.github.io/glossary/sasage.html): 撮影・採寸・原稿。EC商品登録に必要な3工程。
@@ -674,11 +681,13 @@
 - [静的サイト](https://tsubasa-memo.github.io/glossary/static-site.html): あらかじめ用意したHTMLファイルをそのまま表示するWebサイト。WordPressなど動的サイトとの違い、GitHub Pagesでの運営メリットを整理。
 - [センサーサイズ](https://tsubasa-memo.github.io/glossary/sensor-size.html): カメラのイメージセンサーの大きさ。フルサイズとAPS-Cの違い。
 - [セッション・PV・UU](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): アクセス解析の3つの基本指標。
+- [タイトルタグ](https://tsubasa-memo.github.io/glossary/title-tag.html): HTMLのtitle要素。検索結果のリンク文字列に表示されるSEOの基本。
 - [ダイナミックレンジ](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラが記録できる明暗の幅。
 - [チャージバック](https://tsubasa-memo.github.io/glossary/chargeback.html): クレジットカード決済の取消し。
 - [直帰率](https://tsubasa-memo.github.io/glossary/bounce-rate.html): 1ページだけ見て離脱した割合。
 - [特商法表記](https://tsubasa-memo.github.io/glossary/tokushoho.html): ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。
 - [トーンジャンプ](https://tsubasa-memo.github.io/glossary/tone-jump.html): 空のグラデーションが縞模様になる現象。
+- [ドロップシャドウ](https://tsubasa-memo.github.io/glossary/drop-shadow.html): 切り抜き画像にPhotoshopで人工的に影を付ける加工。
 - [トリミング](https://tsubasa-memo.github.io/glossary/trimming.html): 画像の一部を切り取って必要な範囲だけにすること。
 - [内部リンク](https://tsubasa-memo.github.io/glossary/internal-link.html): 同じサイト内のページ同士をつなぐリンク。
 - [肌補正](https://tsubasa-memo.github.io/glossary/skin-retouch.html): 人物写真の肌の状態を整えるレタッチ作業。
