@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>llms.txtとは？書き方・設置方法とLLMO対策での効果を解説｜ツバサのメモ帳</title>
-<meta name="description" content="llms.txtはChatGPTやClaudeのAIクローラー向けサイト案内ファイル。robots.txtとの違い、Markdown形式での書き方、サーバーへの設置手順、LLMO対策としての効果を解説。テキストファイル1つで完了する無料施策。">
+<title>llms.txtは不要？　それでも設置する理由｜ツバサのメモ帳</title>
+<meta name="description" content="2026年5月15日にGoogleは公式に「llms.txtは不要」と明言した。しかしChatGPT・Claude・Perplexityへの対策としては依然有効。書き方・設置方法と、それでも設置を勧める理由を実体験から解説。">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
 <link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
-<meta property="og:title" content="llms.txtとは？書き方・設置方法とLLMO対策での効果を解説">
-<meta property="og:description" content="llms.txtはAIクローラー向けのサイト案内ファイル。書き方、設置手順、LLMO対策としての効果を解説。テキストファイル1つで完了する無料施策。">
+<meta property="og:title" content="llms.txtは不要？　それでも設置する理由">
+<meta property="og:description" content="2026年5月15日にGoogleは公式にllms.txtを不要と表明。しかしGoogle検索以外のAI対策としては依然有効。書き方と判断基準を実体験から解説。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://tsubasa-memo.github.io/llms-txt-guide.html">
 <meta property="og:site_name" content="ツバサのメモ帳">
@@ -30,14 +30,14 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "llms.txtとは？書き方・設置方法とLLMO対策での効果を解説",
-  "description": "llms.txtはAIクローラー向けのサイト案内ファイル。robots.txtとの違い、書き方のフォーマット、設置手順、LLMO対策としての効果を解説。",
+  "headline": "llms.txtは不要？　それでも設置する理由",
+  "description": "Googleは2026年5月15日に公式にllms.txtを不要と表明したが、ChatGPT・Claude・Perplexityへの対策としては依然有効。書き方・設置方法と判断基準を実体験から解説。",
   "url": "https://tsubasa-memo.github.io/llms-txt-guide.html",
   "image": "https://tsubasa-memo.github.io/thumbs/llms-txt-guide.png",
   "author": { "@type": "Person", "name": "ツバサ" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-05-15",
-  "dateModified": "2026-05-15",
+  "dateModified": "2026-05-16",
   "inLanguage": "ja"
 }
 </script>
@@ -48,10 +48,18 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Googleがllms.txtを不要と言ったなら、もう設置する意味はない？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleが「不要」と表明したのはあくまでGoogle検索のAI機能（AI Overviews・AI Mode）に関する話。ChatGPT、Claude、Perplexityなど他のAIサービスがllms.txtを参照するかどうかは各社の独立した判断で、Googleがコメントできる範囲外。Google検索以外を含めた総合的なAI対策として依然有効。"
+      }
+    },
+    {
+      "@type": "Question",
       "name": "llms.txtとは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリ（example.com/llms.txt）に設置する。2025年に提唱された新しい仕様で、LLMO対策の基盤施策のひとつ。"
+        "text": "AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリ（example.com/llms.txt）に設置する。2025年に提唱された仕様。Markdown形式で記述する。"
       }
     },
     {
@@ -59,7 +67,7 @@
       "name": "llms.txtとrobots.txtの違いは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "robots.txtはGooglebotなどの検索エンジンクローラーにクロール許可・拒否を伝えるファイル。llms.txtはChatGPTのGPTBotやClaudeのClaude-botなどのAIクローラーにサイトの概要・主要コンテンツ・構造を伝えるファイル。目的が異なるので両方設置するのが理想的。"
+        "text": "robots.txtはGooglebotなどの検索エンジンクローラーにクロール許可・拒否を伝えるファイル。llms.txtはChatGPTのGPTBotやClaudeのClaude-botなどのAIクローラーにサイトの概要・主要コンテンツ・構造を伝えるファイル。目的が異なる。"
       }
     },
     {
@@ -67,23 +75,15 @@
       "name": "llms.txtの設置は無料でできる？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "無料で設置できる。テキストエディタでファイルを作成し、サーバーのルートディレクトリにアップロードするだけ。特別なツールやプラグインは不要。"
+        "text": "無料で設置できる。テキストエディタでファイルを作成し、サーバーのルートディレクトリにアップロードするだけ。特別なツールやプラグインは不要。デメリットがほぼないため、Google公式の否定意見を踏まえても設置自体は妥当な判断。"
       }
     },
     {
       "@type": "Question",
-      "name": "llms.txtを設置するとどんな効果がある？",
+      "name": "Googleの公式見解はSEO業界でどう受け止められている？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AIクローラーがサイトの全体像を効率的に把握できるようになり、AIが回答を生成する際に自社の情報を正確に引用する確率が高まる可能性がある。ただし効果は現時点で公式には保証されておらず、あくまでLLMO対策の基盤施策として位置づけられている。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "llms.txtに何を書けばいい？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "サイト名、サイトの概要説明、主要なページへのURLとその簡潔な説明をMarkdown形式で記述する。サイトのすべてのページを列挙する必要はなく、AIに特に読んでほしい重要なコンテンツに絞るのがポイント。"
+        "text": "SEO業界では「Google公式の言うこと」と「実際の検索結果」が乖離する事例は珍しくない。たとえばコンテンツの長さや被リンクの量について公式と実態に差があった過去がある。llms.txtについても、Googleの射程外であるChatGPT・Claude・Perplexity向けに設置する選択を支持する声が多い。"
       }
     }
   ]
@@ -96,7 +96,7 @@
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"},
     {"@type": "ListItem", "position": 2, "name": "SEO・Web", "item": "https://tsubasa-memo.github.io/archive.html?cat=seo"},
-    {"@type": "ListItem", "position": 3, "name": "llms.txtとは？書き方と設置方法"}
+    {"@type": "ListItem", "position": 3, "name": "llms.txtは不要？　それでも設置する理由"}
   ]
 }
 </script>
@@ -126,40 +126,82 @@
 <a href="/">ホーム</a> &gt; <a href="/archive.html?cat=seo">SEO・Web</a> &gt; llms.txtとは
 </nav>
 <div class="article-hero">
-<img alt="llms.txtとは？書き方・設置方法とLLMO対策での効果" height="360" loading="eager" src="/thumbs/llms-txt-guide.png" width="640"/>
+<img alt="llms.txtは不要？　それでも設置する理由" height="360" loading="eager" src="/thumbs/llms-txt-guide.png" width="640"/>
 </div>
 <span class="article-tag">SEO・Web</span>
-<h1 class="article-title">llms.txtとは？<br/>書き方・設置方法とLLMO対策での効果を解説</h1>
+<h1 class="article-title">llms.txtは不要？　<br/>それでも設置する理由</h1>
 <div class="article-meta-line">
 <span>2026年5月15日</span>
-<span>最終更新：2026年5月</span>
+<span>最終更新：2026年5月16日</span>
 </div>
 
 <p>こんにちは、ツバサです。</p>
 
-<p>LLMO対策の記事を読んでいると「llms.txtを設置しましょう」と書いてある。でもllms.txtって何なのか、何を書けばいいのか、robots.txtと何が違うのか。このサイト（ツバサのメモ帳）でも実際にllms.txtを設置しているので、その経験も踏まえて書き方と設置方法をまとめた。</p>
+<p><a href="/llmo-guide.html" class="glossary-inline">LLMO</a>対策の記事を読んでいると「llms.txtを設置しましょう」と書いてあることが多い。一方で、2026年5月15日にGoogleが公式ドキュメントで「llms.txtは不要」と明言したことも話題になっています。設置するべきなのか、しなくていいのか、判断に迷う人が多いと思います。</p>
 
-<h2 id="sec1">llms.txtとは</h2>
+<p>このサイトでも実際にllms.txtを設置していて、Perplexityに引用された経験もある。その実体験を踏まえて、Googleの公式見解と現場の実態を整理したうえで、書き方・設置方法と、それでも設置するか否かの判断基準をまとめました。</p>
 
-<p>llms.txtは、AIクローラーにサイトの概要と構造を伝えるためのテキストファイルだ。2025年に提唱された比較的新しい仕様で、サイトのルートディレクトリ（example.com/llms.txt）に設置する。</p>
+<h2 id="sec1">Googleは「llms.txtは不要」と公式に表明した（2026年5月15日）</h2>
 
-<p>ChatGPTのGPTBot、ClaudeのClaude-bot、PerplexityのPerplexityBotなどのAIクローラーがサイトを訪問した際に、このファイルを読むことで「このサイトには何があるか」「どのページが重要か」を効率的に把握できるようになる。</p>
+<p>まず一次ソースから。2026年5月15日（UTC）に更新されたGoogle検索セントラルの「Optimizing your website for generative AI features on Google Search」では、llms.txtを含むAI向けの特別なファイルやマークアップについて、はっきりと「不要」と書かれている。</p>
 
-<p>イメージとしては、初めて訪れた建物の入り口にある案内板のようなものだ。</p>
+<p>原文を要約すると、「Google検索の生成AI機能（AI Overviews・AI Mode）に表示されるために、新しい機械可読ファイル、AIテキストファイル、マークアップ、Markdownを作成する必要はない。GoogleはHTML以外にも多くの種類のファイルをクロール・インデックスするが、それは特別に扱うという意味ではない」と書かれている。</p>
 
-<h2 id="sec2">robots.txtとの違い</h2>
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google検索セントラル｜生成AI機能向けの最適化ガイド（2026年5月15日更新）</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<p>同じドキュメントでは「AEO（Answer Engine Optimization）」や「GEO（Generative Engine Optimization）」という用語自体についても、Google検索の観点からはそれらも結局SEOであり、別概念として扱う必要はないとも書かれている。要するにGoogleは「生成AI時代の特別な対策は、Google検索の世界では存在しない」という立場を明確にした。</p>
+
+<h2 id="sec2">それでもllms.txtを設置すべき3つの理由</h2>
+
+<p>Googleの公式見解を読んだうえで、それでも僕はこのブログにllms.txtを設置し続けている。理由は3つある。</p>
+
+<h3>① Googleの射程はGoogle検索だけ</h3>
+
+<p>今回の公式表明は、あくまで「Google検索のAI機能（AI Overviews・AI Mode）」の話に限られる。ChatGPT、Claude、PerplexityといったAIサービスがllms.txtを読むかどうかは、各社が独自に決めることで、Googleがコメントできる立場にない。実際、Anthropic（Claudeの提供元）やPerplexityは、Webから情報を取得する独自の<a href="/glossary/crawler.html" class="glossary-inline">クローラー</a>を持っており、その挙動はGoogleとは別物になっている。</p>
+
+<p>このサイトでも、Perplexityに記事が引用された経験がある（ささげ業務の解説記事）。引用元として表示されたとき、サイトのどの記事が読まれているかをllms.txtで明示しているメリットは無視できない。Google検索だけが市場ではない。</p>
+
+<h3>② SEO業界では公式と実態が乖離することがよくある</h3>
+
+<p>SEO関連の発信を追っていると、Google公式の発言と実際の検索結果がズレる事例を何度も目にする。たとえば「コンテンツの文字数は検索順位に関係ない」とGoogleは長年言ってきたが、実際の検索上位を見ると3000字以上の長文記事が並んでいることが多い。「被リンクの数より質」とも言われるが、被リンクの絶対数が多いサイトが優位な傾向も変わらず続いている。</p>
+
+<p>直近の例で言えば、2025年12月のコアアップデートが分かりやすい。「おすすめ〇〇」「〇〇比較」のような汎用的な比較記事が大きく順位を落とすと話題になり、SEO業界は「経験・専門性のあるコンテンツが評価される時代になる」という解釈で騒いだ。ところが半年経った今、検索結果を見れば実態は何も変わっていない。</p>
+
+<p>象徴的なのが「SEO 会社」というクエリだろう。SEOの本家本元であるはずのこのクエリで上位を独占しているのは、SEO会社自身が運営する自社メディアと、比較・ランキング・おすすめ記事ばかり。経験・専門性シフトが本当に起きていたなら真っ先に淘汰されてもおかしくないジャンルなのに、半年経っても並びは変わらない。SEO業界が騒ぐほどには、検索結果は変わっていないというのが実情と言える。</p>
+
+<p>llms.txtの「不要」表明も、同じ構図で受け取るのが妥当だろう。「Googleが特別扱いしない」と「設置しても無意味」はイコールではない。少なくとも、サイト構造の整理や主要ページの明示という副次的な効果は残る。</p>
+
+<h3>③ コストがゼロでデメリットがない</h3>
+
+<p>llms.txtの設置にかかるコストは、テキストファイル1つ作ってルートディレクトリにアップロードするだけ。所要時間10分、お金はかからない。一方、設置することによるペナルティは存在しない。Googleが「特別扱いしない」と言っているだけで、「設置すると順位が下がる」とは一言も言っていない。</p>
+
+<p>コストがゼロに近いなら、やる側の判断としては設置一択になる。期待値で考えればプラスにしかならない計算になる。</p>
+
+<h2 id="sec3">llms.txtとは（基本の定義）</h2>
+
+<p>ここから先は、設置を決めた場合の実務情報になる。llms.txtは、AIクローラーにサイトの概要と構造を伝えるためのテキストファイルにあたる。2025年にAnswer.AIのJeremy Howard氏らが提唱した仕様で、サイトのルートディレクトリ（example.com/llms.txt）に設置する。</p>
+
+<p>ChatGPTのGPTBot、ClaudeのClaude-bot、PerplexityのPerplexityBotといったAIクローラーがサイトを訪問した際に、このファイルを読むことで「このサイトには何があるか」「どのページが重要か」を把握できるようになる、という設計思想になっている。ただし冒頭で触れた通り、各AI会社が実際にllms.txtを読み込んでいるかは公式には明らかにされていない部分も多い。</p>
+
+<h2 id="sec4"><a href="/glossary/robots-txt.html" class="glossary-inline">robots.txt</a>との違い</h2>
 
 <table class="compare-table">
 <tr><th>項目</th><th>robots.txt</th><th>llms.txt</th></tr>
 <tr><td>対象</td><td>Googlebotなどの検索エンジンクローラー</td><td>GPTBot、Claude-botなどのAIクローラー</td></tr>
 <tr><td>目的</td><td>クロールの許可・拒否を指定</td><td>サイトの概要・構造・重要ページを伝える</td></tr>
 <tr><td>書式</td><td>独自フォーマット（User-agent、Disallowなど）</td><td>Markdown形式</td></tr>
-<tr><td>歴史</td><td>1994年〜、検索エンジンの標準仕様</td><td>2025年提唱、まだ普及途上</td></tr>
+<tr><td>歴史</td><td>1994年〜、検索エンジンの標準仕様</td><td>2025年提唱、普及途上で公式採用は限定的</td></tr>
 </table>
 
-<p>robots.txtが「どこを見ていい/ダメ」を伝えるのに対し、llms.txtは「このサイトにはこういう情報がある」と案内する役割だ。目的が違うので、両方設置するのが理想的。robots.txtでAIクローラーを遮断しながらllms.txtで案内する、という矛盾した設定にならないよう注意する。</p>
+<p>robots.txtが「どこを見ていい/ダメ」を伝えるのに対し、llms.txtは「このサイトにはこういう情報がある」と案内する役割を持つ。目的が違うので、両方設置することは矛盾しない。ただしrobots.txtでAIクローラーを遮断しながらllms.txtで案内する、という整合性のない設定にならないよう注意する。</p>
 
-<h2 id="sec3">llms.txtの書き方</h2>
+<h2 id="sec5">llms.txtの書き方</h2>
 
 <p>フォーマットはMarkdown形式で、以下の構成で書く。</p>
 
@@ -183,7 +225,7 @@
 <p>書くときのポイントは以下の通り。</p>
 
 <ul>
-<li><strong>全ページを列挙する必要はない</strong>：AIに特に読んでほしい重要なコンテンツに絞る。サイトマップのように全URLを並べるとかえって読みにくくなる</li>
+<li><strong>全ページを列挙する必要はない</strong>：AIに特に読んでほしい重要なコンテンツに絞る。<a href="/glossary/sitemap.html" class="glossary-inline">サイトマップ</a>のように全URLを並べるとかえって読みにくくなる</li>
 <li><strong>説明文は簡潔に</strong>：各ページの説明は1文で収める。AIが瞬時にサイトの全体像を把握できるようにする</li>
 <li><strong>カテゴリで整理する</strong>：サイト内のコンテンツをカテゴリごとにまとめると、AIがサイトの専門分野を理解しやすい</li>
 <li><strong>日本語で書いてよい</strong>：日本語サイトなら日本語で記述する。AIは多言語を理解できる</li>
@@ -191,7 +233,7 @@
 
 <h3>実際の例（このサイトの場合）</h3>
 
-<p>ツバサのメモ帳では、llms.txtにカテゴリ別の記事一覧と各記事の概要を記載している。以下は構成のイメージだ。</p>
+<p>ツバサのメモ帳では、llms.txtにカテゴリ別の記事一覧と各記事の概要を記載している。以下に構成のイメージを示す。</p>
 
 <pre class="code-block"><span class="comment"># ツバサのメモ帳</span>
 
@@ -207,31 +249,27 @@
 - [SEO・LLMO対策の費用相場](https://example.com/seo-cost.html): 小規模事業者向けの予算別選択肢
 - [LLMOとは](https://example.com/llmo.html): SEO・GEO・AIOとの違いを整理</pre>
 
-<h2 id="sec4">設置方法</h2>
+<h2 id="sec6">設置方法</h2>
 
-<p>設置は3ステップで完了する。特別なツールは不要だ。</p>
+<p>結論から言うと、初心者はClaudeやChatGPTに依頼してしまうのが一番早い。「私のサイトのURLは○○です。このサイトの内容に合わせてllms.txtを作ってください」と頼めば、サイトをクロールした上で草案をそのまま作ってくれる。あとは自分のサイトに合わせて微調整し、サーバーにアップロードすれば終わる。テキストエディタを開いて一から書くより、AIに作ってもらってチェックする方が圧倒的に手早い。llms.txtは元々AI向けに設計されたファイルなので、AIに作らせるのが筋とも言える。</p>
+
+<p>手順としては3ステップで完了する。特別なツールは要らない。</p>
 
 <ol>
-<li><strong>テキストファイルを作成</strong>：テキストエディタ（メモ帳、VS Code、何でもいい）でllms.txtという名前のファイルを作り、上記のフォーマットで内容を書く</li>
+<li><strong>テキストファイルを作成</strong>：AIに草案を作ってもらうか、テキストエディタ（メモ帳、VS Codeなど）でllms.txtという名前のファイルを作り、上記のフォーマットで内容を書く</li>
 <li><strong>サーバーにアップロード</strong>：サイトのルートディレクトリ（index.htmlと同じ階層）にアップロードする。FTPクライアントやサーバーの管理画面からアップロードする</li>
 <li><strong>アクセス確認</strong>：ブラウザで https://自分のドメイン/llms.txt にアクセスし、内容が表示されれば完了</li>
 </ol>
 
-<p>WordPressの場合は、プラグイン（LLMs.txt Generatorなど）を使うか、FTPでWordPressのルートディレクトリにファイルを直接置く。GitHub Pagesならリポジトリのルートにファイルを追加してpushするだけだ。</p>
+<p>WordPressの場合は、プラグイン（LLMs.txt Generatorなど）を使うか、FTPでWordPressのルートディレクトリにファイルを直接置く。<a href="/glossary/github-pages.html" class="glossary-inline">GitHub Pages</a>なら<a href="/glossary/repository.html" class="glossary-inline">リポジトリ</a>のルートにファイルを追加して<a href="/glossary/push.html" class="glossary-inline">push</a>すれば設置完了となる。</p>
 
-<h2 id="sec5">効果と注意点</h2>
+<h2 id="sec7">ニッチサイトほどGoogle公式論を鵜呑みにしてはいけない</h2>
 
-<h3>期待できる効果</h3>
+<p>Googleの公式ドキュメントは、基本的に大規模サイトや一般的なケースを想定して書かれている。ドメインオーソリティの高い大手メディアと、被リンク数の少ない個人ブログでは、同じSEO施策でも効き方が違う。SEO関連の発信を追っていればよく目にする話で、Googleの一般論をそのまま個人サイトに当てはめても噛み合わないケースが出てくる。</p>
 
-<p>AIクローラーがサイトの全体像を効率的に把握できるようになり、回答生成時に自社の情報が正確に引用される確率が高まる可能性がある。特に小規模サイトでは、AIがサイトの専門性や扱っているテーマを把握しきれないことがあるため、llms.txtで明示的に伝えることに意味がある。</p>
+<p>たとえばこのサイトのようなニッチジャンル（EC実務者向けの専門ブログ）では、Google検索で大手SEOメディアと正面から戦っても勝ち目がない。むしろ正面から戦わない前提で、Google検索以外の入り口（PerplexityやChatGPTからの引用）を積極的に取りに行く意味がある。その文脈で、Googleが「不要」と言っているllms.txtに、ニッチサイトが投資する合理性が生まれる。</p>
 
-<h3>注意点</h3>
-
-<ul>
-<li>llms.txtは2025年に提唱された仕様であり、主要なAI各社がどの程度このファイルを参照しているかは公式には明らかにされていない</li>
-<li>llms.txtを設置したからといって必ずAIに引用されるわけではない。あくまで基盤施策のひとつであり、コンテンツの質やサイト全体の信頼性が前提</li>
-<li>設置のコストはゼロ（テキストファイル1つ）なので、デメリットはほぼない。やっておいて損はない施策</li>
-</ul>
+<p>Google公式は把握する。把握したうえで、自分のサイトの規模・ジャンル・狙う流入源に照らして判断する。これがニッチサイト運営者の正しい立ち位置だと思う。</p>
 
 <a class="cite-card" href="https://llmstxt.org/" target="_blank" rel="noopener nofollow">
 <span class="cite-ico ext">L</span>
@@ -242,31 +280,31 @@
 </a>
 
 <div class="faq-section">
-<h2 id="sec6">よくある質問</h2>
+<h2 id="sec8">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq">Q. Googleがllms.txtを不要と言ったなら、もう設置する意味はない？</p>
+<p class="fa">Googleが「不要」と表明したのはあくまでGoogle検索のAI機能（AI Overviews・AI Mode）に関する話。ChatGPT、Claude、Perplexityなど他のAIサービスがllms.txtを参照するかどうかは各社の独立した判断で、Googleがコメントできる範囲外。Google検索以外を含めた総合的なAI対策として依然有効。</p>
+</div>
 
 <div class="faq-item">
 <p class="fq">Q. llms.txtとは？</p>
-<p class="fa">AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリに設置する。2025年に提唱された新しい仕様で、LLMO対策の基盤施策のひとつ。</p>
+<p class="fa">AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリに設置する。2025年に提唱された仕様。Markdown形式で記述する。</p>
 </div>
 
 <div class="faq-item">
 <p class="fq">Q. llms.txtとrobots.txtの違いは？</p>
-<p class="fa">robots.txtは検索エンジンクローラーにクロールの許可・拒否を伝えるファイル。llms.txtはAIクローラーにサイトの概要・主要コンテンツ・構造を伝えるファイル。目的が異なるので両方設置するのが理想的。</p>
+<p class="fa">robots.txtは検索エンジンクローラーにクロールの許可・拒否を伝えるファイル。llms.txtはAIクローラーにサイトの概要・主要コンテンツ・構造を伝えるファイル。目的が異なる。</p>
 </div>
 
 <div class="faq-item">
 <p class="fq">Q. llms.txtの設置は無料？</p>
-<p class="fa">無料。テキストエディタでファイルを作成し、サーバーのルートディレクトリにアップロードするだけ。特別なツールやプラグインは不要。</p>
+<p class="fa">無料。テキストエディタでファイルを作成し、サーバーのルートディレクトリにアップロードするだけ。特別なツールやプラグインは不要。デメリットがほぼないため、Google公式の否定見解を踏まえても設置自体は妥当な判断。</p>
 </div>
 
 <div class="faq-item">
-<p class="fq">Q. llms.txtを設置するとどんな効果がある？</p>
-<p class="fa">AIクローラーがサイトの全体像を効率的に把握でき、回答生成時に自社情報が正確に引用される確率が高まる可能性がある。ただし効果は公式に保証されておらず、LLMO対策の基盤施策として位置づけられている。</p>
-</div>
-
-<div class="faq-item">
-<p class="fq">Q. llms.txtに何を書けばいい？</p>
-<p class="fa">サイト名、概要説明、主要ページへのURLとその簡潔な説明をMarkdown形式で記述する。全ページを列挙する必要はなく、AIに特に読んでほしい重要コンテンツに絞るのがポイント。</p>
+<p class="fq">Q. Googleの公式見解はSEO業界でどう受け止められている？</p>
+<p class="fa">SEO業界では「Google公式の言うこと」と「実際の検索結果」が乖離する事例は珍しくない。たとえばコンテンツの長さや被リンクの量について公式と実態に差があった過去がある。llms.txtについても、Googleの射程外であるChatGPT・Claude・Perplexity向けに設置する選択を支持する声が多い。</p>
 </div>
 </div>
 
@@ -280,10 +318,10 @@
 
 <div class="related">
 <h3>関連記事</h3>
-<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを初心者向けに整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
+<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
 <a class="cite-card" href="/json-ld-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span><span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span></span></a>
 <a class="cite-card" href="/seo-llmo-cost-small-business.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span><span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span></span></a>
-<a class="cite-card" href="/search-console-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">Google Search Consoleの使い方｜小規模サイトがやるべきことだけ</span><span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span></span></a>
+<a class="cite-card" href="/search-console-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">Google Search Consoleの使い方｜AIを使えば初心者にも簡単</span><span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span></span></a>
 </div>
 
 </main>
@@ -292,12 +330,14 @@
 <nav class="toc-sidebar">
 <div class="toc-title">目次</div>
 <ol>
-<li><a href="#sec1">llms.txtとは</a></li>
-<li><a href="#sec2">robots.txtとの違い</a></li>
-<li><a href="#sec3">llms.txtの書き方</a></li>
-<li><a href="#sec4">設置方法</a></li>
-<li><a href="#sec5">効果と注意点</a></li>
-<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec1">Googleは不要と表明した</a></li>
+<li><a href="#sec2">それでも設置すべき3つの理由</a></li>
+<li><a href="#sec3">llms.txtとは</a></li>
+<li><a href="#sec4">robots.txtとの違い</a></li>
+<li><a href="#sec5">llms.txtの書き方</a></li>
+<li><a href="#sec6">設置方法</a></li>
+<li><a href="#sec7">ニッチサイトの判断基準</a></li>
+<li><a href="#sec8">よくある質問</a></li>
 </ol>
 </nav>
 </aside>
