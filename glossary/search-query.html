@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>検索クエリとは？サーチコンソールのキーワードの見方｜ツバサのメモ帳</title>
+<meta name="description" content="検索クエリとは、ユーザーがGoogle検索窓に実際に入力した語句のこと。キーワードとの厳密な違い、サーチコンソールの検索パフォーマンスレポートでの確認方法、記事タイトルの改善やテーマ選定への活用法をEC担当の目線でまとめた備忘録。">
+<meta name="keywords" content="検索クエリ とは,クエリ 意味,Search Console クエリ,検索キーワード 違い">
+<meta property="og:title" content="検索クエリとは？サーチコンソールのキーワードの見方｜ツバサのメモ帳">
+<meta property="og:description" content="検索クエリはGoogle検索に入力された語句。サーチコンソールでの見方と活用法を整理した備忘録。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tsubasa-memo.github.io/thumbs/glossary/search-query.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="360">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/search-query.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/thumbs/glossary/search-query.png">
+<meta name="twitter:title" content="検索クエリとは？サーチコンソールのキーワードの見方｜ツバサのメモ帳">
+<meta name="twitter:description" content="検索クエリはGoogle検索に入力された語句。サーチコンソールでの見方と活用法を整理した備忘録。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/search-query.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/glossary/search-query.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "検索クエリとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ユーザーがGoogle検索に実際に入力した語句のことです。サーチコンソールの検索パフォーマンスレポートで、自分のサイトがどんなクエリで表示されているかを確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "検索クエリと検索キーワードの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ほぼ同じ意味で使われますが、厳密にはキーワードは広告運用で設定するターゲット語句、クエリはユーザーが実際に入力した語句です。SEO文脈ではどちらも通じます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "検索クエリはどこで確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Search Console（サーチコンソール）の「検索パフォーマンス」レポートで確認できます。各クエリの表示回数・クリック数・CTR・掲載順位が表示されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Knowクエリ・Doクエリなどの分類は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ユーザーの検索意図による分類です。Know（情報を知りたい）、Do（何かをしたい）、Go（特定サイトに行きたい）、Buy（購入したい）の4種類が一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "想定外のクエリで表示されていたらどうすべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "そのクエリに合った内容を記事に追記すると、表示回数やCTRをさらに伸ばせる可能性があります。また、新しい記事のテーマとして独立させることも検討できます。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "検索クエリとは？サーチコンソールのキーワードの見方",
+  "description": "検索クエリはGoogle検索に入力された語句。サーチコンソールでの見方と活用法を整理した備忘録。",
+  "url": "https://tsubasa-memo.github.io/glossary/search-query.html",
+  "image": "https://tsubasa-memo.github.io/thumbs/glossary/search-query.png",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-05-16T00:00:00+09:00",
+  "dateModified": "2026-05-16T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "検索クエリ"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html?cat=ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html?cat=photo"><span class="cat-dot" style="background:#c4b5e0"></span>画像・カメラ・レタッチ</a></li>
+<li><a href="/archive.html?cat=seo"><span class="cat-dot" style="background:#a8c8e8"></span>SEO・Web</a></li>
+<li><a href="/archive.html?cat=legal"><span class="cat-dot" style="background:#e8dfa8"></span>法務・税務</a></li>
+<li><a href="/archive.html?cat=sidejob"><span class="cat-dot" style="background:#e0b8a0"></span>副業</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 検索クエリ
+
+</nav>
+
+<div class="article-hero">
+<img alt="検索クエリとは？サーチコンソールのキーワードの見方" height="360" loading="eager" src="/thumbs/glossary/search-query.png" width="640"/>
+</div>
+
+<h1 class="article-title">検索クエリとは？<br/>サーチコンソールに出てくるキーワードの見方</h1>
+<div class="article-meta-line">
+<span>2026年05月16日</span>
+</div>
+
+<h2>検索クエリとは</h2>
+<p>検索クエリ（search query）は、ユーザーがGoogle検索に実際に入力した語句のことだ。「検索キーワード」とほぼ同じ意味で使われるが、厳密にはキーワードは広告運用で設定するターゲット語句、クエリはユーザーが実際に入力した語句、という使い分けがある。</p>
+<p><a href="https://support.google.com/webmasters/answer/7042828" rel="noopener nofollow" target="_blank">Googleの公式ヘルプ</a>では、Search Consoleの検索パフォーマンスレポートに表示される「クエリ」を「ユーザーがGoogle検索で入力した検索語句」と定義している。</p>
+<a class="cite-card" href="https://support.google.com/webmasters/answer/7042828" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">検索パフォーマンスレポート - Google ヘルプ</span>
+<span class="cite-url">support.google.com</span>
+</span>
+</a>
+<p>たとえば自分が「レタッチ 外注 料金」というキーワードを狙って記事を書いたとしても、実際のクエリは「写真修正 いくら」や「画像加工 費用 相場」など、想定していなかった語句で表示されていることがある。このギャップを発見できるのが<a href="search-console.html">サーチコンソール</a>の最大の価値だ。</p>
+
+<h2>サーチコンソールでの見方</h2>
+<p><a href="https://developers.google.com/search/docs/monitor-debug/search-console-start" rel="noopener nofollow" target="_blank">Search Consoleスタートガイド</a>の手順に従って「検索パフォーマンス」を開くと、クエリ一覧が表示される。各クエリに対して表示回数・クリック数・<a href="ctr.html">CTR</a>・平均掲載順位の4つの数値が確認できる。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/monitor-debug/search-console-start" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">Search Console スタートガイド - Google</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+<p>見るべきポイントは2つある。1つ目は「表示回数が多いのにCTRが低いクエリ」。これは検索結果に表示されているのにクリックされていないということなので、タイトルや<a href="meta-description.html">meta description</a>を見直す余地がある。2つ目は「想定外のクエリで表示されている記事」。そのクエリに合った内容を記事に追記すれば、さらに表示回数を伸ばせる可能性がある。</p>
+<p>データの注意点として、検索パフォーマンスのデータには2〜3日のタイムラグがある。また、極端に表示回数が少ないクエリは「匿名化されたクエリ」としてレポートから除外される。<a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" rel="noopener nofollow" target="_blank">SEOスターターガイド</a>にもデータの仕様について記載がある。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">SEOスターターガイド - Google</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<h2>クエリの種類と検索意図</h2>
+<p>検索クエリは、ユーザーの意図によっていくつかの種類に分類される。SEO業界では一般的に4種類に分けられる。</p>
+<table class="compare">
+<tr><th>種類</th><th>意図</th><th>クエリ例</th></tr>
+<tr><td>Knowクエリ</td><td>情報を知りたい</td><td>「レタッチ とは」「影イキ 意味」</td></tr>
+<tr><td>Doクエリ</td><td>何かをしたい</td><td>「写真 切り抜き 方法」「背景 白抜き やり方」</td></tr>
+<tr><td>Goクエリ</td><td>特定のサイトに行きたい</td><td>「切り抜きjp」「Amazon ログイン」</td></tr>
+<tr><td>Buyクエリ</td><td>購入・契約したい</td><td>「レタッチ 外注 安い」「カメラ おすすめ 10万」</td></tr>
+</table>
+<p>用語集のような記事はKnowクエリを拾いやすく、サービス比較記事はBuyクエリを拾いやすい。クエリの種類に合った記事構成にすることで、CTRと掲載順位が改善しやすくなる。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/appearance/title-link" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">検索結果のタイトルリンク - Google</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+<a class="cite-card" href="/search-console-basics.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">サーチコンソールの見方を覚えた備忘録</span>
+<span class="cite-url">tsubasa-memo.github.io/search-console-basics.html</span>
+</span>
+</a>
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="search-console.html">サーチコンソール</a></li>
+<li><a href="ctr.html">CTR</a></li>
+<li><a href="meta-description.html">meta description</a></li>
+<li><a href="index-registration.html">インデックス登録</a></li>
+<li><a href="title-tag.html">タイトルタグ</a></li>
+</ul>
+</div>
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/search-console-basics.html">サーチコンソールの見方を覚えた備忘録</a></li>
+<li><a href="/search-console-ctr.html">記事のタイトルを変えたらCTRが動いた話</a></li>
+<li><a href="/blog-seo-basics.html">個人ブログのSEOを勉強した記録</a></li>
+</ul>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関係の仕事をしています。このサイトは自分が調べたことの備忘録です。Photoshopは少し使えますが苦手で、ちょっとした画像補正はもっぱらスマホアプリ派。アプリで対応しきれない本格的なレタッチはプロに依頼しています。</p>
+</div>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="/privacy-policy.html">プライバシーポリシー</a>
+
+<a href="/about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
