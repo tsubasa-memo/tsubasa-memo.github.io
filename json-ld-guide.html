@@ -37,7 +37,7 @@
   "author": { "@type": "Person", "name": "ツバサ" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-05-15",
-  "dateModified": "2026-05-15",
+  "dateModified": "2026-05-16",
   "inLanguage": "ja"
 }
 </script>
@@ -67,7 +67,7 @@
       "name": "構造化データはSEOに効果がある？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "構造化データ自体はGoogleのランキング要因ではないとされているが、検索結果にリッチリザルト（星評価、FAQ、パンくずリストなど）が表示されることでクリック率が向上する。またAIが情報を正確に理解する手助けになるため、LLMO対策としても有効。"
+        "text": "構造化データ自体はランキング要因ではないと公式に明言されている。Googleの2026年5月の生成AI最適化ガイドでも「AI検索の必須要件ではない」と表明されている。ただし検索結果にリッチリザルト（FAQ、パンくずリスト、著者情報など）が表示されることでクリック率が上がるため、間接的な集客効果は引き続き有効。"
       }
     },
     {
@@ -132,20 +132,28 @@
 <h1 class="article-title">構造化データ（JSON-LD）の書き方<br/>FAQPage・Articleの実装手順</h1>
 <div class="article-meta-line">
 <span>2026年5月15日</span>
-<span>最終更新：2026年5月</span>
+<span>最終更新：2026年5月16日</span>
 </div>
 
 <p>こんにちは、ツバサです。</p>
 
-<p>SEOやLLMO対策の記事を読むと「構造化データを実装しましょう」とよく書いてある。でも具体的なコードがない記事が多くて、初めての人は何をどう書けばいいかわからない。この記事では、実際にコピーして使えるJSON-LDのコード例を載せた。FAQPage、Article、BreadcrumbListの3つに絞って、書き方と確認方法を説明する。</p>
+<p>SEOやLLMO対策の記事を読むと「構造化データを実装しましょう」とよく書いてあります。でも具体的なコードがない記事が多くて、初めての人は何をどう書けばいいか分かりません。この記事では、実際にコピーして使えるJSON-LDのコード例を載せました。FAQPage、Article、<a href="/glossary/breadcrumb.html" class="glossary-inline">BreadcrumbList</a>の3つに絞って、書き方と確認方法を説明します。</p>
 
 <h2 id="sec1">構造化データ（JSON-LD）とは</h2>
 
-<p>Webページの内容を検索エンジンやAIに伝えるためのデータ形式だ。HTMLは人間が読むためのもの、JSON-LDは機械が読むためのもの。<a href="https://schema.org/" target="_blank" rel="noopener nofollow">Schema.org</a>という国際的な語彙に基づいて、「このページは何について書かれているか」「著者は誰か」「FAQの内容は何か」を定義する。</p>
+<p>Webページの内容を検索エンジンやAIに伝えるためのデータ形式になる。HTMLは人間が読むためのもの、JSON-LDは機械が読むためのもの。<a href="https://schema.org/" target="_blank" rel="noopener nofollow">Schema.org</a>という国際的な語彙に基づいて、「このページは何について書かれているか」「著者は誰か」「FAQの内容は何か」を定義する。</p>
 
 <p>HTMLの&lt;head&gt;内に&lt;script type="application/ld+json"&gt;タグで埋め込む。ページの見た目には一切影響しないので、既存のデザインを崩す心配はない。</p>
 
-<p>構造化データ自体はGoogleのランキング要因ではないとされている。ただし、検索結果にリッチリザルト（FAQ、パンくずリスト、著者情報など）が表示されることでクリック率が上がる。またAIが情報を正確に理解する手助けになるため、LLMO対策としても有効だ。</p>
+<p>構造化データ自体はGoogleのランキング要因ではないと公式に明言されている。Googleは2026年5月15日に更新した生成AI向け最適化ガイドでも「構造化データは生成AI検索のために必須ではない」と表明しており、AI検索対策としても必須要件ではない。ただし、検索結果にリッチリザルト（FAQ、パンくずリスト、著者情報など）が表示されることでクリック率が上がる効果は引き続き有効で、Googleもリッチリザルト目的では推奨を続けている。「直接の効果」より「間接的なメリット」を取りに行く施策と捉えるのが現実的だろう。</p>
+
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google検索セントラル｜生成AI機能向けの最適化ガイド（2026年5月15日更新）</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
 
 <h2 id="sec2">FAQPage JSON-LDの書き方</h2>
 
@@ -217,7 +225,7 @@
 
 <h2 id="sec4">BreadcrumbList JSON-LDの書き方</h2>
 
-<p>パンくずリスト（ホーム &gt; カテゴリ &gt; 記事タイトル）を構造化データで表現する。検索結果にパンくずが表示され、サイト構造がGoogleに正しく伝わる。</p>
+<p>パンくずリスト（ホーム &gt; カテゴリ &gt; 記事タイトル）を構造化データで表現する。検索結果にパンくずリストが表示され、サイト構造がGoogleに正しく伝わる。</p>
 
 <pre class="code-block"><span class="comment">// BreadcrumbList JSON-LD の例</span>
 &lt;script type="application/ld+json"&gt;
@@ -246,7 +254,7 @@
 }
 &lt;/script&gt;</pre>
 
-<p>最後の階層（現在のページ）にはitemプロパティを付けない。これはSchema.orgの推奨仕様だ。</p>
+<p>最後の階層（現在のページ）にはitemプロパティを付けない。これはSchema.orgの推奨仕様になっている。</p>
 
 <h2 id="sec5">実装後の確認方法</h2>
 
@@ -268,7 +276,7 @@
 
 <p>公開済みのページの構造化データがGoogleに正しく認識されているかを確認する。URL検査で対象ページを検索し、結果の「拡張」セクションを見る。FAQPage、Article、BreadcrumbListがそれぞれ検出されていればOK。</p>
 
-<h3>コードがわからないときは</h3>
+<h3>コードの書き方がわからないときはAIに任せる</h3>
 
 <p>ChatGPTやClaudeに「以下のFAQをFAQPage JSON-LDにしてください」と頼めば、数秒でコードが生成される。生成されたコードをリッチリザルトテストに貼り付けてエラーチェックし、問題なければそのまま使える。ゼロからコードを書く必要はない。</p>
 
@@ -287,7 +295,7 @@
 
 <div class="faq-item">
 <p class="fq">Q. 構造化データはSEOに効果がある？</p>
-<p class="fa">構造化データ自体はランキング要因ではないが、検索結果にリッチリザルトが表示されることでクリック率が向上する。またAIが情報を正確に理解する手助けになるため、LLMO対策としても有効。</p>
+<p class="fa">構造化データ自体はランキング要因ではないと公式に明言されている。Googleの2026年5月の生成AI最適化ガイドでも「AI検索の必須要件ではない」と表明されている。ただし検索結果にリッチリザルト（FAQ、パンくずリスト、著者情報など）が表示されることでクリック率が上がるため、間接的な集客効果は引き続き有効。</p>
 </div>
 
 <div class="faq-item">
@@ -311,9 +319,9 @@
 
 <div class="related">
 <h3>関連記事</h3>
-<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを初心者向けに整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
-<a class="cite-card" href="/llms-txt-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">llms.txtとは？書き方・設置方法・効果をわかりやすく解説</span><span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span></span></a>
-<a class="cite-card" href="/search-console-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">Google Search Consoleの使い方｜小規模サイトがやるべきことだけ</span><span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span></span></a>
+<a class="cite-card" href="/llmo-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">LLMOとは？SEO・GEO・AIOとの違いを整理</span><span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span></span></a>
+<a class="cite-card" href="/llms-txt-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">llms.txtは不要？　それでも設置する理由</span><span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span></span></a>
+<a class="cite-card" href="/search-console-guide.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">Google Search Consoleの使い方｜AIを使えば初心者にも簡単</span><span class="cite-url">tsubasa-memo.github.io/search-console-guide.html</span></span></a>
 <a class="cite-card" href="/seo-llmo-cost-small-business.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢</span><span class="cite-url">tsubasa-memo.github.io/seo-llmo-cost-small-business.html</span></span></a>
 </div>
 
