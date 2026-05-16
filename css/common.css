@@ -436,3 +436,8 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 @media(min-width:800px){
   .mobile-header{display:none}
 }
+
+/* 用語集クロスリファレンス */
+.term-xref{padding:8px 16px;font-size:14px;color:var(--text-sub);border-left:3px solid var(--border);margin:4px 0}
+.term-xref a{color:var(--accent);text-decoration:none;font-weight:600}
+.term-xref a:hover{text-decoration:underline}
