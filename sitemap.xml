@@ -161,6 +161,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/exif-info-en.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/exif-info.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -202,6 +207,11 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/image-editing-outsource.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/image-file-formats-en.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -321,7 +331,17 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://tsubasa-memo.github.io/photo-backup-comparison-en.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://tsubasa-memo.github.io/photo-backup-comparison.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/photo-colorize-apps-en.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -347,6 +367,11 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/photo-sidejob-tax.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/portrait-mode-tips-en.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -377,6 +402,11 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/rakuten-image-rules.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/raw-vs-jpeg-en.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
