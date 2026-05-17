@@ -459,3 +459,16 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 .insta-ref-name{font-weight:700;font-size:14px;color:#262626}
 .insta-ref-sub{font-size:12px;color:#8e8e8e}
 .insta-ref-body{padding:14px 16px}
+
+/* ==== 第3弾インラインstyle統合（2026-05-17）==== */
+.insta-ref-body p{font-size:14px;color:#262626;margin-bottom:10px;line-height:1.7}
+.insta-ref-body .insta-ref-link{display:inline-block;font-size:13px;color:#0095f6;font-weight:700}
+.insta-ref-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#8e8e8e;background:#f5f5f5;padding:4px 10px;border-radius:12px;margin-top:8px}
+.compare-table tr:nth-child(even) td{background:#fafafa}
+.site-name:hover{text-decoration:none}
+.amazon-cards{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+.amazon-card{display:flex;gap:12px;background:#fff;border:1px solid #e0ddd8;border-radius:10px;padding:16px;text-decoration:none;color:inherit;transition:box-shadow .2s}
+.amazon-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.08);text-decoration:none}
+.amazon-card-img{width:80px;height:80px;object-fit:contain;flex-shrink:0}
+.amazon-card-body{flex:1}
+.amazon-card-label{font-size:11px;font-weight:700;color:#fff;background:#2e6b8a;display:inline-block;padding:2px 8px;border-radius:3px;margin-bottom:4px}
