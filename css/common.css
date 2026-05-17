@@ -302,7 +302,7 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 
 /* レスポンシブ追加 */
 @media(max-width:600px){
-  table.compare th,table.compare td{padding:8px 10px}
+  table.compare th,table.compare td,.compare-table th,.compare-table td,.spec-table th,.spec-table td{padding:8px 10px}
 }
 
 /* =============================================
