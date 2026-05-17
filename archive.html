@@ -32,7 +32,7 @@ gtag('config', 'G-YYBFXHXMM6');
 .page-header h1{font-size:22px;font-weight:700;margin-bottom:8px}
 .page-header p{font-size:14px;color:var(--text-sub)}
 .filter-tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px}
-.filter-tab{padding:8px 18px;font-size:13px;font-weight:700;color:var(--text-sub);background:var(--card);border:1px solid var(--border);border-radius:20px;cursor:pointer;transition:all .2s;user-select:none}
+.filter-tab{padding:8px 18px;font-size:13px;font-weight:700;font-family:inherit;line-height:1.5;color:var(--text-sub);background:var(--card);border:1px solid var(--border);border-radius:20px;cursor:pointer;transition:all .2s;user-select:none}
 .filter-tab:hover{border-color:var(--accent);color:var(--accent)}
 .filter-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .article-count{text-align:center;font-size:13px;color:var(--text-sub);margin-bottom:24px}
@@ -119,15 +119,15 @@ gtag('config', 'G-YYBFXHXMM6');
 
 
 
-<div class="filter-tabs">
-<span class="filter-tab active" data-cat="all">すべて</span>
-<span class="filter-tab" data-cat="camera">カメラ</span>
-<span class="filter-tab" data-cat="retouch">レタッチ・画像加工</span>
-<span class="filter-tab" data-cat="photo">写真・撮影</span>
-<span class="filter-tab" data-cat="ec">EC・実務</span>
-<span class="filter-tab" data-cat="ai">AI</span>
-<span class="filter-tab" data-cat="seo">SEO・LLMO</span>
-<span class="filter-tab" data-cat="career">副業・キャリア</span>
+<div class="filter-tabs" role="tablist" aria-label="カテゴリ絞り込み">
+<button type="button" class="filter-tab active" data-cat="all" role="tab" aria-selected="true">すべて</button>
+<button type="button" class="filter-tab" data-cat="camera" role="tab" aria-selected="false">カメラ</button>
+<button type="button" class="filter-tab" data-cat="retouch" role="tab" aria-selected="false">レタッチ・画像加工</button>
+<button type="button" class="filter-tab" data-cat="photo" role="tab" aria-selected="false">写真・撮影</button>
+<button type="button" class="filter-tab" data-cat="ec" role="tab" aria-selected="false">EC・実務</button>
+<button type="button" class="filter-tab" data-cat="ai" role="tab" aria-selected="false">AI</button>
+<button type="button" class="filter-tab" data-cat="seo" role="tab" aria-selected="false">SEO・LLMO</button>
+<button type="button" class="filter-tab" data-cat="career" role="tab" aria-selected="false">副業・キャリア</button>
 </div>
 <div class="article-count"><span id="count"></span> 件の記事</div>
 <div class="article-list">
@@ -1316,7 +1316,9 @@ gtag('config', 'G-YYBFXHXMM6');
     }
     if (countEl) countEl.textContent = n;
     for (var j = 0; j < tabs.length; j++) {
-      tabs[j].classList.toggle('active', tabs[j].getAttribute('data-cat') === cat);
+      var isActive = tabs[j].getAttribute('data-cat') === cat;
+      tabs[j].classList.toggle('active', isActive);
+      tabs[j].setAttribute('aria-selected', isActive ? 'true' : 'false');
     }
   }
 
