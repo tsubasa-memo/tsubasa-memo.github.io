@@ -421,6 +421,7 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 @media(max-width:799px){
   .page-layout{
     flex-direction:column;max-width:780px;padding:20px 16px 48px;
+    align-items:stretch;
   }
   .left-sidebar{
     width:100%;position:static;order:2;
