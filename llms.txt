@@ -512,7 +512,7 @@
 - [LLMOとは？SEO・GEO・AIOとの違いを整理](https://tsubasa-memo.github.io/llmo-guide.html): LLMOの定義、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本
 - [Google Search Consoleの使い方｜AIを使えば初心者にも簡単](https://tsubasa-memo.github.io/search-console-guide.html): インデックス登録、検索パフォーマンス確認、構造化データ検証など初心者がやるべき機能に絞った解説
 - [構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順](https://tsubasa-memo.github.io/json-ld-guide.html): FAQPage・Article・BreadcrumbListのJSON-LDコード例と実装後の確認方法
-- [llms.txtは不要？　それでも設置する理由](https://tsubasa-memo.github.io/llms-txt-guide.html): AIクローラー向けサイト案内ファイルの書き方フォーマット、設置手順、robots.txtとの違い
+- [llms.txtは不要？　それでも設置する理由](https://tsubasa-memo.github.io/llms-txt-guide.html): Googleが公式に不要と表明したllms.txtの書き方・設置手順。SEO専門家の賛否両論の反応と、それでも設置すべき判断基準をPerplexity引用の実体験から解説
 - [SEO・LLMO対策の費用が高すぎる？小規模事業者の現実的な選択肢](https://tsubasa-memo.github.io/seo-llmo-cost-small-business.html): SEO対策の費用相場、LLMO・GEO・AIO対策の料金比較、月額10万円以下の低価格サービス、無料でできる構造化データ・llms.txt施策を予算別に整理
 - [note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ](https://tsubasa-memo.github.io/blog-platform-comparison.html): note・WordPress・GitHub Pagesを副業ブログの収益化・費用・AI検索対応で比較した記事。noteの有料記事・メンバーシップの収入の現実と月額500円のプレミアム機能、AdSense・アフィリエイトの対応差、AI検索に引用されるための条件を整理している
   - Q: ブログ初心者にはnote・WordPress・GitHub Pagesのどれがおすすめですか？
