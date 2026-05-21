@@ -690,6 +690,7 @@
 - [ファーストビュー](https://tsubasa-memo.github.io/glossary/first-view.html): 商品ページを開いたとき最初に見える範囲のこと。
 - [フルフィルメント](https://tsubasa-memo.github.io/glossary/fulfillment.html): 受注から配送完了までの物流業務の総称。
 - [物撮り](https://tsubasa-memo.github.io/glossary/butsudori.html): モノを被写体にした撮影。EC商品撮影に必要な機材と手順。
+- [ブラックハットSEO](https://tsubasa-memo.github.io/glossary/black-hat-seo.html): ブラックハットSEOとは何か、被リンク売買・隠しテキスト・クローキングなど代表的な手法の解説、Googleペナルティの仕組み、格安SEO会社の手口の見分け方。
 - [ブロックノイズ](https://tsubasa-memo.github.io/glossary/block-noise.html): 画像を拡大するとブロック状にガビガビになる現象。
 - [プッシュ](https://tsubasa-memo.github.io/glossary/push.html): ローカルの変更をリモートリポジトリに送信する操作。
 - [ホワイトバランス](https://tsubasa-memo.github.io/glossary/white-balance.html): 白い物を白く写すためのカメラ設定。
