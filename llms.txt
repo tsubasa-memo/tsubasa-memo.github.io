@@ -582,6 +582,7 @@
   - Q: meta descriptionは検索順位に直接影響しますか？
   - Q: 内部リンクとは何ですか？なぜ重要なのですか？
   - Q: 構造化データ（JSON-LD）とは何ですか？
+- [もう悪徳SEO会社に騙されない｜初心者も知っておくべきSEOの基礎知識](https://tsubasa-memo.github.io/seo-start-guide.html): 悪徳SEO会社に騙されないための基礎知識。Search Console登録・titleタグ改善・ロングテールキーワードでの記事制作の3施策、リース契約・順位保証・成果報酬型SEOの罠、MEOとの優先順位の判断基準をまとめた記事
 
 
 ## 用語集
