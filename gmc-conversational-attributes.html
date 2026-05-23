@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ｜ツバサのメモ帳</title>
+<meta name="description" content="Google Merchant Centerに2026年5月に追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
+<meta name="keywords" content="会話属性,Merchant Center 会話属性,conversational attributes,会話属性 登録,会話属性 AI,question_and_answer,popularity_rank,補助データソース,商品データ AI 生成">
+<meta property="og:title" content="Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ">
+<meta property="og:description" content="Google Merchant Centerに追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/gmc-conversational-attributes.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/gmc-conversational-attributes.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/gmc-conversational-attributes.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/gmc-conversational-attributes.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "会話属性を登録すると、今ある商品の審査に影響しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "影響しません。Google公式ヘルプは、会話属性を含めても既存商品の承認状況には影響しないと明記しています。会話属性はメインの商品データ仕様を補完する任意の項目で、登録しても今の商品の表示が止まったり審査が厳しくなったりはしません。まず試しに一部の商品だけ登録してみる、という進め方ができます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Merchant APIがないと会話属性は登録できませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。Merchant APIを使う方法もありますが、Google公式が推奨しているのは補助データソースを使う方法です。具体的にはGoogleスプレッドシートを補助データソースとして登録し、商品IDと各会話属性の列を用意して値を入れていきます。エンジニアにAPIを実装してもらわなくても、スプレッドシートだけで始められます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "使っているカートが会話属性に対応していません。どうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現状、多くのカートシステムは会話属性にそのままでは対応していません。その場合は補助データソース（Googleスプレッドシート）を使って、カートから来る商品データに会話属性だけを上乗せします。カート側の対応を待たなくても登録できるので、カートの仕様に左右されずに進められます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "商品説明にすでに詳しく書いています。会話属性も別に必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "重複するなら必要ありません。Google公式ヘルプは、商品説明[description]、商品に関する情報[product_highlight]、商品の詳細[product_detail]にすでに具体的な情報を登録している場合、会話属性に同じデータを重ねて入れる必要はないと注記しています。まず既存の属性で何が埋まっているかを確認し、足りない部分だけを会話属性で補う考え方が現実的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "人気度の順位[popularity_rank]には店内の順位を入れるのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "順位そのものではありません。Google公式ヘルプによると、人気度の順位[popularity_rank]は在庫全体に対するパーセンタイルで、値が高いほどそのショップ内で売れている商品であることを示します。ヘルプの例では95.5という値が使われています。1位、2位といった順位の数字ではなく、全商品の中でどれくらい上位かを割合で表す点に注意が必要です。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ",
+  "description": "Google Merchant Centerに2026年5月に追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。",
+  "url": "https://tsubasa-memo.github.io/gmc-conversational-attributes.html",
+  "image": "https://tsubasa-memo.github.io/og/gmc-conversational-attributes.png",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-05-23T00:00:00+09:00",
+  "dateModified": "2026-05-23T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Merchant Centerの会話属性とAIでの作り方"
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/gmc-conversational-attributes.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:title" content="Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ">
+<meta name="twitter:description" content="Google Merchant Centerに追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="index.html">ホーム</a> ＞ Merchant Centerの会話属性とAIでの作り方
+
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/gmc-conversational-attributes.webp" alt="Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ" width="640" height="360" loading="eager">
+</div>
+
+
+<h1 class="article-title">Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ</h1>
+<div class="article-meta-line">
+<span>2026年5月23日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+<p>お客さんが「予算3万円でいいヘッドホンある？」とAIに聞く。AIがいくつか候補を挙げて、お客さんは商品ページを開かずにそのまま買う先を決める。GeminiやGoogleのAI Modeで、もうこういう買い方が始まっています。このとき、AIが何を見てうちの商品を候補に入れるか、候補に入れたあとお客さんの質問にどう答えるかを左右するのが、今回Merchant Centerに増えた「会話属性」です。</p>
+<p>会話属性を入れておくと、お客さんとAIの会話の中で、あなたの商品の細かいところまでAIが代わりに答えてくれます。たとえばこんな場面です。</p>
+<p>アパレルなら、「このシャツ、Lサイズの白はある？」に対して、あなたが登録したサイズと色のバリエーションをAIが正しく把握して「あります」と答えられます。「この素材、洗濯機で洗える？」「裏地は付いてる？」といった質問にも、商品データに答えを入れておけばAIがその場で返せます。試着できない通販でお客さんが一番気にするところを、AIが先回りして潰してくれるイメージです。</p>
+<p>家電なら、「この商品にヘッドホン端子は付いてる？」と聞かれたときにAIが「付いていません」と即答できます。「このカメラに合うレンズは？」には、あなたが指定した対応レンズや純正バッテリーをセットで提案させられます。お客さんがメーカーサイトを調べ直さなくても、AIの会話の中で関連商品まで案内できるわけです。</p>
+<p>店全体で見れば、「今人気のスニーカーは？」「おすすめのワンピース教えて」みたいなざっくりした相談に対して、あなたの店で実際に売れている商品をAIに推させられます。</p>
+<p>逆に、こうした情報を何も入れていなければどうなるか。AIはうちの商品の細かいところを答えられず、答えられる競合の商品のほうをお客さんに勧めます。試着もページ閲覧もなく、AIとの会話だけで買う先が決まる場面では、これは取りこぼしに直結します。やる利点は、AIの会話の中で自分の商品が候補に残り、お客さんの疑問でつまずかせず、取りこぼしを減らせることです。</p>
+<p>ただ、仕様を見ると商品ごとに中身が変わる項目が多い。うちの商品数で全部を手入力するのは正直きついし、同じように感じる店は多いはずです。僕自身もまだこれから手をつけるところです。この記事は、登録作業に飛びつく前に、どこをAIに肩代わりさせられて、どこは人がやらないといけないのかを調べて整理した下調べのメモです。やってみた体験記ではなく、手を動かす前に「やる価値があるか、どこまでやれそうか」を見積もった記録だと思って読んでください。</p>
+
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">会話属性とは？Merchant Centerに何が増えたのか</a></li>
+<li><a href="#sec-who">これは自社サイトとモールどちらの話？誰がやるのか</a></li>
+<li><a href="#sec2">会話属性は6つ全部やらないといけないのか</a></li>
+<li><a href="#sec3">どの会話属性が手間で、どれが軽いのか</a></li>
+<li><a href="#sec4">会話属性は1つずつ手入力するしかないのか</a></li>
+<li><a href="#sec5">商品マスタからAIで会話属性をまとめて作る流れ</a></li>
+<li><a href="#sec6">AIで会話属性を作るとき生成AIの開示は必要か</a></li>
+<li><a href="#sec7">会話属性の登録を全部AI任せにして大丈夫か</a></li>
+<li><a href="#sec8">よくある質問</a></li>
+<li><a href="#sec9">まとめ：手を動かす前にやる順番</a></li>
+<li><a href="#sec10">関連する記事</a></li>
+</ol>
+</div>
+
+
+<h2 id="sec1">会話属性とは？Merchant Centerに何が増えたのか</h2>
+<p>会話属性は、2026年5月20日（米国時間）のGoogle Marketing Liveに合わせてGoogle Merchant Centerに追加された商品データの項目です。<a href="https://support.google.com/merchants/answer/17085370" target="_blank" rel="noopener nofollow">Google公式ヘルプ</a>によると、AI ModeやGeminiのようにユーザーがAIと会話しながら商品を探す場面で、商品の細かいニュアンスをAIに正しく理解させるための情報という位置づけになっています。</p>
+<p>増えたのは次の6つです。</p>
+<ul>
+<li><strong>質問と回答</strong>[question_and_answer]</li>
+<li><strong>ドキュメントリンク</strong>[document_link]</li>
+<li><strong>関連商品</strong>[related_product]</li>
+<li><strong>商品グループのタイトル</strong>[item_group_title]</li>
+<li><strong>バリエーションオプション</strong>[variant_option]</li>
+<li><strong>人気度の順位</strong>[popularity_rank]</li>
+</ul>
+<p>名前だけ見ると難しそうですが、要は「この商品のここが知りたい」というお客さんの疑問に、商品データの段階で先回りして答えておくための欄が増えた、という理解で大きく外れません。</p>
+<p>大事な前提として、これらは全部「任意」です。公式ヘルプも、会話属性はメインの商品データ仕様を補完するもので完全に任意だと書いています。登録しなくてもペナルティはありませんし、登録しても今の商品の審査に影響はありません。新機能だからといって身構えなくていい項目です。</p>
+
+<h2 id="sec-who">そもそも、これは自社サイトとモールどちらの話？誰がやるのか</h2>
+<p>具体的な中身に入る前に、ここをはっきりさせておきます。会話属性は「自社サイトかモールか」で決まるものではありません。<strong>自分のGoogle Merchant Centerアカウントを持っていて、そこへ商品データを送っているかどうか</strong>で決まります。</p>
+<p>自社ECサイト（ShopifyやBASE、カラーミー、自社で構築したサイトなど）を運営していて、Googleショッピングや無料リスティングに出すためにMerchant Centerへ商品データを送っている場合は、対象です。自分のMerchant Centerアカウントで会話属性を登録できます。</p>
+<p>一方、楽天・Amazon・Yahoo!ショッピングといったモールにだけ出店していて、自社ではMerchant Centerを触っていない場合は、注意が必要です。たとえば楽天の商品は、楽天自身がGoogleショッピングへ送る経路を持っていますが、<a href="https://co2-color.com/2018/07/26/rakuten-google-shopping/" target="_blank" rel="noopener nofollow">楽天市場に掲載されている商品がすべてGoogleショッピングに載るわけではなく、一定の条件を満たす必要があります</a>。そしてこのとき商品データをGoogleに渡しているのは楽天であって、出店者ではありません。出店者が触れるのはRMSなどモール側の管理画面で、Merchant Centerの属性を直接編集する経路ではないため、出店者が自分で会話属性を足す場所が基本的にありません。</p>
+<p>つまり、会話属性を自分でやれるのは「自分のMerchant Centerを運用している事業者」です。モール専業で自社のMerchant Centerを持っていないなら、会話属性を入れる場所自体がなく、モール経由のデータに会話属性が含まれるかどうかはモール側の対応に委ねられます。Amazonなど他モールも、出店者が属性をどこまで触れるかはそれぞれの仕様次第です。まずは「自分はMerchant Centerに商品を送っているか」を確認するのが出発点になります。</p>
+<div class="point-box">
+<h4>ポイント</h4>
+<p>会話属性は自分のMerchant Centerアカウントに商品データを送っている事業者が対象です。自社ECでMerchant Centerを運用していればやれます。モールだけに出店していて自社のMerchant Centerを持っていない場合は、登録する場所自体がないことが多いです。</p>
+</div>
+
+<h2 id="sec2">会話属性は6つ全部やらないといけないのか</h2>
+<p>結論から言うと、6つ全部を埋める必要がある店は少ないと思います。むしろ「今のところ一つも追加作業をしなくていい」店もあります。</p>
+<p>その根拠が、公式ヘルプの注記です。商品説明[description]、商品に関する情報[product_highlight]、商品の詳細[product_detail]にすでに具体的な情報を登録している場合は、会話属性に同じ内容を重ねて入れる必要はない、とはっきり書かれています。つまり、これまで商品説明を丁寧に書いてきた店は、その情報がそのままAI向けの材料になっているわけです。</p>
+<p>「新しい属性が増えた＝全部埋めなきゃ」と反応しがちですが、実際にやるべきは逆順です。まず自分の商品データで、説明文や商品詳細に何が書けているかを棚卸しする。そのうえで、既存の欄ではうまく伝わっていない情報だけを会話属性で足す。この順番で見ると、追加で手を動かす範囲はかなり絞れます。</p>
+<div class="point-box">
+<h4>ポイント</h4>
+<p>会話属性は任意の補完項目です。商品説明や商品詳細にすでに書いてある内容なら、会話属性に重複登録しなくてよいと公式が明記しています。全部埋めるより先に、既存の商品データで何が伝わっているかを確認するのが近道です。</p>
+</div>
+
+<h2 id="sec3">どの会話属性が手間で、どれが軽いのか</h2>
+<p>6つは、作業の重さがかなり違います。手元の商品データから値を作るとき、どれくらい手がかかるかで並べてみました。フォーマットの例はGoogle公式ヘルプに載っているGoogle Pixel 9の登録例から引いています。</p>
+<table class="spec-table">
+<tr><th>会話属性</th><th>中身</th><th>作業の重さの目安</th></tr>
+<tr><td>人気度の順位<br>[popularity_rank]</td><td>在庫全体に対するパーセンタイル（例：95.5）。順位ではなく、全商品の中での売れ筋度合いを割合で表す</td><td>軽い（数値1つ。ただし売上の元データが必要）</td></tr>
+<tr><td>商品グループのタイトル<br>[item_group_title]</td><td>バリエーション商品の共通名（例：Google Pixel 9）。item_group_idと組み合わせて使う</td><td>軽い（親商品ごとに名前1つ）</td></tr>
+<tr><td>質問と回答<br>[question_and_answer]</td><td>商品への質問と答えのペア（例：「ヘッドフォン端子は付いていますか」に対する答え）</td><td>中（商品ごとに文章を用意）</td></tr>
+<tr><td>バリエーションオプション<br>[variant_option]</td><td>name:value形式（例：display:XL,memory:512GB,color:moonstone）。item_group_titleとitem_group_idと合わせて使う</td><td>中（バリエーションの数だけ）</td></tr>
+<tr><td>関連商品<br>[related_product]</td><td>関係タイプ:IDタイプ:IDの3点セット（例：often_bought_with:id:AZ7B、accessory:gtin:811571013579）</td><td>重い（関連商品を選びIDを引いてくる）</td></tr>
+<tr><td>ドキュメントリンク<br>[document_link]</td><td>商品の説明書などのPDFのURL。カンマ区切りで複数登録できる</td><td>重い（PDFを用意し、公開URLに置く必要がある）</td></tr>
+</table>
+<p>人気度の順位と商品グループのタイトルは、値そのものは単純です。人気度の順位は数字を1つ入れるだけですが、その数字を出すために自分の店の売上ランキングのデータが要ります。商品グループのタイトルは、バリエーション商品の親に共通の名前を振るだけなので、すでにitem_group_idでグループ化していれば軽い作業です。</p>
+<p>質問と回答とバリエーションオプションは中くらいです。質問と回答は商品ごとに中身が変わるので、文章を考える手間があります。バリエーションオプションは、色やサイズといった既存の属性を持っていても、name:valueというサブ属性の形でもう一度入れ直す必要があり、ここが地味に効いてきます。</p>
+<p>関連商品とドキュメントリンクは重めです。関連商品は1つの関係につき3つの値をセットで書き、しかも相手の商品のIDやGTINを引いてくる必要があります。ドキュメントリンクは、そもそもPDFが手元になければ作るところから始まり、Googleのクローラーが読める公開URLに置く前提もあります。</p>
+
+<h2 id="sec4">会話属性は1つずつ手入力するしかないのか</h2>
+<p>ここがこの記事を書こうと思ったきっかけです。一覧にすると作業量に気が遠くなりますが、よく見ると会話属性の多くは「商品ごとにもう答えが決まっている情報」を、決まった書式に変換しているだけです。</p>
+<p>たとえば質問と回答は「端子は付いているか→付いていない」のように、商品スペックを見れば答えが出ます。バリエーションオプションは、色・サイズ・容量という商品マスタにある情報を name:value の形に並べ替えるだけ。関連商品も、どの商品とセットで売れるか、どのパーツが対応するかが分かっていれば、あとはIDを所定の順で並べる作業です。</p>
+<p>つまり、ゼロから創作するのではなく、すでにある商品データを書式に合わせて変換する作業に近い。これは人間が1件ずつ手で打つより、AIに元データを渡してまとめて変換させるほうが向いている形です。商品数が多いほど、手入力との差は開きます。</p>
+<div class="point-box">
+<h4>ポイント</h4>
+<p>会話属性の多くは「商品マスタにある情報を、決まった書式に並べ替える」作業です。新しく考える項目ではなく変換作業なので、商品データをまとめて渡してAIに書式変換させる、という発想に切り替えられます。</p>
+</div>
+
+<h2 id="sec5">商品マスタからAIで会話属性をまとめて作る流れ</h2>
+<p>では実際にどう登録するか。前提として、いま使っているカートシステムは会話属性にそのままでは対応していないことがほとんどです。なので公式が推奨しているのは、補助データソースを使う方法です。平たく言うと、Googleスプレッドシートを別の商品データの差分として登録し、カートから来る商品データに会話属性だけを上乗せします。</p>
+<p>その上で、AIを使う場合の流れはこうなります。まず手元の商品マスタ（商品名、スペック、型番、既存のFAQなどが入ったCSV）を用意します。次に、その商品マスタをAIに渡して、商品IDと各会話属性の列に変換させます。質問と回答のペア、バリエーションオプションの name:value、関連商品の3点セットを、補助データソースに貼れる形でまとめて出力させるイメージです。最後に、出てきた表をスプレッドシートに貼り、補助データソースとしてMerchant Centerに連携します。</p>
+<p>登録する場所も具体的に書いておきます。<a href="https://support.google.com/merchants/answer/14990942" target="_blank" rel="noopener nofollow">Google公式ヘルプ</a>によると、商品データソースはMerchant Center左側のナビゲーションメニューにある設定アイコンの下の「データソース」タブで管理します。ここで補助データソースを新しく追加します。<a href="https://support.google.com/merchants/answer/15624457" target="_blank" rel="noopener nofollow">補助データソース</a>は、メインのデータソースの情報を強化したり上書きしたりするための追加のデータソースで、今のメインフィードはそのままに、会話属性だけを上乗せできます。</p>
+<p>具体的な手順としては、補助データソースに名前を付け、データの形式としてGoogleスプレッドシート・スケジュール設定された取得・アップロードの3つから選びます。非エンジニアならGoogleスプレッドシートが扱いやすいです。スプレッドシートに商品ID（id）の列と各会話属性の列を作って値を埋め、最後にこの補助データソースをどのメインデータソースに適用するかを選べば連携が完了します。</p>
+<div class="warn-box">
+<h4>管理画面のバージョンに注意</h4>
+<p>2024年以降、Googleは「Merchant Center Next」という新しい管理画面を段階的に展開しています。アカウントによって補助データソースや属性ルールが使えるかどうかが違う場合があるので、まず自分のアカウントの「データソース」メニューで、補助データソースが利用できる状態かを確認してから進めるのが安全です。</p>
+</div>
+<p>全商品を一度にやる必要はありません。公式の補助データソースは差分を上乗せする仕組みなので、まず売れ筋や注力したい商品群だけでスモールスタートできます。効果を見ながら範囲を広げるほうが、いきなり全商品を相手にするより現実的です。</p>
+<p>注意点も書いておきます。補助データソースは商品の追加や削除のたびに自分でメンテナンスする必要があります。カートと自動で同期するわけではないので、商品の入れ替えが多い店は、更新の手間が継続的に発生することは頭に入れておいたほうがいいです。</p>
+
+<h2 id="sec6">AIで会話属性を作るとき生成AIの開示は必要か</h2>
+<p>「AIにまとめて作らせよう」と考えたとき、引っかかったのがここです。Googleは、生成AIで作った商品データには「AIが作った」と分かる開示を求めています。これを知らずに何でもAIで作ると、ルール違反になりかねません。</p>
+<p>調べた範囲では、開示が必須とされているのは画像・タイトル・商品説明の3つです。<a href="https://support.google.com/merchants/answer/14743464" target="_blank" rel="noopener nofollow">Google公式ヘルプ（AI生成コンテンツ）</a>によると、生成AIで作ったタイトルは構造化されたタイトル[structured_title]、商品説明は構造化された商品説明[structured_description]という専用属性を使い、デジタルソースタイプ[digital_source_type]に「trainer_algorithmic_media」という値を入れて、AI製であることを示す必要があります。画像の場合はIPTCのメタデータで示します。</p>
+<p>一方で、会話属性（質問と回答など）をAIで作った場合の開示については、現時点の公式ヘルプに記載が見当たりませんでした。だからといって「会話属性はAIで作り放題」と言い切るのは早いと思います。生成AIまわりのルールは更新が続いている領域なので、ここは今後変わる可能性ありとして、僕は未確定の扱いにしています。</p>
+<div class="warn-box">
+<h4>AIで作るとき気をつけたいこと</h4>
+<p><strong>タイトルや商品説明までAIに作らせる場合</strong>：それぞれ構造化されたタイトル[structured_title]、構造化された商品説明[structured_description]を使い、AI製であることの開示が必須です。普通のタイトル・商品説明欄に入れるだけでは足りません。</p>
+<p><strong>会話属性をAIで作る場合</strong>：現時点では会話属性向けの開示ルールは公式ヘルプに見当たりませんでした。ただしルールが追加される可能性はあるので、最新のヘルプを確認しながら進めるのが安全です。</p>
+</div>
+
+<h2 id="sec7">会話属性の登録を全部AI任せにして大丈夫か</h2>
+<p>変換作業はAIに向いていると書きましたが、丸投げで終わらせられない部分が一つあります。質問と回答の中身の正誤です。</p>
+<p>公式ヘルプの例にもある「ヘッドフォン端子は付いていますか」という質問を考えてみます。ここで答えを取り違えて「付いています」と登録してしまうと、AIがその情報をもとにお客さんに間違った回答をします。お客さんは商品データを直接見ているわけではなく、AIの答えを信じて買うかどうかを決めるので、誤りがそのまま購入判断に響きます。生成はAIに任せても、事実が合っているかの確認は人が見る必要があります。</p>
+<p>人気度の順位も同じです。値そのものはAIが整形できますが、元になる売上ランキングのデータが間違っていれば、出てくる数字も間違います。AIは渡されたデータを書式に変換するのは得意でも、元データの正しさまでは保証してくれません。手間を減らす部分と、人が責任を持つ部分を分けて考えるのがよさそうです。</p>
+
+<div class="faq-section">
+<h2 id="sec8">よくある質問</h2>
+<div class="faq-item">
+<p class="fq"><strong>Q. 会話属性を登録すると、今ある商品の審査に影響しますか？</strong></p>
+<p class="fa">
+A.<br/>影響しません。Google公式ヘルプは、会話属性を含めても既存商品の承認状況には影響しないと明記しています。会話属性はメインの商品データ仕様を補完する任意の項目なので、登録しても今の商品の表示が止まったり審査が厳しくなったりはしません。まず一部の商品だけ試す、という進め方ができます。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. Merchant APIがないと会話属性は登録できませんか？</strong></p>
+<p class="fa">
+A.<br/>いいえ。Merchant APIを使う方法もありますが、Google公式が推奨しているのは補助データソースを使う方法です。Googleスプレッドシートを補助データソースとして登録し、商品IDと各会話属性の列を用意して値を入れていきます。APIをエンジニアに実装してもらわなくても、スプレッドシートだけで始められます。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 使っているカートが会話属性に対応していません。どうすればいいですか？</strong></p>
+<p class="fa">
+A.<br/>現状、多くのカートはそのままでは会話属性に対応していません。その場合は補助データソース（Googleスプレッドシート）で、カートから来る商品データに会話属性だけを上乗せします。カート側の対応を待たずに登録できるので、カートの仕様に左右されずに進められます。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 商品説明にすでに詳しく書いています。会話属性も別に必要ですか？</strong></p>
+<p class="fa">
+A.<br/>重複するなら必要ありません。Google公式ヘルプは、商品説明[description]、商品に関する情報[product_highlight]、商品の詳細[product_detail]にすでに具体的な情報を登録している場合、会話属性に同じデータを重ねて入れる必要はないと注記しています。既存の属性で何が埋まっているかを確認し、足りない部分だけを補う考え方が現実的です。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 人気度の順位[popularity_rank]には店内の順位を入れるのですか？</strong></p>
+<p class="fa">
+A.<br/>順位そのものではありません。Google公式ヘルプによると、人気度の順位は在庫全体に対するパーセンタイルで、値が高いほどそのショップ内で売れている商品であることを示します。ヘルプの例では95.5という値が使われています。1位・2位といった順位ではなく、全商品の中でどれくらい上位かを割合で表す点に注意してください。
+</p>
+</div>
+</div>
+
+<h2 id="sec9">まとめ：手を動かす前にやる順番</h2>
+<p>調べてみて、自分がこれからやる順番が見えてきました。最初にやるのは登録ではなく確認です。商品説明や商品詳細に何が書けているかを棚卸しして、会話属性で本当に足りない情報を見極める。ここで「うちは追加作業ほぼ不要」と分かる店もあるはずです。</p>
+<p>足りない部分があれば、全商品ではなく注力商品だけを対象に、商品マスタからAIで会話属性の列を変換生成して、補助データソースのスプレッドシートに載せます。そのとき、質問と回答の中身が事実として正しいかは自分の目で確認する。タイトルや商品説明までAIで作るなら、そちらは生成AIの開示が必要になる点も忘れないようにします。</p>
+<p>冒頭に書いたとおり、僕もまだ登録はしていません。これからこの順番で、まず棚卸しから始めるつもりです。やってみて分かったことが出てきたら、この記事に追記していきます。</p>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+<h2 class="related-title" id="sec10">関連する記事</h2>
+<a class="cite-card" href="ec-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Amazon・楽天・メルカリ 商品画像ルール違反を防ぐ比較まとめ【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-image-rules.html</span>
+</span>
+</a>
+<a class="cite-card" href="background-white.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較</span>
+<span class="cite-url">tsubasa-memo.github.io/background-white.html</span>
+</span>
+</a>
+<a class="cite-card" href="image-editing-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">画像加工・写真編集の外注先はどこがいい？代行サービスの選び方</span>
+<span class="cite-url">tsubasa-memo.github.io/image-editing-outsource.html</span>
+</span>
+</a>
+
+<div class="pillar-links">
+<p><strong>よく読まれている記事</strong></p>
+<a class="cite-card" href="retouch-pricing-database.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真レタッチの外注料金まとめ｜15社の費用相場を比較【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-pricing-database.html</span>
+</span>
+</a>
+<a class="cite-card" href="personal-retouch-services.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】</span>
+<span class="cite-url">tsubasa-memo.github.io/personal-retouch-services.html</span>
+</span>
+</a>
+<a class="cite-card" href="image-editing-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">画像加工・写真編集の外注先はどこがいい？代行サービスの選び方</span>
+<span class="cite-url">tsubasa-memo.github.io/image-editing-outsource.html</span>
+</span>
+</a>
+<a class="cite-card" href="what-is-retouch.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチとは？写真の修正・補正・加工の違いをわかりやすく解説【初心者向け】</span>
+<span class="cite-url">tsubasa-memo.github.io/what-is-retouch.html</span>
+</span>
+</a>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">会話属性とは？Merchant Centerに何が増えたのか</a></li>
+<li><a href="#sec-who">これは自社サイトとモールどちらの話？誰がやるのか</a></li>
+<li><a href="#sec2">会話属性は6つ全部やらないといけないのか</a></li>
+<li><a href="#sec3">どの会話属性が手間で、どれが軽いのか</a></li>
+<li><a href="#sec4">会話属性は1つずつ手入力するしかないのか</a></li>
+<li><a href="#sec5">商品マスタからAIで会話属性をまとめて作る流れ</a></li>
+<li><a href="#sec6">AIで会話属性を作るとき生成AIの開示は必要か</a></li>
+<li><a href="#sec7">会話属性の登録を全部AI任せにして大丈夫か</a></li>
+<li><a href="#sec8">よくある質問</a></li>
+<li><a href="#sec9">まとめ：手を動かす前にやる順番</a></li>
+<li><a href="#sec10">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
