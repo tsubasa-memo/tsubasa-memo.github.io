@@ -421,6 +421,7 @@
   - Q: AIで作ったモデル着用画像は景品表示法に違反しますか？
   - Q: AI画像を使うときに注釈は必要ですか？
 - [ナフサ不足でEC運営コストはどう変わる？梱包・物流・仕入れへの影響](https://tsubasa-memo.github.io/naphtha-ec-impact.html): ナフサ不足がEC事業の梱包資材・物流コスト・仕入れ原価に与える影響を解説。サプライチェーン全体のコスト構造変化とEC担当者が取るべき対策。
+- [Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ](https://tsubasa-memo.github.io/gmc-conversational-attributes.html): Google Merchant Centerに2026年5月追加された6つの会話属性（質問と回答・関連商品・人気度の順位など）を解説。自社サイトとモールの対象範囲、補助データソースでの登録、商品マスタからAIで変換生成する手順、生成AIの開示が必要な範囲を整理。
 
 ### 副業・キャリア
 
