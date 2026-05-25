@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>Google I/O 2026｜買い物体験が変わる。EC担当者が備えること｜ツバサのメモ帳</title>
+<meta name="description" content="Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマースで買い物体験がどう変わるか。フィードの見直しポイントも解説。">
+<meta name="keywords" content="Google I/O 2026 EC,Universal Cart,エージェント型コマース,AI Mode ショッピング,Merchant Center フィード,UCP,AP2,AI検索 商品,Google Marketing Live 2026">
+<meta property="og:title" content="Google I/O 2026｜買い物体験が変わる。EC担当者が備えること">
+<meta property="og:description" content="Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマースで買い物体験がどう変わるか。フィードの見直しポイントも解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/google-io-2026-ec.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tsubasa-memo.github.io/google-io-2026-ec.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/google-io-2026-ec.png">
+<meta name="twitter:title" content="Google I/O 2026｜買い物体験が変わる。EC担当者が備えること">
+<meta name="twitter:description" content="Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマースで買い物体験がどう変わるか。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/google-io-2026-ec.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/google-io-2026-ec.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Universal Cartは日本でいつ使えるようになる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現時点では米国で先行ローンチされ、カナダ・オーストラリア・UKへの展開が予定されています。日本への展開時期はGoogleから発表されていません。ただしUniversal Commerce Protocol（UCP）はShopify・Visa・Mastercard・PayPalなどが参加するオープン規格なので、日本展開が「ない」とは考えにくいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "モール出店者（楽天・Amazon）にも影響はある？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "直接的な影響は限定的です。Merchant Centerを自社で運用していない場合、会話属性の登録や画像要件への対応は自分ではできません。ただし、AI Modeでユーザーの検索行動自体が変わることは、モール出店者にも間接的に影響します。モール内の商品検索もAI化が進んでおり、商品タイトルや説明文の質が検索結果に影響する度合いは増えています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Merchant Centerの画像500px変更にはいつまでに対応すべき？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026年4月14日から警告が始まっており、2027年1月31日から適用（不承認）になります。ただし実務上は、Amazon出品画像（長辺500px以上）や一般的な商品撮影画像を使っていれば、ほぼクリアしているはずです。古いフィードが残っていないか、Merchant Centerの「要確認」セクションで確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Product schemaを入れればAI検索に商品が出る？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleは「AI機能のために特別な構造化データは不要」と繰り返し述べています。Product schemaはリッチリザルト表示には有効ですが、「構造化データ＝AI最適化」ではありません。AI検索に商品が出るかどうかは、Merchant Centerフィードの品質（タイトル・画像・価格・在庫・スペックの正確さ）のほうが直接的に影響します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Google I/O 2026のEC関連発表で、日本ですでに使えるものは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI Mode（対話型AI検索）は2025年9月から日本語対応済みです。AI Overviewsのショッピング表示も日本で拡大中です。Universal Cart、AP2（エージェント決済）、Direct Offersは米国先行で、日本での提供時期は未発表です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会話属性は登録したほうがいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "任意項目なので、登録しなくても既存の掲載には影響しません。ただし、AI Modeでの商品推薦精度に影響する可能性があるため、注力商品から始めるスモールスタートが現実的です。登録方法はGoogleスプレッドシートを使った補助データソースが最も手軽です。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Google I/O 2026｜買い物体験が変わる。EC担当者が備えること",
+  "description": "Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマースで買い物体験がどう変わるか。フィードの見直しポイントも解説。",
+  "url": "https://tsubasa-memo.github.io/google-io-2026-ec.html",
+  "image": "https://tsubasa-memo.github.io/og/google-io-2026-ec.png",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-05-26T00:00:00+09:00",
+  "dateModified": "2026-05-26T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Google I/O 2026のEC関連まとめ"
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="index.html">ホーム</a> ＞ Google I/O 2026のEC関連まとめ
+
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/google-io-2026-ec.webp" alt="Google I/O 2026｜買い物体験が変わる。EC担当者が備えること" width="640" height="360" loading="eager">
+</div>
+
+<h1 class="article-title">Google I/O 2026｜買い物体験が変わる。EC担当者が備えること</h1>
+<div class="article-meta-line">
+<span>2026年5月26日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+<p>Google I/O 2026（2026年5月19日）で、ユーザーが商品を探して買うまでの体験を大きく変える発表が続きました。EC担当者として気になったのは「お客さんの買い方が変わるなら、こちらの売り方も変えないとまずいのでは」という点です。発表内容を「買い手の体験がどう変わるか → 売り手は何をすべきか」の順で整理しました。</p>
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>Google検索がキーワード検索から「対話で商品を探す」体験に移行している</li>
+<li>Universal Cartで、お客さんがGoogle上で比較・判断・購入まで完結できるようになる</li>
+<li>AIがユーザーの代わりに条件を判断して購入する「エージェント型コマース」が始まった</li>
+<li>EC担当者にとっての影響は「検索順位の話」から「商品データの品質の話」に変わりつつある</li>
+</ul>
+</div>
+
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">AI Modeで商品を探す体験｜キーワード検索から対話型へ</a></li>
+<li><a href="#sec2">Universal Cart｜複数ショップの買い物がGoogle上で完結する</a></li>
+<li><a href="#sec3">エージェント型コマース（AP2）｜AIがユーザーの代わりに購入する</a></li>
+<li><a href="#sec4">商品データの品質がAI検索の露出を左右する</a></li>
+<li><a href="#sec5">Merchant Centerのフィード整備｜EC担当者が今できること</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</div>
+
+
+<h2 id="sec1">AI Modeで商品を探す体験｜キーワード検索から対話型へ</h2>
+<p>商品を探す体験が根本から変わろうとしています。</p>
+<p>GoogleのAI Mode（対話型のAI検索機能）では、ユーザーは「雨の日の通勤に使えるA4サイズのバッグ」のように自然な言葉で検索します。するとAIがその条件を分解して、防水性・サイズ・用途から候補をフィルタリングし、商品画像・価格・レビュー・在庫情報をまとめた画面を返す。右側にはパネルが出て、会話を続けながら候補を絞り込めます。</p>
+<p>従来の検索は「通勤 バッグ 防水 A4」のようにキーワードを並べて、出てきた10件のリンクを順番にクリックして比較する体験でした。AI Modeでは、条件を伝えれば比較済みの結果が返ってくる。各サイトを回遊して情報を集める手間が大幅に減ります。</p>
+<p>AI Modeは2025年9月から日本語に対応済みです。「まだ使ったことがない」という人も多いかもしれませんが、Google検索のインターフェース自体がこの方向に動いている以上、お客さんの検索行動が変わるのは時間の問題でしょう。</p>
+<p>EC担当者としての問題は、この画面に自社の商品が出るかどうかです。AI Modeが表示する商品情報は、Google Merchant Centerのフィードや、ウェブ上の商品ページから取得されます。商品タイトルが曖昧、画像が粗い、在庫情報が古い、スペックが未入力。こうしたフィードの不備があると、AIが候補を選ぶ段階で外される可能性があります。</p>
+<p class="source-link">出典：<a href="https://blog.google/products-and-platforms/products/shopping/google-shopping-ai-mode-virtual-try-on-update/" target="_blank" rel="noopener nofollow">Google公式ブログ：Shopping on Google - AI Mode</a></p>
+
+
+<h2 id="sec2">Universal Cart｜複数ショップの買い物がGoogle上で完結する</h2>
+<p>Google I/O 2026の目玉の一つがUniversal Cartです。</p>
+<p>Google検索、Geminiアプリ、YouTube、Gmailで見つけた商品を、1つの買い物かごにまとめて管理できる仕組みです。しかもこのカートは単なる保管場所ではなく、AIが裏側で動いています。商品をカートに入れた瞬間から、価格下落の監視、在庫復活のアラート、価格履歴の表示、さらには互換性のチェック（たとえばPC自作パーツの組み合わせ）まで自動で走る仕組みです。</p>
+<p>決済はGoogleが共同開発したUniversal Commerce Protocol（UCP）を通じて、Google上で直接チェックアウトするか、ショップのサイトに移動して完了するかを選べます。ローンチパートナーにはNike、Sephora、Target、Walmart、Wayfairのほか、Shopify経由のショップも名を連ねています。</p>
+<p>EC担当者として考えるべきなのは「お客さんが自社サイトに来ない可能性が出てきた」ということです。これまでは検索結果から商品ページに来てもらい、サイト内で比較して、カートに入れて決済する流れでした。Universal Cartが普及すれば、その流れの大部分がGoogleの画面上で完結しうる。</p>
+<p>現時点では米国先行で、日本にはカナダ・オーストラリア・UKの後に展開予定とされています。日本のタイムラインは未発表ですが、UCP自体はShopifyや大手決済企業（Visa、Mastercard、PayPal）が参加するオープン規格として設計されているため、「日本には来ない」と想定して無視するのは危ないです。</p>
+<p class="source-link">出典：<a href="https://blog.google/products-and-platforms/products/shopping/google-shopping-cart/" target="_blank" rel="noopener nofollow">Google公式ブログ：Universal Cart</a></p>
+
+
+<h2 id="sec3">エージェント型コマース（AP2）｜AIがユーザーの代わりに購入する</h2>
+<p>もう一つ、EC担当者として見逃せない発表がAgent Payments Protocol（AP2）です。</p>
+<p>AP2は、AIエージェントがユーザーの代わりに購入を実行するための仕組みです。ユーザーが「予算は1万円以内」「このブランドの商品だけ」「このカテゴリに限定」といったガードレール（条件）を事前に設定しておけば、AIが条件に合う商品を見つけて購入まで完了する。</p>
+<p>想像してみてほしいのですが、この世界ではお客さんは商品ページを見ていません。AIが商品データを読んで判断し、条件に合えば購入する。商品ページのデザインや購入ボタンの配置、キャッチコピーの工夫で購買意欲を高めるという従来のEC運営の発想とは、根本的に別の勝負です。</p>
+<p>AP2もまだ米国先行ですが、Google Marketing Live 2026（2026年5月）では「対話型AIのインターフェースにおいて、企業の製品がAIに認識され、ユーザーに発見されるようにするための新しいツールとデータ属性を導入する」と発表されました。AIに読まれる商品データの整備が、そのまま「AIに選ばれるかどうか」を左右する世界が近づいている。</p>
+<p class="source-link">出典：<a href="https://blog.google/intl/ja-jp/company-news/technology/google-marketing-live-2026/" target="_blank" rel="noopener nofollow">Google Marketing Live 2026（日本語）</a></p>
+
+
+<h2 id="sec4">商品データの品質がAI検索の露出を左右する</h2>
+<p>ここまでの話を整理すると、リスクの構造が変わりつつあるのが見えてきます。</p>
+<p>これまでのEC運営では「見つけてもらえない＝検索順位が低い」でした。SEOで順位を上げれば、クリックが増えて売上につながる。この構造はしばらく続きますが、AI検索が広がると「見つけてもらえない＝AIの候補に入らない」というリスクが加わります。</p>
+<p>AIは商品フィードを読んで判断します。タイトルが曖昧、画像が低品質、価格が実際のサイトとずれている、スペックが未入力。こうした状態のフィードは、AIが候補を絞る段階で落とされる。検索順位以前の話です。</p>
+<p>Merchant Centerの商品画像が2027年1月から最低500×500pxに引き上げられる変更も、この流れの一部です。これまでは非ファッション商品は100×100pxでも通っていましたが、AI検索の画面に商品画像が直接表示される時代に、100×100pxの画像では使い物にならない。実務上は大半のショップが500px以上の画像を使っているので引っかかるケースは少ないですが、古いフィードが残っているなら確認しておいて損はありません。</p>
+<p>Merchant Centerに「会話属性」という新しいデータ項目が追加されたのも同じ文脈です。商品に関するQ&amp;A、関連商品、バリエーション情報などを構造化して登録しておくことで、AIがその商品をより正確に理解できるようにする仕組みです。</p>
+<a class="cite-card" href="gmc-conversational-attributes.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ</span>
+<span class="cite-url">tsubasa-memo.github.io/gmc-conversational-attributes.html</span>
+</span>
+</a>
+<p>なお、「Product schemaを入れればAI検索に出る」という記事を見かけますが、これは正確ではありません。Googleは「AI機能のために特別な構造化データは不要」と繰り返し述べています。構造化データはリッチリザルトの対象になるために有効ですが、AIに選ばれるかどうかはフィードの品質のほうが直接的に効きます。</p>
+<a class="cite-card" href="json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+
+
+<h2 id="sec5">Merchant Centerのフィード整備｜EC担当者が今できること</h2>
+<p>日本ではUniversal CartもAP2もまだ使えません。ただし、AI ModeやAI Overviewsのショッピング表示はすでに日本語で動いています。「いつか来る」ではなく「一部はもう来ている」状態です。</p>
+<p>今の段階でやれることは、派手な新施策ではなく地味なフィードの見直しです。</p>
+<p>Merchant Centerに登録している商品データのタイトル・説明文・画像・価格・在庫が、自社サイトの実際の状態と一致しているか。画像は十分な解像度で、背景が白く、テキストが重なっていないか。これらはAI検索に限らず、Googleショッピング広告や無料リスティングでもずっと求められてきた基本ですが、AI時代にはフィードの正確さが「検索結果の一つに出るかどうか」ではなく「AIの候補に残るかどうか」を決めるデータになります。</p>
+<p>会話属性の登録も、余裕があれば始めておくと先行者利益が取れる可能性があります。ただし、現時点では任意項目であり、登録しなくても既存の掲載には影響しません。注力商品から試すスモールスタートが現実的です。</p>
+<p>楽天・Amazon・Yahoo!などモールだけに出店していて、自社でMerchant Centerを触っていない事業者にとっては、直接やれることは限られます。モール側がGoogleにどう商品データを送っているかはモールの仕様次第だからです。ただ、楽天市場では生成AIで作成した商品画像のガイドラインが整備されつつあるなど、モール側でもAI対応は進んでいます。</p>
+<a class="cite-card" href="ec-ai-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ECサイトのAI生成画像ルール</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-ai-image-rules.html</span>
+</span>
+</a>
+<a class="cite-card" href="ec-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Amazon・楽天・メルカリ 商品画像ルール違反を防ぐ比較まとめ【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-image-rules.html</span>
+</span>
+</a>
+
+
+<div class="faq-section">
+<h2 id="sec6">よくある質問</h2>
+<div class="faq-item">
+<p class="fq"><strong>Q. Universal Cartは日本でいつ使えるようになる？</strong></p>
+<p class="fa">
+A.<br/>現時点では米国で先行ローンチされ、カナダ・オーストラリア・UKへの展開が予定されています。日本への展開時期はGoogleから発表されていません。ただしUniversal Commerce Protocol（UCP）はShopify・Visa・Mastercard・PayPalなどが参加するオープン規格なので、日本展開が「ない」とは考えにくいです。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. モール出店者（楽天・Amazon）にも影響はある？</strong></p>
+<p class="fa">
+A.<br/>直接的な影響は限定的です。Merchant Centerを自社で運用していない場合、会話属性の登録や画像要件への対応は自分ではできません。ただし、AI Modeでユーザーの検索行動自体が変わることは、モール出店者にも間接的に影響します。モール内の商品検索もAI化が進んでおり、商品タイトルや説明文の質が検索結果に影響する度合いは増えています。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. Merchant Centerの画像500px変更にはいつまでに対応すべき？</strong></p>
+<p class="fa">
+A.<br/>2026年4月14日から警告が始まっており、2027年1月31日から適用（不承認）になります。ただし実務上は、Amazon出品画像（長辺500px以上）や一般的な商品撮影画像を使っていれば、ほぼクリアしているはずです。古いフィードが残っていないか、Merchant Centerの「要確認」セクションで確認してください。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. Product schemaを入れればAI検索に商品が出る？</strong></p>
+<p class="fa">
+A.<br/>Googleは「AI機能のために特別な構造化データは不要」と繰り返し述べています。Product schemaはリッチリザルト表示には有効ですが、「構造化データ＝AI最適化」ではありません。AI検索に商品が出るかどうかは、Merchant Centerフィードの品質（タイトル・画像・価格・在庫・スペックの正確さ）のほうが直接的に影響します。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. Google I/O 2026のEC関連発表で、日本ですでに使えるものは？</strong></p>
+<p class="fa">
+A.<br/>AI Mode（対話型AI検索）は2025年9月から日本語対応済みです。AI Overviewsのショッピング表示も日本で拡大中です。Universal Cart、AP2（エージェント決済）、Direct Offersは米国先行で、日本での提供時期は未発表です。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 会話属性は登録したほうがいい？</strong></p>
+<p class="fa">
+A.<br/>任意項目なので、登録しなくても既存の掲載には影響しません。ただし、AI Modeでの商品推薦精度に影響する可能性があるため、注力商品から始めるスモールスタートが現実的です。登録方法はGoogleスプレッドシートを使った補助データソースが最も手軽です。
+</p>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+<h2 class="related-title" id="sec7">関連する記事</h2>
+<a class="cite-card" href="gmc-conversational-attributes.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ</span>
+<span class="cite-url">tsubasa-memo.github.io/gmc-conversational-attributes.html</span>
+</span>
+</a>
+<a class="cite-card" href="ec-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Amazon・楽天・メルカリ 商品画像ルール違反を防ぐ比較まとめ【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-image-rules.html</span>
+</span>
+</a>
+<a class="cite-card" href="ec-ai-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ECサイトのAI生成画像ルール</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-ai-image-rules.html</span>
+</span>
+</a>
+<a class="cite-card" href="compress-product-image.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">商品画像を圧縮する方法｜EC掲載前に知っておきたいファイルサイズの話</span>
+<span class="cite-url">tsubasa-memo.github.io/compress-product-image.html</span>
+</span>
+</a>
+<a class="cite-card" href="json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="image-file-formats.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識</span>
+<span class="cite-url">tsubasa-memo.github.io/image-file-formats.html</span>
+</span>
+</a>
+
+<div class="pillar-links">
+<p><strong>よく読まれている記事</strong></p>
+<a class="cite-card" href="retouch-pricing-database.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真レタッチの外注料金まとめ｜15社の費用相場を比較【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-pricing-database.html</span>
+</span>
+</a>
+<a class="cite-card" href="personal-retouch-services.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチ外注サービス比較｜個人でも依頼できるおすすめの7社【2026年最新版】</span>
+<span class="cite-url">tsubasa-memo.github.io/personal-retouch-services.html</span>
+</span>
+</a>
+<a class="cite-card" href="image-editing-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">画像加工・写真編集の外注先はどこがいい？代行サービスの選び方</span>
+<span class="cite-url">tsubasa-memo.github.io/image-editing-outsource.html</span>
+</span>
+</a>
+<a class="cite-card" href="what-is-retouch.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチとは？写真の修正・補正・加工の違いをわかりやすく解説【初心者向け】</span>
+<span class="cite-url">tsubasa-memo.github.io/what-is-retouch.html</span>
+</span>
+</a>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">AI Modeで商品を探す体験｜キーワード検索から対話型へ</a></li>
+<li><a href="#sec2">Universal Cart｜複数ショップの買い物がGoogle上で完結する</a></li>
+<li><a href="#sec3">エージェント型コマース（AP2）｜AIがユーザーの代わりに購入する</a></li>
+<li><a href="#sec4">商品データの品質がAI検索の露出を左右する</a></li>
+<li><a href="#sec5">Merchant Centerのフィード整備｜EC担当者が今できること</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
