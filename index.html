@@ -37,6 +37,9 @@ gtag('config', 'G-YYBFXHXMM6');
 .header-nav a:hover{color:var(--accent);text-decoration:none}
 .hero-inner{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
 .hero-desc{font-size:13px;color:var(--text-sub);line-height:1.75;max-width:480px}
+.site-intro{margin:16px 0 32px;font-size:14px;color:var(--text-sub);line-height:1.85;max-width:640px}
+.site-intro p{margin-bottom:10px}
+.site-intro p:last-child{margin-bottom:0}
 .cat-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 40px}
 .cat-link{display:inline-block;padding:6px 16px;font-size:12px;font-weight:700;color:#fff;border-radius:20px;text-decoration:none;transition:opacity .2s;letter-spacing:.3px;border:none}
 .cat-link:hover{opacity:.8;text-decoration:none}
@@ -112,6 +115,35 @@ gtag('config', 'G-YYBFXHXMM6');
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ツバサのメモ帳",
+  "url": "https://tsubasa-memo.github.io/",
+  "description": "ECサイト運用の現場で身につけた知識をまとめるブログ。ささげ業務、画像の外注管理、レタッチ会社の料金相場、初心者におすすめのカメラなどの情報を発信しています。",
+  "inLanguage": "ja",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://tsubasa-memo.github.io/archive.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/"}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -168,6 +200,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <div class="hero-inner">
 
 <p class="hero-desc">EC関係の仕事をしている僕が、カメラ・写真・画像編集・ECサイト運用で調べたことをまとめています。</p>
+</div>
+<div class="site-intro">
+<p>ECサイトの商品画像を担当していると、撮影・レタッチ外注・画像加工・モールの規約対応と、ひとつひとつは小さいけれど調べることが山ほど出てきます。このサイトでは、僕が実務の中で調べた情報を記事ごとにまとめています。</p>
+<p>レタッチ会社の料金を15社分比較した相場表、背景切り抜きの方法別コスト比較、Amazon・楽天の画像規約の違いなど、EC担当者がそのまま使える情報を中心に扱っています。最近はLLMO（AI検索最適化）やGoogle Search Consoleの実践記録も書いています。</p>
 </div>
 
 <p class="section-label">おすすめ記事</p>
