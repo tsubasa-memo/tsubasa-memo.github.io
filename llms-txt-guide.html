@@ -37,7 +37,7 @@
   "author": { "@type": "Person", "name": "ツバサ" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-05-15",
-  "dateModified": "2026-05-17",
+  "dateModified": "2026-05-27",
   "inLanguage": "ja"
 }
 </script>
@@ -148,7 +148,7 @@
 <h1 class="article-title">llms.txtとは？Googleは不要と表明<br/>それでも設置すべき理由と書き方</h1>
 <div class="article-meta-line">
 <span>2026年5月15日</span>
-<span>最終更新：2026年5月17日</span>
+<span>最終更新：2026年5月27日</span>
 </div>
 
 <p>こんにちは、ツバサです。</p>
@@ -172,6 +172,28 @@
 </a>
 
 <p>同じドキュメントでは「AEO（Answer Engine Optimization）」や「GEO（Generative Engine Optimization）」という用語自体についても、Google検索の観点からはそれらも結局SEOであり、別概念として扱う必要はないとも書かれている。要するにGoogleは「生成AI時代の特別な対策は、Google検索の世界では存在しない」という立場を明確にした。</p>
+
+<h3>Googleジョン・ミューラー氏がdiscoveryとfunctionalityの違いを解説（2026年5月20日）</h3>
+
+<p>このガイド公開の5日後、GoogleのSearch Relationsチームに所属するジョン・ミューラー氏が、Bluesky上でllms.txtの位置づけについてより踏み込んだ解説をしている。SEOコンサルタントのLily Ray氏が「Googleがdevelopers.google.comでllms.txtやMarkdownを使っているのに、SEOには不要と言うのは矛盾ではないか」と質問したのに対する返答だ。</p>
+
+<p>ミューラー氏の主張を整理すると、まず大前提として「ウェブサイトには検索以外にも多くの目的がある」と述べている。そのうえで、llms.txtの議論では「discovery（検索エンジン経由でサイトやページを見つけること）」と「functionality（ページを見つけた人が目的のタスクをうまく実行できるよう支援すること）」を分けて考えるべきだと整理した。llms.txtはdiscovery（SEO領域）のための仕組みではなく、functionality側の話だという。</p>
+
+<p>この区別を説明するために、ミューラー氏は従来のWebページにおけるCTA（行動喚起）との類似性を持ち出している。CTAはSEOのために設置するものではなく、ページに来た人のコンバージョンを高めるためにある。同じように、llms.txtも「見つけてもらう」ための仕組みではなく、「見つけた後の体験を良くする」ための仕組みだと位置付けた。ただし、サイト全体のdiscovery rate（SEO）が高く、かつページの機能性も高い場合に初めて全体の成果に繋がるとも補足している。</p>
+
+<p>では、どんなサイトでfunctionalityとしてのllms.txtが有効なのか。ミューラー氏は、AIコーディングが普及した現在、開発者向けドキュメントのようなサイトでは有効だとしている。AIがコードを生成する際にドキュメントを参照するケースが増えており、Markdown版を提供することでトークンの節約につながる可能性がある。ただし「AIはHTMLも問題なく読める」ので、あくまで一時的な補助手段に過ぎないとも釘を刺している。</p>
+
+<p>一方、開発者向けサイト以外については明確に否定的だ。「非開発者サイトでは、将来AIエージェントのトラフィックが増えたとしても、llms.txtを設置する意味はあまりない。靴のスペックのMarkdown版を作っても売上は増えない」と述べている。</p>
+
+<p>そして最後に「すべてのサイトは、来るかどうかも分からないAIエージェントだらけの未来に備えるよりも、今のSEOでもっと重要な課題に取り組むべきだ」と締めくくった。</p>
+
+<a class="cite-card" href="https://bsky.app/profile/johnmu.com/post/3mmb6if3h532n" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">B</span>
+<span class="cite-body">
+<span class="cite-title">ジョン・ミューラー氏のBluesky投稿（2026年5月20日）</span>
+<span class="cite-url">bsky.app</span>
+</span>
+</a>
 
 
 <h2 id="sec2">SEO専門家たちはどう受け止めたか</h2>
@@ -221,6 +243,8 @@
 <p>このサイトでも、Perplexityに記事が引用された経験がある（ささげ業務の解説記事）。引用元として表示されたとき、サイトのどの記事が読まれているかをllms.txtで明示しているメリットは無視できない。Google検索だけが市場ではない。</p>
 
 <p>前述の三連休氏が指摘するように、AI経由の流入はCVRが異常に高いケースがあるという実務データもある。Google検索以外のAI経由トラフィックをどう評価するかは、サイトの規模や目的によって変わる話ではあるが、少なくとも「ゼロではない」という事実は、設置を続ける合理性の一つになる。</p>
+
+<p>前述のミューラー氏は「非開発者サイトでは意味が薄い」と述べているが、この発言もあくまでGoogleのエコシステム内での話だ。Perplexityでの引用実績がある以上、Google検索の外側で起きている現象に対してGoogleの見解をそのまま適用するのは論理的に無理がある。</p>
 
 <h3>② SEO業界では公式と実態が乖離することがよくある</h3>
 
