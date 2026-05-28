@@ -149,7 +149,7 @@
 
 ### AI
 
-- [写真の色変更・カラー化アプリ6選｜白黒写真も無料で着色できる](https://tsubasa-memo.github.io/photo-colorize-apps.html): 白黒写真のカラー化・部分色変更・古い写真の色復元の3用途別に、PhotoDirector・VanceAI・Fotor・Palette.fm等6ツールを無料枠込みで比較した記事
+- [写真の再色付け・カラー化ができるアプリ＆サービス比較｜Nano Bananaから外注まで](https://tsubasa-memo.github.io/photo-colorize-apps.html): 白黒写真のカラー化・部分色変更・色褪せ復元の3用途別にPhotoDirector・VanceAI・Fotor・Palette.fm等6ツールを比較し、Nano Banana・Photoshop・画像加工会社4社の外注選択肢まで網羅した記事
   - Q: 白黒写真のカラー化は無料でできますか？
   - Q: スマホだけで写真のカラー化はできますか？
   - Q: AIでカラー化した写真の色は正確ですか？
