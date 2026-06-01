@@ -120,7 +120,7 @@
   - Q: レタッチは自分でもできますか？
   - Q: プロにレタッチを依頼するといくらかかりますか？
   - Q: レタッチが必要になるのはどんな場面ですか？
-- [写真レタッチ・編集アプリ10選｜再色付け・肌補正・不要物消去を無料で【2026年版】](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed、Lightroom Mobile、PhotoDirector、SNOW、TouchRetouchなど用途別にレタッチアプリを比較した記事
+- [写真レタッチ・編集アプリ10選｜肌補正・不要物消去を無料で【2026年版】](https://tsubasa-memo.github.io/retouch-apps.html): Snapseed、Lightroom Mobile、PhotoDirector、SNOW、TouchRetouchなど用途別にレタッチアプリを比較した記事
   - Q: 無料のレタッチアプリで最もおすすめはどれですか？
   - Q: レタッチアプリとプロのレタッチサービスは何が違いますか？
   - Q: 証明写真の加工はアプリでできますか？
@@ -144,7 +144,7 @@
 
 ### AI
 
-- [写真の再色付け・カラー化ができるアプリ＆サービス比較｜Nano Bananaから外注まで](https://tsubasa-memo.github.io/photo-colorize-apps.html): 白黒写真のカラー化・部分色変更・色褪せ復元の3用途別にPhotoDirector・VanceAI・Fotor・Palette.fm等6ツールを比較し、Nano Banana・Photoshop・画像加工会社4社の外注選択肢まで網羅した記事
+- [写真の再色付け・カラー化アプリ比較｜Nano Bananaから外注まで](https://tsubasa-memo.github.io/photo-colorize-apps.html): 白黒写真のカラー化・部分色変更・色褪せ復元の3用途別にPhotoDirector・VanceAI・Fotor・Palette.fm等6ツールを比較し、Nano Banana・Photoshop・画像加工会社4社の外注選択肢まで網羅した記事
   - Q: 白黒写真のカラー化は無料でできますか？
   - Q: スマホだけで写真のカラー化はできますか？
   - Q: AIでカラー化した写真の色は正確ですか？
@@ -184,7 +184,7 @@
   - Q: ネットプリントの注文から届くまでどのくらいかかりますか？
   - Q: スマホからでも注文できますか？
   - Q: 写真プリントとフォトブック、どちらが安いですか？
-- [写真バックアップ比較｜Googleフォト・iCloud・Amazon Photos【2026年版】](https://tsubasa-memo.github.io/photo-backup-comparison.html): Googleフォト・iCloud・Amazon Photosの無料容量・月額料金・自動バックアップの使い勝手を比較した記事
+- [写真バックアップ｜Googleフォト・iCloud・Amazon Photos](https://tsubasa-memo.github.io/photo-backup-comparison.html): Googleフォト・iCloud・Amazon Photosの無料容量・月額料金・自動バックアップの使い勝手を比較した記事
   - Q: Googleフォトは今でも無料で使えますか？
   - Q: Amazon Photosはプライム会員でなくても使えますか？
   - Q: iPhoneを使っているならiCloudとGoogleフォトどちらがいいですか？
@@ -202,7 +202,7 @@
   - Q: スマホの写真を整理・削除するのにおすすめのアプリはありますか？
   - Q: 動画ファイルはどのくらい容量を使いますか？
   - Q: 削除した写真は復元できますか？
-- [大容量写真データの送り方｜ギガファイル便・Googleドライブ・LINEの使い分け](https://tsubasa-memo.github.io/send-large-photo.html): ギガファイル便・Googleドライブ・WeTransfer・LINE・AirDropの違いと相手の環境別の使い分けを解説した記事
+- [大容量写真の送り方｜ギガファイル便・Googleドライブ・LINEの使い分け](https://tsubasa-memo.github.io/send-large-photo.html): ギガファイル便・Googleドライブ・WeTransfer・LINE・AirDropの違いと相手の環境別の使い分けを解説した記事
   - Q: メールで写真を送るとき、容量の上限はどのくらいですか？
   - Q: ギガファイル便とはどんなサービスですか？
   - Q: LINEで写真を送ると画質は落ちますか？
@@ -214,7 +214,7 @@
   - Q: 大切な写真のプリントはどこに頼めばいいですか？
   - Q: コンビニプリントの画質は一般的なプリントサービスと比べてどうですか？
   - Q: 写真をアルバムにして残したい場合のおすすめサービスはありますか？
-- [Instagramの画像サイズ・比率まとめ｜フィード・ストーリー・リール【2026年版】](https://tsubasa-memo.github.io/instagram-image-size.html): Instagramの投稿タイプ別の最適な画像サイズ・アスペクト比・推奨解像度を表で整理した記事
+- [Instagram画像サイズ・比率｜フィード・ストーリー・リール【2026年版】](https://tsubasa-memo.github.io/instagram-image-size.html): Instagramの投稿タイプ別の最適な画像サイズ・アスペクト比・推奨解像度を表で整理した記事
   - Q: Instagramフィード投稿の最適なサイズは何ですか？
   - Q: Instagramストーリーの推奨サイズは何ですか？
   - Q: Instagramリールの推奨サイズは何ですか？
@@ -309,13 +309,13 @@
   - Q: 外注費と人件費では税務上の扱いがどう違いますか？
   - Q: EC業務でフリーランスに向いている業務はどれですか？
   - Q: フリーランスへの外注で消耗しないためにはどうすればよいですか？
-- [写真加工屋さん vs 切り抜きjp｜EC用の画像加工を外注するなら？【2026年版】](https://tsubasa-memo.github.io/shashinkakouyasan-vs-kirinukijp.html): 写真加工屋さんと切り抜きjpを料金・オプション・最低発注枚数・切り抜き方式で比較したEC担当者向けの備忘録
+- [写真加工屋さん vs 切り抜きjp｜画像加工の外注先比較【2026年版】](https://tsubasa-memo.github.io/shashinkakouyasan-vs-kirinukijp.html): 写真加工屋さんと切り抜きjpを料金・オプション・最低発注枚数・切り抜き方式で比較したEC担当者向けの備忘録
   - Q: 写真加工屋さんと切り抜きjp、EC商品画像の加工はどちらが安いですか？
   - Q: 切り抜きjpはなぜ2026年4月に値上げしたのですか？
   - Q: クリッピングパスとマスク処理はどう違いますか？
   - Q: 切り抜きjpに影イキの込みプランはありますか？
   - Q: 写真加工屋さんは個人でも依頼できますか？
-- [fleston vs PhotonX｜ささげ代行は人力とシステム、どっちがいい？【2026年版】](https://tsubasa-memo.github.io/fleston-vs-photonx.html): ささげ代行のflestonとPhotonXを人力型とシステム型の事業の立て付けで比較、PANAMAの移管経緯と老舗フォートン（foton inc.）との区別を整理した記事
+- [fleston vs PhotonX｜ささげ代行は人力とシステム、どっちがいい？](https://tsubasa-memo.github.io/fleston-vs-photonx.html): ささげ代行のflestonとPhotonXを人力型とシステム型の事業の立て付けで比較、PANAMAの移管経緯と老舗フォートン（foton inc.）との区別を整理した記事
   - Q: PhotonX株式会社と老舗のフォートン株式会社（foton inc.）は同じ会社ですか？
   - Q: PANAMAはどの会社のサービスですか？
   - Q: flestonとPhotonX、料金体系はどちらが明確ですか？
@@ -406,7 +406,7 @@
   - Q: AI画像を使うときに注釈は必要ですか？
 - [ナフサ不足でEC運営コストはどう変わる？梱包・物流・仕入れへの影響](https://tsubasa-memo.github.io/naphtha-ec-impact.html): ナフサ不足がEC事業の梱包資材・物流コスト・仕入れ原価に与える影響を解説。サプライチェーン全体のコスト構造変化とEC担当者が取るべき対策。
 - [Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ](https://tsubasa-memo.github.io/gmc-conversational-attributes.html): Google Merchant Centerに2026年5月追加された6つの会話属性（質問と回答・関連商品・人気度の順位など）を解説。自社サイトとモールの対象範囲、補助データソースでの登録、商品マスタからAIで変換生成する手順、生成AIの開示が必要な範囲を整理。
-- [Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる。担当者が備えること](https://tsubasa-memo.github.io/google-io-2026-ec.html): Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマース（AP2）で買い物体験がどう変わるか。Merchant Centerフィードの見直しポイント、会話属性との関係、Product schemaの過信に注意すべき理由も解説。
+- [Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる](https://tsubasa-memo.github.io/google-io-2026-ec.html): Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマース（AP2）で買い物体験がどう変わるか。Merchant Centerフィードの見直しポイント、会話属性との関係、Product schemaの過信に注意すべき理由も解説。
 
 ### 副業・キャリア
 
@@ -491,7 +491,7 @@
 
 ### SEO・LLMO
 
-- [「おすすめ比較記事」をGoogleが規制する？｜No.1表記の法的リスクとAI検索の限界](https://tsubasa-memo.github.io/comparison-article-credibility.html): Googleが2026年5月に不正なブランド言及をスパムと明言した背景、No.1表示の景品表示法上のリスク、AI検索が比較記事の問題をフィルタリングできない現状を整理。
+- [「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索](https://tsubasa-memo.github.io/comparison-article-credibility.html): Googleが2026年5月に不正なブランド言及をスパムと明言した背景、No.1表示の景品表示法上のリスク、AI検索が比較記事の問題をフィルタリングできない現状を整理。
 - [LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方](https://tsubasa-memo.github.io/llmo-guide.html): LLMOの定義、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本
 - [Google Search Consoleの使い方｜AIを使えば初心者にも簡単](https://tsubasa-memo.github.io/search-console-guide.html): インデックス登録、検索パフォーマンス確認、構造化データ検証など初心者がやるべき機能に絞った解説
 - [構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順](https://tsubasa-memo.github.io/json-ld-guide.html): FAQPage・Article・BreadcrumbListのJSON-LDコード例と実装後の確認方法
@@ -521,7 +521,7 @@
   - Q: 関連記事のリンクはどこに置くのが効果的ですか？
   - Q: パンくずリストは内部リンクとして有効ですか？
   - Q: 内部リンクは何本くらい貼るのが適切ですか？
-- [nofollowとdofollowの違いと使い分け｜外部リンクrel属性の正しい設定](https://tsubasa-memo.github.io/nofollow-dofollow-guide.html): 外部リンクのnofollow・dofollow・sponsored・ugcの違いと使い分け。比較記事・アフィリエイトリンクの管理方法を記録した備忘録
+- [nofollowとdofollowの違い｜外部リンクrel属性の正しい設定](https://tsubasa-memo.github.io/nofollow-dofollow-guide.html): 外部リンクのnofollow・dofollow・sponsored・ugcの違いと使い分け。比較記事・アフィリエイトリンクの管理方法を記録した備忘録
   - Q: nofollowとdofollowの違いは何ですか？
   - Q: sponsoredとugcはnofollowと何が違いますか？
   - Q: 比較記事の外部リンクにはnofollowを付けるべきですか？
