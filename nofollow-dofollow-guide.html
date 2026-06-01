@@ -195,7 +195,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <table class="spec-table">
 <tr><th>属性</th><th>意味</th><th>使う場面</th></tr>
 <tr><td>なし（dofollow）</td><td>リンク先にページ評価を渡す</td><td>信頼できる情報源へのリンク</td></tr>
-<tr><td><code>rel="nofollow"</code></td><td>評価を渡さない（ヒント）</td><td>信頼性を保証しないリンク全般</td></tr>
+<tr><td><code>rel="noopener nofollow"</code></td><td>評価を渡さない（ヒント）</td><td>信頼性を保証しないリンク全般</td></tr>
 <tr><td><code>rel="sponsored"</code></td><td>広告・有料リンク</td><td>アフィリエイト、広告</td></tr>
 <tr><td><code>rel="ugc"</code></td><td>ユーザー生成コンテンツ</td><td>コメント欄、掲示板</td></tr>
 </table>
@@ -206,14 +206,14 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>全サービスに同じルールを適用するのが重要だった。特定のサービスだけdofollowにすると、SEO上の優遇になる。比較記事で公平を保つために、紹介先への外部リンクはすべて<code>rel="noopener nofollow"</code>で統一した。</p>
 <p>見た目は何も変わらない。nofollowはHTMLソースコードの中にしか書かれないので、普通に記事を読んでいる人には区別がつかない。ソースコードを確認すればわかるが、「比較記事なので全サービスにnofollowを付けている」という方針は運営上まったく自然なことである。</p>
 <h2 id="sec3">アフィリエイトリンクにはnofollow sponsoredを付ける</h2>
-<p>Amazonアソシエイトのリンクには<code>rel="nofollow sponsored"</code>を使っている。Googleのガイドラインでは、有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めている。両方を併記する書き方が最も安全である。</p>
+<p>Amazonアソシエイトのリンクには<code>rel="noopener nofollow sponsored"</code>を使っている。Googleのガイドラインでは、有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めている。両方を併記する書き方が最も安全である。</p>
 <p>HTMLの記述例はこうなる。</p>
 <div class="point-box">
 <p><code>&lt;a href="https://amzn.to/xxxxx" target="_blank" rel="noopener nofollow sponsored"&gt;SDカード&lt;/a&gt;</code></p>
 </div>
 <p>nofollowだけでも問題はないが、sponsoredを併記することでGoogleに「これは広告リンクである」と正確に伝えられる。Googleの公式ブログでも、nofollowからsponsoredへの切り替えは推奨するが必須ではないと説明されている。</p>
 <h2 id="sec4">公式ドキュメントや公的機関へのリンクの扱い</h2>
-<p>外部リンクを全部nofollowにするのは得策ではない。政府機関のサイト、Google公式ドキュメント、学術論文など、信頼性の高い情報源へのリンクはdofollowのまま残すか、rel="nofollow"は付けつつもGoogleがヒントとして適切に処理してくれることを期待する。</p>
+<p>外部リンクを全部nofollowにするのは得策ではない。政府機関のサイト、Google公式ドキュメント、学術論文など、信頼性の高い情報源へのリンクはdofollowのまま残すか、rel="noopener nofollow"は付けつつもGoogleがヒントとして適切に処理してくれることを期待する。</p>
 <p>このブログでは以下のルールで運用している。</p>
 <table class="spec-table">
 <tr><th>リンク先</th><th>rel属性</th></tr>
@@ -228,10 +228,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、<a class="glossary-inline" href="/glossary/canonical.html">canonical</a> URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
 <p>加えて、スプレッドシートで全外部リンクの一覧を管理するようにした。記事名・リンク先ドメイン・アンカーテキスト・nofollowの有無を1行ずつ記録する形式で、リンク管理の漏れを防いでいる。</p>
 <h2 id="sec6">よくある質問</h2>
-<div class="faq-item"><p class="faq-q">Q. nofollowとdofollowの違いは何ですか？</p><p class="faq-a">dofollowはリンク先にページ評価を渡す通常のリンクです。nofollowはrel="nofollow"を付けることで「評価を渡さないでほしい」とGoogleに伝えるヒントです。2019年以降、nofollowは命令ではなくヒントとして扱われています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. nofollowとdofollowの違いは何ですか？</p><p class="faq-a">dofollowはリンク先にページ評価を渡す通常のリンクです。nofollowはrel="noopener nofollow"を付けることで「評価を渡さないでほしい」とGoogleに伝えるヒントです。2019年以降、nofollowは命令ではなくヒントとして扱われています。</p></div>
 <div class="faq-item"><p class="faq-q">Q. sponsoredとugcはnofollowと何が違いますか？</p><p class="faq-a">sponsoredは広告・有料リンク用、ugcはコメント欄などユーザー生成コンテンツ用です。機能はnofollowと同じですが、リンクの種類をGoogleにより正確に伝えられます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 比較記事の外部リンクにnofollowを付けるべきですか？</p><p class="faq-a">付けるのが無難です。比較記事の外部リンクは推薦ではなく情報提供なので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用するのが公平です。</p></div>
-<div class="faq-item"><p class="faq-q">Q. アフィリエイトリンクのrel属性は何を使いますか？</p><p class="faq-a">rel="nofollow sponsored"を付けるのが推奨です。Googleのガイドラインでは有料リンクにsponsoredまたはnofollowの付与を求めており、両方を併記するのが最も安全な方法です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. アフィリエイトリンクのrel属性は何を使いますか？</p><p class="faq-a">rel="noopener nofollow sponsored"を付けるのが推奨です。Googleのガイドラインでは有料リンクにsponsoredまたはnofollowの付与を求めており、両方を併記するのが最も安全な方法です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 外部リンクを全部nofollowにすると問題がありますか？</p><p class="faq-a">推奨されません。全リンクnofollowだとGoogleに「リンク管理が適切でない」と判断される可能性があります。ただし比較記事中心のブログでは大半がnofollowになるのは自然で、信頼できる公的情報源へのリンクはdofollowのまま残すのが望ましいです。</p></div>
 
 <h2 class="related-title" id="sec7">関連する記事</h2>
