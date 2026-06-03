@@ -571,6 +571,7 @@
   - Q: 構造化データ（JSON-LD）とは何ですか？
 - [もう悪徳SEO会社に騙されない｜初心者も知っておくべきSEOの基礎知識](https://tsubasa-memo.github.io/seo-start-guide.html): 悪徳SEO会社に騙されないための基礎知識。Search Console登録・titleタグ改善・ロングテールキーワードでの記事制作の3施策、リース契約・順位保証・成果報酬型SEOの罠、MEOとの優先順位の判断基準をまとめた記事
 - [SEOを外注するならWeb制作会社かSEO専門会社か？判断軸を整理した](https://tsubasa-memo.github.io/seo-outsource-web-vs-seo.html): SEO外注先をWeb制作会社とSEO専門会社のどちらにするか、判断軸を整理した記事。CMS制約で施策が実行できない落とし穴、新規構築時にSEOを設計段階から織り込む重要性、LLMO対応力の見極め方を解説
+- [サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断](https://tsubasa-memo.github.io/gsc-ai-report.html): Google Search Consoleに新設された生成AIパフォーマンスレポートの解説。AI Overviews・AI Modeでのインプレッション確認方法、クリックデータがない制約、ECサイトのオプトアウト判断基準を整理。
 
 
 ## 用語集
