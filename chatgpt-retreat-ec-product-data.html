@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略｜ツバサのメモ帳</title>
+<meta name="description" content="ChatGPTの買い物機能は2026年3月に事実上の後退に入った。一方GoogleはAI ModeとShopping Graphでショッピング戦略を加速中。この対比からEC担当者が今考えるべきEC戦略と商品データ整備の優先順位を整理した。">
+<meta name="keywords" content="ChatGPT ショッピング 撤退,Google AI Mode ショッピング,EC 商品データ 整備,Shopping Graph,AI検索 EC対策,会話属性 Merchant Center,エージェント型コマース">
+<meta property="og:title" content="AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略">
+<meta property="og:description" content="ChatGPTの買い物機能は2026年3月に事実上の後退に入った。一方GoogleはAI ModeとShopping Graphでショッピング戦略を加速中。この対比からEC担当者が今考えるべきEC戦略と商品データ整備の優先順位を整理した。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/chatgpt-retreat-ec-product-data.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/chatgpt-retreat-ec-product-data.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ChatGPTのショッピング機能は完全になくなったのですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "会話内で決済まで完結するInstant Checkout機能は2026年3月に開発優先度が大幅に引き下げられ、事実上の縮小局面に入りました。ただし、商品の検索・比較・推薦を行うショッピング検索機能は引き続き提供されています。ユーザーは予算や好みを自然言語で伝えて商品を比較し、最終的な購入はショップのサイトに移動して行う形です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "GoogleのAI Modeは日本で使えますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "AI Modeは2025年9月に日本語対応が発表され、段階的に展開されています。Virtual Try-On（バーチャル試着）は2025年10月にGoogle Japan Blogで日本での提供開始が公式発表されており、Search Labs限定の実験機能ではなく、Googleにログイン済みのユーザーがPC・モバイルの両方で利用できます。対応カテゴリは靴・トップス・ボトムス・ドレスです。AIが自動で購入を代行するAgentic Checkoutは米国先行で、日本での提供時期は2026年6月時点で未発表です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT経由のアクセスはGA4で正しく計測できますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "現状では正確な計測が難しい状況です。ChatGPTからのトラフィックはGA4上で「Direct（直接流入）」や、一度情報を得てからGoogleで再検索される「オーガニック指名検索」に誤分類されることが多いと報告されています。GA4のリファラル設定でchatgpt.comを参照元として識別する方法はありますが、すべてのトラフィックを捕捉できるわけではありません。なお、Google Search Consoleに生成AIパフォーマンスレポートが新設されることが2026年6月に発表されました。AI OverviewsやAI Modeでの表示回数を個別に確認できるようになる予定ですが、2026年6月時点では英国の一部サイトから段階的に展開中で、日本のサイトにはまだ提供されていません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "モール出店のみの場合でもAI検索に備える方法はありますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google Merchant Centerを直接操作する機会は限られますが、モール内でできることはあります。商品タイトルに具体的な用途や素材を含める、画像を高解像度で複数アングル用意する、説明文にスペックだけでなく使用シーンを記述するといった改善は、モールの管理画面から対応できます。モール側がGoogleにデータを送る際の品質に直結するため、無意味ではありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "新しいAIショッピングサービスが出るたびに個別対応すべきですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "個別に対応していくのは中小ECには現実的ではありません。ChatGPT、Google AI Mode、Perplexityなど、どのAIも最終的には商品のタイトル・画像・価格・在庫・構造化データを読み取って判断しています。個別のプラットフォームに最適化するよりも、商品データの土台（フィードの正確さ・画像品質・構造化データ）を整えることが、結果的にどのAIからも拾われる最短ルートです。" }
+    },
+    {
+      "@type": "Question",
+      "name": "Merchant Centerの会話属性は今すぐ登録しないといけませんか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "2026年6月時点では任意項目であり、登録しなくても既存の掲載に悪影響はありません。ただし、AI検索が自然言語の質問に応答する際に商品の文脈をより正確に伝えるためのデータなので、注力商品から試すスモールスタートが現実的です。6つの属性のうち、question_and_answerは既存のFAQデータがあればすぐ着手できます。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略",
+  "description": "ChatGPTの買い物機能は2026年3月に事実上の後退に入った。一方GoogleはAI ModeとShopping Graphでショッピング戦略を加速中。この対比からEC担当者が今考えるべきEC戦略と商品データ整備の優先順位を整理した。",
+  "url": "https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html",
+  "image": "https://tsubasa-memo.github.io/og/chatgpt-retreat-ec-product-data.webp",
+  "author": { "@type": "Person", "name": "ツバサ", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-06-06T00:00:00+09:00",
+  "dateModified": "2026-06-06T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "ChatGPTの後退で考えた今後のEC戦略" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:title" content="AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略">
+</head>
+<body>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="/">ホーム</a> ＞ ChatGPTの後退で考えた今後のEC戦略
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/chatgpt-retreat-ec-product-data.webp" alt="AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略" width="640" height="360" loading="eager">
+</div>
+
+<h1 class="article-title">AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略</h1>
+<div class="article-meta-line">
+<span>公開: 2026年6月6日</span>
+<span>更新: 2026年6月6日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>2025年の秋、ChatGPTに買い物機能が搭載されたニュースを見て、僕は社内の定例会議で「米国ではもうChatGPTで買い物ができるらしいです。日本にも来たらうちも対応した方がいいのでは」と言いました。社長の返事は短かった。「日本に来るかもわからないものに金も工数もかけるな」。</p>
+
+<p>それから半年、日本展開の前にChatGPTの買い物機能は開発優先度の大幅な引き下げが報じられ、事実上の縮小局面に入りました。社長の判断は結果として正しかった。</p>
+
+<p>この記事では、ChatGPTのショッピング機能がなぜうまくいかなかったのか、その裏でGoogleがどう動いているのかを対比して整理しています。結論を先に言うと、新しい販売チャネルに個別対応するより、どのAIから検索されても自社の商品が拾われる「商品データの土台」を先に整える方が、中小のEC担当者にとっては効率的です。</p>
+
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">ChatGPTのInstant Checkoutが後退に至った経緯</a></li>
+<li><a href="#sec2">GoogleのAI Mode・Shopping Graphが加速する背景</a></li>
+<li><a href="#sec3">EC商品データがAI検索に拾われるための条件</a></li>
+<li><a href="#sec4">中小ECが慌てず備えるための優先順位</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">まとめ</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">ChatGPTのInstant Checkoutが後退に至った経緯</h2>
+
+<p>2025年9月、OpenAIはChatGPTの会話画面内で商品を見つけて、そのまま決済まで完了する「Instant Checkout」を米国のChatGPTユーザー向けに開始しました。これはOpenAIが公式に定義する「Agentic Commerce Protocol（ACP）」という規格に基づく正式な機能名称です。最初の統合パートナーであるEtsyの<a href="https://www.etsy.com/news/meeting-buyers-where-they-are-etsy-partners-with-openai-to-enable-ai-powered-shopping" rel="noopener nofollow">公式プレスリリース</a>（2025年9月29日付）によると、オフサイト広告に参加している米国セラーの商品がチャット内で直接決済可能になりました。一方、Shopify加盟店もChatGPT上で商品を提示できますが、こちらは「Agentic Storefronts」という別の仕組みで、購入時には加盟店自身の決済ページにリダイレクトされる設計です（<a href="https://developers.openai.com/commerce/guides/key-concepts" rel="noopener nofollow">OpenAI Developers</a>）。日本を含む米国外への展開は「今後予定」とされていましたが、日本で提供されることはありませんでした。</p>
+
+<p>ところが2026年3月、OpenAIはこの決済機能の開発優先度を大幅に引き下げました。Forrester Researchの<a href="https://www.forrester.com/blogs/what-it-means-that-the-leader-in-agentic-commerce-just-pulled-back/" rel="noopener">分析記事</a>によると、OpenAIはマーチャント向けの声明で「一時的な縮小」と表現しています。ただし発表から3か月が経った2026年6月時点で再開の具体的なロードマップは公表されていません。公式には「一時的」ですが、再開の見通しが立っていない以上、実態としては撤退と見るのが妥当でしょう。</p>
+
+<p>この方針転換の背景には3つの要因があります。</p>
+
+<p>第一に、ユーザーがチャットの中で買い物を完結させたがらなかったこと。ChatGPT自体は多くの人が日常的に使っています。調べ物をしたり、文章を書かせたり、相談したり。ただし、ハルシネーション（AIが事実と異なる情報を生成すること）を経験したユーザーも少なくありません。間違いを起こす可能性のあるAIに、決済まで任せることには心理的なハードルがある。「調べてもらうのはいいが、買うのは自分の目で確認してからにしたい」という判断は自然です。加えて、購入後の体験にも課題がありました。たとえばEtsyでの購入はゲストチェックアウト扱いになり、レビューを書いたりサポートを受けたりするにはEtsy側で注文を手動で紐づける必要がありました。返品や返金の問い合わせもマーチャントに直接連絡する仕組みで、OpenAIは取引の主体ではないと公式に明記しています。ChatGPTで商品を調べて条件を絞り込み、購入自体は使い慣れたECサイトで行うユーザーが大半だったと報じられています。</p>
+
+<p>第二に、ECの実務ロジックとの不適合です。WalmartのAIアクセラレーション担当EVPであるDaniel Danker氏がWired誌のインタビューで語り、<a href="https://www.modernretail.co/technology/what-went-wrong-with-chatgpts-instant-checkout/" rel="noopener">Modern Retail</a>など複数メディアが報じたところによると、同社が約20万点の商品を対象にチャット内決済を実測テストした結果、コンバージョン率は自社サイトに遷移させた場合と比べて3分の1にとどまりました。同氏はこの原因として、1商品ごとに自動決済が進む仕組みでは、ユーザーがすでにWalmartのカートに入れている他の商品との同梱ができず、「5つの別々の箱でバラバラに届くのでは」という懸念が生じたと説明しています。ポイントプログラムの適用や店舗受け取りの指定といった、EC運営に欠かせない機能もチャット内では動きませんでした。</p>
+
+<p>第三に、小売業者側の抵抗です。ECサイトで直接購入してもらえれば、メールアドレスの取得、購入履歴の蓄積、リピーター向けのクーポン配信といったCRM施策が回せます。ところがChatGPTのチャット画面で購入が完結すると、小売業者はその顧客との接点を持てなくなります。リアルタイムの在庫同期やロイヤルティプログラムの統合、店舗受け取りの指定といった自社ECの強みもAIチャネル内では再現できません。売上は立つが顧客は育たない。その構造を嫌ったのは合理的な判断です。</p>
+
+<p>ここで誤解しやすい点を1つ潰しておきます。ChatGPTの「ショッピング機能」がすべて消えたわけではありません。開発優先度が下がったのはチャット内決済のInstant Checkoutであり、商品の検索・比較・推薦を行うショッピング検索機能は引き続き使えます（<a href="https://help.openai.com/en/articles/11128490-shopping-with-chatgpt-search" rel="noopener nofollow">OpenAI Help Center</a>）。ユーザーが条件を伝えると複数サイトの商品を比較表にまとめてくれて、購入したい商品のリンクからショップのサイトに移動する形です。</p>
+
+<p>むしろ「リサーチ→送客」の導線としてはかなり優秀だという報告があります。ECDBとSimilarwebのデータを分析したPanxoの記事（2026年）では、ChatGPT経由のリファラルトラフィックの平均CVRを11.4%（オーガニック検索は5.3%）と推計しています（<a href="https://www.panxo.com/blog/agentic-commerce-chatgpt-conversion-rates-outperform-every-channel" rel="noopener">Panxo</a>）。一次データそのものではなく分析記事の推計値であるため数字の精度には留保が必要ですが、ユーザーがAIとの対話で条件を絞り込んでからECサイトに到着するため、購買意思が固まった状態での流入になるという構造は理にかなっています。</p>
+
+<h2 id="sec2">GoogleのAI Mode・Shopping Graphが加速する背景</h2>
+
+<p>ChatGPTが「買い物体験そのものの置き換え」を試みて壁にぶつかったのに対し、Googleは既存の検索行動の延長線上にAIを組み込む設計を取りました。そしてこの設計思想の違いが、現時点では明暗を分けています。</p>
+
+<p>Googleのショッピング戦略の中核にあるのが「Shopping Graph」と呼ばれるデータベースです。2026年1月の全米小売業協会（NRF）の基調講演で、GoogleのCEO Sundar Pichai氏がShopping Graphに登録されている商品リスティング数が500億件を突破したと発表しました。毎時20億件以上のデータ（価格、在庫、レビュー、画像など）がリアルタイムで更新されています（<a href="https://blog.google/products-and-platforms/products/shopping/google-shopping-ai-mode-virtual-try-on-update/" rel="noopener">Google公式ブログ</a>）。</p>
+
+<p>このShopping Graphの上にGeminiモデルを載せた「AI Mode」が、2025年から段階的に検索インターフェースに導入されました。日本語は2025年9月に対応が発表され、段階的に展開されています。AI Modeでは「5月のポートランド旅行に合うカバン」のような曖昧な質問に対して、AIが裏側で「現地の気候」「耐水性」「移動のしやすさ」といった条件を分解し、並行してクエリを走らせます。ユーザーが自分でキーワードを組み合わせて検索結果を何ページもめくる必要がなくなる。</p>
+
+<p>バーチャル試着機能（Virtual Try-On）も日本で正式に提供されています。2025年10月に<a href="https://blog.google/intl/ja-jp/products/explore-get-answers/try-on-you/" rel="noopener">Google Japan Blog</a>で日本での提供開始が発表され、Googleにログイン済みのユーザーがPC・モバイルの両方から利用できます。自分の全身写真をアップロードすると、AIが衣類の画像を体型に合わせて合成し、試着イメージを生成してくれる機能で、靴・トップス・ボトムス・ドレスが対応カテゴリです。Search Labs限定の実験機能ではなく、標準展開されている点は押さえておく必要があります。ただし2026年6月時点では機能の認知度はまだ低く、実際に使っているユーザーは限定的です。技術的には先進的ですが、Instant Checkoutの例を見た後だと「正式提供されているからといって普及するとは限らない」という目で見てしまう。対応カテゴリの商品を扱っているなら画像品質を確認しておく程度で、VTOのために大がかりな撮り直しに投資する段階ではないと僕は思います。さらに、AIがユーザーの代わりに価格を監視して条件合致時に自動購入する「Agentic Checkout」も発表されていますが、こちらは米国先行で日本展開のタイムラインは2026年6月時点で未発表です。</p>
+
+<p>Google I/O 2026やGoogle Marketing Live 2026で発表されたEC関連の詳細は別の記事でまとめています。ここではChatGPTとの対比で押さえるべきポイントに絞ります。</p>
+<a class="cite-card" href="google-io-2026-ec.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる</span>
+<span class="cite-url">tsubasa-memo.github.io/google-io-2026-ec.html</span>
+</span>
+</a>
+
+<p>ChatGPTがうまくいかなかった「ユーザーの抵抗」「小売側の反発」を、Googleはどう回避しているのか。</p>
+
+<p>ユーザー側について言えば、Googleでの買い物は新しい行動ではありません。検索窓に商品名を入れて、結果を見て、クリックして、サイトで買う。AI Modeはこの流れの「結果を見る」部分をより賢くしただけで、ユーザーの行動様式自体は変わっていません。ChatGPTの場合は「チャットで買う」という新しい行動をユーザーに求めましたが、Googleは今まで通りの行動の中にAIを埋め込んでいます。新しいことを覚えなくていいので、抵抗感が生まれにくい。</p>
+
+<p>小売業者側について言えば、Google経由の購入はこれまでと同じく小売業者の自社サイトで決済が完了します。顧客のメールアドレスも購入履歴も小売側に残ります。Agentic Checkoutのような自動購入機能では決済がGoogle Pay経由で行われますが、「取引の主体は小売業者のまま」という建付けが用意されており、ChatGPTのInstant Checkoutで問題になった「顧客接点の喪失」を構造的に回避しています。</p>
+
+<p>2026年5月のGoogle Marketing Liveでは、Merchant Centerに「会話属性」と呼ばれる6つの新しいデータ属性が追加されました。商品スペックだけでは表現できない「この商品はどんな場面で役立つか」「他の商品との互換性」といった文脈情報をAIに伝えるためのメタデータです。会話属性の詳細と登録手順は別の記事で調べた内容をまとめています。</p>
+<a class="cite-card" href="gmc-conversational-attributes.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ</span>
+<span class="cite-url">tsubasa-memo.github.io/gmc-conversational-attributes.html</span>
+</span>
+</a>
+
+<h2 id="sec3">EC商品データがAI検索に拾われるための条件</h2>
+
+<p>ChatGPTもGoogleも、最終的に商品を表示するかどうかを判断する材料は同じです。商品タイトル、画像、価格、在庫、レビュー、構造化データ。AIプラットフォームごとにアルゴリズムは違いますが、読み取る対象は共通しています。</p>
+
+<p>ここから言えるのは、「どのAI向けに最適化するか」よりも「どのAIからも正しく読み取れる状態を作る」方が、中小のEC担当者には合理的だということです。</p>
+
+<p>整えるべき商品データは、大きく3つの層に分かれます。</p>
+
+<p>1つ目はMerchant Centerの商品フィードです。商品タイトルが曖昧でないか、画像が高解像度で背景から分離されているか、価格と在庫がサイトの実態と一致しているか。これはAI検索に限らず、Googleショッピング広告や無料リスティングでもずっと求められてきた基本ですが、AI時代にはフィードの正確さが「AIの候補に残るかどうか」を左右するデータになります。</p>
+
+<p>2つ目は構造化データ（<a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a>）です。Googleは「AI機能のために特別な構造化データは不要」と繰り返し述べていますが、商品ページにProduct・Offer・MerchantReturnPolicy（返品ポリシー）・ShippingDetails（配送情報）を正しくマークアップしておくことで、AIが送料込みの総額や返品可否を比較検討の材料にできるようになります。「構造化データを入れればAI検索に出る」ではなく、「入っていないとAIが判断材料を欠く」という理解が正確です。</p>
+<a class="cite-card" href="json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+
+<p>3つ目は商品画像の品質です。GoogleのVirtual Try-Onでは、公式ガイドラインで「最小512×512ピクセル、理想は1024ピクセル以上」「背景から分離された衣服」「正面向きのモデル画像」が条件として提示されています（<a href="https://support.google.com/merchants/answer/16159685?hl=ja" rel="noopener nofollow">Merchant Center公式ヘルプ</a>）。AI Modeで表示される画像カルーセルでも、色被りがなく均一なライティングの「カタログ品質」の画像は露出頻度が上がる傾向が報告されています。ECの商品画像はこれまで「人間の目に訴えるもの」でしたが、AIの画像解析にとっても読みやすい画像が選ばれやすいという構造に変わりつつあります。</p>
+
+<p>ここで変わったのは、画像品質が売上に影響する「段階」です。従来の検索結果では、画像が多少粗くても検索結果には表示されました。表示された後に、ユーザーがクリックして商品ページを開き、画像を見て「買うか・買わないか」を判断する。つまり画像品質はコンバージョン率に影響していたが、検索露出そのものには直結していなかった。AI Modeでは、AIが商品を候補として選定する段階で画像を含むフィードの品質を総合的に評価します。画像品質だけで表示されなくなるわけではなく、タイトル・価格・在庫・レビューなど他の要素も複合的に判断されますが、画像が低品質であることがマイナス要因になりうる段階が「表示後」から「表示前」に移ったという変化は押さえておくべきです。</p>
+
+<p>これは、ささげ業務（撮影・採寸・原稿）の品質が検索露出に直結する時代に入ったということです。「きれいに撮ればいい」ではなく、「AIが正確に特徴を抽出できる画像を撮る」という基準が加わっている。白背景で被写体が分離されている、テキストが画像に重なっていない、アングルが複数ある。EC画像のルールとして当たり前だったことが、AI時代にはフィルタリングの判断材料にもなっています。</p>
+
+<h2 id="sec4">中小ECが慌てず備えるための優先順位</h2>
+
+<p>冒頭に書いた通り、僕がChatGPTのショッピング対応を社内で提案したとき、社長は「日本に来るかもわからないものに金をかけるな」と止めました。仮にあの時点で日本展開を見越してChatGPT向けの商品フィード整備やACP対応の調査に工数をかけていたら、日本に来る前にサービスが縮小されて全部無駄になっていた計算です。</p>
+
+<p>中小企業は時流に乗り遅れないように情報には触れるべきですが、ファーストペンギンになる必要はありません。ChatGPTの事例がまさにそれを証明しています。</p>
+
+<p>ChatGPTの次に注目されているのが<a href="https://www.perplexity.ai/" rel="noopener nofollow">Perplexity</a>のショッピング機能です。取引手数料なしのディスカバリー特化型で、「この商品は誰向けか」「他の商品と比較して何が優れているか」といった会話型コンテンツを高く評価するアルゴリズムが特徴です。月間アクティブユーザー4,500万人規模（2026年第1四半期時点）と急成長していますが、では今すぐPerplexity最適化に工数をかけるべきかと聞かれたら、答えは「まだ早い」です。</p>
+
+<p>新しいAIプラットフォームが出るたびに個別対応していく余裕は、中小には普通ありません。でも、商品フィードの正確さ、画像品質、構造化データといった土台を整えておけば、GoogleでもChatGPTでもPerplexityでも、どこから検索されても拾われやすくなります。プラットフォームごとの最適化を追いかけるのではなく、共通基盤を先に固める。</p>
+
+<p>今やるべきことの優先順位を、僕なりに整理するとこうなります。</p>
+
+<p>最優先は、Merchant Centerに登録している商品データのタイトル・画像・価格・在庫が、自社サイトの実際の状態と一致しているかの確認です。ここがずれていると、AI検索以前にGoogleショッピングの無料リスティングからも外れます。</p>
+
+<p>次に、商品画像の品質です。500×500px以上は最低ライン。白背景、テキスト重ね禁止、複数アングル。ECモールの画像ルールとも共通する基本ですが、AI検索時代にはフィルタリングの対象になる分、基準を下回るリスクが高くなります。</p>
+<a class="cite-card" href="ec-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Amazon・楽天・メルカリ 商品画像ルール比較｜早見表【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-image-rules.html</span>
+</span>
+</a>
+
+<p>その次が、商品ページの構造化データ（JSON-LD）の整備です。Product・Offer・返品ポリシー・配送情報の4つをまず押さえる。</p>
+
+<p>会話属性の登録は、上の3つが整った後で十分です。まずは注力商品のFAQデータをquestion_and_answer属性として入れるところから始めるのが現実的でしょう。</p>
+
+<p>最新情報は追いかけます。ただし「やるかどうか」の判断は、実績データが出てからで遅くありません。</p>
+
+<h2 id="sec5">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. ChatGPTのショッピング機能は完全になくなったのですか？</strong></p>
+<p class="fa">
+A.<br/>会話内で決済まで完結するInstant Checkout機能は2026年3月に開発優先度が大幅に引き下げられ、事実上の縮小局面に入りました。ただし、商品の検索・比較・推薦を行うショッピング検索機能は引き続き提供されています。ユーザーは予算や好みを自然言語で伝えて商品を比較し、最終的な購入はショップのサイトに移動して行う形です。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. GoogleのAI Modeは日本で使えますか？</strong></p>
+<p class="fa">
+A.<br/>AI Modeは2025年9月に日本語対応が発表され、段階的に展開されています。Virtual Try-On（バーチャル試着）は2025年10月にGoogle Japan Blogで日本での提供開始が公式発表されており、Search Labs限定の実験機能ではなく、Googleにログイン済みのユーザーがPC・モバイルの両方で利用できます。対応カテゴリは靴・トップス・ボトムス・ドレスです。AIが自動で購入を代行するAgentic Checkoutは米国先行で、日本での提供時期は2026年6月時点で未発表です。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. ChatGPT経由のアクセスはGA4で正しく計測できますか？</strong></p>
+<p class="fa">
+A.<br/>現状では正確な計測が難しい状況です。ChatGPTからのトラフィックはGA4上で「Direct（直接流入）」や、一度情報を得てからGoogleで再検索される「オーガニック指名検索」に誤分類されることが多いと報告されています。GA4のリファラル設定でchatgpt.comを参照元として識別する方法はありますが、すべてのトラフィックを捕捉できるわけではありません。なお、Google Search Consoleに生成AIパフォーマンスレポートが新設されることが2026年6月に発表されました。AI OverviewsやAI Modeでの表示回数を個別に確認できるようになる予定ですが、2026年6月時点では英国の一部サイトから段階的に展開中で、日本のサイトにはまだ提供されていません。
+</p>
+<a class="cite-card" href="gsc-ai-report.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断</span>
+<span class="cite-url">tsubasa-memo.github.io/gsc-ai-report.html</span>
+</span>
+</a>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. モール出店のみの場合でもAI検索に備える方法はありますか？</strong></p>
+<p class="fa">
+A.<br/>Google Merchant Centerを直接操作する機会は限られますが、モール内でできることはあります。商品タイトルに具体的な用途や素材を含める、画像を高解像度で複数アングル用意する、説明文にスペックだけでなく使用シーンを記述するといった改善は、モールの管理画面から対応できます。モール側がGoogleにデータを送る際の品質に直結するため、無意味ではありません。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 新しいAIショッピングサービスが出るたびに個別対応すべきですか？</strong></p>
+<p class="fa">
+A.<br/>個別に対応していくのは中小ECには現実的ではありません。ChatGPT、Google AI Mode、Perplexityなど、どのAIも最終的には商品のタイトル・画像・価格・在庫・構造化データを読み取って判断しています。個別のプラットフォームに最適化するよりも、商品データの土台（フィードの正確さ・画像品質・構造化データ）を整えることが、結果的にどのAIからも拾われる最短ルートです。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Merchant Centerの会話属性は今すぐ登録しないといけませんか？</strong></p>
+<p class="fa">
+A.<br/>2026年6月時点では任意項目であり、登録しなくても既存の掲載に悪影響はありません。ただし、AI検索が自然言語の質問に応答する際に商品の文脈をより正確に伝えるためのデータなので、注力商品から試すスモールスタートが現実的です。6つの属性のうち、question_and_answerは既存のFAQデータがあればすぐ着手できます。
+</p>
+</div>
+
+<h2 id="sec6">まとめ</h2>
+
+<p>ChatGPTは買い物体験そのものをAIで置き換えようとして壁にぶつかりました。Googleは既存の検索行動にAIを載せることで、ユーザーにも小売業者にも受け入れられる形を作っています。この対比から見えてくるのは、「どのAIプラットフォームが勝つか」を予測することよりも、「どこから検索されても商品が正しく表示される状態を作る」ことの方が、EC担当者にとっては先にやるべき仕事だということです。</p>
+
+<p>商品フィードの正確さ、画像品質、構造化データ。地味な作業ですが、ChatGPTの撤退が教えてくれたのは、派手な新機能への対応コストは回収できない場合があるということ。それよりも、プラットフォームが変わっても効き続ける土台を整えておく方が、中小のEC担当者には現実的な備え方です。</p>
+
+<h2 class="related-title" id="sec7">関連する記事</h2>
+<a class="cite-card" href="google-io-2026-ec.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる</span>
+<span class="cite-url">tsubasa-memo.github.io/google-io-2026-ec.html</span>
+</span>
+</a>
+<a class="cite-card" href="gmc-conversational-attributes.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ</span>
+<span class="cite-url">tsubasa-memo.github.io/gmc-conversational-attributes.html</span>
+</span>
+</a>
+<a class="cite-card" href="json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="ec-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Amazon・楽天・メルカリ 商品画像ルール比較｜早見表【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-image-rules.html</span>
+</span>
+</a>
+<a class="cite-card" href="sasage-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/sasage-outsource.html</span>
+</span>
+</a>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="background-white.html">
+<div class="featured-thumb">
+<img alt="背景切り抜き・白抜き写真の作り方" loading="lazy" height="160" src="thumbs/background-white.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較</h2>
+<p class="card-desc">AI切り抜きツール・スマホアプリ・Photoshop・プロ外注の4パターンで比較。Remove.bg・Canva・PicWishなど無料ツールの精度と料金差を整理した。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制する？No.1表記の法的リスクとAI検索の限界" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">根拠のないNo.1・最安値表記は景品表示法違反。Googleが比較記事をどう扱うか、AI検索が問題を見抜けない理由を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="レタッチ料金相場まとめ" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチ外注15社の料金比較｜目的別おすすめ【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ16選" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社16社の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div>
+<p class="author-name">ツバサ</p>
+<p class="author-bio">EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">ChatGPTのInstant Checkoutが後退に至った経緯</a></li>
+<li><a href="#sec2">GoogleのAI Mode・Shopping Graphが加速する背景</a></li>
+<li><a href="#sec3">EC商品データがAI検索に拾われるための条件</a></li>
+<li><a href="#sec4">中小ECが慌てず備えるための優先順位</a></li>
+<li><a href="#sec5">よくある質問</a></li>
+<li><a href="#sec6">まとめ</a></li>
+<li><a href="#sec7">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

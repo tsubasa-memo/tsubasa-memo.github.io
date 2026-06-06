@@ -407,6 +407,7 @@
 - [ナフサ不足でEC運営コストはどう変わる？梱包・物流・仕入れへの影響](https://tsubasa-memo.github.io/naphtha-ec-impact.html): ナフサ不足がEC事業の梱包資材・物流コスト・仕入れ原価に与える影響を解説。サプライチェーン全体のコスト構造変化とEC担当者が取るべき対策。
 - [Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ](https://tsubasa-memo.github.io/gmc-conversational-attributes.html): Google Merchant Centerに2026年5月追加された6つの会話属性（質問と回答・関連商品・人気度の順位など）を解説。自社サイトとモールの対象範囲、補助データソースでの登録、商品マスタからAIで変換生成する手順、生成AIの開示が必要な範囲を整理。
 - [Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる](https://tsubasa-memo.github.io/google-io-2026-ec.html): Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマース（AP2）で買い物体験がどう変わるか。Merchant Centerフィードの見直しポイント、会話属性との関係、Product schemaの過信に注意すべき理由も解説。
+- [AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略](https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html): ChatGPTのInstant Checkoutが事実上の縮小に至った経緯と、GoogleがAI Mode・Shopping Graph・会話属性で加速するショッピング戦略を対比。中小EC担当者が新しい販売チャネルに飛びつかず、どのAIからも拾われる商品データの土台（フィード・構造化データ・画像品質）を整えるべき理由と優先順位を整理。
 
 ### 副業・キャリア
 
