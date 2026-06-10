@@ -506,6 +506,7 @@
 
 ### SEO・LLMO
 
+- [Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話｜サーチコンソールとBing Webmaster Toolsのデータ比較](https://tsubasa-memo.github.io/bing-vs-google-traffic.html): サーチコンソールとBing Webmaster Toolsの直近3ヶ月データ比較。BingインデックスがCopilot・ChatGPT Search・Perplexityを支えるAI検索エコシステムとIndexNow設定手順を整理。
 - [「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索](https://tsubasa-memo.github.io/comparison-article-credibility.html): Googleが2026年5月に不正なブランド言及をスパムと明言した背景、No.1表示の景品表示法上のリスク、AI検索が比較記事の問題をフィルタリングできない現状を整理。
 - [LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方](https://tsubasa-memo.github.io/llmo-guide.html): LLMOの定義、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本
 - [Google Search Consoleの使い方｜AIを使えば初心者にも簡単](https://tsubasa-memo.github.io/search-console-guide.html): インデックス登録、検索パフォーマンス確認、構造化データ検証など初心者がやるべき機能に絞った解説
