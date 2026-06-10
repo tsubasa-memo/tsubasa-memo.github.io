@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話｜サーチコンソールとBing Webmaster Toolsのデータ比較｜ツバサのメモ帳</title>
+<meta name="description" content="Google検索からのクリックよりBing経由の流入が3倍近く多かった。自分のサイトのデータでサーチコンソールとBing Webmaster Toolsを比較し、AI検索時代にBingのインデックスが持つ意味とEC担当者がやるべきことを整理した。">
+<meta name="keywords" content="Bing Webmaster Tools,サーチコンソール 比較,Bing SEO,AIパフォーマンス,IndexNow,Copilot 引用,AI検索 対策,Bing シェア 日本">
+<meta property="og:title" content="Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話｜サーチコンソールとBing Webmaster Toolsのデータ比較">
+<meta property="og:description" content="Google検索からのクリックよりBing経由の流入が3倍近く多かった。自分のサイトのデータでサーチコンソールとBing Webmaster Toolsを比較し、AI検索時代にBingのインデックスが持つ意味とEC担当者がやるべきことを整理した。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/bing-vs-google-traffic.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/bing-vs-google-traffic.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/bing-vs-google-traffic.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/bing-vs-google-traffic.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bing Webmaster Toolsの登録は無料ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい、完全に無料です。Microsoftアカウントがあれば、サイトのURLを追加して所有権を確認するだけで利用できます。Googleサーチコンソールと同じように、費用は一切かかりません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "IndexNowを設定するとGoogleにも通知されますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "いいえ、GoogleはIndexNowプロトコルに参加していません。IndexNowで通知が届くのはBing、Yandex、Seznam、Naverなどの対応検索エンジンのみです。Google向けのインデックス登録は、従来通りGoogleサーチコンソールのURL検査機能を使ってください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "サーチコンソールのインプレッション数が多いのにクリックが少ないのはなぜですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "サーチコンソールは、検索結果の何ページ目であっても表示されれば1インプレッションとしてカウントします。掲載順位が42位（5ページ目）や92位（10ページ目）のように深い位置にある場合、ユーザーの目には実質的に届いていません。こうした「見えないインプレッション」が積み上がることで、見かけ上のインプレッション数が多くなり、CTRが低く見えます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "CopilotのAI引用数（Citations）を増やすにはどう対策すればいいですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "定義や解説を含む構造化されたコンテンツが引用されやすい傾向があります。僕のサイトでは、用語集（「リサイズとは」「レタッチとは」など）がCitations全体の68%を占めていました。h2の冒頭に結論や定義文を置くこと、FAQを充実させること、JSON-LDで構造化データを実装することが有効と考えられます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "Bing Webmaster ToolsのAIパフォーマンス機能はいつから使えますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "2026年2月10日にパブリックプレビュー（ベータ版）として提供が開始されています。Bing Webmaster Toolsにサイトを登録すると、左メニューに「AIパフォーマンス」が表示され、CopilotなどのAI生成回答における自サイトの引用数やクエリデータを確認できます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "GoogleサーチコンソールにもAI関連のレポートはありますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "2026年6月にサーチコンソールに「Generative AIパフォーマンスレポート」が追加されましたが、確認できるのはインプレッション数のみです。クリック数、CTR、クエリデータ（どの検索語でAI回答に引用されたか）は提供されていません。AI検索での自サイトの引用状況を詳しく把握したい場合は、Bing Webmaster Toolsの方が多くの情報を得られます。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話｜サーチコンソールとBing Webmaster Toolsのデータ比較",
+  "description": "Google検索からのクリックよりBing経由の流入が3倍近く多かった。自分のサイトのデータでサーチコンソールとBing Webmaster Toolsを比較し、AI検索時代にBingのインデックスが持つ意味とEC担当者がやるべきことを整理した。",
+  "url": "https://tsubasa-memo.github.io/bing-vs-google-traffic.html",
+  "image": "https://tsubasa-memo.github.io/og/bing-vs-google-traffic.webp",
+  "author": { "@type": "Person", "name": "ツバサ", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-06-10T00:00:00+09:00",
+  "dateModified": "2026-06-10T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "SEO・LLMO", "item": "https://tsubasa-memo.github.io/archive.html#seo" },
+    { "@type": "ListItem", "position": 3, "name": "Bing経由の流入がGoogleの3倍多かった話" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/bing-vs-google-traffic.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:title" content="Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話｜サーチコンソールとBing Webmaster Toolsのデータ比較">
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="/">ホーム</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; Bing経由の流入がGoogleの3倍多かった話
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/bing-vs-google-traffic.webp" alt="Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">Google検索だけ見ていたら負ける？Bing経由の流入が3倍多かった話｜サーチコンソールとBing Webmaster Toolsのデータ比較</h1>
+<div class="article-meta-line">
+<span>公開: 2026年6月10日</span>
+<span>更新: 2026年6月10日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>Googleサーチコンソールを見ていると「うちのサイトはGoogleからの流入がメインだ」と思い込みがちですが、本当にそうでしょうか。</p>
+
+<p>先日、Bing Webmaster Toolsに自分のサイトを登録して、サーチコンソールと同じ直近3ヶ月のデータを比較しました。結果は予想外でした。Googleからのクリックは35件、Bingからは94件。Bingの方が約3倍多い。インプレッション（検索結果への表示回数）はGoogleが3,460でBingが885なので、表示回数だけ見ればGoogleが圧倒しています。しかし、実際にサイトに来た人の数はBingの方がはるかに多かった。</p>
+
+<p>このブログは100本超の記事がある小規模な個人サイトなので、大手メディアや大規模ECサイトで同じ結果になるかはわかりません。ただ、少なくとも「Googleだけ見ていればいい」という前提は、僕のサイトではすでに崩れていました。この記事では、なぜこういう結果になったのか、そしてAI検索が普及した今、Bingのインデックスがどんな意味を持つのかを整理します。</p>
+
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">Googleからのクリック35件、Bingから94件。自分のサイトで起きていたこと</a></li>
+<li><a href="#sec2">サーチコンソールのインプレッション数がアテにならない理由</a></li>
+<li><a href="#sec3">Bingのインデックスに入ることがCopilot・ChatGPT Search・Perplexityへの露出になる理由</a></li>
+<li><a href="#sec4">日本のデスクトップ検索でBingがGoogleを逆転したStatCounterのデータ</a></li>
+<li><a href="#sec5">Bing Webmaster ToolsのAIパフォーマンスでCopilotのAI引用数を確認する</a></li>
+<li><a href="#sec6">Bing Webmaster Toolsの登録とIndexNowの設定手順</a></li>
+<li><a href="#sec7">まとめ</a></li>
+<li><a href="#sec8">よくある質問</a></li>
+<li><a href="#sec9">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">Googleからのクリック35件、Bingから94件。自分のサイトで起きていたこと</h2>
+
+<p>まず数字を並べる。以下は直近3ヶ月間のサーチコンソールとBing Webmaster Toolsのデータだ。</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>指標</th><th>Google</th><th>Bing</th></tr>
+</thead>
+<tbody>
+<tr><td>インプレッション</td><td>3,460</td><td>885</td></tr>
+<tr><td>クリック</td><td>35</td><td>94</td></tr>
+<tr><td>CTR</td><td>1.0%</td><td>10.6%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>インプレッション数だけ見ると、Googleの方が約4倍多い。しかしクリック数、つまり実際にサイトに訪問した人の数はBingの方が2.7倍多い。CTRに至っては10倍以上の差がある。</p>
+
+<p>「インプレッションが多い＝たくさんの人に見られている」と考えがちだが、そうではない。サーチコンソールのインプレッション数には、ユーザーの目に実際には届いていない表示が大量に含まれている。次のセクションでその仕組みを説明する。</p>
+
+<h2 id="sec2">サーチコンソールのインプレッション数がアテにならない理由</h2>
+
+<p>サーチコンソールは、ページが検索結果に表示されればそれが1インプレッションとしてカウントされる。掲載順位が42位でも、92位でもカウントされる。</p>
+
+<p>掲載順位42位というのは、Googleの検索結果の5ページ目。92位なら10ページ目だ。検索結果の2ページ目以降をわざわざ見る人はほとんどいない。5ページ目や10ページ目まで見る人は、まずいない。</p>
+
+<p>実際、僕のサイトのサーチコンソールデータには以下のようなクエリが並んでいた。</p>
+
+<ul>
+<li>「seoイノベーション 低価格500円 seo対策」→ 掲載順位42位、インプレッション442件、クリック0件</li>
+<li>「seo 外注」→ 掲載順位88位、インプレッション75件、クリック0件</li>
+<li>「スマホで証明写真」→ 掲載順位92位、インプレッション26件、クリック0件</li>
+</ul>
+
+<p>この3つだけでインプレッションが543件。全体3,460件の約16%が、検索結果の5〜10ページ目に表示されただけの「誰にも見られていないインプレッション」だった。</p>
+
+<p>一方、Bingは関連性の薄いクエリにはそもそもページを表示しない傾向がある。そのためインプレッション数は少ないが、表示された場合のクリック率は高い。Bingのインプレッション885件の方が、実態としてユーザーの目に触れた表示回数に近い。</p>
+
+<p>検索エンジンごとの貢献度を比べるなら、インプレッション数ではなくクリック数で判断した方がいい。インプレッション数はGoogleの検索アルゴリズムが「一応候補として列挙した回数」に過ぎない。</p>
+
+<h2 id="sec3">Bingのインデックスに入ることがCopilot・ChatGPT Search・Perplexityへの露出になる理由</h2>
+
+<p>「BingよりGoogleの方がユーザーが多いのに、なぜBingを気にする必要があるのか？」という疑問はもっともだ。Bingの検索エンジン単体のグローバルシェアは約5〜10%程度で、Googleの約89%には遠く及ばない。</p>
+
+<p>しかし、Bingの<a class="glossary-inline" href="/glossary/index-registration.html">インデックス（検索用のデータベース）</a>は、Bing.comだけに使われているわけではない。</p>
+
+<p>世界規模のウェブインデックスを独自に構築・維持できている企業は、実質的にGoogleとMicrosoft（Bing）の2社しかない。このインデックスを一から作るには技術力もインフラ投資も膨大で、他の検索サービスやAIサービスが自前で用意するのは現実的ではない。その結果、Google以外のAI検索サービスの多くが、Bingのインデックスをバックエンドとして利用している。</p>
+
+<p>Microsoft Copilotは、Microsoftが開発した「Prometheusモデル」を通じてBingのインデックスから情報を取得し、回答を生成している。</p>
+
+<a class="cite-card" href="https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/" rel="noopener" target="_blank">
+<span class="cite-ico ext">M</span>
+<span class="cite-body">
+<span class="cite-title">Reinventing search with a new AI-powered Microsoft Bing and Edge（Microsoft公式ブログ、2023年2月）</span>
+<span class="cite-url">blogs.microsoft.com</span>
+</span>
+</a>
+
+<p>ChatGPT Searchも同様に、Bingのインデックスを重要な情報源として使っている。OpenAIのエンジニアリング担当VPであるSrinivas Narayanan氏は、Redditの公式AMAで「私たちは複数のサービス群を使用しており、Bingはその中の重要な一つです」と述べている。Microsoft側でも、BingのPrincipal Product ManagerであるFabrice Canel氏が、OpenAIが新鮮なコンテンツの取得のためにBingのインデックスを活用していることを公開イベントで確認している。さらに、Bingでペナルティを受けたサイトがChatGPT Searchからも同時に消えることを技術者が検証しており、BingとChatGPT Searchの連動は実証されている。</p>
+
+<a class="cite-card" href="https://www.botify.com/blog/modern-search-bing-interview" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">B</span>
+<span class="cite-body">
+<span class="cite-title">The Inside Perspective on Modern Search: An Interview with Fabrice Canel of Bing（Botify、2024年）</span>
+<span class="cite-url">botify.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://www.seroundtable.com/bing-powers-chatgpt-search-38345.html" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Bing Powers ChatGPT Search（Search Engine Roundtable、2024年11月）</span>
+<span class="cite-url">seroundtable.com</span>
+</span>
+</a>
+
+<p>Perplexity AIのCEOであるAravind Srinivas氏も、創業初期にはBingの検索インデックスとOpenAIのモデルの組み合わせに依存してシステムを構築していたことをポッドキャストで語っている。現在は独自インデックスの構築を進めているが、検索エンジンをRAG（検索拡張生成）の土台として利用する仕組み自体は変わっていない。</p>
+
+<p>DuckDuckGoについては、公式ヘルプで「従来のリンクや画像は主にBingから調達している」と明記されている。</p>
+
+<a class="cite-card" href="https://duckduckgo.com/duckduckgo-help-pages/results/sources/" rel="noopener" target="_blank">
+<span class="cite-ico ext">D</span>
+<span class="cite-body">
+<span class="cite-title">Where do DuckDuckGo search results come from?（DuckDuckGo公式ヘルプ）</span>
+<span class="cite-url">duckduckgo.com</span>
+</span>
+</a>
+
+<p>まとめると、Bingにインデックスされている＝以下のサービスすべてに情報が届く可能性がある。</p>
+
+<ul>
+<li>Microsoft Copilot</li>
+<li>ChatGPT Search</li>
+<li>Perplexity</li>
+<li>DuckDuckGo</li>
+</ul>
+
+<p>Bingの検索エンジン単体のシェアは小さくても、そのインデックスが支えているAI検索エコシステム全体を考えると、Bingに正しくインデックスされることの価値は従来よりはるかに大きい。</p>
+
+<h2 id="sec4">日本のデスクトップ検索でBingがGoogleを逆転したStatCounterのデータ</h2>
+
+<p>グローバルのデスクトップ検索シェアでBingは約10%前後だが、日本は例外的に高い数値を示している。</p>
+
+<p>StatCounterの2026年5月のデータによると、日本のデスクトップ検索シェアでBingは48.74%に達し、Googleの45.96%を逆転する現象が観測されている。直前の2026年4月のホスト別データでは、bing.comが52.32%とさらに顕著な差で過半数を獲得していた。全デバイス（モバイル含む）でもBingは33〜36%のシェアを持ち、Googleの55〜58%に迫っている。</p>
+
+<a class="cite-card" href="https://gs.statcounter.com/search-engine-market-share/desktop/japan" rel="noopener" target="_blank">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Desktop Search Engine Market Share Japan（StatCounter Global Stats）</span>
+<span class="cite-url">gs.statcounter.com</span>
+</span>
+</a>
+
+<p>なぜ日本だけこれほどBingのシェアが高いのか。背景として推測されるのは、日本の企業文化とMicrosoft 365の普及率だ。</p>
+
+<p>日本の大企業や官公庁では、Windows PC＋Edgeブラウザ＋Microsoft 365が業務環境の標準になっているケースが多い。Edgeのデフォルト検索エンジンはBingなので、Edgeで検索するだけでBingのトラフィックとしてカウントされる。</p>
+
+<p>さらに重要なのが、生成AIに対する社内ポリシーだ。2025〜2026年の調査によると、個人版ChatGPTなどパブリックな生成AIツールの業務利用を「禁止」または「禁止を検討中」としている日本企業は約72%に上る。禁止されているのはChatGPTだけではなく、個人アカウントで利用するGeminiやClaudeも同様だ。企業が許可しているのは「自社が契約・管理している生成AI環境」に限られる。</p>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000003.000178927.html" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">【2026年生成AIツール利用実態】法人導入率1位は「Microsoft Copilot」（SDEパートナーズ調査、PR TIMES）</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<p>この「会社が認可したツールのみ利用可」というポリシーのもとで、使える生成AIは企業が採用している業務基盤によって決まる。Microsoft 365を導入している企業ではCopilot、Google Workspaceを導入している企業ではGeminiが選択肢になる。日本の大企業や官公庁ではMicrosoft 365の採用率がGoogle Workspaceより高く、全社標準の生成AIツール導入シェアでもMicrosoft Copilotが45.3%で首位を占めている。Microsoft 365 CopilotはISMAPの申請が発表されており、Entra ID（旧Azure AD）による条件付きアクセス制御が可能なため、セキュリティ要件の厳しい組織でも導入しやすい。</p>
+
+<p>この構図が検索トラフィックに直結する。CopilotのバックエンドはBingであり、Copilot経由の検索はすべてBingのトラフィックとしてカウントされる。Microsoft 365が主流の日本企業で、社員がCopilotを日常的に使えば使うほど、Bingのデスクトップ検索シェアが押し上げられる。</p>
+
+<p>注意点として、StatCounterの計測はブラウザのデフォルト検索エンジンに大きく影響される。Bing利用者の約34%は「自分がBingを使っていることを認識していない」という調査もあり、WindowsのタスクバーやEdgeのアドレスバーから無意識に検索しているケースが含まれる。さらに、Edgeのプリレンダリング機能（次ページの事前読み込み）やCopilotのバックグラウンド通信が、実際のユーザー行動を伴わないページビューとしてBingのシェアを過大に計上している可能性もStatCounterの公式FAQで認識されている。この数字は「意図的なBing利用」の割合を正確に示しているわけではない。ただ、どちらであっても、そのユーザーの検索行動がBingのインデックスを通じてAIエコシステムに情報を供給していることに変わりはない。</p>
+
+<h2 id="sec5">Bing Webmaster ToolsのAIパフォーマンスでCopilotのAI引用数を確認する</h2>
+
+<p>Bing Webmaster Toolsには「AIパフォーマンス」という機能がある。2026年2月にパブリックプレビューとして追加されたもので、CopilotなどのAI生成回答に自分のサイトが情報ソースとして引用された回数（Citations）と、AIが情報を取得する際に使った検索クエリ（Grounding Query）を確認できる。</p>
+
+<a class="cite-card" href="https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview" rel="noopener" target="_blank">
+<span class="cite-ico ext">B</span>
+<span class="cite-body">
+<span class="cite-title">Introducing AI Performance in Bing Webmaster Tools Public Preview（Bing公式ブログ、2026年2月）</span>
+<span class="cite-url">blogs.bing.com</span>
+</span>
+</a>
+
+<p>僕のサイトでは、Copilotに引用されたクエリの上位はこうなっていた。</p>
+
+<ul>
+<li>「リサイズとは」→ 427 Citations</li>
+<li>「レタッチとは」→ 175 Citations</li>
+<li>「instagram フィード投稿サイズ」→ 31 Citations</li>
+</ul>
+
+<p>上位2つはどちらも用語集の記事で、合計602件。全体878件の68%を占めている。用語集のような定義・解説型のコンテンツは、AIが回答を生成するときに「グラウンディング（事実の裏付け）」として引用しやすい傾向がある。注目すべき点として、英語のクエリ（「top image recoloring services」17件、「best photo recoloring apps」17件）でも日本語のサイトが引用されていた。</p>
+
+<p>Googleサーチコンソールにも2026年6月にAIレポートが追加されたが、確認できるのはインプレッション数のみで、クリック数・CTR・クエリデータは非開示のままだ。「AIにどう引用されているか」を定量的に把握できるのは、現時点ではBing Webmaster Toolsだけになっている。サーチコンソールの生成AIレポートについては<a href="/gsc-ai-report.html">別の記事</a>で詳しく書いた。</p>
+
+<p>AI検索で自分のサイトがどう扱われているかを知りたいなら、Bing Webmaster Toolsの登録は避けて通れない。</p>
+
+<h2 id="sec6">Bing Webmaster Toolsの登録とIndexNowの設定手順</h2>
+
+<p>ここまで読んで「自分のサイトも確認したい」と思った方向けに、やるべきことを3つにまとめる。すべて無料で、設定は1日あれば終わる。</p>
+
+<h3>【1】Bing Webmaster Toolsにサイトを登録する</h3>
+
+<ol>
+<li><a href="https://www.bing.com/webmasters" rel="noopener nofollow" target="_blank">Bing Webmaster Tools</a>にアクセスし、Microsoftアカウントでログイン</li>
+<li>サイトURLを追加</li>
+<li>所有権の確認（metaタグをHTMLのheadに追加する方法が手軽）</li>
+<li>登録完了後、左メニューの「検索パフォーマンス」でクリック数とインプレッションを確認</li>
+<li>同じく左メニューの「AIパフォーマンス」でCopilotの引用データを確認</li>
+</ol>
+
+<p>Googleサーチコンソールの登録経験があれば、手順はほぼ同じなので迷うことはない。</p>
+
+<h3>【2】IndexNowを設定する</h3>
+
+<p>IndexNowは、ページの公開・更新をBingやYandexに即座に通知するプロトコルだ。BingのインデックスがCopilotやChatGPT Searchのバックエンドになっている以上、Bingに早くインデックスされることはAI検索への露出も早まることを意味する。</p>
+
+<ol>
+<li>IndexNowのAPIキー（ランダムな文字列）を生成する</li>
+<li>そのキーをテキストファイルとしてサイトのルート直下に配置する（例：https://example.com/abc123.txt）</li>
+<li>ページ更新時にIndexNow APIへHTTP POSTリクエストを1回送信する</li>
+</ol>
+
+<p>WordPressならプラグインで自動化できる。静的サイトの場合はシェルスクリプトやPythonスクリプトで対応可能だ。IndexNowはGoogleには対応していないので、Google向けは従来通りサーチコンソールのURL検査で個別にリクエストする。</p>
+
+<h3>【3】サーチコンソールとBingのクリック数を自分のサイトで比較する</h3>
+
+<p>この記事の数字はあくまで僕のサイトの実測値で、サイトの規模やジャンルによって結果は変わる。自分のサイトでBingがどれだけクリックを生んでいるかは、自分で確認する必要がある。</p>
+
+<h2 id="sec7">まとめ</h2>
+
+<p>Googleサーチコンソールだけを見て検索トラフィックを判断していると、Bingからの流入を見落とす。僕のサイトでは、Bingからのクリック数がGoogleの約3倍あった。</p>
+
+<p>Bingのインデックスは、Bing.comだけでなくMicrosoft Copilot、ChatGPT Search、Perplexity、DuckDuckGoのバックエンドとしても機能している。Bingに正しくインデックスされることは、これらのAI検索サービスすべてへの露出につながる。</p>
+
+<p>Bing Webmaster Toolsを登録してAIパフォーマンスを確認し、IndexNowを設定して更新通知を自動化する。やることはシンプルで、すべて無料だ。まずは自分のサイトで、GoogleとBingのクリック数を実際に比べてほしい。</p>
+
+<h2 id="sec8">よくある質問</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Bing Webmaster Toolsの登録は無料ですか？</strong></p>
+<p class="fa">
+A.<br/>はい、完全に無料です。Microsoftアカウントがあれば、サイトのURLを追加して所有権を確認するだけで利用できます。Googleサーチコンソールと同じように、費用は一切かかりません。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. IndexNowを設定するとGoogleにも通知されますか？</strong></p>
+<p class="fa">
+A.<br/>いいえ、GoogleはIndexNowプロトコルに参加していません。IndexNowで通知が届くのはBing、Yandex、Seznam、Naverなどの対応検索エンジンのみです。Google向けのインデックス登録は、従来通りGoogleサーチコンソールのURL検査機能を使ってください。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. サーチコンソールのインプレッション数が多いのにクリックが少ないのはなぜですか？</strong></p>
+<p class="fa">
+A.<br/>サーチコンソールは、検索結果の何ページ目であっても表示されれば1インプレッションとしてカウントします。掲載順位が42位（5ページ目）や92位（10ページ目）のように深い位置にある場合、ユーザーの目には実質的に届いていません。こうした「見えないインプレッション」が積み上がることで、見かけ上のインプレッション数が多くなり、CTRが低く見えます。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. CopilotのAI引用数（Citations）を増やすにはどう対策すればいいですか？</strong></p>
+<p class="fa">
+A.<br/>定義や解説を含む構造化されたコンテンツが引用されやすい傾向があります。僕のサイトでは、用語集（「リサイズとは」「レタッチとは」など）がCitations全体の68%を占めていました。h2の冒頭に結論や定義文を置くこと、FAQを充実させること、JSON-LDで構造化データを実装することが有効と考えられます。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Bing Webmaster ToolsのAIパフォーマンス機能はいつから使えますか？</strong></p>
+<p class="fa">
+A.<br/>2026年2月10日にパブリックプレビュー（ベータ版）として提供が開始されています。Bing Webmaster Toolsにサイトを登録すると、左メニューに「AIパフォーマンス」が表示され、CopilotなどのAI生成回答における自サイトの引用数やクエリデータを確認できます。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. GoogleサーチコンソールにもAI関連のレポートはありますか？</strong></p>
+<p class="fa">
+A.<br/>2026年6月にサーチコンソールに「Generative AIパフォーマンスレポート」が追加されましたが、確認できるのはインプレッション数のみです。クリック数、CTR、クエリデータ（どの検索語でAI回答に引用されたか）は提供されていません。AI検索での自サイトの引用状況を詳しく把握したい場合は、Bing Webmaster Toolsの方が多くの情報を得られます。
+</p>
+</div>
+
+<h2 class="related-title" id="sec9">関連する記事</h2>
+
+<a class="cite-card" href="gsc-ai-report.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断</span>
+<span class="cite-url">tsubasa-memo.github.io/gsc-ai-report.html</span>
+</span>
+</a>
+
+<a class="cite-card" href="llmo-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span>
+</span>
+</a>
+
+<a class="cite-card" href="search-console-ctr.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/search-console-ctr.html</span>
+</span>
+</a>
+
+<a class="cite-card" href="google-index-not-found.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">URLがGoogleに登録されていません｜原因と対処法・登録リクエスト手順</span>
+<span class="cite-url">tsubasa-memo.github.io/google-index-not-found.html</span>
+</span>
+</a>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="background-white.html">
+<div class="featured-thumb">
+<img alt="背景切り抜き・白抜き写真の作り方" loading="lazy" height="160" src="thumbs/background-white.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較</h2>
+<p class="card-desc">AI切り抜きツール・スマホアプリ・Photoshop・プロ外注の4パターンで比較。Remove.bg・Canva・PicWishなど無料ツールの精度と料金差を整理した。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制する？No.1表記の法的リスクとAI検索の限界" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">根拠のないNo.1・最安値表記は景品表示法違反。Googleが比較記事をどう扱うか、AI検索が問題を見抜けない理由を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="レタッチ料金相場まとめ" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチ外注15社の料金比較｜目的別おすすめ【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ16選" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社16社の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">Googleからのクリック35件、Bingから94件。自分のサイトで起きていたこと</a></li>
+<li><a href="#sec2">サーチコンソールのインプレッション数がアテにならない理由</a></li>
+<li><a href="#sec3">Bingのインデックスに入ることがCopilot・ChatGPT Search・Perplexityへの露出になる理由</a></li>
+<li><a href="#sec4">日本のデスクトップ検索でBingがGoogleを逆転したStatCounterのデータ</a></li>
+<li><a href="#sec5">Bing Webmaster ToolsのAIパフォーマンスでCopilotのAI引用数を確認する</a></li>
+<li><a href="#sec6">Bing Webmaster Toolsの登録とIndexNowの設定手順</a></li>
+<li><a href="#sec7">まとめ</a></li>
+<li><a href="#sec8">よくある質問</a></li>
+<li><a href="#sec9">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
