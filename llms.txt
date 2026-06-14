@@ -533,7 +533,7 @@
   - Q: Search ConsoleでCTRを確認する方法は？
   - Q: タイトルを変更したらインデックス再登録は必要ですか？
   - Q: CTRを上げるタイトルの書き方のポイントは？
-- [サーチコンソールの見方を覚えた備忘録｜表示回数・CTR・掲載順位](https://tsubasa-memo.github.io/search-console-basics.html): Google Search Consoleの表示回数・クリック数・CTR・掲載順位の見方とインデックス確認手順をまとめた記事
+- [サーチコンソールの数値の読み方｜表示回数・CTR・掲載順位の目安](https://tsubasa-memo.github.io/search-console-basics.html): Google Search Consoleの表示回数・クリック数・CTR・掲載順位の意味と数値目安、サイト改善への活かし方をまとめた記事
   - Q: Google Search Consoleは無料で使えますか？
   - Q: Search ConsoleとGoogle Analyticsの違いは何ですか？
   - Q: Search Consoleで「URL がGoogleに登録されていません」と表示された場合は？
