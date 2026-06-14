@@ -515,7 +515,7 @@
   - Q: 比較記事の外部リンクにはnofollowを付けるべきですか？
   - Q: Amazonアソシエイトなどのアフィリエイトリンクにはどのrel属性を付けますか？
   - Q: 外部リンクを全部nofollowにすると問題がありますか？
-- [llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した](https://tsubasa-memo.github.io/llms-txt-setup.html): llms.txtの仕様・robots.txtとの違い・書き方・GitHub Pagesへの設置手順と効果確認方法をまとめた記事
+- [llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】](https://tsubasa-memo.github.io/llms-txt-setup.html): llms.txtのMarkdownフォーマットの書き方・GitHub Pagesへの設置手順・記事追加時の更新ワークフローをまとめた記事
   - Q: llms.txtとrobots.txtの違いは何ですか？
   - Q: llms.txtはすべてのAIに対応していますか？
   - Q: llms.txtはどこに設置すればいいですか？
