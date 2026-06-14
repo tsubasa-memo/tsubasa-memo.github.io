@@ -18,10 +18,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
      crossorigin="anonymous"></script>
 <title>記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた｜ツバサのメモ帳</title>
-<meta name="description" content="FAQ構造化データ（JSON-LD）をブログ記事に設置した記録です。FAQPage schemaの書き方・設置手順・Search Consoleでのリッチリザルト確認・ChatGPT等AIへの情報伝達効果について調べてまとめました。">
+<meta name="description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
 <meta name="keywords" content="FAQ 構造化データ JSON-LD,FAQPage schema,リッチリザルト 設置,構造化データ ブログ">
 <meta property="og:title" content="記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた｜ツバサのメモ帳">
-<meta property="og:description" content="FAQ構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの影響・LLMO効果について調べた備忘録です。">
+<meta property="og:description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://tsubasa-memo.github.io/og/faq-structured-data.webp">
@@ -93,7 +93,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた",
-  "description": "FAQ構造化データ（JSON-LD）をブログ記事に設置した記録です。FAQPage schemaの書き方・設置手順・Search Consoleでのリッチリザルト確認・ChatGPT等AIへの情報伝達効果について調べてまとめました。",
+  "description": "ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。",
   "url": "https://tsubasa-memo.github.io/faq-structured-data.html",
   "image": "https://tsubasa-memo.github.io/og/faq-structured-data.webp",
   "author": {
@@ -107,7 +107,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-03-29T00:00:00+09:00",
-  "dateModified": "2026-04-02T00:00:00+09:00",
+  "dateModified": "2026-06-15T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -143,7 +143,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta property="og:url" content="https://tsubasa-memo.github.io/faq-structured-data.html">
 <meta property="og:site_name" content="ツバサのメモ帳">
 <meta name="twitter:title" content="記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた｜ツバサのメモ帳">
-<meta name="twitter:description" content="FAQ構造化データ（JSON-LD）をブログ記事に設置した記録です。FAQPage schemaの書き方・設置手順・Search Consoleでのリッチリザルト確認・ChatGPT等AIへの情報伝達効果について調べてまとめました。">
+<meta name="twitter:description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
 </head>
 <body>
 
@@ -206,7 +206,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <h1 class="article-title">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</h1>
 <div class="article-meta-line">
 <span>公開: 2026年3月29日</span>
-<span>更新: 2026年4月2日</span>
+<span>更新: 2026年6月15日</span>
 </div>
 
 <p>FAQ構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの影響・LLMO効果について調べた備忘録です。</p>
@@ -236,29 +236,18 @@ gtag('config', 'G-YYBFXHXMM6');
 <p>FAQ構造化データはページの「よくある質問（FAQ）」と「回答」を、Googleが解析しやすい形式で記述したコードです。JSON-LD形式で書き、<a class="glossary-inline" href="/glossary/html.html">HTML</a>の&lt;head&gt;内または&lt;body&gt;末尾に埋め込みます。</p>
 <p>Googleがこのデータを認識すると、検索結果にFAQの「リッチリザルト」が表示されることがあります。リッチリザルトとは、通常のタイトル・URLだけでなく、Q&amp;Aが展開表示される形式です。</p>
 <h2 id="sec2">FAQPage schemaの書き方</h2>
-<p>FAQPage schemaの基本的な書き方は次の通りです。</p>
-<div class="point-box">
-<pre style="white-space:pre-wrap;font-size:13px;line-height:1.7">&lt;script type="application/ld+json"&gt;
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "質問文をここに書く",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "回答文をここに書く"
-      }
-    }
-  ]
-}
-&lt;/script&gt;</pre>
-</div>
-<p>質問と回答のセットを複数追加する場合は、mainEntityの配列にオブジェクトを追加します。FAQの数は最低5問程度が目安です。</p>
+<p>FAQPage schemaは、Q&amp;Aを構造化データとして記述するJSON-LDの形式です。<code>@type: "Question"</code> と <code>@type: "Answer"</code> の組み合わせで、検索エンジンとAIの両方にFAQの内容を伝えます。</p>
+<p>コピーして使える具体的なコードは別記事に集約しています。<a href="json-ld-guide.html">FAQPage・Article・BreadcrumbListのコード例付き解説はこちら</a>。</p>
+<a class="cite-card" href="json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
 <h2 id="sec3">設置手順と確認方法</h2>
 <p>FAQPage schemaのコードをHTMLの&lt;head&gt;内か&lt;/body&gt;タグの直前に貼り付けます。<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>では各HTMLファイルに直接書き込む形で対応しました。</p>
-<p>設置後、Googleの<a href="https://search.google.com/test/rich-results" rel="noopener noreferrer" target="_blank">リッチリザルトテスト</a>にURLを入力すると、構造化データが正しく認識されているかどうかを確認できます。「FAQPage」が検出された場合は設置成功です。</p>
+<p>リッチリザルトテストやSearch Consoleでの汎用的な検証手順は「<a href="json-ld-guide.html">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</a>」に整理しているので、この記事では設置したあとに自分の記事で実際に何が変わったかを記録しておきます。</p>
 <h2 id="sec4">実際に検索結果に反映されるまで</h2>
 <p>構造化データを設置してからGoogleのリッチリザルトが表示されるまで、数週間〜1ヶ月程度かかることが一般的です。また設置しても必ずリッチリザルトが表示されるわけではなく、ページの品質や検索クエリとの関連性によってGoogleが表示の可否を判断します。</p>
 <p>Search Consoleの「拡張」セクションに「FAQリッチリザルト」が表示されるようになったら、Googleが構造化データを認識してリッチリザルトの対象として評価している状態です。</p>
@@ -304,16 +293,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/comparison-article-credibility.html</span>
 </span>
 </a>
-<div class="related">
-<h3>関連記事</h3>
-<a class="cite-card" href="json-ld-guide.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
-<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
-</span>
-</a>
-</div>
 <p class="section-label">よく読まれている記事</p>
 <div class="featured-grid">
 <div class="featured-card">
