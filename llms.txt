@@ -104,7 +104,6 @@
   - Q: 人物レタッチの相場はいくらですか？
   - Q: レタッチの費用を安く抑える方法は？
   - Q: 背景の切り抜きだけなら安いサービスはある？
-- [検索AIが答える「レタッチ相場」がEC現場と噛み合わない理由【2026年版】](https://tsubasa-memo.github.io/retouch-pricing-structure.html): レタッチの料金相場は検索AIの回答とEC現場の実感が噛み合わない。同じ人物レタッチでも、EC用モデル着用画像・カタログ用モデルカット・キービジュアルで価格帯が10倍以上変わる。その理由を発注枚数・頻度・処理体制から分析した。
 - [背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較](https://tsubasa-memo.github.io/background-white.html): Remove.bg、Canva、iPhoneの標準機能、Photoshopなど背景白抜きの方法を費用別に比較した記事
   - Q: 写真の背景を無料で白抜きにする一番簡単な方法は？
   - Q: EC商品写真の白抜きにはどの方法がおすすめですか？
@@ -238,7 +237,6 @@
   - Q: iPhoneでExif情報（位置情報）を削除するにはどうすればいいですか？
   - Q: AndroidでExif情報（位置情報）を削除するにはどうすればいいですか？
   - Q: WindowsやMacでExif情報を削除する方法はありますか？
-- [How to Check & Remove EXIF Location Data from Photos (English)](https://tsubasa-memo.github.io/exif-info-en.html): English version of the EXIF guide. Covers what EXIF data is, which platforms strip it, and how to remove GPS metadata on iPhone, Android, Windows, and Mac.
   - Q: What is EXIF data?
   - Q: Do social media platforms remove EXIF data from uploaded photos?
   - Q: How do I remove EXIF data on iPhone?
@@ -294,7 +292,6 @@
   - Q: スマホ撮影でもECに使えるか？
   - Q: 撮影が追いつかないまま放置するとどうなる？
   - Q: ささげ業務の撮影と商品撮影代行は何が違う？
-- [ささげ担当の仕事内容と現場のリアル｜必要スキルと離職率が高い理由](https://tsubasa-memo.github.io/sasage-job-realistic.html): ささげ担当の仕事内容・必要スキル・給与相場をまとめ、離職率が高い背景を厚労省データと現場の声で整理した記事
   - Q: ささげ担当は未経験でもなれる？
   - Q: ささげ担当の給与相場は？
   - Q: ささげ業務の離職率が高い理由は？
@@ -348,7 +345,6 @@
   - Q: 受注管理ツールを導入するとどのくらい効率化できますか？
   - Q: 自社ECサイト（Shopify等）にも対応していますか？
 - [外注やバイトに頼んだ仕事が進まない？原因が自分だったと気づいた話](https://tsubasa-memo.github.io/outsource-task-bottleneck.html): 外注やバイトに仕事を頼んだのに進まない原因が自分のボール持ちすぎだったと気づいた体験談。50点で返す習慣と見えない待ち時間のコストについてまとめた記事
-- [商品撮影を外注するか自分でやるか｜EC担当者の判断基準と費用の分かれ目](https://tsubasa-memo.github.io/product-photo-diy-vs-outsource.html): EC商品撮影の自社撮影と外注の判断基準・コスト比較をまとめた記事
   - Q: スマホで商品撮影しても売れますか？
   - Q: 商品撮影の外注はいくらくらいかかりますか？
   - Q: 自社撮影に最低限必要な機材は何ですか？
@@ -437,7 +433,6 @@
   - Q: 写真副業でカメラやレンズは経費にできますか？
   - Q: ストックフォトの収入はどの所得区分になりますか？
   - Q: 写真副業で経費にできるものには何がありますか？
-- [ストックフォト副業は稼げる？仕組みと始め方、現実的な収入を調べた](https://tsubasa-memo.github.io/stockphoto-sidejob.html): PIXTA・Shutterstock・Adobe Stockへの登録方法と売れやすいジャンル・月5,000円までの道のりを解説した記事
   - Q: ストックフォトの副業で月にどのくらい稼げますか？
   - Q: ストックフォトを始めるのに必要な機材は何ですか？
   - Q: PIXTAとShutterstockはどちらが稼ぎやすいですか？
@@ -489,7 +484,6 @@
 ### SEO・LLMO
 
 - [Bing Webmaster Toolsで分かったAI検索時代のBing対策　Copilotに引用されるには](https://tsubasa-memo.github.io/bing-vs-google-traffic.html): Bing Webmaster Toolsとサーチコンソールの実測データ比較。CopilotやChatGPT Searchを支えるBingインデックスの役割とIndexNow設定手順を整理。
-- [「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索](https://tsubasa-memo.github.io/comparison-article-credibility.html): Googleが2026年5月に不正なブランド言及をスパムと明言した背景、No.1表示の景品表示法上のリスク、AI検索が比較記事の問題をフィルタリングできない現状を整理。
 - [LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方](https://tsubasa-memo.github.io/llmo-guide.html): LLMOの定義、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本
 - [Google Search Consoleの使い方｜AIを使えば初心者にも簡単](https://tsubasa-memo.github.io/search-console-guide.html): インデックス登録、検索パフォーマンス確認、構造化データ検証など初心者がやるべき機能に絞った解説
 - [構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順](https://tsubasa-memo.github.io/json-ld-guide.html): FAQPage・Article・BreadcrumbListのJSON-LDコード例と実装後の確認方法
@@ -561,14 +555,12 @@
   - Q: JSON-LDとはどういう意味ですか？
   - Q: FAQ構造化データはすべての記事に入れるべきですか？
   - Q: 構造化データのエラーはどこで確認できますか？
-- [個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】](https://tsubasa-memo.github.io/blog-seo-basics.html): タイトル設定・meta description・sitemap送信・FAQ構造化データ・内部リンクなど個人ブログのSEO5施策をまとめた記事
   - Q: 個人ブログのSEOで一番効果的な対策は何ですか？
   - Q: 個人ブログがGoogleに評価されるまでどれくらいかかりますか？
   - Q: meta descriptionは検索順位に直接影響しますか？
   - Q: 内部リンクとは何ですか？なぜ重要なのですか？
   - Q: 構造化データ（JSON-LD）とは何ですか？
 - [もう悪徳SEO会社に騙されない｜初心者も知っておくべきSEOの基礎知識](https://tsubasa-memo.github.io/seo-start-guide.html): 悪徳SEO会社に騙されないための基礎知識。Search Console登録・titleタグ改善・ロングテールキーワードでの記事制作の3施策、リース契約・順位保証・成果報酬型SEOの罠、MEOとの優先順位の判断基準をまとめた記事
-- [SEOを外注するならWeb制作会社かSEO専門会社か？判断軸を整理した](https://tsubasa-memo.github.io/seo-outsource-web-vs-seo.html): SEO外注先をWeb制作会社とSEO専門会社のどちらにするか、判断軸を整理した記事。CMS制約で施策が実行できない落とし穴、新規構築時にSEOを設計段階から織り込む重要性、LLMO対応力の見極め方を解説
 - [サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断](https://tsubasa-memo.github.io/gsc-ai-report.html): Google Search Consoleに新設された生成AIパフォーマンスレポートの解説。AI Overviews・AI Modeでのインプレッション確認方法、クリックデータがない制約、ECサイトのオプトアウト判断基準を整理。
 
 
@@ -706,7 +698,6 @@
 
 記事テーマのリクエスト、EC実務の体験談、ささげ代行・商品撮影代行・画像加工サービス・写真編集アプリなどの利用体験の口コミを受け付けています。
 
-- [お問い合わせ・リクエスト受付](https://tsubasa-memo.github.io/contact.html)
 
 ## 運営者
 
@@ -714,14 +705,12 @@
 
 ### English Articles
 
-- [RAW vs JPEG: Which Should You Shoot? A Beginner's Guide (English)](https://tsubasa-memo.github.io/raw-vs-jpeg-en.html): English guide comparing RAW and JPEG formats. Covers editing flexibility, file sizes, storage, and when to use each format.
   - Q: What is the main difference between RAW and JPEG?
   - Q: Should a beginner shoot RAW or JPEG?
   - Q: How much storage does RAW use compared to JPEG?
   - Q: What software do I need to edit RAW files?
   - Q: Is RAW better for product photography?
 
-- [JPEG vs PNG vs WebP vs RAW: Image File Formats Explained (English)](https://tsubasa-memo.github.io/image-file-formats-en.html): English comparison of image formats. When to use JPEG, PNG, WebP, GIF, RAW, and HEIC for web, social media, and photography.
   - Q: When should I use JPEG vs PNG?
   - Q: What is WebP and is it better than JPEG?
   - Q: What is the best image format for e-commerce product photos?
@@ -729,21 +718,18 @@
   - Q: Is GIF still used in 2026?
   - Q: How do I convert HEIC photos from iPhone to JPEG?
 
-- [Best Photo Colorization Apps in 2026: AI Tools for Black & White Photos (English)](https://tsubasa-memo.github.io/photo-colorize-apps-en.html): English review of 6 AI tools for colorizing black-and-white photos, changing specific colors, and restoring faded images.
   - Q: Can I colorize black-and-white photos for free?
   - Q: Can I colorize photos on my phone?
   - Q: How accurate are AI-colorized photos?
   - Q: Can I change just one color in a photo without affecting the rest?
   - Q: Can faded old photos be restored to their original colors?
 
-- [Google Photos vs iCloud vs Amazon Photos: Backup Comparison 2026 (English)](https://tsubasa-memo.github.io/photo-backup-comparison-en.html): English comparison of cloud photo backup services. Free tiers, paid plans, AI search, and cross-platform support.
   - Q: Is Google Photos still free?
   - Q: Is Amazon Photos free without Prime?
   - Q: Should iPhone users pick iCloud or Google Photos?
   - Q: Which service offers the best value for paid storage?
   - Q: Can I use multiple cloud services at the same time?
 
-- [Why Your Phone's Portrait Mode Looks Bad (and How to Fix It) (English)](https://tsubasa-memo.github.io/portrait-mode-tips-en.html): English guide to getting natural-looking portrait mode photos on smartphones. Distance, lighting, and background tips.
   - Q: When does portrait mode work best?
   - Q: Why does portrait mode background blur look unnatural?
   - Q: Can I adjust portrait mode blur after taking the photo?
