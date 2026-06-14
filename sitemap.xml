@@ -18,20 +18,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/comparison-article-credibility.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/about.html</loc>
     <lastmod>2026-05-17</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/contact.html</loc>
-    <lastmod>2026-05-17</lastmod>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/privacy-policy.html</loc>
@@ -81,11 +70,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/blog-platform-comparison.html</loc>
     <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/blog-seo-basics.html</loc>
-    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -159,11 +143,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/exif-info-en.html</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/exif-info.html</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -196,11 +175,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/id-photo.html</loc>
     <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/image-file-formats-en.html</loc>
-    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -304,18 +278,8 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/photo-backup-comparison-en.html</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/photo-backup-comparison.html</loc>
     <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/photo-colorize-apps-en.html</loc>
-    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -344,11 +308,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/portrait-mode-tips-en.html</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/portrait-mode-tips.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -359,11 +318,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/product-photo-diy-vs-outsource.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/profile-photo-service.html</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -371,11 +325,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/rakuten-image-rules.html</loc>
     <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/raw-vs-jpeg-en.html</loc>
-    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -401,16 +350,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/retouch-pricing-database.html</loc>
     <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/retouch-pricing-structure.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/sasage-job-realistic.html</loc>
-    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -454,11 +393,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/seo-outsource-web-vs-seo.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/seo-start-guide.html</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -496,11 +430,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/stockphoto-ai-sidejob.html</loc>
     <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/stockphoto-sidejob.html</loc>
-    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
