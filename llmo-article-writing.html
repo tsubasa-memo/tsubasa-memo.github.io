@@ -39,7 +39,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "mainEntity": [
     {"@type":"Question","name":"LLMOとSEOの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"SEOはGoogle・Bingなどの検索エンジンで上位表示されるための最適化です。LLMOはChatGPT・Claude・Geminiなどの大規模言語モデル（LLM）に記事を正しく引用・参照されるための最適化です。検索エンジンはURLをインデックスして順位付けしますが、LLMは学習データやRAG（検索拡張生成）を通じてコンテンツを取得します。"}},
     {"@type":"Question","name":"LLMOに効果的な記事構造はありますか？","acceptedAnswer":{"@type":"Answer","text":"FAQ形式とJSON-LD構造化データの組み合わせが効果的とされています。LLMはFAQ形式の「Q&A」構造を引用しやすい傾向があります。また記事冒頭に「この記事でわかること」として箇条書きで要点をまとめることで、LLMが記事の内容を要約して回答する際の精度が上がります。"}},
-    {"@type":"Question","name":"llms.txtとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"llms.txtはサイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtがクローラーへの指示書であるのに対し、llms.txtはLLMへの情報提供ファイルです。まだ業界標準ではありませんが、AnthropicやOpenAIが対応を進めており、設置しておいて損はない施策です。"}},
+    {"@type":"Question","name":"llms.txtとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"llms.txtはサイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtがクローラーへの指示書であるのに対し、llms.txtはLLMへの情報提供ファイルです。まだ業界標準ではありませんが、AnthropicやOpenAIが対応を進めており、設置しておいて損はない施策です。詳しい仕様・書き方・設置手順は「llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方」の記事を参照してください。"}},
     {"@type":"Question","name":"個人ブログでもLLMOに取り組む意味はありますか？","acceptedAnswer":{"@type":"Answer","text":"あります。ChatGPTやClaudeに「〜のおすすめサービスを教えて」と質問するユーザーが増えており、AIの回答に自分のサイトや紹介しているサービスが含まれる可能性があります。特にニッチなトピックや比較記事は、LLMが引用しやすいコンテンツです。"}},
     {"@type":"Question","name":"LLMO対策として今すぐできることは何ですか？","acceptedAnswer":{"@type":"Answer","text":"今すぐできる対策は3つです。①全記事にFAQ構造化データ（JSON-LD）を設置する。②記事の冒頭に「この記事でわかること」として要点を箇条書きで書く。③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する。これらはいずれもHTMLの修正だけで対応できます。"}}
   ]
@@ -64,7 +64,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-03-29T00:00:00+09:00",
-  "dateModified": "2026-04-02T00:00:00+09:00",
+  "dateModified": "2026-06-14T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -163,7 +163,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <h1 class="article-title">AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</h1>
 <div class="article-meta-line">
 <span>公開: 2026年3月29日</span>
-<span>更新: 2026年4月2日</span>
+<span>更新: 2026年6月14日</span>
 </div>
 
 <p>LLMO（LLM Optimization）の概念とFAQ構造化データ・llms.txtの効果をブログ運営者目線で調べた備忘録です。</p>
@@ -182,7 +182,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <ol>
 <li><a href="#sec1">LLMOとは何か</a></li>
 <li><a href="#sec2">LLMに引用されやすい記事の構造</a></li>
-<li><a href="#sec3">llms.txtとは何か</a></li>
+<li><a href="#sec3">llms.txtでサイト情報をAIに伝える</a></li>
 <li><a href="#sec4">個人ブログでLLMOに取り組む意味</a></li>
 <li><a href="#sec5">よくある質問</a></li>
 <li><a href="#sec6">関連する記事</a></li>
@@ -222,17 +222,23 @@ gtag('config', 'G-YYBFXHXMM6');
 <div style="background:var(--accent-light);padding:10px 14px;border-radius:6px;text-align:center;font-weight:600">⑤ AIに質問して引用されるか確認・改善</div>
 </div>
 </div>
-<h2 id="sec3">llms.txtとは何か</h2>
-<p>llms.txtはサイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるための仕組みです。たとえばこのブログの場合、<a href="https://tsubasa-memo.github.io/llms.txt" rel="noopener noreferrer" target="_blank">tsubasa-memo.github.io/llms.txt</a>に設置しています。</p>
-<p>robots.txtがGoogleなどのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があり、このような情報を提供しています」と伝えるためのファイルです。</p>
-<p>まだ業界標準ではなく、すべてのAIが対応しているわけではありません。ただしコストゼロで設置できるため、やっておいて損はない施策です。</p>
+<h2 id="sec3">llms.txtでサイト情報をAIに伝える</h2>
+<p>llms.txtは、サイトのルートに置くMarkdown形式のファイルで、サイトの構造や記事一覧をLLMに伝えるために使います。このブログでも実際に設置しており、Perplexityに引用された経験があります。</p>
+<p>llms.txtの書き方と設置判断はこちらの記事にまとめています。</p>
+<a class="cite-card" href="llms-txt-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span>
+</span>
+</a>
 <h2 id="sec4">個人ブログでLLMOに取り組む意味</h2>
 <p>AI検索が普及すると、Google検索経由のアクセスが減ってAI経由のアクセスが増えていく可能性があります。現時点では個人ブログへのLLMO対策の効果を数値で証明するのは難しいですが、コンテンツの質を高めること・FAQ構造化データを入れること・llms.txtを設置することは、SEOとLLMOの両方に有効な施策です。</p>
 <p>特に比較記事（「○○サービスを比較してみた」）や疑問に答える記事（「○○とは何か」）は、LLMが引用しやすいコンテンツとして知られています。レタッチサービスの比較や写真アプリの比較を書いているこのブログのテーマは、LLMOの観点からも相性が良いと考えています。</p>
 <h2 id="sec5">よくある質問</h2>
 <div class="faq-item"><p class="faq-q">Q. LLMOとSEOの違いは何ですか？</p><p class="faq-a">A. SEOはGoogle・Bingなどの検索エンジンで上位表示されるための最適化です。LLMOはChatGPT・Claude・Geminiなどの大規模言語モデルに記事を正しく引用・参照されるための最適化です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. LLMOに効果的な記事構造はありますか？</p><p class="faq-a">A. FAQ形式とJSON-LD構造化データの組み合わせが効果的です。また記事冒頭に「この記事でわかること」として要点を箇条書きでまとめることで、LLMが記事を要約して回答する際の精度が上がります。</p></div>
-<div class="faq-item"><p class="faq-q">Q. llms.txtとは何ですか？</p><p class="faq-a">A. サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtとは何ですか？</p><p class="faq-a">A. サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。詳しい仕様・書き方・設置手順は<a href="llms-txt-guide.html">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</a>を参照してください。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 個人ブログでもLLMOに取り組む意味はありますか？</p><p class="faq-a">A. あります。比較記事や疑問に答える記事はLLMが引用しやすいコンテンツです。特にニッチなトピックを扱う個人ブログは、大手サイトよりも専門性が高い場合があり、LLMに参照されるチャンスがあります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. LLMO対策として今すぐできることは何ですか？</p><p class="faq-a">A. ①全記事にFAQ構造化データ（JSON-LD）を設置する、②記事の冒頭に「この記事でわかること」を箇条書きで書く、③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する、の3つが今すぐできる対策です。</p></div>
 
@@ -240,7 +246,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <a class="cite-card" href="llms-txt-setup.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
-<span class="cite-title">llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</span>
+<span class="cite-title">llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】</span>
 <span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span>
 </span>
 </a>
@@ -348,7 +354,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <ol>
 <li><a href="#sec1">LLMOとは何か</a></li>
 <li><a href="#sec2">LLMに引用されやすい記事の構造</a></li>
-<li><a href="#sec3">llms.txtとは何か</a></li>
+<li><a href="#sec3">llms.txtでサイト情報をAIに伝える</a></li>
 <li><a href="#sec4">個人ブログでLLMOに取り組む意味</a></li>
 <li><a href="#sec5">よくある質問</a></li>
 <li><a href="#sec6">関連する記事</a></li>
