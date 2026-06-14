@@ -17,11 +17,11 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
      crossorigin="anonymous"></script>
-<title>llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した｜ツバサのメモ帳</title>
-<meta name="description" content="llms.txtの仕様・書き方・設置手順をまとめた備忘録です。robots.txtとの違い・AnthropicなどAIの対応状況・GitHub Pagesへの設置方法・記事一覧の書き方・効果確認の方法について調べた内容を記録しています。">
-<meta name="keywords" content="llms.txt とは,llms.txt 書き方,llms.txt 設置,AI ブログ 最適化">
-<meta property="og:title" content="llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した">
-<meta property="og:description" content="llms.txtの仕様・書き方・設置手順をまとめた備忘録。robots.txtとの違いと個人ブログへの設置効果について調べました。">
+<title>llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】｜ツバサのメモ帳</title>
+<meta name="description" content="llms.txtのMarkdownフォーマットの書き方・GitHub Pagesへの設置手順・記事追加時の更新ワークフローをまとめた備忘録。llms.txtを設置すべきかの判断はllms.txt設置ガイド（別記事）を参照。">
+<meta name="keywords" content="llms.txt 書き方,llms.txt 設置,llms.txt GitHub Pages,llms.txt フォーマット">
+<meta property="og:title" content="llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】">
+<meta property="og:description" content="llms.txtの書き方・GitHub Pagesへの設置手順・更新ワークフローをまとめた備忘録。設置すべきかの判断は別記事のllms.txt設置ガイドを参照。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://tsubasa-memo.github.io/og/llms-txt-setup.webp">
@@ -37,7 +37,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"llms.txtとrobots.txtの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLM（大規模言語モデル）に対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。"}},
+    {"@type":"Question","name":"llms.txtとrobots.txtの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLM（大規模言語モデル）に対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。llms.txtの設置判断（Googleの公式見解を含む）については「llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方」の記事を参照してください。"}},
     {"@type":"Question","name":"llms.txtはすべてのAIに対応していますか？","acceptedAnswer":{"@type":"Answer","text":"2026年時点では対応状況はAIによって異なります。Claude（Anthropic）はllms.txtを参照することが知られています。ChatGPT（OpenAI）やGemini（Google）の対応状況は変化しています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。"}},
     {"@type":"Question","name":"llms.txtはどこに設置すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"サイトのルートに「llms.txt」というファイル名で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。URLは「https://サイトURL/llms.txt」になります。"}},
     {"@type":"Question","name":"llms.txtに書くべき内容は何ですか？","acceptedAnswer":{"@type":"Answer","text":"サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本的な内容です。記事一覧では各記事の説明文を1〜2文で添えると、LLMが記事の内容を把握しやすくなります。"}},
@@ -49,8 +49,8 @@ gtag('config', 'G-YYBFXHXMM6');
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した",
-  "description": "llms.txtの仕様・書き方・設置手順をまとめた備忘録です。robots.txtとの違い・AnthropicなどAIの対応状況・GitHub Pagesへの設置方法・記事一覧の書き方・効果確認の方法について調べた内容を記録しています。",
+  "headline": "llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】",
+  "description": "llms.txtのMarkdownフォーマットの書き方・GitHub Pagesへの設置手順・記事追加時の更新ワークフローをまとめた備忘録。llms.txtを設置すべきかの判断はllms.txt設置ガイド（別記事）を参照。",
   "url": "https://tsubasa-memo.github.io/llms-txt-setup.html",
   "image": "https://tsubasa-memo.github.io/og/llms-txt-setup.webp",
   "author": {
@@ -64,7 +64,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-03-29T00:00:00+09:00",
-  "dateModified": "2026-04-02T00:00:00+09:00",
+  "dateModified": "2026-06-14T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -88,7 +88,7 @@ gtag('config', 'G-YYBFXHXMM6');
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "llms.txtとは何か｜AIにブログを…"
+      "name": "llms.txtの書き方・設置手順【備忘録】"
     }
   ]
 }
@@ -99,8 +99,8 @@ gtag('config', 'G-YYBFXHXMM6');
 <script src="/search.js" defer></script>
 <meta property="og:url" content="https://tsubasa-memo.github.io/llms-txt-setup.html">
 <meta property="og:site_name" content="ツバサのメモ帳">
-<meta name="twitter:title" content="llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した">
-<meta name="twitter:description" content="llms.txtの仕様・書き方・設置手順をまとめた備忘録です。robots.txtとの違い・AnthropicなどAIの対応状況・GitHub Pagesへの設置方法・記事一覧の書き方・効果確認の方法について調べた内容を記録しています。">
+<meta name="twitter:title" content="llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】">
+<meta name="twitter:description" content="llms.txtのMarkdownフォーマットの書き方・GitHub Pagesへの設置手順・記事追加時の更新ワークフローをまとめた備忘録。llms.txtを設置すべきかの判断はllms.txt設置ガイド（別記事）を参照。">
 </head>
 <body>
 
@@ -153,17 +153,17 @@ gtag('config', 'G-YYBFXHXMM6');
 
 <main class="center-content">
 
-<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">ホーム</a> ＞ <a href="archive.html#seo">SEO・LLMO</a> ＞ llms.txtとは何か｜AIにブログを…</nav>
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">ホーム</a> ＞ <a href="archive.html#seo">SEO・LLMO</a> ＞ llms.txtの書き方・設置手順【備忘録】</nav>
 
 <div class="article-hero">
-<img src="/thumbs/llms-txt-setup.webp" alt="llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した" width="640" height="360" loading="eager">
+<img src="/thumbs/llms-txt-setup.webp" alt="llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】" width="640" height="360" loading="eager">
 </div>
 
 <span class="article-tag">SEO・LLMO</span>
-<h1 class="article-title">llms.txtとは何か｜AIにブログを読ませるためのファイルを設置した</h1>
+<h1 class="article-title">llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】</h1>
 <div class="article-meta-line">
 <span>公開: 2026年3月29日</span>
-<span>更新: 2026年4月2日</span>
+<span>更新: 2026年6月14日</span>
 </div>
 
 <p>llms.txtの仕様・書き方・設置手順をまとめた備忘録。robots.txtとの違いと個人ブログへの設置効果について調べました。</p>
@@ -177,6 +177,14 @@ gtag('config', 'G-YYBFXHXMM6');
 </ul>
 </div>
 <p>こんにちは、ツバサです。このブログのSEO・<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>対策を調べているうちに「llms.txt」というファイルの存在を知りました。設置するだけでAIがブログの内容を把握しやすくなるというので、実際にやってみた記録をまとめます。</p>
+<p>なお、2026年5月にGoogleが「llms.txtは不要」と公式表明した経緯と、それでも設置する理由については別の記事で詳しくまとめています。</p>
+<a class="cite-card" href="llms-txt-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span>
+</span>
+</a>
 <div class="toc">
 <p>もくじ</p>
 <ol>
@@ -189,9 +197,8 @@ gtag('config', 'G-YYBFXHXMM6');
 </ol>
 </div>
 <h2 id="sec1">llms.txtとは何か</h2>
-<p>llms.txtは、サイトのルートに置くMarkdown形式のファイルです。ChatGPT・Claude・GeminiなどのLLM（大規模言語モデル）に対して、サイトにどんな情報があるかを伝えることを目的としています。</p>
-<p><a class="glossary-inline" href="/glossary/robots-txt.html">robots.txt</a>がGoogleのクローラーに「このページはクロールしないで」と指示するファイルであるのに対し、llms.txtはLLMに「このサイトには以下の記事があります」と伝えるファイルです。</p>
-<p>提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。AnthropicはClaudeの<a href="https://docs.anthropic.com/" rel="noopener noreferrer" target="_blank">公式ドキュメント</a>にllms.txtを設置しており、徐々に普及が進んでいます。</p>
+<p>llms.txtは、サイトのルートに置くMarkdown形式のファイルです。ChatGPT・Claude・Geminiなどの大規模言語モデル（LLM）に対して、サイトにどんな記事があるかを構造的に伝えます。提唱者はAIツール開発者のJeremy Howardで、2024年に仕様が公開されました。</p>
+<p>llms.txtの概要・robots.txtとの違い・Google公式見解を含む設置判断については、<a href="llms-txt-guide.html">llms.txtの概要・Google公式見解・設置判断はこちら</a>にまとめています。この記事では、設置を決めたあとの「書き方」と「GitHub Pagesへの設置手順」に絞って記録します。</p>
 <h2 id="sec2">書き方の基本フォーマット</h2>
 <p>llms.txtはMarkdown形式で記述します。基本構造は次の通りです。</p>
 <div class="point-box">
@@ -227,7 +234,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <p><strong>注意：</strong>llms.txtに書いた情報がLLMの回答に即座に反映されるわけではありません。LLMのトレーニングサイクルやRAG（検索拡張生成）の仕組みによって、反映されるタイミングは異なります。</p>
 </div>
 <h2 id="sec5">よくある質問</h2>
-<div class="faq-item"><p class="faq-q">Q. llms.txtとrobots.txtの違いは何ですか？</p><p class="faq-a">A. robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLMに対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtとrobots.txtの違いは何ですか？</p><p class="faq-a">A. robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLMに対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。llms.txtの設置判断（Googleの公式見解を含む）については<a href="llms-txt-guide.html">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</a>を参照してください。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtはすべてのAIに対応していますか？</p><p class="faq-a">A. 2026年時点では対応状況はAIによって異なります。Anthropicはllms.txtを参照することが知られています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtはどこに設置すればいいですか？</p><p class="faq-a">A. サイトのルートに「llms.txt」という名前で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。</p></div>
 <div class="faq-item"><p class="faq-q">Q. llms.txtに書くべき内容は何ですか？</p><p class="faq-a">A. サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本です。記事一覧では各記事の説明文を1〜2文で添えるとLLMが内容を把握しやすくなります。</p></div>
@@ -264,16 +271,6 @@ gtag('config', 'G-YYBFXHXMM6');
 <span class="cite-url">tsubasa-memo.github.io/comparison-article-credibility.html</span>
 </span>
 </a>
-<div class="related">
-<h3>関連記事</h3>
-<a class="cite-card" href="llms-txt-guide.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</span>
-<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span>
-</span>
-</a>
-</div>
 <p class="section-label">よく読まれている記事</p>
 <div class="featured-grid">
 <div class="featured-card">
