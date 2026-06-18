@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択｜ツバサのメモ帳</title>
+<meta name="description" content="AI Overviewsに自分の記事が引用された理由を経済学の調整ゲーム・シグナリング・逆選択で分析。Bing Webmaster Toolsの引用データも公開し、EC担当者がLLMOに活かせる実務指針と構造化データの整備方法をまとめた実践メモ。">
+<meta name="keywords" content="AI検索,AI Overviews,LLMO,ゲーム理論,シグナリング,逆選択,SEO,構造化データ">
+<meta property="og:title" content="AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択">
+<meta property="og:description" content="AI Overviewsに自分の記事が引用された理由を経済学の調整ゲーム・シグナリング・逆選択で分析。Bing Webmaster Toolsの引用データも公開し、EC担当者がLLMOに活かせる実務指針と構造化データの整備方法をまとめた実践メモ。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/ai-overview-economics-llmo.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/ai-overview-economics-llmo.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/ai-overview-economics-llmo.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/ai-overview-economics-llmo.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AI Overviewsに自分のサイトが引用される条件は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "明確な条件は公開されていませんが、複数の情報源が一致する内容をAIが「合意」として採用する傾向があります。自サイトが特定のテーマについて情報を網羅的にまとめており、構造化データ（JSON-LD）が実装されていると、参照元として選ばれやすくなると考えています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "小規模な個人サイトでもAI Overviewsに引用されることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "あります。僕のサイトはGitHub Pagesで運営している個人ブログですが、「ささげ代行 おすすめ」の検索結果でAI Overviewsの参照元に選ばれ、オーガニック検索でも1位を取っています。サイトの規模よりも、特定のテーマで網羅性の高い情報を提供しているかが重要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "比較記事を自社ブログに書いたが、AI Overviewsの参照元に選ばれません。記事の構造で改善できることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まず構造化データ（JSON-LD）が入っているか確認してください。FAQPage・Articleの構造化データはAIが記事の内容を理解する補助になります。次に、比較対象の数と情報の深さを見直してください。僕の記事は16社の料金・特徴を横並びで比較していたことでAIの参照元になりました。3〜4社しか載っていない記事は、AIにとって情報の集約度が低いと判定される可能性があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "競合が「業界No.1」を自称していてAI検索でも有利に見えます。自社は事実ベースで書いているのに損している気がします。どう対処すればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "短期的にはNo.1表記がAIに拾われて有利に見える場合があります。しかし根拠のないNo.1表記は景品表示法の優良誤認表示に該当する可能性があり、法的リスクを伴います。AIの精度は改善が続いているため、事実ベースの記事を書き続けることが長期的には有利です。自社が強い領域の情報を充実させて、調整ゲームの参加者として情報量で上回る戦略を取ってください。また、AIはこのような違反を見逃してしまいますが、サービスや商品を選ぶユーザーはコンプライアンス意識の低い会社に簡単には騙されません。人間に対しては信頼性を失う行為です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMOとSEOの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEOはGoogleの検索結果ページで上位表示を狙う施策です。LLMOはChatGPTやAI Overviewsなど、AIが直接回答を生成する場面で自サイトの情報が引用されることを狙う施策です。両者は対立するものではなく、構造化データや一次データの整備は両方に効果があります。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択",
+  "description": "AI Overviewsに自分の記事が引用された理由を経済学の調整ゲーム・シグナリング・逆選択で分析。Bing Webmaster Toolsの引用データも公開し、EC担当者がLLMOに活かせる実務指針と構造化データの整備方法をまとめた実践メモ。",
+  "url": "https://tsubasa-memo.github.io/ai-overview-economics-llmo.html",
+  "image": "https://tsubasa-memo.github.io/og/ai-overview-economics-llmo.webp",
+  "author": { "@type": "Person", "name": "ツバサ", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-06-18T00:00:00+09:00",
+  "dateModified": "2026-06-18T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "AI検索の仕組みを経済学で考えた" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/ai-overview-economics-llmo.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:title" content="AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択">
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; AI検索×経済学でLLMO戦略
+</nav>
+
+<div class="article-hero">
+<img src="thumbs/ai-overview-economics-llmo.webp" alt="AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択</h1>
+<div class="article-meta-line">
+<span>公開: 2026年6月18日</span>
+<span>更新: 2026年6月18日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>YouTubeでReHacQ（リハック）の高橋弘樹氏と東京大学大学院経済学研究科教授・小島武仁先生による経済学の講義シリーズを6本見ました。市場の仕組み、ゲーム理論、情報の非対称性といったテーマで、内容が濃かったのでNotebookLMに動画を突っ込んで要約し、知見としてストックしておきました。動画のリンクはこの記事の最後にまとめてあります。</p>
+
+<p>この記事は、自分のサイトがAI検索に引用されない、競合のサイトばかり表示される、LLMO対策として何をすればいいかわからない、というEC担当者やWeb担当者に向けて書きました。</p>
+
+<p>要約を読み返していたら、AI検索（AI Overviews）が特定のサイトや会社を「おすすめ」として推薦する仕組みが、経済学の概念で説明できることに気づきました。使えるのは「調整ゲーム」「逆選択」「シグナリング」の3つです。</p>
+
+<p>対策もこの3つから導けます。自分が詳しい領域で情報を集約してAIの「合意の参照先」になること。構造化データや一次データなど偽装コストの高い情報を整備すること。根拠のない最上級表現に乗らず事実で書き続けること。振り返ると知らないうちに実践できていたこともありましたし、これから意識的にやりたい理論も見つかりました。</p>
+
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">経済学のYouTube動画6本をNotebookLMで要約した経緯</a></li>
+<li><a href="#sec2">AI Overviewsにささげ記事が引用された理由と調整ゲームの構造</a></li>
+<li><a href="#sec3">「根拠のないNo.1」がAI検索に通用してしまう問題と逆選択</a></li>
+<li><a href="#sec4">AIが偽装と区別できるシグナリングをJSON-LD・一次データで実装する</a></li>
+<li><a href="#sec5">EC担当者がLLMO戦略に活かせる3つの実務指針</a></li>
+<li><a href="#sec6">FAQ</a></li>
+<li><a href="#sec7">まとめ</a></li>
+<li><a href="#sec8">この記事を書くきっかけになった動画</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">経済学のYouTube動画6本をNotebookLMで要約した経緯</h2>
+
+<p>きっかけは、ReHacQの「高橋弘樹vs経済学」というシリーズだ。東京大学の小島武仁教授が、市場メカニズムの仕組み、独占や外部性による「市場の失敗」、情報の非対称性が引き起こすモラルハザードと逆選択、人間の非合理的な行動（損失回避やサンクコスト）、ゲーム理論の基礎と囚人のジレンマ、そして小島教授の専門であるマッチング理論と調整ゲームについて解説している。全6本、合計で数時間ある。</p>
+
+<p>1本ずつ見ていると面白いが、全体を俯瞰して「結局どの概念が使えるのか」を整理するのは大変だ。そこでGoogleのNotebookLMにYouTubeのURLを入れて、動画ごとに要約を作った。NotebookLMはYouTubeの動画URLをソースとして読み込めるので、動画を1本入れるごとに要点が整理される。6本分の要約がストックされた状態で読み返すと、動画を横断した共通テーマが見えてくる。</p>
+
+<p>その中で、AI検索の仕組みを説明できる概念が3つ浮かび上がった。「調整ゲーム」「逆選択」「シグナリング」だ。</p>
+
+<h2 id="sec2">AI Overviewsにささげ記事が引用された理由と調整ゲームの構造</h2>
+
+<p>「ささげ代行 おすすめ」とGoogleで検索すると、AI Overviewsがささげ屋、feston（フレストン）、Sasage.tokyo、BAXSといった会社名を挙げて推薦している。その参照元として、僕のサイトの記事「<a href="sasage-outsource.html">ささげ業務の代行会社おすすめ16選｜選び方と費用相場</a>」が引用されていた。この記事は「ささげ代行 おすすめ」の検索結果でも1位に表示されている。個人ブログの記事がAI検索の回答に使われ、同時にオーガニック検索でも1位を取っている。</p>
+
+<p>なぜ僕の記事が選ばれたのか。経済学の「調整ゲーム」で説明できる。</p>
+
+<p>調整ゲームとは、「他の人がAを選ぶなら自分もAを選んだ方が得になる」という構造のゲームだ。WindowsとMacの関係がわかりやすい。周囲がWindowsを使っているなら、ファイルの互換性や情報の入手しやすさを考えて自分もWindowsを選んだ方が便利だ。「みんなが使っているもの」がさらに強化されるフィードバックループが生まれる。</p>
+
+<p>AI検索も同じ構造で動いている。Web上の複数の記事が「ささげ代行ならこの会社」と同じ名前を挙げていれば、AIはそれを「情報源間の合意」として採用する。逆に、1つのサイトだけが推している会社名は、AIにとって確度が低い。</p>
+
+<p>僕の記事は16社を横並びで比較していた。複数の情報源が個別に挙げている会社名を、1つの記事に集約した形になっていたわけだ。AIにとっては「この1ページを参照すれば複数社の情報が一度に取れる」効率の良い情報源だったのだろう。知らないうちに調整ゲームの参加者として、AI検索の「合意形成」に寄与していた。</p>
+
+<p>このサイトではささげ以外にも「<a href="retouch-pricing-database.html">写真レタッチの料金相場｜外注15社を比較</a>」という記事を書いていて、こちらも「レタッチ会社 おすすめ」の検索結果に表示されている。同じ構造だ。特定のテーマで複数社を横並びにした記事は、AI検索にとって調整ゲームの「合意形成元」になりやすい。</p>
+
+<p>Bing Webmaster ToolsのAI引用データ（2026年6月18日時点）を確認すると、レタッチ料金比較記事はAIに170回引用されている。ささげ記事のAI引用は9回だが、Google AI Overviewsでは参照元として選ばれ、オーガニック検索でも1位を取っている。BingのCopilotとGoogleのAI Overviewsでは引用される記事が異なるケースがあり、片方のデータだけ見ていると状況を見誤る。複数のAIプラットフォームで自サイトの引用状況を確認しておく必要がある。</p>
+
+<h2 id="sec3">「根拠のないNo.1」がAI検索に通用してしまう問題と逆選択</h2>
+
+<p>AI検索にはまだ弱点がある。テキストの真偽を検証できないことだ。ある会社が自社のWebサイトで「業界No.1水準」「おすすめ1位」と書けば、AIはその表記をそのまま推薦に反映してしまうことがある。</p>
+
+<p>経済学ではこの構造を「逆選択（アドバース・セレクション）」と呼ぶ。もともとは中古車市場で提唱された概念で、「レモン市場」とも言われる。売り手だけが車の品質を知っていて、買い手には外から見分けがつかない。すると、品質の悪い車を高く売る業者が得をして、品質の良い車を正直に売る業者が割を食う。結果として「悪貨が良貨を駆逐する」状態になる。</p>
+
+<p>AI検索でも同じことが起きうる。Webサイト上のテキスト情報だけでAIが推薦を組み立てる限り、「実力はないがアピールが上手い事業者」と「実力はあるがアピール控えめな事業者」をAIは区別できない。そして前者の方がAI検索の推薦枠を取ってしまう可能性がある。</p>
+
+<p>では、自分も「No.1」を名乗れば有利になるかというと、小島先生の動画で解説されていた2つの理論がそれを否定する。</p>
+
+<p>ひとつは「しっぺ返し戦略」の論理だ。ゲーム理論のシミュレーションで最も成績が良かった戦略は、「基本は協力し、相手が裏切ったら報復する」というものだった。ビジネスは1回限りの取引ではなく、長期的な繰り返しゲームだ。根拠のないNo.1表記は「裏切り」に相当する。短期的には得をしても、プラットフォーム（Google）や規制当局（消費者庁）という「ルールメーカー」が存在する以上、不正が検知されれば報復が来る。景品表示法の措置命令、課徴金（売上の3%）、社名公表がその具体例だ。</p>
+
+<p>もうひとつは逆選択のスパイラルだ。1社がNo.1を名乗って得をすると、他社も追随する。全員がNo.1を名乗り始めると、No.1表記の情報価値がゼロになる。すると発注担当者は「どの会社のWebサイトも信用できない」と感じ、市場全体の信頼が崩壊する。品質の高いサービスを提供している事業者も巻き添えを食う。自分が逆選択に加担すると、最終的には自分が商売をしている市場そのものを壊すことになる。</p>
+
+<p>逆選択が起きるのはNo.1表記だけではない。料金情報にも同じ構造がある。「ささげ 業務 料金」と検索すると、AI Overviewsが「1商品あたり1,300〜2,500円程度」と回答を出す。この数字の参照元は限られたサイトだ。もし特定の1社が自社に有利な料金情報を大量に発信していれば、AIの回答がその情報に引っ張られる可能性はある。工程別の実際の費用相場は「<a href="sasage-outsource-cost.html">ささげ業務代行の料金相場｜撮影500円・採寸300円・原稿500円が目安</a>」でまとめているので、AI Overviewsが出す数字と比較してみてほしい。</p>
+
+<p>「おすすめ比較記事」に根拠のないNo.1表記を入れることがどう問題になるかについては、「<a href="comparison-article-credibility.html">おすすめ比較記事をGoogleが規制？｜No.1表記の法的リスクとAI検索</a>」で掘り下げた。景品表示法の優良誤認表示に該当するリスクについても「<a href="keihyouhou-ec-memo.html">景品表示法の社内研修メモ｜EC担当が実務と業者選定で気をつけること</a>」に記録がある。</p>
+
+<p>ここで僕が意識しているのは、根拠のない最上級表現に乗らないことだ。「業界最安値」「No.1」と書けば短期的にはAI検索で有利になるかもしれない。でもそれは逆選択を加速させる行為で、長期的には自分を含む市場全体の情報品質を下げる。事実を事実として書く。料金は複数の公式サイトから集めた実データで比較する。その積み重ねが、逆選択への対抗手段になる。</p>
+
+<h2 id="sec4">AIが偽装と区別できるシグナリングをJSON-LD・一次データで実装する</h2>
+
+<p>「おすすめ1位」とテキストで書くのは誰にでもできる。コストがゼロだからこそ、情報としての信頼性も低い。</p>
+
+<p>経済学の「シグナリング」理論では、「コストをかけないと出せない情報」が信頼の証として機能するとされている。就職市場における学歴がわかりやすい例だ。大学を卒業すること自体に4年間の時間と学費というコストがかかるため、「大学を出ている」という事実は「この人はそのコストを払えるだけの能力や忍耐力がある」というシグナルになる。嘘をつくコストが高い情報ほど、信頼できるシグナルとして機能する。</p>
+
+<p>振り返ると、僕のささげ記事にもシグナリングに該当する要素がいくつかあった。</p>
+
+<p>構造化データ（JSON-LD）を実装していたこと。FAQPage・Article・BreadcrumbListのJSON-LDを記事に埋め込んでいた。HTMLを編集してスキーマに沿ったコードを書く手間が必要で、「おすすめ1位」とテキストに書くよりずっとコストが高い。AIにとっては、構造化データの有無が「この情報源はどれだけ丁寧に作られているか」を判定する材料になりうる。実装手順は「<a href="json-ld-guide.html">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</a>」でまとめた。</p>
+
+<p>16社の料金データを自分で調べて一次データとして公開していたこと。各社の公式サイトを1社ずつ確認して料金体系を比較表にまとめる作業には、相当な時間がかかる。この調査コスト自体がシグナルだ。「調べる手間をかけた情報」は、「テキストだけ書いた情報」とは品質が違う。</p>
+
+<p>FAQ構造化データで想定質問をカバーしていたこと。ささげ記事には5問以上のFAQを本文とJSON-LDの両方で一致させて入れている。読者がAI検索に投げそうな質問を先回りして用意しておくと、AIがその質問に対する回答として記事を参照しやすくなる。FAQ構造化データの検索結果への影響は「<a href="faq-structured-data.html">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</a>」に詳しい。</p>
+
+<p>これらは意図的にやっていたわけではなく、SEOとLLMOの基本施策として積み上げてきたものだ。AIに引用されやすい記事構造の基本については「<a href="llmo-article-writing.html">AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</a>」にまとめてあるが、今回経済学のシグナリング理論を当てはめて振り返ると、「なぜそれが有効だったのか」の説明がつく。</p>
+
+<p>Bing Webmaster ToolsのAI引用データ（2026年6月18日時点）で裏付けを見てみる。このサイトの52ページが合計3,342回AIに引用されている。引用回数の上位は、リサイズの用語集が666回、Instagram画像サイズの記事が477回、Exif情報の記事が415回だ。引用回数が多い記事に共通するのは、特定のテーマについて具体的な数値やスペックを網羅的にまとめていること。「偽装コストの高い情報」を持つ記事ほどAIに引用されやすいという、シグナリング理論と整合する結果になっている。</p>
+
+<h2 id="sec5">EC担当者がLLMO戦略に活かせる3つの実務指針</h2>
+
+<p>経済学の3概念から、LLMO（AI検索最適化）の実務指針を引き出せる。すでに無意識にやっていたことと、今後意識的に取り組むことを分けて整理する。</p>
+
+<p>まず調整ゲームの応用。自分が詳しい領域で情報を集約する記事を書くこと。僕のささげ記事は16社を1ページにまとめたことでAI Overviewsの参照元になった。EC担当者なら、自社の業種に関連する「○○ おすすめ」「○○ 比較」の記事で、複数の選択肢を横並びで整理する記事が有効だ。ここまではすでにやっていた。次の段階として、関連記事を複数本書いてクラスター化し、AIにとっての参照先を固めていく。記事同士を内部リンクでつなぐ設計は「<a href="internal-link-seo.html">内部リンクの貼り方を個人ブログで試した記録｜用語集と関連記事の活用</a>」に記録がある。</p>
+
+<p>次にシグナリングの実践。構造化データ（JSON-LD）と一次データの整備はすでにやってきた。次に取り組むのは料金データの定期更新だ。半年に1回は各社の料金ページを再調査して、更新日を記事に明記する。データが古いままだとシグナルの鮮度が落ちる。もうひとつは、他サイトから引用される質の記事を書いて被リンクを増やすこと。被リンクは自作自演が難しい。外部サイトが「この情報源を参照している」という事実は、AIにとって最も偽装しにくいシグナルの一つだ。</p>
+
+<p>最後に逆選択への対抗。根拠のない「業界No.1」「最安値」を使わないことはすでに実践している。加えて、事実ベースの記事を一定の頻度で書き続けることが必要だ。AIの精度は日々改善されている。根拠のない表記をAIが見分けられるようになったとき、事実ベースで書いてきた記事が残る。</p>
+
+<p>LLMOの基本から知りたい方は「<a href="llmo-guide.html">LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方</a>」を先に読んでほしい。</p>
+
+<h2 id="sec6">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. AI Overviewsに自分のサイトが引用される条件は何ですか？</strong></p>
+<p class="fa">
+A.<br/>明確な条件は公開されていませんが、複数の情報源が一致する内容をAIが「合意」として採用する傾向があります。自サイトが特定のテーマについて情報を網羅的にまとめており、構造化データ（JSON-LD）が実装されていると、参照元として選ばれやすくなると考えています。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 小規模な個人サイトでもAI Overviewsに引用されることはありますか？</strong></p>
+<p class="fa">
+A.<br/>あります。僕のサイトはGitHub Pagesで運営している個人ブログですが、「ささげ代行 おすすめ」の検索結果でAI Overviewsの参照元に選ばれ、オーガニック検索でも1位を取っています。サイトの規模よりも、特定のテーマで網羅性の高い情報を提供しているかが重要です。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 比較記事を自社ブログに書いたが、AI Overviewsの参照元に選ばれません。記事の構造で改善できることはありますか？</strong></p>
+<p class="fa">
+A.<br/>まず構造化データ（JSON-LD）が入っているか確認してください。FAQPage・Articleの構造化データはAIが記事の内容を理解する補助になります。次に、比較対象の数と情報の深さを見直してください。僕の記事は16社の料金・特徴を横並びで比較していたことでAIの参照元になりました。3〜4社しか載っていない記事は、AIにとって情報の集約度が低いと判定される可能性があります。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 競合が「業界No.1」を自称していてAI検索でも有利に見えます。自社は事実ベースで書いているのに損している気がします。どう対処すればいいですか？</strong></p>
+<p class="fa">
+A.<br/>短期的にはNo.1表記がAIに拾われて有利に見える場合があります。しかし根拠のないNo.1表記は景品表示法の優良誤認表示に該当する可能性があり、法的リスクを伴います。AIの精度は改善が続いているため、事実ベースの記事を書き続けることが長期的には有利です。自社が強い領域の情報を充実させて、調整ゲームの参加者として情報量で上回る戦略を取ってください。また、AIはこのような違反を見逃してしまいますが、サービスや商品を選ぶユーザーはコンプライアンス意識の低い会社に簡単には騙されません。人間に対しては信頼性を失う行為です。
+</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. LLMOとSEOの違いは何ですか？</strong></p>
+<p class="fa">
+A.<br/>SEOはGoogleの検索結果ページで上位表示を狙う施策です。LLMOはChatGPTやAI Overviewsなど、AIが直接回答を生成する場面で自サイトの情報が引用されることを狙う施策です。両者は対立するものではなく、構造化データや一次データの整備は両方に効果があります。LLMOの基本は「<a href="llmo-guide.html">LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方</a>」でまとめています。
+</p>
+</div>
+
+<h2 id="sec7">まとめ</h2>
+
+<p>経済学の動画を6本見てNotebookLMで要約した結果、AI検索の仕組みを「調整ゲーム」「逆選択」「シグナリング」の3つで説明できることがわかった。</p>
+
+<p>調整ゲームの視点では、特定のテーマで情報を集約し、AIにとっての「合意の参照先」になることが重要だ。僕のささげ16社比較記事はAI Overviewsに引用され、検索結果でも1位を取っている。逆選択の視点では、根拠のない最上級表現に乗らず、事実ベースの情報で市場の品質を維持すること。シグナリングの視点では、構造化データ・一次データ・FAQ構造化データなど「偽装コストの高い情報」を積み上げること。</p>
+
+<p>これからは半年に1回の料金データ再調査、記事クラスターの内部リンク強化、被リンク獲得を意識した記事の質向上を、LLMO戦略として組み込んでいく。</p>
+
+<h2 id="sec8">この記事を書くきっかけになった動画</h2>
+
+<p>ReHacQ（リハック）の「高橋弘樹vs経済学」シリーズ。東京大学大学院経済学研究科教授・小島武仁先生が経済学の基礎からゲーム理論、マッチング理論までを解説している。全6本。</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=v_JbSUc5ZrE" rel="noopener" target="_blank">【高橋弘樹vs経済学①】</a>経済学の目的（公平性と効率性）、見えざる手、市場の失敗、マッチング理論の導入</li>
+<li><a href="https://www.youtube.com/watch?v=GYfRJJ2cmkc" rel="noopener" target="_blank">【高橋弘樹vs経済学②】</a>独占、外部性、公共財、オークション理論</li>
+<li><a href="https://www.youtube.com/watch?v=ftgLaxonB-A" rel="noopener" target="_blank">【高橋弘樹vs経済学③】</a>情報の非対称性、モラルハザード、<strong>逆選択（この記事で使用）</strong></li>
+<li><a href="https://www.youtube.com/watch?v=SSjApS8X0pE" rel="noopener" target="_blank">【高橋弘樹vs経済学④】</a>合理性とは何か、先送りバイアス、ナッジ（デフォルト効果）、損失回避、サンクコスト</li>
+<li><a href="https://www.youtube.com/watch?v=iR_b-rpH_ng" rel="noopener" target="_blank">【高橋弘樹vs経済学⑤】</a>ゲーム理論の基礎、ナッシュ均衡、囚人のジレンマ、<strong>しっぺ返し戦略（この記事で使用）</strong></li>
+<li><a href="https://www.youtube.com/watch?v=K97oSpl8xqY" rel="noopener" target="_blank">【高橋弘樹vs経済学⑥】</a><strong>調整ゲーム（この記事で使用）</strong>、マッチング理論、セレンディピティの設計</li>
+</ul>
+
+<h2 class="related-title" id="sec9">関連する記事</h2>
+<a class="cite-card" href="sasage-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/sasage-outsource.html</span>
+</span>
+</a>
+<a class="cite-card" href="retouch-pricing-database.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真レタッチの料金相場｜外注15社を比較【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-pricing-database.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-article-writing.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-article-writing.html</span>
+</span>
+</a>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="background-white.html">
+<div class="featured-thumb">
+<img alt="背景切り抜き・白抜き写真の作り方" loading="lazy" height="160" src="thumbs/background-white.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較</h2>
+<p class="card-desc">AI切り抜きツール・スマホアプリ・Photoshop・プロ外注の4パターンで比較。Remove.bg・Canva・PicWishなど無料ツールの精度と料金差を整理した。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="seo-llmo-cost-small-business.html">
+<div class="featured-thumb">
+<img alt="SEO・LLMO対策の費用相場と小規模事業者の選択肢" loading="lazy" height="160" src="thumbs/seo-llmo-cost-small-business.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>SEO・LLMO対策の費用が高すぎる？｜AIO・GEOの相場と小規模事業者の選択肢</h2>
+<p class="card-desc">SEO・LLMO・AIO・GEO対策の費用相場を診断型・伴走型・包括型で比較。小規模事業者向けの月5万円以下サービスと無料施策を予算別に整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="レタッチ料金相場まとめ" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">写真レタッチ外注15社の費用相場を比較。人物レタッチは1,000〜6,000円、背景切り抜きは数十円〜数百円。目的別おすすめ表でサービスを選べる。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ16選" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">ささげ業務の意味と工数、代行会社16社の比較、費用相場と損益分岐点、EC業務全体での外注判断をまとめた備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">経済学のYouTube動画6本をNotebookLMで要約した経緯</a></li>
+<li><a href="#sec2">AI Overviewsにささげ記事が引用された理由と調整ゲームの構造</a></li>
+<li><a href="#sec3">「根拠のないNo.1」がAI検索に通用してしまう問題と逆選択</a></li>
+<li><a href="#sec4">AIが偽装と区別できるシグナリングをJSON-LD・一次データで実装する</a></li>
+<li><a href="#sec5">EC担当者がLLMO戦略に活かせる3つの実務指針</a></li>
+<li><a href="#sec6">FAQ</a></li>
+<li><a href="#sec7">まとめ</a></li>
+<li><a href="#sec8">この記事を書くきっかけになった動画</a></li>
+</ol>
+</nav>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

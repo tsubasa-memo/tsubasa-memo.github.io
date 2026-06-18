@@ -479,6 +479,12 @@
 
 ### SEO・LLMO
 
+- [AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択](https://tsubasa-memo.github.io/ai-overview-economics-llmo.html): AI Overviewsに自分の記事が引用された理由を調整ゲーム・シグナリング・逆選択の3概念で分析。Bing Webmaster Toolsの引用データ、ささげ16社比較記事の検索1位事例、構造化データのシグナリング機能をまとめたLLMO実践メモ
+  - Q: AI Overviewsに自分のサイトが引用される条件は何ですか？
+  - Q: 小規模な個人サイトでもAI Overviewsに引用されることはありますか？
+  - Q: 比較記事を自社ブログに書いたが、AI Overviewsの参照元に選ばれません。記事の構造で改善できることはありますか？
+  - Q: 競合が「業界No.1」を自称していてAI検索でも有利に見えます。自社は事実ベースで書いているのに損している気がします。どう対処すればいいですか？
+  - Q: LLMOとSEOの違いは何ですか？
 - [Bing Webmaster Toolsで分かったAI検索時代のBing対策　Copilotに引用されるには](https://tsubasa-memo.github.io/bing-vs-google-traffic.html): Bing Webmaster Toolsとサーチコンソールの実測データ比較。CopilotやChatGPT Searchを支えるBingインデックスの役割とIndexNow設定手順を整理。
 - [LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方](https://tsubasa-memo.github.io/llmo-guide.html): LLMOの定義、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本
 - [Google Search Consoleの使い方｜AIを使えば初心者にも簡単](https://tsubasa-memo.github.io/search-console-guide.html): インデックス登録、検索パフォーマンス確認、構造化データ検証など初心者がやるべき機能に絞った解説
