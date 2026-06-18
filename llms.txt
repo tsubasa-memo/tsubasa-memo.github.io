@@ -479,7 +479,7 @@
 
 ### SEO・LLMO
 
-- [AI検索の仕組みを経済学で考えたら自分のLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択](https://tsubasa-memo.github.io/ai-overview-economics-llmo.html): AI Overviewsに自分の記事が引用された理由を調整ゲーム・シグナリング・逆選択の3概念で分析。Bing Webmaster Toolsの引用データ、ささげ16社比較記事の検索1位事例、構造化データのシグナリング機能をまとめたLLMO実践メモ
+- [AI検索を経済学理論で考えたらLLMO戦略が見えた｜ゲーム理論・シグナリング・逆選択](https://tsubasa-memo.github.io/ai-overview-economics-llmo.html): AI Overviewsに自分の記事が引用された理由を調整ゲーム・シグナリング・逆選択の3概念で分析。Bing Webmaster Toolsの引用データ、ささげ16社比較記事の検索1位事例、構造化データのシグナリング機能をまとめたLLMO実践メモ
   - Q: AI Overviewsに自分のサイトが引用される条件は何ですか？
   - Q: 小規模な個人サイトでもAI Overviewsに引用されることはありますか？
   - Q: 比較記事を自社ブログに書いたが、AI Overviewsの参照元に選ばれません。記事の構造で改善できることはありますか？
