@@ -557,6 +557,7 @@
   - Q: 内部リンクとは何ですか？なぜ重要なのですか？
   - Q: 構造化データ（JSON-LD）とは何ですか？
 - [もう悪徳SEO会社に騙されない｜初心者も知っておくべきSEOの基礎知識](https://tsubasa-memo.github.io/seo-start-guide.html): 悪徳SEO会社に騙されないための基礎知識。Search Console登録・titleタグ改善・ロングテールキーワードでの記事制作の3施策、リース契約・順位保証・成果報酬型SEOの罠、MEOとの優先順位の判断基準をまとめた記事
+- [「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索](https://tsubasa-memo.github.io/comparison-article-credibility.html): No.1表記の景品表示法違反リスクとGoogleの比較サイト規制強化の動向。AI検索がおすすめ記事の信頼性に与える影響を整理した記事
 - [サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断](https://tsubasa-memo.github.io/gsc-ai-report.html): Google Search Consoleに新設された生成AIパフォーマンスレポートの解説。AI Overviews・AI Modeでのインプレッション確認方法、クリックデータがない制約、ECサイトのオプトアウト判断基準を整理。
 
 
