@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】｜ツバサのメモ帳</title>
+<meta name="description" content="Googleがサポートする構造化データの全種類と、ECサイトで優先すべきスキーマを2026年6月時点の情報で整理。レビュー評価の水増しなど偽装パターンや、構造化データ追加でAI引用が増えなかったAhrefsの大規模調査結果も紹介する。">
+<meta name="keywords" content="構造化データ 種類,構造化データ ECサイト,JSON-LD EC,Product schema,AggregateRating 偽装,構造化データ AI引用,リッチリザルト 2026">
+<meta property="og:title" content="構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】">
+<meta property="og:description" content="Googleがサポートする構造化データの全種類と、ECサイトで優先すべきスキーマを2026年6月時点の情報で整理。レビュー評価の水増しなど偽装パターンや、構造化データ追加でAI引用が増えなかったAhrefsの大規模調査結果も紹介する。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/structured-data-types-ec.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/structured-data-types-ec.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/structured-data-types-ec.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/structured-data-types-ec.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "構造化データを入れると検索順位は上がりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleは構造化データの有無がランキングに直接影響するとは公言していません。2025〜2026年に複数の構造化データタイプを廃止した際も「ランキングには影響しない」と明言しています。ただし、リッチリザルト表示によるCTRの向上や、AIによる情報理解の正確性向上が間接的にプラスに働く可能性はあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "楽天やAmazonの商品ページに自分で構造化データを追加できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "できません。モールの商品ページはモール側が管理するHTMLテンプレートで生成されており、出品者がJSON-LDを追加する手段は通常ありません。構造化データの整備が必要なのは自社ECサイトです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "FAQのリッチリザルトが廃止されたのに、FAQPage JSON-LDを残す意味はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "あります。Googleの検索結果にFAQのドロップダウンは表示されなくなりましたが、FAQ構造化データを残しておいてもGoogleは「問題ない」としており、BingbotやPerplexityBotなどのAI系クローラーは引き続きこのデータを読みます。LLMO（AI検索最適化）の観点ではQ&A形式の構造化データはAIが引用しやすいため、残しておく価値があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AggregateRatingを使うときに注意すべきことは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleの構造化データガイドラインでは、構造化データの内容がページ上に表示されているコンテンツと一致することが求められています。レビュー件数や平均評価点は、ページ上で実際に確認できるレビューの数と合致していなければなりません。外部のレビュープラットフォーム（Googleビジネスプロフィール等）のデータを引用する場合は、そのプラットフォームへのリンクが確認手段として必要です。水増しはGoogleのスパムアクションの対象となります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "構造化データの実装後にエラーがないか確認する方法はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleのリッチリザルトテスト（search.google.com/test/rich-results）にページのURLを入力すると、検出された構造化データのタイプとエラーの有無を確認できます。また、Search Consoleの「拡張」セクションでも構造化データの認識状況を継続的に監視できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JSON-LDの書き方がわからない場合、どこから学べますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleの構造化データに関するドキュメント（developers.google.com/search/docs/appearance/structured-data/search-gallery）に、各タイプごとのコード例と必須プロパティが記載されています。ECサイト向けにはeコマースの構造化データガイドも参考になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "構造化データの偽装がバレるとどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Googleはガイドライン違反の構造化データに対して、リッチリザルトの表示停止（マークアップが無視される）や、手動対策（検索順位への影響）を適用する可能性があります。Product schemaでの価格偽装は、景品表示法上の有利誤認表示に該当するリスクもあり、法的な問題に発展する可能性もあります。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】",
+  "description": "Googleがサポートする構造化データの全種類と、ECサイトで優先すべきスキーマを2026年6月時点の情報で整理。レビュー評価の水増しなど偽装パターンや、構造化データ追加でAI引用が増えなかったAhrefsの大規模調査結果も紹介する。",
+  "url": "https://tsubasa-memo.github.io/structured-data-types-ec.html",
+  "image": "https://tsubasa-memo.github.io/og/structured-data-types-ec.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-06-20T00:00:00+09:00",
+  "dateModified": "2026-06-20T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SEO・LLMO",
+      "item": "https://tsubasa-memo.github.io/archive.html?cat=seo"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "構造化データの種類と選び方"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/structured-data-types-ec.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta name="twitter:title" content="構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】">
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; 構造化データの種類と選び方
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/structured-data-types-ec.webp" alt="構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】</h1>
+<div class="article-meta-line">
+<span>公開: 2026年6月20日</span>
+<span>更新: 2026年6月20日</span>
+</div>
+
+<p>こんにちは、ツバサです。自分のブログにFAQ構造化データを入れたことがきっかけで構造化データに興味を持ったのですが、調べれば調べるほど種類が多くて混乱しました。<a href="https://schema.org/" target="_blank" rel="noopener">schema.org</a>には800以上の型が定義されていて、Googleがリッチリザルトとしてサポートするのはそのうちの約25種類。しかも2025年から2026年にかけて立て続けに廃止されたタイプもあり、今の時点でどれが有効なのかが分かりにくい。</p>
+
+<p>そもそも構造化データを入れると何が変わるのかを先に整理しておきます。変わるのは大きく2つです。1つ目は<strong>検索結果の見た目</strong>です。通常の検索結果はタイトル・URL・説明文だけですが、構造化データを入れると、商品の価格や在庫状況、レビューの星評価、FAQのQ&amp;Aなどが検索結果に直接表示されることがあります。この拡張された表示のことを「リッチリザルト」と呼びます。リッチリザルトはクリック率に直結するため、ECサイトではProduct schemaの実装が特に重要です。2つ目は<strong>AIの情報理解の精度</strong>です。ChatGPTやPerplexityなどのAI検索エンジンは、Webページの情報を読み取って回答を生成します。構造化データがあると、AIは「このページの商品名は○○、価格は○○円、在庫は○○」といった情報を推測ではなく確定的に取得できます。人間向けの文章をAIが誤読するリスクが減り、正確に引用される可能性が高まります。</p>
+
+<p>この記事では、2026年6月時点でGoogleがサポートしている構造化データの種類を整理し、ECサイトの担当者がどれを優先すべきかをまとめました。後半では、レビュー評価の水増しといった構造化データの偽装パターンと、「構造化データを入れればAIに引用される」という説がAhrefsの大規模調査でどう評価されたかも書いています。</p>
+
+<div class="toc">
+<p>もくじ</p>
+<ol>
+<li><a href="#sec1">Googleがサポートする構造化データの種類一覧（2026年6月時点）</a></li>
+<li><a href="#sec2">2025年から2026年にかけてGoogleが廃止した構造化データ</a></li>
+<li><a href="#sec3">ECサイトで優先して実装すべき5つの構造化データ</a></li>
+<li><a href="#sec4">モール出品者と自社ECサイトで必要な対応が異なる</a></li>
+<li><a href="#sec5">AggregateRating水増しなど構造化データの偽装パターン</a></li>
+<li><a href="#sec6">「構造化データを入れればAIに引用される」は本当か</a></li>
+<li><a href="#sec7">FAQ</a></li>
+<li><a href="#sec8">まとめ</a></li>
+<li><a href="#sec9">関連する記事</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">Googleがサポートする構造化データの種類一覧（2026年6月時点）</h2>
+
+<p>まず全体像を把握しておきます。構造化データの記述形式（フォーマット）は3種類あって、<a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a>・Microdata・RDFaの3つをGoogleはサポートしています（<a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">Google Search Central「構造化データの仕組み」</a>）。このうちGoogleが推奨しているのはJSON-LDで、HTMLの&lt;head&gt;内に&lt;script type="application/ld+json"&gt;で埋め込む形式です。ページ本文のHTMLと分離できるのでメンテナンスしやすく、2026年時点で新規に実装するなら実質JSON-LD一択です。</p>
+
+<p>Googleの<a href="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" target="_blank" rel="noopener">構造化データ機能ギャラリー</a>に掲載されている、現在サポートされている主なタイプは以下のとおりです。</p>
+
+<p><strong>検索結果の見た目に影響するもの（リッチリザルト対応）</strong></p>
+<ul>
+<li>Article（ニュース・ブログ記事）</li>
+<li>Product（商品情報・価格・在庫）</li>
+<li>Review snippet / AggregateRating（星評価）</li>
+<li>Recipe（レシピ）</li>
+<li>Event（イベント）</li>
+<li>Local Business（店舗情報）</li>
+<li>Organization（企業・組織情報）</li>
+<li>Video（動画のサムネイル・キーモーメント）</li>
+<li>Job posting（求人）</li>
+<li>BreadcrumbList（パンくずリスト）</li>
+<li>Software app（アプリ情報）</li>
+<li>Carousel（カルーセル表示）</li>
+</ul>
+
+<p><strong>構造の補助・特定用途向け</strong></p>
+<ul>
+<li>FAQ（Q&amp;Aドロップダウン。リッチリザルトは2026年5月に廃止）</li>
+<li>Q&amp;A（Yahoo知恵袋型）</li>
+<li>Discussion forum（フォーラム）</li>
+<li>Profile page（プロフィール）</li>
+<li>Course list（教育コース）</li>
+<li>Dataset（Google Dataset Search専用）</li>
+<li>Education Q&amp;A（教育向けフラッシュカード）</li>
+<li>Image metadata（画像のライセンス情報）</li>
+<li>Math solver（数学問題の解法）</li>
+<li>Speakable（音声読み上げ対象指定）</li>
+<li>Subscription / paywalled content（有料記事）</li>
+<li>Vacation rental（バケーションレンタル）</li>
+</ul>
+
+<h2 id="sec2">2025年から2026年にかけてGoogleが廃止した構造化データ</h2>
+
+<p>Googleは2023年ごろから「使われていないリッチリザルトを整理する」方針を打ち出しており、ここ1年で廃止のペースが加速しています。</p>
+
+<p>2023年8月、FAQリッチリザルトとHowToリッチリザルトが大幅に制限されました。FAQは政府・医療機関のサイトのみに表示対象が絞られ、HowToはデスクトップで完全廃止（モバイルのみ残存）。</p>
+
+<p>2025年6月には7タイプが一斉に廃止されました。Book Actions、Course Info、Claim Review（ファクトチェック）、Estimated Salary、Learning Video、Special Announcement、Vehicle Listingです（<a href="https://developers.google.com/search/blog/2025/06/simplifying-search-results" target="_blank" rel="noopener">Google Search Central Blog 2025年6月12日</a>）。Googleはこの変更について「ユーザーにとって使用頻度が低く、追加の価値が限定的な表示を整理する」と説明しています。</p>
+
+<p>2026年1月にはPractice Problem（練習問題）のサポートも終了し、2026年5月にはFAQリッチリザルトが完全廃止されました。Search Consoleの報告やリッチリザルトテストからも順次除外されています。</p>
+
+<p>ただし注意点が2つあります。1つ目は、廃止はあくまで「Googleの検索結果でのリッチリザルト表示」の話であり、ランキングには影響しないとGoogleは明言しています。2つ目は、FAQPage等のマークアップをHTMLに残しておいても害はなく、BingbotやPerplexityBotなどAI系のクローラーは引き続きこれらの構造化データを読みます。Googleのリッチリザルトが出なくなっただけで、構造化データとしての情報伝達機能は失われていません。</p>
+
+<p>僕のブログの場合、直近ではBingからのクリック数がGoogleを上回る逆転が起きています。以下はサーチコンソールとBing Webmaster Toolsのデータです（2026年6月時点）。</p>
+
+<p><strong>3か月間（2026年3月〜6月）</strong></p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>指標</th><th>Google（日本）</th><th>Bing</th></tr>
+</thead>
+<tbody>
+<tr><td>合計クリック</td><td>179</td><td>159</td></tr>
+<tr><td>合計表示</td><td>9,503</td><td>7,108</td></tr>
+<tr><td>CTR</td><td>1.88%</td><td>2.24%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>直近7日間</strong></p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>指標</th><th>Google（日本）</th><th>Bing</th></tr>
+</thead>
+<tbody>
+<tr><td>日平均クリック</td><td>4.6</td><td>7.8</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>3か月の合計ではほぼ拮抗していますが、直近7日間ではBingの日平均クリック数がGoogleの約1.7倍に加速しています。さらにMicrosoftのCopilotに引用される回数は1日あたり約118件に達しており、3か月前の15倍です。BingのインデックスはCopilotだけでなくChatGPT SearchやPerplexityのバックエンドにもなっているので、Googleがリッチリザルトを廃止してもBing経由のAI引用チャネルが生きていれば、構造化データを残す意味は十分にあります。この話は別の記事で詳しく書いています。</p>
+
+<a class="cite-card" href="bing-vs-google-traffic.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Bing Webmaster Toolsで分かったAI検索時代のBing対策　Copilotに引用されるには</span>
+<span class="cite-url">tsubasa-memo.github.io/bing-vs-google-traffic.html</span>
+</span>
+</a>
+
+<h2 id="sec3">ECサイトで優先して実装すべき5つの構造化データ</h2>
+
+<p>ECサイトの担当者が全タイプを気にする必要はありません。優先度の高いものを5つに絞ります。</p>
+
+<p><strong>1. Product（商品情報）</strong></p>
+<p>ECサイトにとって最も重要な構造化データです。商品名、価格、在庫状況、ブランド名、商品画像をGoogleに伝えることで、検索結果に価格や「在庫あり」の表示が出ます。Googleはeコマース向けの構造化データガイドで、Product schemaの実装を明確に推奨しています（<a href="https://developers.google.com/search/docs/specialty/ecommerce/include-structured-data-relevant-to-ecommerce?hl=ja" target="_blank" rel="noopener">Google Search Central「ECサイトで実装すべき構造化データ」</a>）。ある調査ではProduct schemaの実装によりCTRが20〜30%改善したという報告もあります。</p>
+
+<p><strong>2. BreadcrumbList（パンくずリスト）</strong></p>
+<p>サイトの階層構造を検索エンジンに伝えるものです。検索結果のURLの代わりに「ホーム &gt; カテゴリ &gt; 商品名」のように表示されるので、ユーザーがページの位置づけを一目で判断できます。実装コストが低く効果が安定しているので、Productの次に入れるべきです。</p>
+
+<p><strong>3. Organization（組織情報）</strong></p>
+<p>法人名、ロゴ、連絡先、所在地などの基本情報です。Googleのナレッジパネルに情報が反映される可能性があり、ブランドのエンティティ認識を強化します。<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>（AI検索最適化）の文脈では、AIが「この会社は何者か」を正確に把握するための土台になります。</p>
+
+<p><strong>4. Review / AggregateRating（レビュー・星評価）</strong></p>
+<p>実際のユーザーレビューに基づく星評価を検索結果に表示させるものです。視覚的に目立つため、CTRへの効果が大きい。ただし後述するとおり、レビュー件数の水増しなど偽装に使われやすいタイプでもあり、Googleのガイドラインを正確に守る必要があります。</p>
+
+<p><strong>5. FAQPage（FAQ）</strong></p>
+<p>2026年5月にGoogleのリッチリザルトとしては廃止されましたが、AIクローラーにとってのFAQ構造化データの価値は残っています。Q&amp;A形式のデータはLLMが引用しやすい構造なので、LLMO施策として継続する意味があります。僕のブログでもFAQPage JSON-LDは全記事に入れたままにしています。</p>
+
+<p>これ以外にEvent（セール・キャンペーン情報）やVideo（商品紹介動画）なども状況に応じて有効ですが、まずは上記5つを実装した上での追加検討です。</p>
+
+<h2 id="sec4">モール出品者と自社ECサイトで必要な対応が異なる</h2>
+
+<p>楽天市場・Amazon・Yahoo!ショッピングなどのモールに出品している場合と、自社ECサイト（Shopify・EC-CUBE・BASE・フルスクラッチなど）を運営している場合では、対応の仕方がまったく違います。</p>
+
+<p><strong>モール出品者は基本的に対応不要です。</strong> モール側がProduct・BreadcrumbList等の構造化データを商品ページのテンプレートに組み込んで自動生成しています。出品者が独自にJSON-LDを追加する手段は通常ありません。モール内の商品ページに構造化データを追加したいと思っても、HTMLを直接編集する権限がないためです。</p>
+
+<p><strong>自社ECサイトでは自力での実装が必要です。</strong> プラットフォームによって難易度が異なります。</p>
+
+<p>Shopifyはテーマに基本的なProduct構造化データが含まれていますが、テーマによっては不完全な場合があります。BreadcrumbListやOrganizationなどProduct以外のタイプはテーマに含まれていないことが多く、アプリ（「JSON-LD for SEO」等）を追加するか、テーマのLiquidテンプレートにJSON-LDを直接書く必要があります。</p>
+
+<p>EC-CUBEはプラグインで対応する形です。標準機能には構造化データの出力がないため、プラグインの導入かテンプレートへの手書きが必要になります。</p>
+
+<p>フルスクラッチの場合は、テンプレートエンジン側で商品データをJSON-LDに変換して出力する仕組みを開発チームに組み込んでもらう形です。</p>
+
+<p>少人数のEC担当者が自社サイトの構造化データを一から整備するのは負荷が大きいので、まずGoogleの<a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">リッチリザルトテスト</a>で自社商品ページのURLを入力して、現時点でどのタイプが認識されているかを確認するところから始めるのが現実的です。</p>
+
+<h2 id="sec5">AggregateRating水増しなど構造化データの偽装パターン</h2>
+
+<p>構造化データはJSON-LDで&lt;head&gt;内に自由な値を書けるため、ページ上の実態と異なる情報を申告することが技術的には可能です。Googleは<a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies" target="_blank" rel="noopener">構造化データガイドライン</a>で「ページ上に表示されているコンテンツを正確に反映すること」を求めていますが、実際には違反しているサイトが存在します。</p>
+
+<p><strong>AggregateRating（レビュー評価）の水増し</strong></p>
+
+<p>最もインセンティブが高い偽装です。検索結果に星評価が表示されるとCTRに直結するため、実際のレビュー数より大幅に多い件数や、実態と異なる高評価を構造化データに書き込むケースがあります。</p>
+
+<p>僕が確認したケースでは、あるサービスサイトのトップページにJSON-LDで「レビュー200件・平均4.8点」のAggregateRatingが埋め込まれていましたが、ページ上に表示されている「お客様の声」は5件のテスティモニアルだけでした。外部のレビュープラットフォーム（Googleビジネスプロフィール、Trustpilot等）へのリンクもありません。5件の声を200件のレビューとして申告するのは、Googleの構造化データガイドラインに対する明確な違反です。</p>
+
+<p><strong>Product / Offerの価格偽装</strong></p>
+
+<p>構造化データに実際のページより安い価格を入れて、検索結果で「最安値」のように見せかけるパターンです。ユーザーがクリックして実際のページを見たときに価格が異なるため、発覚しやすい偽装ではありますが、景品表示法の有利誤認表示（第5条第2号）に該当する可能性もある法的リスクの高い行為です。景品表示法では、価格について実際のものよりも著しく有利であると消費者に誤認させる表示を禁止しています（<a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/representation_regulation/double_price" target="_blank" rel="noopener">消費者庁「二重価格表示」</a>）。</p>
+
+<p><strong>FAQPageのページ不一致</strong></p>
+
+<p>ページ上にFAQセクションが存在しないのに、JSON-LDにだけFAQPageを入れるパターンです。Googleのガイドラインでは「ページ上に表示されているコンテンツと一致すること」が求められているため、本来はNGです。2026年5月のFAQリッチリザルト廃止で、この偽装を行う動機自体がなくなりました。</p>
+
+<p>構造化データは本来、偽装コストが高い信頼のシグナルとしてAIが品質判定に使える情報です。ページのテキストで「業界No.1」と書くのは誰でもできますが、Product schemaに正確な価格・在庫・外部レビューのデータを入れるのは、データが存在しないと不可能です。しかし、AggregateRatingの水増しのような偽装が横行すると、このシグナルの信頼性そのものが損なわれます。Googleもこの問題は認識しており、スパムアクションの対象になり得ます。</p>
+
+<h2 id="sec6">「構造化データを入れればAIに引用される」は本当か</h2>
+
+<p>LLMO（AI検索最適化）の文脈で「構造化データを入れればAIに引用される」という主張をよく見かけます。しかし、2026年5月にAhrefsが公開した大規模調査は、この主張に疑問を投げかけています。</p>
+
+<p>Ahrefsは、2025年8月から2026年3月にかけてJSON-LDスキーマを追加した1,885ページを特定し、4,000ページの対照群と比較して、Google AI Overviews・AI Mode・ChatGPTでの引用数の変化を測定しました（<a href="https://www.searchenginejournal.com/schema-markup-didnt-move-ai-citations-in-ahrefs-test/574568/" target="_blank" rel="noopener">Search Engine Journal 2026年5月11日の報道</a>）。</p>
+
+<p>結果は、いずれのプラットフォームでもスキーマ追加による引用数の有意な増加は確認されませんでした。AI Overviewsでは-4.6%の微減（統計的に有意だがAhrefs自身がスキーマのみに帰属できないと注記）、AI Modeでは+2.4%、ChatGPTでは+2.2%で、後者2つは統計的にノイズと区別できない範囲でした。</p>
+
+<p>ただしこの調査には留意点があります。対象ページはすべて調査前の時点で月100回以上AIに引用されていた「すでに高パフォーマンスのページ」です。すでに十分に引用されているページにスキーマを足しても効果が見えにくいのは当然かもしれません。「ゼロからスキーマを入れたら引用が始まった」というケースは、この調査のスコープ外です。</p>
+
+<p>Ahrefs自身も、構造化データにはリッチリザルト表示、音声アシスタント対応、ナレッジグラフ構築、エンティティ認識の強化といった「AI引用以外の役割」があることを認めています。</p>
+
+<p>僕の理解をまとめると、構造化データは「入れただけでAI引用が増える直接のレバー」ではなく、「AIが自社の情報を正確に理解するための前提条件」として位置づけるのが妥当です。AI引用を実際に増やすのは、コンテンツの質、被リンク、サイテーション（外部での言及）、E-E-A-T（経験・専門性・権威性・信頼性）であり、構造化データはそれらが正しくAIに伝わるための通訳のような存在です。</p>
+
+<h2 id="sec7">FAQ</h2>
+<div class="faq-item">
+<p class="fq"><strong>Q. 構造化データを入れると検索順位は上がりますか？</strong></p>
+<p class="fa">A. Googleは構造化データの有無がランキングに直接影響するとは公言していません。2025〜2026年に複数の構造化データタイプを廃止した際も「ランキングには影響しない」と明言しています。ただし、リッチリザルト表示によるCTRの向上や、AIによる情報理解の正確性向上が間接的にプラスに働く可能性はあります。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 楽天やAmazonの商品ページに自分で構造化データを追加できますか？</strong></p>
+<p class="fa">A. できません。モールの商品ページはモール側が管理するHTMLテンプレートで生成されており、出品者がJSON-LDを追加する手段は通常ありません。構造化データの整備が必要なのは自社ECサイトです。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. FAQのリッチリザルトが廃止されたのに、FAQPage JSON-LDを残す意味はありますか？</strong></p>
+<p class="fa">A. あります。Googleの検索結果にFAQのドロップダウンは表示されなくなりましたが、FAQ構造化データを残しておいてもGoogleは「問題ない」としており、BingbotやPerplexityBotなどのAI系クローラーは引き続きこのデータを読みます。LLMO（AI検索最適化）の観点ではQ&amp;A形式の構造化データはAIが引用しやすいため、残しておく価値があります。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. AggregateRatingを使うときに注意すべきことは何ですか？</strong></p>
+<p class="fa">A. Googleの構造化データガイドラインでは、構造化データの内容がページ上に表示されているコンテンツと一致することが求められています。レビュー件数や平均評価点は、ページ上で実際に確認できるレビューの数と合致していなければなりません。外部のレビュープラットフォーム（Googleビジネスプロフィール等）のデータを引用する場合は、そのプラットフォームへのリンクが確認手段として必要です。水増しはGoogleのスパムアクションの対象となります。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 構造化データの実装後にエラーがないか確認する方法はありますか？</strong></p>
+<p class="fa">A. Googleの<a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">リッチリザルトテスト</a>にページのURLを入力すると、検出された構造化データのタイプとエラーの有無を確認できます。また、Search Consoleの「拡張」セクションでも構造化データの認識状況を継続的に監視できます。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. JSON-LDの書き方がわからない場合、どこから学べますか？</strong></p>
+<p class="fa">A. Googleの<a href="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" target="_blank" rel="noopener">構造化データに関するドキュメント</a>に、各タイプごとのコード例と必須プロパティが記載されています。ECサイト向けには<a href="https://developers.google.com/search/docs/specialty/ecommerce/include-structured-data-relevant-to-ecommerce?hl=ja" target="_blank" rel="noopener">eコマースの構造化データガイド</a>も参考になります。
+</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 構造化データの偽装がバレるとどうなりますか？</strong></p>
+<p class="fa">A. Googleはガイドライン違反の構造化データに対して、リッチリザルトの表示停止（マークアップが無視される）や、手動対策（検索順位への影響）を適用する可能性があります。Product schemaでの価格偽装は、景品表示法上の有利誤認表示に該当するリスクもあり、法的な問題に発展する可能性もあります。
+</p>
+</div>
+
+<h2 id="sec8">まとめ</h2>
+
+<p>構造化データの種類は多いですが、ECサイトの担当者がまず対応すべきなのはProduct・BreadcrumbList・Organization・Review / AggregateRating・FAQPageの5つです。モール出品者はモール側が対応済みなので、自社ECサイトを持っている場合に実装を検討してください。</p>
+
+<p>2025〜2026年にGoogleが複数のリッチリザルトを廃止しましたが、構造化データそのものの価値がなくなったわけではありません。リッチリザルトが出なくなったタイプでもAI系クローラーは読み続けていますし、正確な情報を機械可読な形式で提供することの重要性は変わりません。</p>
+
+<p>一方で、構造化データを入れるだけでAIに引用されるというのは過剰な期待です。Ahrefsの調査が示したように、スキーマ追加単体ではAI引用は増えません。構造化データはAIに情報を正確に伝えるための前提条件であり、引用される記事を作るにはコンテンツの質と信頼性を積み上げる必要があります。</p>
+
+<p>レビュー評価の水増しのような偽装は、短期的には検索結果で目立つかもしれませんが、Googleのスパムアクションや法的リスクを考えると割に合いません。正確な情報を正確に構造化する。地味ですが、それが長期的に正しいやり方です。</p>
+
+<h2 class="related-title" id="sec9">関連する記事</h2>
+<a class="cite-card" href="json-ld-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="faq-structured-data.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</span>
+<span class="cite-url">tsubasa-memo.github.io/faq-structured-data.html</span>
+</span>
+</a>
+<a class="cite-card" href="bing-vs-google-traffic.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Bing Webmaster Toolsで分かったAI検索時代のBing対策　Copilotに引用されるには</span>
+<span class="cite-url">tsubasa-memo.github.io/bing-vs-google-traffic.html</span>
+</span>
+</a>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="background-white.html">
+<div class="featured-thumb">
+<img alt="背景切り抜き・白抜き写真の作り方" loading="lazy" height="160" src="thumbs/background-white.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較</h2>
+<p class="card-desc">AI切り抜きツール・スマホアプリ・Photoshop・プロ外注の4パターンで比較。Remove.bg・Canva・PicWishなど無料ツールの精度と料金差を整理した。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="seo-llmo-cost-small-business.html">
+<div class="featured-thumb">
+<img alt="SEO・LLMO対策の費用相場と小規模事業者の選択肢" loading="lazy" height="160" src="thumbs/seo-llmo-cost-small-business.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>SEO・LLMO対策の費用が高すぎる？｜AIO・GEOの相場と小規模事業者の選択肢</h2>
+<p class="card-desc">SEO・LLMO・AIO・GEO対策の費用相場を診断型・伴走型・包括型で比較。小規模事業者向けの月5万円以下サービスと無料施策を予算別に整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="レタッチ料金相場まとめ" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ16選" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ16選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社16社の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar">
+<div class="toc-title">目次</div>
+<ol>
+<li><a href="#sec1">Googleがサポートする構造化データの種類一覧（2026年6月時点）</a></li>
+<li><a href="#sec2">2025年から2026年にかけてGoogleが廃止した構造化データ</a></li>
+<li><a href="#sec3">ECサイトで優先して実装すべき5つの構造化データ</a></li>
+<li><a href="#sec4">モール出品者と自社ECサイトで必要な対応が異なる</a></li>
+<li><a href="#sec5">AggregateRating水増しなど構造化データの偽装パターン</a></li>
+<li><a href="#sec6">「構造化データを入れればAIに引用される」は本当か</a></li>
+<li><a href="#sec7">FAQ</a></li>
+<li><a href="#sec8">まとめ</a></li>
+<li><a href="#sec9">関連する記事</a></li>
+</ol>
+</nav>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+&copy; 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
