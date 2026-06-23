@@ -418,6 +418,7 @@
 - [Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる](https://tsubasa-memo.github.io/google-io-2026-ec.html): Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマース（AP2）で買い物体験がどう変わるか。Merchant Centerフィードの見直しポイント、会話属性との関係、Product schemaの過信に注意すべき理由も解説。
 - [AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略](https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html): ChatGPTのInstant Checkoutが事実上の縮小に至った経緯と、GoogleがAI Mode・Shopping Graph・会話属性で加速するショッピング戦略を対比。中小EC担当者が新しい販売チャネルに飛びつかず、どのAIからも拾われる商品データの土台（フィード・構造化データ・画像品質）を整えるべき理由と優先順位を整理。
 - [ささげ代行の起源は？　ささげ会社の資本金・設立年数・従業員数から分かること](https://tsubasa-memo.github.io/sasage-company-check.html): ささげ代行19社の設立年・資本金・従業員数・取引先の公開状況を一覧比較し、AI検索が推薦した4社のうち2社が古い情報だった実例と法人取引で確認すべき6つのチェックポイントを整理した記事
+- [Amazon FBA・楽天・ZOZOの手数料と送料を商品別に比較した【2026年版】](https://tsubasa-memo.github.io/ec-apparel-shipping-cost.html): Tシャツ・スニーカー・バッグ・コートの4商品で自社EC・Amazon FBA・楽天・ZOZOTOWNの配送料・販売手数料・返品コストを比較。チャネル別の利益構造と役割の違いを整理。
 
 ### 副業・キャリア
 
