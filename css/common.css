@@ -325,7 +325,7 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
   position:sticky;
   top:24px;
 }
-.left-sidebar .sidebar-block{margin-bottom:20px}
+.left-sidebar .sidebar-block,.right-sidebar .sidebar-block{margin-bottom:20px}
 
 .sb-profile{
   text-align:center;
@@ -373,24 +373,10 @@ footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;fon
 /* --- 中央コンテンツ --- */
 .center-content{flex:1;min-width:0;max-width:780px}
 
-/* --- 右サイドバー（目次） --- */
+/* --- 右サイドバー（検索） --- */
 .right-sidebar{
-  width:220px;flex-shrink:0;position:sticky;top:24px;margin-top:420px;
+  width:220px;flex-shrink:0;position:sticky;top:24px;
 }
-.toc-sidebar{
-  background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;
-}
-.toc-sidebar .toc-title{
-  font-size:13px;font-weight:700;color:var(--text-sub);margin-bottom:12px;letter-spacing:.5px;
-}
-.toc-sidebar ol{list-style:none;margin:0;padding:0}
-.toc-sidebar li{margin:0;font-size:13px;line-height:1.5}
-.toc-sidebar li a{
-  display:block;padding:6px 0;color:var(--text);
-  border-left:2px solid transparent;padding-left:12px;
-  transition:border-color .15s,color .15s;text-decoration:none;
-}
-.toc-sidebar li a:hover{color:var(--accent);border-left-color:var(--accent);text-decoration:none}
 
 /* --- 記事ヘッダー要素 --- */
 .article-hero{margin-bottom:28px;border-radius:10px;overflow:hidden}
