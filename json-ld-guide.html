@@ -117,7 +117,7 @@
 <aside class="left-sidebar">
 <div class="sidebar-block"><div class="sb-profile"><div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div><div class="sb-site-name">ツバサのメモ帳</div></div></div>
 <div class="sidebar-block"><ul class="sb-nav"><li><a href="/">ホーム</a></li><li><a href="/archive.html">記事一覧</a></li><li><a href="/glossary/">用語集</a></li><li><a href="/about.html">運営者情報</a></li><li><a href="/privacy-policy.html">プライバシーポリシー</a></li></ul></div>
-<div class="sidebar-block"><p class="sb-label">検索</p><input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div>
+
 <div class="sidebar-block"><p class="sb-label">カテゴリ</p><ul class="sb-categories">
 <li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
 <li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
@@ -147,6 +147,17 @@
 
 <p>SEOやLLMO対策の記事を読むと「構造化データを実装しましょう」とよく書いてあります。でも具体的なコードがない記事が多くて、初めての人は何をどう書けばいいか分かりません。この記事では、実際にコピーして使えるJSON-LDのコード例を載せました。FAQPage、Article、<a href="/glossary/breadcrumb.html" class="glossary-inline">BreadcrumbList</a>の3つに絞って、書き方と確認方法を説明します。ECサイトではProductやOfferなど商品系のスキーマも重要になるので、「<a href="structured-data-types-ec.html">構造化データの種類と選び方｜ECサイトで優先すべきスキーマ</a>」もあわせて読んでみてください。</p>
 
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">構造化データ（JSON-LD）とは</a></li>
+<li><a href="#sec2">FAQPage JSON-LDの書き方</a></li>
+<li><a href="#sec3">Article JSON-LDの書き方</a></li>
+<li><a href="#sec4">BreadcrumbList JSON-LDの書き方</a></li>
+<li><a href="#sec5">実装後の確認方法</a></li>
+<li><a href="#sec6">よくある質問</a></li>
+</ol>
+</div>
 <h2 id="sec1">構造化データ（JSON-LD）とは</h2>
 
 <p>Webページの内容を検索エンジンやAIに伝えるためのデータ形式になる。HTMLは人間が読むためのもの、JSON-LDは機械が読むためのもの。<a href="https://schema.org/" target="_blank" rel="noopener nofollow">Schema.org</a>という国際的な語彙に基づいて、「このページは何について書かれているか」「著者は誰か」「FAQの内容は何か」を定義する。</p>
@@ -415,17 +426,7 @@
 </main>
 
 <aside class="right-sidebar">
-<nav class="toc-sidebar">
-<div class="toc-title">目次</div>
-<ol>
-<li><a href="#sec1">構造化データ（JSON-LD）とは</a></li>
-<li><a href="#sec2">FAQPage JSON-LDの書き方</a></li>
-<li><a href="#sec3">Article JSON-LDの書き方</a></li>
-<li><a href="#sec4">BreadcrumbList JSON-LDの書き方</a></li>
-<li><a href="#sec5">実装後の確認方法</a></li>
-<li><a href="#sec6">よくある質問</a></li>
-</ol>
-</nav>
+<div class="sidebar-block"><p class="sb-label">検索</p><input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索"><div id="site-search-results" hidden></div></div>
 </aside>
 </div>
 
