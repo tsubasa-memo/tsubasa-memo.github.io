@@ -421,6 +421,7 @@
 - [Amazon FBA・楽天・ZOZOの手数料と送料を商品別に比較した【2026年版】](https://tsubasa-memo.github.io/ec-apparel-shipping-cost.html): Tシャツ・スニーカー・バッグ・コートの4商品で自社EC・Amazon FBA・楽天・ZOZOTOWNの配送料・販売手数料・返品コストを比較。チャネル別の利益構造と役割の違いを整理。
 - [生成AIの信頼度がクチコミを超えた？｜EC担当者が知るべき購買行動の変化【2026年調査まとめ】](https://tsubasa-memo.github.io/ai-ec-consumer-behavior-2026.html): 博報堂・PLAN-B・PRIZMA・日経クロストレンド等の調査を横断し、AIが消費者の購買行動をどう変えているか、EC担当者が商品データの精度向上から始めるべき理由を整理。
 - [アパレルEC担当者がAIチャットボット導入を検討してみた話｜規模・料金・公開事例をチェック](https://tsubasa-memo.github.io/ai-chatbot.html): AIチャットボットの料金相場・公開導入事例・自動化できる問い合わせの見分け方をEC担当者目線で整理した記事
+- [EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法](https://tsubasa-memo.github.io/review-feedback-sasage.html): 競合のクチコミ・Q&AをAIで分析し、FAQ改善とささげ改善（撮影・採寸・原稿）に仕分けて購入率と返品率を改善する方法をプロンプト付きで解説した記事
 
 ### 副業・キャリア
 
