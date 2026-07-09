@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<title>EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法｜ツバサのメモ帳</title>
+<meta name="description" content="競合ECの購入者クチコミ・Q&amp;AをAIに分析させ、洗い出した不満を「FAQ追記で解決」「撮影・採寸・原稿のささげ改善が必要」に仕分ける手法を解説。原因分類プロンプトの拡張例と撮影指示書への反映手順をEC担当者向けにまとめた。">
+<meta name="keywords" content="EC AI活用,競合クチコミ分析,ささげ改善,購入率改善,商品ページ改善,AI プロンプト EC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/review-feedback-sasage.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/review-feedback-sasage.html">
+<meta property="og:title" content="EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法">
+<meta property="og:description" content="競合ECの購入者クチコミ・Q&amp;AをAIに分析させ、洗い出した不満を「FAQ追記で解決」「撮影・採寸・原稿のささげ改善が必要」に仕分ける手法を解説。原因分類プロンプトの拡張例と撮影指示書への反映手順をEC担当者向けにまとめた。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/review-feedback-sasage.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/review-feedback-sasage.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/review-feedback-sasage.webp">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "競合のクチコミ分析はどのくらいの頻度でやるべきか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "月1回が目安だが、業種による。商品回転が速いアパレルやコスメは新商品の投入サイクルに合わせて隔週〜週1が理想。家具やインテリアのように商品寿命が長いカテゴリなら月1で十分だ。" }
+    },
+    {
+      "@type": "Question",
+      "name": "少人数でこのフローを回す余裕がない場合はどうするか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "全部を一度にやろうとせず、競合クチコミで最も頻度が高い不満1つだけを次の撮影ロットに反映する。1つだけなら追加の手間はほとんどない。" }
+    },
+    {
+      "@type": "Question",
+      "name": "競合クチコミの不満が撮影起因か商品起因か判断がつかないときは？",
+      "acceptedAnswer": { "@type": "Answer", "text": "同じ不満が複数の競合で出ているなら、商品カテゴリ共通の課題（商品特性上避けられない問題）の可能性がある。1社だけで出ているなら、その競合の撮影や原稿の問題かもしれない。いずれにしても、自社でも同じ状態になっていないか確認する材料にはなる。" }
+    },
+    {
+      "@type": "Question",
+      "name": "AIの分類をどこまで信用していいか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "AIはクチコミの分類候補を出してくれるが、皮肉や文脈を読み違えることがある。また、1件だけのクチコミを根拠に改善に走るのは危険だ。同じ趣旨の不満が複数の店舗で繰り返し出ているか、自社の商品でも実際に同じ問題が起きているかは、自分の目で確認する。" }
+    },
+    {
+      "@type": "Question",
+      "name": "外注先に競合クチコミの分析結果を共有するときの注意点は？",
+      "acceptedAnswer": { "@type": "Answer", "text": "クチコミの原文をそのまま送ると量が多く読まれない。「色が違うという指摘が3件」「サイズ感がわからないという指摘が2件」のように要約と件数にまとめて、撮影指示書や依頼メールに添える。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法",
+  "description": "競合ECの購入者クチコミ・Q&AをAIに分析させ、洗い出した不満を「FAQ追記で解決」「撮影・採寸・原稿のささげ改善が必要」に仕分ける手法を解説。原因分類プロンプトの拡張例と撮影指示書への反映手順をEC担当者向けにまとめた。",
+  "url": "https://tsubasa-memo.github.io/review-feedback-sasage.html",
+  "image": "https://tsubasa-memo.github.io/og/review-feedback-sasage.webp",
+  "author": { "@type": "Person", "name": "ツバサ", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-09",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "EC・実務", "item": "https://tsubasa-memo.github.io/archive.html?cat=ec" },
+    { "@type": "ListItem", "position": 3, "name": "競合をAIに分析させて購入率を上げる方法" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#ec">EC・実務</a> &gt; 競合をAIに分析させて購入率を上げる方法
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/review-feedback-sasage.webp" alt="EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">EC担当者のAI活用術<br>競合をAIに分析させて購入率を上げる方法</h1>
+<div class="article-meta-line">
+<span>公開: 2026年7月9日</span>
+<span>更新: 2026年7月9日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p><a href="https://x.com/eeeemo_official/status/2074614686411112650" target="_blank" rel="noopener noreferrer">かわくぼさん（@eeeemo_official）のXポスト</a>で、競合商品のQ&Aやクチコミを集めてClaudeに投げるプロンプトが紹介されていた。「自社ページがまだ答えていない質問」を洗い出して、FAQやページの追記案まで出してくれるというものだ。</p>
+
+<p>ポストで共有されていたプロンプトの骨子はこうなっている。</p>
+
+<blockquote>
+<p>あなたはEC購入率（CVR）改善の専門家です。競合商品ページの情報と自社ページを比較し、「顧客が抱えているのに自社がまだ答えていない疑問」を抽出してください。</p>
+</blockquote>
+
+<a class="cite-card" href="https://x.com/eeeemo_official/status/2074614686411112650" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">X</span>
+<span class="cite-body">
+<span class="cite-title">かわくぼ｜EC売上UPの先生（@eeeemo_official）のXポスト</span>
+<span class="cite-url">x.com</span>
+</span>
+</a>
+
+<p>入力として自社の商品説明・FAQと、競合3店分のQ&A欄・クチコミで多い質問や不満を貼る。出力は「未回答の疑問リスト」「商品ページ追記案」「FAQドラフト」の3点。憶測ではなく、貼った競合情報から読み取れる実際の疑問に基づくこと、という条件も付いている。</p>
+
+<p>さっそく自社の商品でやってみた。競合3店のQ&AとクチコミをコピーしてClaudeに投げると、確かに自社が見落としていた質問がいくつも出てきた。「このバッグにA4ファイル入りますか？」「お手入れ方法を教えてください」のような質問は、自社ページにFAQとして追加すればすぐに解決する。</p>
+
+<p>ただ、出力されたリストを1件ずつ見ていくと、FAQに変換しても意味がないものが混じっていた。競合のクチコミから拾われた「写真と実物の色が全然違う」「サイズ感がわからなかった」「生地の厚みが想像と違った」といった不満だ。これをFAQにすると「※モニターの設定により色味が異なる場合があります」のような注意書きになるが、それで購入をためらう人の不安が消えるかというと消えない。</p>
+
+<p>ここで気づいたのは、AIが洗い出してくれる「自社に足りないもの」は2種類に分かれるということだ。テキストを足せば解決するものと、撮影・採寸・原稿というささげ工程を見直さないと解決しないもの。前者はFAQ追記で購入率に直結する。後者は、ささげ工程を改善して写真や商品情報の精度を上げることで、購入前の不安を根本から消す。どちらも最終的には購入率の改善に向かうが、手の打ち方が違う。</p>
+
+<p>この記事では、AIが出力したリストの仕分け方と、ささげ側にフィードバックする具体的なやり方を整理する。</p>
+
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">AIが洗い出した不満をページ改善とささげ改善に仕分ける</a></li>
+<li><a href="#sec2">ささげ改善が購入率に繋がる理由</a></li>
+<li><a href="#sec3">撮影工程にフィードバックする具体例</a></li>
+<li><a href="#sec4">採寸・原稿にフィードバックする具体例</a></li>
+<li><a href="#sec5">プロンプトを拡張してささげ改善まで一気通貫で回す</a></li>
+<li><a href="#sec6">まとめ</a></li>
+<li><a href="#sec7">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">AIが洗い出した不満をページ改善とささげ改善に仕分ける</h2>
+
+<p>元のプロンプトで出力された未回答の疑問リストを、そのままFAQ化する前にまず仕分ける。</p>
+
+<p><strong>ページ側で解決できる不満</strong>：商品スペック、注文方法、支払い、配送、返品など、テキストを追加すれば解消する疑問だ。元のポストで書かれている通り、FAQ追記やページ構成の見直しで対処できる。ECサイトでよく出る質問を50個挙げておく。競合クチコミから洗い出した不満がこのリストに該当するなら、FAQ追記で対処できる。</p>
+
+<h3>商品について</h3>
+<ol>
+<li>商品のサイズを教えてください。</li>
+<li>商品の素材は何ですか？</li>
+<li>色味は実物と同じですか？</li>
+<li>重量はどれくらいですか？</li>
+<li>原産国はどこですか？</li>
+<li>在庫切れ商品の再入荷予定はありますか？</li>
+<li>セット内容を教えてください。</li>
+<li>使用方法を教えてください。</li>
+<li>お手入れ方法を教えてください。</li>
+<li>保証は付いていますか？</li>
+</ol>
+
+<h3>注文について</h3>
+<ol start="11">
+<li>注文内容を変更できますか？</li>
+<li>注文をキャンセルできますか？</li>
+<li>注文完了メールが届きません。</li>
+<li>注文履歴はどこで確認できますか？</li>
+<li>電話やFAXでも注文できますか？</li>
+<li>領収書は発行できますか？</li>
+<li>納品書は同梱されますか？</li>
+<li>ギフトラッピングはできますか？</li>
+<li>のしを付けられますか？</li>
+<li>複数の商品をまとめて注文できますか？</li>
+</ol>
+
+<h3>会員登録について</h3>
+<ol start="21">
+<li>会員登録は必要ですか？</li>
+<li>ゲスト購入はできますか？</li>
+<li>パスワードを忘れました。</li>
+<li>登録情報を変更したいです。</li>
+<li>メールマガジンを停止したいです。</li>
+</ol>
+
+<h3>支払いについて</h3>
+<ol start="26">
+<li>利用できる支払い方法を教えてください。</li>
+<li>クレジットカードは安全に利用できますか？</li>
+<li>コンビニ払いは利用できますか？</li>
+<li>銀行振込に対応していますか？</li>
+<li>分割払いはできますか？</li>
+<li>請求書払いはできますか？</li>
+<li>支払い期限を過ぎてしまいました。</li>
+<li>クーポンの使い方を教えてください。</li>
+<li>ポイントは利用できますか？</li>
+<li>ポイントはいつ付与されますか？</li>
+</ol>
+
+<h3>配送について</h3>
+<ol start="36">
+<li>送料はいくらですか？</li>
+<li>配送には何日かかりますか？</li>
+<li>配送日時を指定できますか？</li>
+<li>海外配送に対応していますか？</li>
+<li>配送会社はどこですか？</li>
+<li>発送後に配送先を変更できますか？</li>
+<li>配送状況を確認できますか？</li>
+<li>長期不在の場合はどうなりますか？</li>
+</ol>
+
+<h3>返品・交換について</h3>
+<ol start="44">
+<li>返品はできますか？</li>
+<li>交換はできますか？</li>
+<li>不良品が届いた場合はどうすればよいですか？</li>
+<li>商品が届きません。</li>
+<li>注文した商品と違う商品が届きました。</li>
+</ol>
+
+<h3>その他</h3>
+<ol start="49">
+<li>お問い合わせ方法を教えてください。</li>
+<li>個人情報はどのように管理されていますか？</li>
+</ol>
+
+<p>逆に、このリストに当てはまらない不満、たとえば「写真と実物の色が違う」「サイズ感がつかめない」「素材の質感が伝わらない」「使っている場面が想像できない」はFAQに何を書いても根本は直らない。原因は商品ページの文章ではなく、撮影・採寸・原稿の工程にある。これがささげ改善の対象だ。</p>
+
+<p>元のポストでは、プロンプトの狙いについて「新しい訴求を足すことではなく"不安の消し込み"でCVRを上げること」と説明されている。この考え方をもう一段掘り下げると、不安の中にはテキスト追加で消せるものと、ささげ工程を見直さないと消えないものがある、ということになる。</p>
+
+<p>ただし注意点がある。AIが競合クチコミから抽出した不満を、すべて額面通りに受け取るのは危険だ。クチコミには思い込みや誤使用に基づくものも含まれるし、特定の1件だけを見て改善に走ると方向を間違える。</p>
+
+<p>目安としては、同じ趣旨の不満が複数の競合で繰り返し出ているかどうかを見る。1社だけで出ている不満は、その競合固有の問題かもしれない。複数社で共通して出ているなら、自社でも同じ問題が起きていないか確認する材料になる。</p>
+
+<h2 id="sec2">ささげ改善が購入率に繋がる理由</h2>
+
+<p>ここで、ささげ工程の改善が購入率と返品率のそれぞれにどう影響するかを分けて整理しておく。</p>
+
+<p><strong>購入率への影響</strong></p>
+
+<p>ECでは商品を手に取れない。購入者は写真、寸法、商品説明だけで判断する。写真の色味が不自然に見えたり、サイズ情報が足りなかったりすると、「買って失敗したくない」という不安が勝って離脱する。生活シーンのカットやディテール写真があれば使用イメージが湧き、採寸項目が充実していればサイズ選びで迷う時間が減る。購入直前の不安を消すのはFAQのテキストよりも、写真と商品情報そのものの精度だ。</p>
+
+<p><strong>返品率への影響</strong></p>
+
+<p>購入率とは別に、返品率にもささげ工程が関わる。「写真と実物の色が違った」「サイズが合わなかった」「説明と実物が違った」は、返品理由の中でも多いパターンだ。撮影の色再現が上がれば「写真と違う」を理由にした返品が減る。採寸の精度が上がればサイズ違いの返品が減る。原稿のスペック情報が正確なら「説明と違う」のクレームが減る。返品は売上だけでなく、返送・検品・再出品の工数もかかるため、返品率が下がるインパクトは大きい。</p>
+
+<p>つまり、AIによる競合クチコミ分析は入口であって、そこから先のささげ改善が購入率と返品率の両方に効いてくる。</p>
+
+<h2 id="sec3">撮影工程にフィードバックする具体例</h2>
+
+<p>競合のクチコミで見つかった写真関連の不満を、自社の撮影工程で確認・改善するポイントを挙げる。ただし、撮影環境は会社ごとに違うので、以下は改善の入口として使ってほしい。</p>
+
+<p><strong>「写真と実物の色が違う」→ 色再現の基準を整える</strong></p>
+
+<p>撮影時の色再現に影響するのはライティングの色温度だけではない。照明の演色性（CRI）、カメラのホワイトバランス設定、現像時の色調整、モニターの色域設定など複数の要素が関わる。ただ、少人数のEC現場で全部を一度にコントロールするのは現実的ではないので、まずやれることとして2つ挙げる。</p>
+
+<p>1つは、撮影時にカラーチェッカーやグレーカード（反射率が規格化された灰色のカード）を被写体の横に置いて撮ること。白い紙でも代用されることがあるが、白い紙は製品によって色味がばらつくため、精度を出すならグレーカードのほうが確実だ。これを基準にホワイトバランスを手動で合わせると、撮影ロットによる色のばらつきが減る。</p>
+
+<p>もう1つは、レタッチ工程で実物との色差を広げないようにすること。「<a href="retouch-pricing-database.html">写真レタッチの料金相場｜外注15社を比較</a>」で紹介しているようなレタッチ会社に出すときは、「実物の色味を維持してください。彩度やコントラストの演出は不要です」のように指示書に書く。「彩度を上げない」だけでは曖昧で、レタッチ会社はトーンカーブやHSLなど様々な方法で色を触るため、「実物に近づける方向で」という意図を伝えるほうが伝わる。</p>
+
+<p><strong>「使用イメージが湧かない」→ 生活シーンカットの追加</strong></p>
+
+<p>白背景の置き撮りだけで終わっていないか確認する。アパレルならモデル着用写真（身長を明記する）、雑貨なら使用中のシーンカットを足す。全商品を一気にやるのは無理でも、競合で同じ不満が複数出ている商品カテゴリから優先するという判断ができる。</p>
+
+<p><strong>「素材感が伝わらない」→ ディテールカットの検討</strong></p>
+
+<p>編み目、表面の光沢、裏地の処理。テキストで「コットン100%」と書くだけでは伝わらない情報が、質感の見える近接撮影で補えることがある。ただし近接写真だけで素材感がすべて伝わるわけではなく、ライティングの回し方や、場合によっては動画のほうが適しているケースもある。競合のクチコミで「触ってみたら想像と違った」という声が複数出ていたら、自社でも生地感が見えるカットを検討する価値がある。</p>
+
+<p>仕組みとしては、撮影指示書に「競合クチコミで出ていた不満」を記入する欄を1行足すのが手軽だ。「<a href="ec-product-photo-service.html">EC向け商品撮影の代行サービス比較｜1点から頼める7社の料金・特徴まとめ</a>」で紹介しているような撮影サービスに外注している場合は、「この商品カテゴリの競合で出ている不満」を依頼メールに添えるだけでも撮影側の意識が変わる。</p>
+
+<h2 id="sec4">採寸・原稿にフィードバックする具体例</h2>
+
+<p>撮影以外にも、採寸と原稿の見直しで購入前の不安を減らせるケースがある。</p>
+
+<p><strong>「サイズ感がわからない」→ 採寸項目の追加とモデル情報の明記</strong></p>
+
+<p>競合のクチコミに「思ったより短かった」「腕が通らなかった」といった声が複数の店舗で出ていたら、そのカテゴリの商品で自社の寸法表を確認する。身丈・身幅だけで袖丈や股下が載っていなければ、購入者はサイズを予測できない。</p>
+
+<p>モデルの身長・着用サイズを商品ページに書くだけでも、「サイズ感がわからない」系の不安はかなり減る。「身長165cm・着用Mサイズ」の情報があれば、購入者は自分に近い体型でイメージできる。</p>
+
+<p>採寸を複数のスタッフで行っている場合は、ルールの統一も確認する。どこからどこまでを測るか、生地を引っ張る力（テンションのかけ方）をどの程度にするかで数値が変わる。ルールが属人化していると、同じ商品でもスタッフによって1〜2cmのばらつきが出る。測り方を写真付きで文書化しておくのが確実だ。「<a href="sasage-outsource.html">ささげ業務の代行会社おすすめ20選｜選び方と費用相場</a>」で紹介しているような外注先に採寸を依頼する場合も、自社のルールを共有しておかないと先方の基準で測られて既存データと整合しなくなる。</p>
+
+<p><strong>「説明文と実物が違う」→ 原稿のファクトチェック</strong></p>
+
+<p>素材が変わったのに原稿が更新されていない、という事故は少人数のEC会社では珍しくない。新しいロットが入荷したとき、原稿のスペック情報を現物と照合するフローを入れておく。</p>
+
+<p><strong>「○○は付属しますか？」→ 付属品一覧の標準化</strong></p>
+
+<p>競合のQ&Aでこの質問が繰り返されているカテゴリでは、自社の原稿にも付属品一覧を標準フォーマットで入れておく。「同梱物：本体×1、取扱説明書×1、保証書×1」のように書いておけば、同じ質問の発生を先回りで防げる。</p>
+
+<h2 id="sec5">プロンプトを拡張してささげ改善まで一気通貫で回す</h2>
+
+<p>元のプロンプトは、出力が「未回答の疑問リスト→ページ追記案→FAQドラフト」の3点になっている。ここに「不満の原因分類」を1つ足すと、ささげ改善まで繋げられる。</p>
+
+<p>具体的には、プロンプトの出力指示に以下を追加する。</p>
+
+<blockquote>
+<p>0. 不満の原因分類<br>
+洗い出した各疑問について、原因が以下のどれに該当するか判定してください。</p>
+<ul>
+<li>A: ページ情報の追加で解決（FAQ追記・説明文の修正）</li>
+<li>B: 撮影の改善で解決（色再現・アングル・カット数・シーン写真）</li>
+<li>C: 採寸の改善で解決（寸法項目の不足・採寸精度）</li>
+<li>D: 原稿の改善で解決（スペック誤り・付属品記載漏れ・素材表記）</li>
+<li>E: ささげ以外（物流・商品企画・モール仕様）</li>
+</ul>
+</blockquote>
+
+<p>Aに分類されたものはそのままFAQに反映する。元のプロンプトの出力（ページ追記案とFAQドラフト）がそのまま使える。B・C・Dに分類されたものを、次の撮影ロットや原稿テンプレートの更新に反映する。</p>
+
+<p>ただし、AIの分類はあくまで候補だ。AIはクチコミの皮肉や文脈を読み違えることがあるし、不満の原因が撮影なのか商品品質なのかを正確に判定できるとは限らない。AIに分類させたうえで、自分の目で確認するところは省かないほうがいい。</p>
+
+<p>頻度は月1回を目安にしている。少人数のEC会社で、ほかの業務と並行してやるならこのくらいが現実的だ。ただし商品回転が速いアパレルやコスメなどは、新商品の投入サイクルに合わせてもっと高い頻度で見たほうがいいかもしれない。</p>
+
+<p>外注先がいれば、B・C・Dに分類された不満の抜粋を添えて「この不満が競合で出ているので注意してほしい」と次の依頼時に伝える。「<a href="sasage-company-check.html">ささげ代行の起源は？　ささげ会社の資本金・設立年数・従業員数から分かること</a>」で書いたような、外注先とのコミュニケーションが取りやすいかどうかが、こういう場面で差になる。</p>
+
+<h2 id="sec6">まとめ</h2>
+
+<p>競合のクチコミをAIで分析すると、自社ページに足りている情報・足りていない情報が見えてくる。足りないものをFAQに追加すれば、購入前の疑問が1つ消える。ここまでが元のプロンプトのカバー範囲だ。</p>
+
+<p>そこからもう一歩踏み込んで、「この不満はFAQでは消えない。撮影・採寸・原稿の問題だ」と仕分けるところに、この記事の本題がある。ささげ工程を改善すると、写真や商品情報の精度が上がり、購入前の不安が根本から消える。不安が減れば購入率が上がり、「実物と違った」という返品やクレームも減る。</p>
+
+<p>プロンプトの出力に原因分類を1つ足すだけで、FAQの改善とささげの改善を同時に回せるようになる。月1回、競合クチコミをAIで仕分けて、次の撮影ロットや原稿テンプレートに反映する。それだけで、競合の購入者が感じた不安を自社で先回りして消せるようになる。</p>
+
+<div class="faq-section">
+<h2 id="sec7">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 競合のクチコミ分析はどのくらいの頻度でやるべきか？</strong></p>
+<p class="fa">A. 月1回が目安だが、業種による。商品回転が速いアパレルやコスメは新商品の投入サイクルに合わせて隔週〜週1が理想。家具やインテリアのように商品寿命が長いカテゴリなら月1で十分だ。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 少人数でこのフローを回す余裕がない場合はどうするか？</strong></p>
+<p class="fa">A. 全部を一度にやろうとせず、競合クチコミで最も頻度が高い不満1つだけを次の撮影ロットに反映する。1つだけなら追加の手間はほとんどない。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 競合クチコミの不満が撮影起因か商品起因か判断がつかないときは？</strong></p>
+<p class="fa">A. 同じ不満が複数の競合で出ているなら、商品カテゴリ共通の課題（商品特性上避けられない問題）の可能性がある。1社だけで出ているなら、その競合の撮影や原稿の問題かもしれない。いずれにしても、自社でも同じ状態になっていないか確認する材料にはなる。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. AIの分類をどこまで信用していいか？</strong></p>
+<p class="fa">A. AIはクチコミの分類候補を出してくれるが、皮肉や文脈を読み違えることがある。また、1件だけのクチコミを根拠に改善に走るのは危険だ。同じ趣旨の不満が複数の店舗で繰り返し出ているか、自社の商品でも実際に同じ問題が起きているかは、自分の目で確認する。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 外注先に競合クチコミの分析結果を共有するときの注意点は？</strong></p>
+<p class="fa">A. クチコミの原文をそのまま送ると量が多く読まれない。「色が違うという指摘が3件」「サイズ感がわからないという指摘が2件」のように要約と件数にまとめて、撮影指示書や依頼メールに添える。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="sasage-outsource.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/sasage-outsource.html</span>
+</span>
+</a>
+<a class="cite-card" href="sasage-company-check.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ささげ代行の起源は？　ささげ会社の資本金・設立年数・従業員数から分かること</span>
+<span class="cite-url">tsubasa-memo.github.io/sasage-company-check.html</span>
+</span>
+</a>
+<a class="cite-card" href="ec-product-photo-service.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">EC向け商品撮影の代行サービス比較｜1点から頼める7社の料金・特徴まとめ</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-product-photo-service.html</span>
+</span>
+</a>
+<a class="cite-card" href="retouch-pricing-database.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真レタッチの料金相場｜外注15社を比較【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-pricing-database.html</span>
+</span>
+</a>
+</div>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチ外注15社の料金比較｜目的別おすすめ【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる</h2>
+<p class="card-desc">レタッチ会社9社の経営基盤（設立年・資本金・従業員数・取引先）を一覧比較。与信審査で確認される法人基盤・体制の整合性・実績の透明性から、法人取引で外注先の経営基盤を見極めるチェックポイントをまとめた。料金相場は別記事で整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
