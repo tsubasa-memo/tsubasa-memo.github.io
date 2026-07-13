@@ -157,8 +157,8 @@
   - Q: EC商品画像の切り抜きを翌日までに数百枚仕上げたい場合はどこに頼めばいい？
   - Q: 写真集やグッズの大量レタッチを急ぎで頼める会社はありますか？
 - [大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる](https://tsubasa-memo.github.io/retouch-company-check.html): レタッチ会社9社の法人情報を一覧比較。大手企業の与信審査を通過しなければ取引実績は成立しないこと、資本金の中央値1,000万円、取引先を実名公開している会社と1社も公開できない会社の信頼性の差、自社サイトで品質No.1と主張する会社がほとんどないことを整理した記事
-- [Why Foreign Photo Retouching Companies Can't Win Corporate Clients in Japan](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、稟議制度・会社概要ページの確認項目・バーチャルオフィス調査の観点から解説した英語記事
-- [How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist](https://tsubasa-memo.github.io/retouch-company-check-en.html): A comparison of 9 photo retouching companies' corporate foundations — founding year, capital, headcount, and major clients. A checklist for evaluating retouching vendors beyond price in Japan's B2B market.
+- [Why Foreign Photo Retouching Companies Can't Win Corporate Clients in Japan | ツバサのメモ帳](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、稟議制度・会社概要ページの確認項目・バーチャルオフィス調査の観点から解説した英語記事
+- [How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/retouch-company-check-en.html): A comparison of 9 photo retouching companies' corporate foundations — founding year, capital, headcount, and major clients. A checklist for evaluating retouching vendors beyond price in Japan's B2B market.
 
 ### AI
 
@@ -590,6 +590,7 @@
 - [「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索](https://tsubasa-memo.github.io/comparison-article-credibility.html): No.1表記の景品表示法違反リスクとGoogleの比較サイト規制強化の動向。AI検索がおすすめ記事の信頼性に与える影響を整理した記事
 - [サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断](https://tsubasa-memo.github.io/gsc-ai-report.html): Google Search Consoleに新設された生成AIパフォーマンスレポートの解説。AI Overviews・AI Modeでのインプレッション確認方法、クリックデータがない制約、ECサイトのオプトアウト判断基準を整理。
 - [構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】](https://tsubasa-memo.github.io/structured-data-types-ec.html): Googleがサポートする構造化データの全種類と、ECサイトで優先すべき5つのスキーマ（Product・BreadcrumbList・Organization・AggregateRating・FAQPage）を整理。AggregateRating偽装の実例、モールvs自社ECの対応差、Ahrefs調査によるAI引用への効果検証も解説。
+- [LLMO代行会社は本当に必要か？ 国内20社の料金・実績・比較記事の実態を調査](https://tsubasa-memo.github.io/llmo-agency-research.html): LLMO代行20社の料金・サービス内容を調査。「LLMO おすすめ」比較記事の9割が代行会社自身の自作自演と判明。月額5万〜200万円の費用帯別サービス分類と、外注すべきかの判断基準をまとめた記事
 
 
 ## 用語集
