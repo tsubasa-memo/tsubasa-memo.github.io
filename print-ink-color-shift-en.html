@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>Why Your Retouched Product Photos Look Different When Printed — RGB vs CMYK for EC Operators | ツバサのメモ帳</title>
+<meta name="description" content="EC product images look dull when printed because monitors use RGB and ink uses CMYK. Explains spot colors, total ink limit, and pre-press checks for online-store operators.">
+<meta name="keywords" content="RGB CMYK,print color shift,EC product photo,spot color,total ink limit,pre-press check,color management">
+<meta property="og:title" content="Why Your Retouched Product Photos Look Different When Printed — RGB vs CMYK for EC Operators">
+<meta property="og:description" content="EC product images look dull when printed because monitors use RGB and ink uses CMYK. Explains spot colors, total ink limit, and pre-press checks for online-store operators.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://tsubasa-memo.github.io/print-ink-color-shift-en.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/print-ink-color-shift.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/print-ink-color-shift.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/print-ink-color-shift-en.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/print-ink-color-shift-en.html">
+<link rel="alternate" hreflang="ja" href="https://tsubasa-memo.github.io/print-ink-color-shift.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/print-ink-color-shift.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "I used product images made for Rakuten to print a store flyer, and the blues came out duller than on my monitor. Is the data corrupted?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The data is not corrupted. The issue is that your Rakuten images are in RGB color mode, which was converted to CMYK during printing. CMYK ink physically cannot reproduce the vivid blues and greens that RGB monitors can display. This is not a defect — it is a fundamental limitation of the CMYK color gamut." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I submit RGB data to a print shop without converting to CMYK?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The print shop's RIP (Raster Image Processor) will auto-convert it to CMYK, but the conversion profile and rendering intent are chosen by the printer, not by you. Colors outside the CMYK gamut will be clipped or compressed unpredictably. If you want control over which colors shift, convert to CMYK yourself before submitting." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it possible to make a print match the monitor exactly?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A perfect match is physically impossible. Monitors emit light (additive color); prints reflect light (subtractive color). The gamuts overlap but are not identical. What you can do is minimize the gap: calibrate your monitor, soft-proof in Photoshop with the printer's ICC profile, and choose a rendering intent that handles out-of-gamut colors gracefully." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does color shift happen even on a home inkjet printer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Home inkjets use their own driver-level color conversion. The shift may differ from commercial offset printing, but the RGB-to-ink conversion issue is the same. Some high-end inkjets add light cyan and light magenta to extend the gamut, but they still cannot reproduce the full RGB range." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I check total ink coverage myself?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. In Adobe Acrobat Pro, use Output Preview > Total Area Coverage to visualize areas exceeding the limit (typically 300–350%). In Photoshop, the Info panel shows CMYK percentages per pixel — add the four values to get total ink. Most commercial printers in Japan specify a limit of 300% or 320%." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the K in CMYK stand for?",
+      "acceptedAnswer": { "@type": "Answer", "text": "K stands for Key, referring to the key plate in offset printing. The key plate carries the image detail and is printed in black ink. It is not simply 'Black' abbreviated to avoid confusion with Blue — the term comes from the printing plate that other color plates are aligned (keyed) to." }
+    },
+    {
+      "@type": "Question",
+      "name": "Our EC team outsources retouching. Should we ask the retoucher to deliver CMYK files too?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if you regularly need print output. Most retouching companies deliver in sRGB because EC platforms require RGB. Requesting an additional CMYK version (with a specified ICC profile) is reasonable for catalog or POP printing, but ask the retoucher which profile your print shop uses — Adobe CMYK, Japan Color 2011 Coated, etc. Delivering both colorspaces from the same master file keeps editing flexibility intact." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Your Retouched Product Photos Look Different When Printed — RGB vs CMYK for EC Operators",
+  "description": "EC product images look dull when printed because monitors use RGB and ink uses CMYK. Explains spot colors, total ink limit, and pre-press checks for online-store operators.",
+  "url": "https://tsubasa-memo.github.io/print-ink-color-shift-en.html",
+  "image": "https://tsubasa-memo.github.io/og/print-ink-color-shift.webp",
+  "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-07-19T00:00:00+09:00",
+  "dateModified": "2026-07-19T00:00:00+09:00",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "RGB vs CMYK for EC Operators" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">Home</a> &gt; <a href="archive.html#ec">EC</a> &gt; RGB vs CMYK for EC Operators
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/print-ink-color-shift.webp" alt="Why Your Retouched Product Photos Look Different When Printed" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">Why Your Retouched Product Photos Look Different When Printed<br>— RGB vs CMYK for EC Operators</h1>
+<div class="article-meta-line">
+<span>Published: July 19, 2026</span>
+</div>
+
+<p>Hi, I'm Tsubasa. I work in the EC department, managing product photography and retouching vendors.</p>
+
+<p>A while back, I sent our retouched product images to the printer for a store flyer — and the colors came out noticeably duller than on screen. Blues looked grayish, greens lost their punch. My first reaction was that the data must be corrupted, or the printer made a mistake. But it turned out to be neither. The problem is fundamental: monitors and ink use completely different color systems.</p>
+
+<p>This article is my memo on what I learned while figuring out why the colors shifted, and what I now check before submitting files to print.</p>
+
+<div class="toc">
+<p class="toc-title">Contents</p>
+<ol>
+<li><a href="#sec1">Why Colors Shift: RGB (Monitor) vs CMYK (Ink)</a></li>
+<li><a href="#sec2">What Is CMYK and Why Can't It Match RGB?</a></li>
+<li><a href="#sec3">Spot Colors (Special Inks) — When CMYK Isn't Enough</a></li>
+<li><a href="#sec4">Total Ink Coverage Limits — Why Blacks Look Muddy</a></li>
+<li><a href="#sec5">Pre-Press Checklist for EC Operators</a></li>
+<li><a href="#sec6">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">Why Colors Shift: RGB (Monitor) vs CMYK (Ink)</h2>
+
+<p>Monitors display colors by emitting light in three channels — Red, Green, Blue. This is additive color mixing: combine all three at full intensity and you get white. Your phone, laptop, and desktop monitor all work this way. Every product image you see on Rakuten, Amazon, or your own EC site is displayed in RGB.</p>
+
+<p>Printing uses ink — Cyan, Magenta, Yellow, and Key (black). This is subtractive color mixing: ink absorbs certain wavelengths of light and reflects the rest. Combine all four at full coverage and you get a muddy dark brown (not pure black, which is why the K plate exists).</p>
+
+<p>The critical point: the set of colors RGB can display (its "gamut") and the set of colors CMYK can reproduce overlap, but they are not the same. Vivid blues, electric greens, and saturated oranges that look perfectly normal on screen simply cannot be reproduced with CMYK ink. When you send an RGB file to a printer, those out-of-gamut colors get "clipped" — replaced by the closest reproducible CMYK equivalent. That's the dullness you see.</p>
+
+<p>This is not a bug. It's physics.</p>
+
+<h2 id="sec2">What Is CMYK and Why Can't It Match RGB?</h2>
+
+<p>CMYK stands for Cyan, Magenta, Yellow, Key (black). Each ink absorbs a portion of the visible light spectrum:</p>
+
+<ul>
+<li>Cyan absorbs red light, reflects green and blue</li>
+<li>Magenta absorbs green light, reflects red and blue</li>
+<li>Yellow absorbs blue light, reflects red and green</li>
+<li>Key (black) absorbs all wavelengths — used for contrast and detail</li>
+</ul>
+
+<p>In theory, combining CMY at 100% each should produce black — but in practice, ink impurities mean you get a dark brownish tone instead. That's why the fourth ink (K) exists: to produce true blacks, add shadow depth, and reduce total ink consumption.</p>
+
+<p>The gamut difference comes down to how color is generated. RGB creates color by adding light — the more you add, the brighter and more vivid the result. CMYK creates color by absorbing light — the more ink you add, the darker and muddier the result. A neon green that looks natural on an RGB monitor would require ink that reflects an impossibly narrow band of wavelengths. The ink simply doesn't exist.</p>
+
+<p>For EC operators, the practical implication is: any product photo that looks vibrant on screen — especially in blues, cyans, greens, and saturated oranges — will shift when printed. The question is not "if" but "how much."</p>
+
+<h2 id="sec3">Spot Colors (Special Inks) — When CMYK Isn't Enough</h2>
+
+<p>When a brand's signature color falls outside the CMYK gamut, the answer is spot color (also called special ink or Pantone ink). Instead of mixing C, M, Y, and K to approximate the color, you use a pre-mixed ink that produces the exact hue.</p>
+
+<p>Common use cases in EC-related printing:</p>
+
+<ul>
+<li>Brand logos that must match across all media (web, packaging, POP display)</li>
+<li>Metallic gold or silver (impossible with CMYK alone)</li>
+<li>Fluorescent or neon colors for eye-catching store displays</li>
+<li>White ink on dark or transparent substrates</li>
+</ul>
+
+<p>Spot colors cost more because the printer runs an additional plate. For a basic four-color flyer, CMYK is standard. But if your product packaging uses a specific Pantone color that the customer associates with your brand, printing it in CMYK-approximated color will look "off" to anyone who's seen the real thing.</p>
+
+<p>When briefing a print shop, explicitly ask: "Can you match Pantone XXX with process color, or do we need a spot plate?" If the answer is "process color is close enough," request a printed proof before committing to the full run.</p>
+
+<h2 id="sec4">Total Ink Coverage Limits — Why Blacks Look Muddy</h2>
+
+<p>Total ink coverage (also called Total Area Coverage or TAC) is the sum of C + M + Y + K percentages at any given point. If a pixel is C:90 M:80 Y:70 K:100, that's 340% total ink.</p>
+
+<p>Most commercial offset printers in Japan set a limit of 300% to 350%. Exceed it and you get:</p>
+
+<ul>
+<li>Ink that won't dry properly — smearing, offsetting onto adjacent sheets</li>
+<li>Paper warping from too much moisture (especially on coated stock)</li>
+<li>Muddy shadow areas where detail disappears into a uniform dark blob</li>
+</ul>
+
+<p>This matters for EC operators because product images often have dark or black backgrounds. An RGB black (#000000) converted naively to CMYK becomes C:75 M:68 Y:67 K:90 = 300% in some profiles, or even higher. If your printer's limit is 300%, those areas will be flagged or automatically reduced — and the resulting color may not be the rich black you expected.</p>
+
+<p>The fix: when converting to CMYK, use a profile that respects your printer's TAC limit. Japan Color 2011 Coated, for instance, caps at 350%. Ask your print shop which profile they prefer and convert accordingly.</p>
+
+<h2 id="sec5">Pre-Press Checklist for EC Operators</h2>
+
+<p>Here's what I now check before sending any EC product image to print:</p>
+
+<ol>
+<li><strong>Color mode:</strong> Is the file CMYK? If it's still RGB, convert it using the printer's recommended ICC profile (not Photoshop's default).</li>
+<li><strong>Soft proof:</strong> In Photoshop, enable View > Proof Colors with the target profile. Anything that looks different from the unproofed version will shift in print.</li>
+<li><strong>Total ink coverage:</strong> Check shadow areas for TAC exceeding the printer's limit. Reduce K first, then adjust CMY.</li>
+<li><strong>Spot colors:</strong> If your brand color is specified as a Pantone, confirm whether the print job includes a spot plate or uses process-color approximation.</li>
+<li><strong>Resolution:</strong> Print requires 300–350 dpi at output size. EC images at 72 dpi will look pixelated when printed.</li>
+<li><strong>Bleed:</strong> Add 3mm bleed on all sides for trimming. EC images cropped to the product edge will have a white strip if they shift during cutting.</li>
+</ol>
+
+<p>If you're outsourcing retouching and occasionally need print output, ask your retouching vendor to deliver a separate CMYK version alongside the standard sRGB file. Specify the ICC profile — "Japan Color 2011 Coated" or whatever your printer uses. This avoids the guesswork of converting after the fact.</p>
+
+
+<div class="faq-section">
+<h2 id="sec6">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. I used product images made for Rakuten to print a store flyer, and the blues came out duller than on my monitor. Is the data corrupted?</strong></p>
+<p class="fa">A. The data is not corrupted. The issue is that your Rakuten images are in RGB color mode, which was converted to CMYK during printing. CMYK ink physically cannot reproduce the vivid blues and greens that RGB monitors can display. This is not a defect — it is a fundamental limitation of the CMYK color gamut.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What happens if I submit RGB data to a print shop without converting to CMYK?</strong></p>
+<p class="fa">A. The print shop's RIP (Raster Image Processor) will auto-convert it to CMYK, but the conversion profile and rendering intent are chosen by the printer, not by you. Colors outside the CMYK gamut will be clipped or compressed unpredictably. If you want control over which colors shift, convert to CMYK yourself before submitting.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is it possible to make a print match the monitor exactly?</strong></p>
+<p class="fa">A. A perfect match is physically impossible. Monitors emit light (additive color); prints reflect light (subtractive color). The gamuts overlap but are not identical. What you can do is minimize the gap: calibrate your monitor, soft-proof in Photoshop with the printer's ICC profile, and choose a rendering intent that handles out-of-gamut colors gracefully.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Does color shift happen even on a home inkjet printer?</strong></p>
+<p class="fa">A. Yes. Home inkjets use their own driver-level color conversion. The shift may differ from commercial offset printing, but the RGB-to-ink conversion issue is the same. Some high-end inkjets add light cyan and light magenta to extend the gamut, but they still cannot reproduce the full RGB range.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Can I check total ink coverage myself?</strong></p>
+<p class="fa">A. Yes. In Adobe Acrobat Pro, use Output Preview > Total Area Coverage to visualize areas exceeding the limit (typically 300–350%). In Photoshop, the Info panel shows CMYK percentages per pixel — add the four values to get total ink. Most commercial printers in Japan specify a limit of 300% or 320%.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What does the K in CMYK stand for?</strong></p>
+<p class="fa">A. K stands for Key, referring to the key plate in offset printing. The key plate carries the image detail and is printed in black ink. It is not simply "Black" abbreviated to avoid confusion with Blue — the term comes from the printing plate that other color plates are aligned (keyed) to.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Our EC team outsources retouching. Should we ask the retoucher to deliver CMYK files too?</strong></p>
+<p class="fa">A. Only if you regularly need print output. Most retouching companies deliver in sRGB because EC platforms require RGB. Requesting an additional CMYK version (with a specified ICC profile) is reasonable for catalog or POP printing, but ask the retoucher which profile your print shop uses — Adobe CMYK, Japan Color 2011 Coated, etc. Delivering both colorspaces from the same master file keeps editing flexibility intact.</p>
+</div>
+</div>
+
+<p class="lang-switch">🇯🇵 <a href="print-ink-color-shift.html" hreflang="ja">この記事の日本語版を読む</a></p>
+
+<!-- Related Articles -->
+<div class="related">
+<h3>Related Articles</h3>
+<a class="cite-card" href="print-service-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真プリントはどこがいい？コンビニ・ネット・カメラのキタムラの使い分け</span>
+<span class="cite-url">tsubasa-memo.github.io/print-service-comparison.html</span>
+</span>
+</a>
+<a class="cite-card" href="image-file-formats.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識</span>
+<span class="cite-url">tsubasa-memo.github.io/image-file-formats.html</span>
+</span>
+</a>
+<a class="cite-card" href="retouch-company-check-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist</span>
+<span class="cite-url">tsubasa-memo.github.io/retouch-company-check-en.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチ外注15社の料金比較｜目的別おすすめ【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる</h2>
+<p class="card-desc">レタッチ会社9社の設立年・資本金・従業員数・取引先を一覧比較。法人取引で料金以外に確認すべきチェックポイントを整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- Author Profile -->
+<div class="author-box">
+<div class="author-icon"><img alt="Tsubasa" height="64" src="/icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>Working in the EC department of a Japanese apparel company. My responsibilities range from coordinating product photography (sasage) to managing retouching vendors, updating product pages, and supervising part-time staff. I'm not great at Photoshop, so I outsource serious image work to professionals — but after working with many vendors, I've become pretty good at choosing the right one and checking deliverables. This blog is a record of things I've learned on the job.</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
