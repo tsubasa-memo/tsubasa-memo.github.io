@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<title>レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB｜ツバサのメモ帳</title>
+<meta name="description" content="ECの商品写真をチラシやカタログに流用すると色がくすむ原因は、モニター（RGB）とインク（CMYK）の色の作り方の違い。CMYKで再現できない色、特色インキ、総インキ量の上限、入稿前の確認ポイントまでEC担当者目線で整理した。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/print-ink-color-shift.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/print-ink-color-shift.html">
+<meta property="og:title" content="レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB">
+<meta property="og:description" content="ECの商品写真をチラシやカタログに流用すると色がくすむ原因は、モニター（RGB）とインク（CMYK）の色の作り方の違い。CMYKで再現できない色、特色インキ、総インキ量の上限、入稿前の確認ポイントまでEC担当者目線で整理した。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tsubasa-memo.github.io/print-ink-color-shift.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/print-ink-color-shift.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/print-ink-color-shift.webp">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "インクとインキはどちらが正しい表記ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "どちらも間違いではありません。「インク」は英語のink、「インキ」はオランダ語のinktに由来するという説が有力で、指しているものは同じです。印刷業界では慣例的に「インキ」と呼ばれることが多く、家庭用プリンターや筆記具では「インク」が一般的です。印刷会社とのやり取りで「インキ」と出てきても、同じものと考えて問題ありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "楽天用に作った商品画像を、そのまま店頭チラシの印刷データに使ったら、モニターより青がくすみました。データが壊れたのでしょうか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "データの破損ではなく、モニター（RGB）と印刷（CMYK）の色の仕組みの違いが原因と考えられます。モニターの鮮やかな青の一部は、CMYKのインクでは同じ彩度で再現できません。主にCMYKの色域の制約が原因で、一般的なCMYK印刷では同じ傾向の変化が起こります。次からは、くすむ前提で仕上がりを確認するか、重要な色は色校正で事前にチェックするのが現実的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RGBのまま印刷データを入稿するとどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "印刷会社によって対応が分かれます。CMYKデータでの入稿を必須とする会社もあれば、RGBのまま受け付けて印刷会社側で変換する会社もあります。RGB入稿が可能な場合でも、印刷工程では内部的にCMYKへ変換されます。自動変換の場合、意図しない色味になることがあるため、入稿先のデータ作成ガイドで対応カラーモードを確認してから入稿するのが安全です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "モニターと印刷物の色を完全に一致させることはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完全な一致は難しいと考えたほうが現実的です。モニターは光の発色、印刷は紙とインクの反射で色を見せる仕組みで、原理からして同じにはなりません。モニター自体の設定や個体差、部屋の照明、紙の種類でも見え方が変わります。ズレを小さくする調整はできますが、重要な色は色校正で実物を確認するのが確実です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家庭用のインクジェットプリンターで印刷しても色は変わりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "変わります。家庭用プリンターもインクと紙の反射で色を作る仕組みなので、モニターの発色とは別物です。機種のインク構成や用紙（光沢紙か普通紙か）によっても仕上がりが変わります。チラシやカタログ印刷の色確認を家庭用プリンターで代用するのは、参考程度と考えたほうが安全です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "総インキ量は自分で確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photoshopがあれば確認できます。「ウィンドウ」から「情報」パネルを開き、画像のいちばん濃い部分にカーソルを合わせると、CMYKの合計値を確認できます。上限値は印刷会社と用紙によって異なるため、入稿先のガイドに書かれた基準値と照らし合わせてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CMYKのKは何の略ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key plate（キープレート）の略です。Blackの頭文字ではありません。Key plateは、印刷時に他の色の版の位置合わせの基準になる黒の版を指します。CMYの3色だけでは理想的な黒が出ないため、独立した黒の版を加えた4色構成がCMYKです。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB",
+  "description": "ECの商品写真をチラシやカタログに流用すると色がくすむ原因は、モニター（RGB）とインク（CMYK）の色の作り方の違い。CMYKで再現できない色、特色インキ、総インキ量の上限、入稿前の確認ポイントまでEC担当者目線で整理した。",
+  "url": "https://tsubasa-memo.github.io/print-ink-color-shift.html",
+  "image": "https://tsubasa-memo.github.io/og/print-ink-color-shift.webp",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-19",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "レタッチ・画像加工", "item": "https://tsubasa-memo.github.io/archive.html?cat=retouch" },
+    { "@type": "ListItem", "position": 3, "name": "印刷したら色が変わる理由" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#retouch">レタッチ・画像加工</a> &gt; 印刷したら色が変わる理由
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/print-ink-color-shift.webp" alt="レタッチした商品写真を印刷したら色が変わった" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">レタッチ・画像加工</span>
+<h1 class="article-title">レタッチした商品写真を印刷したら色が変わった<br>インクの色はCMYK、モニターはRGB</h1>
+<div class="article-meta-line">
+<span>公開: 2026年7月19日</span>
+<span>更新: 2026年7月19日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+<p>ECサイト用にレタッチした商品画像を、店舗のチラシにも使いたいと言われて、そのまま店舗担当者に渡したことがあります。数日後、刷り上がったチラシを見せてもらったら、モニターでは鮮やかだったブルーのTシャツが、別物みたいにくすんだ青になっていました。</p>
+<p>結論から言うと、これは印刷会社のミスでも、データの破損でもありません。モニターは光で色を作り、印刷はインクで色を作ります。この仕組みの違いのせいで、モニターに映る色の一部は、通常のCMYK印刷では再現できません。鮮やかな青がくすむのは、事故ではなく仕様に近い現象でした。</p>
+<p>仕組みを知ってからは入稿前に確認すべきポイントも見えてきたので、調べた内容を備忘録としてまとめておきます。</p>
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>モニターと印刷物で色が変わる根本的な理由（RGBとCMYKの違い）</li>
+<li>CMYKのインクで再現しにくい色の具体例</li>
+<li>特色インキ（DIC・PANTONE）が何のためにあるのか</li>
+<li>総インキ量（TAC）という上限と、濃い写真データが起こすトラブル</li>
+<li>入稿前にEC担当者レベルでもできる確認ポイント</li>
+<li>「インク」と「インキ」という表記の違い</li>
+</ul>
+</div>
+
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">モニターの色は光、印刷の色はインク｜RGBとCMYKの根本的な違い</a></li>
+<li><a href="#sec2">CMYKのインクで再現できない色がある｜鮮やかな青や蛍光色がくすむ理由</a></li>
+<li><a href="#sec3">CMYKで出せない色は特色インキで刷る｜DIC・PANTONEの色見本帳</a></li>
+<li><a href="#sec4">総インキ量（TAC）の上限｜濃い写真データが印刷トラブルになる理由</a></li>
+<li><a href="#sec5">入稿前に僕レベルでもできる対策｜カラーモードの確認と色校正</a></li>
+<li><a href="#sec6">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">モニターの色は光、印刷の色はインク｜RGBとCMYKの根本的な違い</h2>
+<p>まず前提から整理します。モニターは、赤（R）・緑（G）・青（B）の3色の光を重ねて色を作っています。この方式がRGB（アールジービー）です。光は重ねるほど明るくなり、3色すべてを最大で重ねると白になります。一方、紙は自分では光りません。印刷物は、シアン（C）・マゼンタ（M）・イエロー（Y）のインクが光の一部を吸収し、残りを反射することで色を見せています。インクは重ねるほど暗くなります。この方式がCMYK（シーエムワイケー）です。</p>
+<p>光を足していく<a class="glossary-inline" href="/glossary/rgb-cmyk.html">RGB</a>と、インクで光を引いていくCMYK。出発点が正反対なので、作れる色の範囲も同じにはなりません。ここが「モニターと印刷物で色が変わる」現象の根っこでした。</p>
+<div class="table-wrap">
+<table class="spec-table">
+<tr><th>項目</th><th>モニター</th><th>印刷物</th></tr>
+<tr><td>色のもと</td><td>光（画面が自ら発光する）</td><td>インク（紙が光を反射する）</td></tr>
+<tr><td>三原色</td><td>R・G・B</td><td>C・M・Y（＋K）</td></tr>
+<tr><td>色を重ねると</td><td>明るくなり、白に近づく</td><td>暗くなり、黒に近づく</td></tr>
+<tr><td>カラーモード</td><td>RGB</td><td>CMYK</td></tr>
+</table>
+</div>
+<p>CMYの3色に黒（K）が足されている理由も、調べて初めて知りました。同人誌印刷のスターブックスの解説によると、理想的なCMYの3色なら理論上は黒も生成できるものの、実際のインクを3色重ねても完全な真っ黒にはならず、濁った茶色っぽい色になってしまうため、黒のインクを別に用意してCMYKにしているそうです。ちなみにKはBlackの頭文字ではなく、Key plate（キープレート＝印刷時に他の版の位置合わせの基準になる黒の版）の略です（出典：<a href="https://blog.starbooks.jp/howto/2188/" target="_blank" rel="noopener noreferrer">印刷における「CMYK」と「RGB」の色表現（STARBOOKS BLOG）</a>）。理屈どおりにいかないところに、インクという物質の生々しさを感じます。</p>
+<p>ちなみに、ここまで「インク」と書いてきましたが、印刷の世界では「インキ」という表記もよく出てきます。イセン印刷のブログでは、両者に特筆する違いはなく、印刷業界ではインキと呼ばれることが多いと説明されています（出典：<a href="https://isenprint.co.jp/group_blog/group_blog-5708/" target="_blank" rel="noopener noreferrer">印刷のもうひとつの主役！インキについて（イセン印刷）</a>）。素材データベースを運営するCrowdChemのコラムも、「インク」は英語のink、「インキ」はオランダ語のinktに由来するという説が有力で、指しているものは同じだとしています（出典：<a href="https://crowdchem.net/column/1041/" target="_blank" rel="noopener noreferrer">インクとは何か？インキとの違い（CrowdChem）</a>）。この記事では、なじみのある「インク」を基本にしつつ、印刷用語として定着している「特色インキ」「総インキ量」はそのままの表記で書きます。</p>
+
+<h2 id="sec2">CMYKのインクで再現できない色がある｜鮮やかな青や蛍光色がくすむ理由</h2>
+<p>モニターのRGBが表現できる色の範囲と、印刷のCMYKが表現できる範囲は、きれいに重なっていません。印刷会社のコラム「CMYKとRGBの違いは？」でも、CMYKのカラー印刷で表現できる色は限られるため、鮮やかな色を使いたい場合は表現可能な範囲を確認することが大切だと説明されています（出典：<a href="https://impam.co.jp/pri-memo/column/cmyk-rgb" target="_blank" rel="noopener noreferrer">CMYKとRGBの違いは？変換方法や印刷のトラブルを防ぐコツも解説</a>）。</p>
+<p>とくに苦手なのが、モニターで映えるビビッドな色です。鮮やかなブルーや青紫、目に刺さるような緑、蛍光ピンクのようなネオン系の色は、CMYKに変換した時点で彩度が落ちます。金や銀のメタリックな輝きも、発光しない紙と通常の4色インクの組み合わせでは表現できません。</p>
+<p>誤解しやすいところですが、これは主にCMYKという色域の制約が原因で、印刷会社の技術だけでは解決できません。プロファイルや印刷機、用紙の違いで仕上がりに差は出ますが、一般的なCMYK印刷では同じ傾向の変化が起こります。発注する側が「CMYK4色のインクでは出ない色がある」と知っておくことに意味があります。</p>
+<p>ECの商品画像は、モニター映えを前提に彩度を上げる方向でレタッチされていることが多いので、印刷に流用したときの落差が出やすいジャンルだと思います。僕が渡した画像で刷ったチラシの青がくすんだのも、まさにこのパターンでした。</p>
+<h3>アパレルECのカラーバリエーションと印刷の落差</h3>
+<p>アパレルを扱っていると、この問題はもう少し根が深くなります。たとえばネイビー・ブラック・チャコールの3色展開は、モニター上ではRGBの微妙な差で区別がつきますが、CMYKに変換すると暗い色同士の差が縮まって、カタログの写真ではどれがネイビーでどれがブラックか見分けがつかなくなることがあります。</p>
+<p>生地の質感も印刷で消えやすい要素です。サテンやエナメル素材の光沢は、モニター上では光の反射で表現されていますが、印刷ではインクが紙の上で光を反射する仕組みなので、同じ輝きにはなりません。ECサイト用に光沢感を強調してレタッチした画像ほど、印刷したときに「のっぺりした」印象になりがちです。</p>
+<p>アパレルECでは、シーズンカタログや展示会用のルックブックを印刷する場面が定期的にあります。そのたびにEC用の画像をそのまま流用するか、印刷用に別途データを作るかという判断が出てきます。全SKU分の画像を印刷用に作り直す工数はかけられないので、「ECの画像をCMYKに変換して入稿し、色味の落差は許容範囲かを確認する」のが現実的な落としどころでした。</p>
+
+<h2 id="sec3">CMYKで出せない色は特色インキで刷る｜DIC・PANTONEの色見本帳</h2>
+<p>では、CMYKで再現できない色をどうしても印刷で使いたい場合はどうするのか。ここで出てくるのが特色インキ（スポットカラー）です。TOPPANインフォメディアのラベル印刷の解説では、CMYKの掛け合わせで再現できない色やコーポレートカラーを使いたい場合に特色を使用し、発色が良く見当ズレがない利点がある一方で、CMYKよりコストがかかると説明されています（出典：<a href="https://www.tim.toppan.com/print/print18/" target="_blank" rel="noopener noreferrer">印刷入稿データの作り方③：色（TOPPANインフォメディア）</a>）。</p>
+<p>特色は、あらかじめ目的の色に練り合わせた専用のインクで刷る方式です。色の指定には、DICやPANTONEといった色見本帳の番号を使います。前出のコラムでも、刷り色の指示にはDIC・PANTONE・toyoなどの色見本帳を使うのが理想とされていました。企業ロゴの「あの赤」のように、ズレが許されないブランドカラーはこの仕組みで守られています。</p>
+<p>ただ、EC担当者が画像を渡す先のチラシやカタログの大半は、通常のCMYK4色で刷られます。特色は版が増える分だけ費用も上がるため、「くすむなら特色にすればいい」と気軽に選べるものではありません。存在と使いどころを知っておく、くらいの距離感でよさそうです。</p>
+
+<h2 id="sec4">総インキ量（TAC）の上限｜濃い写真データが印刷トラブルになる理由</h2>
+<p>色の範囲と並んで、調べていて初めて知ったのが「総インキ量」です。印刷通販のP'Sネットワークの解説によると、総インキ量とは1カ所に重ね合わされたCMYKインキ量の合計のことで、各色100%ずつ重ねると最大400%になりますが、総インキ量が高いとインクが乾きにくくなり、裏移りや汚れの原因になるため、一定以下に収める必要があるとのことです（出典：<a href="https://www.psnw.co.jp/incomplete-data/case03/" target="_blank" rel="noopener nofollow">総インキ量（P'Sネットワーク）</a>）。</p>
+<p>調べてみると、この上限値は印刷会社や用紙によって違いました。ラクスルは総インキ量を300%以内に収める調整方法を案内しています（出典：<a href="https://raksul.com/guide/create-data/knowledge-of-printing/ink-amount/" target="_blank" rel="noopener nofollow">総インキ量（ラクスル ご利用ガイド）</a>）。サロンプリントは、総インキ量が320%を超えると印刷が不安定になるため修正が必要としています（出典：<a href="https://salonprint.jp/guide/technical/datacaution/" target="_blank" rel="noopener nofollow">データ作成時のご注意点（サロンプリント）</a>）。印刷通販のWAVEは用紙別に、コート紙などは合計350%以内、マット系用紙や上質紙は310%以内という基準を示しています（出典：<a href="https://www.wave-inc.co.jp/data/dtp/noudo.html" target="_blank" rel="noopener nofollow">濃度オーバーにご注意ください（WAVE）</a>）。300か320か350かは入稿先次第なので、数字を暗記するより、入稿先のガイドを確認する習慣のほうが役に立ちます。</p>
+<p>EC実務でこれを踏みやすいのが、暗い写真です。黒背景の商品写真や夜のイメージカットをCMYKに変換すると、暗い部分は4色すべての値が高くなり、総インキ量が上限を超えやすくなります。モニターでは普通に見えているデータが入稿チェックで引っかかる原因は、だいたいここでした。</p>
+<div class="warn-box">
+<h4>黒ベタと文字の組み合わせに注意</h4>
+<p>黒をCMYK4色すべてで作る「リッチブラック」を細い文字や線に使うと、印刷時のわずかな版ズレでにじんで読みにくくなることがあります。サロンプリントのガイドでも、文字や線にはK100%のみを指定するよう案内されています。リッチブラックの上に小さな白抜き文字を置くと、つぶれて見えなくなる場合があるという注意もありました。黒背景に白抜き文字のPOPを作るときは、黒の作り方に気をつけてください。</p>
+</div>
+
+<h2 id="sec5">入稿前に僕レベルでもできる対策｜カラーモードの確認と色校正</h2>
+<p>仕組みがわかったところで、Photoshopが得意ではない僕でもできる対策を4つに絞りました。</p>
+<h3>入稿ガイドを最初に読む</h3>
+<p>対応しているカラーモード（RGB入稿の可否）、推奨されるカラー設定、総インキ量の上限は、印刷会社のデータ作成ガイドにまとまっています。WAVEのガイドのように「Japan Color 2001 Coated」といったカラー設定の名前まで指定されている場合もあるので、データを作り始める前に一度目を通しておくと手戻りが減ります。</p>
+<h3>RGBのまま入稿した場合の扱いを確認する</h3>
+<p>CMYKデータでの入稿を必須にしている会社もあれば、RGBのまま受け付けて印刷会社側で変換してくれる会社もあります。自動変換に任せると、どの色がどうくすむかを自分の目で確かめられません。急ぎでなければ、CMYKに変換したデータを自分で確認してから入稿するほうが安心です。</p>
+<h3>重要な色は色校正で実物確認する</h3>
+<p>色校正は、本番の印刷前に色味がイメージどおりかを確かめる工程です。前出の「CMYKとRGBの違いは？」でも、大量に印刷した後で色味の違いが発覚すると刷り直しのコストと時間がかかるため、本格的な印刷の前に色校正を行うことが勧められています。商品パッケージや大部数のカタログなど、失敗できない案件ほど価値のある工程です。</p>
+<h3>鮮やかな色に頼ったデザインを流用しない</h3>
+<p>モニター前提で彩度を上げた画像やネオン系の配色は、印刷でいちばん落差が出ます。印刷物に流用するときは「この鮮やかさは出ない前提」で全体を見直すか、くすんでも成立する配色に寄せておくと、刷り上がりを見たときのガッカリが減ります。</p>
+<p>最後にひとつ注意点です。CMYKに変換しておけばモニターと同じ色で刷れる、というわけではありません。変換はあくまで印刷で再現できる範囲に色を収める処理で、モニターの色と一致させる処理ではないからです。モニター側にも個体差や設定差があるので、最終的な色の確認は紙の上でする、と割り切るのが現実的だと思います。</p>
+
+<div class="faq-section">
+<h2 id="sec6">FAQ</h2>
+<div class="faq-item">
+<p class="fq"><strong>Q. インクとインキはどちらが正しい表記ですか？</strong></p>
+<p class="fa">A. どちらも間違いではありません。「インク」は英語のink、「インキ」はオランダ語のinktに由来するという説が有力で、指しているものは同じです。印刷業界では慣例的に「インキ」と呼ばれることが多く、家庭用プリンターや筆記具では「インク」が一般的です。印刷会社とのやり取りで「インキ」と出てきても、同じものと考えて問題ありません。</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 楽天用に作った商品画像を、そのまま店頭チラシの印刷データに使ったら、モニターより青がくすみました。データが壊れたのでしょうか？</strong></p>
+<p class="fa">A. データの破損ではなく、モニター（RGB）と印刷（CMYK）の色の仕組みの違いが原因と考えられます。モニターの鮮やかな青の一部は、CMYKのインクでは同じ彩度で再現できません。主にCMYKの色域の制約が原因で、一般的なCMYK印刷では同じ傾向の変化が起こります。次からは、くすむ前提で仕上がりを確認するか、重要な色は色校正で事前にチェックするのが現実的です。</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. RGBのまま印刷データを入稿するとどうなりますか？</strong></p>
+<p class="fa">A. 印刷会社によって対応が分かれます。CMYKデータでの入稿を必須とする会社もあれば、RGBのまま受け付けて印刷会社側で変換する会社もあります。RGB入稿が可能な場合でも、印刷工程では内部的にCMYKへ変換されます。自動変換の場合、意図しない色味になることがあるため、入稿先のデータ作成ガイドで対応カラーモードを確認してから入稿するのが安全です。</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. モニターと印刷物の色を完全に一致させることはできますか？</strong></p>
+<p class="fa">A. 完全な一致は難しいと考えたほうが現実的です。モニターは光の発色、印刷は紙とインクの反射で色を見せる仕組みで、原理からして同じにはなりません。モニター自体の設定や個体差、部屋の照明、紙の種類でも見え方が変わります。ズレを小さくする調整はできますが、重要な色は色校正で実物を確認するのが確実です。</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 家庭用のインクジェットプリンターで印刷しても色は変わりますか？</strong></p>
+<p class="fa">A. 変わります。家庭用プリンターもインクと紙の反射で色を作る仕組みなので、モニターの発色とは別物です。機種のインク構成や用紙（光沢紙か普通紙か）によっても仕上がりが変わります。チラシやカタログ印刷の色確認を家庭用プリンターで代用するのは、参考程度と考えたほうが安全です。</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. 総インキ量は自分で確認できますか？</strong></p>
+<p class="fa">A. Photoshopがあれば確認できます。「ウィンドウ」から「情報」パネルを開き、画像のいちばん濃い部分にカーソルを合わせると、CMYKの合計値を確認できます。上限値は印刷会社と用紙によって異なるため、入稿先のガイドに書かれた基準値と照らし合わせてください。</p>
+</div>
+<div class="faq-item">
+<p class="fq"><strong>Q. CMYKのKは何の略ですか？</strong></p>
+<p class="fa">A. Key plate（キープレート）の略です。Blackの頭文字ではありません。Key plateは、印刷時に他の色の版の位置合わせの基準になる黒の版を指します。CMYの3色だけでは理想的な黒が出ないため、独立した黒の版を加えた4色構成がCMYKです。</p>
+</div>
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="glossary/rgb-cmyk.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">RGBとCMYKの違い｜Webと印刷で色が変わる理由</span>
+<span class="cite-url">tsubasa-memo.github.io/glossary/rgb-cmyk.html</span>
+</span>
+</a>
+<a class="cite-card" href="print-service-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真プリントはどこがいい？コンビニ・ネット・カメラのキタムラの使い分け</span>
+<span class="cite-url">tsubasa-memo.github.io/print-service-comparison.html</span>
+</span>
+</a>
+<a class="cite-card" href="photo-print-service.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真プリントサービスおすすめ7選｜ネット注文で安くきれいに現像する方法</span>
+<span class="cite-url">tsubasa-memo.github.io/photo-print-service.html</span>
+</span>
+</a>
+<a class="cite-card" href="image-file-formats.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">JPEG・PNG・WebP・RAWの違いと使い分け方｜画像形式の基礎知識</span>
+<span class="cite-url">tsubasa-memo.github.io/image-file-formats.html</span>
+</span>
+</a>
+</div>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる</h2>
+<p class="card-desc">レタッチ会社9社の経営基盤（設立年・資本金・従業員数・取引先）を一覧比較。与信審査で確認される法人基盤・体制の整合性・実績の透明性から、法人取引で外注先の経営基盤を見極めるチェックポイントをまとめた。料金相場は別記事で整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<div class="author-box">
+<div class="author-icon"><img src="/icons/tsubasa.png" alt="ツバサ" width="64" height="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
