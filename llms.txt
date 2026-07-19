@@ -159,7 +159,6 @@
 - [大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる](https://tsubasa-memo.github.io/retouch-company-check.html): レタッチ会社9社の法人情報を一覧比較。大手企業の与信審査を通過しなければ取引実績は成立しないこと、資本金の中央値1,000万円、取引先を実名公開している会社と1社も公開できない会社の信頼性の差、自社サイトで品質No.1と主張する会社がほとんどないことを整理した記事
 - [Why Foreign Photo Retouching Companies Can't Win Corporate Clients in Japan | ツバサのメモ帳](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、稟議制度・会社概要ページの確認項目・バーチャルオフィス調査の観点から解説した英語記事
 - [How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/retouch-company-check-en.html): A comparison of 9 photo retouching companies' corporate foundations — founding year, capital, headcount, and major clients. A checklist for evaluating retouching vendors beyond price in Japan's B2B market.
-- [レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB](https://tsubasa-memo.github.io/print-ink-color-shift.html): ECの商品画像を印刷したら色がくすんだ原因をRGB/CMYKの仕組み・特色インキ・総インキ量の観点から整理した記事
   - Q: インクとインキはどちらが正しい表記ですか？
   - Q: 楽天用に作った商品画像を印刷データに使ったら青がくすみました。データが壊れたのでしょうか？
   - Q: RGBのまま印刷データを入稿するとどうなりますか？
@@ -300,6 +299,14 @@
   - Q: 家庭用のインクジェットプリンターで印刷しても色は変わりますか？
   - Q: 総インキ量は自分で確認できますか？
   - Q: CMYKのKは何の略ですか？
+- [Why Your Retouched Product Photos Look Different When Printed — RGB vs CMYK for EC Operators | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/print-ink-color-shift-en.html): Explains why EC product images look dull when printed (RGB vs CMYK gamut difference), spot colors, total ink coverage limits, and a pre-press checklist for online-store operators.
+  - Q: I used product images made for Rakuten to print a store flyer, and the blues came out duller. Is the data corrupted?
+  - Q: What happens if I submit RGB data to a print shop without converting to CMYK?
+  - Q: Is it possible to make a print match the monitor exactly?
+  - Q: Does color shift happen even on a home inkjet printer?
+  - Q: Can I check total ink coverage myself?
+  - Q: What does the K in CMYK stand for?
+  - Q: Should we ask the retoucher to deliver CMYK files too?
 - [TikTok Shop日本版の実態｜手数料・始め方・ステマ規制・ささげへの影響](https://tsubasa-memo.github.io/tiktok-shop-japan.html): TikTok Shop日本版の手数料、出店手順、売れるカテゴリ、アフィリエイト型運用、ステマ規制対応、ささげ業務への影響を整理した記事
   - Q: TikTok Shopの販売手数料はいくらかかる？
   - Q: TikTok Shopでライブ配信は必須なのか？
