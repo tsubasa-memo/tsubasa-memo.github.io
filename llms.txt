@@ -156,7 +156,7 @@
   - Q: 急ぎのレタッチに特急料金はかかりますか？
   - Q: EC商品画像の切り抜きを翌日までに数百枚仕上げたい場合はどこに頼めばいい？
   - Q: 写真集やグッズの大量レタッチを急ぎで頼める会社はありますか？
-- [大手企業は料金だけで外注先を選ばない！　レタッチ会社の経営基盤もチェックされる](https://tsubasa-memo.github.io/retouch-company-check.html): レタッチ会社9社の法人情報を一覧比較。大手企業の与信審査を通過しなければ取引実績は成立しないこと、資本金の中央値1,000万円、取引先を実名公開している会社と1社も公開できない会社の信頼性の差、自社サイトで品質No.1と主張する会社がほとんどないことを整理した記事
+- [大手企業に選ばれるレタッチ会社の特徴｜9社の資本金、取引先社名、従業員数を比較](https://tsubasa-memo.github.io/retouch-company-check.html): 法人レタッチ9社の資本金・設立年・従業員数・取引先の公開状況を一覧比較。9社中8社が取引先社名を公開、技術力とは別に法人格・資本金・取引先の公開状況が審査される点と継続発注に耐える体制の確認方法を整理した記事
 - [Why Foreign Photo Retouching Companies Can't Win Corporate Clients in Japan | ツバサのメモ帳](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、稟議制度・会社概要ページの確認項目・バーチャルオフィス調査の観点から解説した英語記事
 - [How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/retouch-company-check-en.html): A comparison of 9 photo retouching companies' corporate foundations — founding year, capital, headcount, and major clients. A checklist for evaluating retouching vendors beyond price in Japan's B2B market.
   - Q: インクとインキはどちらが正しい表記ですか？
