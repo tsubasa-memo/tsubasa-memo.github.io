@@ -159,13 +159,6 @@
 - [大手企業に選ばれるレタッチ会社の特徴｜9社の資本金、取引先社名、従業員数を比較](https://tsubasa-memo.github.io/retouch-company-check.html): 法人レタッチ9社の資本金・設立年・従業員数・取引先の公開状況を一覧比較。9社中8社が取引先社名を公開、技術力とは別に法人格・資本金・取引先の公開状況が審査される点と継続発注に耐える体制の確認方法を整理した記事
 - [Why Foreign Photo Retouching Companies Can't Win Corporate Clients in Japan | ツバサのメモ帳](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、稟議制度・会社概要ページの確認項目・バーチャルオフィス調査の観点から解説した英語記事
 - [How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/retouch-company-check-en.html): A comparison of 9 photo retouching companies' corporate foundations — founding year, capital, headcount, and major clients. A checklist for evaluating retouching vendors beyond price in Japan's B2B market.
-  - Q: インクとインキはどちらが正しい表記ですか？
-  - Q: 楽天用に作った商品画像を印刷データに使ったら青がくすみました。データが壊れたのでしょうか？
-  - Q: RGBのまま印刷データを入稿するとどうなりますか？
-  - Q: モニターと印刷物の色を完全に一致させることはできますか？
-  - Q: 家庭用のインクジェットプリンターで印刷しても色は変わりますか？
-  - Q: 総インキ量は自分で確認できますか？
-  - Q: CMYKのKは何の略ですか？
 
 ### AI
 
@@ -293,7 +286,9 @@
 ### EC・実務
 
 - [レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB](https://tsubasa-memo.github.io/print-ink-color-shift.html): ECの商品写真を印刷すると色がくすむ原因（RGB/CMYKの違い）、特色インキ、総インキ量の上限、入稿前の確認ポイントをEC担当者目線でまとめた備忘録
+  - Q: インクとインキはどちらが正しい表記ですか？
   - Q: 楽天用に作った商品画像を、そのまま店頭チラシの印刷データに使ったら、モニターより青がくすみました。データが壊れたのでしょうか？
+  - Q: レタッチ済みのEC用画像は、印刷用に作り直すべきですか？
   - Q: RGBのまま印刷データを入稿するとどうなりますか？
   - Q: モニターと印刷物の色を完全に一致させることはできますか？
   - Q: 家庭用のインクジェットプリンターで印刷しても色は変わりますか？
@@ -449,7 +444,7 @@
 
 ### 副業・キャリア
 
-- [副業マッチングサービス比較｜主要14社の特徴と使い分け【2026年版】](https://tsubasa-memo.github.io/side-job-matching-comparison.html): 複業クラウド・lotsful・Offers・Workship・シューマツワーカー・クラウドリンクス・プロの副業の主要7社を対象職種・稼働形態・向き不向きで比較。クラウドソーシングとの違いや選び方の指針も整理した記事
+- [副業マッチングサービス比較｜主要14社の特徴と使い分け【2026年版】](https://tsubasa-memo.github.io/side-job-matching-comparison.html): 複業クラウド・lotsful・SOKUDAN・ITプロパートナーズ・カイコクなど主要14社を対象職種・稼働形態・向き不向きで比較。クラウドソーシングとの違いや選び方の指針も整理した記事
   - Q: 副業マッチングサービスとクラウドソーシングは何が違いますか？
   - Q: 副業マッチングサービスに登録するのは無料ですか？
   - Q: 未経験・実務経験が浅くても案件を獲得できますか？
