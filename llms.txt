@@ -285,7 +285,7 @@
   - Q: ポートレートモードで撮った写真の背景ぼかしは後から調整できますか？
 ### EC・実務
 
-- [レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB](https://tsubasa-memo.github.io/print-ink-color-shift.html): ECの商品写真を印刷すると色がくすむ原因（RGB/CMYKの違い）、特色インキ、総インキ量の上限、入稿前の確認ポイントをEC担当者目線でまとめた備忘録
+- [レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB](https://tsubasa-memo.github.io/print-ink-color-shift.html): ECサイト用にレタッチした商品写真を印刷すると色がくすむ原因は、モニター（RGB）とインク（CMYK）の色の作り方の違い。紙の種類によるTAC上限の違い、機械的なTAC削減で色が死ぬ理由、入稿前の確認ポイントまでEC担当者目線で整理。
   - Q: インクとインキはどちらが正しい表記ですか？
   - Q: 楽天用に作った商品画像を、そのまま店頭チラシの印刷データに使ったら、モニターより青がくすみました。データが壊れたのでしょうか？
   - Q: レタッチ済みのEC用画像は、印刷用に作り直すべきですか？
@@ -297,6 +297,7 @@
 - [Why Your Retouched Product Photos Look Different When Printed — RGB vs CMYK for EC Operators | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/print-ink-color-shift-en.html): Explains why EC product images look dull when printed (RGB vs CMYK gamut difference), spot colors, total ink coverage limits, and a pre-press checklist for online-store operators.
   - Q: I used product images made for Rakuten to print a store flyer, and the blues came out duller. Is the data corrupted?
   - Q: What happens if I submit RGB data to a print shop without converting to CMYK?
+  - Q: Should I ask my retouching vendor to remake all images for print?
   - Q: Is it possible to make a print match the monitor exactly?
   - Q: Does color shift happen even on a home inkjet printer?
   - Q: Can I check total ink coverage myself?
