@@ -64,15 +64,18 @@
 
 ### レタッチ
 
+- [料理写真のレタッチ外注どこに頼む？シズル感を出せるサービス7社比較](https://tsubasa-memo.github.io/food-photo-retouch.html): 料理・食べ物の写真レタッチを外注できる7社を料金・対応範囲・得意分野で比較。シズル感の強調や湯気追加の依頼先選びをまとめた記事
   - Q: 料理写真のレタッチ料金の相場はいくらですか？
   - Q: 飲食店のメニュー写真とEC用の食品画像でレタッチの方向性は違いますか？
   - Q: 料理写真のレタッチで湯気を追加できますか？
   - Q: 自分でアプリを使うのとプロに頼む最大の違いは何ですか？
+- [商品写真・ジュエリーのレタッチ外注どこに頼む？EC向けサービス6社比較](https://tsubasa-memo.github.io/product-photo-retouch.html): 商品写真・ジュエリーのレタッチ外注6社を料金・対応範囲で比較。白抜き・色調補正・カラーバリエーション作成の依頼先選びをまとめた記事
   - Q: 商品写真のレタッチ料金の相場はいくらですか？
   - Q: Amazonの商品画像に必要なレタッチは何ですか？
   - Q: カラーバリエーション画像は1点の撮影から作れますか？
   - Q: 白抜きは自動ツールとプロの手作業で違いますか？
   - Q: ジュエリーの商品写真はスマホでも撮れますか？
+- [建築・不動産写真のレタッチ外注｜電線消し・空の入替えができるサービス比較](https://tsubasa-memo.github.io/architecture-photo-retouch.html): 建築・不動産写真のレタッチ外注6社を比較。電線・電柱の除去、曇り空から青空への合成、建物の歪み補正の料金相場をまとめた記事
   - Q: 建築写真の電線消しはいくらかかりますか？
   - Q: 曇り空を青空に変えることはできますか？
   - Q: 不動産ポータルサイトに掲載する物件写真にレタッチは必要ですか？
@@ -283,6 +286,8 @@
   - Q: スマホのポートレートモードはいつ使うのが効果的ですか？
   - Q: ポートレートモードの背景ぼかしが不自然になるのはなぜですか？
   - Q: ポートレートモードで撮った写真の背景ぼかしは後から調整できますか？
+- [商品撮影を外注するか自分でやるか｜EC担当者の判断基準と費用の分かれ目](https://tsubasa-memo.github.io/product-photo-diy-vs-outsource.html): EC商品撮影を自社でやるか外注するかの判断基準。月10商品以内なら内製、月20商品以上やモデル撮影が必要なら外注という分岐を整理した記事
+- [インスタのスナップ写真とは？映え写真との違いとスマホで自然に撮るコツ](https://tsubasa-memo.github.io/snap-photo-vs-instagrammable.html): スナップ写真と映え写真の違いを整理。構図を作り込まない撮り方と、加工を明るさ・色温度の調整に留める判断基準をまとめた記事
 ### EC・実務
 
 - [レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB](https://tsubasa-memo.github.io/print-ink-color-shift.html): ECサイト用にレタッチした商品写真を印刷すると色がくすむ原因は、モニター（RGB）とインク（CMYK）の色の作り方の違い。紙の種類によるTAC上限の違い、機械的なTAC削減で色が死ぬ理由、入稿前の確認ポイントまでEC担当者目線で整理。
@@ -533,6 +538,8 @@
 - [構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順](https://tsubasa-memo.github.io/json-ld-guide.html): FAQPage・Article・BreadcrumbListのJSON-LDコード例と実装後の確認方法
 - [llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方](https://tsubasa-memo.github.io/llms-txt-guide.html): Googleが公式に不要と表明したllms.txtの書き方・設置手順。SEO専門家の賛否両論の反応と、それでも設置すべき判断基準をPerplexity引用の実体験から解説
 - [SEO・LLMO対策の費用が高すぎる？｜AIO・GEOの相場と小規模事業者の選択肢](https://tsubasa-memo.github.io/seo-llmo-cost-small-business.html): SEO・LLMO・AIO・GEO対策の費用相場を予算帯ごとに整理。月額5万円以下の低価格サービスと無料でできるLLMO施策を比較した。
+- [SEOを外注するならWeb制作会社かSEO専門会社か？判断軸を整理した](https://tsubasa-memo.github.io/seo-outsource-web-vs-seo.html): SEO外注先をWeb制作会社にするかSEO専門会社にするかの判断軸。CMS制約で施策が実行できない落とし穴とLLMO対応力の見極め方を整理した記事
+- [個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】](https://tsubasa-memo.github.io/blog-seo-basics.html): 個人ブログのSEOで最初にやった5つの施策。タイトル32〜40文字・description110〜125文字・sitemap送信・FAQ構造化データ・内部リンクの記録
 - [note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ](https://tsubasa-memo.github.io/blog-platform-comparison.html): note・WordPress・GitHub Pagesを副業ブログの収益化・費用・AI検索対応で比較した記事。noteの有料記事・メンバーシップの収入の現実と月額500円のプレミアム機能、AdSense・アフィリエイトの対応差、AI検索に引用されるための条件を整理している
   - Q: ブログ初心者にはnote・WordPress・GitHub Pagesのどれがおすすめですか？
   - Q: noteからWordPressやGitHub Pagesに引っ越せますか？
@@ -762,12 +769,15 @@
 
 ### English Articles
 
+- [How to Check & Remove EXIF Location Data from Photos (English)](https://tsubasa-memo.github.io/exif-info-en.html): How to check and remove EXIF location data on iPhone, Android, Windows, and Mac, and how social platforms handle it.
+- [RAW vs JPEG: Which Should You Shoot? A Beginner's Guide (English)](https://tsubasa-memo.github.io/raw-vs-jpeg-en.html): RAW keeps all sensor data for flexible editing, JPEG is smaller and ready to share. How to decide which format fits.
   - Q: What is the main difference between RAW and JPEG?
   - Q: Should a beginner shoot RAW or JPEG?
   - Q: How much storage does RAW use compared to JPEG?
   - Q: What software do I need to edit RAW files?
   - Q: Is RAW better for product photography?
 
+- [JPEG vs PNG vs WebP vs RAW: Image File Formats Explained (English)](https://tsubasa-memo.github.io/image-file-formats-en.html): A practical comparison of JPEG, PNG, WebP, GIF, RAW, and HEIC, and when to use each for websites, social media, and online stores.
   - Q: When should I use JPEG vs PNG?
   - Q: What is WebP and is it better than JPEG?
   - Q: What is the best image format for e-commerce product photos?
@@ -775,18 +785,21 @@
   - Q: Is GIF still used in 2026?
   - Q: How do I convert HEIC photos from iPhone to JPEG?
 
+- [Best Photo Colorization Apps in 2026: AI Tools for Black & White Photos (English)](https://tsubasa-memo.github.io/photo-colorize-apps-en.html): 6 AI tools that colorize black-and-white photos, change specific colors, or restore faded images, with free tiers and real limitations.
   - Q: Can I colorize black-and-white photos for free?
   - Q: Can I colorize photos on my phone?
   - Q: How accurate are AI-colorized photos?
   - Q: Can I change just one color in a photo without affecting the rest?
   - Q: Can faded old photos be restored to their original colors?
 
+- [Google Photos vs iCloud vs Amazon Photos: Backup Comparison 2026 (English)](https://tsubasa-memo.github.io/photo-backup-comparison-en.html): Compares free storage, paid plans, and features of Google Photos, iCloud, and Amazon Photos for phone backup.
   - Q: Is Google Photos still free?
   - Q: Is Amazon Photos free without Prime?
   - Q: Should iPhone users pick iCloud or Google Photos?
   - Q: Which service offers the best value for paid storage?
   - Q: Can I use multiple cloud services at the same time?
 
+- [Why Your Phone's Portrait Mode Looks Bad (and How to Fix It) (English)](https://tsubasa-memo.github.io/portrait-mode-tips-en.html): Why portrait mode blur looks unnatural and how subject distance fixes it, with practical tips for natural bokeh on iPhone and Android.
   - Q: When does portrait mode work best?
   - Q: Why does portrait mode background blur look unnatural?
   - Q: Can I adjust portrait mode blur after taking the photo?
