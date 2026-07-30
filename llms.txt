@@ -641,6 +641,7 @@
 - [GitHub Pages](https://tsubasa-memo.github.io/glossary/github-pages.html): GitHubリポジトリからサイトを無料公開できるサービス。
 - [HEIF・HEIC](https://tsubasa-memo.github.io/glossary/heif-heic.html): iPhoneの標準写真形式。
 - [HTML](https://tsubasa-memo.github.io/glossary/html.html): Webページの構造を定義するマークアップ言語。
+- [ICCプロファイル](https://tsubasa-memo.github.io/glossary/icc-profile.html): デバイスごとの色の特性を記述したファイル。Japan Color 2011のCoatedとUncoatedの使い分け。
 - [JANコード](https://tsubasa-memo.github.io/glossary/jan-code.html): 商品登録で求められるバーコード番号。
 - [JFIF](https://tsubasa-memo.github.io/glossary/jfif.html): Windowsでスクリーンショットを保存すると出てくる見慣れない拡張子。
 - [JPEG](https://tsubasa-memo.github.io/glossary/jpeg.html): 写真に最も使われる非可逆圧縮の画像形式。
@@ -670,6 +671,7 @@
 - [インデックス登録](https://tsubasa-memo.github.io/glossary/index-registration.html): Googleがページをデータベースに記録すること。
 - [インプレッション](https://tsubasa-memo.github.io/glossary/impression.html): 広告やコンテンツが表示された回数。
 - [色温度](https://tsubasa-memo.github.io/glossary/color-temperature.html): 光源の色味をケルビン（K）で表した数値。
+- [色校正](https://tsubasa-memo.github.io/glossary/color-proof.html): 本番の印刷前に色味を確認する工程。本機校正・簡易校正（DDCP）・プリンター校正の違いと費用感。
 - [色補正](https://tsubasa-memo.github.io/glossary/color-correction.html): 写真の色味やホワイトバランスを整えるレタッチ工程。
 - [オムニチャネル](https://tsubasa-memo.github.io/glossary/omnichannel.html): 実店舗・EC・アプリなど複数チャネルを統合する戦略。
 - [確定申告](https://tsubasa-memo.github.io/glossary/tax-return.html): 1年間の所得を税務署に申告する手続き。副業所得20万超で必要。
@@ -689,9 +691,11 @@
 - [コントラスト](https://tsubasa-memo.github.io/glossary/contrast.html): 写真の明るい部分と暗い部分の差。
 - [合成](https://tsubasa-memo.github.io/glossary/compositing.html): 複数の画像を組み合わせて1枚にするレタッチ処理。
 - [サーチコンソール](https://tsubasa-memo.github.io/glossary/search-console.html): Googleの無料SEOツール。検索パフォーマンスを確認できる。
+- [再委託](https://tsubasa-memo.github.io/glossary/subcontracting.html): 受託した業務をさらに第三者に委託すること。EC外注での品質のブレ・情報漏えい・契約書の注意点。
 - [サイトマップ](https://tsubasa-memo.github.io/glossary/sitemap.html): サイト内の全ページ一覧をXMLで記述したファイル。
 - [ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】](https://tsubasa-memo.github.io/sasage-outsource.html): 撮影・採寸・原稿の頭文字。
 - [ささげ業務](https://tsubasa-memo.github.io/glossary/sasage.html): 撮影・採寸・原稿。EC商品登録に必要な3工程。
+- [色域（ガマット）](https://tsubasa-memo.github.io/glossary/color-gamut.html): デバイスやカラーモードが再現できる色の範囲。sRGB・Adobe RGB・CMYKの違いと印刷でくすむ理由。
 - [出荷指示書](https://tsubasa-memo.github.io/glossary/shipping-instruction.html): 物流会社に出荷内容を伝えるための書類。
 - [白抜き](https://tsubasa-memo.github.io/glossary/background-removal.html): EC商品画像の背景を白にする処理。無料ツールと外注の比較。
 - [白飛び](https://tsubasa-memo.github.io/glossary/whiteout.html): 明るい部分が真っ白になって階調が失われる現象。
@@ -699,11 +703,13 @@
 - [静的サイト](https://tsubasa-memo.github.io/glossary/static-site.html): あらかじめ用意したHTMLファイルをそのまま表示するWebサイト。WordPressなど動的サイトとの違い、GitHub Pagesでの運営メリットを整理。
 - [センサーサイズ](https://tsubasa-memo.github.io/glossary/sensor-size.html): カメラのイメージセンサーの大きさ。フルサイズとAPS-Cの違い。
 - [セッション・PV・UU](https://tsubasa-memo.github.io/glossary/session-pv-uu.html): アクセス解析の3つの基本指標。
+- [総インキ量（TAC）](https://tsubasa-memo.github.io/glossary/tac.html): 1箇所に重ねるCMYK4色のインクの合計値。用紙別の上限とPhotoshopでの確認方法。
 - [タイトルタグ](https://tsubasa-memo.github.io/glossary/title-tag.html): HTMLのtitle要素。検索結果のリンク文字列に表示されるSEOの基本。
 - [ダイナミックレンジ](https://tsubasa-memo.github.io/glossary/dynamic-range.html): カメラが記録できる明暗の幅。
 - [チャージバック](https://tsubasa-memo.github.io/glossary/chargeback.html): クレジットカード決済の取消し。
 - [直帰率](https://tsubasa-memo.github.io/glossary/bounce-rate.html): 1ページだけ見て離脱した割合。
 - [特商法表記](https://tsubasa-memo.github.io/glossary/tokushoho.html): ECサイトに必ず掲載する「特定商取引法に基づく表記」ページ。
+- [特色インキ（スポットカラー）](https://tsubasa-memo.github.io/glossary/spot-color.html): CMYKではなく専用に練られたインクで刷る方式。DICとPANTONEの違い。
 - [トーンジャンプ](https://tsubasa-memo.github.io/glossary/tone-jump.html): 空のグラデーションが縞模様になる現象。
 - [ドロップシャドウ](https://tsubasa-memo.github.io/glossary/drop-shadow.html): 切り抜き画像にPhotoshopで人工的に影を付ける加工。
 - [トリミング](https://tsubasa-memo.github.io/glossary/trimming.html): 画像の一部を切り取って必要な範囲だけにすること。
@@ -726,6 +732,7 @@
 - [モックアップ](https://tsubasa-memo.github.io/glossary/mockup.html): デザイン確認用の見本。
 - [ライティング](https://tsubasa-memo.github.io/glossary/lighting.html): 撮影で被写体に当てる光の配置と質の設計。
 - [横持ちコスト](https://tsubasa-memo.github.io/glossary/cross-docking-cost.html): 商品を倉庫から撮影スタジオなど別拠点へ移動させる際の物流費。ささげ外注の損益分岐点で見落としやすい費目。
+- [与信審査](https://tsubasa-memo.github.io/glossary/credit-check.html): 取引先の支払い能力や経営基盤を確認する調査。EC外注先の選定で確認される項目。
 - [楽天RMS](https://tsubasa-memo.github.io/glossary/rakuten-rms.html): 楽天市場の出店者向け管理画面。
 - [楽天スーパーSALE](https://tsubasa-memo.github.io/glossary/rakuten-super-sale.html): 楽天最大のセールイベント。
 - [リードタイム](https://tsubasa-memo.github.io/glossary/lead-time.html): 発注から納品までにかかる日数のこと。
@@ -733,6 +740,7 @@
 - [リスティング広告](https://tsubasa-memo.github.io/glossary/listing-ads.html): 検索結果に表示されるテキスト広告。
 - [リターゲティング](https://tsubasa-memo.github.io/glossary/retargeting.html): 一度サイトを訪問した人に再度広告を表示する手法。
 - [リダイレクト](https://tsubasa-memo.github.io/glossary/redirect.html): URLを別のURLに自動転送する仕組み。
+- [リッチブラック](https://tsubasa-memo.github.io/glossary/rich-black.html): CMYK4色を掛け合わせて作る深みのある黒。K100%との使い分けと版ズレの注意点。
 - [リポジトリ](https://tsubasa-memo.github.io/glossary/repository.html): ファイルと変更履歴を保管する場所。
 - [レイヤー](https://tsubasa-memo.github.io/glossary/layer.html): Photoshopの基本概念。
 - [レタッチ](https://tsubasa-memo.github.io/glossary/retouch.html): 写真の色・明るさ・肌などを自然に整える修正作業。加工との違い。

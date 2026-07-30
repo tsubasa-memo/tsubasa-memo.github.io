@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<title>ICCプロファイルとは？印刷とモニターの色を近づける仕組み｜ツバサのメモ帳</title>
+<meta name="description" content="ICCプロファイルとはデバイスごとの色の癖を記述したファイルのこと。Japan Color 2011のCoatedとUncoatedの違い、画像へのプロファイル埋め込み、EC商品画像の印刷入稿で押さえておくべき点を整理した。">
+<meta name="keywords" content="ICCプロファイル とは,Japan Color 2011,Coated Uncoated 違い,カラープロファイル 埋め込み,カラーマネジメント">
+<meta property="og:title" content="ICCプロファイルとは？印刷とモニターの色を近づける仕組み｜ツバサのメモ帳">
+<meta property="og:description" content="ICCプロファイルの意味とJapan Color 2011系の使い分け、入稿時の注意点を調べたメモ。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/glossary/icc-profile.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/icc-profile.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/glossary/icc-profile.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/icc-profile.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/glossary/icc-profile.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ICCプロファイルとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モニターや印刷機などのデバイスごとの色の特性を記述したファイルです。デバイス間で色を正確にやり取りするための翻訳ファイルのような役割を果たしています。ICCという国際団体が規格を策定しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Japan Color 2011 CoatedとUncoatedの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coatedはコート紙向け、Uncoatedはマット紙・上質紙向けのプロファイルです。紙のインク吸収特性が異なるため、使い分けが必要です。印刷会社によってはJapan Color 2001系を指定している場合もあるため、入稿先の指示に従ってください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "印刷入稿時にICCプロファイルの設定が必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "印刷会社の入稿ガイドにプロファイルの指定がある場合は従ってください。指定がなければ、使用する用紙に合ったプロファイルを選ぶか、印刷会社に確認するのが安全です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ICCプロファイルは画像に埋め込んだほうがいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "埋め込んだほうが安全です。埋め込まないと、画像を開く環境によって色が変わる可能性があります。保存時にICCプロファイルを埋め込む設定を有効にしてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Japan Color 2011と2001はどちらを使えばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "入稿先の印刷会社が指定するほうを使ってください。現在は2011系が標準的ですが、2001系を基準にしている会社もまだあります。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ICCプロファイルとは？印刷とモニターの色を近づける仕組み",
+  "description": "ICCプロファイルとはデバイスごとの色の癖を記述したファイルのこと。Japan Color 2011のCoatedとUncoatedの違い、画像へのプロファイル埋め込み、EC商品画像の印刷入稿で押さえておくべき点を整理した。",
+  "url": "https://tsubasa-memo.github.io/glossary/icc-profile.html",
+  "image": "https://tsubasa-memo.github.io/og/glossary/icc-profile.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-07-30T00:00:00+09:00",
+  "dateModified": "2026-07-30T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ICCプロファイル"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; ICCプロファイル
+
+</nav>
+
+<div class="article-hero">
+<img alt="ICCプロファイルとは？印刷とモニターの色を近づける仕組み" height="360" loading="eager" src="/thumbs/glossary/icc-profile.webp" width="640"/>
+</div>
+
+<h1 class="article-title">ICCプロファイルとは？<br/>印刷とモニターの色を近づける仕組み</h1>
+<div class="article-meta-line">
+<span>2026年7月30日</span>
+</div>
+
+<h2>ICCプロファイルとは</h2>
+<p>ICCプロファイルとは、モニター、プリンター、印刷機といったデバイスごとの「色の癖」を記述したファイルのことだ。ICC（International Color Consortium）という国際団体が策定した規格で、ISO 15076として国際標準にもなっている。</p>
+<a class="cite-card" href="https://www.konicaminolta.jp/instruments/knowledge/fluorescence/icc/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">ICCプロファイル｜コニカミノルタ</span>
+<span class="cite-url">konicaminolta.jp</span>
+</span>
+</a>
+<p>モニターが表示する色と、プリンターや印刷機が出力する色は、デバイスによって異なる。同じRGB値を指定しても、モニターAとモニターBでは見え方が違うし、印刷機で刷ればまた別の色になる。ICCプロファイルはこの差を埋めるための「翻訳ファイル」のような役割を果たしている。</p>
+<a class="cite-card" href="https://321web.link/color-profile/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">カラープロファイルとは？カラーマネジメントの基本をわかりやすく解説｜321web</span>
+<span class="cite-url">321web.link</span>
+</span>
+</a>
+<p>デバイスが表現できる色の範囲（色域）はそれぞれ異なる。ICCプロファイルには、そのデバイスがどの範囲の色を再現できるかという情報が含まれている。カラーマネジメントシステムはこの情報を参照して、デバイス間の色の変換を行う。</p>
+<a class="cite-card" href="https://www.jagat.or.jp/past_archives/content/view/3087.html" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">カラマネ極意5｜ICCプロファイルはカラーマネジメントの核心｜JAGAT</span>
+<span class="cite-url">jagat.or.jp</span>
+</span>
+</a>
+
+<h2>Japan Color 2011 CoatedとUncoatedの違い</h2>
+<p>Photoshopのカラー設定でCMYKプロファイルを選ぶ場面がある。日本の印刷業界では現在「Japan Color 2011」系が標準的に使われている。ただし、印刷会社によっては旧版の「Japan Color 2001」系を指定している場合もあるため、入稿先の指示に従う。</p>
+<a class="cite-card" href="https://japancolor.jp/icc.html" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">JapanColor2011 ICCプロファイル｜Japan Color認証制度</span>
+<span class="cite-url">japancolor.jp</span>
+</span>
+</a>
+<p>Coated（コーテッド）はコート紙向けのプロファイルだ。コート紙は表面に塗料層があるためインクが表面に留まりやすく、比較的多くのインクを載せられる。</p>
+<p>Uncoated（アンコーテッド）はマットコート紙や上質紙向けだ。これらの紙はインクが浸透しやすいため、総インキ量が低めに抑えられている。</p>
+<p>紙の種類を無視してプロファイルを選ぶと、印刷結果が想定と異なってしまう。たとえば上質紙に刷るのにCoatedプロファイルのまま入稿すると、総インキ量が紙の特性に対して過剰になり、裏移りの原因になる可能性がある。</p>
+<a class="cite-card" href="https://www.jfpi.or.jp/webyogo/index.php?term=3107" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">ICCプロファイル｜日本印刷産業連合会 印刷用語集</span>
+<span class="cite-url">jfpi.or.jp</span>
+</span>
+</a>
+
+<h2>覚えておきたいポイント</h2>
+<p>EC担当者がICCプロファイルを自分で設定する場面は多くないが、知っておくと印刷会社との会話がスムーズになる。</p>
+<p>最も実務的なポイントは、印刷会社の入稿ガイドにプロファイルの指定があったら、それに従うこと。指定と異なるプロファイルで変換すると、自分のモニターでは問題なく見えていても、印刷結果の色が変わる。</p>
+<p>画像にICCプロファイルを「埋め込む」か「埋め込まない」かも、入稿時に問題になりやすいポイントだ。プロファイルが埋め込まれていない画像は、開くソフトや環境によって色が変わる。入稿するデータには、保存時に「ICCプロファイルを埋め込む」を有効にしておくのが安全だ。</p>
+<p>プロファイル選びが総インキ量にも影響する話は「<a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった</a>」に書いている。</p>
+<a class="cite-card" href="/print-ink-color-shift.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</span>
+<span class="cite-url">tsubasa-memo.github.io/print-ink-color-shift.html</span>
+</span>
+</a>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. ICCプロファイルとは何ですか？</div>
+<div class="fa">A. モニターや印刷機などのデバイスごとの色の特性を記述したファイルです。デバイス間で色を正確にやり取りするための翻訳ファイルのような役割を果たしています。ICCという国際団体が規格を策定しています。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. Japan Color 2011 CoatedとUncoatedの違いは何ですか？</div>
+<div class="fa">A. Coatedはコート紙向け、Uncoatedはマット紙・上質紙向けのプロファイルです。紙のインク吸収特性が異なるため、使い分けが必要です。印刷会社によってはJapan Color 2001系を指定している場合もあるため、入稿先の指示に従ってください。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 印刷入稿時にICCプロファイルの設定が必要ですか？</div>
+<div class="fa">A. 印刷会社の入稿ガイドにプロファイルの指定がある場合は従ってください。指定がなければ、使用する用紙に合ったプロファイルを選ぶか、印刷会社に確認するのが安全です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. ICCプロファイルは画像に埋め込んだほうがいいですか？</div>
+<div class="fa">A. 埋め込んだほうが安全です。埋め込まないと、画像を開く環境によって色が変わる可能性があります。保存時にICCプロファイルを埋め込む設定を有効にしてください。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. Japan Color 2011と2001はどちらを使えばいいですか？</div>
+<div class="fa">A. 入稿先の印刷会社が指定するほうを使ってください。現在は2011系が標準的ですが、2001系を基準にしている会社もまだあります。</div>
+</div>
+</div>
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="tac.html">総インキ量（TAC）</a></li>
+<li><a href="color-gamut.html">色域（ガマット）</a></li>
+<li><a href="color-proof.html">色校正</a></li>
+<li><a href="color-correction.html">色補正</a></li>
+</ul>
+</div>
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</a></li>
+</ul>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="/privacy-policy.html">プライバシーポリシー</a>
+
+<a href="/about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
