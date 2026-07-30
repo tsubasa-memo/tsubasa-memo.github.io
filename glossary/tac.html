@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<title>総インキ量（TAC）とは？印刷トラブルを防ぐ基礎知識｜ツバサのメモ帳</title>
+<meta name="description" content="総インキ量（TAC値）とはCMYK4色のインクの合計値のこと。上限を超えると裏移りや乾燥不良の原因になる。コート紙は300〜340%が目安。Photoshopでの確認方法とEC担当者が印刷入稿前に押さえておきたい点を整理した。">
+<meta name="keywords" content="総インキ量 とは,TAC値 とは,総インキ量 上限,TAC値 下げ方,インキ総量 確認">
+<meta property="og:title" content="総インキ量（TAC）とは？印刷トラブルを防ぐ基礎知識｜ツバサのメモ帳">
+<meta property="og:description" content="総インキ量（TAC値）の意味と用紙別の上限、Photoshopでの確認方法をEC担当の視点で調べたメモ。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/glossary/tac.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/tac.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/glossary/tac.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/tac.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/glossary/tac.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "総インキ量（TAC値）とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "印刷で1箇所に重ねるCMYK4色のインクの合計値のことです。各色が最大100%なので理論上の最大は400%ですが、実際にはインクの乾燥や裏移りの問題があるため、印刷会社ごと・用紙ごとに上限が設けられています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "総インキ量の上限はどれくらいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "用紙や印刷方式で異なります。コート紙で300〜340%、マット紙・上質紙で300〜310%、新聞で240〜250%が目安です。雑誌広告はJMPA（雑誌広告デジタル送稿推進協議会）の送稿ルールで320%以下が求められます。入稿先の入稿ガイドで確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "総インキ量を超えるとどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "インクが紙に定着しきれず、裏移り（刷った面のインクが上に重ねた紙に付着する現象）や汚れ、乾燥不良の原因になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RGB画像でも総インキ量は確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RGB画像のままでは確認できません。Photoshopで画像をCMYKモードに変換してから、情報パネルでCMYK各値を確認してください。Adobe Acrobatの出力プレビューでも確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "総インキ量が超えていたら自分で直すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EC担当者が自分でPhotoshopの値を調整すると色が崩れるリスクがあります。まず入稿先に「このデータで問題ないか」を確認し、調整が必要な場合は印刷会社側のプロに依頼するのが安全です。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "総インキ量（TAC）とは？印刷トラブルを防ぐ基礎知識",
+  "description": "総インキ量（TAC値）とはCMYK4色のインクの合計値のこと。上限を超えると裏移りや乾燥不良の原因になる。コート紙は300〜340%が目安。Photoshopでの確認方法とEC担当者が印刷入稿前に押さえておきたい点を整理した。",
+  "url": "https://tsubasa-memo.github.io/glossary/tac.html",
+  "image": "https://tsubasa-memo.github.io/og/glossary/tac.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-07-30T00:00:00+09:00",
+  "dateModified": "2026-07-30T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "総インキ量（TAC）"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 総インキ量（TAC）
+
+</nav>
+
+<div class="article-hero">
+<img alt="総インキ量（TAC）とは？印刷トラブルを防ぐ基礎知識" height="360" loading="eager" src="/thumbs/glossary/tac.webp" width="640"/>
+</div>
+
+<h1 class="article-title">総インキ量（TAC）とは？<br/>印刷トラブルを防ぐ基礎知識</h1>
+<div class="article-meta-line">
+<span>2026年7月30日</span>
+</div>
+
+<h2>総インキ量（TAC）とは</h2>
+<p>CMYK印刷では、シアン（C）・マゼンタ（M）・イエロー（Y）・ブラック（K）の4色のインクを重ねて色を再現する。それぞれの色は0%〜100%の範囲で指定されるため、4色すべてを100%にすると合計400%が理論上の最大値になる。この4色の合計値が総インキ量で、TAC値（Total Area Coverage）とも呼ばれる。</p>
+<a class="cite-card" href="https://www.ddc.co.jp/words/archives/20080615110000.html" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">総インキ量・総網点量・TAC値 の意味・解説（DTP・印刷用語集）</span>
+<span class="cite-url">ddc.co.jp</span>
+</span>
+</a>
+<p>ただし、実際に400%で印刷するとインクが紙に乗りすぎて乾かず、裏移りや汚れが発生する。そのため、印刷会社ごと・用紙ごとに上限値が設けられている。</p>
+<a class="cite-card" href="https://odahara.jp/magazine/column/cmyk-ink-noudo_ps/" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">総インキ量の調整方法（Photoshop使用）｜プリントネットマガジン</span>
+<span class="cite-url">odahara.jp</span>
+</span>
+</a>
+<p>上限値は印刷会社や紙の種類で異なるが、よく見かける目安は次のとおりだ。</p>
+<ul>
+<li>新聞：240〜250%</li>
+<li>雑誌広告：320%（JMPA送稿ルール）</li>
+<li>一般商業印刷（コート紙）：300〜340%</li>
+<li>マット紙・上質紙：300〜310%</li>
+</ul>
+<a class="cite-card" href="https://seibundo.jp.net/a_dialy/%E3%82%A4%E3%83%B3%E3%82%AD%E6%BF%83%E5%BA%A6%E3%81%A8%E3%81%AF%EF%BC%9F" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">「インキ濃度」とは？｜菁文堂</span>
+<span class="cite-url">seibundo.jp.net</span>
+</span>
+</a>
+<p>紙によって上限が違うのは、インクの吸収特性が異なるためだ。コート紙は表面に塗料層があり、インクが表面に留まりやすいので比較的多くのインクを載せられる。上質紙は繊維がむき出しでインクが浸透しやすく、乾きが遅い分だけ裏移りしやすい。</p>
+<p>CMYK変換後の画像であれば、Photoshopの情報パネルでカーソル位置のCMYK各色の値を確認し、合計で総インキ量を把握できる。Adobe Acrobatの出力プレビューでは、指定した上限を超えた領域をハイライト表示することもできる。RGB画像のままでは確認できないため、CMYK変換が先になる。</p>
+<a class="cite-card" href="https://iyoen.com/tac-ucr-matome/2797/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">TAC値の下げ方や注意点を印刷別にまとめました｜デザイナーのひとりごと</span>
+<span class="cite-url">iyoen.com</span>
+</span>
+</a>
+
+<h2>EC実務でTACが問題になる場面</h2>
+<p>EC担当者が総インキ量を意識するのは、商品画像をチラシやカタログに転用するときだ。</p>
+<p>ECサイト用の画像はRGBで作成されているため、印刷用にCMYKへ変換すると、暗い部分で4色の値が跳ね上がりやすい。黒背景の商品写真や夜のイメージカットは典型で、変換後に総インキ量が350%を超えていることも珍しくない。</p>
+<p>入稿チェックで引っかかったときに、自分でPhotoshopのスライダーを動かして機械的にTAC値を下げると、色が不自然になるリスクがある。全体のインク総量を一律に落とすと色味が浅くなり、超過部分だけ修正しても最暗部の締まりが弱くなるケースがある。</p>
+<p>EC担当者としてできるのは、入稿先の指定する上限値を事前に確認すること。超えていたら「このまま入稿して大丈夫ですか」と印刷会社に問い合わせること。色を壊さずに総インキ量を調整する作業は、印刷側のプロに任せるのが安全だ。</p>
+<a class="cite-card" href="https://ai-create.net/blog/2019/06/04/tac%E5%80%A4%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F/" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">TAC値って何？｜AI CREATE</span>
+<span class="cite-url">ai-create.net</span>
+</span>
+</a>
+
+<h2>覚えておきたいポイント</h2>
+<p>総インキ量で押さえておくべき点は3つ。</p>
+<p>1つ目は、上限値は印刷会社と用紙の組み合わせで決まるということ。ネットで見かける数字を暗記するより、入稿先の入稿ガイドに記載された数字を都度確認するのが正解だ。</p>
+<p>2つ目は、Photoshopのプロファイル設定が総インキ量に影響するということ。現在は「Japan Color 2011 Coated」がコート紙向けの標準プロファイルとして使われることが多いが、印刷会社によっては「Japan Color 2001 Coated」を指定している場合もある。マット紙や上質紙向けには「Uncoated」系のプロファイルを選ぶと総インキ量が低めに抑えられる。ただし、TAC値を下げるためだけにプロファイルを切り替えると色が変わるリスクがあるため、印刷仕様の確認は制作の最初にやっておいたほうがいい。</p>
+<p>3つ目は、リッチブラック（CMYK4色を掛け合わせて作る黒）が総インキ量を押し上げやすいこと。印刷会社の推奨比率で作ったリッチブラックなら合計200〜250%程度に収まるが、C100% M100% Y100% K100%の4色ベタは400%になり、ほぼすべての印刷条件で上限を超える。</p>
+<a class="cite-card" href="https://www.theme3.net/tac-value/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">雑誌広告のデザインではTAC値を確認し、インキの総使用量を制限内におさめましょう｜Theme3</span>
+<span class="cite-url">theme3.net</span>
+</span>
+</a>
+<p>印刷で色がくすむ理由や入稿前の確認手順は「<a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった</a>」に整理している。</p>
+<a class="cite-card" href="/print-ink-color-shift.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</span>
+<span class="cite-url">tsubasa-memo.github.io/print-ink-color-shift.html</span>
+</span>
+</a>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. 総インキ量（TAC値）とは何ですか？</div>
+<div class="fa">A. 印刷で1箇所に重ねるCMYK4色のインクの合計値のことです。各色が最大100%なので理論上の最大は400%ですが、実際にはインクの乾燥や裏移りの問題があるため、印刷会社ごと・用紙ごとに上限が設けられています。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 総インキ量の上限はどれくらいですか？</div>
+<div class="fa">A. 用紙や印刷方式で異なります。コート紙で300〜340%、マット紙・上質紙で300〜310%、新聞で240〜250%が目安です。雑誌広告はJMPA（雑誌広告デジタル送稿推進協議会）の送稿ルールで320%以下が求められます。入稿先の入稿ガイドで確認してください。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 総インキ量を超えるとどうなりますか？</div>
+<div class="fa">A. インクが紙に定着しきれず、裏移り（刷った面のインクが上に重ねた紙に付着する現象）や汚れ、乾燥不良の原因になります。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. RGB画像でも総インキ量は確認できますか？</div>
+<div class="fa">A. RGB画像のままでは確認できません。Photoshopで画像をCMYKモードに変換してから、情報パネルでCMYK各値を確認してください。Adobe Acrobatの出力プレビューでも確認できます。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 総インキ量が超えていたら自分で直すべきですか？</div>
+<div class="fa">A. EC担当者が自分でPhotoshopの値を調整すると色が崩れるリスクがあります。まず入稿先に「このデータで問題ないか」を確認し、調整が必要な場合は印刷会社側のプロに依頼するのが安全です。</div>
+</div>
+</div>
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="icc-profile.html">ICCプロファイル</a></li>
+<li><a href="color-gamut.html">色域（ガマット）</a></li>
+<li><a href="rich-black.html">リッチブラック</a></li>
+<li><a href="color-correction.html">色補正</a></li>
+</ul>
+</div>
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</a></li>
+<li><a href="/print-service-comparison.html">写真プリントはどこがいい？コンビニ・ネット・カメラのキタムラの使い分け</a></li>
+</ul>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="/privacy-policy.html">プライバシーポリシー</a>
+
+<a href="/about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
