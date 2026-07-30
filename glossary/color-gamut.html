@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
+<title>色域（ガマット）とは？sRGBとCMYKの差を理解する｜ツバサのメモ帳</title>
+<meta name="description" content="色域（ガマット）とはデバイスやカラーモードが再現できる色の範囲のこと。sRGB・Adobe RGB・CMYKの色域の違い、モニターの色が印刷でくすむ理由、EC商品画像をチラシやカタログに転用するときの注意点までEC担当の視点で整理した。">
+<meta name="keywords" content="色域 とは,ガマット とは,sRGB Adobe RGB 違い,CMYK 色域,印刷 色 くすむ">
+<meta property="og:title" content="色域（ガマット）とは？sRGBとCMYKの差を理解する｜ツバサのメモ帳">
+<meta property="og:description" content="色域の意味とsRGB・Adobe RGB・CMYKの違い、印刷で色がくすむ理由を調べたメモ。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/glossary/color-gamut.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tsubasa-memo.github.io/glossary/color-gamut.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/glossary/color-gamut.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/glossary/color-gamut.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/glossary/color-gamut.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "色域（ガマット）とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "デバイスやカラーモードが再現できる色の範囲のことです。モニターのRGBと印刷のCMYKでは色域が異なるため、画面で見える色がそのまま印刷で出るとは限りません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "sRGBとAdobe RGBはどう違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Adobe RGBはsRGBより色域が広く、とくに緑からシアンの領域で差があります。印刷用の写真編集にはAdobe RGBが有利な場合がありますが、正しく表示するには対応モニターが必要です。EC用のWeb画像はsRGBが標準です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "なぜモニターの色が印刷でくすむのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モニターのsRGB色域には、CMYKの色域では再現できない鮮やかな色が含まれているためです。とくに鮮やかな青や蛍光色が影響を受けやすいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "色域が広いモニターを使えば印刷の色と合いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モニターの色域が広くても、印刷のCMYK色域自体は変わりません。広色域モニターは編集作業には有利ですが、印刷結果との一致にはカラーマネジメント（ICCプロファイルの設定やモニターキャリブレーション）が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "EC商品画像はsRGBとAdobe RGBのどちらで作るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EC用のWeb画像はsRGBで作成するのが標準です。Adobe RGBで撮影・編集した場合は、Web公開前にsRGBに変換してください。印刷転用の可能性がある場合はAdobe RGBで元データを保管しておくと有利です。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "色域（ガマット）とは？sRGBとCMYKの差を理解する",
+  "description": "色域（ガマット）とはデバイスやカラーモードが再現できる色の範囲のこと。sRGB・Adobe RGB・CMYKの色域の違い、モニターの色が印刷でくすむ理由、EC商品画像をチラシやカタログに転用するときの注意点までEC担当の視点で整理した。",
+  "url": "https://tsubasa-memo.github.io/glossary/color-gamut.html",
+  "image": "https://tsubasa-memo.github.io/og/glossary/color-gamut.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-07-30T00:00:00+09:00",
+  "dateModified": "2026-07-30T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "用語集",
+      "item": "https://tsubasa-memo.github.io/glossary/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "色域（ガマット）"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+
+<a href="/">トップ</a> &gt; <a href="/glossary/">用語集</a> &gt; 色域（ガマット）
+
+</nav>
+
+<div class="article-hero">
+<img alt="色域（ガマット）とは？sRGBとCMYKの差を理解する" height="360" loading="eager" src="/thumbs/glossary/color-gamut.webp" width="640"/>
+</div>
+
+<h1 class="article-title">色域（ガマット）とは？<br/>sRGBとCMYKの差を理解する</h1>
+<div class="article-meta-line">
+<span>2026年7月30日</span>
+</div>
+
+<h2>色域（ガマット）とは</h2>
+<p>色域（ガマット）とは、あるデバイスやカラーモードが再現できる色の範囲のことだ。英語ではgamutと表記され、印刷やデザインの現場では「ガモット」とも読まれる。</p>
+<a class="cite-card" href="http://home.a02.itscom.net/color/gamut/gamut.html" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">ガモット（ガマット）とは</span>
+<span class="cite-url">home.a02.itscom.net</span>
+</span>
+</a>
+<p>モニターはRGBの光の三原色で色を作り、印刷はCMYKのインクの三原色で色を作る。仕組みが違うため、再現できる色の範囲も異なる。この「色の範囲」を示すのが色域だ。</p>
+<p>CIE（国際照明委員会）が定めたxy色度図の上に各色空間の範囲を描画すると、それぞれの色域の広さと位置が比較できる。一般的に、sRGB（モニターの標準色空間）の色域はCMYK（印刷の色空間）の色域より鮮やかな色の領域で広い。とくに鮮やかな青や緑の領域では、sRGBで表示できてもCMYKでは再現できない色が存在する。</p>
+<a class="cite-card" href="https://www.graphic.jp/feature/srgb" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">sRGBとAdobe RGBの違いとは？印刷する場合はどちらがいい？｜印刷通販グラフィック</span>
+<span class="cite-url">graphic.jp</span>
+</span>
+</a>
+<p>モニターで鮮やかに見えていた色が印刷でくすむのは、この色域の差が原因だ。レタッチの良し悪しや印刷会社の技術力だけでは解決できない、物理的な制約といえる。</p>
+
+<h2>sRGB・Adobe RGB・CMYKの色域の違い</h2>
+<p>代表的な色空間を3つ整理する。</p>
+<p><strong>sRGB</strong>は、1996年にHPとMicrosoftが共同で策定した色空間で、Webの標準として最も広く使われている。Windows環境の基準にもなっており、一般的なモニターはsRGBをカバーしている。EC用の商品画像は、ほとんどがsRGBで作成されている。</p>
+<p><strong>Adobe RGB</strong>は、1998年にAdobe社が提案した色空間で、sRGBより色域が広い。とくに緑からシアンの領域が広く、CMYKの色域に近い部分を多く含んでいるため、印刷を前提とした写真編集ではsRGBより有利な場合がある。ただし、Adobe RGBの色域を正確に表示するには対応モニターが必要だ。</p>
+<a class="cite-card" href="https://shiroha.jp/colorgamut-guide/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">色域とは？sRGB・Adobe RGB・Display P3・CMYKの違い｜shiroha lab</span>
+<span class="cite-url">shiroha.jp</span>
+</span>
+</a>
+<p><strong>CMYK</strong>は、印刷で使われるインクの色空間だ。sRGBやAdobe RGBと比べると鮮やかな色の再現に限界がある一方で、CMYKにもsRGBでは表現しにくい暗い色（深い赤やこげ茶など）を再現できる領域がわずかにある。色域の広さは単純な上下関係ではなく、それぞれ得意な領域が違う。</p>
+<a class="cite-card" href="https://amix-design.com/asoboad/tools/3d-gamut/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">色域とは？sRGB・Adobe RGB・Display P3・CMYKの違いを3Dで比較｜ASOBOAD</span>
+<span class="cite-url">amix-design.com</span>
+</span>
+</a>
+
+<h2>覚えておきたいポイント</h2>
+<p>EC担当者が押さえておくべきは、「モニターで見えている色がそのまま印刷で出るとは限らない」という事実と、その理由が色域の差にあるということだ。</p>
+<p>商品画像をチラシやカタログに転用する場面では、sRGBからCMYKへの変換で鮮やかさが落ちることがある。とくにビビッドなブルーやネオン系の色は変化が大きい。これを知っていれば、「印刷したら色がくすんだ」というとき、印刷会社の落ち度ではなく色域の制約だと判断できる。</p>
+<p>Adobe RGBで撮影・編集した画像をWeb用にsRGBに変換する場合も、sRGBの範囲外にある色はクリッピング（強制的に範囲内に丸められること）される。EC用の画像はsRGBで統一して作業するのが実務的だ。</p>
+<p>印刷で実際に何が起きるかは「<a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった</a>」に具体例をまとめている。</p>
+<a class="cite-card" href="/print-ink-color-shift.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</span>
+<span class="cite-url">tsubasa-memo.github.io/print-ink-color-shift.html</span>
+</span>
+</a>
+
+<div class="faq-section">
+<h2>よくある質問</h2>
+<div class="faq-item">
+<div class="fq">Q. 色域（ガマット）とは何ですか？</div>
+<div class="fa">A. デバイスやカラーモードが再現できる色の範囲のことです。モニターのRGBと印刷のCMYKでは色域が異なるため、画面で見える色がそのまま印刷で出るとは限りません。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. sRGBとAdobe RGBはどう違いますか？</div>
+<div class="fa">A. Adobe RGBはsRGBより色域が広く、とくに緑からシアンの領域で差があります。印刷用の写真編集にはAdobe RGBが有利な場合がありますが、正しく表示するには対応モニターが必要です。EC用のWeb画像はsRGBが標準です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. なぜモニターの色が印刷でくすむのですか？</div>
+<div class="fa">A. モニターのsRGB色域には、CMYKの色域では再現できない鮮やかな色が含まれているためです。とくに鮮やかな青や蛍光色が影響を受けやすいです。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. 色域が広いモニターを使えば印刷の色と合いますか？</div>
+<div class="fa">A. モニターの色域が広くても、印刷のCMYK色域自体は変わりません。広色域モニターは編集作業には有利ですが、印刷結果との一致にはカラーマネジメント（ICCプロファイルの設定やモニターキャリブレーション）が必要です。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. EC商品画像はsRGBとAdobe RGBのどちらで作るべきですか？</div>
+<div class="fa">A. EC用のWeb画像はsRGBで作成するのが標準です。Adobe RGBで撮影・編集した場合は、Web公開前にsRGBに変換してください。印刷転用の可能性がある場合はAdobe RGBで元データを保管しておくと有利です。</div>
+</div>
+</div>
+<div class="related-terms">
+<h3>関連する用語</h3>
+<ul>
+<li><a href="icc-profile.html">ICCプロファイル</a></li>
+<li><a href="tac.html">総インキ量（TAC）</a></li>
+<li><a href="spot-color.html">特色インキ（スポットカラー）</a></li>
+<li><a href="color-correction.html">色補正</a></li>
+</ul>
+</div>
+<div class="related">
+<h3>関連する記事</h3>
+<ul>
+<li><a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</a></li>
+<li><a href="/background-white.html">背景切り抜き・白抜き写真の作り方｜AI無料ツール・アプリ・外注を比較</a></li>
+</ul>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="/privacy-policy.html">プライバシーポリシー</a>
+
+<a href="/about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
