@@ -6,3 +6,38 @@ archive_*/
 originals/
 obsidian-research
 recovered-articles/
+
+# OS
+.DS_Store
+
+# 作業用ファイルの置き場（調査メモ・指示書・下書きはここに入れる）
+drafts/
+
+# 現在ルート直下にある作業用ファイル（drafts/ へ移したらこのブロックは消してよい）
+# 静的サイトなので「コミット＝公開」。ワイルドカードの git add で巻き込まないよう明示的に外す
+add_glossary_links.py
+cannibalization-report-2026-06-14.md
+chat-prompt-template.md
+claude-ai-feedback-20260520.md
+claude-ai-feedback-20260529.md
+claude-ai-feedback-20260603.md
+claude-chat-article-prompt.md
+claude-code-instruction-FINAL.md
+comparison-articles-urls.md
+competitor-analysis-500mails.md
+ctr_improvement_instruction.md
+docs/threads-image-size.md
+fix-ec-photo-bottleneck.md
+git-slim-session-2026-05-20.md
+glossary_link_audit.csv
+gsc-ai-report.png
+gsc-low-ctr-report-2026-07-19.md
+gsc-next-actions-2026-06-16.md
+japan-photo-retouch-market-barriers.md
+llmo-agency-research_draft.md
+next-session-instruction.md
+print-ink-color-shift-en.md
+print-ink-color-shift.md
+retouch-company-check-en.md
+retouch-company-check_revised.md
+scan_glossary_links.py
