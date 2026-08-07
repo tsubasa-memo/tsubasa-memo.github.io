@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>What Bing Webmaster Tools Revealed About AI Search — Why Bing Traffic Was 3x Higher Than Google on My Site | ツバサのメモ帳</title>
+<meta name="description" content="Bing clicks were three times higher than Google on my site. Comparing Bing Webmaster Tools and Google Search Console data revealed why — and how Bing's index powers Copilot, ChatGPT Search, Perplexity, and DuckDuckGo. Includes IndexNow setup and Copilot citation tracking.">
+<meta name="keywords" content="Bing Webmaster Tools,Bing vs Google traffic,AI search strategy,Bing SEO,AI Performance citations,IndexNow setup,Copilot citations,Bing market share Japan,ChatGPT Search Bing index">
+<meta property="og:title" content="What Bing Webmaster Tools Revealed About AI Search — Why Bing Traffic Was 3x Higher Than Google on My Site">
+<meta property="og:description" content="Bing clicks were three times higher than Google on my site. Comparing Bing Webmaster Tools and Google Search Console data revealed why — and how Bing's index powers Copilot, ChatGPT Search, Perplexity, and DuckDuckGo. Includes IndexNow setup and Copilot citation tracking.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://tsubasa-memo.github.io/bing-vs-google-traffic-en.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/bing-vs-google-traffic.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/bing-vs-google-traffic.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/bing-vs-google-traffic-en.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/bing-vs-google-traffic.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/bing-vs-google-traffic-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/bing-vs-google-traffic.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Bing Webmaster Tools free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely free. If you have a Microsoft account, you just add your site URL and verify ownership. Same model as Google Search Console — no fees whatsoever." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does IndexNow notify Google as well?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, Google does not participate in the IndexNow protocol. IndexNow notifications reach Bing, Yandex, Seznam, Naver, and other participating search engines only. For Google, continue using Search Console's URL Inspection tool." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Search Console show many impressions but few clicks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Search Console counts an impression every time your page appears in search results — even at position 42 (page five) or position 92 (page ten). Virtually nobody browses that deep. These \"invisible impressions\" accumulate, inflating the apparent impression count and depressing CTR. Bing's more selective display approach results in fewer impressions but higher click-through rates." }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I increase my Copilot AI citation count?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Structured, definition-rich content tends to get cited more frequently. On my site, glossary pages (\"What is resizing,\" \"What is retouching\") accounted for 68% of all Copilot citations. Placing a clear definition or conclusion at the beginning of each h2 section, building out FAQ content, and implementing JSON-LD structured data (FAQPage, Article) are practical steps." }
+    },
+    {
+      "@type": "Question",
+      "name": "When did the AI Performance feature become available?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The public preview launched on February 10, 2026. Once your site is registered in Bing Webmaster Tools, \"AI Performance\" appears in the left menu, showing citation counts and grounding queries for Copilot's AI-generated responses." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Google Search Console have an AI report?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google added a \"Generative AI Performance Report\" to Search Console in June 2026, but it only shows impression counts. Click data, CTR, and query data (which search terms triggered AI citations) are not provided. For detailed AI citation analysis, Bing Webmaster Tools currently offers significantly more data." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Japan desktop search share data relevant outside Japan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The specific market share numbers (Bing 48.74%, Google 45.96%) are unique to Japan's desktop market, driven by high Microsoft 365 adoption in enterprises and government agencies. Other markets won't show the same ratios. However, the structural point — that Bing's index powers Copilot, ChatGPT Search, Perplexity, and DuckDuckGo — applies globally regardless of local market share. Even in markets where Bing's direct search share is 5–10%, its index reaches users through all of these AI services." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Bing Webmaster Tools Revealed About AI Search — Why Bing Traffic Was 3x Higher Than Google on My Site",
+  "description": "Bing clicks were three times higher than Google on my site. Comparing Bing Webmaster Tools and Google Search Console data revealed why — and how Bing's index powers Copilot, ChatGPT Search, Perplexity, and DuckDuckGo. Includes IndexNow setup and Copilot citation tracking.",
+  "url": "https://tsubasa-memo.github.io/bing-vs-google-traffic-en.html",
+  "image": "https://tsubasa-memo.github.io/og/bing-vs-google-traffic.webp",
+  "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-08-07T00:00:00+09:00",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Bing vs Google Traffic and AI Search" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">Home</a> &gt; <a href="archive.html#seo">SEO</a> &gt; Bing vs Google Traffic
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/bing-vs-google-traffic.webp" alt="What Bing Webmaster Tools Revealed About AI Search" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">What Bing Webmaster Tools Revealed About AI Search<br>— Why Bing Traffic Was 3x Higher Than Google on My Site</h1>
+<div class="article-meta-line">
+<span>Published: August 7, 2026</span>
+</div>
+
+<p>Hi, I'm Tsubasa.</p>
+
+<p>Bing was sending three times more traffic to my site than Google. I discovered this only after registering my site with Bing Webmaster Tools and comparing the data against Google Search Console.</p>
+
+<p>Bing Webmaster Tools is a free site management tool from Microsoft. It shows how your site appears in Bing search results and, more importantly, how it's cited by Copilot's AI-generated responses. It offers functionality comparable to Google Search Console, plus an "AI Performance" feature that tracks Copilot citations — something Search Console doesn't provide at the same level of detail.</p>
+
+<p>I registered my site and compared data from both tools over the same three-month period. The results were unexpected. Google sent 35 clicks; Bing sent 94. Bing was delivering roughly three times more actual visitors. Impressions told a different story — Google showed 3,460 and Bing showed 885 — so by raw impression count, Google appeared dominant. But the people who actually arrived at my site came overwhelmingly from Bing.</p>
+
+<p>This is a small personal site with around 100 articles, hosted on GitHub Pages. Large media outlets or major e-commerce sites may see different results. But at least for my site, the assumption that "Google is the only search engine that matters" was already wrong. This article examines why this happened and what Bing's index means now that AI search is mainstream.</p>
+
+<div class="toc">
+<p class="toc-title">Contents</p>
+<ol>
+<li><a href="#sec1">Bing Sent 94 Clicks, Google Sent 35 — What Was Happening on My Site</a></li>
+<li><a href="#sec2">Why Search Console Impression Numbers Are Misleading</a></li>
+<li><a href="#sec3">Being in Bing's Index Means Exposure Across Copilot, ChatGPT Search, Perplexity, and DuckDuckGo</a></li>
+<li><a href="#sec4">Japan's Desktop Search: Bing Overtook Google — StatCounter Data</a></li>
+<li><a href="#sec5">Tracking Copilot Citations with Bing Webmaster Tools' AI Performance</a></li>
+<li><a href="#sec6">Setting Up Bing Webmaster Tools and IndexNow</a></li>
+<li><a href="#sec7">Summary</a></li>
+<li><a href="#sec8">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">Bing Sent 94 Clicks, Google Sent 35 — What Was Happening on My Site</h2>
+
+<p>Here are the numbers. The following is a side-by-side comparison of Google Search Console and Bing Webmaster Tools data for the same three-month period.</p>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr>
+<th>Metric</th>
+<th>Google</th>
+<th>Bing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Impressions</td>
+<td>3,460</td>
+<td>885</td>
+</tr>
+<tr>
+<td>Clicks</td>
+<td>35</td>
+<td>94</td>
+</tr>
+<tr>
+<td>CTR</td>
+<td>1.0%</td>
+<td>10.6%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>By impressions, Google is roughly four times higher. But by clicks — the number of people who actually visited the site — Bing is 2.7 times higher. The CTR difference is more than tenfold.</p>
+
+<p>"More impressions = more people seeing my content" is an easy assumption to make, but it's wrong. Search Console's impression count includes a large number of displays that never actually reached a user's eyes. The next section explains why.</p>
+
+<h2 id="sec2">Why Search Console Impression Numbers Are Misleading</h2>
+
+<p>Search Console counts an impression every time a page appears in search results — even at position 42 or position 92.</p>
+
+<p>Position 42 is page five of Google's search results. Position 92 is page ten. Virtually nobody browses past page two. Pages five and ten might as well not exist.</p>
+
+<p>In my Search Console data, queries like these appeared:</p>
+
+<ul>
+<li>"seoイノベーション 低価格500円 seo対策" (a Japanese SEO query) — position 42, 442 impressions, 0 clicks</li>
+<li>"seo 外注" (SEO outsourcing) — position 88, 75 impressions, 0 clicks</li>
+<li>"スマホで証明写真" (ID photo on smartphone) — position 92, 26 impressions, 0 clicks</li>
+</ul>
+
+<p>These three queries alone accounted for 543 impressions — about 16% of the total 3,460 — all from positions where no human would ever see them.</p>
+
+<p>Bing, by contrast, tends not to display pages for loosely relevant queries. Its impression count is lower, but the click-through rate on displayed results is much higher. Bing's 885 impressions are closer to the actual number of times a real user saw my site in search results.</p>
+
+<p>When comparing search engine contribution, use clicks, not impressions. Impression count is just the number of times Google's algorithm listed your page as a candidate — it says nothing about whether anyone saw it.</p>
+
+<h2 id="sec3">Being in Bing's Index Means Exposure Across Copilot, ChatGPT Search, Perplexity, and DuckDuckGo</h2>
+
+<p>Bing's index doesn't only serve Bing.com. It functions as the information source for Microsoft Copilot, ChatGPT Search, Perplexity, and DuckDuckGo. Being properly indexed by Bing means potential exposure across all of these AI search services.</p>
+
+<p>"Bing has fewer users than Google — why should I care?" is a reasonable question. Bing's standalone global search share is roughly 5–10%, compared to Google's approximately 89%.</p>
+
+<p>But Bing's index — its searchable database of the web — is not used by Bing.com alone.</p>
+
+<p>Only two companies in the world have built and maintain their own web-scale search indexes: Google and Microsoft (Bing). Building such an index from scratch requires massive technical capability and infrastructure investment. It's not realistic for other search services or AI products to create their own. As a result, most AI search services outside Google's ecosystem rely on Bing's index as their backend.</p>
+
+<p><strong>Microsoft Copilot</strong> retrieves information from Bing's index through Microsoft's "Prometheus model" to generate responses.</p>
+
+<a class="cite-card" href="https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/" rel="noopener" target="_blank">
+<span class="cite-ico ext">M</span>
+<span class="cite-body">
+<span class="cite-title">Reinventing search with a new AI-powered Microsoft Bing and Edge (February 2023)</span>
+<span class="cite-url">blogs.microsoft.com</span>
+</span>
+</a>
+
+<p><strong>ChatGPT Search</strong> also uses Bing's index as a key information source. OpenAI's VP of Engineering, Srinivas Narayanan, stated in an official Reddit AMA: "We use a suite of services, and Bing is an important one among them." On Microsoft's side, Bing's Principal Product Manager Fabrice Canel confirmed at a public event that OpenAI leverages Bing's index for fresh content retrieval. Additionally, engineers have verified that sites penalized in Bing simultaneously disappeared from ChatGPT Search, demonstrating the linkage.</p>
+
+<a class="cite-card" href="https://www.botify.com/blog/modern-search-bing-interview" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">B</span>
+<span class="cite-body">
+<span class="cite-title">The Inside Perspective on Modern Search — An Interview with Fabrice Canel of Bing (2024)</span>
+<span class="cite-url">botify.com</span>
+</span>
+</a>
+<a class="cite-card" href="https://www.seroundtable.com/bing-powers-chatgpt-search-38345.html" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Bing Powers ChatGPT Search (November 2024)</span>
+<span class="cite-url">seroundtable.com</span>
+</span>
+</a>
+
+<p><strong>Perplexity AI's</strong> CEO Aravind Srinivas stated in a podcast that the company initially built its system relying on Bing's search index combined with OpenAI's models. While Perplexity is now building its own index, the architecture of using a search engine as the RAG (Retrieval-Augmented Generation) foundation remains.</p>
+
+<p><strong>DuckDuckGo</strong> explicitly states in its official help pages: "We primarily source our traditional links and images from Bing."</p>
+
+<a class="cite-card" href="https://duckduckgo.com/duckduckgo-help-pages/results/sources/" rel="noopener" target="_blank">
+<span class="cite-ico ext">D</span>
+<span class="cite-body">
+<span class="cite-title">Where do DuckDuckGo search results come from?</span>
+<span class="cite-url">duckduckgo.com</span>
+</span>
+</a>
+
+<p>In summary, being indexed by Bing means your content is potentially available to:</p>
+
+<ul>
+<li>Microsoft Copilot</li>
+<li>ChatGPT Search</li>
+<li>Perplexity</li>
+<li>DuckDuckGo</li>
+</ul>
+
+<p>Bing's standalone search share may be small, but when you consider the entire AI search ecosystem it supports, the value of being properly indexed by Bing is far greater than the Bing.com traffic numbers alone suggest.</p>
+
+<h2 id="sec4">Japan's Desktop Search: Bing Overtook Google — StatCounter Data</h2>
+
+<p>StatCounter's May 2026 data shows that in Japan's desktop search market, Bing reached 48.74% share while Google fell to 45.96%. Globally, Bing hovers around 10%, making Japan's desktop market a striking outlier.</p>
+
+<a class="cite-card" href="https://gs.statcounter.com/search-engine-market-share/desktop/japan" rel="noopener" target="_blank">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Desktop Search Engine Market Share Japan</span>
+<span class="cite-url">gs.statcounter.com</span>
+</span>
+</a>
+
+<p>The previous month (April 2026) showed an even more pronounced gap in host-level data, with bing.com at 52.32%. Even across all devices (including mobile), Bing holds 33–36% share in Japan, closing in on Google's 55–58%.</p>
+
+<p>Why is Japan such an outlier? The likely explanation lies in Japan's corporate IT culture and Microsoft 365 adoption.</p>
+
+<p>Japan's large enterprises and government agencies overwhelmingly standardize on Windows PCs, Edge browser, and Microsoft 365 as their workplace environment. Edge's default search engine is Bing, so every search from Edge counts as Bing traffic.</p>
+
+<p>More critically, corporate policies around generative AI play a role. Surveys from 2025–2026 indicate that approximately 72% of Japanese companies either prohibit or are considering prohibiting the use of public generative AI tools (including personal ChatGPT, Gemini, and Claude accounts) for work purposes.</p>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000003.000178927.html" rel="noopener nofollow" target="_blank">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">Survey on Generative AI Tool Usage in Corporations — Microsoft Copilot Leads Enterprise Adoption (SDE Partners, 2026)</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<p>Under "approved tools only" policies, the available AI depends on which productivity suite the company has adopted. Microsoft 365 organizations get Copilot; Google Workspace organizations get Gemini. In Japan's large enterprises and government agencies, Microsoft 365 adoption significantly exceeds Google Workspace, and Microsoft Copilot leads with 45.3% share among standardized enterprise AI tool deployments. Microsoft 365 Copilot has announced its ISMAP (Japan's government cloud security assessment) application and supports conditional access control via Entra ID (formerly Azure AD), making it adoptable even in organizations with strict security requirements.</p>
+
+<p>This directly translates to search traffic. Copilot's backend is Bing, and all Copilot-initiated searches count as Bing traffic. The more employees in Microsoft 365 organizations use Copilot daily, the more Japan's desktop Bing search share gets pushed up.</p>
+
+<p>A caveat: StatCounter's measurement is heavily influenced by default browser search engine settings. One survey found that approximately 34% of Bing users "are not aware they are using Bing" — they're searching through the Windows taskbar or Edge address bar without conscious choice. Additionally, Edge's prerendering feature (pre-loading the next page) and Copilot's background network communications may inflate Bing's share with pageviews that don't represent actual user behavior, as acknowledged in StatCounter's official FAQ. These numbers don't precisely measure "intentional Bing usage." However, whether the search is intentional or not, the user's query flows through Bing's index and feeds into the AI ecosystem.</p>
+
+<h2 id="sec5">Tracking Copilot Citations with Bing Webmaster Tools' AI Performance</h2>
+
+<p>Bing Webmaster Tools' "AI Performance" is currently the only tool that quantitatively shows how many times your site has been cited in Copilot's AI-generated responses. Added as a public preview in February 2026, it provides two metrics: citation count (Citations) and the search queries AI used to retrieve information (Grounding Queries).</p>
+
+<a class="cite-card" href="https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview" rel="noopener" target="_blank">
+<span class="cite-ico ext">B</span>
+<span class="cite-body">
+<span class="cite-title">Introducing AI Performance in Bing Webmaster Tools Public Preview (February 2026)</span>
+<span class="cite-url">blogs.bing.com</span>
+</span>
+</a>
+
+<p>On my site, the top queries cited by Copilot were:</p>
+
+<ul>
+<li>"リサイズとは" (What is resizing) — 427 Citations</li>
+<li>"レタッチとは" (What is retouching) — 175 Citations</li>
+<li>"instagram フィード投稿サイズ" (Instagram feed post size) — 31 Citations</li>
+</ul>
+
+<p>The top two are both glossary entries, totaling 602 citations — 68% of the overall 878. Definition and explanation-style content like glossary pages tends to be cited frequently by AI as "grounding" (factual backing) for its responses. Notably, English queries ("top image recoloring services" — 17 citations, "best photo recoloring apps" — 17 citations) also cited my Japanese-language site.</p>
+
+<p>Google Search Console added an AI report in June 2026, but it only shows impression counts — click data, CTR, and query data remain unavailable. For quantitatively understanding "how AI is citing my site," Bing Webmaster Tools is currently the only option. I covered Google Search Console's generative AI report in <a href="gsc-ai-report.html">a separate article</a> (Japanese).</p>
+
+<p>If you want to understand how AI search treats your site, registering with Bing Webmaster Tools is not optional.</p>
+
+<h2 id="sec6">Setting Up Bing Webmaster Tools and IndexNow</h2>
+
+<p>For those who've read this far and want to check their own site, here are three things to do. All free, and setup takes less than a day.</p>
+
+<h3>1. Register Your Site with Bing Webmaster Tools</h3>
+
+<ol>
+<li>Go to <a href="https://www.bing.com/webmasters" rel="noopener" target="_blank">Bing Webmaster Tools</a> and sign in with a Microsoft account</li>
+<li>Add your site URL</li>
+<li>Verify ownership (adding a meta tag to your HTML head is the easiest method)</li>
+<li>Once registered, check clicks and impressions under "Search Performance" in the left menu</li>
+<li>Check Copilot citation data under "AI Performance" in the same menu</li>
+</ol>
+
+<p>If you've registered with Google Search Console before, the process is nearly identical.</p>
+
+<h3>2. Set Up IndexNow</h3>
+
+<p>IndexNow is a protocol that instantly notifies Bing and Yandex when you publish or update a page. Since Bing's index is the backend for Copilot and ChatGPT Search, faster Bing indexing means faster AI search exposure.</p>
+
+<ol>
+<li>Generate an IndexNow API key (a random string)</li>
+<li>Place the key as a text file at your site's root (e.g., https://example.com/abc123.txt)</li>
+<li>Send an HTTP POST request to the IndexNow API whenever you update a page</li>
+</ol>
+
+<p>WordPress users can automate this with a plugin. Static sites can use a shell script or Python script. IndexNow does not support Google — for Google, continue using Search Console's URL Inspection tool for individual requests.</p>
+
+<h3>3. Compare Search Console and Bing Click Counts for Your Own Site</h3>
+
+<p>The numbers in this article are from my site and will vary by site size and niche. How much Bing is contributing to your traffic is something you need to check yourself.</p>
+
+<h2 id="sec7">Summary</h2>
+
+<p>If you only look at Google Search Console to assess search traffic, you're missing Bing-sourced visits. On my site, Bing clicks were roughly three times higher than Google's.</p>
+
+<p>Bing's index serves not just Bing.com but also Microsoft Copilot, ChatGPT Search, Perplexity, and DuckDuckGo as a backend. Being properly indexed by Bing means exposure across all of these AI search services.</p>
+
+<p>In Japan's desktop search market, Bing has overtaken Google at 48.74% share (StatCounter, May 2026) — driven by Microsoft 365 adoption and corporate AI policies that funnel employees toward Copilot. While this specific market dynamic is most pronounced in Japan, the structural relationship between Bing's index and the AI search ecosystem applies globally.</p>
+
+<p>Register with Bing Webmaster Tools, check AI Performance, and set up IndexNow. It's all free. Start by comparing your own Google and Bing click counts.</p>
+
+<div class="faq-section">
+<h2 id="sec8">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is Bing Webmaster Tools free?</strong></p>
+<p class="fa">A. Yes, completely free. If you have a Microsoft account, you just add your site URL and verify ownership. Same model as Google Search Console — no fees whatsoever.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Does IndexNow notify Google as well?</strong></p>
+<p class="fa">A. No, Google does not participate in the IndexNow protocol. IndexNow notifications reach Bing, Yandex, Seznam, Naver, and other participating search engines only. For Google, continue using Search Console's URL Inspection tool.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Why does Search Console show many impressions but few clicks?</strong></p>
+<p class="fa">A. Search Console counts an impression every time your page appears in search results — even at position 42 (page five) or position 92 (page ten). Virtually nobody browses that deep. These "invisible impressions" accumulate, inflating the apparent impression count and depressing CTR. Bing's more selective display approach results in fewer impressions but higher click-through rates.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. How can I increase my Copilot AI citation count?</strong></p>
+<p class="fa">A. Structured, definition-rich content tends to get cited more frequently. On my site, glossary pages ("What is resizing," "What is retouching") accounted for 68% of all Copilot citations. Placing a clear definition or conclusion at the beginning of each h2 section, building out FAQ content, and implementing JSON-LD structured data (FAQPage, Article) are practical steps. For more on this approach, see my article on <a href="llmo-article-writing.html">LLMO article writing strategies</a> (Japanese).</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. When did the AI Performance feature become available?</strong></p>
+<p class="fa">A. The public preview launched on February 10, 2026. Once your site is registered in Bing Webmaster Tools, "AI Performance" appears in the left menu, showing citation counts and grounding queries for Copilot's AI-generated responses.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Does Google Search Console have an AI report?</strong></p>
+<p class="fa">A. Google added a "Generative AI Performance Report" to Search Console in June 2026, but it only shows impression counts. Click data, CTR, and query data (which search terms triggered AI citations) are not provided. For detailed AI citation analysis, Bing Webmaster Tools currently offers significantly more data.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is the Japan desktop search share data relevant outside Japan?</strong></p>
+<p class="fa">A. The specific market share numbers (Bing 48.74%, Google 45.96%) are unique to Japan's desktop market, driven by high Microsoft 365 adoption in enterprises and government agencies. Other markets won't show the same ratios. However, the structural point — that Bing's index powers Copilot, ChatGPT Search, Perplexity, and DuckDuckGo — applies globally regardless of local market share. Even in markets where Bing's direct search share is 5–10%, its index reaches users through all of these AI services.</p>
+</div>
+</div>
+
+<p class="lang-switch">🇯🇵 <a href="bing-vs-google-traffic.html" hreflang="ja">この記事の日本語版を読む</a></p>
+
+<!-- Related Articles -->
+<div class="related">
+<h3>Related Articles</h3>
+<a class="cite-card" href="gsc-ai-report.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断</span>
+<span class="cite-url">tsubasa-memo.github.io/gsc-ai-report.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-guide.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide.html</span>
+</span>
+</a>
+<a class="cite-card" href="search-console-ctr.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/search-console-ctr.html</span>
+</span>
+</a>
+<a class="cite-card" href="google-index-not-found.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">URLがGoogleに登録されていません｜原因と対処法・登録リクエスト手順</span>
+<span class="cite-url">tsubasa-memo.github.io/google-index-not-found.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- Author Profile -->
+<div class="author-box">
+<div class="author-icon"><img alt="Tsubasa" height="64" src="/icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>Working in the EC department of a Japanese apparel company. My responsibilities range from coordinating product photography (sasage) to managing retouching vendors, updating product pages, and supervising part-time staff. I'm not great at Photoshop, so I outsource serious image work to professionals — but after working with many vendors, I've become pretty good at choosing the right one and checking deliverables. This blog is a record of things I've learned on the job.</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
