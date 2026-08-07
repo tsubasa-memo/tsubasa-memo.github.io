@@ -166,6 +166,7 @@
   - Q: EC商品画像の切り抜きを翌日までに数百枚仕上げたい場合はどこに頼めばいい？
   - Q: 写真集やグッズの大量レタッチを急ぎで頼める会社はありますか？
 - [有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】](https://tsubasa-memo.github.io/retouch-company-check.html): 法人レタッチ9社の資本金・設立年・従業員数・取引先の公開状況を一覧比較。9社すべてが取引先社名を公開、技術力とは別に法人格・資本金・取引先の公開状況が審査される点と継続発注に耐える体制の確認方法を整理した記事
+- [海外の写真レタッチ会社はなぜ日本の法人案件を取れないのか](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers-ja.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、会社概要ページの確認基準・稟議制度・バーチャルオフィス調査・インボイス制度の観点から解説した記事
 - [Why Foreign Photo Retouching Companies Can't Win Corporate Clients in Japan | ツバサのメモ帳](https://tsubasa-memo.github.io/japan-photo-retouch-market-barriers.html): 海外レタッチ会社が日本のGoogle検索で上位表示されても法人受注を取れない理由を、稟議制度・会社概要ページの確認項目・バーチャルオフィス調査の観点から解説した英語記事
 - [How Japanese Corporations Evaluate Photo Retouching Companies — A Corporate Foundation Checklist | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/retouch-company-check-en.html): A comparison of 9 photo retouching companies' corporate foundations — founding year, capital, headcount, and major clients. All 9 publicly name their clients. A checklist for evaluating retouching vendors beyond price in Japan's B2B market.
 - [Photo Retouching Prices in Japan: 15 Services Compared (2026) | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/retouch-pricing-database-en.html): Pricing data for 15 photo retouching services in Japan. Portrait retouching runs ¥1,000–6,000 per image; background removal costs tens to hundreds of yen. Per-spot vs. per-person pricing explained, with a use-case table for choosing a vendor.
