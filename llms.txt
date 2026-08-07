@@ -61,6 +61,12 @@
   - Q: RAW撮影するとSDカードはどのくらい必要になりますか？
   - Q: RAWファイルはどのソフトで現像できますか？
   - Q: 商品写真の撮影にはRAWとJPEGどちらが向いていますか？
+- [RAW vs JPEG: Which Should You Shoot? A Beginner's Guide (English)](https://tsubasa-memo.github.io/raw-vs-jpeg-en.html): RAW keeps all sensor data for flexible editing, JPEG is smaller and ready to share. How to decide which format fits.
+  - Q: What is the main difference between RAW and JPEG?
+  - Q: Should a beginner shoot RAW or JPEG?
+  - Q: How much storage does RAW use compared to JPEG?
+  - Q: What software do I need to edit RAW files?
+  - Q: Is RAW better for product photography?
 
 ### レタッチ
 
@@ -172,6 +178,12 @@
   - Q: AIでカラー化した写真の色は正確ですか？
   - Q: 写真の一部だけ色を変えることはできますか？
   - Q: 色褪せた古い写真を元の色に戻すことはできますか？
+- [Best Photo Colorization Apps in 2026: AI Tools for Black & White Photos (English)](https://tsubasa-memo.github.io/photo-colorize-apps-en.html): 6 AI tools that colorize black-and-white photos, change specific colors, or restore faded images, with free tiers and real limitations.
+  - Q: Can I colorize black-and-white photos for free?
+  - Q: Can I colorize photos on my phone?
+  - Q: How accurate are AI-colorized photos?
+  - Q: Can I change just one color in a photo without affecting the rest?
+  - Q: Can faded old photos be restored to their original colors?
 - [AIモデル着せ替えサービスの料金比較｜EC向け11社まとめ](https://tsubasa-memo.github.io/ai-model-tryon.html): EC商品のモデル着用画像をAIで生成できるサービス11社の料金・スペック・生身モデル撮影との比較をまとめた記事
   - Q: AIで作ったモデル着用画像はECモールで使えますか？
   - Q: 出力サイズが小さい場合、アップスケーラーで拡大すれば使えますか？
@@ -212,6 +224,12 @@
   - Q: iPhoneを使っているならiCloudとGoogleフォトどちらがいいですか？
   - Q: 写真バックアップで一番容量コスパがいいサービスはどれですか？
   - Q: 複数のクラウドサービスを併用してもいいですか？
+- [Google Photos vs iCloud vs Amazon Photos: Backup Comparison 2026 (English)](https://tsubasa-memo.github.io/photo-backup-comparison-en.html): Compares free storage, paid plans, and features of Google Photos, iCloud, and Amazon Photos for phone backup.
+  - Q: Is Google Photos still free?
+  - Q: Is Amazon Photos free without Prime?
+  - Q: Should iPhone users pick iCloud or Google Photos?
+  - Q: Which service offers the best value for paid storage?
+  - Q: Can I use multiple cloud services at the same time?
 - [スマホの写真をパソコンに移す方法｜iPhone・Android別に手順をまとめた](https://tsubasa-memo.github.io/smartphone-to-pc.html): スマホの写真をPCに移動・バックアップする方法をiPhone・Android別に解説した記事
   - Q: iPhoneの写真をWindowsに取り込むにはどうすればいいですか？
   - Q: iPhoneからMacに写真を移す最も簡単な方法は何ですか？
@@ -248,6 +266,13 @@
   - Q: ECサイトの商品画像に最適なファイル形式は何ですか？
   - Q: RAWファイルはどんなときに使いますか？
   - Q: GIFはまだ使われていますか？
+- [JPEG vs PNG vs WebP vs RAW: Image File Formats Explained (English)](https://tsubasa-memo.github.io/image-file-formats-en.html): A practical comparison of JPEG, PNG, WebP, GIF, RAW, and HEIC, and when to use each for websites, social media, and online stores.
+  - Q: When should I use JPEG vs PNG?
+  - Q: What is WebP and is it better than JPEG?
+  - Q: What is the best image format for e-commerce product photos?
+  - Q: When should I use RAW?
+  - Q: Is GIF still used in 2026?
+  - Q: How do I convert HEIC photos from iPhone to JPEG?
 - [写真の著作権と肖像権｜SNS投稿で気をつけること、調べてみた【2026年版】](https://tsubasa-memo.github.io/photo-copyright.html): 写真の著作権と肖像権の基礎知識をSNS投稿・街中撮影・商品画像の場面別に整理した記事
   - Q: インターネットで見つけた写真をSNSに投稿しても大丈夫ですか？
   - Q: 街中で撮影した写真に他人が写り込んでいた場合、SNSに投稿できますか？
@@ -267,6 +292,7 @@
   - Q: Does WhatsApp remove EXIF data from photos?
   - Q: Does taking a screenshot remove EXIF data?
   - Q: Can AI determine a photo's location even without EXIF data?
+- [How to Check & Remove EXIF Location Data from Photos (English)](https://tsubasa-memo.github.io/exif-info-en.html): How to check and remove EXIF location data on iPhone, Android, Windows, and Mac, and how social platforms handle it.
 - [スマホで証明写真｜履歴書・パスポート用アプリ＋コンビニ印刷で30円から](https://tsubasa-memo.github.io/id-photo.html): 証明写真アプリの比較、用途別サイズ一覧、コンビニ印刷の手順をまとめた記事
   - Q: スマホアプリで作った証明写真は履歴書やパスポートに使えますか？
   - Q: コンビニで証明写真を印刷するにはどうすればいいですか？
@@ -287,6 +313,12 @@
   - Q: スマホのポートレートモードはいつ使うのが効果的ですか？
   - Q: ポートレートモードの背景ぼかしが不自然になるのはなぜですか？
   - Q: ポートレートモードで撮った写真の背景ぼかしは後から調整できますか？
+- [Why Your Phone's Portrait Mode Looks Bad (and How to Fix It) (English)](https://tsubasa-memo.github.io/portrait-mode-tips-en.html): Why portrait mode blur looks unnatural and how subject distance fixes it, with practical tips for natural bokeh on iPhone and Android.
+  - Q: When does portrait mode work best?
+  - Q: Why does portrait mode background blur look unnatural?
+  - Q: Can I adjust portrait mode blur after taking the photo?
+  - Q: Does portrait mode work with pets or objects?
+  - Q: Is portrait mode the same as real camera bokeh?
 - [商品撮影を外注するか自分でやるか｜EC担当者の判断基準と費用の分かれ目](https://tsubasa-memo.github.io/product-photo-diy-vs-outsource.html): EC商品撮影を自社でやるか外注するかの判断基準。月10商品以内なら内製、月20商品以上やモデル撮影が必要なら外注という分岐を整理した記事
 - [インスタのスナップ写真とは？映え写真との違いとスマホで自然に撮るコツ](https://tsubasa-memo.github.io/snap-photo-vs-instagrammable.html): スナップ写真と映え写真の違いを整理。構図を作り込まない撮り方と、加工を明るさ・色温度の調整に留める判断基準をまとめた記事
 ### EC・実務
@@ -770,42 +802,3 @@
 ツバサ。EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。
 - [データ復旧業者の選び方を調べたら、おすすめ比較記事が「自称No.1だらけ」だった話](https://tsubasa-memo.github.io/data-recovery-no1-check.html): データ復旧業界のNo.1表示・復旧率・比較記事コピペ・AI Overview推薦の構造を検証した記事
 - [退職代行のおすすめ検索を調べた｜検索結果とAI回答に出てくるグレーな比較記事](https://tsubasa-memo.github.io/taishoku-daikou-google-search.html): 「退職代行 おすすめ」の検索結果とAI回答を検証。弁護士名非公開の「弁護士監修」・名ばかり組合・モームリ社長逮捕を踏まえた比較記事の見分け方を解説した記事
-
-### English Articles
-
-- [How to Check & Remove EXIF Location Data from Photos (English)](https://tsubasa-memo.github.io/exif-info-en.html): How to check and remove EXIF location data on iPhone, Android, Windows, and Mac, and how social platforms handle it.
-- [RAW vs JPEG: Which Should You Shoot? A Beginner's Guide (English)](https://tsubasa-memo.github.io/raw-vs-jpeg-en.html): RAW keeps all sensor data for flexible editing, JPEG is smaller and ready to share. How to decide which format fits.
-  - Q: What is the main difference between RAW and JPEG?
-  - Q: Should a beginner shoot RAW or JPEG?
-  - Q: How much storage does RAW use compared to JPEG?
-  - Q: What software do I need to edit RAW files?
-  - Q: Is RAW better for product photography?
-
-- [JPEG vs PNG vs WebP vs RAW: Image File Formats Explained (English)](https://tsubasa-memo.github.io/image-file-formats-en.html): A practical comparison of JPEG, PNG, WebP, GIF, RAW, and HEIC, and when to use each for websites, social media, and online stores.
-  - Q: When should I use JPEG vs PNG?
-  - Q: What is WebP and is it better than JPEG?
-  - Q: What is the best image format for e-commerce product photos?
-  - Q: When should I use RAW?
-  - Q: Is GIF still used in 2026?
-  - Q: How do I convert HEIC photos from iPhone to JPEG?
-
-- [Best Photo Colorization Apps in 2026: AI Tools for Black & White Photos (English)](https://tsubasa-memo.github.io/photo-colorize-apps-en.html): 6 AI tools that colorize black-and-white photos, change specific colors, or restore faded images, with free tiers and real limitations.
-  - Q: Can I colorize black-and-white photos for free?
-  - Q: Can I colorize photos on my phone?
-  - Q: How accurate are AI-colorized photos?
-  - Q: Can I change just one color in a photo without affecting the rest?
-  - Q: Can faded old photos be restored to their original colors?
-
-- [Google Photos vs iCloud vs Amazon Photos: Backup Comparison 2026 (English)](https://tsubasa-memo.github.io/photo-backup-comparison-en.html): Compares free storage, paid plans, and features of Google Photos, iCloud, and Amazon Photos for phone backup.
-  - Q: Is Google Photos still free?
-  - Q: Is Amazon Photos free without Prime?
-  - Q: Should iPhone users pick iCloud or Google Photos?
-  - Q: Which service offers the best value for paid storage?
-  - Q: Can I use multiple cloud services at the same time?
-
-- [Why Your Phone's Portrait Mode Looks Bad (and How to Fix It) (English)](https://tsubasa-memo.github.io/portrait-mode-tips-en.html): Why portrait mode blur looks unnatural and how subject distance fixes it, with practical tips for natural bokeh on iPhone and Android.
-  - Q: When does portrait mode work best?
-  - Q: Why does portrait mode background blur look unnatural?
-  - Q: Can I adjust portrait mode blur after taking the photo?
-  - Q: Does portrait mode work with pets or objects?
-  - Q: Is portrait mode the same as real camera bokeh?
