@@ -569,9 +569,12 @@
 - [Bing Webmaster Toolsで分かったAI検索時代のBing対策　Copilotに引用されるには](https://tsubasa-memo.github.io/bing-vs-google-traffic.html): Bing Webmaster Toolsとサーチコンソールの実測データ比較。CopilotやChatGPT Searchを支えるBingインデックスの役割とIndexNow設定手順を整理。
 - [What Bing Webmaster Tools Revealed About AI Search — Why Bing Traffic Was 3x Higher Than Google on My Site | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/bing-vs-google-traffic-en.html): English version of the Bing vs Google traffic analysis. Bing clicks were 3x higher than Google on a small Japanese site. Covers how Bing's index powers Copilot, ChatGPT Search, Perplexity, and DuckDuckGo, plus Japan's desktop Bing share overtaking Google.
 - [LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方](https://tsubasa-memo.github.io/llmo-guide.html): LLMOの定義、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者が無料で始められるLLMO対策の基本
+- [What Is LLMO? How It Differs from SEO, GEO, AIO — And What Google Actually Said | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/llmo-guide-en.html): English version of the LLMO guide. Covers how LLMO compares with SEO, GEO, AIO, and AEO, Google's May 2026 statement that AEO and GEO are unnecessary as separate concepts, and the free first steps for small businesses.
 - [Google Search Consoleの使い方｜AIを使えば初心者にも簡単](https://tsubasa-memo.github.io/search-console-guide.html): インデックス登録、検索パフォーマンス確認、構造化データ検証など初心者がやるべき機能に絞った解説
 - [構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順](https://tsubasa-memo.github.io/json-ld-guide.html): FAQPage・Article・BreadcrumbListのJSON-LDコード例と実装後の確認方法
+- [How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/json-ld-guide-en.html): Copy-ready JSON-LD code for FAQPage, Article, and BreadcrumbList, plus how to verify the markup with Google's Rich Results Test and Search Console URL Inspection.
 - [llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方](https://tsubasa-memo.github.io/llms-txt-guide.html): Googleが公式に不要と表明したllms.txtの書き方・設置手順。SEO専門家の賛否両論の反応と、それでも設置すべき判断基準をPerplexity引用の実体験から解説
+- [What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/llms-txt-guide-en.html): Google officially called llms.txt unnecessary in May 2026. How SEO experts split on the statement, plus the format, setup steps, and why a niche site still keeps one for ChatGPT, Claude, and Perplexity.
 - [SEO・LLMO対策の費用が高すぎる？｜AIO・GEOの相場と小規模事業者の選択肢](https://tsubasa-memo.github.io/seo-llmo-cost-small-business.html): SEO・LLMO・AIO・GEO対策の費用相場を予算帯ごとに整理。月額5万円以下の低価格サービスと無料でできるLLMO施策を比較した。
 - [SEOを外注するならWeb制作会社かSEO専門会社か？判断軸を整理した](https://tsubasa-memo.github.io/seo-outsource-web-vs-seo.html): SEO外注先をWeb制作会社にするかSEO専門会社にするかの判断軸。CMS制約で施策が実行できない落とし穴とLLMO対応力の見極め方を整理した記事
 - [個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】](https://tsubasa-memo.github.io/blog-seo-basics.html): 個人ブログのSEOで最初にやった5つの施策。タイトル32〜40文字・description110〜125文字・sitemap送信・FAQ構造化データ・内部リンクの記録
@@ -617,6 +620,7 @@
   - Q: llms.txtとは何ですか？
   - Q: 個人ブログでもLLMOに取り組む意味はありますか？
   - Q: LLMO対策として今すぐできることは何ですか？
+- [How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/llmo-article-writing-en.html): English version of the LLMO article-writing guide. Covers FAQ structure with FAQPage JSON-LD, summary sections at the top of articles, llms.txt, and why niche personal blogs get cited by AI.
 - [記事のタイトルを変えたらCTRが動いた話｜サーチコンソール実録【2026年版】](https://tsubasa-memo.github.io/search-console-ctr.html): 8位表示でCTR 0.23%だった記事のタイトル変更事例と変更後1〜2週間の反映確認方法をまとめた記事
   - Q: 検索順位8位のCTRの目安は何%ですか？
   - Q: タイトル変更がSEOに与える影響は？
@@ -649,7 +653,8 @@
 - [もう悪徳SEO会社に騙されない｜初心者も知っておくべきSEOの基礎知識](https://tsubasa-memo.github.io/seo-start-guide.html): 悪徳SEO会社に騙されないための基礎知識。Search Console登録・titleタグ改善・ロングテールキーワードでの記事制作の3施策、リース契約・順位保証・成果報酬型SEOの罠、MEOとの優先順位の判断基準をまとめた記事
 - [「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索](https://tsubasa-memo.github.io/comparison-article-credibility.html): No.1表記の景品表示法違反リスクとGoogleの比較サイト規制強化の動向。AI検索がおすすめ記事の信頼性に与える影響を整理した記事
 - [Is Google Cracking Down on 'Best Of' Comparison Articles? | No.1 Claims, Legal Risks, and AI Search | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/comparison-article-credibility-en.html): English version of the comparison article credibility analysis. Examines Google's inauthentic mentions policy, No.1 claim legal risks, and Lily Ray's study showing AI Overviews excludes self-promotional brands from recommendations 69% of the time.
-- [サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断](https://tsubasa-memo.github.io/gsc-ai-report.html): Google Search Consoleに新設された生成AIパフォーマンスレポートの解説。AI Overviews・AI Modeでのインプレッション確認方法、クリックデータがない制約、ECサイトのオプトアウト判断基準を整理。
+- [サーチコンソールの生成AIレポートとは｜確認できるデータとオプトアウトの判断](https://tsubasa-memo.github.io/gsc-ai-report.html): 生成AIパフォーマンスレポートが日本のサイトにも展開。AI Overviews・AI Modeでのインプレッション確認方法、国内の実測データ（2ヶ月で46万〜77万表示）、クリックデータがない制約、ECサイトのオプトアウト判断基準を整理。
+- [Google Search Console's Generative AI Report: What It Shows and Whether to Opt Out | ツバサのメモ帳 (English)](https://tsubasa-memo.github.io/gsc-ai-report-en.html): What Search Console's generative AI performance report shows (impressions, pages, countries, devices), why the missing click data matters, and how an e-commerce site should think about the UK-only AI opt-out toggle.
 - [構造化データの種類と選び方｜ECサイトで優先すべきスキーマ【2026年版】](https://tsubasa-memo.github.io/structured-data-types-ec.html): Googleがサポートする構造化データの全種類と、ECサイトで優先すべき5つのスキーマ（Product・BreadcrumbList・Organization・AggregateRating・FAQPage）を整理。AggregateRating偽装の実例、モールvs自社ECの対応差、Ahrefs調査によるAI引用への効果検証も解説。
 - [LLMO代行会社は本当に必要か？ 国内20社の料金・実績・比較記事の実態を調査](https://tsubasa-memo.github.io/llmo-agency-research.html): LLMO代行20社の料金・サービス内容を調査。「LLMO おすすめ」比較記事の9割が代行会社自身の自作自演と判明。月額5万〜200万円の費用帯別サービス分類と、外注すべきかの判断基準をまとめた記事
 - [データ復旧業者の選び方を調べたら、おすすめ比較記事が「自称No.1だらけ」だった話](https://tsubasa-memo.github.io/data-recovery-no1-check.html): データ復旧業界のNo.1表示・復旧率・比較記事コピペ・AI Overview推薦の構造を検証した記事

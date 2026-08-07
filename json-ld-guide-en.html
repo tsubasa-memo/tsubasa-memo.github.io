@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step | ツバサのメモ帳</title>
+<meta name="description" content="How to write JSON-LD structured data, with copy-ready code examples for FAQPage, Article, and BreadcrumbList. From the Schema.org basics to verifying your markup with Google's Rich Results Test.">
+<meta name="keywords" content="JSON-LD,structured data,FAQPage schema,Article schema,BreadcrumbList,Schema.org,Rich Results Test,rich results,SEO structured data,LLMO">
+<meta property="og:title" content="How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step">
+<meta property="og:description" content="JSON-LD explained with copy-ready code for FAQPage, Article, and BreadcrumbList, plus how to verify your implementation.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://tsubasa-memo.github.io/json-ld-guide-en.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/json-ld-guide.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/json-ld-guide.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/json-ld-guide-en.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/json-ld-guide.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/json-ld-guide-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/json-ld-guide.html">
+<style>.code-block{background:#1e1e1e;color:#d4d4d4;border-radius:8px;padding:16px 20px;margin:16px 0 24px;overflow-x:auto;font-family:"Source Code Pro",monospace;font-size:13px;line-height:1.6}.code-block .key{color:#9cdcfe}.code-block .str{color:#ce9178}.code-block .comment{color:#6a9955}</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is structured data (JSON-LD)?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A data format for communicating a web page's content to search engines and AI. Based on the Schema.org vocabulary, it describes the page's content, author, FAQ, and more in a machine-readable form, embedded in the HTML head via a script tag." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I don't know how to write JSON-LD?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask ChatGPT or Claude to generate it — create the FAQPage JSON-LD for this page — then run the output through Google's Rich Results Test before implementing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does structured data help SEO?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (FAQ snippets, breadcrumbs, author information) in search improve click-through rates, so the indirect traffic benefit remains real." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I implement structured data on WordPress?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The free versions of Yoast SEO or Rank Math auto-generate the basic structured data. FAQPage can be added from the FAQ block in the post editor. Without a plugin, write the JSON-LD directly into your theme's header.php." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check structured data for errors?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Enter your URL or code into Google's Rich Results Test (search.google.com/test/rich-results). For published pages, URL Inspection in Search Console also shows what Google has detected." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step",
+  "description": "How to write JSON-LD structured data, with copy-ready code examples for FAQPage, Article, and BreadcrumbList. From the Schema.org basics to verifying your markup with Google's Rich Results Test.",
+  "url": "https://tsubasa-memo.github.io/json-ld-guide-en.html",
+  "image": "https://tsubasa-memo.github.io/og/json-ld-guide.webp",
+  "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-08-07T00:00:00+09:00",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "How to Write Structured Data (JSON-LD)" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">Home</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; How to Write Structured Data (JSON-LD)
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/json-ld-guide.webp" alt="How to Write Structured Data (JSON-LD)" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">How to Write Structured Data (JSON-LD)<br>FAQPage and Article, Step by Step</h1>
+<div class="article-meta-line">
+<span>Published: August 7, 2026</span>
+<span>Updated: August 7, 2026</span>
+</div>
+
+<p>Hi, I'm Tsubasa.</p>
+
+<p>Articles about SEO and <a href="llmo-guide-en.html">LLMO</a> constantly tell you to "implement structured data." But most of them never show actual code, which leaves beginners with no idea what to write or where. This article includes JSON-LD examples you can copy and use as-is. I've narrowed it down to three types — FAQPage, Article, and BreadcrumbList — and cover how to write each one and how to verify it afterward.</p>
+
+<div class="toc">
+<p class="toc-title">Contents</p>
+<ol>
+<li><a href="#sec1">What Structured Data (JSON-LD) Is</a></li>
+<li><a href="#sec2">How to Write FAQPage JSON-LD</a></li>
+<li><a href="#sec3">How to Write Article JSON-LD</a></li>
+<li><a href="#sec4">How to Write BreadcrumbList JSON-LD</a></li>
+<li><a href="#sec5">How to Verify Your Implementation</a></li>
+<li><a href="#sec6">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">What Structured Data (JSON-LD) Is</h2>
+
+<p>It's a data format for communicating a web page's content to search engines and AI. HTML is for humans to read; JSON-LD is for machines. Based on <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org</a>, an internationally shared vocabulary, it defines things like what the page is about, who wrote it, and what its FAQ contains.</p>
+
+<p>You embed it in the HTML &lt;head&gt; inside a &lt;script type="application/ld+json"&gt; tag. It has zero effect on how the page looks, so there's no risk of breaking your existing design.</p>
+
+<p>Google has officially stated that structured data itself is not a ranking factor. In the generative AI optimization guide updated on May 15, 2026, Google also stated that structured data is not required for generative AI features in Search — so it's not a mandatory requirement for AI search either. What remains effective is the indirect benefit: rich results in search (FAQ snippets, breadcrumbs, author information) improve click-through rates, and Google continues to recommend structured data for that purpose. The realistic way to frame this: you're not chasing a direct ranking effect, you're collecting indirect benefits.</p>
+
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google Search Central: Optimizing your website for generative AI features on Google Search (updated May 15, 2026)</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<h2 id="sec2">How to Write FAQPage JSON-LD</h2>
+
+<p>The structured data type with the highest practical payoff. Describe your page's FAQ section in JSON-LD and it may appear as a rich result in Google Search. It's also a format AI systems can readily draw on when generating answers.</p>
+
+<pre class="code-block"><span class="comment">// FAQPage JSON-LD example</span>
+&lt;script type="application/ld+json"&gt;
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"FAQPage"</span>,
+  <span class="key">"mainEntity"</span>: [
+    {
+      <span class="key">"@type"</span>: <span class="str">"Question"</span>,
+      <span class="key">"name"</span>: <span class="str">"Your first question goes here"</span>,
+      <span class="key">"acceptedAnswer"</span>: {
+        <span class="key">"@type"</span>: <span class="str">"Answer"</span>,
+        <span class="key">"text"</span>: <span class="str">"The answer goes here"</span>
+      }
+    },
+    {
+      <span class="key">"@type"</span>: <span class="str">"Question"</span>,
+      <span class="key">"name"</span>: <span class="str">"Your second question"</span>,
+      <span class="key">"acceptedAnswer"</span>: {
+        <span class="key">"@type"</span>: <span class="str">"Answer"</span>,
+        <span class="key">"text"</span>: <span class="str">"The second answer"</span>
+      }
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+
+<p>Points to watch:</p>
+
+<ul>
+<li>The JSON-LD must match the FAQ section visible on the page. Questions that exist only in the markup and not in the page body violate Google's guidelines.</li>
+<li>HTML tags are allowed in answer text, but plain text is the safer choice.</li>
+<li>There's no hard limit on the number of questions, but 5–10 is the practical range.</li>
+</ul>
+
+<p>For more on how FAQ structure fits into writing articles that AI actually cites, see "<a href="llmo-article-writing-en.html">How to Write Articles That AI Will Cite</a>."</p>
+
+<h2 id="sec3">How to Write Article JSON-LD</h2>
+
+<p>Essential structured data for any article page. It tells Google and AI the article's title, author, publication date, and last-modified date, and it feeds into E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) evaluation.</p>
+
+<pre class="code-block"><span class="comment">// Article JSON-LD example</span>
+&lt;script type="application/ld+json"&gt;
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"Article"</span>,
+  <span class="key">"headline"</span>: <span class="str">"Article title"</span>,
+  <span class="key">"description"</span>: <span class="str">"A summary of the article"</span>,
+  <span class="key">"url"</span>: <span class="str">"https://example.com/article.html"</span>,
+  <span class="key">"image"</span>: <span class="str">"https://example.com/image.png"</span>,
+  <span class="key">"author"</span>: {
+    <span class="key">"@type"</span>: <span class="str">"Person"</span>,
+    <span class="key">"name"</span>: <span class="str">"Author name"</span>
+  },
+  <span class="key">"publisher"</span>: {
+    <span class="key">"@type"</span>: <span class="str">"Organization"</span>,
+    <span class="key">"name"</span>: <span class="str">"Site name"</span>,
+    <span class="key">"url"</span>: <span class="str">"https://example.com/"</span>
+  },
+  <span class="key">"datePublished"</span>: <span class="str">"2026-05-15"</span>,
+  <span class="key">"dateModified"</span>: <span class="str">"2026-05-15"</span>,
+  <span class="key">"inLanguage"</span>: <span class="str">"en"</span>
+}
+&lt;/script&gt;</pre>
+
+<p>Adding sameAs (URLs of the author's social profiles) and jobTitle to the Person object gives AI more material for evaluating the author's credibility. That said, the minimum viable version works with just the name.</p>
+
+<h2 id="sec4">How to Write BreadcrumbList JSON-LD</h2>
+
+<p>This expresses your breadcrumb trail (Home &gt; Category &gt; Article title) as structured data. The breadcrumb can appear in search results, and it communicates your site structure to Google accurately.</p>
+
+<pre class="code-block"><span class="comment">// BreadcrumbList JSON-LD example</span>
+&lt;script type="application/ld+json"&gt;
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"BreadcrumbList"</span>,
+  <span class="key">"itemListElement"</span>: [
+    {
+      <span class="key">"@type"</span>: <span class="str">"ListItem"</span>,
+      <span class="key">"position"</span>: 1,
+      <span class="key">"name"</span>: <span class="str">"Home"</span>,
+      <span class="key">"item"</span>: <span class="str">"https://example.com/"</span>
+    },
+    {
+      <span class="key">"@type"</span>: <span class="str">"ListItem"</span>,
+      <span class="key">"position"</span>: 2,
+      <span class="key">"name"</span>: <span class="str">"Category name"</span>,
+      <span class="key">"item"</span>: <span class="str">"https://example.com/category/"</span>
+    },
+    {
+      <span class="key">"@type"</span>: <span class="str">"ListItem"</span>,
+      <span class="key">"position"</span>: 3,
+      <span class="key">"name"</span>: <span class="str">"Article title"</span>
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+
+<p>The last level — the current page — gets no item property. That's the recommended pattern per Schema.org.</p>
+
+<h2 id="sec5">How to Verify Your Implementation</h2>
+
+<p>Once you've written your JSON-LD, always check it with these two tools.</p>
+
+<h3>Google's Rich Results Test</h3>
+
+<p>Enter a URL or paste code directly. Errors show up in red, with the problem line identified. It works on unpublished code too, so use it every time you implement.</p>
+
+<a class="cite-card" href="https://search.google.com/test/rich-results" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Rich Results Test | Google</span>
+<span class="cite-url">search.google.com/test/rich-results</span>
+</span>
+</a>
+
+<h3>URL Inspection in Google Search Console</h3>
+
+<p>For published pages, this confirms whether Google has correctly recognized your structured data. Inspect the target URL and check the "Enhancements" section of the result. If FAQPage, Article, and BreadcrumbList are each detected, you're set. For a broader look at what Search Console can tell you about AI search, see "<a href="gsc-ai-report-en.html">Google Search Console's Generative AI Report</a>."</p>
+
+<h3>When You Don't Know How to Write the Code, Delegate It to AI</h3>
+
+<p>Ask ChatGPT or Claude to "convert the following FAQ into FAQPage JSON-LD" and you'll have code in seconds. Paste the output into the Rich Results Test, check for errors, and if it's clean, use it as-is. There's no need to write the code from scratch.</p>
+
+<div class="faq-section">
+<h2 id="sec6">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What is structured data (JSON-LD)?</strong></p>
+<p class="fa">A. A data format for communicating a web page's content to search engines and AI. Based on the Schema.org vocabulary, it describes the page's content, author, FAQ, and more in a machine-readable form, embedded in the HTML head via a script tag.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What if I don't know how to write JSON-LD?</strong></p>
+<p class="fa">A. Ask ChatGPT or Claude to generate it — "create the FAQPage JSON-LD for this page" — then run the output through Google's Rich Results Test before implementing.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Does structured data help SEO?</strong></p>
+<p class="fa">A. Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (FAQ snippets, breadcrumbs, author information) in search improve click-through rates, so the indirect traffic benefit remains real.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. How do I implement structured data on WordPress?</strong></p>
+<p class="fa">A. The free versions of Yoast SEO or Rank Math auto-generate the basic structured data. FAQPage can be added from the FAQ block in the post editor. Without a plugin, write the JSON-LD directly into your theme's header.php.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. How do I check structured data for errors?</strong></p>
+<p class="fa">A. Enter your URL or code into Google's Rich Results Test (search.google.com/test/rich-results). For published pages, URL Inspection in Search Console also shows what Google has detected.</p>
+</div>
+</div>
+
+<p class="lang-switch">🇯🇵 <a href="json-ld-guide.html" hreflang="ja">この記事の日本語版を読む</a></p>
+
+<!-- Related Articles -->
+<div class="related">
+<h3>Related Articles</h3>
+<a class="cite-card" href="llmo-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is LLMO? How It Differs from SEO, GEO, AIO — And What Google Actually Said</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="llms-txt-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-article-writing-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-article-writing-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="gsc-ai-report-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Google Search Console's Generative AI Report: What It Shows and Whether to Opt Out</span>
+<span class="cite-url">tsubasa-memo.github.io/gsc-ai-report-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="ai-overview-economics-llmo-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Economics Taught Me About AI Search Strategy | Game Theory, Signaling, and Adverse Selection Applied to LLMO</span>
+<span class="cite-url">tsubasa-memo.github.io/ai-overview-economics-llmo-en.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- Author Profile -->
+<div class="author-box">
+<div class="author-icon"><img alt="Tsubasa" height="64" src="/icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>Working in the EC department of a Japanese apparel company. My responsibilities range from coordinating product photography (sasage) to managing retouching vendors, updating product pages, and supervising part-time staff. I'm not great at Photoshop, so I outsource serious image work to professionals — but after working with many vendors, I've become pretty good at choosing the right one and checking deliverables. This blog is a record of things I've learned on the job.</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
