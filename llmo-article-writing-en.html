@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques | ツバサのメモ帳</title>
+<meta name="description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.">
+<meta name="keywords" content="LLMO article writing,AI citation writing,FAQ JSON-LD,llms.txt,AI search content,how to get cited by ChatGPT,LLMO blog optimization,structured data FAQ">
+<meta property="og:title" content="How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques">
+<meta property="og:description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://tsubasa-memo.github.io/llmo-article-writing-en.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/llmo-article-writing.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llmo-article-writing.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/llmo-article-writing-en.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/llmo-article-writing.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/llmo-article-writing-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/llmo-article-writing.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between LLMO and SEO?",
+      "acceptedAnswer": { "@type": "Answer", "text": "SEO optimizes for search engine rankings on Google and Bing. LLMO optimizes for being correctly cited by AI systems like ChatGPT, Claude, and Gemini. They share common foundations — quality content, structured data — but target different surfaces." }
+    },
+    {
+      "@type": "Question",
+      "name": "What article structure is most effective for LLMO?",
+      "acceptedAnswer": { "@type": "Answer", "text": "FAQ format combined with FAQPage JSON-LD structured data is the most effective combination. Additionally, placing a summary section (What this article covers) at the top of each article with key points in bullet format improves AI's citation accuracy." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is llms.txt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A Markdown-format file placed at your site root that tells AI crawlers about your site structure and article inventory. It's essentially the AI version of robots.txt. Google has stated it's not necessary for their AI features, but it remains useful for ChatGPT, Claude, and Perplexity. Setup takes about 10 minutes and costs nothing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a personal blog benefit from LLMO?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Comparison articles and knowledge-base content are the formats AI cites most frequently. Personal blogs covering niche topics can have higher information density than general-purpose sites, making them attractive citation sources for AI. Site scale matters less than topical depth." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the quickest LLMO improvements I can make today?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three things you can do immediately: add FAQ structured data (FAQPage JSON-LD) to every article, write a What this article covers summary at the top of each post, and place an llms.txt file at your site root listing your articles and site description. All three are free and take a few hours total." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check whether AI is citing my content?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Two methods. First, manually: ask ChatGPT, Perplexity, or Gemini questions related to your content and see if your site appears in the response or citations. Second, using tools: Bing Webmaster Tools' AI Performance feature (public preview since February 2026) shows how many times Copilot has cited your pages and which queries triggered citations." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques",
+  "description": "A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.",
+  "url": "https://tsubasa-memo.github.io/llmo-article-writing-en.html",
+  "image": "https://tsubasa-memo.github.io/og/llmo-article-writing.webp",
+  "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-08-07T00:00:00+09:00",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "How to Write Articles That AI Will Cite" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">Home</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; How to Write Articles That AI Will Cite
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/llmo-article-writing.webp" alt="How to Write Articles That AI Will Cite" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">How to Write Articles That AI Will Cite<br>| Practical LLMO Writing Techniques</h1>
+<div class="article-meta-line">
+<span>Published: August 7, 2026</span>
+<span>Updated: August 7, 2026</span>
+</div>
+
+<p>Hi, I'm Tsubasa.</p>
+
+<p>While researching SEO, I kept coming across the term "LLMO" — Large Language Model Optimization. The idea is that structuring your articles a certain way makes them more likely to be cited when someone asks ChatGPT, Claude, or Perplexity a question. As a blogger, this caught my attention, so I dug into the specifics and documented what I found.</p>
+
+<div class="point-box">
+<p><strong>What this article covers</strong></p>
+<ul>
+<li>What LLMO is and how it differs from SEO</li>
+<li>Article structures that AI tends to cite</li>
+<li>How FAQ structured data and llms.txt improve AI visibility</li>
+<li>Why personal blogs can benefit from LLMO</li>
+</ul>
+</div>
+
+<div class="toc">
+<p class="toc-title">Contents</p>
+<ol>
+<li><a href="#sec1">What Is LLMO?</a></li>
+<li><a href="#sec2">Article Structures That AI Tends to Cite</a></li>
+<li><a href="#sec3">Using llms.txt to Communicate Site Information to AI</a></li>
+<li><a href="#sec4">Why Personal Blogs Should Care About LLMO</a></li>
+<li><a href="#sec5">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">What Is LLMO?</h2>
+
+<p>LLMO (Large Language Model Optimization) is the practice of getting your content correctly recognized and cited by large language models like ChatGPT, Claude, and Gemini.</p>
+
+<p>While SEO targets search engines like Google and Bing, LLMO targets AI chatbots and AI search. The question is: when someone asks ChatGPT "What's a good photo retouching service?", does your article show up in the response?</p>
+
+<p>For a comprehensive overview of LLMO, its relationship to SEO, and Google's official position, see "<a href="llmo-guide-en.html">What Is LLMO? How It Differs from SEO, GEO, AIO</a>."</p>
+
+<h3>SEO vs. LLMO — Key Differences</h3>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>Aspect</th><th>SEO</th><th>LLMO</th></tr>
+<tr><td>Target</td><td>Search engines (Google, Bing)</td><td>AI systems (ChatGPT, Claude, Gemini)</td></tr>
+<tr><td>Goal</td><td>High rankings in search results</td><td>Being cited in AI-generated answers</td></tr>
+<tr><td>Effective structure</td><td>Heading hierarchy, internal links, meta tags</td><td>FAQ format, summary sections, JSON-LD</td></tr>
+<tr><td>Effective content</td><td>Comprehensive long-form articles</td><td>Specific numbers, proper nouns, concise answers</td></tr>
+<tr><td>Measurement</td><td>Search Console (impressions, CTR)</td><td>Query AI and check citation status</td></tr>
+<tr><td>Supporting files</td><td>robots.txt, sitemap.xml</td><td>llms.txt</td></tr>
+</table>
+</div>
+
+<h2 id="sec2">Article Structures That AI Tends to Cite</h2>
+
+<h3>FAQ Format + JSON-LD Structured Data</h3>
+
+<p>AI systems find Q&amp;A structures easy to reference when generating answers. "Q. What is X?" / "A. X is..." formatted content maps directly to how AI constructs responses.</p>
+
+<p>Adding FAQPage JSON-LD schema on top of the visible FAQ content communicates the page's structure to AI in a machine-readable format, making it even more likely to be selected as a source.</p>
+
+<p>For implementation details, see "<a href="json-ld-guide-en.html">How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step</a>."</p>
+
+<h3>Summary Section at the Top of the Article</h3>
+
+<p>Placing a "What this article covers" section at the beginning of the article — with key points in bullet format — improves AI's ability to summarize and cite your content. When AI references an article, the opening section gets read first and is most likely to be cited.</p>
+
+<h3>Include Specific Numbers, Service Names, and Proper Nouns</h3>
+
+<p>Instead of "affordable," write "starting at $3 per image." Instead of "an app," write "Snapseed" or "TouchRetouch." Concrete information gives AI usable material for generating specific answers. Vague descriptions get passed over in favor of sources with precise data.</p>
+
+<h3>LLMO Implementation Steps</h3>
+
+<p>The practical sequence for implementing LLMO on your articles:</p>
+
+<ol>
+<li>Add a "What this article covers" summary at the top of each article</li>
+<li>Organize information in FAQ format (Q&amp;A pairs)</li>
+<li>Implement FAQPage JSON-LD structured data</li>
+<li>Place llms.txt at your site root</li>
+<li>Test by asking AI about your topic and checking whether your content gets cited — then iterate</li>
+</ol>
+
+<h2 id="sec3">Using llms.txt to Communicate Site Information to AI</h2>
+
+<p>llms.txt is a Markdown-format file placed at your site's root directory that tells AI systems about your site structure and article inventory. Think of it as the AI equivalent of robots.txt — while robots.txt guides search engine crawlers, llms.txt guides AI crawlers like GPTBot and Anthropic's crawler for Claude.</p>
+
+<p>I've set up llms.txt on this blog, and have experienced being cited by Perplexity as a result.</p>
+
+<p>Google stated in May 2026 that llms.txt is "unnecessary" for Google's AI features. However, for ChatGPT, Claude, and Perplexity, it remains useful and costs nothing to set up.</p>
+
+<p>For detailed setup instructions and the rationale behind maintaining llms.txt despite Google's position, see "<a href="llms-txt-guide-en.html">What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway</a>."</p>
+
+<h2 id="sec4">Why Personal Blogs Should Care About LLMO</h2>
+
+<p>As AI search grows, traffic patterns are shifting — Google search traffic may decrease while AI-sourced traffic increases. Measuring LLMO's direct impact on a personal blog in hard numbers is still difficult, but improving content quality, adding FAQ structured data, and setting up llms.txt are all tactics that serve both SEO and LLMO simultaneously.</p>
+
+<p>Comparison articles ("comparing X services") and knowledge-base articles ("what is X?") are the content types most frequently cited by AI. This blog covers topics like retouching service comparisons and photo app reviews — themes that align well with what AI systems tend to reference.</p>
+
+<p>What matters for AI citation isn't site scale — it's information density on a specific topic. A personal blog that comprehensively covers a niche topic can compete with (and even outperform) larger sites in AI citations. My own blog, hosted on GitHub Pages with around 100 articles, has been cited by both Google AI Overviews and Microsoft Copilot. The economics of AI citation favor depth over domain authority.</p>
+
+<p>For the strategic framework behind why this works, see "<a href="ai-overview-economics-llmo-en.html">What Economics Taught Me About AI Search Strategy</a>."</p>
+
+<div class="faq-section">
+<h2 id="sec5">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What is the difference between LLMO and SEO?</strong></p>
+<p class="fa">A. SEO optimizes for search engine rankings on Google and Bing. LLMO optimizes for being correctly cited by AI systems like ChatGPT, Claude, and Gemini. They share common foundations — quality content, structured data — but target different surfaces.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What article structure is most effective for LLMO?</strong></p>
+<p class="fa">A. FAQ format combined with FAQPage JSON-LD structured data is the most effective combination. Additionally, placing a summary section ("What this article covers") at the top of each article with key points in bullet format improves AI's citation accuracy.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What is llms.txt?</strong></p>
+<p class="fa">A. A Markdown-format file placed at your site root that tells AI crawlers about your site structure and article inventory. It's essentially the AI version of robots.txt. Google has stated it's not necessary for their AI features, but it remains useful for ChatGPT, Claude, and Perplexity. Setup takes about 10 minutes and costs nothing.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Can a personal blog benefit from LLMO?</strong></p>
+<p class="fa">A. Yes. Comparison articles and knowledge-base content are the formats AI cites most frequently. Personal blogs covering niche topics can have higher information density than general-purpose sites, making them attractive citation sources for AI. Site scale matters less than topical depth.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What are the quickest LLMO improvements I can make today?</strong></p>
+<p class="fa">A. Three things you can do immediately: add FAQ structured data (FAQPage JSON-LD) to every article, write a "What this article covers" summary at the top of each post, and place an llms.txt file at your site root listing your articles and site description. All three are free and take a few hours total.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. How do I check whether AI is citing my content?</strong></p>
+<p class="fa">A. Two methods. First, manually: ask ChatGPT, Perplexity, or Gemini questions related to your content and see if your site appears in the response or citations. Second, using tools: Bing Webmaster Tools' AI Performance feature (public preview since February 2026) shows how many times Copilot has cited your pages and which queries triggered citations. For details, see "<a href="bing-vs-google-traffic-en.html">What Bing Webmaster Tools Revealed About AI Search</a>."</p>
+</div>
+</div>
+
+<p class="lang-switch">🇯🇵 <a href="llmo-article-writing.html" hreflang="ja">この記事の日本語版を読む</a></p>
+
+<!-- Related Articles -->
+<div class="related">
+<h3>Related Articles</h3>
+<a class="cite-card" href="llmo-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is LLMO? How It Differs from SEO, GEO, AIO — And What Google Actually Said</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="json-ld-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="llms-txt-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="bing-vs-google-traffic-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Bing Webmaster Tools Revealed About AI Search — Why Bing Traffic Was 3x Higher Than Google on My Site</span>
+<span class="cite-url">tsubasa-memo.github.io/bing-vs-google-traffic-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="ai-overview-economics-llmo-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Economics Taught Me About AI Search Strategy | Game Theory, Signaling, and Adverse Selection Applied to LLMO</span>
+<span class="cite-url">tsubasa-memo.github.io/ai-overview-economics-llmo-en.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- Author Profile -->
+<div class="author-box">
+<div class="author-icon"><img alt="Tsubasa" height="64" src="/icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>Working in the EC department of a Japanese apparel company. My responsibilities range from coordinating product photography (sasage) to managing retouching vendors, updating product pages, and supervising part-time staff. I'm not great at Photoshop, so I outsource serious image work to professionals — but after working with many vendors, I've become pretty good at choosing the right one and checking deliverables. This blog is a record of things I've learned on the job.</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

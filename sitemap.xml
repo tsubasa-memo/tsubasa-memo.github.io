@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/llms-txt-guide.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -1292,7 +1292,7 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/gsc-ai-report.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1485,6 +1485,36 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/ai-overview-economics-llmo-en.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/llmo-guide-en.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/llmo-article-writing-en.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/llms-txt-guide-en.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/json-ld-guide-en.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/gsc-ai-report-en.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

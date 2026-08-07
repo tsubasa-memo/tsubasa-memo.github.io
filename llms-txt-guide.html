@@ -8,6 +8,8 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
 <link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/llms-txt-guide-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
 <meta property="og:title" content="llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方">
 <meta property="og:description" content="Googleは公式にllms.txtを不要と表明。SEO専門家の反応と、Google検索以外のAI対策として設置を続ける理由を実体験から解説。">
 <meta property="og:type" content="article">
@@ -37,7 +39,7 @@
   "author": { "@type": "Person", "name": "ツバサ" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-05-15",
-  "dateModified": "2026-06-14",
+  "dateModified": "2026-08-07",
   "inLanguage": "ja"
 }
 </script>
@@ -67,7 +69,7 @@
       "name": "llms.txtとは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリ（example.com/llms.txt）に設置する。2025年に提唱された仕様。Markdown形式で記述する。"
+        "text": "AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリ（example.com/llms.txt）に設置する。2024年9月に提唱された仕様。Markdown形式で記述する。"
       }
     },
     {
@@ -156,7 +158,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">llms.txtとは？Googleは不要と表明<br/>それでも設置すべき理由と書き方</h1>
 <div class="article-meta-line">
 <span>公開: 2026年5月15日</span>
-<span>更新: 2026年6月14日</span>
+<span>更新: 2026年8月7日</span>
 </div>
 
 <p>こんにちは、ツバサです。</p>
@@ -286,7 +288,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h2 id="sec4">llms.txtとは（基本の定義）</h2>
 
-<p>ここから先は、設置を決めた場合の実務情報になる。llms.txtは、AIクローラーにサイトの概要と構造を伝えるためのテキストファイルにあたる。2025年にAnswer.AIのJeremy Howard氏らが提唱した仕様で、サイトのルートディレクトリ（example.com/llms.txt）に設置する。</p>
+<p>ここから先は、設置を決めた場合の実務情報になる。llms.txtは、AIクローラーにサイトの概要と構造を伝えるためのテキストファイルにあたる。2024年9月にAnswer.AIのJeremy Howard氏らが提唱した仕様で、サイトのルートディレクトリ（example.com/llms.txt）に設置する。</p>
 
 <p>ChatGPTのGPTBot、ClaudeのClaude-bot、PerplexityのPerplexityBotといったAIクローラーがサイトを訪問した際に、このファイルを読むことで「このサイトには何があるか」「どのページが重要か」を把握できるようになる、という設計思想になっている。ただし冒頭で触れた通り、各AI会社が実際にllms.txtを読み込んでいるかは公式には明らかにされていない部分も多い。</p>
 
@@ -297,7 +299,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <tr><td>対象</td><td>Googlebotなどの検索エンジンクローラー</td><td>GPTBot、Claude-botなどのAIクローラー</td></tr>
 <tr><td>目的</td><td>クロールの許可・拒否を指定</td><td>サイトの概要・構造・重要ページを伝える</td></tr>
 <tr><td>書式</td><td>独自フォーマット（User-agent、Disallowなど）</td><td>Markdown形式</td></tr>
-<tr><td>歴史</td><td>1994年〜、検索エンジンの標準仕様</td><td>2025年提唱、普及途上で公式採用は限定的</td></tr>
+<tr><td>歴史</td><td>1994年〜、検索エンジンの標準仕様</td><td>2024年9月提唱、普及途上で公式採用は限定的</td></tr>
 </table>
 
 <p>robots.txtが「どこを見ていい/ダメ」を伝えるのに対し、llms.txtは「このサイトにはこういう情報がある」と案内する役割を持つ。目的が違うので、両方設置することは矛盾しない。ただしrobots.txtでAIクローラーを遮断しながらllms.txtで案内する、という整合性のない設定にならないよう注意する。</p>
@@ -395,7 +397,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <div class="faq-item">
 <p class="fq">Q. llms.txtとは？</p>
-<p class="fa">A. AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリに設置する。2025年に提唱された仕様。Markdown形式で記述する。</p>
+<p class="fa">A. AIクローラー（GPTBot、Claude-botなど）にサイトの概要と構造を伝えるためのテキストファイル。サイトのルートディレクトリに設置する。2024年9月に提唱された仕様。Markdown形式で記述する。</p>
 </div>
 
 <div class="faq-item">
@@ -415,6 +417,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 
 
+
+<p class="lang-switch">🇬🇧 <a href="llms-txt-guide-en.html" hreflang="en">Read this article in English</a></p>
 
 <div class="related">
 <h3>関連記事</h3>
