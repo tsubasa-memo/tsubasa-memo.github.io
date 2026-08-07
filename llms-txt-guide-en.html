@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway | ツバサのメモ帳</title>
+<meta name="description" content="On May 15, 2026, Google officially stated that llms.txt is unnecessary. SEO experts are split. Here's why I still keep one for ChatGPT, Claude, and Perplexity — with first-hand results and a practical how-to.">
+<meta name="keywords" content="llms.txt,llms.txt setup,Google llms.txt unnecessary,AI crawlers,GPTBot,PerplexityBot,LLMO,AI search optimization,robots.txt vs llms.txt">
+<meta property="og:title" content="What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway">
+<meta property="og:description" content="Google officially declared llms.txt unnecessary. A look at how SEO experts reacted, and why setting one up for AI services outside Google Search still makes sense — based on my own site's results.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://tsubasa-memo.github.io/llms-txt-guide-en.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/llms-txt-guide.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llms-txt-guide.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/llms-txt-guide-en.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/llms-txt-guide-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/llms-txt-guide.html">
+<style>.code-block{background:#1e1e1e;color:#d4d4d4;border-radius:8px;padding:16px 20px;margin:16px 0 24px;overflow-x:auto;font-family:"Source Code Pro",monospace;font-size:13px;line-height:1.6}.code-block .comment{color:#6a9955}</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How did SEO experts respond to Google's guide?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Two broad reactions. One camp — Shoichi Hasegawa, Masahiro Miyamoto, and overseas Lily Ray, among others — says SEO fundamentals are everything and AEO/GEO hacks are unnecessary. The other camp — Tsuyoshi Nakagawa, Sanrenkyu, and others — argues the statement only covers Google Search, and that optimizing for AI in general remains worthwhile, backed by their own traffic data. The disagreement largely comes down to scope: Google Search alone, or AI services in general." }
+    },
+    {
+      "@type": "Question",
+      "name": "If Google says llms.txt is unnecessary, is there no point in setting one up?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google's unnecessary applies only to Google Search's AI features (AI Overviews and AI Mode). Whether ChatGPT, Claude, or Perplexity reads llms.txt is each company's independent decision, outside Google's scope. As part of a broader AI strategy that includes services beyond Google Search, it remains a valid option." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is llms.txt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A text file that describes your site's overview and structure for AI crawlers (GPTBot, Anthropic's crawler, and others). It sits in the site's root directory, is written in Markdown, and was proposed in September 2024." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between llms.txt and robots.txt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "robots.txt tells search engine crawlers where they may and may not crawl. llms.txt tells AI crawlers what the site contains — its overview, key content, and structure. Different purposes; both can coexist." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is setting up llms.txt free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Create a text file and upload it to your root directory — no tools or plugins required. With essentially no downside, setting one up remains a reasonable call even after Google's dismissal." }
+    },
+    {
+      "@type": "Question",
+      "name": "How has the SEO industry historically treated Google's official statements?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Divergence between what Google says officially and what search results show is not rare — content length and backlink volume are two long-running examples. On llms.txt, many practitioners support setting it up for ChatGPT, Claude, and Perplexity, all of which sit outside the scope of Google's statement." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway",
+  "description": "On May 15, 2026, Google officially stated that llms.txt is unnecessary. SEO experts are split. Here's why I still keep one for ChatGPT, Claude, and Perplexity — with first-hand results and a practical how-to.",
+  "url": "https://tsubasa-memo.github.io/llms-txt-guide-en.html",
+  "image": "https://tsubasa-memo.github.io/og/llms-txt-guide.webp",
+  "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-08-07T00:00:00+09:00",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "What Is llms.txt?" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">Home</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; What Is llms.txt?
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/llms-txt-guide.webp" alt="What Is llms.txt? Google Says You Don't Need It" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">What Is llms.txt? Google Says You Don't Need It<br>— Why I Set One Up Anyway</h1>
+<div class="article-meta-line">
+<span>Published: August 7, 2026</span>
+<span>Updated: August 7, 2026</span>
+</div>
+
+<p>Hi, I'm Tsubasa.</p>
+
+<p>If you read articles about <a href="llmo-guide-en.html">LLMO</a>, you'll often see the advice "set up an llms.txt file." At the same time, on May 15, 2026, Google explicitly stated in its official documentation that llms.txt is unnecessary. So should you set one up or not? A lot of people are stuck on that question.</p>
+
+<p>This site actually has an llms.txt file, and my articles have been cited by Perplexity. Drawing on that first-hand experience, I've put together Google's official position, how SEO experts reacted, what's actually happening in practice, and then the format, setup steps, and how to decide for your own site.</p>
+
+<div class="toc">
+<p class="toc-title">Contents</p>
+<ol>
+<li><a href="#sec1">Google officially said "you don't need it"</a></li>
+<li><a href="#sec2">How SEO experts reacted</a></li>
+<li><a href="#sec3">Three reasons I keep mine anyway</a></li>
+<li><a href="#sec4">What llms.txt is (the basics)</a></li>
+<li><a href="#sec5">How it differs from robots.txt</a></li>
+<li><a href="#sec6">How to write an llms.txt</a></li>
+<li><a href="#sec7">How to set it up</a></li>
+<li><a href="#sec8">Why niche sites shouldn't take Google's word at face value</a></li>
+<li><a href="#sec9">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">Google Officially Stated "llms.txt Is Not Needed" (May 15, 2026)</h2>
+
+<p>Start with the primary source. Google Search Central's "Optimizing your website for generative AI features on Google Search," updated on May 15, 2026 (UTC), is unambiguous about llms.txt and other AI-specific files or markup: they are not needed.</p>
+
+<p>To summarize the original text: you do not need to create new machine-readable files, AI text files, markup, or Markdown to appear in Google Search's generative AI features (AI Overviews and AI Mode). Google crawls and indexes many file types beyond HTML, but that does not mean any of them receive special treatment.</p>
+
+<a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Google Search Central: Optimizing your website for generative AI features on Google Search (updated May 15, 2026)</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<p>The same document also addresses the terms "AEO" (Answer Engine Optimization) and "GEO" (Generative Engine Optimization) directly: from Google Search's point of view, those are still just SEO, and there is no need to treat them as separate disciplines. In short, Google has made its position clear — within the world of Google Search, there is no such thing as special optimization for the generative AI era.</p>
+
+<h3>John Mueller Explains the Difference Between Discovery and Functionality (May 20, 2026)</h3>
+
+<p>Five days after the guide was published, John Mueller of Google's Search Relations team went deeper on where llms.txt fits, in a thread on Bluesky. It was a reply to SEO consultant Lily Ray, who had asked whether it wasn't contradictory for Google to use llms.txt and Markdown on developers.google.com while telling everyone it's unnecessary for SEO.</p>
+
+<p>Mueller's argument breaks down like this. His starting premise is that websites serve many purposes beyond search. From there, he argues that the llms.txt debate should separate two things: "discovery" — being found through search engines — and "functionality" — helping people who have already found the page accomplish their task. llms.txt, in his framing, is not a discovery (SEO) mechanism. It belongs on the functionality side.</p>
+
+<p>To illustrate the distinction, he compared it to a CTA (call to action) on a traditional web page. You don't add a CTA for SEO; you add it to improve conversion for people who are already on the page. Likewise, llms.txt is not a mechanism for getting found — it's a mechanism for improving the experience after someone (or something) finds you. He added a caveat: it only contributes to overall results when the site's discovery rate (SEO) is already strong and the page itself is highly functional.</p>
+
+<p>So where does llms.txt make sense as a functionality tool? Mueller says developer documentation sites are a valid case now that AI coding is widespread. AI tools increasingly consult documentation while generating code, and serving a Markdown version can potentially save tokens. Even then, he tempers it: AI can read HTML just fine, so this is at best a temporary aid.</p>
+
+<p>For everything else, he is flatly negative. For non-developer sites, he said, there's little point in setting up llms.txt even if AI agent traffic grows in the future — making a Markdown version of a shoe's specs won't sell more shoes.</p>
+
+<p>He closed the thread by saying that every site would be better off working on the SEO issues that matter today rather than preparing for an AI-agent-filled future that may or may not arrive.</p>
+
+<a class="cite-card" href="https://bsky.app/profile/johnmu.com/post/3mmb6if3h532n" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">B</span>
+<span class="cite-body">
+<span class="cite-title">John Mueller's Bluesky post (May 20, 2026)</span>
+<span class="cite-url">bsky.app</span>
+</span>
+</a>
+
+<h2 id="sec2">How SEO Experts Reacted</h2>
+
+<p>Right after Google's official guide came out, reactions from SEO professionals in Japan and overseas split into two camps: "SEO fundamentals were the answer all along" versus "LLMO-style work still has value once you look beyond Google Search." Neither side is simply right or wrong — the conclusion changes depending on what you're targeting.</p>
+
+<p>Note: several of the posts below are in Japanese. Browser auto-translation handles them well, so I've kept the original links.</p>
+
+<h3>The "No Hacks, Just Do SEO" Camp</h3>
+
+<p>Immediately after the guide was published, many SEO practitioners posted some version of "AEO/GEO turned out to be SEO after all."</p>
+
+<p>Shoichi Hasegawa (<a href="https://x.com/haseshout" target="_blank" rel="noopener nofollow">@haseshout</a>) shared Google's official guide and listed what you can skip: llms.txt, chunking, fake mentions, and over-investing in structured data. His summary: prioritize effective SEO strategy over AEO/GEO hacks (LLMO) (<a href="https://x.com/haseshout/status/2055312417236856948" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<p>Koki Okuda (<a href="https://x.com/OkudaKouki" target="_blank" rel="noopener nofollow">@OkudaKouki</a>) framed AI search optimization as an extension of SEO rather than a separate discipline, and added in a thread that articles written "to be picked up by AI" lose to articles that AI cites <em>because</em> they're useful to humans. The most dangerous move, he says, is mass-producing generic content with AI (<a href="https://x.com/OkudaKouki/status/2055456083276357698" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<p>okano (<a href="https://x.com/web_e_design" target="_blank" rel="noopener nofollow">@web_e_design</a>) agreed that "AEO and GEO are all SEO," but pointed out that only people who have been doing SEO at a high level can afford to say "so no AI measures needed." He treats AI optimization as a kind of answer key for checking whether your content is genuinely user-first. He also noted that Google and ChatGPT/Claude/Perplexity are different systems, so you can't conclude structured data is useless (<a href="https://x.com/web_e_design/status/2055702219270549705" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<p>Masahiro Miyamoto (<a href="https://x.com/masa_yco" target="_blank" rel="noopener nofollow">@masa_yco</a>) drew up a clear two-column list — do: non-commodity content grounded in first-hand experience, human-centered structure, technical SEO; skip: llms.txt, chunking, AI-specific Markdown, AI-specific writing styles. His conclusion: turn your company's primary information into content and apply SEO to it. The work hasn't changed — it's still steady accumulation (<a href="https://x.com/masa_yco/status/2055772141631709279" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<p>Overseas, Lily Ray (<a href="https://x.com/lilyraynyc" target="_blank" rel="noopener nofollow">@lilyraynyc</a>) posted that SEO is the foundation, that you should create original people-first content, and that GEO/AEO hacks like chunking and llms.txt can be ignored (<a href="https://x.com/lilyraynyc/status/2055307890693386282" target="_blank" rel="noopener nofollow">post</a>). Search Engine Journal also reported that Google's guide explicitly labeled llms.txt, chunking, and AI-specific rewrites as unnecessary (<a href="https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/" target="_blank" rel="noopener noreferrer">article</a>).</p>
+
+<p>What these voices have in common: as far as Google Search's AI features are concerned, no special hacks are needed — strengthening conventional SEO is the right answer.</p>
+
+<h3>The "LLMO Work Still Has Value" Camp</h3>
+
+<p>On the other side, practitioners with real AI-traffic data argue that a blanket dismissal doesn't match reality.</p>
+
+<p>Sanrenkyu (<a href="https://x.com/san_renkyu" target="_blank" rel="noopener nofollow">@san_renkyu</a>) wrote that people loudly declaring "LLMO is meaningless" after reading Google's AI search documentation come across as lacking hands-on experience. They're only reading the parts that say there's no secret trick for AI Overviews, llms.txt isn't needed, and the basics are an extension of SEO. His counterpoint from practice: AI-referred traffic is consistently high quality, with conversion rates that are sometimes unusually high. His bottom line — optimizing specifically for AI Overviews is questionable, but making your content easy for LLMs to understand and cite matters a great deal (<a href="https://x.com/san_renkyu/status/2055829594331369722" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<p>Tsuyoshi Nakagawa (<a href="https://x.com/gahutti" target="_blank" rel="noopener nofollow">@gahutti</a>) took the guide as a call to return to SEO fundamentals, but was explicit that cases where LLMO work increases AI-referred traffic actually exist, so denying LLMO outright contradicts observable reality. "I'm in the 'do it' camp," he wrote. The key, in his view, is building non-commodity content — things not just anyone could write — implemented along SEO principles in a form AI can parse easily (<a href="https://x.com/gahutti/status/2055776281300729942" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<p>Motoharu Sumi (<a href="https://x.com/motoharusumi" target="_blank" rel="noopener nofollow">@motoharusumi</a>) pushed back on a viral post claiming Google had "officially declared AEO, GEO, and LLMO don't exist," calling that framing misleading. What Google actually said is that most of the hacks don't work — not that LLMO-style effort itself is pointless. His practical read: in a world where users ask questions in natural language and AI answers them, you simply do SEO adapted to that world (<a href="https://x.com/motoharusumi/status/2055595823090852145" target="_blank" rel="noopener nofollow">post</a>).</p>
+
+<h3>The Two Camps Are Looking at Different Things</h3>
+
+<p>Put side by side, the "no hacks" camp is talking primarily about Google Search's AI features (AI Overviews and AI Mode). The "LLMO has value" camp is talking about AI-referred traffic in general, including ChatGPT, Claude, and Perplexity. The scope is different; the positions don't actually contradict each other.</p>
+
+<p>Google's guide is explicit on this point too — it only speaks for Google Search. How other AI services handle llms.txt is outside Google's jurisdiction.</p>
+
+<h2 id="sec3">Three Reasons I Keep My llms.txt Anyway</h2>
+
+<p>Having read Google's official position, I still keep an llms.txt on this blog. Three reasons.</p>
+
+<h3>1. Google's Statement Only Covers Google Search</h3>
+
+<p>The official statement is strictly about Google Search's AI features (AI Overviews and AI Mode). Whether ChatGPT, Claude, or Perplexity reads llms.txt is each company's own decision, and Google is in no position to speak for them. Anthropic (Claude's developer) and Perplexity run their own crawlers with their own behavior, separate from Google's.</p>
+
+<p>This site has been cited by Perplexity — an article explaining product-listing workflows for e-commerce. When your site shows up as a cited source, the benefit of explicitly telling AI crawlers which pages matter via llms.txt is hard to dismiss. Google Search is not the only market.</p>
+
+<p>As Sanrenkyu noted above, there's practical data showing AI-referred traffic can convert at unusually high rates. How much weight you give non-Google AI traffic depends on your site's size and goals, but the fact that it's not zero is itself part of the case for keeping the file.</p>
+
+<p>Mueller did say llms.txt has little value for non-developer sites — but that statement, too, lives inside Google's ecosystem. Given that this site has an actual citation record on Perplexity, applying Google's verdict wholesale to phenomena happening outside Google Search doesn't hold up logically. For how AI citations translate into behavior and traffic, see "<a href="ai-overview-economics-llmo-en.html">What Economics Taught Me About AI Search Strategy</a>."</p>
+
+<h3>2. In SEO, Official Statements and Reality Often Diverge</h3>
+
+<p>If you follow SEO discourse for any length of time, you'll see repeated cases where Google's official statements and actual search results don't line up. Google said for years that content length doesn't affect rankings — yet top results are routinely dominated by long-form articles. "Link quality over quantity" is the official line — yet sites with large raw backlink counts keep winning.</p>
+
+<p>A recent example makes this concrete: the December 2025 core update. Generic "best X" and "X comparison" articles dropped hard, and the SEO industry buzzed about a new era where experience and expertise would finally win. Six months later, look at the search results — nothing has changed. The clearest case is the query "SEO company" (in Japanese, "SEO 会社"): if any query should have been first in line for an experience-and-expertise shakeout, it's this one, and yet the top results are still SEO companies' own media properties and comparison/ranking articles. The industry's excitement outran what actually happened in the SERPs. I covered this pattern in more detail in "<a href="comparison-article-credibility-en.html">Is Google Cracking Down on 'Best Of' Comparison Articles?</a>"</p>
+
+<p>The llms.txt "not needed" statement deserves the same skeptical reading. As Sumi pointed out, stretching Google's statement into "LLMO is officially dead" is misleading. "Google won't treat it specially" and "setting it up is pointless" are not the same claim. At minimum, the side benefits — organizing your site structure, explicitly listing your key pages — remain.</p>
+
+<h3>3. The Cost Is Zero and There's No Downside</h3>
+
+<p>Setting up llms.txt means creating one text file and uploading it to your root directory. Ten minutes, no money. And there is no penalty for having one. Google says it won't treat the file specially — it has never said the file will hurt your rankings.</p>
+
+<p>When the cost is effectively zero, the expected value can only be positive. From the operator's side, that makes it a default-yes decision.</p>
+
+<h2 id="sec4">What llms.txt Is (The Basics)</h2>
+
+<p>From here on, this is practical information for once you've decided to set one up. llms.txt is a text file that tells AI crawlers what your site is about and how it's structured. The specification was proposed in September 2024 by Jeremy Howard of Answer.AI and collaborators, and the file goes in your site's root directory (example.com/llms.txt).</p>
+
+<p>The design idea: when AI crawlers — ChatGPT's GPTBot, Anthropic's crawler for Claude, PerplexityBot — visit your site, this file lets them quickly grasp what the site contains and which pages matter. That said, as noted at the top, how much each AI company actually reads llms.txt remains largely undisclosed.</p>
+
+<h2 id="sec5">How It Differs From robots.txt</h2>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>Item</th><th>robots.txt</th><th>llms.txt</th></tr>
+<tr><td>Audience</td><td>Search engine crawlers such as Googlebot</td><td>AI crawlers such as GPTBot and Anthropic's crawler</td></tr>
+<tr><td>Purpose</td><td>Allow or disallow crawling</td><td>Describe the site's overview, structure, and key pages</td></tr>
+<tr><td>Format</td><td>Its own syntax (User-agent, Disallow, etc.)</td><td>Markdown</td></tr>
+<tr><td>History</td><td>Since 1994; a de facto standard for search engines</td><td>Proposed September 2024; adoption still limited and unofficial</td></tr>
+</table>
+</div>
+
+<p>robots.txt says "here's where you may and may not go." llms.txt says "here's what this site contains." Different purposes, so having both is not contradictory. Just make sure the two are consistent — blocking AI crawlers in robots.txt while inviting them in via llms.txt is an incoherent configuration.</p>
+
+<h2 id="sec6">How to Write an llms.txt</h2>
+
+<p>The format is Markdown, structured like this:</p>
+
+<pre class="code-block"><span class="comment"># Site Name</span>
+
+&gt; A one- or two-sentence description of the site.
+
+<span class="comment">## Key Content</span>
+
+- [Page title](URL): A brief description of that page
+- [Page title](URL): A brief description of that page
+- [Page title](URL): A brief description of that page
+
+<span class="comment">## Content by Category</span>
+
+<span class="comment">### Category name</span>
+
+- [Article title](URL): Description
+- [Article title](URL): Description</pre>
+
+<p>Points to keep in mind:</p>
+
+<ul>
+<li><strong>Don't list every page.</strong> Limit it to the content you most want AI to read. Dumping every URL like a sitemap makes the file harder to parse, not easier.</li>
+<li><strong>Keep descriptions to one sentence.</strong> The goal is for an AI to grasp the whole site at a glance.</li>
+<li><strong>Organize by category.</strong> Grouping content by category helps AI understand what your site specializes in.</li>
+<li><strong>Your site's language is fine.</strong> A Japanese site can write its llms.txt in Japanese; AI handles multiple languages.</li>
+</ul>
+
+<h3>A Real Example (This Site)</h3>
+
+<p>On this blog, llms.txt lists articles by category with a short description for each. The structure looks like this:</p>
+
+<pre class="code-block"><span class="comment"># Tsubasa's Notes</span>
+
+&gt; A working memo blog covering e-commerce operations, product photography,
+&gt; image editing, retouching outsourcing, and side work.
+
+<span class="comment">## E-commerce / Operations</span>
+
+- [What is "sasage" work](https://example.com/sasage.html): The photography,
+  measurement, and copywriting tasks behind EC product listings, and where to outsource them
+- [Background removal pricing](https://example.com/cutout.html): Comparing
+  outsourcing options starting at 39 yen per image
+
+<span class="comment">## SEO / LLMO</span>
+
+- [SEO and LLMO service pricing](https://example.com/seo-cost.html): Budget
+  options for small businesses
+- [What is LLMO](https://example.com/llmo.html): How it differs from SEO, GEO, and AIO</pre>
+
+<h2 id="sec7">How to Set It Up</h2>
+
+<p>The short answer: the fastest route for a beginner is to ask Claude or ChatGPT to do it. Tell it "my site is at this URL — please create an llms.txt that matches its content," and it will crawl the site and draft the whole file. Then you adjust and upload. That beats writing from scratch in a text editor, and there's a certain logic to it — llms.txt was designed for AI, so having AI write it fits.</p>
+
+<p>The process is three steps, no special tools:</p>
+
+<ol>
+<li><strong>Create the text file.</strong> Have AI draft it, or write it yourself in any text editor (Notepad, VS Code), following the format above, and name it llms.txt.</li>
+<li><strong>Upload it to your server.</strong> It goes in the site's root directory — the same level as index.html. Use an FTP client or your hosting control panel.</li>
+<li><strong>Verify.</strong> Open https://yourdomain/llms.txt in a browser. If the contents display, you're done.</li>
+</ol>
+
+<p>On WordPress, use a plugin (such as an llms.txt generator) or place the file in the WordPress root via FTP. On GitHub Pages, add the file to the repository root and push — that's the whole setup.</p>
+
+<h2 id="sec8">Why Niche Sites Shouldn't Take Google's Word at Face Value</h2>
+
+<p>Google's official documentation is written mostly with large sites and general cases in mind. The same SEO tactic behaves differently on a high-authority major media site versus a personal blog with few backlinks. Anyone following SEO discussions has seen this — applying Google's general guidance directly to a small independent site often doesn't fit.</p>
+
+<p>Take a niche site like this one — a specialist blog for e-commerce practitioners. Competing head-on with major SEO media in Google Search is a losing proposition. The smarter premise is <em>not</em> to fight there, and instead to actively pursue entry points outside Google Search: citations from Perplexity and ChatGPT. In that context, a niche site has a rational reason to invest in exactly the file Google calls unnecessary. If you want to check whether it's working, <a href="bing-vs-google-traffic-en.html">Bing Webmaster Tools' AI Performance report</a> and <a href="gsc-ai-report-en.html">Google Search Console's generative AI report</a> are the places to look.</p>
+
+<p>Know Google's official position. Then judge against your own site's size, niche, and target traffic sources. That, I think, is the correct stance for a niche site operator.</p>
+
+<a class="cite-card" href="https://llmstxt.org/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">L</span>
+<span class="cite-body">
+<span class="cite-title">llms.txt official site</span>
+<span class="cite-url">llmstxt.org</span>
+</span>
+</a>
+
+<div class="faq-section">
+<h2 id="sec9">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. How did SEO experts respond to Google's guide?</strong></p>
+<p class="fa">A. Two broad reactions. One camp — Shoichi Hasegawa, Masahiro Miyamoto, and overseas Lily Ray, among others — says SEO fundamentals are everything and AEO/GEO hacks are unnecessary. The other camp — Tsuyoshi Nakagawa, Sanrenkyu, and others — argues the statement only covers Google Search, and that optimizing for AI in general remains worthwhile, backed by their own traffic data. The disagreement largely comes down to scope: Google Search alone, or AI services in general.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. If Google says llms.txt is unnecessary, is there no point in setting one up?</strong></p>
+<p class="fa">A. Google's "unnecessary" applies only to Google Search's AI features (AI Overviews and AI Mode). Whether ChatGPT, Claude, or Perplexity reads llms.txt is each company's independent decision, outside Google's scope. As part of a broader AI strategy that includes services beyond Google Search, it remains a valid option.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What is llms.txt?</strong></p>
+<p class="fa">A. A text file that describes your site's overview and structure for AI crawlers (GPTBot, Anthropic's crawler, and others). It sits in the site's root directory, is written in Markdown, and was proposed in September 2024.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What's the difference between llms.txt and robots.txt?</strong></p>
+<p class="fa">A. robots.txt tells search engine crawlers where they may and may not crawl. llms.txt tells AI crawlers what the site contains — its overview, key content, and structure. Different purposes; both can coexist.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is setting up llms.txt free?</strong></p>
+<p class="fa">A. Yes. Create a text file and upload it to your root directory — no tools or plugins required. With essentially no downside, setting one up remains a reasonable call even after Google's dismissal.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. How has the SEO industry historically treated Google's official statements?</strong></p>
+<p class="fa">A. Divergence between what Google says officially and what search results show is not rare — content length and backlink volume are two long-running examples. On llms.txt, many practitioners support setting it up for ChatGPT, Claude, and Perplexity, all of which sit outside the scope of Google's statement.</p>
+</div>
+</div>
+
+<p class="lang-switch">🇯🇵 <a href="llms-txt-guide.html" hreflang="ja">この記事の日本語版を読む</a></p>
+
+<!-- Related Articles -->
+<div class="related">
+<h3>Related Articles</h3>
+<a class="cite-card" href="llmo-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is LLMO? How It Differs from SEO, GEO, AIO — And What Google Actually Said</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-article-writing-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-article-writing-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="json-ld-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="gsc-ai-report-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Google Search Console's Generative AI Report: What It Shows and Whether to Opt Out</span>
+<span class="cite-url">tsubasa-memo.github.io/gsc-ai-report-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="comparison-article-credibility-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Is Google Cracking Down on 'Best Of' Comparison Articles? | No.1 Claims, Legal Risks, and AI Search</span>
+<span class="cite-url">tsubasa-memo.github.io/comparison-article-credibility-en.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- Author Profile -->
+<div class="author-box">
+<div class="author-icon"><img alt="Tsubasa" height="64" src="/icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>Working in the EC department of a Japanese apparel company. My responsibilities range from coordinating product photography (sasage) to managing retouching vendors, updating product pages, and supervising part-time staff. I'm not great at Photoshop, so I outsource serious image work to professionals — but after working with many vendors, I've become pretty good at choosing the right one and checking deliverables. This blog is a record of things I've learned on the job.</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

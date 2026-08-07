@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>Google Search Console's Generative AI Report: What It Shows and Whether to Opt Out | ツバサのメモ帳</title>
+<meta name="description" content="Search Console now has a dedicated generative AI performance report showing impressions in AI Overviews and AI Mode — no click data yet. What the report contains, and how an e-commerce site should think about the AI opt-out toggle.">
+<meta name="keywords" content="Search Console generative AI report,AI Overviews impressions,AI Mode performance,Google AI opt-out,AI search analytics,GSC AI report,e-commerce AI search">
+<meta property="og:title" content="Google Search Console's Generative AI Report: What It Shows and Whether to Opt Out">
+<meta property="og:description" content="Search Console's new generative AI performance report separates AI Overviews and AI Mode impressions from regular search. What it shows, what's missing, and the opt-out decision for e-commerce sites.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://tsubasa-memo.github.io/gsc-ai-report-en.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/gsc-ai-report.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/gsc-ai-report.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/gsc-ai-report-en.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/gsc-ai-report.html">
+<link rel="alternate" hreflang="en" href="https://tsubasa-memo.github.io/gsc-ai-report-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tsubasa-memo.github.io/gsc-ai-report.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When can I use the generative AI performance report?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google announced it on June 3, 2026 and rolled it out gradually, starting with a subset of UK site owners and expanding through July 2026 to sites in many other countries. Check the left-hand menu in Search Console — if the report isn't listed, it hasn't reached your property yet. Report data begins on May 18, 2026, with no earlier backfill." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the report doesn't appear for my site?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nothing is wrong — the rollout is staged. Until it arrives, track your overall impression trends in the existing performance report; impressions from generative AI features are already included there." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the opt-out available outside the UK?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As of August 2026, the opt-out toggle is still a test limited to a subset of UK site owners, driven by the UK Competition and Markets Authority's digital markets regime. No timeline has been announced for other countries." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does opting out affect regular search rankings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google has stated the control is not used as a ranking signal outside generative AI features. Opting out removes your site from AI Overviews, AI Mode, and Discover's AI features, but it continues to appear in regular Google Search results and the Discover feed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a way to optimize for AI Overviews?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Google's May 2026 generative AI optimization documentation says conventional SEO fundamentals are what work — not special tricks. Correct structured data, content with E-E-A-T, well-maintained internal links: measures that communicate your content accurately to search engines carry over to AI search." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the report worth checking if it has no click data?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Even without clicks, it shows for the first time which of your pages AI search is citing and which countries your AI exposure comes from. Pages gaining AI citations are pages AI treats as a source. Click data may be added later, and recording today's baseline has value." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Google Search Console's Generative AI Report: What It Shows and Whether to Opt Out",
+  "description": "Search Console now has a dedicated generative AI performance report showing impressions in AI Overviews and AI Mode — no click data yet. What the report contains, and how an e-commerce site should think about the AI opt-out toggle.",
+  "url": "https://tsubasa-memo.github.io/gsc-ai-report-en.html",
+  "image": "https://tsubasa-memo.github.io/og/gsc-ai-report.webp",
+  "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-08-07T00:00:00+09:00",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Search Console's Generative AI Report" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="Tsubasa" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">Home</a> &gt; <a href="archive.html#seo">SEO・LLMO</a> &gt; Search Console's Generative AI Report
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/gsc-ai-report.webp" alt="Google Search Console's Generative AI Report" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">SEO・LLMO</span>
+<h1 class="article-title">Google Search Console's Generative AI Report<br>What It Shows and Whether to Opt Out</h1>
+<div class="article-meta-line">
+<span>Published: August 7, 2026</span>
+<span>Updated: August 7, 2026</span>
+</div>
+
+<p>Hi, I'm Tsubasa.</p>
+
+<p>On June 3, 2026, Google added a "Search Generative AI performance report" to Search Console. It's a report that shows how often your site appears in AI Overviews and AI Mode, separated out from regular search performance. The rollout began with a subset of site owners in the UK, and through July 2026 it expanded well beyond — sites in Japan, where I'm based, started seeing the report too. The data in the report begins on May 18, 2026; nothing earlier is backfilled.</p>
+
+<p>Announced the same day was a test of an "opt-out" toggle — a switch that lets you exclude your site from AI search features entirely.</p>
+
+<p>As someone working in e-commerce, I'd been wondering two things: "are our product pages showing up in AI search at all?" and "would we be better off if they didn't?" So I dug into what the report contains and what the opt-out decision looks like for an e-commerce site.</p>
+
+<div class="toc">
+<p class="toc-title">Contents</p>
+<ol>
+<li><a href="#sec1">What the Search Generative AI performance report tells you</a></li>
+<li><a href="#sec2">How big AI Overviews and AI Mode actually are — Google's own numbers</a></li>
+<li><a href="#sec3">What "no click data" means for an e-commerce manager</a></li>
+<li><a href="#sec4">The AI search opt-out toggle: should an e-commerce site use it?</a></li>
+<li><a href="#sec5">What to do while you wait for the report</a></li>
+<li><a href="#sec6">FAQ</a></li>
+<li><a href="#sec7">Summary</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">What the Search Generative AI Performance Report Tells You</h2>
+
+<p>The new report takes the display data from Google Search's generative AI features (AI Overviews and AI Mode) plus Discover's AI features, and separates it out from the conventional performance report.</p>
+
+<p>AI-feature data was always in the regular performance report — just mixed in with ordinary search results. If your impressions rose, you couldn't tell whether it was because you appeared in AI Overviews or because you climbed in normal search. The new report isolates the AI portion.</p>
+
+<p>Five data points are available:</p>
+
+<div class="table-wrap">
+<table class="spec-table">
+<thead><tr><th>Item</th><th>What it shows</th></tr></thead>
+<tbody>
+<tr><td>Impressions</td><td>How many times your URLs were displayed inside AI features</td></tr>
+<tr><td>Pages</td><td>Which URLs were cited by AI features</td></tr>
+<tr><td>Countries</td><td>Where the AI-driven impressions came from</td></tr>
+<tr><td>Devices</td><td>Desktop, mobile, etc. (Search report only)</td></tr>
+<tr><td>Dates</td><td>Trends at hourly, daily, weekly, or monthly granularity</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">G</span>
+<span class="cite-body">
+<span class="cite-title">Introducing Search Generative AI performance reports in Search Console (Google Search Central Blog, June 3, 2026)</span>
+<span class="cite-url">developers.google.com</span>
+</span>
+</a>
+
+<p>What's missing: click data. The report tells you that you were <em>displayed</em> in AI search — it cannot tell you how many people actually came to your site from there. That constraint deserves its own section, below.</p>
+
+<h2 id="sec2">How Big AI Overviews and AI Mode Actually Are — Google's Own Numbers</h2>
+
+<p>The reason this report matters is the scale of AI search.</p>
+
+<p>From the numbers announced at Google I/O in May 2026: AI Overviews has 2.5 billion monthly active users, and AI Mode has 1 billion (source: <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener noreferrer">Sundar Pichai's opening keynote, Google I/O 2026</a>). The natural assumption is that these two user bases overlap heavily, so you can't just add them up and claim 3.5 billion AI search users. Even so, it's clear that a substantial share of Google Search users are seeing results delivered through AI features.</p>
+
+<p>Google says AI Mode query volume has doubled every quarter since launch. According to Google's published AI Mode usage data, queries in AI Mode average three times the length of regular searches (source: <a href="https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/" target="_blank" rel="noopener noreferrer">Google Blog, "How AI Mode is changing and expanding the way people search"</a>). Instead of short keyword strings like "white t-shirt men's cheap," people are typing full sentences like "show me brands that sell plain white t-shirts under $20 with a wide size range."</p>
+
+<p>What an e-commerce manager can't afford to ignore: AI Mode search is growing at this scale, and until now there was no visibility at all into how your own site was being treated inside it. This report is the first window.</p>
+
+<h2 id="sec3">What "No Click Data" Means for an E-commerce Manager</h2>
+
+<p>Honestly, without click data, this report alone cannot quantify AI search's contribution to revenue.</p>
+
+<p>There's plenty of research on AI search and click-through rates. Several outlets citing Semrush data have reported that 92–94% of AI Mode sessions end without a click. A SISTRIX analysis found the CTR for the #1 search position dropping from 27% to 11%. But results vary enormously by query type and industry, so applying those numbers directly to your own site is risky. Meanwhile, other data shows that sites cited in AI answers get more clicks than sites that aren't — which suggests being cited has value in itself. I went deeper on how this economics works in "<a href="ai-overview-economics-llmo-en.html">What Economics Taught Me About AI Search Strategy</a>."</p>
+
+<p>So is a click-less report worth looking at? I think it is, for two reasons.</p>
+
+<p>First: it tells you which pages AI is valuing. If you can see which of your product and category pages are being cited in AI search, that's a concrete basis for deciding which pages to strengthen first.</p>
+
+<p>Second: baseline recording. There's a good chance Google adds click data later. When that happens, comparing against last month requires having logged your impression trends starting now. One related note: the "AI Assistant" channel group added to GA4 in May 2026 classifies traffic from chatbots like ChatGPT and Gemini — it does <em>not</em> cover clicks from AI Overviews or AI Mode, which remain inside Organic Search. As of now, there's no way to isolate AI-search clicks on the GA4 side.</p>
+
+<h2 id="sec4">The AI Search Opt-Out Toggle: Should an E-commerce Site Use It?</h2>
+
+<p>The other feature announced the same day is the opt-out — a setting that removes your site from AI search features.</p>
+
+<p>The mechanism is simple: flip the toggle off in Search Console, and your site stops appearing in AI Overviews, AI Mode, and Discover's AI features. Google has explicitly stated that this control is not used as a ranking signal for search results outside the generative AI features (source: <a href="https://www.engadget.com/2186257/google-will-allow-websites-to-exclude-themselves-from-ai-search-results/" target="_blank" rel="noopener noreferrer">Engadget, June 3, 2026</a>). In other words, it doesn't affect your regular Google rankings.</p>
+
+<p>Unlike the report itself, though, the toggle remains a limited test for a subset of UK site owners as of this writing. The background is a decision by the UK's Competition and Markets Authority (CMA) under its digital markets competition regime — publishers demanded the right to exclude their content from AI search, and the toggle is Google's regulatory response. There's no announced timeline for other countries.</p>
+
+<p>If and when the opt-out does arrive elsewhere, should an e-commerce site use it?</p>
+
+<p>My personal view: for an e-commerce site selling its own products directly, the downside of opting out is large. Opt out, and your site disappears from AI search — while your competitors keep showing up. Users who "ask AI to compare products" would see every site but yours.</p>
+
+<p>The judgment changes with the site's nature, though. For media-style e-commerce sites built around product comparisons and reviews, having AI Overviews summarize your articles can make the visit itself unnecessary, and the traffic loss can be serious. That publisher frustration is exactly what pushed the CMA to act in the UK. The more your revenue depends on people actually visiting your site, the more room there is to consider opting out.</p>
+
+<p>One more case worth considering: when AI is displaying your product's price or specs incorrectly. If that's generating customer-support load or damaging the brand, pulling back via opt-out can be a rational move.</p>
+
+<h2 id="sec5">What to Do While You Wait for the Report</h2>
+
+<p>Even if the report hasn't reached your site yet, there's preparation you can do.</p>
+
+<p>First, check your existing Search Console performance report. Even before the new report separates it out, AI-feature impressions are included in the overall numbers. Logging your impression trends for the past few months gives you material to back-calculate "regular search impressions minus the AI portion" once the new report arrives. If you also use Bing, its Webmaster Tools has had an AI Performance report (beta) since February 2026 showing Copilot citations — I compared the two ecosystems in "<a href="bing-vs-google-traffic-en.html">What Bing Webmaster Tools Revealed About AI Search</a>."</p>
+
+<p>Second, build the foundation for <a href="llmo-article-writing-en.html">content that AI actually cites</a>. Google's <a href="https://developers.google.com/search/docs/appearance/ai-features-best-practices" target="_blank" rel="noopener nofollow">generative AI optimization documentation</a> published in May 2026 says no special techniques or dedicated tags are needed — conventional SEO fundamentals carry over. Implement structured data correctly (<a href="json-ld-guide-en.html">here's how</a>), write content with E-E-A-T in mind, maintain your internal links. The overlap with <a href="llmo-guide-en.html">LLMO fundamentals</a> is large. That said, research also suggests the logic AI Overviews uses to pick citations differs from regular ranking — so "do SEO and AI citations follow automatically" isn't guaranteed.</p>
+
+<p>As for <a href="llms-txt-guide-en.html">llms.txt</a>, Google explicitly says it's unnecessary. The current orthodox play is competing on content quality itself, not on feeding AI special files.</p>
+
+<div class="faq-section">
+<h2 id="sec6">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. When can I use the generative AI performance report?</strong></p>
+<p class="fa">A. Google announced it on June 3, 2026 and rolled it out gradually, starting with a subset of UK site owners and expanding through July 2026 to sites in many other countries. Check the left-hand menu in Search Console — if the report isn't listed, it hasn't reached your property yet. Report data begins on May 18, 2026, with no earlier backfill.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. What if the report doesn't appear for my site?</strong></p>
+<p class="fa">A. Nothing is wrong — the rollout is staged. Until it arrives, track your overall impression trends in the existing performance report; impressions from generative AI features are already included there.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is the opt-out available outside the UK?</strong></p>
+<p class="fa">A. As of August 2026, the opt-out toggle is still a test limited to a subset of UK site owners, driven by the UK Competition and Markets Authority's digital markets regime. No timeline has been announced for other countries.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Does opting out affect regular search rankings?</strong></p>
+<p class="fa">A. Google has stated the control is not used as a ranking signal outside generative AI features. Opting out removes your site from AI Overviews, AI Mode, and Discover's AI features, but it continues to appear in regular Google Search results and the Discover feed.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is there a way to optimize for AI Overviews?</strong></p>
+<p class="fa">A. Google's May 2026 generative AI optimization documentation says conventional SEO fundamentals are what work — not special tricks. Correct structured data, content with E-E-A-T, well-maintained internal links: measures that communicate your content accurately to search engines carry over to AI search.</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. Is the report worth checking if it has no click data?</strong></p>
+<p class="fa">A. Yes. Even without clicks, it shows for the first time which of your pages AI search is citing and which countries your AI exposure comes from. Pages gaining AI citations are pages AI treats as a source. Click data may be added later, and recording today's baseline has value.</p>
+</div>
+</div>
+
+<h2 id="sec7">Summary</h2>
+
+<p>Search Console's generative AI performance report is the first tool that makes your site's exposure in AI Overviews and AI Mode visible. The lack of click data is a real constraint, but simply knowing which pages AI cites is enough to inform content prioritization.</p>
+
+<p>The opt-out remains a UK-only test for now, but it's worth thinking through your stance as an e-commerce site before it arrives more widely. The deciding factor is how much your revenue depends on people actually visiting your site.</p>
+
+<p>Once the report reaches your property, the first two things to look at are which pages AI search cites and the country breakdown. Cross-reference those with GA4, and your site's position in the AI search era starts coming into focus.</p>
+
+<p class="lang-switch">🇯🇵 <a href="gsc-ai-report.html" hreflang="ja">この記事の日本語版を読む</a></p>
+
+<!-- Related Articles -->
+<div class="related">
+<h3>Related Articles</h3>
+<a class="cite-card" href="llmo-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is LLMO? How It Differs from SEO, GEO, AIO — And What Google Actually Said</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="llmo-article-writing-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques</span>
+<span class="cite-url">tsubasa-memo.github.io/llmo-article-writing-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="bing-vs-google-traffic-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Bing Webmaster Tools Revealed About AI Search — Why Bing Traffic Was 3x Higher Than Google on My Site</span>
+<span class="cite-url">tsubasa-memo.github.io/bing-vs-google-traffic-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="llms-txt-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">What Is llms.txt? Google Says You Don't Need It — Why I Set One Up Anyway</span>
+<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide-en.html</span>
+</span>
+</a>
+<a class="cite-card" href="json-ld-guide-en.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step</span>
+<span class="cite-url">tsubasa-memo.github.io/json-ld-guide-en.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="レタッチ会社の法人情報比較" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- Author Profile -->
+<div class="author-box">
+<div class="author-icon"><img alt="Tsubasa" height="64" src="/icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">Tsubasa</p>
+<p>Working in the EC department of a Japanese apparel company. My responsibilities range from coordinating product photography (sasage) to managing retouching vendors, updating product pages, and supervising part-time staff. I'm not great at Photoshop, so I outsource serious image work to professionals — but after working with many vendors, I've become pretty good at choosing the right one and checking deliverables. This blog is a record of things I've learned on the job.</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
