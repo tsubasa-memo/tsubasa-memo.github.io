@@ -212,13 +212,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>「ブログを始めたい」と思ったとき、最初に候補に上がるのはWordPressやnoteだろう。WordPressは動的サイトで、サーバー契約・ドメイン取得・PHPとデータベースの管理が必要になる。noteは手軽だがデザインの自由度が低い。</p>
 <p>静的サイトは第三の選択肢だ。GitHub Pagesを使えば無料でホスティングでき、HTMLとCSSの知識があれば自由にデザインできる。最近はClaude CodeのようなAIツールを使えばHTMLの記述を自動化できるため、コーディングが苦手でも運用のハードルは下がっている。</p>
 <p>このメモ帳でも、<a href="/ai-blog-building.html">AIでブログを構築した記録</a>をまとめている。記事の追加・更新はGitHub経由のpush操作で行い、下書き→本番公開のブランチ運用も可能だ。</p>
-<a class="cite-card" href="/ai-blog-building.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</span>
-<span class="cite-url">tsubasa-memo.github.io/glossary/ai-blog-building.html</span>
-</span>
-</a>
 <h2>覚えておきたいポイント</h2>
 <p>静的サイトのメリットは表示速度・コスト・セキュリティの3つに集約される。サーバー側の処理がないため表示が速く、GitHub Pagesなら月額0円で運営でき、データベースがないためSQLインジェクションなどの攻撃対象にならない。</p>
 <p>デメリットはHTMLの知識が必要なことと、記事更新のたびにファイルを編集してpushする手間がかかること。コメント欄・お問い合わせフォーム・サイト内検索といった動的な機能は外部サービスやJavaScriptで補う必要がある。</p>
@@ -227,13 +220,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>静的サイトはサーバーに置いたHTMLファイルをそのまま表示する。動的サイトはアクセスのたびにサーバー上のプログラム（PHPやRubyなど）がデータベースからデータを取得し、HTMLを生成して返す。</p>
 <p>WordPressが動的サイトの代表格で、管理画面から記事を書くとデータベースに保存され、閲覧者がアクセスするたびにPHPがHTMLを組み立てる。プラグインで機能を追加しやすい反面、PHPやデータベースの脆弱性を突かれるリスクがある。</p>
 <p>静的サイトはファイルを直接配信するだけなのでプログラムの実行がなく、高速かつ安全だ。ただし記事が数百ページを超えると管理の手間が増える。その場合は静的サイトジェネレーター（Hugo、Jekyllなど）を使ってMarkdownからHTMLを自動生成する方法もある。<a href="/static-vs-dynamic-site.html">静的サイトと動的サイトの比較記事</a>で詳しくまとめている。</p>
-<a class="cite-card" href="/static-vs-dynamic-site.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</span>
-<span class="cite-url">tsubasa-memo.github.io/glossary/static-vs-dynamic-site.html</span>
-</span>
-</a>
 <div class="faq-section">
 <h2>よくある質問</h2>
 <div class="faq-item">
@@ -268,12 +254,34 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 <div class="related">
 <h3>関連する記事</h3>
-<ul>
-<li><a href="/static-vs-dynamic-site.html">静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</a></li>
-<li><a href="/github-pages-vs-note.html">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</a></li>
-<li><a href="/ai-blog-building.html">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</a></li>
-<li><a href="/blog-platform-comparison.html">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</a></li>
-</ul>
+<a class="cite-card" href="/static-vs-dynamic-site.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</span>
+<span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span>
+</span>
+</a>
+<a class="cite-card" href="/github-pages-vs-note.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</span>
+<span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span>
+</span>
+</a>
+<a class="cite-card" href="/ai-blog-building.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</span>
+<span class="cite-url">tsubasa-memo.github.io/ai-blog-building.html</span>
+</span>
+</a>
+<a class="cite-card" href="/blog-platform-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-platform-comparison.html</span>
+</span>
+</a>
 </div>
 <div class="author-box">
 <div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
