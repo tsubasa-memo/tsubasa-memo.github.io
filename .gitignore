@@ -7,6 +7,13 @@ originals/
 obsidian-research
 recovered-articles/
 
+# セッション管理ログ（2026-08-08にObsidianへ移動）
+# 運営の判断・GSCの数値・ペルソナ運用の記録が入るため公開リポジトリに置かない。
+# 万一ルート直下に戻ってきても追跡しないよう明示する
+progress.md
+decisions.md
+done-log.md
+
 # OS
 .DS_Store
 
