@@ -243,6 +243,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2>EC実務でTACが問題になる場面</h2>
 <p>EC担当者が総インキ量を意識するのは、商品画像をチラシやカタログに転用するときだ。</p>
 <p>ECサイト用の画像はRGBで作成されているため、印刷用にCMYKへ変換すると、暗い部分で4色の値が跳ね上がりやすい。黒背景の商品写真や夜のイメージカットは典型で、変換後に総インキ量が350%を超えていることも珍しくない。</p>
+<p>モニターの色（RGB）とインクの色（CMYK）で作り方がどう違うのか、変換のときに何が起きているのかは「<a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった</a>」で解説している。</p>
 <p>入稿チェックで引っかかったときに、自分でPhotoshopのスライダーを動かして機械的にTAC値を下げると、色が不自然になるリスクがある。全体のインク総量を一律に落とすと色味が浅くなり、超過部分だけ修正しても最暗部の締まりが弱くなるケースがある。</p>
 <p>EC担当者としてできるのは、入稿先の指定する上限値を事前に確認すること。超えていたら「このまま入稿して大丈夫ですか」と印刷会社に問い合わせること。色を壊さずに総インキ量を調整する作業は、印刷側のプロに任せるのが安全だ。</p>
 <a class="cite-card" href="https://ai-create.net/blog/2019/06/04/tac%E5%80%A4%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F/" rel="noopener nofollow" target="_blank">
@@ -257,7 +258,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>総インキ量で押さえておくべき点は3つ。</p>
 <p>1つ目は、上限値は印刷会社と用紙の組み合わせで決まるということ。ネットで見かける数字を暗記するより、入稿先の入稿ガイドに記載された数字を都度確認するのが正解だ。</p>
 <p>2つ目は、Photoshopのプロファイル設定が総インキ量に影響するということ。現在は「Japan Color 2011 Coated」がコート紙向けの標準プロファイルとして使われることが多いが、印刷会社によっては「Japan Color 2001 Coated」を指定している場合もある。マット紙や上質紙向けには「Uncoated」系のプロファイルを選ぶと総インキ量が低めに抑えられる。ただし、TAC値を下げるためだけにプロファイルを切り替えると色が変わるリスクがあるため、印刷仕様の確認は制作の最初にやっておいたほうがいい。</p>
-<p>3つ目は、リッチブラック（CMYK4色を掛け合わせて作る黒）が総インキ量を押し上げやすいこと。印刷会社の推奨比率で作ったリッチブラックなら合計200〜250%程度に収まるが、C100% M100% Y100% K100%の4色ベタは400%になり、ほぼすべての印刷条件で上限を超える。</p>
+<p>3つ目は、<a href="rich-black.html">リッチブラック</a>（CMYK4色を掛け合わせて作る黒）が総インキ量を押し上げやすいこと。印刷会社の推奨比率で作ったリッチブラックなら合計200〜250%程度に収まるが、C100% M100% Y100% K100%の4色ベタは400%になり、ほぼすべての印刷条件で上限を超える。推奨される配合比率や、文字に使うと版ズレでにじむ理由は用語集のページに書いた。</p>
 <a class="cite-card" href="https://www.theme3.net/tac-value/" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">
@@ -265,14 +266,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-url">theme3.net</span>
 </span>
 </a>
-<p>印刷で色がくすむ理由や入稿前の確認手順は「<a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった</a>」に整理している。</p>
-<a class="cite-card" href="/print-ink-color-shift.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</span>
-<span class="cite-url">tsubasa-memo.github.io/print-ink-color-shift.html</span>
-</span>
-</a>
+<p>印刷で色がくすむ理由や入稿前の確認手順は「<a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった</a>」に整理している。色を壊さずに総インキ量を調整する作業まで外に出すなら、「<a href="/product-photo-retouch.html">商品写真・ジュエリーのレタッチ外注どこに頼む？EC向けサービス6社比較</a>」で料金や対応範囲を比較している。</p>
 
 <div class="faq-section">
 <h2>よくある質問</h2>
@@ -308,10 +302,20 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 <div class="related">
 <h3>関連する記事</h3>
-<ul>
-<li><a href="/print-ink-color-shift.html">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</a></li>
-<li><a href="/print-service-comparison.html">写真プリントはどこがいい？コンビニ・ネット・カメラのキタムラの使い分け</a></li>
-</ul>
+<a class="cite-card" href="/print-ink-color-shift.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">レタッチした商品写真を印刷したら色が変わった｜インクの色はCMYK、モニターはRGB</span>
+<span class="cite-url">tsubasa-memo.github.io/print-ink-color-shift.html</span>
+</span>
+</a>
+<a class="cite-card" href="/product-photo-retouch.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">商品写真・ジュエリーのレタッチ外注どこに頼む？EC向けサービス6社比較</span>
+<span class="cite-url">tsubasa-memo.github.io/product-photo-retouch.html</span>
+</span>
+</a>
 </div>
 <div class="author-box">
 <div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
