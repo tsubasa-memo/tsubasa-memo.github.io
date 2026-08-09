@@ -39,8 +39,8 @@ gtag('config', 'G-YYBFXHXMM6');
   "mainEntity": [
     {"@type":"Question","name":"nofollowとdofollowの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"dofollow（通常のリンク）は、リンク元からリンク先にページ評価（リンクジュース）を渡します。nofollowはrel=\"nofollow\"を付けたリンクで、Googleに「このリンク先にページ評価を渡さないでほしい」というヒントを送るものです。2019年以降、Googleはnofollowを命令ではなくヒントとして扱うようになり、必要に応じて無視する場合もあります。"}},
     {"@type":"Question","name":"sponsoredとugcはnofollowと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"sponsoredは広告・スポンサー付きリンク用、ugcはユーザー生成コンテンツ（コメント欄など）のリンク用です。いずれもnofollowと同じくヒントとして扱われますが、リンクの種類をGoogleにより正確に伝えられます。Googleの公式ドキュメントでは広告リンクにはsponsoredの使用を推奨していますが、従来通りnofollowでも問題ありません。"}},
-    {"@type":"Question","name":"比較記事の外部リンクにはnofollowを付けるべきですか？","acceptedAnswer":{"@type":"Answer","text":"サービス比較記事で紹介先の公式サイトにリンクする場合、nofollowを付けるのが無難です。比較記事のリンクは推薦ではなく情報提供の位置づけなので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用すれば、特定のサービスだけ優遇しているように見えるリスクも避けられます。"}},
-    {"@type":"Question","name":"Amazonアソシエイトなどのアフィリエイトリンクにはどのrel属性を付けますか？","acceptedAnswer":{"@type":"Answer","text":"アフィリエイトリンクにはrel=\"nofollow sponsored\"を付けるのが推奨です。Googleのガイドラインでは有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めています。両方を併記（nofollow sponsored）するのが最も安全です。"}},
+    {"@type":"Question","name":"比較記事の外部リンクにnofollowを付けるべきですか？","acceptedAnswer":{"@type":"Answer","text":"サービス比較記事で紹介先の公式サイトにリンクする場合、nofollowを付けるのが無難です。比較記事のリンクは推薦ではなく情報提供の位置づけなので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用すれば、特定のサービスだけ優遇しているように見えるリスクも避けられます。"}},
+    {"@type":"Question","name":"アフィリエイトリンクのrel属性は何を使いますか？","acceptedAnswer":{"@type":"Answer","text":"アフィリエイトリンクにはrel=\"nofollow sponsored\"を付けるのが推奨です。Googleのガイドラインでは有料リンク（広告・アフィリエイト）にはsponsoredまたはnofollowの付与を求めています。両方を併記（nofollow sponsored）するのが最も安全です。"}},
     {"@type":"Question","name":"外部リンクを全部nofollowにすると問題がありますか？","acceptedAnswer":{"@type":"Answer","text":"全リンクnofollowは推奨されません。Googleは2019年にnofollowをヒントに変更しており、すべてのリンクにnofollowを付けると「このサイトはリンク管理を適切に行っていない」と判断される可能性があります。ただし、比較記事やアフィリエイト中心のブログでは外部リンクの大半がnofollowになるのは自然です。政府機関や学術論文など信頼性の高い情報源へのリンクはdofollowのまま残す方がE-E-A-Tの観点ではプラスに働きます。"}}
   ]
 }
