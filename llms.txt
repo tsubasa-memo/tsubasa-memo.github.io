@@ -666,6 +666,7 @@
 
 仕事とブログ運営で出てきた用語のメモ集。109語を五十音別に4ページ（0-z.html / a-ka.html / sa-ta.html / ha-wa.html）に整理。
 
+- [EC・カメラ・画像編集の用語集｜仕事で調べた80語のメモ](https://tsubasa-memo.github.io/glossary-index.html): 用語集トップページ。EC運営・商品撮影・画像編集の仕事で出てきた用語をカテゴリ別に整理。
 - [3PL](https://tsubasa-memo.github.io/glossary/3pl.html): 物流業務をまるごと外部に委託するサービス。
 - [ABテスト](https://tsubasa-memo.github.io/glossary/ab-test.html): 2パターンを比較して効果の高いほうを選ぶテスト手法。
 - [AI Overviews](https://tsubasa-memo.github.io/glossary/ai-overviews.html): Google検索結果の上部にAIが生成する要約表示機能。旧称SGE。
