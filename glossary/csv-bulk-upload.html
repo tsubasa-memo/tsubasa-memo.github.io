@@ -212,7 +212,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>楽天市場の場合、RMS（楽天の管理画面）からCSVテンプレートをダウンロードして、商品名・価格・<a href="sku.html">SKU</a>ごとの在庫数などを入力してアップロードする。ただしCSV一括登録は有料オプションで、月額11,000円（税込）かかる。<a href="https://next-engine.net/ec-blog/rakuten-rms-csv-registration/" rel="noopener noreferrer" target="_blank">ネクストエンジンの楽天RMS解説</a>に料金の詳細が載っていた。</p>
 <h3>商品画像の一括紐づけ</h3>
 <p>CSVファイル自体に画像データを入れることはできない。画像ファイルは別途アップロードしておいて、CSVには画像のファイル名やURLを記入して紐づける仕組みだ。楽天の場合はR-Cabinet（画像管理サービス）に画像をまとめてアップしてから、CSVで画像ファイル名を指定する。</p>
-<p>この「画像を先にアップ → CSVで紐づけ」という2段階の流れを最初知らなくて、CSVだけアップしても画像が表示されなくて焦った。商品画像のルールについては<a href="/ec-image-rules.html">ECサイト商品画像ルールまとめ</a>も参照してほしい。</p>
+<p>この「画像を先にアップ → CSVで紐づけ」という2段階の流れを最初知らなくて、CSVだけアップしても画像が表示されなくて焦った。商品画像のルールについては<a href="/ec-image-rules.html">Amazon・楽天・メルカリ 商品画像ルールの違い｜比較表【2026年版】</a>も参照してほしい。</p>
 <h3>価格・在庫の一括変更</h3>
 <p>セール前に100商品のうち50商品だけ価格を変えたい、というときもCSVが便利。対象商品のデータをCSVでダウンロードして、価格の列だけ書き換えてアップロードすればいい。<a href="https://finner.co.jp/media/ec20230306a/" rel="noopener noreferrer" target="_blank">FinnerのCSV一括編集解説</a>では、楽天のSKUプロジェクト以降のCSVフォーマットの変更点が詳しく解説されていた。</p>
 <h2>覚えておきたいポイント</h2>
