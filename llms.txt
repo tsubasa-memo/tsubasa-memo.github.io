@@ -486,6 +486,8 @@
 - [EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法](https://tsubasa-memo.github.io/review-feedback-sasage.html): 競合のクチコミ・Q&AをAIで分析し、FAQ改善とささげ改善（撮影・採寸・原稿）に仕分けて購入率と返品率を改善する方法をプロンプト付きで解説した記事
 - [ささげ代行会社を選ぶ前にチェックすべき5つの条件｜与信・取引実績・体制の確認ポイント](https://tsubasa-memo.github.io/sasage-outsource-checklist.html): ささげ代行会社を選ぶ前に確認する5つのチェック項目。14社の資本金開示状況、取引先の実名公開4社、上場企業グループの資本関係5社を公開情報で整理。
 
+- [Amazon出品担当者向け｜検索対象外になった商品の画像修正と確認手順](https://tsubasa-memo.github.io/amazon-search-suppressed-image.html): Amazonの検索対象外を画像の指摘から確認し、白背景・85%ルールとPhotoshopでの修正、登録後の確認を解説した記事。
+
 ### 副業・キャリア
 
 - [副業マッチングサービス比較｜主要14社の特徴と使い分け【2026年版】](https://tsubasa-memo.github.io/side-job-matching-comparison.html): 複業クラウド・lotsful・SOKUDAN・ITプロパートナーズ・カイコクなど主要14社を対象職種・稼働形態・向き不向きで比較。クラウドソーシングとの違いや選び方の指針も整理した記事
