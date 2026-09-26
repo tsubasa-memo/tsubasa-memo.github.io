@@ -508,7 +508,7 @@
   - Q: noteでAmazon アソシエイトは使えますか？
   - Q: GitHub Pagesでブログを作るのに技術的な知識は必要ですか？
   - Q: noteからGitHub Pagesに移行するのは難しいですか？
-- [個人ブログにGoogle AdSenseを申請してみた｜審査から承認までの記録](https://tsubasa-memo.github.io/adsense-application.html): AdSense申請の準備・審査中にやったこと・承認後の広告コード設置まで手順をまとめた記事
+- [個人ブログにGoogle AdSenseを申請してみた｜審査前の準備と申請手順](https://tsubasa-memo.github.io/adsense-application.html): AdSense申請の準備・申請の手順・審査中にやったことをまとめた記事（2026年9月時点で審査は未通過）
   - Q: AdSenseの審査に通るために必要な記事数は？
   - Q: AdSense審査の期間はどれくらいかかりますか？
   - Q: AdSense審査に必要なページはありますか？
