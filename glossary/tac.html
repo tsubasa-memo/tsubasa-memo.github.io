@@ -92,7 +92,7 @@
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-07-30T00:00:00+09:00",
-  "dateModified": "2026-07-30T00:00:00+09:00",
+  "dateModified": "2026-10-02T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -196,7 +196,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h1 class="article-title">総インキ量（TAC）とは？<br/>印刷トラブルを防ぐ基礎知識</h1>
 <div class="article-meta-line">
-<span>2026年7月30日</span>
+<span>公開: 2026年7月30日</span>
+<span>更新: 2026年10月2日</span>
 </div>
 
 <h2>総インキ量（TAC）とは</h2>
@@ -254,11 +255,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </span>
 </a>
 
-<h2>覚えておきたいポイント</h2>
-<p>総インキ量で押さえておくべき点は3つ。</p>
-<p>1つ目は、上限値は印刷会社と用紙の組み合わせで決まるということ。ネットで見かける数字を暗記するより、入稿先の入稿ガイドに記載された数字を都度確認するのが正解だ。</p>
-<p>2つ目は、Photoshopのプロファイル設定が総インキ量に影響するということ。現在は「Japan Color 2011 Coated」がコート紙向けの標準プロファイルとして使われることが多いが、印刷会社によっては「Japan Color 2001 Coated」を指定している場合もある。マット紙や上質紙向けには「Uncoated」系のプロファイルを選ぶと総インキ量が低めに抑えられる。ただし、TAC値を下げるためだけにプロファイルを切り替えると色が変わるリスクがあるため、印刷仕様の確認は制作の最初にやっておいたほうがいい。</p>
-<p>3つ目は、<a href="rich-black.html">リッチブラック</a>（CMYK4色を掛け合わせて作る黒）が総インキ量を押し上げやすいこと。印刷会社の推奨比率で作ったリッチブラックなら合計200〜250%程度に収まるが、C100% M100% Y100% K100%の4色ベタは400%になり、ほぼすべての印刷条件で上限を超える。推奨される配合比率や、文字に使うと版ズレでにじむ理由は用語集のページに書いた。</p>
+<h2 id="ink-check">出力プロファイルから総インキ量を確認する手順</h2>
+<p>商品写真を印刷へ回すなら、出力プロファイル、入稿先のTAC上限、変換後の数値をひと続きで確認する。以下は操作の考え方を示す計算例で、実機画面や実際の入稿データではない。</p>
+<ol>
+<li><strong>出力プロファイルを確認する。</strong>RGBの元画像を残し、印刷会社が指定するCMYKプロファイルを確認する。Photoshopの「編集／プロファイル変換」で変換先を選ぶ。「プロファイルの指定」は値を変換する操作とは別なので、混同しない。</li>
+<li><strong>用紙と印刷条件に対応する上限を確認する。</strong>同じ印刷会社でも商品・用紙で条件が違う。例では「指定プロファイルで変換し、総インキ量300%以下で入稿」という仮定の条件を使う。300%はすべての印刷に共通する上限ではない。</li>
+<li><strong>変換後の暗部の値を確認する。</strong>Photoshopの情報パネルでCMYK各色と合計を確認する。下の仮定ではC80＋M75＋Y70＋K90＝315%。指定上限300%を15ポイント超えているので、入稿先へ調整方法を確認する。</li>
+<li><strong>最終PDFでも確認する。</strong>Acrobat Proの出力プレビューで指定する出力条件を確認し、インキ総量の警告に上限を入力して超過領域を見る。画像の一点だけでなく、配置した画像・背景などを含む最終データを確認する。調整後も同じ条件で再確認する。</li>
+</ol>
+<div class="table-wrap" tabindex="0" role="region" aria-label="総インキ量の計算例（仮定。測定結果ではありません）"><table class="spec-table" style="min-width:500px"><caption>総インキ量の計算例（仮定。測定結果ではありません）</caption><thead><tr><th scope="col">C</th><th scope="col">M</th><th scope="col">Y</th><th scope="col">K</th><th scope="col">合計</th><th scope="col">上限300%以下という仮定での判定</th></tr></thead><tbody><tr><td>80%</td><td>75%</td><td>70%</td><td>90%</td><td>315%</td><td>15ポイント超過。調整を相談</td></tr><tr><td>60%</td><td>50%</td><td>50%</td><td>100%</td><td>260%</td><td>上限内。ただし色や他の入稿条件は別確認</td></tr></tbody></table></div><p>260%の行は合計の計算例で、315%の色を同じ見た目のまま変換した結果ではない。各色を15ポイント分だけ機械的に引くと色が変わるので、数値だけで配合を決めない。</p>
+<p>手順の根拠：<a href="https://helpx.adobe.com/jp/photoshop/desktop/adjust-color/color-profiles/change-color-profile-for-documents.html" rel="noopener noreferrer" target="_blank">Adobe：プロファイルの指定と変換</a>、<a href="https://helpx.adobe.com/jp/photoshop/using/image-information.html" rel="noopener noreferrer" target="_blank">Adobe：情報パネル</a>、<a href="https://helpx.adobe.com/jp/acrobat/using/previewing-output-acrobat-pro.html" rel="noopener noreferrer" target="_blank">Adobe：出力プレビューとインキ総量の確認</a>。</p>
+<p>また、<a href="rich-black.html">リッチブラック</a>（CMYK4色を掛け合わせて作る黒）が総インキ量を押し上げやすいこと。印刷会社の推奨比率で作ったリッチブラックなら合計200〜250%程度に収まるが、C100% M100% Y100% K100%の4色ベタは400%になり、ほぼすべての印刷条件で上限を超える。推奨される配合比率や、文字に使うと版ズレでにじむ理由は用語集のページに書いた。</p>
 <a class="cite-card" href="https://www.theme3.net/tac-value/" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">外</span>
 <span class="cite-body">

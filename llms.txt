@@ -151,7 +151,7 @@
   - Q: 証明写真の加工はアプリでできますか？
   - Q: アプリで背景を消すことはできますか？
   - Q: 集合写真で目をつぶっている人を直すアプリはありますか？
-- [写真の加工しすぎはどこまでOK？SNS・マッチングアプリの許容範囲を調べた](https://tsubasa-memo.github.io/sns-photo-retouch-manners.html): 写真の加工しすぎの線引きを、マッチングアプリの「写真詐欺」調査データ（消費者庁・MMD研究所）と補正・変形の違いから整理。用途別の判断基準とBeRealが広まった背景をまとめた記事
+- [写真の加工しすぎはどこまでOK？SNS・マッチングアプリの許容範囲を調べた](https://tsubasa-memo.github.io/sns-photo-retouch-manners.html): SNS・婚活・応募などの用途と加工種類ごとの確認表、補正と変形の具体例、次に読む記事を整理。MMD研究所の調査を参照。
   - Q: SNSに投稿する写真の加工はどこまでが許容範囲ですか？
   - Q: マッチングアプリの写真詐欺とは何ですか？
   - Q: 過度な加工写真でどんなトラブルが起きますか？
@@ -480,7 +480,7 @@
 - [Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる](https://tsubasa-memo.github.io/google-io-2026-ec.html): Google I/O 2026で発表されたEC関連の変更をEC担当者向けに整理。AI Modeでの対話型商品検索、Universal Cart、エージェント型コマース（AP2）で買い物体験がどう変わるか。Merchant Centerフィードの見直しポイント、会話属性との関係、Product schemaの過信に注意すべき理由も解説。
 - [AI×ECの勝者はGoogleなのか？　ChatGPTの後退で考えた今後のEC戦略](https://tsubasa-memo.github.io/chatgpt-retreat-ec-product-data.html): ChatGPTのInstant Checkoutが事実上の縮小に至った経緯と、GoogleがAI Mode・Shopping Graph・会話属性で加速するショッピング戦略を対比。中小EC担当者が新しい販売チャネルに飛びつかず、どのAIからも拾われる商品データの土台（フィード・構造化データ・画像品質）を整えるべき理由と優先順位を整理。
 - [ささげ代行の起源は？　ささげ会社の資本金・設立年数・従業員数から分かること](https://tsubasa-memo.github.io/sasage-company-check.html): ささげ代行19社の設立年・資本金・従業員数・取引先の公開状況を一覧比較し、AI検索が推薦した4社のうち2社が古い情報だった実例と法人取引で確認すべき6つのチェックポイントを整理した記事
-- [Amazon FBA・楽天・ZOZOの手数料と送料を商品別に比較した【2026年版】](https://tsubasa-memo.github.io/ec-apparel-shipping-cost.html): Tシャツ・スニーカー・バッグ・コートの4商品で自社EC・Amazon FBA・楽天・ZOZOTOWNの配送料・販売手数料・返品コストを比較。チャネル別の利益構造と役割の違いを整理。
+- [Amazon FBA・楽天・ZOZOの手数料と送料を商品別に比較した【2026年版】](https://tsubasa-memo.github.io/ec-apparel-shipping-cost.html): 梱包寸法・重量と自社契約の費用を揃えて送料・手数料・返品時の概算手残りを試算。4商品の仮定入力例と計算機を掲載。
 - [生成AIの信頼度がクチコミを超えた？｜EC担当者が知るべき購買行動の変化【2026年調査まとめ】](https://tsubasa-memo.github.io/ai-ec-consumer-behavior-2026.html): 博報堂・PLAN-B・PRIZMA・日経クロストレンド等の調査を横断し、AIが消費者の購買行動をどう変えているか、EC担当者が商品データの精度向上から始めるべき理由を整理。
 - [アパレルEC担当者がAIチャットボット導入を検討してみた話｜規模・料金・公開事例をチェック](https://tsubasa-memo.github.io/ai-chatbot.html): AIチャットボットの料金相場・公開導入事例・自動化できる問い合わせの見分け方をEC担当者目線で整理した記事
 - [EC担当者のAI活用術　競合をAIに分析させて購入率を上げる方法](https://tsubasa-memo.github.io/review-feedback-sasage.html): 競合のクチコミ・Q&AをAIで分析し、FAQ改善とささげ改善（撮影・採寸・原稿）に仕分けて購入率と返品率を改善する方法をプロンプト付きで解説した記事
