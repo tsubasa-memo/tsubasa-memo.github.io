@@ -570,6 +570,8 @@
   - Q: クラウドソーシングの案件はAIの影響で減っていますか？
   - Q: ココナラのサービスページにもLLMOの考え方は当てはまりますか？
 
+- [pages.devとは?GitHub Pagesとの違いとAIでの作り方](https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html): Cloudflare Pagesの無料枠、GitHub Pagesとの違い、Genspark Buildと独自ドメイン移転を公式資料で確認した記事
+
 ### SEO・LLMO
 
 - [GoogleがAI回答への貢献に報酬｜僕のサイトのAI引用と検索流入から考える](https://tsubasa-memo.github.io/google-ai-contribution-pilot.html): GoogleのAI貢献報酬を、自サイトのAI引用・検索流入とAdSense審査未通過・収益ゼロの現状から考える記事

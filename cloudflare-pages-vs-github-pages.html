@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>pages.devとは?GitHub Pagesとの違いとAIでの作り方｜ツバサのメモ帳</title>
+<meta name="description" content="pages.devはCloudflare Pagesのサブドメインで、Genspark専用ではありません。GitHub Pagesとの違い、無料枠と実例、Genspark Buildの作り方・費用、SEOと独自ドメイン移転を公式資料で確認しました。">
+<meta property="og:title" content="pages.devとは?GitHub Pagesとの違いとAIでの作り方">
+<meta property="og:description" content="pages.devはCloudflare Pagesのサブドメインで、Genspark専用ではありません。GitHub Pagesとの違い、無料枠と実例、Genspark Buildの作り方・費用、SEOと独自ドメイン移転を公式資料で確認しました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/cloudflare-pages-vs-github-pages.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/cloudflare-pages-vs-github-pages.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "pages.devはGenspark専用のドメインですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。Cloudflare Pagesで公開したプロジェクトに付くサブドメインです。Git連携やDirect Uploadでも使えるため、URLだけでは制作ツールを特定できません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "pages.devのサイトは無料で公開できますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cloudflare PagesにはFreeプランがあり、静的ファイルへのリクエストは無料・無制限です。ビルドやファイルサイズには上限があり、Pages FunctionsはWorkersの利用枠に含まれます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GitHub PagesとCloudflare Pagesはどちらを選べばよいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GitHub上でファイルと履歴を管理するならGitHub Pages、作成済みのファイルを直接アップロードしたいならCloudflare Pagesが候補です。利用目的・無料枠・必要な機能を比較してください。Cloudflareは新規プロジェクトにWorkersを推奨しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Genspark Buildなら作成から公開まで無料ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公式案内では試用とプレビューは無料ですが、継続的な生成とBuild itでの公開はPlus・Proプランの機能です。Cloudflare Pagesの静的配信の無料枠とは別の条件です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "独自ドメインへ移すとSEOの評価はゼロになりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ゼロになるとは限りません。Googleはサーバー側のリダイレクトでPageRankが失われることはないと説明しています。ただし移転中は順位が一時的に変動する場合があり、恒久リダイレクト・canonical・内部リンク・サイトマップの更新が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "社内確認用ならpages.devに機密情報を置いても大丈夫ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "社内だけで使う予定でも、公開URLにアクセス制限があるとは限りません。機密情報を置く場合は認証・アクセス制御を設定し、実際の公開範囲を確認してください。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "pages.devとは?GitHub Pagesとの違いとAIでの作り方",
+  "description": "pages.devはCloudflare Pagesのサブドメインで、Genspark専用ではありません。GitHub Pagesとの違い、無料枠と実例、Genspark Buildの作り方・費用、SEOと独自ドメイン移転を公式資料で確認しました。",
+  "url": "https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html",
+  "image": "https://tsubasa-memo.github.io/og/cloudflare-pages-vs-github-pages.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-10-02T00:00:00+00:00",
+  "dateModified": "2026-10-02T00:00:00+00:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "副業・キャリア",
+      "item": "https://tsubasa-memo.github.io/archive.html#career"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "pages.devとは?GitHub Pagesとの違いとAIでの作り方",
+      "item": "https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html"
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">ホーム</a> ＞ <a href="archive.html#career">副業・キャリア</a> ＞ pages.devとは?</nav>
+<div class="article-hero"><img src="/thumbs/cloudflare-pages-vs-github-pages.webp" alt="雨の夜、窓辺の作業机でサイト制作に取り組む個人制作者のイメージ" width="640" height="360" loading="eager"></div>
+<span class="article-tag">副業・キャリア</span><h1 class="article-title">pages.devとは?GitHub Pagesとの違いとAIでの作り方</h1>
+<div class="article-meta-line"><span>公開: 2026年10月2日</span><span>更新: 2026年10月2日</span></div>
+<p>こんにちは、ツバサです。</p>
+<p><strong>pages.devはCloudflare Pagesで公開したサイトに付くサブドメインで、Genspark専用ではありません。</strong>AIでサイトを作る機能と、そのファイルをインターネットに公開するサービスは分けて考えると整理しやすくなります。</p>
+<p>このブログはGitHub Pagesで公開しています。今回は、同じようにHTMLを公開できるCloudflare Pagesとの違い、pages.devで見られる実例、Genspark Buildの作り方と費用、独自ドメインへの移転を調べました。無料で置けることと、AIで無料で作り続けられることは別の条件です。</p>
+<div class="point-box"><p><strong>この記事でわかること</strong></p><ul><li>pages.devの運営元とGitHub Pagesとの違い</li><li>公開サイトの実例とGenspark Buildの公式案内</li><li>無料枠・公開範囲・独自ドメイン移転の確認点</li></ul></div>
+<div class="toc"><p class="toc-title">目次</p><ol><li><a href="#sec1">pages.devはCloudflare Pagesのサブドメイン</a></li><li><a href="#sec2">GitHub PagesとCloudflare Pagesの違い</a></li><li><a href="#sec3">pages.devの実例と制作ツールの見分け方</a></li><li><a href="#sec4">Genspark BuildでAIサイトを作る流れと費用</a></li><li><a href="#sec5">pages.devのSEOと独自ドメインへの移転</a></li><li><a href="#sec6">FAQ</a></li><li><a href="#sec7">関連する記事</a></li></ol></div>
+<h2 id="sec1">pages.devはCloudflare Pagesのサブドメイン</h2>
+<p>Cloudflare Pagesは、HTML・CSS・JavaScriptなどを公開するためのCloudflareのサービスです。プロジェクトを公開すると、通常は「プロジェクト名.pages.dev」というURLが割り当てられます。Gensparkのアカウントがなくても、Cloudflareから直接利用できます。</p>
+<p>Cloudflareの<a href="https://blog.cloudflare.com/cloudflare-pages-ga/" target="_blank" rel="noopener noreferrer">正式提供開始の発表</a>は2021年4月です。その発表には2020年12月のベータ公開も記載されています。昔のイベント名を持つサイトがpages.devにあっても、イベントの開催年にそのURLで公開されたことまでは示しません。</p>
+<p>公開方法にはGit連携と、作成済みのファイルをアップロードするDirect Uploadがあります。<a href="https://developers.cloudflare.com/pages/get-started/direct-upload/" target="_blank" rel="noopener noreferrer">Direct Uploadの公式手順</a>では、管理画面からのドラッグ＆ドロップとWranglerというコマンドラインツールが案内されています。AIで作ったHTMLも、公開に必要なファイルを揃えれば同じ仕組みで配信できます。</p>
+<div class="note-box"><p><strong>2026年10月2日時点の補足：</strong><a href="https://developers.cloudflare.com/pages/" target="_blank" rel="noopener noreferrer">Cloudflareの現行公式ドキュメント</a>は、新規プロジェクトにはWorkersを使うよう推奨しています。WorkersはPagesの多くの用途を扱い、より広い機能を備えるという説明です。Pagesの利用手順も引き続き掲載されており、これをPagesの終了告知と読むことはできません。これから公開先を選ぶ場合はWorkersも比較候補になります。</p></div>
+<h2 id="sec2">GitHub PagesとCloudflare Pagesの違い</h2>
+<p>記事やポートフォリオのような静的サイトなら、どちらも候補になります。GitHub上でファイルと変更履歴を管理したいか、Gitを使わず作成済みのファイルをアップロードしたいかで、最初の選択が変わります。</p>
+<div class="table-wrap"><table class="compare-table"><thead><tr><th scope="col">比較項目</th><th scope="col">GitHub Pages</th><th scope="col">Cloudflare Pages</th></tr></thead><tbody>
+<tr><td>標準のURL</td><td>ユーザー・組織サイトは名前.github.io。プロジェクトサイトはその配下</td><td>プロジェクト名.pages.dev</td></tr>
+<tr><td>無料で使う条件</td><td>GitHub Freeでは公開リポジトリ。非公開リポジトリからの利用は対応する有料プラン</td><td>Freeプランあり。静的ファイルへのリクエストは無料・無制限</td></tr>
+<tr><td>更新方法</td><td>リポジトリのブランチやGitHub Actionsから公開</td><td>Git連携、Direct Uploadなど</td></tr>
+<tr><td>HTTPS・独自ドメイン</td><td>対応</td><td>対応</td></tr>
+<tr><td>サーバー側の処理</td><td>PHPなどのサーバー側コードは実行できない</td><td>Pages Functionsを利用できる。静的配信とは別の利用枠</td></tr>
+<tr><td>利用目的</td><td>ECや商用SaaSなどを主目的とする無料ホスティングには利用制限がある</td><td>サービスの利用規約・禁止用途を確認する</td></tr>
+</tbody></table></div>
+<p>GitHub側の条件は<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noopener noreferrer">GitHub Pagesの公式概要</a>、Cloudflare側の静的配信とFunctionsの扱いは<a href="https://developers.cloudflare.com/pages/functions/pricing/" target="_blank" rel="noopener noreferrer">Pagesの公式料金説明</a>で確認できます。問い合わせ送信やログインなどを付ける場合は、HTMLの見た目だけでなく処理先も確認する必要があります。</p>
+<p>無料枠にも上限があります。<a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noopener noreferrer">Cloudflare Pagesの制限</a>ではFreeプランのビルドは月500回、1ファイルは最大25 MiBです。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits" target="_blank" rel="noopener noreferrer">GitHub Pagesの制限</a>では公開サイトは最大1 GB、帯域は月100 GBのソフト上限です。どちらも「無料だから、あらゆる処理や容量が無制限」という意味ではありません。</p>
+<p>GitHubの<a href="https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#pages" target="_blank" rel="noopener noreferrer">Pagesの利用規約</a>は、オンラインビジネス・EC・商取引の仲介・商用SaaSを主目的とする利用を想定も許可もしていないと説明しています。Cloudflareについても、無料プランという理由だけで用途を決めず、<a href="https://www.cloudflare.com/terms/" target="_blank" rel="noopener noreferrer nofollow">利用規約</a>と使う機能の条件を確認するのがよさそうです。</p>
+<p>表示速度の優劣は、この記事では断定しません。同じページを同じ条件で測った比較データがないためです。画像の容量やJavaScriptの量も読み込みに関わるので、公開先の名前だけで「こちらが速い」と選ぶ根拠にはできません。</p>
+<h2 id="sec3">pages.devの実例と制作ツールの見分け方</h2>
+<p>実際の用途を知る例として、<a href="https://architect-bio.pages.dev/ja/" target="_blank" rel="noopener noreferrer">「からだ工務店 / architect-Bio」</a>があります。名前だけを見ると建設会社のようですが、<a href="https://architect-bio.pages.dev/ja/gaiyou/" target="_blank" rel="noopener noreferrer">サイトの概要ページ</a>では、生物の形態形成を扱う科研費研究領域「素材によって変わる、『体』の建築工法」のサイトと説明されています。pages.devは研究情報の発信にも使われています。</p>
+<p>ほかに、<a href="https://yukina.pages.dev/" target="_blank" rel="noopener noreferrer">「じゃぱり書庫」</a>では趣味・IT・ゲームなどのブログ記事を閲覧できます。pages.dev版のトップには2025年9月の記事が掲載され、AstroとYukinaの表示があります。ここでは、現在更新されている本サイトだとは断定せず、pages.devで閲覧できるブログの例として挙げています。</p>
+<p><a href="https://iclc2019.pages.dev/" target="_blank" rel="noopener noreferrer">ICLC2019のサイト</a>には、2019年の国際認知言語学会の開催情報と2020年の投稿が残っています。2026年10月2日にこのURLで内容を確認できましたが、当時からpages.devで公開されていたことは確認できません。</p>
+<p>ここで確認できるのは、各URLで掲載内容を閲覧できることまでです。URLだけでは、Gensparkで作ったか、別のツールで作ったかはわかりません。Cloudflare PagesはGit連携や直接アップロードにも対応するため、同じ末尾のURLでも制作経路は複数あります。</p>
+<p>AIで作ったサイトの例を探す場合は、公開URLに加え、制作者の説明やサービス公式の作例を確認する方が確実です。「pages.devだからGenspark製」「昔のイベント名だから昔からこのURLで稼働していた」と、URLや名前から制作履歴まで推測しないようにしたいです。</p>
+<h2 id="sec4">Genspark BuildでAIサイトを作る流れと費用</h2>
+<p><a href="https://www.genspark.ai/tools/ai-website-builder" target="_blank" rel="noopener noreferrer nofollow">Genspark Buildの公式案内</a>では、作りたいサイトをチャットで説明し、AIがHTML・CSS・JavaScriptを書いてプレビューし、修正を重ねて公開する流れを説明しています。ランディングページやポートフォリオなどを作る機能です。</p>
+<ol><li>作りたいサイトと必要な内容をチャットで説明する</li><li>生成されたコードのプレビューを確認する</li><li>チャットなどで修正を指示する</li><li>「Build it」でCloudflare Pagesへ公開する</li></ol>
+<p>これは公式案内に基づく流れで、僕が実際に操作した体験談ではありません。画面の名称や提供条件は変わることがあるので、利用時には現行の案内を確認してください。</p>
+<p><strong>試用とプレビューは無料ですが、継続的な生成とBuild itでの公開はPlus・Proプランの機能</strong>と案内されています。Cloudflare Pagesの静的配信が無料でも、Genspark側の生成・公開機能まで無制限に無料になるわけではありません。</p>
+<p>同じ公式案内には、独自ドメインを接続できること、プロジェクトをダウンロードして別の場所でホストできることも載っています。サイトを作るAI、ファイルを保管する場所、公開URLを分けて考えると、作成後の管理方法も選びやすくなります。</p>
+<h2 id="sec5">pages.devのSEOと独自ドメインへの移転</h2>
+<p>無料サブドメインだから必ず検索順位が低い、独自ドメインなら必ず上がる、とまでは言えません。この記事で確認した公式資料から、pages.devとgithub.ioのどちらがSEOで有利かを決めることもできません。</p>
+<p>長期で運営するサイトでは、ホスティング先を変えても同じURLを使い続けたいかが、独自ドメインを選ぶ理由になります。ドメインの取得・更新費用はホスティングの無料枠とは別です。短いデモや試作品なら標準URLで公開し、長く使うURLを先に決めたい場合は独自ドメインを検討する、という使い分けが考えられます。</p>
+<p>独自ドメインへ移すと「検索評価がゼロに戻る」という説明は正確ではありません。<a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" target="_blank" rel="noopener noreferrer">Googleのサイト移転ガイド</a>は、サーバー側のリダイレクトでPageRankが失われることはないと説明する一方、移転中は検索順位が一時的に変動する場合があると案内しています。</p>
+<p>移転時には、旧URLから対応する新URLへの恒久リダイレクト、canonical、内部リンク、サイトマップを揃えます。Cloudflareの<a href="https://developers.cloudflare.com/pages/configuration/custom-domains/" target="_blank" rel="noopener noreferrer">独自ドメイン設定</a>には、pages.devから独自ドメインへ転送する方法の案内もあります。ドメインを接続する作業と、検索エンジンに移転を伝える作業は別々に確認する必要があります。</p>
+<p>また、標準URLで公開するデモや社内確認用ページも、URLを知っていればアクセスできる状態になり得ます。「社内でしか使わないつもり」とアクセス制限は別です。機密情報を置く場合は、公開先に応じた認証・アクセス制御を設定して、実際の公開範囲を確認してください。</p>
+<p>pages.devはサイトの公開先を示すURLです。AIツールの名前、無料生成の保証、検索順位の保証までは表しません。ファイルの管理方法と利用条件を比べてから公開先を選ぶと、作る工程と運営する工程を混同せずに済みます。</p>
+<h2 id="sec6">FAQ</h2>
+<div class="faq-item"><p class="fq"><strong>Q. pages.devはGenspark専用のドメインですか?</strong></p><p class="fa">A. いいえ。Cloudflare Pagesで公開したプロジェクトに付くサブドメインです。Git連携やDirect Uploadでも使えるため、URLだけでは制作ツールを特定できません。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. pages.devのサイトは無料で公開できますか?</strong></p><p class="fa">A. Cloudflare PagesにはFreeプランがあり、静的ファイルへのリクエストは無料・無制限です。ビルドやファイルサイズには上限があり、Pages FunctionsはWorkersの利用枠に含まれます。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. GitHub PagesとCloudflare Pagesはどちらを選べばよいですか?</strong></p><p class="fa">A. GitHub上でファイルと履歴を管理するならGitHub Pages、作成済みのファイルを直接アップロードしたいならCloudflare Pagesが候補です。利用目的・無料枠・必要な機能を比較してください。Cloudflareは新規プロジェクトにWorkersを推奨しています。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. Genspark Buildなら作成から公開まで無料ですか?</strong></p><p class="fa">A. 公式案内では試用とプレビューは無料ですが、継続的な生成とBuild itでの公開はPlus・Proプランの機能です。Cloudflare Pagesの静的配信の無料枠とは別の条件です。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. 独自ドメインへ移すとSEOの評価はゼロになりますか?</strong></p><p class="fa">A. ゼロになるとは限りません。Googleはサーバー側のリダイレクトでPageRankが失われることはないと説明しています。ただし移転中は順位が一時的に変動する場合があり、恒久リダイレクト・canonical・内部リンク・サイトマップの更新が必要です。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. 社内確認用ならpages.devに機密情報を置いても大丈夫ですか?</strong></p><p class="fa">A. 社内だけで使う予定でも、公開URLにアクセス制限があるとは限りません。機密情報を置く場合は認証・アクセス制御を設定し、実際の公開範囲を確認してください。</p></div>
+<h2 class="related-title" id="sec7">関連する記事</h2>
+<a class="cite-card" href="github-pages-vs-note.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</span><span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span></span></a>
+<a class="cite-card" href="blog-platform-comparison.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span><span class="cite-url">tsubasa-memo.github.io/blog-platform-comparison.html</span></span></a>
+<a class="cite-card" href="ai-blog-building.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</span><span class="cite-url">tsubasa-memo.github.io/ai-blog-building.html</span></span></a>
+<a class="cite-card" href="static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜更新が大変と言われるけどAIで解決した</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a>
+<a class="cite-card" href="google-index-not-found.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">URLがGoogleに登録されていません｜原因と対処法・登録リクエスト手順</span><span class="cite-url">tsubasa-memo.github.io/google-index-not-found.html</span></span></a>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<nav class="toc-sidebar"><p class="toc-title">目次</p><ol><li><a href="#sec1">pages.devはCloudflare Pagesのサブドメイン</a></li><li><a href="#sec2">GitHub PagesとCloudflare Pagesの違い</a></li><li><a href="#sec3">pages.devの実例と制作ツールの見分け方</a></li><li><a href="#sec4">Genspark BuildでAIサイトを作る流れと費用</a></li><li><a href="#sec5">pages.devのSEOと独自ドメインへの移転</a></li><li><a href="#sec6">FAQ</a></li><li><a href="#sec7">関連する記事</a></li></ol></nav>
+
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div>
+
+<footer><div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div></footer>
+
+</body>
+</html>
