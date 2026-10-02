@@ -676,6 +676,8 @@
 - [退職代行のおすすめ検索を調べた｜検索結果とAI回答に出てくるグレーな比較記事](https://tsubasa-memo.github.io/taishoku-daikou-google-search.html): 「退職代行 おすすめ」の検索結果とAI回答を検証。弁護士名非公開の「弁護士監修」・名ばかり組合・モームリ社長逮捕を踏まえた比較記事の見分け方を解説した記事
 
 
+- [PR TIMES掲載のプレスリリースに個人ブログが引用された｜被リンクと検索流入の記録](https://tsubasa-memo.github.io/press-release-citation.html): PR TIMES掲載のNoLangプレスリリースに料金比較記事が引用された実例。前後各28日の検索クリック66→72回と、被リンク指標の読み方を記録。
+
 ## 用語集
 
 仕事とブログ運営で出てきた用語のメモ集。109語を五十音別に4ページ（0-z.html / a-ka.html / sa-ta.html / ha-wa.html）に整理。
