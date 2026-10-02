@@ -68,7 +68,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "How do I remove EXIF data on Android?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "On Android using Google Photos, open a photo, tap the three-dot menu, select 'Edit location' and then 'No location.' To stop recording GPS in new photos, open Camera settings and turn off 'Location tag' or 'GPS tag.' The exact menu name varies by manufacturer. For bulk removal, free apps like Scrambled Exif or browser-based tools work without uploading your files to any server."
+        "text": "Google Photos can remove estimated locations and locations you added manually, but it cannot remove GPS locations recorded by the camera. To remove GPS data from the photo file, use a metadata editor on a copy and check the resulting file before sharing it. To stop recording GPS in new photos, turn off the camera app's location tag or GPS tag setting; the name varies by manufacturer."
       }
     },
     {
@@ -105,7 +105,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "headline": "How to Check & Remove EXIF Location Data from Photos",
   "description": "Your photos contain hidden GPS coordinates and device info as EXIF metadata. Learn how to check and remove EXIF data on iPhone, Android, Windows, and Mac.",
   "datePublished": "2026-05-15",
-  "dateModified": "2026-05-15",
+  "dateModified": "2026-10-02T00:00:00+09:00",
   "author": {
     "@type": "Person",
     "name": "Tsubasa"
@@ -209,7 +209,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h1 class="article-title">How to Check & Remove EXIF Location Data from Photos</h1>
 <div class="article-meta-line">
-<span>May 2026</span>
+<span>May 2026</span><span>Updated: October 2, 2026</span>
 </div>
 
 <p>Every photo you take with a smartphone carries invisible data — your GPS coordinates, device model, and the exact time the shutter fired. This metadata, called EXIF, rides along silently inside the image file. Most people never see it, but anyone who receives the original file can extract it in seconds.</p>
@@ -313,7 +313,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>There are two approaches. For individual photos: open the image in Photos, swipe up to the info panel, tap "Adjust" next to the map, and remove the location. For sharing: when you tap the share button, tap "Options" at the top of the share sheet and toggle off "Location." This strips location data from the shared copy without modifying the original.</p>
 
 <h3>Android</h3>
-<p>In Google Photos, open the image, tap the three-dot menu, and select "Edit location" → "No location." For bulk removal, free apps like Scrambled Exif (open source) let you share photos through the app, which strips all metadata before passing the file along. No data is uploaded to any server.</p>
+<p>Google Photos can remove estimated locations and locations you added manually. <strong>It cannot remove GPS locations recorded by the camera.</strong> Hiding a location in a Google Photos share is different from removing EXIF data from the original file.</p>
+<p>Location edits in Google Photos do not remove the original location when a photo is downloaded and shared outside Google Photos, such as by email. Use a metadata editor on a copy, then check the resulting file before sharing it. See the <a href="https://support.google.com/photos/answer/6153599?hl=en&amp;co=GENIE.Platform%3DAndroid" rel="noopener" target="_blank">Google Photos Help</a> for the distinction between camera locations, estimated locations, and sharing settings.</p>
 
 <h3>Windows</h3>
 <p>Right-click the image, go to Properties → Details, and click "Remove Properties and Personal Information" at the bottom. You can choose to create a copy with all metadata removed or selectively remove specific fields from the original. This works natively without any additional software.</p>
@@ -376,7 +377,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <div class="faq-item">
 <p class="fq"><strong>Q. How do I remove EXIF data on Android?</strong></p>
-<p class="fa">A. On Android using Google Photos, open a photo, tap the three-dot menu, select "Edit location" and then "No location." To stop recording GPS in new photos, open Camera settings and turn off "Location tag" or "GPS tag." The exact menu name varies by manufacturer. For bulk removal, free apps like Scrambled Exif or browser-based tools work without uploading your files to any server.</p>
+<p class="fa">A. Google Photos can remove estimated locations and locations you added manually, but it cannot remove GPS locations recorded by the camera. To remove GPS data from the photo file, use a metadata editor on a copy and check the resulting file before sharing it. To stop recording GPS in new photos, turn off the camera app's location tag or GPS tag setting; the name varies by manufacturer.</p>
 </div>
 
 <div class="faq-item">
