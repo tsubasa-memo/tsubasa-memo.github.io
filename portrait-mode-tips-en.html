@@ -158,7 +158,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>Portrait mode does not blur the background optically like a dedicated camera lens does. Instead, it uses AI and depth sensors to create a depth map of the scene — figuring out what is the subject and what is the background — then applies blur digitally to everything it classifies as "background." When this process works well, the result looks close to real bokeh. When it fails, the failures are obvious.</p>
 
 <div class="warn-box">
-<h4>Common Portrait Mode Failures</h4>
+<p class="box-title">Common Portrait Mode Failures</p>
 <p><strong>Jagged edges around hair</strong> — Curly hair, flyaway strands, and fine textures are the hardest thing for the AI to classify. Individual hairs cross the boundary between "subject" and "background" and the AI cannot resolve them cleanly. The result is a rough, cut-out look around the head.</p>
 <p><strong>Foreground objects get blurred</strong> — If something is in front of the subject (a table, a railing, a drink they are holding), the AI sometimes misclassifies it as background and blurs it. This is especially common when the foreground object is not clearly connected to the subject.</p>
 <p><strong>Background is too close</strong> — When the subject is standing right in front of a wall (less than 3 feet / 1 m behind them), the blur effect is weak and uneven. There is not enough depth separation for the AI to create a convincing gradient.</p>

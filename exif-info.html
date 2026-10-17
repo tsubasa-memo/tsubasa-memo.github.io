@@ -264,7 +264,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec7">LINEのKeepメモで位置情報を手軽に消す裏技</a></li>
 <li><a href="#sec8">EC業務でExifを意識すべきケース</a></li>
 <li><a href="#sec9">FAQ</a></li>
-<li><a href="#sec10">まとめ</a></li>
+<li><a href="#sec10">まとめ｜Exif位置情報の確認と削除</a></li>
 <li><a href="#sec11">関連する記事</a></li>
 </ol>
 </div>
@@ -286,7 +286,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2 id="sec2">Exif情報が残っていると何が危ないのか</h2>
 <p>Exif情報のうちカメラの機種名や撮影設定は、知られたところで直接的な被害にはつながりにくいです。注意すべきは主にGPS位置情報で、以下のようなリスクがあります。</p>
 <div class="warn-box">
-<h4>Exifの位置情報で起こりうるリスク</h4>
+<p class="box-title">Exifの位置情報で起こりうるリスク</p>
 <p><strong>自宅の住所が特定される</strong>：自宅で撮った写真をExif付きで公開すると、GPS座標から住所が割り出される可能性があります。</p>
 <p><strong>行動パターンがわかる</strong>：複数の写真の位置情報を組み合わせると、通勤経路や生活圏が推測できてしまいます。</p>
 <p><strong>子どもの安全への影響</strong>：子どもの写真に自宅や学校の位置情報が残っていると、生活範囲が第三者に知られるリスクがあります。</p>
@@ -306,7 +306,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <tr><td>Googleフォト</td><td>残る（共有時注意）</td><td>リンク共有時にExifが残る場合がある</td></tr>
 </table>
 <div class="point-box">
-<h4>ポイント</h4>
+<p class="box-title">ポイント</p>
 <p>X、Instagram、Facebook、LINEのいわゆる「4大SNS」はすべてExif自動削除に対応しています。個人ブログ（WordPress等）やクラウドストレージ経由での写真共有が要注意です。</p>
 </div>
 <h2 id="sec4">Exif情報の確認方法</h2>
@@ -408,7 +408,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </p>
 </div>
 </div>
-<h2 id="sec10">まとめ</h2>
+<h2 id="sec10">まとめ｜Exif位置情報の確認と削除</h2>
 <p>Exif情報は写真の撮影データを自動で記録してくれる便利な仕組みですが、GPS位置情報が含まれる場合はプライバシーリスクになり得ます。</p>
 <p>ただ、X・Instagram・Facebook・LINEなどの主要SNSは投稿時にExifを自動削除してくれるので、日常のSNS利用ではそこまで神経質になる必要はありません。</p>
 <p>注意が必要なのは、個人ブログ（WordPress等）やメール添付、クラウドストレージでの共有など、Exifが削除されずに残るケースです。こうした場面では、デバイスの標準機能やアプリを使って事前にExifを削除しておくか、そもそもカメラの位置情報記録をオフにしておくと安心です。</p>

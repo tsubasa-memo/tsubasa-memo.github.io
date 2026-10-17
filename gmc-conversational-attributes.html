@@ -223,7 +223,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec5">商品マスタからAIで会話属性をまとめて作る流れ</a></li>
 <li><a href="#sec6">AIで会話属性を作るとき生成AIの開示は必要か</a></li>
 <li><a href="#sec7">会話属性の登録を全部AI任せにして大丈夫か</a></li>
-<li><a href="#sec8">よくある質問</a></li>
+<li><a href="#sec8">FAQ</a></li>
 <li><a href="#sec9">まとめ：手を動かす前にやる順番</a></li>
 <li><a href="#sec10">関連する記事</a></li>
 </ol>
@@ -250,7 +250,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>一方、楽天・Amazon・Yahoo!ショッピングといったモールにだけ出店していて、自社ではMerchant Centerを触っていない場合は、注意が必要です。たとえば楽天の商品は、楽天自身がGoogleショッピングへ送る経路を持っていますが、<a href="https://co2-color.com/2018/07/26/rakuten-google-shopping/" target="_blank" rel="noopener nofollow">楽天市場に掲載されている商品がすべてGoogleショッピングに載るわけではなく、一定の条件を満たす必要があります</a>。そしてこのとき商品データをGoogleに渡しているのは楽天であって、出店者ではありません。出店者が触れるのはRMSなどモール側の管理画面で、Merchant Centerの属性を直接編集する経路ではないため、出店者が自分で会話属性を足す場所が基本的にありません。</p>
 <p>つまり、会話属性を自分でやれるのは「自分のMerchant Centerを運用している事業者」です。モール専業で自社のMerchant Centerを持っていないなら、会話属性を入れる場所自体がなく、モール経由のデータに会話属性が含まれるかどうかはモール側の対応に委ねられます。Amazonなど他モールも、出店者が属性をどこまで触れるかはそれぞれの仕様次第です。まずは「自分はMerchant Centerに商品を送っているか」を確認するのが出発点になります。</p>
 <div class="point-box">
-<h4>ポイント</h4>
+<p class="box-title">ポイント</p>
 <p>会話属性は自分のMerchant Centerアカウントに商品データを送っている事業者が対象です。自社ECでMerchant Centerを運用していればやれます。モールだけに出店していて自社のMerchant Centerを持っていない場合は、登録する場所自体がないことが多いです。</p>
 </div>
 
@@ -259,7 +259,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>その根拠が、公式ヘルプの注記です。商品説明[description]、商品に関する情報[product_highlight]、商品の詳細[product_detail]にすでに具体的な情報を登録している場合は、会話属性に同じ内容を重ねて入れる必要はない、とはっきり書かれています。つまり、これまで商品説明を丁寧に書いてきた店は、その情報がそのままAI向けの材料になっているわけです。</p>
 <p>「新しい属性が増えた＝全部埋めなきゃ」と反応しがちですが、実際にやるべきは逆順です。まず自分の商品データで、説明文や商品詳細に何が書けているかを棚卸しする。そのうえで、既存の欄ではうまく伝わっていない情報だけを会話属性で足す。この順番で見ると、追加で手を動かす範囲はかなり絞れます。</p>
 <div class="point-box">
-<h4>ポイント</h4>
+<p class="box-title">ポイント</p>
 <p>会話属性は任意の補完項目です。商品説明や商品詳細にすでに書いてある内容なら、会話属性に重複登録しなくてよいと公式が明記しています。全部埋めるより先に、既存の商品データで何が伝わっているかを確認するのが近道です。</p>
 </div>
 
@@ -283,7 +283,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>たとえば質問と回答は「端子は付いているか→付いていない」のように、商品スペックを見れば答えが出ます。バリエーションオプションは、色・サイズ・容量という商品マスタにある情報を name:value の形に並べ替えるだけ。関連商品も、どの商品とセットで売れるか、どのパーツが対応するかが分かっていれば、あとはIDを所定の順で並べる作業です。</p>
 <p>つまり、ゼロから創作するのではなく、すでにある商品データを書式に合わせて変換する作業に近い。これは人間が1件ずつ手で打つより、AIに元データを渡してまとめて変換させるほうが向いている形です。商品数が多いほど、手入力との差は開きます。</p>
 <div class="point-box">
-<h4>ポイント</h4>
+<p class="box-title">ポイント</p>
 <p>会話属性の多くは「商品マスタにある情報を、決まった書式に並べ替える」作業です。新しく考える項目ではなく変換作業なので、商品データをまとめて渡してAIに書式変換させる、という発想に切り替えられます。</p>
 </div>
 
@@ -293,7 +293,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>登録する場所も具体的に書いておきます。<a href="https://support.google.com/merchants/answer/14990942" target="_blank" rel="noopener nofollow">Google公式ヘルプ</a>によると、商品データソースはMerchant Center左側のナビゲーションメニューにある設定アイコンの下の「データソース」タブで管理します。ここで補助データソースを新しく追加します。<a href="https://support.google.com/merchants/answer/15624457" target="_blank" rel="noopener nofollow">補助データソース</a>は、メインのデータソースの情報を強化したり上書きしたりするための追加のデータソースで、今のメインフィードはそのままに、会話属性だけを上乗せできます。</p>
 <p>具体的な手順としては、補助データソースに名前を付け、データの形式としてGoogleスプレッドシート・スケジュール設定された取得・アップロードの3つから選びます。非エンジニアならGoogleスプレッドシートが扱いやすいです。スプレッドシートに商品ID（id）の列と各会話属性の列を作って値を埋め、最後にこの補助データソースをどのメインデータソースに適用するかを選べば連携が完了します。</p>
 <div class="warn-box">
-<h4>管理画面のバージョンに注意</h4>
+<p class="box-title">管理画面のバージョンに注意</p>
 <p>2024年以降、Googleは「Merchant Center Next」という新しい管理画面を段階的に展開しています。アカウントによって補助データソースや属性ルールが使えるかどうかが違う場合があるので、まず自分のアカウントの「データソース」メニューで、補助データソースが利用できる状態かを確認してから進めるのが安全です。</p>
 </div>
 <p>全商品を一度にやる必要はありません。公式の補助データソースは差分を上乗せする仕組みなので、まず売れ筋や注力したい商品群だけでスモールスタートできます。効果を見ながら範囲を広げるほうが、いきなり全商品を相手にするより現実的です。</p>
@@ -304,7 +304,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>調べた範囲では、開示が必須とされているのは画像・タイトル・商品説明の3つです。<a href="https://support.google.com/merchants/answer/14743464" target="_blank" rel="noopener nofollow">Google公式ヘルプ（AI生成コンテンツ）</a>によると、生成AIで作ったタイトルは構造化されたタイトル[structured_title]、商品説明は構造化された商品説明[structured_description]という専用属性を使い、デジタルソースタイプ[digital_source_type]に「trainer_algorithmic_media」という値を入れて、AI製であることを示す必要があります。画像の場合はIPTCのメタデータで示します。</p>
 <p>一方で、会話属性（質問と回答など）をAIで作った場合の開示については、現時点の公式ヘルプに記載が見当たりませんでした。だからといって「会話属性はAIで作り放題」と言い切るのは早いと思います。生成AIまわりのルールは更新が続いている領域なので、ここは今後変わる可能性ありとして、僕は未確定の扱いにしています。</p>
 <div class="warn-box">
-<h4>AIで作るとき気をつけたいこと</h4>
+<p class="box-title">AIで作るとき気をつけたいこと</p>
 <p><strong>タイトルや商品説明までAIに作らせる場合</strong>：それぞれ構造化されたタイトル[structured_title]、構造化された商品説明[structured_description]を使い、AI製であることの開示が必須です。普通のタイトル・商品説明欄に入れるだけでは足りません。</p>
 <p><strong>会話属性をAIで作る場合</strong>：現時点では会話属性向けの開示ルールは公式ヘルプに見当たりませんでした。ただしルールが追加される可能性はあるので、最新のヘルプを確認しながら進めるのが安全です。</p>
 </div>
@@ -315,7 +315,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>人気度の順位も同じです。値そのものはAIが整形できますが、元になる売上ランキングのデータが間違っていれば、出てくる数字も間違います。AIは渡されたデータを書式に変換するのは得意でも、元データの正しさまでは保証してくれません。手間を減らす部分と、人が責任を持つ部分を分けて考えるのがよさそうです。</p>
 
 <div class="faq-section">
-<h2 id="sec8">よくある質問</h2>
+<h2 id="sec8">FAQ</h2>
 <div class="faq-item">
 <p class="fq"><strong>Q. 会話属性を登録すると、今ある商品の審査に影響しますか？</strong></p>
 <p class="fa">A. 影響しません。Google公式ヘルプは、会話属性を含めても既存商品の承認状況には影響しないと明記しています。会話属性はメインの商品データ仕様を補完する任意の項目なので、登録しても今の商品の表示が止まったり審査が厳しくなったりはしません。まず一部の商品だけ試す、という進め方ができます。
@@ -378,6 +378,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-body">
 <span class="cite-title">「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</span>
 <span class="cite-url">tsubasa-memo.github.io/comparison-article-credibility.html</span>
+</span>
+</a>
+<a class="cite-card" href="google-io-2026-ec.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">Google I/O 2026 EC関連まとめ｜買い物体験はこう変わる</span>
+<span class="cite-url">tsubasa-memo.github.io/google-io-2026-ec.html</span>
 </span>
 </a>
 </div>
