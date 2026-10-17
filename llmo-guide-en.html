@@ -96,7 +96,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-08-07T00:00:00+09:00",
-  "dateModified": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-10-17T00:00:00+09:00",
   "inLanguage": "en"
 }
 </script>
@@ -298,7 +298,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h3>Structured Data (JSON-LD)</h3>
 
-<p>Structured data helps AI understand your page content. FAQPage (frequently asked questions), Article (publication metadata), and Person (author information) schemas are particularly useful — they provide the building blocks AI needs to construct answers. Google's May 2026 guide states that structured data is not a ranking factor and not required for generative AI features. However, it does enable rich results (FAQ dropdowns, breadcrumbs, author info) in search, which improves click-through rates. Think of it as an indirect benefit rather than a direct ranking signal.</p>
+<p>Structured data helps AI understand your page content. FAQPage (frequently asked questions), Article (publication metadata), and Person (author information) schemas are particularly useful — they provide the building blocks AI needs to construct answers. Google's May 2026 guide states that structured data is not a ranking factor and not required for generative AI features. However, it does enable rich results (breadcrumbs, product information) in search, which improves click-through rates. (FAQ rich results were discontinued on May 7, 2026.) Think of it as an indirect benefit rather than a direct ranking signal.</p>
 
 <p>For implementation details, see "<a href="json-ld-guide-en.html">How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step</a>."</p>
 
@@ -312,7 +312,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h3>FAQ Content</h3>
 
-<p>AI generates "answers to questions," so FAQ-formatted content naturally aligns with how AI constructs responses. Adding FAQ sections to your pages and marking them up with FAQPage JSON-LD targets both Google's rich results and AI citations.</p>
+<p>AI generates "answers to questions," so FAQ-formatted content naturally aligns with how AI constructs responses. Adding FAQ sections to your pages and marking them up with FAQPage JSON-LD makes the question-and-answer pairs explicit for AI. (Google stopped showing FAQ rich results in May 2026.)</p>
 
 <h3>First-Party Data and Original Information</h3>
 
@@ -335,7 +335,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <ul>
 <li><strong>Check your current AI visibility.</strong> Enter your company's keywords into ChatGPT and Perplexity. See whether AI recognizes your business — or doesn't.</li>
 <li><strong>Implement structured data.</strong> Add FAQPage, Article, and BreadcrumbList JSON-LD to your site. WordPress users can handle this with free plugins like Yoast SEO or Rank Math.</li>
-<li><strong>Add FAQ sections.</strong> For each page or product listing, add Q&amp;A pairs addressing questions readers are likely to ask. This serves both rich results and AI citations.</li>
+<li><strong>Add FAQ sections.</strong> For each page or product listing, add Q&amp;A pairs addressing questions readers are likely to ask. This answers readers on the spot and makes the content easier for AI to cite.</li>
 <li><strong>Set up llms.txt (optional).</strong> Google says it's unnecessary, but it's useful for ChatGPT, Claude, and Perplexity at zero cost.</li>
 <li><strong>Verify with Google Search Console.</strong> Use the URL Inspection tool to confirm structured data is correctly recognized. The <a href="gsc-ai-report-en.html">generative AI performance report</a> also shows which of your pages AI search cites.</li>
 </ul>

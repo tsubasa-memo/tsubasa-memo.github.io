@@ -56,7 +56,7 @@ gtag('config', 'G-YYBFXHXMM6');
     {
       "@type": "Question",
       "name": "Does structured data help SEO?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (FAQ snippets, breadcrumbs, author information) in search improve click-through rates, so the indirect traffic benefit remains real." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (breadcrumbs, product information) in search improve click-through rates, so the indirect traffic benefit remains real. (Google stopped showing FAQ rich results on May 7, 2026.)" }
     },
     {
       "@type": "Question",
@@ -82,7 +82,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-08-07T00:00:00+09:00",
-  "dateModified": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-10-17T00:00:00+09:00",
   "inLanguage": "en"
 }
 </script>
@@ -191,7 +191,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>You embed it in the HTML &lt;head&gt; inside a &lt;script type="application/ld+json"&gt; tag. It has zero effect on how the page looks, so there's no risk of breaking your existing design.</p>
 
-<p>Google has officially stated that structured data itself is not a ranking factor. In the generative AI optimization guide updated on May 15, 2026, Google also stated that structured data is not required for generative AI features in Search — so it's not a mandatory requirement for AI search either. What remains effective is the indirect benefit: rich results in search (FAQ snippets, breadcrumbs, author information) improve click-through rates, and Google continues to recommend structured data for that purpose. The realistic way to frame this: you're not chasing a direct ranking effect, you're collecting indirect benefits.</p>
+<p>Google has officially stated that structured data itself is not a ranking factor. In the generative AI optimization guide updated on May 15, 2026, Google also stated that structured data is not required for generative AI features in Search — so it's not a mandatory requirement for AI search either. What remains effective is the indirect benefit: rich results in search (breadcrumbs, product information) improve click-through rates, and Google continues to recommend structured data for that purpose. FAQ rich results are no longer shown as of May 7, 2026. The realistic way to frame this: you're not chasing a direct ranking effect, you're collecting indirect benefits.</p>
 
 <a class="cite-card" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">
 <span class="cite-ico ext">G</span>
@@ -203,7 +203,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h2 id="sec2">How to Write FAQPage JSON-LD</h2>
 
-<p>The structured data type with the highest practical payoff. Describe your page's FAQ section in JSON-LD and it may appear as a rich result in Google Search. It's also a format AI systems can readily draw on when generating answers.</p>
+<p>Describes your page's FAQ section in JSON-LD. Google stopped showing FAQ rich results in Search on May 7, 2026, but the markup still spells out which answer belongs to which question, and it's a format AI systems can readily draw on when generating answers.</p>
 
 <pre class="code-block"><span class="comment">// FAQPage JSON-LD example</span>
 &lt;script type="application/ld+json"&gt;
@@ -343,7 +343,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <div class="faq-item">
 <p class="fq"><strong>Q. Does structured data help SEO?</strong></p>
-<p class="fa">A. Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (FAQ snippets, breadcrumbs, author information) in search improve click-through rates, so the indirect traffic benefit remains real.</p>
+<p class="fa">A. Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (breadcrumbs, product information) in search improve click-through rates, so the indirect traffic benefit remains real. (Google stopped showing FAQ rich results on May 7, 2026.)</p>
 </div>
 
 <div class="faq-item">

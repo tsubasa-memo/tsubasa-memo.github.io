@@ -41,7 +41,7 @@
   "author": { "@type": "Person", "name": "ツバサ" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-05-15",
-  "dateModified": "2026-05-21",
+  "dateModified": "2026-10-17",
   "inLanguage": "ja"
 }
 </script>
@@ -179,7 +179,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">LLMO（大規模言語モデル最適化）とは？<br/>SEOとの戦略的な違いと始め方</h1>
 <div class="article-meta-line">
 <span>公開: 2026年5月15日</span>
-<span>更新: 2026年5月21日</span>
+<span>更新: 2026年10月17日</span>
 </div>
 
 <p>こんにちは、ツバサです。</p>
@@ -303,7 +303,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h3>構造化データ（JSON-LD）の実装</h3>
 
-<p>AIがサイトの内容を理解するための「データ構造」を整える作業。特にFAQPage（よくある質問）、Article（記事情報）、Person（著者情報）のJSON-LDは、AIが回答を生成するときの素材になりやすい。なおGoogleは2026年5月の公式ドキュメントで「構造化データはランキング要因ではなく、生成AI機能のために必須でもない」とも明言している。ただし検索結果のリッチリザルト表示（FAQ・パンくず・著者情報など）には引き続き効果があり、結果的にクリック率の改善に寄与する。「直接の効果」より「副次的なメリット」を狙う施策と捉えるのが現実的だろう。</p>
+<p>AIがサイトの内容を理解するための「データ構造」を整える作業。特にFAQPage（よくある質問）、Article（記事情報）、Person（著者情報）のJSON-LDは、AIが回答を生成するときの素材になりやすい。なおGoogleは2026年5月の公式ドキュメントで「構造化データはランキング要因ではなく、生成AI機能のために必須でもない」とも明言している。ただし検索結果のリッチリザルト表示（パンくず・商品情報など。FAQのリッチリザルトは2026年5月に終了）には引き続き効果があり、結果的にクリック率の改善に寄与する。「直接の効果」より「副次的なメリット」を狙う施策と捉えるのが現実的だろう。</p>
 
 <a class="cite-card" href="/json-ld-guide.html">
 <span class="cite-ico int">ツ</span>
@@ -329,7 +329,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <h3>FAQの充実</h3>
 
-<p>AIは「質問に対する回答」を生成する仕組みなので、FAQ形式のコンテンツは引用されやすい。ページ内にFAQセクションを設け、さらにFAQPage JSON-LDでマークアップすれば、Google検索のリッチリザルトとAI引用の両方を狙える。</p>
+<p>AIは「質問に対する回答」を生成する仕組みなので、FAQ形式のコンテンツは引用されやすい。ページ内にFAQセクションを設け、さらにFAQPage JSON-LDでマークアップすれば、質問と回答の対応をAIに明確に伝えられる（Google検索のFAQのリッチリザルトは2026年5月に表示が終了した）。</p>
 
 <h3>一次情報の発信</h3>
 
@@ -352,7 +352,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <ol>
 <li><strong>現状確認</strong>：ChatGPTやPerplexityに自社に関するキーワードを入力して、AIが自社をどう認識しているか（あるいは認識していないか）を確認する</li>
 <li><strong>構造化データの実装</strong>：FAQPage、Article、BreadcrumbListのJSON-LDをサイトに追加する。WordPressならYoast SEOやRank Mathの無料版で対応できる</li>
-<li><strong>FAQセクションの追加</strong>：各記事や商品ページに、読者が疑問に思いそうなQ&Aを追加する。リッチリザルト表示にも有効</li>
+<li><strong>FAQセクションの追加</strong>：各記事や商品ページに、読者が疑問に思いそうなQ&Aを追加する。読者の疑問にその場で答えられ、AIにも引用されやすい</li>
 <li><strong>llms.txtの設置（任意）</strong>：Googleは不要と表明しているが、ChatGPT・Claude・Perplexityなど他社AI向けの対策として有効。コストはゼロなので残しておく価値はある</li>
 <li><strong>Google Search Consoleで確認</strong>：構造化データが正しく認識されているか、URL検査ツールでチェックする</li>
 </ol>
