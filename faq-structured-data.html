@@ -18,10 +18,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
      crossorigin="anonymous"></script>
 <title>記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた｜ツバサのメモ帳</title>
-<meta name="description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
+<meta name="description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。FAQのリッチリザルトの表示終了（2026年5月）や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
 <meta name="keywords" content="FAQ 構造化データ JSON-LD,FAQPage schema,リッチリザルト 設置,構造化データ ブログ">
 <meta property="og:title" content="記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた｜ツバサのメモ帳">
-<meta property="og:description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
+<meta property="og:description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。FAQのリッチリザルトの表示終了（2026年5月）や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://tsubasa-memo.github.io/og/faq-structured-data.webp">
@@ -42,7 +42,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "FAQ構造化データとは何ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FAQ構造化データはページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示することがあります。"
+        "text": "ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleは以前、このデータをもとに検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示していましたが、2026年5月7日に表示を終了しました。"
       }
     },
     {
@@ -50,7 +50,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "FAQのリッチリザルトは必ず表示されますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "必ずしも表示されるわけではありません。Googleは構造化データの内容、ページの品質、検索クエリとの関連性を総合的に判断してリッチリザルトを表示するかどうかを決めます。設置したからといって必ず表示されるわけではないですが、表示の機会が増えることは確かです。"
+        "text": "いいえ、現在は表示されません。GoogleはFAQのリッチリザルトの表示を2026年5月7日に終了しました。それ以前も2023年8月からは政府・医療系の権威あるサイトに表示が限られており、一般のブログでは表示されない状態でした。FAQPageの構造化データ自体は廃止されていません。"
       }
     },
     {
@@ -74,7 +74,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "構造化データのエラーはどこで確認できますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Google Search Consoleの「拡張」セクションまたはGoogleのリッチリザルトテストツール（search.google.com/test/rich-results）で確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。"
+        "text": "Schema.orgのスキーマ マークアップ検証ツール（validator.schema.org）で、FAQPageの記述ミスを確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。"
       }
     },
     {
@@ -93,7 +93,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた",
-  "description": "ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。",
+  "description": "ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。FAQのリッチリザルトの表示終了（2026年5月）や、Search Console・LLMOへの効果を実体験ベースでまとめています。",
   "url": "https://tsubasa-memo.github.io/faq-structured-data.html",
   "image": "https://tsubasa-memo.github.io/og/faq-structured-data.webp",
   "author": {
@@ -107,7 +107,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-03-29T00:00:00+09:00",
-  "dateModified": "2026-06-15T00:00:00+09:00",
+  "dateModified": "2026-10-17T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -143,7 +143,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta property="og:url" content="https://tsubasa-memo.github.io/faq-structured-data.html">
 <meta property="og:site_name" content="ツバサのメモ帳">
 <meta name="twitter:title" content="記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた｜ツバサのメモ帳">
-<meta name="twitter:description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。リッチリザルトが反映されるまでの日数や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
+<meta name="twitter:description" content="ブログ記事にFAQ構造化データ（FAQPage schema）を設置し、検索結果とAI引用がどう変わったかを記録した備忘録。FAQのリッチリザルトの表示終了（2026年5月）や、Search Console・LLMOへの効果を実体験ベースでまとめています。">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
@@ -210,7 +210,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</h1>
 <div class="article-meta-line">
 <span>公開: 2026年3月29日</span>
-<span>更新: 2026年6月15日</span>
+<span>更新: 2026年10月17日</span>
 </div>
 
 <p>FAQ構造化データ（JSON-LD）の書き方・設置手順・リッチリザルトへの影響・LLMO効果について調べた備忘録です。</p>
@@ -219,18 +219,18 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <ul>
 <li>FAQ構造化データ（<a class="glossary-inline" href="/glossary/json-ld.html">JSON-LD</a>）とは何か</li>
 <li>FAQPage schemaの書き方と設置手順</li>
-<li>リッチリザルト表示とSearch Consoleでの確認方法</li>
+<li>FAQのリッチリザルトの表示終了（2026年5月）と記述ミスの確認方法</li>
 <li>AIへの情報伝達（<a class="glossary-inline" href="/glossary/llmo.html">LLMO</a>）としての効果</li>
 </ul>
 </div>
-<p>こんにちは、ツバサです。ブログのSEO対策を調べていて「構造化データ」という概念を知りました。設置すると検索結果にFAQが展開表示されることがあるというので、全記事に設置した記録をまとめておきます。</p>
+<p>こんにちは、ツバサです。ブログのSEO対策を調べていて「構造化データ」という概念を知りました。設置すると検索結果にFAQが展開表示されることがあると聞いて、全記事に設置した記録をまとめておきます（FAQの展開表示は2026年5月にGoogleが終了しました）。</p>
 <div class="toc">
 <p class="toc-title">目次</p>
 <ol>
 <li><a href="#sec1">FAQ構造化データとは</a></li>
 <li><a href="#sec2">FAQPage schemaの書き方</a></li>
 <li><a href="#sec3">設置手順と確認方法</a></li>
-<li><a href="#sec4">実際に検索結果に反映されるまで</a></li>
+<li><a href="#sec4">検索結果の見た目は変わるか</a></li>
 <li><a href="#sec5">SEOだけでなくLLMOにも効果あり</a></li>
 <li><a href="#sec6">FAQ</a></li>
 <li><a href="#sec7">関連する記事</a></li>
@@ -238,7 +238,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 <h2 id="sec1">FAQ構造化データとは</h2>
 <p>FAQ構造化データはページの「よくある質問（FAQ）」と「回答」を、Googleが解析しやすい形式で記述したコードです。JSON-LD形式で書き、<a class="glossary-inline" href="/glossary/html.html">HTML</a>の&lt;head&gt;内または&lt;body&gt;末尾に埋め込みます。</p>
-<p>Googleがこのデータを認識すると、検索結果にFAQの「リッチリザルト」が表示されることがあります。リッチリザルトとは、通常のタイトル・URLだけでなく、Q&amp;Aが展開表示される形式です。</p>
+<p>以前はGoogleがこのデータを認識すると、検索結果にFAQの「リッチリザルト」（通常のタイトル・URLだけでなく、Q&amp;Aが展開表示される形式）が表示されることがありました。ただし2023年8月からは政府・医療系の権威あるサイトに限られ、2026年5月7日には表示そのものが終了しています（Google検索セントラルの変更履歴）。FAQPageの構造化データ自体は廃止されておらず、ページ内の質問と回答を機械に伝える役割は残ります。</p>
 <h2 id="sec2">FAQPage schemaの書き方</h2>
 <p>FAQPage schemaは、Q&amp;Aを構造化データとして記述するJSON-LDの形式です。<code>@type: "Question"</code> と <code>@type: "Answer"</code> の組み合わせで、検索エンジンとAIの両方にFAQの内容を伝えます。FAQPage以外にもProductやHowToなど<a href="structured-data-types-ec.html">EC向けの構造化データ</a>は複数あり、目的に応じて使い分ける。</p>
 <p>コピーして使える具体的なコードは別記事に集約しています。<a href="json-ld-guide.html">FAQPage・Article・BreadcrumbListのコード例付き解説はこちら</a>。</p>
@@ -252,17 +252,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2 id="sec3">設置手順と確認方法</h2>
 <p>FAQPage schemaのコードをHTMLの&lt;head&gt;内か&lt;/body&gt;タグの直前に貼り付けます。<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>では各HTMLファイルに直接書き込む形で対応しました。</p>
 <p>リッチリザルトテストやSearch Consoleでの汎用的な検証手順は「<a href="json-ld-guide.html">構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順</a>」に整理しているので、この記事では設置したあとに自分の記事で実際に何が変わったかを記録しておきます。</p>
-<h2 id="sec4">実際に検索結果に反映されるまで</h2>
-<p>構造化データを設置してからGoogleのリッチリザルトが表示されるまで、数週間〜1ヶ月程度かかることが一般的です。また設置しても必ずリッチリザルトが表示されるわけではなく、ページの品質や検索クエリとの関連性によってGoogleが表示の可否を判断します。</p>
-<p>Search Consoleの「拡張」セクションに「FAQリッチリザルト」が表示されるようになったら、Googleが構造化データを認識してリッチリザルトの対象として評価している状態です。</p>
+<h2 id="sec4">検索結果の見た目は変わるか</h2>
+<p>FAQのリッチリザルトは、2023年8月から政府・医療系の権威あるサイトに表示が限られ、2026年5月7日には表示そのものが終了しました。このブログを含め、一般のサイトでFAQPageを設置しても検索結果の見た目は変わりません。</p>
+<p>FAQPageの記述ミスは、Schema.orgのスキーマ マークアップ検証ツール（validator.schema.org）で確かめられます。</p>
 <h2 id="sec5">SEOだけでなくLLMOにも効果あり</h2>
 <p>FAQ構造化データはGoogle検索（SEO）への効果だけでなく、ChatGPTやClaudeなどのAI（LLMO）への情報伝達にも効果があると言われています。LLMはFAQ形式のQ&amp;A構造を引用しやすいため、構造化データで明示的に質問と回答を示すことで、AIが記事を参照する際に正確な情報が伝わりやすくなります。</p>
 <h2 id="sec6">FAQ</h2>
-<div class="faq-item"><p class="faq-q">Q. FAQ構造化データとは何ですか？</p><p class="faq-a">A. ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleはこのデータを認識して、検索結果にFAQのリッチリザルトを表示することがあります。</p></div>
-<div class="faq-item"><p class="faq-q">Q. FAQのリッチリザルトは必ず表示されますか？</p><p class="faq-a">A. 必ずしも表示されるわけではありません。Googleは構造化データの内容・ページの品質・検索クエリとの関連性を総合的に判断します。設置しておくことでリッチリザルト表示の機会が増えます。</p></div>
+<div class="faq-item"><p class="faq-q">Q. FAQ構造化データとは何ですか？</p><p class="faq-a">A. ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleは以前、このデータをもとに検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示していましたが、2026年5月7日に表示を終了しました。</p></div>
+<div class="faq-item"><p class="faq-q">Q. FAQのリッチリザルトは必ず表示されますか？</p><p class="faq-a">A. いいえ、現在は表示されません。GoogleはFAQのリッチリザルトの表示を2026年5月7日に終了しました。それ以前も2023年8月からは政府・医療系の権威あるサイトに表示が限られており、一般のブログでは表示されない状態でした。FAQPageの構造化データ自体は廃止されていません。</p></div>
 <div class="faq-item"><p class="faq-q">Q. JSON-LDとはどういう意味ですか？</p><p class="faq-a">A. JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type="application/ld+json"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データはすべての記事に入れるべきですか？</p><p class="faq-a">A. FAQがある記事には入れる価値があります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。内容が薄いFAQは効果が低くなります。</p></div>
-<div class="faq-item"><p class="faq-q">Q. 構造化データのエラーはどこで確認できますか？</p><p class="faq-a">A. GoogleのリッチリザルトテストツールかSearch Consoleの「拡張」セクションで確認できます。エラーがある場合は該当箇所のJSONを修正してください。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 構造化データのエラーはどこで確認できますか？</p><p class="faq-a">A. Schema.orgのスキーマ マークアップ検証ツール（validator.schema.org）で、FAQPageの記述ミスを確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データはAI（ChatGPT・Claude等）にも効果がありますか？</p><p class="faq-a">A. LLMはFAQ形式のQ&amp;A構造を引用しやすいとされています。構造化データでQ&amp;Aを明示することで、AIが記事を参照する際に正確な情報が伝わりやすくなります。SEOとLLMO両方への効果が期待できます。</p></div>
 
 <div class="related">
