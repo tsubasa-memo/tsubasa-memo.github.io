@@ -274,6 +274,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>Not all services handle EXIF the same way. Some strip it automatically; others pass it through untouched. Here is the current status of major platforms:</p>
 
+<div class="table-wrap">
 <table class="spec-table">
 <tr><th>Platform / Service</th><th>Strips EXIF for Viewers?</th><th>Notes</th></tr>
 <tr><td>X (Twitter)</td><td>Yes</td><td>Stripped on upload. Platform may retain data internally during processing.</td></tr>
@@ -289,6 +290,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <tr><td>Email attachments</td><td><strong>No</strong></td><td>Email does not modify attachments. All EXIF data is preserved.</td></tr>
 <tr><td>Cloud storage links</td><td><strong>No</strong></td><td>Google Drive, Dropbox, OneDrive — shared links serve the original file.</td></tr>
 </table>
+</div>
 
 <p>The pattern is clear: social media platforms strip EXIF from the public-facing copy (though they may retain it internally). Private messaging and file sharing generally do not strip anything. If you are sending photos through email, Telegram, iMessage, or cloud storage, you need to remove EXIF yourself before sharing.</p>
 
