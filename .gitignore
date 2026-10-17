@@ -1,71 +1,19 @@
-vague_anchors_report.csv
-generated_illustrations_20260430_081730/
-generated_illustrations_20260430_083519/
-*.zip
-archive_*/
-originals/
-obsidian-research
-recovered-articles/
-
-# 配信に使わない運用ファイル（2026-08-08〜）
-# internal_link_config.json は内部リンクの設計がそのまま読める。
-# article-dates.json はどこからも参照されていない。pre-commit はローカル専用
-scripts/internal_link_config.json
-article-dates.json
-.githooks/
-
-# サイトの配信に不要なファイルは一切コミットしない（2026-08-08〜）
-# GitHub Pages が配信に使うのは HTML・画像・CSS・JS・JSON・XML・TXT のみ。
-# .md（運用メモ・指示書・原稿）と .py（運用スクリプト）は公開すると
-# 記事の作り方・狙っているキーワード・AIへの指示がそのまま読める
+# 配信しないファイル
 *.md
 *.py
-
-# Claude Code の運用ルール一式（2026-08-08にリポジトリから外した）
-# ペルソナ設定、サービス言及の方針、運営者との紐づけを隠す方針などが書かれており、
-# 公開すると運営の内部事情がそのまま読める。ローカルには残す（Claude Code が読むため）
-CLAUDE.md
-.claude/
-
-# セッション管理ログ（2026-08-08にObsidianへ移動）
-# 運営の判断・GSCの数値・ペルソナ運用の記録が入るため公開リポジトリに置かない。
-# 万一ルート直下に戻ってきても追跡しないよう明示する
-progress.md
-decisions.md
-done-log.md
-
-# OS
-.DS_Store
-
-# 作業用ファイルの置き場（調査メモ・指示書・下書きはここに入れる）
+*.csv
+*.zip
+*.lock
 drafts/
-
-# 現在ルート直下にある作業用ファイル（drafts/ へ移したらこのブロックは消してよい）
-# 静的サイトなので「コミット＝公開」。ワイルドカードの git add で巻き込まないよう明示的に外す
-add_glossary_links.py
-cannibalization-report-2026-06-14.md
-chat-prompt-template.md
-claude-ai-feedback-20260520.md
-claude-ai-feedback-20260529.md
-claude-ai-feedback-20260603.md
-claude-chat-article-prompt.md
-claude-code-instruction-FINAL.md
-comparison-articles-urls.md
-competitor-analysis-500mails.md
-ctr_improvement_instruction.md
-docs/threads-image-size.md
-fix-ec-photo-bottleneck.md
-git-slim-session-2026-05-20.md
-glossary_link_audit.csv
-gsc-ai-report.png
-gsc-low-ctr-report-2026-07-19.md
-gsc-next-actions-2026-06-16.md
-japan-photo-retouch-market-barriers.md
-japan-photo-retouch-market-barriers-ja_本文.md
-llmo-agency-research_draft.md
-next-session-instruction.md
-print-ink-color-shift-en.md
-print-ink-color-shift.md
-retouch-company-check-en.md
-retouch-company-check_revised.md
-scan_glossary_links.py
+originals/
+archive_*/
+recovered-articles/
+generated_illustrations_*/
+obsidian-research
+scripts/
+docs/
+.githooks/
+.claude/
+CLAUDE.md
+article-dates.json
+.DS_Store
