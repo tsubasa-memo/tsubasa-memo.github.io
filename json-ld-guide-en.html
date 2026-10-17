@@ -46,27 +46,42 @@ gtag('config', 'G-YYBFXHXMM6');
     {
       "@type": "Question",
       "name": "What is structured data (JSON-LD)?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A data format for communicating a web page's content to search engines and AI. Based on the Schema.org vocabulary, it describes the page's content, author, FAQ, and more in a machine-readable form, embedded in the HTML head via a script tag." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A data format for communicating a web page's content to search engines and AI. Based on the Schema.org vocabulary, it describes the page's content, author, FAQ, and more in a machine-readable form, embedded in the HTML head via a script tag."
+      }
     },
     {
       "@type": "Question",
       "name": "What if I don't know how to write JSON-LD?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ask ChatGPT or Claude to generate it — create the FAQPage JSON-LD for this page — then run the output through Google's Rich Results Test before implementing." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask ChatGPT or Claude to generate it — \"create the FAQPage JSON-LD for this page\" — then run the output through Google's Rich Results Test before implementing."
+      }
     },
     {
       "@type": "Question",
       "name": "Does structured data help SEO?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (breadcrumbs, product information) in search improve click-through rates, so the indirect traffic benefit remains real. (Google stopped showing FAQ rich results on May 7, 2026.)" }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google has officially stated that structured data itself is not a ranking factor, and its May 2026 generative AI optimization guide states it's not required for AI features in Search either. However, rich results (breadcrumbs, product information) in search improve click-through rates, so the indirect traffic benefit remains real. (Google stopped showing FAQ rich results on May 7, 2026.)"
+      }
     },
     {
       "@type": "Question",
       "name": "How do I implement structured data on WordPress?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The free versions of Yoast SEO or Rank Math auto-generate the basic structured data. FAQPage can be added from the FAQ block in the post editor. Without a plugin, write the JSON-LD directly into your theme's header.php." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The free versions of Yoast SEO or Rank Math auto-generate the basic structured data. FAQPage can be added from the FAQ block in the post editor. Without a plugin, write the JSON-LD directly into your theme's header.php."
+      }
     },
     {
       "@type": "Question",
       "name": "How do I check structured data for errors?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Enter your URL or code into Google's Rich Results Test (search.google.com/test/rich-results). For published pages, URL Inspection in Search Console also shows what Google has detected." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your URL or code into Google's Rich Results Test (search.google.com/test/rich-results). For published pages, URL Inspection in Search Console also shows what Google has detected."
+      }
     }
   ]
 }
@@ -91,8 +106,23 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
-    { "@type": "ListItem", "position": 2, "name": "How to Write Structured Data (JSON-LD)" }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SEO・LLMO",
+      "item": "https://tsubasa-memo.github.io/archive.html#seo"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Write Structured Data (JSON-LD)"
+    }
   ]
 }
 </script>

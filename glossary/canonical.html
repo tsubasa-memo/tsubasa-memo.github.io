@@ -165,6 +165,36 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>Googleはcanonicalタグを絶対的な指示ではなくヒントとして扱う。ページ内容が大きく異なるのに同じcanonicalを指定するなど、不適切な使い方をするとGoogleが無視することもある。</p>
 <h3>自己参照canonicalでも設置する意味がある</h3>
 <p>自分自身のURLを指すcanonicalタグでも、パラメータ付きURLや大文字小文字違いのURLからのアクセスを正規化できるため、設置しておくのが安全だ。</p>
+<div class="faq-section">
+<h2>FAQ</h2>
+
+<div class="faq-item">
+<p class="fq">Q. canonicalタグとは何ですか？</p>
+<p class="fa">A. HTMLのheadタグに記述するlink要素で、ページの正規URLを検索エンジンに伝えるためのタグです。重複コンテンツの問題を防ぐために使われます。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. canonicalタグを設置しないとどうなりますか？</p>
+<p class="fa">A. 同じ内容のページが複数URLに存在すると、Googleが評価を分散させてしまう可能性があります。検索順位に悪影響が出ることがあります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. canonicalと301リダイレクトの違いは？</p>
+<p class="fa">A. 301リダイレクトはユーザーを別URLに転送します。canonicalはユーザーはそのまま閲覧でき、検索エンジンにだけ正規URLを伝えます。ページが完全に移転した場合は301、両方のURLを残したい場合はcanonicalが適しています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 自分自身を指すcanonicalに意味はありますか？</p>
+<p class="fa">A. あります。URLパラメータが付いたアクセスやwww有無の違いを正規化できるため、自己参照canonicalでも設置しておくことが推奨されています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. canonicalタグはGoogleに必ず従ってもらえますか？</p>
+<p class="fa">A. いいえ。Googleはcanonicalをヒントとして扱い、最終的な判断はGoogle側が行います。ページ内容と矛盾する指定は無視されることがあります。</p>
+</div>
+
+</div>
+
 <div class="related-terms"><h3>関連する用語</h3><ul><li><a href="redirect.html">リダイレクト</a></li><li><a href="nofollow.html">nofollow</a></li><li><a href="sitemap.html">サイトマップ</a></li></ul></div>
 <div class="related"><h3>関連する記事</h3><a class="cite-card" href="/blog-seo-basics.html">
 <span class="cite-ico int">ツ</span>

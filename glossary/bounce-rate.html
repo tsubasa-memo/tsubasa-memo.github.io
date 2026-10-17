@@ -227,6 +227,36 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>GA4では直帰率よりエンゲージメント率（＝100%−直帰率）のほうが重視されている。エンゲージメント率が高い＝ユーザーがしっかりコンテンツを見ている、という前向きな指標なので、こちらを基準に考えたほうがわかりやすい。<a href="https://www.uncovertruth.co.jp/service/ca/blog/2024/06/24/ga4-engage-bounce/" rel="noopener noreferrer" target="_blank">CONTENT ANALYTICSのブログ</a>にも両者の関係が詳しく書いてあった。</p>
 <h3>ページの読み込み速度も影響する</h3>
 <p>ページの表示が遅いと、内容を見る前にユーザーが離脱してしまう。Google の<a href="https://developers.google.com/speed/pagespeed/insights/?hl=ja" rel="noopener noreferrer" target="_blank">PageSpeed Insights</a>でページの表示速度をチェックして、遅い場合は画像の軽量化やサーバーの見直しを検討するとよい。</p>
+<div class="faq-section">
+<h2>FAQ</h2>
+
+<div class="faq-item">
+<p class="fq">Q. 直帰率とは何ですか？</p>
+<p class="fa">A. 直帰率とは、サイトに訪れたユーザーが最初のページだけ見て、他のページに移動せずにそのまま離脱した割合のことです。GA4では「エンゲージメントのなかったセッションの割合」として定義されています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. GA4とUA（旧Googleアナリティクス）で直帰率の定義は違いますか？</p>
+<p class="fa">A. はい、定義が異なります。UAでは「1ページだけ見て離脱したセッションの割合」でしたが、GA4では「エンゲージメントのなかったセッションの割合」です。GA4では10秒以上滞在すればエンゲージメントありと判定されるため、同じサイトでもGA4のほうが直帰率は低く出やすいです。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 直帰率の目安はどのくらいですか？</p>
+<p class="fa">A. ページの種類やサイトの目的によって異なりますが、ECサイトのトップページなら30〜50%、ブログ記事なら60〜80%が一般的な目安とされています。GA4では旧UAより低い数値が出るため、過去データとの単純比較はできません。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 直帰率が高い場合、何が問題ですか？</p>
+<p class="fa">A. 直帰率が高い＝必ず問題、とは限りません。たとえばFAQページで疑問が解決して離脱するのは自然な行動です。ただし、商品一覧ページやトップページの直帰率が高い場合は、ユーザーが欲しい情報を見つけられていない可能性があります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 直帰率とエンゲージメント率の関係は？</p>
+<p class="fa">A. GA4では直帰率＝100%−エンゲージメント率です。エンゲージメント率が高いほど直帰率は低くなります。GA4ではエンゲージメント率のほうが標準的な指標として扱われており、直帰率はレポートに手動で追加して確認します。</p>
+</div>
+
+</div>
+
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>

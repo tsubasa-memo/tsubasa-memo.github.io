@@ -33,21 +33,6 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方",
-  "description": "LLMOはChatGPT・Geminiなど生成AIの回答に自社情報を引用させる施策。2026年5月のGoogle公式見解（生成AI検索向けの最適化もSEOであることに変わりはない）を踏まえ、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者向けの実践ポイントを整理した。",
-  "url": "https://tsubasa-memo.github.io/llmo-guide.html",
-  "image": "https://tsubasa-memo.github.io/og/llmo-guide.webp",
-  "author": { "@type": "Person", "name": "ツバサ" },
-  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
-  "datePublished": "2026-05-15",
-  "dateModified": "2026-10-17",
-  "inLanguage": "ja"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -71,7 +56,7 @@
       "name": "LLMOとGEOとAIOの違いは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LLMOはChatGPTやGeminiなどLLM全般への最適化。GEO（Generative Engine Optimization）はLLMOとほぼ同義の総称。AIOはGoogleのAI Overviewsに特化した最適化。ただし2026年5月15日のGoogle公式ドキュメントは、AEOやGEOという呼び名に触れたうえで「Google 検索の観点から見ると、生成 AI 検索向けに最適化することは、検索エクスペリエンス向けに最適化することであるため、SEO であることに変わりはありません」と書いている。"
+        "text": "LLMOはChatGPTやGeminiなどLLM全般への最適化。GEO（Generative Engine Optimization）はLLMOとほぼ同義の総称。AIOはGoogleのAI Overviewsに特化した最適化。ただし2026年5月15日のGoogle公式ドキュメントは、AEOやGEOという呼び名に触れたうえで「Google 検索の観点から見ると、生成 AI 検索向けに最適化することは、検索エクスペリエンス向けに最適化することであるため、SEO であることに変わりはありません」と書いている。Google検索を主戦場にするならSEOの延長として捉え、ChatGPT・Claude・Perplexityなど他社AIも狙うならLLMOという呼び方の方が実態に即している。"
       }
     },
     {
@@ -79,7 +64,7 @@
       "name": "LLMOは小規模事業者にも必要？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "必要かどうかは業種とターゲットによる。自社の見込み客がChatGPTやPerplexityで情報収集している可能性があるなら取り組む価値がある。ただし月額数十万円のコンサルは不要で、構造化データの整備、FAQ設計、llms.txtの設置など無料でできることから始めるのが現実的。"
+        "text": "業種とターゲットによる。自社の見込み客がChatGPTやPerplexityで情報収集している可能性があるなら取り組む価値がある。ただし月額数十万円のコンサルは不要で、構造化データの整備、FAQ設計、llms.txtの設置など無料でできることから始めるのが現実的。"
       }
     },
     {
@@ -95,10 +80,25 @@
       "name": "Google以外のAI検索（ChatGPT・Perplexity）にも最適化は必要？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "必要になるケースはある。ただし2026年5月時点で、AI検索向けのコンテンツ最適化ガイドラインを公式に公開しているのはGoogleだけ。OpenAI（ChatGPT Search）とPerplexityはクローラー制御の仕組みは公開しているが、こうすれば引用されやすいという公式ガイドは出していない。技術的にはどのサービスもクエリ分解とRAGの仕組みを使っており、良質なコンテンツと構造化データの整備はどのサービスでも共通して有効と考えられる。まずはGoogleの公式ガイドに沿った対策を優先し、余裕があれば各社のクローラー許可設定を確認する順序が現実的。"
+        "text": "必要になるケースはある。ただし2026年5月時点で、AI検索向けのコンテンツ最適化ガイドラインを公式に公開しているのはGoogleだけ。OpenAI（ChatGPT Search）とPerplexityはクローラー制御の仕組みは公開しているが、「こうすれば引用されやすい」という公式ガイドは出していない。技術的にはどのサービスもクエリ分解＋RAGの仕組みを使っており、良質なコンテンツと構造化データの整備はどのサービスでも共通して有効と考えられる。まずはGoogleの公式ガイドに沿った対策を優先し、余裕があれば各社のクローラー許可設定を確認する順序が現実的。"
       }
     }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "LLMO（大規模言語モデル最適化）とは？SEOとの戦略的な違いと始め方",
+  "description": "LLMOはChatGPT・Geminiなど生成AIの回答に自社情報を引用させる施策。2026年5月のGoogle公式見解（生成AI検索向けの最適化もSEOであることに変わりはない）を踏まえ、GEO・AIO・AEOとの違い、SEOとの関係、小規模事業者向けの実践ポイントを整理した。",
+  "url": "https://tsubasa-memo.github.io/llmo-guide.html",
+  "image": "https://tsubasa-memo.github.io/og/llmo-guide.webp",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-10-17",
+  "inLanguage": "ja"
 }
 </script>
 <script type="application/ld+json">

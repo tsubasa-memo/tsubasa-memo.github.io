@@ -39,11 +39,46 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"LLMOとSEOの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"SEOはGoogle・Bingなどの検索エンジンで上位表示されるための最適化です。LLMOはChatGPT・Claude・Geminiなどの大規模言語モデル（LLM）に記事を正しく引用・参照されるための最適化です。検索エンジンはURLをインデックスして順位付けしますが、LLMは学習データやRAG（検索拡張生成）を通じてコンテンツを取得します。"}},
-    {"@type":"Question","name":"LLMOに効果的な記事構造はありますか？","acceptedAnswer":{"@type":"Answer","text":"FAQ形式とJSON-LD構造化データの組み合わせが効果的とされています。LLMはFAQ形式の「Q&A」構造を引用しやすい傾向があります。また記事冒頭に「この記事でわかること」として箇条書きで要点をまとめることで、LLMが記事の内容を要約して回答する際の精度が上がります。"}},
-    {"@type":"Question","name":"llms.txtとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"llms.txtはサイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtがクローラーへの指示書であるのに対し、llms.txtはLLMへの情報提供ファイルです。まだ業界標準ではありませんが、AnthropicやOpenAIが対応を進めており、設置しておいて損はない施策です。詳しい仕様・書き方・設置手順は「llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方」の記事を参照してください。"}},
-    {"@type":"Question","name":"個人ブログでもLLMOに取り組む意味はありますか？","acceptedAnswer":{"@type":"Answer","text":"あります。ChatGPTやClaudeに「〜のおすすめサービスを教えて」と質問するユーザーが増えており、AIの回答に自分のサイトや紹介しているサービスが含まれる可能性があります。特にニッチなトピックや比較記事は、LLMが引用しやすいコンテンツです。"}},
-    {"@type":"Question","name":"LLMO対策として今すぐできることは何ですか？","acceptedAnswer":{"@type":"Answer","text":"今すぐできる対策は3つです。①全記事にFAQ構造化データ（JSON-LD）を設置する。②記事の冒頭に「この記事でわかること」として要点を箇条書きで書く。③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する。これらはいずれもHTMLの修正だけで対応できます。"}}
+    {
+      "@type": "Question",
+      "name": "LLMOとSEOの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEOはGoogle・Bingなどの検索エンジンで上位表示されるための最適化です。LLMOはChatGPT・Claude・Geminiなどの大規模言語モデルに記事を正しく引用・参照されるための最適化です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMOに効果的な記事構造はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FAQ形式とJSON-LD構造化データの組み合わせが効果的です。また記事冒頭に「この記事でわかること」として要点を箇条書きでまとめることで、LLMが記事を要約して回答する際の精度が上がります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。詳しい仕様・書き方・設置手順はllms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方を参照してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "個人ブログでもLLMOに取り組む意味はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "あります。比較記事や疑問に答える記事はLLMが引用しやすいコンテンツです。特にニッチなトピックを扱う個人ブログは、大手サイトよりも専門性が高い場合があり、LLMに参照されるチャンスがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "LLMO対策として今すぐできることは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "①全記事にFAQ構造化データ（JSON-LD）を設置する、②記事の冒頭に「この記事でわかること」を箇条書きで書く、③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する、の3つが今すぐできる対策です。"
+      }
+    }
   ]
 }
 </script>

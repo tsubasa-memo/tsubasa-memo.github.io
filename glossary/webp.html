@@ -231,6 +231,36 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>Googleが無料で提供している<a href="https://squoosh.app/" rel="noopener noreferrer" target="_blank">Squoosh</a>というツールを使えば、ブラウザ上でJPEGをWebPに変換できる。画質とファイルサイズをスライダーで比較しながら調整できるので、初心者でも使いやすい。大量に変換したい場合はコマンドラインのcwebpツール（Google公式）を使うこともできる。</p>
 <h3>AVIFという選択肢も出てきている</h3>
 <p>WebPよりさらにファイルサイズが小さい<a href="avif.html">AVIF</a>という次世代フォーマットも登場している。<a href="https://dad-union.com/webp-avif-comparison-pros-cons" rel="noopener noreferrer" target="_blank">DAD UNIONの比較記事</a>によると、同じ画質ならAVIFのほうがWebPよりファイルが小さくなるケースが多い。ただしAVIFはエンコード（変換処理）に時間がかかるという弱点がある。現時点ではWebPが無難な選択で、余裕があればAVIFも検討する、という順番でよさそうだ。画像フォーマット全体の整理は<a href="/image-file-formats.html">画像ファイル形式まとめ</a>にも書いた。</p>
+<div class="faq-section">
+<h2>FAQ</h2>
+
+<div class="faq-item">
+<p class="fq">Q. WebPとは何ですか？</p>
+<p class="fa">A. WebP（ウェッピー）はGoogleが2010年に開発した画像フォーマットです。JPEGと比べてファイルサイズが25〜35%ほど小さくなるのが特徴で、Webページの表示速度改善を目的に作られました。非可逆圧縮と可逆圧縮の両方に対応し、透過（アルファチャンネル）やアニメーションも扱えます。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. WebPとJPEGの違いは？</p>
+<p class="fa">A. 主な違いはファイルサイズと機能です。WebPはJPEGより同等画質で25〜35%ファイルが小さくなります。またJPEGにはない透過（背景透過）とアニメーション機能を持っています。一方、JPEGはほぼすべてのソフトやサービスで対応していますが、WebPは古いソフトでは開けないことがあります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. WebPに変換するにはどうすればいい？</p>
+<p class="fa">A. Squoosh（Google製の無料ツール）やPhotoshop（バージョン23.2以降）で変換できます。コマンドラインならGoogleが配布しているcwebpツールで一括変換も可能です。ECサイトではShopifyやCloudflareなどのCDNが自動でWebP変換してくれる場合もあります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. WebPはすべてのブラウザで表示できる？</p>
+<p class="fa">A. 2024年以降、主要なブラウザ（Chrome、Firefox、Safari、Edge）はすべてWebPに対応しています。かつてはSafariが非対応でしたが、2022年のSafari 16以降で対応が完了しました。現在ではブラウザの互換性を心配する必要はほぼありません。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. PageSpeedで「次世代フォーマットで配信」と出たらどうすればいい？</p>
+<p class="fa">A. JPEG画像をWebPやAVIFに変換することでこの指摘を解消できます。手動で変換してアップロードし直す方法と、CDNやプラグインで自動変換する方法があります。自社ECの場合はCDN側の自動変換が手間が少なく、ECモール（楽天・Amazon）ではプラットフォーム側が対応している場合もあります。</p>
+</div>
+
+</div>
+
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>
