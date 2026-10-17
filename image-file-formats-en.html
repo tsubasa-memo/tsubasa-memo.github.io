@@ -40,12 +40,54 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "When should I use JPEG vs PNG?", "acceptedAnswer": {"@type": "Answer", "text": "Use JPEG for photographs and images with complex colors and gradients. JPEG compresses well and produces small files, but does not support transparency. Use PNG when you need transparency (logos, icons, product images on non-white backgrounds), or for screenshots and graphics with sharp edges and text where JPEG compression artifacts would be visible."}},
-    {"@type": "Question", "name": "What is WebP and is it better than JPEG?", "acceptedAnswer": {"@type": "Answer", "text": "WebP is a modern format developed by Google that offers both lossy and lossless compression. At the same visual quality, WebP files are typically 25-35% smaller than JPEG. WebP also supports transparency (like PNG) and animation (like GIF). Browser support is now near-universal, making WebP a strong default for web images in 2026."}},
-    {"@type": "Question", "name": "What is the best image format for e-commerce product photos?", "acceptedAnswer": {"@type": "Answer", "text": "For product photos on white backgrounds, JPEG is the standard — it is universally supported, produces small files, and handles photographs well. If your product images need transparency (for placement on colored or patterned backgrounds), use PNG. For websites where performance matters, consider WebP with JPEG fallback. Amazon, Shopify, and most marketplaces accept JPEG and PNG."}},
-    {"@type": "Question", "name": "When should I use RAW?", "acceptedAnswer": {"@type": "Answer", "text": "RAW is for photography, not for the web. Shoot in RAW when you plan to edit your photos in software like Lightroom or Capture One and need maximum flexibility for adjusting exposure, white balance, and color. RAW files must be converted to JPEG, PNG, or WebP before uploading to websites or social media."}},
-    {"@type": "Question", "name": "Is GIF still used in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "GIF is still used for simple animations and memes, but it is technically outdated. GIF supports only 256 colors, no transparency with smooth edges, and produces large files for animations. For animated content, WebP and AVIF offer better quality at smaller sizes. For static images, PNG or WebP are better choices in every scenario."}},
-    {"@type": "Question", "name": "How do I convert HEIC photos from iPhone to JPEG?", "acceptedAnswer": {"@type": "Answer", "text": "On iPhone, go to Settings > Camera > Formats and select 'Most Compatible.' This makes the camera save new photos as JPEG instead of HEIC. For existing HEIC files, sharing them via email or AirDrop to a non-Apple device often converts them automatically. On Mac, open in Preview and export as JPEG. On Windows, the HEIF Image Extensions from the Microsoft Store enable native HEIC viewing and conversion."}}
+    {
+      "@type": "Question",
+      "name": "When should I use JPEG vs PNG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use JPEG for photographs and images with complex colors and gradients. JPEG compresses well and produces small files, but does not support transparency. Use PNG when you need transparency (logos, icons, product images on non-white backgrounds), or for screenshots and graphics with sharp edges and text where JPEG compression artifacts would be visible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is WebP and is it better than JPEG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WebP is a modern format developed by Google that offers both lossy and lossless compression. At the same visual quality, WebP files are typically 25-35% smaller than JPEG. WebP also supports transparency (like PNG) and animation (like GIF). Browser support is now near-universal, making WebP a strong default for web images in 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best image format for e-commerce product photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For product photos on white backgrounds, JPEG is the standard — it is universally supported, produces small files, and handles photographs well. If your product images need transparency, use PNG. For websites where performance matters, consider WebP with JPEG fallback. Amazon, Shopify, and most marketplaces accept JPEG and PNG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use RAW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RAW is for photography, not for the web. Shoot in RAW when you plan to edit your photos in software like Lightroom or Capture One and need maximum flexibility for adjusting exposure, white balance, and color. RAW files must be converted to JPEG, PNG, or WebP before uploading to websites or social media."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is GIF still used in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GIF is still used for simple animations and memes, but it is technically outdated. GIF supports only 256 colors, no transparency with smooth edges, and produces large files for animations. For animated content, WebP and AVIF offer better quality at smaller sizes. For static images, PNG or WebP are better choices in every scenario."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert HEIC photos from iPhone to JPEG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On iPhone, go to Settings → Camera → Formats and select \"Most Compatible.\" This makes the camera save new photos as JPEG instead of HEIC. For existing HEIC files, sharing them via email or AirDrop to a non-Apple device often converts them automatically. On Mac, open in Preview and export as JPEG. On Windows, the HEIF Image Extensions from the Microsoft Store enable native HEIC viewing and conversion."
+      }
+    }
   ]
 }
 </script>
@@ -69,8 +111,23 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/"},
-    {"@type": "ListItem", "position": 2, "name": "Image File Formats: JPEG vs PNG vs WebP vs RAW"}
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "写真・撮影",
+      "item": "https://tsubasa-memo.github.io/archive.html#photo"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Image File Formats: JPEG vs PNG vs WebP vs RAW"
+    }
   ]
 }
 </script>
@@ -131,7 +188,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <main class="center-content">
 
-<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">Home</a> ＞ Image File Formats Explained</nav>
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">Home</a> ＞ <a href="archive.html#photo">写真・撮影</a> ＞ Image File Formats Explained</nav>
 
 <div class="article-hero">
 <img src="/thumbs/image-file-formats.webp" alt="JPEG vs PNG vs WebP vs RAW: Image File Formats Explained" width="640" height="360" loading="eager">

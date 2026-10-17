@@ -37,11 +37,46 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"llms.txtとrobots.txtの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLM（大規模言語モデル）に対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。llms.txtの設置判断（Googleの公式見解を含む）については「llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方」の記事を参照してください。"}},
-    {"@type":"Question","name":"llms.txtはすべてのAIに対応していますか？","acceptedAnswer":{"@type":"Answer","text":"2026年時点では対応状況はAIによって異なります。Claude（Anthropic）はllms.txtを参照することが知られています。ChatGPT（OpenAI）やGemini（Google）の対応状況は変化しています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。"}},
-    {"@type":"Question","name":"llms.txtはどこに設置すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"サイトのルートに「llms.txt」というファイル名で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。URLは「https://サイトURL/llms.txt」になります。"}},
-    {"@type":"Question","name":"llms.txtに書くべき内容は何ですか？","acceptedAnswer":{"@type":"Answer","text":"サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本的な内容です。記事一覧では各記事の説明文を1〜2文で添えると、LLMが記事の内容を把握しやすくなります。"}},
-    {"@type":"Question","name":"llms.txtの設置効果はどうやって確認しますか？","acceptedAnswer":{"@type":"Answer","text":"直接的な効果測定は難しいです。ChatGPTやClaudeに「〔自分のブログのトピック〕について教えて」と質問したとき、自分のブログや紹介しているサービスが回答に含まれるかどうかを定期的に確認する方法が現実的です。"}}
+    {
+      "@type": "Question",
+      "name": "llms.txtとrobots.txtの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "robots.txtはGoogleなどのクローラーに対して「このページはクロールしないで」と指示するファイルです。llms.txtはLLMに対してサイトの構造や記事一覧を伝えるためのファイルです。目的と対象が異なりますが、どちらもサイトのルートに置きます。llms.txtの設置判断（Googleの公式見解を含む）についてはllms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方を参照してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtはすべてのAIに対応していますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026年時点では対応状況はAIによって異なります。Anthropicはllms.txtを参照することが知られています。まだ業界標準ではありませんが、設置コストがほぼゼロなのでやっておいて損はありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtはどこに設置すればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サイトのルートに「llms.txt」という名前で設置します。GitHub Pagesの場合はリポジトリのルートディレクトリに置くだけです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtに書くべき内容は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "サイト名・サイトの概要・カテゴリ一覧・記事一覧（タイトルとURL）・運営者情報が基本です。記事一覧では各記事の説明文を1〜2文で添えるとLLMが内容を把握しやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "llms.txtの設置効果はどうやって確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "直接的な効果測定は難しいです。ChatGPTやClaudeに自分のブログのトピックについて質問したとき、自分のブログや紹介しているサービスが回答に含まれるかどうかを定期的に確認する方法が現実的です。"
+      }
+    }
   ]
 }
 </script>

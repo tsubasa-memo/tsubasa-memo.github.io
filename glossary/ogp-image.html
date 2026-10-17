@@ -223,6 +223,36 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>楽天やAmazonなどのECモールでは、モール側がOGPタグを自動で設定してくれることが多い。自分でOGP画像を設定する必要があるのは、自社ECサイト（Shopifyや独自ドメインのサイト）の場合だ。Shopifyならテーマの設定画面からOGP画像を登録できる。</p>
 <h3>確認ツールを使って事前チェック</h3>
 <p>公開前にOGP画像がちゃんと表示されるか確認しておくと安心。Facebookのシェアデバッガー、XのCard Validator、LINEのPage Pokerなど、各SNSが確認ツールを提供している。URLを入れるだけでプレビューが見られるので、設定後に必ずチェックしておきたい。</p>
+<div class="faq-section">
+<h2>FAQ</h2>
+
+<div class="faq-item">
+<p class="fq">Q. OGP画像とは何ですか？</p>
+<p class="fa">A. OGP画像とは、WebページのURLをSNSでシェアしたときにサムネイルとして表示される画像のことです。OGP（Open Graph Protocol）というHTMLのメタタグで指定します。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. OGP画像の推奨サイズは？</p>
+<p class="fa">A. 一般的に推奨されるサイズは1200×630pxです。FacebookやX（旧Twitter）など主要なSNSで大きく表示されるため、このサイズで作っておくと安心です。LINEでは正方形にクロップされるので、重要な情報は中央の630×630pxに収めておくとよいです。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. SNSでシェアしたのに画像が表示されないのはなぜ？</p>
+<p class="fa">A. 主な原因はog:imageタグの未設定、画像URLの誤り（相対パスになっている）、SNS側のキャッシュが古い情報のまま、などです。Facebookならシェアデバッガー、XならCard Validatorで確認できます。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. OGP画像を設定するにはどうすればいい？</p>
+<p class="fa">A. HTMLのhead内にog:imageのメタタグを追加します。例えば&lt;meta property="og:image" content="https://example.com/image.png"&gt;のように、画像の絶対URLを指定します。相対パスでは動かないので注意が必要です。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. OGP画像を変更したのに古い画像のまま表示されます。どうすれば？</p>
+<p class="fa">A. SNS側にキャッシュが残っているためです。Facebookはシェアデバッガーで「もう一度スクレイピング」を実行、XはCard Validatorでプレビューを再読み込みすると更新されます。</p>
+</div>
+
+</div>
+
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>

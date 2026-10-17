@@ -45,42 +45,66 @@ gtag('config', 'G-YYBFXHXMM6');
     {
       "@type": "Question",
       "name": "I used product images made for Rakuten to print a store flyer, and the blues came out duller than on my monitor. Is the data corrupted?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The data is not corrupted. The issue is the difference between RGB (monitor) and CMYK (ink) color systems. Some vivid blues that RGB monitors can display fall outside the CMYK gamut. This is a fundamental limitation of CMYK printing, not a defect. Going forward, expect some color shift and check critical colors with a press proof." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The data is not corrupted. The issue is the difference between RGB (monitor) and CMYK (ink) color systems. Some vivid blues that RGB monitors can display fall outside the CMYK gamut. This is a fundamental limitation of CMYK printing, not a defect. Going forward, expect some color shift and check critical colors with a press proof."
+      }
     },
     {
       "@type": "Question",
       "name": "What happens if I submit RGB data to a print shop without converting to CMYK?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the shop. Some require CMYK files; others accept RGB and convert internally using their own profile and rendering intent. With auto-conversion, colors outside the CMYK gamut will be clipped or compressed in ways you didn't choose. If you want control over how colors shift, convert to CMYK yourself before submitting." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the shop. Some require CMYK files; others accept RGB and convert internally using their own profile and rendering intent. With auto-conversion, colors outside the CMYK gamut will be clipped or compressed in ways you didn't choose. If you want control over how colors shift, convert to CMYK yourself before submitting."
+      }
     },
     {
       "@type": "Question",
       "name": "Should I ask my retouching vendor to remake all images for print?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not all of them. EC retouching aims to show accurate product colors — it's not a different kind of processing. You only need to remake images if the total ink coverage exceeds the print shop's limit, or if the CMYK conversion produces unacceptable color shifts. Convert to CMYK, review the results, and fix only the images that need it." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not all of them. EC retouching aims to show accurate product colors — it's not a different kind of processing. You only need to remake images if the total ink coverage exceeds the print shop's limit, or if the CMYK conversion produces unacceptable color shifts. Convert to CMYK, review the results, and fix only the images that need it."
+      }
     },
     {
       "@type": "Question",
       "name": "Is it possible to make a print match the monitor exactly?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A perfect match is physically impossible. Monitors emit light (additive color); prints reflect light (subtractive color). The gamuts overlap but are not identical. Monitor calibration, ambient lighting, and paper type all affect how colors appear. You can minimize the gap with calibration and soft-proofing, but the final color check should be on paper." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A perfect match is physically impossible. Monitors emit light (additive color); prints reflect light (subtractive color). The gamuts overlap but are not identical. Monitor calibration, ambient lighting, and paper type all affect how colors appear. You can minimize the gap with calibration and soft-proofing, but the final color check should be on paper."
+      }
     },
     {
       "@type": "Question",
       "name": "Does color shift happen even on a home inkjet printer?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Home inkjets also create color with ink and paper, so the result differs from RGB screen colors. However, home inkjets use different ink formulations than commercial CMYK offset presses — some models add light cyan and light magenta inks. A home print that looks fine doesn't guarantee the same result at a commercial printer. Don't use home prints as a proxy for commercial color accuracy." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Home inkjets also create color with ink and paper, so the result differs from RGB screen colors. However, home inkjets use different ink formulations than commercial CMYK offset presses — some models add light cyan and light magenta inks. A home print that looks fine doesn't guarantee the same result at a commercial printer. Don't use home prints as a proxy for commercial color accuracy."
+      }
     },
     {
       "@type": "Question",
       "name": "Can I check total ink coverage myself?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. In Photoshop, open the Info panel from the Window menu. Go to Panel Options and change the Second Color Readout mode to 'Total Ink.' The panel will then display the total ink percentage wherever you hover the cursor. Shinbun-insatsu.jp's technical guide illustrates the same procedure, noting that the Σ value in the Info panel represents total ink coverage. Hover over the darkest areas of your image to check for values exceeding the print shop's limit. This is a manual spot-check — you may miss some areas — but it serves as a useful pre-submission sanity check. The limit varies by print shop and paper, so always compare against the spec in the shop's data guide." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Photoshop, open the Info panel from the Window menu. Go to Panel Options and change the Second Color Readout mode to \"Total Ink.\" The panel will then display the total ink percentage wherever you hover the cursor. Shinbun-insatsu.jp's technical guide illustrates the same procedure, noting that the Σ value in the Info panel represents total ink coverage (Source: Is Your Total Ink Coverage Set Correctly? (shinbun-insatsu.jp)). Hover over the darkest areas of your image to check for values exceeding the print shop's limit. This is a manual spot-check — you may miss some areas — but it serves as a useful pre-submission sanity check. The limit varies by print shop and paper, so always compare against the spec in the shop's data guide."
+      }
     },
     {
       "@type": "Question",
       "name": "What does the K in CMYK stand for?",
-      "acceptedAnswer": { "@type": "Answer", "text": "K is generally understood to stand for 'Key plate' — the plate that carries the fine detail in offset printing, printed in black ink. CMY inks alone can't produce a solid, true black, so the fourth plate was added. Some sources cite 'Key color' or 'Key black' as alternative etymologies; there is no single ISO-defined origin." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "K is generally understood to stand for \"Key plate\" — the plate that carries the fine detail in offset printing, printed in black ink. CMY inks alone can't produce a solid, true black, so the fourth plate was added. Some sources cite \"Key color\" or \"Key black\" as alternative etymologies; there is no single ISO-defined origin."
+      }
     },
     {
       "@type": "Question",
       "name": "Our EC team outsources retouching. Should we ask the retoucher to deliver CMYK files too?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Only if you regularly need print output. Most retouching companies deliver in sRGB because EC platforms require RGB. Requesting an additional CMYK version (with a specified ICC profile) is reasonable for catalog or POP printing. Ask the retoucher which profile your print shop uses — Japan Color 2001 Coated, Japan Color 2011 Coated, etc. Delivering both colorspaces from the same master file keeps editing flexibility intact." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you regularly need print output. Most retouching companies deliver in sRGB because EC platforms require RGB. Requesting an additional CMYK version (with a specified ICC profile) is reasonable for catalog or POP printing. Ask the retoucher which profile your print shop uses — Japan Color 2001 Coated, Japan Color 2011 Coated, etc. Delivering both colorspaces from the same master file keeps editing flexibility intact."
+      }
     }
   ]
 }
@@ -105,8 +129,23 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tsubasa-memo.github.io/" },
-    { "@type": "ListItem", "position": 2, "name": "RGB vs CMYK for EC Operators" }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "EC",
+      "item": "https://tsubasa-memo.github.io/archive.html#ec"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "RGB vs CMYK for EC Operators"
+    }
   ]
 }
 </script>

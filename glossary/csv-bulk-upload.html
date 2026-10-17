@@ -222,6 +222,36 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>モールごとに必須項目が決まっていて、1つでも抜けているとエラーになる。<a href="https://ec-tsushin.com/r_itemcsv_update/" rel="noopener noreferrer" target="_blank">EC通販運営マニュアルの楽天CSV解説</a>によると、楽天のitem.csvで最低限必要な項目は「商品管理番号」「商品名」「販売価格」など。テンプレートの必須列を先に確認してから作業に入るのがおすすめだ。</p>
 <h3>一元管理ツールとの併用</h3>
 <p>複数のECモール（楽天・Amazon・Yahoo!ショッピングなど）に出品している場合、モールごとにCSVのフォーマットが違うので、それぞれ別のCSVを作る必要がある。これがかなり面倒で、ネクストエンジンやクロスモールなどの一元管理ツールを使っている会社も多い。ツール側で商品データを一括管理して、各モール向けに変換してアップロードしてくれる仕組みだ。</p>
+<div class="faq-section">
+<h2>FAQ</h2>
+
+<div class="faq-item">
+<p class="fq">Q. CSV一括登録とは何ですか？</p>
+<p class="fa">A. CSV一括登録とは、商品情報をCSVファイル（カンマ区切りのテキストファイル）にまとめて記入し、ECモールの管理画面からアップロードすることで、複数の商品データを一度に登録・更新する方法です。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. 楽天市場でCSV一括登録を使うには？</p>
+<p class="fa">A. 楽天RMSの「CSVダウンロード・アップロード」機能を利用します。月額11,000円（税込）の有料オプションに申し込む必要があります。RMSからテンプレートCSVをダウンロードし、Excelなどで編集してアップロードする流れです。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. CSV一括登録で商品画像も登録できますか？</p>
+<p class="fa">A. CSVファイル自体に画像データを入れることはできません。画像ファイルは別途アップロードしておき、CSVには画像のファイル名やURLを記入して紐づける形になります。楽天ならR-Cabinetに画像をアップロードしてからCSVで紐づけます。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. CSVファイルの文字化けを防ぐには？</p>
+<p class="fa">A. 文字コードの設定が原因で文字化けが起きることがあります。楽天RMSはShift_JIS、AmazonはUTF-8が推奨されています。Excelで編集する場合は保存時の文字コードに注意が必要です。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq">Q. CSV一括登録で失敗しやすい点は？</p>
+<p class="fa">A. よくある失敗は、必須項目の入力漏れ、文字コードの不一致、セル内の改行混入、半角・全角の間違いなどです。アップロード前にエラーチェック用のプレビュー機能がある場合は必ず確認しましょう。</p>
+</div>
+
+</div>
+
 <div class="related-terms">
 <h3>関連する用語</h3>
 <ul>

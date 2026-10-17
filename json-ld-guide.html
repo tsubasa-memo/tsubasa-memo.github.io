@@ -34,21 +34,6 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順",
-  "description": "構造化データ（JSON-LD）の書き方をFAQPage・Article・BreadcrumbListのコード例付きで解説。Schema.orgに基づくマークアップの基本から、実装後のGoogleリッチリザルトテストでの確認方法まで。",
-  "url": "https://tsubasa-memo.github.io/json-ld-guide.html",
-  "image": "https://tsubasa-memo.github.io/og/json-ld-guide.webp",
-  "author": { "@type": "Person", "name": "ツバサ" },
-  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
-  "datePublished": "2026-05-15",
-  "dateModified": "2026-10-17",
-  "inLanguage": "ja"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -56,7 +41,7 @@
       "name": "構造化データ（JSON-LD）とは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Webページの内容を検索エンジンやAIに伝えるためのデータ形式。Schema.orgの語彙に基づいて「このページは何について書かれているか」「著者は誰か」「FAQの内容は何か」を機械が読める形で記述する。HTMLのhead内にscriptタグで埋め込む。"
+        "text": "Webページの内容を検索エンジンやAIに伝えるためのデータ形式。Schema.orgの語彙に基づいて、ページの内容、著者、FAQなどを機械が読める形で記述する。HTMLのhead内にscriptタグで埋め込む。"
       }
     },
     {
@@ -64,7 +49,7 @@
       "name": "JSON-LDの書き方がわからない場合は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ChatGPTやClaudeに「このページのFAQPage JSON-LDを作って」と依頼すれば、ページの内容に基づいたコードを出力してくれる。出力されたコードをGoogleのリッチリザルトテスト（search.google.com/test/rich-results）に貼り付けてエラーがないか確認してから実装する。"
+        "text": "ChatGPTやClaudeに「このページのFAQPage JSON-LDを作って」と依頼すればコードを出力してくれる。出力されたコードをGoogleのリッチリザルトテストでエラーチェックしてから実装する。"
       }
     },
     {
@@ -80,7 +65,7 @@
       "name": "WordPressで構造化データを実装するには？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yoast SEOまたはRank Mathプラグインの無料版で基本的な構造化データ（Article、BreadcrumbList）が自動生成される。FAQPageは記事編集画面のFAQブロックから追加可能。プラグインを使わない場合はテーマのheader.phpに直接JSON-LDを記述する。"
+        "text": "Yoast SEOまたはRank Mathプラグインの無料版で基本的な構造化データが自動生成される。FAQPageは記事編集画面のFAQブロックから追加できる。プラグインを使わない場合はテーマのheader.phpに直接JSON-LDを記述する。"
       }
     },
     {
@@ -88,10 +73,25 @@
       "name": "構造化データのエラーを確認する方法は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Googleのリッチリザルトテスト（search.google.com/test/rich-results）にURLまたはコードを入力すれば、エラーの有無と詳細がわかる。公開済みのページはGoogle Search ConsoleのURL検査でも確認できる。エラーがある場合は赤で表示されるので、該当箇所を修正する。"
+        "text": "Googleのリッチリザルトテスト（search.google.com/test/rich-results）にURLまたはコードを入力すればエラーの有無がわかる。公開済みのページはSearch ConsoleのURL検査でも確認できる。"
       }
     }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "構造化データ（JSON-LD）の書き方｜FAQPage・Articleの実装手順",
+  "description": "構造化データ（JSON-LD）の書き方をFAQPage・Article・BreadcrumbListのコード例付きで解説。Schema.orgに基づくマークアップの基本から、実装後のGoogleリッチリザルトテストでの確認方法まで。",
+  "url": "https://tsubasa-memo.github.io/json-ld-guide.html",
+  "image": "https://tsubasa-memo.github.io/og/json-ld-guide.webp",
+  "author": { "@type": "Person", "name": "ツバサ" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-10-17",
+  "inLanguage": "ja"
 }
 </script>
 <script type="application/ld+json">
