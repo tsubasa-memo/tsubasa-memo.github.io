@@ -231,6 +231,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>動的サイトは、アクセスのたびにサーバー側でページを生成する。データベースからコンテンツを取り出し、PHPなどのプログラムでHTMLを組み立てて返す。ログイン状態や検索条件によって表示内容が変わるのが特徴である。</p>
 <p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubの<a class="glossary-inline" href="/glossary/repository.html">リポジトリ</a>に置くだけで公開される。</p>
 <h2 id="sec2">静的サイトと動的サイトのメリット・デメリット比較</h2>
+<div class="table-wrap">
 <table class="spec-table">
 <tr><th>比較項目</th><th>静的サイト</th><th>動的サイト（WordPress等）</th></tr>
 <tr><td>セキュリティ</td><td><strong>有利</strong>。狙われる場所が少ない（DBやサーバー側のプログラムがない）</td><td>本体・プラグイン・テーマの更新を続ける必要がある</td></tr>
@@ -240,6 +241,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <tr><td>プラグイン・機能拡張</td><td>自分で実装する</td><td>プラグインで追加できる</td></tr>
 <tr><td>SEO対策の自由度</td><td>HTML直接編集で完全にコントロール可能</td><td>テーマやプラグインに依存する</td></tr>
 </table>
+</div>
 <p>静的サイトの強みはセキュリティ、表示速度、コストの3点である。GitHub Pagesは無料で使え、独自ドメインもHTTPSも対応している。WordPressのようにPHPのバージョンアップやプラグインの互換性を気にする必要がない。</p>
 <p>一方、動的サイトの強みは更新の手軽さと機能拡張のしやすさである。管理画面から記事を書いて「公開」ボタンを押すだけで完了するWordPressの手軽さは、静的サイトでは再現しにくい。お問い合わせフォーム、コメント欄、検索機能なども、WordPressならプラグインで簡単に追加できる。</p>
 <h2 id="sec3">「更新が大変」は本当か？ AIで変わった前提</h2>

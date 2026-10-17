@@ -204,11 +204,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2>非可逆圧縮と可逆圧縮とは</h2>
 <p>ひとことで言うと、画像データを小さくするための圧縮方式のことで、2つの種類がある。「可逆圧縮（ロスレス）」は元のデータを完全に復元できる方式、「非可逆圧縮（ロッシー）」は元に戻せないかわりにファイルサイズを大幅に小さくできる方式だ。</p>
 <p><a href="https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%8F%AF%E9%80%86%E5%9C%A7%E7%B8%AE" rel="noopener noreferrer" target="_blank">Wikipediaの「非可逆圧縮」のページ</a>によると、非可逆圧縮は人間の目では気づきにくいデータを優先的に捨てることでファイルサイズを減らしている。捨てたデータは元に戻せないので「非可逆（もとに戻せない）」と呼ばれる。</p>
+<div class="table-wrap">
 <table class="compare">
 <tr><th>圧縮方式</th><th>元データの復元</th><th>ファイルサイズ</th><th>代表的な形式</th></tr>
 <tr><td>可逆圧縮（ロスレス）</td><td>完全に復元できる</td><td>やや大きい</td><td>PNG、GIF、TIFF（LZW）</td></tr>
 <tr><td>非可逆圧縮（ロッシー）</td><td>復元できない</td><td>かなり小さくできる</td><td>JPEG、WebP（lossy）</td></tr>
 </table>
+</div>
 <p><a href="https://breezegroup.co.jp/202005/image-compression/" rel="noopener noreferrer" target="_blank">BREEZEの画像圧縮解説</a>にも、この2つの違いがシンプルに説明されていてわかりやすかった。可逆圧縮は「zipファイルに入れて解凍するようなイメージ」と書いてあって、なるほどと思った。</p>
 <p>JPEGが保存するたびに劣化するのは、非可逆圧縮が毎回実行されるから。ファイルを開いてそのまま保存し直すだけでも、圧縮→展開→圧縮という処理が走って、そのたびに少しずつデータが失われていく。<a href="https://docs.krita.org/ja/general_concepts/file_formats/lossy_lossless.html" rel="noopener noreferrer" target="_blank">Kritaの公式ドキュメント</a>にも、非可逆圧縮を繰り返すと劣化が蓄積されると書いてあった。</p>
 <h2>EC実務で出てくる場面</h2>
