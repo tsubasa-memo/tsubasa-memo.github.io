@@ -47,6 +47,14 @@ gtag('config', 'G-YYBFXHXMM6');
     },
     {
       "@type": "Question",
+      "name": "「インデックス登録されましたが、サイトマップに送信していません」はエラーですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "エラーではありません。Googleがページを見つけてインデックスに登録したものの、そのURLが送信したサイトマップに入っていない状態です。検索に出したいページならsitemap.xmlに追加し、出したくないページならnoindexを入れます。今のSearch Consoleでは、ページのインデックス登録レポートのフィルタ「未送信ページのみ」でサイトマップに載っていないURLを絞り込み、そのうえで登録済みかどうかを確かめます。"
+      }
+    },
+    {
+      "@type": "Question",
       "name": "サイトマップを送信するとインデックスが早くなりますか？",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -107,7 +115,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-03-29T00:00:00+09:00",
-  "dateModified": "2026-04-02T00:00:00+09:00",
+  "dateModified": "2026-10-17T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -210,7 +218,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">URLがGoogleに登録されていません｜原因と対処法・登録リクエスト手順</h1>
 <div class="article-meta-line">
 <span>公開: 2026年3月29日</span>
-<span>更新: 2026年4月2日</span>
+<span>更新: 2026年10月17日</span>
 </div>
 
 <p>新規ブログのインデックス登録で詰まった「URLがGoogleに登録されていません」の対処法とサイトマップ送信の手順をまとめました。</p>
@@ -230,6 +238,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec1">インデックスとは何か</a></li>
 <li><a href="#sec2">「URLがGoogleに登録されていません」への対処</a></li>
 <li><a href="#sec3">サイトマップを送信する</a></li>
+<li><a href="#sec3b">「インデックス登録されましたが、サイトマップに送信していません」の意味と対処</a></li>
 <li><a href="#sec4">インデックスされるまでの目安</a></li>
 <li><a href="#sec5">インデックスされても順位はすぐ安定しない</a></li>
 <li><a href="#sec6">FAQ</a></li>
@@ -248,7 +257,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li>処理が完了すると「インデックス登録をリクエスト済み」に変わる</li>
 </ol>
 <div class="warn-box">
-<p><strong>注意：</strong>インデックス登録リクエストには1日あたりの上限があります（目安：10〜20件程度）。上限に達した場合は翌日に残りをリクエストしてください。</p>
+<p><strong>注意：</strong>インデックス登録リクエストには1日あたりの上限があります。件数はSearch Consoleのヘルプに書かれていません。多数のURLを知らせたいときはサイトマップを使います（<a href="https://support.google.com/webmasters/answer/9012289?hl=ja" rel="noopener" target="_blank">Search Console ヘルプ・URL 検査ツール</a>）。</p>
 </div>
 <h2 id="sec3">サイトマップを送信する</h2>
 <p>インデックス登録リクエストの他に、サイトマップを送信することでGoogleに全URLを一度に伝えられます。</p>
@@ -259,6 +268,35 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li>「成功しました」と表示されれば完了</li>
 </ol>
 <p>サイトマップが正しく送信されると、GoogleのクローラーがURLを認識しやすくなります。サイトを作ったらまず最初にやるべき作業です。</p>
+<h2 id="sec3b">「インデックス登録されましたが、サイトマップに送信していません」の意味と対処</h2>
+<p>Search Consoleまわりで「インデックス登録されましたが、サイトマップに送信していません」という文言を見かけて、エラーなのか気になった人もいると思います。意味を調べると、エラーではありませんでした。</p>
+<p>この文言が指しているのは、<strong>Googleがページを見つけてインデックスに登録したが、そのURLが送信したサイトマップには入っていない</strong>という状態です。ページは検索に出られる状態なので、「URLがGoogleに登録されていません」とは反対に、登録は済んでいます。</p>
+<p>Search Consoleのヘルプには、この文言のステータスは載っていません。今の画面では、登録済みかどうかと、送信したサイトマップに載っているかどうかを分けて確かめます。</p>
+<ul>
+<li><strong>ページのインデックス登録レポート</strong>：グラフの上のサイトマップフィルタで「未送信ページのみ」を選ぶと、送信したサイトマップに載っていないURLだけが表示されます。そのうえで、登録済みかどうかを確かめます（<a href="https://support.google.com/webmasters/answer/7440203?hl=ja" rel="noopener" target="_blank">Search Console ヘルプ・ページのインデックス登録レポート</a>）</li>
+<li><strong>URL検査ツール</strong>：「検出」の「サイトマップ」の欄の「参照元サイトマップなし」は、Googleがそのページを参照するサイトマップを特定できなかったという表示です。サイトマップに載っていないと断定する表示ではないので、sitemap.xml の中身もあわせて確かめます（<a href="https://support.google.com/webmasters/answer/9012289?hl=ja" rel="noopener" target="_blank">Search Console ヘルプ・URL 検査ツール</a>）</li>
+</ul>
+<h3>ページの種類ごとの対処</h3>
+<table class="spec-table">
+<tr>
+<th>ページの種類</th>
+<th>対処</th>
+</tr>
+<tr>
+<td>検索に出したい記事（新しく書いた記事など）</td>
+<td>sitemap.xml にURLを追加する。登録が済んでいても、サイトマップに入れておくとGoogleにまとめて伝えられる</td>
+</tr>
+<tr>
+<td>検索に出したくないページ（テスト用・重複・お礼ページなど）</td>
+<td>ページに noindex を入れる。robots.txt でブロックすると noindex が読まれないので、クロールは許可したままにする（<a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing?hl=ja" rel="noopener" target="_blank">Google検索セントラル・noindex</a>）</td>
+</tr>
+<tr>
+<td>ページ数が少なく、内部リンクが全ページに届いているサイト</td>
+<td>急いで直す必要はない。Googleは、500ページ以下で内部リンクが網羅されているサイトはサイトマップが要らない場合があるとしている</td>
+</tr>
+</table>
+<p>このブログでは、記事を足すたびに sitemap.xml も書き足す手順にしています。</p>
+<p>なお、サイトマップに入れれば必ず登録されるわけではありません。Googleも、サイトマップ内の「すべての項目がクロールされてインデックスに登録されることが保証されるわけではありません」と書いています（<a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview?hl=ja" rel="noopener" target="_blank">Google検索セントラル・サイトマップの概要</a>）。</p>
 <h2 id="sec4">インデックスされるまでの目安</h2>
 <table class="spec-table">
 <tr><th>状況</th><th>インデックスまでの目安</th></tr>
@@ -272,6 +310,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>このブログも公開直後は表示回数が多かったものの、2〜3ヶ月後に急減した時期がありました。これは新規サイトに対するGoogleの評価が安定化した典型的な動きで、インデックスの問題ではなく順位の問題です。Search Consoleで表示回数が減った場合は、まずインデックス状況を確認してから原因を判断することをおすすめします。</p>
 <h2 id="sec6">FAQ</h2>
 <div class="faq-item"><p class="faq-q">Q. 「URLがGoogleに登録されていません」と表示された場合はどうすればいいですか？</p><p class="faq-a">A. まだGoogleにクロールされていない状態です。URL検査画面で「インデックス登録をリクエスト」ボタンを押してください。リクエスト後、数日〜2週間でクロールされることが多いです。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 「インデックス登録されましたが、サイトマップに送信していません」はエラーですか？</p><p class="faq-a">A. エラーではありません。Googleがページを見つけてインデックスに登録したものの、そのURLが送信したサイトマップに入っていない状態です。検索に出したいページならsitemap.xmlに追加し、出したくないページならnoindexを入れます。今のSearch Consoleでは、ページのインデックス登録レポートのフィルタ「未送信ページのみ」でサイトマップに載っていないURLを絞り込み、そのうえで登録済みかどうかを確かめます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. サイトマップを送信するとインデックスが早くなりますか？</p><p class="faq-a">A. サイトマップを送信するとGoogleのクローラーがサイトの全URLを把握しやすくなり、インデックス登録が早まる効果があります。特に新規サイトや記事数が多いサイトでは効果的です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 新規サイトがGoogleにインデックスされるまでどれくらいかかりますか？</p><p class="faq-a">A. 一般的に1〜4週間程度かかります。サイトマップ送信とインデックス登録リクエストを行うことで早める効果があります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. インデックスされてもすぐに検索結果に表示されますか？</p><p class="faq-a">A. インデックス登録はGoogleのデータベースへの登録を意味します。その後、検索クエリとの関連性や品質評価によって順位が決まります。インデックス直後は順位が不安定で、安定するまで数週間〜数ヶ月かかることがあります。</p></div>
