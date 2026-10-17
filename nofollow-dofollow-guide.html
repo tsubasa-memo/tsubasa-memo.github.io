@@ -190,7 +190,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec3">アフィリエイトリンクにはnofollow sponsoredを付ける</a></li>
 <li><a href="#sec4">公式ドキュメントや公的機関へのリンクの扱い</a></li>
 <li><a href="#sec5">全記事の外部リンクを一括で確認・修正した方法</a></li>
-<li><a href="#sec6">よくある質問</a></li>
+<li><a href="#sec6">FAQ</a></li>
 <li><a href="#sec7">関連する記事</a></li>
 </ol>
 </div>
@@ -231,7 +231,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>具体的には、<code>rel="noopener noreferrer"</code>になっていた外部リンクを<code>rel="noopener noreferrer nofollow"</code>に変換した。さらにアフィリエイトリンク（amzn.toドメイン）だけを抽出して<code>rel="noopener nofollow sponsored"</code>に置換した。</p>
 <p>修正後はgrepで「nofollowが付いていない外部リンク」がゼロ件になっていることを確認した。この作業で重要なのは、<a class="glossary-inline" href="/glossary/canonical.html">canonical</a> URLやmetaタグ内のURLを誤って書き換えないこと。aタグのhrefだけを対象にするフィルターが必要だった。</p>
 <p>加えて、スプレッドシートで全外部リンクの一覧を管理するようにした。記事名・リンク先ドメイン・アンカーテキスト・nofollowの有無を1行ずつ記録する形式で、リンク管理の漏れを防いでいる。</p>
-<h2 id="sec6">よくある質問</h2>
+<h2 id="sec6">FAQ</h2>
 <div class="faq-item"><p class="faq-q">Q. nofollowとdofollowの違いは何ですか？</p><p class="faq-a">A. dofollowはリンク先にページ評価を渡す通常のリンクです。nofollowはrel="noopener nofollow"を付けることで「評価を渡さないでほしい」とGoogleに伝えるヒントです。2019年以降、nofollowは命令ではなくヒントとして扱われています。</p></div>
 <div class="faq-item"><p class="faq-q">Q. sponsoredとugcはnofollowと何が違いますか？</p><p class="faq-a">A. sponsoredは広告・有料リンク用、ugcはコメント欄などユーザー生成コンテンツ用です。機能はnofollowと同じですが、リンクの種類をGoogleにより正確に伝えられます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 比較記事の外部リンクにnofollowを付けるべきですか？</p><p class="faq-a">A. 付けるのが無難です。比較記事の外部リンクは推薦ではなく情報提供なので、リンク先にSEO評価を渡す必要はありません。全サービスに同じルールを適用するのが公平です。</p></div>
@@ -268,6 +268,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-body">
 <span class="cite-title">「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</span>
 <span class="cite-url">tsubasa-memo.github.io/comparison-article-credibility.html</span>
+</span>
+</a>
+<a class="cite-card" href="press-release-citation.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">PR TIMES掲載のプレスリリースに個人ブログが引用された｜被リンクと検索流入の記録</span>
+<span class="cite-url">tsubasa-memo.github.io/press-release-citation.html</span>
 </span>
 </a>
 </div>
