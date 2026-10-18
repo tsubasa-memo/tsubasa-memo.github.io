@@ -58,7 +58,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "JSON-LDとはどういう意味ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に<script type=\"application/ld+json\">タグで埋め込みます。Googleが推奨する構造化データの記述方式です。"
+        "text": "JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type=\"application/ld+json\"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。"
       }
     },
     {
@@ -66,7 +66,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "FAQ構造化データはすべての記事に入れるべきですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FAQがある記事には入れる価値があります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。内容が薄いFAQは効果が低くなります。"
+        "text": "FAQがある記事には入れる価値があります。特にハウツー記事・比較記事・解説記事はFAQと相性が良いです。ただし、FAQの内容が薄い（一般的な質問だけ、答えが短すぎるなど）と効果が低くなります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。"
       }
     },
     {
@@ -260,8 +260,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2 id="sec6">FAQ</h2>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データとは何ですか？</p><p class="faq-a">A. ページのよくある質問と回答を機械が読みやすい形式（JSON-LD）で記述したコードです。Googleは以前、このデータをもとに検索結果にFAQのリッチリザルト（展開できる質問と回答のボックス）を表示していましたが、2026年5月7日に表示を終了しました。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQのリッチリザルトは必ず表示されますか？</p><p class="faq-a">A. いいえ、現在は表示されません。GoogleはFAQのリッチリザルトの表示を2026年5月7日に終了しました。それ以前も2023年8月からは政府・医療系の権威あるサイトに表示が限られており、一般のブログでは表示されない状態でした。FAQPageの構造化データ自体は廃止されていません。</p></div>
-<div class="faq-item"><p class="faq-q">Q. JSON-LDとはどういう意味ですか？</p><p class="faq-a">A. JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&lt;script type="application/ld+json"&gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。</p></div>
-<div class="faq-item"><p class="faq-q">Q. FAQ構造化データはすべての記事に入れるべきですか？</p><p class="faq-a">A. FAQがある記事には入れる価値があります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。内容が薄いFAQは効果が低くなります。</p></div>
+<div class="faq-item"><p class="faq-q">Q. JSON-LDとはどういう意味ですか？</p><p class="faq-a">A. JSON-LD（JavaScript Object Notation for Linked Data）はデータを構造化して記述するための形式です。HTMLの中に&amp;lt;script type="application/ld+json"&amp;gt;タグで埋め込みます。Googleが推奨する構造化データの記述方式です。</p></div>
+<div class="faq-item"><p class="faq-q">Q. FAQ構造化データはすべての記事に入れるべきですか？</p><p class="faq-a">A. FAQがある記事には入れる価値があります。特にハウツー記事・比較記事・解説記事はFAQと相性が良いです。ただし、FAQの内容が薄い（一般的な質問だけ、答えが短すぎるなど）と効果が低くなります。実際の疑問に答える内容のFAQを5問以上用意するのが目安です。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 構造化データのエラーはどこで確認できますか？</p><p class="faq-a">A. Schema.orgのスキーマ マークアップ検証ツール（validator.schema.org）で、FAQPageの記述ミスを確認できます。エラーがある場合は該当箇所のJSONの記述を修正してください。</p></div>
 <div class="faq-item"><p class="faq-q">Q. FAQ構造化データはAI（ChatGPT・Claude等）にも効果がありますか？</p><p class="faq-a">A. LLMはFAQ形式のQ&amp;A構造を引用しやすいとされています。構造化データでQ&amp;Aを明示することで、AIが記事を参照する際に正確な情報が伝わりやすくなります。SEOとLLMO両方への効果が期待できます。</p></div>
 
