@@ -487,7 +487,7 @@
 - [ささげ代行会社を選ぶ前にチェックすべき5つの条件｜与信・取引実績・体制の確認ポイント](https://tsubasa-memo.github.io/sasage-outsource-checklist.html): ささげ代行会社を選ぶ前に確認する5つのチェック項目。14社の資本金開示状況、取引先の実名公開4社、上場企業グループの資本関係5社を公開情報で整理。
 
 - [Amazon出品担当者向け｜検索対象外になった商品の画像修正と確認手順](https://tsubasa-memo.github.io/amazon-search-suppressed-image.html): Amazonの検索対象外を画像の指摘から確認し、白背景・85%ルールとPhotoshopでの修正、登録後の確認を解説した記事。
-- [PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか](https://tsubasa-memo.github.io/php2shell-timeline.html): PHPの脆弱性php2shell（CVE-2026-109618・109619）の修正版が出た2026年10月21日夜、楽天RMS・BASE・futureshop・ネクストエンジン・LOGILESSなどEC出店者の業務が止まった時刻と、各社の告知の書き方を記録した記事。
+- [【EC事業者向け】PHP脆弱性php2shellで止まったカート・モールを一晩追跡](https://tsubasa-memo.github.io/php2shell-timeline.html): PHPの脆弱性php2shell（CVE-2026-109618・109619）の修正版が出た2026年10月21日夜、楽天RMS・BASE・futureshop・ネクストエンジン・LOGILESSなどEC出店者の業務が止まった時刻と、各社の告知の書き方を記録した記事。
   - Q: php2shellとは何ですか？
   - Q: 自分のネットショップがphp2shellの影響を受けるかは、どう見分ければいいですか？
   - Q: 楽天RMSが止まったのはphp2shellが原因ですか？
