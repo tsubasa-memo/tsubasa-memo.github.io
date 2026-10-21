@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか｜ツバサのメモ帳</title>
+<meta name="description" content="2026年10月21日夜、PHPの重大な脆弱性php2shellの修正版公開に合わせてBASE・楽天RMS・futureshop・ネクストエンジンなどが緊急メンテナンスに入った。その一晩をリアルタイムで追跡し、停止と再開の時刻を一覧にした。">
+<meta property="og:title" content="PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか">
+<meta property="og:description" content="2026年10月21日夜、PHPの重大な脆弱性php2shellの修正版公開に合わせてBASE・楽天RMS・futureshop・ネクストエンジンなどが緊急メンテナンスに入った。その一晩をリアルタイムで追跡し、停止と再開の時刻を一覧にした。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tsubasa-memo.github.io/php2shell-timeline.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/php2shell-timeline.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか">
+<meta name="twitter:description" content="2026年10月21日夜、PHPの重大な脆弱性php2shellの修正版公開に合わせてBASE・楽天RMS・futureshop・ネクストエンジンなどが緊急メンテナンスに入った。その一晩をリアルタイムで追跡し、停止と再開の時刻を一覧にした。">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/php2shell-timeline.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/php2shell-timeline.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/php2shell-timeline.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "php2shellとは何ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "2026年10月に修正されたPHP本体の脆弱性2件（CVE-2026-109618・CVE-2026-109619）の通称です。深刻度はCVSS v4.0で9.2で、認証なしで外部からサーバー上のコードを実行されるおそれがあります。修正版はPHP 8.5.12・8.4.27・8.3.36・8.2.35で、8.1以前にはPHPのプロジェクトとしての更新は出ていません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "自分のネットショップがphp2shellの影響を受けるかは、どう見分ければいいですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "WordPressやWooCommerce、EC-CUBEなどで作ったサイトをレンタルサーバーに置いている場合は、サーバーのPHPが対象になるので、サーバー会社の告知とPHPのバージョンを確認します。BASEやShopifyのように運営会社が提供するサービスでは、店側でPHPを操作することはなく、運営会社の告知を確認することになります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "楽天RMSが止まったのはphp2shellが原因ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "公式には確認できていません。RMSのログイン画面には「システムの不具合のため、メンテナンス」と表示されていて、PHPの名前は出ていませんでした。21日23時17分には停止しており、22日4時11分から4時41分のあいだにログイン画面が元に戻りました。" }
+    },
+    {
+      "@type": "Question",
+      "name": "AmazonやYahoo!ショッピングは止まりましたか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "21日夜から22日朝まで、外から見える範囲では変化がなく、告知も出ていませんでした。ただし、ログインしてから見る出店者向けのお知らせまでは確認していません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "php2shellで実際に被害は出たのですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "22日朝の時点で、会社名と被害がセットになった公式発表は見つかりませんでした。Cloudflareは攻撃の通信を観測したと公表し、watchTowrは自社のおとりのサーバーで実際の悪用を観測したとしていますが、どちらも特定の会社の被害を示すものではありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "PHP 8.1以前を使っているサイトはどうすればいいですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "PHP公式からは8.1以前向けの更新が出ていないため、PHPのバージョンを8.2以降に上げるか、サーバー会社やディストリビューションの独自の修正を待つことになります。エックスサーバーは、修正版のない古いPHP向けに自社で修正を作り、22日6:45時点で一部のバージョンから適用を始めたと告知していました。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか",
+  "description": "2026年10月21日夜、PHPの重大な脆弱性php2shellの修正版公開に合わせてBASE・楽天RMS・futureshop・ネクストエンジンなどが緊急メンテナンスに入った。その一晩をリアルタイムで追跡し、停止と再開の時刻を一覧にした。",
+  "url": "https://tsubasa-memo.github.io/php2shell-timeline.html",
+  "image": "https://tsubasa-memo.github.io/og/php2shell-timeline.webp",
+  "author": { "@type": "Person", "name": "ツバサ", "url": "https://tsubasa-memo.github.io/about.html" },
+  "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
+  "datePublished": "2026-10-22T00:00:00+09:00",
+  "dateModified": "2026-10-22T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tsubasa-memo.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "EC・実務", "item": "https://tsubasa-memo.github.io/archive.html#ec" },
+    { "@type": "ListItem", "position": 3, "name": "php2shellの緊急メンテ追跡" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#ec">EC・実務</a> &gt; php2shellの緊急メンテ追跡
+</nav>
+
+<div class="article-hero">
+<img src="/thumbs/php2shell-timeline.webp" alt="PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか" width="640" height="360" loading="eager">
+</div>
+
+<span class="article-tag">EC・実務</span>
+<h1>PHP脆弱性php2shellの緊急メンテをリアルタイム追跡｜BASE・楽天ほか</h1>
+<div class="article-meta-line">
+<span>公開: 2026年10月22日</span>
+<span>更新: 2026年10月22日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>PHPの重大な脆弱性「php2shell」の修正版が出た2026年10月21日の夜、各社の告知とSNSを一晩追いかけた。先に結論を書くと、止まったのは買い物をする人が使う画面より、出店者が使う管理画面や受注システムのほうだった。楽天の店舗管理画面RMSは夜中に少なくとも約5時間入れなくなり、受注管理や倉庫のシステムも止まり、futureshopは全店舗のECサイトと管理画面が朝になっても戻らなかった。</p>
+
+<p>各社の対応を比べると、評価を分けたのは止めていた時間の長さより、止めている間に何を知らせたかだった。理由と範囲と見通しを書き続けたLOGILESSやエックスサーバーと、メンテナンス画面だけを出していた楽天RMSやネクストエンジンとでは、出店者が朝の段取りを決められるかどうかがまったく違った。いちばん見通しが外れたのは、「30分〜1時間程度」の予定が夜通しの全店舗停止になったfutureshopだ。</p>
+
+<p>この記事は、日本時間21日夕方から22日朝までに確認できたことを、時刻つきで残した記録だ。時刻は各社の告知や公式アカウントの投稿で確かめたものを使い、確かめられなかったことはそう書いている。</p>
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>php2shell（CVE-2026-109618・CVE-2026-109619）の修正版が予定より26分早く出た経緯</li>
+<li>楽天RMS・BASE・futureshop・ネクストエンジン・LOGILESSなど、EC出店者の業務が止まった場所と時刻</li>
+<li>エックスサーバー・さくら・ロリポップなどレンタルサーバー各社の止め方と、PHP 8.1以前の扱い</li>
+<li>夜のあいだに書き換わった告知と、SNSで流れてきた話の答え合わせ</li>
+<li>対応がうまくいかなかった会社、早かった会社・遅かった会社、説明が足りなかった会社・丁寧だった会社の評価</li>
+<li>カートや受注管理の業者を選ぶときに、緊急時の告知で見ておきたい4つのこと</li>
+</ul>
+</div>
+
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">php2shell（CVE-2026-109618・CVE-2026-109619）とは｜PHP公式の事前告知の内容</a></li>
+<li><a href="#sec2">PHP修正版の公開前に止まったサービス｜BASE・エックスサーバー・コドモンの緊急メンテナンス時系列</a></li>
+<li><a href="#sec3">PHP 8.5.12など修正版は予定より前に公開された｜php2shellの悪用観測は「攻撃あり」と「被害未確認」に割れた</a></li>
+<li><a href="#sec4">楽天RMS・ネクストエンジン・LOGILESSも停止｜php2shellでEC出店者の受注・出荷業務が止まった場所</a></li>
+<li><a href="#sec5">エックスサーバー・さくら・ロリポップの対応｜修正版が出ないPHP 8.1以前は独自修正待ち</a></li>
+<li><a href="#sec6">一晩で書き換わった告知と、SNSで流れてきた話の答え合わせ</a></li>
+<li><a href="#sec7">php2shellの夜の対応を出店者の立場で評価する｜futureshop・ネクストエンジン・楽天RMSとLOGILESS・エックスサーバーの差</a></li>
+<li><a href="#sec8">カート・受注管理・サーバー会社を選ぶ側として、緊急メンテナンスの告知で見えたこと</a></li>
+<li><a href="#sec9">FAQ</a></li>
+</ol>
+</div>
+
+<!-- H2① -->
+<h2 id="sec1">php2shell（CVE-2026-109618・CVE-2026-109619）とは｜PHP公式の事前告知の内容</h2>
+
+<p>PHPの開発チームは2026年10月20日、公式サイトのニュース欄に「Upcoming Critical PHP Security Release」という告知を出した。CVSS v4.0で9.2と評価された重大な脆弱性2件を修正するリリースを、10月21日14時（協定世界時）に出すという内容だ。日本時間では21日の23時にあたる。</p>
+
+<a class="cite-card" href="https://www.php.net/archive/2026.php#2026-10-20-1" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">Upcoming Critical PHP Security Release</span>
+<span class="cite-url">php.net</span>
+</span>
+</a>
+
+<p>告知の時点では、どのバージョンが影響を受けるのか、どう直るのかは書かれていなかった。影響するバージョンと修正版はリリース時に公開する、と書かれていただけだ。そのうえで、脆弱性の詳細が外に出た場合や実際の悪用が確認された場合は、予定より早くリリースすることがあるとも明記されていた。</p>
+
+<p>報道では、2件はCVE-2026-109618とCVE-2026-109619として扱われ、外部からサーバー上で任意のコードを実行されるおそれがあるとされた。研究者の間では「php2shell」という呼び名が使われている。IPAも21日に、修正版が出たらすぐ当てられるよう事前の準備を呼びかける注意喚起を出した。この時点でIPAは、悪用された攻撃は確認していないとしていた。</p>
+
+<a class="cite-card" href="https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">I</span>
+<span class="cite-body">
+<span class="cite-title">【事前準備のお願い】PHPのセキュリティリリース公開予定について</span>
+<span class="cite-url">ipa.go.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://www.itmedia.co.jp/news/article/2610/21/2000002446/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">I</span>
+<span class="cite-body">
+<span class="cite-title">PHPに「緊急」レベルの脆弱性2件 修正版を日本時間21日深夜に公開へ、事前準備を呼び掛け</span>
+<span class="cite-url">itmedia.co.jp</span>
+</span>
+</a>
+
+<p>EC担当の立場で言うと、まず気にするのは「うちの店はPHPで動いているのか」だ。WordPressやWooCommerce、EC-CUBEなどで自社サイトを作ってレンタルサーバーに置いている場合は、サーバーのPHPそのものが対象になる。BASEやShopifyのように運営会社が丸ごと提供するサービスなら、店側でPHPを触ることはなく、運営会社の対応を待つことになる。今回は後者の運営会社が次々に止まったので、自分では何もできないままネットショップが止まった出店者が多かった。</p>
+
+<!-- H2② -->
+<h2 id="sec2">PHP修正版の公開前に止まったサービス｜BASE・エックスサーバー・コドモンの緊急メンテナンス時系列</h2>
+
+<p>修正版が出る前から、国内のサービスは次々に止まっていった。公式の告知や公式アカウントの投稿で時刻を確かめられたものを、日本時間で並べる。「告知の理由欄」は、各社が止めた理由をどう書いたかだ。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>日本時間</th><th>出来事</th><th>告知の理由欄</th></tr>
+<tr><td>21日 4:25ごろ</td><td>PHP公式が事前告知を掲載（修正版は21日23時の予定）</td><td>―</td></tr>
+<tr><td>21日 13:00ごろ</td><td>さくらのレンタルサーバが緊急メンテナンス開始（翌8時ごろまで）</td><td>理由の記載なし</td></tr>
+<tr><td>21日 13:01</td><td>国家サイバー統括室がXで、修正版をすぐ当てられるよう準備を呼びかけ</td><td>PHPと明記</td></tr>
+<tr><td>21日 14:16</td><td>コドモンが保護者アプリを含む全サービスを順次停止</td><td>「利用しているソフトウェアに重大な脆弱性」</td></tr>
+<tr><td>21日 15:50</td><td>BASEが緊急メンテナンス開始。当初の22時開始から前倒し（ショップの閲覧・注文、管理画面も停止）</td><td>PHPと明記</td></tr>
+<tr><td>21日 16:00</td><td>エックスサーバーが公式サイトと管理画面を停止（利用者のサーバーとサイト表示は継続）</td><td>「使用しているソフトウェア」</td></tr>
+<tr><td>21日 19:00</td><td>ConoHa WINGとお名前.com レンタルサーバーが、同じ時間帯（翌10時まで）の保守作業を開始</td><td>理由の記載なし</td></tr>
+<tr><td>21日 20:00</td><td>futureshopがCMSサーバーオプションなどを停止（再開は未定）</td><td>PHPと明記</td></tr>
+<tr><td>21日 21:44</td><td>国家サイバー統括室が「すぐ当てられないならサイトの一時停止も有効」と投稿</td><td>PHPと明記</td></tr>
+<tr><td>21日 21:55</td><td>高市首相がXで「今夜に対応して頂きたい大至急のお願い」と投稿</td><td>PHPと明記</td></tr>
+<tr><td>21日 22:00</td><td>カラーミーショップが全面停止（終了時刻は未定）。受注・倉庫システムのLOGILESSも停止（翌4時まで）</td><td>カラーミーはPHPと明記、LOGILESSは「ソフトウェアの脆弱性」</td></tr>
+<tr><td>21日 22:10</td><td>mixhostがマイページを停止</td><td>「予防的なセキュリティ強化」</td></tr>
+</table>
+</div>
+
+<p>首相が個別の脆弱性について「今夜」と期限を切って呼びかけるのは、僕の記憶ではあまり見たことがない。表示回数は2,000万回を超えていた。</p>
+
+<a class="cite-card" href="https://x.com/takaichi_sanae/status/2112890642590564386" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">X</span>
+<span class="cite-body">
+<span class="cite-title">高市早苗首相の投稿（2026年10月21日21:55）</span>
+<span class="cite-url">x.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://x.com/cyber_forecast/status/2112887821312942568" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">X</span>
+<span class="cite-body">
+<span class="cite-title">国家サイバー統括室(注意・警戒情報)の投稿（2026年10月21日21:44）</span>
+<span class="cite-url">x.com</span>
+</span>
+</a>
+
+<p>表を作っていて気になったのは、理由の書き方がそろっていないことだ。BASEやカラーミーショップはPHPの名前をはっきり出している。一方で、さくらやConoHa WING、お名前.comは理由を書かずに「保守作業」とだけ書いていた。コドモンは「利用しているソフトウェア」とぼかしている。止める側にも、名前を出すと「うちのシステムはPHPで動いている」と公表することになる、という事情があるのかもしれない。</p>
+
+<div class="point-box">
+<p><strong>SNSで流れてきた話を確かめた記録（21日夜）</strong></p>
+<ul>
+<li>「BASEが緊急メンテに入った」→ BASEのヘルプページで確認。理由はPHPの脆弱性への予防措置と明記されていて、不正アクセスや情報漏えいは確認されていないと書かれていた</li>
+<li>「修正前に情報が漏れ、攻撃ツールの画面が出回っている」→ 公表前に情報が出回ったことは複数の報道が伝えていた。攻撃ツールそのものは僕は確かめていないし、確かめるつもりもない</li>
+<li>「Cloudflareが攻撃の兆しを観測した」→ CloudflareのCTOが16:43に「初期の攻撃が出始めている」と投稿していた。一方でwatchTowrやHuntressは、この時点で実際の悪用は確認していないとしていた</li>
+</ul>
+</div>
+
+<!-- H2③ -->
+<h2 id="sec3">PHP 8.5.12など修正版は予定より前に公開された｜php2shellの悪用観測は「攻撃あり」と「被害未確認」に割れた</h2>
+
+<p>修正版は、予告の23時を待たずに出た。GitHubのセキュリティ勧告が公開されたのは22:34で、予定の26分前だ。前倒しの理由は、PHP公式のどの告知にも書かれていなかった。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>日本時間</th><th>出来事</th></tr>
+<tr><td>21日 22:34</td><td>GitHubでPHPのセキュリティ勧告2件が公開（修正版は8.5.12・8.4.27・8.3.36・8.2.35）</td></tr>
+<tr><td>21日 22:41</td><td>CloudflareのCTOがXで「PHPの変更が公開された。パッチを当て始めて」と投稿</td></tr>
+<tr><td>21日 22:44</td><td>WordPress.orgが告知を掲載。WordPress側の更新はなく、サーバーのPHPを今すぐ更新するよう呼びかけ</td></tr>
+<tr><td>21日 22:48・22:54</td><td>2件のCVE（CVE-2026-109618・CVE-2026-109619）の登録情報が公開</td></tr>
+<tr><td>21日 22:56</td><td>Cloudflareがブログで「顧客を狙った攻撃の通信を観測している」と公表</td></tr>
+<tr><td>21日 22:57</td><td>国家サイバー統括室が「可及的速やかに適用を」と投稿</td></tr>
+<tr><td>21日 22:57</td><td>Patchstackが「探りを入れる攻撃だけで、侵害の確証はまだない」と記録</td></tr>
+<tr><td>21日 23:35</td><td>watchTowrがFAQの悪用欄を「報告なし」から「実際の悪用あり」に変更（自社のおとりサーバー網での観測）</td></tr>
+</table>
+</div>
+
+<a class="cite-card" href="https://www.php.net/archive/2026.php#2026-10-21-5" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">Security advisory: Critical remote code execution vulnerabilities, update now</span>
+<span class="cite-url">php.net</span>
+</span>
+</a>
+
+<p>PHP公式の勧告によると、影響を受けるのは各系列で修正版より前のバージョンだ。8.1以前には、PHPのプロジェクトとしての更新は出ない。設定を変えて防ぐ方法についても、「完全な緩和策はない。更新だけが安全な選択」と書かれていた。</p>
+
+<p>悪用については、夜のあいだ見解が割れたままだった。Cloudflareは攻撃の通信を観測し、watchTowrも23:35に「実際の悪用あり」へ切り替えた。ただ、watchTowrの観測は自社が世界中に置いたおとりのサーバー（ハニーポット）に届いた攻撃のことで、どこかの会社が侵入されたという話とは別だ。一方で、Patchstackは修正版の公開直後の時点で「探りを入れる攻撃だけで、侵害の確証はない」としていた。国内でも、IPAとJPCERT/CCの注意喚起は、修正版が出たあとの深夜のうちには更新されなかった。</p>
+
+<a class="cite-card" href="https://blog.cloudflare.com/php-vulnerabilities-waf-protection" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">C</span>
+<span class="cite-body">
+<span class="cite-title">Cloudflare deploys protections against php2shell vulnerability</span>
+<span class="cite-url">blog.cloudflare.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://watchtowr.com/intelligence/php-cve-2026-109618-faq/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">W</span>
+<span class="cite-body">
+<span class="cite-title">PHP RCE FAQ: PHP2Shell CVE-2026-109618 &amp; CVE-2026-109619</span>
+<span class="cite-url">watchtowr.com</span>
+</span>
+</a>
+
+<p>「攻撃が来ている」と「被害が出た」は、同じ話のように聞こえて中身がまったく違う。SNSでは前者が後者のように語られる場面が何度もあった。僕は、会社名と被害がセットで公式に発表されるまでは「被害」とは書かないことにした。</p>
+
+<p>見つけた経緯については、日付が変わってから報道が出た。セキュリティ企業のCalifが8月に2件を見つけてPHPに報告し、Wizも別に見つけて報告していたという。CalifはOpenAIの脆弱性対策の取り組みの一環として調べていたそうだ。</p>
+
+<!-- H2④ -->
+<h2 id="sec4">楽天RMS・ネクストエンジン・LOGILESSも停止｜php2shellでEC出店者の受注・出荷業務が止まった場所</h2>
+
+<p>今回いちばん書き残しておきたいのが、この見出しの話だ。買い物をする人が使う画面は動いているのに、出店者が使う管理画面が止まっていた。</p>
+
+<p>21日の夜、楽天市場では買い物も検索もいつもどおりできた。ところが店舗が使う管理画面のRMSは、23:17に開いたときにはメンテナンス画面になっていた。画面の文面は「システムの不具合のため」で、PHPという言葉は出てこない。楽天市場の購入者向けの障害情報ページにも「報告されているメンテナンス・障害情報はございません」と出ていた。この日は楽天のブランドデーの最終日で、注文は入ってくるのに、店のほうは受注を処理する画面に入れない状態だったことになる。</p>
+
+<p>受注や在庫をまとめて管理するツールや、倉庫のシステムも止まった。受注を処理して出荷するには、モールの管理画面とこうしたツールの両方が動いている必要がある。僕の職場でも、朝いちばんに受注を取り込んで出荷指示を出す流れなので、どちらか片方が朝まで戻らなければ、その日の発送はまるごと後ろにずれる。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>サービス</th><th>止まったもの</th><th>確認できた停止〜復旧（日本時間）</th><th>理由の書き方</th></tr>
+<tr><td>楽天RMS</td><td>店舗管理画面のログイン</td><td>21日23:17には停止〜22日4:11〜4:41のあいだに復旧</td><td>「システムの不具合」</td></tr>
+<tr><td>BASE</td><td>ショップの閲覧・注文、管理画面、API</td><td>21日15:50〜22日8:00予定（7:00予定から延長）</td><td>PHPと明記</td></tr>
+<tr><td>カラーミーショップ</td><td>ショップの閲覧・購入、管理画面</td><td>21日22:00〜22日7:20にショップと管理画面は再開（WordPressで作ったページは対応中）</td><td>PHPと明記</td></tr>
+<tr><td>MakeShop</td><td>管理画面、ショップの閲覧・購入、API、メール</td><td>21日23:00〜22日4:11〜4:41のあいだに復旧（予定は4:00）</td><td>「予防的な措置」</td></tr>
+<tr><td>futureshop</td><td>全店舗のECサイト・管理画面・FTP・API（7時ごろからは契約ドメインのメールも）</td><td>21日21:36〜22日6:00時点も停止（再開の見込みは示されず）</td><td>PHPと明記</td></tr>
+<tr><td>ネクストエンジン</td><td>ログイン画面</td><td>21日23:45には停止〜22日7:40時点も停止</td><td>今回の停止についての告知は見当たらず</td></tr>
+<tr><td>LOGILESS</td><td>受注・倉庫システムの全機能、モールとの連携</td><td>21日22:00〜22日0:43〜1:15のあいだに復旧（予定は4:00）</td><td>「ソフトウェアの脆弱性」</td></tr>
+<tr><td>GoQSystem</td><td>ログイン画面</td><td>21日23:44には停止〜22日7:03〜7:40のあいだに復旧</td><td>今回の停止についての告知は見当たらず</td></tr>
+<tr><td>GMOペイメントゲートウェイ</td><td>会社のWebサイト（決済は影響なしと明記）</td><td>21日22:40〜22日0:23〜0:43のあいだに復旧</td><td>「緊急メンテナンス」</td></tr>
+<tr><td>SBペイメントサービス</td><td>会社のWebサイトと問い合わせフォーム</td><td>21日23:44には停止〜22日7:40時点も停止</td><td>途中から「PHPの脆弱性に対する未然の予防措置」と追記</td></tr>
+</table>
+</div>
+
+<p>いちばん長引いたのはfutureshopだ。告知の流れを並べる。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>日本時間</th><th>futureshopの告知・状態</th></tr>
+<tr><td>21日 夕方</td><td>「18:30以降、30分〜1時間程度」の緊急メンテナンスと案内</td></tr>
+<tr><td>21日 20:00</td><td>PHPの脆弱性への予防措置として、CMSサーバーオプションなどを停止</td></tr>
+<tr><td>21日 21:36</td><td>全店舗のECサイト・管理画面・FTP・APIを停止（6:00の第二報による）</td></tr>
+<tr><td>22日 6:00</td><td>第二報。PHPの脆弱性への対応が終わっていないとして停止を継続。再開の時刻は「お知らせが難しい状況」、次の案内は10時ごろ</td></tr>
+<tr><td>22日 7:00ごろ</td><td>契約しているドメインのメールの送受信も止めていると追記</td></tr>
+</table>
+</div>
+
+<p>futureshopで店を出している会社にとっては、夜から朝まで、ECサイトも管理画面も使えない状態が続いたことになる。</p>
+
+<a class="cite-card" href="https://www.future-shop.jp/support/" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">F</span>
+<span class="cite-body">
+<span class="cite-title">【第二報】 futureshop緊急メンテナンス継続のお知らせ</span>
+<span class="cite-url">future-shop.jp</span>
+</span>
+</a>
+
+<p>表の「〜のあいだに復旧」は、僕が30分ほどの間隔で見に行って、前回は止まっていて今回は戻っていた、という意味だ。各社が復旧の時刻を告知していなかったので、この幅でしか書けない。</p>
+
+<p>一方で、Amazon、Yahoo!ショッピング、Qoo10、ZOZOTOWNは、外から見える範囲では一晩じゅう変化がなかった。告知も出ていない。メルカリは22:50に「臨時メンテナンスを実施する可能性」を告知したが、結局止めなかった（この経緯は後で書く）。</p>
+
+<p>お金まわりも見ておく。クレジットカード会社は、22日8:07に主な10社（楽天カード・三井住友カード・JCB・セゾン・イオン・エポス・PayPayカード・dカード・アメックス・三菱UFJニコス）の公式サイトを開いたが、メンテナンス画面になっているところはなかった。会員ページの中までは確認していない。銀行と証券会社では、共同通信が次のように伝えていた。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>金融機関</th><th>報道された内容</th></tr>
+<tr><td>全国銀行協会</td><td>銀行間の決済関連への影響は確認されていない</td></tr>
+<tr><td>静岡銀行</td><td>21日、ネットバンキングを一時停止すると発表</td></tr>
+<tr><td>七十七銀行</td><td>予防的な措置として一部サービスを停止</td></tr>
+<tr><td>みずほ銀行</td><td>システムの安全性向上のため臨時メンテナンスを実施</td></tr>
+<tr><td>大和証券</td><td>口座開設を含むウェブサイトでのサービスを一時停止</td></tr>
+<tr><td>三菱UFJモルガン・スタンレー証券</td><td>本人確認などの手続きを停止</td></tr>
+</table>
+</div>
+
+<a class="cite-card" href="https://news.jp/i/1485635868605956152" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">共</span>
+<span class="cite-body">
+<span class="cite-title">銀行決済は影響確認されず PHP欠陥、鉄道などで緊急措置</span>
+<span class="cite-url">news.jp</span>
+</span>
+</a>
+
+<p>Xでは出店者の声も流れていた。名前は伏せて、内容だけ書いておく。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>日本時間</th><th>投稿した人</th><th>内容</th></tr>
+<tr><td>21日 23:02</td><td>楽天とYahoo!ショッピングに出店している人</td><td>受注システムも倉庫システムも緊急メンテ、楽天RMSもメンテに入った。明日の午前に戻らないと出荷が遅れる。Amazonは何も変わらない</td></tr>
+<tr><td>21日 23:20</td><td>MakeShopで通販サイトを出している個人</td><td>運営元の緊急メンテで、明け方まで閉鎖</td></tr>
+<tr><td>21日 23:46</td><td>別の出店者</td><td>PHPの件で楽天のRMSまで止まるとは思わなかった（楽天自身はPHPと書いていない）</td></tr>
+<tr><td>21日 23:49</td><td>MakeShopで公式ストアを出している会社</td><td>運営元の緊急メンテで閲覧も購入もできない。再開の目途が立ち次第知らせる</td></tr>
+<tr><td>22日 1:47</td><td>MakeShopで通販サイトを出している別の店</td><td>安全が確認されるまで通販サイトを一時クローズ</td></tr>
+</table>
+</div>
+
+<p>カートやモールが止まると、そのサービスで店を出している人が、自分のお客さんに事情を説明することになる。今回の夜は、それがいくつも重なっていた。</p>
+
+<!-- H2⑤ -->
+<h2 id="sec5">エックスサーバー・さくら・ロリポップの対応｜修正版が出ないPHP 8.1以前は独自修正待ち</h2>
+
+<p>自社サイトを自前のPHPで動かしている場合、頼りになるのはレンタルサーバー会社の対応だ。今回は各社とも、利用者のサイトの表示は止めずに、自社の公式サイトや管理画面のほうを止める形が多かった。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>サーバー会社</th><th>止めたもの</th><th>日本時間</th><th>理由の書き方</th></tr>
+<tr><td>エックスサーバー（シン・レンタルサーバーも同じ）</td><td>公式サイト・管理画面・サポート窓口（利用者のサイトとメールは継続）</td><td>21日16:00〜22日7:40時点も停止</td><td>「使用しているソフトウェア」。FAQではPHPと明記</td></tr>
+<tr><td>さくらのレンタルサーバ</td><td>一時的に接続できない場合あり。22:00からphpMyAdminなども停止、23:00から「PHPバージョンアップ」</td><td>21日13:00ごろ〜22日8:00ごろ予定。PHPバージョンアップは22日6:30に完了と告知</td><td>最初の告知は理由なし。後の作業告知でPHPバージョンアップと明記</td></tr>
+<tr><td>ロリポップ！</td><td>サービスサイト・ユーザー専用ページ・APIなど</td><td>21日〜22日7:40時点も停止</td><td>PHPと明記</td></tr>
+<tr><td>ConoHa WING・お名前.com レンタルサーバー</td><td>一時的に接続できない場合あり</td><td>21日19:00〜22日10:00予定（2社とも同じ時間帯）</td><td>「システムの保守作業」</td></tr>
+<tr><td>mixhost</td><td>マイページ（サーバー・サイト表示・メールは影響なし）</td><td>21日22:10〜（終了は未定）</td><td>「予防的なセキュリティ強化」</td></tr>
+</table>
+</div>
+
+<p>EC担当として気になったのは、エックスサーバーが出した進捗だ。並べると次のとおり。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>進捗の時点</th><th>利用者のサーバーへの対応</th></tr>
+<tr><td>22日 1:10</td><td>公式の修正版がある8.2〜8.5から順に修正の適用を開始。修正版が出ない古いPHPは自社で修正を作り始めたが、時間がかかる見込み</td></tr>
+<tr><td>22日 3:55</td><td>8.2〜8.5の適用を続けていて、全サーバーの完了まで数時間かかる見込み。古いPHPは修正の準備と検証を続けている</td></tr>
+<tr><td>22日 6:45</td><td>8.2〜8.5は対象の全サーバーへの適用が完了。古いPHPは一部のバージョンで準備が整い、検証が済んだものから順に適用を開始</td></tr>
+</table>
+</div>
+
+<p>なお、3:55時点の進捗は、僕が4:11から7:03までに何度か見たときには表示されておらず、7:40に見たときに6:45時点の進捗と一緒に出ていた。</p>
+
+<a class="cite-card" href="https://www.xserver.ne.jp/" target="_blank" rel="noopener nofollow">
+<span class="cite-ico ext">X</span>
+<span class="cite-body">
+<span class="cite-title">予防的な安全対策に伴う公式サイト・管理画面等の一時停止のお知らせ｜エックスサーバー株式会社</span>
+<span class="cite-url">xserver.ne.jp</span>
+</span>
+</a>
+
+<p>PHP公式は8.1以前に更新を出さない。古いPHPのまま動いているサイトは、サーバー会社が独自に手当てしてくれるのを待つか、自分でバージョンを上げるしかない。サーバーの管理画面でPHPのバージョンを選べる場合、何年も前に設定したまま放ってあることはよくある。僕も今回、担当しているサイトの設定を見直すつもりだ。</p>
+
+<!-- H2⑥ -->
+<h2 id="sec6">一晩で書き換わった告知と、SNSで流れてきた話の答え合わせ</h2>
+
+<p>今回は各社の告知ページの文面を30分おきに保存して、前回との違いを比べていた。すると、告知は出したら終わりではなく、夜のあいだに何度も書き換わっていた。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>日本時間</th><th>会社</th><th>変わったところ</th></tr>
+<tr><td>22日 0:43〜1:15</td><td>SBペイメントサービス</td><td>メンテナンス画面の「システム緊急メンテナンスのため」が「PHPの脆弱性に対する未然の予防措置（システム緊急メンテナンス）のため」に。止めた理由をあとから書き足した</td></tr>
+<tr><td>22日 1:34ごろ</td><td>楽天ブログ（楽天ポイントモールの告知の掲載先）</td><td>メンテナンス画面の「10/21 23:00～10/21 08:00」が「～10/22 08:00」に直された</td></tr>
+<tr><td>22日 1:47〜2:18</td><td>メルカリ</td><td>見出しだけが「臨時メンテナンス実施の可能性について」から「臨時メンテナンス実施見送りについて」に。本文は「実施する可能性がございます」のまま、更新時刻の表示も22:50のまま</td></tr>
+<tr><td>22日 4:11</td><td>MakeShop</td><td>終了予定の4:00を過ぎても画面は「23:00～04:00」のまま。延長の告知はサイトにも公式Xにもなく、4:41には戻っていた</td></tr>
+<tr><td>22日 6:46ごろ</td><td>楽天ブログ</td><td>終了予定が「～10/22 08:00」から「～10/22 11:00」に延びた</td></tr>
+<tr><td>22日 6:29〜7:03</td><td>BASE</td><td>見出しが「緊急メンテナンス延長のお知らせ」に変わり、終了予定が7:00から8:00に延長</td></tr>
+<tr><td>22日 7:01ごろ</td><td>futureshop</td><td>契約しているドメインのメールの送受信も止めていると追記。問い合わせ先をメールからフォームに変更</td></tr>
+<tr><td>22日 7:20</td><td>カラーミーショップ</td><td>「一部の画面で完了」と追記。ショップの表示・購入と管理画面は使えるようになり、WordPressで作ったページは引き続き対応中と分けて書いた</td></tr>
+<tr><td>22日 7:40</td><td>エックスサーバー</td><td>1:10の進捗で「2時間ごとを目安にお知らせ」としていた。次に見えたのは7:40で、3:55時点と6:45時点の進捗が一度に表示された（4:11〜7:03の取得では1:10時点のままだった）</td></tr>
+</table>
+</div>
+
+<p>SNSで流れてきた話も、確かめられる範囲で確かめた。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>流れてきた話</th><th>確かめた結果</th></tr>
+<tr><td>「ふるさとチョイスがハッカーにやられた」</td><td>運営会社の公式発表は、10月17日に確認した不正アクセスについてのもの（20日に情報流出を公表）。PHPやphp2shellへの言及はなく、時期が近いだけの別の件だった</td></tr>
+<tr><td>「Yahoo!ショッピングの受注が19時ごろから止まった」</td><td>出店者向けの障害報告ページに10月21日付の掲載はなかった（22日0時ごろに確認）。投稿者が使っている受注システムの停止と見ると話が合う</td></tr>
+<tr><td>「watchTowrが本物と認めた」</td><td>watchTowr自身のページでは確認できず、報道の伝聞だった</td></tr>
+<tr><td>「悪用が始まった」</td><td>攻撃の通信やおとりのサーバーへの攻撃は観測されていたが、会社名と被害がセットの公式発表は、22日朝までの時点で見つからなかった</td></tr>
+</table>
+</div>
+
+<p>futureshopは21日に、自社サーバーへの不正アクセスを公表していた（10:14ごろに確認）。同じ日にPHPの対応で一部機能も止めているが、2つは別々の告知に分かれていて、不正アクセスのほうにPHPへの言及はない。タイミングが重なっているので結びつけて語られやすいが、公式の発表からは関係があるとは言えない。</p>
+
+
+<!-- H2⑦ -->
+<h2 id="sec7">php2shellの夜の対応を出店者の立場で評価する｜futureshop・ネクストエンジン・楽天RMSとLOGILESS・エックスサーバーの差</h2>
+
+<p>ここまでの記録をもとに、出店者として各社の対応をどう見たかを書く。見ているのは、止めた時刻、止まっていた長さ、告知の中身の3つだ。どの会社も夜中に作業していたことは前提として、そのうえで差が出たところをはっきり書いておく。</p>
+
+<h3>対応がうまくいかなかった3社</h3>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>会社</th><th>何が起きたか</th><th>僕の評価</th></tr>
+<tr><td>futureshop</td><td>「18:30以降、30分〜1時間程度」と案内したメンテナンスが、21:36からの全店舗停止になった。22日7:40の時点でも再開の見込みは示されず、メールの送受信まで止まった</td><td>今回いちばん見通しが外れた。出店者は、30分で戻るつもりで夜を迎え、朝になってもECサイトも管理画面も使えなかった。同じ日に別件の不正アクセスも公表していて、出店者の不安は大きかったはずだ</td></tr>
+<tr><td>ネクストエンジン</td><td>23:45には止まっていて、22日7:45の時点でもメンテナンス画面のまま。今回の停止についての告知は、一晩じゅう見つけられなかった</td><td>止まっていた時間がいちばん長い部類なのに、説明がない。受注の取り込みと出荷指示をこのツールに任せている店は、朝の作業の段取りを決めようがなかった</td></tr>
+<tr><td>メルカリ</td><td>22:50に「臨時メンテナンスを実施する可能性」を告知し、深夜に見出しだけを「実施見送り」に変えた。本文と更新時刻は22:50のまま</td><td>止めなかったこと自体はよいが、告知の直し方が雑だ。見出しと本文で言っていることが違い、いつ決めたのかも分からない</td></tr>
+</table>
+</div>
+
+<h3>早かったところ、遅かったところ</h3>
+
+<p>修正版が出たのは22:34だ。それより前に止めた会社と、それ以降に止まっているのを確認した会社に分けると、次のようになる。楽天RMS・ネクストエンジン・GoQSystem・SBペイメントサービスは、止めた時刻が告知されていないので、僕が最初に止まっているのを見た時刻で書いている。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>区分</th><th>会社と時刻（日本時間）</th></tr>
+<tr><td>修正版の前に止めた</td><td>さくらのレンタルサーバ 13:00ごろ／BASE 15:50（当初22:00予定から前倒し）／エックスサーバー 16:00／futureshop 20:00（全面停止は21:36）／カラーミーショップ・LOGILESS 22:00／mixhost 22:10</td></tr>
+<tr><td>修正版の後に止まっていた</td><td>MakeShop 23:00（19:17に予告済み）／楽天RMS 23:17には停止／GoQSystem・SBペイメントサービス 23:44には停止／ネクストエンジン 23:45には停止</td></tr>
+</table>
+</div>
+
+<p>首相や国家サイバー統括室が「今夜」と呼びかけ、海外では攻撃の兆しも報じられていたなかで、BASEやエックスサーバーは夕方のうちに動いた。早く止めれば店側の損失は増えるが、修正版が出た瞬間に当てられる状態を作っていたのはこちらだ。一方、修正版の後に止まったところは、止めた時刻も理由も分からないものが多かった。</p>
+
+<h3>22日7:55の時点で止まっているところ、早く戻ったところ</h3>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>状態</th><th>会社</th><th>止まっている（いた）もの</th><th>止まった〜戻った（日本時間）</th></tr>
+<tr><td>止まっている</td><td>BASE</td><td>ショップの閲覧・注文、管理画面、API</td><td>21日15:50〜。終了予定は8:00に延長したが、8:12の時点でもヘルプページ・公式Xとも完了の知らせはない</td></tr>
+<tr><td>止まっている</td><td>futureshop</td><td>全店舗のECサイト・管理画面・FTP・API・メール</td><td>21日21:36〜。再開の見込みは示されず、次の案内は10時ごろ</td></tr>
+<tr><td>止まっている</td><td>ネクストエンジン</td><td>ログイン画面</td><td>21日23:45には停止〜7:55時点も停止</td></tr>
+<tr><td>止まっている</td><td>SBペイメントサービス</td><td>会社のWebサイト・問い合わせフォーム</td><td>21日23:44には停止〜7:53時点も停止</td></tr>
+<tr><td>止まっている</td><td>エックスサーバー・ロリポップ</td><td>公式サイト・管理画面（利用者のサイトは表示されている）</td><td>エックスサーバーは21日16:00〜、ロリポップは21日〜。どちらも7:53時点で停止</td></tr>
+<tr><td>一部だけ止まっている</td><td>カラーミーショップ</td><td>WordPressで作ったページ（カラーミーWPオプション）</td><td>21日22:00〜。7:20にショップの表示・購入と管理画面は再開</td></tr>
+<tr><td>戻った</td><td>LOGILESS</td><td>受注・倉庫システムの全機能</td><td>21日22:00〜22日0:43〜1:15のあいだ（予定は4:00。約3時間早い）</td></tr>
+<tr><td>戻った</td><td>GMOペイメントゲートウェイ</td><td>会社のWebサイト</td><td>21日22:40〜22日0:23〜0:43のあいだ</td></tr>
+<tr><td>戻った</td><td>楽天RMS</td><td>店舗管理画面のログイン</td><td>21日23:17には停止〜22日4:11〜4:41のあいだ</td></tr>
+<tr><td>戻った</td><td>MakeShop</td><td>管理画面、ショップの閲覧・購入ほか</td><td>21日23:00〜22日4:11〜4:41のあいだ（予定の4:00を過ぎてから）</td></tr>
+<tr><td>戻った</td><td>GoQSystem</td><td>ログイン画面</td><td>21日23:44には停止〜22日7:03〜7:40のあいだ</td></tr>
+</table>
+</div>
+
+<p>いちばん長く止まっているのはBASEで、21日15:50から数えると7:55の時点で16時間を超えた。早く止めたぶん、止まっている時間も長くなっている。逆に、予定より早く戻ったのはLOGILESSだけだった。受注と出荷に直接かかわる管理画面やツールでは、楽天RMSとMakeShopが4時台、GoQSystemとカラーミーショップが7時台に戻り、ネクストエンジンとfutureshopは朝になっても戻っていない。</p>
+
+<h3>説明が足りなかったところ、丁寧だったところ</h3>
+
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>評価</th><th>会社</th><th>理由</th></tr>
+<tr><td>足りなかった</td><td>楽天RMS</td><td>画面は「システムの不具合のため」だけで、楽天市場の障害情報ページは「報告されている障害情報はございません」のままだった。ブランドデーの最終日に、出店者は少なくとも約5時間、受注を処理する画面に入れなかったのに説明がない</td></tr>
+<tr><td>足りなかった</td><td>ネクストエンジン・GoQSystem</td><td>メンテナンス画面だけで、理由も再開の見込みも出ていない</td></tr>
+<tr><td>足りなかった</td><td>SBペイメントサービス</td><td>最初は理由なしで、夜中に「PHPの脆弱性に対する未然の予防措置」と書き足した。加盟店がいちばん知りたい決済への影響は書かれていない</td></tr>
+<tr><td>足りなかった</td><td>MakeShop</td><td>理由は「予防的な措置」だけ。終了予定の4:00を過ぎても延長の告知を出さなかった</td></tr>
+<tr><td>足りなかった</td><td>ConoHa WING・お名前.com</td><td>2社とも同じ時間帯に「システムの保守作業」とだけ書いた。お名前.comは告知ページそのものが一時メンテナンス画面になって読めなくなった</td></tr>
+<tr><td>丁寧だった</td><td>LOGILESS</td><td>止まる機能、モールとの連携の扱い、メンテナンス中に入った注文は終了後に自動で取り込むこと、APIやハンディ端末への影響まで書いていた。予定より3時間近く早く戻った</td></tr>
+<tr><td>丁寧だった</td><td>エックスサーバー</td><td>利用者のサイトとメールは止めないと明記し、進捗を1:10・3:55・6:45と出した。修正版のない古いPHPに自社で修正を作ることまで書いていた。ただ、3:55の進捗は僕が見に行った範囲では7:40まで表示されていなかった</td></tr>
+<tr><td>丁寧だった</td><td>GMOペイメントゲートウェイ</td><td>止めたのは会社のサイトだけで、決済には影響がないとはっきり書いた</td></tr>
+<tr><td>丁寧だった</td><td>BASE</td><td>理由をPHPと明記し、止まる機能を並べた。延長するときは見出しごと「延長のお知らせ」に差し替えて謝罪した</td></tr>
+<tr><td>丁寧だった</td><td>カラーミーショップ</td><td>CVE番号まで書き、配信予約しているメルマガの予約を外すよう案内した。7:20には、どの機能が使えるようになり、どれがまだかを分けて追記した</td></tr>
+</table>
+</div>
+
+<p>futureshopは見通しこそ外れたが、6:00の第二報では現状、止まっている範囲、次の案内の時刻まで書いていた。外れたあとの説明は、告知を出さなかった会社よりずっとましだと僕は思う。</p>
+
+<p>止まっていても、理由と範囲と次の案内の時刻が分かれば、出店者はお客さんへの連絡や出荷の段取りを決められる。告知のないメンテナンス画面だけでは、それができない。</p>
+
+<!-- H2⑧ -->
+<h2 id="sec8">カート・受注管理・サーバー会社を選ぶ側として、緊急メンテナンスの告知で見えたこと</h2>
+
+<p>僕は仕事柄、外注先や使うサービスを選ぶ側にいる。一晩じゅう各社の告知を見比べて、ふだんの営業資料では分からない違いがはっきり出たと感じた。次に業者を選ぶときに見るところとして、4つ書いておく。</p>
+
+<p><strong>1つ目は、止めた理由を書いているかどうか。</strong>BASEやカラーミーショップはPHPの脆弱性への対応だと最初から書いていた。理由が分かれば、利用者は「自分の店にも関係があるか」を判断できる。逆に「保守作業」「不具合」とだけ書かれると、利用者は何が起きているのか分からないまま待つことになる。</p>
+
+<p><strong>2つ目は、時刻と見通しを書いて、ずれたら知らせるかどうか。</strong>LOGILESSは予定より早く戻り、MakeShopは予定の4:00を過ぎても告知がないまま止まっていて、4:41までには戻った。futureshopは「30分〜1時間程度」の予定が夜通しの停止になったが、6時に第二報を出して、次の案内の時刻まで書いていた。止まっている時間そのものより、次にいつ情報が出るかが分かるほうが、現場は段取りを組みやすい。</p>
+
+<p><strong>3つ目は、止める範囲を絞っていたかどうか。</strong>エックスサーバーやmixhostは、利用者のサイトやメールは止めずに、自社の管理画面などを止めた。GMOペイメントゲートウェイは、止めたのは会社のサイトだけで決済には影響がないと明記していた。どこまで止まっていて、どこは動いているのかが書いてあると、問い合わせをしなくて済む。</p>
+
+<p><strong>4つ目は、告知をどこに出すか。</strong>今回は、告知ページそのものがメンテナンス画面に変わって読めなくなる会社がいくつもあった。公式Xやステータスページなど、本体とは別の場所に情報を出していた会社のほうが追いやすかった。</p>
+
+<p>自分の側でやっておくことも書いておく。使っているカート、モール、受注管理、決済代行、サーバーのそれぞれについて、告知ページ、ステータスページ、公式Xの場所を一覧にしておくこと。自社サイトがあるならPHPのバージョンを確かめておくこと。それから、管理画面が朝まで戻らなかったときに、受注の確認と出荷をどうするかを決めておくことだ。今回の夜を見ていて、この3つはどれも、起きてから調べ始めたのでは間に合わないと思った。</p>
+
+<!-- FAQ -->
+<h2 id="sec9">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. php2shellとは何ですか？</strong></p>
+<p class="fa">A. 2026年10月に修正されたPHP本体の脆弱性2件（CVE-2026-109618・CVE-2026-109619）の通称です。深刻度はCVSS v4.0で9.2で、認証なしで外部からサーバー上のコードを実行されるおそれがあります。修正版はPHP 8.5.12・8.4.27・8.3.36・8.2.35で、8.1以前にはPHPのプロジェクトとしての更新は出ていません。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 自分のネットショップがphp2shellの影響を受けるかは、どう見分ければいいですか？</strong></p>
+<p class="fa">A. WordPressやWooCommerce、EC-CUBEなどで作ったサイトをレンタルサーバーに置いている場合は、サーバーのPHPが対象になるので、サーバー会社の告知とPHPのバージョンを確認します。BASEやShopifyのように運営会社が提供するサービスでは、店側でPHPを操作することはなく、運営会社の告知を確認することになります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 楽天RMSが止まったのはphp2shellが原因ですか？</strong></p>
+<p class="fa">A. 公式には確認できていません。RMSのログイン画面には「システムの不具合のため、メンテナンス」と表示されていて、PHPの名前は出ていませんでした。21日23時17分には停止しており、22日4時11分から4時41分のあいだにログイン画面が元に戻りました。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. AmazonやYahoo!ショッピングは止まりましたか？</strong></p>
+<p class="fa">A. 21日夜から22日朝まで、外から見える範囲では変化がなく、告知も出ていませんでした。ただし、ログインしてから見る出店者向けのお知らせまでは確認していません。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. php2shellで実際に被害は出たのですか？</strong></p>
+<p class="fa">A. 22日朝の時点で、会社名と被害がセットになった公式発表は見つかりませんでした。Cloudflareは攻撃の通信を観測したと公表し、watchTowrは自社のおとりのサーバーで実際の悪用を観測したとしていますが、どちらも特定の会社の被害を示すものではありません。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. PHP 8.1以前を使っているサイトはどうすればいいですか？</strong></p>
+<p class="fa">A. PHP公式からは8.1以前向けの更新が出ていないため、PHPのバージョンを8.2以降に上げるか、サーバー会社やディストリビューションの独自の修正を待つことになります。エックスサーバーは、修正版のない古いPHP向けに自社で修正を作り、22日6:45時点で一部のバージョンから適用を始めたと告知していました。</p>
+</div>
+
+<!-- 関連記事 -->
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="ec-order-management.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">EC向け受注管理ツールおすすめ比較｜小規模ECでも使える7選</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-order-management.html</span>
+</span>
+</a>
+<a class="cite-card" href="ec-mall-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ECモールの出店先の選び方｜Amazon・楽天・Yahoo!の手数料を比較した</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-mall-comparison.html</span>
+</span>
+</a>
+<a class="cite-card" href="blog-platform-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span>
+<span class="cite-url">tsubasa-memo.github.io/blog-platform-comparison.html</span>
+</span>
+</a>
+<a class="cite-card" href="sasage-outsource-checklist.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">ささげ代行会社を選ぶ前にチェックすべき5つの条件｜与信・取引実績・体制の確認ポイント</span>
+<span class="cite-url">tsubasa-memo.github.io/sasage-outsource-checklist.html</span>
+</span>
+</a>
+</div>
+
+<!-- よく読まれている記事 -->
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- 著者プロフィール -->
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
