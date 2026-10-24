@@ -37,12 +37,62 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"静的サイトと動的サイトの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"静的サイトはあらかじめ作られたHTMLをそのまま表示するサイトです。動的サイトはアクセスのたびにサーバー側でページを生成します。WordPressは動的サイト、GitHub Pagesは静的サイトの代表例です。"}},
-    {"@type":"Question","name":"セキュリティ面では静的サイトと動的サイトのどちらが有利ですか？","acceptedAnswer":{"@type":"Answer","text":"静的サイトが有利です。サーバーで動くプログラムやデータベースがないため、WordPressの本体やプラグインの脆弱性を突く攻撃が成り立たず、更新し忘れによる穴もできません。問い合わせフォームなどで読者の個人情報を預からなければ、漏れる情報自体がありません。"}},
-    {"@type":"Question","name":"静的サイトなら不正アクセスの心配はありませんか？","acceptedAnswer":{"@type":"Answer","text":"狙われる場所は少なくなりますが、ゼロではありません。GitHubなど管理用アカウントの乗っ取り、アクセストークンの漏れ、公開してはいけないファイルをリポジトリに置くこと、外部のフォームや計測タグから漏れることは起こり得ます。二段階認証の設定、トークンの権限と期限を絞ること、リポジトリにサイトのファイル以外を置かないことが基本です。"}},
-    {"@type":"Question","name":"静的サイトのデメリットは何ですか？","acceptedAnswer":{"@type":"Answer","text":"更新のたびにHTMLファイルを編集する必要がある点が最大のデメリットとされています。会員登録やコメント、問い合わせフォームのような機能は、静的サイトだけでは作れません。ただし2025年以降はAIコーディングツールを使えば自然言語で指示するだけでHTMLの生成・編集ができ、非エンジニアでも運営のハードルは大きく下がっています。"}},
-    {"@type":"Question","name":"GitHub Pagesとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"GitHubが提供する無料の静的サイトホスティングサービスです。HTMLファイルをリポジトリに置くだけでWebサイトとして公開でき、独自ドメインやHTTPSにも対応しています。"}},
-    {"@type":"Question","name":"個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？","acceptedAnswer":{"@type":"Answer","text":"セキュリティを重視するなら静的サイト（GitHub Pagesなど）をおすすめします。AIコーディングツールが使える環境なら、静的サイトの弱点だった更新の手間も大幅に下がります。会員登録や問い合わせフォームが中心のサイトなら、WordPressか外部サービスを、更新と預け先の確認を前提に選びます。"}}
+    {
+      "@type": "Question",
+      "name": "静的サイトと動的サイトの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "静的サイトはあらかじめ作られたHTMLをそのまま表示するサイトです。動的サイトはアクセスのたびにサーバー側でページを生成します。WordPressは動的サイト、GitHub Pagesは静的サイトの代表例です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "セキュリティ面では静的サイトと動的サイトのどちらが有利ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公開ページを返す際にPHPやデータベースを動かさず、WordPress本体・テーマ・プラグインを置かない構成なら、それらの脆弱性や更新漏れを狙う攻撃の対象を減らせます。問い合わせフォームなどで読者の個人情報を預からなければ、その情報を漏らすこともありません。ただし、管理用アカウント、公開ファイル、外部サービスの管理は残ります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "静的サイトなら不正アクセスの心配はありませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "狙われる場所は少なくなりますが、ゼロではありません。GitHubなど管理用アカウントの乗っ取り、アクセストークンの漏れ、公開してはいけないファイルをリポジトリに置くこと、外部のフォームや計測タグから漏れることは起こり得ます。二段階認証の設定、トークンの権限と期限を絞ること、リポジトリにサイトのファイル以外を置かないことが基本です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "静的サイトのデメリットは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "利用する仕組みに応じて、記事の生成や公開の手順を用意する必要があります。HTMLの直接編集だけでなく、以前からMarkdownとJekyllなどを使う方法もあり、AIによる生成・編集の支援も使えます。会員登録やコメント、問い合わせフォームのように情報を受け取る機能には、外部サービスやサーバー側の処理が必要になり、その管理も残ります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GitHub Pagesとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GitHubが提供する無料の静的サイトホスティングサービスです。HTMLファイルをリポジトリに置くだけでWebサイトとして公開でき、独自ドメインやHTTPSにも対応しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "セキュリティを重視するなら静的サイト（GitHub Pagesなど）をおすすめします。AIコーディングツールが使える環境なら、静的サイトの弱点だった更新の手間も大幅に下がります。会員登録や問い合わせフォームが中心のサイトなら、WordPressか外部サービスを、更新と預け先の確認を前提に選びます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "静的サイトにすれば保守は不要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不要にはなりません。WordPress本体・テーマ・プラグインの更新作業を減らせる構成でも、ページを生成・公開する手順、管理用アカウント、公開ファイル、利用する外部フォームなどの管理は残ります。生成ツールを使う場合は、その更新や、以前の状態へ戻す方法も確認します。会社サイトでは、それぞれの担当と復旧方法を決めておく必要があります。"
+      }
+    }
   ]
 }
 </script>
@@ -65,7 +115,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-04-20T00:00:00+09:00",
-  "dateModified": "2026-10-17T00:00:00+09:00",
+  "dateModified": "2026-10-24T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -168,9 +218,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</h1>
 <div class="article-meta-line">
 <span>公開: 2026年4月20日</span>
-<span>更新: 2026年10月17日</span>
+<span>更新: 2026年10月24日</span>
 </div>
-
 <div class="point-box">
 <p><strong>2026年10月に大幅に改訂しました</strong></p>
 <p>2026年の秋は、企業からの情報流出のニュースが毎日のように続いた。サイト制作サービスのStudioでも不正アクセスが公表された。これを受けて、もともと「更新の手間」を中心に書いていたこの記事を、セキュリティの観点から書き直した。</p>
@@ -186,7 +235,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li>個人ブログにはどちらが向いているか</li>
 </ul>
 </div>
-<p>こんにちは、ツバサです。このブログは<a class="glossary-inline" href="/glossary/github-pages.html">GitHub Pages</a>（静的サイト）で運営している。ブログを始めるときに「初心者はWordPress一択」という記事をたくさん見たが、いろいろ考えた結果、静的サイトを選んだ。運営して半年以上が経ち、最近の情報流出のニュースを見て、この選択はセキュリティの面でも正しかったと感じている。静的サイトと動的サイトの違いを、自分の経験をまじえて整理しておきます。</p>
+<p>こんにちは、ツバサです。このブログは<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/github-pages.html">GitHub Pages</a>（静的サイト）で運営している。ブログを始めるときに「初心者はWordPress一択」という記事をたくさん見たが、いろいろ考えた結果、静的サイトを選んだ。運営して半年以上が経ち、最近の情報流出のニュースを見て、この選択はセキュリティの面でも正しかったと感じている。静的サイトと動的サイトの違いを、自分の経験をまじえて整理しておきます。</p>
 <div class="toc">
 <p class="toc-title">目次</p>
 <ol>
@@ -201,14 +250,14 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </ol>
 </div>
 <h2 id="sec-security">静的サイトがセキュリティで有利な理由｜WordPressの脆弱性とStudioの不正アクセスから考えた</h2>
-<p>2026年は、サイト制作に関わるセキュリティのニュースが続いた。7月にはWordPress本体に、ログインしていない第三者でもサイトを乗っ取れる脆弱性が見つかり、修正版（7.0.2など）が公開された（<a href="https://forest.watch.impress.co.jp/docs/news/2126337.html" target="_blank" rel="noopener">窓の杜</a>）。10月には、ノーコードでサイトを作れるサービスStudioが、クラウド環境への不正アクセスを公表した。報道によると、対象は登録している利用者全員で、アカウント情報、フォームから送られた内容、外部サービスのAPIキーが漏れた可能性があるという（<a href="https://topics.smt.docomo.ne.jp/article/itmedia_news/trend/itmedia_news-20261016_2000002332" target="_blank" rel="noopener">ITmedia NEWS</a>）。</p>
-<p>Studioでサイトを作っていた会社の中には、自社のフォームに送られた個人情報が漏れた可能性があると知らせたところもある。電動キックボードのLuupは、2022年から2025年までに4つのフォームへ送られた21,368件が対象になり得ると公表した（<a href="https://luup.sc/news/2026-10-16/" target="_blank" rel="noopener">Luupのお知らせ</a>）。今は使っていない古いフォームの送信内容も含まれていた点が、僕にはいちばん気になった。</p>
+<p>2026年は、サイト制作に関わるセキュリティのニュースが続いた。7月にはWordPress本体に、ログインしていない第三者でもサイトを乗っ取れる脆弱性が見つかり、修正版（7.0.2など）が公開された（窓の杜）。10月には、ノーコードでサイトを作れるサービスStudioが、クラウド環境への不正アクセスを公表した。報道によると、対象は登録している利用者全員で、アカウント情報、フォームから送られた内容、外部サービスのAPIキーが漏れた可能性があるという（ITmedia NEWS）。</p><a class="cite-card" href="https://forest.watch.impress.co.jp/docs/news/2126337.html" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">F</span><span class="cite-body"><span class="cite-title">窓の杜</span><span class="cite-url">forest.watch.impress.co.jp/docs/news/2126337.html</span></span></a><a class="cite-card" href="https://topics.smt.docomo.ne.jp/article/itmedia_news/trend/itmedia_news-20261016_2000002332" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">T</span><span class="cite-body"><span class="cite-title">ITmedia NEWS</span><span class="cite-url">topics.smt.docomo.ne.jp/article/itmedia_news/trend/itmedia_news-20261016_2000002332</span></span></a>
+<p>Studioでサイトを作っていた会社の中には、自社のフォームに送られた個人情報が漏れた可能性があると知らせたところもある。電動キックボードのLuupは、2022年から2025年までに4つのフォームへ送られた21,368件が対象になり得ると公表した（Luupのお知らせ）。今は使っていない古いフォームの送信内容も含まれていた点が、僕にはいちばん気になった。</p><a class="cite-card" href="https://luup.sc/news/2026-10-16/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">L</span><span class="cite-body"><span class="cite-title">Luupのお知らせ</span><span class="cite-url">luup.sc/news/2026-10-16/</span></span></a>
 <p>こうしたニュースと照らし合わせると、静的サイトがセキュリティで有利な理由は3つある。</p>
 <h3>理由1：攻撃される場所が少ない</h3>
 <p>静的サイトはHTMLファイルを返すだけで、サーバーで動く自分のプログラムもデータベースもない。WordPressの脆弱性は、PHPで動くプログラムやデータベースへの問い合わせを悪用して、サイトを乗っ取ったり情報を抜き出したりするものが多い。そもそもプログラムもデータベースも置いていなければ、その種類の攻撃は成り立たない。</p>
-<h3>理由2：更新し忘れによる穴ができない</h3>
+<h3>理由2：WordPress本体・テーマ・プラグインの更新漏れを減らせる</h3>
 <p>WordPressの脆弱性は、サイトの持ち主がサーバーで動いているプログラム（本体・プラグイン・テーマ）を更新して直す。更新を忘れているあいだは、攻撃できる状態が続く。プラグインを増やすほど、更新を見張る対象も増える。</p>
-<p>GitHub Pagesなら配信の仕組みはGitHubが管理していて、僕が更新するプラグインはそもそも存在しない。本業の合間にブログを書いている身としては、ここがいちばんありがたい。</p>
+<p>GitHub Pagesなら配信の仕組みはGitHubが管理していて、このブログにはWordPress本体・テーマ・プラグインを置いていない。そのため、それらを更新し忘れて穴が残る心配は減らせる。本業の合間にブログを書いている身としては、ここがいちばんありがたい。ただし、管理用アカウントや公開ファイル、外部から読み込むサービスの管理まで不要になるわけではない。</p>
 <h3>理由3：預かる個人情報がない</h3>
 <p>Studioのようなノーコードのサービスは、サーバーの管理を提供会社が引き受けてくれる。WordPressのような更新作業はいらないが、提供会社の側で漏れると、利用者には直す手段がない。できるのは、パスワードやAPIキーを変えることと、フォームに送られた内容の影響を確かめることくらいである。</p>
 <p>配信をGitHubに任せているGitHub Pagesも、この点では同じ立場にある。違うのは預けている中身で、このブログがGitHubに置いているのは公開するためのHTMLと画像だけだ。お問い合わせフォームを置いていないので、読者から預かった個人情報はない。持っていない情報は漏れようがない。</p>
@@ -227,9 +276,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p><strong>静的サイトが有利なのは、守る場所が少なくて、はっきりしているから。</strong>サーバーやプラグインの更新に追われない分、アカウント・鍵・リポジトリの中身の3つに注意を集中できる。Webの専門家でなくても安全に管理しやすいのは、この守る場所の少なさが大きいと思っている。</p>
 </div>
 <h2 id="sec1">静的サイトと動的サイトの仕組みの違い</h2>
-<p>静的サイトは、あらかじめ作られた<a class="glossary-inline" href="/glossary/html.html">HTML</a>ファイルをそのまま表示するサイトである。ユーザーがページにアクセスすると、サーバーに保存されたHTMLがそのまま返される。誰がいつ見ても同じ内容が表示される。</p>
+<p>静的サイトは、あらかじめ作られた<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/html.html">HTML</a>ファイルをそのまま表示するサイトである。ユーザーがページにアクセスすると、サーバーに保存されたHTMLがそのまま返される。誰がいつ見ても同じ内容が表示される。</p>
 <p>動的サイトは、アクセスのたびにサーバー側でページを生成する。データベースからコンテンツを取り出し、PHPなどのプログラムでHTMLを組み立てて返す。ログイン状態や検索条件によって表示内容が変わるのが特徴である。</p>
-<p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubの<a class="glossary-inline" href="/glossary/repository.html">リポジトリ</a>に置くだけで公開される。</p>
+<p>WordPressは動的サイトの代表格で、管理画面からテキストを入力すると、裏側でデータベースに保存され、アクセスのたびにHTMLに変換される。GitHub Pagesは静的サイトの代表格で、HTMLファイルをGitHubの<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/repository.html">リポジトリ</a>に置くだけで公開される。</p>
 <h2 id="sec2">静的サイトと動的サイトのメリット・デメリット比較</h2>
 <div class="table-wrap">
 <table class="spec-table">
@@ -237,7 +286,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <tr><td>セキュリティ</td><td><strong>有利</strong>。狙われる場所が少ない（DBやサーバー側のプログラムがない）</td><td>本体・プラグイン・テーマの更新を続ける必要がある</td></tr>
 <tr><td>表示速度</td><td>速い（HTMLをそのまま返す）</td><td>やや遅い（サーバー処理が入る）</td></tr>
 <tr><td>サーバー費用</td><td>無料〜月数百円</td><td>月500〜1,500円程度</td></tr>
-<tr><td>更新のしやすさ</td><td>HTMLの編集が必要</td><td>管理画面から投稿できる</td></tr>
+<tr><td>更新のしやすさ</td><td>HTMLやMarkdownなどで更新する。利用する仕組みによって手順は異なる</td><td>管理画面から投稿できる</td></tr>
 <tr><td>プラグイン・機能拡張</td><td>自分で実装する</td><td>プラグインで追加できる</td></tr>
 <tr><td>SEO対策の自由度</td><td>HTML直接編集で完全にコントロール可能</td><td>テーマやプラグインに依存する</td></tr>
 </table>
@@ -245,17 +294,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>静的サイトの強みはセキュリティ、表示速度、コストの3点である。GitHub Pagesは無料で使え、独自ドメインもHTTPSも対応している。WordPressのようにPHPのバージョンアップやプラグインの互換性を気にする必要がない。</p>
 <p>一方、動的サイトの強みは更新の手軽さと機能拡張のしやすさである。管理画面から記事を書いて「公開」ボタンを押すだけで完了するWordPressの手軽さは、静的サイトでは再現しにくい。お問い合わせフォーム、コメント欄、検索機能なども、WordPressならプラグインで簡単に追加できる。</p>
 <h2 id="sec3">「更新が大変」は本当か？ AIで変わった前提</h2>
-<p>静的サイトのデメリットとしてほぼ必ず挙がるのが「更新にHTMLの知識が必要」「記事を追加するたびにファイルを手作業で編集する」という点である。これは2024年以前なら正しかった。</p>
-<p>しかし2025年以降、AIコーディングツールの登場でこの前提が変わっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、<a class="glossary-inline" href="/glossary/sitemap.html">サイトマップ</a>とアーカイブページも更新して、<a class="glossary-inline" href="/glossary/commit.html">コミット</a>して」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
+<p>静的サイトのデメリットとして「更新にHTMLの知識が必要」「記事を追加するたびにファイルを手作業で編集する」と言われることがある。ただし、Markdownで書いた記事からJekyllなどでHTMLを生成する方法は、AIコーディングツールの普及以前からあった。静的サイトの更新が、HTMLを毎回直接編集する方法に限られるわけではない。</p>
+<p>AIコーディングツールは、こうした更新手段に加えて、生成や編集を自然言語で支援する選択肢になっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/sitemap.html">サイトマップ</a>とアーカイブページも更新して、<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/commit.html">コミット</a>して」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
 <p>このブログでは実際に、記事のHTML作成、SVGサムネイル生成、sitemap.xml更新、archive.html更新、llms.txt更新、検索インデックス再生成の6ファイル同時更新をAIに指示する形で運営している。1記事追加にかかる作業時間は、テーマ決めと内容の確認を除けば数分程度である。</p>
 <p>HTMLの書き方を知らなくても「こういう内容の記事を書いて」と指示すれば、サイトの既存デザインに合ったHTMLファイルが出てくる。FAQ構造化データ（JSON-LD）やmeta descriptionの設定も、ルールを一度伝えておけばAIが毎回自動で入れてくれる。</p>
 <div class="warn-box">
 <p><strong>ただし注意点もある。</strong>AIに任せきりにすると、内容の正確性やリンク先の整合性を見落とすリスクがある。最終的な確認は人間がやる必要がある。また、git操作やGitHub Pagesの初期設定には最低限のコマンドラインの知識が要る。「完全にゼロ知識でもできる」とは言えないが、「WordPressの管理画面を覚える程度の学習コスト」で済むようになっている。</p>
 </div>
-<h2 id="sec4">静的サイトがSEOに有利な場面</h2>
+<p>このブログのように公開情報を載せる個人サイトと、顧客情報や問い合わせを扱う会社サイトでは、必要な確認が異なる。会社サイトでは、表示だけでなく、フォームやデータ、旧URL、失敗時の復旧を確かめ、移行後の保守担当も決める必要がある。サーバーを替える場合と、WordPressから別の仕組みへ移る場合の違いは、移行先比較の記事で整理した。</p><a class="cite-card" href="https://tsubasa-memo.github.io/wordpress-migration-options.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">お名前.comからの移行先を比較検討｜WordPressとPHPはオワコンなのか？</span><span class="cite-url">tsubasa-memo.github.io/wordpress-migration-options.html</span></span></a><h2 id="sec4">静的サイトがSEOに有利な場面</h2>
 <p>静的サイトではHTMLを直接編集するため、SEO関連のタグを完全にコントロールできる。WordPressではテーマやプラグインの仕様に制約されることがあるが、静的サイトにはそれがない。</p>
-<p>たとえば、このブログでは各記事に<a href="faq-structured-data.html">FAQ構造化データ（JSON-LD）</a>を設置しているが、そのフォーマットや質問の内容を1文字単位で管理できる。WordPressでJSON-LDを入れようとすると、プラグインの出力形式に合わせる必要があったり、テーマ更新で上書きされるリスクがある。</p>
-<p>また、<a href="llms-txt-setup.html">llms.txt</a>のようなAI向けのファイルも、リポジトリのルートに置くだけで公開できる。WordPressだとルートにファイルを置く操作がやや手間になる。</p>
+<p>たとえば、このブログでは各記事にFAQ構造化データ（JSON-LD）を設置しているが、そのフォーマットや質問の内容を1文字単位で管理できる。WordPressでJSON-LDを入れようとすると、プラグインの出力形式に合わせる必要があったり、テーマ更新で上書きされるリスクがある。</p><a class="cite-card" href="https://tsubasa-memo.github.io/faq-structured-data.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</span><span class="cite-url">tsubasa-memo.github.io/faq-structured-data.html</span></span></a>
+<p>また、llms.txtのようなAI向けのファイルも、リポジトリのルートに置くだけで公開できる。WordPressだとルートにファイルを置く操作がやや手間になる。</p><a class="cite-card" href="https://tsubasa-memo.github.io/llms-txt-setup.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】</span><span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span></span></a>
 <h2 id="sec5">個人ブログには静的サイトと動的サイトのどちらが向いているか</h2>
 <p>情報流出のニュースが続く今、僕は個人ブログには静的サイトをすすめたい。いちばんの理由はセキュリティで、更新の手間はAIでほとんど解消できるようになった。</p>
 <table class="spec-table">
@@ -269,45 +318,42 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>反対に、会員登録や問い合わせフォームのように、読者の情報を受け取る機能が中心のサイトは静的サイトだけでは作れない。その場合は、WordPressの本体とプラグインの更新を欠かさないか、預け先のサービスがどう守っているかを確かめたうえで選ぶことになる。</p>
 <h2 id="sec6">FAQ</h2>
 <div class="faq-item"><p class="faq-q">Q. 静的サイトと動的サイトの違いは何ですか？</p><p class="faq-a">A. 静的サイトはあらかじめ作られたHTMLをそのまま表示するサイトです。動的サイトはアクセスのたびにサーバー側でページを生成します。WordPressは動的サイト、GitHub Pagesは静的サイトの代表例です。</p></div>
-<div class="faq-item"><p class="faq-q">Q. セキュリティ面では静的サイトと動的サイトのどちらが有利ですか？</p><p class="faq-a">A. 静的サイトが有利です。サーバーで動くプログラムやデータベースがないため、WordPressの本体やプラグインの脆弱性を突く攻撃が成り立たず、更新し忘れによる穴もできません。問い合わせフォームなどで読者の個人情報を預からなければ、漏れる情報自体がありません。</p></div>
+<div class="faq-item"><p class="faq-q">Q. セキュリティ面では静的サイトと動的サイトのどちらが有利ですか？</p><p class="faq-a">A. 公開ページを返す際にPHPやデータベースを動かさず、WordPress本体・テーマ・プラグインを置かない構成なら、それらの脆弱性や更新漏れを狙う攻撃の対象を減らせます。問い合わせフォームなどで読者の個人情報を預からなければ、その情報を漏らすこともありません。ただし、管理用アカウント、公開ファイル、外部サービスの管理は残ります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 静的サイトなら不正アクセスの心配はありませんか？</p><p class="faq-a">A. 狙われる場所は少なくなりますが、ゼロではありません。GitHubなど管理用アカウントの乗っ取り、アクセストークンの漏れ、公開してはいけないファイルをリポジトリに置くこと、外部のフォームや計測タグから漏れることは起こり得ます。二段階認証の設定、トークンの権限と期限を絞ること、リポジトリにサイトのファイル以外を置かないことが基本です。</p></div>
-<div class="faq-item"><p class="faq-q">Q. 静的サイトのデメリットは何ですか？</p><p class="faq-a">A. 更新のたびにHTMLファイルを編集する必要がある点が最大のデメリットとされています。会員登録やコメント、問い合わせフォームのような機能は、静的サイトだけでは作れません。ただし2025年以降はAIコーディングツールを使えば自然言語で指示するだけでHTMLの生成・編集ができ、非エンジニアでも運営のハードルは大きく下がっています。</p></div>
+<div class="faq-item"><p class="faq-q">Q. 静的サイトのデメリットは何ですか？</p><p class="faq-a">A. 利用する仕組みに応じて、記事の生成や公開の手順を用意する必要があります。HTMLの直接編集だけでなく、以前からMarkdownとJekyllなどを使う方法もあり、AIによる生成・編集の支援も使えます。会員登録やコメント、問い合わせフォームのように情報を受け取る機能には、外部サービスやサーバー側の処理が必要になり、その管理も残ります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. GitHub Pagesとは何ですか？</p><p class="faq-a">A. GitHubが提供する無料の静的サイトホスティングサービスです。HTMLファイルをリポジトリに置くだけでWebサイトとして公開でき、独自ドメインやHTTPSにも対応しています。</p></div>
-<div class="faq-item"><p class="faq-q">Q. 個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？</p><p class="faq-a">A. セキュリティを重視するなら静的サイト（GitHub Pagesなど）をおすすめします。AIコーディングツールが使える環境なら、静的サイトの弱点だった更新の手間も大幅に下がります。会員登録や問い合わせフォームが中心のサイトなら、WordPressか外部サービスを、更新と預け先の確認を前提に選びます。</p></div>
-
+<div class="faq-item"><p class="faq-q">Q. 個人ブログを始めるなら静的サイトと動的サイトどちらがいいですか？</p><p class="faq-a">A. セキュリティを重視するなら静的サイト（GitHub Pagesなど）をおすすめします。AIコーディングツールが使える環境なら、静的サイトの弱点だった更新の手間も大幅に下がります。会員登録や問い合わせフォームが中心のサイトなら、WordPressか外部サービスを、更新と預け先の確認を前提に選びます。</p></div><div class="faq-item"><p class="faq-q">Q. 静的サイトにすれば保守は不要ですか？</p><p class="faq-a">A. 不要にはなりません。WordPress本体・テーマ・プラグインの更新作業を減らせる構成でも、ページを生成・公開する手順、管理用アカウント、公開ファイル、利用する外部フォームなどの管理は残ります。生成ツールを使う場合は、その更新や、以前の状態へ戻す方法も確認します。会社サイトでは、それぞれの担当と復旧方法を決めておく必要があります。</p></div>
 <div class="related">
 <h2 class="related-title" id="sec7">関連する記事</h2>
-<a class="cite-card" href="github-pages-vs-note.html">
+<a class="cite-card" href="https://tsubasa-memo.github.io/github-pages-vs-note.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
 <span class="cite-title">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</span>
 <span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span>
 </span>
 </a>
-<a class="cite-card" href="blog-seo-basics.html">
+<a class="cite-card" href="https://tsubasa-memo.github.io/blog-seo-basics.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
 <span class="cite-title">個人ブログのSEOを勉強した記録｜最初にやった5つの施策【備忘録】</span>
 <span class="cite-url">tsubasa-memo.github.io/blog-seo-basics.html</span>
 </span>
 </a>
-<a class="cite-card" href="llms-txt-setup.html">
+<a class="cite-card" href="https://tsubasa-memo.github.io/llms-txt-setup.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
 <span class="cite-title">llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】</span>
 <span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span>
 </span>
 </a>
-
-
-<a class="cite-card" href="comparison-article-credibility.html">
+<a class="cite-card" href="https://tsubasa-memo.github.io/comparison-article-credibility.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
 <span class="cite-title">「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</span>
 <span class="cite-url">tsubasa-memo.github.io/comparison-article-credibility.html</span>
 </span>
 </a>
-<a class="cite-card" href="blog-platform-comparison.html">
+<a class="cite-card" href="https://tsubasa-memo.github.io/blog-platform-comparison.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">
 <span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span>
