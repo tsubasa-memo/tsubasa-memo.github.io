@@ -511,7 +511,7 @@
   - Q: 第4報で情報の外部持ち出しが確認されたのは、普通のWebレンタルサーバーですか？
   - Q: デスクトップクラウドの見舞金5,000円と不正取引の損失補償は同じですか？
 
-- [お名前.com・WordPressからの移行先比較｜保守と安全性で選ぶ](https://tsubasa-memo.github.io/wordpress-migration-options.html): さくら・エックスサーバー・EmDash・静的サイトを比較し、WordPressの移行と保守、独自ドメイン・旧URLの確認点を整理した記事。
+- [お名前.comからの移行先を比較検討｜WordPressとPHPはオワコンなのか？](https://tsubasa-memo.github.io/wordpress-migration-options.html): さくら・エックスサーバー・EmDash・静的サイトを比較し、WordPressの移行と保守、独自ドメイン・旧URLの確認点を整理した記事。
   - Q: お名前.comから別のサーバーへ移れば、WordPressの保守は不要になりますか？
   - Q: 今のサイトをそのまま使う方が、費用を抑えられますか？
   - Q: EmDashに移すと、今の独自ドメインとURLは使えますか？
