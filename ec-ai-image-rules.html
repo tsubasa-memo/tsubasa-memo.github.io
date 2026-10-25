@@ -65,6 +65,14 @@ gtag('config', 'G-YYBFXHXMM6');
     },
     {
       "@type": "Question",
+      "name": "GoogleショッピングにAI生成画像を出すとき、何か申告が必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Merchant Center は、AI生成画像にIPTCのDigitalSourceType「trainedAlgorithmicMedia」のタグが入っていることと、そのタグを画像から削除しないことを要件にしています。対象は image_link・additional_image_link・lifestyle_image_link の3属性で、Merchant Center Classic と Merchant Center Next の両方に適用されます。画像の圧縮やリサイズでメタデータが落ちると要件を満たせなくなるので、加工後のファイルでタグが残っているかを確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
       "name": "AIで作ったモデル着用画像は景品表示法に違反しますか？",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -93,7 +101,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "author": { "@type": "Person", "name": "ツバサ" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-05-11",
-  "dateModified": "2026-09-23",
+  "dateModified": "2026-10-25",
   "inLanguage": "ja"
 }
 </script>
@@ -178,7 +186,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">EC商品画像にAIを使うときの注意点<br/>3モールの規約と景表法を整理</h1>
 <div class="article-meta-line">
 <span>公開: 2026年5月11日</span>
-<span>更新: 2026年9月23日</span>
+<span>更新: 2026年10月25日</span>
 </div>
 <p>こんにちは、ツバサです。</p>
 <p>最近、背景をAIで<a class="glossary-inline" href="/glossary/compositing.html">合成</a>した商品画像を見かける機会が増えました。自分のところでも「撮影コストを減らせるなら試したい」という話が出ていて、でもモールの規約に引っかからないか、<a class="glossary-inline" href="/glossary/keihyouhou.html">景品表示法</a>で問題にならないか、正直よくわかっていませんでした。</p>
@@ -190,6 +198,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec2">Amazon：メイン画像は実写が前提</a></li>
 <li><a href="#sec3">楽天市場：2024年6月にAI合成背景を公認</a></li>
 <li><a href="#sec4">Yahoo!ショッピング：合成背景の公式容認は未確認</a></li>
+<li><a href="#sec4b">Googleショッピング：AI生成画像はメタデータで申告する</a></li>
 <li><a href="#sec5">景品表示法：AI画像でも「正確な表現」が原則</a></li>
 <li><a href="#sec6">セーフなケースとNGなケースの整理</a></li>
 </ol>
@@ -322,6 +331,18 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </a>
 <p>Yahoo!のガイドラインでは「写真背景」は「商品と一緒に撮影された背景」を指しており、EC系コンサル会社の解説記事でも「商品画像と写真背景の合成」はNG例として挙げられています。Yahoo!がAI画像生成の公式ツールを提供している形跡もありません。</p>
 <p>Yahoo!ショッピングに出品する場合は、楽天と同じ感覚でAI合成背景を使うとリスクがあります。合成だとわかりにくい自然な仕上がりであれば実務上は通るケースもあるようですが、規約上のお墨付きはないので、公式の緩和が出るまでは実写ベースの微修整に留めておくのが安全です。</p>
+<h2 id="sec4b">Googleショッピング：AI生成画像はメタデータで申告する</h2>
+<p>自社ECの商品をGoogleショッピングに出している場合、モールの画像ガイドラインとは別にMerchant Centerの要件がかかる。AI生成画像を使うなら、画像ファイルの中にAI生成であることを示すメタデータを残しておく必要がある。</p>
+<a class="cite-card" href="https://support.google.com/merchants/answer/14572008" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">外</span>
+<span class="cite-body">
+<span class="cite-title">Preserving metadata tags for AI-generated images in Merchant Center - Google Merchant Center ヘルプ</span>
+<span class="cite-url">support.google.com</span>
+</span>
+</a>
+<p>ヘルプに書かれているのは2点だけだ。AI生成画像にはIPTCのDigitalSourceTypeとして「trainedAlgorithmicMedia」のタグが入っていること、そしてそのタグを画像から削除しないこと。対象になるのは image_link・additional_image_link・lifestyle_image_link の3属性で、Merchant Center Classic と Merchant Center Next の両方に適用される。「推奨」ではなく要件として書かれており、ページの日付は2024年2月である。</p>
+<p>Amazonの「contains-synthetic-performer」とは別物なので混同しない。Amazonはフォトリアルな<strong>AI生成の人物</strong>が写っている場合に、XMPのdc:subjectへキーワードを足す。Googleは<strong>AI生成画像すべて</strong>に対して、DigitalSourceTypeの値が入っていることを求めている。片方のタグを入れればもう片方も満たされる、という関係にはない。</p>
+<p>実務でつまずくのはタグを入れる工程ではなく、その後の加工でタグが消える工程である。画像の圧縮・リサイズ・形式変換は、設定によってメタデータを落とす。白抜きや色味の調整を外注に出した場合も、戻ってきたファイルにタグが残っているとは限らない。Googleのヘルプがわざわざ「削除しないこと」と書いているのは、ここが落ちやすいからだろう。圧縮の設定については「<a href="compress-product-image.html">ECの商品画像の圧縮方法｜画質を落とさずファイルサイズを減らすコツ</a>」に書いている。</p>
 <h2 id="sec5">景品表示法：AI画像でも「正確な表現」が原則</h2>
 <p>モールの規約をクリアしても、景品表示法（景表法）のハードルは別にあります。商品画像がAI生成であろうと一眼レフ撮影であろうと、実物と異なる表示は「優良誤認表示」として規制の対象になります。</p>
 <a class="cite-card" href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/" rel="noopener nofollow" target="_blank">
@@ -428,6 +449,10 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <div class="faq-item">
 <div class="fq">Q. 楽天のRMS AIで作った画像はガイドライン適合が保証されますか？</div>
 <div class="fa">A. 保証されません。楽天が提供する「商品画像加工支援AI」で生成した画像であっても、テキスト要素20%以内・枠線なし・背景要件の3項目を満たしているか、店舗側がRMSの画像判定ツールで毎回確認する必要があります。</div>
+</div>
+<div class="faq-item">
+<div class="fq">Q. GoogleショッピングにAI生成画像を出すとき、何か申告が必要ですか？</div>
+<div class="fa">A. Google Merchant Center は、AI生成画像にIPTCのDigitalSourceType「trainedAlgorithmicMedia」のタグが入っていることと、そのタグを画像から削除しないことを要件にしています。対象は image_link・additional_image_link・lifestyle_image_link の3属性で、Merchant Center Classic と Merchant Center Next の両方に適用されます。画像の圧縮やリサイズでメタデータが落ちると要件を満たせなくなるので、加工後のファイルでタグが残っているかを確認してください。</div>
 </div>
 <div class="faq-item">
 <div class="fq">Q. AIで作ったモデル着用画像は景品表示法に違反しますか？</div>
