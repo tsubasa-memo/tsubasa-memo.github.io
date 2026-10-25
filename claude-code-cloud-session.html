@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="utf-8"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"></script>
+<title>Claude Codeのクラウドセッションを使ったら、いつもの仕組みが動かず手間が増えた記録｜ツバサのメモ帳</title>
+<meta name="description" content="Claude Codeのクラウドセッションのクレジットを使ったら、手元の指示ファイル・検査スクリプト・Gitのフックが届かず、後始末に1か月近くかかった。全リポジトリに書き込めたClaudeのGitHubアプリの確かめ方と外し方も記録した。">
+<meta name="keywords" content="Claude Code,クラウドセッション,クレジット,GitHubアプリ,フック,Remote Control,権限,Revoke">
+<meta property="og:title" content="Claude Codeのクラウドセッションを使ったら、いつもの仕組みが動かず手間が増えた記録">
+<meta property="og:description" content="Claude Codeのクラウドセッションのクレジットを使ったら、手元の指示ファイル・検査スクリプト・Gitのフックが届かず、後始末に1か月近くかかった。全リポジトリに書き込めたClaudeのGitHubアプリの確かめ方と外し方も記録した。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/claude-code-cloud-session.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Claude Codeのクラウドセッションを使ったら、いつもの仕組みが動かず手間が増えた記録">
+<meta name="twitter:description" content="Claude Codeのクラウドセッションのクレジットを使ったら、手元の指示ファイル・検査スクリプト・Gitのフックが届かず、後始末に1か月近くかかった。全リポジトリに書き込めたClaudeのGitHubアプリの確かめ方と外し方も記録した。">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/claude-code-cloud-session.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/claude-code-cloud-session.html"/>
+<link href="https://tsubasa-memo.github.io/claude-code-cloud-session.html" hreflang="ja-JP" rel="alternate"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "クラウドセッションのクレジットは、手元のClaude Codeにも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えません。Anthropicのヘルプでは、クレジットはクラウドセッション専用で、手元のClaude Codeには使えないとされています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GitHubのアカウントが無くてもクラウドセッションは使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ブラウザからは使えません。クラウドセッションはGitHubのリポジトリを取ってきて作業する仕組みで、GitHubとつないでいないと始められません。手元のリポジトリをターミナルから送る方法はありますが、Claude Codeとgitをターミナルで使う必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "クラウドセッションでも、手元と同じ設定やフックを効かせる方法はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "リポジトリにcommitした.claude/settings.jsonは読まれます。個人の設定（~/.claude/settings.json）、Gitの管理から外した.claude/settings.local.json、Gitのフックは届きません。公開リポジトリに入れたくない設定や検査は、クラウドでは効かせられません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ClaudeのGitHubアプリを外すと、手元のClaude Codeは使えなくなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えます。外れるのはクラウドセッションからGitHubへのアクセスで、手元のClaude Codeは自分のPCのファイルとGitを使うので影響しません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GitHubから「Claudeが追加のアクセスを求めている」というメールが来たら、どうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "承認しなければ今の権限のまま変わりません。クラウドセッションを使っていないなら、承認せずにアプリを外し、承認も取り消しておくと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "アプリを外したのに、まだつながっている表示が残るのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "アプリのインストールと、アカウントへのアクセスの承認は別の欄にあります。Installed GitHub Appsで外したあと、Authorized GitHub Appsでも取り消す必要があります。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Claude Codeのクラウドセッションを使ったら、いつもの仕組みが動かず手間が増えた記録",
+  "description": "Claude Codeのクラウドセッションのクレジットを使ったら、手元の指示ファイル・検査スクリプト・Gitのフックが届かず、後始末に1か月近くかかった。全リポジトリに書き込めたClaudeのGitHubアプリの確かめ方と外し方も記録した。",
+  "url": "https://tsubasa-memo.github.io/claude-code-cloud-session.html",
+  "image": "https://tsubasa-memo.github.io/og/claude-code-cloud-session.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI",
+      "item": "https://tsubasa-memo.github.io/archive.html#ai"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Claude Codeのクラウドセッションを使った記録"
+    }
+  ]
+}
+</script>
+<link href="css/common.css" rel="stylesheet"/>
+<link href="/search.css" rel="stylesheet"/>
+<script defer="" src="/search.js"></script>
+<meta property="og:url" content="https://tsubasa-memo.github.io/claude-code-cloud-session.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">ホーム</a> ＞ <a href="archive.html#ai">AI</a> ＞ Claude Codeのクラウドセッションを使った記録</nav>
+<div class="article-hero"><img src="/thumbs/claude-code-cloud-session.webp" alt="夜の部屋でPCの前に座り頭を抱える人と、光る雲との間を行き来する何枚ものカードのイメージ" width="640" height="360" loading="eager"></div>
+<div class="article-tag">AI</div>
+<div class="article-tag">SEO・LLMO</div>
+<h1 class="article-title">Claude Codeのクラウドセッションを使ったら、いつもの仕組みが動かず手間が増えた記録</h1>
+<div class="article-meta-line"><span>公開: 2026年10月25日</span><span>更新: 2026年10月25日</span></div>
+<p>こんにちは、ツバサです。</p>
+<p>2026年9月、Claude Codeの「クラウドセッション」で使えるクレジットが配られた。僕のアカウントにも届いた。もらったものは使わないと損だと思って、9月の終わりにこのブログの作業を1回だけクラウドセッションでやってみた。</p>
+<p>結論から書くと、僕の使い方では使ったら損だった。いつも手元のPCで動いている仕組みが、クラウドでは何も効いていなかったからだ。作業そのものは終わったが、その後の点検とやり直しに1か月近く手間がかかった。さらに10月の下旬、GitHubから届いたメールで、Claudeに「すべてのリポジトリに書き込める」権限を許可していたことにも気づいた。</p>
+<p>この記事は、そのとき何が動かなかったのか、後から何をやり直したのか、GitHubの権限をどう確かめて外したのかの記録だ。クレジットをもらって使ってみた人、これから使おうか迷っている人に読んでもらえるとうれしいです。</p>
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>Claude Codeのクラウドセッションと、配られたクレジットの条件</li>
+<li>クラウドセッションで動かなかったもの（指示ファイル・検査スクリプト・Gitのフックなど）</li>
+<li>後始末で増えた手間</li>
+<li>ClaudeのGitHubアプリに許可していた範囲と、確かめ方・外し方</li>
+<li>それでもクラウドセッションを使うときに気をつけること</li>
+</ul>
+</div>
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">Claude Codeのクラウドセッションとは｜配られたクレジットと手元のClaude Codeとの違い</a></li>
+<li><a href="#sec2">クラウドセッションで動かなかったいつもの仕組み｜指示ファイル・検査スクリプト・Gitのフック</a></li>
+<li><a href="#sec3">後始末で増えた手間｜検査のやり直しとコミットの記録の修正</a></li>
+<li><a href="#sec4">GitHubに許可していた範囲｜Claude GitHubアプリは全リポジトリに書き込みできた</a></li>
+<li><a href="#sec5">Claude GitHubアプリの確かめ方と外し方｜UninstallとRevokeの2段階</a></li>
+<li><a href="#sec6">それでもクラウドセッションを使うなら｜空のリポジトリとRemote Control</a></li>
+<li><a href="#sec7">FAQ</a></li>
+</ol>
+</div>
+<h2 id="sec1">Claude Codeのクラウドセッションとは｜配られたクレジットと手元のClaude Codeとの違い</h2>
+<p>Claude Codeは、ふだんは手元のPCで動かすAIの作業ツールだ。僕はこのブログの記事のHTMLや、サイトマップなどの周辺ファイルの更新を、Claude Codeに指示して進めている（「<a href="ai-blog-building.html">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</a>」に流れを書いた）。</p>
+<p>クラウドセッションは、そのClaude Codeを手元のPCではなく、Anthropic（Claudeの開発元）が用意したクラウドのPCで動かす使い方だ。ブラウザのclaude.ai/codeやスマホのアプリから頼めて、PCを閉じても作業が進む。</p>
+<p>手元で動かす場合との違いを表にした。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>項目</th><th>手元のClaude Code</th><th>クラウドセッション</th></tr>
+<tr><td>動く場所</td><td>自分のPC</td><td>Anthropicが用意したクラウドのPC</td></tr>
+<tr><td>頼める場所</td><td>自分のPC（外から見る機能もある）</td><td>ブラウザ・スマホのアプリ・デスクトップアプリ</td></tr>
+<tr><td>PCを閉じたとき</td><td>止まる</td><td>進み続ける</td></tr>
+<tr><td>作業するファイル</td><td>自分のPCにあるファイル</td><td>GitHubから取ってきたリポジトリ</td></tr>
+<tr><td>手元の設定</td><td>使える</td><td>リポジトリに入れたものだけ</td></tr>
+<tr><td>GitHub</td><td>無くても使える</td><td>基本的に必要</td></tr>
+</table>
+</div>
+<p>公式ドキュメントの比較表でも、クラウドセッションは「手元の設定は使えず、リポジトリだけ」「GitHubが必要」と整理されている。</p>
+<a class="cite-card" href="https://code.claude.com/docs/en/web-quickstart" target="_blank" rel="noopener noreferrer"><span class="cite-ico ext">C</span><span class="cite-body"><span class="cite-title">Get started with Claude Code in the cloud</span><span class="cite-url">code.claude.com</span></span></a>
+<p>配られたクレジットの条件は、Anthropicのヘルプにまとまっている。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>項目</th><th>内容</th></tr>
+<tr><td>金額</td><td>Proプランは100ドル、Maxプランは250ドル</td></tr>
+<tr><td>対象</td><td>2026年9月23日（米国太平洋時間）の時点でProかMaxを契約していた個人。TeamとEnterprise、無料体験は対象外</td></tr>
+<tr><td>受け取りの期限</td><td>2026年10月7日（米国太平洋時間）</td></tr>
+<tr><td>使える期限</td><td>2026年11月4日（米国太平洋時間）</td></tr>
+<tr><td>使える範囲</td><td>クラウドセッションだけ。手元のClaude Codeには使えない</td></tr>
+</table>
+</div>
+<a class="cite-card" href="https://support.claude.com/en/articles/17152539-cloud-sessions-bonus-credit-promotion" target="_blank" rel="noopener noreferrer"><span class="cite-ico ext">C</span><span class="cite-body"><span class="cite-title">Cloud sessions bonus credit promotion</span><span class="cite-url">support.claude.com</span></span></a>
+<a class="cite-card" href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/" target="_blank" rel="noopener noreferrer"><span class="cite-ico ext">B</span><span class="cite-body"><span class="cite-title">Anthropic rolls out up to $250 in free Claude Code credits, but only for cloud sessions</span><span class="cite-url">bleepingcomputer.com</span></span></a>
+<p>クラウドセッション専用のクレジットなので、使うにはクラウドセッションを始めるしかない。手元で使い慣れている人ほど「せっかくだから」と試したくなる仕組みだと思う。</p>
+<h2 id="sec2">クラウドセッションで動かなかったいつもの仕組み｜指示ファイル・検査スクリプト・Gitのフック</h2>
+<p>9月の終わりにクラウドセッションでやったのは、記事どうしのリンクを増やす作業と、いくつかの記事の数字の訂正だ。作業自体は進み、変更は何回かに分けてGitHubに入った。問題は、ふだん手元で当たり前に動いているものが、クラウドでは何も動いていなかったことだ。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>手元ではあったもの</th><th>手元での役目</th><th>クラウドでどうなったか</th></tr>
+<tr><td>Claude Codeへの指示ファイルと作業ルール</td><td>記事の書き方、更新するファイル、やってはいけないことをClaude Codeに伝える</td><td>届かなかった。ルールを知らないまま作業した</td></tr>
+<tr><td>記事の検査スクリプト</td><td>体裁・日付・タイトルの食い違いを公開前に見つける</td><td>届かなかった。その場で簡易な検査を作り直し、いつもの検査は「次に手元で作業するときに通す」で終わった</td></tr>
+<tr><td>Gitのフック（コミット前・送信前の検査）</td><td>公開してはいけないものや、記録の形の違いを見つけて止める</td><td>動かなかった。コミットに残る情報の一部が、いつもと違う形のまま入った</td></tr>
+<tr><td>作業の記録（手元のメモ）</td><td>何をやったかを次の作業のために残す</td><td>クラウドから手元のメモには直接書けず、別の経路で書いて中身を照らし合わせた</td></tr>
+<tr><td>いつも開けるサイト</td><td>料金や規約を公式ページで確かめる</td><td>クラウドの通信の制限で開けないサイトがあり、確かめられないものが残った</td></tr>
+<tr><td>PRの本文</td><td>変更の説明</td><td>作業したクラウドセッションのURLが載っていた。公開リポジトリなので誰でも見られる状態だった</td></tr>
+</table>
+</div>
+<p>なぜ動かなかったのかは、公式ドキュメントを読むと分かる。クラウドセッションは、GitHubからリポジトリを新しく取ってきて、その中で動く。そのとき読まれる設定は、リポジトリに入れて（commitして）ある<code>.claude/settings.json</code>だけで、自分のPCに置いている個人の設定（<code>~/.claude/settings.json</code>）や、Gitの管理から外している<code>.claude/settings.local.json</code>は読まれない。</p>
+<a class="cite-card" href="https://code.claude.com/docs/en/settings" target="_blank" rel="noopener noreferrer"><span class="cite-ico ext">C</span><span class="cite-body"><span class="cite-title">Settings files and precedence</span><span class="cite-url">code.claude.com</span></span></a>
+<p>このブログは公開リポジトリで運営しているので、Claude Codeへの指示ファイルや作業用のスクリプトは、公開しないようにGitの管理から外してある。Gitのフックも、もともとリポジトリを取ってきただけでは一緒に運ばれない。手元で大事にしている仕組みほど、クラウドには届かない作りになっていた。</p>
+<p>公式ドキュメントにも、手元の設定や道具、環境が要る作業は、手元で動かすか、手元のセッションを外から操作するRemote Controlのほうが向いていると書かれている。僕の作業はまさにそれだった。</p>
+<h2 id="sec3">後始末で増えた手間｜検査のやり直しとコミットの記録の修正</h2>
+<p>クラウドセッションでの作業が終わったあと、手元で次のことをやり直した。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>やり直したこと</th><th>理由</th></tr>
+<tr><td>いつもの検査スクリプトを全ページに通す</td><td>クラウドでは簡易な検査しかできていなかった</td></tr>
+<tr><td>ルールどおりになっていない箇所を直す</td><td>指示ファイルとルールが届いていなかった</td></tr>
+<tr><td>コミットの記録を直す</td><td>Gitのフックが動かず、記録の一部がいつもと違う形で入っていた</td></tr>
+<tr><td>作業の記録を照らし合わせる</td><td>手元のメモに直接書けなかった</td></tr>
+<tr><td>確かめられなかった料金や規約を公式ページで見直す</td><td>クラウドの通信の制限で開けなかった</td></tr>
+</table>
+</div>
+<p>1回の作業のために、手元での点検と修正を何回も重ねることになった。気づいた順に直していったので、全部が片づいたのは10月の下旬で、作業から1か月近くたっていた。手元で作業していれば、どれも作業中に検査やフックが止めてくれていたものだ。</p>
+<p>PRの本文に載っていたクラウドセッションのURLも、公開リポジトリでは誰でも見られる。少なくとも、作業にクラウドセッションを使ったことは外から分かる。公開リポジトリで使った人は、PRの本文を一度見ておくと安心だと思う。</p>
+<h2 id="sec4">GitHubに許可していた範囲｜Claude GitHubアプリは全リポジトリに書き込みできた</h2>
+<p>10月の下旬、GitHubから「Claudeのアプリが権限を更新し、追加のアクセスを求めている」というメールが届いた。そこで初めて、ClaudeのGitHubアプリが自分のアカウントに入ったままだと気づいた。</p>
+<p>ブラウザでクラウドセッションを始めると、最初の案内でGitHubとつなぐように求められる。案内は2段階になっている。</p>
+<ol>
+<li>GitHubにログインして、Claudeのアクセスを承認する</li>
+<li>ClaudeのGitHubアプリをインストールする</li>
+</ol>
+<p>公式ドキュメントによると、2つ目のインストールは「Skip」で後回しにできる。承認だけなら、クラウドセッションが読めるのは公開リポジトリだけで、非公開のリポジトリで作業するにはインストールが要る。僕はこのとき、案内のとおり2つとも進めていた。</p>
+<p>GitHubの設定画面でアプリの中身を見ると、僕の場合はこうなっていた。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>項目</th><th>内容</th></tr>
+<tr><td>対象のリポジトリ</td><td>すべてのリポジトリ（今あるものと、これから作るもの）</td></tr>
+<tr><td>読み取りだけ</td><td>コミットの状態、メタデータ</td></tr>
+<tr><td>読み取りと書き込み</td><td>コード、プルリクエスト、Issue、ワークフロー、Actions、チェック、ディスカッション、リポジトリのフック</td></tr>
+</table>
+</div>
+<p>クラウドセッションはリポジトリのコードを書き換えて送り返すので、書き込みの権限が要るのは分かる。ただ、対象が「すべてのリポジトリ」になっていて、作業に使ったのとは関係のないリポジトリまで含まれる。会社のリポジトリや、人に見せたくないリポジトリが同じアカウントにある人は、範囲を一度確かめたほうがいい。</p>
+<h2 id="sec5">Claude GitHubアプリの確かめ方と外し方｜UninstallとRevokeの2段階</h2>
+<p>使い終わったら外しておくことにした。外すには、GitHubの設定で2か所を操作する。アプリを外しただけでは、アカウントへのアクセスの承認が別の欄に残るからだ。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>手順</th><th>GitHubの画面</th><th>やること</th></tr>
+<tr><td>1</td><td>右上のプロフィール画像 → Settings → Applications → Installed GitHub Apps</td><td>Claudeの「Configure」を開き、いちばん下の「Uninstall」で外す</td></tr>
+<tr><td>2</td><td>同じApplicationsのAuthorized GitHub Apps</td><td>Claudeの「Revoke」で承認を取り消す</td></tr>
+<tr><td>3</td><td>1と2の画面をもう一度開く</td><td>どちらにもClaudeが出ていなければ完了</td></tr>
+</table>
+</div>
+<a class="cite-card" href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps" target="_blank" rel="noopener noreferrer"><span class="cite-ico ext">G</span><span class="cite-body"><span class="cite-title">Reviewing and modifying installed GitHub Apps</span><span class="cite-url">docs.github.com</span></span></a>
+<a class="cite-card" href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-revoking-authorization-of-github-apps" target="_blank" rel="noopener noreferrer"><span class="cite-ico ext">G</span><span class="cite-body"><span class="cite-title">Reviewing and revoking authorization of GitHub Apps</span><span class="cite-url">docs.github.com</span></span></a>
+<p>途中でパスワードの再入力を求められることがある。設定画面に入るときのGitHubの確認なので、そのまま入れて進めればいい。「すべて取り消す（Revoke all）」は、ほかのアプリの承認まで消えるので押さないようにした。</p>
+<p>いつつないだのかは、同じ設定画面の「Security log」で見られる。アプリのインストールと承認、外したことと取り消したことが、日時つきで残っている。</p>
+<p>権限の追加を求めるメールが来ても、承認しなければ今の権限のまま変わらない。使っていないなら、承認するより外すほうが早い。</p>
+<p>手元のClaude Codeは、GitHubのアプリを外しても今までどおり使える。僕も外したあと、手元での作業はそのまま続けている。</p>
+<h2 id="sec6">それでもクラウドセッションを使うなら｜空のリポジトリとRemote Control</h2>
+<p>僕の使い方では損だったが、クラウドセッションが向いている人もいると思う。手元に独自の仕組みを持っていない人や、新しく何かを試したい人だ。使うなら、次のことを先に決めておくと後始末が減る。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>決めておくこと</th><th>理由</th></tr>
+<tr><td>新しく作った空のリポジトリで試す</td><td>既存の作業や、手元の仕組みに頼っているリポジトリを巻き込まない</td></tr>
+<tr><td>GitHubアプリのインストールはSkipするか、リポジトリを選んで入れる</td><td>「すべてのリポジトリ」に書き込める状態を避ける</td></tr>
+<tr><td>効かせたい設定は<code>.claude/settings.json</code>に入れてcommitする</td><td>クラウドが読む設定はこれだけ。公開してよい設定に限る</td></tr>
+<tr><td>手元の設定が要る作業は、手元で動かす</td><td>指示ファイル・検査・フックが届かない</td></tr>
+<tr><td>外から様子を見たいだけなら、Remote Controlを使う</td><td>手元のPCで動かしたまま、スマホやブラウザから見たり頼んだりできる</td></tr>
+<tr><td>使い終わったら、アプリを外して承認を取り消す</td><td>使っていないアプリに権限を残さない</td></tr>
+</table>
+</div>
+<p>GitHubのアカウントを持っていない人は、ブラウザからだとクラウドセッションを始められない。GitHubとつないでいないと、画面にはGitHubのログインボタンしか出ない。手元のファイルをまとめて送る方法もあるが、ターミナルでClaude Codeとgitを使う必要があり、ふだんGitHubを使っていない人には手間が大きい。</p>
+<p>ブログをGitHub Pagesで公開している人は、GitHubのアカウントの入口が増えること自体にも気をつけたい。「<a href="static-vs-dynamic-site.html">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</a>」で、静的サイトでも残る入口として、GitHubのアカウントとトークンを挙げた。外部のアプリに渡している権限も、その入口の1つだ。</p>
+<div class="faq-section"><h2 id="sec7">FAQ</h2>
+<div class="faq-item"><p class="fq"><strong>Q. クラウドセッションのクレジットは、手元のClaude Codeにも使えますか？</strong></p><p class="fa">A. 使えません。Anthropicのヘルプでは、クレジットはクラウドセッション専用で、手元のClaude Codeには使えないとされています。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. GitHubのアカウントが無くてもクラウドセッションは使えますか？</strong></p><p class="fa">A. ブラウザからは使えません。クラウドセッションはGitHubのリポジトリを取ってきて作業する仕組みで、GitHubとつないでいないと始められません。手元のリポジトリをターミナルから送る方法はありますが、Claude Codeとgitをターミナルで使う必要があります。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. クラウドセッションでも、手元と同じ設定やフックを効かせる方法はありますか？</strong></p><p class="fa">A. リポジトリにcommitした.claude/settings.jsonは読まれます。個人の設定（~/.claude/settings.json）、Gitの管理から外した.claude/settings.local.json、Gitのフックは届きません。公開リポジトリに入れたくない設定や検査は、クラウドでは効かせられません。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. ClaudeのGitHubアプリを外すと、手元のClaude Codeは使えなくなりますか？</strong></p><p class="fa">A. 使えます。外れるのはクラウドセッションからGitHubへのアクセスで、手元のClaude Codeは自分のPCのファイルとGitを使うので影響しません。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. GitHubから「Claudeが追加のアクセスを求めている」というメールが来たら、どうすればいいですか？</strong></p><p class="fa">A. 承認しなければ今の権限のまま変わりません。クラウドセッションを使っていないなら、承認せずにアプリを外し、承認も取り消しておくと安心です。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. アプリを外したのに、まだつながっている表示が残るのはなぜですか？</strong></p><p class="fa">A. アプリのインストールと、アカウントへのアクセスの承認は別の欄にあります。Installed GitHub Appsで外したあと、Authorized GitHub Appsでも取り消す必要があります。</p></div>
+</div>
+<div class="related">
+<h3>関連記事</h3>
+<a class="cite-card" href="ai-blog-building.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</span><span class="cite-url">tsubasa-memo.github.io/ai-blog-building.html</span></span></a>
+<a class="cite-card" href="static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a>
+<a class="cite-card" href="github-pages-vs-note.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">noteでなくGitHub Pagesを選んだ理由｜AdSenseが使いたかった</span><span class="cite-url">tsubasa-memo.github.io/github-pages-vs-note.html</span></span></a>
+<a class="cite-card" href="blog-platform-comparison.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span><span class="cite-url">tsubasa-memo.github.io/blog-platform-comparison.html</span></span></a>
+<a class="cite-card" href="llms-txt-setup.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】</span><span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span></span></a>
+</div>
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注15社を比較【2026年版】" loading="lazy" height="160" src="thumbs/retouch-pricing-database.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注15社を比較【2026年版】</h2>
+<p class="card-desc">各社バラバラな料金体系を1ページにまとめました。外注先を比較するときの参考に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ20選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社20選の選び方・費用相場まで。EC担当者が外注先を探すときの備忘録。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-company-check.html">
+<div class="featured-thumb">
+<img alt="有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】" loading="lazy" height="160" src="thumbs/retouch-company-check.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>有名レタッチ会社9社の法人情報を比較｜資本金・設立年・従業員数・取引先【2026年版】</h2>
+<p class="card-desc">法人9社の資本金は300万円〜1億円、9社すべてが取引先社名を公開。技術力以外に審査される法人格・設立年・取引先の公開状況を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="/icons/tsubasa.png" width="64"/></div>
+<div>
+<p class="author-name">ツバサ</p>
+<p class="author-bio">EC関連の会社で働いています。少人数の職場なので、ささげ業務の手配から画像の外注管理、ページ更新、バイトさんへの作業指示まで守備範囲は広めです。Photoshopは苦手なので本格的な画像加工は外注に出していますが、何社も試した分、業者選びや納品チェックには慣れました。このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

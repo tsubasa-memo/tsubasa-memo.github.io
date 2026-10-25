@@ -196,6 +196,13 @@
 
 - [ECアパレル消費者はAIモデルを受け入れるか｜AI model社が約3.8億円の赤字](https://tsubasa-memo.github.io/ai-model-financial-results.html): AI model株式会社の2025年7月期は約3.8億円の純損失。決算公告を基に、2年前のしまむらへのAIモデル提供、その後の増資・本社移転・減資を時系列で整理。導入実績と採算の違い、消費者の反応から考える収益化の課題をまとめます。
 
+- [Claude Codeのクラウドセッションを使ったら、いつもの仕組みが動かず手間が増えた記録](https://tsubasa-memo.github.io/claude-code-cloud-session.html): Claude Codeのクラウドセッション（Pro 100ドル・Max 250ドルのクレジット）を使ったところ、手元の指示ファイル・検査スクリプト・Gitのフックが届かず後始末に1か月近くかかった記録。全リポジトリに書き込めたClaudeのGitHubアプリのUninstallとRevokeの手順も整理した記事
+  - Q: クラウドセッションのクレジットは、手元のClaude Codeにも使えますか？
+  - Q: GitHubのアカウントが無くてもクラウドセッションは使えますか？
+  - Q: クラウドセッションでも、手元と同じ設定やフックを効かせる方法はありますか？
+  - Q: ClaudeのGitHubアプリを外すと、手元のClaude Codeは使えなくなりますか？
+  - Q: アプリを外したのに、まだつながっている表示が残るのはなぜですか？
+
 ### 写真・撮影
 
 - [ミラーレスカメラ vs スマホ｜EC商品を撮影するなら？【2026年版】](https://tsubasa-memo.github.io/mirrorless-vs-smartphone.html): EC商品撮影にミラーレスとスマホのどちらを使うべきかを画質・コスト・撮影後の加工ワークフローまで含めて比較した記事
