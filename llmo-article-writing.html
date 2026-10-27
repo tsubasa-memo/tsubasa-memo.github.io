@@ -60,7 +60,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "llms.txtとは何ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。詳しい仕様・書き方・設置手順はllms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方を参照してください。"
+        "text": "サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。"
       }
     },
     {
@@ -267,32 +267,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 <h2 id="sec3">llms.txtでサイト情報をAIに伝える</h2>
 <p>llms.txtは、サイトのルートに置くMarkdown形式のファイルで、サイトの構造や記事一覧をLLMに伝えるために使います。このブログでも実際に設置しており、Perplexityに引用された経験があります。</p>
-<p>llms.txtの書き方と設置判断はこちらの記事にまとめています。</p>
-<a class="cite-card" href="llms-txt-guide.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</span>
-<span class="cite-url">tsubasa-memo.github.io/llms-txt-guide.html</span>
-</span>
-</a>
 <h2 id="sec4">個人ブログでLLMOに取り組む意味</h2>
 <p>AI検索が普及すると、Google検索経由のアクセスが減ってAI経由のアクセスが増えていく可能性があります。現時点では個人ブログへのLLMO対策の効果を数値で証明するのは難しいですが、コンテンツの質を高めること・FAQ構造化データを入れること・llms.txtを設置することは、SEOとLLMOの両方に有効な施策です。</p>
 <p>特に比較記事（「○○サービスを比較してみた」）や疑問に答える記事（「○○とは何か」）は、LLMが引用しやすいコンテンツとして知られています。比較記事の信頼性を高めるには、たとえば<a href="retouch-company-check.html">レタッチ会社の経営基盤をチェックする</a>ような裏取りが欠かせません。レタッチサービスの比較や写真アプリの比較を書いているこのブログのテーマは、LLMOの観点からも相性が良いと考えています。</p>
 <h2 id="sec5">FAQ</h2>
 <div class="faq-item"><p class="faq-q">Q. LLMOとSEOの違いは何ですか？</p><p class="faq-a">A. SEOはGoogle・Bingなどの検索エンジンで上位表示されるための最適化です。LLMOはChatGPT・Claude・Geminiなどの大規模言語モデル（LLM）に記事を正しく引用・参照されるための最適化です。検索エンジンはURLをインデックスして順位付けしますが、LLMは学習データやRAG（検索拡張生成）を通じてコンテンツを取得します。</p></div>
 <div class="faq-item"><p class="faq-q">Q. LLMOに効果的な記事構造はありますか？</p><p class="faq-a">A. FAQ形式とJSON-LD構造化データの組み合わせが効果的とされています。LLMはFAQ形式の「Q&amp;A」構造を引用しやすい傾向があります。また記事冒頭に「この記事でわかること」として箇条書きで要点をまとめることで、LLMが記事の内容を要約して回答する際の精度が上がります。</p></div>
-<div class="faq-item"><p class="faq-q">Q. llms.txtとは何ですか？</p><p class="faq-a">A. サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。詳しい仕様・書き方・設置手順は<a href="llms-txt-guide.html">llms.txtとは？Googleは不要と表明｜それでも設置すべき理由と書き方</a>を参照してください。</p></div>
+<div class="faq-item"><p class="faq-q">Q. llms.txtとは何ですか？</p><p class="faq-a">A. サイトのルートに置くMarkdown形式のファイルで、LLMにサイトの構造と記事一覧を伝えるためのものです。robots.txtのLLM版のようなイメージです。まだ業界標準ではありませんが、コストゼロで設置できます。</p></div>
 <div class="faq-item"><p class="faq-q">Q. 個人ブログでもLLMOに取り組む意味はありますか？</p><p class="faq-a">A. あります。比較記事や疑問に答える記事はLLMが引用しやすいコンテンツです。特にニッチなトピックを扱う個人ブログは、大手サイトよりも専門性が高い場合があり、LLMに参照されるチャンスがあります。</p></div>
 <div class="faq-item"><p class="faq-q">Q. LLMO対策として今すぐできることは何ですか？</p><p class="faq-a">A. 今すぐできる対策は3つです。①全記事にFAQ構造化データ（JSON-LD）を設置する。②記事の冒頭に「この記事でわかること」として要点を箇条書きで書く。③llms.txtをサイトルートに設置して記事一覧とサービス情報を記載する。これらはいずれもHTMLの修正だけで対応できます。</p></div>
 
 <h2 class="related-title" id="sec6">関連する記事</h2>
-<a class="cite-card" href="llms-txt-setup.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">llms.txtの書き方とGitHub Pagesへの設置手順【備忘録】</span>
-<span class="cite-url">tsubasa-memo.github.io/llms-txt-setup.html</span>
-</span>
-</a>
 <a class="cite-card" href="faq-structured-data.html">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body">

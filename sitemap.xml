@@ -233,16 +233,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/llms-txt-guide.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llms-txt-setup.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/location-photo-cost.html</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -1514,12 +1504,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/llmo-article-writing-en.html</loc>
     <lastmod>2026-08-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llms-txt-guide-en.html</loc>
-    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
