@@ -83,11 +83,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/coconala-for-claude-llmo.html</loc>
-    <lastmod>2026-08-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/compress-product-image.html</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -220,16 +215,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/keihyouhou-ec-memo.html</loc>
     <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llmo-article-writing.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llmo-guide.html</loc>
-    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -396,11 +381,6 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/send-large-photo.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/seo-llmo-cost-small-business.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -757,12 +737,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/glossary/geo.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/glossary/gif.html</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -896,12 +870,6 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/glossary/listing-ads.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/glossary/llmo.html</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1317,11 +1285,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/ai-overview-economics-llmo.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/structured-data-types-ec.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -1387,11 +1350,6 @@
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llmo-agency-research.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/architecture-photo-retouch.html</loc>
@@ -1485,24 +1443,6 @@
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/bing-vs-google-traffic-en.html</loc>
-    <lastmod>2026-08-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/ai-overview-economics-llmo-en.html</loc>
-    <lastmod>2026-08-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llmo-guide-en.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/llmo-article-writing-en.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

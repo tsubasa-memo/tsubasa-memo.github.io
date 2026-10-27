@@ -397,7 +397,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>WordPressは<a href="https://ja.wordpress.org/plugins/wordpress-seo/" rel="noopener nofollow" target="_blank">Yoast SEO</a>や<a href="https://rankmath.com/" rel="noopener nofollow" target="_blank">Rank Math</a>などのSEOプラグインを入れれば、構造化データ・meta description・OGPの設定が管理画面から可能です。ほとんどのケースではこれで十分ですが、テーマが吐き出すHTMLの構造まで細かく制御したい場合は、テーマのテンプレートファイルやfunctions.phpを編集する必要が出てきます。</p>
 <p>GitHub Pagesは静的HTMLをそのまま配信するので、head要素もbody要素もすべて自分で書きます。自由度は最高ですが、すべて手作業です。このブログでは全記事にFAQのJSON-LDを入れ、パンくずリストの構造化データも手書きしています。面倒ですが、テーマやプラグインの出力に制約されない分、やりたいことを100%実現できます。</p>
 <h2 id="sec4">AI検索に引用されるブログはどう作るか</h2>
-<p>ここからがこの記事の本題です。ChatGPT・Perplexity・Geminiなどの<a class="glossary-inline" href="glossary/llmo.html">AI検索</a>が普及する中で、「自分のブログがAIの回答に引用されるかどうか」は、今後のブログ運営で無視できないテーマになっています。</p>
+<p>ここからがこの記事の本題です。ChatGPT・Perplexity・GeminiなどのAI検索が普及する中で、「自分のブログがAIの回答に引用されるかどうか」は、今後のブログ運営で無視できないテーマになっています。</p>
 <p>実際にこのブログの記事がPerplexityの回答で引用されたことがあります。「ささげ業務 代行業者 おすすめ」という質問に対して、ECのミカタやオープンロジなどの業界メディアと並んで、僕の<a href="sasage-outsource.html">ささげ業務の代行業者比較記事</a>が情報源として採用されていました。個人の静的サイトが業界メディアと同列で引用されたという事実は、プラットフォーム選定を考える上で重要なヒントになります。</p>
 <p>AI検索に引用されやすいサイトの条件として、現時点で効果がありそうなのは以下の2つです。</p>
 <p><strong>FAQ構造化データ（JSON-LD）</strong>。質問と回答のペアを構造化データで記述しておくと、LLMが「この記事にはこういうQ&amp;Aがある」と認識しやすくなります。noteではこの設定ができません。WordPressではYoast SEOやRank MathのFAQブロックで対応可能。GitHub Pagesなら直接JSON-LDを書けます。</p>
@@ -441,13 +441,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-body">
 <span class="cite-title">AIに聞きながらGitHub Pagesでブログを構築した話｜非エンジニアの記録</span>
 <span class="cite-url">tsubasa-memo.github.io/ai-blog-building.html</span>
-</span>
-</a>
-<a class="cite-card" href="llmo-article-writing.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">AIに引用されやすい記事の書き方｜LLMO（LLM最適化）を調べた</span>
-<span class="cite-url">tsubasa-memo.github.io/llmo-article-writing.html</span>
 </span>
 </a>
 
