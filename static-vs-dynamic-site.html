@@ -304,7 +304,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>このブログのように公開情報を載せる個人サイトと、顧客情報や問い合わせを扱う会社サイトでは、必要な確認が異なる。会社サイトでは、表示だけでなく、フォームやデータ、旧URL、失敗時の復旧を確かめ、移行後の保守担当も決める必要がある。サーバーを替える場合と、WordPressから別の仕組みへ移る場合の違いは、移行先比較の記事で整理した。</p><a class="cite-card" href="https://tsubasa-memo.github.io/wordpress-migration-options.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">お名前.comからの移行先を比較検討｜WordPressとPHPはオワコンなのか？</span><span class="cite-url">tsubasa-memo.github.io/wordpress-migration-options.html</span></span></a><h2 id="sec4">静的サイトがSEOに有利な場面</h2>
 <p>静的サイトではHTMLを直接編集するため、SEO関連のタグを完全にコントロールできる。WordPressではテーマやプラグインの仕様に制約されることがあるが、静的サイトにはそれがない。</p>
 <p>たとえば、このブログでは各記事にFAQ構造化データ（JSON-LD）を設置しているが、そのフォーマットや質問の内容を1文字単位で管理できる。WordPressでJSON-LDを入れようとすると、プラグインの出力形式に合わせる必要があったり、テーマ更新で上書きされるリスクがある。</p><a class="cite-card" href="https://tsubasa-memo.github.io/faq-structured-data.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">記事にFAQ構造化データを設置したら検索結果がどう変わるか調べた</span><span class="cite-url">tsubasa-memo.github.io/faq-structured-data.html</span></span></a>
-<p>また、llms.txtのようなAI向けのファイルも、リポジトリのルートに置くだけで公開できる。WordPressだとルートにファイルを置く操作がやや手間になる。</p>
 <h2 id="sec5">個人ブログには静的サイトと動的サイトのどちらが向いているか</h2>
 <p>情報流出のニュースが続く今、僕は個人ブログには静的サイトをすすめたい。いちばんの理由はセキュリティで、更新の手間はAIでほとんど解消できるようになった。</p>
 <table class="spec-table">
