@@ -296,7 +296,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2 id="sec3">「更新が大変」は本当か？ AIで変わった前提</h2>
 <p>静的サイトのデメリットとして「更新にHTMLの知識が必要」「記事を追加するたびにファイルを手作業で編集する」と言われることがある。ただし、Markdownで書いた記事からJekyllなどでHTMLを生成する方法は、AIコーディングツールの普及以前からあった。静的サイトの更新が、HTMLを毎回直接編集する方法に限られるわけではない。</p>
 <p>AIコーディングツールは、こうした更新手段に加えて、生成や編集を自然言語で支援する選択肢になっている。たとえばClaude Codeのようなターミナルベースのツールを使えば、「記事のHTMLを生成して、<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/sitemap.html">サイトマップ</a>とアーカイブページも更新して、<a class="glossary-inline" href="https://tsubasa-memo.github.io/glossary/commit.html">コミット</a>して」と日本語で指示するだけで、必要なファイルの生成・編集・gitコミットまでが一度に完了する。</p>
-<p>このブログでは実際に、記事のHTML作成、SVGサムネイル生成、sitemap.xml更新、archive.html更新、llms.txt更新、検索インデックス再生成の6ファイル同時更新をAIに指示する形で運営している。1記事追加にかかる作業時間は、テーマ決めと内容の確認を除けば数分程度である。</p>
+<p>このブログでは実際に、記事のHTML作成、SVGサムネイル生成、sitemap.xml更新、archive.html更新、検索インデックス再生成の5ファイル同時更新をAIに指示する形で運営している。1記事追加にかかる作業時間は、テーマ決めと内容の確認を除けば数分程度である。</p>
 <p>HTMLの書き方を知らなくても「こういう内容の記事を書いて」と指示すれば、サイトの既存デザインに合ったHTMLファイルが出てくる。FAQ構造化データ（JSON-LD）やmeta descriptionの設定も、ルールを一度伝えておけばAIが毎回自動で入れてくれる。</p>
 <div class="warn-box">
 <p><strong>ただし注意点もある。</strong>AIに任せきりにすると、内容の正確性やリンク先の整合性を見落とすリスクがある。最終的な確認は人間がやる必要がある。また、git操作やGitHub Pagesの初期設定には最低限のコマンドラインの知識が要る。「完全にゼロ知識でもできる」とは言えないが、「WordPressの管理画面を覚える程度の学習コスト」で済むようになっている。</p>
