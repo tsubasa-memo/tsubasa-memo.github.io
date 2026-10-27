@@ -71,7 +71,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "Is LLMO necessary for small businesses?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on your industry and audience. If your potential customers use ChatGPT or Perplexity to research services, LLMO has value. However, expensive consulting contracts are unnecessary. Start with free measures: structured data implementation, FAQ design, and optionally llms.txt."
+        "text": "It depends on your industry and audience. If your potential customers use ChatGPT or Perplexity to research services, LLMO has value. However, expensive consulting contracts are unnecessary. Start with free measures: structured data implementation and FAQ design."
       }
     },
     {
@@ -79,7 +79,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "How do I start LLMO on my own?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "First, check how AI currently perceives your business by querying ChatGPT and Perplexity with your keywords. Then implement FAQPage JSON-LD, add author structured data, and build out FAQ sections on your pages. Optionally add llms.txt. All of these are free. If you're using WordPress, Yoast SEO or Rank Math's free versions handle most structured data implementation."
+        "text": "First, check how AI currently perceives your business by querying ChatGPT and Perplexity with your keywords. Then implement FAQPage JSON-LD, add author structured data, and build out FAQ sections on your pages. All of these are free. If you're using WordPress, Yoast SEO or Rank Math's free versions handle most structured data implementation."
       }
     },
     {
@@ -96,14 +96,6 @@ gtag('config', 'G-YYBFXHXMM6');
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "SEO first. Much of the information AI uses for generating answers is retrieved via web search — if your pages aren't indexed by search engines, AI can't find them either. Register with Google Search Console, submit your sitemap, and implement structured data. These SEO fundamentals simultaneously serve as LLMO groundwork. SEO and LLMO aren't separate tracks — they're continuous, and building the SEO foundation before adding LLMO-specific elements avoids wasted effort."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is llms.txt and is it required?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "llms.txt is a text file placed at your site's root directory that tells AI crawlers what your site contains. It was proposed in September 2024. Google explicitly stated in May 2026 that it's unnecessary — Google's AI features won't give it special treatment. However, for ChatGPT (GPTBot), Claude, and Perplexity (PerplexityBot), it provides useful context. Since setup takes about 10 minutes and costs nothing, maintaining it for non-Google AI platforms is a reasonable choice."
       }
     }
   ]
@@ -284,7 +276,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>What they share in common: creating high-quality content with first-party data and expertise, implementing structured data (JSON-LD) to make page content machine-readable, building E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness), and organizing site structure so crawlers can efficiently access information.</p>
 
-<p>What LLMO adds: enriching FAQ content (AI uses Q&amp;A pairs as building blocks for answers), clarifying entities (defining authors and organizations in structured data), and optionally setting up llms.txt (a site guide for AI crawlers). Google stated in May 2026 that llms.txt is not needed for Google's AI features, but for ChatGPT, Claude, and Perplexity, it remains useful and costs nothing to maintain.</p>
+<p>What LLMO adds: enriching FAQ content (AI uses Q&amp;A pairs as building blocks for answers) and clarifying entities (defining authors and organizations in structured data). Google stated in May 2026 that llms.txt is not needed for Google's AI features.</p>
 
 <p>That said, "similar tactics" and "the same thing" are different claims. Keita Takeuchi, CEO of LANY (a Japanese SEO/LLMO agency), argues that while the tactical overlap is real, the strategic framing is fundamentally different. In SEO, search volume and GA4 conversion data make it relatively clear "what to do to generate revenue." In LLMO, there's no visible prompt search volume and no proven causal link between AI recommendation share and sales. The work has to start from strategy — "what should LLMO look like for this business?" — rather than jumping to tactics.</p>
 
@@ -341,12 +333,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>For implementation details, see "<a href="json-ld-guide-en.html">How to Write Structured Data (JSON-LD): FAQPage and Article, Step by Step</a>."</p>
 
-<h3>llms.txt</h3>
-
-<p>A specification proposed in September 2024. You place a text file at your site's root directory (example.com/llms.txt) that tells AI crawlers what your site contains. While robots.txt addresses search engine crawlers, llms.txt targets AI crawlers like GPTBot and Anthropic's crawler for Claude.</p>
-
-<p>Google explicitly stated in May 2026 that llms.txt is not needed — Google's AI features won't give it special treatment. But for ChatGPT, Claude, and Perplexity, it provides useful context at zero cost. The decision to maintain it depends on whether you're targeting only Google or multiple AI platforms.</p>
-
 <h3>FAQ Content</h3>
 
 <p>AI generates "answers to questions," so FAQ-formatted content naturally aligns with how AI constructs responses. Adding FAQ sections to your pages and marking them up with FAQPage JSON-LD makes the question-and-answer pairs explicit for AI. (Google stopped showing FAQ rich results in May 2026.)</p>
@@ -373,7 +359,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><strong>Check your current AI visibility.</strong> Enter your company's keywords into ChatGPT and Perplexity. See whether AI recognizes your business — or doesn't.</li>
 <li><strong>Implement structured data.</strong> Add FAQPage, Article, and BreadcrumbList JSON-LD to your site. WordPress users can handle this with free plugins like Yoast SEO or Rank Math.</li>
 <li><strong>Add FAQ sections.</strong> For each page or product listing, add Q&amp;A pairs addressing questions readers are likely to ask. This answers readers on the spot and makes the content easier for AI to cite.</li>
-<li><strong>Set up llms.txt (optional).</strong> Google says it's unnecessary, but it's useful for ChatGPT, Claude, and Perplexity at zero cost.</li>
 <li><strong>Verify with Google Search Console.</strong> Use the URL Inspection tool to confirm structured data is correctly recognized. The <a href="gsc-ai-report-en.html">generative AI performance report</a> also shows which of your pages AI search cites.</li>
 </ul>
 
@@ -399,12 +384,12 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <div class="faq-item">
 <p class="fq"><strong>Q. Is LLMO necessary for small businesses?</strong></p>
-<p class="fa">A. It depends on your industry and audience. If your potential customers use ChatGPT or Perplexity to research services, LLMO has value. However, expensive consulting contracts are unnecessary. Start with free measures: structured data implementation, FAQ design, and optionally llms.txt.</p>
+<p class="fa">A. It depends on your industry and audience. If your potential customers use ChatGPT or Perplexity to research services, LLMO has value. However, expensive consulting contracts are unnecessary. Start with free measures: structured data implementation and FAQ design.</p>
 </div>
 
 <div class="faq-item">
 <p class="fq"><strong>Q. How do I start LLMO on my own?</strong></p>
-<p class="fa">A. First, check how AI currently perceives your business by querying ChatGPT and Perplexity with your keywords. Then implement FAQPage JSON-LD, add author structured data, and build out FAQ sections on your pages. Optionally add llms.txt. All of these are free. If you're using WordPress, Yoast SEO or Rank Math's free versions handle most structured data implementation.</p>
+<p class="fa">A. First, check how AI currently perceives your business by querying ChatGPT and Perplexity with your keywords. Then implement FAQPage JSON-LD, add author structured data, and build out FAQ sections on your pages. All of these are free. If you're using WordPress, Yoast SEO or Rank Math's free versions handle most structured data implementation.</p>
 </div>
 
 <div class="faq-item">
@@ -416,14 +401,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p class="fq"><strong>Q. Should I do SEO or LLMO first?</strong></p>
 <p class="fa">A. SEO first. Much of the information AI uses for generating answers is retrieved via web search — if your pages aren't indexed by search engines, AI can't find them either. Register with Google Search Console, submit your sitemap, and implement structured data. These SEO fundamentals simultaneously serve as LLMO groundwork. SEO and LLMO aren't separate tracks — they're continuous, and building the SEO foundation before adding LLMO-specific elements avoids wasted effort.</p>
 </div>
-
-<div class="faq-item">
-<p class="fq"><strong>Q. What is llms.txt and is it required?</strong></p>
-<p class="fa">A. llms.txt is a text file placed at your site's root directory that tells AI crawlers what your site contains. It was proposed in September 2024. Google explicitly stated in May 2026 that it's unnecessary — Google's AI features won't give it special treatment. However, for ChatGPT (GPTBot), Claude, and Perplexity (PerplexityBot), it provides useful context. Since setup takes about 10 minutes and costs nothing, maintaining it for non-Google AI platforms is a reasonable choice.</p>
-</div>
 </div>
 
-<p><strong>Summary:</strong> LLMO (Large Language Model Optimization) is the practice of getting your content cited by AI search — ChatGPT, Gemini, Perplexity, Google AI Overviews. Multiple terms exist (LLMO, GEO, AIO, AEO), but they describe essentially the same work. Google's May 2026 official guide says optimizing for generative AI search is still SEO. The practical overlap between SEO and LLMO is large, but the strategic framing and KPIs differ. For small businesses, start with the SEO foundation (structured data, FAQ content, site structure), then layer on LLMO-specific elements like llms.txt. Expensive LLMO consulting is not required — the foundational steps are free.</p>
+<p><strong>Summary:</strong> LLMO (Large Language Model Optimization) is the practice of getting your content cited by AI search — ChatGPT, Gemini, Perplexity, Google AI Overviews. Multiple terms exist (LLMO, GEO, AIO, AEO), but they describe essentially the same work. Google's May 2026 official guide says optimizing for generative AI search is still SEO. The practical overlap between SEO and LLMO is large, but the strategic framing and KPIs differ. For small businesses, start with the SEO foundation (structured data, FAQ content, site structure), then layer on LLMO-specific elements. Expensive LLMO consulting is not required — the foundational steps are free.</p>
 
 <!-- Related Articles -->
 <div class="related">

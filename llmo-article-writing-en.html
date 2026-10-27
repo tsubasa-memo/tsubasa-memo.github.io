@@ -16,10 +16,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
      crossorigin="anonymous"></script>
 <title>How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques | ツバサのメモ帳</title>
-<meta name="description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.">
+<meta name="description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, and why personal blogs can compete in LLMO.">
 <meta name="keywords" content="LLMO article writing,AI citation writing,FAQ JSON-LD,llms.txt,AI search content,how to get cited by ChatGPT,LLMO blog optimization,structured data FAQ">
 <meta property="og:title" content="How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques">
-<meta property="og:description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.">
+<meta property="og:description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, and why personal blogs can compete in LLMO.">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://tsubasa-memo.github.io/llmo-article-writing-en.html">
@@ -29,7 +29,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques">
-<meta name="twitter:description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.">
+<meta name="twitter:description" content="A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, and why personal blogs can compete in LLMO.">
 <meta name="twitter:image" content="https://tsubasa-memo.github.io/og/llmo-article-writing.webp">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tsubasa-memo.github.io/llmo-article-writing-en.html">
@@ -60,14 +60,6 @@ gtag('config', 'G-YYBFXHXMM6');
     },
     {
       "@type": "Question",
-      "name": "What is llms.txt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Markdown-format file placed at your site root that tells AI crawlers about your site structure and article inventory. It's essentially the AI version of robots.txt. Google has stated it's not necessary for their AI features, but it remains useful for ChatGPT, Claude, and Perplexity. Setup takes about 10 minutes and costs nothing."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Can a personal blog benefit from LLMO?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -79,7 +71,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "What are the quickest LLMO improvements I can make today?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Three things you can do immediately: add FAQ structured data (FAQPage JSON-LD) to every article, write a What this article covers summary at the top of each post, and place an llms.txt file at your site root listing your articles and site description. All three are free and take a few hours total."
+        "text": "Two things you can do immediately: add FAQ structured data (FAQPage JSON-LD) to every article, and write a What this article covers summary at the top of each post. Both are free and take a few hours total."
       }
     },
     {
@@ -98,7 +90,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Write Articles That AI Will Cite | Practical LLMO Writing Techniques",
-  "description": "A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, llms.txt, and why personal blogs can compete in LLMO.",
+  "description": "A practical guide to writing content that gets cited by ChatGPT, Claude, Gemini, and AI Overviews. Covers FAQ structure with JSON-LD, summary sections, and why personal blogs can compete in LLMO.",
   "url": "https://tsubasa-memo.github.io/llmo-article-writing-en.html",
   "image": "https://tsubasa-memo.github.io/og/llmo-article-writing.webp",
   "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
@@ -213,7 +205,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <ul>
 <li>What LLMO is and how it differs from SEO</li>
 <li>Article structures that AI tends to cite</li>
-<li>How FAQ structured data and llms.txt improve AI visibility</li>
+<li>How FAQ structured data improves AI visibility</li>
 <li>Why personal blogs can benefit from LLMO</li>
 </ul>
 </div>
@@ -279,7 +271,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li>Add a "What this article covers" summary at the top of each article</li>
 <li>Organize information in FAQ format (Q&amp;A pairs)</li>
 <li>Implement FAQPage JSON-LD structured data</li>
-<li>Place llms.txt at your site root</li>
 <li>Test by asking AI about your topic and checking whether your content gets cited — then iterate</li>
 </ol>
 
@@ -287,11 +278,11 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>llms.txt is a Markdown-format file placed at your site's root directory that tells AI systems about your site structure and article inventory. Think of it as the AI equivalent of robots.txt — while robots.txt guides search engine crawlers, llms.txt guides AI crawlers like GPTBot and Anthropic's crawler for Claude.</p>
 
-<p>Google stated in May 2026 that llms.txt is "unnecessary" for Google's AI features. However, for ChatGPT, Claude, and Perplexity, it remains useful and costs nothing to set up.</p>
+<p>Google stated in May 2026 that llms.txt is "unnecessary" for Google's AI features.</p>
 
 <h2 id="sec4">Why Personal Blogs Should Care About LLMO</h2>
 
-<p>As AI search grows, traffic patterns are shifting — Google search traffic may decrease while AI-sourced traffic increases. Measuring LLMO's direct impact on a personal blog in hard numbers is still difficult, but improving content quality, adding FAQ structured data, and setting up llms.txt are all tactics that serve both SEO and LLMO simultaneously.</p>
+<p>As AI search grows, traffic patterns are shifting — Google search traffic may decrease while AI-sourced traffic increases. Measuring LLMO's direct impact on a personal blog in hard numbers is still difficult, but improving content quality and adding FAQ structured data are tactics that serve both SEO and LLMO simultaneously.</p>
 
 <p>Comparison articles ("comparing X services") and knowledge-base articles ("what is X?") are the content types most frequently cited by AI. This blog covers topics like retouching service comparisons and photo app reviews — themes that align well with what AI systems tend to reference.</p>
 
@@ -313,18 +304,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 
 <div class="faq-item">
-<p class="fq"><strong>Q. What is llms.txt?</strong></p>
-<p class="fa">A. A Markdown-format file placed at your site root that tells AI crawlers about your site structure and article inventory. It's essentially the AI version of robots.txt. Google has stated it's not necessary for their AI features, but it remains useful for ChatGPT, Claude, and Perplexity. Setup takes about 10 minutes and costs nothing.</p>
-</div>
-
-<div class="faq-item">
 <p class="fq"><strong>Q. Can a personal blog benefit from LLMO?</strong></p>
 <p class="fa">A. Yes. Comparison articles and knowledge-base content are the formats AI cites most frequently. Personal blogs covering niche topics can have higher information density than general-purpose sites, making them attractive citation sources for AI. Site scale matters less than topical depth.</p>
 </div>
 
 <div class="faq-item">
 <p class="fq"><strong>Q. What are the quickest LLMO improvements I can make today?</strong></p>
-<p class="fa">A. Three things you can do immediately: add FAQ structured data (FAQPage JSON-LD) to every article, write a What this article covers summary at the top of each post, and place an llms.txt file at your site root listing your articles and site description. All three are free and take a few hours total.</p>
+<p class="fa">A. Two things you can do immediately: add FAQ structured data (FAQPage JSON-LD) to every article, and write a What this article covers summary at the top of each post. Both are free and take a few hours total.</p>
 </div>
 
 <div class="faq-item">

@@ -391,12 +391,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <td>プラグインで変更可</td>
 <td>直接記述</td>
 </tr>
-<tr>
-<td>llms.txt設置</td>
-<td>不可</td>
-<td>プラグインで対応可</td>
-<td>直接配置</td>
-</tr>
 </table>
 </div>
 <p>noteではHTMLのhead要素を触ることができません。構造化データもmeta descriptionもnote側の自動生成に任せる形になります。SEOの基本的な設定を自分でコントロールしたいなら、noteは最初から選択肢から外れます。</p>
@@ -405,9 +399,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2 id="sec4">AI検索に引用されるブログはどう作るか</h2>
 <p>ここからがこの記事の本題です。ChatGPT・Perplexity・Geminiなどの<a class="glossary-inline" href="glossary/llmo.html">AI検索</a>が普及する中で、「自分のブログがAIの回答に引用されるかどうか」は、今後のブログ運営で無視できないテーマになっています。</p>
 <p>実際にこのブログの記事がPerplexityの回答で引用されたことがあります。「ささげ業務 代行業者 おすすめ」という質問に対して、ECのミカタやオープンロジなどの業界メディアと並んで、僕の<a href="sasage-outsource.html">ささげ業務の代行業者比較記事</a>が情報源として採用されていました。個人の静的サイトが業界メディアと同列で引用されたという事実は、プラットフォーム選定を考える上で重要なヒントになります。</p>
-<p>AI検索に引用されやすいサイトの条件として、現時点で効果がありそうなのは以下の3つです。</p>
+<p>AI検索に引用されやすいサイトの条件として、現時点で効果がありそうなのは以下の2つです。</p>
 <p><strong>FAQ構造化データ（JSON-LD）</strong>。質問と回答のペアを構造化データで記述しておくと、LLMが「この記事にはこういうQ&amp;Aがある」と認識しやすくなります。noteではこの設定ができません。WordPressではYoast SEOやRank MathのFAQブロックで対応可能。GitHub Pagesなら直接JSON-LDを書けます。</p>
-<p><strong>llms.txt</strong>。サイトのルートに置くMarkdown形式のファイルで、LLMにサイト全体の構造と記事一覧を伝えるものです。noteには設置できません。WordPressは<a href="https://wordpress.org/plugins/website-llms-txt/" rel="noopener nofollow" target="_blank">Website LLMs.txt</a>というプラグイン（アクティブインストール数3万件以上）で対応できます。GitHub Pagesなら直接ファイルを配置するだけです。</p>
 <p><strong>セマンティックなHTML構造</strong>。見出しタグ（h2〜h3）の階層が論理的に正しいか、段落ごとに一つのトピックを扱っているか、といったHTMLの意味構造です。LLMはHTMLの構造を手がかりにコンテンツを解析するため、div要素の羅列よりもarticle・section・h2〜h3で区切られた文書の方が解析精度が高まります。noteのHTMLはnote側が生成するため自分では制御できません。WordPressはテーマ次第。GitHub Pagesは完全に自分の責任です。</p>
 <div class="point-box">
 <p><strong>AI検索対応でプラットフォームを選ぶなら</strong></p>
