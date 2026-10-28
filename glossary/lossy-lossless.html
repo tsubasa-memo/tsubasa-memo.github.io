@@ -214,7 +214,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p><a href="https://breezegroup.co.jp/202005/image-compression/" rel="noopener noreferrer" target="_blank">BREEZEの画像圧縮解説</a>にも、この2つの違いがシンプルに説明されていてわかりやすかった。可逆圧縮は「zipファイルに入れて解凍するようなイメージ」と書いてあって、なるほどと思った。</p>
 <p>JPEGが保存するたびに劣化するのは、非可逆圧縮が毎回実行されるから。ファイルを開いてそのまま保存し直すだけでも、圧縮→展開→圧縮という処理が走って、そのたびに少しずつデータが失われていく。<a href="https://docs.krita.org/ja/general_concepts/file_formats/lossy_lossless.html" rel="noopener noreferrer" target="_blank">Kritaの公式ドキュメント</a>にも、非可逆圧縮を繰り返すと劣化が蓄積されると書いてあった。</p>
 <h2>EC実務で出てくる場面</h2>
-<p>非可逆圧縮と可逆圧縮の違いを知っておくと、日々の画像管理で困ることが減る。僕が遭遇した場面を書いておく。</p>
+<p>非可逆圧縮と可逆圧縮の違いを知っておくと、日々の画像管理で困ることが減る。</p>
 <h3>商品画像の加工と保存</h3>
 <p>商品写真の色味を調整して保存、次の日にまた修正して保存……というのを繰り返していたら、最初の写真と比べて明らかに画質が落ちていた。JPEGで作業用ファイルを管理していたのが原因だった。加工中はPSD（Photoshop形式）やTIFFなどの劣化しない形式で保存しておいて、最後にJPEGに書き出すのが正解だ。</p>
 <h3>背景透過が必要な画像</h3>
