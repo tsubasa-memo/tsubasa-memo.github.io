@@ -18,10 +18,10 @@ gtag('config', 'G-YYBFXHXMM6');
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
      crossorigin="anonymous"></script>
 <title>Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ｜ツバサのメモ帳</title>
-<meta name="description" content="Google Merchant Centerに2026年5月に追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
+<meta name="description" content="Google Merchant Centerに2026年5月に追加された6つの会話属性を整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
 <meta name="keywords" content="会話属性,Merchant Center 会話属性,conversational attributes,会話属性 登録,会話属性 AI,question_and_answer,popularity_rank,補助データソース,商品データ AI 生成">
 <meta property="og:title" content="Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ">
-<meta property="og:description" content="Google Merchant Centerに追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
+<meta property="og:description" content="Google Merchant Centerに追加された6つの会話属性を整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://tsubasa-memo.github.io/og/gmc-conversational-attributes.webp">
@@ -85,7 +85,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ",
-  "description": "Google Merchant Centerに2026年5月に追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。",
+  "description": "Google Merchant Centerに2026年5月に追加された6つの会話属性を整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。",
   "url": "https://tsubasa-memo.github.io/gmc-conversational-attributes.html",
   "image": "https://tsubasa-memo.github.io/og/gmc-conversational-attributes.webp",
   "author": {
@@ -135,7 +135,7 @@ gtag('config', 'G-YYBFXHXMM6');
 <meta property="og:url" content="https://tsubasa-memo.github.io/gmc-conversational-attributes.html">
 <meta property="og:site_name" content="ツバサのメモ帳">
 <meta name="twitter:title" content="Merchant Centerの会話属性とは？AIで一括登録できるか調べたメモ">
-<meta name="twitter:description" content="Google Merchant Centerに追加された6つの会話属性を、EC担当者目線で整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
+<meta name="twitter:description" content="Google Merchant Centerに追加された6つの会話属性を整理。手入力ではなく商品マスタからAIで変換生成する流れ、生成AIの開示が必要な範囲、人が確認すべき点までまとめた下調べメモ。">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
@@ -210,13 +210,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 
 <p>こんにちは、ツバサです。</p>
-<p>お客さんが「予算3万円でいいヘッドホンある？」とAIに聞く。AIがいくつか候補を挙げて、お客さんは商品ページを開かずにそのまま買う先を決める。GeminiやGoogleのAI Modeで、もうこういう買い方が始まっています。このとき、AIが何を見てうちの商品を候補に入れるか、候補に入れたあとお客さんの質問にどう答えるかを左右するのが、今回Merchant Centerに増えた「会話属性」です。</p>
+<p>お客さんが「予算3万円でいいヘッドホンある？」とAIに聞く。AIがいくつか候補を挙げて、お客さんは商品ページを開かずにそのまま買う先を決める。GeminiやGoogleのAI Modeで、もうこういう買い方が始まっています。このとき、AIが何を見て商品を候補に入れるか、候補に入れたあとお客さんの質問にどう答えるかを左右するのが、今回Merchant Centerに増えた「会話属性」です。</p>
 <p>会話属性を入れておくと、お客さんとAIの会話の中で、あなたの商品の細かいところまでAIが代わりに答えてくれます。たとえばこんな場面です。</p>
 <p>アパレルなら、「このシャツ、Lサイズの白はある？」に対して、あなたが登録したサイズと色のバリエーションをAIが正しく把握して「あります」と答えられます。「この素材、洗濯機で洗える？」「裏地は付いてる？」といった質問にも、商品データに答えを入れておけばAIがその場で返せます。試着できない通販でお客さんが一番気にするところを、AIが先回りして潰してくれるイメージです。</p>
 <p>家電なら、「この商品にヘッドホン端子は付いてる？」と聞かれたときにAIが「付いていません」と即答できます。「このカメラに合うレンズは？」には、あなたが指定した対応レンズや純正バッテリーをセットで提案させられます。お客さんがメーカーサイトを調べ直さなくても、AIの会話の中で関連商品まで案内できるわけです。</p>
 <p>店全体で見れば、「今人気のスニーカーは？」「おすすめのワンピース教えて」みたいなざっくりした相談に対して、あなたの店で実際に売れている商品をAIに推させられます。</p>
-<p>逆に、こうした情報を何も入れていなければどうなるか。AIはうちの商品の細かいところを答えられず、答えられる競合の商品のほうをお客さんに勧めます。試着もページ閲覧もなく、AIとの会話だけで買う先が決まる場面では、これは取りこぼしに直結します。やる利点は、AIの会話の中で自分の商品が候補に残り、お客さんの疑問でつまずかせず、取りこぼしを減らせることです。</p>
-<p>ただ、仕様を見ると商品ごとに中身が変わる項目が多い。うちの商品数で全部を手入力するのは正直きついし、同じように感じる店は多いはずです。僕自身もまだこれから手をつけるところです。この記事は、登録作業に飛びつく前に、どこをAIに肩代わりさせられて、どこは人がやらないといけないのかを調べて整理した下調べのメモです。やってみた体験記ではなく、手を動かす前に「やる価値があるか、どこまでやれそうか」を見積もった記録だと思って読んでください。</p>
+<p>逆に、こうした情報を何も入れていなければどうなるか。AIは商品の細かいところを答えられず、答えられる競合の商品のほうをお客さんに勧めます。試着もページ閲覧もなく、AIとの会話だけで買う先が決まる場面では、これは取りこぼしに直結します。やる利点は、AIの会話の中で自分の商品が候補に残り、お客さんの疑問でつまずかせず、取りこぼしを減らせることです。</p>
+<p>ただ、仕様を見ると商品ごとに中身が変わる項目が多い。全部を手入力するのは正直きついです。この記事は、登録作業に飛びつく前に、どこをAIに肩代わりさせられて、どこは人がやらないといけないのかを調べて整理した下調べのメモです。やってみた体験記ではなく、手を動かす前に「やる価値があるか、どこまでやれそうか」を見積もった記録だと思って読んでください。</p>
 
 <div class="toc">
 <p class="toc-title">目次</p>

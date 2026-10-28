@@ -204,13 +204,12 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </div>
 
 <p>こんにちは、ツバサです。</p>
-<p>情報流出や不正アクセスのニュースが多い昨今だが、自分の会社のサイトは今も問題なく動いている。php2shell問題の時、お名前.comの対応は遅かったし、元々評判の悪いレンタルサーバーだが、他社にサーバーを移すには費用も手間もかかる。それなら、このままでよいのではないか。</p>
+<p>php2shell問題の時、お名前.comの対応は遅かったし、元々評判の悪いレンタルサーバーだが、他社にサーバーを移すには費用も手間もかかる。それなら、このままでよいのではないか。</p>
 <p>各社の発表では、2026年10月22日、さくらは6時30分にPHPのバージョンアップを完了し、エックスサーバーは6時45分時点でPHP 8.2〜8.5の対象全サーバーへの修正完了を報告した。一方、お名前.comが対象プランの全PHPバージョンへの修正完了を示したのは20時45分時点だった。修正完了を確認できる時点には、両社と約14時間の差があった。</p>
 <p>お名前.comは、修正を順次適用している間もサイトの公開を続けていた。修正が適用されていないサイトは、その間も脆弱性を悪用される危険にさらされる。これは全サイトが20時45分まで未修正だった、という意味ではない。それでも、他社が朝には対応を終えたと報告する一方、利用者が全体の対応完了を確認できたのは夜の時点である。サイトが表示されているから問題ない、と済ませられる状況ではなかった。各社の対応と告知の時系列は、次の記事にまとめている。</p>
 <a class="cite-card" href="https://tsubasa-memo.github.io/php2shell-timeline.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">【EC事業者向け】PHP脆弱性php2shellで止まったカート・モールを一晩追跡</span><span class="cite-url">tsubasa-memo.github.io/php2shell-timeline.html</span></span></a>
 <p>だが、サイトが問題なく表示されていることと、安全に使い続けられることは別だ。脆弱性が見つかるたびに調査や更新、修正の作業が発生し、サーバーを移さずWordPressを使い続けるとしても保守の負担は残る。「移行しなければお金がかからない」とは言えない。</p>
 <p>保守料金の値上げや契約外の修正費、社員の対応時間まで含めれば、現状維持を選んでも今後の費用が増える可能性がある。目先の移行費用だけで「高いからやめる」と判断せず、移行費用と移行後の運営・保守費を合わせた費用を、今のサイトを維持する費用と同じ期間で比べる必要がある。</p>
-<p>僕の会社の社長は、無駄な金を使わない倹約家だ。会社で契約しているサブスクも定期的に見直すルールがあり、使っていないものを惰性で契約し続けることはしない。その社長も、今回のPHPの脆弱性問題や、お名前.com デスクトップクラウドへの不正アクセスと利用者情報の流出を受けて、会社のサイトを安全に運営するためには、それなりの費用をかけるべきだと判断した。</p>
 <a class="cite-card" href="https://tsubasa-memo.github.io/onamae-com-reputation.html#desktop-cloud-update">
 <span class="cite-ico int">ツ</span>
 <span class="cite-body"><span class="cite-title">お名前.comの評判は？｜さくら・エックスサーバーなど競合レンタルサーバー会社と比較してみた</span><span class="cite-url">tsubasa-memo.github.io</span></span>
@@ -324,7 +323,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-title">Cloudflareの正式版発表</span>
 <span class="cite-url">blog.cloudflare.com</span>
 </span>
-</a><p>会社として採用を決めたわけではない。現在のフォームや追加機能を移せるか、制作会社が移行後も管理できるか、費用がどの程度になるかを確かめる必要がある。初期ベータ時点の紹介ではなく、正式版の仕様に基づいて検討したい。</p><p>@tatsu_studioさんは、お知らせ欄への採用意向に続き、移す前に「今のプラグインが何をしているか」を確認するよう勧めている。フォームや予約など、現在の追加機能の役割を書き出し、小さなサイトから試すという手順だ。僕が制作会社に確認したいのも、記事が移るかだけでなく、これらの機能を移行先で誰が作り直し、保守するかである。</p><a class="cite-card" href="https://www.threads.com/@tatsu_studio/post/De3hRmzjwdA" rel="noopener noreferrer" target="_blank">
+</a><p>現在のフォームや追加機能を移せるか、制作会社が移行後も管理できるか、費用がどの程度になるかを確かめる必要がある。</p><p>@tatsu_studioさんは、お知らせ欄への採用意向に続き、移す前に「今のプラグインが何をしているか」を確認するよう勧めている。フォームや予約など、現在の追加機能の役割を書き出し、小さなサイトから試すという手順だ。</p><a class="cite-card" href="https://www.threads.com/@tatsu_studio/post/De3hRmzjwdA" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">T</span>
 <span class="cite-body">
 <span class="cite-title">制作側の投稿</span>
@@ -413,7 +412,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-url">digital.go.jp</span>
 </span>
 </a>
-<p>編集の簡単さだけでなく、顧客情報の保存先、事故時の連絡体制、データを取り出して他社へ移せるか（データポータビリティ）を確認することが不可欠だ。</p><a class="cite-card" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a><h2 id="sec7">会社サイトの移行はプロに依頼し、移行後の保守も決める</h2><p>趣味のサイトなら、僕もAIを使いながら別の仕組みへ移すことはできる。しかし、顧客情報を管理する会社のサイトを、同じ感覚で自分だけで移そうとは思わない。表示が整ったことと、情報の扱い、問い合わせや注文、切り替え時の復旧まで確かめたことは別だ。会社の仕事として任せるなら、移行前の検証と失敗したときの対応まで依頼できるプロに頼みたい。</p><p>移す作業だけを依頼して終わりにせず、その後の管理まで決める必要がある。制作現場の投稿には、何年も前に作ったサイトの対応を突然求められた経験が出ている。</p><p>@tkyk_84ysmさんは、約7年前に制作したWordPressサイトの対応を急に求められたと投稿している。制作のみの契約で、現在は管理画面にも入れず、どのサーバーを使っているかも知らなかったという。依頼には「現在契約されている業者様とご確認の上」と返した。昔作った人が現在の管理情報を持っているとは限らない。制作会社を替えるときにも、管理者アカウントや契約先、更新履歴を誰が引き継ぐかを決める必要がある。</p><a class="cite-card" href="https://www.threads.com/@tkyk_84ysm/post/De1T2jumOZP" rel="noopener noreferrer" target="_blank">
+<p>編集の簡単さだけでなく、顧客情報の保存先、事故時の連絡体制、データを取り出して他社へ移せるか（データポータビリティ）を確認することが不可欠だ。</p><a class="cite-card" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a><h2 id="sec7">会社サイトの移行はプロに依頼し、移行後の保守も決める</h2><p>趣味のサイトなら、僕もAIを使いながら別の仕組みへ移すことはできる。表示が整ったことと、情報の扱い、問い合わせや注文、切り替え時の復旧まで確かめたことは別だ。任せるなら、移行前の検証と失敗したときの対応まで依頼できるプロに頼みたい。</p><p>移す作業だけを依頼して終わりにせず、その後の管理まで決める必要がある。制作現場の投稿には、何年も前に作ったサイトの対応を突然求められた経験が出ている。</p><p>@tkyk_84ysmさんは、約7年前に制作したWordPressサイトの対応を急に求められたと投稿している。制作のみの契約で、現在は管理画面にも入れず、どのサーバーを使っているかも知らなかったという。依頼には「現在契約されている業者様とご確認の上」と返した。昔作った人が現在の管理情報を持っているとは限らない。制作会社を替えるときにも、管理者アカウントや契約先、更新履歴を誰が引き継ぐかを決める必要がある。</p><a class="cite-card" href="https://www.threads.com/@tkyk_84ysm/post/De1T2jumOZP" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">T</span>
 <span class="cite-body">
 <span class="cite-title">更新依頼の投稿</span>

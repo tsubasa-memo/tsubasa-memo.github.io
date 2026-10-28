@@ -6,7 +6,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
 <title>CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話｜ツバサのメモ帳</title>
-<meta name="description" content="CVR（コンバージョン率）の意味と計算方法をEC担当の視点で整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。">
+<meta name="description" content="CVR（コンバージョン率）の意味と計算方法を整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。">
 <meta name="keywords" content="CVR とは,コンバージョン率 計算,ECサイト CVR 平均,CVR 改善,コンバージョン率 目安">
 <meta property="og:title" content="CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話｜ツバサのメモ帳">
 <meta property="og:description" content="CVR（コンバージョン率）の意味と計算式をEC実務の視点で整理。平均値の目安やGA4での確認方法もまとめた。">
@@ -77,7 +77,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話",
-  "description": "CVR（コンバージョン率）の意味と計算方法をEC担当の視点で整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。",
+  "description": "CVR（コンバージョン率）の意味と計算方法を整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。",
   "url": "https://tsubasa-memo.github.io/glossary/cvr.html",
   "image": "https://tsubasa-memo.github.io/og/glossary/cvr.webp",
   "author": {
@@ -125,7 +125,7 @@
 <script src="/search.js" defer></script>
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:title" content="CVR（コンバージョン率）とは？「CVR何%？」と聞かれた話｜ツバサのメモ帳">
-<meta name="twitter:description" content="CVR（コンバージョン率）の意味と計算方法をEC担当の視点で整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。">
+<meta name="twitter:description" content="CVR（コンバージョン率）の意味と計算方法を整理したメモ。ECサイトの平均CVRは1〜3%程度で、コンバージョン数÷セッション数×100で算出する。GA4での確認手順やCVRが低いときに見直すべき商品ページの改善ポイントもまとめた。">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
@@ -207,9 +207,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p><a href="https://www.shopify.com/jp/blog/ecommerce-conversion-rate" rel="noopener nofollow" target="_blank">Shopifyの公式ブログ</a>によると、ECサイトの平均CVRは1〜3%程度。ジャンルや価格帯によって差があるが、ざっくり「100人来て1〜3人が買う」と考えるとイメージしやすい。</p>
 <p>「コンバージョン」が何を指すかはサイトによって異なる。ECサイトなら購入完了、BtoBサイトなら資料請求や問い合わせがコンバージョンになることが多い。<a href="https://support.google.com/analytics/answer/9267568?hl=ja" rel="noopener noreferrer" target="_blank">Google Analyticsのヘルプ</a>にもコンバージョンの設定方法が載っている。</p>
 <h2>EC実務で出てくる場面</h2>
-<p>CVRはEC担当にとって避けて通れない指標だった。僕が遭遇した場面を書いておく。</p>
-<h3>上司に「CVR何%？」と聞かれた</h3>
-<p>これが僕がCVRを調べるきっかけ。Google Analytics（GA4）の「レポート」→「収益化」→「eコマース購入数」あたりを見ると、購入完了数がわかる。セッション数と割り算すればCVRが出る。<a href="https://www.bsearchtech.com/blog/e-commerce-marketing/what-conversion-rate/" rel="noopener nofollow" target="_blank">GENIEE SEARCHの解説記事</a>にGA4でのCVR確認方法が詳しく載っていたので参考にした。</p>
+<p>Google Analytics（GA4）の「レポート」→「収益化」→「eコマース購入数」あたりを見ると、購入完了数がわかる。セッション数と割り算すればCVRが出る。<a href="https://www.bsearchtech.com/blog/e-commerce-marketing/what-conversion-rate/" rel="noopener nofollow" target="_blank">GENIEE SEARCHの解説記事</a>にGA4でのCVR確認方法が詳しく載っていたので参考にした。</p>
 <h3>広告の効果測定で使う</h3>
 <p>広告経由でサイトに来た人が、ちゃんと購入まで至っているかを測るのにCVRを使う。たとえばリスティング広告のCVRが0.5%で、SNS広告のCVRが2%なら、SNS広告のほうが「買ってくれる人を連れてきている」と判断できる。<a href="https://www.ricoh.co.jp/magazines/direct-marketing/column/g00041/" rel="noopener noreferrer" target="_blank">リコーのダイレクトマーケティングラボ</a>の記事でも、チャネル別のCVR比較の重要性が説明されていた。</p>
 <h3>商品ページの改善指標として</h3>
@@ -289,13 +287,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-body">
 <span class="cite-title">EC向けショート動画制作会社おすすめ11選｜費用相場と選び方【2026年】</span>
 <span class="cite-url">tsubasa-memo.github.io/short-video-production.html</span>
-</span>
-</a>
-<a class="cite-card" href="/ai-chatbot.html">
-<span class="cite-ico int">ツ</span>
-<span class="cite-body">
-<span class="cite-title">アパレルEC担当者がAIチャットボット導入を検討してみた話｜規模・料金・公開事例をチェック</span>
-<span class="cite-url">tsubasa-memo.github.io/ai-chatbot.html</span>
 </span>
 </a>
 </div>

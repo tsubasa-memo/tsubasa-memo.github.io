@@ -53,11 +53,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/ai-retouch-limits.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/amazon-associates.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -85,11 +80,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/compress-product-image.html</loc>
     <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/coworking-spaces-tokyo.html</loc>
-    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -140,11 +130,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/ec-sidejob-pricing.html</loc>
     <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/estimate-budget-disclosure.html</loc>
-    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -213,11 +198,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/keihyouhou-ec-memo.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/location-photo-cost.html</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -243,22 +223,12 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tsubasa-memo.github.io/nano-banana-acne.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://tsubasa-memo.github.io/new-mac-2026.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://tsubasa-memo.github.io/nofollow-dofollow-guide.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/outsource-task-bottleneck.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -280,11 +250,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/photo-print-service.html</loc>
     <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/photo-side-job-no-skill.html</loc>
-    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -1318,12 +1283,6 @@
   <url>
     <loc>https://tsubasa-memo.github.io/taishoku-daikou-google-search.html</loc>
     <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tsubasa-memo.github.io/ai-chatbot.html</loc>
-    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

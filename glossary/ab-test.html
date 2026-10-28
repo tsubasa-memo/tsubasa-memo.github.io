@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YYBFXHXMM6');</script>
-<title>ABテストとは？商品画像の比較テストをやってみた話｜ツバサのメモ帳</title>
-<meta name="description" content="ABテスト（A/Bテスト）の意味とやり方をEC担当の視点で整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。">
+<title>ABテストとは？商品画像の比較テストのやり方｜ツバサのメモ帳</title>
+<meta name="description" content="ABテスト（A/Bテスト）の意味とやり方を整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。">
 <meta name="keywords" content="ABテスト とは,A/Bテスト やり方,ECサイト ABテスト,ABテスト ツール,商品画像 ABテスト">
-<meta property="og:title" content="ABテストとは？商品画像の比較テストをやってみた話｜ツバサのメモ帳">
+<meta property="og:title" content="ABテストとは？商品画像の比較テストのやり方｜ツバサのメモ帳">
 <meta property="og:description" content="ABテストの意味とやり方をEC実務の視点で整理。商品画像の比較テストの進め方や注意点もまとめた。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://tsubasa-memo.github.io/og/glossary/ab-test.webp">
@@ -76,8 +76,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "ABテストとは？商品画像の比較テストをやってみた話",
-  "description": "ABテスト（A/Bテスト）の意味とやり方をEC担当の視点で整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。",
+  "headline": "ABテストとは？商品画像の比較テストのやり方",
+  "description": "ABテスト（A/Bテスト）の意味とやり方を整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。",
   "url": "https://tsubasa-memo.github.io/glossary/ab-test.html",
   "image": "https://tsubasa-memo.github.io/og/glossary/ab-test.webp",
   "author": {
@@ -124,8 +124,8 @@
 <link rel="stylesheet" href="/search.css">
 <script src="/search.js" defer></script>
 <meta property="og:locale" content="ja_JP">
-<meta name="twitter:title" content="ABテストとは？商品画像の比較テストをやってみた話｜ツバサのメモ帳">
-<meta name="twitter:description" content="ABテスト（A/Bテスト）の意味とやり方をEC担当の視点で整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。">
+<meta name="twitter:title" content="ABテストとは？商品画像の比較テストのやり方｜ツバサのメモ帳">
+<meta name="twitter:description" content="ABテスト（A/Bテスト）の意味とやり方を整理したメモ。商品画像やカートボタンの文言など2パターンを同時に比較して効果を測る手順、統計的に有意な結果を出すためのテスト期間の目安、変える要素は1つだけなど設計上の注意点をまとめた。">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
@@ -193,10 +193,10 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </nav>
 
 <div class="article-hero">
-<img alt="ABテストとは？商品画像の比較テストをやってみた話" height="360" loading="eager" src="/thumbs/glossary/ab-test.png" width="640"/>
+<img alt="ABテストとは？商品画像の比較テストのやり方" height="360" loading="eager" src="/thumbs/glossary/ab-test.png" width="640"/>
 </div>
 
-<h1 class="article-title">ABテストとは？<br/>商品画像の比較テストをやってみた話</h1>
+<h1 class="article-title">ABテストとは？<br/>商品画像の比較テストのやり方</h1>
 <div class="article-meta-line">
 <span>2026年4月4日</span>
 </div>
@@ -207,9 +207,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p><a href="https://www.shopify.com/blog/the-complete-guide-to-ab-testing" rel="noopener nofollow" target="_blank">Shopifyの公式ブログ</a>にもABテストの基本が載っていて、ECサイトの改善手法として広く使われていることがわかった。</p>
 <p>大事なのは「同じ期間に」「ランダムに」2パターンを表示すること。先週はAで今週はB、という切り替え方だと、時期の違い（セールの有無や曜日の差）が影響して正確な比較にならない。<a href="https://www.ebis.ne.jp/column/ab-test/" rel="noopener nofollow" target="_blank">アドエビスのABテスト解説</a>でもこの点が注意事項として書かれていた。</p>
 <h2>EC実務で出てくる場面</h2>
-<p>ECサイトではABテストが活躍する場面がたくさんある。僕が遭遇したケースを書いておく。</p>
+<p>ECサイトではABテストが活躍する場面がたくさんある。</p>
 <h3>商品画像のABテスト</h3>
-<p>これが僕のきっかけ。商品のメイン画像を変えるだけでCVRが変わることがある。<a href="https://corekara.co.jp/contents/sales-up/ab-explanation/" rel="noopener nofollow" target="_blank">これからのABテスト解説記事</a>でも、ECサイトでは商品画像のテストが特に効果的だと書いてあった。背景色の違い、アングルの違い、人物の有無など、テストできる要素は多い。</p>
+<p>商品のメイン画像を変えるだけでCVRが変わることがある。<a href="https://corekara.co.jp/contents/sales-up/ab-explanation/" rel="noopener nofollow" target="_blank">これからのABテスト解説記事</a>でも、ECサイトでは商品画像のテストが特に効果的だと書いてあった。背景色の違い、アングルの違い、人物の有無など、テストできる要素は多い。</p>
 <h3>「カートに入れる」ボタンの最適化</h3>
 <p>ボタンの色を変える（緑→オレンジ）、文言を変える（「カートに入れる」→「今すぐ購入する」）といったテストも定番だ。<a href="https://shop-pro.jp/yomyom-colorme/99906" rel="noopener nofollow" target="_blank">カラーミーショップの記事</a>にも、ボタンまわりのABテスト事例が紹介されていた。</p>
 <h3>広告クリエイティブのテスト</h3>
