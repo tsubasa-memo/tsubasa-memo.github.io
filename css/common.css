@@ -181,7 +181,7 @@ a.glossary-inline:hover{border-bottom:1px solid var(--accent);text-decoration:no
 /* ==== フッター ==== */
 footer{background:var(--footer-bg);color:#aaa;text-align:center;padding:28px;font-size:12px}
 .footer-links{margin-bottom:12px}
-.footer-links a{margin:0 12px;color:#aaa;font-size:13px}
+.footer-links a{margin:0 12px;color:#aaa;font-size:13px;white-space:nowrap}
 .footer-links a:hover{color:var(--footer-text)}
 
 /* ==== レスポンシブ ==== */
