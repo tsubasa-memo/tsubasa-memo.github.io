@@ -75,7 +75,7 @@ gtag('config', 'G-YYBFXHXMM6');
       "name": "独自ドメインへ移すとSEOの評価はゼロになりますか?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ゼロになるとは限りません。Googleはサーバー側のリダイレクトでPageRankが失われることはないと説明しています。ただし移転中は順位が一時的に変動する場合があり、恒久リダイレクト・canonical・内部リンク・サイトマップの更新が必要です。"
+        "text": "ゼロになるとは限りません。Googleは301などの恒久的なリダイレクトでPageRankが失われることはないと説明しています。ただし移転中は順位が一時的に変動する場合があり、恒久リダイレクト・canonical・内部リンク・サイトマップの更新が必要です。"
       }
     },
     {
@@ -108,7 +108,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-10-02T00:00:00+00:00",
-  "dateModified": "2026-10-02T00:00:00+00:00",
+  "dateModified": "2026-11-07T00:00:00+00:00",
   "inLanguage": "ja"
 }
 </script>
@@ -202,7 +202,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="/">ホーム</a> ＞ <a href="archive.html#career">副業・キャリア</a> ＞ pages.devとは?</nav>
 <div class="article-hero"><img src="/thumbs/cloudflare-pages-vs-github-pages.webp" alt="雨の夜、窓辺の作業机でサイト制作に取り組む個人制作者のイメージ" width="640" height="360" loading="eager"></div>
 <span class="article-tag">副業・キャリア</span><h1 class="article-title">pages.devとは?GitHub Pagesとの違いとAIでの作り方</h1>
-<div class="article-meta-line"><span>公開: 2026年10月2日</span><span>更新: 2026年10月2日</span></div>
+<div class="article-meta-line"><span>公開: 2026年10月2日</span><span>更新: 2026年11月7日</span></div>
 <p>こんにちは、ツバサです。</p>
 <p><strong>pages.devはCloudflare Pagesで公開したサイトに付くサブドメインで、Genspark専用ではありません。</strong>AIでサイトを作る機能と、そのファイルをインターネットに公開するサービスは分けて考えると整理しやすくなります。</p>
 <p>このブログはGitHub Pagesで公開しています。今回は、同じようにHTMLを公開できるCloudflare Pagesとの違い、pages.devで見られる実例、Genspark Buildの作り方と費用、独自ドメインへの移転を調べました。無料で置けることと、AIで無料で作り続けられることは別の条件です。</p>
@@ -242,7 +242,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h2 id="sec5">pages.devのSEOと独自ドメインへの移転</h2>
 <p>無料サブドメインだから必ず検索順位が低い、独自ドメインなら必ず上がる、とまでは言えません。この記事で確認した公式資料から、pages.devとgithub.ioのどちらがSEOで有利かを決めることもできません。</p>
 <p>長期で運営するサイトでは、ホスティング先を変えても同じURLを使い続けたいかが、独自ドメインを選ぶ理由になります。ドメインの取得・更新費用はホスティングの無料枠とは別です。短いデモや試作品なら標準URLで公開し、長く使うURLを先に決めたい場合は独自ドメインを検討する、という使い分けが考えられます。</p>
-<p>独自ドメインへ移すと「検索評価がゼロに戻る」という説明は正確ではありません。<a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" target="_blank" rel="noopener noreferrer">Googleのサイト移転ガイド</a>は、サーバー側のリダイレクトでPageRankが失われることはないと説明する一方、移転中は検索順位が一時的に変動する場合があると案内しています。</p>
+<p>独自ドメインへ移すと「検索評価がゼロに戻る」という説明は正確ではありません。<a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" target="_blank" rel="noopener noreferrer">Googleのサイト移転ガイド</a>は、301などの恒久的なリダイレクトでPageRankが失われることはないと説明する一方、移転中は検索順位が一時的に変動する場合があると案内しています。</p>
 <p>移転時には、旧URLから対応する新URLへの恒久リダイレクト、canonical、内部リンク、サイトマップを揃えます。Cloudflareの<a href="https://developers.cloudflare.com/pages/configuration/custom-domains/" target="_blank" rel="noopener noreferrer">独自ドメイン設定</a>には、pages.devから独自ドメインへ転送する方法の案内もあります。ドメインを接続する作業と、検索エンジンに移転を伝える作業は別々に確認する必要があります。</p>
 <p>また、標準URLで公開するデモや社内確認用ページも、URLを知っていればアクセスできる状態になり得ます。「社内でしか使わないつもり」とアクセス制限は別です。機密情報を置く場合は、公開先に応じた認証・アクセス制御を設定して、実際の公開範囲を確認してください。</p>
 <p>pages.devはサイトの公開先を示すURLです。AIツールの名前、無料生成の保証、検索順位の保証までは表しません。ファイルの管理方法と利用条件を比べてから公開先を選ぶと、作る工程と運営する工程を混同せずに済みます。</p>
@@ -251,7 +251,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <div class="faq-item"><p class="fq"><strong>Q. pages.devのサイトは無料で公開できますか?</strong></p><p class="fa">A. Cloudflare PagesにはFreeプランがあり、静的ファイルへのリクエストは無料・無制限です。ビルドやファイルサイズには上限があり、Pages FunctionsはWorkersの利用枠に含まれます。</p></div>
 <div class="faq-item"><p class="fq"><strong>Q. GitHub PagesとCloudflare Pagesはどちらを選べばよいですか?</strong></p><p class="fa">A. GitHub上でファイルと履歴を管理するならGitHub Pages、作成済みのファイルを直接アップロードしたいならCloudflare Pagesが候補です。利用目的・無料枠・必要な機能を比較してください。Cloudflareは新規プロジェクトにWorkersを推奨しています。</p></div>
 <div class="faq-item"><p class="fq"><strong>Q. Genspark Buildなら作成から公開まで無料ですか?</strong></p><p class="fa">A. 公式案内では試用とプレビューは無料ですが、継続的な生成とBuild itでの公開はPlus・Proプランの機能です。Cloudflare Pagesの静的配信の無料枠とは別の条件です。</p></div>
-<div class="faq-item"><p class="fq"><strong>Q. 独自ドメインへ移すとSEOの評価はゼロになりますか?</strong></p><p class="fa">A. ゼロになるとは限りません。Googleはサーバー側のリダイレクトでPageRankが失われることはないと説明しています。ただし移転中は順位が一時的に変動する場合があり、恒久リダイレクト・canonical・内部リンク・サイトマップの更新が必要です。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. 独自ドメインへ移すとSEOの評価はゼロになりますか?</strong></p><p class="fa">A. ゼロになるとは限りません。Googleは301などの恒久的なリダイレクトでPageRankが失われることはないと説明しています。ただし移転中は順位が一時的に変動する場合があり、恒久リダイレクト・canonical・内部リンク・サイトマップの更新が必要です。</p></div>
 <div class="faq-item"><p class="fq"><strong>Q. 社内確認用ならpages.devに機密情報を置いても大丈夫ですか?</strong></p><p class="fa">A. 社内だけで使う予定でも、公開URLにアクセス制限があるとは限りません。機密情報を置く場合は認証・アクセス制御を設定し、実際の公開範囲を確認してください。</p></div>
 <div class="related">
 <h2 class="related-title" id="sec7">関連する記事</h2>
