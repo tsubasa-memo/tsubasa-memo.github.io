@@ -45,17 +45,17 @@ gtag('config', 'G-YYBFXHXMM6');
     {
       "@type": "Question",
       "name": "When can I use the generative AI performance report?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Google announced it on June 3, 2026 and rolled it out gradually, starting with a subset of UK site owners and expanding through July 2026 to sites in many other countries. Check the left-hand menu in Search Console — if the report isn't listed, it hasn't reached your property yet. Report data begins on May 18, 2026, with no earlier backfill." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Google announced it on June 3, 2026 and rolled it out gradually, starting with a subset of websites; on August 31, 2026 it was released to all websites worldwide. According to Google's help page, the report usually doesn't appear when a site hasn't received enough impressions in generative AI features, or when the site has been excluded in the Search generative AI setting. Japanese site operators have reported that report data begins on May 18, 2026, with no earlier backfill." }
     },
     {
       "@type": "Question",
       "name": "What if the report doesn't appear for my site?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nothing is wrong — the rollout is staged. Until it arrives, track your overall impression trends in the existing performance report; impressions from generative AI features are already included there." }
+      "acceptedAnswer": { "@type": "Answer", "text": "According to Google's help page, this usually means the site hasn't received enough impressions in generative AI features, or that it has been excluded in the Search generative AI setting. Check the setting, then track your overall impression trends in the existing performance report; impressions from generative AI features are already included there." }
     },
     {
       "@type": "Question",
-      "name": "Is the opt-out available outside the UK?",
-      "acceptedAnswer": { "@type": "Answer", "text": "As of August 2026, the opt-out toggle is still a test limited to a subset of UK site owners, driven by the UK Competition and Markets Authority's digital markets regime. No timeline has been announced for other countries." }
+      "name": "Is the opt-out available outside the UK, including Japan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. According to Google's help page, the Search generative AI setting has been released to all websites worldwide since August 31, 2026. You choose whether to include or exclude your site under Settings &gt; Search generative AI in Search Console. When it was announced in June 2026, it was reported to start as a test with a subset of UK site owners." }
     },
     {
       "@type": "Question",
@@ -86,7 +86,7 @@ gtag('config', 'G-YYBFXHXMM6');
   "author": { "@type": "Person", "name": "Tsubasa", "url": "https://tsubasa-memo.github.io/about.html" },
   "publisher": { "@type": "Organization", "name": "ツバサのメモ帳", "url": "https://tsubasa-memo.github.io/" },
   "datePublished": "2026-08-07T00:00:00+09:00",
-  "dateModified": "2026-08-07T00:00:00+09:00",
+  "dateModified": "2026-11-13T00:00:00+09:00",
   "inLanguage": "en"
 }
 </script>
@@ -184,12 +184,12 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1 class="article-title">Google Search Console's Generative AI Report<br>What It Shows and Whether to Opt Out</h1>
 <div class="article-meta-line">
 <span>Published: August 7, 2026</span>
-<span>Updated: August 7, 2026</span>
+<span>Updated: November 13, 2026</span>
 </div>
 
 <p>Hi, I'm Tsubasa.</p>
 
-<p>On June 3, 2026, Google added a "Search Generative AI performance report" to Search Console. It's a report that shows how often your site appears in AI Overviews and AI Mode, separated out from regular search performance. The rollout began with a subset of site owners in the UK, and through July 2026 it expanded well beyond — sites in Japan started seeing the report too. The data in the report begins on May 18, 2026; nothing earlier is backfilled.</p>
+<p>On June 3, 2026, Google added a "Search Generative AI performance report" to Search Console. It's a report that shows how often your site appears in AI Overviews and AI Mode, separated out from regular search performance. The rollout began with a subset of websites, and on August 31, 2026 the report was released to all websites worldwide. Japanese site operators have reported that the data in the report begins on May 18, 2026; nothing earlier is backfilled.</p>
 
 <p>Announced the same day was a test of an "opt-out" toggle — a switch that lets you exclude your site from AI search features entirely.</p>
 
@@ -204,7 +204,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec2">How big AI Overviews and AI Mode actually are — Google's own numbers</a></li>
 <li><a href="#sec3">What "no click data" means for an e-commerce manager</a></li>
 <li><a href="#sec4">The AI search opt-out toggle: should an e-commerce site use it?</a></li>
-<li><a href="#sec5">What to do while you wait for the report</a></li>
+<li><a href="#sec5">What to do if the report doesn't appear for your site</a></li>
 <li><a href="#sec6">FAQ</a></li>
 <li><a href="#sec7">Summary</a></li>
 </ol>
@@ -247,7 +247,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>From the numbers announced at Google I/O in May 2026: AI Overviews has 2.5 billion monthly active users, and AI Mode has 1 billion (source: <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener noreferrer">Sundar Pichai's opening keynote, Google I/O 2026</a>). The natural assumption is that these two user bases overlap heavily, so you can't just add them up and claim 3.5 billion AI search users. Even so, it's clear that a substantial share of Google Search users are seeing results delivered through AI features.</p>
 
-<p>Google says AI Mode query volume has doubled every quarter since launch. According to Google's published AI Mode usage data, queries in AI Mode average three times the length of regular searches (source: <a href="https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/" target="_blank" rel="noopener noreferrer">Google Blog, "How AI Mode is changing and expanding the way people search"</a>). Instead of short keyword strings like "white t-shirt men's cheap," people are typing full sentences like "show me brands that sell plain white t-shirts under $20 with a wide size range."</p>
+<p>Google says AI Mode query volume has more than doubled every quarter since launch. According to Google's published AI Mode usage data for the U.S., queries in AI Mode average three times the length of regular searches (source: <a href="https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/" target="_blank" rel="noopener noreferrer">Google Blog, "How AI Mode is changing and expanding the way people search"</a>). Instead of short keyword strings like "white t-shirt men's cheap," people are typing full sentences like "show me brands that sell plain white t-shirts under $20 with a wide size range."</p>
 
 <p>What an e-commerce manager can't afford to ignore: AI Mode search is growing at this scale, and until now there was no visibility at all into how your own site was being treated inside it. This report is the first window.</p>
 
@@ -261,17 +261,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>First: it tells you which pages AI is valuing. If you can see which of your product and category pages are being cited in AI search, that's a concrete basis for deciding which pages to strengthen first.</p>
 
-<p>Second: baseline recording. There's a good chance Google adds click data later. When that happens, comparing against last month requires having logged your impression trends starting now. One related note: the "AI Assistant" channel group added to GA4 in May 2026 classifies traffic from chatbots like ChatGPT and Gemini — it does <em>not</em> cover clicks from AI Overviews or AI Mode, which remain inside Organic Search. As of now, there's no way to isolate AI-search clicks on the GA4 side.</p>
+<p>Second: baseline recording. There's a good chance Google adds click data later. When that happens, comparing against last month requires having logged your impression trends starting now. One related note: GA4's default "AI Assistant" channel classifies traffic from sources like ChatGPT and Gemini — it does <em>not</em> cover clicks from AI Overviews or AI Mode, which are included in Organic Search. So GA4's channels can't separate out AI-search clicks on their own.</p>
 
 <h2 id="sec4">The AI Search Opt-Out Toggle: Should an E-commerce Site Use It?</h2>
 
 <p>The other feature announced the same day is the opt-out — a setting that removes your site from AI search features.</p>
 
-<p>The mechanism is simple: flip the toggle off in Search Console, and your site stops appearing in AI Overviews, AI Mode, and Discover's AI features. Google has explicitly stated that this control is not used as a ranking signal for search results outside the generative AI features (source: <a href="https://www.engadget.com/2186257/google-will-allow-websites-to-exclude-themselves-from-ai-search-results/" target="_blank" rel="noopener noreferrer">Engadget, June 3, 2026</a>). In other words, it doesn't affect your regular Google rankings.</p>
+<p>The mechanism is simple: choose to exclude your site under Settings &gt; Search generative AI in Search Console, and your site stops appearing in AI Overviews, AI Mode, and Discover's AI features. Google has explicitly stated that this control is not used as a ranking signal for search results outside the generative AI features (source: <a href="https://www.engadget.com/2186257/google-will-allow-websites-to-exclude-themselves-from-ai-search-results/" target="_blank" rel="noopener noreferrer">Engadget, June 3, 2026</a>). In other words, it doesn't affect your regular Google rankings.</p>
 
-<p>Unlike the report itself, though, the toggle remains a limited test for a subset of UK site owners as of this writing. The background is a decision by the UK's Competition and Markets Authority (CMA) under its digital markets competition regime — publishers demanded the right to exclude their content from AI search, and the toggle is Google's regulatory response. There's no announced timeline for other countries.</p>
+<p>The setting first went into testing with a subset of UK site owners. Engadget reported that the UK's Competition and Markets Authority (CMA) imposed a new rule on Google the same day, and suggested regulatory pressure may be behind the opt-out. According to Google's help page, the setting has since been released to all websites worldwide as of August 31, 2026, so sites in Japan can use it too.</p>
 
-<p>If and when the opt-out does arrive elsewhere, should an e-commerce site use it?</p>
+<p>So should an e-commerce site use the opt-out?</p>
 
 <p>My personal view: for an e-commerce site selling its own products directly, the downside of opting out is large. Opt out, and your site disappears from AI search — while your competitors keep showing up. Users who "ask AI to compare products" would see every site but yours.</p>
 
@@ -279,13 +279,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>One more case worth considering: when AI is displaying your product's price or specs incorrectly. If that's generating customer-support load or damaging the brand, pulling back via opt-out can be a rational move.</p>
 
-<h2 id="sec5">What to Do While You Wait for the Report</h2>
+<h2 id="sec5">What to Do If the Report Doesn't Appear for Your Site</h2>
 
-<p>Even if the report hasn't reached your site yet, there's preparation you can do.</p>
+<p>The report has been released to all websites worldwide, but it doesn't appear for sites with too few impressions in generative AI features. Even before it appears, there's preparation you can do.</p>
 
-<p>First, check your existing Search Console performance report. Even before the new report separates it out, AI-feature impressions are included in the overall numbers. Logging your impression trends for the past few months gives you material to back-calculate "regular search impressions minus the AI portion" once the new report arrives. If you also use Bing, its Webmaster Tools has had an AI Performance report (beta) since February 2026 showing Copilot citations — I compared the two ecosystems in "<a href="bing-vs-google-traffic-en.html">What Bing Webmaster Tools Revealed About AI Search</a>."</p>
+<p>First, check your existing Search Console performance report. Even before the new report separates it out, AI-feature impressions are included in the overall numbers. Logging your impression trends for the past few months gives you material to back-calculate "regular search impressions minus the AI portion" once the report appears. If you also use Bing, its Webmaster Tools has had an AI Performance report (beta) since February 2026 showing Copilot citations — I compared the two ecosystems in "<a href="bing-vs-google-traffic-en.html">What Bing Webmaster Tools Revealed About AI Search</a>."</p>
 
-<p>Second, build the foundation for content that AI actually cites. Google's <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">guide to optimizing for generative AI features in Google Search</a>, published in May 2026, says no special schema.org markup or AI-specific files are needed — conventional SEO fundamentals carry over. Implement structured data correctly (<a href="json-ld-guide-en.html">here's how</a>), write content with E-E-A-T in mind, maintain your internal links. The overlap with LLMO fundamentals is large. That said, research also suggests the logic AI Overviews uses to pick citations differs from regular ranking — so "do SEO and AI citations follow automatically" isn't guaranteed.</p>
+<p>Second, build the foundation for content that AI actually cites. Google's <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener nofollow">guide to optimizing for generative AI features in Google Search</a>, published in May 2026, says no special schema.org markup or AI-specific files are needed for generative AI search — conventional SEO best practices still apply. Structured data isn't required for generative AI search, but the guide recommends keeping it as part of your overall SEO because it helps with rich results (<a href="json-ld-guide-en.html">here's how to implement it</a>). That said, research also suggests the logic AI Overviews uses to pick citations differs from regular ranking — so "do SEO and AI citations follow automatically" isn't guaranteed.</p>
 
 <p>As for llms.txt, Google explicitly says it's unnecessary. The current orthodox play is competing on content quality itself, not on feeding AI special files.</p>
 
@@ -294,17 +294,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <div class="faq-item">
 <p class="fq"><strong>Q. When can I use the generative AI performance report?</strong></p>
-<p class="fa">A. Google announced it on June 3, 2026 and rolled it out gradually, starting with a subset of UK site owners and expanding through July 2026 to sites in many other countries. Check the left-hand menu in Search Console — if the report isn't listed, it hasn't reached your property yet. Report data begins on May 18, 2026, with no earlier backfill.</p>
+<p class="fa">A. Google announced it on June 3, 2026 and rolled it out gradually, starting with a subset of websites; on August 31, 2026 it was released to all websites worldwide. According to Google's help page, the report usually doesn't appear when a site hasn't received enough impressions in generative AI features, or when the site has been excluded in the Search generative AI setting. Japanese site operators have reported that report data begins on May 18, 2026, with no earlier backfill.</p>
 </div>
 
 <div class="faq-item">
 <p class="fq"><strong>Q. What if the report doesn't appear for my site?</strong></p>
-<p class="fa">A. Nothing is wrong — the rollout is staged. Until it arrives, track your overall impression trends in the existing performance report; impressions from generative AI features are already included there.</p>
+<p class="fa">A. According to Google's help page, this usually means the site hasn't received enough impressions in generative AI features, or that it has been excluded in the Search generative AI setting. Check the setting, then track your overall impression trends in the existing performance report; impressions from generative AI features are already included there.</p>
 </div>
 
 <div class="faq-item">
-<p class="fq"><strong>Q. Is the opt-out available outside the UK?</strong></p>
-<p class="fa">A. As of August 2026, the opt-out toggle is still a test limited to a subset of UK site owners, driven by the UK Competition and Markets Authority's digital markets regime. No timeline has been announced for other countries.</p>
+<p class="fq"><strong>Q. Is the opt-out available outside the UK, including Japan?</strong></p>
+<p class="fa">A. Yes. According to Google's help page, the Search generative AI setting has been released to all websites worldwide since August 31, 2026. You choose whether to include or exclude your site under Settings &gt; Search generative AI in Search Console. When it was announced in June 2026, it was reported to start as a test with a subset of UK site owners.</p>
 </div>
 
 <div class="faq-item">
@@ -327,9 +327,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <p>Search Console's generative AI performance report is the first tool that makes your site's exposure in AI Overviews and AI Mode visible. The lack of click data is a real constraint, but simply knowing which pages AI cites is enough to inform content prioritization.</p>
 
-<p>The opt-out remains a UK-only test for now, but it's worth thinking through your stance as an e-commerce site before it arrives more widely. The deciding factor is how much your revenue depends on people actually visiting your site.</p>
+<p>The opt-out setting has also been available to all websites worldwide since August 31, 2026, so it's worth deciding your stance as an e-commerce site. The deciding factor is how much your revenue depends on people actually visiting your site.</p>
 
-<p>Once the report reaches your property, the first two things to look at are which pages AI search cites and the country breakdown. Cross-reference those with GA4, and your site's position in the AI search era starts coming into focus.</p>
+<p>Once the report appears for your property, the first two things to look at are which pages AI search cites and the country breakdown. Cross-reference those with GA4, and your site's position in the AI search era starts coming into focus.</p>
 
 <!-- Related Articles -->
 <div class="related">
