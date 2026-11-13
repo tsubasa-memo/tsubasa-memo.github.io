@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える｜ツバサのメモ帳</title>
+<meta name="description" content="無印良品はMUJIアプリから最大約2726万件、焼肉きんぐは公式アプリの会員のほぼ全員分1078万件の流出を公表しました。焼肉きんぐはアプリで持つ情報を減らすと決めています。専用アプリで集める情報と、作る前に決めることを整理しました。">
+<meta name="keywords" content="専用アプリ 情報流出,公式アプリ 個人情報,無印良品 情報流出,MUJIアプリ 不正アクセス,焼肉きんぐ アプリ 流出,リスト型攻撃,ネットショップ 情報流出">
+<meta property="og:title" content="お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える">
+<meta property="og:description" content="無印良品はMUJIアプリから最大約2726万件、焼肉きんぐは公式アプリの会員のほぼ全員分1078万件の流出を公表しました。焼肉きんぐはアプリで持つ情報を減らすと決めています。専用アプリで集める情報と、作る前に決めることを整理しました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tsubasa-memo.github.io/store-app-data-leak.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/store-app-data-leak.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える">
+<meta name="twitter:description" content="無印良品はMUJIアプリから最大約2726万件、焼肉きんぐは公式アプリの会員のほぼ全員分1078万件の流出を公表しました。焼肉きんぐはアプリで持つ情報を減らすと決めています。専用アプリで集める情報と、作る前に決めることを整理しました。">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/store-app-data-leak.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/store-app-data-leak.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/store-app-data-leak.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "お店の専用アプリから情報が流出した例には、どんなものがありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026年10月5日に焼肉きんぐの公式アプリで会員1078万8963件（登録者のほぼ全員分）の会員番号・氏名・メールアドレス・電話番号の流出が公表されました。10月30日には無印良品のMUJIアプリで最大約2726万件の流出の可能性が公表され、のちにネットストアの会員やMUJI Cardのカード番号まで範囲が広がりました。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "焼肉きんぐは流出のあと、アプリをどう変えるのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "物語コーポレーションは10月20日、焼肉きんぐを含むグループの公式アプリ11本で、氏名（アプリの登録名）と電話番号を持たない新しいシステムに変えると発表しました。変更は2027年上半期の予定です。メールアドレスは予約機能のために当面持ち続け、将来はメールアドレスも持たない仕組みに作り直すとしています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "専用アプリを作るとき、店は何を決めておけばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "アプリで集める情報を会員証・ポイント・クーポン・予約などの目的ごとに書き出し、目的のない項目は集めないことです。あわせて、退会した人の情報をいつ消すか、カード情報をアプリに持たせないか、アプリのログインに不正ログインへの対策を入れるかを決めます。アプリの開発会社に頼んでいる場合も、何を持つかを決めるのは店です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リスト型攻撃は、店のシステムに問題がなくても起きるのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。リスト型攻撃は、ほかのサイトから漏れたIDとパスワードをそのまま入力してログインする攻撃なので、お客さんが同じパスワードを使い回していれば、店のシステムが破られていなくてもログインされます。良品計画の発表でも、使われたIDとパスワードは良品計画以外から手に入れられたものだと説明されました。ログインの失敗が続いたら止める、知らない端末からのログインを知らせる、といった対策で被害を減らせます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無印良品はなぜ消すはずのカード番号を持っていたのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "良品計画の発表によると、2021年7月以前は、MUJI Cardに入会した人に良品計画独自の特典を付けるために、カード番号・MUJI Card ID・生年月日を取得していました。報道では、2021年7月以降は番号の一部を伏せて保存するように変えたものの、それ以前の全桁のデータを消せておらず、約109万件が残っていたと説明されています。有効期限とセキュリティコードは流出していないとされています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "退会した人の情報は、いつまで持っていていいのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "個人情報保護法では、使う必要がなくなった個人データは遅れずに消すよう努めることとされています。何日で消すという決まりはないため、店ごとに消す時期を決めておきます。無印良品の最大約2726万件には退会した人の情報も含まれていました。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "流出したかもしれない段階でも、個人情報保護委員会に報告する必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。個人情報保護法の報告は、流出が確定した場合だけでなく、流出したおそれがある場合も対象です。不正アクセスによるものは件数に関係なく対象になり、気づいてから3〜5日以内に速報、60日以内に確報を出します。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える",
+  "description": "無印良品はMUJIアプリから最大約2726万件、焼肉きんぐは公式アプリの会員のほぼ全員分1078万件の流出を公表しました。焼肉きんぐはアプリで持つ情報を減らすと決めています。専用アプリで集める情報と、作る前に決めることを整理しました。",
+  "url": "https://tsubasa-memo.github.io/store-app-data-leak.html",
+  "image": "https://tsubasa-memo.github.io/og/store-app-data-leak.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-11-13T00:00:00+09:00",
+  "dateModified": "2026-11-13T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "EC・実務",
+      "item": "https://tsubasa-memo.github.io/archive.html#ec"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "専用アプリと情報流出"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#web"><span class="cat-dot" style="background:#e8a8b8"></span>Webサイト運営</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#ec">EC・実務</a> &gt; 専用アプリと情報流出
+</nav>
+<div class="article-hero">
+<img src="/thumbs/store-app-data-leak.webp" alt="お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える</h1>
+<div class="article-meta-line">
+<span>公開: 2026年11月13日</span>
+<span>更新: 2026年11月13日</span>
+</div>
+
+
+<p>こんにちは、ツバサです。</p>
+
+<p>2026年10月30日、無印良品を運営する良品計画が、公式アプリ「MUJIアプリ」の会員情報が最大約2726万件流出した可能性があると公表しました。その4週間前の10月5日には、焼肉チェーン「焼肉きんぐ」を運営する物語コーポレーションが、公式アプリの会員1078万8963件の情報が流出したと公表しています。アプリの登録者は1080万8784件だったので、ほぼ全員分です。</p>
+
+<p>どちらも、お店がお客さんに「入れてください」と勧めてきた専用アプリの会員情報です。会員証やポイント、クーポンのために入れたアプリから、メールアドレスや電話番号、生年月日が漏れました。焼肉きんぐは流出のあと、アプリで持つ情報を減らし、氏名と電話番号を持たない仕組みに変えると発表しています。会社自身が「持たなくてもよかった」と判断したことになります。</p>
+
+<p>お店の専用アプリを作ると、店が預かる情報と、守らなければならない入口が増えます。僕は、アプリが必要かどうかは、アプリでなければできないことが、その増えた分に見合うかどうかで決まると考えています。</p>
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>無印良品の流出は、MUJIアプリへの不正アクセスから、アプリを使っていないネットストアの会員と、2021年まで特典のために取得していたMUJI Cardの番号へ広がりました。</li>
+<li>焼肉きんぐは、公式アプリの会員のほぼ全員分にあたる1078万件が漏れたあと、アプリで氏名と電話番号を持たないと決めました。</li>
+<li>専用アプリについては、集める情報の範囲、退会した人の情報を消す時期、ネットストアとの会員情報の共通化、アプリのログインへのリスト型攻撃、守る入口が増えることの5点で疑問が出ます。</li>
+<li>無印良品は、物流の会社とオーダーカーテンの業務を頼んだ先からも、別に流出を公表しています。</li>
+<li>カード情報を持っていなかったLOHACO・焼肉きんぐと、カード番号の全桁を持っていなかったショップサーブでは、カード決済に使える情報は漏れていません。</li>
+</ul>
+</div>
+
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">無印良品の情報流出はMUJIアプリから始まった｜ネットストアとMUJI Cardへ広がった2週間</a></li>
+<li><a href="#sec2">焼肉きんぐは公式アプリの会員のほぼ全員分が流出｜流出のあとで決めた「持つ情報を減らす」方針</a></li>
+<li><a href="#sec3">お店の専用アプリへの疑問｜集める情報・退会したあとの情報・入口が増えること</a></li>
+<li><a href="#sec4">専用アプリを作る前・続ける前にお店が決めること</a></li>
+<li><a href="#sec5">アプリのほかにも、預けた情報は漏れる｜無印良品の委託先・ニトリ・エディオン・ショップサーブ・アスクル</a></li>
+<li><a href="#sec6">アプリのほかに、ネットショップの側が確かめること｜カード番号・ログ・不正ログイン・決済ページ</a></li>
+<li><a href="#sec7">流出が分かったときにやること｜個人情報保護委員会への報告の期限</a></li>
+<li><a href="#sec8">FAQ</a></li>
+<li><a href="#sec9">まとめ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">無印良品の情報流出はMUJIアプリから始まった｜ネットストアとMUJI Cardへ広がった2週間</h2>
+
+<p>良品計画の発表と報道を日付順に並べると、次のようになります。件数はどれも「流出した可能性がある」件数で、確定した数ではありません。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>日付</th><th>公表・出来事</th></tr></thead>
+<tbody>
+<tr><td>10月30日</td><td>MUJIアプリで外部からの不正なアクセスを検知し、遮断と修正をしたと発表。流出した可能性があるのは、退会した人を含む最大約2726万件のメールアドレス・生年月日・性別。「クレジットカード情報、氏名、住所、電話番号等の情報は含まれません」とした</td></tr>
+<tr><td>11月4日</td><td>対象に「無印良品ネットストア会員（MUJIアプリを利用してない方を含む）」が含まれ、一部の人は氏名・住所・電話番号も含まれると判明。2021年7月以前に特典のために取得していたMUJI Cardのカード番号・MUJI Card ID・生年月日がシステムに残っていたこと、アプリやネットストアに登録されたカード情報の一部にも外部からアクセスされた可能性があることを発表</td></tr>
+<tr><td>11月6日</td><td>ネットストアの全サービス・機能と、MUJIアプリの会員証のバーコード表示以外の全サービス・機能を止める</td></tr>
+<tr><td>11月9日</td><td>ネットストアで、外部で不正に手に入れられた可能性があるパスワードなどを使った多数のログイン試行（リスト型攻撃）があり、本人以外が不正にログインした可能性が判明。2020年1月2日〜2025年2月10日に代金引換の受取先になった人の情報の一部にも不正アクセスを確認。ネットストアの再開は延期し、再開時には会員全員にパスワードの再設定を求める方向</td></tr>
+<tr><td>11月12日</td><td>記者会見。社長が謝罪。MUJI Cardのカード番号は全桁で約109万件。再発行手数料は会社が負担</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000001877.000000987.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">無印良品の公式アプリ「MUJIアプリ」におけるお客さま情報流出の可能性について（第一報）</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000001880.000000987.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">情報流出の可能性に関する追加のお知らせ</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000001882.000000987.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">無印良品の公式アプリ「MUJIアプリ」におけるお客さま情報流出の可能性について（第四報）</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<p>報道（<a href="https://xtech.nikkei.com/atcl/nxt/news/24/03464/" target="_blank" rel="noopener noreferrer">日経クロステック</a>・<a href="https://www.itmedia.co.jp/news/article/2611/09/2000003038/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a>）によると、11月9日の時点で、氏名・住所・電話番号を含む情報は約52万件から約75万件に増え、不正にログインされた可能性があるアカウントは約27万件、代金引換の受取先は約44万件です。</p>
+
+<p>最初は「アプリの会員のメールアドレス・生年月日・性別」だった範囲が、2週間でネットストアの会員、カード番号、登録されたカード情報、代金引換の受取先へと広がりました。最大約2726万件には、すでに退会した人の情報も含まれています。</p>
+
+<p>MUJIアプリは、2025年9月にそれまでの「MUJI passport」から名前を変えて全面リニューアルしたアプリで、<a href="https://prtimes.jp/main/html/rd/p/000001689.000000987.html" target="_blank" rel="noopener noreferrer">良品計画の発表</a>では、アプリが会員証になり、ネットストアでの買い物にも使えます。流出の対象がネットストアだけを使っている会員にまで広がったのは、アプリとネットストアの会員情報が同じ仕組みで管理されていたためだと考えられます（良品計画は会員情報の管理の仕組みを公表していないので、これは発表からの推測です）。</p>
+
+<h3>消すはずだったカード番号が、全桁のまま残っていた</h3>
+
+<p>良品計画の11月4日の発表によると、2021年7月以前は、MUJI Cardに入会した人に良品計画独自の特典を付けるために、カード番号・MUJI Card ID・生年月日を取得していて、その情報がシステムに残っていました。<a href="https://news.yahoo.co.jp/articles/f4d69185c540414686b1e59ffa0e7ad3212ca441" target="_blank" rel="noopener noreferrer">FNNの報道</a>では、2021年7月以降は番号の一部を伏せて（マスクして）保存するように変えたものの、それ以前の全桁のデータを消せていなかったと説明されています。対象は2021年7月までにMUJI Cardに入会した人の分で、<a href="https://xtech.nikkei.com/atcl/nxt/news/24/03464/" target="_blank" rel="noopener noreferrer">日経クロステックの報道</a>では、約109万件のうち今も使えるカードは約34.5万件です。有効期限とセキュリティコードは流出していないとされています。</p>
+
+<p>それでも安全とは言えません。<a href="https://news.yahoo.co.jp/articles/a549c1473940d1b8a341e716ed99c2571a8b13ab" target="_blank" rel="noopener noreferrer">テレビ朝日の報道</a>では、サイバーセキュリティ会社S&amp;Jの三輪信雄社長が、有効期限とセキュリティコードは桁数が少ないため、片っ端から入力して当てる攻撃で破られる可能性があると指摘しています。カード番号の全桁が分かっていれば、残りは有効期限の月と年、3桁か4桁のセキュリティコードだけです。</p>
+
+<p>特典を付けるという目的は2021年に終わっていたのに、データだけが残っていたことになります。社長は会見で「必要のない情報を持たない仕組み作りを進めている」と話しています。</p>
+
+<h3>別のサービスで漏れたIDとパスワードでログインされた</h3>
+
+<p>11月9日の発表では、ネットストアが「リスト型攻撃」を受けたとされています。リスト型攻撃は、ほかのサイトから漏れたメールアドレスとパスワードの組み合わせを大量に集め、別のサイトのログイン画面に次々に入力する攻撃です。お客さんが無印良品と別のサービスで同じパスワードを使っていると、無印良品のシステムが破られていなくてもログインされてしまいます。良品計画は、ログインに使われたIDとパスワードは良品計画以外から手に入れられたものだとしています。</p>
+
+<h3>気づいたあともネットストアの販売を続けた</h3>
+
+<p>会見で社長は、流出に気づいたあともネットストアの販売を続けた理由を「単一の攻撃であろうという想定があった」と説明し、「より早く対応していれば」と話しています（<a href="https://news.yahoo.co.jp/articles/f4d69185c540414686b1e59ffa0e7ad3212ca441" target="_blank" rel="noopener noreferrer">FNNの報道</a>）。第一報の10月30日から、販売を止めた11月6日まで7日ありました。</p>
+
+<h2 id="sec2">焼肉きんぐは公式アプリの会員のほぼ全員分が流出｜流出のあとで決めた「持つ情報を減らす」方針</h2>
+
+<p>物語コーポレーションの発表では、10月2日午前9時ごろから焼肉きんぐ公式アプリの会員管理システムが外部から断続的に不正アクセスを受け、10月3日に会員情報の流出が分かりました。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>公表</td><td>2026年10月5日</td></tr>
+<tr><td>対象</td><td>焼肉きんぐ公式アプリの会員管理システム</td></tr>
+<tr><td>件数</td><td>登録者1080万8784件のうち1078万8963件</td></tr>
+<tr><td>漏れた情報</td><td>会員番号、氏名（アプリの登録名）、メールアドレス、電話番号</td></tr>
+<tr><td>漏れていない情報</td><td>ログインパスワード、生年月日、性別、郵便番号、保有ポイントを含む店舗の利用履歴</td></tr>
+<tr><td>カード情報</td><td>もともと会社が持っていない</td></tr>
+<tr><td>原因</td><td>第三者の不正アクセス。入られた経緯は調査中</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://www.monogatari.co.jp/news/261005_news/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">M</span>
+<span class="cite-body">
+<span class="cite-title">『焼肉きんぐ』公式アプリ 会員管理システムへの第三者からの不正アクセスによる個人情報漏えいに関するお詫び</span>
+<span class="cite-url">monogatari.co.jp</span>
+</span>
+</a>
+
+<p>10月20日、物語コーポレーションは再発防止策を発表しました。焼肉きんぐを含むグループの公式アプリ11本で、持つ個人情報を減らし、一部のデータだけを管理する新しいシステムに変えます。変更後は氏名（アプリの登録名）と電話番号を持たず、変更は2027年上半期の予定です。メールアドレスは予約機能のために当面持ち続けますが、将来はメールアドレスも含めて個人情報を持たない仕組みに作り直すとしています。</p>
+
+<a class="cite-card" href="https://www.monogatari.co.jp/news/261020_news/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">M</span>
+<span class="cite-body">
+<span class="cite-title">『焼肉きんぐ』公式アプリにおける今後のセキュリティおよび個人情報保護強化策について</span>
+<span class="cite-url">monogatari.co.jp</span>
+</span>
+</a>
+
+<p>焼肉きんぐの流出では、パスワード・生年月日・利用履歴は漏れていません。カード情報は最初から持っていませんでした。漏れたのは、アプリが持っていた情報のうちの4項目で、会社はそのうち氏名と電話番号を、今後は持たないと決めました。</p>
+
+<h2 id="sec3">お店の専用アプリへの疑問｜集める情報・退会したあとの情報・入口が増えること</h2>
+
+<p>2つの流出を並べると、お店の専用アプリについて、5つの疑問が出てきます。どれも、店がアプリを作るときに決めていることで、お客さんの側からは見えません。</p>
+
+<h3>会員証・ポイントのためにアプリで集める個人情報の範囲</h3>
+
+<p>会員証とポイントのために、アプリはどこまでの情報を集める必要があるのでしょうか。会員証の表示とポイントだけなら、店がお客さんを見分けるのに使うのは会員番号です。MUJIアプリで流出した可能性がある情報には、メールアドレスに加えて生年月日と性別が含まれていました（MUJIアプリの会員登録で生年月日と性別の入力が必須だったかは、確かめられていません）。焼肉きんぐのアプリは、氏名と電話番号を持っていましたが、流出のあとで持たないと決めています。</p>
+
+<p>誕生日のクーポンを送るために生年月日を集める、年代や性別ごとに売れ方を見るために性別を集める、といった理由は考えられます。それでも、その情報を集めることで、漏れたときに漏れる項目も増えます。</p>
+
+<h3>アプリを退会した人の個人データを消す時期</h3>
+
+<p>アプリをやめて退会した人の情報は、いつ消えるのでしょうか。無印良品の最大約2726万件には、退会した人の情報も含まれていました。MUJI Cardの番号も、使う目的が2021年に終わったあとも残っていました。お客さんがアプリを消して退会しても、店のシステムから情報が消えるとは限りません。</p>
+
+<p>個人情報保護法では、使う必要がなくなった個人データは遅れずに消すよう努めることとされていますが、何日で消すという決まりはありません。いつ消すかは、店がそれぞれ決めています。</p>
+
+<h3>アプリとネットストアの会員情報を共通にしたときの流出の範囲</h3>
+
+<p>アプリとネットストアの会員情報をまとめると、片方から入られたときに両方へ広がるのではないかという疑問もあります。MUJIアプリは会員証にもネットストアでの買い物にも使えます。お客さんにとっては、1つのアプリで店とネットストアの両方が使えるので便利です。一方で、無印良品の流出は、アプリへの不正アクセスの発表から、アプリを使っていないネットストアの会員へと範囲が広がりました。</p>
+
+<h3>公式アプリのログインを狙ったリスト型攻撃</h3>
+
+<p>アプリのログインも、リスト型攻撃の入口になります。ニトリは2022年9月、公式アプリ「ニトリアプリ」に、外部のサービスから不正に手に入れられたとみられるメールアドレスとパスワードの組み合わせでログインを試みる攻撃があり、約13万2000のアカウントが見られた可能性があると公表しています。無印良品のネットストアと同じリスト型攻撃です。アプリにログインの仕組みがある以上、ネットストアと同じ攻撃を受けます。</p>
+
+<a class="cite-card" href="https://scan.netsecurity.ne.jp/article/2022/09/22/48226.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">「ニトリアプリ」にパスワードリスト型攻撃、約13万2,000アカウントが閲覧された可能性</span>
+<span class="cite-url">scan.netsecurity.ne.jp</span>
+</span>
+</a>
+
+<h3>アプリの会員管理システムが増やす、店が守る入口</h3>
+
+<p>アプリを作ると、店が守る入口は1つ増えます。アプリにはアプリのログイン、アプリと会員管理システムの間の通信、アプリを作った会社のシステムなど、ネットストアとは別の入口があります。焼肉きんぐで入られたのは「公式アプリの会員管理システム」です。アプリを作ると、店が守る場所はネットストアとアプリの2つになります。</p>
+
+<h2 id="sec4">専用アプリを作る前・続ける前にお店が決めること</h2>
+
+<p>アプリの開発会社やアプリを作るサービスに頼んでいる場合も、アプリで何を持ち、いつ消すかを決めるのは店です。アプリを作る前、または今のアプリを続ける前に決めておくことは、次の7つです。</p>
+
+<ul>
+<li><strong>アプリで集める情報を、使う目的ごとに書き出します。</strong>会員証とポイントに要るもの、クーポンに要るもの、予約に要るものに分け、目的のない項目は集めません。焼肉きんぐが流出のあとで持たないと決めた氏名と電話番号は、漏れた4項目のうちの2つでした。</li>
+<li><strong>退会したら何を、いつ消すかを決めます。</strong>退会した人の情報のうち、残す理由（返品の対応、法律で残す必要がある取引の記録など）があるものと、ないものを分けておきます。</li>
+<li><strong>目的が終わった情報を消します。</strong>無印良品のカード番号のように、仕組みを変えたときに古いデータが残ることがあるので、仕組みを変えたら、前の仕組みで集めたデータが残っていないかを確かめます。</li>
+<li><strong>アプリにもログインの対策を入れます。</strong>ログインの失敗が続いたら止める、知らない端末からのログインをお客さんに知らせる、メールやSMSで送られてくる番号を入力させる（二段階認証）といった方法があります。</li>
+<li><strong>カード情報をアプリに持たせません。</strong>焼肉きんぐのアプリは決済情報を持っていなかったため、カード情報は漏れていません。</li>
+<li><strong>アプリでなければできないことがあるかを考えます。</strong>会員証とポイントがウェブの会員ページで足りるなら、アプリを作っても、預かる情報と守る入口が増えるだけです。スマートフォンへのお知らせの通知など、アプリでなければできないことが、それに見合うかを決めます。</li>
+<li><strong>アプリの開発やデータの保管を外の会社に頼むなら、その会社がどこに何を保管するかを確かめます。</strong>無印良品はアプリとは別に、物流の会社と、オーダーカーテンの業務を頼んだ先からも流出を公表しています。</li>
+</ul>
+
+<h2 id="sec5">アプリのほかにも、預けた情報は漏れる｜無印良品の委託先・ニトリ・エディオン・ショップサーブ・アスクル</h2>
+
+<h3>無印良品は、アプリとは別の経路でも2回流出を公表している</h3>
+
+<p>無印良品の流出は、アプリだけではありません。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>公表</th><th>経路</th><th>対象</th><th>件数</th><th>漏れた可能性がある情報</th></tr></thead>
+<tbody>
+<tr><td>2025年11月14日</td><td>ネットストアの物流を頼んでいたアスクルのグループ会社ASKUL LOGISTが、ランサムウェアを受けた</td><td>ネットストアで買い物をした人の出荷・配送のデータ</td><td>公表時点で記載なし</td><td>住所・氏名・電話番号・注文商品の情報。カード情報は含まない</td></tr>
+<tr><td>2026年11月2日</td><td>オーダーカーテンの業務を頼んでいたMNインターファッションが、システムの業務を頼んでいたナノテックのサーバーに、10月19日に不正アクセス</td><td>2018年4月10日〜2022年1月25日にオーダーカーテンを注文した人</td><td>19,933件（同じ人の重複を含む）</td><td>氏名・住所・電話番号・注文情報・配送先住所。カード情報とメールアドレスは含まない</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000001878.000000987.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">オーダーカーテンに関するお客さま情報の流出の可能性について</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<p>商品を届けるために物流の会社へ渡した住所や、オーダーカーテンの注文のために業務を頼んだ先へ渡した情報も、その会社や、その会社がさらに仕事を頼んだ会社のサーバーから漏れることがあります。オーダーカーテンの件では、2022年1月までの注文の情報が、2026年10月の時点でも委託先の委託先のサーバーに残っていました。</p>
+
+<h3>2025年10月〜2026年11月に公表されたほかのネットショップの流出</h3>
+
+<p>アプリ以外のネットショップでも、2025年10月から2026年11月にかけて流出が公表されています。漏れ方と、カード情報がどこまで漏れたかで並べると次のとおりです。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>店・サービス</th><th>公表</th><th>何をされたか</th><th>カード情報の範囲</th><th>補足</th></tr></thead>
+<tbody>
+<tr><td>ニトリ</td><td>2026年11月9日</td><td>管理するシステムへの不正アクセス。11月6日に気づいて遮断。10月中旬〜下旬にも入られていた可能性</td><td>含まない（ログインパスワードも含まないと説明）</td><td>ニトリネットと各モールの公式ショップの注文者・個人会員・法人会員の氏名・住所・電話番号・メールアドレス・生年月日・性別など最大3762万件。件数は調査で変わる可能性があるとしている</td></tr>
+<tr><td>エディオン</td><td>2026年11月6日・9日</td><td>システムのログが置かれた場所への不正アクセス。決済の処理に不正なプログラム</td><td>11月4日19時以降にパソコンで新しく入力されたカード番号・有効期限・名義・セキュリティコード最大556回分。注文エラーのログに5件分</td><td>第1報の「カード番号・パスワードは含まない」を第2報で訂正</td></tr>
+<tr><td>ショップサーブ（Eストアー）</td><td>2026年8月1日（第1報）〜10月16日（最終報）</td><td>アプリケーションの脆弱性を使われ、データベースの情報が外部に送られた</td><td>約209万6900人分のカード名義・番号の先頭6桁と下4桁・有効期限。全桁とセキュリティコードは持っていなかった</td><td>7858店・約2335万6000人。お客さんのほか、店の管理画面のIDとパスワードも対象</td></tr>
+<tr><td>アスクル（LOHACO）</td><td>2025年10月19日〜</td><td>ランサムウェア（データを暗号化して身代金を求めるプログラム）で受注・出荷が止まる。10月22日には外部のクラウドサービスにも不正アクセス</td><td>LOHACOの決済ではカード情報を受け取らない仕組みのため、個人のお客さんのカード情報は持っていない</td><td>10月31日に、お客さんの情報と一部の取引先の情報の外部への公開を確認</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://internet.watch.impress.co.jp/docs/news/2154931.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">I</span>
+<span class="cite-body">
+<span class="cite-title">ニトリ、不正アクセスにより個人・法人会員の情報最大3762万件が流出の可能性</span>
+<span class="cite-url">internet.watch.impress.co.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://netshop.impress.co.jp/n/2026/11/12/17024" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">N</span>
+<span class="cite-body">
+<span class="cite-title">エディオンのECサイトに不正アクセス、クレカ番号とセキュリティコードが漏えいした可能性。決済情報入力処理に不正なプログラム</span>
+<span class="cite-url">netshop.impress.co.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://estore.jp/press/20261016/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">E</span>
+<span class="cite-body">
+<span class="cite-title">不正アクセスによる個人情報漏えいに関するお知らせ（最終報）</span>
+<span class="cite-url">estore.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://www.askul.co.jp/corp/security/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">A</span>
+<span class="cite-body">
+<span class="cite-title">アスクルのサイバーセキュリティ</span>
+<span class="cite-url">askul.co.jp</span>
+</span>
+</a>
+
+<p>ショップサーブは、カード番号を先頭6桁と下4桁しか持たず、セキュリティコードも持っていなかったため、漏れた情報だけではカード決済はできないとしています。LOHACOはカード情報を持たない仕組みだったので、ランサムウェアを受けてもカード情報は漏れませんでした。焼肉きんぐも、カード情報を持っていなかったので漏れていません。持っていない情報は漏れません。</p>
+
+<p>反対に無印良品では、目的が終わったあとも消していなかったカード番号の全桁が漏れました。エディオンでは、注文がエラーになったときの入力内容が、システムの記録（ログ）に一時的に残っていました。どちらも「持つつもりのない情報」「もう使わない情報」が残っていた例です。</p>
+
+<p>また、最初の発表は後から変わることがあります。無印良品は「カード情報は含まれない」と発表した5日後にカード番号を加え、エディオンは3日後に第1報を訂正しました。</p>
+
+<h2 id="sec6">アプリのほかに、ネットショップの側が確かめること｜カード番号・ログ・不正ログイン・決済ページ</h2>
+
+<p>アプリを持っていない店も含めて、ネットショップを運営する側が自分の店で確かめられることです。</p>
+
+<h3>店のデータに、カード番号が残っていないか</h3>
+
+<p>2018年6月に施行された<a href="https://www.meti.go.jp/policy/economy/consumer/credit/kappuhannbaihounoichibuwokaiseisuruhouritsu.pdf" target="_blank" rel="noopener noreferrer">改正割賦販売法</a>で、カード決済を使うネットショップ（加盟店）は、カード番号を自分のシステムに保存しない「非保持化」か、国際基準のPCI DSSに沿った管理のどちらかが求められています。使っているカートや決済代行会社の決済が非保持化に対応しているかを確かめ、あわせて、昔の注文データの書き出し（CSV）や、問い合わせメールにお客さんが書いたカード番号が残っていないかも見ておきます。</p>
+
+<h3>エラーやアクセスの記録（ログ）に、お客さんが入力した内容が残っていないか</h3>
+
+<p>エディオンでは、注文がエラーになったときに入力されたカード情報がログに記録されていました。自社で開発したシステムや、機能を追加したカートを使っている場合は、エラーの記録に何が書き出されるかを開発した会社に確かめます。</p>
+
+<h3>会員のログインと管理画面に、不正ログインへの対策が入っているか</h3>
+
+<p>クレジットカード・セキュリティガイドライン（日本クレジット協会が事務局のクレジット取引セキュリティ対策協議会がまとめたもの）では、2025年4月から、すべてのネットショップに不正ログインへの対策を行うことが求められています。カード会社の三菱UFJニコスの案内で挙げられているのは、不審なIPアドレスからのアクセスの制限、二段階認証を含む多要素認証、ログインの試行回数の制限、ログインしたときのメールやSMSでの通知などです。使っているカートにどの機能があり、自分の店で有効になっているかは、管理画面で確かめられます。店の管理画面に入るIDとパスワードも担当者ごとに分け、二段階認証を設定しておきます。</p>
+
+<a class="cite-card" href="https://www.cr.mufg.jp/merchant/member/info/request/index.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">三</span>
+<span class="cite-body">
+<span class="cite-title">［EC加盟店さまへ］不正ログイン対策のお願い（三菱UFJニコス）</span>
+<span class="cite-url">cr.mufg.jp</span>
+</span>
+</a>
+
+<h3>決済ページに不正なプログラムを入れられないか</h3>
+
+<p>エディオンでは、決済の処理に不正なプログラムが入れられ、11月4日19時過ぎからパソコンで入力されたカード番号とセキュリティコードが抜き取られた可能性があります。カード番号を入力する画面が自分の店のサーバーにあるのか、決済代行会社のページに移るのかによって、狙われる場所は異なります。自分の店の決済方式を確かめ、同じガイドラインが2025年3月末までに原則すべてのネットショップに入れるよう求めた本人確認の仕組み「EMV 3-Dセキュア」（カード会社が送るワンタイムパスワードなどで本人かを確かめる仕組み）が入っているかも確認が必要です。</p>
+
+<h3>使っているカートや決済のサービスが攻撃されたときに、どう知らせが来るか</h3>
+
+<p>ショップサーブでは、7858の店のお客さんの情報と、店の管理画面のIDとパスワードが一度に対象になりました。自分の店のシステムに問題がなくても、使っているサービスが攻撃されれば、自分の店のお客さんの情報も漏れます。契約しているサービスがどこに知らせを出すのか（管理画面・メール）を確かめ、知らせを受け取るメールアドレスが今も読まれているかを確認しておきます。アプリを作るサービスを使っている場合も同じです。</p>
+
+<h2 id="sec7">流出が分かったときにやること｜個人情報保護委員会への報告の期限</h2>
+
+<p>個人情報保護法では、次のどれかに当たる流出（流出したおそれを含む）が起きたら、個人情報保護委員会への報告と、お客さん本人への通知が必要です。</p>
+
+<ul>
+<li>病歴など特に配慮が必要な個人情報が含まれる</li>
+<li>カード番号など、悪用されるとお金の被害が出るおそれがある</li>
+<li>不正アクセスなど、不正な目的で行われたおそれがある</li>
+<li>1000人を超える</li>
+</ul>
+
+<p>報告は2回に分かれます。気づいてから3〜5日以内に「速報」、30日以内（不正な目的で行われたおそれがあるときは60日以内）に「確報」です。ネットショップやアプリへの不正アクセスは「不正な目的で行われたおそれがある」に当たるため、件数が少なくても報告の対象になります。</p>
+
+<a class="cite-card" href="https://www.ppc.go.jp/personalinfo/legal/leakAction/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">個</span>
+<span class="cite-body">
+<span class="cite-title">個人情報保護委員会：漏えい等の対応とお役立ち資料</span>
+<span class="cite-url">ppc.go.jp</span>
+</span>
+</a>
+
+<p>お客さんへのお知らせでは、無印良品やエディオンのように、あとから範囲が広がることがあります。僕は、分かっていることと、まだ調べていることを分けて書き、「含まれない」と言い切れない項目は「調査中」と書いておくほうが、訂正を出すことになったときにお客さんの受け取り方が変わると考えています。</p>
+
+<h2 id="sec8">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. お店の専用アプリから情報が流出した例には、どんなものがありますか？</strong></p>
+<p class="fa">A. 2026年10月5日に焼肉きんぐの公式アプリで会員1078万8963件（登録者のほぼ全員分）の会員番号・氏名・メールアドレス・電話番号の流出が公表されました。10月30日には無印良品のMUJIアプリで最大約2726万件の流出の可能性が公表され、のちにネットストアの会員やMUJI Cardのカード番号まで範囲が広がりました。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 焼肉きんぐは流出のあと、アプリをどう変えるのですか？</strong></p>
+<p class="fa">A. 物語コーポレーションは10月20日、焼肉きんぐを含むグループの公式アプリ11本で、氏名（アプリの登録名）と電話番号を持たない新しいシステムに変えると発表しました。変更は2027年上半期の予定です。メールアドレスは予約機能のために当面持ち続け、将来はメールアドレスも持たない仕組みに作り直すとしています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 専用アプリを作るとき、店は何を決めておけばいいですか？</strong></p>
+<p class="fa">A. アプリで集める情報を会員証・ポイント・クーポン・予約などの目的ごとに書き出し、目的のない項目は集めないことです。あわせて、退会した人の情報をいつ消すか、カード情報をアプリに持たせないか、アプリのログインに不正ログインへの対策を入れるかを決めます。アプリの開発会社に頼んでいる場合も、何を持つかを決めるのは店です。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. リスト型攻撃は、店のシステムに問題がなくても起きるのですか？</strong></p>
+<p class="fa">A. はい。リスト型攻撃は、ほかのサイトから漏れたIDとパスワードをそのまま入力してログインする攻撃なので、お客さんが同じパスワードを使い回していれば、店のシステムが破られていなくてもログインされます。良品計画の発表でも、使われたIDとパスワードは良品計画以外から手に入れられたものだと説明されました。ログインの失敗が続いたら止める、知らない端末からのログインを知らせる、といった対策で被害を減らせます。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 無印良品はなぜ消すはずのカード番号を持っていたのですか？</strong></p>
+<p class="fa">A. 良品計画の発表によると、2021年7月以前は、MUJI Cardに入会した人に良品計画独自の特典を付けるために、カード番号・MUJI Card ID・生年月日を取得していました。報道では、2021年7月以降は番号の一部を伏せて保存するように変えたものの、それ以前の全桁のデータを消せておらず、約109万件が残っていたと説明されています。有効期限とセキュリティコードは流出していないとされています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 退会した人の情報は、いつまで持っていていいのですか？</strong></p>
+<p class="fa">A. 個人情報保護法では、使う必要がなくなった個人データは遅れずに消すよう努めることとされています。何日で消すという決まりはないため、店ごとに消す時期を決めておきます。無印良品の最大約2726万件には退会した人の情報も含まれていました。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 流出したかもしれない段階でも、個人情報保護委員会に報告する必要がありますか？</strong></p>
+<p class="fa">A. はい。個人情報保護法の報告は、流出が確定した場合だけでなく、流出したおそれがある場合も対象です。不正アクセスによるものは件数に関係なく対象になり、気づいてから3〜5日以内に速報、60日以内に確報を出します。</p>
+</div>
+
+<h2 id="sec9">まとめ</h2>
+
+<p>無印良品の流出はMUJIアプリへの不正アクセスから始まり、アプリを使っていないネットストアの会員、2021年まで特典のために取得していたMUJI Cardの番号、代金引換の受取先へと広がりました。無印良品は、物流の会社とオーダーカーテンの業務を頼んだ先からも、別に流出を公表しています。焼肉きんぐでは公式アプリの会員のほぼ全員分にあたる1078万件の会員番号・氏名・メールアドレス・電話番号が漏れ、会社はそのあと、アプリで氏名と電話番号を持たないと決めています。</p>
+
+<p>お店の専用アプリは、会員証やポイントのためにお客さんに入れてもらうものですが、アプリを作ると、店が預かる情報と守る入口が増えます。アプリを作る前、または今のアプリを続ける前に、集める情報を目的ごとに絞れるか、退会した人の情報をいつ消すか、カード情報を持たせないか、アプリにもログインの対策を入れるかを決めておくことになります。</p>
+
+<!-- 関連記事 -->
+<div class="related">
+<h3>関連する記事</h3>
+<a class="cite-card" href="rental-server-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">おすすめのレンタルサーバー業者は？｜料金・PHP2Shell対応・情報流出の履歴で比較</span>
+<span class="cite-url">tsubasa-memo.github.io/rental-server-comparison.html</span>
+</span>
+</a>
+<a class="cite-card" href="onamae-desktop-cloud-incident.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">お名前.comデスクトップクラウド事件｜不正アクセスの原因と会社対応を追う</span>
+<span class="cite-url">tsubasa-memo.github.io/onamae-desktop-cloud-incident.html</span>
+</span>
+</a>
+<a class="cite-card" href="photo-app-privacy-check.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">写真レタッチアプリは何がおすすめ？　自分の顔写真を流出させないためのアプリ選び【2026年版】</span>
+<span class="cite-url">tsubasa-memo.github.io/photo-app-privacy-check.html</span>
+</span>
+</a>
+</div>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ19選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ19選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社19選の選び方・費用相場まで。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- 著者プロフィール -->
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
