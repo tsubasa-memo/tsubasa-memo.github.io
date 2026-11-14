@@ -322,6 +322,23 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-title">スマイルサーバの仕様</span>
 <span class="cite-url">smileserver.ne.jp</span>
 </span>
+</a><h3>サーバーの引っ越しに使えるWordPress公式ツール「Reprint」</h3>
+<p>WordPressのままサーバーを替える場合、サイトのコピーをどう作るかも決める必要がある。WordPress.orgは2026年11月13日、サイトのファイルとデータベースをコピーする無料のオープンソースツール「Reprint」を発表した。WordPressの「エクスポート」機能は投稿やページの書き出しが中心で、テーマ、プラグイン、アップロードした画像、設定までをサイトごと移すものではない。Reprintはこれらを含めてサイト全体をコピーする。</p>
+<p>使い方は、移行元のWordPressにReprintのプラグインを入れて有効化し、移行先のコンピュータやサーバーでコマンドラインのクライアントを実行する。移行元にはWordPressの管理者権限があればよく、SSHで接続する必要はない。ファイルとデータベースは少しずつ転送され、途中で接続が切れても同じコマンドで再開できる。新しいサイトアドレスを指定すれば、古いアドレスを指すリンクも書き換えられる。</p>
+<a class="cite-card" href="https://wordpress.org/news/2026/11/reprint-your-site/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">W</span>
+<span class="cite-body">
+<span class="cite-title">Copy Your WordPress Site with Reprint</span>
+<span class="cite-url">wordpress.org</span>
+</span>
+</a>
+<p>ただし、移行先ではコマンドラインでPHPを実行でき、Webサーバーの設定と空のデータベースの作成ができる必要がある。公式の手順では、公開前に移行先の送信メールや決済などの外部接続を止め、ページ、管理者ログイン、フォームを確認する。最後に元サイトへの書き込みを止めてもう一度コピーし、確認できてからドメインの向き先を変える。ドメインの切り替えはReprintの機能に含まれず、移行先の確認が終わるまで元サイトは戻せるように残しておく。コピーには非公開のデータや認証情報も含まれる。コマンドラインの操作とサーバーの設定を伴うため、会社サイトでは、このツールで移行できるかを制作会社に確認し、作業を依頼したい。</p>
+<a class="cite-card" href="https://developer.wordpress.org/reprint/guides/move-to-another-host/" rel="noopener noreferrer" target="_blank">
+<span class="cite-ico ext">W</span>
+<span class="cite-body">
+<span class="cite-title">Reprint：別のホストへサイトを移す手順</span>
+<span class="cite-url">developer.wordpress.org</span>
+</span>
 </a><h2 id="sec5">WordPress以外への移行先｜EmDashと静的サイトをどう選ぶか</h2><p>WordPressから移る場合の選択肢として、Cloudflareが開発するオープンソースCMS「EmDash」や、閲覧用のページをあらかじめ作って公開する「静的サイト」がある。</p><p>@chige_takumiさんは「Wordpress 引っ越します。」と投稿し、セキュリティ面のリスクとサーバー代を理由に挙げた。安全性への不安と維持費を理由に、WordPressから移る意向を示した投稿である。移行を考える動機があっても、次に選ぶ仕組みによって使い方や費用は変わる。</p><a class="cite-card" href="https://www.threads.com/@chige_takumi/post/De02oTqkzIO" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">T</span>
 <span class="cite-body">
