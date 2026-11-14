@@ -80,6 +80,14 @@ gtag('config', 'G-YYBFXHXMM6');
         "@type": "Answer",
         "text": "ドメインとURLの維持、フォームや顧客データの移行手順、公開前の検証環境、失敗時の復旧手順、そして移行後の保守体制を確認する。サーバー利用料と人による保守費用を混同せず、同じ作業範囲で比較することが重要だ。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "サーバーを他社へ移すとき、ドメインもお名前.comから移す必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必ず移す必要はない。サーバーとドメインの登録会社は別の契約で、ドメインをお名前.comに残したままサーバーだけを移すこともできる。ドメインも移す場合は、移管ロックとWhois情報公開代行を外し、AuthCodeを用意して移管先で申し込み、お名前.comからの承認メールに期限内に応じる。"
+      }
     }
   ]
 }
@@ -103,7 +111,7 @@ gtag('config', 'G-YYBFXHXMM6');
     "url": "https://tsubasa-memo.github.io/"
   },
   "datePublished": "2026-10-24T00:00:00+09:00",
-  "dateModified": "2026-10-24T00:00:00+09:00",
+  "dateModified": "2026-11-14T00:00:00+09:00",
   "inLanguage": "ja"
 }
 </script>
@@ -202,7 +210,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <h1>お名前.comからの移行先を比較検討｜WordPressとPHPはオワコンなのか？</h1>
 <div class="article-meta-line">
 <span>公開: 2026年10月24日</span>
-<span>更新: 2026年10月24日</span>
+<span>更新: 2026年11月14日</span>
 </div>
 
 <p>こんにちは、ツバサです。</p>
@@ -225,6 +233,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <li><a href="#sec4">WordPressを続ける場合の移行先｜さくら・エックスサーバーなどを比較</a></li>
 <li><a href="#sec5">WordPress以外への移行先｜EmDashと静的サイトをどう選ぶか</a></li>
 <li><a href="#sec6">Studioの不正アクセスから考える、サービス会社に任せる範囲</a></li>
+<li><a href="#sec-domain">お名前.comのドメインを他社へ移す手順｜移管ロック・AuthCode・承認メール</a></li>
 <li><a href="#sec7">会社サイトの移行はプロに依頼し、移行後の保守も決める</a></li>
 <li><a href="#sec8">FAQ</a></li>
 </ol>
@@ -414,7 +423,26 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <span class="cite-url">digital.go.jp</span>
 </span>
 </a>
-<p>編集の簡単さだけでなく、顧客情報の保存先、事故時の連絡体制、データを取り出して他社へ移せるか（データポータビリティ）を確認することが不可欠だ。</p><a class="cite-card" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a><h2 id="sec7">会社サイトの移行はプロに依頼し、移行後の保守も決める</h2><p>趣味のサイトなら、僕もAIを使いながら別の仕組みへ移すことはできる。表示が整ったことと、情報の扱い、問い合わせや注文、切り替え時の復旧まで確かめたことは別だ。</p><p>移す作業だけを依頼して終わりにせず、その後の管理まで決める必要がある。制作現場の投稿には、何年も前に作ったサイトの対応を突然求められた経験が出ている。</p><p>@tkyk_84ysmさんは、約7年前に制作したWordPressサイトの対応を急に求められたと投稿している。制作のみの契約で、現在は管理画面にも入れず、どのサーバーを使っているかも知らなかったという。依頼には「現在契約されている業者様とご確認の上」と返した。昔作った人が現在の管理情報を持っているとは限らない。制作会社を替えるときにも、管理者アカウントや契約先、更新履歴を誰が引き継ぐかを決める必要がある。</p><a class="cite-card" href="https://www.threads.com/@tkyk_84ysm/post/De1T2jumOZP" rel="noopener noreferrer" target="_blank">
+<p>編集の簡単さだけでなく、顧客情報の保存先、事故時の連絡体制、データを取り出して他社へ移せるか（データポータビリティ）を確認することが不可欠だ。</p><a class="cite-card" href="https://tsubasa-memo.github.io/static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a><h2 id="sec-domain">お名前.comのドメインを他社へ移す手順｜移管ロック・AuthCode・承認メール</h2>
+<p>サーバーを替えることと、ドメインの登録会社を替えること（ドメイン移管）は別の手続きだ。サーバーだけを他社へ移し、ドメインはお名前.comに残すこともできる。お名前.com・GMOとの契約をまとめて見直すなら、ドメインも移すことになる。</p>
+<p>移管の申し込みは移管先の会社で行い、お名前.com側では事前の準備と、申し込み後の承認をする。お名前.com Naviのガイドと、.jpドメインを管理するJPRSの案内で確かめた流れを表にまとめた。</p>
+<div class="table-wrap">
+<table class="compare-table">
+<tr><th>順番</th><th>やること</th><th>確認したこと</th></tr>
+<tr><td>1</td><td>移管ロックを外す</td><td>移管ロックは、お名前.comから他社への意図しない移管を防ぐ機能。お名前.com Naviの「ドメイン機能一覧」→「ドメインのお引越し」→「ドメイン移管ロック」で、移すドメインをOFFにする</td></tr>
+<tr><td>2</td><td>Whois情報公開代行を外し、登録者のメールアドレスを確かめる</td><td>Whois情報公開代行を設定したままだと、他社への移管は拒否される。承認のメールは登録情報（Whois情報）の宛先へ送られるため、送り先が誤っていると、申請を取り消してWhois情報を直し、移管先で申し込み直すことになる</td></tr>
+<tr><td>3</td><td>AuthCode（認証コード）を用意する</td><td>移管先での申し込みに必要。.jpドメインのAuthCodeはJPRSが作り、登録者は文字列を指定できない。有効期限は、作られた日の翌日を1日目として35日後の23:59:59まで</td></tr>
+<tr><td>4</td><td>移管先で申し込む</td><td>移管の料金と、移管で登録期間がどう扱われるかは移管先ごとに違う。申し込む前に移管先の料金表と案内で確かめる</td></tr>
+<tr><td>5</td><td>お名前.comからの承認メールに応じる</td><td>期限内に承認しないと、移管は拒否された扱いになる。.jpドメインは、登録期限日まで7日以内だと拒否される</td></tr>
+<tr><td>6</td><td>進み具合を確かめる</td><td>お名前.com Naviの「ドメイン機能一覧」→「ドメインのお引越し」→「ドメイン移管状況の確認」→「他社への移管状況確認」で、承認待ちか完了かを見られる</td></tr>
+</table>
+</div>
+<a class="cite-card" href="https://www.onamae.com/guide/p/27" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">O</span><span class="cite-body"><span class="cite-title">ドメイン移管ロック｜お名前.com Navi ガイド</span><span class="cite-url">www.onamae.com</span></span></a>
+<a class="cite-card" href="https://www.onamae.com/guide/p/26" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">O</span><span class="cite-body"><span class="cite-title">移管状況確認/AuthCode修正｜お名前.com Navi ガイド</span><span class="cite-url">www.onamae.com</span></span></a>
+<a class="cite-card" href="https://jprs.jp/about/dom-rule/agent-change/index.html" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">J</span><span class="cite-body"><span class="cite-title">ドメイン名の管理指定事業者の変更｜JPRS</span><span class="cite-url">jprs.jp</span></span></a>
+<p>.jpドメインの場合、移管は「指定事業者の変更」と呼ばれる。JPRSの案内では、登録者がお名前.comにAuthCodeを確認し、移管先に申し込むと、JPRSを通じてお名前.comから登録者に意思の確認が来る。登録者が承認して、はじめて管理する会社が切り替わる。申し込みの方法は会社ごとに違うので、JPRSも移管先と移管元の両方に問い合わせるよう案内している。</p>
+<p>移管の前に、ドメインのネームサーバーとDNSの設定をどこで管理しているかも確かめたい。サイトの表示もメールの受け取りも、この設定で決まる。お名前.comのDNSを使っている場合は、移管後も同じ設定が使えるかを、移管先と制作会社に確認しておく。</p>
+<p>サーバーの引っ越しとドメインの移管を同時に進めると、サイトが表示されない、メールを受け取れないといったときに、どちらが原因か切り分けにくい。僕なら、サーバーを移して動作を確かめてから、ドメインを移す。</p><h2 id="sec7">会社サイトの移行はプロに依頼し、移行後の保守も決める</h2><p>趣味のサイトなら、僕もAIを使いながら別の仕組みへ移すことはできる。表示が整ったことと、情報の扱い、問い合わせや注文、切り替え時の復旧まで確かめたことは別だ。</p><p>移す作業だけを依頼して終わりにせず、その後の管理まで決める必要がある。制作現場の投稿には、何年も前に作ったサイトの対応を突然求められた経験が出ている。</p><p>@tkyk_84ysmさんは、約7年前に制作したWordPressサイトの対応を急に求められたと投稿している。制作のみの契約で、現在は管理画面にも入れず、どのサーバーを使っているかも知らなかったという。依頼には「現在契約されている業者様とご確認の上」と返した。昔作った人が現在の管理情報を持っているとは限らない。制作会社を替えるときにも、管理者アカウントや契約先、更新履歴を誰が引き継ぐかを決める必要がある。</p><a class="cite-card" href="https://www.threads.com/@tkyk_84ysm/post/De1T2jumOZP" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">T</span>
 <span class="cite-body">
 <span class="cite-title">更新依頼の投稿</span>
@@ -437,7 +465,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <p>移行後も適切な保守契約を結び、必要な管理体制を維持することが重要である。「今は動いている」「移すとお金がかかる」という理由だけで判断せず、何もしない場合に発生し続けるコストとリスクを比較してみてください。</p><h2 id="sec8">FAQ</h2><div class="faq-item"><p class="fq"><strong>Q. お名前.comから別のサーバーへ移れば、WordPressの保守は不要になりますか？</strong></p><p class="fa">A. 不要にはならない。WordPressを使い続ける限り、本体やプラグインの更新、動作確認、バックアップなどの管理作業は残る。サーバーの変更と、WordPressという仕組み自体の変更は分けて判断する必要がある。</p></div><div class="faq-item"><p class="fq"><strong>Q. 今のサイトをそのまま使う方が、費用を抑えられますか？</strong></p><p class="fa">A. 初期移行費用は避けられるが、脆弱性対応やアップデート作業は続く。保守料金の改定や、契約外の修正費、社内の対応時間を含めてトータルで比較すべきである。</p></div><div class="faq-item"><p class="fq"><strong>Q. EmDashに移すと、今の独自ドメインとURLは使えますか？</strong></p><p class="fa">A. 条件を満たせば独自ドメインを利用できる。Cloudflareへの配置では、EmDashと同じCloudflareアカウントでドメインのDNSを管理する必要がある。登録会社そのものを必ず移すという意味ではない。旧URLが変わるページには転送を用意する。転送は記事を取り込むだけでは自動で作られない。</p></div><a class="cite-card" href="https://docs.emdashcms.com/deployment/cloudflare/#custom-domains" rel="noopener noreferrer" target="_blank">
 <span class="cite-ico ext">E</span>
 <span class="cite-body"><span class="cite-title">EmDash公式ドキュメント｜独自ドメインの条件</span><span class="cite-url">docs.emdashcms.com</span></span>
-</a><div class="faq-item"><p class="fq"><strong>Q. EmDashや静的サイトなら、保守契約は要りませんか？</strong></p><p class="fa">A. 新しいシステムの更新、外部フォームの管理、アクセス権限の整理など、必要な管理業務は残る。運用を誰が担当するかを事前に決めておく必要がある。</p></div><div class="faq-item"><p class="fq"><strong>Q. 会社のサイト移行を制作会社に頼むとき、何を確認すべきですか？</strong></p><p class="fa">A. ドメインとURLの維持、フォームや顧客データの移行手順、公開前の検証環境、失敗時の復旧手順、そして移行後の保守体制を確認する。サーバー利用料と人による保守費用を混同せず、同じ作業範囲で比較することが重要だ。</p></div><!-- 関連記事 -->
+</a><div class="faq-item"><p class="fq"><strong>Q. EmDashや静的サイトなら、保守契約は要りませんか？</strong></p><p class="fa">A. 新しいシステムの更新、外部フォームの管理、アクセス権限の整理など、必要な管理業務は残る。運用を誰が担当するかを事前に決めておく必要がある。</p></div><div class="faq-item"><p class="fq"><strong>Q. 会社のサイト移行を制作会社に頼むとき、何を確認すべきですか？</strong></p><p class="fa">A. ドメインとURLの維持、フォームや顧客データの移行手順、公開前の検証環境、失敗時の復旧手順、そして移行後の保守体制を確認する。サーバー利用料と人による保守費用を混同せず、同じ作業範囲で比較することが重要だ。</p></div><div class="faq-item"><p class="fq"><strong>Q. サーバーを他社へ移すとき、ドメインもお名前.comから移す必要がありますか？</strong></p><p class="fa">A. 必ず移す必要はない。サーバーとドメインの登録会社は別の契約で、ドメインをお名前.comに残したままサーバーだけを移すこともできる。ドメインも移す場合は、移管ロックとWhois情報公開代行を外し、AuthCodeを用意して移管先で申し込み、お名前.comからの承認メールに期限内に応じる。</p></div><!-- 関連記事 -->
 <div class="related">
 <h3>関連記事</h3>
 <a class="cite-card" href="https://tsubasa-memo.github.io/rental-server-comparison.html">
