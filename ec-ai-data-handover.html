@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697"
+     crossorigin="anonymous"></script>
+<title>ECサイト運用でAIにどこまで情報を渡す？万が一の情報流出のことまで考えてみた｜ツバサのメモ帳</title>
+<meta name="description" content="EC運営をAIに任せるサービス8つを、渡すログイン情報、お客様の個人情報、AIの学習への利用、海外での処理、事故時の約束で比べました。規約を読めた4つには事故時の通知の定めが無く、賠償の上限は1〜12か月分の料金。渡す前に決めることも整理しました。">
+<meta name="keywords" content="EC運営 AI,AIエージェント 情報流出,ECサイト ログイン情報,AI 個人情報,AI 利用規約">
+<meta property="og:title" content="ECサイト運用でAIにどこまで情報を渡す？万が一の情報流出のことまで考えてみた｜ツバサのメモ帳">
+<meta property="og:description" content="EC運営をAIに任せるサービス8つを、渡すログイン情報、お客様の個人情報、AIの学習への利用、海外での処理、事故時の約束で比べました。規約を読めた4つには事故時の通知の定めが無く、賠償の上限は1〜12か月分の料金。渡す前に決めることも整理しました。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tsubasa-memo.github.io/ec-ai-data-handover.html">
+<meta property="og:site_name" content="ツバサのメモ帳">
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/ec-ai-data-handover.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ECサイト運用でAIにどこまで情報を渡す？万が一の情報流出のことまで考えてみた｜ツバサのメモ帳">
+<meta name="twitter:description" content="EC運営をAIに任せるサービス8つを、渡すログイン情報、お客様の個人情報、AIの学習への利用、海外での処理、事故時の約束で比べました。規約を読めた4つには事故時の通知の定めが無く、賠償の上限は1〜12か月分の料金。渡す前に決めることも整理しました。">
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/ec-ai-data-handover.webp">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tsubasa-memo.github.io/ec-ai-data-handover.html">
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/ec-ai-data-handover.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "EC運営を任せるAIに、管理者のログイン情報を渡しても大丈夫ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "渡した情報で管理画面の内容をすべて見られることになるので、任せる作業に必要な権限だけの専用アカウントを作れるかを先に確かめておく必要があります。Shopify Sidekickのように、使う人の権限の範囲で操作する仕組みのサービスもあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "渡したデータはAIの学習に使われますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "規約を読めたECPRO BRAIN・ECPRO RPP・NININ・RUFU AIは、どれも学習に使わないと書いていました。ただし、個別に識別できない形にした統計データをサービスの改善に使うことや、AIの提供会社が不正な利用の監視のために一定期間保存することは、別に定められています。Shopify Sidekickは、ストアのデータをAIの基盤モデルの学習に使わないと公式ブログで説明する一方、識別できない形にしたやり取りを自社のモデルの改善に使うと技術ブログで説明しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "お客様の氏名や住所もAIに渡すことになりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ECPRO BRAIN・ECPRO RPPは個人情報を入力しない決まりです。NININは購入者の氏名・住所などを保存しないと書いていますが、チャットに書き込んだ内容はそのままAIの提供会社に送られます。RUFU AIは原則入力しない決まりですが、書面で合意すれば扱います。受注を扱うシステムに組み込まれたAIは、その情報に触れます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "データは海外のサーバーで処理されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NININは米国のAI提供会社に送ると委託先の名前まで書き、RUFU AIは米国その他の外国の委託先で処理されると規約に書いています。ECPROの規約には処理する国の記載がありませんでした。Shopify Sidekickは、入力された個人データの処理先として米国のAIの会社5社を委託先の一覧に載せています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "万が一情報が漏れたら、サービス側は知らせてくれますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "規約を読めた4つには、事故時に利用者へ知らせる定めがありませんでした。お客様の個人情報が漏れた場合は、店に個人情報保護委員会への報告と本人への通知の義務がかかることがあるため、知らせてもらう期限は契約で決めておく必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "損害が出たら、どこまで賠償してもらえますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "規約の上限は、ECPRO RPPが損害が出た月の料金、ECPRO BRAINが1か月分、NININが直近3か月分、RUFU AIが過去12か月分の料金でした。サービス側に故意または重大な過失がある場合は、この上限は当てはまりません。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ECサイト運用でAIにどこまで情報を渡す？万が一の情報流出のことまで考えてみた｜ツバサのメモ帳",
+  "description": "EC運営をAIに任せるサービス8つを、渡すログイン情報、お客様の個人情報、AIの学習への利用、海外での処理、事故時の約束で比べました。規約を読めた4つには事故時の通知の定めが無く、賠償の上限は1〜12か月分の料金。渡す前に決めることも整理しました。",
+  "url": "https://tsubasa-memo.github.io/ec-ai-data-handover.html",
+  "image": "https://tsubasa-memo.github.io/og/ec-ai-data-handover.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-11-20T00:00:00+09:00",
+  "dateModified": "2026-11-20T00:00:00+09:00",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "EC・実務",
+      "item": "https://tsubasa-memo.github.io/archive.html#ec"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "EC運用AIと情報の渡し方"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="/search.css">
+<script src="/search.js" defer></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#web"><span class="cat-dot" style="background:#e8a8b8"></span>Webサイト運営</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0">
+<a href="index.html">ホーム</a> &gt; <a href="archive.html#ec">EC・実務</a> &gt; EC運用AIと情報の渡し方
+</nav>
+<div class="article-hero">
+<img src="/thumbs/ec-ai-data-handover.webp" alt="ECサイト運用でAIにどこまで情報を渡す？万が一の情報流出のことまで考えてみた" width="640" height="360" loading="eager">
+</div>
+<span class="article-tag">EC・実務</span>
+<h1 class="article-title">ECサイト運用でAIにどこまで情報を渡す？<br>万が一の情報流出のことまで考えてみた</h1>
+<div class="article-meta-line">
+<span>公開: 2026年11月20日</span>
+<span>更新: 2026年11月20日</span>
+</div>
+
+<p>こんにちは、ツバサです。</p>
+
+<p>商品登録や在庫の更新、売上の集計をAIに任せられるサービスが出てきています。チャットで頼むだけでモールやカートを操作してくれる、と案内しているものもあります。</p>
+
+<p>便利そうですが、AIに操作してもらうには、ストアの管理画面に入るためのログイン情報や、売上・受注のデータをAIのサービスに渡すことになります。情報流出のニュースが続く中で、渡した情報がどう扱われ、漏れたときに誰が何をしてくれるのかは、使う前に知っておきたいところです。</p>
+
+<p>そこで、EC運営に使えるAIのサービス8つについて、公開されている規約・プライバシーポリシー・ヘルプを読み比べました。使い勝手や効果ではなく、「どこまで情報を渡すことになるのか」と「万が一のときに規約でどうなっているか」だけを見ています。規約の中身まで比べられたのは、外部の会社のサービス4つです。残りの4つは、ヘルプ・発表・会社の公開資料で分かる範囲を書いています。</p>
+
+<p>先に分かったことを書いておくと、外に出る情報の量は、サービスの形で大きく変わりました。外部の会社にログイン情報を渡してAIに操作してもらう形と、すでに使っているシステムの中でAIが操作する形とでは、新しく別の会社に渡す情報が違います。また、規約を読めた4つのサービスには、情報の事故が起きたときに利用者へ知らせるという定めが無く、賠償の上限は1か月から12か月分の利用料金まででした。</p>
+
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+
+<ul>
+<li>EC運営に使えるAIのサービス8つの形と、AIがすること</li>
+<li>AIに任せると外に出る情報（ログイン情報・業務データ・お客様の個人情報）</li>
+<li>各サービスの規約に書かれている、学習への利用・海外での処理・解約後のデータ・賠償の上限</li>
+<li>AIにどこまで渡すかの目安と、情報を渡す前に決めておくこと</li>
+</ul>
+</div>
+
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">EC運営に使えるAIのサービスは、形で3つに分かれる</a></li>
+<li><a href="#sec2">AIに任せると、どんな情報が外に出るのか</a></li>
+<li><a href="#sec3">規約で比べた、預けた情報の扱い</a></li>
+<li><a href="#sec4">万が一、情報が漏れたら規約ではどうなるか</a></li>
+<li><a href="#sec5">AIに情報を渡す前に決めておくこと</a></li>
+<li><a href="#sec6">FAQ</a></li>
+</ol>
+</div>
+
+<h2 id="sec1">EC運営に使えるAIのサービスは、形で3つに分かれる</h2>
+
+<p>今回比べたのは、ECの運営作業そのものにAIを使うサービスです。商品説明文を書くだけのAIツールや、汎用のチャットAIは入れていません。</p>
+
+<p>サービスの形で分けると、情報の出方が違う3つの型があります。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>形</th><th>新しく外に渡すもの</th><th>サービス</th></tr></thead>
+<tbody>
+<tr><td>外部の会社のサービスに、モールやカートのログイン情報・連携の権限を渡して、AIに操作や分析をさせる</td><td>ログイン情報または連携の権限、業務データ</td><td>ECPRO BRAIN、ECPRO RPP、NININ、RUFU AI</td></tr>
+<tr><td>すでに使っているシステムの中にAIが組み込まれている</td><td>新しく別の会社にログイン情報を渡す必要は無い（データはもともとそのシステムにある）。ただし、AIの処理のためにデータがAIの提供会社へ送られることはある</td><td>ecforce AI、NEXT ENGINE AI、Shopify Sidekick</td></tr>
+<tr><td>人の運用代行で、担当者がAIを使って作業する</td><td>代行会社に渡す情報（人の代行と同じ）</td><td>EBISU AGENT</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>それぞれのサービスでAIがすることは次のとおりです。表の順は、形ごとにサービス名の順です。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>サービス</th><th>提供会社</th><th>AIがすること</th></tr></thead>
+<tbody>
+<tr><td>ECPRO BRAIN</td><td>株式会社Proteinum</td><td>商品名・価格・ポイント倍率の変更やクーポンの設定を実行・予約する。複数モールの実績をまとめて分析する。アクションごとに確認者・承認者を設定でき、承認の履歴が残る</td></tr>
+<tr><td>ECPRO RPP（AIエージェント機能）</td><td>株式会社Proteinum</td><td>楽天市場のRPP広告の実績を分析し、上限CPCや目標ROASなどの変更案を出す。運用担当者が承認した案を反映する</td></tr>
+<tr><td>NININ（旧Nuseek AIRA）</td><td>NUSEEK株式会社</td><td>カートの注文・商品のデータと、GA4・Search Console・Google広告・Meta広告のデータを読み、施策を提案する。ページの文章やHTMLの案も作るが、ストアへの反映は利用者が管理画面に貼り付ける</td></tr>
+<tr><td>RUFU AI</td><td>RUFU株式会社</td><td>Slackなどで頼むと、モール・カートを操作して商品登録・画像加工・在庫や受注の処理・レポート作成などを進める。成果物は専用の確認ページで確認・承認・再依頼できる</td></tr>
+<tr><td>ecforce AI</td><td>株式会社SUPER STUDIO</td><td>カート「ecforce」（または「ecforce cdp」）の利用者向けに、ショップ独自の運用ルールを入れたAIエージェントを使い分けられるようにする。有償版では最大5つまで作れる</td></tr>
+<tr><td>NEXT ENGINE AI</td><td>NE株式会社</td><td>受注管理システム「ネクストエンジン」で、日常の言葉で指示すると、受注の検索や最大100件のデータ更新・タグ付けを担当者に代わって実行する</td></tr>
+<tr><td>Shopify Sidekick</td><td>Shopify</td><td>Shopifyの管理画面で、注文の編集、下書き注文の作成、フォームへの入力、分析やレポートなどを手伝う</td></tr>
+<tr><td>EBISU AGENT</td><td>株式会社インターファクトリー</td><td>運用担当者がAIを使って、バナー・LPの制作、商品登録、画像加工などを代行する</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000072.000085035.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">EC事業者向けAIエージェント「ECPRO BRAIN」、2026年10月より、登録店舗数に応じた新料金プランで提供開始！月額10,000円から利用可能に | 株式会社Proteinumのプレスリリース</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000064.000085035.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">楽天RPP広告運用ツール「ECPRO RPP」、AIが分析・提案・実行まで担う「AIエージェント機能」を提供開始 | 株式会社Proteinumのプレスリリース</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000006.000162012.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">RUFU AI、「確認ページ」機能をリリース、AIが作った成果物のチェック作業を大幅に効率化 | RUFU株式会社のプレスリリース</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://ne-inc.jp/news/article/nextengine-ai-app-official-release-2602/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">N</span>
+<span class="cite-body">
+<span class="cite-title">「話しかけるだけ」でEC業務を自動化。NE、日常会話で働くAIを正式リリース | NE株式会社</span>
+<span class="cite-url">ne-inc.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000295.000016245.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">コマース事業に特化したAIエージェント「ecforce AI」、有償版を3月2日（月）より提供開始 | 株式会社SUPER STUDIOのプレスリリース</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://prtimes.jp/main/html/rd/p/000000140.000002174.html" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">インターファクトリー、最先端AIサービス「EBISU AGENT」を始動。第1弾として、EC運用の生産性を高める「AI活用EC運用代行サービス」を提供開始 | 株式会社インターファクトリーのプレスリリース</span>
+<span class="cite-url">prtimes.jp</span>
+</span>
+</a>
+
+<p>NININは、2026年11月17日に「Nuseek AIRA」から名前が変わったばかりです。NEXT ENGINE AIは、2025年10月のβ版を経て、2026年2月に正式版になりました。</p>
+
+<h2 id="sec2">AIに任せると、どんな情報が外に出るのか</h2>
+
+<h3>管理画面のログイン情報と操作の権限</h3>
+
+<p>外部の会社のサービスにAIの操作を任せる場合、まず渡すのが、モールやカートの管理画面に入るための情報です。</p>
+
+<p>ECPRO BRAINの規約は、利用者が外部サービスの「アカウント情報、API情報その他の連携に必要な情報」を登録すると書いています。ECPRO RPPは、楽天市場のRMSとの連携を保つことが利用者の義務です。</p>
+
+<a class="cite-card" href="https://ecpro.ai/brain/terms/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">E</span>
+<span class="cite-body">
+<span class="cite-title">利用規約 | ECPRO BRAIN</span>
+<span class="cite-url">ecpro.ai</span>
+</span>
+</a>
+
+<p>NININは、Googleとの連携を機能に必要な範囲の権限に限り、GA4とSearch Consoleは読み取り専用にすると規約に書いています。</p>
+
+<a class="cite-card" href="https://ninin.app/terms" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">N</span>
+<span class="cite-body">
+<span class="cite-title">利用規約 | NININ</span>
+<span class="cite-url">ninin.app</span>
+</span>
+</a>
+
+<p>RUFU AIの利用規約は、契約者が「外部認証情報または操作権限」を提供し、契約者のアカウントで「閲覧、登録、変更その他の操作」を行うと定めています。外部認証情報は、ID・パスワード・APIキー・アクセストークンなどです。</p>
+
+<a class="cite-card" href="https://rufu.io/rufu-ai/terms" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">R</span>
+<span class="cite-body">
+<span class="cite-title">RUFU AI 利用規約 | RUFU株式会社</span>
+<span class="cite-url">rufu.io</span>
+</span>
+</a>
+
+<p>管理画面のログイン情報があれば、その画面で見られる情報は全部見られます。渡す前に、その画面で何が見られて、何が変えられるかを確認しておく必要があります。</p>
+
+<p>これに対して、Shopify Sidekickはヘルプで「Sidekickはスタッフの権限を使用します」と説明しています。例として、管理画面でShopifyペイメントの情報を表示できない場合は、Sidekickもその情報を表示できないと書かれています。NEXT ENGINE AIとecforce AIも、すでに使っているシステムに組み込まれているので、新しく外部の会社にログイン情報を渡すことはありません。</p>
+
+<a class="cite-card" href="https://help.shopify.com/ja/manual/ai-powered-tools/sidekick/help-and-guidance" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">H</span>
+<span class="cite-body">
+<span class="cite-title">Shopifyヘルプセンター | Sidekick によるヘルプとガイダンスの取得</span>
+<span class="cite-url">help.shopify.com</span>
+</span>
+</a>
+
+<h3>商品・売上・受注のデータ</h3>
+
+<p>ログイン情報の次に外に出るのが、AIに処理させる業務のデータです。</p>
+
+<p>ECPRO BRAINの規約は、利用者のデータとして「売上その他の実績データ、商品情報、施策の内容および外部サービスの連携情報」を挙げ、秘密として扱うと定めています。NININのプライバシーポリシーは、売上・注文の件数・商品名・アクセスや検索の数字などの分析データとチャットの質問内容を、AIの提供会社に送ると書いています。RUFU AIの情報セキュリティ方針は、預かる情報を「販売実績、商品情報、取引情報といった機密情報とそれらの分析データ、AI活用に伴う入力・出力情報」と書いています。</p>
+
+<a class="cite-card" href="https://ninin.app/privacy" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">N</span>
+<span class="cite-body">
+<span class="cite-title">プライバシーポリシー | NININ</span>
+<span class="cite-url">ninin.app</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://rufu.io/security-policy" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">R</span>
+<span class="cite-body">
+<span class="cite-title">情報セキュリティ方針 | RUFU株式会社</span>
+<span class="cite-url">rufu.io</span>
+</span>
+</a>
+
+<p>どのサービスも、こうした業務データはAIの処理のために外の会社（AIの提供会社やクラウド）へ送られることを前提にしています。</p>
+
+<h3>お客様の個人情報は「入力しない」決まりが多い</h3>
+
+<p>お客様の氏名・住所・電話番号は、とくに外に出したくない情報です。読めた規約では、扱いが次のように分かれていました。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>サービス</th><th>お客様の個人情報の扱い</th></tr></thead>
+<tbody>
+<tr><td>ECPRO BRAIN・ECPRO RPP</td><td>個人情報を扱うことを予定しておらず、利用者は入力しない</td></tr>
+<tr><td>NININ</td><td>カートから受け取った購入者の氏名・住所・電話番号・メールアドレスなどは保存せず、その場で破棄する。ただし、利用者がチャットに書き込んだ内容と、ブラウザ拡張で送った画面に含まれる情報は、そのままAIの提供会社に送られる。ブラウザ拡張で送った画面については、NININが返す文と保存する記録の電話番号・メールアドレスを伏せる</td></tr>
+<tr><td>RUFU AI</td><td>原則として取扱いの委託を受けず、契約者は入力しない。希望すれば、対象業務と範囲・安全管理措置を書面（メール可）で合意して扱う。本人への通知や同意の取得は契約者の責任</td></tr>
+<tr><td>NEXT ENGINE AI・Shopify Sidekick</td><td>受注や顧客を扱うシステムに組み込まれているため、AIもその情報に触れる</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>RUFU AIは、受注処理や顧客対応、メルマガも業務の例に挙げています。こうした業務はお客様の個人情報に触れるので、任せる場合は書面で範囲を決める必要があります。</p>
+
+<h2 id="sec3">規約で比べた、預けた情報の扱い</h2>
+
+<p>規約・プライバシーポリシー・ヘルプで確かめた内容を、同じ項目の表にしました。「記載なし」は文書を読んで見つからなかったもの、「確認できず」は公開文書を読めなかったか、該当の文書が見つからなかったものです。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>項目</th><th>ECPRO BRAIN</th><th>ECPRO RPP</th><th>NININ</th><th>RUFU AI</th></tr></thead>
+<tbody>
+<tr><td>AIの学習</td><td>外部AIの提供会社に学習させないことを、契約か設定で確保する</td><td>同じ</td><td>使われない（各AI提供会社の規約による）</td><td>使わない。他社のAIも学習されない条件で使う</td></tr>
+<tr><td>海外での処理</td><td>記載なし（外部AI・クラウドに再委託できる）</td><td>記載なし（同じ）</td><td>Anthropic・OpenAI（米国）に送る。保管はアジア太平洋を含むクラウド</td><td>「アメリカ合衆国その他の外国」の委託先で処理</td></tr>
+<tr><td>解約後のデータ</td><td>終了から90日たった後に削除できる</td><td>同じ</td><td>30日保持した後に削除（操作ログは取得から1年、会話の記録は取得から最長10年）</td><td>終了から90日以内に削除</td></tr>
+<tr><td>賠償の上限</td><td>1か月分の料金</td><td>損害が出た月に受け取った料金</td><td>直近3か月に払った料金</td><td>過去12か月に払った料金</td></tr>
+<tr><td>事故時の通知</td><td>定めなし</td><td>定めなし</td><td>定めなし</td><td>定めなし</td></tr>
+<tr><td>第三者認証</td><td>運営会社がISO/IEC 27001を取得</td><td>同じ</td><td>記載なし</td><td>記載なし</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>既存のシステムに組み込まれたAIと、人の運用代行は次のとおりです。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>項目</th><th>ecforce AI</th><th>NEXT ENGINE AI</th><th>Shopify Sidekick</th><th>EBISU AGENT</th></tr></thead>
+<tbody>
+<tr><td>AIの学習</td><td>確認できず</td><td>正式版の発表に記載なし。β版の発表には「AIは、ユーザーの業務パターンや意図を学習していきます」とあった</td><td>公式ブログに「ストアのデータがAIの基盤モデルの学習に使用されたり、ほかのEC事業者と共有されたりすることはありません」とある。技術ブログでは、識別できない形にした本番のやり取りをSidekick用のモデルの改善に使うと説明している</td><td>公開ページに記載なし</td></tr>
+<tr><td>AIの処理の委託先</td><td>処理する国は確認できず。有償版ではChatGPT・Gemini・Claudeからモデルを選べる</td><td>確認できず</td><td>Anthropic・Applied Compute・Fireworks.ai・Microsoft・OpenAI（いずれも米国）を、Sidekickに入力された個人データの処理先として一覧に載せている</td><td>公開ページに記載なし</td></tr>
+<tr><td>承認</td><td>確認できず</td><td>正式版の発表は、AIが最大100件のデータ更新やタグ付けを担当者に代わって実行すると説明している。承認の仕組みは書かれていない</td><td>「承認なしにライブストアを変更することはできません」</td><td>「AI生成のベースは必ずプロがチェック・修正した上で納品」と案内</td></tr>
+<tr><td>第三者認証</td><td>運営会社がPマークとISO/IEC 27001（ISMS）を取得</td><td>運営会社がPマークを取得</td><td>SOC 2 Type IIとSOC 3の報告書を受けている。PCI DSSレベル1に準拠</td><td>運営会社がISO/IEC 27001を取得</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cite-card" href="https://www.super-studio.jp/privacy/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">プライバシーポリシー｜株式会社SUPER STUDIO</span>
+<span class="cite-url">www.super-studio.jp</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://www.shopify.com/security" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Shopify Security - Shopify</span>
+<span class="cite-url">www.shopify.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://next-engine.net/use-policy/security/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">N</span>
+<span class="cite-body">
+<span class="cite-title">セキュリティについて｜ネクストエンジン</span>
+<span class="cite-url">next-engine.net</span>
+</span>
+</a>
+
+<h3>AIの学習に使うかどうか</h3>
+
+<p>外部の会社のサービス4つは、どれも「お客様のデータをAIの学習に使わない」ことを規約かプライバシーポリシーに書いていました。書き方には違いがあります。ECPROは外部AIの提供会社に学習させないことを契約か設定で確保すると書いています。NININは、使っているAIの提供会社の規約によって学習に使われない、という説明です。RUFU AIは自社と他社のAIの両方について学習に使わないと書いています。</p>
+
+<p>ただし、学習に使わないことと、どこにも保存されないことは別です。NININのプライバシーポリシーは、AIの提供会社が不正な利用を監視するために、受け取った内容を最長30日保存すると書いています。提供会社が規約に反する利用を疑った場合は、より長く（Anthropicの場合は最長2年間）保存されることがある、とも書かれています。ECPROとRUFU AIは、利用者や個人を識別できない形に統計化・匿名化したデータを、サービスの改善に使えると定めています。</p>
+
+<p>システムに組み込まれたAIでは、Shopifyが公式ブログで「ストアのデータがAIの基盤モデルの学習に使用されたり、ほかのEC事業者と共有されたりすることはありません」と書いています。一方で、Shopifyの技術ブログ（2026年6月・8月）は、識別できない形にした本番のやり取りを使って、Sidekick用のモデルを改善していると説明しています。また、Sidekickの記憶機能は過去の会話を約3か月覚え、使う人の好みに合わせて回答を調整します。記憶はヘルプの手順でオフにできます。</p>
+
+<a class="cite-card" href="https://www.shopify.com/jp/blog/sidekick-ai-questions" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">ShopifyのSidekickに聞くべき質問とAI回答例（2026年） - Shopify 日本</span>
+<span class="cite-url">www.shopify.com</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://shopify.engineering/sidekick-curation" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Teaching Sidekick to say no: automated data curation with LLM judge consensus (2026) - Shopify</span>
+<span class="cite-url">shopify.engineering</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://shopify.engineering/sidekicks-continual-learning-loop" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">S</span>
+<span class="cite-body">
+<span class="cite-title">Sidekick&#x27;s continual learning loop (2026) - Shopify</span>
+<span class="cite-url">shopify.engineering</span>
+</span>
+</a>
+
+<a class="cite-card" href="https://help.shopify.com/ja/manual/ai-powered-tools/sidekick/memory" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">H</span>
+<span class="cite-body">
+<span class="cite-title">Shopifyヘルプセンター | Sidekick の記憶機能とパーソナライゼーション</span>
+<span class="cite-url">help.shopify.com</span>
+</span>
+</a>
+
+<h3>海外のサーバーで処理されるか</h3>
+
+<p>海外での処理をはっきり書いていたのはNININとRUFU AIでした。NININのプライバシーポリシーは、Anthropic・OpenAI・Amazon Web Servicesなどの委託先を、社名と国（米国）まで一覧にしています。RUFU AIの規約は、入力データが「アメリカ合衆国その他の外国に所在する当社の委託先（AIサービス提供事業者を含みます。）のサーバーで処理されることを了承します」としています。委託先の社名は書かれていません。</p>
+
+<p>ECPROは、外部AIやクラウドの会社に再委託できると定めていますが、処理する国は書いていません。</p>
+
+<p>システムに組み込まれたAIでは、Shopifyが委託先（サブプロセッサ）の一覧に、Sidekickに入力された個人データと応答に含まれる個人データの処理先として、Anthropic・Applied Compute・Fireworks.ai・Microsoft・OpenAIの5社（いずれも米国）を載せています。ecforce AIは、有償版でChatGPT・Gemini・Claudeからモデルを選べると発表していますが、処理する国は確認できませんでした。</p>
+
+<a class="cite-card" href="https://help.shopify.com/ja/manual/privacy-and-security/privacy/subprocessors" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">H</span>
+<span class="cite-body">
+<span class="cite-title">Shopifyヘルプセンター | サブプロセッサ</span>
+<span class="cite-url">help.shopify.com</span>
+</span>
+</a>
+
+<h3>解約した後のデータ</h3>
+
+<p>解約した後のデータは、ECPROが90日たった後、NININが30日、RUFU AIが90日以内に削除するとしています。ECPROの規約は「削除することができる」という書き方で、90日たったら必ず消すとは書いていません。NININは、規約では解約後30日で削除するとしていますが、プライバシーポリシーでは、操作ログを取得から1年、会話の記録とNININが届けた内容を取得から最長10年保存すると、別に定めています。どのサービスも、解約の前に利用者がデータを取り出しておくことを前提にしています。</p>
+
+<h2 id="sec4">万が一、情報が漏れたら規約ではどうなるか</h2>
+
+<h3>事故を知らせる約束は、読めた規約には無かった</h3>
+
+<p>規約を読めた4つ（ECPRO BRAIN、ECPRO RPP、NININ、RUFU AI）には、情報の漏えいなどの事故が起きたときに、利用者へいつまでに何を知らせるかを定めた条文がありませんでした。どれも「合理的な安全管理措置を講じる」といった、事故を防ぐ側の約束にとどまっています。</p>
+
+<p>規約以外の文書では、ECPROを運営するProteinumのプライバシーポリシーに、個人情報について「万一の際には速やかに是正措置を講じます」とあり、RUFUの情報セキュリティ方針には「万一、情報セキュリティ上の問題が発生した場合、直ちに、原因を究明しその被害を最小限にとどめる」とあります。どちらも会社としての対応の方針で、利用者にいつ何を知らせるかは書かれていません。</p>
+
+<a class="cite-card" href="https://proteinum.co.jp/privacy/" target="_blank" rel="noopener noreferrer">
+<span class="cite-ico ext">P</span>
+<span class="cite-body">
+<span class="cite-title">プライバシーポリシー - プロテーナム</span>
+<span class="cite-url">proteinum.co.jp</span>
+</span>
+</a>
+
+<p>ストアの管理画面のログイン情報を預けているサービスで事故が起きた場合、利用者がそれを知る手段が、規約の上では決まっていないことになります。</p>
+
+<p>サービス側で事故が起きたときに会社がどう対応したかの例は、「<a href="onamae-desktop-cloud-incident.html">お名前.comデスクトップクラウド事件｜不正アクセスの原因と会社対応を追う</a>」で追っています。</p>
+
+<h3>賠償は1か月〜12か月分の料金まで</h3>
+
+<p>事故で損害が出たときの賠償の上限は、次のとおりでした（いずれも、サービス側に故意または重大な過失がある場合を除く）。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>サービス</th><th>賠償の上限</th></tr></thead>
+<tbody>
+<tr><td>ECPRO RPP</td><td>損害が出た月に受け取った利用料の額</td></tr>
+<tr><td>ECPRO BRAIN</td><td>1か月あたりの利用料金に当たる額</td></tr>
+<tr><td>NININ</td><td>損害が出た月を含む直近3か月間に払った利用料金の総額</td></tr>
+<tr><td>RUFU AI</td><td>損害が出た時から遡って12か月間に払った利用料金の総額</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>さらに、ECPRO BRAINの規約は、利用者側のアカウント情報や連携情報の管理が不十分だったことによる損害は責任を負わないとし、RUFU AIの規約も、契約者の操作や設定のミスで情報が漏れた場合は責任を負わないとしています。ログイン情報の管理は、利用者の側にも責任が残ります。</p>
+
+<h3>お客様の個人情報が漏れたときの報告の義務</h3>
+
+<p>お客様の個人データが漏れた場合、個人情報保護法第26条では、一定の条件に当てはまる事故について、個人情報保護委員会への報告と本人への通知が義務付けられています。</p>
+
+<p>外部サービスに個人データの取扱いを委託している場合、原則として委託元と委託先の双方に義務が生じます。ただし、委託先が委託元へ必要事項を速やかに通知すれば、委託先自身の報告・本人通知義務は免除されます。</p>
+
+<p>詳しくは、<a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/" target="_blank" rel="noopener noreferrer">個人情報保護委員会の公式ガイドライン</a>をご覧ください。</p>
+
+<h2 id="sec5">AIに情報を渡す前に決めておくこと</h2>
+
+<p>ここまでの読み比べから、AIにどこまで渡すかを、渡すものの大きさで3つの段階に分けてみました。規約や法令にある区分ではなく、この記事で比べた事実から考えた目安です。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>渡すもの</th><th>当てはまる使い方</th><th>渡す前に確かめること</th></tr></thead>
+<tbody>
+<tr><td>ストアに書き込まない連携だけ</td><td>売上やアクセスの分析、施策の提案。ストアへの反映は利用者が行う</td><td>渡すのは読み取りの連携の権限で、管理画面のログイン情報そのものではない。ただし、売上・注文の件数・商品名などの分析データはAIの提供会社に送られるので、送る先の会社と国、学習に使わないかを確かめる</td></tr>
+<tr><td>作業用の権限</td><td>商品登録、価格の変更、クーポンの設定など、ストアの中身を変える作業</td><td>管理者のアカウントではなく、その作業に必要な権限だけのアカウントを渡せるか。価格の変更や商品の公開など影響の大きい操作の前に、人の承認を挟めるか</td></tr>
+<tr><td>お客様の個人情報に触れる業務</td><td>受注の処理、顧客対応、メルマガ</td><td>そのサービスの規約が個人情報を扱える内容になっているか。扱う範囲を書面で決められるか。事故が起きたときに知らせてもらう期限を契約で決められるか</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>下の段階ほど、外に出る情報と、事故が起きたときの影響が大きくなります。どの段階でも、渡す前に決めておくことは次のとおりです。</p>
+
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>決めること</th><th>中身</th></tr></thead>
+<tbody>
+<tr><td>渡すログイン情報</td><td>管理者のアカウントをそのまま渡さず、任せる作業に必要な権限だけの専用アカウントを作れるか確かめる</td></tr>
+<tr><td>任せる作業の範囲</td><td>お客様の個人情報に触れない作業（商品登録・画像・レポート）と、触れる作業（受注・顧客対応・メルマガ）を分ける。触れる作業を任せるなら、そのサービスが個人情報を扱える規約になっているか、書面で扱う範囲を決められるかを確かめる</td></tr>
+<tr><td>承認が要る操作</td><td>価格の変更や商品の公開など、影響の大きい操作の前に人の承認を挟めるか。承認した操作の結果は自社の責任になる規約が多い</td></tr>
+<tr><td>データの行き先</td><td>AIの学習に使わないか、どの国のサーバーで処理されるか、委託先の会社名を出してもらえるか</td></tr>
+<tr><td>事故のとき</td><td>事故が起きたら、いつまでに何を知らせてもらえるか。規約に無ければ契約で決める</td></tr>
+<tr><td>解約のとき</td><td>解約前にデータを取り出せるか、解約後いつ消えるか、預けたログイン情報がいつ消されるか</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>すでに使っているシステムに組み込まれたAI（ecforce AI、NEXT ENGINE AI、Shopify Sidekick）は、新しく外部の会社にログイン情報を渡さずに済みます。それでも、AIの処理のためにデータがどこへ送られるかは、各社の案内で確かめておく必要があります。今回読んだ文書では、Shopifyは委託先の一覧にAIの会社の名前と国を載せ、ecforce AIは選べるモデルの名前を発表に書いていました。NEXT ENGINE AIは、AIの処理でデータを送る先を確認できませんでした。NEXT ENGINE AIのβ版の発表には「AIは、ユーザーの業務パターンや意図を学習していきます」とありましたが、2026年2月の正式版の発表には学習についての記載がありません。</p>
+
+<p>EC運営をAIに任せるときに外に出る情報は、サービスの形で大きく変わります。外部の会社にログイン情報を渡す形では、管理画面で見られる情報と業務データが外の会社とAIの提供会社に送られ、海外で処理されることもあります。</p>
+
+<p>規約を読めた4つのサービスは、どれもAIの学習には使わないと書いていましたが、事故が起きたときに知らせる定めは無く、賠償の上限は1か月から12か月分の利用料金まででした。任せる作業の範囲、渡す権限、事故のときの連絡は、規約に書かれていなければ契約のときに決めておくことになります。</p>
+
+<div class="faq-section">
+<h2 id="sec6">FAQ</h2>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. EC運営を任せるAIに、管理者のログイン情報を渡しても大丈夫ですか？</strong></p>
+<p class="fa">A. 渡した情報で管理画面の内容をすべて見られることになるので、任せる作業に必要な権限だけの専用アカウントを作れるかを先に確かめておく必要があります。Shopify Sidekickのように、使う人の権限の範囲で操作する仕組みのサービスもあります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 渡したデータはAIの学習に使われますか？</strong></p>
+<p class="fa">A. 規約を読めたECPRO BRAIN・ECPRO RPP・NININ・RUFU AIは、どれも学習に使わないと書いていました。ただし、個別に識別できない形にした統計データをサービスの改善に使うことや、AIの提供会社が不正な利用の監視のために一定期間保存することは、別に定められています。Shopify Sidekickは、ストアのデータをAIの基盤モデルの学習に使わないと公式ブログで説明する一方、識別できない形にしたやり取りを自社のモデルの改善に使うと技術ブログで説明しています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. お客様の氏名や住所もAIに渡すことになりますか？</strong></p>
+<p class="fa">A. ECPRO BRAIN・ECPRO RPPは個人情報を入力しない決まりです。NININは購入者の氏名・住所などを保存しないと書いていますが、チャットに書き込んだ内容はそのままAIの提供会社に送られます。RUFU AIは原則入力しない決まりですが、書面で合意すれば扱います。受注を扱うシステムに組み込まれたAIは、その情報に触れます。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. データは海外のサーバーで処理されますか？</strong></p>
+<p class="fa">A. NININは米国のAI提供会社に送ると委託先の名前まで書き、RUFU AIは米国その他の外国の委託先で処理されると規約に書いています。ECPROの規約には処理する国の記載がありませんでした。Shopify Sidekickは、入力された個人データの処理先として米国のAIの会社5社を委託先の一覧に載せています。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 万が一情報が漏れたら、サービス側は知らせてくれますか？</strong></p>
+<p class="fa">A. 規約を読めた4つには、事故時に利用者へ知らせる定めがありませんでした。お客様の個人情報が漏れた場合は、店に個人情報保護委員会への報告と本人への通知の義務がかかることがあるため、知らせてもらう期限は契約で決めておく必要があります。</p>
+</div>
+
+<div class="faq-item">
+<p class="fq"><strong>Q. 損害が出たら、どこまで賠償してもらえますか？</strong></p>
+<p class="fa">A. 規約の上限は、ECPRO RPPが損害が出た月の料金、ECPRO BRAINが1か月分、NININが直近3か月分、RUFU AIが過去12か月分の料金でした。サービス側に故意または重大な過失がある場合は、この上限は当てはまりません。</p>
+</div>
+
+</div>
+
+<div class="related">
+<h3>関連記事</h3>
+
+<a class="cite-card" href="store-app-data-leak.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">お店の専用アプリは必要？ 無印良品と焼肉きんぐの情報流出から考える</span>
+<span class="cite-url">tsubasa-memo.github.io/store-app-data-leak.html</span>
+</span>
+</a>
+
+<a class="cite-card" href="rental-server-comparison.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">おすすめのレンタルサーバー業者は？｜料金・PHP2Shell対応・情報流出の履歴で比較</span>
+<span class="cite-url">tsubasa-memo.github.io/rental-server-comparison.html</span>
+</span>
+</a>
+
+<a class="cite-card" href="php2shell-timeline.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">【EC事業者向け】PHP脆弱性php2shellで止まったカート・モールを一晩追跡</span>
+<span class="cite-url">tsubasa-memo.github.io/php2shell-timeline.html</span>
+</span>
+</a>
+
+<a class="cite-card" href="ec-ai-image-rules.html">
+<span class="cite-ico int">ツ</span>
+<span class="cite-body">
+<span class="cite-title">EC商品画像にAIを使うときの注意点｜3モールの規約と景表法を整理</span>
+<span class="cite-url">tsubasa-memo.github.io/ec-ai-image-rules.html</span>
+</span>
+</a>
+
+</div>
+
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="comparison-article-credibility.html">
+<div class="featured-thumb">
+<img alt="「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索" loading="lazy" height="160" src="thumbs/comparison-article-credibility.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>「おすすめ比較記事」をGoogleが規制？｜No.1表記の法的リスクとAI検索</h2>
+<p class="card-desc">No.1表記は景品表示法違反のリスクがある。Googleの規制・法的リスク・AI検索の3軸で、おすすめ比較記事の信頼性を整理した。</p>
+<span class="card-tag">SEO・LLMO</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="sasage-outsource.html">
+<div class="featured-thumb">
+<img alt="ささげ業務の代行会社おすすめ19選｜選び方と費用相場【2026年版】" loading="lazy" height="160" src="thumbs/sasage-outsource.webp" width="280">
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>ささげ業務の代行会社おすすめ19選｜選び方と費用相場【2026年版】</h2>
+<p class="card-desc">撮影・採寸・原稿の頭文字をとった「ささげ」の意味から、代行会社19選の選び方・費用相場まで。</p>
+<span class="card-tag">EC・実務</span>
+</div>
+</a>
+</div>
+</div>
+
+<!-- 著者プロフィール -->
+
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
