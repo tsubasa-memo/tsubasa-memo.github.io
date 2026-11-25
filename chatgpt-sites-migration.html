@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="utf-8"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較｜ツバサのメモ帳</title>
+<meta name="description" content="ChatGPT Sitesで作ったサイトの維持費が気になっていませんか？公開先を替えても、保存データやログイン機能までそのまま移せるとは限りません。移行先4サービスの料金と機能を比較し、サイトを残して乗り換えるための確認点を整理します。"/>
+<meta name="keywords" content="ChatGPT Sites,乗り換え,移行,ホスティング,料金,無料枠"/>
+<meta property="og:title" content="ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較"/>
+<meta property="og:description" content="ChatGPT Sitesで作ったサイトの維持費が気になっていませんか？公開先を替えても、保存データやログイン機能までそのまま移せるとは限りません。移行先4サービスの料金と機能を比較し、サイトを残して乗り換えるための確認点を整理します。"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:url" content="https://tsubasa-memo.github.io/chatgpt-sites-migration.html"/>
+<meta property="og:site_name" content="ツバサのメモ帳"/>
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/chatgpt-sites-migration.webp"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較"/>
+<meta name="twitter:description" content="ChatGPT Sitesで作ったサイトの維持費が気になっていませんか？公開先を替えても、保存データやログイン機能までそのまま移せるとは限りません。移行先4サービスの料金と機能を比較し、サイトを残して乗り換えるための確認点を整理します。"/>
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/chatgpt-sites-migration.webp"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://tsubasa-memo.github.io/chatgpt-sites-migration.html"/>
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/chatgpt-sites-migration.html"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ChatGPT Sitesは2027年から必ず追加料金がかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "月間ホスティング枠内なら、追加のホスティング料金は不要です。2027年1月1日からPlus・Pro・Businessの枠を超えた利用分が課金対象になります。ChatGPTの契約料金と、ホスティングの超過料金は分けて確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT Sitesから無料で乗り換えられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料枠のある公開先はあります。Cloudflare Workers、Netlify、Vercel、GitHub Pagesは、いずれも無料枠のあるサービスです。必要な保存容量、処理・通信量、商用利用条件を満たすかで選び、独自ドメインやAI編集の費用も別に確認します。主な条件は4サービスの比較に記載しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT Sitesのソースコードはダウンロードできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Codexにソースコードの書き出しを依頼する方法が、公式に案内されています。取得したコードが移行先で使えるかは、開発用の仕組みや保存機能ごとに確認します。コードを取得したことだけで、DBやアップロードファイルの取得まで完了したとは判断できません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "DBの記録や画像もまとめて移せますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DBとアップロードファイルをまとめてバックアップし、新しいSiteへ復元する標準機能はありません。公式ヘルプには、書き出したデータがあれば手作業で再構築できるとありますが、個別データの書き出し可否と手順は未検証です。外部への移行では、記録とファイルの取得方法を確かめ、内容と参照関係を移行前後で照合します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "乗り換えた後もChatGPTやCodexで更新できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Codexで手元のコードを編集・検証する方法はあります。移行先への公開手順は別途用意が必要です。Sites上での編集・公開と同じ操作を続けられるとは限らないため、乗り換える前に修正から再公開まで試しておきます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "独自ドメインを変えずに乗り換えられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "管理できる独自ドメインを移行先へ接続し、同じページのURLを設定できれば、URLを保つ移行を検討できます。新しい公開先を確認してからDNSの接続先を変更するのが基本です。Sitesの標準URLをそのまま外部で使うこととは異なります。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較",
+  "description": "ChatGPT Sitesで作ったサイトの維持費が気になっていませんか？公開先を替えても、保存データやログイン機能までそのまま移せるとは限りません。移行先4サービスの料金と機能を比較し、サイトを残して乗り換えるための確認点を整理します。",
+  "url": "https://tsubasa-memo.github.io/chatgpt-sites-migration.html",
+  "image": "https://tsubasa-memo.github.io/og/chatgpt-sites-migration.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-11-25",
+  "dateModified": "2026-11-25",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Webサイト運営",
+      "item": "https://tsubasa-memo.github.io/archive.html#web"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="/search.css"/>
+<script src="/search.js" defer=""></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#web"><span class="cat-dot" style="background:#e8a8b8"></span>Webサイト運営</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> &gt; <a href="archive.html#web">Webサイト運営</a> &gt; ChatGPT Sitesの乗り換え</nav>
+<div class="article-hero"><img src="/thumbs/chatgpt-sites-migration.webp" alt="ノートパソコンの前で考える人物と、ChatGPTや4つの移行先のアイコン" width="640" height="360" loading="eager"></div>
+<span class="article-tag">Webサイト運営</span>
+<h1 class="article-title">ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較</h1>
+<div class="article-meta-line"><span>公開: 2026年11月25日</span><span>更新: 2026年11月25日</span></div>
+<!-- article-content:start -->
+<p>こんにちは、ツバサです。</p>
+<p>ChatGPT Sitesの無料ホスティングは、2026年12月31日で終了します。OpenAIは、2027年1月1日からPlus・Pro・Businessの月間ホスティング枠を超えた利用分に課金すると案内しています。</p>
+<p>月間枠はPlusが125クレジット、Proが375クレジット、Businessが1席あたり125クレジットです。たとえばデータベースに1 GiBの記録を1か月保存すると、保存料金150と基本料金25で約175クレジットとなり、通信料金が加わる前にPlusの枠を超えます。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/usage-and-cost" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Usage and cost</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<p>この料金変更を受け、この記事ではCloudflare Workers、Netlify、Vercel、GitHub Pagesの料金と無料枠を比較します。料金に加えて、データやログイン機能を移せるか、乗り換え後もAIで更新できるかが判断の基準です。</p>
+<div class="point-box">
+<p><strong>この記事でわかること</strong></p>
+<ul>
+<li>ChatGPT Sitesは、2027年1月1日以降も月間ホスティング枠内なら追加のホスティング料金は不要です。</li>
+<li>ソースコードはCodexに書き出しを依頼できますが、データベース（DB）の記録やアップロードファイルの取得は別に確認が必要です。</li>
+<li>移行先の無料枠を比べる際は、保存容量に加え、通信・処理・公開回数などの上限も確認します。</li>
+<li>無料プランで商用利用できるかや、乗り換え後もAIで更新できるかはサービスごとに異なります。</li>
+<li>独自ドメインとページのURLを保つ移行と、URLを変更する移行では、検索対策の手順が同じではありません。</li>
+</ul>
+</div>
+<div class="toc">
+<p class="toc-title">目次</p>
+<ol>
+<li><a href="#sec1">ChatGPT Sitesの乗り換え先4サービスの比較</a></li>
+<li><a href="#sec2">ChatGPT Sitesを使い続ける場合の料金と無料枠</a></li>
+<li><a href="#sec3">ChatGPT Sitesから移すコード・データ・機能</a></li>
+<li><a href="#sec4">乗り換え後もAIでサイトを更新する方法</a></li>
+<li><a href="#sec5">独自ドメインとURLを引き継ぐ移行手順</a></li>
+<li><a href="#sec6">FAQ</a></li>
+</ol>
+</div>
+<h2 id="sec1">ChatGPT Sitesの乗り換え先4サービスの比較</h2>
+<p>サイトを公開するサービスは、ページを表示する機能と、データを保存・処理する機能を分けて比べます。静的サイトとは、用意したHTML・CSS・JavaScriptなどを配信するサイトです。ブラウザー内で表示を切り替えることはできますが、利用者間で共有する記録を保存するにはDBなどの仕組みを用意します。</p>
+<p>4サービスの主な料金と条件は次のとおりです。無料枠の全上限や追加機能の費用を含む総額表ではありません。ドルは米ドルで、税・為替手数料・独自ドメインの取得更新費は別に確認します。各社の「クレジット」は換算方法が違うため、数字の大小では比較できません。</p>
+<div aria-label="ChatGPT Sitesの乗り換え先4サービスの料金・機能・利用条件" class="table-wrap" role="region" tabindex="0"><table aria-label="ChatGPT Sitesの乗り換え先4サービスの料金・機能・利用条件">
+<thead>
+<tr>
+<th scope="col">公開先</th>
+<th scope="col">主な料金・無料枠</th>
+<th scope="col">サイトに残せる機能と確認点</th>
+<th scope="col">用途・運用上の条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloudflare Workers</td>
+<td>静的ファイルへのリクエストは無料・無制限（Workers Cachingからの配信は課金対象）。Workerの処理はFreeで1日10万リクエスト、Paidは月5ドルから</td>
+<td>DBはD1、ファイル保存はR2などを組み合わせる。料金と上限は機能別</td>
+<td>コードと保存先の設定を管理する。D1 Freeは1 DBあたり500 MBまで</td>
+</tr>
+<tr>
+<td>Netlify</td>
+<td>Freeは月300クレジット。Personalは月9ドル・1,000クレジット、Proは月20ドル・3,000クレジットから</td>
+<td>DB・ファイル保存・ログイン機能がある。Sitesからのデータ移行と接続変更は必要</td>
+<td>Freeでも商用利用可能。月間上限による停止条件がある</td>
+</tr>
+<tr>
+<td>Vercel</td>
+<td>Hobbyは無料。Proは月20ドルで公開操作ができる1席と20ドル分の利用クレジットを含む</td>
+<td>Next.jsなどに対応。DBやファイルの保存先を別途設定する</td>
+<td>Hobbyは規約上「個人利用または非商用利用」に限定。Proには追加利用分などの料金がある</td>
+</tr>
+<tr>
+<td>GitHub Pages</td>
+<td>GitHub Freeでは公開リポジトリから利用可能。公開サイトは1 GBまで</td>
+<td>HTML・CSS・JavaScriptを配信。DBやサーバー側処理はPages単体では提供しない</td>
+<td>オンライン事業・EC・商取引を主目的とするサイト・商用SaaSの無料ホストとしては利用不可</td>
+</tr>
+</tbody>
+</table></div>
+<p>比較は公式仕様に基づき、4サービスへの実移行は未検証です。</p>
+<h3>Cloudflare Workers：静的配信とDB・ファイル保存を分けて検討</h3>
+<p>紹介ページや作品集など、用意したファイルを配信する用途では、Cloudflare Workersの静的ファイル配信が候補になります。静的ファイルへのリクエストは無料・無制限で、ファイル自体の保存にも追加料金はありません。ただし、ページの生成やデータ処理でWorkerを呼び出す場合は、Workersの利用量として扱われます。</p>
+<p>Workers Cachingを有効にすると、保存した応答をキャッシュから返すリクエストは、静的ファイルを含めてWorkerと同じリクエスト単価で課金されます。</p>
+<a class="cite-card" href="https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Cloudflare Workers：Billing and Limitations</span><span class="cite-url">developers.cloudflare.com</span></span></a>
+<a class="cite-card" href="https://developers.cloudflare.com/workers/platform/pricing/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Cloudflare Workers：Pricing</span><span class="cite-url">developers.cloudflare.com</span></span></a>
+<p>DBに使うD1は、無料枠の合計容量と1つのDBの上限が異なります。Freeの保存容量は合計5 GBですが、1 DBは500 MBまでです。1 GiBのDBを1つのまま移すなら、この上限を超えます。容量に加え、読み書きする行数にも利用枠があります。</p>
+<a class="cite-card" href="https://developers.cloudflare.com/d1/platform/pricing/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Cloudflare D1：Pricing</span><span class="cite-url">developers.cloudflare.com</span></span></a>
+<a class="cite-card" href="https://developers.cloudflare.com/d1/platform/limits/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Cloudflare D1：Limits</span><span class="cite-url">developers.cloudflare.com</span></span></a>
+<p>アップロードされた画像やPDFなどには、ファイル保存サービスのR2が候補になります。Standardの無料枠は、毎月10 GB-monthの保存容量、書き込みなどのClass A操作100万回、読み込みなどのClass B操作1,000万回です。GB-monthは容量と保存期間の単位で、1 GBを1か月保存すると1 GB-monthです。静的ファイル配信の無料条件と、利用者が追加したファイルの保存条件を分けて計算します。</p>
+<a class="cite-card" href="https://developers.cloudflare.com/r2/pricing/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Cloudflare R2：Pricing</span><span class="cite-url">developers.cloudflare.com</span></span></a>
+<p>Cloudflare Pagesもありますが、公式ドキュメントで新規プロジェクト向けに案内されているのはWorkersです。新しく移行先を作る場合はWorkersを中心に比較します。PagesのURLやGitHub Pagesとの基本的な違いは、関連記事で整理しています。</p>
+<a class="cite-card" href="https://developers.cloudflare.com/pages/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Cloudflare：Cloudflare Pages</span><span class="cite-url">developers.cloudflare.com</span></span></a>
+<a class="cite-card" href="cloudflare-pages-vs-github-pages.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">pages.devとは?GitHub Pagesとの違いとAIでの作り方</span><span class="cite-url">tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html</span></span></a>
+<h3>Netlify：商用利用とAIでの修正を含めて検討</h3>
+<p>無料枠で商用サイトを公開したい人や、移行後も文章の指示でサイトを修正したい人には、Netlifyが候補になります。Freeでは商用利用が認められており、DB・ファイル保存・ログインも利用できます。</p>
+<a class="cite-card" href="https://www.netlify.com/solutions/web-applications/" rel="noopener nofollow" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Netlify：Web apps</span><span class="cite-url">netlify.com</span></span></a>
+<p>Freeの月300クレジットには、公開や通信などの利用量が含まれます。本番への公開1回が15クレジット、転送量1 GBが20クレジット、Webリクエスト1万回が2クレジットです。DBやプログラムの処理、AI利用にも料金区分があるため、アクセスが少なくても更新頻度とAIの使用量を確認します。</p>
+<a class="cite-card" href="https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Netlify：How credits work</span><span class="cite-url">docs.netlify.com</span></span></a>
+<p>月間上限に達した場合、公式料金FAQには次の課金期間までサイトが一時停止し、1つのプロジェクトが上限を超えると同じアカウント内の全プロジェクトが停止すると記載されています。無料枠の大きさに加え、複数サイトを同じアカウントで運用する場合の影響も判断材料になります。</p>
+<a class="cite-card" href="https://www.netlify.com/pricing/" rel="noopener nofollow" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Netlify：Pricing and Plans</span><span class="cite-url">netlify.com</span></span></a>
+<h3>Vercel：サイトの作り方と利用プランを確認</h3>
+<p>書き出したコードがNext.jsで作られているなら、Vercelは対応状況を調べる候補です。Next.jsは、ページの表示とサーバー側の処理を組み立てるための開発用の仕組みです。公式資料では、Vercelへの公開方法が案内されています。</p>
+<a class="cite-card" href="https://vercel.com/docs/frameworks/full-stack/nextjs" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Vercel：Next.js on Vercel</span><span class="cite-url">vercel.com</span></span></a>
+<p>Hobbyは無料ですが、利用規約では「個人利用または非商用利用」に用途が限定されています。仕事で使うサイトを、無料という理由だけでHobbyに決めるのは避け、Proの条件と照らし合わせます。Proは月20ドルで公開操作ができる1席を含み、追加の有料席は1席月20ドル、利用枠を超える処理などは別料金です。</p>
+<a class="cite-card" href="https://vercel.com/legal/terms" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Vercel：Terms of Service</span><span class="cite-url">vercel.com</span></span></a>
+<a class="cite-card" href="https://vercel.com/docs/plans/pro-plan" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Vercel：Vercel Pro Plan</span><span class="cite-url">vercel.com</span></span></a>
+<p>保存機能については、公式案内でファイル保存にVercel Blob、DBにはMarketplace経由のサービスなどが示されています。ページを公開できても、SitesのDB接続をそのまま引き継げるとは限りません。保存先の契約・料金と、コードからの接続方法を確認します。</p>
+<a class="cite-card" href="https://vercel.com/docs/storage" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Vercel：Vercel Storage overview</span><span class="cite-url">vercel.com</span></span></a>
+<h3>GitHub Pages：静的ページとして公開できる用途向け</h3>
+<p>記事や作品紹介を中心に、HTML・CSS・JavaScriptとして公開できるなら、GitHub Pagesが候補になります。GitHub Freeでは公開リポジトリが利用対象です。リポジトリはコードを保存・管理する場所で、公開リポジトリではコードも第三者が閲覧できます。</p>
+<a class="cite-card" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">GitHub：What is GitHub Pages?</span><span class="cite-url">docs.github.com</span></span></a>
+<p>公開サイトの容量は1 GBまで、月間転送量は100 GBのソフトリミットです。ソフトリミットを超えると、配信できなくなる場合や運用方法の変更を求められる場合があります。用途にも制限があり、オンライン事業やEC、商取引を主目的とするサイト、商用SaaSを運営するための無料ホスティングとしては利用できないとされています。</p>
+<a class="cite-card" href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">GitHub：GitHub Pages limits</span><span class="cite-url">docs.github.com</span></span></a>
+<p>フォームの回答保存やログインがあるサイトは、それらを担う外部サービスと接続する構成まで検討します。PagesへHTMLを置く作業だけでは、サーバー側の処理やDBは移りません。記事を増やしていくブログが目的なら、noteやWordPressとの運用の違いも確認できます。</p>
+<a class="cite-card" href="blog-platform-comparison.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span><span class="cite-url">tsubasa-memo.github.io/blog-platform-comparison.html</span></span></a>
+<h2 id="sec2">ChatGPT Sitesを使い続ける場合の料金と無料枠</h2>
+<h3>2027年1月1日からの月間ホスティング枠</h3>
+<p>OpenAIが案内するホスティングの無料期間は2026年12月31日までです。2027年1月1日以降は、Plusが月125、Proが月375、Businessが1席あたり月125クレジットの枠を持ち、超過分が課金対象になります。この枠は作成した複数のSitesで共有し、サイトの作成・編集に使うCodexの利用量とは別です。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/usage-and-cost" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Usage and cost</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<h3>DB・ファイル・通信・独自ドメインの料金</h3>
+<p>2027年1月1日から適用される、公式料金表の概算レートです。Enterpriseは組織の契約条件によるため、以下の枠だけで判断しません。</p>
+<div aria-label="ChatGPT Sitesの2027年1月1日以降のホスティング料金" class="table-wrap" role="region" tabindex="0"><table aria-label="ChatGPT Sitesの2027年1月1日以降のホスティング料金">
+<thead>
+<tr>
+<th scope="col">利用項目</th>
+<th scope="col">課金単位</th>
+<th scope="col" style="text-align:right">概算クレジット</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保存機能を持たないサイトの基本料金</td>
+<td>1サイト・1か月</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>保存機能を持つサイトの基本料金。空のDBも含む</td>
+<td>1サイト・1か月</td>
+<td style="text-align:right">25</td>
+</tr>
+<tr>
+<td>通信</td>
+<td>10万リクエスト</td>
+<td style="text-align:right">15</td>
+</tr>
+<tr>
+<td>DB内の記録</td>
+<td>1 GiBを1か月保存</td>
+<td style="text-align:right">150</td>
+</tr>
+<tr>
+<td>アップロードファイル</td>
+<td>1 GiBを1か月保存</td>
+<td style="text-align:right">3.75</td>
+</tr>
+<tr>
+<td>独自ドメインの接続</td>
+<td>1ドメイン・1か月</td>
+<td style="text-align:right">25</td>
+</tr>
+</tbody>
+</table></div>
+<p>独自ドメインの取得費は別です。リクエストはページや画像などの読み込みを数える単位なので、訪問者数とは一致しません。</p>
+<p>DBに1 GiBの記録を1か月保存する公式例は、基本料金25と保存料金150を合わせて約175クレジットです。Plusの月125を50クレジット上回り、ここに通信・ファイル保存・独自ドメインの利用分が加わります。1 GiBは約1.07 GBです。</p>
+<p>一方、画像などのアップロードファイルは1 GiBあたり3.75クレジットという別区分です。「サイトに1 GiBのデータがある」だけでは費用は決まらず、DBの記録とファイルの容量を分ける必要があります。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/usage-and-cost" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Usage and cost</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<h3>継続と移行の比較に含める費用</h3>
+<p>移行で減らせる費用を確認するときは、現在のDB容量、ファイル容量、リクエスト数を使います。複数のSitesがあれば合計し、独自ドメインなどの固定費も加えて、契約プランの月間枠に収まるか確かめます。</p>
+<p>そのうえで、移行先のホスティング、DB、ファイル保存、AIでの編集に必要な費用を見積もります。ChatGPTをほかの用途でも契約し続けるなら、契約料金全額がサイト移行によって不要になる計算にはしません。Sitesの追加料金が発生せず、データやログインの設定を維持したい場合は、継続も比較に残ります。</p>
+<h2 id="sec3">ChatGPT Sitesから移すコード・データ・機能</h2>
+<h3>ソースコードの書き出しと公開先への対応</h3>
+<p>ChatGPT Sitesのソースコードは、Codexに書き出しを依頼する方法が公式に案内されています。まずコードを取得し、移行先で公開用ファイルを作れるか、必要な処理を実行できるかを確かめます。サイトごとに構成が違うため、書き出したファイルをアップロードするだけで済むかは個別の確認が必要です。</p>
+<a class="cite-card" href="https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Creating and using ChatGPT Sites</span><span class="cite-url">help.openai.com</span></span></a>
+<p>確認を依頼するときは、移行先の名前だけでなく、「保存している記録」「ログインが必要なページ」「変更したくないURL」を伝えると、調べる対象が明確になります。たとえば、次のように依頼内容を整理できます。</p>
+<blockquote>
+<p>このサイトのソースコードを書き出してください。使用している開発用の仕組み、DB、ファイル保存、ログイン、外部サービスとの接続を確認し、移行先で変更が必要な箇所を説明してください。データや公開中のサイトを変更せず、確認できない点は区別してください。</p>
+</blockquote>
+<p>静的サイトと、サーバー側で処理するサイトの違いは、次の記事で確認できます。</p>
+<a class="cite-card" href="static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a>
+<h3>DBの記録・アップロードファイル・参照情報</h3>
+<p>公式説明では、Sitesの記録保存にはD1、画像やPDFなどにはR2、検索用の情報とファイルを組み合わせる場合には両方を使う構成が示されています。コードのコピーに、公開後に増えた記録やファイルも含まれているかを確かめます。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/data-and-connections" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Data and connections</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<p>公式ヘルプには、DBの記録とアップロードファイルをまとめてバックアップし、新しいSiteへ復元する標準機能はないと記載されています。書き出したデータがある場合は手作業での再構築に使えるとされていますが、個別データを書き出す手順は記載されていません。コードを過去の版へ戻しても、DBやアップロードファイルは戻らないため、コードの版を保存したことと、データを確保したことは分けて扱います。</p>
+<a class="cite-card" href="https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Creating and using ChatGPT Sites</span><span class="cite-url">help.openai.com</span></span></a>
+<p>取得方法が分かったら、次の項目を移行前後で照合します。</p>
+<div aria-label="コード・データ・ファイルの移行前後に確認する項目" class="table-wrap" role="region" tabindex="0"><table aria-label="コード・データ・ファイルの移行前後に確認する項目">
+<thead>
+<tr>
+<th scope="col">対象</th>
+<th scope="col">取得時に確認する内容</th>
+<th scope="col">移行先で照合する内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ソースコード</td>
+<td>表示・処理に必要なファイルと、公開用ファイルの作成方法</td>
+<td>ページ、リンク、フォーム、エラー時の表示</td>
+</tr>
+<tr>
+<td>DBの記録</td>
+<td>項目名、値、レコードの識別子、利用者との対応</td>
+<td>件数に加え、記録の内容と所有者の対応</td>
+</tr>
+<tr>
+<td>画像・PDFなど</td>
+<td>ファイル本体と、元のファイル名・識別子</td>
+<td>ファイルを開けるか、内容が欠けていないか</td>
+</tr>
+<tr>
+<td>ファイルの参照情報</td>
+<td>どの記録から、どのファイルを開くか</td>
+<td>一覧・詳細ページから正しいファイルが表示されるか</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sitesと移行先が同じD1・R2を使っていても、契約や保存先の設定まで共通とは限りません。保存先を設定し直し、取得した記録とファイルを対応づける工程を含めて確認します。</p>
+<h3>ログインと外部サービス連携の移行</h3>
+<p>ログインや外部サービスとの連携は、表示用のコードとは別に確かめます。公式説明では、Sign in with ChatGPTのログイン処理をSites側が提供し、接続アプリは訪問者ごとの接続先と権限を使う仕組みです。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/data-and-connections" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Data and connections</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<p>これらのSites固有機能を、今回の4つの公開先でそのまま使えるかは未検証です。ログイン後に表示される記録、利用者ごとの閲覧・編集権限、外部サービスの接続先を確認し、移行先で同じ条件を実現できるか調べます。確認が終わるまでは、ログインを使うサイトの移行を、コードの公開だけで完了したと判断できません。</p>
+<h2 id="sec4">乗り換え後もAIでサイトを更新する方法</h2>
+<h3>コードの編集・確認・再公開を続ける方法</h3>
+<p>公開先を変更しても、手元のコードをCodexで編集・検証する方法はあります。OpenAIの案内では、Codex CLIやIDE拡張によるローカルプロジェクトの編集・テストが可能です。移行後は、そのコードを移行先の方法で公開します。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/creating-a-site" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Create a site</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<p>移行時には、文章を1か所直してプレビューを確認し、公開先へ反映するまでの作業を確かめます。最初の公開だけができても、次の修正を反映できなければ更新を続けられません。コードの保存場所、公開方法、問題が起きたときに前のコードへ戻す方法を、使う環境に合わせて記録します。</p>
+<h3>NetlifyのAgent Runnersを使う方法</h3>
+<p>ブラウザー上で文章による修正依頼を続けたい場合は、NetlifyのAgent Runnersが比較対象になります。変更を依頼するとAIがコードを修正し、ビルドを確認してプレビューを作る流れです。公開前に結果を確認でき、Freeを含む各プランで提供されています。</p>
+<a class="cite-card" href="https://www.netlify.com/platform/agent-runners/" rel="noopener nofollow" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Netlify：Agent Runners</span><span class="cite-url">netlify.com</span></span></a>
+<p>Agent Runnersはプランのクレジットを使います。AI推論と処理の両方が計上の対象です。ホスティングの無料枠に収まるかを調べる際は、AIでの修正分も含めます。Sitesから取り出したコードを読み込めるか、保存データを保って変更できるかは、移行対象での確認が必要です。</p>
+<a class="cite-card" href="https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Netlify：How credits work</span><span class="cite-url">docs.netlify.com</span></span></a>
+<h2 id="sec5">独自ドメインとURLを引き継ぐ移行手順</h2>
+<h3>新しい公開先で表示・保存・権限を確認</h3>
+<p>移行は、新しい環境でコピーを確認してから、利用者のアクセス先を切り替える順で進めます。ページや画像の表示に加え、フォーム送信、送信した記録の再表示、ファイルのダウンロードまで試します。ログインが必要な機能は、利用者を切り替えたときの表示や編集権限も確認対象です。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Google：Changing your hosting</span><span class="cite-url">developers.google.com</span></span></a>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/creating-a-site" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Create a site</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<h3>独自ドメインとページのURLを保つ場合</h3>
+<p>管理できる独自ドメインを使っており、移行先でも同じドメインとページのURLを設定できるなら、URLを変えずに公開先を変更する方法を検討できます。ドメインのDNSは、アクセスをどのサーバーへ送るかを指定する設定です。新環境の確認後に接続先を変更し、新旧のアクセス状況を確認します。</p>
+<p>ドメインが同じでも、ページのパスが変わればURL変更を伴います。トップページだけでなく、個別ページや画像・PDFのURLも比較します。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Google：Changing your hosting</span><span class="cite-url">developers.google.com</span></span></a>
+<p>Sitesの独自ドメインは、利用者が保有し、DNSを変更できるドメインを接続する方式です。Sitesから割り当てられた標準URLは、保有する独自ドメインと分けて扱います。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/managing-a-site" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Manage a site</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+<h3>URLが変わる場合の転送と検索設定</h3>
+<p>URLが変わる場合は、古いページと新しいページの対応を決めます。Googleの移転ガイドは、技術的に可能なら301や308の恒久転送を使い、新URLに合わせて内部リンク、正規URLを示すcanonical、サイトマップを更新する手順を案内しています。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Google：Site Moves and Migrations</span><span class="cite-url">developers.google.com</span></span></a>
+<p>Sitesの公式ヘルプにある転送の説明は、ワークスペースのアドレスを保ったままSiteのURLを変更する場合です。ワークスペースのアドレス変更や独自ドメインは対象外とされ、外部サイトへの恒久転送は案内されていません。Sitesの標準URLから外部サイトへの恒久転送を設定できるかは未検証です。</p>
+<a class="cite-card" href="https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Creating and using ChatGPT Sites</span><span class="cite-url">help.openai.com</span></span></a>
+<p>移行先で転送機能を使えても、古いURLからの転送は旧環境側で設定できる必要があります。標準URLを使っていた場合は、その可否を確かめてから移転方法を決めます。</p>
+<p>検索結果に載せるページは、公開時にテスト用のnoindexやクロール制限を解除し、Search Consoleで取得できるか確認します。noindexは検索結果に掲載しないよう指定する設定です。URLを変更する移行では検索表示が一時的に変動することがあると、Googleは説明しています。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Google：Site Moves and Migrations</span><span class="cite-url">developers.google.com</span></span></a>
+<h3>移行後の確認と旧環境の整理</h3>
+<p>新しい環境でページ・データ・権限を確認し、利用者と検索エンジンが新しい公開先へアクセスしていることを確かめてから、旧環境を整理します。URLを変えた場合は転送を残す期間も必要です。Googleは、転送を一般に少なくとも1年間維持するよう案内しています。転送が旧サイトに依存する構成なら、旧サイトを削除する前にその影響を確認します。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Google：Site Moves and Migrations</span><span class="cite-url">developers.google.com</span></span></a>
+<p>公開費用を下げる移行でも、DBやログインの設定が増える場合があります。表示中心のサイトは静的配信の条件から、保存機能があるサイトはデータと権限の移行方法から、候補を絞ります。使い続ける費用と、移行後に更新を続けられるかの両方が、公開先を決める基準です。</p>
+<div class="faq-section"><h2 id="sec6">FAQ</h2><div class="faq-item"><p class="fq"><strong>Q. ChatGPT Sitesは2027年から必ず追加料金がかかりますか？</strong></p>
+<p class="fa">A. 月間ホスティング枠内なら、追加のホスティング料金は不要です。2027年1月1日からPlus・Pro・Businessの枠を超えた利用分が課金対象になります。ChatGPTの契約料金と、ホスティングの超過料金は分けて確認します。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/usage-and-cost" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Usage and cost</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+</div><div class="faq-item"><p class="fq"><strong>Q. ChatGPT Sitesから無料で乗り換えられますか？</strong></p>
+<p class="fa">A. 無料枠のある公開先はあります。Cloudflare Workers、Netlify、Vercel、GitHub Pagesは、いずれも無料枠のあるサービスです。必要な保存容量、処理・通信量、商用利用条件を満たすかで選び、独自ドメインやAI編集の費用も別に確認します。主な条件は<a href="#sec1">4サービスの比較</a>に記載しています。</p>
+</div><div class="faq-item"><p class="fq"><strong>Q. ChatGPT Sitesのソースコードはダウンロードできますか？</strong></p>
+<p class="fa">A. Codexにソースコードの書き出しを依頼する方法が、公式に案内されています。取得したコードが移行先で使えるかは、開発用の仕組みや保存機能ごとに確認します。コードを取得したことだけで、DBやアップロードファイルの取得まで完了したとは判断できません。</p>
+<a class="cite-card" href="https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Creating and using ChatGPT Sites</span><span class="cite-url">help.openai.com</span></span></a>
+</div><div class="faq-item"><p class="fq"><strong>Q. DBの記録や画像もまとめて移せますか？</strong></p>
+<p class="fa">A. DBとアップロードファイルをまとめてバックアップし、新しいSiteへ復元する標準機能はありません。公式ヘルプには、書き出したデータがあれば手作業で再構築できるとありますが、個別データの書き出し可否と手順は未検証です。外部への移行では、記録とファイルの取得方法を確かめ、内容と参照関係を移行前後で照合します。</p>
+<a class="cite-card" href="https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Creating and using ChatGPT Sites</span><span class="cite-url">help.openai.com</span></span></a>
+</div><div class="faq-item"><p class="fq"><strong>Q. 乗り換えた後もChatGPTやCodexで更新できますか？</strong></p>
+<p class="fa">A. Codexで手元のコードを編集・検証する方法はあります。移行先への公開手順は別途用意が必要です。Sites上での編集・公開と同じ操作を続けられるとは限らないため、乗り換える前に修正から再公開まで試しておきます。</p>
+<a class="cite-card" href="https://learn.chatgpt.com/docs/sites/creating-a-site" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">OpenAI：Create a site</span><span class="cite-url">learn.chatgpt.com</span></span></a>
+</div><div class="faq-item"><p class="fq"><strong>Q. 独自ドメインを変えずに乗り換えられますか？</strong></p>
+<p class="fa">A. 管理できる独自ドメインを移行先へ接続し、同じページのURLを設定できれば、URLを保つ移行を検討できます。新しい公開先を確認してからDNSの接続先を変更するのが基本です。Sitesの標準URLをそのまま外部で使うこととは異なります。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Google：Changing your hosting</span><span class="cite-url">developers.google.com</span></span></a>
+</div></div>
+<!-- article-content:end -->
+<div class="related">
+<h3>関連する記事</h3>
+<a class="cite-card" href="cloudflare-pages-vs-github-pages.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">pages.devとは?GitHub Pagesとの違いとAIでの作り方</span><span class="cite-url">tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html</span></span></a>
+<a class="cite-card" href="static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a>
+<a class="cite-card" href="blog-platform-comparison.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">note・WordPress・GitHub Pages比較｜副業と収益化で選ぶ</span><span class="cite-url">tsubasa-memo.github.io/blog-platform-comparison.html</span></span></a>
+</div>
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="retouch-apps.html">
+<div class="featured-thumb">
+<img alt="スマホのレタッチアプリおすすめ8選｜肌補正・商品・モデル着用写真に" height="160" loading="lazy" src="thumbs/retouch-apps.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>スマホのレタッチアプリおすすめ8選｜肌補正・商品・モデル着用写真に</h2>
+<p class="card-desc">Snapseed・Lightroomなど8本を用途別に比較。商品・モデル着用写真の肌、服の色、背景、複数カットを補正する際の選び方を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注12社を比較【2026年版】" height="160" loading="lazy" src="thumbs/retouch-pricing-database.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注12社を比較【2026年版】</h2>
+<p class="card-desc">色補正・肌レタッチ・切り抜き・合成など作業内容別の相場と、12社のサービス料金を1ページに集約。外注先を探している方の比較用に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="photo-backup-comparison.html">
+<div class="featured-thumb">
+<img alt="写真バックアップ3社比較｜Googleフォト・iCloud・Amazon Photos" height="160" loading="lazy" src="thumbs/photo-backup-comparison.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真バックアップ3社比較｜Googleフォト・iCloud・Amazon Photos</h2>
+<p class="card-desc">Googleフォト・iCloud・Amazon Photosの無料容量・月額料金・自動バックアップの使い勝手を比較。</p>
+<span class="card-tag">写真・撮影</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="what-is-retouch.html">
+<div class="featured-thumb">
+<img alt="レタッチとは？リタッチとの違い・どっちが正しい表記か・加工との使い分け" height="160" loading="lazy" src="thumbs/what-is-retouch.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>レタッチとは？リタッチとの違い・どっちが正しい表記か・加工との使い分け</h2>
+<p class="card-desc">レタッチとリタッチは同じ意味で、表記として一般的なのは「レタッチ」。修正・補正・加工との使い分けも定義から整理した。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>

@@ -1411,7 +1411,7 @@
 <changefreq>monthly</changefreq>
 </url>
 <url><loc>https://tsubasa-memo.github.io/press-release-citation.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq></url>
-<url><loc>https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>https://tsubasa-memo.github.io/cloudflare-pages-vs-github-pages.html</loc><lastmod>2026-11-25</lastmod><changefreq>monthly</changefreq></url>
 <url><loc>https://tsubasa-memo.github.io/php2shell-timeline.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq></url>
 <url><loc>https://tsubasa-memo.github.io/onamae-com-reputation.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq></url>
 <url><loc>https://tsubasa-memo.github.io/wordpress-migration-options.html</loc><lastmod>2026-11-14</lastmod><changefreq>monthly</changefreq></url>
@@ -1438,6 +1438,11 @@
   <url>
     <loc>https://tsubasa-memo.github.io/ai-shopping-fake-site.html</loc>
     <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tsubasa-memo.github.io/chatgpt-sites-migration.html</loc>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
