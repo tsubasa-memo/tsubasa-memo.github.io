@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YYBFXHXMM6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YYBFXHXMM6');
+</script>
+<meta charset="utf-8"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503265021738697" crossorigin="anonymous"></script>
+<title>WordPressはオワコンなのか？　AI時代には何でサイトを作るのが正解？｜ツバサのメモ帳</title>
+<meta name="description" content="AIを使えば簡単にサイトを作れる今、WordPressを選ぶ理由は？　本体・プラグインの脆弱性、保守の負担から、WordPressを使い続けるメリットとデメリットを考える。"/>
+<meta name="keywords" content="WordPress オワコン,WordPress シェア 低下,WordPress 脆弱性,AI サイト制作,WordPress メリット デメリット"/>
+<meta property="og:title" content="WordPressはオワコンなのか？　AI時代には何でサイトを作るのが正解？"/>
+<meta property="og:description" content="AIを使えば簡単にサイトを作れる今、WordPressを選ぶ理由は？　本体・プラグインの脆弱性、保守の負担から、WordPressを使い続けるメリットとデメリットを考える。"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:url" content="https://tsubasa-memo.github.io/wordpress-ai-security.html"/>
+<meta property="og:site_name" content="ツバサのメモ帳"/>
+<meta property="og:image" content="https://tsubasa-memo.github.io/og/wordpress-ai-security.webp"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="WordPressはオワコンなのか？　AI時代には何でサイトを作るのが正解？"/>
+<meta name="twitter:description" content="AIを使えば簡単にサイトを作れる今、WordPressを選ぶ理由は？　本体・プラグインの脆弱性、保守の負担から、WordPressを使い続けるメリットとデメリットを考える。"/>
+<meta name="twitter:image" content="https://tsubasa-memo.github.io/og/wordpress-ai-security.webp"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://tsubasa-memo.github.io/wordpress-ai-security.html"/>
+<link rel="alternate" hreflang="ja-JP" href="https://tsubasa-memo.github.io/wordpress-ai-security.html"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "WordPressは脆弱性が多いので、使わない方がいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必要な編集機能と保守の負担を比べて判断します。本体や追加機能の更新を続けられないまま公開する状態は改善が必要です。WordPressを続けて保守を任せる方法と、使う機能を絞って別の仕組みに変える方法を比較できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AIで作ったサイトなら、更新や保守は不要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不要にはなりません。公開するプログラム、利用者の権限、保存するデータなどによって確認事項が変わります。静的なページだけの構成と、ログインやデータベースを備えたアプリでは、管理する対象が異なります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WordPressの管理画面を残して、公開ページだけ変えられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "変えられます。記事管理をWordPressに残し、別の仕組みで公開ページを作る方法があります。ただし、残したWordPressの更新と、新しい公開側の管理が必要です。プレビューやフォームなどの連携も確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WordPressをやめるとSEOで有利になりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WordPressをやめることだけで、検索順位が上がるとは言えません。移行ではURLや転送の扱いも重要です。見た目を作り直すだけで終えず、既存ページが新しいサイトでも正しく表示されるか確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WordPressの利用率が下がったのは、AIで作るサイトが増えたからですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "W3Techsの数字だけでは、そう判断できません。CMSを検出していない「None」という区分も、AIで作ったサイトの数を示すものではありません。同社のCMS分類にはAstro、GitHub Pages、Lovableも含まれるため、静的サイトやAI制作サイトがすべて「None」になるわけではありません。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "WordPressはオワコンなのか？　AI時代には何でサイトを作るのが正解？",
+  "description": "AIを使えば簡単にサイトを作れる今、WordPressを選ぶ理由は？　本体・プラグインの脆弱性、保守の負担から、WordPressを使い続けるメリットとデメリットを考える。",
+  "url": "https://tsubasa-memo.github.io/wordpress-ai-security.html",
+  "image": "https://tsubasa-memo.github.io/og/wordpress-ai-security.webp",
+  "author": {
+    "@type": "Person",
+    "name": "ツバサ",
+    "url": "https://tsubasa-memo.github.io/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツバサのメモ帳",
+    "url": "https://tsubasa-memo.github.io/"
+  },
+  "datePublished": "2026-11-27",
+  "dateModified": "2026-11-27",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://tsubasa-memo.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Webサイト運営",
+      "item": "https://tsubasa-memo.github.io/archive.html#web"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "WordPressはオワコンなのか？　AI時代には何でサイトを作るのが正解？"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="/search.css"/>
+<script src="/search.js" defer=""></script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x6p7vk8ifs");
+</script>
+</head>
+<body>
+
+<header class="mobile-header">
+<div class="mobile-header-inner">
+<a href="/" class="site-name">ツバサのメモ帳</a>
+<nav class="site-nav">
+<a href="/archive.html">記事一覧</a>
+<a href="/glossary/">用語集</a>
+</nav>
+</div>
+</header>
+
+<div class="page-layout">
+
+<aside class="left-sidebar">
+<div class="sidebar-block">
+<div class="sb-profile">
+<div class="avatar"><img src="/icons/tsubasa.png" alt="ツバサ" width="80" height="80"></div>
+<div class="sb-site-name">ツバサのメモ帳</div>
+</div>
+</div>
+<div class="sidebar-block">
+<ul class="sb-nav">
+<li><a href="/">ホーム</a></li>
+<li><a href="/archive.html">記事一覧</a></li>
+<li><a href="/glossary/">用語集</a></li>
+<li><a href="/about.html">運営者情報</a></li>
+<li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div class="sidebar-block">
+<p class="sb-label">カテゴリ</p>
+<ul class="sb-categories">
+<li><a href="/archive.html#camera"><span class="cat-dot" style="background:#8bc4a0"></span>カメラ</a></li>
+<li><a href="/archive.html#retouch"><span class="cat-dot" style="background:#c4b5e0"></span>レタッチ・画像加工</a></li>
+<li><a href="/archive.html#photo"><span class="cat-dot" style="background:#a8c8e8"></span>写真・撮影</a></li>
+<li><a href="/archive.html#ec"><span class="cat-dot" style="background:#a8d8b9"></span>EC・実務</a></li>
+<li><a href="/archive.html#ai"><span class="cat-dot" style="background:#e8dfa8"></span>AI</a></li>
+<li><a href="/archive.html#seo"><span class="cat-dot" style="background:#88b8d8"></span>SEO・LLMO</a></li>
+<li><a href="/archive.html#web"><span class="cat-dot" style="background:#e8a8b8"></span>Webサイト運営</a></li>
+<li><a href="/archive.html#career"><span class="cat-dot" style="background:#e0b8a0"></span>副業・キャリア</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="center-content">
+<nav class="breadcrumb" style="padding:0 0 12px;border:none;background:none;max-width:none;margin:0"><a href="index.html">ホーム</a> &gt; <a href="archive.html#web">Webサイト運営</a> &gt; WordPressとAI時代のサイト制作</nav>
+<div class="article-hero"><img src="/thumbs/wordpress-ai-security.webp" alt="WordPressのロゴと更新・保守を表す部品、その隣にAIで作るウェブページ" width="640" height="360" loading="eager"></div>
+<span class="article-tag">Webサイト運営</span>
+<h1 class="article-title">WordPressはオワコンなのか？　AI時代には何でサイトを作るのが正解？</h1>
+<div class="article-meta-line"><span>公開: 2026年11月27日</span><span>更新: 2026年11月27日</span></div>
+<!-- article-content:start -->
+<p>こんにちは、ツバサです。</p>
+<p>またWordPressに脆弱性。更新を求められるたびに、バックアップを取り、プラグインの相性を調べ、更新後の表示を確かめる。記事を書きたいだけなのに、サイトの保守に時間を取られていませんか。</p>
+<p>AIに頼めばサイトを作れる今、その手間を減らすためにWordPressをやめたくなるのも自然です。ただ、AIでページを作った翌月に、文章を直す人、フォームの不具合を調べる人、安全性を確かめる人は誰でしょうか。</p>
+<p>WordPressには、記事の投稿や修正を管理画面から続けられる利点があります。その機能を使っているなら、保守を任せて続ける価値があります。数ページの案内にしか使っていないなら、静的サイトやWixなど、必要な機能に絞って運営できる方法も選べます。</p>
+<div class="point-box"><p><strong>この記事でわかること</strong></p>
+<ul>
+<li>WordPressの脆弱性への対応は、本体だけでなく、プラグインやPHPも含めて考える必要があります。</li>
+<li>WordPressやPHPを使わずに公開する構成なら、それらを更新する作業をなくせます。</li>
+<li>AIで作ったサイトにも、使っているプログラムやデータの扱いに応じた点検が必要です。</li>
+<li>WordPressのメリットは、記事の投稿・予約・修正や、編集者の権限管理をまとめて行えることです。</li>
+<li>画面から編集する手軽さ、機能の自由度、保守の分担を比べると、乗り換え先を絞れます。</li>
+</ul>
+</div>
+<p class="note">サービスの機能・利用条件は2026年11月27日に確認した内容です。</p>
+<div class="toc"><p class="toc-title">目次</p><ol><li><a href="#sec1">WordPressが「オワコン」と言われる背景にある脆弱性と保守負担</a></li><li><a href="#sec2">AIでサイトを作れる今、WordPressの保守を続ける必要はあるのか</a></li><li><a href="#sec3">WordPressをやめれば、セキュリティの心配はなくなるのか</a></li><li><a href="#sec4">それでもWordPressを選ぶメリットは何か</a></li><li><a href="#sec5">AI時代には何でサイトを作るのが正解？</a></li><li><a href="#sec6">今あるWordPressは、使い続けるか、作り直すか</a></li><li><a href="#sec7">FAQ</a></li></ol></div>
+<h2 id="sec1">WordPressが「オワコン」と言われる背景にある脆弱性と保守負担</h2>
+<h3>本体・プラグイン・PHPと、対応する対象が複数ある</h3>
+<p>WordPressを使い続けるうえで気になるのが、繰り返し公表される脆弱性です。脆弱性とは、不正な操作や情報の流出などにつながる、ソフトウェアの安全上の問題を指します。</p>
+<p>2026年7月17日には、WordPress本体の重大な問題を修正する7.0.2が公開されました。11月18日にも、複数の安全上の問題を修正する7.1.5が公開されています。プラグインの整理に加え、本体の更新も続ける必要があります。</p>
+<a class="cite-card" href="https://wordpress.org/news/2026/07/wordpress-7-0-2-release/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">WordPress 7.0.2 Release | WordPress News</span><span class="cite-url">wordpress.org</span></span></a>
+<a class="cite-card" href="https://wordpress.org/news/2026/11/wordpress-7-1-5-release/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">WordPress 7.1.5 Release | WordPress News</span><span class="cite-url">wordpress.org</span></span></a>
+<p>プラグインやテーマにも対応が必要です。セキュリティ企業Patchstackの2026年版報告書では、2025年にWordPress関連で見つかった新規の脆弱性は11,334件で、約91％がプラグイン由来でした。これは関連製品全体の集計であり、ひとつのサイトにそれだけの問題があるという意味ではありません。自分が使っている製品とバージョンが対象かを確認します。</p>
+<a class="cite-card" href="https://patchstack.com/whitepaper/state-of-wordpress-security-in-2026/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">State of WordPress Security in 2026 - Security Whitepaper</span><span class="cite-url">patchstack.com</span></span></a>
+<p>さらに、WordPressを動かすPHPというプログラミング言語の問題もあります。2026年10月の重大な脆弱性について、WordPress公式は、WordPress固有の問題ではなく、PHPの更新が必要だと説明しました。WordPressの管理画面で本体を更新するだけでは、別のソフトウェアにある問題を直せません。</p>
+<a class="cite-card" href="https://ja.wordpress.org/2026/10/21/critical-php-security-release/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">PHP の重大なセキュリティリリース | WordPress.org 日本語</span><span class="cite-url">ja.wordpress.org</span></span></a>
+<h3>更新ボタンを押す以外にも作業がある</h3>
+<p>更新前にバックアップを取り、プラグインやテーマが対応しているかを確かめ、更新後は表示や機能を確認する。WordPressの公式手順でも、この流れが案内されています。</p>
+<p>本体の軽微な修正やセキュリティ修正には自動更新もあります。更新を自動化したうえで、記事の表示や問い合わせフォームなど、そのサイトに必要な機能の動作を確認します。</p>
+<a class="cite-card" href="https://wordpress.org/documentation/article/updating-wordpress/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Updating WordPress | Documentation</span><span class="cite-url">wordpress.org</span></span></a>
+<p>「更新すると不具合が出るかもしれない。でも更新せずには置けない」。この負担は、WordPressを選ぶときのデメリットとして考える必要があります。担当者が記事の更新と保守を兼ねるのか、保守を外部へ任せるのかも、運営費用に関わります。</p>
+<h3>シェア低下は、乗り換えの理由まで示していない</h3>
+<p>WordPressの利用率も下がっています。W3Techsの2026年11月27日付の履歴表では、調査対象全体に占める割合は、2025年11月1日の43.2％から2026年11月1日の39.5％へ低下しました。11月27日時点では38.3％です。</p>
+<p>ただし、この表から、どのサイトが脆弱性を理由にやめたのかは分かりません。記事などを管理する仕組みであるCMSを検出できたサイトだけを分母にしたWordPressのシェアは、同じ11月27日で57.3％です。利用率の低下と、個々のサイトに合うかどうかは分けて判断する必要があります。</p>
+<a class="cite-card" href="https://w3techs.com/technologies/history_overview/content_management/all" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Historical trends in the usage statistics of content management systems, November 2026</span><span class="cite-url">w3techs.com</span></span></a>
+<a class="cite-card" href="https://w3techs.com/technologies/overview/content_management" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Usage Statistics and Market Share of Content Management Systems, November 2026</span><span class="cite-url">w3techs.com</span></span></a>
+<h2 id="sec2">AIでサイトを作れる今、WordPressの保守を続ける必要はあるのか</h2>
+<h3>案内ページなら、公開する仕組みを小さくできる</h3>
+<p>文章や写真を載せるページなら、あらかじめHTMLなどのファイルを作り、そのまま公開する静的サイトが選択肢になります。閲覧のたびにWordPressやPHPを実行しない構成なら、公開ページのためにそれらを動かし続ける必要がありません。GitHub Pagesも、HTML・CSS・JavaScriptのファイルを公開する静的サイト向けのサービスです。</p>
+<a class="cite-card" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">What is GitHub Pages? - GitHub Docs</span><span class="cite-url">docs.github.com</span></span></a>
+<p>AIによる制作と更新を組み合わせた例として、Tech Factoryは自社サイトをWordPressから静的サイトへ変更した経緯を公開しています。文章の修正をAIに依頼し、確認用ページを見てから本番へ反映する運用です。ただし、同社も最初の設定は技術者が行い、フォームの処理や管理アカウントにはリスクが残ると説明しています。</p>
+<a class="cite-card" href="https://techfactory.jp/blog/wordpress-to-static-site/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">攻撃される場所がなくて、更新は AI に頼める。WordPress をやめたコーポレートサイトの作り方 | 株式会社Tech Factory</span><span class="cite-url">techfactory.jp</span></span></a>
+<p>この事例で減ったのはWordPressやPHPを更新する作業で、文章の修正を確認して公開する作業は残っています。静的サイトでも、公開するファイルを直せる人と手順を用意します。仕組みの詳しい違いは、「<a href="static-vs-dynamic-site.html">静的サイトと動的サイトの比較記事</a>」で説明しています。</p>
+<h3>AIはWordPressを残した構成も作れる</h3>
+<p>AIで公開ページを作り直し、記事の管理画面はWordPressのまま使う方法もあります。</p>
+<p>Marco Chiesi氏は、同じWordPressの記事を使い、公開ページの作り方を3通りで比較しました。WordPress自身がページを表示する版と、ページを作るための開発ツールであるNext.js、Astroを使う版です。Astro版では、WordPressの記事から静的なページを作っています。</p>
+<p>同氏は自分のサイトにAstro版を採用しました。編集機能を残しながら表示を作り変えられる一方、検索や公開前のプレビューなどを別途実装する作業も報告しています。記事管理側と公開側の両方を扱うため、保守の手間を減らすことが目的なら、連携部分まで管理できるかを検討します。</p>
+<a class="cite-card" href="https://www.chiesi.net/2026/10/the-head-of-wordpress-goes-headless/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">The Head of WordPress goes headless — Marco Chiesi</span><span class="cite-url">www.chiesi.net</span></span></a>
+<p>AIで作ったサイトの公開先と移行条件は、「<a href="chatgpt-sites-migration.html">ChatGPT Sitesの乗り換え先と料金・移行の注意点</a>」でも比較しています。</p>
+<h2 id="sec3">WordPressをやめれば、セキュリティの心配はなくなるのか</h2>
+<h3>AIで作ったサイトが、すべて静的サイトになるわけではない</h3>
+<p>AIが書くのは、案内ページだけとは限りません。ログイン、会員情報の保存、予約の処理などを加えれば、それを処理するプログラムやデータベースも必要になります。</p>
+<p>AI制作サービスのLovableも、2026年5月13日以降に作る新規アプリは、サーバー側のコードを実行する構成だと説明しています。AIで作ったか、人が書いたかだけでは、管理する対象や安全性は判断できません。</p>
+<a class="cite-card" href="https://docs.lovable.dev/tips-tricks/deployment-hosting-ownership" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Deployment, hosting, and ownership options with Lovable - Lovable Documentation</span><span class="cite-url">docs.lovable.dev</span></span></a>
+<p>Lovableには安全性のチェック機能がありますが、公式資料は、それだけで安全を保証したり、完全なレビューの代わりになったりするものではないと明記しています。利用者ごとのデータ閲覧権限を設定し、外部サービスに接続するための認証情報を公開しないようにします。組み込んだプログラムの脆弱性にも対応が必要です。AIにコードを書いてもらった後にも、こうした管理は続きます。</p>
+<a class="cite-card" href="https://docs.lovable.dev/features/security" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Security overview - Lovable Documentation</span><span class="cite-url">docs.lovable.dev</span></span></a>
+<h3>保守をサービス側に任せる方法もある</h3>
+<p>同じWordPressでも、借りたサーバーに設置して使う方法と、WordPress.comのように運営会社が保守の一部を引き受けるサービスでは、利用者の担当範囲が異なります。</p>
+<p>WordPress.comは、本体の自動更新、スキャン、バックアップをサービス側で行います。バックアップによる保護は全サイトが対象ですが、管理画面から日次バックアップにアクセスできる機能は上位プラン向けです。利用者はアカウントの保護、権限の見直し、不要なプラグインの整理などを担当します。</p>
+<a class="cite-card" href="https://wordpress.com/support/security/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Keep Your WordPress Site Safe and Secure | WordPress.com Support</span><span class="cite-url">wordpress.com</span></span></a>
+<h2 id="sec4">それでもWordPressを選ぶメリットは何か</h2>
+<h3>記事を書いて公開するための機能がそろっている</h3>
+<p>WordPressでは、書きかけの記事を下書きで保存し、写真を差し替え、公開日時を予約できます。過去の修正履歴を確認する機能や、記事を書く人と公開する人の権限を分ける機能もあります。</p>
+<p>文章や写真を継続して追加するサイトでは、これらを管理画面で済ませられることがメリットです。AIで作ったページにも同じ運用が必要なら、編集機能を別途用意する手間と比べます。</p>
+<a class="cite-card" href="https://wordpress.org/about/features/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Features | WordPress.org</span><span class="cite-url">wordpress.org</span></span></a>
+<h3>必要な機能を追加できるが、その管理も引き受ける</h3>
+<p>プラグインで機能を追加できることは、WordPressの利点でもあり、保守負担が増える理由でもあります。必要な機能が既存のプラグインで実現できるなら、一から作る作業を減らせます。ただし、導入後は更新状況や互換性を確認する対象になります。</p>
+<a class="cite-card" href="https://wordpress.org/about/features/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Features | WordPress.org</span><span class="cite-url">wordpress.org</span></span></a>
+<a class="cite-card" href="https://wordpress.org/documentation/article/updating-wordpress/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Updating WordPress | Documentation</span><span class="cite-url">wordpress.org</span></span></a>
+<p>選ぶ際には、実際に使う投稿機能と追加機能を書き出します。必要なものがはっきりすれば、WordPressを続ける理由も、外せるプラグインも判断できます。</p>
+<h2 id="sec5">AI時代には何でサイトを作るのが正解？</h2>
+<h3>更新する人と必要な機能から選ぶ</h3>
+<p>「記事を書きたい」「数ページの案内を置きたい」「予約を受け付けたい」では、必要な機能が違います。さらに、ファイルを直して公開できる人がいるか、画面上の操作だけで更新したいかによっても選択肢が変わります。WordPressもWixも、通常の記事更新はコードを書かずに行えます。両者を比べるときは、保守を任せる範囲と、機能や移行方法の制約を確かめます。</p>
+<div class="table-wrap" role="region" aria-label="サイトの用途・更新担当者と制作方法、保守負担の比較" tabindex="0"><table aria-label="サイトの用途・更新担当者と制作方法、保守負担の比較"><thead><tr><th scope="col">やりたいこと・更新する人</th><th scope="col">比較する選択肢</th><th scope="col">利点と引き受ける負担</th></tr></thead><tbody>
+<tr><td>案内ページや作品紹介が中心で、ファイルの修正・公開を担当できる</td><td>AIで作る静的サイト</td><td>WordPress本体やPHPの更新が不要な構成にできる。修正の確認と再公開は担当する</td></tr>
+<tr><td>画面で編集し、公開先のサーバーや基盤ソフトの管理を任せたい</td><td>Wixなどのサイト作成サービス</td><td>サーバーの管理や基盤ソフトの更新を任せられる。内容の編集は利用者が行い、使える機能や移行方法はサービスに依存する</td></tr>
+<tr><td>記事を継続して追加し、使うサーバーや追加機能を選びたい</td><td>借りたサーバーに設置するWordPress</td><td>投稿・権限管理やプラグインを使える。本体・テーマ・プラグインの保守を担当する人を決める</td></tr>
+<tr><td>WordPressの編集画面を使い、サーバー側の保守を減らしたい</td><td>WordPress.comなどの管理付きサービス</td><td>任せられる作業が増える。プランの機能と、利用者に残る作業を確認する</td></tr>
+<tr><td>商品・注文・在庫を管理して販売したい</td><td>ShopifyなどのEC向けサービス</td><td>販売用の管理機能を利用できる。決済条件、追加アプリ、データ移行を確認する</td></tr>
+<tr><td>既存サービスの機能では足りず、独自の処理が必要</td><td>LovableなどのAI制作サービスや個別開発</td><td>必要な処理を作れる。権限設定、データ保護、不具合の修正を担当する人が必要になる</td></tr>
+</tbody></table></div>
+<a class="cite-card" href="https://wordpress.org/about/features/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Features | WordPress.org</span><span class="cite-url">wordpress.org</span></span></a>
+<a class="cite-card" href="https://wordpress.com/support/security/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Keep Your WordPress Site Safe and Secure | WordPress.com Support</span><span class="cite-url">wordpress.com</span></span></a>
+<a class="cite-card" href="https://www.shopify.com/jp/online" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">オンラインストアを構築：テーマの使用またはヘッドレスの実装 - Shopify 日本</span><span class="cite-url">www.shopify.com</span></span></a>
+<a class="cite-card" href="https://docs.lovable.dev/tips-tricks/deployment-hosting-ownership" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Deployment, hosting, and ownership options with Lovable - Lovable Documentation</span><span class="cite-url">docs.lovable.dev</span></span></a>
+<p>Wixは、コードを書かずに画面を操作する編集方法と、AIによるサイト作成を提供しています。公開先のサーバーと基盤ソフトの更新をサービス側が管理します。AIで作るかどうかに加え、完成後も同じ編集画面を使えることが、コードを管理したくない人には利点になります。</p>
+<a class="cite-card" href="https://ja.wix.com/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">無料ホームページ作成｜ホームページの作り方｜Wix.com</span><span class="cite-url">ja.wix.com</span></span></a>
+<a class="cite-card" href="https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Exporting or Embedding Your Wix Site Elsewhere | Help Center | Wix.com</span><span class="cite-url">support.wix.com</span></span></a>
+<p>その代わり、Wixのサイトは同社のサーバーで動かす必要があり、そのまま別のサーバーへ持ち出せません。手軽さと合わせて、解約時に何を移せるかも確認します。特定のサービスへ任せる方法にも、ファイルを管理する方法にも、それぞれ負担が残ります。</p>
+<h3>無料で作れる範囲と、運営に必要な費用を分ける</h3>
+<p>Wixは無料で作成を試せますが、独自ドメインの接続、Wixバナー広告の非表示、オンライン決済には、それぞれの機能に対応した有料プランが必要です。WordPress.comにも無料プランがありますが、独自ドメイン、広告非表示、プラグインの追加には有料プランを選びます。「無料で作れる」という表示だけでは、希望する条件で運営できるかは分かりません。</p>
+<a class="cite-card" href="https://ja.wix.com/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">無料ホームページ作成｜ホームページの作り方｜Wix.com</span><span class="cite-url">ja.wix.com</span></span></a>
+<a class="cite-card" href="https://wordpress.com/ja/pricing/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">WordPress.com の価格設定 | ぴったりのプランを見つけよう</span><span class="cite-url">wordpress.com</span></span></a>
+<a class="cite-card" href="https://wordpress.com/support/plugins/install-a-plugin/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Install a plugin on a WordPress.com site | WordPress.com Support</span><span class="cite-url">wordpress.com</span></span></a>
+<a class="cite-card" href="https://support.wix.com/ja/article/wix-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%BA%83%E5%91%8A%E3%81%A8%E3%83%95%E3%82%A1%E3%83%93%E3%82%B3%E3%83%B3%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Wix ブランド広告とファビコンを削除する | ヘルプセンター | Wix.com</span><span class="cite-url">support.wix.com</span></span></a>
+<p>比較するときは、次の3種類の費用を分けて確認します。</p>
+<ul>
+<li>継続して払う費用：公開先のサーバーやサービス、ドメイン、有料プラグイン、AIの利用料です。</li>
+<li>作り直すときの費用：記事や画像の移動、フォームの再設定、旧URLからの転送、表示・動作の確認にかかります。</li>
+<li>維持する費用：更新、問い合わせ対応、不具合の調査、復旧を、自分で行う時間または依頼する料金です。</li>
+</ul>
+<p>月額が安くても、文章の修正のたびに外部へ依頼する運用なら、その料金も加わります。保守を依頼するときは「更新」だけでなく、更新後の動作確認と、不具合が起きた場合の復旧まで含むかをそろえて見積もりを比べます。</p>
+<h2 id="sec6">今あるWordPressは、使い続けるか、作り直すか</h2>
+<h3>編集機能を使っているなら、保守の改善から比較する</h3>
+<p>今のWordPressで記事を更新しやすいなら、使っているサーバーの機能を調べるところから始められます。例えばエックスサーバーは、自動バックアップ、脆弱性を狙う攻撃を防ぐWAF、同社の「WordPress簡単インストール」で作成したサイトを動作確認用にコピーする機能を案内しています。すでに契約に含まれる機能で、手作業を減らせる場合があります。</p>
+<a class="cite-card" href="https://www.xserver.ne.jp/functions/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">機能一覧 | レンタルサーバーならエックスサーバー</span><span class="cite-url">www.xserver.ne.jp</span></span></a>
+<p>これらの機能を使っても、WordPressやプラグインの更新、サイト固有の動作確認は続けます。不要なテーマやプラグインを整理し、残す機能の保守を担当者が行うか、外部へ依頼するかを決めます。WordPress公式も、利用者とホスティング会社の担当範囲を把握することを重視しています。</p>
+<a class="cite-card" href="https://wordpress.com/support/security/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Keep Your WordPress Site Safe and Secure | WordPress.com Support</span><span class="cite-url">wordpress.com</span></span></a>
+<a class="cite-card" href="https://developer.wordpress.org/advanced-administration/security/hardening/" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Hardening WordPress – Advanced Administration Handbook | Developer.WordPress.org</span><span class="cite-url">developer.wordpress.org</span></span></a>
+<p>サーバーの料金や対応履歴も比べる場合は、「<a href="rental-server-comparison.html">レンタルサーバーの料金・PHP脆弱性対応の比較</a>」を参照してください。</p>
+<h3>使っていない機能の管理が負担なら、作り直す候補になる</h3>
+<p>投稿機能をほとんど使わず、必要なのは案内ページだけ。それでも本体やプラグインの対応を続けているなら、静的サイトや管理付きサービスへ変えるメリットがあります。</p>
+<p>移行前には、残すページとURL、問い合わせフォーム、記事や画像の更新方法を一覧にします。Googleも、URLが変わるサイト移転では旧URLと新URLを対応づけ、転送を用意する手順を案内しています。</p>
+<a class="cite-card" href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes?hl=ja" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">サイト・ホームページ移行について | Google 検索セントラル  |  Documentation  |  Google for Developers</span><span class="cite-url">developers.google.com</span></span></a>
+<p>管理画面で利用中のプラグインと最近更新したページを確認すると、移行先にも必要な機能が分かります。今の保守を任せる費用と、その機能を移して維持する費用を比べます。移行候補の編集画面や公開手順も試し、担当者が文章や写真を更新できることを確かめてから決めます。</p>
+<p>サーバーを替える場合とWordPress自体を替える場合の違いは、「<a href="wordpress-migration-options.html">WordPressとサーバーの移行先を検討する記事</a>」で整理しています。</p>
+<h2 id="sec7">FAQ</h2>
+<div class="faq-item"><p class="fq"><strong>Q. WordPressは脆弱性が多いので、使わない方がいいですか？</strong></p><p class="fa">A. 必要な編集機能と保守の負担を比べて判断します。本体や追加機能の更新を続けられないまま公開する状態は改善が必要です。WordPressを続けて保守を任せる方法と、使う機能を絞って別の仕組みに変える方法を比較できます。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. AIで作ったサイトなら、更新や保守は不要ですか？</strong></p><p class="fa">A. 不要にはなりません。公開するプログラム、利用者の権限、保存するデータなどによって確認事項が変わります。静的なページだけの構成と、ログインやデータベースを備えたアプリでは、管理する対象が異なります。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. WordPressの管理画面を残して、公開ページだけ変えられますか？</strong></p><p class="fa">A. 変えられます。記事管理をWordPressに残し、別の仕組みで公開ページを作る方法があります。ただし、残したWordPressの更新と、新しい公開側の管理が必要です。プレビューやフォームなどの連携も確認します。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. WordPressをやめるとSEOで有利になりますか？</strong></p><p class="fa">A. WordPressをやめることだけで、検索順位が上がるとは言えません。移行ではURLや転送の扱いも重要です。見た目を作り直すだけで終えず、既存ページが新しいサイトでも正しく表示されるか確認します。</p></div>
+<div class="faq-item"><p class="fq"><strong>Q. WordPressの利用率が下がったのは、AIで作るサイトが増えたからですか？</strong></p><p class="fa">A. W3Techsの数字だけでは、そう判断できません。CMSを検出していない「None」という区分も、AIで作ったサイトの数を示すものではありません。同社のCMS分類にはAstro、GitHub Pages、Lovableも含まれるため、静的サイトやAI制作サイトがすべて「None」になるわけではありません。</p></div>
+<a class="cite-card" href="https://w3techs.com/technologies/overview/content_management" rel="noopener noreferrer" target="_blank"><span class="cite-ico ext">外</span><span class="cite-body"><span class="cite-title">Usage Statistics and Market Share of Content Management Systems, November 2026</span><span class="cite-url">w3techs.com</span></span></a>
+<!-- article-content:end -->
+<div class="related"><h3>関連する記事</h3>
+<a class="cite-card" href="static-vs-dynamic-site.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">静的サイトと動的サイトの違い｜セキュリティで静的サイトが有利な理由</span><span class="cite-url">tsubasa-memo.github.io/static-vs-dynamic-site.html</span></span></a>
+<a class="cite-card" href="wordpress-migration-options.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">お名前.comからの移行先を比較検討｜WordPressとPHPはオワコンなのか？</span><span class="cite-url">tsubasa-memo.github.io/wordpress-migration-options.html</span></span></a>
+<a class="cite-card" href="rental-server-comparison.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">おすすめのレンタルサーバー業者は？｜料金・PHP2Shell対応・情報流出の履歴で比較</span><span class="cite-url">tsubasa-memo.github.io/rental-server-comparison.html</span></span></a>
+<a class="cite-card" href="chatgpt-sites-migration.html"><span class="cite-ico int">ツ</span><span class="cite-body"><span class="cite-title">ChatGPT Sitesの乗り換え先は？料金と移行の注意点を比較</span><span class="cite-url">tsubasa-memo.github.io/chatgpt-sites-migration.html</span></span></a>
+</div>
+<p class="section-label">よく読まれている記事</p>
+<div class="featured-grid">
+<div class="featured-card">
+<a href="retouch-apps.html">
+<div class="featured-thumb">
+<img alt="スマホのレタッチアプリおすすめ8選｜肌補正・商品・モデル着用写真に" height="160" loading="lazy" src="thumbs/retouch-apps.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>スマホのレタッチアプリおすすめ8選｜肌補正・商品・モデル着用写真に</h2>
+<p class="card-desc">Snapseed・Lightroomなど8本を用途別に比較。商品・モデル着用写真の肌、服の色、背景、複数カットを補正する際の選び方を整理。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="retouch-pricing-database.html">
+<div class="featured-thumb">
+<img alt="写真レタッチの料金相場｜外注12社を比較【2026年版】" height="160" loading="lazy" src="thumbs/retouch-pricing-database.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真レタッチの料金相場｜外注12社を比較【2026年版】</h2>
+<p class="card-desc">色補正・肌レタッチ・切り抜き・合成など作業内容別の相場と、12社のサービス料金を1ページに集約。外注先を探している方の比較用に。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="photo-backup-comparison.html">
+<div class="featured-thumb">
+<img alt="写真バックアップ3社比較｜Googleフォト・iCloud・Amazon Photos" height="160" loading="lazy" src="thumbs/photo-backup-comparison.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>写真バックアップ3社比較｜Googleフォト・iCloud・Amazon Photos</h2>
+<p class="card-desc">Googleフォト・iCloud・Amazon Photosの無料容量・月額料金・自動バックアップの使い勝手を比較。</p>
+<span class="card-tag">写真・撮影</span>
+</div>
+</a>
+</div>
+<div class="featured-card">
+<a href="what-is-retouch.html">
+<div class="featured-thumb">
+<img alt="レタッチとは？リタッチとの違い・どっちが正しい表記か・加工との使い分け" height="160" loading="lazy" src="thumbs/what-is-retouch.webp" width="280"/>
+</div>
+<div class="featured-body">
+<span class="badge-pick">PICK</span>
+<h2>レタッチとは？リタッチとの違い・どっちが正しい表記か・加工との使い分け</h2>
+<p class="card-desc">レタッチとリタッチは同じ意味で、表記として一般的なのは「レタッチ」。修正・補正・加工との使い分けも定義から整理した。</p>
+<span class="card-tag">レタッチ・画像加工</span>
+</div>
+</a>
+</div>
+</div>
+<div class="author-box">
+<div class="author-icon"><img alt="ツバサ" height="64" src="icons/tsubasa.png" width="64"/></div>
+<div class="author-text">
+<p class="author-name">ツバサ</p>
+<p>このブログは仕事の中で身につけたことの記録です。</p>
+</div>
+</div>
+</main>
+
+<aside class="right-sidebar">
+<div class="sidebar-block">
+<p class="sb-label">検索</p>
+<input type="search" id="site-search-input" class="sb-search-input" placeholder="キーワードで検索" autocomplete="off" aria-label="サイト内検索">
+<div id="site-search-results" hidden></div>
+</div>
+</aside>
+
+</div><!-- /.page-layout -->
+
+<footer>
+<div class="wrap">
+<div class="footer-links">
+<a href="privacy-policy.html">プライバシーポリシー</a>
+<a href="about.html">運営者情報</a>
+<a href="/sitemap-links.html">全ページ一覧</a>
+</div>
+© 2026 ツバサのメモ帳
+</div>
+</footer>
+
+</body>
+</html>
